@@ -1,0 +1,4512 @@
+{
+    "abstract": "Decision-focused learning (DFL) is an emerging paradigm that integrates machine learning (ML) and constrained optimization to enhance decision quality by training ML models in an end-to-end system. This approach shows significant potential to revolutionize combinatorial decision-making in real-world applications that operate under uncertainty, where estimating unknown parameters within decision models is a major challenge. This paper presents a comprehensive review of DFL, providing an in-depth analysis of both gradient-based and gradient-free techniques used to combine ML and constrained optimization. It evaluates the strengths and limitations of these techniques and includes an extensive empirical evaluation of eleven methods across seven problems. The survey also offers insights into recent advancements and future research directions in DFL.",
+    "arxivId": "2307.13565",
+    "authors": [
+        {
+            "authorId": "73768412",
+            "name": "Jayanta Mandi",
+            "url": "https://www.semanticscholar.org/author/73768412"
+        },
+        {
+            "authorId": "2061150787",
+            "name": "James Kotary",
+            "url": "https://www.semanticscholar.org/author/2061150787"
+        },
+        {
+            "authorId": "2170216105",
+            "name": "Senne Berden",
+            "url": "https://www.semanticscholar.org/author/2170216105"
+        },
+        {
+            "authorId": "1587635783",
+            "name": "Maxime Mulamba",
+            "url": "https://www.semanticscholar.org/author/1587635783"
+        },
+        {
+            "authorId": "3402949",
+            "name": "V\u00edctor Bucarey",
+            "url": "https://www.semanticscholar.org/author/3402949"
+        },
+        {
+            "authorId": "1834512",
+            "name": "Tias Guns",
+            "url": "https://www.semanticscholar.org/author/1834512"
+        },
+        {
+            "authorId": "2141569789",
+            "name": "Ferdinando Fioretto",
+            "url": "https://www.semanticscholar.org/author/2141569789"
+        }
+    ],
+    "citationVelocity": 16,
+    "citations": [
+        {
+            "arxivId": "2411.03535",
+            "authors": [
+                {
+                    "authorId": "2326374750",
+                    "name": "Matteo Cacciola"
+                },
+                {
+                    "authorId": "2329369805",
+                    "name": "Alexandre Forel"
+                },
+                {
+                    "authorId": "1699418",
+                    "name": "A. Frangioni"
+                },
+                {
+                    "authorId": "2329369505",
+                    "name": "Andrea Lodi"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5d55dd78b249494525d50edd1303e4617ac9889e",
+            "title": "The Differentiable Feasibility Pump",
+            "url": "https://www.semanticscholar.org/paper/5d55dd78b249494525d50edd1303e4617ac9889e",
+            "venue": "",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "101979463",
+                    "name": "Akylas C. Stratigakos"
+                },
+                {
+                    "authorId": "2239288806",
+                    "name": "Salvador Pineda"
+                },
+                {
+                    "authorId": "2239269355",
+                    "name": "J. Morales"
+                }
+            ],
+            "doi": "10.1016/j.ijforecast.2024.11.006",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "82b0eb7fff1743f1f36048ee3bb7d3883d1af094",
+            "title": "Decision-focused linear pooling for probabilistic forecast combination",
+            "url": "https://www.semanticscholar.org/paper/82b0eb7fff1743f1f36048ee3bb7d3883d1af094",
+            "venue": "International Journal of Forecasting",
+            "year": 2024
+        },
+        {
+            "arxivId": "2410.17415",
+            "authors": [
+                {
+                    "authorId": "116996362",
+                    "name": "M. H. Dinh"
+                },
+                {
+                    "authorId": "2061150787",
+                    "name": "James Kotary"
+                },
+                {
+                    "authorId": "116109946",
+                    "name": "Lauryn P. Gouldin"
+                },
+                {
+                    "authorId": "2327211695",
+                    "name": "William Yeoh"
+                },
+                {
+                    "authorId": "2141569789",
+                    "name": "Ferdinando Fioretto"
+                }
+            ],
+            "doi": "10.48550/arXiv.2410.17415",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "80c2cd27958b47d3bcff45474dc60725230fef60",
+            "title": "End-to-End Optimization and Learning of Fair Court Schedules",
+            "url": "https://www.semanticscholar.org/paper/80c2cd27958b47d3bcff45474dc60725230fef60",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1587635783",
+                    "name": "Maxime Mulamba"
+                },
+                {
+                    "authorId": "73768412",
+                    "name": "Jayanta Mandi"
+                },
+                {
+                    "authorId": "1413802577",
+                    "name": "A. Mahmuto\u011fullar\u0131"
+                },
+                {
+                    "authorId": "1834512",
+                    "name": "Tias Guns"
+                }
+            ],
+            "doi": "10.1007/s10601-024-09372-9",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e1eb6f34f550e9853c5bfc420f50aed614dc17cc",
+            "title": "Perception-based constraint solving for sudoku images",
+            "url": "https://www.semanticscholar.org/paper/e1eb6f34f550e9853c5bfc420f50aed614dc17cc",
+            "venue": "Constraints An Int. J.",
+            "year": 2024
+        },
+        {
+            "arxivId": "2409.09684",
+            "authors": [
+                {
+                    "authorId": "2268337398",
+                    "name": "Junhyeong Lee"
+                },
+                {
+                    "authorId": "2321405836",
+                    "name": "Inwoo Tae"
+                },
+                {
+                    "authorId": "2321521660",
+                    "name": "Yongjae Lee"
+                }
+            ],
+            "doi": "10.48550/arXiv.2409.09684",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a2eacb7221b271f4e7eb9b3fd62bec5fae54cfb6",
+            "title": "Anatomy of Machines for Markowitz: Decision-Focused Learning for Mean-Variance Portfolio Optimization",
+            "url": "https://www.semanticscholar.org/paper/a2eacb7221b271f4e7eb9b3fd62bec5fae54cfb6",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": "2409.04898",
+            "authors": [
+                {
+                    "authorId": "2061150787",
+                    "name": "James Kotary"
+                },
+                {
+                    "authorId": "2189422579",
+                    "name": "Vincenzo Di Vito"
+                },
+                {
+                    "authorId": "2267727785",
+                    "name": "Jacob Christopher"
+                },
+                {
+                    "authorId": "72488634",
+                    "name": "P. V. Hentenryck"
+                },
+                {
+                    "authorId": "2141569789",
+                    "name": "Ferdinando Fioretto"
+                }
+            ],
+            "doi": "10.48550/arXiv.2409.04898",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "51009856ba14bc75c9ff38d86e6f104d3492e12f",
+            "title": "Learning Joint Models of Prediction and Optimization",
+            "url": "https://www.semanticscholar.org/paper/51009856ba14bc75c9ff38d86e6f104d3492e12f",
+            "venue": "ECAI",
+            "year": 2024
+        },
+        {
+            "arxivId": "2407.13420",
+            "authors": [
+                {
+                    "authorId": "2119268551",
+                    "name": "T. Kortus"
+                },
+                {
+                    "authorId": "2311877258",
+                    "name": "Ralf Keidel"
+                },
+                {
+                    "authorId": "2209395041",
+                    "name": "N.R. Gauger"
+                }
+            ],
+            "doi": "10.48550/arXiv.2407.13420",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "ecb458f07a9e9d52aee1cf865706dd4c6411010f",
+            "title": "Exploring End-to-end Differentiable Neural Charged Particle Tracking - A Loss Landscape Perspective",
+            "url": "https://www.semanticscholar.org/paper/ecb458f07a9e9d52aee1cf865706dd4c6411010f",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": "2407.13664",
+            "authors": [
+                {
+                    "authorId": "2312072282",
+                    "name": "Hao Zhou"
+                },
+                {
+                    "authorId": "2312000654",
+                    "name": "Rongxiao Huang"
+                },
+                {
+                    "authorId": "2312175858",
+                    "name": "Shaoming Li"
+                },
+                {
+                    "authorId": "2312097306",
+                    "name": "Guibin Jiang"
+                },
+                {
+                    "authorId": "2192713119",
+                    "name": "Jiaqi Zheng"
+                },
+                {
+                    "authorId": "2311893433",
+                    "name": "Bing Cheng"
+                },
+                {
+                    "authorId": "2312009315",
+                    "name": "Wei Lin"
+                }
+            ],
+            "doi": "10.48550/arXiv.2407.13664",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c97f2b7c26a26ebc7fb9e13aa6d4a298f8d8d018",
+            "title": "Decision Focused Causal Learning for Direct Counterfactual Marketing Optimization",
+            "url": "https://www.semanticscholar.org/paper/c97f2b7c26a26ebc7fb9e13aa6d4a298f8d8d018",
+            "venue": "KDD",
+            "year": 2024
+        },
+        {
+            "arxivId": "2406.16571",
+            "authors": [
+                {
+                    "authorId": "2243376448",
+                    "name": "Xutao Ma"
+                },
+                {
+                    "authorId": "2242969177",
+                    "name": "Chao Ning"
+                },
+                {
+                    "authorId": "2308448003",
+                    "name": "Wenli Du"
+                }
+            ],
+            "doi": "10.48550/arXiv.2406.16571",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "168b52a1aa48180c6771cc20498b377ac225b801",
+            "title": "Differentiable Distributionally Robust Optimization Layers",
+            "url": "https://www.semanticscholar.org/paper/168b52a1aa48180c6771cc20498b377ac225b801",
+            "venue": "ICML",
+            "year": 2024
+        },
+        {
+            "arxivId": "2406.00779",
+            "authors": [
+                {
+                    "authorId": "2304761682",
+                    "name": "Peng Li"
+                },
+                {
+                    "authorId": "2125100094",
+                    "name": "Lixia Wu"
+                },
+                {
+                    "authorId": "2304519169",
+                    "name": "Chaoqun Feng"
+                },
+                {
+                    "authorId": "2304466740",
+                    "name": "Haoyuan Hu"
+                },
+                {
+                    "authorId": "2304547012",
+                    "name": "Lei Fu"
+                },
+                {
+                    "authorId": "2287926681",
+                    "name": "Jieping Ye"
+                }
+            ],
+            "doi": "10.48550/arXiv.2406.00779",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "35a1463061b489b170edd21346269675951eb6da",
+            "title": "Differentiation of Multi-objective Data-driven Decision Pipeline",
+            "url": "https://www.semanticscholar.org/paper/35a1463061b489b170edd21346269675951eb6da",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2139539515",
+                    "name": "Maximilian Beichter"
+                },
+                {
+                    "authorId": "2172111285",
+                    "name": "Dorina Werling"
+                },
+                {
+                    "authorId": "1753080572",
+                    "name": "Benedikt Heidrich"
+                },
+                {
+                    "authorId": "52203089",
+                    "name": "Kaleb Phipps"
+                },
+                {
+                    "authorId": "2113828112",
+                    "name": "Oliver Neumann"
+                },
+                {
+                    "authorId": "2248273226",
+                    "name": "Nils Friederich"
+                },
+                {
+                    "authorId": "2257000974",
+                    "name": "R. Mikut"
+                },
+                {
+                    "authorId": "47944521",
+                    "name": "V. Hagenmeyer"
+                }
+            ],
+            "doi": "10.1145/3632775.3661952",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "be2ba2deba938db846e5c7c344099a2de6655780",
+            "title": "Decision-Focused Retraining of Forecast Models for Optimization Problems in Smart Energy Systems",
+            "url": "https://www.semanticscholar.org/paper/be2ba2deba938db846e5c7c344099a2de6655780",
+            "venue": "The 15th ACM International Conference on Future and Sustainable Energy Systems",
+            "year": 2024
+        },
+        {
+            "arxivId": "2405.18293",
+            "authors": [
+                {
+                    "authorId": "2303465809",
+                    "name": "Germain Vivier--Ardisson"
+                },
+                {
+                    "authorId": "2166785815",
+                    "name": "Alexandre Forel"
+                },
+                {
+                    "authorId": "2171487",
+                    "name": "Axel Parmentier"
+                },
+                {
+                    "authorId": "2275350589",
+                    "name": "Thibaut Vidal"
+                }
+            ],
+            "doi": "10.48550/arXiv.2405.18293",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "e0e350dd181bfb4928706ff4033ca45d40e3d15b",
+            "title": "CF-OPT: Counterfactual Explanations for Structured Prediction",
+            "url": "https://www.semanticscholar.org/paper/e0e350dd181bfb4928706ff4033ca45d40e3d15b",
+            "venue": "ICML",
+            "year": 2024
+        },
+        {
+            "arxivId": "2405.16564",
+            "authors": [
+                {
+                    "authorId": "1409975928",
+                    "name": "Yichun Hu"
+                },
+                {
+                    "authorId": "3174388",
+                    "name": "Nathan Kallus"
+                },
+                {
+                    "authorId": "9184524",
+                    "name": "Xiaojie Mao"
+                },
+                {
+                    "authorId": "2303376555",
+                    "name": "Yanchen Wu"
+                }
+            ],
+            "doi": "10.48550/arXiv.2405.16564",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a63660a7390cd5c0a03846b65d884a0643682e5d",
+            "title": "Contextual Linear Optimization with Bandit Feedback",
+            "url": "https://www.semanticscholar.org/paper/a63660a7390cd5c0a03846b65d884a0643682e5d",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": "2405.14719",
+            "authors": [
+                {
+                    "authorId": "2219384046",
+                    "name": "Egon Persak"
+                },
+                {
+                    "authorId": "2302800825",
+                    "name": "Miguel F. Anjos"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "459bb7c013fce554898590640fd660191e22d4ad",
+            "title": "Decision-Focused Forecasting: Decision Losses for Multistage Optimisation",
+            "url": "https://www.semanticscholar.org/paper/459bb7c013fce554898590640fd660191e22d4ad",
+            "venue": "",
+            "year": 2024
+        },
+        {
+            "arxivId": "2402.07772",
+            "authors": [
+                {
+                    "authorId": "116996362",
+                    "name": "M. H. Dinh"
+                },
+                {
+                    "authorId": "2061150787",
+                    "name": "James Kotary"
+                },
+                {
+                    "authorId": "2141569789",
+                    "name": "Ferdinando Fioretto"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "609562bb77838fbb888d5c89f437eff6cdbbb3b5",
+            "title": "End-to-End Learning for Fair Multiobjective Optimization Under Uncertainty",
+            "url": "https://www.semanticscholar.org/paper/609562bb77838fbb888d5c89f437eff6cdbbb3b5",
+            "venue": "",
+            "year": 2024
+        },
+        {
+            "arxivId": "2402.05252",
+            "authors": [
+                {
+                    "authorId": "116996362",
+                    "name": "M. H. Dinh"
+                },
+                {
+                    "authorId": "2061150787",
+                    "name": "James Kotary"
+                },
+                {
+                    "authorId": "2141569789",
+                    "name": "Ferdinando Fioretto"
+                }
+            ],
+            "doi": "10.1145/3630106.3661932",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "76a1a4466f32347a49be5a6df0b70a3af7263940",
+            "title": "Learning Fair Ranking Policies via Differentiable Optimization of Ordered Weighted Averages",
+            "url": "https://www.semanticscholar.org/paper/76a1a4466f32347a49be5a6df0b70a3af7263940",
+            "venue": "FAccT",
+            "year": 2024
+        },
+        {
+            "arxivId": "2401.14029",
+            "authors": [
+                {
+                    "authorId": "2243971338",
+                    "name": "Florian D\u00f6rfler"
+                },
+                {
+                    "authorId": "2267032156",
+                    "name": "Zhiyu He"
+                },
+                {
+                    "authorId": "2195528",
+                    "name": "Giuseppe Belgioioso"
+                },
+                {
+                    "authorId": "35863503",
+                    "name": "S. Bolognani"
+                },
+                {
+                    "authorId": "2237211219",
+                    "name": "John Lygeros"
+                },
+                {
+                    "authorId": "2283768311",
+                    "name": "Michael Muehlebach"
+                }
+            ],
+            "doi": "10.1109/LCSYS.2024.3406943",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "4fdc9900f9d8da4c46eac7b572d6b02da8da080c",
+            "title": "Toward a Systems Theory of Algorithms",
+            "url": "https://www.semanticscholar.org/paper/4fdc9900f9d8da4c46eac7b572d6b02da8da080c",
+            "venue": "IEEE Control Systems Letters",
+            "year": 2024
+        },
+        {
+            "arxivId": "2401.03680",
+            "authors": [
+                {
+                    "authorId": "2275761174",
+                    "name": "Haipeng Zhang"
+                },
+                {
+                    "authorId": "2275768808",
+                    "name": "Ran Li"
+                }
+            ],
+            "doi": "10.48550/arXiv.2401.03680",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "126436ce06c4b2ace506579e5a94bf9949c590ab",
+            "title": "Decision-Oriented Learning for Future Power System Decision-Making under Uncertainty",
+            "url": "https://www.semanticscholar.org/paper/126436ce06c4b2ace506579e5a94bf9949c590ab",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": "2312.17640",
+            "authors": [
+                {
+                    "authorId": "2277213940",
+                    "name": "V'ictor Bucarey"
+                },
+                {
+                    "authorId": "2277200363",
+                    "name": "Sophia Calder'on"
+                },
+                {
+                    "authorId": "2277211731",
+                    "name": "Gonzalo Munoz"
+                },
+                {
+                    "authorId": "2329193343",
+                    "name": "Frederic Semet"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "4ef762599ce095a908c0adaed00b22bd3b18f02b",
+            "title": "Decision-focused predictions via pessimistic bilevel optimization: a computational study",
+            "url": "https://www.semanticscholar.org/paper/4ef762599ce095a908c0adaed00b22bd3b18f02b",
+            "venue": "",
+            "year": 2023
+        },
+        {
+            "arxivId": "2312.14836",
+            "authors": [
+                {
+                    "authorId": "2113388008",
+                    "name": "Augustin Parjadis"
+                },
+                {
+                    "authorId": "1907863",
+                    "name": "Quentin Cappart"
+                },
+                {
+                    "authorId": "1796375",
+                    "name": "B. Dilkina"
+                },
+                {
+                    "authorId": "40556661",
+                    "name": "Aaron Ferber"
+                },
+                {
+                    "authorId": "2249740725",
+                    "name": "Louis-Martin Rousseau"
+                }
+            ],
+            "doi": "10.48550/arXiv.2312.14836",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8b475f869c03c8f412afd3578a73482c77e8c2b8",
+            "title": "Learning Lagrangian Multipliers for the Travelling Salesman Problem",
+            "url": "https://www.semanticscholar.org/paper/8b475f869c03c8f412afd3578a73482c77e8c2b8",
+            "venue": "CP",
+            "year": 2023
+        },
+        {
+            "arxivId": "2312.14336",
+            "authors": [
+                {
+                    "authorId": "2261738675",
+                    "name": "Julia Briden"
+                },
+                {
+                    "authorId": "2276324819",
+                    "name": "Changrak Choi"
+                },
+                {
+                    "authorId": "2276200928",
+                    "name": "Kyongsik Yun"
+                },
+                {
+                    "authorId": "2261739016",
+                    "name": "Richard Linares"
+                },
+                {
+                    "authorId": "73774928",
+                    "name": "A. Cauligi"
+                }
+            ],
+            "doi": "10.13140/RG.2.2.35597.92646",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d8558136ca43c9c483f66acf13f99095cca2a231",
+            "title": "Constraint-Informed Learning for Warm Starting Trajectory Optimization",
+            "url": "https://www.semanticscholar.org/paper/d8558136ca43c9c483f66acf13f99095cca2a231",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": "2312.07718",
+            "authors": [
+                {
+                    "authorId": "2273932254",
+                    "name": "Bo Tang"
+                },
+                {
+                    "authorId": "2273927772",
+                    "name": "Elias B. Khalil"
+                }
+            ],
+            "doi": "10.48550/arXiv.2312.07718",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f7b4d13ae06c090c79b54acc68d3fe65f09f6800",
+            "title": "CaVE: A Cone-Aligned Approach for Fast Predict-then-optimize with Binary Linear Programs",
+            "url": "https://www.semanticscholar.org/paper/f7b4d13ae06c090c79b54acc68d3fe65f09f6800",
+            "venue": "CPAIOR",
+            "year": 2023
+        },
+        {
+            "arxivId": "2312.03492",
+            "authors": [
+                {
+                    "authorId": "2205033158",
+                    "name": "Kim van den Houten"
+                },
+                {
+                    "authorId": "2743835",
+                    "name": "D. Tax"
+                },
+                {
+                    "authorId": "2270915311",
+                    "name": "Esteban Freydell"
+                },
+                {
+                    "authorId": "2257217915",
+                    "name": "M. D. Weerdt"
+                }
+            ],
+            "doi": "10.48550/arXiv.2312.03492",
+            "intent": [
+                "background",
+                "result",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "883c011e6a1688892a6846746897b84a6ab31813",
+            "title": "Learning From Scenarios for Stochastic Repairable Scheduling",
+            "url": "https://www.semanticscholar.org/paper/883c011e6a1688892a6846746897b84a6ab31813",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": "2311.13087",
+            "authors": [
+                {
+                    "authorId": "2061150787",
+                    "name": "James Kotary"
+                },
+                {
+                    "authorId": "2189422579",
+                    "name": "Vincenzo Di Vito"
+                },
+                {
+                    "authorId": "2267727785",
+                    "name": "Jacob Christopher"
+                },
+                {
+                    "authorId": "72488634",
+                    "name": "P. V. Hentenryck"
+                },
+                {
+                    "authorId": "2141569789",
+                    "name": "Ferdinando Fioretto"
+                }
+            ],
+            "doi": "10.48550/arXiv.2311.13087",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "0fb95e739b3dfabb55811314653e397720bc780b",
+            "title": "Predict-Then-Optimize by Proxy: Learning Joint Models of Prediction and Optimization",
+            "url": "https://www.semanticscholar.org/paper/0fb95e739b3dfabb55811314653e397720bc780b",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": "2310.17368",
+            "authors": [
+                {
+                    "authorId": "103845642",
+                    "name": "Ali .Irfan Mahmutougullari"
+                },
+                {
+                    "authorId": "1834512",
+                    "name": "Tias Guns"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "9e727012538c28b45a8613633dcb33d4e316d54f",
+            "title": "Leveraging Contextual Information for Robustness in Vehicle Routing Problems",
+            "url": "https://www.semanticscholar.org/paper/9e727012538c28b45a8613633dcb33d4e316d54f",
+            "venue": "",
+            "year": 2023
+        },
+        {
+            "arxivId": "2310.07047",
+            "authors": [
+                {
+                    "authorId": "2257034694",
+                    "name": "Nuria G'omez-Vargas"
+                },
+                {
+                    "authorId": "2066112631",
+                    "name": "Sebasti\u00e1n Maldonado"
+                },
+                {
+                    "authorId": "1903479",
+                    "name": "Carla Vairetti"
+                }
+            ],
+            "doi": "10.48550/arXiv.2310.07047",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "eb14cb680810593ffdab66e7ddde4d1a2e31ee8f",
+            "title": "A predict-and-optimize approach to profit-driven churn prevention",
+            "url": "https://www.semanticscholar.org/paper/eb14cb680810593ffdab66e7ddde4d1a2e31ee8f",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": "2310.00571",
+            "authors": [
+                {
+                    "authorId": "2237944813",
+                    "name": "Yufan Zhang"
+                },
+                {
+                    "authorId": "2237803010",
+                    "name": "Honglin Wen"
+                },
+                {
+                    "authorId": "2172197115",
+                    "name": "Yuexin Bian"
+                },
+                {
+                    "authorId": "2237786766",
+                    "name": "Yuanyuan Shi"
+                }
+            ],
+            "doi": "10.48550/arXiv.2310.00571",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "b6f12d614d989297941201a2ea9178432a53a8a7",
+            "title": "Deriving Loss Function for Value-oriented Renewable Energy Forecasting",
+            "url": "https://www.semanticscholar.org/paper/b6f12d614d989297941201a2ea9178432a53a8a7",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": "2309.16792",
+            "authors": [
+                {
+                    "authorId": "2249535950",
+                    "name": "Vladimir Dvorkin"
+                }
+            ],
+            "doi": "10.48550/arXiv.2309.16792",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d2438bd939c779a020ff00a57275ee6dc220cb08",
+            "title": "Agent Coordination via Contextual Regression (AgentCONCUR) for Data Center Flexibility",
+            "url": "https://www.semanticscholar.org/paper/d2438bd939c779a020ff00a57275ee6dc220cb08",
+            "venue": "IEEE Transactions on Power Systems",
+            "year": 2023
+        },
+        {
+            "arxivId": "2309.00803",
+            "authors": [
+                {
+                    "authorId": "2237944813",
+                    "name": "Yufan Zhang"
+                },
+                {
+                    "authorId": "52531158",
+                    "name": "Mengshuo Jia"
+                },
+                {
+                    "authorId": "2237803010",
+                    "name": "Honglin Wen"
+                },
+                {
+                    "authorId": "2172197115",
+                    "name": "Yuexin Bian"
+                },
+                {
+                    "authorId": "2237786766",
+                    "name": "Yuanyuan Shi"
+                }
+            ],
+            "doi": "10.1109/tsg.2024.3503554",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "4603582eb80fa4a15880344dada15486563db67a",
+            "title": "Toward Value-Oriented Renewable Energy Forecasting: An Iterative Learning Approach",
+            "url": "https://www.semanticscholar.org/paper/4603582eb80fa4a15880344dada15486563db67a",
+            "venue": "IEEE Transactions on Smart Grid",
+            "year": 2023
+        },
+        {
+            "arxivId": "2307.05213",
+            "authors": [
+                {
+                    "authorId": "2067473448",
+                    "name": "Mattia Silvestri"
+                },
+                {
+                    "authorId": "2170216105",
+                    "name": "Senne Berden"
+                },
+                {
+                    "authorId": "73768412",
+                    "name": "Jayanta Mandi"
+                },
+                {
+                    "authorId": "103845642",
+                    "name": "Ali .Irfan Mahmutougullari"
+                },
+                {
+                    "authorId": "1587635783",
+                    "name": "Maxime Mulamba"
+                },
+                {
+                    "authorId": "35561300",
+                    "name": "A. D. Filippo"
+                },
+                {
+                    "authorId": "1834512",
+                    "name": "Tias Guns"
+                },
+                {
+                    "authorId": "35458675",
+                    "name": "M. Lombardi"
+                }
+            ],
+            "doi": "10.48550/arXiv.2307.05213",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9ed1393e23d20315d1a582eeafbd89bba630b29a",
+            "title": "Score Function Gradient Estimation to Widen the Applicability of Decision-Focused Learning",
+            "url": "https://www.semanticscholar.org/paper/9ed1393e23d20315d1a582eeafbd89bba630b29a",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": "2301.13395",
+            "authors": [
+                {
+                    "authorId": "144913918",
+                    "name": "Daniel Mckenzie"
+                },
+                {
+                    "authorId": "143745940",
+                    "name": "Samy Wu Fung"
+                },
+                {
+                    "authorId": "22998389",
+                    "name": "Howard Heaton"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "e3807ebdb28c020837afd688dad0e40acadc31ee",
+            "title": "Differentiating Through Integer Linear Programs with Quadratic Regularization and Davis-Yin Splitting",
+            "url": "https://www.semanticscholar.org/paper/e3807ebdb28c020837afd688dad0e40acadc31ee",
+            "venue": "",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2277213940",
+                    "name": "V'ictor Bucarey"
+                },
+                {
+                    "authorId": "2277200363",
+                    "name": "Sophia Calder'on"
+                },
+                {
+                    "authorId": "2277211731",
+                    "name": "Gonzalo Munoz"
+                },
+                {
+                    "authorId": "1713816",
+                    "name": "F. Semet"
+                }
+            ],
+            "doi": "10.48550/arXiv.2312.17640",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "5a09670f02ead2a891bd1c89be43df12d8f491dd",
+            "title": "Decision-focused predictions via pessimistic bilevel optimization: a computational study",
+            "url": "https://www.semanticscholar.org/paper/5a09670f02ead2a891bd1c89be43df12d8f491dd",
+            "venue": "CPAIOR",
+            "year": 2024
+        }
+    ],
+    "corpusId": 260155160,
+    "doi": "10.1613/jair.1.15320",
+    "fieldsOfStudy": [
+        "Computer Science",
+        "Mathematics"
+    ],
+    "influentialCitationCount": 2,
+    "isOpenAccess": true,
+    "isPublisherLicensed": true,
+    "is_open_access": true,
+    "is_publisher_licensed": true,
+    "numCitedBy": 32,
+    "numCiting": 130,
+    "paperId": "70a958f7123b3a15f19bdd98fd0bbcf622c9b30c",
+    "references": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2230414556",
+                    "name": "Dariush Wahdany"
+                },
+                {
+                    "authorId": "47611935",
+                    "name": "Carlo Schmitt"
+                },
+                {
+                    "authorId": "49975865",
+                    "name": "J. Cremer"
+                }
+            ],
+            "doi": "10.1016/j.epsr.2023.109384",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "77c3bc987d6680308bbe2f92a38b9c3ebaf2738f",
+            "title": "More than accuracy: end-to-end wind power forecasting that optimises the energy system",
+            "url": "https://www.semanticscholar.org/paper/77c3bc987d6680308bbe2f92a38b9c3ebaf2738f",
+            "venue": "Electric Power Systems Research",
+            "year": 2023
+        },
+        {
+            "arxivId": "2306.10374",
+            "authors": [
+                {
+                    "authorId": "103660937",
+                    "name": "Utsav Sadana"
+                },
+                {
+                    "authorId": "150008661",
+                    "name": "A. Chenreddy"
+                },
+                {
+                    "authorId": "3203751",
+                    "name": "E. Delage"
+                },
+                {
+                    "authorId": "2166785815",
+                    "name": "Alexandre Forel"
+                },
+                {
+                    "authorId": "35394395",
+                    "name": "Emma Frejinger"
+                },
+                {
+                    "authorId": "27855049",
+                    "name": "Thibaut Vidal"
+                }
+            ],
+            "doi": "10.48550/arXiv.2306.10374",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "03e83f6643cc0baf24273f4f851f8066bfa66bc9",
+            "title": "A Survey of Contextual Optimization Methods for Decision Making under Uncertainty",
+            "url": "https://www.semanticscholar.org/paper/03e83f6643cc0baf24273f4f851f8066bfa66bc9",
+            "venue": "Eur. J. Oper. Res.",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2249525446",
+                    "name": "Xuecheng Tian"
+                },
+                {
+                    "authorId": "2260399806",
+                    "name": "Ran Yan"
+                },
+                {
+                    "authorId": "2285571759",
+                    "name": "Yannick Liu"
+                },
+                {
+                    "authorId": "2237415733",
+                    "name": "Shuaian Wang"
+                }
+            ],
+            "doi": "10.1016/j.trb.2023.03.009",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "9f18f575a20e069e81e0487bb3d41205d24f54a7",
+            "title": "A smart predict-then-optimize method for targeted and cost-effective maritime transportation",
+            "url": "https://www.semanticscholar.org/paper/9f18f575a20e069e81e0487bb3d41205d24f54a7",
+            "venue": "Transportation Research Part B: Methodological",
+            "year": 2023
+        },
+        {
+            "arxivId": "2305.06584",
+            "authors": [
+                {
+                    "authorId": "2120863692",
+                    "name": "Mo Liu"
+                },
+                {
+                    "authorId": "3025797",
+                    "name": "Paul Grigas"
+                },
+                {
+                    "authorId": "2109278099",
+                    "name": "Heyuan Liu"
+                },
+                {
+                    "authorId": "2111292512",
+                    "name": "Z. Shen"
+                }
+            ],
+            "doi": "10.48550/arXiv.2305.06584",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "073ad766e2e0a01bcf805e658859e8bcd25edf9e",
+            "title": "Active Learning in the Predict-then-Optimize Framework: A Margin-Based Approach",
+            "url": "https://www.semanticscholar.org/paper/073ad766e2e0a01bcf805e658859e8bcd25edf9e",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": "2303.06698",
+            "authors": [
+                {
+                    "authorId": "2164161910",
+                    "name": "Xinyi Hu"
+                },
+                {
+                    "authorId": "10543361",
+                    "name": "Jasper C. H. Lee"
+                },
+                {
+                    "authorId": "1520031258",
+                    "name": "Jimmy Ho-man Lee"
+                }
+            ],
+            "doi": "10.48550/arXiv.2303.06698",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e86c08dbe7d5d647c9f911ad388122a310094909",
+            "title": "Branch & Learn with Post-hoc Correction for Predict+Optimize with Unknown Parameters in Constraints",
+            "url": "https://www.semanticscholar.org/paper/e86c08dbe7d5d647c9f911ad388122a310094909",
+            "venue": "CPAIOR",
+            "year": 2023
+        },
+        {
+            "arxivId": "2301.12047",
+            "authors": [
+                {
+                    "authorId": "2061150787",
+                    "name": "James Kotary"
+                },
+                {
+                    "authorId": "116996362",
+                    "name": "M. H. Dinh"
+                },
+                {
+                    "authorId": "2141569789",
+                    "name": "Ferdinando Fioretto"
+                }
+            ],
+            "doi": "10.24963/ijcai.2023/218",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c6ea437537fcea36fad436cc38d5dcba484443e8",
+            "title": "Backpropagation of Unrolled Solvers with Folded Optimization",
+            "url": "https://www.semanticscholar.org/paper/c6ea437537fcea36fad436cc38d5dcba484443e8",
+            "venue": "IJCAI",
+            "year": 2023
+        },
+        {
+            "arxivId": "2212.05403",
+            "authors": [
+                {
+                    "authorId": "2065095487",
+                    "name": "Bo Tang"
+                },
+                {
+                    "authorId": "35252180",
+                    "name": "Elias Boutros Khalil"
+                }
+            ],
+            "doi": "10.1007/978-3-031-44505-7_34",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "4e04f6bc1b22bcbb4d3777044d631aa05a280dab",
+            "title": "Multi-task Predict-then-Optimize",
+            "url": "https://www.semanticscholar.org/paper/4e04f6bc1b22bcbb4d3777044d631aa05a280dab",
+            "venue": "LION",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2118773103",
+                    "name": "Ying Yang"
+                },
+                {
+                    "authorId": "2055863655",
+                    "name": "Ran Yan"
+                },
+                {
+                    "authorId": "2113291111",
+                    "name": "Hans Wang"
+                }
+            ],
+            "doi": "10.3390/jmse10111696",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "ac34fe8cf3a4f9f4b7786f7a70a05da508e3d1b9",
+            "title": "Pairwise-Comparison Based Semi-SPO Method for Ship Inspection Planning in Maritime Transportation",
+            "url": "https://www.semanticscholar.org/paper/ac34fe8cf3a4f9f4b7786f7a70a05da508e3d1b9",
+            "venue": "Journal of Marine Science and Engineering",
+            "year": 2022
+        },
+        {
+            "arxivId": "2210.12547",
+            "authors": [
+                {
+                    "authorId": "40556661",
+                    "name": "Aaron Ferber"
+                },
+                {
+                    "authorId": "123366183",
+                    "name": "Taoan Huang"
+                },
+                {
+                    "authorId": "1759658",
+                    "name": "D. Zha"
+                },
+                {
+                    "authorId": "2057152858",
+                    "name": "M. Schubert"
+                },
+                {
+                    "authorId": "32163737",
+                    "name": "Benoit Steiner"
+                },
+                {
+                    "authorId": "1796375",
+                    "name": "B. Dilkina"
+                },
+                {
+                    "authorId": "1932187449",
+                    "name": "Yuandong Tian"
+                }
+            ],
+            "doi": "10.48550/arXiv.2210.12547",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "55c5b90b335ea6614a6a146182a92e48fc6c4c28",
+            "title": "SurCo: Learning Linear Surrogates For Combinatorial Nonlinear Optimization Problems",
+            "url": "https://www.semanticscholar.org/paper/55c5b90b335ea6614a6a146182a92e48fc6c4c28",
+            "venue": "ICML",
+            "year": 2022
+        },
+        {
+            "arxivId": "2210.09082",
+            "authors": [
+                {
+                    "authorId": "1392630568",
+                    "name": "Yatin Nandwani"
+                },
+                {
+                    "authorId": "3045126",
+                    "name": "R. Ranjan"
+                },
+                {
+                    "authorId": "2674444",
+                    "name": "Mausam"
+                },
+                {
+                    "authorId": "35108153",
+                    "name": "Parag Singla"
+                }
+            ],
+            "doi": "10.48550/arXiv.2210.09082",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "587450871bcc3f9211d2291037ed306e4c881988",
+            "title": "A Solver-Free Framework for Scalable Learning in Neural ILP Architectures",
+            "url": "https://www.semanticscholar.org/paper/587450871bcc3f9211d2291037ed306e4c881988",
+            "venue": "NeurIPS",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2003209965",
+                    "name": "D. Merch\u00e1n"
+                },
+                {
+                    "authorId": null,
+                    "name": "Jatin Arora"
+                },
+                {
+                    "authorId": "145152877",
+                    "name": "Julian Pachon"
+                },
+                {
+                    "authorId": "2185103052",
+                    "name": "Karthik Konduri"
+                },
+                {
+                    "authorId": "3412195",
+                    "name": "M. Winkenbach"
+                },
+                {
+                    "authorId": "2185122581",
+                    "name": "Steven Parks"
+                },
+                {
+                    "authorId": "2185120756",
+                    "name": "Joseph Noszek"
+                }
+            ],
+            "doi": "10.1287/trsc.2022.1173",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "89e8648c5c68bfd8e51622bf397811486ea85b84",
+            "title": "2021 Amazon Last Mile Routing Research Challenge: Data Set",
+            "url": "https://www.semanticscholar.org/paper/89e8648c5c68bfd8e51622bf397811486ea85b84",
+            "venue": "Transp. Sci.",
+            "year": 2022
+        },
+        {
+            "arxivId": "2209.03668",
+            "authors": [
+                {
+                    "authorId": "2164161910",
+                    "name": "Xinyi Hu"
+                },
+                {
+                    "authorId": "10543361",
+                    "name": "Jasper C. H. Lee"
+                },
+                {
+                    "authorId": "1520031258",
+                    "name": "Jimmy Ho-man Lee"
+                }
+            ],
+            "doi": "10.48550/arXiv.2209.03668",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e0c94f185099505025b5b2ee94aa567409cdaf19",
+            "title": "Predict+Optimize for Packing and Covering LPs with Unknown Parameters in Constraints",
+            "url": "https://www.semanticscholar.org/paper/e0c94f185099505025b5b2ee94aa567409cdaf19",
+            "venue": "AAAI",
+            "year": 2022
+        },
+        {
+            "arxivId": "2207.13513",
+            "authors": [
+                {
+                    "authorId": "1578118800",
+                    "name": "Guillaume Dalle"
+                },
+                {
+                    "authorId": "2179330211",
+                    "name": "L'eo Baty"
+                },
+                {
+                    "authorId": "2179330148",
+                    "name": "Louis Bouvier"
+                },
+                {
+                    "authorId": "2171487",
+                    "name": "Axel Parmentier"
+                }
+            ],
+            "doi": "10.48550/arXiv.2207.13513",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "531b67a3ca235fb04b194c9524f3c2b1e6f911ad",
+            "title": "Learning with Combinatorial Optimization Layers: a Probabilistic Approach",
+            "url": "https://www.semanticscholar.org/paper/531b67a3ca235fb04b194c9524f3c2b1e6f911ad",
+            "venue": "ArXiv",
+            "year": 2022
+        },
+        {
+            "arxivId": "2305.00362",
+            "authors": [
+                {
+                    "authorId": "121302581",
+                    "name": "Linwei Sang"
+                },
+                {
+                    "authorId": "33528828",
+                    "name": "Yinliang Xu"
+                },
+                {
+                    "authorId": "39007850",
+                    "name": "Huan Long"
+                },
+                {
+                    "authorId": "3305560",
+                    "name": "Qinran Hu"
+                },
+                {
+                    "authorId": "144254616",
+                    "name": "Hongbin Sun"
+                }
+            ],
+            "doi": "10.1109/tsg.2022.3166791",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "cef15d47e8751c8b431bf61cf493106d8211f4ac",
+            "title": "Electricity Price Prediction for Energy Storage System Arbitrage: A Decision-Focused Approach",
+            "url": "https://www.semanticscholar.org/paper/cef15d47e8751c8b431bf61cf493106d8211f4ac",
+            "venue": "IEEE Transactions on Smart Grid",
+            "year": 2022
+        },
+        {
+            "arxivId": "2206.14234",
+            "authors": [
+                {
+                    "authorId": "2065095487",
+                    "name": "Bo Tang"
+                },
+                {
+                    "authorId": "35252180",
+                    "name": "Elias Boutros Khalil"
+                }
+            ],
+            "doi": "10.48550/arXiv.2206.14234",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "c7970278b831150cb24613debd752ebe496081b2",
+            "title": "PyEPO: A PyTorch-based End-to-End Predict-then-Optimize Library for Linear and Integer Programming",
+            "url": "https://www.semanticscholar.org/paper/c7970278b831150cb24613debd752ebe496081b2",
+            "venue": "Math. Program. Comput.",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "8251355",
+                    "name": "Ali Ugur Guler"
+                },
+                {
+                    "authorId": "2198370",
+                    "name": "Emir Demirovic"
+                },
+                {
+                    "authorId": "145642632",
+                    "name": "Jeffrey Chan"
+                },
+                {
+                    "authorId": "2067720587",
+                    "name": "James Bailey"
+                },
+                {
+                    "authorId": "1688394",
+                    "name": "C. Leckie"
+                },
+                {
+                    "authorId": "2118607768",
+                    "name": "P. Stuckey"
+                }
+            ],
+            "doi": "10.1609/aaai.v36i4.20289",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "eb3ee0e0934965ec2113032d9ef00ff6e39766ac",
+            "title": "A Divide and Conquer Algorithm for Predict+Optimize with Non-convex Problems",
+            "url": "https://www.semanticscholar.org/paper/eb3ee0e0934965ec2113032d9ef00ff6e39766ac",
+            "venue": "AAAI",
+            "year": 2022
+        },
+        {
+            "arxivId": "2205.15213",
+            "authors": [
+                {
+                    "authorId": "9281906",
+                    "name": "Subham S. Sahoo"
+                },
+                {
+                    "authorId": "2050156597",
+                    "name": "Marin Vlastelica"
+                },
+                {
+                    "authorId": "1443432623",
+                    "name": "Anselm Paulus"
+                },
+                {
+                    "authorId": "153431278",
+                    "name": "V\u00edt Musil"
+                },
+                {
+                    "authorId": "145712106",
+                    "name": "Volodymyr Kuleshov"
+                },
+                {
+                    "authorId": "144247521",
+                    "name": "G. Martius"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b443a9c6f4c6ead57b03acdf8dc9a7bc0e12103c",
+            "title": "Backpropagation through Combinatorial Algorithms: Identity with Projection Works",
+            "url": "https://www.semanticscholar.org/paper/b443a9c6f4c6ead57b03acdf8dc9a7bc0e12103c",
+            "venue": "ICLR",
+            "year": 2022
+        },
+        {
+            "arxivId": "2205.01672",
+            "authors": [
+                {
+                    "authorId": "2164161910",
+                    "name": "Xinyi Hu"
+                },
+                {
+                    "authorId": "10543361",
+                    "name": "Jasper C. H. Lee"
+                },
+                {
+                    "authorId": "2108317140",
+                    "name": "Jimmy H. M. Lee"
+                },
+                {
+                    "authorId": "50996109",
+                    "name": "Allen Z. Zhong"
+                }
+            ],
+            "doi": "10.48550/arXiv.2205.01672",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "63554bf55c6a2235cca58488dbdf71cc32ac59a5",
+            "title": "Branch & Learn for Recursively and Iteratively Solvable Problems in Predict+Optimize",
+            "url": "https://www.semanticscholar.org/paper/63554bf55c6a2235cca58488dbdf71cc32ac59a5",
+            "venue": "NeurIPS",
+            "year": 2022
+        },
+        {
+            "arxivId": "2201.05702",
+            "authors": [
+                {
+                    "authorId": "11797271",
+                    "name": "Zhi Chai"
+                },
+                {
+                    "authorId": "1719290",
+                    "name": "Kai\u2010Kit Wong"
+                },
+                {
+                    "authorId": "49405901",
+                    "name": "K. Tong"
+                },
+                {
+                    "authorId": "2155251384",
+                    "name": "Yu Chen"
+                },
+                {
+                    "authorId": "1591139660",
+                    "name": "Yangyang Zhang"
+                }
+            ],
+            "doi": "10.1109/lcomm.2022.3152451",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "409d5e49710e34d96cc164897bc620710c07c092",
+            "title": "Port Selection for Fluid Antenna Systems",
+            "url": "https://www.semanticscholar.org/paper/409d5e49710e34d96cc164897bc620710c07c092",
+            "venue": "IEEE Communications Letters",
+            "year": 2022
+        },
+        {
+            "arxivId": "2112.03609",
+            "authors": [
+                {
+                    "authorId": "73768412",
+                    "name": "Jayanta Mandi"
+                },
+                {
+                    "authorId": "3402949",
+                    "name": "V\u00edctor Bucarey"
+                },
+                {
+                    "authorId": "2175276030",
+                    "name": "Maxime Mulamba Ke Tchomba"
+                },
+                {
+                    "authorId": "1834512",
+                    "name": "Tias Guns"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "d98be762a69fbe8eac21637de4b80a6ad91c09ec",
+            "title": "Decision-Focused Learning: Through the Lens of Learning to Rank",
+            "url": "https://www.semanticscholar.org/paper/d98be762a69fbe8eac21637de4b80a6ad91c09ec",
+            "venue": "ICML",
+            "year": 2021
+        },
+        {
+            "arxivId": "2111.10723",
+            "authors": [
+                {
+                    "authorId": "2061150787",
+                    "name": "James Kotary"
+                },
+                {
+                    "authorId": "2141569789",
+                    "name": "Ferdinando Fioretto"
+                },
+                {
+                    "authorId": "8388443",
+                    "name": "Pascal Van Hentenryck"
+                },
+                {
+                    "authorId": "9725200",
+                    "name": "Ziwei Zhu"
+                }
+            ],
+            "doi": "10.1145/3485447.3512247",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "51101c6cfee729b811cc7d16f72e49ae50b72522",
+            "title": "End-to-End Learning for Fair Ranking Systems",
+            "url": "https://www.semanticscholar.org/paper/51101c6cfee729b811cc7d16f72e49ae50b72522",
+            "venue": "WWW",
+            "year": 2021
+        },
+        {
+            "arxivId": "2108.08887",
+            "authors": [
+                {
+                    "authorId": "2109278099",
+                    "name": "Heyuan Liu"
+                },
+                {
+                    "authorId": "3025797",
+                    "name": "Paul Grigas"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "19e64148499c117dac65d5a1fbe2f0172c9c19ab",
+            "title": "Risk Bounds and Calibration for a Smart Predict-then-Optimize Method",
+            "url": "https://www.semanticscholar.org/paper/19e64148499c117dac65d5a1fbe2f0172c9c19ab",
+            "venue": "NeurIPS",
+            "year": 2021
+        },
+        {
+            "arxivId": "2108.04578",
+            "authors": [
+                {
+                    "authorId": "73768412",
+                    "name": "Jayanta Mandi"
+                },
+                {
+                    "authorId": "1388068437",
+                    "name": "Rocsildes Canoy"
+                },
+                {
+                    "authorId": "3402949",
+                    "name": "V\u00edctor Bucarey"
+                },
+                {
+                    "authorId": "1834512",
+                    "name": "Tias Guns"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "22be3a5666f9cd735b2c65af9277b7368dd48f76",
+            "title": "Data Driven VRP: A Neural Network Model to Learn Hidden Preferences for VRP",
+            "url": "https://www.semanticscholar.org/paper/22be3a5666f9cd735b2c65af9277b7368dd48f76",
+            "venue": "ArXiv",
+            "year": 2021
+        },
+        {
+            "arxivId": "2106.10349",
+            "authors": [
+                {
+                    "authorId": "145502083",
+                    "name": "Chris Cameron"
+                },
+                {
+                    "authorId": "32745519",
+                    "name": "Jason S. Hartford"
+                },
+                {
+                    "authorId": "2096627638",
+                    "name": "Taylor Lundy"
+                },
+                {
+                    "authorId": "1388404060",
+                    "name": "Kevin Leyton-Brown"
+                }
+            ],
+            "doi": "10.1609/aaai.v36i4.20284",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "381df0bd337f75cf5352be6c90103ef6ea4db9a7",
+            "title": "The Perils of Learning Before Optimizing",
+            "url": "https://www.semanticscholar.org/paper/381df0bd337f75cf5352be6c90103ef6ea4db9a7",
+            "venue": "AAAI",
+            "year": 2021
+        },
+        {
+            "arxivId": "2106.01798",
+            "authors": [
+                {
+                    "authorId": "2780262",
+                    "name": "Mathias Niepert"
+                },
+                {
+                    "authorId": "3051815",
+                    "name": "Pasquale Minervini"
+                },
+                {
+                    "authorId": "39883180",
+                    "name": "Luca Franceschi"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "c26018e5c31cddb44abf247c98de3482df8e8811",
+            "title": "Implicit MLE: Backpropagating Through Discrete Exponential Family Distributions",
+            "url": "https://www.semanticscholar.org/paper/c26018e5c31cddb44abf247c98de3482df8e8811",
+            "venue": "NeurIPS",
+            "year": 2021
+        },
+        {
+            "arxivId": "2105.02343",
+            "authors": [
+                {
+                    "authorId": "1443432623",
+                    "name": "Anselm Paulus"
+                },
+                {
+                    "authorId": "2065785622",
+                    "name": "Michal Rol'inek"
+                },
+                {
+                    "authorId": "153431278",
+                    "name": "V\u00edt Musil"
+                },
+                {
+                    "authorId": "1773498",
+                    "name": "Brandon Amos"
+                },
+                {
+                    "authorId": "144247521",
+                    "name": "G. Martius"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "995884b64f12fac87644d75c22ab045a21ff91b8",
+            "title": "CombOptNet: Fit the Right NP-Hard Problem by Learning Integer Programming Constraints",
+            "url": "https://www.semanticscholar.org/paper/995884b64f12fac87644d75c22ab045a21ff91b8",
+            "venue": "ICML",
+            "year": 2021
+        },
+        {
+            "arxivId": "2104.03059",
+            "authors": [
+                {
+                    "authorId": "51440515",
+                    "name": "Jean-Baptiste Cordonnier"
+                },
+                {
+                    "authorId": "32694028",
+                    "name": "Aravindh Mahendran"
+                },
+                {
+                    "authorId": "2841331",
+                    "name": "Alexey Dosovitskiy"
+                },
+                {
+                    "authorId": "3319373",
+                    "name": "Dirk Weissenborn"
+                },
+                {
+                    "authorId": "39328010",
+                    "name": "Jakob Uszkoreit"
+                },
+                {
+                    "authorId": "2465270",
+                    "name": "Thomas Unterthiner"
+                }
+            ],
+            "doi": "10.1109/CVPR46437.2021.00238",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "778a9ea322b8ef56c93f7f2aeb1402b54aa443fa",
+            "title": "Differentiable Patch Selection for Image Recognition",
+            "url": "https://www.semanticscholar.org/paper/778a9ea322b8ef56c93f7f2aeb1402b54aa443fa",
+            "venue": "2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2021
+        },
+        {
+            "arxivId": "2102.13273",
+            "authors": [
+                {
+                    "authorId": "2110142633",
+                    "name": "J. Garcia"
+                },
+                {
+                    "authorId": "26030002",
+                    "name": "A. Street"
+                },
+                {
+                    "authorId": "1403671025",
+                    "name": "Tito Homem-de-Mello"
+                },
+                {
+                    "authorId": "144735122",
+                    "name": "F. Mu\u00f1oz"
+                }
+            ],
+            "doi": "10.48550/arXiv.2102.13273",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "20920103c849888aaf094abfacc91f00e59cb004",
+            "title": "Application-Driven Learning: A Closed-Loop Prediction and Optimization Approach Applied to Dynamic Reserves and Demand Forecasting",
+            "url": "https://www.semanticscholar.org/paper/20920103c849888aaf094abfacc91f00e59cb004",
+            "venue": "ArXiv",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "50787486",
+                    "name": "Hongrui Chu"
+                },
+                {
+                    "authorId": "2000472298",
+                    "name": "Wensi Zhang"
+                },
+                {
+                    "authorId": "2066024867",
+                    "name": "P. Bai"
+                },
+                {
+                    "authorId": "2146296271",
+                    "name": "Yahong Chen"
+                }
+            ],
+            "doi": "10.1007/s40747-021-00293-1",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "5ab6f4210369f29855400ea7c3fa783906cb45c5",
+            "title": "Data-driven optimization for last-mile delivery",
+            "url": "https://www.semanticscholar.org/paper/5ab6f4210369f29855400ea7c3fa783906cb45c5",
+            "venue": "Complex & Intelligent Systems",
+            "year": 2021
+        },
+        {
+            "arxivId": "2011.05354",
+            "authors": [
+                {
+                    "authorId": "1587635783",
+                    "name": "Maxime Mulamba"
+                },
+                {
+                    "authorId": "73768412",
+                    "name": "Jayanta Mandi"
+                },
+                {
+                    "authorId": "1767359",
+                    "name": "Michelangelo Diligenti"
+                },
+                {
+                    "authorId": "35458675",
+                    "name": "M. Lombardi"
+                },
+                {
+                    "authorId": "3402949",
+                    "name": "V\u00edctor Bucarey"
+                },
+                {
+                    "authorId": "1834512",
+                    "name": "Tias Guns"
+                }
+            ],
+            "doi": "10.24963/ijcai.2021/390",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7ad25753c65f614aa7eb9998e4cee6f8d15c6222",
+            "title": "Contrastive Losses and Solution Caching for Predict-and-Optimize",
+            "url": "https://www.semanticscholar.org/paper/7ad25753c65f614aa7eb9998e4cee6f8d15c6222",
+            "venue": "IJCAI",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1719290",
+                    "name": "Kai\u2010Kit Wong"
+                },
+                {
+                    "authorId": "49405901",
+                    "name": "K. Tong"
+                },
+                {
+                    "authorId": "1591139660",
+                    "name": "Yangyang Zhang"
+                },
+                {
+                    "authorId": "3409817",
+                    "name": "Zhongbin Zheng"
+                }
+            ],
+            "doi": "10.1049/el.2020.2788",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "862d2c4b7fc079df9b0800594d21226789d373d1",
+            "title": "Fluid Antenna System for 6G: When Bruce Lee Inspires Wireless Communications",
+            "url": "https://www.semanticscholar.org/paper/862d2c4b7fc079df9b0800594d21226789d373d1",
+            "venue": "Electronics Letters",
+            "year": 2020
+        },
+        {
+            "arxivId": "2010.13943",
+            "authors": [
+                {
+                    "authorId": "73768412",
+                    "name": "Jayanta Mandi"
+                },
+                {
+                    "authorId": "1834512",
+                    "name": "Tias Guns"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "ebfac78688f8da2926b5ab09c52ed128f4917093",
+            "title": "Interior Point Solving for LP-based prediction+optimisation",
+            "url": "https://www.semanticscholar.org/paper/ebfac78688f8da2926b5ab09c52ed128f4917093",
+            "venue": "NeurIPS",
+            "year": 2020
+        },
+        {
+            "arxivId": "2006.08923",
+            "authors": [
+                {
+                    "authorId": "40960979",
+                    "name": "Yingcong Tan"
+                },
+                {
+                    "authorId": "145198726",
+                    "name": "Daria Terekhov"
+                },
+                {
+                    "authorId": "3203657",
+                    "name": "Andrew Delong"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "9ca18a24a99b115cb56fa37e8faeafd773c9a8d5",
+            "title": "Learning Linear Programs from Optimal Decisions",
+            "url": "https://www.semanticscholar.org/paper/9ca18a24a99b115cb56fa37e8faeafd773c9a8d5",
+            "venue": "NeurIPS",
+            "year": 2020
+        },
+        {
+            "arxivId": "2006.08063",
+            "authors": [
+                {
+                    "authorId": "1749527352",
+                    "name": "Max B. Paulus"
+                },
+                {
+                    "authorId": "30097914",
+                    "name": "Dami Choi"
+                },
+                {
+                    "authorId": "1725299",
+                    "name": "Daniel Tarlow"
+                },
+                {
+                    "authorId": "153243248",
+                    "name": "A. Krause"
+                },
+                {
+                    "authorId": "2772217",
+                    "name": "Chris J. Maddison"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "0b02da8ba8c024850d4ee3ca3d1b0bddf6bf54f1",
+            "title": "Gradient Estimation with Stochastic Softmax Tricks",
+            "url": "https://www.semanticscholar.org/paper/0b02da8ba8c024850d4ee3ca3d1b0bddf6bf54f1",
+            "venue": "NeurIPS",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2198370",
+                    "name": "Emir Demirovic"
+                },
+                {
+                    "authorId": "1682747",
+                    "name": "Peter James Stuckey"
+                },
+                {
+                    "authorId": "1834512",
+                    "name": "Tias Guns"
+                },
+                {
+                    "authorId": "145148600",
+                    "name": "J. Bailey"
+                },
+                {
+                    "authorId": "1688394",
+                    "name": "C. Leckie"
+                },
+                {
+                    "authorId": "1720142",
+                    "name": "K. Ramamohanarao"
+                },
+                {
+                    "authorId": "123784590",
+                    "name": "Jeffrey Chan"
+                }
+            ],
+            "doi": "10.1609/AAAI.V34I02.5502",
+            "intent": [
+                "background",
+                "result"
+            ],
+            "isInfluential": true,
+            "paperId": "8c0806dba91e67e3a68be85ac10d447dab767c0e",
+            "title": "Dynamic Programming for Predict+Optimise",
+            "url": "https://www.semanticscholar.org/paper/8c0806dba91e67e3a68be85ac10d447dab767c0e",
+            "venue": "AAAI",
+            "year": 2020
+        },
+        {
+            "arxivId": "2003.11657",
+            "authors": [
+                {
+                    "authorId": "2753055",
+                    "name": "Michal Rolinek"
+                },
+                {
+                    "authorId": "143657159",
+                    "name": "P. Swoboda"
+                },
+                {
+                    "authorId": "52306341",
+                    "name": "Dominik Zietlow"
+                },
+                {
+                    "authorId": "1443432623",
+                    "name": "Anselm Paulus"
+                },
+                {
+                    "authorId": "153431278",
+                    "name": "V\u00edt Musil"
+                },
+                {
+                    "authorId": "144247521",
+                    "name": "G. Martius"
+                }
+            ],
+            "doi": "10.1007/978-3-030-58604-1_25",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "aac513b5f9a8538807ea80b5e2d2403c691877c5",
+            "title": "Deep Graph Matching via Blackbox Differentiation of Combinatorial Solvers",
+            "url": "https://www.semanticscholar.org/paper/aac513b5f9a8538807ea80b5e2d2403c691877c5",
+            "venue": "ECCV",
+            "year": 2020
+        },
+        {
+            "arxivId": "2003.00360",
+            "authors": [
+                {
+                    "authorId": "1793173",
+                    "name": "Adam N. Elmachtoub"
+                },
+                {
+                    "authorId": "143965577",
+                    "name": "Jason Cheuk Nam Liang"
+                },
+                {
+                    "authorId": "134657587",
+                    "name": "Ryan McNellis"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "8ba58b54815e2ce0ad7857b8d591e7902405be99",
+            "title": "Decision Trees for Decision-Making under the Predict-then-Optimize Framework",
+            "url": "https://www.semanticscholar.org/paper/8ba58b54815e2ce0ad7857b8d591e7902405be99",
+            "venue": "ICML",
+            "year": 2020
+        },
+        {
+            "arxivId": "2002.08676",
+            "authors": [
+                {
+                    "authorId": "3169833",
+                    "name": "Quentin Berthet"
+                },
+                {
+                    "authorId": "27257992",
+                    "name": "Mathieu Blondel"
+                },
+                {
+                    "authorId": "2386687",
+                    "name": "O. Teboul"
+                },
+                {
+                    "authorId": "1711979",
+                    "name": "Marco Cuturi"
+                },
+                {
+                    "authorId": "152303545",
+                    "name": "Jean-Philippe Vert"
+                },
+                {
+                    "authorId": "144570279",
+                    "name": "F. Bach"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "3bfb5f836d944414c171f8f843eaf90cf5604243",
+            "title": "Learning with Differentiable Perturbed Optimizers",
+            "url": "https://www.semanticscholar.org/paper/3bfb5f836d944414c171f8f843eaf90cf5604243",
+            "venue": "ArXiv",
+            "year": 2020
+        },
+        {
+            "arxivId": "2002.08871",
+            "authors": [
+                {
+                    "authorId": "27257992",
+                    "name": "Mathieu Blondel"
+                },
+                {
+                    "authorId": "2386687",
+                    "name": "O. Teboul"
+                },
+                {
+                    "authorId": "3169833",
+                    "name": "Quentin Berthet"
+                },
+                {
+                    "authorId": "2941141",
+                    "name": "Josip Djolonga"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "5eef6a00d9eab08f3071ef19ea3e4b545421e8cb",
+            "title": "Fast Differentiable Sorting and Ranking",
+            "url": "https://www.semanticscholar.org/paper/5eef6a00d9eab08f3071ef19ea3e4b545421e8cb",
+            "venue": "ICML",
+            "year": 2020
+        },
+        {
+            "arxivId": "1912.10557",
+            "authors": [
+                {
+                    "authorId": "3346079",
+                    "name": "V. Monga"
+                },
+                {
+                    "authorId": "2912499",
+                    "name": "Yuelong Li"
+                },
+                {
+                    "authorId": "143783379",
+                    "name": "Yonina C. Eldar"
+                }
+            ],
+            "doi": "10.1109/MSP.2020.3016905",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "4f71dc75896529d8653d8ef0ccc72bcce2c80e18",
+            "title": "Algorithm Unrolling: Interpretable, Efficient Deep Learning for Signal and Image Processing",
+            "url": "https://www.semanticscholar.org/paper/4f71dc75896529d8653d8ef0ccc72bcce2c80e18",
+            "venue": "IEEE Signal Processing Magazine",
+            "year": 2019
+        },
+        {
+            "arxivId": "1912.03500",
+            "authors": [
+                {
+                    "authorId": "2753055",
+                    "name": "Michal Rolinek"
+                },
+                {
+                    "authorId": "153431278",
+                    "name": "V\u00edt Musil"
+                },
+                {
+                    "authorId": "1443432623",
+                    "name": "Anselm Paulus"
+                },
+                {
+                    "authorId": "2333423",
+                    "name": "P. MarinVlastelica"
+                },
+                {
+                    "authorId": "40899528",
+                    "name": "Claudio Michaelis"
+                },
+                {
+                    "authorId": "144247521",
+                    "name": "G. Martius"
+                }
+            ],
+            "doi": "10.1109/cvpr42600.2020.00764",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c8c09629d97e69e6ee880feb1608f61e6ed71f62",
+            "title": "Optimizing Rank-Based Metrics With Blackbox Differentiation",
+            "url": "https://www.semanticscholar.org/paper/c8c09629d97e69e6ee880feb1608f61e6ed71f62",
+            "venue": "2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2019
+        },
+        {
+            "arxivId": "1912.02175",
+            "authors": [
+                {
+                    "authorId": "2333423",
+                    "name": "P. MarinVlastelica"
+                },
+                {
+                    "authorId": "1443432623",
+                    "name": "Anselm Paulus"
+                },
+                {
+                    "authorId": "153431278",
+                    "name": "V\u00edt Musil"
+                },
+                {
+                    "authorId": "144247521",
+                    "name": "G. Martius"
+                },
+                {
+                    "authorId": "2753055",
+                    "name": "Michal Rolinek"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "2c86893951b76df8453f44b101e5cd2b55b69670",
+            "title": "Differentiation of Blackbox Combinatorial Solvers",
+            "url": "https://www.semanticscholar.org/paper/2c86893951b76df8453f44b101e5cd2b55b69670",
+            "venue": "ICLR",
+            "year": 2019
+        },
+        {
+            "arxivId": "1912.01703",
+            "authors": [
+                {
+                    "authorId": "3407277",
+                    "name": "Adam Paszke"
+                },
+                {
+                    "authorId": "39793298",
+                    "name": "Sam Gross"
+                },
+                {
+                    "authorId": "1403239967",
+                    "name": "Francisco Massa"
+                },
+                {
+                    "authorId": "1977806",
+                    "name": "Adam Lerer"
+                },
+                {
+                    "authorId": "2065251344",
+                    "name": "James Bradbury"
+                },
+                {
+                    "authorId": "114250963",
+                    "name": "Gregory Chanan"
+                },
+                {
+                    "authorId": "2059271276",
+                    "name": "Trevor Killeen"
+                },
+                {
+                    "authorId": "3370429",
+                    "name": "Zeming Lin"
+                },
+                {
+                    "authorId": "3365851",
+                    "name": "N. Gimelshein"
+                },
+                {
+                    "authorId": "3029482",
+                    "name": "L. Antiga"
+                },
+                {
+                    "authorId": "3050846",
+                    "name": "Alban Desmaison"
+                },
+                {
+                    "authorId": "1473151134",
+                    "name": "Andreas K\u00f6pf"
+                },
+                {
+                    "authorId": "2052812305",
+                    "name": "E. Yang"
+                },
+                {
+                    "authorId": "2375710",
+                    "name": "Zach DeVito"
+                },
+                {
+                    "authorId": "10707709",
+                    "name": "Martin Raison"
+                },
+                {
+                    "authorId": "41203992",
+                    "name": "Alykhan Tejani"
+                },
+                {
+                    "authorId": "22236100",
+                    "name": "Sasank Chilamkurthy"
+                },
+                {
+                    "authorId": "32163737",
+                    "name": "Benoit Steiner"
+                },
+                {
+                    "authorId": "152599430",
+                    "name": "Lu Fang"
+                },
+                {
+                    "authorId": "2113829116",
+                    "name": "Junjie Bai"
+                },
+                {
+                    "authorId": "2127604",
+                    "name": "Soumith Chintala"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "3c8a456509e6c0805354bd40a35e3f2dbf8069b1",
+            "title": "PyTorch: An Imperative Style, High-Performance Deep Learning Library",
+            "url": "https://www.semanticscholar.org/paper/3c8a456509e6c0805354bd40a35e3f2dbf8069b1",
+            "venue": "NeurIPS",
+            "year": 2019
+        },
+        {
+            "arxivId": "1911.10092",
+            "authors": [
+                {
+                    "authorId": "1429197422",
+                    "name": "Jaynta Mandi"
+                },
+                {
+                    "authorId": "2064289677",
+                    "name": "Emir Demirovi'c"
+                },
+                {
+                    "authorId": "1682747",
+                    "name": "Peter James Stuckey"
+                },
+                {
+                    "authorId": "1834512",
+                    "name": "Tias Guns"
+                }
+            ],
+            "doi": "10.1609/AAAI.V34I02.5521",
+            "intent": [
+                "background",
+                "result",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "80599bae560164d8474611bdecd074eee4530766",
+            "title": "Smart Predict-and-Optimize for Hard Combinatorial Optimization Problems",
+            "url": "https://www.semanticscholar.org/paper/80599bae560164d8474611bdecd074eee4530766",
+            "venue": "AAAI",
+            "year": 2019
+        },
+        {
+            "arxivId": "1910.12430",
+            "authors": [
+                {
+                    "authorId": "1945142",
+                    "name": "Akshay Agrawal"
+                },
+                {
+                    "authorId": "1773498",
+                    "name": "Brandon Amos"
+                },
+                {
+                    "authorId": "3379664",
+                    "name": "Shane T. Barratt"
+                },
+                {
+                    "authorId": "1843103",
+                    "name": "Stephen P. Boyd"
+                },
+                {
+                    "authorId": "2039713286",
+                    "name": "Steven Diamond"
+                },
+                {
+                    "authorId": "145116464",
+                    "name": "J. Z. Kolter"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "88e83776313effc1564044d7bf19972981815e3c",
+            "title": "Differentiable Convex Optimization Layers",
+            "url": "https://www.semanticscholar.org/paper/88e83776313effc1564044d7bf19972981815e3c",
+            "venue": "NeurIPS",
+            "year": 2019
+        },
+        {
+            "arxivId": "1909.10506",
+            "authors": [
+                {
+                    "authorId": "2396669",
+                    "name": "D. Gillick"
+                },
+                {
+                    "authorId": "144423003",
+                    "name": "Sayali Kulkarni"
+                },
+                {
+                    "authorId": "117867510",
+                    "name": "L. Lansing"
+                },
+                {
+                    "authorId": "3377551",
+                    "name": "Alessandro Presta"
+                },
+                {
+                    "authorId": "1387994164",
+                    "name": "Jason Baldridge"
+                },
+                {
+                    "authorId": "2042413",
+                    "name": "Eugene Ie"
+                },
+                {
+                    "authorId": "1405390891",
+                    "name": "Diego Garcia-Olano"
+                }
+            ],
+            "doi": "10.18653/v1/K19-1049",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "6b5cb3b85fb247256b264c2732916cf129015a92",
+            "title": "Learning Dense Representations for Entity Retrieval",
+            "url": "https://www.semanticscholar.org/paper/6b5cb3b85fb247256b264c2732916cf129015a92",
+            "venue": "CoNLL",
+            "year": 2019
+        },
+        {
+            "arxivId": "1907.05912",
+            "authors": [
+                {
+                    "authorId": "40556661",
+                    "name": "Aaron Ferber"
+                },
+                {
+                    "authorId": "38105796",
+                    "name": "Bryan Wilder"
+                },
+                {
+                    "authorId": "1796375",
+                    "name": "B. Dilkina"
+                },
+                {
+                    "authorId": "143736701",
+                    "name": "Milind Tambe"
+                }
+            ],
+            "doi": "10.1609/AAAI.V34I02.5509",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "844b679c6750887e4d767f38a31e17664108f2a6",
+            "title": "MIPaaL: Mixed Integer Program as a Layer",
+            "url": "https://www.semanticscholar.org/paper/844b679c6750887e4d767f38a31e17664108f2a6",
+            "venue": "AAAI",
+            "year": 2019
+        },
+        {
+            "arxivId": "1906.08707",
+            "authors": [
+                {
+                    "authorId": "1773498",
+                    "name": "Brandon Amos"
+                },
+                {
+                    "authorId": "145231047",
+                    "name": "V. Koltun"
+                },
+                {
+                    "authorId": "145116464",
+                    "name": "J. Z. Kolter"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "f4937d10b090ea21d9b6f54c7001a808e22d3d67",
+            "title": "The Limited Multi-Label Projection Layer",
+            "url": "https://www.semanticscholar.org/paper/f4937d10b090ea21d9b6f54c7001a808e22d3d67",
+            "venue": "ArXiv",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2198370",
+                    "name": "Emir Demirovic"
+                },
+                {
+                    "authorId": "1682747",
+                    "name": "Peter James Stuckey"
+                },
+                {
+                    "authorId": "145148600",
+                    "name": "J. Bailey"
+                },
+                {
+                    "authorId": "123784590",
+                    "name": "Jeffrey Chan"
+                },
+                {
+                    "authorId": "1688394",
+                    "name": "C. Leckie"
+                },
+                {
+                    "authorId": "1720142",
+                    "name": "K. Ramamohanarao"
+                },
+                {
+                    "authorId": "1834512",
+                    "name": "Tias Guns"
+                }
+            ],
+            "doi": "10.1007/978-3-030-19212-9_16",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "3062d6403cae638b7583488b3c44f3849bf092e1",
+            "title": "An Investigation into Prediction + Optimisation for the Knapsack Problem",
+            "url": "https://www.semanticscholar.org/paper/3062d6403cae638b7583488b3c44f3849bf092e1",
+            "venue": "CPAIOR",
+            "year": 2019
+        },
+        {
+            "arxivId": "1905.13732",
+            "authors": [
+                {
+                    "authorId": "38105796",
+                    "name": "Bryan Wilder"
+                },
+                {
+                    "authorId": "48926480",
+                    "name": "Eric Ewing"
+                },
+                {
+                    "authorId": "1796375",
+                    "name": "B. Dilkina"
+                },
+                {
+                    "authorId": "143736701",
+                    "name": "Milind Tambe"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "85eabcbfeb5a97990fbcddcc09a259dbdcf4f626",
+            "title": "End to end learning and optimization on graphs",
+            "url": "https://www.semanticscholar.org/paper/85eabcbfeb5a97990fbcddcc09a259dbdcf4f626",
+            "venue": "NeurIPS",
+            "year": 2019
+        },
+        {
+            "arxivId": "1905.12149",
+            "authors": [
+                {
+                    "authorId": "145980559",
+                    "name": "Po-Wei Wang"
+                },
+                {
+                    "authorId": "49698491",
+                    "name": "P. Donti"
+                },
+                {
+                    "authorId": "38105796",
+                    "name": "Bryan Wilder"
+                },
+                {
+                    "authorId": "117539586",
+                    "name": "Zico Kolter"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d3850595d3ae7c73e9488054c9b437f75511b569",
+            "title": "SATNet: Bridging deep learning and logical reasoning using a differentiable satisfiability solver",
+            "url": "https://www.semanticscholar.org/paper/d3850595d3ae7c73e9488054c9b437f75511b569",
+            "venue": "ICML",
+            "year": 2019
+        },
+        {
+            "arxivId": "1905.11488",
+            "authors": [
+                {
+                    "authorId": "122075608",
+                    "name": "Othman El Balghiti"
+                },
+                {
+                    "authorId": "1793173",
+                    "name": "Adam N. Elmachtoub"
+                },
+                {
+                    "authorId": "3025797",
+                    "name": "Paul Grigas"
+                },
+                {
+                    "authorId": "3064914",
+                    "name": "Ambuj Tewari"
+                }
+            ],
+            "doi": "10.1287/moor.2022.1330",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "d5a021b8d98998fcd98359bc9aaffddf747d4f04",
+            "title": "Generalization Bounds in the Predict-then-Optimize Framework",
+            "url": "https://www.semanticscholar.org/paper/d5a021b8d98998fcd98359bc9aaffddf747d4f04",
+            "venue": "NeurIPS",
+            "year": 2019
+        },
+        {
+            "arxivId": "1904.09043",
+            "authors": [
+                {
+                    "authorId": "1945142",
+                    "name": "Akshay Agrawal"
+                },
+                {
+                    "authorId": "3379664",
+                    "name": "Shane T. Barratt"
+                },
+                {
+                    "authorId": "1843103",
+                    "name": "Stephen P. Boyd"
+                },
+                {
+                    "authorId": "70848040",
+                    "name": "Enzo Busseti"
+                },
+                {
+                    "authorId": "2596978",
+                    "name": "W. M. Moursi"
+                }
+            ],
+            "doi": "10.23952/jano.1.2019.2.02",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "10158acb82d906a1839ff3e2416bae6197bf343b",
+            "title": "Differentiating through a cone program",
+            "url": "https://www.semanticscholar.org/paper/10158acb82d906a1839ff3e2416bae6197bf343b",
+            "venue": "Journal of Applied and Numerical Optimization",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "25161908",
+                    "name": "Julian Parsert"
+                },
+                {
+                    "authorId": "1784106",
+                    "name": "C. Kaliszyk"
+                }
+            ],
+            "doi": "10.1007/springerreference_60999",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "a9bbea5ba007f39afe95661e36d6b0f48229ad4d",
+            "title": "Linear Programming",
+            "url": "https://www.semanticscholar.org/paper/a9bbea5ba007f39afe95661e36d6b0f48229ad4d",
+            "venue": "Arch. Formal Proofs",
+            "year": 2019
+        },
+        {
+            "arxivId": "1812.00804",
+            "authors": [
+                {
+                    "authorId": "40960979",
+                    "name": "Yingcong Tan"
+                },
+                {
+                    "authorId": "3203657",
+                    "name": "Andrew Delong"
+                },
+                {
+                    "authorId": "145198726",
+                    "name": "Daria Terekhov"
+                }
+            ],
+            "doi": "10.1007/978-3-030-19212-9_36",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "bea105cf7b76ba6f53e89222ec747f8faf491f0e",
+            "title": "Deep Inverse Optimization",
+            "url": "https://www.semanticscholar.org/paper/bea105cf7b76ba6f53e89222ec747f8faf491f0e",
+            "venue": "CPAIOR",
+            "year": 2018
+        },
+        {
+            "arxivId": "1811.02157",
+            "authors": [
+                {
+                    "authorId": "70848040",
+                    "name": "Enzo Busseti"
+                },
+                {
+                    "authorId": "2596978",
+                    "name": "W. M. Moursi"
+                },
+                {
+                    "authorId": "1843103",
+                    "name": "Stephen P. Boyd"
+                }
+            ],
+            "doi": "10.1007/s10589-019-00122-9",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "3d064015066f90835689eee5b488b3caa56f08cb",
+            "title": "Solution refinement at regular points of conic problems",
+            "url": "https://www.semanticscholar.org/paper/3d064015066f90835689eee5b488b3caa56f08cb",
+            "venue": "Computational Optimization and Applications",
+            "year": 2018
+        },
+        {
+            "arxivId": "1809.05504",
+            "authors": [
+                {
+                    "authorId": "38105796",
+                    "name": "Bryan Wilder"
+                },
+                {
+                    "authorId": "1796375",
+                    "name": "B. Dilkina"
+                },
+                {
+                    "authorId": "143736701",
+                    "name": "Milind Tambe"
+                }
+            ],
+            "doi": "10.1609/AAAI.V33I01.33011658",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "015a9bec58a53f64c19a59fedea51c68d6a741f1",
+            "title": "Melding the Data-Decisions Pipeline: Decision-Focused Learning for Combinatorial Optimization",
+            "url": "https://www.semanticscholar.org/paper/015a9bec58a53f64c19a59fedea51c68d6a741f1",
+            "venue": "AAAI",
+            "year": 2018
+        },
+        {
+            "arxivId": "1803.08375",
+            "authors": [
+                {
+                    "authorId": "26412983",
+                    "name": "Abien Fred Agarap"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "b79e5e4622a95417deec313cd543617b19611bea",
+            "title": "Deep Learning using Rectified Linear Units (ReLU)",
+            "url": "https://www.semanticscholar.org/paper/b79e5e4622a95417deec313cd543617b19611bea",
+            "venue": "ArXiv",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2105765",
+                    "name": "Wuhua Hu"
+                },
+                {
+                    "authorId": "144442055",
+                    "name": "Ping Wang"
+                },
+                {
+                    "authorId": "33611078",
+                    "name": "H. Gooi"
+                }
+            ],
+            "doi": "10.1109/TSG.2016.2580575",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "46be2fcd1d8fe4092673944fd02ba1a39b6ed3d3",
+            "title": "Toward Optimal Energy Management of Microgrids via Robust Two-Stage Optimization",
+            "url": "https://www.semanticscholar.org/paper/46be2fcd1d8fe4092673944fd02ba1a39b6ed3d3",
+            "venue": "IEEE Transactions on Smart Grid",
+            "year": 2018
+        },
+        {
+            "arxivId": "1802.07281",
+            "authors": [
+                {
+                    "authorId": "2872310",
+                    "name": "Ashudeep Singh"
+                },
+                {
+                    "authorId": "1680188",
+                    "name": "T. Joachims"
+                }
+            ],
+            "doi": "10.1145/3219819.3220088",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "4d9998452e13136608a28946f43e2575023d1ccc",
+            "title": "Fairness of Exposure in Rankings",
+            "url": "https://www.semanticscholar.org/paper/4d9998452e13136608a28946f43e2575023d1ccc",
+            "venue": "KDD",
+            "year": 2018
+        },
+        {
+            "arxivId": "1710.08005",
+            "authors": [
+                {
+                    "authorId": "1793173",
+                    "name": "Adam N. Elmachtoub"
+                },
+                {
+                    "authorId": "3025797",
+                    "name": "Paul Grigas"
+                }
+            ],
+            "doi": "10.1287/MNSC.2020.3922",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "0eb3c110b1a42dc79a988f3a3e6f9a6c73a57cb0",
+            "title": "Smart \"Predict, then Optimize\"",
+            "url": "https://www.semanticscholar.org/paper/0eb3c110b1a42dc79a988f3a3e6f9a6c73a57cb0",
+            "venue": "Manag. Sci.",
+            "year": 2017
+        },
+        {
+            "arxivId": "1703.00443",
+            "authors": [
+                {
+                    "authorId": "1773498",
+                    "name": "Brandon Amos"
+                },
+                {
+                    "authorId": "145116464",
+                    "name": "J. Z. Kolter"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "result",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "0076b232181e4e5be58dce8354a813ad2bbf663a",
+            "title": "OptNet: Differentiable Optimization as a Layer in Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/0076b232181e4e5be58dce8354a813ad2bbf663a",
+            "venue": "ICML",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "49698491",
+                    "name": "P. Donti"
+                },
+                {
+                    "authorId": "145116464",
+                    "name": "J. Z. Kolter"
+                },
+                {
+                    "authorId": "1773498",
+                    "name": "Brandon Amos"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7b581c9ce200b031451f592478c7c34b5fc47898",
+            "title": "Task-based End-to-end Model Learning in Stochastic Optimization",
+            "url": "https://www.semanticscholar.org/paper/7b581c9ce200b031451f592478c7c34b5fc47898",
+            "venue": "NIPS",
+            "year": 2017
+        },
+        {
+            "arxivId": "1607.05447",
+            "authors": [
+                {
+                    "authorId": "145273587",
+                    "name": "Stephen Gould"
+                },
+                {
+                    "authorId": "1688071",
+                    "name": "Basura Fernando"
+                },
+                {
+                    "authorId": "2691929",
+                    "name": "A. Cherian"
+                },
+                {
+                    "authorId": "6965856",
+                    "name": "Peter Anderson"
+                },
+                {
+                    "authorId": "34871664",
+                    "name": "Rodrigo Santa Cruz"
+                },
+                {
+                    "authorId": "3438899",
+                    "name": "Edison Guo"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "46f281810693e7c4c9741817ce2ebe021cf4be04",
+            "title": "On Differentiating Parameterized Argmin and Argmax Problems with Application to Bi-level Optimization",
+            "url": "https://www.semanticscholar.org/paper/46f281810693e7c4c9741817ce2ebe021cf4be04",
+            "venue": "ArXiv",
+            "year": 2016
+        },
+        {
+            "arxivId": "1602.02068",
+            "authors": [
+                {
+                    "authorId": "145644643",
+                    "name": "Andr\u00e9 F. T. Martins"
+                },
+                {
+                    "authorId": "3394760",
+                    "name": "Ram\u00f3n Fern\u00e1ndez Astudillo"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c1e3a26fb88c6720f4e84b7118e6f2df7dc8efa3",
+            "title": "From Softmax to Sparsemax: A Sparse Model of Attention and Multi-Label Classification",
+            "url": "https://www.semanticscholar.org/paper/c1e3a26fb88c6720f4e84b7118e6f2df7dc8efa3",
+            "venue": "ICML",
+            "year": 2016
+        },
+        {
+            "arxivId": "1512.03385",
+            "authors": [
+                {
+                    "authorId": "39353098",
+                    "name": "Kaiming He"
+                },
+                {
+                    "authorId": "1771551",
+                    "name": "X. Zhang"
+                },
+                {
+                    "authorId": "3080683",
+                    "name": "Shaoqing Ren"
+                },
+                {
+                    "authorId": null,
+                    "name": "Jian Sun"
+                }
+            ],
+            "doi": "10.1109/cvpr.2016.90",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "2c03df8b48bf3fa39054345bafabfeff15bfd11d",
+            "title": "Deep Residual Learning for Image Recognition",
+            "url": "https://www.semanticscholar.org/paper/2c03df8b48bf3fa39054345bafabfeff15bfd11d",
+            "venue": "2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2015
+        },
+        {
+            "arxivId": "1502.05767",
+            "authors": [
+                {
+                    "authorId": "1739503",
+                    "name": "A. G. Baydin"
+                },
+                {
+                    "authorId": "1700974",
+                    "name": "Barak A. Pearlmutter"
+                },
+                {
+                    "authorId": "1767709",
+                    "name": "Alexey Radul"
+                },
+                {
+                    "authorId": "1737754",
+                    "name": "J. Siskind"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "643da4c4de1954daeac571a82367241db012a8bf",
+            "title": "Automatic differentiation in machine learning: a survey",
+            "url": "https://www.semanticscholar.org/paper/643da4c4de1954daeac571a82367241db012a8bf",
+            "venue": "J. Mach. Learn. Res.",
+            "year": 2015
+        },
+        {
+            "arxivId": "1412.6980",
+            "authors": [
+                {
+                    "authorId": "1726807",
+                    "name": "Diederik P. Kingma"
+                },
+                {
+                    "authorId": "2503659",
+                    "name": "Jimmy Ba"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "a6cb366736791bcccc5c8639de5a8f9636bf87e8",
+            "title": "Adam: A Method for Stochastic Optimization",
+            "url": "https://www.semanticscholar.org/paper/a6cb366736791bcccc5c8639de5a8f9636bf87e8",
+            "venue": "ICLR",
+            "year": 2014
+        },
+        {
+            "arxivId": "1412.6572",
+            "authors": [
+                {
+                    "authorId": "153440022",
+                    "name": "I. Goodfellow"
+                },
+                {
+                    "authorId": "1789737",
+                    "name": "Jonathon Shlens"
+                },
+                {
+                    "authorId": "2574060",
+                    "name": "Christian Szegedy"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "bee044c8e8903fb67523c1f8c105ab4718600cdb",
+            "title": "Explaining and Harnessing Adversarial Examples",
+            "url": "https://www.semanticscholar.org/paper/bee044c8e8903fb67523c1f8c105ab4718600cdb",
+            "venue": "ICLR",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "50399890",
+                    "name": "P. Toth"
+                },
+                {
+                    "authorId": "2101718",
+                    "name": "D. Vigo"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "189cd2973dceed7cd738fd4a5ef3d14da9ca16c3",
+            "title": "Vehicle Routing: Problems, Methods, and Applications, Second Edition",
+            "url": "https://www.semanticscholar.org/paper/189cd2973dceed7cd738fd4a5ef3d14da9ca16c3",
+            "venue": "",
+            "year": 2014
+        },
+        {
+            "arxivId": "1412.6515",
+            "authors": [
+                {
+                    "authorId": "153440022",
+                    "name": "I. Goodfellow"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "b321e8eca4dbf424a9e30dd938fb423786c90b76",
+            "title": "On distinguishability criteria for estimating generative models",
+            "url": "https://www.semanticscholar.org/paper/b321e8eca4dbf424a9e30dd938fb423786c90b76",
+            "venue": "ICLR",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2374112",
+                    "name": "Dagmar Kainm\u00fcller"
+                },
+                {
+                    "authorId": "1773294",
+                    "name": "Florian Jug"
+                },
+                {
+                    "authorId": "1756036",
+                    "name": "C. Rother"
+                },
+                {
+                    "authorId": "2145910",
+                    "name": "E. Myers"
+                }
+            ],
+            "doi": "10.1007/978-3-319-10404-1_11",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "40837440ff9e02e63755e457e4ba6e715706e52a",
+            "title": "Active Graph Matching for Automatic Joint Segmentation and Annotation of C. elegans",
+            "url": "https://www.semanticscholar.org/paper/40837440ff9e02e63755e457e4ba6e715706e52a",
+            "venue": "MICCAI",
+            "year": 2014
+        },
+        {
+            "arxivId": "1402.5481",
+            "authors": [
+                {
+                    "authorId": "1713217",
+                    "name": "D. Bertsimas"
+                },
+                {
+                    "authorId": "3174388",
+                    "name": "Nathan Kallus"
+                }
+            ],
+            "doi": "10.1287/MNSC.2018.3253",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "530200a92ffa13b8b1bbc305fc160d14e4d61864",
+            "title": "From Predictive to Prescriptive Analytics",
+            "url": "https://www.semanticscholar.org/paper/530200a92ffa13b8b1bbc305fc160d14e4d61864",
+            "venue": "Manag. Sci.",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1748523",
+                    "name": "Danilo Jimenez Rezende"
+                },
+                {
+                    "authorId": "14594344",
+                    "name": "S. Mohamed"
+                },
+                {
+                    "authorId": "1688276",
+                    "name": "Daan Wierstra"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "484ad17c926292fbe0d5211540832a8c8a8e958b",
+            "title": "Stochastic Backpropagation and Approximate Inference in Deep Generative Models",
+            "url": "https://www.semanticscholar.org/paper/484ad17c926292fbe0d5211540832a8c8a8e958b",
+            "venue": "ICML",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2421691",
+                    "name": "Po-Sen Huang"
+                },
+                {
+                    "authorId": "144137069",
+                    "name": "Xiaodong He"
+                },
+                {
+                    "authorId": "1800422",
+                    "name": "Jianfeng Gao"
+                },
+                {
+                    "authorId": "144718788",
+                    "name": "L. Deng"
+                },
+                {
+                    "authorId": "1723644",
+                    "name": "A. Acero"
+                },
+                {
+                    "authorId": "46819684",
+                    "name": "Larry Heck"
+                }
+            ],
+            "doi": "10.1145/2505515.2505665",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "fdb813d8b927bdd21ae1858cafa6c34b66a36268",
+            "title": "Learning deep structured semantic models for web search using clickthrough data",
+            "url": "https://www.semanticscholar.org/paper/fdb813d8b927bdd21ae1858cafa6c34b66a36268",
+            "venue": "CIKM",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2203428",
+                    "name": "Georgiana Ifrim"
+                },
+                {
+                    "authorId": "1396410265",
+                    "name": "B. O\u2019Sullivan"
+                },
+                {
+                    "authorId": "2279402780",
+                    "name": "Helmut Simonis"
+                }
+            ],
+            "doi": "10.1007/978-3-642-33558-7_68",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "80e113ceba031c9cdcdb85b0a21111054d667aaa",
+            "title": "Properties of Energy-Price Forecasts for Scheduling",
+            "url": "https://www.semanticscholar.org/paper/80e113ceba031c9cdcdb85b0a21111054d667aaa",
+            "venue": "CP",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "79854564",
+                    "name": "Lia Purpura"
+                }
+            ],
+            "doi": "10.1353/ect.2010.0009",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "f1979f7ada6b380495f67db3f882876bf1ca203c",
+            "title": "On Tools",
+            "url": "https://www.semanticscholar.org/paper/f1979f7ada6b380495f67db3f882876bf1ca203c",
+            "venue": "",
+            "year": 2012
+        },
+        {
+            "arxivId": "1206.6426",
+            "authors": [
+                {
+                    "authorId": "1714004",
+                    "name": "A. Mnih"
+                },
+                {
+                    "authorId": "1725303",
+                    "name": "Y. Teh"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "5b0d644f5c4b9880cbaf79932c0a4fa98996f068",
+            "title": "A fast and simple algorithm for training neural probabilistic language models",
+            "url": "https://www.semanticscholar.org/paper/5b0d644f5c4b9880cbaf79932c0a4fa98996f068",
+            "venue": "ICML",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1722101",
+                    "name": "Justin Domke"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "5b0a44014c24f9b584904bf223530a3b9fa9853f",
+            "title": "Generic Methods for Optimization-Based Modeling",
+            "url": "https://www.semanticscholar.org/paper/5b0a44014c24f9b584904bf223530a3b9fa9853f",
+            "venue": "AISTATS",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2776496",
+                    "name": "G. Papandreou"
+                },
+                {
+                    "authorId": "145081362",
+                    "name": "A. Yuille"
+                }
+            ],
+            "doi": "10.1109/ICCV.2011.6126242",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "4474a3b3d3ab9238dbdd3baa48c40f423e245a8b",
+            "title": "Perturb-and-MAP random fields: Using discrete optimization to learn and sample from energy models",
+            "url": "https://www.semanticscholar.org/paper/4474a3b3d3ab9238dbdd3baa48c40f423e245a8b",
+            "venue": "2011 International Conference on Computer Vision",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2388416",
+                    "name": "Sebastian Nowozin"
+                },
+                {
+                    "authorId": "1787591",
+                    "name": "Christoph H. Lampert"
+                }
+            ],
+            "doi": "10.1561/0600000033",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "916ad37eb897b3858141874e290e20eae5076f5b",
+            "title": "Structured Learning and Prediction in Computer Vision",
+            "url": "https://www.semanticscholar.org/paper/916ad37eb897b3858141874e290e20eae5076f5b",
+            "venue": "Found. Trends Comput. Graph. Vis.",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2093783066",
+                    "name": "Sanyogita Lakhera"
+                },
+                {
+                    "authorId": "1729535",
+                    "name": "U. Shanbhag"
+                },
+                {
+                    "authorId": "145217349",
+                    "name": "M. McInerney"
+                }
+            ],
+            "doi": "10.1016/J.IJEPES.2010.08.020",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c56936b9d3944c91c38e7510e0b57cbbf56121fc",
+            "title": "Approximating electrical distribution networks via mixed-integer nonlinear programming",
+            "url": "https://www.semanticscholar.org/paper/c56936b9d3944c91c38e7510e0b57cbbf56121fc",
+            "venue": "",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1722101",
+                    "name": "Justin Domke"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "1648d93efa92b635b666924cdb400d33fdb5178f",
+            "title": "Implicit Differentiation by Perturbation",
+            "url": "https://www.semanticscholar.org/paper/1648d93efa92b635b666924cdb400d33fdb5178f",
+            "venue": "NIPS",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3203751",
+                    "name": "E. Delage"
+                },
+                {
+                    "authorId": "2278018156",
+                    "name": "Yinyu Ye"
+                }
+            ],
+            "doi": "10.1287/OPRE.1090.0741",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8d56d4bc69a8c562434b9a129542bb79e9d6f1d6",
+            "title": "Distributionally Robust Optimization Under Moment Uncertainty with Application to Data-Driven Problems",
+            "url": "https://www.semanticscholar.org/paper/8d56d4bc69a8c562434b9a129542bb79e9d6f1d6",
+            "venue": "Oper. Res.",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145992652",
+                    "name": "Michael U Gutmann"
+                },
+                {
+                    "authorId": "1791548",
+                    "name": "Aapo Hyv\u00e4rinen"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "e3ce36b9deb47aa6bb2aa19c4bfa71283b505025",
+            "title": "Noise-contrastive estimation: A new estimation principle for unnormalized statistical models",
+            "url": "https://www.semanticscholar.org/paper/e3ce36b9deb47aa6bb2aa19c4bfa71283b505025",
+            "venue": "AISTATS",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1736370",
+                    "name": "D. Koller"
+                },
+                {
+                    "authorId": "50785579",
+                    "name": "N. Friedman"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "36eb6fea39ce06e2807f074fa3d5e79ed0f2bcef",
+            "title": "Probabilistic Graphical Models - Principles and Techniques",
+            "url": "https://www.semanticscholar.org/paper/36eb6fea39ce06e2807f074fa3d5e79ed0f2bcef",
+            "venue": "",
+            "year": 2009
+        },
+        {
+            "arxivId": "0901.3988",
+            "authors": [
+                {
+                    "authorId": "48861660",
+                    "name": "H. Zou"
+                },
+                {
+                    "authorId": "115816494",
+                    "name": "Ji Zhu"
+                },
+                {
+                    "authorId": "1784682",
+                    "name": "T. Hastie"
+                }
+            ],
+            "doi": "10.1214/08-AOAS198",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "bbedf3792e5baf10febf6c4e4528e586a8c152dc",
+            "title": "NEW MULTICATEGORY BOOSTING ALGORITHMS BASED ON MULTICATEGORY FISHER-CONSISTENT LOSSES.",
+            "url": "https://www.semanticscholar.org/paper/bbedf3792e5baf10febf6c4e4528e586a8c152dc",
+            "venue": "The annals of applied statistics",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "40655309",
+                    "name": "Prithviraj Sen"
+                },
+                {
+                    "authorId": "1686834",
+                    "name": "Galileo Namata"
+                },
+                {
+                    "authorId": "2696727",
+                    "name": "M. Bilgic"
+                },
+                {
+                    "authorId": "1746034",
+                    "name": "L. Getoor"
+                },
+                {
+                    "authorId": "153701431",
+                    "name": "Brian Gallagher"
+                },
+                {
+                    "authorId": "1397398770",
+                    "name": "Tina Eliassi-Rad"
+                }
+            ],
+            "doi": "10.1201/b17320-16",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "43d2ed5c3c55c1100450cd74dc1031afa24d37b2",
+            "title": "Collective Classification in Network Data",
+            "url": "https://www.semanticscholar.org/paper/43d2ed5c3c55c1100450cd74dc1031afa24d37b2",
+            "venue": "AI Mag.",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2275821157",
+                    "name": "Zhe Cao"
+                },
+                {
+                    "authorId": "2265984980",
+                    "name": "Tao Qin"
+                },
+                {
+                    "authorId": "2256760771",
+                    "name": "Tie-Yan Liu"
+                },
+                {
+                    "authorId": "2257249370",
+                    "name": "Ming-Feng Tsai"
+                },
+                {
+                    "authorId": "2265994866",
+                    "name": "Hang Li"
+                }
+            ],
+            "doi": "10.1145/1273496.1273513",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "db196fd70f0b54d72aedc75bd74c9b2f826925d7",
+            "title": "Learning to rank: from pairwise approach to listwise approach",
+            "url": "https://www.semanticscholar.org/paper/db196fd70f0b54d72aedc75bd74c9b2f826925d7",
+            "venue": "ICML '07",
+            "year": 2007
+        },
+        {
+            "arxivId": "math/0702683",
+            "authors": [
+                {
+                    "authorId": "3226094",
+                    "name": "P. Massart"
+                },
+                {
+                    "authorId": "1389955574",
+                    "name": "'Elodie N'ed'elec"
+                }
+            ],
+            "doi": "10.1214/009053606000000786",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "9cf78d8f2e124a756b7697c534340637c80dfd80",
+            "title": "Risk bounds for statistical learning",
+            "url": "https://www.semanticscholar.org/paper/9cf78d8f2e124a756b7697c534340637c80dfd80",
+            "venue": "",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2185743",
+                    "name": "David Pisinger"
+                }
+            ],
+            "doi": "10.1016/j.cor.2004.03.002",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8cbd6bbedef61786e17677ce72527b291519273e",
+            "title": "Where are the hard knapsack problems?",
+            "url": "https://www.semanticscholar.org/paper/8cbd6bbedef61786e17677ce72527b291519273e",
+            "venue": "Comput. Oper. Res.",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2109594502",
+                    "name": "Seongmoon Kim"
+                },
+                {
+                    "authorId": "2150521719",
+                    "name": "M. Lewis"
+                },
+                {
+                    "authorId": "1720311",
+                    "name": "C. White"
+                }
+            ],
+            "doi": "10.1109/TITS.2005.848362",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "663eab19939ff5becaa0a062550859238d626699",
+            "title": "Optimal vehicle routing with real-time traffic information",
+            "url": "https://www.semanticscholar.org/paper/663eab19939ff5becaa0a062550859238d626699",
+            "venue": "IEEE Transactions on Intelligent Transportation Systems",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1700275",
+                    "name": "N. Sahinidis"
+                }
+            ],
+            "doi": "10.1016/j.compchemeng.2003.09.017",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b1d477e292cd2cd15eebf3dfdf879698099f2de9",
+            "title": "Optimization under uncertainty: state-of-the-art and opportunities",
+            "url": "https://www.semanticscholar.org/paper/b1d477e292cd2cd15eebf3dfdf879698099f2de9",
+            "venue": "Comput. Chem. Eng.",
+            "year": 2004
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2088479",
+                    "name": "Lorenzo Garlappi"
+                },
+                {
+                    "authorId": "144295939",
+                    "name": "Tan Wang"
+                },
+                {
+                    "authorId": "39116899",
+                    "name": "Raman Uppal"
+                }
+            ],
+            "doi": "10.2139/ssrn.671981",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d6fb4e03e84f3f096a0c3ed0ecbadfedb8c04a79",
+            "title": "Portfolio Selection with Parameter and Model Uncertainty: A Multi-Prior Approach",
+            "url": "https://www.semanticscholar.org/paper/d6fb4e03e84f3f096a0c3ed0ecbadfedb8c04a79",
+            "venue": "",
+            "year": 2004
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "98811292",
+                    "name": "Baoding Liu"
+                }
+            ],
+            "doi": "10.1007/978-3-540-89484-1",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2e772ea12b613cf1d9fb3a8e2266c05feefce175",
+            "title": "Theory and Practice of Uncertain Programming",
+            "url": "https://www.semanticscholar.org/paper/2e772ea12b613cf1d9fb3a8e2266c05feefce175",
+            "venue": "Studies in Fuzziness and Soft Computing",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1680188",
+                    "name": "T. Joachims"
+                }
+            ],
+            "doi": "10.1145/775047.775067",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "cfd4259d305a00f13d5f08841230389f61322422",
+            "title": "Optimizing search engines using clickthrough data",
+            "url": "https://www.semanticscholar.org/paper/cfd4259d305a00f13d5f08841230389f61322422",
+            "venue": "KDD",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "50560492",
+                    "name": "V. Vapnik"
+                }
+            ],
+            "doi": "10.1109/72.788640",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "4609f6bdc3beab00c9beceaa12dd8101fefe6f1c",
+            "title": "An overview of statistical learning theory",
+            "url": "https://www.semanticscholar.org/paper/4609f6bdc3beab00c9beceaa12dd8101fefe6f1c",
+            "venue": "IEEE Trans. Neural Networks",
+            "year": 1999
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2269883827",
+                    "name": "Philip Barker"
+                }
+            ],
+            "doi": "10.1016/0952-1976(93)90045-Y",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "8861608e6c6b42f8883aec62b98997477229eeb8",
+            "title": "Foundations of artificial intelligence",
+            "url": "https://www.semanticscholar.org/paper/8861608e6c6b42f8883aec62b98997477229eeb8",
+            "venue": "",
+            "year": 1993
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1398951619",
+                    "name": "O. Barndorff-Nielsen"
+                }
+            ],
+            "doi": "10.2307/1403156",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "90c05a30cd36269b90d772ca35471f823d4de057",
+            "title": "Information and Exponential Families in Statistical Theory",
+            "url": "https://www.semanticscholar.org/paper/90c05a30cd36269b90d772ca35471f823d4de057",
+            "venue": "",
+            "year": 1980
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3234559",
+                    "name": "E. Dijkstra"
+                }
+            ],
+            "doi": "10.1145/3544585.3544600",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "45786063578e814444b8247028970758bbbd0488",
+            "title": "A note on two problems in connexion with graphs",
+            "url": "https://www.semanticscholar.org/paper/45786063578e814444b8247028970758bbbd0488",
+            "venue": "Numerische Mathematik",
+            "year": 1959
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "40556661",
+                    "name": "Aaron Ferber"
+                },
+                {
+                    "authorId": "2070155821",
+                    "name": "E. Griffin"
+                },
+                {
+                    "authorId": "1796375",
+                    "name": "B. Dilkina"
+                },
+                {
+                    "authorId": "39189434",
+                    "name": "B. Keskin"
+                },
+                {
+                    "authorId": "37023115",
+                    "name": "Meredith L. Gore"
+                }
+            ],
+            "doi": "10.1007/978-3-031-33271-5_30",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "7a45eb71b93e2a064ec56b54c552e85d6285a8f5",
+            "title": "Predicting Wildlife Trafficking Routes with Differentiable Shortest Paths",
+            "url": "https://www.semanticscholar.org/paper/7a45eb71b93e2a064ec56b54c552e85d6285a8f5",
+            "venue": "CPAIOR",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1793173",
+                    "name": "Adam N. Elmachtoub"
+                },
+                {
+                    "authorId": "49893525",
+                    "name": "H. Lam"
+                },
+                {
+                    "authorId": "2143779155",
+                    "name": "Haofeng Zhang"
+                },
+                {
+                    "authorId": "2140037078",
+                    "name": "Yunfan Zhao"
+                }
+            ],
+            "doi": "10.48550/arXiv.2304.06833",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "e54ecb6e405c4e374759592a50d366e1b8e413e8",
+            "title": "Estimate-Then-Optimize Versus Integrated-Estimation-Optimization: A Stochastic Dominance Perspective",
+            "url": "https://www.semanticscholar.org/paper/e54ecb6e405c4e374759592a50d366e1b8e413e8",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2008700278",
+                    "name": "Sonja Johnson-Yu"
+                },
+                {
+                    "authorId": "1557365681",
+                    "name": "Kai Wang"
+                },
+                {
+                    "authorId": "7233152",
+                    "name": "J. Finocchiaro"
+                },
+                {
+                    "authorId": "2052769644",
+                    "name": "A. Taneja"
+                },
+                {
+                    "authorId": "1965937258",
+                    "name": "M. Tambe"
+                }
+            ],
+            "doi": "10.5555/3545946.3599119",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "72502d85fc29fe51dd92299311b6618890fa4b82",
+            "title": "Modeling Robustness in Decision-Focused Learning as a Stackelberg Game",
+            "url": "https://www.semanticscholar.org/paper/72502d85fc29fe51dd92299311b6618890fa4b82",
+            "venue": "AAMAS",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2189739275",
+                    "name": "S. Kinsey"
+                },
+                {
+                    "authorId": "32908766",
+                    "name": "Wong Wai Tuck"
+                },
+                {
+                    "authorId": "2370629",
+                    "name": "Arunesh Sinha"
+                },
+                {
+                    "authorId": "49035026",
+                    "name": "T. Nguyen"
+                }
+            ],
+            "doi": "10.1007/978-3-031-26369-9_12",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "082e1d19bbc494bc05f1d07c8c5007d280488832",
+            "title": "An Exploration of Poisoning Attacks on Data-Based Decision Making",
+            "url": "https://www.semanticscholar.org/paper/082e1d19bbc494bc05f1d07c8c5007d280488832",
+            "venue": "GameSec",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2633197",
+                    "name": "Jihwan Jeong"
+                },
+                {
+                    "authorId": "92995961",
+                    "name": "Parth Jaggi"
+                },
+                {
+                    "authorId": "2056980614",
+                    "name": "A. Butler"
+                },
+                {
+                    "authorId": "1732536",
+                    "name": "S. Sanner"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "4338a1eca8610a8306b5df5f68266fe2a4531aa3",
+            "title": "An Exact Symbolic Reduction of Linear Smart Predict+Optimize to Mixed Integer Linear Programming",
+            "url": "https://www.semanticscholar.org/paper/4338a1eca8610a8306b5df5f68266fe2a4531aa3",
+            "venue": "ICML",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2112398330",
+                    "name": "Sanket Shah"
+                },
+                {
+                    "authorId": "38105796",
+                    "name": "Bryan Wilder"
+                },
+                {
+                    "authorId": "49092378",
+                    "name": "A. Perrault"
+                },
+                {
+                    "authorId": "1965937258",
+                    "name": "M. Tambe"
+                },
+                {
+                    "authorId": "1557365681",
+                    "name": "Kai Wang"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f337d361842f2cb36ff193e61164aeed08455b69",
+            "title": "Decision-Focused Learning without Decision-Making: Learning Locally Optimized Decision Losses",
+            "url": "https://www.semanticscholar.org/paper/f337d361842f2cb36ff193e61164aeed08455b69",
+            "venue": "NeurIPS",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1557365681",
+                    "name": "Kai Wang"
+                },
+                {
+                    "authorId": "2112398330",
+                    "name": "Sanket Shah"
+                },
+                {
+                    "authorId": "39674336",
+                    "name": "Haipeng Chen"
+                },
+                {
+                    "authorId": "49092378",
+                    "name": "A. Perrault"
+                },
+                {
+                    "authorId": "1388372395",
+                    "name": "F. Doshi-Velez"
+                },
+                {
+                    "authorId": "1965937258",
+                    "name": "M. Tambe"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "31a5dfbc8c116399268c60f907905ab908692c2f",
+            "title": "Learning MDPs from Features: Predict-Then-Optimize for Sequential Decision Making by Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/31a5dfbc8c116399268c60f907905ab908692c2f",
+            "venue": "NeurIPS",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2050194805",
+                    "name": "Takuya Konishi"
+                },
+                {
+                    "authorId": "1710570",
+                    "name": "Takuro Fukunaga"
+                }
+            ],
+            "doi": "10.1007/978-3-030-67664-3_12",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "8a4b10634c999c59fa66cd36c714d9febcb81c99",
+            "title": "End-to-End Learning for Prediction and Optimization with Gradient Boosting",
+            "url": "https://www.semanticscholar.org/paper/8a4b10634c999c59fa66cd36c714d9febcb81c99",
+            "venue": "ECML/PKDD",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "39848341",
+                    "name": "Romain Lopez"
+                },
+                {
+                    "authorId": "1441878314",
+                    "name": "Pierre Boyeau"
+                },
+                {
+                    "authorId": "2163873",
+                    "name": "N. Yosef"
+                },
+                {
+                    "authorId": "1694621",
+                    "name": "Michael I. Jordan"
+                },
+                {
+                    "authorId": "39967607",
+                    "name": "J. Regier"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "ef4f5a50837a7c1b3e87b9300ffc7ba00d461a0f",
+            "title": "AUTO-ENCODING VARIATIONAL BAYES",
+            "url": "https://www.semanticscholar.org/paper/ef4f5a50837a7c1b3e87b9300ffc7ba00d461a0f",
+            "venue": "",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "40989688",
+                    "name": "D. Hertog"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "98c09b4e4069ee044e71a1bebb5177a43b23cb45",
+            "title": "Bridging the gap between predictive and prescriptive analytics-new optimization methodology needed",
+            "url": "https://www.semanticscholar.org/paper/98c09b4e4069ee044e71a1bebb5177a43b23cb45",
+            "venue": "",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2469389",
+                    "name": "Marijn J. H. Heule"
+                },
+                {
+                    "authorId": "1790450",
+                    "name": "Armin Biere"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c5bd9c1b75b3b2616777a2f76bb2e8e46cff38f1",
+            "title": "Satis\ufb01ability Solvers",
+            "url": "https://www.semanticscholar.org/paper/c5bd9c1b75b3b2616777a2f76bb2e8e46cff38f1",
+            "venue": "",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1717452",
+                    "name": "Burr Settles"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "818826f356444f3daa3447755bf63f171f39ec47",
+            "title": "Active Learning Literature Survey",
+            "url": "https://www.semanticscholar.org/paper/818826f356444f3daa3447755bf63f171f39ec47",
+            "venue": "",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2057061460",
+                    "name": "Michael Grant"
+                },
+                {
+                    "authorId": "1843103",
+                    "name": "Stephen P. Boyd"
+                }
+            ],
+            "doi": "10.1007/978-1-84800-155-8_7",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "f1ffa948988c6c2a66796ec4033fa8a8188756c7",
+            "title": "Graph Implementations for Nonsmooth Convex Programs",
+            "url": "https://www.semanticscholar.org/paper/f1ffa948988c6c2a66796ec4033fa8a8188756c7",
+            "venue": "Recent Advances in Learning and Control",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145347126",
+                    "name": "G. Kov\u00e1cs"
+                },
+                {
+                    "authorId": "2626368",
+                    "name": "B. Vizv\u00e1ri"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "23082369544daddb16e90b10b9282cc8cf0286e9",
+            "title": "Knapsack Problems",
+            "url": "https://www.semanticscholar.org/paper/23082369544daddb16e90b10b9282cc8cf0286e9",
+            "venue": "",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144833426",
+                    "name": "F. Rossi"
+                },
+                {
+                    "authorId": "1994523",
+                    "name": "P. V. Beek"
+                },
+                {
+                    "authorId": "1733716",
+                    "name": "T. Walsh"
+                }
+            ],
+            "doi": "10.1016/s1574-6526(06)x8001-x",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "341e501790209f178ded2bd6b8729add7ec8bb02",
+            "title": "Handbook of Constraint Programming",
+            "url": "https://www.semanticscholar.org/paper/341e501790209f178ded2bd6b8729add7ec8bb02",
+            "venue": "Handbook of Constraint Programming",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145853268",
+                    "name": "A. Nemirovski"
+                }
+            ],
+            "doi": "10.4171/022-1/17",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "05cc35d7081a04aab5135f80f8842a9273f28809",
+            "title": "Advances in convex optimization : conic programming",
+            "url": "https://www.semanticscholar.org/paper/05cc35d7081a04aab5135f80f8842a9273f28809",
+            "venue": "",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2116648700",
+                    "name": "Ronald J. Williams"
+                }
+            ],
+            "doi": "10.1023/A:1022672621406",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "4c915c1eecb217c123a36dc6d3ce52d12c742614",
+            "title": "Simple Statistical Gradient-Following Algorithms for Connectionist Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/4c915c1eecb217c123a36dc6d3ce52d12c742614",
+            "venue": "Machine Learning",
+            "year": 2004
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1996654",
+                    "name": "A. Ruszczynski"
+                }
+            ],
+            "doi": "10.1016/S0927-0507(03)10001-1",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c83a878aa3fc49ebd5b68c4706fbc7014820e10f",
+            "title": "Stochastic Programming Models",
+            "url": "https://www.semanticscholar.org/paper/c83a878aa3fc49ebd5b68c4706fbc7014820e10f",
+            "venue": "",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1772727",
+                    "name": "M. Bazaraa"
+                },
+                {
+                    "authorId": "2640065",
+                    "name": "J. J. Jarvis"
+                },
+                {
+                    "authorId": "1692786",
+                    "name": "H. Sherali"
+                }
+            ],
+            "doi": "10.1016/0305-0548(93)90043-i",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "c697855440d8be60cfa13c33e252a9f2a2b7987c",
+            "title": "Linear Programming and Network Flows",
+            "url": "https://www.semanticscholar.org/paper/c697855440d8be60cfa13c33e252a9f2a2b7987c",
+            "venue": "",
+            "year": 1977
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Mathematics",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Decision-Focused Learning: Foundations, State of the Art, Benchmark and Future Opportunities",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/70a958f7123b3a15f19bdd98fd0bbcf622c9b30c",
+    "venue": "Journal of Artificial Intelligence Research",
+    "year": 2023
+}

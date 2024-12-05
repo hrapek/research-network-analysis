@@ -1,0 +1,2185 @@
+{
+    "abstract": "We present experiences and lessons learned from increasing data readiness of heterogeneous data for artificial intelligence projects using visual analysis methods. Increasing the data readiness level involves understanding both the data as well as the context in which it is used, which are challenges well suitable to visual analysis. For this purpose, we contribute a mapping between data readiness aspects and visual analysis techniques suitable for different data types. We use the defined mapping to increase data readiness levels in use cases involving time-varying data, including numerical, categorical, and text. In addition to the mapping, we extend the data readiness concept to better take aspects of the task and solution into account and explicitly address distribution shifts during data collection time. We report on our experiences in using the presented visual analysis techniques to aid future artificial intelligence projects in raising the data readiness level.",
+    "arxivId": "2409.03805",
+    "authors": [
+        {
+            "authorId": "31879645",
+            "name": "Mattias Tiger",
+            "url": "https://www.semanticscholar.org/author/31879645"
+        },
+        {
+            "authorId": "2320161295",
+            "name": "Daniel Jakobsson",
+            "url": "https://www.semanticscholar.org/author/2320161295"
+        },
+        {
+            "authorId": "2318290734",
+            "name": "A. Ynnerman",
+            "url": "https://www.semanticscholar.org/author/2318290734"
+        },
+        {
+            "authorId": "2262215340",
+            "name": "Fredrik Heintz",
+            "url": "https://www.semanticscholar.org/author/2262215340"
+        },
+        {
+            "authorId": "2320149869",
+            "name": "Daniel Jonsson",
+            "url": "https://www.semanticscholar.org/author/2320149869"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [],
+    "corpusId": 272463743,
+    "doi": "10.48550/arXiv.2409.03805",
+    "fieldsOfStudy": [
+        "Computer Science",
+        "Mathematics"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 0,
+    "numCiting": 67,
+    "paperId": "94044041f1a103a33d640d0b3105fb38ddedd9ab",
+    "references": [
+        {
+            "arxivId": "2207.04672",
+            "authors": [
+                {
+                    "authorId": "2175650427",
+                    "name": "Nllb team"
+                },
+                {
+                    "authorId": "1398996347",
+                    "name": "M. Costa-juss\u00e0"
+                },
+                {
+                    "authorId": "2059363961",
+                    "name": "James Cross"
+                },
+                {
+                    "authorId": "2166310112",
+                    "name": "Onur cCelebi"
+                },
+                {
+                    "authorId": "46183659",
+                    "name": "Maha Elbayad"
+                },
+                {
+                    "authorId": "1702066",
+                    "name": "Kenneth Heafield"
+                },
+                {
+                    "authorId": "47926975",
+                    "name": "Kevin Heffernan"
+                },
+                {
+                    "authorId": "2175649909",
+                    "name": "Elahe Kalbassi"
+                },
+                {
+                    "authorId": "82469889",
+                    "name": "Janice Lam"
+                },
+                {
+                    "authorId": "2082021589",
+                    "name": "Daniel Licht"
+                },
+                {
+                    "authorId": "40148380",
+                    "name": "Jean Maillard"
+                },
+                {
+                    "authorId": "2091912142",
+                    "name": "Anna Sun"
+                },
+                {
+                    "authorId": "2175975228",
+                    "name": "Skyler Wang"
+                },
+                {
+                    "authorId": "2293203",
+                    "name": "Guillaume Wenzek"
+                },
+                {
+                    "authorId": "118325632",
+                    "name": "Alison Youngblood"
+                },
+                {
+                    "authorId": "2175649907",
+                    "name": "Bapi Akula"
+                },
+                {
+                    "authorId": "2934336",
+                    "name": "Lo\u00efc Barrault"
+                },
+                {
+                    "authorId": "2175804876",
+                    "name": "Gabriel Mejia Gonzalez"
+                },
+                {
+                    "authorId": "2175651102",
+                    "name": "Prangthip Hansanti"
+                },
+                {
+                    "authorId": "2055094870",
+                    "name": "John Hoffman"
+                },
+                {
+                    "authorId": "2175650054",
+                    "name": "Semarley Jarrett"
+                },
+                {
+                    "authorId": "1914544232",
+                    "name": "Kaushik Ram Sadagopan"
+                },
+                {
+                    "authorId": "2175650209",
+                    "name": "Dirk Rowe"
+                },
+                {
+                    "authorId": "3416737",
+                    "name": "Shannon L. Spruit"
+                },
+                {
+                    "authorId": "33806547",
+                    "name": "C. Tran"
+                },
+                {
+                    "authorId": "5657660",
+                    "name": "Pierre Yves Andrews"
+                },
+                {
+                    "authorId": "1769060",
+                    "name": "Necip Fazil Ayan"
+                },
+                {
+                    "authorId": "2116473",
+                    "name": "Shruti Bhosale"
+                },
+                {
+                    "authorId": "2068070",
+                    "name": "Sergey Edunov"
+                },
+                {
+                    "authorId": "144270981",
+                    "name": "Angela Fan"
+                },
+                {
+                    "authorId": "2107063269",
+                    "name": "Cynthia Gao"
+                },
+                {
+                    "authorId": "28554843",
+                    "name": "Vedanuj Goswami"
+                },
+                {
+                    "authorId": "2061585840",
+                    "name": "Francisco Guzm'an"
+                },
+                {
+                    "authorId": "1755162",
+                    "name": "Philipp Koehn"
+                },
+                {
+                    "authorId": "2175651049",
+                    "name": "Alexandre Mourachko"
+                },
+                {
+                    "authorId": "146424711",
+                    "name": "C. Ropers"
+                },
+                {
+                    "authorId": "2475227",
+                    "name": "Safiyyah Saleem"
+                },
+                {
+                    "authorId": "144518416",
+                    "name": "Holger Schwenk"
+                },
+                {
+                    "authorId": "2155451431",
+                    "name": "Jeff Wang"
+                }
+            ],
+            "doi": "10.48550/arXiv.2207.04672",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e19b54ad4c1c8af045069e9cac350ffc2ce60e1a",
+            "title": "No Language Left Behind: Scaling Human-Centered Machine Translation",
+            "url": "https://www.semanticscholar.org/paper/e19b54ad4c1c8af045069e9cac350ffc2ce60e1a",
+            "venue": "ArXiv",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "51222025",
+                    "name": "A. B\u00e4uerle"
+                },
+                {
+                    "authorId": "51262596",
+                    "name": "Christian van Onzenoodt"
+                },
+                {
+                    "authorId": "2163783402",
+                    "name": "Simon der Kinderen"
+                },
+                {
+                    "authorId": "2164150655",
+                    "name": "Jimmy Johansson Westberg"
+                },
+                {
+                    "authorId": "2410059",
+                    "name": "D. J\u00f6nsson"
+                },
+                {
+                    "authorId": "1703058",
+                    "name": "T. Ropinski"
+                }
+            ],
+            "doi": "10.1111/cgf.14536",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "98e8159039d6dce5e567eb04d48519bd1cfb49ca",
+            "title": "Where did my Lines go? Visualizing Missing Data in Parallel Coordinates",
+            "url": "https://www.semanticscholar.org/paper/98e8159039d6dce5e567eb04d48519bd1cfb49ca",
+            "venue": "Comput. Graph. Forum",
+            "year": 2022
+        },
+        {
+            "arxivId": "2203.14227",
+            "authors": [
+                {
+                    "authorId": "2153635619",
+                    "name": "Yu Zhang"
+                },
+                {
+                    "authorId": "2118375601",
+                    "name": "Yun Wang"
+                },
+                {
+                    "authorId": "46702036",
+                    "name": "Haidong Zhang"
+                },
+                {
+                    "authorId": "2187448064",
+                    "name": "Bin Zhu"
+                },
+                {
+                    "authorId": "2111635982",
+                    "name": "Si Chen"
+                },
+                {
+                    "authorId": "1485159990",
+                    "name": "Dongmei Zhang"
+                }
+            ],
+            "doi": "10.1145/3491102.3517612",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ab8a6cd98d32c598207bf93e60c0040d39ac886b",
+            "title": "OneLabeler: A Flexible System for Building Data Labeling Tools",
+            "url": "https://www.semanticscholar.org/paper/ab8a6cd98d32c598207bf93e60c0040d39ac886b",
+            "venue": "CHI",
+            "year": 2022
+        },
+        {
+            "arxivId": "2201.03545",
+            "authors": [
+                {
+                    "authorId": "2109168016",
+                    "name": "Zhuang Liu"
+                },
+                {
+                    "authorId": "2053590350",
+                    "name": "Hanzi Mao"
+                },
+                {
+                    "authorId": "95426599",
+                    "name": "Chaozheng Wu"
+                },
+                {
+                    "authorId": "2322150",
+                    "name": "Christoph Feichtenhofer"
+                },
+                {
+                    "authorId": "1753210",
+                    "name": "Trevor Darrell"
+                },
+                {
+                    "authorId": "1817030",
+                    "name": "Saining Xie"
+                }
+            ],
+            "doi": "10.1109/CVPR52688.2022.01167",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "177e957f5cd93229c9794ea652c646d2557b4a69",
+            "title": "A ConvNet for the 2020s",
+            "url": "https://www.semanticscholar.org/paper/177e957f5cd93229c9794ea652c646d2557b4a69",
+            "venue": "2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2022
+        },
+        {
+            "arxivId": "2112.10752",
+            "authors": [
+                {
+                    "authorId": "1660819540",
+                    "name": "Robin Rombach"
+                },
+                {
+                    "authorId": "119843260",
+                    "name": "A. Blattmann"
+                },
+                {
+                    "authorId": "2053482699",
+                    "name": "Dominik Lorenz"
+                },
+                {
+                    "authorId": "35175531",
+                    "name": "Patrick Esser"
+                },
+                {
+                    "authorId": "1796707",
+                    "name": "B. Ommer"
+                }
+            ],
+            "doi": "10.1109/CVPR52688.2022.01042",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c10075b3746a9f3dd5811970e93c8ca3ad39b39d",
+            "title": "High-Resolution Image Synthesis with Latent Diffusion Models",
+            "url": "https://www.semanticscholar.org/paper/c10075b3746a9f3dd5811970e93c8ca3ad39b39d",
+            "venue": "2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2021
+        },
+        {
+            "arxivId": "2112.06775",
+            "authors": [
+                {
+                    "authorId": "145866446",
+                    "name": "F. Casati"
+                },
+                {
+                    "authorId": "1828090",
+                    "name": "Pierre-Andr\u00e9 No\u00ebl"
+                },
+                {
+                    "authorId": "2146105954",
+                    "name": "Jie Yang"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7308e784579881a488c4f24c02c5aa668d6fab2f",
+            "title": "On the Value of ML Models",
+            "url": "https://www.semanticscholar.org/paper/7308e784579881a488c4f24c02c5aa668d6fab2f",
+            "venue": "ArXiv",
+            "year": 2021
+        },
+        {
+            "arxivId": "2103.08942",
+            "authors": [
+                {
+                    "authorId": "2057867259",
+                    "name": "Sasu M\u00e4kinen"
+                },
+                {
+                    "authorId": "2057867285",
+                    "name": "Henrik Skogstr\u00f6m"
+                },
+                {
+                    "authorId": "2054108513",
+                    "name": "Eero Laaksonen"
+                },
+                {
+                    "authorId": "1754218",
+                    "name": "T. Mikkonen"
+                }
+            ],
+            "doi": "10.1109/WAIN52551.2021.00024",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "099972edc3c95872b98348cf051c3b6dc7042d40",
+            "title": "Who Needs MLOps: What Data Scientists Seek to Accomplish and How Can MLOps Help?",
+            "url": "https://www.semanticscholar.org/paper/099972edc3c95872b98348cf051c3b6dc7042d40",
+            "venue": "2021 IEEE/ACM 1st Workshop on AI Engineering - Software Engineering for AI (WAIN)",
+            "year": 2021
+        },
+        {
+            "arxivId": "2011.09926",
+            "authors": [
+                {
+                    "authorId": "133643337",
+                    "name": "Andrei Paleyes"
+                },
+                {
+                    "authorId": "2000207",
+                    "name": "Raoul-Gabriel Urma"
+                },
+                {
+                    "authorId": "145306271",
+                    "name": "Neil D. Lawrence"
+                }
+            ],
+            "doi": "10.1145/3533378",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "b1f574c47d0b6e3032246770b9cbebb9c7bd0c7f",
+            "title": "Challenges in Deploying Machine Learning: A Survey of Case Studies",
+            "url": "https://www.semanticscholar.org/paper/b1f574c47d0b6e3032246770b9cbebb9c7bd0c7f",
+            "venue": "ACM Comput. Surv.",
+            "year": 2020
+        },
+        {
+            "arxivId": "2009.02078",
+            "authors": [
+                {
+                    "authorId": "25104364",
+                    "name": "Heungseok Park"
+                },
+                {
+                    "authorId": "1572034190",
+                    "name": "Y. Nam"
+                },
+                {
+                    "authorId": "2680879",
+                    "name": "Ji-Hoon Kim"
+                },
+                {
+                    "authorId": "1795455",
+                    "name": "J. Choo"
+                }
+            ],
+            "doi": "10.1109/TVCG.2020.3030380",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "4693cd7a3f6b0af6878e08c46a7e69b2763f99b4",
+            "title": "HyperTendril: Visual Analytics for User-Driven Hyperparameter Optimization of Deep Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/4693cd7a3f6b0af6878e08c46a7e69b2763f99b4",
+            "venue": "IEEE Transactions on Visualization and Computer Graphics",
+            "year": 2020
+        },
+        {
+            "arxivId": "2006.11477",
+            "authors": [
+                {
+                    "authorId": "51428394",
+                    "name": "Alexei Baevski"
+                },
+                {
+                    "authorId": "2110147709",
+                    "name": "Henry Zhou"
+                },
+                {
+                    "authorId": "40360972",
+                    "name": "Abdel-rahman Mohamed"
+                },
+                {
+                    "authorId": "2325985",
+                    "name": "Michael Auli"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "49a049dc85e2380dde80501a984878341dd8efdf",
+            "title": "wav2vec 2.0: A Framework for Self-Supervised Learning of Speech Representations",
+            "url": "https://www.semanticscholar.org/paper/49a049dc85e2380dde80501a984878341dd8efdf",
+            "venue": "NeurIPS",
+            "year": 2020
+        },
+        {
+            "arxivId": "2005.14165",
+            "authors": [
+                {
+                    "authorId": "31035595",
+                    "name": "Tom B. Brown"
+                },
+                {
+                    "authorId": "2056658938",
+                    "name": "Benjamin Mann"
+                },
+                {
+                    "authorId": "39849748",
+                    "name": "Nick Ryder"
+                },
+                {
+                    "authorId": "2065894334",
+                    "name": "Melanie Subbiah"
+                },
+                {
+                    "authorId": "152724169",
+                    "name": "J. Kaplan"
+                },
+                {
+                    "authorId": "6515819",
+                    "name": "Prafulla Dhariwal"
+                },
+                {
+                    "authorId": "2072676",
+                    "name": "Arvind Neelakantan"
+                },
+                {
+                    "authorId": "67311962",
+                    "name": "Pranav Shyam"
+                },
+                {
+                    "authorId": "144864359",
+                    "name": "Girish Sastry"
+                },
+                {
+                    "authorId": "119609682",
+                    "name": "Amanda Askell"
+                },
+                {
+                    "authorId": "144517868",
+                    "name": "Sandhini Agarwal"
+                },
+                {
+                    "authorId": "1404060687",
+                    "name": "Ariel Herbert-Voss"
+                },
+                {
+                    "authorId": "2064404342",
+                    "name": "Gretchen Krueger"
+                },
+                {
+                    "authorId": "103143311",
+                    "name": "T. Henighan"
+                },
+                {
+                    "authorId": "48422824",
+                    "name": "R. Child"
+                },
+                {
+                    "authorId": "1992922591",
+                    "name": "A. Ramesh"
+                },
+                {
+                    "authorId": "2052152920",
+                    "name": "Daniel M. Ziegler"
+                },
+                {
+                    "authorId": "49387725",
+                    "name": "Jeff Wu"
+                },
+                {
+                    "authorId": "2059411355",
+                    "name": "Clemens Winter"
+                },
+                {
+                    "authorId": "144239765",
+                    "name": "Christopher Hesse"
+                },
+                {
+                    "authorId": "2108828435",
+                    "name": "Mark Chen"
+                },
+                {
+                    "authorId": "2064673055",
+                    "name": "Eric Sigler"
+                },
+                {
+                    "authorId": "1380985420",
+                    "name": "Ma-teusz Litwin"
+                },
+                {
+                    "authorId": "145565184",
+                    "name": "Scott Gray"
+                },
+                {
+                    "authorId": "1490681878",
+                    "name": "B. Chess"
+                },
+                {
+                    "authorId": "2115193883",
+                    "name": "Jack Clark"
+                },
+                {
+                    "authorId": "133740015",
+                    "name": "Christopher Berner"
+                },
+                {
+                    "authorId": "52238703",
+                    "name": "Sam McCandlish"
+                },
+                {
+                    "authorId": "38909097",
+                    "name": "Alec Radford"
+                },
+                {
+                    "authorId": "1701686",
+                    "name": "I. Sutskever"
+                },
+                {
+                    "authorId": "2698777",
+                    "name": "Dario Amodei"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "90abbc2cf38462b954ae1b772fac9532e2ccd8b0",
+            "title": "Language Models are Few-Shot Learners",
+            "url": "https://www.semanticscholar.org/paper/90abbc2cf38462b954ae1b772fac9532e2ccd8b0",
+            "venue": "NeurIPS",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3462170",
+                    "name": "Yuyu Luo"
+                },
+                {
+                    "authorId": "1720852203",
+                    "name": "Chengliang Chai"
+                },
+                {
+                    "authorId": "40774672",
+                    "name": "Xuedi Qin"
+                },
+                {
+                    "authorId": "8669763",
+                    "name": "N. Tang"
+                },
+                {
+                    "authorId": "47949377",
+                    "name": "Guoliang Li"
+                }
+            ],
+            "doi": "10.1109/ICDE48307.2020.00069",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "92d1cdc0b81b8cb110d59f7a18d7f9054e093979",
+            "title": "Interactive Cleaning for Progressive Visualization through Composite Questions",
+            "url": "https://www.semanticscholar.org/paper/92d1cdc0b81b8cb110d59f7a18d7f9054e093979",
+            "venue": "2020 IEEE 36th International Conference on Data Engineering (ICDE)",
+            "year": 2020
+        },
+        {
+            "arxivId": "2106.11342",
+            "authors": [
+                {
+                    "authorId": "2085709",
+                    "name": "Aston Zhang"
+                },
+                {
+                    "authorId": "32219137",
+                    "name": "Zachary Chase Lipton"
+                },
+                {
+                    "authorId": "2124778071",
+                    "name": "Mu Li"
+                },
+                {
+                    "authorId": "78088877",
+                    "name": "Alexander J. Smola"
+                }
+            ],
+            "doi": "10.1016/j.jacr.2020.02.005",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "bd17620c6cb5ca97ef773499223d1509d123745f",
+            "title": "Dive into Deep Learning",
+            "url": "https://www.semanticscholar.org/paper/bd17620c6cb5ca97ef773499223d1509d123745f",
+            "venue": "Journal of the American College of Radiology : JACR",
+            "year": 2020
+        },
+        {
+            "arxivId": "2004.05785",
+            "authors": [
+                {
+                    "authorId": "144864069",
+                    "name": "Jie Lu"
+                },
+                {
+                    "authorId": "1471737704",
+                    "name": "Anjin Liu"
+                },
+                {
+                    "authorId": "46279367",
+                    "name": "Fan Dong"
+                },
+                {
+                    "authorId": "2056183624",
+                    "name": "Feng Gu"
+                },
+                {
+                    "authorId": "143931014",
+                    "name": "Jo\u00e3o Gama"
+                },
+                {
+                    "authorId": "46266495",
+                    "name": "Guangquan Zhang"
+                }
+            ],
+            "doi": "10.1109/TKDE.2018.2876857",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "1904d633fca15140e35d893637232803b6dde6d9",
+            "title": "Learning under Concept Drift: A Review",
+            "url": "https://www.semanticscholar.org/paper/1904d633fca15140e35d893637232803b6dde6d9",
+            "venue": "IEEE Transactions on Knowledge and Data Engineering",
+            "year": 2019
+        },
+        {
+            "arxivId": "1911.01914",
+            "authors": [
+                {
+                    "authorId": "1404356368",
+                    "name": "Candice Bent\u00e9jac"
+                },
+                {
+                    "authorId": "1404356382",
+                    "name": "Anna Cs\u00f6rgo"
+                },
+                {
+                    "authorId": "1399545196",
+                    "name": "Gonzalo Mart\u00ednez-Mu\u00f1oz"
+                }
+            ],
+            "doi": "10.1007/s10462-020-09896-5",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7280df1bbbcaf743cb793d5bd654b4cf12b575f4",
+            "title": "A comparative analysis of gradient boosting algorithms",
+            "url": "https://www.semanticscholar.org/paper/7280df1bbbcaf743cb793d5bd654b4cf12b575f4",
+            "venue": "Artificial Intelligence Review",
+            "year": 2019
+        },
+        {
+            "arxivId": "1910.09457",
+            "authors": [
+                {
+                    "authorId": "1691955",
+                    "name": "Eyke H\u00fcllermeier"
+                },
+                {
+                    "authorId": "3249834",
+                    "name": "W. Waegeman"
+                }
+            ],
+            "doi": "10.1007/s10994-021-05946-3",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b631ba962b4403a9c0fd9cce446ef3b1e21ea059",
+            "title": "Aleatoric and epistemic uncertainty in machine learning: an introduction to concepts and methods",
+            "url": "https://www.semanticscholar.org/paper/b631ba962b4403a9c0fd9cce446ef3b1e21ea059",
+            "venue": "Machine Learning",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1602472144",
+                    "name": "Laurens A. Castelijns"
+                },
+                {
+                    "authorId": "1602463942",
+                    "name": "Yuri Maas"
+                },
+                {
+                    "authorId": "1717534",
+                    "name": "J. Vanschoren"
+                }
+            ],
+            "doi": "10.1007/978-3-030-43823-4_1",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "9f0699c79a587f8952ecf386511a8b1fa2a8832f",
+            "title": "The ABC of Data: A Classifying Framework for Data Readiness",
+            "url": "https://www.semanticscholar.org/paper/9f0699c79a587f8952ecf386511a8b1fa2a8832f",
+            "venue": "PKDD/ECML Workshops",
+            "year": 2019
+        },
+        {
+            "arxivId": "1907.10902",
+            "authors": [
+                {
+                    "authorId": "2859858",
+                    "name": "Takuya Akiba"
+                },
+                {
+                    "authorId": "2019759",
+                    "name": "Shotaro Sano"
+                },
+                {
+                    "authorId": "2066211410",
+                    "name": "Toshihiko Yanase"
+                },
+                {
+                    "authorId": "31480362",
+                    "name": "Takeru Ohta"
+                },
+                {
+                    "authorId": "2877296",
+                    "name": "Masanori Koyama"
+                }
+            ],
+            "doi": "10.1145/3292500.3330701",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "4cdf2fad22afc865999747336c7399fe422e6e8e",
+            "title": "Optuna: A Next-generation Hyperparameter Optimization Framework",
+            "url": "https://www.semanticscholar.org/paper/4cdf2fad22afc865999747336c7399fe422e6e8e",
+            "venue": "KDD",
+            "year": 2019
+        },
+        {
+            "arxivId": "1907.04135",
+            "authors": [
+                {
+                    "authorId": "49556437",
+                    "name": "James Wexler"
+                },
+                {
+                    "authorId": "51478016",
+                    "name": "Mahima Pushkarna"
+                },
+                {
+                    "authorId": "2333512047",
+                    "name": "Tolga Bolukbasi"
+                },
+                {
+                    "authorId": "145233583",
+                    "name": "M. Wattenberg"
+                },
+                {
+                    "authorId": "1765169",
+                    "name": "F. Vi\u00e9gas"
+                },
+                {
+                    "authorId": "2109357255",
+                    "name": "Jimbo Wilson"
+                }
+            ],
+            "doi": "10.1109/TVCG.2019.2934619",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "1f6b9766374d14d81c225c2ced5bb02fe0bccd43",
+            "title": "The What-If Tool: Interactive Probing of Machine Learning Models",
+            "url": "https://www.semanticscholar.org/paper/1f6b9766374d14d81c225c2ced5bb02fe0bccd43",
+            "venue": "IEEE Transactions on Visualization and Computer Graphics",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2207125",
+                    "name": "Junyu Xuan"
+                },
+                {
+                    "authorId": "144864069",
+                    "name": "Jie Lu"
+                },
+                {
+                    "authorId": "46266495",
+                    "name": "Guangquan Zhang"
+                }
+            ],
+            "doi": "10.1145/3291044",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "90656820ca0c65aa0872ba792a5cb20dadbd9782",
+            "title": "A Survey on Bayesian Nonparametric Learning",
+            "url": "https://www.semanticscholar.org/paper/90656820ca0c65aa0872ba792a5cb20dadbd9782",
+            "venue": "ACM Comput. Surv.",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2042948",
+                    "name": "D. Sacha"
+                },
+                {
+                    "authorId": "1665220350",
+                    "name": "Matthias Kraus"
+                },
+                {
+                    "authorId": "9106757",
+                    "name": "D. Keim"
+                },
+                {
+                    "authorId": "12134086",
+                    "name": "Min Chen"
+                }
+            ],
+            "doi": "10.1109/TVCG.2018.2864838",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "34f3071bbbb2be99d766c365c60cdbf190b9db8d",
+            "title": "VIS4ML: An Ontology for Visual Analytics Assisted Machine Learning",
+            "url": "https://www.semanticscholar.org/paper/34f3071bbbb2be99d766c365c60cdbf190b9db8d",
+            "venue": "IEEE Transactions on Visualization and Computer Graphics",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1763100",
+                    "name": "N. Polyzotis"
+                },
+                {
+                    "authorId": "1473253195",
+                    "name": "Sudip Roy"
+                },
+                {
+                    "authorId": "3288247",
+                    "name": "Steven Euijong Whang"
+                },
+                {
+                    "authorId": "8195063",
+                    "name": "Martin A. Zinkevich"
+                }
+            ],
+            "doi": "10.1145/3299887.3299891",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "18c2d0b44a0c292ce76696bfe1dfd6839fe09ff9",
+            "title": "Data Lifecycle Challenges in Production Machine Learning",
+            "url": "https://www.semanticscholar.org/paper/18c2d0b44a0c292ce76696bfe1dfd6839fe09ff9",
+            "venue": "SIGMOD Rec.",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "27027893",
+                    "name": "Fredrik Pr\u00e4ntare"
+                },
+                {
+                    "authorId": "1711918",
+                    "name": "F. Heintz"
+                }
+            ],
+            "doi": "10.1007/978-3-030-03098-8_10",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "831c559646c63f44ad83fa971a6e287e386fb7ea",
+            "title": "An Anytime Algorithm for Simultaneous Coalition Structure Generation and Assignment",
+            "url": "https://www.semanticscholar.org/paper/831c559646c63f44ad83fa971a6e287e386fb7ea",
+            "venue": "PRIMA",
+            "year": 2018
+        },
+        {
+            "arxivId": "1808.04819",
+            "authors": [
+                {
+                    "authorId": "7018573",
+                    "name": "K. Hu"
+                },
+                {
+                    "authorId": "50985185",
+                    "name": "Michiel A. Bakker"
+                },
+                {
+                    "authorId": "2109073168",
+                    "name": "Stephen Li"
+                },
+                {
+                    "authorId": "1746961",
+                    "name": "Tim Kraska"
+                },
+                {
+                    "authorId": "2132924",
+                    "name": "C\u00e9sar A. Hidalgo"
+                }
+            ],
+            "doi": "10.1145/3290605.3300358",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "6a116fbf23a698e5547079a80ee1497b18b5a04c",
+            "title": "VizML: A Machine Learning Approach to Visualization Recommendation",
+            "url": "https://www.semanticscholar.org/paper/6a116fbf23a698e5547079a80ee1497b18b5a04c",
+            "venue": "CHI",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2108359612",
+                    "name": "Younghoon Kim"
+                },
+                {
+                    "authorId": "1803140",
+                    "name": "Jeffrey Heer"
+                }
+            ],
+            "doi": "10.1111/cgf.13409",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "6979c6e6f385263cfd5dfc34d70e30dddd07778d",
+            "title": "Assessing Effects of Task and Data Distribution on the Effectiveness of Visual Encodings",
+            "url": "https://www.semanticscholar.org/paper/6979c6e6f385263cfd5dfc34d70e30dddd07778d",
+            "venue": "Comput. Graph. Forum",
+            "year": 2018
+        },
+        {
+            "arxivId": "1802.03426",
+            "authors": [
+                {
+                    "authorId": "31785573",
+                    "name": "Leland McInnes"
+                },
+                {
+                    "authorId": "2062756303",
+                    "name": "John Healy"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "3a288c63576fc385910cb5bc44eaea75b442e62e",
+            "title": "UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction",
+            "url": "https://www.semanticscholar.org/paper/3a288c63576fc385910cb5bc44eaea75b442e62e",
+            "venue": "ArXiv",
+            "year": 2018
+        },
+        {
+            "arxivId": "1801.03454",
+            "authors": [
+                {
+                    "authorId": "145891577",
+                    "name": "Ruth Fong"
+                },
+                {
+                    "authorId": "1687524",
+                    "name": "A. Vedaldi"
+                }
+            ],
+            "doi": "10.1109/CVPR.2018.00910",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "de99fbe728dfd3d337ab13ae27512ab028444c6a",
+            "title": "Net2Vec: Quantifying and Explaining How Concepts are Encoded by Filters in Deep Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/de99fbe728dfd3d337ab13ae27512ab028444c6a",
+            "venue": "2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+            "year": 2018
+        },
+        {
+            "arxivId": "1712.05884",
+            "authors": [
+                {
+                    "authorId": "143724108",
+                    "name": "Jonathan Shen"
+                },
+                {
+                    "authorId": "34320634",
+                    "name": "Ruoming Pang"
+                },
+                {
+                    "authorId": "39571582",
+                    "name": "Ron J. Weiss"
+                },
+                {
+                    "authorId": "144927151",
+                    "name": "M. Schuster"
+                },
+                {
+                    "authorId": "3111912",
+                    "name": "N. Jaitly"
+                },
+                {
+                    "authorId": "2109479107",
+                    "name": "Zongheng Yang"
+                },
+                {
+                    "authorId": "2545358",
+                    "name": "Z. Chen"
+                },
+                {
+                    "authorId": "2153632494",
+                    "name": "Yu Zhang"
+                },
+                {
+                    "authorId": "2115828379",
+                    "name": "Yuxuan Wang"
+                },
+                {
+                    "authorId": "1380248814",
+                    "name": "R. Skerry-Ryan"
+                },
+                {
+                    "authorId": "2278009",
+                    "name": "R. Saurous"
+                },
+                {
+                    "authorId": "2259013",
+                    "name": "Yannis Agiomyrgiannakis"
+                },
+                {
+                    "authorId": "48607963",
+                    "name": "Yonghui Wu"
+                }
+            ],
+            "doi": "10.1109/ICASSP.2018.8461368",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "1a2599e467e855f845dcbf9282f8bdbd97b85708",
+            "title": "Natural TTS Synthesis by Conditioning Wavenet on MEL Spectrogram Predictions",
+            "url": "https://www.semanticscholar.org/paper/1a2599e467e855f845dcbf9282f8bdbd97b85708",
+            "venue": "2018 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "35286545",
+                    "name": "Guolin Ke"
+                },
+                {
+                    "authorId": "47580728",
+                    "name": "Qi Meng"
+                },
+                {
+                    "authorId": "50256971",
+                    "name": "Thomas Finley"
+                },
+                {
+                    "authorId": null,
+                    "name": "Taifeng Wang"
+                },
+                {
+                    "authorId": null,
+                    "name": "Wei Chen"
+                },
+                {
+                    "authorId": "3029546",
+                    "name": "Weidong Ma"
+                },
+                {
+                    "authorId": "3006308",
+                    "name": "Qiwei Ye"
+                },
+                {
+                    "authorId": "2110264337",
+                    "name": "Tie-Yan Liu"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "497e4b08279d69513e4d2313a7fd9a55dfb73273",
+            "title": "LightGBM: A Highly Efficient Gradient Boosting Decision Tree",
+            "url": "https://www.semanticscholar.org/paper/497e4b08279d69513e4d2313a7fd9a55dfb73273",
+            "venue": "NIPS",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145973657",
+                    "name": "D. Golovin"
+                },
+                {
+                    "authorId": "22695907",
+                    "name": "Benjamin Solnik"
+                },
+                {
+                    "authorId": "3316330",
+                    "name": "Subhodeep Moitra"
+                },
+                {
+                    "authorId": "2942286",
+                    "name": "G. Kochanski"
+                },
+                {
+                    "authorId": "2056044",
+                    "name": "J. Karro"
+                },
+                {
+                    "authorId": "1733143",
+                    "name": "D. Sculley"
+                }
+            ],
+            "doi": "10.1145/3097983.3098043",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "938f6ef7eed095919e6a482c7f1836a01d62db4b",
+            "title": "Google Vizier: A Service for Black-Box Optimization",
+            "url": "https://www.semanticscholar.org/paper/938f6ef7eed095919e6a482c7f1836a01d62db4b",
+            "venue": "KDD",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144944365",
+                    "name": "L. Ostroumova"
+                },
+                {
+                    "authorId": "145004420",
+                    "name": "Gleb Gusev"
+                },
+                {
+                    "authorId": "144050382",
+                    "name": "A. Vorobev"
+                },
+                {
+                    "authorId": "19256191",
+                    "name": "Anna Veronika Dorogush"
+                },
+                {
+                    "authorId": "31460507",
+                    "name": "Andrey Gulin"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "ee0a0f04d45f86bf50b24d7258e884725fcaa621",
+            "title": "CatBoost: unbiased boosting with categorical features",
+            "url": "https://www.semanticscholar.org/paper/ee0a0f04d45f86bf50b24d7258e884725fcaa621",
+            "venue": "NeurIPS",
+            "year": 2017
+        },
+        {
+            "arxivId": "1705.07874",
+            "authors": [
+                {
+                    "authorId": "23451726",
+                    "name": "Scott M. Lundberg"
+                },
+                {
+                    "authorId": "2180463",
+                    "name": "Su-In Lee"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "442e10a3c6640ded9408622005e3c2a8906ce4c2",
+            "title": "A Unified Approach to Interpreting Model Predictions",
+            "url": "https://www.semanticscholar.org/paper/442e10a3c6640ded9408622005e3c2a8906ce4c2",
+            "venue": "NIPS",
+            "year": 2017
+        },
+        {
+            "arxivId": "1705.02245",
+            "authors": [
+                {
+                    "authorId": "145306271",
+                    "name": "Neil D. Lawrence"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "e64b8b2bb746a83a42680880b9860bf2a5b3a0c9",
+            "title": "Data Readiness Levels",
+            "url": "https://www.semanticscholar.org/paper/e64b8b2bb746a83a42680880b9860bf2a5b3a0c9",
+            "venue": "ArXiv",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "40428703",
+                    "name": "S. Krishnan"
+                },
+                {
+                    "authorId": "143666627",
+                    "name": "M. Franklin"
+                },
+                {
+                    "authorId": "144344283",
+                    "name": "Ken Goldberg"
+                },
+                {
+                    "authorId": "1743709",
+                    "name": "Jiannan Wang"
+                },
+                {
+                    "authorId": "48144872",
+                    "name": "Eugene Wu"
+                }
+            ],
+            "doi": "10.1145/2882903.2899409",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "323fe54df34e0dc2325fc9c1c090abd66b827122",
+            "title": "ActiveClean: An Interactive Data Cleaning Framework For Modern Machine Learning",
+            "url": "https://www.semanticscholar.org/paper/323fe54df34e0dc2325fc9c1c090abd66b827122",
+            "venue": "SIGMOD Conference",
+            "year": 2016
+        },
+        {
+            "arxivId": "1603.02754",
+            "authors": [
+                {
+                    "authorId": "1913774",
+                    "name": "Tianqi Chen"
+                },
+                {
+                    "authorId": "1730156",
+                    "name": "Carlos Guestrin"
+                }
+            ],
+            "doi": "10.1145/2939672.2939785",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "26bc9195c6343e4d7f434dd65b4ad67efe2be27a",
+            "title": "XGBoost: A Scalable Tree Boosting System",
+            "url": "https://www.semanticscholar.org/paper/26bc9195c6343e4d7f434dd65b4ad67efe2be27a",
+            "venue": "KDD",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "8334069",
+                    "name": "Kanit Wongsuphasawat"
+                },
+                {
+                    "authorId": "1714104",
+                    "name": "Dominik Moritz"
+                },
+                {
+                    "authorId": "3168803",
+                    "name": "Anushka Anand"
+                },
+                {
+                    "authorId": "1777393",
+                    "name": "J. Mackinlay"
+                },
+                {
+                    "authorId": "1686294",
+                    "name": "Bill Howe"
+                },
+                {
+                    "authorId": "1803140",
+                    "name": "Jeffrey Heer"
+                }
+            ],
+            "doi": "10.1109/TVCG.2015.2467191",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2b90cf70c77d91cf3d736c609ea2e43a614fc4b5",
+            "title": "Voyager: Exploratory Analysis via Faceted Browsing of Visualization Recommendations",
+            "url": "https://www.semanticscholar.org/paper/2b90cf70c77d91cf3d736c609ea2e43a614fc4b5",
+            "venue": "IEEE Transactions on Visualization and Computer Graphics",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145845948",
+                    "name": "Manasi Vartak"
+                },
+                {
+                    "authorId": "37455401",
+                    "name": "Sajjadur Rahman"
+                },
+                {
+                    "authorId": "144478906",
+                    "name": "S. Madden"
+                },
+                {
+                    "authorId": "145592539",
+                    "name": "Aditya G. Parameswaran"
+                },
+                {
+                    "authorId": "1763100",
+                    "name": "N. Polyzotis"
+                }
+            ],
+            "doi": "10.14778/2831360.2831371",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "265c244dbb7afffab62afc67f8a85ebda0213299",
+            "title": "SeeDB: Efficient Data-Driven Visualization Recommendations to Support Visual Analytics",
+            "url": "https://www.semanticscholar.org/paper/265c244dbb7afffab62afc67f8a85ebda0213299",
+            "venue": "Proc. VLDB Endow.",
+            "year": 2015
+        },
+        {
+            "arxivId": "1506.02640",
+            "authors": [
+                {
+                    "authorId": "40497777",
+                    "name": "Joseph Redmon"
+                },
+                {
+                    "authorId": "2038685",
+                    "name": "S. Divvala"
+                },
+                {
+                    "authorId": "2983898",
+                    "name": "Ross B. Girshick"
+                },
+                {
+                    "authorId": "143787583",
+                    "name": "Ali Farhadi"
+                }
+            ],
+            "doi": "10.1109/CVPR.2016.91",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f8e79ac0ea341056ef20f2616628b3e964764cfd",
+            "title": "You Only Look Once: Unified, Real-Time Object Detection",
+            "url": "https://www.semanticscholar.org/paper/f8e79ac0ea341056ef20f2616628b3e964764cfd",
+            "venue": "2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2015
+        },
+        {
+            "arxivId": "1402.4304",
+            "authors": [
+                {
+                    "authorId": "11383109",
+                    "name": "J. Lloyd"
+                },
+                {
+                    "authorId": "1704657",
+                    "name": "D. Duvenaud"
+                },
+                {
+                    "authorId": "1785346",
+                    "name": "R. Grosse"
+                },
+                {
+                    "authorId": "1763295",
+                    "name": "J. Tenenbaum"
+                },
+                {
+                    "authorId": "1744700",
+                    "name": "Zoubin Ghahramani"
+                }
+            ],
+            "doi": "10.1609/aaai.v28i1.8904",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "1427921e7011412b77dd7d0b911bc66f1ad1cff8",
+            "title": "Automatic Construction and Natural-Language Description of Nonparametric Regression Models",
+            "url": "https://www.semanticscholar.org/paper/1427921e7011412b77dd7d0b911bc66f1ad1cff8",
+            "venue": "AAAI",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1723397",
+                    "name": "R. Verborgh"
+                },
+                {
+                    "authorId": "47350045",
+                    "name": "M. D. Wilde"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "e3c50bb5c824b69d2cbc2fb04a07086c6d73ed2e",
+            "title": "Using OpenRefine",
+            "url": "https://www.semanticscholar.org/paper/e3c50bb5c824b69d2cbc2fb04a07086c6d73ed2e",
+            "venue": "",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "32837403",
+                    "name": "J. Bergstra"
+                },
+                {
+                    "authorId": "2292273",
+                    "name": "Daniel Yamins"
+                },
+                {
+                    "authorId": "2042941",
+                    "name": "David D. Cox"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "29935173af73aef20336db72d608e0ef5b0e0c16",
+            "title": "Making a Science of Model Search: Hyperparameter Optimization in Hundreds of Dimensions for Vision Architectures",
+            "url": "https://www.semanticscholar.org/paper/29935173af73aef20336db72d608e0ef5b0e0c16",
+            "venue": "ICML",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143977777",
+                    "name": "D. Perry"
+                },
+                {
+                    "authorId": "145557773",
+                    "name": "B. Howe"
+                },
+                {
+                    "authorId": "2115649",
+                    "name": "A. Key"
+                },
+                {
+                    "authorId": "34669589",
+                    "name": "Cecilia R. Aragon"
+                }
+            ],
+            "doi": "10.9776/13206",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "597ce5ca06687fb82602d41db0a32c5102416c60",
+            "title": "VizDeck: Streamlining exploratory visual analytics of scientific data",
+            "url": "https://www.semanticscholar.org/paper/597ce5ca06687fb82602d41db0a32c5102416c60",
+            "venue": "",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "35873150",
+                    "name": "Sean Kandel"
+                },
+                {
+                    "authorId": "1750481",
+                    "name": "A. Paepcke"
+                },
+                {
+                    "authorId": "1695576",
+                    "name": "J. Hellerstein"
+                },
+                {
+                    "authorId": "1803140",
+                    "name": "Jeffrey Heer"
+                }
+            ],
+            "doi": "10.1109/TVCG.2012.219",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "74cfdf198265ed2e953cfc185d3ba1aeb8e4e8b5",
+            "title": "Enterprise Data Analysis and Visualization: An Interview Study",
+            "url": "https://www.semanticscholar.org/paper/74cfdf198265ed2e953cfc185d3ba1aeb8e4e8b5",
+            "venue": "IEEE Transactions on Visualization and Computer Graphics",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "35873150",
+                    "name": "Sean Kandel"
+                },
+                {
+                    "authorId": "2058313218",
+                    "name": "Ravi Parikh"
+                },
+                {
+                    "authorId": "1750481",
+                    "name": "A. Paepcke"
+                },
+                {
+                    "authorId": "1695576",
+                    "name": "J. Hellerstein"
+                },
+                {
+                    "authorId": "1803140",
+                    "name": "Jeffrey Heer"
+                }
+            ],
+            "doi": "10.1145/2254556.2254659",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "f7214535a3f9e146674f5bb07d0fdb2b38e957cd",
+            "title": "Profiler: integrated statistical analysis and visualization for data quality assessment",
+            "url": "https://www.semanticscholar.org/paper/f7214535a3f9e146674f5bb07d0fdb2b38e957cd",
+            "venue": "AVI",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2830744",
+                    "name": "S. V. D. Elzen"
+                },
+                {
+                    "authorId": "143693813",
+                    "name": "J. V. Wijk"
+                }
+            ],
+            "doi": "10.1109/VAST.2011.6102453",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2ff947d6b3239f6fcd4d8beb8a3b2111964f4df4",
+            "title": "BaobabView: Interactive construction and analysis of decision trees",
+            "url": "https://www.semanticscholar.org/paper/2ff947d6b3239f6fcd4d8beb8a3b2111964f4df4",
+            "venue": "2011 IEEE Conference on Visual Analytics Science and Technology (VAST)",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "35873150",
+                    "name": "Sean Kandel"
+                },
+                {
+                    "authorId": "1750481",
+                    "name": "A. Paepcke"
+                },
+                {
+                    "authorId": "1695576",
+                    "name": "J. Hellerstein"
+                },
+                {
+                    "authorId": "1803140",
+                    "name": "Jeffrey Heer"
+                }
+            ],
+            "doi": "10.1145/1978942.1979444",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "31a816f4fef768f29772a003e534b1378611bfe6",
+            "title": "Wrangler: interactive visual specification of data transformation scripts",
+            "url": "https://www.semanticscholar.org/paper/31a816f4fef768f29772a003e534b1378611bfe6",
+            "venue": "CHI",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2887861",
+                    "name": "J. Kruschke"
+                }
+            ],
+            "doi": "10.1002/wcs.72",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "4e2f43dab69d690dc86422949e410ebf37f522d4",
+            "title": "Bayesian data analysis.",
+            "url": "https://www.semanticscholar.org/paper/4e2f43dab69d690dc86422949e410ebf37f522d4",
+            "venue": "Wiley interdisciplinary reviews. Cognitive science",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2519617",
+                    "name": "Justin Talbot"
+                },
+                {
+                    "authorId": "49132427",
+                    "name": "Bongshin Lee"
+                },
+                {
+                    "authorId": "2189118",
+                    "name": "Ashish Kapoor"
+                },
+                {
+                    "authorId": "1719056",
+                    "name": "Desney S. Tan"
+                }
+            ],
+            "doi": "10.1145/1518701.1518895",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "24b0b7b24aec255fb4c362bc9f28c280b99b7dc4",
+            "title": "EnsembleMatrix: interactive visualization to support machine learning with multiple classifiers",
+            "url": "https://www.semanticscholar.org/paper/24b0b7b24aec255fb4c362bc9f28c280b99b7dc4",
+            "venue": "CHI",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1777393",
+                    "name": "J. Mackinlay"
+                },
+                {
+                    "authorId": "144872229",
+                    "name": "P. Hanrahan"
+                },
+                {
+                    "authorId": "33071061",
+                    "name": "Chris Stolte"
+                }
+            ],
+            "doi": "10.1109/TVCG.2007.70594",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "a66b19219b522efe7aa2225acf8bf7828305fdd7",
+            "title": "Show Me: Automatic Presentation for Visual Analysis",
+            "url": "https://www.semanticscholar.org/paper/a66b19219b522efe7aa2225acf8bf7828305fdd7",
+            "venue": "IEEE Transactions on Visualization and Computer Graphics",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145924374",
+                    "name": "L. Birg\u00e9"
+                },
+                {
+                    "authorId": "3264354",
+                    "name": "Y. Rozenholc"
+                }
+            ],
+            "doi": "10.1051/PS:2006001",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0b8ddabb24d9739ea86cabfc0136931de617ea0a",
+            "title": "How many bins should be put in a regular histogram",
+            "url": "https://www.semanticscholar.org/paper/0b8ddabb24d9739ea86cabfc0136931de617ea0a",
+            "venue": "",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "103025145",
+                    "name": "David M. Bashtannyk"
+                },
+                {
+                    "authorId": "145211352",
+                    "name": "Rob J Hyndman"
+                }
+            ],
+            "doi": "10.1016/S0167-9473(00)00046-3",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5be0f3c4b157e9cf808e15153fd1cdad94f1d292",
+            "title": "Bandwidth selection for kernel conditional density estimation",
+            "url": "https://www.semanticscholar.org/paper/5be0f3c4b157e9cf808e15153fd1cdad94f1d292",
+            "venue": "",
+            "year": 2001
+        },
+        {
+            "arxivId": "1106.0245",
+            "authors": [
+                {
+                    "authorId": "47392513",
+                    "name": "Jonathan Baxter"
+                }
+            ],
+            "doi": "10.1613/jair.731",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "727e1e16ede6eaad241bad11c525da07b154c688",
+            "title": "A Model of Inductive Bias Learning",
+            "url": "https://www.semanticscholar.org/paper/727e1e16ede6eaad241bad11c525da07b154c688",
+            "venue": "J. Artif. Intell. Res.",
+            "year": 2000
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "40195924",
+                    "name": "J. Hintze"
+                },
+                {
+                    "authorId": "34893890",
+                    "name": "R. Nelson"
+                }
+            ],
+            "doi": "10.1080/00031305.1998.10480559",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "c7ae5fd1d068fae58a0f7d2a5b572638db74c7fc",
+            "title": "Violin plots : A box plot-density trace synergism",
+            "url": "https://www.semanticscholar.org/paper/c7ae5fd1d068fae58a0f7d2a5b572638db74c7fc",
+            "venue": "",
+            "year": 1998
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2388124",
+                    "name": "S. Casner"
+                }
+            ],
+            "doi": "10.1145/108360.108361",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "85d5164d33e47b744cece039c0e0bf54ca1cea9d",
+            "title": "Task-analytic approach to the automated design of graphic presentations",
+            "url": "https://www.semanticscholar.org/paper/85d5164d33e47b744cece039c0e0bf54ca1cea9d",
+            "venue": "TOGS",
+            "year": 1991
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "35157864",
+                    "name": "W. Cleveland"
+                },
+                {
+                    "authorId": "145775069",
+                    "name": "R. McGill"
+                }
+            ],
+            "doi": "10.1080/01621459.1984.10478080",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "fa459de6552f5cd0cbe28539c0c7c65bc112a164",
+            "title": "Graphical Perception: Theory, Experimentation, and Application to the Development of Graphical Methods",
+            "url": "https://www.semanticscholar.org/paper/fa459de6552f5cd0cbe28539c0c7c65bc112a164",
+            "venue": "",
+            "year": 1984
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145948621",
+                    "name": "G. Box"
+                },
+                {
+                    "authorId": "144327830",
+                    "name": "D. Cox"
+                }
+            ],
+            "doi": "10.1111/J.2517-6161.1964.TB00553.X",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "6e820cf11712b9041bb625634612a535476f0960",
+            "title": "An Analysis of Transformations",
+            "url": "https://www.semanticscholar.org/paper/6e820cf11712b9041bb625634612a535476f0960",
+            "venue": "",
+            "year": 1964
+        },
+        {
+            "arxivId": null,
+            "authors": [],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "53a58f0f4a286c42b543f2ec29ba6b5e55befdf3",
+            "title": "Appendix to: BOTORCH: A Framework for Efficient Monte-Carlo Bayesian Optimization",
+            "url": "https://www.semanticscholar.org/paper/53a58f0f4a286c42b543f2ec29ba6b5e55befdf3",
+            "venue": "",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1403237566",
+                    "name": "Arlind Kadra"
+                },
+                {
+                    "authorId": "145963266",
+                    "name": "M. Lindauer"
+                },
+                {
+                    "authorId": "144661829",
+                    "name": "F. Hutter"
+                },
+                {
+                    "authorId": "1782863",
+                    "name": "Josif Grabocka"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "07b64856abe1b69dba22da9ca69781d96ea6ecaa",
+            "title": "Regularization is all you Need: Simple Neural Nets can Excel on Tabular Data",
+            "url": "https://www.semanticscholar.org/paper/07b64856abe1b69dba22da9ca69781d96ea6ecaa",
+            "venue": "ArXiv",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2365417",
+                    "name": "L. Katzir"
+                },
+                {
+                    "authorId": "1684677",
+                    "name": "G. Elidan"
+                },
+                {
+                    "authorId": "1387872181",
+                    "name": "Ran El-Yaniv"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "af5151a0b22be3cb9a107c6af563b3603156246b",
+            "title": "Net-DNF: Effective Deep Modeling of Tabular Data",
+            "url": "https://www.semanticscholar.org/paper/af5151a0b22be3cb9a107c6af563b3603156246b",
+            "venue": "ICLR",
+            "year": 2021
+        },
+        {
+            "arxivId": "1810.04805",
+            "authors": [
+                {
+                    "authorId": "39172707",
+                    "name": "Jacob Devlin"
+                },
+                {
+                    "authorId": "1744179",
+                    "name": "Ming-Wei Chang"
+                },
+                {
+                    "authorId": "2544107",
+                    "name": "Kenton Lee"
+                },
+                {
+                    "authorId": "3259253",
+                    "name": "Kristina Toutanova"
+                }
+            ],
+            "doi": "10.18653/v1/N19-1423",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "df2b0e26d0599ce3e70df8a9da02e51594e0e992",
+            "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+            "url": "https://www.semanticscholar.org/paper/df2b0e26d0599ce3e70df8a9da02e51594e0e992",
+            "venue": "NAACL",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2067577",
+                    "name": "Bobak Shahriari"
+                },
+                {
+                    "authorId": "2329092660",
+                    "name": "Kevin Swersky"
+                },
+                {
+                    "authorId": "2117966548",
+                    "name": "Ziyun Wang"
+                },
+                {
+                    "authorId": "1722180",
+                    "name": "Ryan P. Adams"
+                },
+                {
+                    "authorId": "1737568",
+                    "name": "Nando de Freitas"
+                }
+            ],
+            "doi": "10.1109/JPROC.2015.2494218",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "0a2586e0a5f8bb4e35aa0763a6b8bca428af6bd2",
+            "title": "Taking the Human Out of the Loop: A Review of Bayesian Optimization",
+            "url": "https://www.semanticscholar.org/paper/0a2586e0a5f8bb4e35aa0763a6b8bca428af6bd2",
+            "venue": "Proceedings of the IEEE",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2056417995",
+                    "name": "Kevin P. Murphy"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "360ca02e6f5a5e1af3dce4866a257aafc2d6d6f5",
+            "title": "Machine learning - a probabilistic perspective",
+            "url": "https://www.semanticscholar.org/paper/360ca02e6f5a5e1af3dce4866a257aafc2d6d6f5",
+            "venue": "Adaptive computation and machine learning series",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1695576",
+                    "name": "J. Hellerstein"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "d1ee51ef1337ded82a439e5f796d00c03290e37a",
+            "title": "Quantitative Data Cleaning for Large Databases",
+            "url": "https://www.semanticscholar.org/paper/d1ee51ef1337ded82a439e5f796d00c03290e37a",
+            "venue": "",
+            "year": 2008
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Mathematics",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Exploratory Visual Analysis for Increasing Data Readiness in Artificial Intelligence Projects",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/94044041f1a103a33d640d0b3105fb38ddedd9ab",
+    "venue": "arXiv.org",
+    "year": 2024
+}

@@ -1,0 +1,987 @@
+{
+    "abstract": "In this paper, we present a heuristic operator which aims at simultaneously optimizing the orientations of all the edges in an intermediate Bayesian network structure during the search process. This is done by alternating between the space of directed acyclic graphs (DAGs) and the space of skeletons. The found orientations of the edges are based on a scoring function rather than on induced conditional independences. This operator can be used as an extension to commonly employed search strategies. It is evaluated in experiments with artificial and real-world data.",
+    "arxivId": "1301.3894",
+    "authors": [
+        {
+            "authorId": "2454529",
+            "name": "H. Steck",
+            "url": "https://www.semanticscholar.org/author/2454529"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2109868608",
+                    "name": "Liang Ma"
+                },
+                {
+                    "authorId": "152531225",
+                    "name": "Jie Dong"
+                },
+                {
+                    "authorId": "3281419",
+                    "name": "Kai-xiang Peng"
+                }
+            ],
+            "doi": "10.1016/j.jfranklin.2018.07.035",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d85cd32b9bc8b79fd1d18bcf8f180cab3b710809",
+            "title": "A practical propagation path identification scheme for quality-related faults based on nonlinear dynamic latent variable model and partitioned Bayesian network",
+            "url": "https://www.semanticscholar.org/paper/d85cd32b9bc8b79fd1d18bcf8f180cab3b710809",
+            "venue": "J. Frankl. Inst.",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "152503828",
+                    "name": "Junichi Mori"
+                },
+                {
+                    "authorId": "2375863",
+                    "name": "V. Mahalec"
+                },
+                {
+                    "authorId": "46178822",
+                    "name": "Jie Yu"
+                }
+            ],
+            "doi": "10.1016/j.compchemeng.2014.07.022",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "426720975dc9287eed3009719fe98b94a26c2477",
+            "title": "Identification of probabilistic graphical network model for root-cause diagnosis in industrial processes",
+            "url": "https://www.semanticscholar.org/paper/426720975dc9287eed3009719fe98b94a26c2477",
+            "venue": "Comput. Chem. Eng.",
+            "year": 2014
+        },
+        {
+            "arxivId": "1107.0019",
+            "authors": [
+                {
+                    "authorId": "1739329",
+                    "name": "Silvia Acid"
+                },
+                {
+                    "authorId": "1728509",
+                    "name": "L. M. D. Campos"
+                }
+            ],
+            "doi": "10.1613/jair.1061",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "43f1297e5476d783f6a0344c32232be47aed14b5",
+            "title": "Searching for Bayesian Network Structures in the Space of Restricted Acyclic Partially Directed Graphs",
+            "url": "https://www.semanticscholar.org/paper/43f1297e5476d783f6a0344c32232be47aed14b5",
+            "venue": "J. Artif. Intell. Res.",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "47869561",
+                    "name": "R\u00f3n\u00e1n Daly"
+                },
+                {
+                    "authorId": "144576537",
+                    "name": "Q. Shen"
+                },
+                {
+                    "authorId": "2069337441",
+                    "name": "Stuart Aitken"
+                }
+            ],
+            "doi": "10.1017/S0269888910000251",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "6bce1db9b6d7d49b8c4ce286f025ace33bb3d31e",
+            "title": "Learning Bayesian networks: approaches and issues",
+            "url": "https://www.semanticscholar.org/paper/6bce1db9b6d7d49b8c4ce286f025ace33bb3d31e",
+            "venue": "The Knowledge Engineering Review",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145610994",
+                    "name": "Mark W. Schmidt"
+                }
+            ],
+            "doi": "10.14288/1.0051935",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "daf7511d4672a313152aafac81400651df2ed738",
+            "title": "Graphical model structure learning using L\u2081-regularization",
+            "url": "https://www.semanticscholar.org/paper/daf7511d4672a313152aafac81400651df2ed738",
+            "venue": "",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2218959279",
+                    "name": "Feng Liu"
+                },
+                {
+                    "authorId": "143619380",
+                    "name": "Fengzhan Tian"
+                },
+                {
+                    "authorId": "1716156",
+                    "name": "Qiliang Zhu"
+                }
+            ],
+            "doi": "10.1109/ICDMW.2007.13",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "dba9ea98b2b632deba96332485146fb58c293d1a",
+            "title": "A Novel Ordering-Based Greedy Bayesian Network Learning Algorithm on Limited Data",
+            "url": "https://www.semanticscholar.org/paper/dba9ea98b2b632deba96332485146fb58c293d1a",
+            "venue": "Seventh IEEE International Conference on Data Mining Workshops (ICDMW 2007)",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2218959279",
+                    "name": "Feng Liu"
+                },
+                {
+                    "authorId": "143619380",
+                    "name": "Fengzhan Tian"
+                },
+                {
+                    "authorId": "1716156",
+                    "name": "Qiliang Zhu"
+                }
+            ],
+            "doi": "10.1007/978-3-540-74690-4_6",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "30416e90d89f82516cfdf31994082b16232826ff",
+            "title": "An Improved Greedy Bayesian Network Learning Algorithm on Limited Data",
+            "url": "https://www.semanticscholar.org/paper/30416e90d89f82516cfdf31994082b16232826ff",
+            "venue": "ICANN",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2218959279",
+                    "name": "Feng Liu"
+                },
+                {
+                    "authorId": "143619380",
+                    "name": "Fengzhan Tian"
+                },
+                {
+                    "authorId": "1716156",
+                    "name": "Qiliang Zhu"
+                }
+            ],
+            "doi": "10.1007/978-3-540-73871-8_38",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "d68badd82e5da61bc259d8aa1fb3eff804f11000",
+            "title": "A Novel Greedy Bayesian Network Structure Learning Algorithm for Limited Data",
+            "url": "https://www.semanticscholar.org/paper/d68badd82e5da61bc259d8aa1fb3eff804f11000",
+            "venue": "ADMA",
+            "year": 2007
+        },
+        {
+            "arxivId": "1207.1429",
+            "authors": [
+                {
+                    "authorId": "143704607",
+                    "name": "M. Teyssier"
+                },
+                {
+                    "authorId": "1736370",
+                    "name": "D. Koller"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f2cb020146cfa7a49c9eec63db8ac47d7fc8645f",
+            "title": "Ordering-Based Search: A Simple and Effective Algorithm for Learning Bayesian Networks",
+            "url": "https://www.semanticscholar.org/paper/f2cb020146cfa7a49c9eec63db8ac47d7fc8645f",
+            "venue": "UAI",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145324804",
+                    "name": "J. Gebhardt"
+                },
+                {
+                    "authorId": "1718723",
+                    "name": "R. Kruse"
+                }
+            ],
+            "doi": "10.1007/11518655_2",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "15b6cd00bd6ad9129bfd8a347cd907dc8dc9ae08",
+            "title": "Knowledge-Based Operations for Graphical Models in Planning",
+            "url": "https://www.semanticscholar.org/paper/15b6cd00bd6ad9129bfd8a347cd907dc8dc9ae08",
+            "venue": "ECSQARU",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1823807",
+                    "name": "Liviu Badea"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "243190e3076ceb627041ee49b6fa96392f7df064",
+            "title": "Determining the Direction of Causal Influence in Large Probabilistic Networks: A Constraint-Based Approach",
+            "url": "https://www.semanticscholar.org/paper/243190e3076ceb627041ee49b6fa96392f7df064",
+            "venue": "ECAI",
+            "year": 2004
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2056718858",
+                    "name": "Rosa Blanco"
+                },
+                {
+                    "authorId": "1788277",
+                    "name": "I\u00f1aki Inza"
+                },
+                {
+                    "authorId": "144999310",
+                    "name": "P. Larra\u00f1aga"
+                }
+            ],
+            "doi": "10.1002/int.10084",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8fbddf707e61f818a4e1bfb86c677107b456e1e3",
+            "title": "Learning Bayesian networks in the space of structures by estimation of distribution algorithms",
+            "url": "https://www.semanticscholar.org/paper/8fbddf707e61f818a4e1bfb86c677107b456e1e3",
+            "venue": "Int. J. Intell. Syst.",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "96155508",
+                    "name": "Tomasz Skica"
+                },
+                {
+                    "authorId": "107760441",
+                    "name": "Jacek Rodzinka"
+                },
+                {
+                    "authorId": "2233096",
+                    "name": "T. Mroczek"
+                }
+            ],
+            "doi": "10.7862/RZ.2016.MMR.32",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "bc0b78da723cdc6ea766160ca5dc1bee82277d5a",
+            "title": "SELECTION OF RELEVANT VARIABLES IDENTIFY-ING THE RELATIONSHIP BETWEEN THE GENERAL GOVERNMENT SECTOR SIZE AND THE ECONOMY",
+            "url": "https://www.semanticscholar.org/paper/bc0b78da723cdc6ea766160ca5dc1bee82277d5a",
+            "venue": "",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "152503828",
+                    "name": "Junichi Mori"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "13b91af3f89026e51af2648a44e706cbde574e35",
+            "title": "Diagnosis of faults in plant operations and scheduling under uncertain production times",
+            "url": "https://www.semanticscholar.org/paper/13b91af3f89026e51af2648a44e706cbde574e35",
+            "venue": "",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "153251465",
+                    "name": "M. Maier"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "b8263ef3e0bbb237a7227180d2a49cf786566a7d",
+            "title": "Causal Discovery for Relational Domains: Representation, Reasoning, and Learning",
+            "url": "https://www.semanticscholar.org/paper/b8263ef3e0bbb237a7227180d2a49cf786566a7d",
+            "venue": "",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "48813198",
+                    "name": "M. Czy\u017cewska"
+                },
+                {
+                    "authorId": "2233096",
+                    "name": "T. Mroczek"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2014d37b9272eaf0782259336dd6df60b37e0d4d",
+            "title": "BAYESIAN APPROACH TO THE PROCESS OF IDENTIFICATION OF THE DETERMINANTS OF INNOVATIVENESS",
+            "url": "https://www.semanticscholar.org/paper/2014d37b9272eaf0782259336dd6df60b37e0d4d",
+            "venue": "",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2277254556",
+                    "name": "David Jensen"
+                },
+                {
+                    "authorId": "1701281",
+                    "name": "Andrew S. Fast"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "e32e422c9bd8d906cef1671ea65d5f5349d38efb",
+            "title": "Learning the structure of bayesian networks with constraint satisfaction",
+            "url": "https://www.semanticscholar.org/paper/e32e422c9bd8d906cef1671ea65d5f5349d38efb",
+            "venue": "",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1701281",
+                    "name": "Andrew S. Fast"
+                },
+                {
+                    "authorId": "143628156",
+                    "name": "David Jensen"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "871997584991f0ff3b28122fc0dee65b33f5cfd7",
+            "title": "Constraint Relaxation for Learning the Structure of Bayesian Networks",
+            "url": "https://www.semanticscholar.org/paper/871997584991f0ff3b28122fc0dee65b33f5cfd7",
+            "venue": "",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145324804",
+                    "name": "J. Gebhardt"
+                },
+                {
+                    "authorId": "2733348",
+                    "name": "A. Klose"
+                },
+                {
+                    "authorId": "1841977",
+                    "name": "Heinz Detmer"
+                },
+                {
+                    "authorId": "1992328",
+                    "name": "Frank R\u00fcgheimer"
+                },
+                {
+                    "authorId": "1718723",
+                    "name": "R. Kruse"
+                }
+            ],
+            "doi": "10.1007/3-211-38167-8_8",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "4ae3b12931a44da895164383cb5db468c5507e55",
+            "title": "Graphical Models for Industrial Planning on Complex Domains",
+            "url": "https://www.semanticscholar.org/paper/4ae3b12931a44da895164383cb5db468c5507e55",
+            "venue": "Decision Theory and Multi-Agent Planning",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2056718858",
+                    "name": "Rosa Blanco"
+                },
+                {
+                    "authorId": "66241631",
+                    "name": "I. Inza"
+                },
+                {
+                    "authorId": "144999310",
+                    "name": "P. Larra\u00f1aga"
+                }
+            ],
+            "doi": "10.1007/978-3-540-39879-0_10",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d1d56e239e8a62ef606e60e6b4fb53422c14c9d9",
+            "title": "Learning Bayesian Networks by Floating Search Methods",
+            "url": "https://www.semanticscholar.org/paper/d1d56e239e8a62ef606e60e6b4fb53422c14c9d9",
+            "venue": "",
+            "year": 2004
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "39804035",
+                    "name": "Pankaj B. Gupta"
+                },
+                {
+                    "authorId": "2134036",
+                    "name": "V. Allan"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "b71a29c87d59cf36470cfb000cda92ffb0996f6f",
+            "title": "Performance Analysis of an Acyclic Genetic approach to Learn Bayesian Network Structure",
+            "url": "https://www.semanticscholar.org/paper/b71a29c87d59cf36470cfb000cda92ffb0996f6f",
+            "venue": "IICAI",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "39804035",
+                    "name": "Pankaj B. Gupta"
+                },
+                {
+                    "authorId": "2134036",
+                    "name": "V. Allan"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "0dbf8b1b0fa0404d8b6af54bc5150e32f0148039",
+            "title": "The Acyclic Bayesian Net Generator",
+            "url": "https://www.semanticscholar.org/paper/0dbf8b1b0fa0404d8b6af54bc5150e32f0148039",
+            "venue": "IICAI",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2454529",
+                    "name": "H. Steck"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "853fcd5dfd36ef6fba1a332ad048af60d01cc6ac",
+            "title": "Constraint-based structural learning in Bayesian networks using finite data sets",
+            "url": "https://www.semanticscholar.org/paper/853fcd5dfd36ef6fba1a332ad048af60d01cc6ac",
+            "venue": "",
+            "year": 2001
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2659620",
+                    "name": "A. Hartemink"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "578a29625ae0fc850da0c72e8ad2684b732c9268",
+            "title": "Principled computational methods for the validation discovery of genetic regulatory networks",
+            "url": "https://www.semanticscholar.org/paper/578a29625ae0fc850da0c72e8ad2684b732c9268",
+            "venue": "",
+            "year": 2001
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "39804035",
+                    "name": "Pankaj B. Gupta"
+                },
+                {
+                    "authorId": "2134036",
+                    "name": "V. Allan"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "b15a725945649dff0cc71e4057de5fd8edd9b226",
+            "title": "The Acyclic Bayesian Net Generator ( Student Paper )",
+            "url": "https://www.semanticscholar.org/paper/b15a725945649dff0cc71e4057de5fd8edd9b226",
+            "venue": "",
+            "year": null
+        }
+    ],
+    "corpusId": 912067,
+    "doi": null,
+    "fieldsOfStudy": [
+        "Computer Science",
+        "Mathematics"
+    ],
+    "influentialCitationCount": 1,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 25,
+    "numCiting": 19,
+    "paperId": "f0a4bba98eaa871da56fab767a8a2734e6022531",
+    "references": [
+        {
+            "arxivId": "1301.7415",
+            "authors": [
+                {
+                    "authorId": "2868274",
+                    "name": "B. Thiesson"
+                },
+                {
+                    "authorId": "50004012",
+                    "name": "Christopher Meek"
+                },
+                {
+                    "authorId": "1724065",
+                    "name": "D. M. Chickering"
+                },
+                {
+                    "authorId": "48099028",
+                    "name": "D. Heckerman"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "b73ffe5e76c3f7e6239ae3e4fc34a931ea716e01",
+            "title": "Learning Mixtures of DAG Models",
+            "url": "https://www.semanticscholar.org/paper/b73ffe5e76c3f7e6239ae3e4fc34a931ea716e01",
+            "venue": "UAI",
+            "year": 1998
+        },
+        {
+            "arxivId": "1302.3566",
+            "authors": [
+                {
+                    "authorId": "1724065",
+                    "name": "D. M. Chickering"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "4bb255a64ccd2e328b7659413117cdb4ea5d8ac1",
+            "title": "Learning Equivalence Classes of Bayesian Network Structures",
+            "url": "https://www.semanticscholar.org/paper/4bb255a64ccd2e328b7659413117cdb4ea5d8ac1",
+            "venue": "UAI",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "40484982",
+                    "name": "P. Cheeseman"
+                },
+                {
+                    "authorId": "87277825",
+                    "name": "J. Stutz"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "42f75b297aed474599c8e598dd211a1999804138",
+            "title": "Bayesian Classification (AutoClass): Theory and Results",
+            "url": "https://www.semanticscholar.org/paper/42f75b297aed474599c8e598dd211a1999804138",
+            "venue": "Advances in Knowledge Discovery and Data Mining",
+            "year": 1996
+        },
+        {
+            "arxivId": "1302.4938",
+            "authors": [
+                {
+                    "authorId": "1724065",
+                    "name": "D. M. Chickering"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "e351af4512d66073c21438a74baedd6e93aefc73",
+            "title": "A Transformational Characterization of Equivalent Bayesian Network Structures",
+            "url": "https://www.semanticscholar.org/paper/e351af4512d66073c21438a74baedd6e93aefc73",
+            "venue": "UAI",
+            "year": 1995
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1988445",
+                    "name": "Thomas Verma"
+                },
+                {
+                    "authorId": "145430701",
+                    "name": "J. Pearl"
+                }
+            ],
+            "doi": "10.1145/3501714.3501732",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "17d451204a460a4739c7b1627a128a125f4af120",
+            "title": "Equivalence and Synthesis of Causal Models",
+            "url": "https://www.semanticscholar.org/paper/17d451204a460a4739c7b1627a128a125f4af120",
+            "venue": "UAI",
+            "year": 1990
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145633057",
+                    "name": "D. Gokhale"
+                },
+                {
+                    "authorId": "2095314816",
+                    "name": "Y. Bishop"
+                },
+                {
+                    "authorId": "1684961",
+                    "name": "S. Fienberg"
+                },
+                {
+                    "authorId": "5578803",
+                    "name": "P. Holland"
+                }
+            ],
+            "doi": "10.2307/2529528",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "b5893e8d0650a7396887b6fec2d08ddea81e48eb",
+            "title": "Discrete Multivariate Analysis.",
+            "url": "https://www.semanticscholar.org/paper/b5893e8d0650a7396887b6fec2d08ddea81e48eb",
+            "venue": "",
+            "year": 1976
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "117335982",
+                    "name": "W. H. Sewell"
+                },
+                {
+                    "authorId": "66854271",
+                    "name": "V. Shah"
+                }
+            ],
+            "doi": "10.1086/224530",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "49e96ad389dfd274460be994cb53e078d1217316",
+            "title": "Social Class, Parental Encouragement, and Educational Aspirations",
+            "url": "https://www.semanticscholar.org/paper/49e96ad389dfd274460be994cb53e078d1217316",
+            "venue": "American Journal of Sociology",
+            "year": 1968
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1710305",
+                    "name": "D. Madigan"
+                },
+                {
+                    "authorId": "2746221",
+                    "name": "S. A. Andersson"
+                },
+                {
+                    "authorId": "2830733",
+                    "name": "M. Perlman"
+                },
+                {
+                    "authorId": "3146362",
+                    "name": "C. Volinsky"
+                }
+            ],
+            "doi": "10.1080/03610929608831853",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f994dd7ac48a1f8c42ebd3be0973ca69ca080f26",
+            "title": "Bayesian model averaging and model selection for markov equivalence classes of acyclic digraphs",
+            "url": "https://www.semanticscholar.org/paper/f994dd7ac48a1f8c42ebd3be0973ca69ca080f26",
+            "venue": "",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2262407921",
+                    "name": "Robert E. Kass"
+                },
+                {
+                    "authorId": "1804386",
+                    "name": "A. Raftery"
+                }
+            ],
+            "doi": "10.4135/9781412952644.n45",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "1930d092f959a2f9abe5a64ff473ddb95cde8c55",
+            "title": "Bayes factors",
+            "url": "https://www.semanticscholar.org/paper/1930d092f959a2f9abe5a64ff473ddb95cde8c55",
+            "venue": "",
+            "year": 1995
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2320516290",
+                    "name": "NP-CompleteDavid Maxwell ChickeringComputer"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5fb874a1c8106a5b2b2779ee8e1433149109ba00",
+            "title": "Learning Bayesian Networks is",
+            "url": "https://www.semanticscholar.org/paper/5fb874a1c8106a5b2b2779ee8e1433149109ba00",
+            "venue": "",
+            "year": 1994
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1956635",
+                    "name": "I. Beinlich"
+                },
+                {
+                    "authorId": "31445340",
+                    "name": "H. J. Suermondt"
+                },
+                {
+                    "authorId": "37659559",
+                    "name": "R. M. Chavez"
+                },
+                {
+                    "authorId": "1726406",
+                    "name": "G. Cooper"
+                }
+            ],
+            "doi": "10.1007/978-3-642-93437-7_28",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d97676a7505a446670cfc7a2fd0fc2e2672eaf9f",
+            "title": "The ALARM Monitoring System: A Case Study with two Probabilistic Inference Techniques for Belief Networks",
+            "url": "https://www.semanticscholar.org/paper/d97676a7505a446670cfc7a2fd0fc2e2672eaf9f",
+            "venue": "AIME",
+            "year": 1989
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145430701",
+                    "name": "J. Pearl"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "1826df6f270cae70afacb5f6ae1d5175db903d5e",
+            "title": "Probabilistic reasoning in intelligent systems - networks of plausible inference",
+            "url": "https://www.semanticscholar.org/paper/1826df6f270cae70afacb5f6ae1d5175db903d5e",
+            "venue": "Morgan Kaufmann series in representation and reasoning",
+            "year": 1989
+        },
+        {
+            "arxivId": null,
+            "authors": [],
+            "doi": "10.1016/c2009-0-27609-4",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5bf6f01402e1648b7d1e6c9200ede6cb1af30123",
+            "title": "Probabilistic reasoning in intelligent systems",
+            "url": "https://www.semanticscholar.org/paper/5bf6f01402e1648b7d1e6c9200ede6cb1af30123",
+            "venue": "",
+            "year": 1988
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Mathematics",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        },
+        {
+            "category": "Mathematics",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "On the Use of Skeletons when Learning in Bayesian Networks",
+    "topics": [
+        {
+            "topic": "Bayesian network",
+            "topicId": "14005",
+            "url": "https://www.semanticscholar.org/topic/14005"
+        },
+        {
+            "topic": "Directed acyclic graph",
+            "topicId": "19552",
+            "url": "https://www.semanticscholar.org/topic/19552"
+        },
+        {
+            "topic": "Skeleton",
+            "topicId": "19197",
+            "url": "https://www.semanticscholar.org/topic/19197"
+        },
+        {
+            "topic": "Heuristic",
+            "topicId": "4146",
+            "url": "https://www.semanticscholar.org/topic/4146"
+        },
+        {
+            "topic": "Computation",
+            "topicId": "339",
+            "url": "https://www.semanticscholar.org/topic/339"
+        },
+        {
+            "topic": "Tree traversal",
+            "topicId": "7585",
+            "url": "https://www.semanticscholar.org/topic/7585"
+        },
+        {
+            "topic": "Experiment",
+            "topicId": "378",
+            "url": "https://www.semanticscholar.org/topic/378"
+        },
+        {
+            "topic": "Harald Ganzinger",
+            "topicId": "921631",
+            "url": "https://www.semanticscholar.org/topic/921631"
+        },
+        {
+            "topic": "Score",
+            "topicId": "1168",
+            "url": "https://www.semanticscholar.org/topic/1168"
+        },
+        {
+            "topic": "Mental Orientation",
+            "topicId": "41643",
+            "url": "https://www.semanticscholar.org/topic/41643"
+        },
+        {
+            "topic": "Graph - visual representation",
+            "topicId": "31127",
+            "url": "https://www.semanticscholar.org/topic/31127"
+        },
+        {
+            "topic": "Scoring functions for docking",
+            "topicId": "58069",
+            "url": "https://www.semanticscholar.org/topic/58069"
+        },
+        {
+            "topic": "Units Of Measure - Siemens",
+            "topicId": "16607",
+            "url": "https://www.semanticscholar.org/topic/16607"
+        }
+    ],
+    "url": "https://www.semanticscholar.org/paper/f0a4bba98eaa871da56fab767a8a2734e6022531",
+    "venue": "Conference on Uncertainty in Artificial Intelligence",
+    "year": 2000
+}

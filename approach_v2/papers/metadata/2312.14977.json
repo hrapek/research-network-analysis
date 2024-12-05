@@ -1,0 +1,1463 @@
+{
+    "abstract": "Generative artificial intelligence (AI) refers to algorithms that create synthetic but realistic output. Diffusion models currently offer state of the art performance in generative AI for images. They also form a key component in more general tools, including text-to-image generators and large language models. Diffusion models work by adding noise to the available training data and then learning how to reverse the process. The reverse operation may then be applied to new random data in order to produce new outputs. We provide a brief introduction to diffusion models for applied mathematicians and statisticians. Our key aims are (a) to present illustrative computational examples, (b) to give a careful derivation of the underlying mathematical formulas involved, and (c) to draw a connection with partial differential equation (PDE) diffusion models. We provide code for the computational experiments. We hope that this topic will be of interest to advanced undergraduate students and postgraduate students. Portions of the material may also provide useful motivational examples for those who teach courses in stochastic processes, inference, machine learning, PDEs or scientific computing.",
+    "arxivId": "2312.14977",
+    "authors": [
+        {
+            "authorId": "3126761",
+            "name": "Catherine F. Higham",
+            "url": "https://www.semanticscholar.org/author/3126761"
+        },
+        {
+            "authorId": "2249925245",
+            "name": "Des J. Higham",
+            "url": "https://www.semanticscholar.org/author/2249925245"
+        },
+        {
+            "authorId": "2271588308",
+            "name": "P. Grindrod",
+            "url": "https://www.semanticscholar.org/author/2271588308"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": "2406.19807",
+            "authors": [
+                {
+                    "authorId": "2219550725",
+                    "name": "Lucas Beerens"
+                },
+                {
+                    "authorId": "3126761",
+                    "name": "Catherine F. Higham"
+                },
+                {
+                    "authorId": "1719736",
+                    "name": "D. Higham"
+                }
+            ],
+            "doi": "10.48550/arXiv.2406.19807",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5cb1214319872be3db9708d1f4d1d7a2b98463cc",
+            "title": "Deceptive Diffusion: Generating Synthetic Adversarial Examples",
+            "url": "https://www.semanticscholar.org/paper/5cb1214319872be3db9708d1f4d1d7a2b98463cc",
+            "venue": "ArXiv",
+            "year": 2024
+        }
+    ],
+    "corpusId": 266551377,
+    "doi": "10.48550/arXiv.2312.14977",
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 1,
+    "numCiting": 45,
+    "paperId": "c253528e5eb600aa67625d05004d3f0f9af24514",
+    "references": [
+        {
+            "arxivId": "2312.04429",
+            "authors": [
+                {
+                    "authorId": "2271598455",
+                    "name": "Shubham Agarwal"
+                },
+                {
+                    "authorId": "2112997744",
+                    "name": "Subrata Mitra"
+                },
+                {
+                    "authorId": "2240533764",
+                    "name": "Sarthak Chakraborty"
+                },
+                {
+                    "authorId": "2066290643",
+                    "name": "Srikrishna Karanam"
+                },
+                {
+                    "authorId": "2272963448",
+                    "name": "Koyel Mukherjee"
+                },
+                {
+                    "authorId": "2240531895",
+                    "name": "S. Saini"
+                }
+            ],
+            "doi": "10.48550/arXiv.2312.04429",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ee20da5b3b8ca1eaec7e497b43900ecb4afcbfb3",
+            "title": "Approximate Caching for Efficiently Serving Diffusion Models",
+            "url": "https://www.semanticscholar.org/paper/ee20da5b3b8ca1eaec7e497b43900ecb4afcbfb3",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": "2311.16863",
+            "authors": [
+                {
+                    "authorId": "2165225321",
+                    "name": "Sasha Luccioni"
+                },
+                {
+                    "authorId": "2268491803",
+                    "name": "Yacine Jernite"
+                },
+                {
+                    "authorId": "2268272",
+                    "name": "Emma Strubell"
+                }
+            ],
+            "doi": "10.1145/3630106.3658542",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "9eb476cd15becf02163d6f3dab75d207eed52214",
+            "title": "Power Hungry Processing: Watts Driving the Cost of AI Deployment?",
+            "url": "https://www.semanticscholar.org/paper/9eb476cd15becf02163d6f3dab75d207eed52214",
+            "venue": "FAccT",
+            "year": 2023
+        },
+        {
+            "arxivId": "2310.07204",
+            "authors": [
+                {
+                    "authorId": "2142552068",
+                    "name": "Ryan Po"
+                },
+                {
+                    "authorId": "2140325536",
+                    "name": "Wang Yifan"
+                },
+                {
+                    "authorId": "3407706",
+                    "name": "Vladislav Golyanik"
+                },
+                {
+                    "authorId": "3451442",
+                    "name": "Kfir Aberman"
+                },
+                {
+                    "authorId": "50329510",
+                    "name": "J. Barron"
+                },
+                {
+                    "authorId": "2331622743",
+                    "name": "Amit H. Bermano"
+                },
+                {
+                    "authorId": "2257039304",
+                    "name": "Eric R. Chan"
+                },
+                {
+                    "authorId": "2112779",
+                    "name": "Tali Dekel"
+                },
+                {
+                    "authorId": "2248172435",
+                    "name": "Aleksander Holynski"
+                },
+                {
+                    "authorId": "20615377",
+                    "name": "Angjoo Kanazawa"
+                },
+                {
+                    "authorId": "2257113317",
+                    "name": "C. K. Liu"
+                },
+                {
+                    "authorId": "46458089",
+                    "name": "Lingjie Liu"
+                },
+                {
+                    "authorId": "2577533",
+                    "name": "B. Mildenhall"
+                },
+                {
+                    "authorId": "2209612",
+                    "name": "M. Nie\u00dfner"
+                },
+                {
+                    "authorId": "2257038709",
+                    "name": "Bjorn Ommer"
+                },
+                {
+                    "authorId": "1680185",
+                    "name": "C. Theobalt"
+                },
+                {
+                    "authorId": "1798011",
+                    "name": "Peter Wonka"
+                },
+                {
+                    "authorId": "2256985147",
+                    "name": "Gordon Wetzstein"
+                }
+            ],
+            "doi": "10.1111/cgf.15063",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "6487ec82f6d8082a5b402a5416ea03009acb1679",
+            "title": "State of the Art on Diffusion Models for Visual Computing",
+            "url": "https://www.semanticscholar.org/paper/6487ec82f6d8082a5b402a5416ea03009acb1679",
+            "venue": "Comput. Graph. Forum",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2235318751",
+                    "name": "Harry H. Jiang"
+                },
+                {
+                    "authorId": "2236021581",
+                    "name": "Lauren Brown"
+                },
+                {
+                    "authorId": "120971354",
+                    "name": "Jessica Cheng"
+                },
+                {
+                    "authorId": "2109299496",
+                    "name": "Mehtab Khan"
+                },
+                {
+                    "authorId": "144150274",
+                    "name": "Abhishek Gupta"
+                },
+                {
+                    "authorId": "2103352531",
+                    "name": "Deja Workman"
+                },
+                {
+                    "authorId": "40540250",
+                    "name": "A. Hanna"
+                },
+                {
+                    "authorId": "67078792",
+                    "name": "J. Flowers"
+                },
+                {
+                    "authorId": "2076288",
+                    "name": "Timnit Gebru"
+                }
+            ],
+            "doi": "10.1145/3600211.3604681",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7dbd3d51c453caf77cc1f9681f9b888095b97443",
+            "title": "AI Art and its Impact on Artists",
+            "url": "https://www.semanticscholar.org/paper/7dbd3d51c453caf77cc1f9681f9b888095b97443",
+            "venue": "AIES",
+            "year": 2023
+        },
+        {
+            "arxivId": "2306.06135",
+            "authors": [
+                {
+                    "authorId": "67146795",
+                    "name": "Susan Hao"
+                },
+                {
+                    "authorId": "2129360114",
+                    "name": "Piyush Kumar"
+                },
+                {
+                    "authorId": "2219921486",
+                    "name": "Sarah Laszlo"
+                },
+                {
+                    "authorId": "40346865",
+                    "name": "Shivani Poddar"
+                },
+                {
+                    "authorId": "2219919981",
+                    "name": "Bhaktipriya Radharapu"
+                },
+                {
+                    "authorId": "65828391",
+                    "name": "R. Shelby"
+                }
+            ],
+            "doi": "10.48550/arXiv.2306.06135",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ff04b7e24337b06ff6be1e45c0933fbf2cce289f",
+            "title": "Safety and Fairness for Content Moderation in Generative Models",
+            "url": "https://www.semanticscholar.org/paper/ff04b7e24337b06ff6be1e45c0933fbf2cce289f",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": "2306.02781",
+            "authors": [
+                {
+                    "authorId": "2200162353",
+                    "name": "Roberto Gozalo-Brizuela"
+                },
+                {
+                    "authorId": "2170361666",
+                    "name": "Eduardo C. Garrido-Merch'an"
+                }
+            ],
+            "doi": "10.48550/arXiv.2306.02781",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f2154bedb033b07b838d9ac90a657b4ab4243be4",
+            "title": "A survey of Generative AI Applications",
+            "url": "https://www.semanticscholar.org/paper/f2154bedb033b07b838d9ac90a657b4ab4243be4",
+            "venue": "Journal of Computer Science",
+            "year": 2023
+        },
+        {
+            "arxivId": "2304.13224",
+            "authors": [
+                {
+                    "authorId": "2129735133",
+                    "name": "Zihao Wang"
+                }
+            ],
+            "doi": "10.48550/arXiv.2304.13224",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7010f5d99e6e15301f37be67a62bf4794ddf1579",
+            "title": "Score-based Generative Modeling Through Backward Stochastic Differential Equations: Inversion and Generation",
+            "url": "https://www.semanticscholar.org/paper/7010f5d99e6e15301f37be67a62bf4794ddf1579",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": "2304.03246",
+            "authors": [
+                {
+                    "authorId": "2211733091",
+                    "name": "Ahmet Burak Yildirim"
+                },
+                {
+                    "authorId": "2213695609",
+                    "name": "Vedat Baday"
+                },
+                {
+                    "authorId": "152330322",
+                    "name": "Erkut Erdem"
+                },
+                {
+                    "authorId": "14364286",
+                    "name": "Aykut Erdem"
+                },
+                {
+                    "authorId": "2130620",
+                    "name": "A. Dundar"
+                }
+            ],
+            "doi": "10.48550/arXiv.2304.03246",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e846aa9a93d706e942a685bd483f6efd0dd320ee",
+            "title": "Inst-Inpaint: Instructing to Remove Objects with Diffusion Models",
+            "url": "https://www.semanticscholar.org/paper/e846aa9a93d706e942a685bd483f6efd0dd320ee",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": "2303.04226",
+            "authors": [
+                {
+                    "authorId": "2211165440",
+                    "name": "Yihan Cao"
+                },
+                {
+                    "authorId": "2211077408",
+                    "name": "Siyu Li"
+                },
+                {
+                    "authorId": null,
+                    "name": "Yixin Liu"
+                },
+                {
+                    "authorId": "2143627170",
+                    "name": "Zhiling Yan"
+                },
+                {
+                    "authorId": "31336649",
+                    "name": "Yutong Dai"
+                },
+                {
+                    "authorId": "144019071",
+                    "name": "Philip S. Yu"
+                },
+                {
+                    "authorId": "46732871",
+                    "name": "Lichao Sun"
+                }
+            ],
+            "doi": "10.48550/arXiv.2303.04226",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a7b3a868a80dbe97689135c99b1a6b6e10dcdfe5",
+            "title": "A Comprehensive Survey of AI-Generated Content (AIGC): A History of Generative AI from GAN to ChatGPT",
+            "url": "https://www.semanticscholar.org/paper/a7b3a868a80dbe97689135c99b1a6b6e10dcdfe5",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": "2302.07121",
+            "authors": [
+                {
+                    "authorId": "7364835",
+                    "name": "Arpit Bansal"
+                },
+                {
+                    "authorId": "37286392",
+                    "name": "Hong-Min Chu"
+                },
+                {
+                    "authorId": "102604362",
+                    "name": "Avi Schwarzschild"
+                },
+                {
+                    "authorId": "2500202",
+                    "name": "Soumyadip Sengupta"
+                },
+                {
+                    "authorId": "121592562",
+                    "name": "Micah Goldblum"
+                },
+                {
+                    "authorId": "8284185",
+                    "name": "Jonas Geiping"
+                },
+                {
+                    "authorId": "1962083",
+                    "name": "T. Goldstein"
+                }
+            ],
+            "doi": "10.1109/CVPRW59228.2023.00091",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d24b4f34197df0257390b57f02537e6ce3284f2e",
+            "title": "Universal Guidance for Diffusion Models",
+            "url": "https://www.semanticscholar.org/paper/d24b4f34197df0257390b57f02537e6ce3284f2e",
+            "venue": "2023 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)",
+            "year": 2023
+        },
+        {
+            "arxivId": "2302.05543",
+            "authors": [
+                {
+                    "authorId": "17744884",
+                    "name": "Lvmin Zhang"
+                },
+                {
+                    "authorId": "36290866",
+                    "name": "Anyi Rao"
+                },
+                {
+                    "authorId": "1820412",
+                    "name": "Maneesh Agrawala"
+                }
+            ],
+            "doi": "10.1109/ICCV51070.2023.00355",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "efbe97d20c4ffe356e8826c01dc550bacc405add",
+            "title": "Adding Conditional Control to Text-to-Image Diffusion Models",
+            "url": "https://www.semanticscholar.org/paper/efbe97d20c4ffe356e8826c01dc550bacc405add",
+            "venue": "2023 IEEE/CVF International Conference on Computer Vision (ICCV)",
+            "year": 2023
+        },
+        {
+            "arxivId": "2302.04265",
+            "authors": [
+                {
+                    "authorId": "152252625",
+                    "name": "Yilun Xu"
+                },
+                {
+                    "authorId": "2145253202",
+                    "name": "Ziming Liu"
+                },
+                {
+                    "authorId": "2476765",
+                    "name": "Yonglong Tian"
+                },
+                {
+                    "authorId": "2058178039",
+                    "name": "Shangyuan Tong"
+                },
+                {
+                    "authorId": "2011933",
+                    "name": "Max Tegmark"
+                },
+                {
+                    "authorId": "35132120",
+                    "name": "T. Jaakkola"
+                }
+            ],
+            "doi": "10.48550/arXiv.2302.04265",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "83243ffcd705d15232c3cf0ba9b998e93968fdc5",
+            "title": "PFGM++: Unlocking the Potential of Physics-Inspired Generative Models",
+            "url": "https://www.semanticscholar.org/paper/83243ffcd705d15232c3cf0ba9b998e93968fdc5",
+            "venue": "ICML",
+            "year": 2023
+        },
+        {
+            "arxivId": "2301.13188",
+            "authors": [
+                {
+                    "authorId": "2483738",
+                    "name": "Nicholas Carlini"
+                },
+                {
+                    "authorId": "9200194",
+                    "name": "Jamie Hayes"
+                },
+                {
+                    "authorId": "3490923",
+                    "name": "Milad Nasr"
+                },
+                {
+                    "authorId": "40844378",
+                    "name": "Matthew Jagielski"
+                },
+                {
+                    "authorId": "3482535",
+                    "name": "Vikash Sehwag"
+                },
+                {
+                    "authorId": "2444919",
+                    "name": "Florian Tram\u00e8r"
+                },
+                {
+                    "authorId": "1718064",
+                    "name": "Borja Balle"
+                },
+                {
+                    "authorId": "7975935",
+                    "name": "Daphne Ippolito"
+                },
+                {
+                    "authorId": "145217343",
+                    "name": "Eric Wallace"
+                }
+            ],
+            "doi": "10.48550/arXiv.2301.13188",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2e965b5d97c2d6fb4af284307735be39283792ba",
+            "title": "Extracting Training Data from Diffusion Models",
+            "url": "https://www.semanticscholar.org/paper/2e965b5d97c2d6fb4af284307735be39283792ba",
+            "venue": "USENIX Security Symposium",
+            "year": 2023
+        },
+        {
+            "arxivId": "2211.17106",
+            "authors": [
+                {
+                    "authorId": "48520402",
+                    "name": "Xingyi Yang"
+                },
+                {
+                    "authorId": "18119920",
+                    "name": "Daquan Zhou"
+                },
+                {
+                    "authorId": "1698982",
+                    "name": "Jiashi Feng"
+                },
+                {
+                    "authorId": "48631088",
+                    "name": "Xinchao Wang"
+                }
+            ],
+            "doi": "10.1109/CVPR52729.2023.02160",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d19a52d68dff80c1f5338a8216740405c69af1e7",
+            "title": "Diffusion Probabilistic Model Made Slim",
+            "url": "https://www.semanticscholar.org/paper/d19a52d68dff80c1f5338a8216740405c69af1e7",
+            "venue": "2023 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2022
+        },
+        {
+            "arxivId": "2211.07804",
+            "authors": [
+                {
+                    "authorId": "2131612425",
+                    "name": "A. Kazerouni"
+                },
+                {
+                    "authorId": "1411236504",
+                    "name": "Ehsan Khodapanah Aghdam"
+                },
+                {
+                    "authorId": "1491490451",
+                    "name": "Moein Heidari"
+                },
+                {
+                    "authorId": "1763181",
+                    "name": "Reza Azad"
+                },
+                {
+                    "authorId": null,
+                    "name": "Mohsen Fayyaz"
+                },
+                {
+                    "authorId": "1836588",
+                    "name": "I. Hacihaliloglu"
+                },
+                {
+                    "authorId": "1737693",
+                    "name": "D. Merhof"
+                }
+            ],
+            "doi": "10.1016/j.media.2023.102846",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b57b8b6b8052bf2e7f6fe5c8e91cdcb385b75ab6",
+            "title": "Diffusion models in medical imaging: A comprehensive survey",
+            "url": "https://www.semanticscholar.org/paper/b57b8b6b8052bf2e7f6fe5c8e91cdcb385b75ab6",
+            "venue": "Medical Image Anal.",
+            "year": 2022
+        },
+        {
+            "arxivId": "2209.11178",
+            "authors": [
+                {
+                    "authorId": "152252625",
+                    "name": "Yilun Xu"
+                },
+                {
+                    "authorId": "2145253202",
+                    "name": "Ziming Liu"
+                },
+                {
+                    "authorId": "49944508",
+                    "name": "M. Tegmark"
+                },
+                {
+                    "authorId": "35132120",
+                    "name": "T. Jaakkola"
+                }
+            ],
+            "doi": "10.48550/arXiv.2209.11178",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "4b245fa98da7cbb173c6495a0c038f8b8e41d158",
+            "title": "Poisson Flow Generative Models",
+            "url": "https://www.semanticscholar.org/paper/4b245fa98da7cbb173c6495a0c038f8b8e41d158",
+            "venue": "NeurIPS",
+            "year": 2022
+        },
+        {
+            "arxivId": "2209.04747",
+            "authors": [
+                {
+                    "authorId": "2154573729",
+                    "name": "Florinel-Alin Croitoru"
+                },
+                {
+                    "authorId": "123480571",
+                    "name": "Vlad Hondru"
+                },
+                {
+                    "authorId": "1817759",
+                    "name": "Radu Tudor Ionescu"
+                },
+                {
+                    "authorId": "2111863589",
+                    "name": "M. Shah"
+                }
+            ],
+            "doi": "10.1109/TPAMI.2023.3261988",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "efa1647594b236361610a20d507127f0586a379b",
+            "title": "Diffusion Models in Vision: A Survey",
+            "url": "https://www.semanticscholar.org/paper/efa1647594b236361610a20d507127f0586a379b",
+            "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+            "year": 2022
+        },
+        {
+            "arxivId": "2208.11970",
+            "authors": [
+                {
+                    "authorId": "51136567",
+                    "name": "Calvin Luo"
+                }
+            ],
+            "doi": "10.48550/arXiv.2208.11970",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "17d068e78e6f25e65cb08319b19b58279bb8b214",
+            "title": "Understanding Diffusion Models: A Unified Perspective",
+            "url": "https://www.semanticscholar.org/paper/17d068e78e6f25e65cb08319b19b58279bb8b214",
+            "venue": "ArXiv",
+            "year": 2022
+        },
+        {
+            "arxivId": "2207.12598",
+            "authors": [
+                {
+                    "authorId": "2126278",
+                    "name": "Jonathan Ho"
+                }
+            ],
+            "doi": "10.48550/arXiv.2207.12598",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "af9f365ed86614c800f082bd8eb14be76072ad16",
+            "title": "Classifier-Free Diffusion Guidance",
+            "url": "https://www.semanticscholar.org/paper/af9f365ed86614c800f082bd8eb14be76072ad16",
+            "venue": "ArXiv",
+            "year": 2022
+        },
+        {
+            "arxivId": "2206.09511",
+            "authors": [
+                {
+                    "authorId": "81316798",
+                    "name": "Inioluwa Deborah Raji"
+                },
+                {
+                    "authorId": "102411992",
+                    "name": "Indra Elizabeth Kumar"
+                },
+                {
+                    "authorId": "2068707324",
+                    "name": "Aaron Horowitz"
+                },
+                {
+                    "authorId": "46432110",
+                    "name": "Andrew D. Selbst"
+                }
+            ],
+            "doi": "10.1145/3531146.3533158",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a38af38baeb1b5e25c089b699ab5072823ae6b4c",
+            "title": "The Fallacy of AI Functionality",
+            "url": "https://www.semanticscholar.org/paper/a38af38baeb1b5e25c089b699ab5072823ae6b4c",
+            "venue": "FAccT",
+            "year": 2022
+        },
+        {
+            "arxivId": "2205.11487",
+            "authors": [
+                {
+                    "authorId": "51497543",
+                    "name": "Chitwan Saharia"
+                },
+                {
+                    "authorId": "144333684",
+                    "name": "William Chan"
+                },
+                {
+                    "authorId": "2054003577",
+                    "name": "Saurabh Saxena"
+                },
+                {
+                    "authorId": "2111917831",
+                    "name": "Lala Li"
+                },
+                {
+                    "authorId": "21040156",
+                    "name": "Jay Whang"
+                },
+                {
+                    "authorId": "40081727",
+                    "name": "Emily L. Denton"
+                },
+                {
+                    "authorId": "81419386",
+                    "name": "Seyed Kamyar Seyed Ghasemipour"
+                },
+                {
+                    "authorId": "143990191",
+                    "name": "Burcu Karagol Ayan"
+                },
+                {
+                    "authorId": "1982213",
+                    "name": "S. S. Mahdavi"
+                },
+                {
+                    "authorId": "143826364",
+                    "name": "Raphael Gontijo Lopes"
+                },
+                {
+                    "authorId": "2887364",
+                    "name": "Tim Salimans"
+                },
+                {
+                    "authorId": "2126278",
+                    "name": "Jonathan Ho"
+                },
+                {
+                    "authorId": "1793739",
+                    "name": "David J. Fleet"
+                },
+                {
+                    "authorId": "144739074",
+                    "name": "Mohammad Norouzi"
+                }
+            ],
+            "doi": "10.48550/arXiv.2205.11487",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9695824d7a01fad57ba9c01d7d76a519d78d65e7",
+            "title": "Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding",
+            "url": "https://www.semanticscholar.org/paper/9695824d7a01fad57ba9c01d7d76a519d78d65e7",
+            "venue": "NeurIPS",
+            "year": 2022
+        },
+        {
+            "arxivId": "2204.06125",
+            "authors": [
+                {
+                    "authorId": "1992922591",
+                    "name": "A. Ramesh"
+                },
+                {
+                    "authorId": "6515819",
+                    "name": "Prafulla Dhariwal"
+                },
+                {
+                    "authorId": "38967461",
+                    "name": "Alex Nichol"
+                },
+                {
+                    "authorId": "30414789",
+                    "name": "Casey Chu"
+                },
+                {
+                    "authorId": "2108828435",
+                    "name": "Mark Chen"
+                }
+            ],
+            "doi": "10.48550/arXiv.2204.06125",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "c57293882b2561e1ba03017902df9fc2f289dea2",
+            "title": "Hierarchical Text-Conditional Image Generation with CLIP Latents",
+            "url": "https://www.semanticscholar.org/paper/c57293882b2561e1ba03017902df9fc2f289dea2",
+            "venue": "ArXiv",
+            "year": 2022
+        },
+        {
+            "arxivId": "2203.11242",
+            "authors": [
+                {
+                    "authorId": "2159555745",
+                    "name": "Guillermo Iglesias"
+                },
+                {
+                    "authorId": "2259081",
+                    "name": "Edgar Talavera"
+                },
+                {
+                    "authorId": "2159555624",
+                    "name": "Alberto D'iaz-'Alvarez"
+                }
+            ],
+            "doi": "10.1016/j.cosrev.2023.100553",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "4876459cc2abb2189c41a4e2ec23c6407048920e",
+            "title": "A survey on GANs for computer vision: Recent research, analysis and taxonomy",
+            "url": "https://www.semanticscholar.org/paper/4876459cc2abb2189c41a4e2ec23c6407048920e",
+            "venue": "Comput. Sci. Rev.",
+            "year": 2022
+        },
+        {
+            "arxivId": "2112.10752",
+            "authors": [
+                {
+                    "authorId": "1660819540",
+                    "name": "Robin Rombach"
+                },
+                {
+                    "authorId": "119843260",
+                    "name": "A. Blattmann"
+                },
+                {
+                    "authorId": "2053482699",
+                    "name": "Dominik Lorenz"
+                },
+                {
+                    "authorId": "35175531",
+                    "name": "Patrick Esser"
+                },
+                {
+                    "authorId": "1796707",
+                    "name": "B. Ommer"
+                }
+            ],
+            "doi": "10.1109/CVPR52688.2022.01042",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c10075b3746a9f3dd5811970e93c8ca3ad39b39d",
+            "title": "High-Resolution Image Synthesis with Latent Diffusion Models",
+            "url": "https://www.semanticscholar.org/paper/c10075b3746a9f3dd5811970e93c8ca3ad39b39d",
+            "venue": "2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2021
+        },
+        {
+            "arxivId": "2106.15282",
+            "authors": [
+                {
+                    "authorId": "2126278",
+                    "name": "Jonathan Ho"
+                },
+                {
+                    "authorId": "2314850972",
+                    "name": "Chitwan Saharia"
+                },
+                {
+                    "authorId": "144333684",
+                    "name": "William Chan"
+                },
+                {
+                    "authorId": "1793739",
+                    "name": "David J. Fleet"
+                },
+                {
+                    "authorId": "144739074",
+                    "name": "Mohammad Norouzi"
+                },
+                {
+                    "authorId": "2887364",
+                    "name": "Tim Salimans"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "0f183bcfe65781c06b1a48a6f56e0f3c63e8e4a4",
+            "title": "Cascaded Diffusion Models for High Fidelity Image Generation",
+            "url": "https://www.semanticscholar.org/paper/0f183bcfe65781c06b1a48a6f56e0f3c63e8e4a4",
+            "venue": "J. Mach. Learn. Res.",
+            "year": 2021
+        },
+        {
+            "arxivId": "2105.05233",
+            "authors": [
+                {
+                    "authorId": "6515819",
+                    "name": "Prafulla Dhariwal"
+                },
+                {
+                    "authorId": "38967461",
+                    "name": "Alex Nichol"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "64ea8f180d0682e6c18d1eb688afdb2027c02794",
+            "title": "Diffusion Models Beat GANs on Image Synthesis",
+            "url": "https://www.semanticscholar.org/paper/64ea8f180d0682e6c18d1eb688afdb2027c02794",
+            "venue": "NeurIPS",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1719736",
+                    "name": "D. Higham"
+                },
+                {
+                    "authorId": "1910641",
+                    "name": "P. Kloeden"
+                }
+            ],
+            "doi": "10.1137/1.9781611976434",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "bf4150743944e87c215dd3b4eba5d807522fb39b",
+            "title": "An Introduction to the Numerical Simulation of Stochastic Differential Equations",
+            "url": "https://www.semanticscholar.org/paper/bf4150743944e87c215dd3b4eba5d807522fb39b",
+            "venue": "",
+            "year": 2021
+        },
+        {
+            "arxivId": "2012.05345",
+            "authors": [
+                {
+                    "authorId": "3427127",
+                    "name": "Amandalynne Paullada"
+                },
+                {
+                    "authorId": "81316798",
+                    "name": "Inioluwa Deborah Raji"
+                },
+                {
+                    "authorId": "2471699",
+                    "name": "Emily M. Bender"
+                },
+                {
+                    "authorId": "40081727",
+                    "name": "Emily L. Denton"
+                },
+                {
+                    "authorId": "40540250",
+                    "name": "A. Hanna"
+                }
+            ],
+            "doi": "10.1016/j.patter.2021.100336",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c09f44e0088342ec618c7a2deeab1526d73b2d6b",
+            "title": "Data and its (dis)contents: A survey of dataset development and use in machine learning research",
+            "url": "https://www.semanticscholar.org/paper/c09f44e0088342ec618c7a2deeab1526d73b2d6b",
+            "venue": "Patterns",
+            "year": 2020
+        },
+        {
+            "arxivId": "2011.13456",
+            "authors": [
+                {
+                    "authorId": "115504645",
+                    "name": "Yang Song"
+                },
+                {
+                    "authorId": "1407546424",
+                    "name": "Jascha Narain Sohl-Dickstein"
+                },
+                {
+                    "authorId": "1726807",
+                    "name": "Diederik P. Kingma"
+                },
+                {
+                    "authorId": "2109224633",
+                    "name": "Abhishek Kumar"
+                },
+                {
+                    "authorId": "2490652",
+                    "name": "Stefano Ermon"
+                },
+                {
+                    "authorId": "16443937",
+                    "name": "Ben Poole"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "633e2fbfc0b21e959a244100937c5853afca4853",
+            "title": "Score-Based Generative Modeling through Stochastic Differential Equations",
+            "url": "https://www.semanticscholar.org/paper/633e2fbfc0b21e959a244100937c5853afca4853",
+            "venue": "ICLR",
+            "year": 2020
+        },
+        {
+            "arxivId": "2010.13561",
+            "authors": [
+                {
+                    "authorId": "2044655623",
+                    "name": "Ben Hutchinson"
+                },
+                {
+                    "authorId": "152735378",
+                    "name": "A. Smart"
+                },
+                {
+                    "authorId": "40540250",
+                    "name": "A. Hanna"
+                },
+                {
+                    "authorId": "40081727",
+                    "name": "Emily L. Denton"
+                },
+                {
+                    "authorId": "2064880341",
+                    "name": "Christina Greer"
+                },
+                {
+                    "authorId": "38325692",
+                    "name": "Oddur Kjartansson"
+                },
+                {
+                    "authorId": "80940648",
+                    "name": "Parker Barnes"
+                },
+                {
+                    "authorId": "49501003",
+                    "name": "Margaret Mitchell"
+                }
+            ],
+            "doi": "10.1145/3442188.3445918",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "27ad3d92a9d02698ae10be1a86f1f6e52c8f0644",
+            "title": "Towards Accountability for Machine Learning Datasets: Practices from Software Engineering and Infrastructure",
+            "url": "https://www.semanticscholar.org/paper/27ad3d92a9d02698ae10be1a86f1f6e52c8f0644",
+            "venue": "FAccT",
+            "year": 2020
+        },
+        {
+            "arxivId": "2008.12595",
+            "authors": [
+                {
+                    "authorId": "1780746",
+                    "name": "Laurent Girin"
+                },
+                {
+                    "authorId": "1996023",
+                    "name": "Simon Leglaive"
+                },
+                {
+                    "authorId": "87852605",
+                    "name": "Xiaoyu Bie"
+                },
+                {
+                    "authorId": "1678896",
+                    "name": "Julien Diard"
+                },
+                {
+                    "authorId": "2159078",
+                    "name": "Thomas Hueber"
+                },
+                {
+                    "authorId": "1382657362",
+                    "name": "Xavier Alameda-Pineda"
+                }
+            ],
+            "doi": "10.1561/2200000089",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0ad9db9f7a3a6f9c14b0ede8c25aa2e65f0e65d7",
+            "title": "Dynamical Variational Autoencoders: A Comprehensive Review",
+            "url": "https://www.semanticscholar.org/paper/0ad9db9f7a3a6f9c14b0ede8c25aa2e65f0e65d7",
+            "venue": "Found. Trends Mach. Learn.",
+            "year": 2020
+        },
+        {
+            "arxivId": "2006.11239",
+            "authors": [
+                {
+                    "authorId": "2126278",
+                    "name": "Jonathan Ho"
+                },
+                {
+                    "authorId": "1623995772",
+                    "name": "Ajay Jain"
+                },
+                {
+                    "authorId": "1689992",
+                    "name": "P. Abbeel"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "5c126ae3421f05768d8edd97ecd44b1364e2c99a",
+            "title": "Denoising Diffusion Probabilistic Models",
+            "url": "https://www.semanticscholar.org/paper/5c126ae3421f05768d8edd97ecd44b1364e2c99a",
+            "venue": "NeurIPS",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144834379",
+                    "name": "P. Mann"
+                }
+            ],
+            "doi": "10.1093/oso/9780198822370.003.0034",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "55814f95c4369c0ed127c00f5f107e76515c9f9f",
+            "title": "Vector Calculus",
+            "url": "https://www.semanticscholar.org/paper/55814f95c4369c0ed127c00f5f107e76515c9f9f",
+            "venue": "Oxford Scholarship Online",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2445103",
+                    "name": "M. Heusel"
+                },
+                {
+                    "authorId": "19219270",
+                    "name": "Hubert Ramsauer"
+                },
+                {
+                    "authorId": "2465270",
+                    "name": "Thomas Unterthiner"
+                },
+                {
+                    "authorId": "37082831",
+                    "name": "Bernhard Nessler"
+                },
+                {
+                    "authorId": "3308557",
+                    "name": "Sepp Hochreiter"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "231af7dc01a166cac3b5b01ca05778238f796e41",
+            "title": "GANs Trained by a Two Time-Scale Update Rule Converge to a Local Nash Equilibrium",
+            "url": "https://www.semanticscholar.org/paper/231af7dc01a166cac3b5b01ca05778238f796e41",
+            "venue": "NIPS",
+            "year": 2017
+        },
+        {
+            "arxivId": "1505.04597",
+            "authors": [
+                {
+                    "authorId": "1737326",
+                    "name": "O. Ronneberger"
+                },
+                {
+                    "authorId": "152702479",
+                    "name": "P. Fischer"
+                },
+                {
+                    "authorId": "1710872",
+                    "name": "T. Brox"
+                }
+            ],
+            "doi": "10.1007/978-3-319-24574-4_28",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "6364fdaa0a0eccd823a779fcdd489173f938e91a",
+            "title": "U-Net: Convolutional Networks for Biomedical Image Segmentation",
+            "url": "https://www.semanticscholar.org/paper/6364fdaa0a0eccd823a779fcdd489173f938e91a",
+            "venue": "MICCAI",
+            "year": 2015
+        },
+        {
+            "arxivId": "1503.03585",
+            "authors": [
+                {
+                    "authorId": "1407546424",
+                    "name": "Jascha Narain Sohl-Dickstein"
+                },
+                {
+                    "authorId": "2144479710",
+                    "name": "Eric A. Weiss"
+                },
+                {
+                    "authorId": "2333223",
+                    "name": "Niru Maheswaranathan"
+                },
+                {
+                    "authorId": "25769960",
+                    "name": "S. Ganguli"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2dcef55a07f8607a819c21fe84131ea269cc2e3c",
+            "title": "Deep Unsupervised Learning using Nonequilibrium Thermodynamics",
+            "url": "https://www.semanticscholar.org/paper/2dcef55a07f8607a819c21fe84131ea269cc2e3c",
+            "venue": "ICML",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1764325",
+                    "name": "Radford M. Neal"
+                }
+            ],
+            "doi": "10.1007/978-0-387-45528-0",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "668b1277fbece28c4841eeab1c97e4ebd0079700",
+            "title": "Pattern Recognition and Machine Learning",
+            "url": "https://www.semanticscholar.org/paper/668b1277fbece28c4841eeab1c97e4ebd0079700",
+            "venue": "Technometrics",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "39848341",
+                    "name": "Romain Lopez"
+                },
+                {
+                    "authorId": "1441878314",
+                    "name": "Pierre Boyeau"
+                },
+                {
+                    "authorId": "2163873",
+                    "name": "N. Yosef"
+                },
+                {
+                    "authorId": "1694621",
+                    "name": "Michael I. Jordan"
+                },
+                {
+                    "authorId": "39967607",
+                    "name": "J. Regier"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ef4f5a50837a7c1b3e87b9300ffc7ba00d461a0f",
+            "title": "AUTO-ENCODING VARIATIONAL BAYES",
+            "url": "https://www.semanticscholar.org/paper/ef4f5a50837a7c1b3e87b9300ffc7ba00d461a0f",
+            "venue": "",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1688882",
+                    "name": "Yann LeCun"
+                },
+                {
+                    "authorId": "145115014",
+                    "name": "Corinna Cortes"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "dc52d1ede1b90bf9d296bc5b34c9310b7eaa99a2",
+            "title": "The mnist database of handwritten digits",
+            "url": "https://www.semanticscholar.org/paper/dc52d1ede1b90bf9d296bc5b34c9310b7eaa99a2",
+            "venue": "",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3126761",
+                    "name": "Catherine F. Higham"
+                },
+                {
+                    "authorId": "2286978424",
+                    "name": "\u2020. DESMONDJ.HIGHAM"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "9238003ac79bbbc68eeaa7fae24813b8f77241c3",
+            "title": "Edinburgh Research Explorer Deep learning: an introduction for applied mathematicians",
+            "url": "https://www.semanticscholar.org/paper/9238003ac79bbbc68eeaa7fae24813b8f77241c3",
+            "venue": "",
+            "year": null
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Mathematics",
+            "source": "s2-fos-model"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Diffusion Models for Generative Artificial Intelligence: An Introduction for Applied Mathematicians",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/c253528e5eb600aa67625d05004d3f0f9af24514",
+    "venue": "arXiv.org",
+    "year": 2023
+}

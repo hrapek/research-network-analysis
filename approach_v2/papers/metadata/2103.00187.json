@@ -1,0 +1,882 @@
+{
+    "abstract": "In this report, we present results reproductions for several core algorithms implemented in the OpenSpiel framework for learning in games. The primary contribution of this work is a validation of OpenSpiel's re-implemented search and Reinforcement Learning algorithms against the results reported in their respective originating works. Additionally, we provide complete documentation of hyperparameters and source code required to reproduce these experiments easily and exactly.",
+    "arxivId": "2103.00187",
+    "authors": [
+        {
+            "authorId": "2065662291",
+            "name": "Michael Walton",
+            "url": "https://www.semanticscholar.org/author/2065662291"
+        },
+        {
+            "authorId": "1759154",
+            "name": "V. Lis\u00fd",
+            "url": "https://www.semanticscholar.org/author/1759154"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": "2408.09306",
+            "authors": [
+                {
+                    "authorId": "2108790577",
+                    "name": "Carlos Martin"
+                },
+                {
+                    "authorId": "2299533978",
+                    "name": "Tuomas Sandholm"
+                }
+            ],
+            "doi": "10.48550/arXiv.2408.09306",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "10399aac67761643c6a76160738bc0ab322d844f",
+            "title": "Joint-perturbation simultaneous pseudo-gradient",
+            "url": "https://www.semanticscholar.org/paper/10399aac67761643c6a76160738bc0ab322d844f",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": "2406.08683",
+            "authors": [
+                {
+                    "authorId": "2108790577",
+                    "name": "Carlos Martin"
+                },
+                {
+                    "authorId": "145714168",
+                    "name": "T. Sandholm"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "122c8fa53c759c2db7abb0c9378ec51b72c5837a",
+            "title": "Simultaneous incremental support adjustment and metagame solving: An equilibrium-finding framework for continuous-action games",
+            "url": "https://www.semanticscholar.org/paper/122c8fa53c759c2db7abb0c9378ec51b72c5837a",
+            "venue": "",
+            "year": 2024
+        },
+        {
+            "arxivId": "2301.08830",
+            "authors": [
+                {
+                    "authorId": "2108790577",
+                    "name": "Carlos Martin"
+                },
+                {
+                    "authorId": "145714168",
+                    "name": "T. Sandholm"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "1c988c245afd7a7f34ced6bf2843e26c937c8bc8",
+            "title": "ApproxED: Approximate exploitability descent via learned best responses",
+            "url": "https://www.semanticscholar.org/paper/1c988c245afd7a7f34ced6bf2843e26c937c8bc8",
+            "venue": "",
+            "year": 2023
+        }
+    ],
+    "corpusId": 232076113,
+    "doi": null,
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 3,
+    "numCiting": 21,
+    "paperId": "dbe5b22ab5024b1cc3e4c4335375c8543a372ba2",
+    "references": [
+        {
+            "arxivId": "2011.00583",
+            "authors": [
+                {
+                    "authorId": "47796324",
+                    "name": "Yaodong Yang"
+                },
+                {
+                    "authorId": "48094081",
+                    "name": "Jun Wang"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c3662e9176a7ad90020bdd025c179c5925d0b5b0",
+            "title": "An Overview of Multi-Agent Reinforcement Learning from Game Theoretical Perspective",
+            "url": "https://www.semanticscholar.org/paper/c3662e9176a7ad90020bdd025c179c5925d0b5b0",
+            "venue": "ArXiv",
+            "year": 2020
+        },
+        {
+            "arxivId": "2008.12234",
+            "authors": [
+                {
+                    "authorId": "2203658",
+                    "name": "A. Gruslys"
+                },
+                {
+                    "authorId": "1975889",
+                    "name": "Marc Lanctot"
+                },
+                {
+                    "authorId": "1708654",
+                    "name": "R. Munos"
+                },
+                {
+                    "authorId": "2196718",
+                    "name": "Finbarr Timbers"
+                },
+                {
+                    "authorId": "8649018",
+                    "name": "Martin Schmid"
+                },
+                {
+                    "authorId": "3422031",
+                    "name": "J. P\u00e9rolat"
+                },
+                {
+                    "authorId": "2551974",
+                    "name": "Dustin Morrill"
+                },
+                {
+                    "authorId": "3133079",
+                    "name": "V. Zambaldi"
+                },
+                {
+                    "authorId": "143783339",
+                    "name": "Jean-Baptiste Lespiau"
+                },
+                {
+                    "authorId": "2056701652",
+                    "name": "John Schultz"
+                },
+                {
+                    "authorId": "37666967",
+                    "name": "M. G. Azar"
+                },
+                {
+                    "authorId": "143913104",
+                    "name": "Michael H. Bowling"
+                },
+                {
+                    "authorId": "2274623",
+                    "name": "K. Tuyls"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "c53bd6d868efc98fb60fe7baef39069d0fd55349",
+            "title": "The Advantage Regret-Matching Actor-Critic",
+            "url": "https://www.semanticscholar.org/paper/c53bd6d868efc98fb60fe7baef39069d0fd55349",
+            "venue": "ArXiv",
+            "year": 2020
+        },
+        {
+            "arxivId": "1909.12823",
+            "authors": [
+                {
+                    "authorId": "2008186474",
+                    "name": "Paul Muller"
+                },
+                {
+                    "authorId": "3093004",
+                    "name": "Shayegan Omidshafiei"
+                },
+                {
+                    "authorId": "144845456",
+                    "name": "Mark Rowland"
+                },
+                {
+                    "authorId": "2274623",
+                    "name": "K. Tuyls"
+                },
+                {
+                    "authorId": "3422031",
+                    "name": "J. P\u00e9rolat"
+                },
+                {
+                    "authorId": "2108637290",
+                    "name": "Siqi Liu"
+                },
+                {
+                    "authorId": "1897926",
+                    "name": "Daniel Hennes"
+                },
+                {
+                    "authorId": "51119775",
+                    "name": "Luke Marris"
+                },
+                {
+                    "authorId": "1975889",
+                    "name": "Marc Lanctot"
+                },
+                {
+                    "authorId": "37591038",
+                    "name": "Edward Hughes"
+                },
+                {
+                    "authorId": "2108195115",
+                    "name": "Zhe Wang"
+                },
+                {
+                    "authorId": "3276293",
+                    "name": "Guy Lever"
+                },
+                {
+                    "authorId": "2801204",
+                    "name": "N. Heess"
+                },
+                {
+                    "authorId": "1686971",
+                    "name": "T. Graepel"
+                },
+                {
+                    "authorId": "1708654",
+                    "name": "R. Munos"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "58619863cb2685698fa29d88610c23a7078ae6dd",
+            "title": "A Generalized Training Approach for Multiagent Learning",
+            "url": "https://www.semanticscholar.org/paper/58619863cb2685698fa29d88610c23a7078ae6dd",
+            "venue": "ICLR",
+            "year": 2019
+        },
+        {
+            "arxivId": "1908.09453",
+            "authors": [
+                {
+                    "authorId": "1975889",
+                    "name": "Marc Lanctot"
+                },
+                {
+                    "authorId": "49860549",
+                    "name": "Edward Lockhart"
+                },
+                {
+                    "authorId": "143783339",
+                    "name": "Jean-Baptiste Lespiau"
+                },
+                {
+                    "authorId": "3133079",
+                    "name": "V. Zambaldi"
+                },
+                {
+                    "authorId": "148155754",
+                    "name": "Satyaki Upadhyay"
+                },
+                {
+                    "authorId": "3422031",
+                    "name": "J. P\u00e9rolat"
+                },
+                {
+                    "authorId": "40615554",
+                    "name": "S. Srinivasan"
+                },
+                {
+                    "authorId": "2196718",
+                    "name": "Finbarr Timbers"
+                },
+                {
+                    "authorId": "2274623",
+                    "name": "K. Tuyls"
+                },
+                {
+                    "authorId": "3093004",
+                    "name": "Shayegan Omidshafiei"
+                },
+                {
+                    "authorId": "1897926",
+                    "name": "Daniel Hennes"
+                },
+                {
+                    "authorId": "2551974",
+                    "name": "Dustin Morrill"
+                },
+                {
+                    "authorId": "2008186474",
+                    "name": "Paul Muller"
+                },
+                {
+                    "authorId": "23988602",
+                    "name": "T. Ewalds"
+                },
+                {
+                    "authorId": null,
+                    "name": "Ryan Faulkner"
+                },
+                {
+                    "authorId": "50458432",
+                    "name": "J\u00e1nos Kram\u00e1r"
+                },
+                {
+                    "authorId": "8521516",
+                    "name": "B. D. Vylder"
+                },
+                {
+                    "authorId": "4125424",
+                    "name": "Brennan Saeta"
+                },
+                {
+                    "authorId": "2065251344",
+                    "name": "James Bradbury"
+                },
+                {
+                    "authorId": "2056669326",
+                    "name": "David Ding"
+                },
+                {
+                    "authorId": "148016269",
+                    "name": "Sebastian Borgeaud"
+                },
+                {
+                    "authorId": "40227832",
+                    "name": "Matthew Lai"
+                },
+                {
+                    "authorId": "4337102",
+                    "name": "Julian Schrittwieser"
+                },
+                {
+                    "authorId": "2072366312",
+                    "name": "Thomas W. Anthony"
+                },
+                {
+                    "authorId": "37591038",
+                    "name": "Edward Hughes"
+                },
+                {
+                    "authorId": "1841008",
+                    "name": "Ivo Danihelka"
+                },
+                {
+                    "authorId": "1411583481",
+                    "name": "Jonah Ryan-Davis"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "result"
+            ],
+            "isInfluential": false,
+            "paperId": "232bd009964a9bbf4757227aae94d1a139350e04",
+            "title": "OpenSpiel: A Framework for Reinforcement Learning in Games",
+            "url": "https://www.semanticscholar.org/paper/232bd009964a9bbf4757227aae94d1a139350e04",
+            "venue": "ArXiv",
+            "year": 2019
+        },
+        {
+            "arxivId": "1903.05614",
+            "authors": [
+                {
+                    "authorId": "49860549",
+                    "name": "Edward Lockhart"
+                },
+                {
+                    "authorId": "1975889",
+                    "name": "Marc Lanctot"
+                },
+                {
+                    "authorId": "3422031",
+                    "name": "J. P\u00e9rolat"
+                },
+                {
+                    "authorId": "143783339",
+                    "name": "Jean-Baptiste Lespiau"
+                },
+                {
+                    "authorId": "2551974",
+                    "name": "Dustin Morrill"
+                },
+                {
+                    "authorId": "2196718",
+                    "name": "Finbarr Timbers"
+                },
+                {
+                    "authorId": "2274623",
+                    "name": "K. Tuyls"
+                }
+            ],
+            "doi": "10.24963/ijcai.2019/66",
+            "intent": [
+                "background",
+                "result"
+            ],
+            "isInfluential": true,
+            "paperId": "97395e484abd5701e483bcd3512627cd94dc109f",
+            "title": "Computing Approximate Equilibria in Sequential Adversarial Games by Exploitability Descent",
+            "url": "https://www.semanticscholar.org/paper/97395e484abd5701e483bcd3512627cd94dc109f",
+            "venue": "IJCAI",
+            "year": 2019
+        },
+        {
+            "arxivId": "1901.07621",
+            "authors": [
+                {
+                    "authorId": "66061851",
+                    "name": "Eric Steinberger"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "result"
+            ],
+            "isInfluential": false,
+            "paperId": "fd4ca6d2aa21e3b486e1ec38fbf4640853091dc3",
+            "title": "Single Deep Counterfactual Regret Minimization",
+            "url": "https://www.semanticscholar.org/paper/fd4ca6d2aa21e3b486e1ec38fbf4640853091dc3",
+            "venue": "ArXiv",
+            "year": 2019
+        },
+        {
+            "arxivId": "1811.00164",
+            "authors": [
+                {
+                    "authorId": "2685623",
+                    "name": "Noam Brown"
+                },
+                {
+                    "authorId": "1977806",
+                    "name": "Adam Lerer"
+                },
+                {
+                    "authorId": "39793298",
+                    "name": "Sam Gross"
+                },
+                {
+                    "authorId": "145714168",
+                    "name": "T. Sandholm"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "result"
+            ],
+            "isInfluential": true,
+            "paperId": "42c01c027db1e1d9846f13b73e0846bcd3852e65",
+            "title": "Deep Counterfactual Regret Minimization",
+            "url": "https://www.semanticscholar.org/paper/42c01c027db1e1d9846f13b73e0846bcd3852e65",
+            "venue": "ICML",
+            "year": 2018
+        },
+        {
+            "arxivId": "1810.09026",
+            "authors": [
+                {
+                    "authorId": "40615554",
+                    "name": "S. Srinivasan"
+                },
+                {
+                    "authorId": "1975889",
+                    "name": "Marc Lanctot"
+                },
+                {
+                    "authorId": "3133079",
+                    "name": "V. Zambaldi"
+                },
+                {
+                    "authorId": "3422031",
+                    "name": "J. P\u00e9rolat"
+                },
+                {
+                    "authorId": "2274623",
+                    "name": "K. Tuyls"
+                },
+                {
+                    "authorId": "1708654",
+                    "name": "R. Munos"
+                },
+                {
+                    "authorId": "143913104",
+                    "name": "Michael H. Bowling"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "90fac6e666cfbb2c7071610139ae65ef49066505",
+            "title": "Actor-Critic Policy Optimization in Partially Observable Multiagent Environments",
+            "url": "https://www.semanticscholar.org/paper/90fac6e666cfbb2c7071610139ae65ef49066505",
+            "venue": "NeurIPS",
+            "year": 2018
+        },
+        {
+            "arxivId": "1810.05587",
+            "authors": [
+                {
+                    "authorId": "1400326437",
+                    "name": "Pablo Hernandez-Leal"
+                },
+                {
+                    "authorId": "35224631",
+                    "name": "Bilal Kartal"
+                },
+                {
+                    "authorId": "39286677",
+                    "name": "Matthew E. Taylor"
+                }
+            ],
+            "doi": "10.1007/s10458-019-09421-1",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "3f43f08611cbcfba62bb9e0c5339c2a8f0cc3e4b",
+            "title": "A survey and critique of multiagent deep reinforcement learning",
+            "url": "https://www.semanticscholar.org/paper/3f43f08611cbcfba62bb9e0c5339c2a8f0cc3e4b",
+            "venue": "Autonomous Agents and Multi-Agent Systems",
+            "year": 2018
+        },
+        {
+            "arxivId": "1711.00832",
+            "authors": [
+                {
+                    "authorId": "1975889",
+                    "name": "Marc Lanctot"
+                },
+                {
+                    "authorId": "3133079",
+                    "name": "V. Zambaldi"
+                },
+                {
+                    "authorId": "2203658",
+                    "name": "A. Gruslys"
+                },
+                {
+                    "authorId": "2672644",
+                    "name": "Angeliki Lazaridou"
+                },
+                {
+                    "authorId": "2274623",
+                    "name": "K. Tuyls"
+                },
+                {
+                    "authorId": "3422031",
+                    "name": "J. P\u00e9rolat"
+                },
+                {
+                    "authorId": "145824029",
+                    "name": "David Silver"
+                },
+                {
+                    "authorId": "1686971",
+                    "name": "T. Graepel"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "b0d8165eecf2aa04a85e701d0c6bb4edd4b3811b",
+            "title": "A Unified Game-Theoretic Approach to Multiagent Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/b0d8165eecf2aa04a85e701d0c6bb4edd4b3811b",
+            "venue": "NIPS",
+            "year": 2017
+        },
+        {
+            "arxivId": "1603.01121",
+            "authors": [
+                {
+                    "authorId": "2052354576",
+                    "name": "Johannes Heinrich"
+                },
+                {
+                    "authorId": "145824029",
+                    "name": "David Silver"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a1d2a7ef81960846b9cec00bce8eefa06ccc8796",
+            "title": "Deep Reinforcement Learning from Self-Play in Imperfect-Information Games",
+            "url": "https://www.semanticscholar.org/paper/a1d2a7ef81960846b9cec00bce8eefa06ccc8796",
+            "venue": "ArXiv",
+            "year": 2016
+        },
+        {
+            "arxivId": "1602.01783",
+            "authors": [
+                {
+                    "authorId": "3255983",
+                    "name": "Volodymyr Mnih"
+                },
+                {
+                    "authorId": "36045539",
+                    "name": "Adri\u00e0 Puigdom\u00e8nech Badia"
+                },
+                {
+                    "authorId": "153583218",
+                    "name": "Mehdi Mirza"
+                },
+                {
+                    "authorId": "1753223",
+                    "name": "Alex Graves"
+                },
+                {
+                    "authorId": "2542999",
+                    "name": "T. Lillicrap"
+                },
+                {
+                    "authorId": "3367786",
+                    "name": "Tim Harley"
+                },
+                {
+                    "authorId": "145824029",
+                    "name": "David Silver"
+                },
+                {
+                    "authorId": "2645384",
+                    "name": "K. Kavukcuoglu"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "69e76e16740ed69f4dc55361a3d319ac2f1293dd",
+            "title": "Asynchronous Methods for Deep Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/69e76e16740ed69f4dc55361a3d319ac2f1293dd",
+            "venue": "ICML",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2052354576",
+                    "name": "Johannes Heinrich"
+                },
+                {
+                    "authorId": "1975889",
+                    "name": "Marc Lanctot"
+                },
+                {
+                    "authorId": "145824029",
+                    "name": "David Silver"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8b20f103c1f20074fa35bd8fc41983964283acac",
+            "title": "Fictitious Self-Play in Extensive-Form Games",
+            "url": "https://www.semanticscholar.org/paper/8b20f103c1f20074fa35bd8fc41983964283acac",
+            "venue": "ICML",
+            "year": 2015
+        },
+        {
+            "arxivId": "1411.7974",
+            "authors": [
+                {
+                    "authorId": "144514513",
+                    "name": "K. Waugh"
+                },
+                {
+                    "authorId": "2551974",
+                    "name": "Dustin Morrill"
+                },
+                {
+                    "authorId": "1756566",
+                    "name": "J. Bagnell"
+                },
+                {
+                    "authorId": "1687780",
+                    "name": "Michael Bowling"
+                }
+            ],
+            "doi": "10.1609/aaai.v29i1.9445",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "28386ad2b37548a480ff43b94fef33ac132f20b4",
+            "title": "Solving Games with Functional Regret Estimation",
+            "url": "https://www.semanticscholar.org/paper/28386ad2b37548a480ff43b94fef33ac132f20b4",
+            "venue": "AAAI Workshop: Computer Poker and Imperfect Information",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "31819180",
+                    "name": "D. Leslie"
+                },
+                {
+                    "authorId": "144249820",
+                    "name": "E. J. Collins"
+                }
+            ],
+            "doi": "10.1016/j.geb.2005.08.005",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7b2d43a97dfd2234a05fc25425e90e84a46b9033",
+            "title": "Generalised weakened fictitious play",
+            "url": "https://www.semanticscholar.org/paper/7b2d43a97dfd2234a05fc25425e90e84a46b9033",
+            "venue": "Games Econ. Behav.",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145057514",
+                    "name": "H. B. McMahan"
+                },
+                {
+                    "authorId": "21889436",
+                    "name": "Geoffrey J. Gordon"
+                },
+                {
+                    "authorId": "1690967",
+                    "name": "Avrim Blum"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d3fbb35d217aeb5e2ae95e8e71d61c7cf4c6635a",
+            "title": "Planning in the Presence of Cost Functions Controlled by an Adversary",
+            "url": "https://www.semanticscholar.org/paper/d3fbb35d217aeb5e2ae95e8e71d61c7cf4c6635a",
+            "venue": "ICML",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1699645",
+                    "name": "R. Sutton"
+                },
+                {
+                    "authorId": "145689002",
+                    "name": "David A. McAllester"
+                },
+                {
+                    "authorId": "1699868",
+                    "name": "Satinder Singh"
+                },
+                {
+                    "authorId": "144830983",
+                    "name": "Y. Mansour"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a20f0ce0616def7cc9a87446c228906cd5da093b",
+            "title": "Policy Gradient Methods for Reinforcement Learning with Function Approximation",
+            "url": "https://www.semanticscholar.org/paper/a20f0ce0616def7cc9a87446c228906cd5da093b",
+            "venue": "NIPS",
+            "year": 1999
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2941401",
+                    "name": "H. Kuhn"
+                },
+                {
+                    "authorId": "145414613",
+                    "name": "A. W. Tucker"
+                }
+            ],
+            "doi": "10.1515/9781400881727",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "03b1a0209fd7f59b98bf881eb3aeda892cfbb286",
+            "title": "Contributions to the Theory of Games (AM-39), Volume III",
+            "url": "https://www.semanticscholar.org/paper/03b1a0209fd7f59b98bf881eb3aeda892cfbb286",
+            "venue": "",
+            "year": 1951
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2108744219",
+                    "name": "Lisha Li"
+                },
+                {
+                    "authorId": "40566417",
+                    "name": "Kevin G. Jamieson"
+                },
+                {
+                    "authorId": "3186812",
+                    "name": "Giulia DeSalvo"
+                },
+                {
+                    "authorId": "2435268",
+                    "name": "Afshin Rostamizadeh"
+                },
+                {
+                    "authorId": "145532827",
+                    "name": "Ameet Talwalkar"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "b6670222f0cae0ce4a886405e8c8f5d273feeded",
+            "title": "Efficient Hyperparameter Optimization and Infinitely Many Armed Bandits",
+            "url": "https://www.semanticscholar.org/paper/b6670222f0cae0ce4a886405e8c8f5d273feeded",
+            "venue": "ArXiv",
+            "year": 2016
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Multi-agent Reinforcement Learning in OpenSpiel: A Reproduction Report",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/dbe5b22ab5024b1cc3e4c4335375c8543a372ba2",
+    "venue": "arXiv.org",
+    "year": 2021
+}

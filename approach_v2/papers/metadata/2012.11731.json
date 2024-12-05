@@ -1,0 +1,904 @@
+{
+    "abstract": "Real-time artificial intelligence (AI) applications mapped on edge computing need to perform data capture, data processing/intelligence extraction, and device actuation within some given time bounds. Synchronization across devices is an important problem that needs to be solved at different stages of an AI application. Synchronized data capture reduces the amount of time required in preprocessing data (data aggregation, data cleaning, missing data handling, etc). In the data processing phase, synchronization is key in ensuring convergence, accuracy, and speed of the distributed training process across multiple edge devices. The actuation phase in some cases requires certain actions to be performed at the same time on different devices. In this article, we develop a fast edge-based synchronization scheme that can time-align the execution of input-output tasks as well compute tasks. The primary idea of the fast synchronizer is to cluster the devices into groups that remain closely synchronized in their task executions and statically determine synchronization points using a game-theoretic solver. The cluster of devices uses a late notification protocol to select the best point among the precomputed synchronization points to reach a time-aligned task execution as quickly as possible. We evaluate the performance of our synchronization scheme using trace-driven simulations, and we compare the performance with existing distributed synchronization schemes for real-time AI application tasks. We implement our synchronization scheme and compare its testing accuracy and training time with other parameter server synchronization frameworks.",
+    "arxivId": "2012.11731",
+    "authors": [
+        {
+            "authorId": "2985904",
+            "name": "R. Olaniyan",
+            "url": "https://www.semanticscholar.org/author/2985904"
+        },
+        {
+            "authorId": "152611537",
+            "name": "M. Maheswaran",
+            "url": "https://www.semanticscholar.org/author/152611537"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [],
+    "corpusId": 229349087,
+    "doi": "10.1109/jiot.2021.3100295",
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": true,
+    "isPublisherLicensed": true,
+    "is_open_access": true,
+    "is_publisher_licensed": true,
+    "numCitedBy": 0,
+    "numCiting": 32,
+    "paperId": "47db85314ac44b0822d26265a115aa475fff32aa",
+    "references": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1825767618",
+                    "name": "Abhijith Valsan"
+                },
+                {
+                    "authorId": "2127444011",
+                    "name": "P. B."
+                },
+                {
+                    "authorId": "1825768026",
+                    "name": "Vismaya Dev G H"
+                },
+                {
+                    "authorId": "143784945",
+                    "name": "R. Unnikrishnan"
+                },
+                {
+                    "authorId": "144954520",
+                    "name": "Praveen Kumar Reddy"
+                },
+                {
+                    "authorId": "2059630202",
+                    "name": "V. A"
+                }
+            ],
+            "doi": "10.1109/ICOEI48184.2020.9143062",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f483f5ab800be8708d8e99285b1175abab8d153d",
+            "title": "Unmanned Aerial Vehicle for Search and Rescue Mission",
+            "url": "https://www.semanticscholar.org/paper/f483f5ab800be8708d8e99285b1175abab8d153d",
+            "venue": "2020 4th International Conference on Trends in Electronics and Informatics (ICOEI)(48184)",
+            "year": 2020
+        },
+        {
+            "arxivId": "1909.00560",
+            "authors": [
+                {
+                    "authorId": "145590434",
+                    "name": "Shuiguang Deng"
+                },
+                {
+                    "authorId": "144030613",
+                    "name": "Hailiang Zhao"
+                },
+                {
+                    "authorId": "1734105",
+                    "name": "Jianwei Yin"
+                },
+                {
+                    "authorId": "1691109",
+                    "name": "S. Dustdar"
+                },
+                {
+                    "authorId": "9392149",
+                    "name": "Albert Y. Zomaya"
+                }
+            ],
+            "doi": "10.1109/JIOT.2020.2984887",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "40fb2468c3a77c68fe703a6e614f4ad25bd4e3dd",
+            "title": "Edge Intelligence: The Confluence of Edge Computing and Artificial Intelligence",
+            "url": "https://www.semanticscholar.org/paper/40fb2468c3a77c68fe703a6e614f4ad25bd4e3dd",
+            "venue": "IEEE Internet of Things Journal",
+            "year": 2019
+        },
+        {
+            "arxivId": "1908.11848",
+            "authors": [
+                {
+                    "authorId": "2143710622",
+                    "name": "Xing Zhao"
+                },
+                {
+                    "authorId": "144081368",
+                    "name": "Aijun An"
+                },
+                {
+                    "authorId": "2108414561",
+                    "name": "Junfeng Liu"
+                },
+                {
+                    "authorId": "26348170",
+                    "name": "B. Chen"
+                }
+            ],
+            "doi": "10.1109/ICDCS.2019.00150",
+            "intent": [
+                "methodology",
+                "background",
+                "result"
+            ],
+            "isInfluential": true,
+            "paperId": "188362998d4ff9d1bd439fc72308bc91db80937b",
+            "title": "Dynamic Stale Synchronous Parallel Distributed Training for Deep Learning",
+            "url": "https://www.semanticscholar.org/paper/188362998d4ff9d1bd439fc72308bc91db80937b",
+            "venue": "2019 IEEE 39th International Conference on Distributed Computing Systems (ICDCS)",
+            "year": 2019
+        },
+        {
+            "arxivId": "1906.09963",
+            "authors": [
+                {
+                    "authorId": "2985904",
+                    "name": "R. Olaniyan"
+                },
+                {
+                    "authorId": "145636240",
+                    "name": "Muthucumaru Maheswaran"
+                }
+            ],
+            "doi": "10.1109/JIOT.2019.2930367",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "1d1f58d20a7fb723c14ce5ea77d81d670d96a358",
+            "title": "Multipoint Synchronization for Fog-Controlled Internet of Things",
+            "url": "https://www.semanticscholar.org/paper/1d1f58d20a7fb723c14ce5ea77d81d670d96a358",
+            "venue": "IEEE Internet of Things Journal",
+            "year": 2019
+        },
+        {
+            "arxivId": "1905.10083",
+            "authors": [
+                {
+                    "authorId": "145447664",
+                    "name": "Zhi Zhou"
+                },
+                {
+                    "authorId": "1712187180",
+                    "name": "Xu Chen"
+                },
+                {
+                    "authorId": "2053811799",
+                    "name": "En Li"
+                },
+                {
+                    "authorId": "123047372",
+                    "name": "Liekang Zeng"
+                },
+                {
+                    "authorId": "48181063",
+                    "name": "Ke Luo"
+                },
+                {
+                    "authorId": "47540395",
+                    "name": "Junshan Zhang"
+                }
+            ],
+            "doi": "10.1109/JPROC.2019.2918951",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "928cd808aba140ec298508df87c5579811ff2f41",
+            "title": "Edge Intelligence: Paving the Last Mile of Artificial Intelligence With Edge Computing",
+            "url": "https://www.semanticscholar.org/paper/928cd808aba140ec298508df87c5579811ff2f41",
+            "venue": "Proceedings of the IEEE",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2731697",
+                    "name": "O. Saukh"
+                },
+                {
+                    "authorId": "65852232",
+                    "name": "F. Papst"
+                },
+                {
+                    "authorId": "122160188",
+                    "name": "S. Saukh"
+                }
+            ],
+            "doi": "10.1109/SmartGridComm.2018.8587421",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7683da528a35c4b77b772db15431298a7cad7c48",
+            "title": "Synchronization Games in P2P Energy Trading",
+            "url": "https://www.semanticscholar.org/paper/7683da528a35c4b77b772db15431298a7cad7c48",
+            "venue": "2018 IEEE International Conference on Communications, Control, and Computing Technologies for Smart Grids (SmartGridComm)",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2880261",
+                    "name": "Atis Elsts"
+                },
+                {
+                    "authorId": "1797842",
+                    "name": "Xenofon Fafoutis"
+                },
+                {
+                    "authorId": "3329299",
+                    "name": "S. Duquennoy"
+                },
+                {
+                    "authorId": "1684986",
+                    "name": "G. Oikonomou"
+                },
+                {
+                    "authorId": "1715490",
+                    "name": "R. Piechocki"
+                },
+                {
+                    "authorId": "35250432",
+                    "name": "I. Craddock"
+                }
+            ],
+            "doi": "10.1109/TII.2017.2778746",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "428761283af114c0c8a188f1a0652fdd2648f126",
+            "title": "Temperature-Resilient Time Synchronization for the Internet of Things",
+            "url": "https://www.semanticscholar.org/paper/428761283af114c0c8a188f1a0652fdd2648f126",
+            "venue": "IEEE Transactions on Industrial Informatics",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2985904",
+                    "name": "R. Olaniyan"
+                },
+                {
+                    "authorId": "145636240",
+                    "name": "Muthucumaru Maheswaran"
+                }
+            ],
+            "doi": "10.1109/CFEC.2018.8358725",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a457898f9ed5612ba4139bb61d6c70009189a06e",
+            "title": "Synchronous Scheduling Algorithms for Edge Coordinated Internet of Things",
+            "url": "https://www.semanticscholar.org/paper/a457898f9ed5612ba4139bb61d6c70009189a06e",
+            "venue": "2018 IEEE 2nd International Conference on Fog and Edge Computing (ICFEC)",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "40565271",
+                    "name": "He Li"
+                },
+                {
+                    "authorId": "144705313",
+                    "name": "K. Ota"
+                },
+                {
+                    "authorId": "1714082",
+                    "name": "M. Dong"
+                }
+            ],
+            "doi": "10.1109/MNET.2018.1700202",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "00c4632d2d926acabc18574c9c5b870709ae9450",
+            "title": "Learning IoT in Edge: Deep Learning for the Internet of Things with Edge Computing",
+            "url": "https://www.semanticscholar.org/paper/00c4632d2d926acabc18574c9c5b870709ae9450",
+            "venue": "IEEE Network",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1757299",
+                    "name": "Sunil Simon"
+                },
+                {
+                    "authorId": "3038359",
+                    "name": "D. Wojtczak"
+                }
+            ],
+            "doi": "10.24963/ijcai.2017/57",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b5c011c7f4584e83c00ede4aa2bd2cdb705ff79c",
+            "title": "Synchronisation Games on Hypergraphs",
+            "url": "https://www.semanticscholar.org/paper/b5c011c7f4584e83c00ede4aa2bd2cdb705ff79c",
+            "venue": "IJCAI",
+            "year": 2017
+        },
+        {
+            "arxivId": "1710.06952",
+            "authors": [
+                {
+                    "authorId": "2922996",
+                    "name": "Xiangru Lian"
+                },
+                {
+                    "authorId": null,
+                    "name": "Wei Zhang"
+                },
+                {
+                    "authorId": "1776014",
+                    "name": "Ce Zhang"
+                },
+                {
+                    "authorId": "40478933",
+                    "name": "Ji Liu"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "4bdf72818dd7235637c01f0964c56776e54fd9bb",
+            "title": "Asynchronous Decentralized Parallel Stochastic Gradient Descent",
+            "url": "https://www.semanticscholar.org/paper/4bdf72818dd7235637c01f0964c56776e54fd9bb",
+            "venue": "ICML",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1403689263",
+                    "name": "Jackeline Rios-Torres"
+                },
+                {
+                    "authorId": "2302798",
+                    "name": "Andreas A. Malikopoulos"
+                }
+            ],
+            "doi": "10.1109/TITS.2016.2600504",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d0208686dd42a786da3831f315ef28d96671b543",
+            "title": "A Survey on the Coordination of Connected and Automated Vehicles at Intersections and Merging at Highway On-Ramps",
+            "url": "https://www.semanticscholar.org/paper/d0208686dd42a786da3831f315ef28d96671b543",
+            "venue": "IEEE Transactions on Intelligent Transportation Systems",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "38672851",
+                    "name": "Kamran Siddique"
+                },
+                {
+                    "authorId": "1832551",
+                    "name": "Z. Akhtar"
+                },
+                {
+                    "authorId": "2065693580",
+                    "name": "Edward J. Yoon"
+                },
+                {
+                    "authorId": "144662723",
+                    "name": "Y. Jeong"
+                },
+                {
+                    "authorId": "1710856",
+                    "name": "D. Dasgupta"
+                },
+                {
+                    "authorId": "47659209",
+                    "name": "Yangwoo Kim"
+                }
+            ],
+            "doi": "10.1109/ACCESS.2016.2631549",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "395a31b12c1aac1258b03ab67dc4b5cf1848051b",
+            "title": "Apache Hama: An Emerging Bulk Synchronous Parallel Computing Framework for Big Data Applications",
+            "url": "https://www.semanticscholar.org/paper/395a31b12c1aac1258b03ab67dc4b5cf1848051b",
+            "venue": "IEEE Access",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "50385772",
+                    "name": "K. Kumar"
+                },
+                {
+                    "authorId": "145329491",
+                    "name": "A. Reddy"
+                }
+            ],
+            "doi": "10.1016/j.patcog.2016.03.008",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "b171cac4d41f4fd1af26276bb834610c4f637912",
+            "title": "A fast DBSCAN clustering algorithm by accelerating neighbor searching using Groups method",
+            "url": "https://www.semanticscholar.org/paper/b171cac4d41f4fd1af26276bb834610c4f637912",
+            "venue": "Pattern Recognit.",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2679504",
+                    "name": "Shiyong Wang"
+                },
+                {
+                    "authorId": "70985296",
+                    "name": "J. Wan"
+                },
+                {
+                    "authorId": "2109559139",
+                    "name": "Daqiang Zhang"
+                },
+                {
+                    "authorId": "46599370",
+                    "name": "Di Li"
+                },
+                {
+                    "authorId": "37805017",
+                    "name": "Chunhua Zhang"
+                }
+            ],
+            "doi": "10.1016/j.comnet.2015.12.017",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "43215f2518f8b934a28a87d541d86dfb592cda5b",
+            "title": "Towards smart factory for industry 4.0: a self-organized multi-agent system with big data based feedback and coordination",
+            "url": "https://www.semanticscholar.org/paper/43215f2518f8b934a28a87d541d86dfb592cda5b",
+            "venue": "Comput. Networks",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3039816",
+                    "name": "G\u00fcnther Brandner"
+                },
+                {
+                    "authorId": "3137675",
+                    "name": "Udo Schilcher"
+                },
+                {
+                    "authorId": "1712611",
+                    "name": "C. Bettstetter"
+                }
+            ],
+            "doi": "10.1016/j.comnet.2016.01.001",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d200f35ea5cf9a13d31629ffec6026fd48dffd42",
+            "title": "Firefly synchronization with phase rate equalization and its experimental analysis in wireless systems",
+            "url": "https://www.semanticscholar.org/paper/d200f35ea5cf9a13d31629ffec6026fd48dffd42",
+            "venue": "Comput. Networks",
+            "year": 2016
+        },
+        {
+            "arxivId": "1505.04956",
+            "authors": [
+                {
+                    "authorId": "3299100",
+                    "name": "J. Keuper"
+                },
+                {
+                    "authorId": "1918587",
+                    "name": "F. Pfreundt"
+                }
+            ],
+            "doi": "10.1145/2834892.2834893",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "b8ba2d34c9156b39845f06651567bfaacbbf169f",
+            "title": "Asynchronous parallel stochastic gradient descent: a numeric core for scalable distributed machine learning algorithms",
+            "url": "https://www.semanticscholar.org/paper/b8ba2d34c9156b39845f06651567bfaacbbf169f",
+            "venue": "MLHPC@SC",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2083797144",
+                    "name": "F. Perez-Diaz"
+                },
+                {
+                    "authorId": "3265764",
+                    "name": "R. Zillmer"
+                },
+                {
+                    "authorId": "6586246",
+                    "name": "R. Gro\u00df"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d6fc791f5c4ead38e2f8651bb6f0983b76b149bf",
+            "title": "Firefly-Inspired Synchronization in Swarms of Mobile Agents",
+            "url": "https://www.semanticscholar.org/paper/d6fc791f5c4ead38e2f8651bb6f0983b76b149bf",
+            "venue": "AAMAS",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1707357",
+                    "name": "Qirong Ho"
+                },
+                {
+                    "authorId": "2614308",
+                    "name": "James Cipar"
+                },
+                {
+                    "authorId": "1874200",
+                    "name": "Henggang Cui"
+                },
+                {
+                    "authorId": "1739906504",
+                    "name": "Seunghak Lee"
+                },
+                {
+                    "authorId": "2152674455",
+                    "name": "Jin Kyu Kim"
+                },
+                {
+                    "authorId": "1974678",
+                    "name": "Phillip B. Gibbons"
+                },
+                {
+                    "authorId": "30367882",
+                    "name": "Garth A. Gibson"
+                },
+                {
+                    "authorId": "1707164",
+                    "name": "G. Ganger"
+                },
+                {
+                    "authorId": "143977260",
+                    "name": "E. Xing"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background",
+                "result"
+            ],
+            "isInfluential": true,
+            "paperId": "acbd13c7be621a7284da4ab9d8caa40f1a558ce2",
+            "title": "More Effective Distributed ML via a Stale Synchronous Parallel Parameter Server",
+            "url": "https://www.semanticscholar.org/paper/acbd13c7be621a7284da4ab9d8caa40f1a558ce2",
+            "venue": "NIPS",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2614308",
+                    "name": "James Cipar"
+                },
+                {
+                    "authorId": "1707357",
+                    "name": "Qirong Ho"
+                },
+                {
+                    "authorId": "2152674455",
+                    "name": "Jin Kyu Kim"
+                },
+                {
+                    "authorId": "1739906504",
+                    "name": "Seunghak Lee"
+                },
+                {
+                    "authorId": "1707164",
+                    "name": "G. Ganger"
+                },
+                {
+                    "authorId": "30367882",
+                    "name": "Garth A. Gibson"
+                },
+                {
+                    "authorId": "2812707",
+                    "name": "K. Keeton"
+                },
+                {
+                    "authorId": "143977260",
+                    "name": "E. Xing"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "result"
+            ],
+            "isInfluential": false,
+            "paperId": "f89307319cffc83faea0e4c439f16454bcc86232",
+            "title": "Solving the Straggler Problem with Bounded Staleness",
+            "url": "https://www.semanticscholar.org/paper/f89307319cffc83faea0e4c439f16454bcc86232",
+            "venue": "HotOS",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "32949575",
+                    "name": "Huibing Yin"
+                },
+                {
+                    "authorId": "1773940",
+                    "name": "P. Mehta"
+                },
+                {
+                    "authorId": "1695337",
+                    "name": "Sean P. Meyn"
+                },
+                {
+                    "authorId": "1729535",
+                    "name": "U. Shanbhag"
+                }
+            ],
+            "doi": "10.1109/ACC.2010.5531465",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "782c0f6770b88efe266be03c004f23b3c2493be9",
+            "title": "Synchronization of coupled oscillators is a game",
+            "url": "https://www.semanticscholar.org/paper/782c0f6770b88efe266be03c004f23b3c2493be9",
+            "venue": "Proceedings of the 2010 American Control Conference",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "46747942",
+                    "name": "Chengyi Xu"
+                },
+                {
+                    "authorId": "34724843",
+                    "name": "Y. Shin"
+                }
+            ],
+            "doi": "10.1201/9781420051773",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "af69e298920c9923a06ba97cfe0084c5d5ae96f1",
+            "title": "Intelligent Systems: Modeling, Optimization, and Control",
+            "url": "https://www.semanticscholar.org/paper/af69e298920c9923a06ba97cfe0084c5d5ae96f1",
+            "venue": "",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143862425",
+                    "name": "R. Rajkumar"
+                }
+            ],
+            "doi": "10.1016/0141-9331(91)90043-f",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "03bc207e9fb925e358f4f9039ea0bca879295c0e",
+            "title": "Synchronization in Real-Time Systems: A Priority Inheritance Approach",
+            "url": "https://www.semanticscholar.org/paper/03bc207e9fb925e358f4f9039ea0bca879295c0e",
+            "venue": "",
+            "year": 1991
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "9019189",
+                    "name": "Sunggeun Yoo"
+                },
+                {
+                    "authorId": "2107888436",
+                    "name": "Sangil Park"
+                },
+                {
+                    "authorId": "120530942",
+                    "name": "Won-young Lee"
+                }
+            ],
+            "doi": "10.7236/IJASC.2020.9.1.109",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e0fb1179bfc0204d7244f2f34d56bb2763340474",
+            "title": "A Study of Time Synchronization Methods for IoT Network Nodes",
+            "url": "https://www.semanticscholar.org/paper/e0fb1179bfc0204d7244f2f34d56bb2763340474",
+            "venue": "",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "35531833",
+                    "name": "Lauri Lov\u00e9n"
+                },
+                {
+                    "authorId": "35202419",
+                    "name": "T. Lepp\u00e4nen"
+                },
+                {
+                    "authorId": "2264026",
+                    "name": "Ella Peltonen"
+                },
+                {
+                    "authorId": "2940586",
+                    "name": "Juha Partala"
+                },
+                {
+                    "authorId": "2533670",
+                    "name": "E. Harjula"
+                },
+                {
+                    "authorId": "3023249",
+                    "name": "P. Porambage"
+                },
+                {
+                    "authorId": "1727678",
+                    "name": "M. Ylianttila"
+                },
+                {
+                    "authorId": "1745217",
+                    "name": "J. Riekki"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "773833a629415d918a536bd9aeebc61d50617920",
+            "title": "EdgeAI: A Vision for Distributed, Edge-native Arti\ufb01cial Intelligence in Future 6G Networks",
+            "url": "https://www.semanticscholar.org/paper/773833a629415d918a536bd9aeebc61d50617920",
+            "venue": "",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2860430",
+                    "name": "Jilin Zhang"
+                },
+                {
+                    "authorId": "10350511",
+                    "name": "Hangdi Tu"
+                },
+                {
+                    "authorId": "48981630",
+                    "name": "Yongjian Ren"
+                },
+                {
+                    "authorId": "145554360",
+                    "name": "Jian Wan"
+                },
+                {
+                    "authorId": "2116635457",
+                    "name": "Li Zhou"
+                },
+                {
+                    "authorId": "2112108575",
+                    "name": "Mingwei Li"
+                },
+                {
+                    "authorId": "2109763433",
+                    "name": "Jue Wang"
+                }
+            ],
+            "doi": "10.1109/ACCESS.2018.2820899",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "a6bd382264c637d67c243ed7db451c551e9c0225",
+            "title": "An Adaptive Synchronous Parallel Strategy for Distributed Machine Learning",
+            "url": "https://www.semanticscholar.org/paper/a6bd382264c637d67c243ed7db451c551e9c0225",
+            "venue": "IEEE Access",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1410851431",
+                    "name": "G. Ram\u00edrez-\u00c1vila"
+                },
+                {
+                    "authorId": "152638326",
+                    "name": "J. Kurths"
+                },
+                {
+                    "authorId": "2448757",
+                    "name": "J. Deneubourg"
+                }
+            ],
+            "doi": "10.1007/978-3-319-68109-2_3",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "4603cc75e4afc30a0b4a5a9e57245551f7cc32c5",
+            "title": "Fireflies: A Paradigm in Synchronization",
+            "url": "https://www.semanticscholar.org/paper/4603cc75e4afc30a0b4a5a9e57245551f7cc32c5",
+            "venue": "",
+            "year": 2018
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        },
+        {
+            "category": "Engineering",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "A Fast Edge-Based Synchronizer for Tasks in Real-Time Artificial Intelligence Applications",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/47db85314ac44b0822d26265a115aa475fff32aa",
+    "venue": "IEEE Internet of Things Journal",
+    "year": 2020
+}

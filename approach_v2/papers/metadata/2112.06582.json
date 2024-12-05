@@ -1,0 +1,884 @@
+{
+    "abstract": "As neural networks (NNs) are increasingly introduced into safety-critical domains, there is a growing need to formally verify NNs before deployment. In this work we focus on the formal verification problem of NN equivalence which aims to prove that two NNs (e.g. an original and a compressed version) show equivalent behavior. Two approaches have been proposed for this problem: Mixed integer linear programming and interval propagation. While the first approach lacks scalability, the latter is only suitable for structurally similar NNs with small weight changes.The contribution of our paper has four parts. First, we show a theoretical result by proving that the epsilon-equivalence problem is coNP-complete. Secondly, we extend Tran et al.\u2019s single NN geometric path enumeration algorithm to a setting with multiple NNs. In a third step, we implement the extended algorithm for equivalence verification and evaluate optimizations necessary for its practical use. Finally, we perform a comparative evaluation showing use-cases where our approach outperforms the previous state of the art, both, for equivalence verification as well as for counter-example finding.",
+    "arxivId": "2112.06582",
+    "authors": [
+        {
+            "authorId": "1901952694",
+            "name": "Samuel Teuber",
+            "url": "https://www.semanticscholar.org/author/1901952694"
+        },
+        {
+            "authorId": "48853334",
+            "name": "Marko Kleine B\u00fcning",
+            "url": "https://www.semanticscholar.org/author/48853334"
+        },
+        {
+            "authorId": "2059659934",
+            "name": "Philipp Kern",
+            "url": "https://www.semanticscholar.org/author/2059659934"
+        },
+        {
+            "authorId": "2501782",
+            "name": "C. Sinz",
+            "url": "https://www.semanticscholar.org/author/2501782"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2304558102",
+                    "name": "P. Habeeb"
+                },
+                {
+                    "authorId": "2315510205",
+                    "name": "Lipsy Gupta"
+                },
+                {
+                    "authorId": "2256184733",
+                    "name": "Pavithra Prabhakar"
+                }
+            ],
+            "doi": "10.1109/TCAD.2024.3445813",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c23bbe3ce2154f2bd19954c90b8b8590064f7f29",
+            "title": "Approximate Conformance Checking for Closed-Loop Systems With Neural Network Controllers",
+            "url": "https://www.semanticscholar.org/paper/c23bbe3ce2154f2bd19954c90b8b8590064f7f29",
+            "venue": "IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems",
+            "year": 2024
+        },
+        {
+            "arxivId": "2410.20207",
+            "authors": [
+                {
+                    "authorId": "1901952694",
+                    "name": "Samuel Teuber"
+                },
+                {
+                    "authorId": "2059659934",
+                    "name": "Philipp Kern"
+                },
+                {
+                    "authorId": "2328008147",
+                    "name": "Marvin Janzen"
+                },
+                {
+                    "authorId": "2275053710",
+                    "name": "Bernhard Beckert"
+                }
+            ],
+            "doi": "10.48550/arXiv.2410.20207",
+            "intent": [
+                "background",
+                "methodology",
+                "result"
+            ],
+            "isInfluential": true,
+            "paperId": "ab519550628655354494a92e72d34fe322cb431a",
+            "title": "Revisiting Differential Verification: Equivalence Verification with Confidence",
+            "url": "https://www.semanticscholar.org/paper/ab519550628655354494a92e72d34fe322cb431a",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1825282056",
+                    "name": "J. Matos"
+                },
+                {
+                    "authorId": "133885121",
+                    "name": "E. B. de Lima Filho"
+                },
+                {
+                    "authorId": "143968653",
+                    "name": "I. Bessa"
+                },
+                {
+                    "authorId": "2228669420",
+                    "name": "Edoardo Manino"
+                },
+                {
+                    "authorId": "40809275",
+                    "name": "Xidan Song"
+                },
+                {
+                    "authorId": "2283187658",
+                    "name": "Lucas C. Cordeiro"
+                }
+            ],
+            "doi": "10.1109/TCAD.2023.3335313",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "26f3e22cd90af173ad644c3aae5b890b0b6f6580",
+            "title": "Counterexample Guided Neural Network Quantization Refinement",
+            "url": "https://www.semanticscholar.org/paper/26f3e22cd90af173ad644c3aae5b890b0b6f6580",
+            "venue": "IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "48589169",
+                    "name": "S. Munakata"
+                },
+                {
+                    "authorId": "1452332626",
+                    "name": "Susumu Tokumoto"
+                },
+                {
+                    "authorId": "1500393018",
+                    "name": "Koji Yamamoto"
+                },
+                {
+                    "authorId": "2088925",
+                    "name": "Kazuki Munakata"
+                }
+            ],
+            "doi": "10.1109/ICSE-Companion58688.2023.00103",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ed92a2fc5435f72997beb3a503dd6209da787ad2",
+            "title": "Towards Formal Repair and Verification of Industry-scale Deep Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/ed92a2fc5435f72997beb3a503dd6209da787ad2",
+            "venue": "2023 IEEE/ACM 45th International Conference on Software Engineering: Companion Proceedings (ICSE-Companion)",
+            "year": 2023
+        },
+        {
+            "arxivId": "2212.08567",
+            "authors": [
+                {
+                    "authorId": "2059659934",
+                    "name": "Philipp Kern"
+                },
+                {
+                    "authorId": "48853334",
+                    "name": "Marko Kleine B\u00fcning"
+                },
+                {
+                    "authorId": "2501782",
+                    "name": "C. Sinz"
+                }
+            ],
+            "doi": "10.48550/arXiv.2212.08567",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "6a13d53070e472680e93978abdfbe3b42d926088",
+            "title": "Optimized Symbolic Interval Propagation for Neural Network Verification",
+            "url": "https://www.semanticscholar.org/paper/6a13d53070e472680e93978abdfbe3b42d926088",
+            "venue": "ArXiv",
+            "year": 2022
+        },
+        {
+            "arxivId": "2207.04231",
+            "authors": [
+                {
+                    "authorId": "1825282056",
+                    "name": "J. Matos"
+                },
+                {
+                    "authorId": "143968653",
+                    "name": "I. Bessa"
+                },
+                {
+                    "authorId": "7415464",
+                    "name": "Edoardo Manino"
+                },
+                {
+                    "authorId": "40809275",
+                    "name": "Xidan Song"
+                },
+                {
+                    "authorId": "144040212",
+                    "name": "L. Cordeiro"
+                }
+            ],
+            "doi": "10.48550/arXiv.2207.04231",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "7ce942f1085d0f4b0105189c5bb2f98160248cdb",
+            "title": "CEG4N: Counter-Example Guided Neural Network Quantization Refinement",
+            "url": "https://www.semanticscholar.org/paper/7ce942f1085d0f4b0105189c5bb2f98160248cdb",
+            "venue": "NSV/FoMLAS@CAV",
+            "year": 2022
+        },
+        {
+            "arxivId": "2203.11629",
+            "authors": [
+                {
+                    "authorId": "2080915245",
+                    "name": "Charis Eleftheriadis"
+                },
+                {
+                    "authorId": "20830226",
+                    "name": "Nikolaos Kekatos"
+                },
+                {
+                    "authorId": "1769355",
+                    "name": "P. Katsaros"
+                },
+                {
+                    "authorId": "1738302",
+                    "name": "S. Tripakis"
+                }
+            ],
+            "doi": "10.48550/arXiv.2203.11629",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "87d4dbfaa32cf8a8323d04597c21752dac74e1d7",
+            "title": "On Neural Network Equivalence Checking using SMT Solvers",
+            "url": "https://www.semanticscholar.org/paper/87d4dbfaa32cf8a8323d04597c21752dac74e1d7",
+            "venue": "FORMATS",
+            "year": 2022
+        }
+    ],
+    "corpusId": 245124371,
+    "doi": "10.1109/ICTAI52525.2021.00035",
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 1,
+    "isOpenAccess": true,
+    "isPublisherLicensed": true,
+    "is_open_access": true,
+    "is_publisher_licensed": true,
+    "numCitedBy": 7,
+    "numCiting": 29,
+    "paperId": "69ecde36a6943aeac85284958da2c1f566b40cbc",
+    "references": [
+        {
+            "arxivId": "2009.09943",
+            "authors": [
+                {
+                    "authorId": "38801320",
+                    "name": "Brandon Paulsen"
+                },
+                {
+                    "authorId": "2115722360",
+                    "name": "Jingbo Wang"
+                },
+                {
+                    "authorId": "2110132580",
+                    "name": "Jiawei Wang"
+                },
+                {
+                    "authorId": "2144447350",
+                    "name": "Chao Wang"
+                }
+            ],
+            "doi": "10.1145/3324884.3416560",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "5a18001a48d44fedafd3975eb8152ed08f48df1c",
+            "title": "NEURODIFF: Scalable Differential Verification of Neural Networks using Fine-Grained Approximation",
+            "url": "https://www.semanticscholar.org/paper/5a18001a48d44fedafd3975eb8152ed08f48df1c",
+            "venue": "2020 35th IEEE/ACM International Conference on Automated Software Engineering (ASE)",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1706043",
+                    "name": "Stanley Bak"
+                },
+                {
+                    "authorId": "2135390",
+                    "name": "Hoang-Dung Tran"
+                },
+                {
+                    "authorId": "49919823",
+                    "name": "Kerianne L. Hobbs"
+                },
+                {
+                    "authorId": "2427495",
+                    "name": "Taylor T. Johnson"
+                }
+            ],
+            "doi": "10.1007/978-3-030-53288-8_4",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "c8e142066a7431d278ea4be72f46c62454466bf1",
+            "title": "Improved Geometric Path Enumeration for Verifying ReLU Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/c8e142066a7431d278ea4be72f46c62454466bf1",
+            "venue": "CAV",
+            "year": 2020
+        },
+        {
+            "arxivId": "2001.03662",
+            "authors": [
+                {
+                    "authorId": "38801320",
+                    "name": "Brandon Paulsen"
+                },
+                {
+                    "authorId": "2115722360",
+                    "name": "Jingbo Wang"
+                },
+                {
+                    "authorId": "2144447350",
+                    "name": "Chao Wang"
+                }
+            ],
+            "doi": "10.1145/3377811.3380337",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "cd4c02135b2c7f683e5096785c058e9a958ad583",
+            "title": "ReluDiff: Differential Verification of Deep Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/cd4c02135b2c7f683e5096785c058e9a958ad583",
+            "venue": "2020 IEEE/ACM 42nd International Conference on Software Engineering (ICSE)",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2135390",
+                    "name": "Hoang-Dung Tran"
+                },
+                {
+                    "authorId": "144194822",
+                    "name": "Diego Manzanas Lopez"
+                },
+                {
+                    "authorId": "35733741",
+                    "name": "Patrick Musau"
+                },
+                {
+                    "authorId": "2115881364",
+                    "name": "Xiaodong Yang"
+                },
+                {
+                    "authorId": "2110391",
+                    "name": "L. V. Nguyen"
+                },
+                {
+                    "authorId": "34061035",
+                    "name": "Weiming Xiang"
+                },
+                {
+                    "authorId": "2427495",
+                    "name": "Taylor T. Johnson"
+                }
+            ],
+            "doi": "10.1007/978-3-030-30942-8_39",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "8709162f48805c1ad6dc0328e500a3fadbb3455f",
+            "title": "Star-Based Reachability Analysis of Deep Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/8709162f48805c1ad6dc0328e500a3fadbb3455f",
+            "venue": "FM",
+            "year": 2019
+        },
+        {
+            "arxivId": "1809.08098",
+            "authors": [
+                {
+                    "authorId": "51257183",
+                    "name": "Shiqi Wang"
+                },
+                {
+                    "authorId": "40428350",
+                    "name": "Kexin Pei"
+                },
+                {
+                    "authorId": "2042956146",
+                    "name": "J. Whitehouse"
+                },
+                {
+                    "authorId": "152211006",
+                    "name": "Junfeng Yang"
+                },
+                {
+                    "authorId": "39400201",
+                    "name": "S. Jana"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "98cc371f4e3a39b5c69b4e8980a5990f9011f223",
+            "title": "Efficient Formal Safety Analysis of Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/98cc371f4e3a39b5c69b4e8980a5990f9011f223",
+            "venue": "NeurIPS",
+            "year": 2018
+        },
+        {
+            "arxivId": "1710.09282",
+            "authors": [
+                {
+                    "authorId": "31369633",
+                    "name": "Yu Cheng"
+                },
+                {
+                    "authorId": "2111246718",
+                    "name": "Duo Wang"
+                },
+                {
+                    "authorId": "2109890021",
+                    "name": "Pan Zhou"
+                },
+                {
+                    "authorId": "1689115",
+                    "name": "Zhang Tao"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8dd85e38445a5ddb5dd71cabc3c4246de30c014f",
+            "title": "A Survey of Model Compression and Acceleration for Deep Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/8dd85e38445a5ddb5dd71cabc3c4246de30c014f",
+            "venue": "ArXiv",
+            "year": 2017
+        },
+        {
+            "arxivId": "1709.06662",
+            "authors": [
+                {
+                    "authorId": "2701535",
+                    "name": "Nina Narodytska"
+                },
+                {
+                    "authorId": "7993151",
+                    "name": "S. Kasiviswanathan"
+                },
+                {
+                    "authorId": "3150866",
+                    "name": "L. Ryzhyk"
+                },
+                {
+                    "authorId": "1702872",
+                    "name": "Shmuel Sagiv"
+                },
+                {
+                    "authorId": "1733716",
+                    "name": "T. Walsh"
+                }
+            ],
+            "doi": "10.1609/aaai.v32i1.12206",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "8132f74dcb738c451b78fd2bdb436043039bb1e8",
+            "title": "Verifying Properties of Binarized Deep Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/8132f74dcb738c451b78fd2bdb436043039bb1e8",
+            "venue": "AAAI",
+            "year": 2017
+        },
+        {
+            "arxivId": "1702.01135",
+            "authors": [
+                {
+                    "authorId": "40348902",
+                    "name": "Guy Katz"
+                },
+                {
+                    "authorId": "1680661",
+                    "name": "Clark W. Barrett"
+                },
+                {
+                    "authorId": "1699040",
+                    "name": "D. Dill"
+                },
+                {
+                    "authorId": "145533911",
+                    "name": "Kyle D. Julian"
+                },
+                {
+                    "authorId": "2275756",
+                    "name": "Mykel J. Kochenderfer"
+                }
+            ],
+            "doi": "10.1007/978-3-319-63387-9_5",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "b0dc598adda48acab590f95a5985fcc7abf2aca9",
+            "title": "Reluplex: An Efficient SMT Solver for Verifying Deep Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/b0dc598adda48acab590f95a5985fcc7abf2aca9",
+            "venue": "CAV",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145533911",
+                    "name": "Kyle D. Julian"
+                },
+                {
+                    "authorId": "119877980",
+                    "name": "Jessica Lopez"
+                },
+                {
+                    "authorId": "15730320",
+                    "name": "J. Brush"
+                },
+                {
+                    "authorId": "145217752",
+                    "name": "Michael P. Owen"
+                },
+                {
+                    "authorId": "2275756",
+                    "name": "Mykel J. Kochenderfer"
+                }
+            ],
+            "doi": "10.1109/DASC.2016.7778091",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "2a55bbae748f612b4beb4792de74065ed1fb0c2d",
+            "title": "Policy compression for aircraft collision avoidance systems",
+            "url": "https://www.semanticscholar.org/paper/2a55bbae748f612b4beb4792de74065ed1fb0c2d",
+            "venue": "2016 IEEE/AIAA 35th Digital Avionics Systems Conference (DASC)",
+            "year": 2016
+        },
+        {
+            "arxivId": "1604.07316",
+            "authors": [
+                {
+                    "authorId": "2065365958",
+                    "name": "Mariusz Bojarski"
+                },
+                {
+                    "authorId": "47091489",
+                    "name": "D. Testa"
+                },
+                {
+                    "authorId": "3393305",
+                    "name": "Daniel Dworakowski"
+                },
+                {
+                    "authorId": "2372758",
+                    "name": "Bernhard Firner"
+                },
+                {
+                    "authorId": "2286388",
+                    "name": "B. Flepp"
+                },
+                {
+                    "authorId": "38774604",
+                    "name": "Prasoon Goyal"
+                },
+                {
+                    "authorId": "2065130000",
+                    "name": "L. Jackel"
+                },
+                {
+                    "authorId": "95743023",
+                    "name": "Mathew Monfort"
+                },
+                {
+                    "authorId": "145636949",
+                    "name": "Urs Muller"
+                },
+                {
+                    "authorId": "3393542",
+                    "name": "Jiakai Zhang"
+                },
+                {
+                    "authorId": null,
+                    "name": "Xin Zhang"
+                },
+                {
+                    "authorId": "2109914894",
+                    "name": "Jake Zhao"
+                },
+                {
+                    "authorId": "3262926",
+                    "name": "Karol Zieba"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0e3cc46583217ec81e87045a4f9ae3478a008227",
+            "title": "End to End Learning for Self-Driving Cars",
+            "url": "https://www.semanticscholar.org/paper/0e3cc46583217ec81e87045a4f9ae3478a008227",
+            "venue": "ArXiv",
+            "year": 2016
+        },
+        {
+            "arxivId": "1503.02531",
+            "authors": [
+                {
+                    "authorId": "1695689",
+                    "name": "Geoffrey E. Hinton"
+                },
+                {
+                    "authorId": "1689108",
+                    "name": "O. Vinyals"
+                },
+                {
+                    "authorId": "49959210",
+                    "name": "J. Dean"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "0c908739fbff75f03469d13d4a1a07de3414ee19",
+            "title": "Distilling the Knowledge in a Neural Network",
+            "url": "https://www.semanticscholar.org/paper/0c908739fbff75f03469d13d4a1a07de3414ee19",
+            "venue": "ArXiv",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1706043",
+                    "name": "Stanley Bak"
+                }
+            ],
+            "doi": "10.1007/978-3-030-76384-8_2",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "3c1f2540d0c6f0b0389bc4e2829be83b1d0ae932",
+            "title": "nnenum: Verification of ReLU Neural Networks with Optimized Abstraction Refinement",
+            "url": "https://www.semanticscholar.org/paper/3c1f2540d0c6f0b0389bc4e2829be83b1d0ae932",
+            "venue": "NFM",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "48853334",
+                    "name": "Marko Kleine B\u00fcning"
+                },
+                {
+                    "authorId": "2059659934",
+                    "name": "Philipp Kern"
+                },
+                {
+                    "authorId": "2501782",
+                    "name": "C. Sinz"
+                }
+            ],
+            "doi": "10.1007/978-3-030-58475-7_50",
+            "intent": [
+                "background",
+                "methodology",
+                "result"
+            ],
+            "isInfluential": true,
+            "paperId": "ce077f9cf5116965b777268351f7da6aa0adf3b7",
+            "title": "Verifying Equivalence Properties of Neural Networks with ReLU Activation Functions",
+            "url": "https://www.semanticscholar.org/paper/ce077f9cf5116965b777268351f7da6aa0adf3b7",
+            "venue": "CP",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1401725442",
+                    "name": "O. Castro-Orgaz"
+                },
+                {
+                    "authorId": "108118313",
+                    "name": "W. Hager"
+                }
+            ],
+            "doi": "10.1007/978-3-030-13073-2_10",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7cd316505f52aa337ef8a2aff10bc6bf1df561d0",
+            "title": "and s",
+            "url": "https://www.semanticscholar.org/paper/7cd316505f52aa337ef8a2aff10bc6bf1df561d0",
+            "venue": "Shallow Water Hydraulics",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "122085719",
+                    "name": "Gagandeep Singh"
+                },
+                {
+                    "authorId": "2959734",
+                    "name": "Timon Gehr"
+                },
+                {
+                    "authorId": "51120402",
+                    "name": "M. Mirman"
+                },
+                {
+                    "authorId": "1690697",
+                    "name": "Markus P\u00fcschel"
+                },
+                {
+                    "authorId": "1736447",
+                    "name": "Martin T. Vechev"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "bb92676f9ec13783ac664c268191f20944718f95",
+            "title": "Fast and Effective Robustness Certification",
+            "url": "https://www.semanticscholar.org/paper/bb92676f9ec13783ac664c268191f20944718f95",
+            "venue": "NeurIPS",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2113979381",
+                    "name": "Xing Hao"
+                },
+                {
+                    "authorId": "8273966",
+                    "name": "Guigang Zhang"
+                },
+                {
+                    "authorId": "2118869556",
+                    "name": "Shang Ma"
+                }
+            ],
+            "doi": "10.1142/S1793351X16500045",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "4f8d648c52edf74e41b0996128aa536e13cc7e82",
+            "title": "Deep Learning",
+            "url": "https://www.semanticscholar.org/paper/4f8d648c52edf74e41b0996128aa536e13cc7e82",
+            "venue": "Int. J. Semantic Comput.",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "93897529",
+                    "name": "Iroon Polytechniou"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "ca5cb4e0826b424adb81cbb4f2e3c88c391a4075",
+            "title": "Influence of cultivation temperature on the ligninolytic activity of selected fungal strains",
+            "url": "https://www.semanticscholar.org/paper/ca5cb4e0826b424adb81cbb4f2e3c88c391a4075",
+            "venue": "",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1688882",
+                    "name": "Yann LeCun"
+                },
+                {
+                    "authorId": "52184096",
+                    "name": "L. Bottou"
+                },
+                {
+                    "authorId": "1751762",
+                    "name": "Yoshua Bengio"
+                },
+                {
+                    "authorId": "1721248",
+                    "name": "P. Haffner"
+                }
+            ],
+            "doi": "10.1109/5.726791",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "162d958ff885f1462aeda91cd72582323fd6a1f4",
+            "title": "Gradient-based learning applied to document recognition",
+            "url": "https://www.semanticscholar.org/paper/162d958ff885f1462aeda91cd72582323fd6a1f4",
+            "venue": "Proc. IEEE",
+            "year": 1998
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2225198050",
+                    "name": "MD YOSHIO KINAMI"
+                },
+                {
+                    "authorId": "2062608820",
+                    "name": "I. Miyazaki"
+                },
+                {
+                    "authorId": "2102755585",
+                    "name": "Mdi"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "12b03af504d0960334c77567dab38791bf0f739a",
+            "title": "AND T",
+            "url": "https://www.semanticscholar.org/paper/12b03af504d0960334c77567dab38791bf0f739a",
+            "venue": "",
+            "year": null
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Geometric Path Enumeration for Equivalence Verification of Neural Networks",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/69ecde36a6943aeac85284958da2c1f566b40cbc",
+    "venue": "IEEE International Conference on Tools with Artificial Intelligence",
+    "year": 2021
+}

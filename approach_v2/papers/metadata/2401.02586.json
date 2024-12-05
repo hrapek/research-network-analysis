@@ -1,0 +1,1325 @@
+{
+    "abstract": "One of the most challenging issues in federated learning (FL) is that the data are often not independent and identically distributed (non-IID). Clients are expected to contribute the same type of data and drawn from one global distribution. However, data are often collected in different ways from different resources. Thus, the data distributions among clients might be different from the underlying global distribution. This creates a weight divergence issue and reduces FL performance. This work focuses on improving FL performance for skewed data distribution across clients. The main idea is to adjust the client distribution closer to the global distribution using sample weights. Thus, the machine learning (ML) model converges faster with higher accuracy. We start from the fundamental concept of empirical risk minimization and theoretically derive a solution for adjusting the distribution skewness using sample weights. To determine sample weights, we implicitly exchange density information by leveraging a neural network-based density estimation model, MADE. The clients\u2019 data distribution can then be adjusted without exposing their raw data. Our experiment results on three real-world datasets show that the proposed method not only improves FL accuracy but also significantly reduces communication costs compared to the other experimental methods.",
+    "arxivId": "2401.02586",
+    "authors": [
+        {
+            "authorId": "2266031481",
+            "name": "Hung Nguyen",
+            "url": "https://www.semanticscholar.org/author/2266031481"
+        },
+        {
+            "authorId": "2256331943",
+            "name": "Peiyuan Wu",
+            "url": "https://www.semanticscholar.org/author/2256331943"
+        },
+        {
+            "authorId": "2266145616",
+            "name": "Morris Chang",
+            "url": "https://www.semanticscholar.org/author/2266145616"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": "2411.12377",
+            "authors": [
+                {
+                    "authorId": "2331419793",
+                    "name": "Daniel M. Jimenez"
+                },
+                {
+                    "authorId": "2331414501",
+                    "name": "David Solans"
+                },
+                {
+                    "authorId": "2331418851",
+                    "name": "Mikko Heikkil\u00a8a"
+                },
+                {
+                    "authorId": "2331414032",
+                    "name": "Andrea Vitaletti"
+                },
+                {
+                    "authorId": "2331414047",
+                    "name": "Nicolas Kourtellis"
+                },
+                {
+                    "authorId": "2296289491",
+                    "name": "Aris Anagnostopoulos"
+                },
+                {
+                    "authorId": "2331419199",
+                    "name": "Ieee Ioannis Chatzigiannakis Senior Member"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c964af0b761ad37a9502ed361de738419d16a133",
+            "title": "Non-IID data in Federated Learning: A Systematic Review with Taxonomy, Metrics, Methods, Frameworks and Future Directions",
+            "url": "https://www.semanticscholar.org/paper/c964af0b761ad37a9502ed361de738419d16a133",
+            "venue": "",
+            "year": 2024
+        }
+    ],
+    "corpusId": 266612487,
+    "doi": "10.1109/TAI.2023.3348073",
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": true,
+    "isPublisherLicensed": true,
+    "is_open_access": true,
+    "is_publisher_licensed": true,
+    "numCitedBy": 1,
+    "numCiting": 42,
+    "paperId": "0ffb86e0d8947edcb0b701e89e0386ee3c3565f5",
+    "references": [
+        {
+            "arxivId": "2211.07248",
+            "authors": [
+                {
+                    "authorId": "151474565",
+                    "name": "Mingjie Wang"
+                },
+                {
+                    "authorId": "47093617",
+                    "name": "Jianxiong Guo"
+                },
+                {
+                    "authorId": "2072955395",
+                    "name": "Weijia Jia"
+                }
+            ],
+            "doi": "10.1109/TAI.2023.3307664",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5abadb7be99b44933b08cddff53b4be18723aa56",
+            "title": "Federated Multi-Phase Curriculum Learning to Synchronously Correlate User Heterogeneity",
+            "url": "https://www.semanticscholar.org/paper/5abadb7be99b44933b08cddff53b4be18723aa56",
+            "venue": "IEEE Transactions on Artificial Intelligence",
+            "year": 2022
+        },
+        {
+            "arxivId": "2209.10083",
+            "authors": [
+                {
+                    "authorId": "2110732367",
+                    "name": "Yue Tan"
+                },
+                {
+                    "authorId": "2062835",
+                    "name": "Guodong Long"
+                },
+                {
+                    "authorId": "2115889791",
+                    "name": "Jie Ma"
+                },
+                {
+                    "authorId": "49480497",
+                    "name": "Lu Liu"
+                },
+                {
+                    "authorId": "2144115714",
+                    "name": "Tianyi Zhou"
+                },
+                {
+                    "authorId": "1746594",
+                    "name": "Jing Jiang"
+                }
+            ],
+            "doi": "10.48550/arXiv.2209.10083",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2510bd1b8bc09d7b8f08cf888297753c97c5ef44",
+            "title": "Federated Learning from Pre-Trained Models: A Contrastive Learning Approach",
+            "url": "https://www.semanticscholar.org/paper/2510bd1b8bc09d7b8f08cf888297753c97c5ef44",
+            "venue": "NeurIPS",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1753717562",
+                    "name": "Wei Yang Bryan Lim"
+                },
+                {
+                    "authorId": "1733477775",
+                    "name": "Jer Shyuan Ng"
+                },
+                {
+                    "authorId": "2943819",
+                    "name": "Zehui Xiong"
+                },
+                {
+                    "authorId": "1861455555",
+                    "name": "Jiangming Jin"
+                },
+                {
+                    "authorId": "2145954062",
+                    "name": "Yang Zhang"
+                },
+                {
+                    "authorId": "1713586",
+                    "name": "D. Niyato"
+                },
+                {
+                    "authorId": "2047458009",
+                    "name": "Cyril Leung"
+                },
+                {
+                    "authorId": "1679209",
+                    "name": "C. Miao"
+                }
+            ],
+            "doi": "10.1109/TPDS.2021.3096076",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f221c036aa17270b57ea254b1e7ceb3a21b36479",
+            "title": "Decentralized Edge Intelligence: A Dynamic Resource Allocation Framework for Hierarchical Federated Learning",
+            "url": "https://www.semanticscholar.org/paper/f221c036aa17270b57ea254b1e7ceb3a21b36479",
+            "venue": "IEEE Transactions on Parallel and Distributed Systems",
+            "year": 2022
+        },
+        {
+            "arxivId": "2211.14619",
+            "authors": [
+                {
+                    "authorId": "2109463103",
+                    "name": "Ashutosh Kumar Singh"
+                },
+                {
+                    "authorId": "34761193",
+                    "name": "D. Saxena"
+                },
+                {
+                    "authorId": "2069634094",
+                    "name": "Jitendra Kumar"
+                },
+                {
+                    "authorId": "2110567896",
+                    "name": "Vrinda Gupta"
+                }
+            ],
+            "doi": "10.1109/TPDS.2021.3079341",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ec1aaba79946db76ce6e6b812ed46c1e37c44c53",
+            "title": "A Quantum Approach Towards the Adaptive Prediction of Cloud Workloads",
+            "url": "https://www.semanticscholar.org/paper/ec1aaba79946db76ce6e6b812ed46c1e37c44c53",
+            "venue": "IEEE Transactions on Parallel and Distributed Systems",
+            "year": 2021
+        },
+        {
+            "arxivId": "2106.06843",
+            "authors": [
+                {
+                    "authorId": "116729693",
+                    "name": "Hangyu Zhu"
+                },
+                {
+                    "authorId": "2136350969",
+                    "name": "Jinjin Xu"
+                },
+                {
+                    "authorId": "2131159813",
+                    "name": "Shiqing Liu"
+                },
+                {
+                    "authorId": "2157835870",
+                    "name": "Yaochu Jin"
+                }
+            ],
+            "doi": "10.1016/j.neucom.2021.07.098",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "81c3c02f8d82c826833c7ac74746f65564930feb",
+            "title": "Federated Learning on Non-IID Data: A Survey",
+            "url": "https://www.semanticscholar.org/paper/81c3c02f8d82c826833c7ac74746f65564930feb",
+            "venue": "Neurocomputing",
+            "year": 2021
+        },
+        {
+            "arxivId": "2106.05001",
+            "authors": [
+                {
+                    "authorId": "2109495772",
+                    "name": "Mi Luo"
+                },
+                {
+                    "authorId": "117872156",
+                    "name": "Fei Chen"
+                },
+                {
+                    "authorId": "49592281",
+                    "name": "Dapeng Hu"
+                },
+                {
+                    "authorId": "2108463891",
+                    "name": "Yifan Zhang"
+                },
+                {
+                    "authorId": "50685621",
+                    "name": "Jian Liang"
+                },
+                {
+                    "authorId": "1698982",
+                    "name": "Jiashi Feng"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9563e9578073447b68261eda55e7a6c4fb2af7c8",
+            "title": "No Fear of Heterogeneity: Classifier Calibration for Federated Learning with Non-IID Data",
+            "url": "https://www.semanticscholar.org/paper/9563e9578073447b68261eda55e7a6c4fb2af7c8",
+            "venue": "NeurIPS",
+            "year": 2021
+        },
+        {
+            "arxivId": "2105.10056",
+            "authors": [
+                {
+                    "authorId": "30451228",
+                    "name": "Zhuangdi Zhu"
+                },
+                {
+                    "authorId": "2110805917",
+                    "name": "Junyuan Hong"
+                },
+                {
+                    "authorId": "2143462929",
+                    "name": "Jiayu Zhou"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "3fdcf2d8fe58dcbc2c353e5974e2030f8281c799",
+            "title": "Data-Free Knowledge Distillation for Heterogeneous Federated Learning",
+            "url": "https://www.semanticscholar.org/paper/3fdcf2d8fe58dcbc2c353e5974e2030f8281c799",
+            "venue": "ICML",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2326830",
+                    "name": "I. Feki"
+                },
+                {
+                    "authorId": "30409920",
+                    "name": "Sourour Ammar"
+                },
+                {
+                    "authorId": "3188383",
+                    "name": "Yousri Kessentini"
+                },
+                {
+                    "authorId": "143997136",
+                    "name": "Khan Muhammad"
+                }
+            ],
+            "doi": "10.1016/j.asoc.2021.107330",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5ec5dde49b64a45985c065003b1a65a212e200e4",
+            "title": "Federated learning for COVID-19 screening from Chest X-ray images",
+            "url": "https://www.semanticscholar.org/paper/5ec5dde49b64a45985c065003b1a65a212e200e4",
+            "venue": "Applied Soft Computing",
+            "year": 2021
+        },
+        {
+            "arxivId": "2102.07623",
+            "authors": [
+                {
+                    "authorId": "2144456293",
+                    "name": "Xiaoxiao Li"
+                },
+                {
+                    "authorId": "2050138741",
+                    "name": "Meirui Jiang"
+                },
+                {
+                    "authorId": "2108168094",
+                    "name": "Xiaofei Zhang"
+                },
+                {
+                    "authorId": "2065698865",
+                    "name": "Michael Kamp"
+                },
+                {
+                    "authorId": "35647880",
+                    "name": "Q. Dou"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "2c0f4711c9c124a8dc056eaee82a2ca5ef276da8",
+            "title": "FedBN: Federated Learning on Non-IID Features via Local Batch Normalization",
+            "url": "https://www.semanticscholar.org/paper/2c0f4711c9c124a8dc056eaee82a2ca5ef276da8",
+            "venue": "ICLR",
+            "year": 2021
+        },
+        {
+            "arxivId": "2102.02079",
+            "authors": [
+                {
+                    "authorId": "92621060",
+                    "name": "Q. Li"
+                },
+                {
+                    "authorId": "1871617938",
+                    "name": "Yiqun Diao"
+                },
+                {
+                    "authorId": "2109396907",
+                    "name": "Quan Chen"
+                },
+                {
+                    "authorId": "143824511",
+                    "name": "Bingsheng He"
+                }
+            ],
+            "doi": "10.1109/icde53745.2022.00077",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "dd30a98f5274541f018a762fba46a0730519606a",
+            "title": "Federated Learning on Non-IID Data Silos: An Experimental Study",
+            "url": "https://www.semanticscholar.org/paper/dd30a98f5274541f018a762fba46a0730519606a",
+            "venue": "2022 IEEE 38th International Conference on Data Engineering (ICDE)",
+            "year": 2021
+        },
+        {
+            "arxivId": "2011.05051",
+            "authors": [
+                {
+                    "authorId": "2108180105",
+                    "name": "Zhibin Wang"
+                },
+                {
+                    "authorId": "2008224786",
+                    "name": "Jiahang Qiu"
+                },
+                {
+                    "authorId": "91986424",
+                    "name": "Yong Zhou"
+                },
+                {
+                    "authorId": "1754997",
+                    "name": "Yuanming Shi"
+                },
+                {
+                    "authorId": "2869515",
+                    "name": "Liqun Fu"
+                },
+                {
+                    "authorId": "73227192",
+                    "name": "Wei Chen"
+                },
+                {
+                    "authorId": "145142172",
+                    "name": "K. Letaief"
+                }
+            ],
+            "doi": "10.1109/TWC.2021.3099505",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "76952eeff642415e36b667d2c01e455a69416804",
+            "title": "Federated Learning via Intelligent Reflecting Surface",
+            "url": "https://www.semanticscholar.org/paper/76952eeff642415e36b667d2c01e455a69416804",
+            "venue": "IEEE Transactions on Wireless Communications",
+            "year": 2020
+        },
+        {
+            "arxivId": "2008.06180",
+            "authors": [
+                {
+                    "authorId": "1645225930",
+                    "name": "Sohei Itahara"
+                },
+                {
+                    "authorId": "3037568",
+                    "name": "T. Nishio"
+                },
+                {
+                    "authorId": "1596809965",
+                    "name": "Yusuke Koda"
+                },
+                {
+                    "authorId": "1731593",
+                    "name": "M. Morikura"
+                },
+                {
+                    "authorId": "145524496",
+                    "name": "Koji Yamamoto"
+                }
+            ],
+            "doi": "10.1109/TMC.2021.3070013",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "10475b4d2467cfa15bb0fd149b34b295928002e4",
+            "title": "Distillation-Based Semi-Supervised Federated Learning for Communication-Efficient Collaborative Training With Non-IID Private Data",
+            "url": "https://www.semanticscholar.org/paper/10475b4d2467cfa15bb0fd149b34b295928002e4",
+            "venue": "IEEE Transactions on Mobile Computing",
+            "year": 2020
+        },
+        {
+            "arxivId": "2007.07481",
+            "authors": [
+                {
+                    "authorId": "30880777",
+                    "name": "Jianyu Wang"
+                },
+                {
+                    "authorId": "2116656839",
+                    "name": "Qinghua Liu"
+                },
+                {
+                    "authorId": "2111208854",
+                    "name": "Hao Liang"
+                },
+                {
+                    "authorId": "144225970",
+                    "name": "Gauri Joshi"
+                },
+                {
+                    "authorId": "145967056",
+                    "name": "H. Poor"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "4b6661347d5b58250130b89145dbd34ce310f2a0",
+            "title": "Tackling the Objective Inconsistency Problem in Heterogeneous Federated Optimization",
+            "url": "https://www.semanticscholar.org/paper/4b6661347d5b58250130b89145dbd34ce310f2a0",
+            "venue": "NeurIPS",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "39483391",
+                    "name": "Hao Wang"
+                },
+                {
+                    "authorId": "2005216177",
+                    "name": "Zakhary Kaplan"
+                },
+                {
+                    "authorId": "1714907",
+                    "name": "Di Niu"
+                },
+                {
+                    "authorId": "91269142",
+                    "name": "Baochun Li"
+                }
+            ],
+            "doi": "10.1109/infocom41043.2020.9155494",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "82f7073b503143cf3ed4d59dca2f206ba18a31b9",
+            "title": "Optimizing Federated Learning on Non-IID Data with Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/82f7073b503143cf3ed4d59dca2f206ba18a31b9",
+            "venue": "IEEE INFOCOM 2020 - IEEE Conference on Computer Communications",
+            "year": 2020
+        },
+        {
+            "arxivId": "2006.16765",
+            "authors": [
+                {
+                    "authorId": "2057972289",
+                    "name": "T. Shen"
+                },
+                {
+                    "authorId": "40539618",
+                    "name": "J. Zhang"
+                },
+                {
+                    "authorId": "1782322107",
+                    "name": "Xinkang Jia"
+                },
+                {
+                    "authorId": "1452322269",
+                    "name": "Fengda Zhang"
+                },
+                {
+                    "authorId": "144513600",
+                    "name": "Gang Huang"
+                },
+                {
+                    "authorId": "2109890021",
+                    "name": "Pan Zhou"
+                },
+                {
+                    "authorId": "144894849",
+                    "name": "Fei Wu"
+                },
+                {
+                    "authorId": "2115422697",
+                    "name": "Chao Wu"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5bd6d05646c5222e69984b6ef91579a8b91976a9",
+            "title": "Federated Mutual Learning",
+            "url": "https://www.semanticscholar.org/paper/5bd6d05646c5222e69984b6ef91579a8b91976a9",
+            "venue": "ArXiv",
+            "year": 2020
+        },
+        {
+            "arxivId": "2003.13145",
+            "authors": [
+                {
+                    "authorId": "3446957",
+                    "name": "M. Chowdhury"
+                },
+                {
+                    "authorId": "1598373851",
+                    "name": "Tawsifur Rahman"
+                },
+                {
+                    "authorId": "2319383",
+                    "name": "A. Khandakar"
+                },
+                {
+                    "authorId": "1910758",
+                    "name": "R. Mazhar"
+                },
+                {
+                    "authorId": "153610549",
+                    "name": "M. A. Kadir"
+                },
+                {
+                    "authorId": "3949212",
+                    "name": "Z. Mahbub"
+                },
+                {
+                    "authorId": "2065022642",
+                    "name": "Khandakar R. Islam"
+                },
+                {
+                    "authorId": "2118147033",
+                    "name": "Muhammad Salman Khan"
+                },
+                {
+                    "authorId": "143799075",
+                    "name": "A. Iqbal"
+                },
+                {
+                    "authorId": "1404996141",
+                    "name": "N. Al-Emadi"
+                },
+                {
+                    "authorId": "145464482",
+                    "name": "M. Reaz"
+                }
+            ],
+            "doi": "10.1109/ACCESS.2020.3010287",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2a0f2a76df5af569a9d85d97d2a81ae10f02fccf",
+            "title": "Can AI Help in Screening Viral and COVID-19 Pneumonia?",
+            "url": "https://www.semanticscholar.org/paper/2a0f2a76df5af569a9d85d97d2a81ae10f02fccf",
+            "venue": "IEEE Access",
+            "year": 2020
+        },
+        {
+            "arxivId": "2002.06440",
+            "authors": [
+                {
+                    "authorId": "2109798334",
+                    "name": "Hongyi Wang"
+                },
+                {
+                    "authorId": "8202372",
+                    "name": "M. Yurochkin"
+                },
+                {
+                    "authorId": "3340442",
+                    "name": "Yuekai Sun"
+                },
+                {
+                    "authorId": "1740595",
+                    "name": "Dimitris Papailiopoulos"
+                },
+                {
+                    "authorId": "2216967",
+                    "name": "Y. Khazaeni"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "998620638cfc7c6b5d7b95fa8645f75723d78372",
+            "title": "Federated Learning with Matched Averaging",
+            "url": "https://www.semanticscholar.org/paper/998620638cfc7c6b5d7b95fa8645f75723d78372",
+            "venue": "ICLR",
+            "year": 2020
+        },
+        {
+            "arxivId": "1905.12022",
+            "authors": [
+                {
+                    "authorId": "8202372",
+                    "name": "M. Yurochkin"
+                },
+                {
+                    "authorId": "145625761",
+                    "name": "Mayank Agarwal"
+                },
+                {
+                    "authorId": "143864453",
+                    "name": "S. Ghosh"
+                },
+                {
+                    "authorId": "2403306",
+                    "name": "K. Greenewald"
+                },
+                {
+                    "authorId": "144721482",
+                    "name": "T. Hoang"
+                },
+                {
+                    "authorId": "2216967",
+                    "name": "Y. Khazaeni"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5ac658ff79e30358a2f4a8ac4486090c3b7a2289",
+            "title": "Bayesian Nonparametric Federated Learning of Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/5ac658ff79e30358a2f4a8ac4486090c3b7a2289",
+            "venue": "ICML",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2118467847",
+                    "name": "Lumin Liu"
+                },
+                {
+                    "authorId": "31653740",
+                    "name": "Jun Zhang"
+                },
+                {
+                    "authorId": "2107567409",
+                    "name": "S. H. Song"
+                },
+                {
+                    "authorId": "145142172",
+                    "name": "K. Letaief"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "85a72cc775cf621474643aac98d1a86ce7d49764",
+            "title": "Edge-Assisted Hierarchical Federated Learning with Non-IID Data",
+            "url": "https://www.semanticscholar.org/paper/85a72cc775cf621474643aac98d1a86ce7d49764",
+            "venue": "ArXiv",
+            "year": 2019
+        },
+        {
+            "arxivId": "1902.00146",
+            "authors": [
+                {
+                    "authorId": "81080659",
+                    "name": "M. Mohri"
+                },
+                {
+                    "authorId": "67086013",
+                    "name": "Gary Sivek"
+                },
+                {
+                    "authorId": "9486035",
+                    "name": "A. Suresh"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "159395b0f7a2b9ea04f9a758d18887bcb970ee78",
+            "title": "Agnostic Federated Learning",
+            "url": "https://www.semanticscholar.org/paper/159395b0f7a2b9ea04f9a758d18887bcb970ee78",
+            "venue": "ICML",
+            "year": 2019
+        },
+        {
+            "arxivId": "1812.06127",
+            "authors": [
+                {
+                    "authorId": "2894821",
+                    "name": "Anit Kumar Sahu"
+                },
+                {
+                    "authorId": "2118910109",
+                    "name": "Tian Li"
+                },
+                {
+                    "authorId": "2095979",
+                    "name": "Maziar Sanjabi"
+                },
+                {
+                    "authorId": "1771307",
+                    "name": "M. Zaheer"
+                },
+                {
+                    "authorId": "145532827",
+                    "name": "Ameet Talwalkar"
+                },
+                {
+                    "authorId": "145260024",
+                    "name": "Virginia Smith"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "1284ed4bf6a043ecf8cebca09e4811f1e3b83b65",
+            "title": "Federated Optimization in Heterogeneous Networks",
+            "url": "https://www.semanticscholar.org/paper/1284ed4bf6a043ecf8cebca09e4811f1e3b83b65",
+            "venue": "MLSys",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2894821",
+                    "name": "Anit Kumar Sahu"
+                },
+                {
+                    "authorId": "2118910109",
+                    "name": "Tian Li"
+                },
+                {
+                    "authorId": "2095979",
+                    "name": "Maziar Sanjabi"
+                },
+                {
+                    "authorId": "1771307",
+                    "name": "M. Zaheer"
+                },
+                {
+                    "authorId": "145532827",
+                    "name": "Ameet Talwalkar"
+                },
+                {
+                    "authorId": "145260024",
+                    "name": "Virginia Smith"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "3370d724bbba3b8793c7a743bd7ef8b57a88195b",
+            "title": "On the Convergence of Federated Optimization in Heterogeneous Networks",
+            "url": "https://www.semanticscholar.org/paper/3370d724bbba3b8793c7a743bd7ef8b57a88195b",
+            "venue": "ArXiv",
+            "year": 2018
+        },
+        {
+            "arxivId": "1811.03604",
+            "authors": [
+                {
+                    "authorId": "2063986787",
+                    "name": "Andrew Straiton Hard"
+                },
+                {
+                    "authorId": "2251957",
+                    "name": "Kanishka Rao"
+                },
+                {
+                    "authorId": "144068963",
+                    "name": "Rajiv Mathews"
+                },
+                {
+                    "authorId": "51940742",
+                    "name": "F. Beaufays"
+                },
+                {
+                    "authorId": "13197736",
+                    "name": "S. Augenstein"
+                },
+                {
+                    "authorId": "153086296",
+                    "name": "Hubert Eichner"
+                },
+                {
+                    "authorId": "3104292",
+                    "name": "Chlo\u00e9 Kiddon"
+                },
+                {
+                    "authorId": "1878835",
+                    "name": "Daniel Ramage"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b72b6fae30561a7e29392e04e82ed1ad7bce8e78",
+            "title": "Federated Learning for Mobile Keyboard Prediction",
+            "url": "https://www.semanticscholar.org/paper/b72b6fae30561a7e29392e04e82ed1ad7bce8e78",
+            "venue": "ArXiv",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "114902825",
+                    "name": "Ya-chung Chuang"
+                },
+                {
+                    "authorId": "88633065",
+                    "name": "A. Dirlik"
+                },
+                {
+                    "authorId": "84605990",
+                    "name": "Ping-hui Liao"
+                }
+            ],
+            "doi": "10.1215/01903659-6915545",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7957003fa267f00e5916adf93709d48599c99e05",
+            "title": "Taiwan",
+            "url": "https://www.semanticscholar.org/paper/7957003fa267f00e5916adf93709d48599c99e05",
+            "venue": "boundary 2",
+            "year": 2018
+        },
+        {
+            "arxivId": "1806.00582",
+            "authors": [
+                {
+                    "authorId": "2116811326",
+                    "name": "Yue Zhao"
+                },
+                {
+                    "authorId": "49141099",
+                    "name": "Meng Li"
+                },
+                {
+                    "authorId": "1891108",
+                    "name": "Liangzhen Lai"
+                },
+                {
+                    "authorId": "40622167",
+                    "name": "Naveen Suda"
+                },
+                {
+                    "authorId": "50986776",
+                    "name": "Damon Civin"
+                },
+                {
+                    "authorId": "144137038",
+                    "name": "V. Chandra"
+                }
+            ],
+            "doi": "10.48550/arXiv.1806.00582",
+            "intent": [
+                "background",
+                "result"
+            ],
+            "isInfluential": false,
+            "paperId": "5cfc112c932e38df95a0ba35009688735d1a386b",
+            "title": "Federated Learning with Non-IID Data",
+            "url": "https://www.semanticscholar.org/paper/5cfc112c932e38df95a0ba35009688735d1a386b",
+            "venue": "ArXiv",
+            "year": 2018
+        },
+        {
+            "arxivId": "1804.03209",
+            "authors": [
+                {
+                    "authorId": "47941411",
+                    "name": "Pete Warden"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "da6e404d8911b0e5785019a79dc8607e0b313dc4",
+            "title": "Speech Commands: A Dataset for Limited-Vocabulary Speech Recognition",
+            "url": "https://www.semanticscholar.org/paper/da6e404d8911b0e5785019a79dc8607e0b313dc4",
+            "venue": "ArXiv",
+            "year": 2018
+        },
+        {
+            "arxivId": "1803.09357",
+            "authors": [
+                {
+                    "authorId": "3335298",
+                    "name": "Chi Jin"
+                },
+                {
+                    "authorId": "1748108610",
+                    "name": "Lydia T. Liu"
+                },
+                {
+                    "authorId": "144804200",
+                    "name": "Rong Ge"
+                },
+                {
+                    "authorId": "1694621",
+                    "name": "Michael I. Jordan"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f56aa431a74238b64312496f50d37116638f22f1",
+            "title": "On the Local Minima of the Empirical Risk",
+            "url": "https://www.semanticscholar.org/paper/f56aa431a74238b64312496f50d37116638f22f1",
+            "venue": "NeurIPS",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "5770276",
+                    "name": "Daniel S. Kermany"
+                },
+                {
+                    "authorId": "51462908",
+                    "name": "Kang Zhang"
+                },
+                {
+                    "authorId": "32618175",
+                    "name": "M. Goldbaum"
+                }
+            ],
+            "doi": "10.17632/RSCBJBR9SJ.2",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e4dc92173448860e848febe9f5629c990e36af88",
+            "title": "Labeled Optical Coherence Tomography (OCT) and Chest X-Ray Images for Classification",
+            "url": "https://www.semanticscholar.org/paper/e4dc92173448860e848febe9f5629c990e36af88",
+            "venue": "",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2844480",
+                    "name": "A. Menon"
+                },
+                {
+                    "authorId": "1706780",
+                    "name": "Cheng Soon Ong"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "f807099d3be30da81a273597788bfd3a1036b189",
+            "title": "Linking losses for density ratio and class-probability estimation",
+            "url": "https://www.semanticscholar.org/paper/f807099d3be30da81a273597788bfd3a1036b189",
+            "venue": "ICML",
+            "year": 2016
+        },
+        {
+            "arxivId": "1602.05629",
+            "authors": [
+                {
+                    "authorId": "145057514",
+                    "name": "H. B. McMahan"
+                },
+                {
+                    "authorId": "31449330",
+                    "name": "Eider Moore"
+                },
+                {
+                    "authorId": "1878835",
+                    "name": "Daniel Ramage"
+                },
+                {
+                    "authorId": "37089174",
+                    "name": "S. Hampson"
+                },
+                {
+                    "authorId": "2661025",
+                    "name": "B. A. Y. Arcas"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d1dbf643447405984eeef098b1b320dee0b3b8a7",
+            "title": "Communication-Efficient Learning of Deep Networks from Decentralized Data",
+            "url": "https://www.semanticscholar.org/paper/d1dbf643447405984eeef098b1b320dee0b3b8a7",
+            "venue": "AISTATS",
+            "year": 2016
+        },
+        {
+            "arxivId": "1502.03509",
+            "authors": [
+                {
+                    "authorId": "39844381",
+                    "name": "M. Germain"
+                },
+                {
+                    "authorId": "144717963",
+                    "name": "Karol Gregor"
+                },
+                {
+                    "authorId": "145797336",
+                    "name": "Iain Murray"
+                },
+                {
+                    "authorId": "1777528",
+                    "name": "H. Larochelle"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "90f72fbbe5f0a29e627db28999e01a30a9655bc6",
+            "title": "MADE: Masked Autoencoder for Distribution Estimation",
+            "url": "https://www.semanticscholar.org/paper/90f72fbbe5f0a29e627db28999e01a30a9655bc6",
+            "venue": "ICML",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144230620",
+                    "name": "Stefan Jaeger"
+                },
+                {
+                    "authorId": "1699840",
+                    "name": "S. Candemir"
+                },
+                {
+                    "authorId": "1721328",
+                    "name": "Sameer Kiran Antani"
+                },
+                {
+                    "authorId": "2125059253",
+                    "name": "Y\u00ec-Xi\u00e1ng J W\u00e1ng"
+                },
+                {
+                    "authorId": "2599974",
+                    "name": "P. Lu"
+                },
+                {
+                    "authorId": "145116486",
+                    "name": "G. Thoma"
+                }
+            ],
+            "doi": "10.3978/j.issn.2223-4292.2014.11.20",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0fd259546e31fa7ff4df38d21d18c149177faeb8",
+            "title": "Two public chest X-ray datasets for computer-aided screening of pulmonary diseases.",
+            "url": "https://www.semanticscholar.org/paper/0fd259546e31fa7ff4df38d21d18c149177faeb8",
+            "venue": "Quantitative imaging in medicine and surgery",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144718788",
+                    "name": "L. Deng"
+                }
+            ],
+            "doi": "10.1109/MSP.2012.2211477",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "46f74231b9afeb0c290d6d550043c55045284e5f",
+            "title": "The MNIST Database of Handwritten Digit Images for Machine Learning Research [Best of the Web]",
+            "url": "https://www.semanticscholar.org/paper/46f74231b9afeb0c290d6d550043c55045284e5f",
+            "venue": "IEEE Signal Processing Magazine",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1390824389",
+                    "name": "Hong-You Chen"
+                },
+                {
+                    "authorId": "38784892",
+                    "name": "Wei-Lun Chao"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "36a7bb5f85d79acee1b859588017564367a0ecc6",
+            "title": "On Bridging Generic and Personalized Federated Learning for Image Classification",
+            "url": "https://www.semanticscholar.org/paper/36a7bb5f85d79acee1b859588017564367a0ecc6",
+            "venue": "ICLR",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [],
+            "doi": "10.1007/978-3-030-85559-8",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "aed96f37aa28b9ac5080dd1c952ee2fc347ace61",
+            "title": "Federated Learning for IoT Applications",
+            "url": "https://www.semanticscholar.org/paper/aed96f37aa28b9ac5080dd1c952ee2fc347ace61",
+            "venue": "EAI/Springer Innovations in Communication and Computing",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "9418175",
+                    "name": "Shaolei Zhai"
+                },
+                {
+                    "authorId": "2149170735",
+                    "name": "Xin Jin"
+                },
+                {
+                    "authorId": "2110688199",
+                    "name": "Ling Wei"
+                },
+                {
+                    "authorId": "2047239182",
+                    "name": "Hongxuan Luo"
+                },
+                {
+                    "authorId": "2057073040",
+                    "name": "Min Cao"
+                }
+            ],
+            "doi": "10.1109/ACCESS.2021.3050172",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "fcc4231de78287ca0357b3e1af881cd009a14b85",
+            "title": "Dynamic Federated Learning for GMEC With Time-Varying Wireless Link",
+            "url": "https://www.semanticscholar.org/paper/fcc4231de78287ca0357b3e1af881cd009a14b85",
+            "venue": "IEEE Access",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2106563662",
+                    "name": "Jianfeng Duan"
+                },
+                {
+                    "authorId": "2108677420",
+                    "name": "Wenzhong Li"
+                },
+                {
+                    "authorId": "145174807",
+                    "name": "Sanglu Lu"
+                }
+            ],
+            "doi": "10.1007/978-3-030-86486-6_44",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "995f4955f2c763130d181dbf850306423f85a37e",
+            "title": "FedDNA: Federated Learning with Decoupled Normalization-Layer Aggregation for Non-IID Data",
+            "url": "https://www.semanticscholar.org/paper/995f4955f2c763130d181dbf850306423f85a37e",
+            "venue": "ECML/PKDD",
+            "year": 2021
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Federated Learning for Distribution Skewed Data Using Sample Weights",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/0ffb86e0d8947edcb0b701e89e0386ee3c3565f5",
+    "venue": "IEEE Transactions on Artificial Intelligence",
+    "year": 2024
+}

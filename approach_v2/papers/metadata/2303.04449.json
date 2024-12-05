@@ -1,0 +1,2397 @@
+{
+    "abstract": "Training neural networks on a large dataset requires substantial computational costs. Dataset reduction selects or synthesizes data instances based on the large dataset, while minimizing the degradation in generalization performance from the full dataset. Existing methods utilize the neural network during the dataset reduction procedure, so the model parameter becomes important factor in preserving the performance after reduction. By depending upon the importance of parameters, this paper introduces a new reduction objective, coined LCMat, which Matches the Loss Curvatures of the original dataset and reduced dataset over the model parameter space, more than the parameter point. This new objective induces a better adaptation of the reduced dataset on the perturbed parameter region than the exact point matching. Particularly, we identify the worst case of the loss curvature gap from the local parameter region, and we derive the implementable upper bound of such worst-case with theoretical analyses. Our experiments on both coreset selection and condensation benchmarks illustrate that LCMat shows better generalization performances than existing baselines.",
+    "arxivId": "2303.04449",
+    "authors": [
+        {
+            "authorId": "120296402",
+            "name": "Seung-Jae Shin",
+            "url": "https://www.semanticscholar.org/author/120296402"
+        },
+        {
+            "authorId": "2164036377",
+            "name": "Heesun Bae",
+            "url": "https://www.semanticscholar.org/author/2164036377"
+        },
+        {
+            "authorId": "2170358930",
+            "name": "DongHyeok Shin",
+            "url": "https://www.semanticscholar.org/author/2170358930"
+        },
+        {
+            "authorId": "67271599",
+            "name": "Weonyoung Joo",
+            "url": "https://www.semanticscholar.org/author/67271599"
+        },
+        {
+            "authorId": "1729306",
+            "name": "Il-Chul Moon",
+            "url": "https://www.semanticscholar.org/author/1729306"
+        }
+    ],
+    "citationVelocity": 11,
+    "citations": [
+        {
+            "arxivId": "2410.17193",
+            "authors": [
+                {
+                    "authorId": "2254488948",
+                    "name": "Kai Wang"
+                },
+                {
+                    "authorId": "2315648231",
+                    "name": "Zekai Li"
+                },
+                {
+                    "authorId": "2315922548",
+                    "name": "Zhi-Qi Cheng"
+                },
+                {
+                    "authorId": "2132439321",
+                    "name": "Samir Khaki"
+                },
+                {
+                    "authorId": "4400341",
+                    "name": "A. Sajedi"
+                },
+                {
+                    "authorId": "8137017",
+                    "name": "Ramakrishna Vedantam"
+                },
+                {
+                    "authorId": "2277598061",
+                    "name": "Konstantinos N. Plataniotis"
+                },
+                {
+                    "authorId": "2298897790",
+                    "name": "Alexander G. Hauptmann"
+                },
+                {
+                    "authorId": "2147330258",
+                    "name": "Yang You"
+                }
+            ],
+            "doi": "10.48550/arXiv.2410.17193",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "84c48d101c00e19dae78767408241e4fb0325a03",
+            "title": "Emphasizing Discriminative Features for Dataset Distillation in Complex Scenarios",
+            "url": "https://www.semanticscholar.org/paper/84c48d101c00e19dae78767408241e4fb0325a03",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": "2410.15919",
+            "authors": [
+                {
+                    "authorId": "2210247831",
+                    "name": "Lingao Xiao"
+                },
+                {
+                    "authorId": "2261292654",
+                    "name": "Yang He"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7f0b8d00fec82c6c1110f70863a4285af62ba26e",
+            "title": "Are Large-scale Soft Labels Necessary for Large-scale Dataset Distillation?",
+            "url": "https://www.semanticscholar.org/paper/7f0b8d00fec82c6c1110f70863a4285af62ba26e",
+            "venue": "",
+            "year": 2024
+        },
+        {
+            "arxivId": "2410.08665",
+            "authors": [
+                {
+                    "authorId": "2325837849",
+                    "name": "Peiran Wang"
+                },
+                {
+                    "authorId": "2325772772",
+                    "name": "Haohan Wang"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "fbe8968dca19001c16d065a7dd8fb4824c09195a",
+            "title": "DistDD: Distributed Data Distillation Aggregation through Gradient Matching",
+            "url": "https://www.semanticscholar.org/paper/fbe8968dca19001c16d065a7dd8fb4824c09195a",
+            "venue": "",
+            "year": 2024
+        },
+        {
+            "arxivId": "2410.01611",
+            "authors": [
+                {
+                    "authorId": "2323926728",
+                    "name": "Shaobo Wang"
+                },
+                {
+                    "authorId": "2316673828",
+                    "name": "Yantai Yang"
+                },
+                {
+                    "authorId": "2323911106",
+                    "name": "Shuaiyu Zhang"
+                },
+                {
+                    "authorId": "2324064940",
+                    "name": "Chenghao Sun"
+                },
+                {
+                    "authorId": "2323808383",
+                    "name": "Weiya Li"
+                },
+                {
+                    "authorId": "2323897201",
+                    "name": "Xuming Hu"
+                },
+                {
+                    "authorId": "2316665325",
+                    "name": "Linfeng Zhang"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "cafae5edfa72d109e863f17e96114ae2af88406d",
+            "title": "DRUPI: Dataset Reduction Using Privileged Information",
+            "url": "https://www.semanticscholar.org/paper/cafae5edfa72d109e863f17e96114ae2af88406d",
+            "venue": "",
+            "year": 2024
+        },
+        {
+            "arxivId": "2408.06927",
+            "authors": [
+                {
+                    "authorId": "2316118191",
+                    "name": "Xin Zhang"
+                },
+                {
+                    "authorId": "2299952061",
+                    "name": "Jiawei Du"
+                },
+                {
+                    "authorId": "2283259369",
+                    "name": "Ping Liu"
+                },
+                {
+                    "authorId": "2265459102",
+                    "name": "Joey Tianyi Zhou"
+                }
+            ],
+            "doi": "10.48550/arXiv.2408.06927",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "046546178051d0fa44bd1f27729a89426fc01239",
+            "title": "Breaking Class Barriers: Efficient Dataset Distillation via Inter-Class Feature Compensator",
+            "url": "https://www.semanticscholar.org/paper/046546178051d0fa44bd1f27729a89426fc01239",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": "2408.03360",
+            "authors": [
+                {
+                    "authorId": "2315648231",
+                    "name": "Zekai Li"
+                },
+                {
+                    "authorId": "2257137154",
+                    "name": "Ziyao Guo"
+                },
+                {
+                    "authorId": "2292217857",
+                    "name": "Wangbo Zhao"
+                },
+                {
+                    "authorId": "2256233019",
+                    "name": "Tianle Zhang"
+                },
+                {
+                    "authorId": "2315922548",
+                    "name": "Zhi-Qi Cheng"
+                },
+                {
+                    "authorId": "2132439321",
+                    "name": "Samir Khaki"
+                },
+                {
+                    "authorId": "2257012661",
+                    "name": "Kaipeng Zhang"
+                },
+                {
+                    "authorId": "4400341",
+                    "name": "A. Sajedi"
+                },
+                {
+                    "authorId": "2277598061",
+                    "name": "Konstantinos N. Plataniotis"
+                },
+                {
+                    "authorId": "2254488948",
+                    "name": "Kai Wang"
+                },
+                {
+                    "authorId": "2147330258",
+                    "name": "Yang You"
+                }
+            ],
+            "doi": "10.48550/arXiv.2408.03360",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "af0cccdf711ea098501d199e925a44c14ba3c3eb",
+            "title": "Prioritize Alignment in Dataset Distillation",
+            "url": "https://www.semanticscholar.org/paper/af0cccdf711ea098501d199e925a44c14ba3c3eb",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": "2407.05973",
+            "authors": [
+                {
+                    "authorId": "2064506791",
+                    "name": "Bidur Khanal"
+                },
+                {
+                    "authorId": "2310336503",
+                    "name": "Tianhong Dai"
+                },
+                {
+                    "authorId": "2256990857",
+                    "name": "Binod Bhattarai"
+                },
+                {
+                    "authorId": "2279541566",
+                    "name": "Cristian A. Linte"
+                }
+            ],
+            "doi": "10.48550/arXiv.2407.05973",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "95858eb8dd540da03ca68b6057e3cd394b02875c",
+            "title": "Active Label Refinement for Robust Training of Imbalanced Medical Image Classification Tasks in the Presence of High Label Noise",
+            "url": "https://www.semanticscholar.org/paper/95858eb8dd540da03ca68b6057e3cd394b02875c",
+            "venue": "MICCAI",
+            "year": 2024
+        },
+        {
+            "arxivId": "2406.03057",
+            "authors": [
+                {
+                    "authorId": "2304913398",
+                    "name": "Hoyong Choi"
+                },
+                {
+                    "authorId": "2199182585",
+                    "name": "Nohyun Ki"
+                },
+                {
+                    "authorId": "2305320199",
+                    "name": "Hye Won Chung"
+                }
+            ],
+            "doi": "10.48550/arXiv.2406.03057",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "be525ad66a6ddd23ab293468190ad5f37f45e218",
+            "title": "BWS: Best Window Selection Based on Sample Scores for Data Pruning across Broad Ranges",
+            "url": "https://www.semanticscholar.org/paper/be525ad66a6ddd23ab293468190ad5f37f45e218",
+            "venue": "ICML",
+            "year": 2024
+        },
+        {
+            "arxivId": "2406.02131",
+            "authors": [
+                {
+                    "authorId": "2298953991",
+                    "name": "Jianrong Ding"
+                },
+                {
+                    "authorId": "2118396181",
+                    "name": "Zhanyu Liu"
+                },
+                {
+                    "authorId": "2282137288",
+                    "name": "Guanjie Zheng"
+                },
+                {
+                    "authorId": "2304691835",
+                    "name": "Haiming Jin"
+                },
+                {
+                    "authorId": "2298947891",
+                    "name": "Linghe Kong"
+                }
+            ],
+            "doi": "10.48550/arXiv.2406.02131",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "4b9293ea1cd47923fc73e1e59e2f5618b9b077ac",
+            "title": "CondTSF: One-line Plugin of Dataset Condensation for Time Series Forecasting",
+            "url": "https://www.semanticscholar.org/paper/4b9293ea1cd47923fc73e1e59e2f5618b9b077ac",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": "2403.16028",
+            "authors": [
+                {
+                    "authorId": "2143370487",
+                    "name": "Yao Lu"
+                },
+                {
+                    "authorId": "2293561728",
+                    "name": "Jianyang Gu"
+                },
+                {
+                    "authorId": "2254816324",
+                    "name": "Xuguang Chen"
+                },
+                {
+                    "authorId": "2268405765",
+                    "name": "Saeed Vahidian"
+                },
+                {
+                    "authorId": "2254269187",
+                    "name": "Qi Xuan"
+                }
+            ],
+            "doi": "10.1109/CVPRW63382.2024.00761",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "217832b3ca75a109622043c2bfccc158733bacaa",
+            "title": "Exploring the Impact of Dataset Bias on Dataset Distillation",
+            "url": "https://www.semanticscholar.org/paper/217832b3ca75a109622043c2bfccc158733bacaa",
+            "venue": "2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2226539668",
+                    "name": "Weiwei Xiao"
+                },
+                {
+                    "authorId": "2293548368",
+                    "name": "Yongyong Chen"
+                },
+                {
+                    "authorId": "2293398524",
+                    "name": "Qiben Shan"
+                },
+                {
+                    "authorId": "2293669697",
+                    "name": "Yaowei Wang"
+                },
+                {
+                    "authorId": "2278788537",
+                    "name": "Jingyong Su"
+                }
+            ],
+            "doi": "10.1609/aaai.v38i8.28771",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "c693b14ba2ce0d08a71eac534767678c79b74666",
+            "title": "Feature Distribution Matching by Optimal Transport for Effective and Robust Coreset Selection",
+            "url": "https://www.semanticscholar.org/paper/c693b14ba2ce0d08a71eac534767678c79b74666",
+            "venue": "AAAI",
+            "year": 2024
+        },
+        {
+            "arxivId": "2403.10853",
+            "authors": [
+                {
+                    "authorId": "2290913482",
+                    "name": "Minhyuk Seo"
+                },
+                {
+                    "authorId": "2292033740",
+                    "name": "Diganta Misra"
+                },
+                {
+                    "authorId": "2292035546",
+                    "name": "Seongwon Cho"
+                },
+                {
+                    "authorId": "2292089476",
+                    "name": "Minjae Lee"
+                },
+                {
+                    "authorId": "2291003565",
+                    "name": "Jonghyun Choi"
+                }
+            ],
+            "doi": "10.48550/arXiv.2403.10853",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "6b15f8a6f5ff6ea0ed1c28f81e6dc8e6a5bcfef0",
+            "title": "Just Say the Name: Online Continual Learning with Category Names Only via Data Generation",
+            "url": "https://www.semanticscholar.org/paper/6b15f8a6f5ff6ea0ed1c28f81e6dc8e6a5bcfef0",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": "2403.07329",
+            "authors": [
+                {
+                    "authorId": "2111068390",
+                    "name": "Seungjae Shin"
+                },
+                {
+                    "authorId": "2164036377",
+                    "name": "Heesun Bae"
+                },
+                {
+                    "authorId": "1999215536",
+                    "name": "Byeonghu Na"
+                },
+                {
+                    "authorId": "118136036",
+                    "name": "Yoon-Yeong Kim"
+                },
+                {
+                    "authorId": "2260651428",
+                    "name": "Il-Chul Moon"
+                }
+            ],
+            "doi": "10.48550/arXiv.2403.07329",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e195813dd05e65bcc6a90ff6dbc85f67eae5c51c",
+            "title": "Unknown Domain Inconsistency Minimization for Domain Generalization",
+            "url": "https://www.semanticscholar.org/paper/e195813dd05e65bcc6a90ff6dbc85f67eae5c51c",
+            "venue": "ICLR",
+            "year": 2024
+        },
+        {
+            "arxivId": "2403.06075",
+            "authors": [
+                {
+                    "authorId": "2261292654",
+                    "name": "Yang He"
+                },
+                {
+                    "authorId": "2210247831",
+                    "name": "Lingao Xiao"
+                },
+                {
+                    "authorId": "2265459102",
+                    "name": "Joey Tianyi Zhou"
+                },
+                {
+                    "authorId": "1807998",
+                    "name": "I. Tsang"
+                }
+            ],
+            "doi": "10.48550/arXiv.2403.06075",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c185a8679f13027e6c03e07ea27dbf302020d6e6",
+            "title": "Multisize Dataset Condensation",
+            "url": "https://www.semanticscholar.org/paper/c185a8679f13027e6c03e07ea27dbf302020d6e6",
+            "venue": "ICLR",
+            "year": 2024
+        },
+        {
+            "arxivId": "2311.13613",
+            "authors": [
+                {
+                    "authorId": "2149173435",
+                    "name": "Xin Zhang"
+                },
+                {
+                    "authorId": "50748225",
+                    "name": "Jiawei Du"
+                },
+                {
+                    "authorId": "2266846036",
+                    "name": "Yunsong Li"
+                },
+                {
+                    "authorId": "2267160567",
+                    "name": "Weiying Xie"
+                },
+                {
+                    "authorId": "2265459102",
+                    "name": "Joey Tianyi Zhou"
+                }
+            ],
+            "doi": "10.1109/CVPR52733.2024.02477",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "21986743134db4faf06302e920f2292c6fb976af",
+            "title": "Spanning Training Progress: Temporal Dual-Depth Scoring (TDDS) for Enhanced Dataset Pruning",
+            "url": "https://www.semanticscholar.org/paper/21986743134db4faf06302e920f2292c6fb976af",
+            "venue": "2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2023
+        },
+        {
+            "arxivId": "2311.07025",
+            "authors": [
+                {
+                    "authorId": "2266414281",
+                    "name": "Yunzhen Feng"
+                },
+                {
+                    "authorId": "8137017",
+                    "name": "Ramakrishna Vedantam"
+                },
+                {
+                    "authorId": "2268760351",
+                    "name": "Julia Kempe"
+                }
+            ],
+            "doi": "10.48550/arXiv.2311.07025",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2f88f4a4fe59965b055224974a2acb982b71f16c",
+            "title": "Embarassingly Simple Dataset Distillation",
+            "url": "https://www.semanticscholar.org/paper/2f88f4a4fe59965b055224974a2acb982b71f16c",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": "2310.14019",
+            "authors": [
+                {
+                    "authorId": "2261292654",
+                    "name": "Yang He"
+                },
+                {
+                    "authorId": "2210247831",
+                    "name": "Lingao Xiao"
+                },
+                {
+                    "authorId": "2265459102",
+                    "name": "Joey Tianyi Zhou"
+                }
+            ],
+            "doi": "10.48550/arXiv.2310.14019",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "3cc85b76274451e972a7da37dd65210b792587b3",
+            "title": "You Only Condense Once: Two Rules for Pruning Condensed Datasets",
+            "url": "https://www.semanticscholar.org/paper/3cc85b76274451e972a7da37dd65210b792587b3",
+            "venue": "NeurIPS",
+            "year": 2023
+        },
+        {
+            "arxivId": "2310.10873",
+            "authors": [
+                {
+                    "authorId": "2116579935",
+                    "name": "Shaokun Zhang"
+                },
+                {
+                    "authorId": "2077454998",
+                    "name": "Xiaobo Xia"
+                },
+                {
+                    "authorId": "2144713917",
+                    "name": "Zhaoqing Wang"
+                },
+                {
+                    "authorId": "2260649932",
+                    "name": "Ling-Hao Chen"
+                },
+                {
+                    "authorId": "2253854104",
+                    "name": "Jiale Liu"
+                },
+                {
+                    "authorId": "2254166618",
+                    "name": "Qingyun Wu"
+                },
+                {
+                    "authorId": "2259846144",
+                    "name": "Tongliang Liu"
+                }
+            ],
+            "doi": "10.48550/arXiv.2310.10873",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "271ff9dbeacd05276f1f192453793e772ad91b69",
+            "title": "IDEAL: Influence-Driven Selective Annotations Empower In-Context Learners in Large Language Models",
+            "url": "https://www.semanticscholar.org/paper/271ff9dbeacd05276f1f192453793e772ad91b69",
+            "venue": "ICLR",
+            "year": 2023
+        },
+        {
+            "arxivId": "2310.07506",
+            "authors": [
+                {
+                    "authorId": "2257132075",
+                    "name": "Haizhong Zheng"
+                },
+                {
+                    "authorId": "2135326251",
+                    "name": "Jiachen Sun"
+                },
+                {
+                    "authorId": "2257332035",
+                    "name": "Shutong Wu"
+                },
+                {
+                    "authorId": "1749353",
+                    "name": "B. Kailkhura"
+                },
+                {
+                    "authorId": "2257040946",
+                    "name": "Z. Mao"
+                },
+                {
+                    "authorId": "2254275777",
+                    "name": "Chaowei Xiao"
+                },
+                {
+                    "authorId": "49428285",
+                    "name": "Atul Prakash"
+                }
+            ],
+            "doi": "10.48550/arXiv.2310.07506",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "88f1cfdeac60364f4a03d83cabf6eb499a8d330f",
+            "title": "Leveraging Hierarchical Feature Sharing for Efficient Dataset Condensation",
+            "url": "https://www.semanticscholar.org/paper/88f1cfdeac60364f4a03d83cabf6eb499a8d330f",
+            "venue": "ECCV",
+            "year": 2023
+        },
+        {
+            "arxivId": "2305.18076",
+            "authors": [
+                {
+                    "authorId": "2165741683",
+                    "name": "Tao Feng"
+                },
+                {
+                    "authorId": "2214851947",
+                    "name": "Jie Zhang"
+                },
+                {
+                    "authorId": "2218612882",
+                    "name": "Peizheng Wang"
+                },
+                {
+                    "authorId": "2185716817",
+                    "name": "Zhijie Wang"
+                }
+            ],
+            "doi": "10.48550/arXiv.2305.18076",
+            "intent": [
+                "result"
+            ],
+            "isInfluential": false,
+            "paperId": "a30e320da646bd397fc3765b5a58bd1a2910171d",
+            "title": "Towards Efficient Deep Hashing Retrieval: Condensing Your Data via Feature-Embedding Matching",
+            "url": "https://www.semanticscholar.org/paper/a30e320da646bd397fc3765b5a58bd1a2910171d",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2275285154",
+                    "name": "Songhua Liu"
+                },
+                {
+                    "authorId": "2256740290",
+                    "name": "Xinchao Wang"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f4cee0674804d7daaf04d4fe217acf227b88c670",
+            "title": "MGDD: A Meta Generator for Fast Dataset Distillation",
+            "url": "https://www.semanticscholar.org/paper/f4cee0674804d7daaf04d4fe217acf227b88c670",
+            "venue": "NeurIPS",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "151497321",
+                    "name": "Enneng Yang"
+                },
+                {
+                    "authorId": "2172820082",
+                    "name": "Li Shen"
+                },
+                {
+                    "authorId": "2254008335",
+                    "name": "Zhenyi Wang"
+                },
+                {
+                    "authorId": "2287797655",
+                    "name": "Tongliang Liu"
+                },
+                {
+                    "authorId": "2237427680",
+                    "name": "Guibing Guo"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f92a59a33b2860db91131c3ae65116e8a5dce5bc",
+            "title": "An Efficient Dataset Condensation Plugin and Its Application to Continual Learning",
+            "url": "https://www.semanticscholar.org/paper/f92a59a33b2860db91131c3ae65116e8a5dce5bc",
+            "venue": "NeurIPS",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1409933106",
+                    "name": "Yue Xu"
+                },
+                {
+                    "authorId": "2110436501",
+                    "name": "Yong-Lu Li"
+                },
+                {
+                    "authorId": "2218496528",
+                    "name": "Kaitong Cui"
+                },
+                {
+                    "authorId": "2269451837",
+                    "name": "Ziyu Wang"
+                },
+                {
+                    "authorId": "2252024329",
+                    "name": "Cewu Lu"
+                },
+                {
+                    "authorId": "2237983377",
+                    "name": "Yu-Wing Tai"
+                },
+                {
+                    "authorId": "2238101157",
+                    "name": "Chi-Keung Tang"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "386c93b47761f4b96db3cb1f6c70724f1f77b5eb",
+            "title": "Distill Gold from Massive Ores: Bi-level Data Pruning towards Efficient Dataset Distillation",
+            "url": "https://www.semanticscholar.org/paper/386c93b47761f4b96db3cb1f6c70724f1f77b5eb",
+            "venue": "",
+            "year": null
+        }
+    ],
+    "corpusId": 257405350,
+    "doi": "10.48550/arXiv.2303.04449",
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 2,
+    "isOpenAccess": true,
+    "isPublisherLicensed": true,
+    "is_open_access": true,
+    "is_publisher_licensed": true,
+    "numCitedBy": 23,
+    "numCiting": 65,
+    "paperId": "e9a4872f5246c988f548192673eb19ef401accdd",
+    "references": [
+        {
+            "arxivId": "2207.13887",
+            "authors": [
+                {
+                    "authorId": "2164382932",
+                    "name": "Omead Brandon Pooladzandi"
+                },
+                {
+                    "authorId": "133823223",
+                    "name": "David Davini"
+                },
+                {
+                    "authorId": "2389094",
+                    "name": "Baharan Mirzasoleiman"
+                }
+            ],
+            "doi": "10.48550/arXiv.2207.13887",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "2bc4a0984791699dfcbb7114f072cf0702ef5138",
+            "title": "Adaptive Second Order Coresets for Data-efficient Machine Learning",
+            "url": "https://www.semanticscholar.org/paper/2bc4a0984791699dfcbb7114f072cf0702ef5138",
+            "venue": "ICML",
+            "year": 2022
+        },
+        {
+            "arxivId": "2206.04920",
+            "authors": [
+                {
+                    "authorId": "2918263",
+                    "name": "Minyoung Kim"
+                },
+                {
+                    "authorId": "2108338672",
+                    "name": "Da Li"
+                },
+                {
+                    "authorId": "145498976",
+                    "name": "S. Hu"
+                },
+                {
+                    "authorId": "1697755",
+                    "name": "Timothy M. Hospedales"
+                }
+            ],
+            "doi": "10.48550/arXiv.2206.04920",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "246a3399b08f6c7d9aa1bf082f2dc084ce091354",
+            "title": "Fisher SAM: Information Geometry and Sharpness Aware Minimisation",
+            "url": "https://www.semanticscholar.org/paper/246a3399b08f6c7d9aa1bf082f2dc084ce091354",
+            "venue": "ICML",
+            "year": 2022
+        },
+        {
+            "arxivId": "2206.00240",
+            "authors": [
+                {
+                    "authorId": "2084640578",
+                    "name": "Tian Dong"
+                },
+                {
+                    "authorId": "2116551935",
+                    "name": "Bo Zhao"
+                },
+                {
+                    "authorId": "145225199",
+                    "name": "Lingjuan Lyu"
+                }
+            ],
+            "doi": "10.48550/arXiv.2206.00240",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "44fe53dfa1794e29a4962b6a3a19fc738b02ddb0",
+            "title": "Privacy for Free: How does Dataset Condensation Help Privacy?",
+            "url": "https://www.semanticscholar.org/paper/44fe53dfa1794e29a4962b6a3a19fc738b02ddb0",
+            "venue": "ICML",
+            "year": 2022
+        },
+        {
+            "arxivId": "2205.14959",
+            "authors": [
+                {
+                    "authorId": "2907962",
+                    "name": "Jang-Hyun Kim"
+                },
+                {
+                    "authorId": "2130363283",
+                    "name": "Jinuk Kim"
+                },
+                {
+                    "authorId": "2390510",
+                    "name": "Seong Joon Oh"
+                },
+                {
+                    "authorId": "2151587",
+                    "name": "Sangdoo Yun"
+                },
+                {
+                    "authorId": "22656934",
+                    "name": "Hwanjun Song"
+                },
+                {
+                    "authorId": "147087848",
+                    "name": "Joonhyun Jeong"
+                },
+                {
+                    "authorId": "2577039",
+                    "name": "Jung-Woo Ha"
+                },
+                {
+                    "authorId": "2133680",
+                    "name": "Hyun Oh Song"
+                }
+            ],
+            "doi": "10.48550/arXiv.2205.14959",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "2d77266137673c6c5eacbb37db386da8810d4479",
+            "title": "Dataset Condensation via Efficient Synthetic-Data Parameterization",
+            "url": "https://www.semanticscholar.org/paper/2d77266137673c6c5eacbb37db386da8810d4479",
+            "venue": "ICML",
+            "year": 2022
+        },
+        {
+            "arxivId": "2204.08499",
+            "authors": [
+                {
+                    "authorId": "2162848564",
+                    "name": "Chengcheng Guo"
+                },
+                {
+                    "authorId": "2116552415",
+                    "name": "B. Zhao"
+                },
+                {
+                    "authorId": "3143308",
+                    "name": "Yanbing Bai"
+                }
+            ],
+            "doi": "10.48550/arXiv.2204.08499",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "4a664c728b8a84d30e0526dc575eb356efbbd56f",
+            "title": "DeepCore: A Comprehensive Library for Coreset Selection in Deep Learning",
+            "url": "https://www.semanticscholar.org/paper/4a664c728b8a84d30e0526dc575eb356efbbd56f",
+            "venue": "DEXA",
+            "year": 2022
+        },
+        {
+            "arxivId": "2110.04181",
+            "authors": [
+                {
+                    "authorId": "2116551935",
+                    "name": "Bo Zhao"
+                },
+                {
+                    "authorId": "2518212",
+                    "name": "Hakan Bilen"
+                }
+            ],
+            "doi": "10.1109/WACV56688.2023.00645",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "c03f42a6686eb5fa8b62088c4c2b5545bc60ebdc",
+            "title": "Dataset Condensation with Distribution Matching",
+            "url": "https://www.semanticscholar.org/paper/c03f42a6686eb5fa8b62088c4c2b5545bc60ebdc",
+            "venue": "2023 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)",
+            "year": 2021
+        },
+        {
+            "arxivId": "2109.03764",
+            "authors": [
+                {
+                    "authorId": "82259306",
+                    "name": "Katerina Margatina"
+                },
+                {
+                    "authorId": "1972392392",
+                    "name": "Giorgos Vernikos"
+                },
+                {
+                    "authorId": "2934336",
+                    "name": "Lo\u00efc Barrault"
+                },
+                {
+                    "authorId": "3238627",
+                    "name": "Nikolaos Aletras"
+                }
+            ],
+            "doi": "10.18653/v1/2021.emnlp-main.51",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "6b1462ee55b8a82bcb32d30c3bf0a4bc84f95c10",
+            "title": "Active Learning by Acquiring Contrastive Examples",
+            "url": "https://www.semanticscholar.org/paper/6b1462ee55b8a82bcb32d30c3bf0a4bc84f95c10",
+            "venue": "EMNLP",
+            "year": 2021
+        },
+        {
+            "arxivId": "2109.02934",
+            "authors": [
+                {
+                    "authorId": "26384385",
+                    "name": "Alexandre Ram\u00e9"
+                },
+                {
+                    "authorId": "41020827",
+                    "name": "Corentin Dancette"
+                },
+                {
+                    "authorId": "51021910",
+                    "name": "M. Cord"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "6bf04318d6e57463f7823b9770c5a6c19a7b47e9",
+            "title": "Fishr: Invariant Gradient Variances for Out-of-distribution Generalization",
+            "url": "https://www.semanticscholar.org/paper/6bf04318d6e57463f7823b9770c5a6c19a7b47e9",
+            "venue": "ICML",
+            "year": 2021
+        },
+        {
+            "arxivId": "2107.07075",
+            "authors": [
+                {
+                    "authorId": "1690452",
+                    "name": "Mansheej Paul"
+                },
+                {
+                    "authorId": "25769960",
+                    "name": "S. Ganguli"
+                },
+                {
+                    "authorId": "2533850",
+                    "name": "G. Dziugaite"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "a6e25ca9ee9d3e45c6d1957c0dc3324a9816c34e",
+            "title": "Deep Learning on a Data Diet: Finding Important Examples Early in Training",
+            "url": "https://www.semanticscholar.org/paper/a6e25ca9ee9d3e45c6d1957c0dc3324a9816c34e",
+            "venue": "NeurIPS",
+            "year": 2021
+        },
+        {
+            "arxivId": "2104.10350",
+            "authors": [
+                {
+                    "authorId": "2084633463",
+                    "name": "David A. Patterson"
+                },
+                {
+                    "authorId": "2119114885",
+                    "name": "Joseph Gonzalez"
+                },
+                {
+                    "authorId": "1397917613",
+                    "name": "Quoc V. Le"
+                },
+                {
+                    "authorId": "145246869",
+                    "name": "Chen Liang"
+                },
+                {
+                    "authorId": "2371589",
+                    "name": "Llu\u00eds-Miquel Mungu\u00eda"
+                },
+                {
+                    "authorId": "66465431",
+                    "name": "D. Rothchild"
+                },
+                {
+                    "authorId": "48165870",
+                    "name": "David R. So"
+                },
+                {
+                    "authorId": "2080027603",
+                    "name": "Maud Texier"
+                },
+                {
+                    "authorId": "48448318",
+                    "name": "J. Dean"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7a16d9b4e04300d034502dc7dd58428714594e2c",
+            "title": "Carbon Emissions and Large Neural Network Training",
+            "url": "https://www.semanticscholar.org/paper/7a16d9b4e04300d034502dc7dd58428714594e2c",
+            "venue": "ArXiv",
+            "year": 2021
+        },
+        {
+            "arxivId": "2103.00123",
+            "authors": [
+                {
+                    "authorId": "2112203718",
+                    "name": "Krishnateja Killamsetty"
+                },
+                {
+                    "authorId": "1485380858",
+                    "name": "D. Sivasubramanian"
+                },
+                {
+                    "authorId": "150114500",
+                    "name": "Ganesh Ramakrishnan"
+                },
+                {
+                    "authorId": "152356803",
+                    "name": "A. De"
+                },
+                {
+                    "authorId": "145074006",
+                    "name": "Rishabh K. Iyer"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "22bc75c1b758c83a6e29384453a4574c8b78f197",
+            "title": "GRAD-MATCH: Gradient Matching based Data Subset Selection for Efficient Deep Model Training",
+            "url": "https://www.semanticscholar.org/paper/22bc75c1b758c83a6e29384453a4574c8b78f197",
+            "venue": "ICML",
+            "year": 2021
+        },
+        {
+            "arxivId": "2102.08259",
+            "authors": [
+                {
+                    "authorId": "2116551935",
+                    "name": "Bo Zhao"
+                },
+                {
+                    "authorId": "2518212",
+                    "name": "Hakan Bilen"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "1f180118903044c4d1b39be35710be7221daf4ca",
+            "title": "Dataset Condensation with Differentiable Siamese Augmentation",
+            "url": "https://www.semanticscholar.org/paper/1f180118903044c4d1b39be35710be7221daf4ca",
+            "venue": "ICML",
+            "year": 2021
+        },
+        {
+            "arxivId": "2012.10630",
+            "authors": [
+                {
+                    "authorId": "2112203718",
+                    "name": "Krishnateja Killamsetty"
+                },
+                {
+                    "authorId": "1485380858",
+                    "name": "D. Sivasubramanian"
+                },
+                {
+                    "authorId": "150114500",
+                    "name": "Ganesh Ramakrishnan"
+                },
+                {
+                    "authorId": "2039902834",
+                    "name": "Rishabh Iyer University of Texas at Dallas"
+                },
+                {
+                    "authorId": "2039903111",
+                    "name": "Indian Institute of Technology Bombay Institution One"
+                },
+                {
+                    "authorId": "2085963769",
+                    "name": "IN Two"
+                }
+            ],
+            "doi": "10.1609/aaai.v35i9.16988",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "199ac333b1ff37917d1ab4a2e2002d9605b3db1e",
+            "title": "GLISTER: Generalization based Data Subset Selection for Efficient and Robust Learning",
+            "url": "https://www.semanticscholar.org/paper/199ac333b1ff37917d1ab4a2e2002d9605b3db1e",
+            "venue": "AAAI",
+            "year": 2020
+        },
+        {
+            "arxivId": "2010.01412",
+            "authors": [
+                {
+                    "authorId": "2066217414",
+                    "name": "Pierre Foret"
+                },
+                {
+                    "authorId": "145946311",
+                    "name": "Ariel Kleiner"
+                },
+                {
+                    "authorId": "3232655",
+                    "name": "H. Mobahi"
+                },
+                {
+                    "authorId": "3007442",
+                    "name": "Behnam Neyshabur"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "a2cd073b57be744533152202989228cb4122270a",
+            "title": "Sharpness-Aware Minimization for Efficiently Improving Generalization",
+            "url": "https://www.semanticscholar.org/paper/a2cd073b57be744533152202989228cb4122270a",
+            "venue": "ICLR",
+            "year": 2020
+        },
+        {
+            "arxivId": "2008.05723",
+            "authors": [
+                {
+                    "authorId": "2114357941",
+                    "name": "Sharat Agarwal"
+                },
+                {
+                    "authorId": "49583346",
+                    "name": "H. Arora"
+                },
+                {
+                    "authorId": "144024614",
+                    "name": "Saket Anand"
+                },
+                {
+                    "authorId": "145676235",
+                    "name": "Chetan Arora"
+                }
+            ],
+            "doi": "10.1007/978-3-030-58517-4_9",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "690fdc0595ff72a95ac4ce0b7ea1cd19ab6b60e4",
+            "title": "Contextual Diversity for Active Learning",
+            "url": "https://www.semanticscholar.org/paper/690fdc0595ff72a95ac4ce0b7ea1cd19ab6b60e4",
+            "venue": "ECCV",
+            "year": 2020
+        },
+        {
+            "arxivId": "2006.05929",
+            "authors": [
+                {
+                    "authorId": "2116551935",
+                    "name": "Bo Zhao"
+                },
+                {
+                    "authorId": "2217000",
+                    "name": "Konda Reddy Mopuri"
+                },
+                {
+                    "authorId": "2518212",
+                    "name": "Hakan Bilen"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "5a94bcc168330318d3020aa4d41bd73cf68ab285",
+            "title": "Dataset Condensation with Gradient Matching",
+            "url": "https://www.semanticscholar.org/paper/5a94bcc168330318d3020aa4d41bd73cf68ab285",
+            "venue": "ICLR",
+            "year": 2020
+        },
+        {
+            "arxivId": "2006.05620",
+            "authors": [
+                {
+                    "authorId": "2116530511",
+                    "name": "Xu Sun"
+                },
+                {
+                    "authorId": "50317060",
+                    "name": "Zhiyuan Zhang"
+                },
+                {
+                    "authorId": "19169659",
+                    "name": "Xuancheng Ren"
+                },
+                {
+                    "authorId": "51152129",
+                    "name": "Ruixuan Luo"
+                },
+                {
+                    "authorId": "2154885527",
+                    "name": "Liangyou Li"
+                }
+            ],
+            "doi": "10.1609/aaai.v35i13.17385",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "d3db091942ac3c1fe6af69275a318c25d7b4ed11",
+            "title": "Exploring the Vulnerability of Deep Neural Networks: A Study of Parameter Corruption",
+            "url": "https://www.semanticscholar.org/paper/d3db091942ac3c1fe6af69275a318c25d7b4ed11",
+            "venue": "AAAI",
+            "year": 2020
+        },
+        {
+            "arxivId": "2006.00719",
+            "authors": [
+                {
+                    "authorId": "9088433",
+                    "name": "Z. Yao"
+                },
+                {
+                    "authorId": "10419477",
+                    "name": "A. Gholami"
+                },
+                {
+                    "authorId": "2191455",
+                    "name": "Sheng Shen"
+                },
+                {
+                    "authorId": "1732330",
+                    "name": "K. Keutzer"
+                },
+                {
+                    "authorId": "1717098",
+                    "name": "Michael W. Mahoney"
+                }
+            ],
+            "doi": "10.1609/aaai.v35i12.17275",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "20438e2a38a0c4723fbd9de50b44b7335f6f43cb",
+            "title": "ADAHESSIAN: An Adaptive Second Order Optimizer for Machine Learning",
+            "url": "https://www.semanticscholar.org/paper/20438e2a38a0c4723fbd9de50b44b7335f6f43cb",
+            "venue": "AAAI",
+            "year": 2020
+        },
+        {
+            "arxivId": "2006.03875",
+            "authors": [
+                {
+                    "authorId": "144494941",
+                    "name": "Zal\u00e1n Borsos"
+                },
+                {
+                    "authorId": "2065846094",
+                    "name": "Mojm'ir Mutn'y"
+                },
+                {
+                    "authorId": "153243248",
+                    "name": "A. Krause"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "40a094a8afaa45454ab9c76c1d9933b2f9b1a0ff",
+            "title": "Coresets via Bilevel Optimization for Continual Learning and Streaming",
+            "url": "https://www.semanticscholar.org/paper/40a094a8afaa45454ab9c76c1d9933b2f9b1a0ff",
+            "venue": "NeurIPS",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2389237",
+                    "name": "Shiori Sagawa"
+                },
+                {
+                    "authorId": "2572525",
+                    "name": "Pang Wei Koh"
+                },
+                {
+                    "authorId": "3056528",
+                    "name": "Tatsunori B. Hashimoto"
+                },
+                {
+                    "authorId": "145419642",
+                    "name": "Percy Liang"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5d0e2635a1ebe2c9347529975bc876d4286c9ab7",
+            "title": "Distributionally Robust Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/5d0e2635a1ebe2c9347529975bc876d4286c9ab7",
+            "venue": "ICLR",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1492154834",
+                    "name": "Dongxian Wu"
+                },
+                {
+                    "authorId": "3085483",
+                    "name": "Shutao Xia"
+                },
+                {
+                    "authorId": "1919541",
+                    "name": "Yisen Wang"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "9739f7030feb8cdc9ab479ffcf742ab1dd24eaa5",
+            "title": "Adversarial Weight Perturbation Helps Robust Generalization",
+            "url": "https://www.semanticscholar.org/paper/9739f7030feb8cdc9ab479ffcf742ab1dd24eaa5",
+            "venue": "NeurIPS",
+            "year": 2020
+        },
+        {
+            "arxivId": "1912.10985",
+            "authors": [
+                {
+                    "authorId": "68973039",
+                    "name": "Felix Dangel"
+                },
+                {
+                    "authorId": "51894707",
+                    "name": "Frederik Kunstner"
+                },
+                {
+                    "authorId": "2517795",
+                    "name": "Philipp Hennig"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "55d5edd470907e2c46d6a7b1cf77d125f18e0369",
+            "title": "BackPACK: Packing more into backprop",
+            "url": "https://www.semanticscholar.org/paper/55d5edd470907e2c46d6a7b1cf77d125f18e0369",
+            "venue": "ICLR",
+            "year": 2019
+        },
+        {
+            "arxivId": "1906.11829",
+            "authors": [
+                {
+                    "authorId": "2866919",
+                    "name": "Cody A. Coleman"
+                },
+                {
+                    "authorId": "144088780",
+                    "name": "Christopher Yeh"
+                },
+                {
+                    "authorId": "1776721",
+                    "name": "Stephen Mussmann"
+                },
+                {
+                    "authorId": "2389094",
+                    "name": "Baharan Mirzasoleiman"
+                },
+                {
+                    "authorId": "2740804",
+                    "name": "Peter D. Bailis"
+                },
+                {
+                    "authorId": "145419642",
+                    "name": "Percy Liang"
+                },
+                {
+                    "authorId": "1702139",
+                    "name": "J. Leskovec"
+                },
+                {
+                    "authorId": "143834867",
+                    "name": "M. Zaharia"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "b06d260b504a20e90d07180aa3c4eaecb3b5cde5",
+            "title": "Selection Via Proxy: Efficient Data Selection For Deep Learning",
+            "url": "https://www.semanticscholar.org/paper/b06d260b504a20e90d07180aa3c4eaecb3b5cde5",
+            "venue": "ICLR",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2389094",
+                    "name": "Baharan Mirzasoleiman"
+                },
+                {
+                    "authorId": "1748118",
+                    "name": "J. Bilmes"
+                },
+                {
+                    "authorId": "1702139",
+                    "name": "J. Leskovec"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "790985a4bee821046992ff3d5322ff11dd1b4262",
+            "title": "Coresets for Data-efficient Training of Machine Learning Models",
+            "url": "https://www.semanticscholar.org/paper/790985a4bee821046992ff3d5322ff11dd1b4262",
+            "venue": "ICML",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "22235380",
+                    "name": "Arslan Chaudhry"
+                },
+                {
+                    "authorId": "34849128",
+                    "name": "Marcus Rohrbach"
+                },
+                {
+                    "authorId": "1712479",
+                    "name": "Mohamed Elhoseiny"
+                },
+                {
+                    "authorId": "144722114",
+                    "name": "Thalaiyasingam Ajanthan"
+                },
+                {
+                    "authorId": "144679302",
+                    "name": "P. Dokania"
+                },
+                {
+                    "authorId": "143635540",
+                    "name": "Philip H. S. Torr"
+                },
+                {
+                    "authorId": "1706809",
+                    "name": "Marc'Aurelio Ranzato"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "9c54962b0fd011d5fe3f5b5275cc6ba091a2c7ae",
+            "title": "On Tiny Episodic Memories in Continual Learning",
+            "url": "https://www.semanticscholar.org/paper/9c54962b0fd011d5fe3f5b5275cc6ba091a2c7ae",
+            "venue": "",
+            "year": 2019
+        },
+        {
+            "arxivId": "1901.08573",
+            "authors": [
+                {
+                    "authorId": "40975176",
+                    "name": "Hongyang Zhang"
+                },
+                {
+                    "authorId": "29001000",
+                    "name": "Yaodong Yu"
+                },
+                {
+                    "authorId": "2784735",
+                    "name": "Jiantao Jiao"
+                },
+                {
+                    "authorId": "143977260",
+                    "name": "E. Xing"
+                },
+                {
+                    "authorId": "1701847",
+                    "name": "L. Ghaoui"
+                },
+                {
+                    "authorId": "1694621",
+                    "name": "Michael I. Jordan"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "6c405d4b5dc41a86be05acd59c06ed19daf01d14",
+            "title": "Theoretically Principled Trade-off between Robustness and Accuracy",
+            "url": "https://www.semanticscholar.org/paper/6c405d4b5dc41a86be05acd59c06ed19daf01d14",
+            "venue": "ICML",
+            "year": 2019
+        },
+        {
+            "arxivId": "1811.10959",
+            "authors": [
+                {
+                    "authorId": "3978031",
+                    "name": "Tongzhou Wang"
+                },
+                {
+                    "authorId": "2436356",
+                    "name": "Jun-Yan Zhu"
+                },
+                {
+                    "authorId": "143805211",
+                    "name": "A. Torralba"
+                },
+                {
+                    "authorId": "1763086",
+                    "name": "Alexei A. Efros"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "07b1a0ed6ba8a497355ac105e9110a927e3cf913",
+            "title": "Dataset Distillation",
+            "url": "https://www.semanticscholar.org/paper/07b1a0ed6ba8a497355ac105e9110a927e3cf913",
+            "venue": "ArXiv",
+            "year": 2018
+        },
+        {
+            "arxivId": "1811.09310",
+            "authors": [
+                {
+                    "authorId": "26995571",
+                    "name": "A. S. Rakin"
+                },
+                {
+                    "authorId": "3441899",
+                    "name": "Zhezhi He"
+                },
+                {
+                    "authorId": "37587676",
+                    "name": "Deliang Fan"
+                }
+            ],
+            "doi": "10.1109/CVPR.2019.00068",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "3636d3f0562f3ab5f5df68c1c9a23530c0fbce64",
+            "title": "Parametric Noise Injection: Trainable Randomness to Improve Deep Neural Network Robustness Against Adversarial Attack",
+            "url": "https://www.semanticscholar.org/paper/3636d3f0562f3ab5f5df68c1c9a23530c0fbce64",
+            "venue": "2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2018
+        },
+        {
+            "arxivId": "1812.05159",
+            "authors": [
+                {
+                    "authorId": "2822168",
+                    "name": "Mariya Toneva"
+                },
+                {
+                    "authorId": "2041695",
+                    "name": "Alessandro Sordoni"
+                },
+                {
+                    "authorId": "15032777",
+                    "name": "R\u00e9mi Tachet des Combes"
+                },
+                {
+                    "authorId": "3382568",
+                    "name": "Adam Trischler"
+                },
+                {
+                    "authorId": "1751762",
+                    "name": "Yoshua Bengio"
+                },
+                {
+                    "authorId": "21889436",
+                    "name": "Geoffrey J. Gordon"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a2b5d224895d96bfe2e384e2dcf1ebd136ac3782",
+            "title": "An Empirical Study of Example Forgetting during Deep Neural Network Learning",
+            "url": "https://www.semanticscholar.org/paper/a2b5d224895d96bfe2e384e2dcf1ebd136ac3782",
+            "venue": "ICLR",
+            "year": 2018
+        },
+        {
+            "arxivId": "1803.05407",
+            "authors": [
+                {
+                    "authorId": "7991830",
+                    "name": "Pavel Izmailov"
+                },
+                {
+                    "authorId": "2064138313",
+                    "name": "Dmitrii Podoprikhin"
+                },
+                {
+                    "authorId": "4936329",
+                    "name": "T. Garipov"
+                },
+                {
+                    "authorId": "2492721",
+                    "name": "D. Vetrov"
+                },
+                {
+                    "authorId": "145771261",
+                    "name": "A. Wilson"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b8989afff14fb630ca58b6afa917fb42574228ee",
+            "title": "Averaging Weights Leads to Wider Optima and Better Generalization",
+            "url": "https://www.semanticscholar.org/paper/b8989afff14fb630ca58b6afa917fb42574228ee",
+            "venue": "UAI",
+            "year": 2018
+        },
+        {
+            "arxivId": "1802.09841",
+            "authors": [
+                {
+                    "authorId": "2812151",
+                    "name": "M\u00e9lanie Ducoffe"
+                },
+                {
+                    "authorId": "1699175",
+                    "name": "F. Precioso"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "114c1ed1ae2e2a4b3d775c5a55d2c916f9d85972",
+            "title": "Adversarial Active Learning for Deep Networks: a Margin Based Approach",
+            "url": "https://www.semanticscholar.org/paper/114c1ed1ae2e2a4b3d775c5a55d2c916f9d85972",
+            "venue": "ArXiv",
+            "year": 2018
+        },
+        {
+            "arxivId": "1712.09913",
+            "authors": [
+                {
+                    "authorId": "2152297881",
+                    "name": "Hao Li"
+                },
+                {
+                    "authorId": "144897102",
+                    "name": "Zheng Xu"
+                },
+                {
+                    "authorId": "2189083",
+                    "name": "Gavin Taylor"
+                },
+                {
+                    "authorId": "1962083",
+                    "name": "T. Goldstein"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "6baca6351dc55baac44f0416e74a7e0ba2bfd03e",
+            "title": "Visualizing the Loss Landscape of Neural Nets",
+            "url": "https://www.semanticscholar.org/paper/6baca6351dc55baac44f0416e74a7e0ba2bfd03e",
+            "venue": "NeurIPS",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3114252",
+                    "name": "Ozan Sener"
+                },
+                {
+                    "authorId": "1702137",
+                    "name": "S. Savarese"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "c342c71cb23199f112d0bc644fcce56a7306bf94",
+            "title": "Active Learning for Convolutional Neural Networks: A Core-Set Approach",
+            "url": "https://www.semanticscholar.org/paper/c342c71cb23199f112d0bc644fcce56a7306bf94",
+            "venue": "ICLR",
+            "year": 2017
+        },
+        {
+            "arxivId": "1706.08840",
+            "authors": [
+                {
+                    "authorId": "1401804750",
+                    "name": "David Lopez-Paz"
+                },
+                {
+                    "authorId": "1706809",
+                    "name": "Marc'Aurelio Ranzato"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "118fae4b4d07453561f1eded88654f812c7c61ec",
+            "title": "Gradient Episodic Memory for Continual Learning",
+            "url": "https://www.semanticscholar.org/paper/118fae4b4d07453561f1eded88654f812c7c61ec",
+            "venue": "NIPS",
+            "year": 2017
+        },
+        {
+            "arxivId": "1703.11008",
+            "authors": [
+                {
+                    "authorId": "2533850",
+                    "name": "G. Dziugaite"
+                },
+                {
+                    "authorId": "39331522",
+                    "name": "Daniel M. Roy"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "540c226fdf7047ac602c7cb05a18db19ee595df0",
+            "title": "Computing Nonvacuous Generalization Bounds for Deep (Stochastic) Neural Networks with Many More Parameters than Training Data",
+            "url": "https://www.semanticscholar.org/paper/540c226fdf7047ac602c7cb05a18db19ee595df0",
+            "venue": "UAI",
+            "year": 2017
+        },
+        {
+            "arxivId": "1612.00804",
+            "authors": [
+                {
+                    "authorId": "2157209",
+                    "name": "Ethan R. Elenberg"
+                },
+                {
+                    "authorId": "6812421",
+                    "name": "Rajiv Khanna"
+                },
+                {
+                    "authorId": "1718469",
+                    "name": "A. Dimakis"
+                },
+                {
+                    "authorId": "145537739",
+                    "name": "S. Negahban"
+                }
+            ],
+            "doi": "10.1214/17-AOS1679",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "8b1d3806ad1f24e9de19fc3903fcac97fda94730",
+            "title": "Restricted Strong Convexity Implies Weak Submodularity",
+            "url": "https://www.semanticscholar.org/paper/8b1d3806ad1f24e9de19fc3903fcac97fda94730",
+            "venue": "The Annals of Statistics",
+            "year": 2016
+        },
+        {
+            "arxivId": "1608.06993",
+            "authors": [
+                {
+                    "authorId": "143983679",
+                    "name": "Gao Huang"
+                },
+                {
+                    "authorId": "2109168016",
+                    "name": "Zhuang Liu"
+                },
+                {
+                    "authorId": "7446832",
+                    "name": "Kilian Q. Weinberger"
+                }
+            ],
+            "doi": "10.1109/CVPR.2017.243",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "5694e46284460a648fe29117cbc55f6c9be3fa3c",
+            "title": "Densely Connected Convolutional Networks",
+            "url": "https://www.semanticscholar.org/paper/5694e46284460a648fe29117cbc55f6c9be3fa3c",
+            "venue": "2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2016
+        },
+        {
+            "arxivId": "1605.07146",
+            "authors": [
+                {
+                    "authorId": "2134433",
+                    "name": "Sergey Zagoruyko"
+                },
+                {
+                    "authorId": "2505902",
+                    "name": "N. Komodakis"
+                }
+            ],
+            "doi": "10.5244/C.30.87",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "1c4e9156ca07705531e45960b7a919dc473abb51",
+            "title": "Wide Residual Networks",
+            "url": "https://www.semanticscholar.org/paper/1c4e9156ca07705531e45960b7a919dc473abb51",
+            "venue": "BMVC",
+            "year": 2016
+        },
+        {
+            "arxivId": "1512.03385",
+            "authors": [
+                {
+                    "authorId": "39353098",
+                    "name": "Kaiming He"
+                },
+                {
+                    "authorId": "1771551",
+                    "name": "X. Zhang"
+                },
+                {
+                    "authorId": "3080683",
+                    "name": "Shaoqing Ren"
+                },
+                {
+                    "authorId": null,
+                    "name": "Jian Sun"
+                }
+            ],
+            "doi": "10.1109/cvpr.2016.90",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "2c03df8b48bf3fa39054345bafabfeff15bfd11d",
+            "title": "Deep Residual Learning for Image Recognition",
+            "url": "https://www.semanticscholar.org/paper/2c03df8b48bf3fa39054345bafabfeff15bfd11d",
+            "venue": "2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2015
+        },
+        {
+            "arxivId": "1512.00567",
+            "authors": [
+                {
+                    "authorId": "2574060",
+                    "name": "Christian Szegedy"
+                },
+                {
+                    "authorId": "2657155",
+                    "name": "Vincent Vanhoucke"
+                },
+                {
+                    "authorId": "2054165706",
+                    "name": "Sergey Ioffe"
+                },
+                {
+                    "authorId": "1789737",
+                    "name": "Jonathon Shlens"
+                },
+                {
+                    "authorId": "3282833",
+                    "name": "Z. Wojna"
+                }
+            ],
+            "doi": "10.1109/CVPR.2016.308",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "23ffaa0fe06eae05817f527a47ac3291077f9e58",
+            "title": "Rethinking the Inception Architecture for Computer Vision",
+            "url": "https://www.semanticscholar.org/paper/23ffaa0fe06eae05817f527a47ac3291077f9e58",
+            "venue": "2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2015
+        },
+        {
+            "arxivId": "1409.1556",
+            "authors": [
+                {
+                    "authorId": "34838386",
+                    "name": "K. Simonyan"
+                },
+                {
+                    "authorId": "1688869",
+                    "name": "Andrew Zisserman"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "eb42cf88027de515750f230b23b1a057dc782108",
+            "title": "Very Deep Convolutional Networks for Large-Scale Image Recognition",
+            "url": "https://www.semanticscholar.org/paper/eb42cf88027de515750f230b23b1a057dc782108",
+            "venue": "ICLR",
+            "year": 2014
+        },
+        {
+            "arxivId": "1210.4871",
+            "authors": [
+                {
+                    "authorId": "46933410",
+                    "name": "Hui-Ching Lin"
+                },
+                {
+                    "authorId": "1748118",
+                    "name": "J. Bilmes"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "516873139bc82faaf567332b1705740d1d9cd915",
+            "title": "Learning Mixtures of Submodular Shells with Application to Document Summarization",
+            "url": "https://www.semanticscholar.org/paper/516873139bc82faaf567332b1705740d1d9cd915",
+            "venue": "UAI",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "46933410",
+                    "name": "Hui-Ching Lin"
+                },
+                {
+                    "authorId": "1748118",
+                    "name": "J. Bilmes"
+                },
+                {
+                    "authorId": "1975308",
+                    "name": "Shasha Xie"
+                }
+            ],
+            "doi": "10.1109/ASRU.2009.5373486",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "816de1444846051da505e9f6585ce4b35c0e1ff4",
+            "title": "Graph-based submodular selection for extractive summarization",
+            "url": "https://www.semanticscholar.org/paper/816de1444846051da505e9f6585ce4b35c0e1ff4",
+            "venue": "2009 IEEE Workshop on Automatic Speech Recognition & Understanding",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1678311",
+                    "name": "M. Welling"
+                }
+            ],
+            "doi": "10.1145/1553374.1553517",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "cc58edaacecbcc20b8a54ad4f68648415a7b974a",
+            "title": "Herding dynamical weights to learn",
+            "url": "https://www.semanticscholar.org/paper/cc58edaacecbcc20b8a54ad4f68648415a7b974a",
+            "venue": "ICML '09",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144162125",
+                    "name": "J. Langford"
+                },
+                {
+                    "authorId": "145727186",
+                    "name": "R. Caruana"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2370aad1fc502209f1ea54898687a79908eec922",
+            "title": "(Not) Bounding the True Error",
+            "url": "https://www.semanticscholar.org/paper/2370aad1fc502209f1ea54898687a79908eec922",
+            "venue": "NIPS",
+            "year": 2001
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145689002",
+                    "name": "David A. McAllester"
+                }
+            ],
+            "doi": "10.1145/307400.307435",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "609be06b5a91ffb8c35abd1636cd2431ff32435d",
+            "title": "PAC-Bayesian model averaging",
+            "url": "https://www.semanticscholar.org/paper/609be06b5a91ffb8c35abd1636cd2431ff32435d",
+            "venue": "COLT '99",
+            "year": 1999
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1705564",
+                    "name": "G. Nemhauser"
+                },
+                {
+                    "authorId": "1736128",
+                    "name": "L. Wolsey"
+                },
+                {
+                    "authorId": "145456487",
+                    "name": "M. Fisher"
+                }
+            ],
+            "doi": "10.1007/BF01588971",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "b9e43395663f74c581982e9ca97a0d7057a0008c",
+            "title": "An analysis of approximations for maximizing submodular set functions\u2014I",
+            "url": "https://www.semanticscholar.org/paper/b9e43395663f74c581982e9ca97a0d7057a0008c",
+            "venue": "Math. Program.",
+            "year": 1978
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2148896193",
+                    "name": "Kai Wang"
+                },
+                {
+                    "authorId": "2116551935",
+                    "name": "Bo Zhao"
+                },
+                {
+                    "authorId": null,
+                    "name": "Xiangyu Peng"
+                },
+                {
+                    "authorId": "46637795",
+                    "name": "Zheng Hua Zhu"
+                },
+                {
+                    "authorId": "123363188",
+                    "name": "Shuo Yang"
+                },
+                {
+                    "authorId": "2117011000",
+                    "name": "Shuo Wang"
+                },
+                {
+                    "authorId": "143986385",
+                    "name": "Guan Huang"
+                },
+                {
+                    "authorId": "2518212",
+                    "name": "Hakan Bilen"
+                },
+                {
+                    "authorId": "48631088",
+                    "name": "Xinchao Wang"
+                },
+                {
+                    "authorId": "2054451943",
+                    "name": "Yang You"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "5e8c8dd23f69354c56724b636a19445085ac51ac",
+            "title": "CAFE Learning to Condense Dataset by Aligning Features",
+            "url": "https://www.semanticscholar.org/paper/5e8c8dd23f69354c56724b636a19445085ac51ac",
+            "venue": "",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "52422882",
+                    "name": "Franziska Abend"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0ca07d5e4668686adb2a653b7e5b7eb4ceb05082",
+            "title": "Facility Location Concepts Models Algorithms And Case Studies",
+            "url": "https://www.semanticscholar.org/paper/0ca07d5e4668686adb2a653b7e5b7eb4ceb05082",
+            "venue": "",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "32722726",
+                    "name": "B. Laurent"
+                },
+                {
+                    "authorId": "3226094",
+                    "name": "P. Massart"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "3ead228b4061d7053ebbeb0603555bd288a83656",
+            "title": "ADAPTIVE ESTIMATION OF A QUADRATIC FUNCTIONAL BY MODEL SELECTION",
+            "url": "https://www.semanticscholar.org/paper/3ead228b4061d7053ebbeb0603555bd288a83656",
+            "venue": "",
+            "year": 2001
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1736128",
+                    "name": "L. Wolsey"
+                }
+            ],
+            "doi": "10.1007/BF02579435",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "00abcdf9fdd0dda11f5852d34ec2b92e5ac6e542",
+            "title": "An analysis of the greedy algorithm for the submodular set covering problem",
+            "url": "https://www.semanticscholar.org/paper/00abcdf9fdd0dda11f5852d34ec2b92e5ac6e542",
+            "venue": "Comb.",
+            "year": 1982
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Loss-Curvature Matching for Dataset Selection and Condensation",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/e9a4872f5246c988f548192673eb19ef401accdd",
+    "venue": "International Conference on Artificial Intelligence and Statistics",
+    "year": 2023
+}

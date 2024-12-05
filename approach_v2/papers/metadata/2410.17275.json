@@ -1,0 +1,478 @@
+{
+    "abstract": "This work presents the implementation of an automated control system for detecting and classifying faults in tuna metal cans using artificial vision. The system utilizes a conveyor belt and a camera for visual recognition triggered by a photoelectric sensor. A robotic arm classifies the metal cans according to their condition. Industry 4.0 integration is achieved through an IoT system using Mosquitto, Node-RED, InfluxDB, and Grafana. The YOLOv5 model is employed to detect faults in the metal can lids and the positioning of the easy-open ring. Training with GPU on Google Colab enables OCR text detection on the labels. The results indicate efficient real-time problem identification, optimization of resources, and delivery of quality products. At the same time, the vision system contributes to autonomy in quality control tasks, freeing operators to perform other functions within the company.",
+    "arxivId": "2410.17275",
+    "authors": [
+        {
+            "authorId": "2309673952",
+            "name": "Sendey Vera Gonza\u2019Lez",
+            "url": "https://www.semanticscholar.org/author/2309673952"
+        },
+        {
+            "authorId": "115526040",
+            "name": "LUIS ENRIQUE CHUQUIMARCA JIMENEZ",
+            "url": "https://www.semanticscholar.org/author/115526040"
+        },
+        {
+            "authorId": "2309523411",
+            "name": "Wilson Galdea Gonzalez Given",
+            "url": "https://www.semanticscholar.org/author/2309523411"
+        },
+        {
+            "authorId": "2309525666",
+            "name": "Bremnen V\u00e9liz Noboa",
+            "url": "https://www.semanticscholar.org/author/2309525666"
+        },
+        {
+            "authorId": "2194241833",
+            "name": "Carlos Alberto Salda\u00f1a Enderica",
+            "url": "https://www.semanticscholar.org/author/2194241833"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [],
+    "corpusId": 270929197,
+    "doi": "10.1109/AIIoT58432.2024.10574669",
+    "fieldsOfStudy": [
+        "Computer Science",
+        "Engineering"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 0,
+    "numCiting": 15,
+    "paperId": "f12e63cd9ca05003aaa8f72cdcbfa93884c2ab07",
+    "references": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2108114",
+                    "name": "Houda Meddeb"
+                },
+                {
+                    "authorId": "3362184",
+                    "name": "Zouhaira Abdellaoui"
+                },
+                {
+                    "authorId": "2191990502",
+                    "name": "Firas Houaidi"
+                }
+            ],
+            "doi": "10.1016/j.micpro.2022.104728",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "34a1bd14abf4bae277d772d68408cfdfe439c9d2",
+            "title": "Development of surveillance robot based on face recognition using Raspberry-PI and IOT",
+            "url": "https://www.semanticscholar.org/paper/34a1bd14abf4bae277d772d68408cfdfe439c9d2",
+            "venue": "Microprocess. Microsystems",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2142295151",
+                    "name": "Xabier Lekunberri"
+                },
+                {
+                    "authorId": "37458361",
+                    "name": "J. Ruiz"
+                },
+                {
+                    "authorId": "11952374",
+                    "name": "I. Quincoces"
+                },
+                {
+                    "authorId": "1803584",
+                    "name": "F. Dornaika"
+                },
+                {
+                    "authorId": "1398461214",
+                    "name": "Ignacio Arganda-Carreras"
+                },
+                {
+                    "authorId": "2068338745",
+                    "name": "J. A. Fernandes"
+                }
+            ],
+            "doi": "10.1016/j.ecoinf.2021.101495",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "e279a8a1fdb870161bb8fb7f30a3249122d7c78f",
+            "title": "Identification and measurement of tropical tuna species in purse seiner catches using computer vision and deep learning",
+            "url": "https://www.semanticscholar.org/paper/e279a8a1fdb870161bb8fb7f30a3249122d7c78f",
+            "venue": "Ecol. Informatics",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "137754912",
+                    "name": "I. Ilhan"
+                },
+                {
+                    "authorId": "15879616",
+                    "name": "Deniz Turan"
+                },
+                {
+                    "authorId": "145865846",
+                    "name": "I. Gibson"
+                },
+                {
+                    "authorId": "2066338864",
+                    "name": "R. Klooster"
+                }
+            ],
+            "doi": "10.1002/pts.2564",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "86349d1616908422763656d935085c920db5600f",
+            "title": "Understanding the factors affecting the seal integrity in heat sealed flexible food packages: A review",
+            "url": "https://www.semanticscholar.org/paper/86349d1616908422763656d935085c920db5600f",
+            "venue": "Packaging Technology and Science",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3021550",
+                    "name": "Jiachen Yang"
+                },
+                {
+                    "authorId": "2108755778",
+                    "name": "Chenguang Wang"
+                },
+                {
+                    "authorId": "145942581",
+                    "name": "Bin Jiang"
+                },
+                {
+                    "authorId": "72482218",
+                    "name": "H. Song"
+                },
+                {
+                    "authorId": "1686135",
+                    "name": "Q. Meng"
+                }
+            ],
+            "doi": "10.1109/TII.2020.2998818",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "c86bc8fd739151a8c692fd30aacb16141dc7b8b2",
+            "title": "Visual Perception Enabled Industry Intelligence: State of the Art, Challenges and Prospects",
+            "url": "https://www.semanticscholar.org/paper/c86bc8fd739151a8c692fd30aacb16141dc7b8b2",
+            "venue": "IEEE Transactions on Industrial Informatics",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "150010790",
+                    "name": "Abd Al Rahman Moh'd Abu Ebayyeh"
+                },
+                {
+                    "authorId": "143764862",
+                    "name": "Alireza Mousavi"
+                }
+            ],
+            "doi": "10.1109/ACCESS.2020.3029127",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "11ae752a85dc1dd0a0f6aaabfb608bde67defae1",
+            "title": "A Review and Analysis of Automatic Optical Inspection and Quality Monitoring Methods in Electronics Industry",
+            "url": "https://www.semanticscholar.org/paper/11ae752a85dc1dd0a0f6aaabfb608bde67defae1",
+            "venue": "IEEE Access",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "65752349",
+                    "name": "Mandy Doddema"
+                },
+                {
+                    "authorId": "4880853",
+                    "name": "G. Spaargaren"
+                },
+                {
+                    "authorId": "2005131470",
+                    "name": "B. Wiryawan"
+                },
+                {
+                    "authorId": "152511571",
+                    "name": "S. Bush"
+                }
+            ],
+            "doi": "10.1016/j.marpol.2020.104100",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "38b1ed8a3bf6352a2302ca2c24cd53404ae99b81",
+            "title": "Responses of Indonesian tuna processing companies to enhanced public and private traceability",
+            "url": "https://www.semanticscholar.org/paper/38b1ed8a3bf6352a2302ca2c24cd53404ae99b81",
+            "venue": "",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "48404846",
+                    "name": "J. Singh"
+                },
+                {
+                    "authorId": "48246248",
+                    "name": "B. Bhushan"
+                }
+            ],
+            "doi": "10.1109/ICCCIS48478.2019.8974469",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e2b1204921b9c319622eb97ea7ab8ca29347795f",
+            "title": "Real Time Indian License Plate Detection using Deep Neural Networks and Optical Character Recognition using LSTM Tesseract",
+            "url": "https://www.semanticscholar.org/paper/e2b1204921b9c319622eb97ea7ab8ca29347795f",
+            "venue": "2019 International Conference on Computing, Communication, and Intelligent Systems (ICCCIS)",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144542626",
+                    "name": "A. Kazemian"
+                },
+                {
+                    "authorId": "2115844653",
+                    "name": "Xiao Yuan"
+                },
+                {
+                    "authorId": "100872976",
+                    "name": "Omid Davtalab"
+                },
+                {
+                    "authorId": "3304501",
+                    "name": "B. Khoshnevis"
+                }
+            ],
+            "doi": "10.1016/J.AUTCON.2019.01.022",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9e6d8c459ec67d1345c3ae88a857dc3559b421c8",
+            "title": "Computer vision for real-time extrusion quality monitoring and control in robotic construction",
+            "url": "https://www.semanticscholar.org/paper/9e6d8c459ec67d1345c3ae88a857dc3559b421c8",
+            "venue": "Automation in Construction",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2255777538",
+                    "name": "Rama Prabha"
+                },
+                {
+                    "authorId": "50485960",
+                    "name": "Shubham Mathur"
+                },
+                {
+                    "authorId": "49947551",
+                    "name": "Balaji Subramanian"
+                },
+                {
+                    "authorId": "2118870842",
+                    "name": "Sanyam Jain"
+                },
+                {
+                    "authorId": "47382549",
+                    "name": "Kajal Choudhary"
+                }
+            ],
+            "doi": "10.1109/IPACT.2017.8244984",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "2dbb6339a806bbadaba34c1829a0afb7e8d40427",
+            "title": "Human detector and counter using raspberry Pi microcontroller",
+            "url": "https://www.semanticscholar.org/paper/2dbb6339a806bbadaba34c1829a0afb7e8d40427",
+            "venue": "2017 Innovations in Power and Advanced Computing Technologies (i-PACT)",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "32055777",
+                    "name": "M. Meireles"
+                },
+                {
+                    "authorId": "123865095",
+                    "name": "P.E.M. Almeida"
+                },
+                {
+                    "authorId": "9741275",
+                    "name": "Marcelo Simoes"
+                }
+            ],
+            "doi": "10.1109/TIE.2003.812470",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8bec02ba5b4a34d8aec4e96791828cf2d71b875f",
+            "title": "A comprehensive review for industrial applicability of artificial neural networks",
+            "url": "https://www.semanticscholar.org/paper/8bec02ba5b4a34d8aec4e96791828cf2d71b875f",
+            "venue": "IEEE Trans. Ind. Electron.",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1797589",
+                    "name": "E. I. Konukseven"
+                },
+                {
+                    "authorId": "92436148",
+                    "name": "B. Kaftanoglu"
+                },
+                {
+                    "authorId": "3033520",
+                    "name": "T. Balkan"
+                }
+            ],
+            "doi": "10.1109/IROS.1997.656515",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "1d784d26dd1e408163236a94cbce9cc36a99ebb1",
+            "title": "Multisensor controlled robotic tracking and automatic pick and place",
+            "url": "https://www.semanticscholar.org/paper/1d784d26dd1e408163236a94cbce9cc36a99ebb1",
+            "venue": "Proceedings of the 1997 IEEE/RSJ International Conference on Intelligent Robot and Systems. Innovative Robotics for Real-World Applications. IROS '97",
+            "year": 1997
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1820935155",
+                    "name": "Ayoub Benali Amjoud"
+                },
+                {
+                    "authorId": "1970759",
+                    "name": "M. AMROUCH"
+                }
+            ],
+            "doi": "10.1109/ACCESS.2023.3266093",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7bc29d5b422109a1b85b05a141b9207d9dd937a8",
+            "title": "Object Detection Using Deep Learning, CNNs and Vision Transformers: A Review",
+            "url": "https://www.semanticscholar.org/paper/7bc29d5b422109a1b85b05a141b9207d9dd937a8",
+            "venue": "IEEE Access",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2024834167",
+                    "name": "A. Chaudhuri"
+                },
+                {
+                    "authorId": "8361205",
+                    "name": "Krupa Mandaviya"
+                },
+                {
+                    "authorId": "8165594",
+                    "name": "Pratixa Badelia"
+                },
+                {
+                    "authorId": "49870581",
+                    "name": "S. Ghosh"
+                }
+            ],
+            "doi": "10.1007/978-3-319-50252-6_2",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "c16519c91d5b0b3b3dcd532612fcc4962fffa22f",
+            "title": "Optical Character Recognition Systems",
+            "url": "https://www.semanticscholar.org/paper/c16519c91d5b0b3b3dcd532612fcc4962fffa22f",
+            "venue": "",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "118805738",
+                    "name": "Rahmadi Sunoko"
+                },
+                {
+                    "authorId": "5728163",
+                    "name": "Hsiang-Wen Huang"
+                }
+            ],
+            "doi": "10.1016/J.MARPOL.2013.05.011",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5733530f757106482d03b91fe9e4764e0900ab9c",
+            "title": "Indonesia tuna fisheries development and future strategy",
+            "url": "https://www.semanticscholar.org/paper/5733530f757106482d03b91fe9e4764e0900ab9c",
+            "venue": "",
+            "year": 2014
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Engineering",
+            "source": "external"
+        },
+        {
+            "category": "Engineering",
+            "source": "s2-fos-model"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Automated Quality Control System for Canned Tuna Production using Artificial Vision",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/f12e63cd9ca05003aaa8f72cdcbfa93884c2ab07",
+    "venue": "2024 3rd International Conference on Artificial Intelligence For Internet of Things (AIIoT)",
+    "year": 2024
+}

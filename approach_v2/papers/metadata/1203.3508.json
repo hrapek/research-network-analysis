@@ -1,0 +1,593 @@
+{
+    "abstract": "Belief merging is an important but difficult problem in Artificial Intelligence, especially when sources of information are pervaded with uncertainty. Many merging operators have been proposed to deal with this problem in possibilistic logic, a weighted logic which is powerful for handling inconsistency and dealing with uncertainty. They often result in a possibilistic knowledge base which is a set of weighted formulas. Although possibilistic logic is inconsistency tolerant, it suffers from the well-known \"drowning effect\". Therefore, we may still want to obtain a consistent possibilistic knowledge base as the result of merging. In such a case, we argue that it is not always necessary to keep weighted information after merging. In this paper, we define a merging operator that maps a set of possibilistic knowledge bases and a formula representing the integrity constraints to a classical knowledge base by using lexicographic ordering. We show that it satisfies nine postulates that generalize basic postulates for propositional merging given in [11]. These postulates capture the principle of minimal change in some sense. We then provide an algorithm for generating the resulting knowledge base of our merging operator. Finally, we discuss the compatibility of our merging operator with propositional merging and establish the advantage of our merging operator over existing semantic merging operators in the propositional case.",
+    "arxivId": "1203.3508",
+    "authors": [
+        {
+            "authorId": "2262149530",
+            "name": "Guilin Qi",
+            "url": "https://www.semanticscholar.org/author/2262149530"
+        },
+        {
+            "authorId": "2849559",
+            "name": "Jianfeng Du",
+            "url": "https://www.semanticscholar.org/author/2849559"
+        },
+        {
+            "authorId": "2332701240",
+            "name": "Weiru Liu",
+            "url": "https://www.semanticscholar.org/author/2332701240"
+        },
+        {
+            "authorId": "2332781357",
+            "name": "David A. Bell",
+            "url": "https://www.semanticscholar.org/author/2332781357"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "30471886",
+                    "name": "V. Nguyen"
+                },
+                {
+                    "authorId": "144430191",
+                    "name": "N. Nguyen"
+                },
+                {
+                    "authorId": "2315943",
+                    "name": "T. Tran"
+                }
+            ],
+            "doi": "10.3233/JIFS-179337",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "bdb0fbe9aadc016f1d1935d30b2c9db719a3675c",
+            "title": "A distance-based approach for merging probabilistic knowledge bases",
+            "url": "https://www.semanticscholar.org/paper/bdb0fbe9aadc016f1d1935d30b2c9db719a3675c",
+            "venue": "J. Intell. Fuzzy Syst.",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "9708017",
+                    "name": "Thi Thanh Luu Le"
+                }
+            ],
+            "doi": "10.1007/978-3-030-14802-7_6",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d70ecb7fbffad5b47adaca5bd490cdd7caee9db7",
+            "title": "A Framework for Merging Possibilistic Knowledge Bases",
+            "url": "https://www.semanticscholar.org/paper/d70ecb7fbffad5b47adaca5bd490cdd7caee9db7",
+            "venue": "ACIIDS",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2610924",
+                    "name": "Thi Hong Khanh Nguyen"
+                },
+                {
+                    "authorId": "2315943",
+                    "name": "T. Tran"
+                },
+                {
+                    "authorId": "2207028909",
+                    "name": "Tran Van Nguyen"
+                },
+                {
+                    "authorId": "9708017",
+                    "name": "Thi Thanh Luu Le"
+                }
+            ],
+            "doi": "10.1007/978-3-319-54472-4_3",
+            "intent": [
+                "result"
+            ],
+            "isInfluential": false,
+            "paperId": "8a5edd406f34fa33a4798d276700ccc2c62d2e2f",
+            "title": "Merging Possibilistic Belief Bases by Argumentation",
+            "url": "https://www.semanticscholar.org/paper/8a5edd406f34fa33a4798d276700ccc2c62d2e2f",
+            "venue": "ACIIDS",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2315943",
+                    "name": "T. Tran"
+                },
+                {
+                    "authorId": "2610924",
+                    "name": "Thi Hong Khanh Nguyen"
+                },
+                {
+                    "authorId": "2016974",
+                    "name": "Quang-Thuy Ha"
+                },
+                {
+                    "authorId": "21572235",
+                    "name": "Ngoc Trinh Vu"
+                }
+            ],
+            "doi": "10.1007/978-3-662-49381-6_5",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "691af1c73a0aa3ed40885a3eb8ba6c38d6ef3bf4",
+            "title": "Argumentation Framework for Merging Stratified Belief Bases",
+            "url": "https://www.semanticscholar.org/paper/691af1c73a0aa3ed40885a3eb8ba6c38d6ef3bf4",
+            "venue": "ACIIDS",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144969774",
+                    "name": "D. Dubois"
+                },
+                {
+                    "authorId": "1700697",
+                    "name": "H. Prade"
+                }
+            ],
+            "doi": "10.1016/B978-0-444-51624-4.50007-1",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "72ee099f689deb632977a9f1d48a0e94f2ee09f8",
+            "title": "Possibilistic Logic - An Overview",
+            "url": "https://www.semanticscholar.org/paper/72ee099f689deb632977a9f1d48a0e94f2ee09f8",
+            "venue": "Computational Logic",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144969774",
+                    "name": "D. Dubois"
+                },
+                {
+                    "authorId": "1700697",
+                    "name": "H. Prade"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "5ec6020767c69b876ed02784649db59372db4819",
+            "title": "DIDIER DUBOIS AND HENRI PRADE",
+            "url": "https://www.semanticscholar.org/paper/5ec6020767c69b876ed02784649db59372db4819",
+            "venue": "",
+            "year": 2014
+        }
+    ],
+    "corpusId": 15346364,
+    "doi": null,
+    "fieldsOfStudy": [
+        "Computer Science",
+        "Mathematics"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 6,
+    "numCiting": 18,
+    "paperId": "3a60caf8d1dbf3d1a49e1608851c9bf93e53c96c",
+    "references": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1730054",
+                    "name": "G. Qi"
+                },
+                {
+                    "authorId": "1500379841",
+                    "name": "Weiru Liu"
+                },
+                {
+                    "authorId": "145931269",
+                    "name": "D. Bell"
+                }
+            ],
+            "doi": "10.1016/j.fss.2007.02.013",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "b38f0356ad4ebf634ee808f9b793f26daec88e60",
+            "title": "Combining multiple prioritized knowledge bases by negotiation",
+            "url": "https://www.semanticscholar.org/paper/b38f0356ad4ebf634ee808f9b793f26daec88e60",
+            "venue": "Fuzzy Sets Syst.",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1730054",
+                    "name": "G. Qi"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": true,
+            "paperId": "99be9a4447d15a60796b852a99d96db3685409e9",
+            "title": "A Model-based Approach for Merging Prioritized Knowledge Bases in Possibilistic Logic",
+            "url": "https://www.semanticscholar.org/paper/99be9a4447d15a60796b852a99d96db3685409e9",
+            "venue": "AAAI",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1500379841",
+                    "name": "Weiru Liu"
+                },
+                {
+                    "authorId": "1730054",
+                    "name": "G. Qi"
+                },
+                {
+                    "authorId": "145931269",
+                    "name": "D. Bell"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": true,
+            "paperId": "7e69089d13c19c7bfd7f72c575148beb12a436f2",
+            "title": "Adaptive Merging of Prioritized Knowledge Bases",
+            "url": "https://www.semanticscholar.org/paper/7e69089d13c19c7bfd7f72c575148beb12a436f2",
+            "venue": "Fundam. Informaticae",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1730054",
+                    "name": "G. Qi"
+                },
+                {
+                    "authorId": "1500379841",
+                    "name": "Weiru Liu"
+                },
+                {
+                    "authorId": "145931269",
+                    "name": "D. Bell"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "939bfb9104523975d4a9e32ce48da420ff20158a",
+            "title": "Merging Stratified Knowledge Bases under Constraints",
+            "url": "https://www.semanticscholar.org/paper/939bfb9104523975d4a9e32ce48da420ff20158a",
+            "venue": "AAAI",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3336102",
+                    "name": "Patricia Everaere"
+                },
+                {
+                    "authorId": "1679371",
+                    "name": "S. Konieczny"
+                },
+                {
+                    "authorId": "1694497",
+                    "name": "P. Marquis"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "49de9f11f9f8f0cd4ba1c32c2956b04a1a7e8c6e",
+            "title": "Quota and Gmin Merging Operators",
+            "url": "https://www.semanticscholar.org/paper/49de9f11f9f8f0cd4ba1c32c2956b04a1a7e8c6e",
+            "venue": "IJCAI",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1730054",
+                    "name": "G. Qi"
+                },
+                {
+                    "authorId": "1500379841",
+                    "name": "Weiru Liu"
+                },
+                {
+                    "authorId": "49968482",
+                    "name": "D. H. Glass"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": true,
+            "paperId": "74f8117685a50cefd7a76ff37d96a9a72e12eac4",
+            "title": "A Split-Combination Method for Merging Inconsistent Possibilistic Knowledge Bases",
+            "url": "https://www.semanticscholar.org/paper/74f8117685a50cefd7a76ff37d96a9a72e12eac4",
+            "venue": "KR",
+            "year": 2004
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1679371",
+                    "name": "S. Konieczny"
+                },
+                {
+                    "authorId": "2398171",
+                    "name": "R. P\u00e9rez"
+                }
+            ],
+            "doi": "10.1093/logcom/12.5.773",
+            "intent": [],
+            "isInfluential": true,
+            "paperId": "97638512bed68bde9aec98a0279ffd25bd77c17c",
+            "title": "Merging Information Under Constraints: A Logical Framework",
+            "url": "https://www.semanticscholar.org/paper/97638512bed68bde9aec98a0279ffd25bd77c17c",
+            "venue": "J. Log. Comput.",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1726694",
+                    "name": "Leila Amgoud"
+                },
+                {
+                    "authorId": "1689052",
+                    "name": "S. Kaci"
+                }
+            ],
+            "doi": "10.1016/j.ijar.2006.06.014",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "89173234cbc4c2759203dcb7fd592c7642d5c9b9",
+            "title": "An argumentation framework for merging conflicting knowledge bases",
+            "url": "https://www.semanticscholar.org/paper/89173234cbc4c2759203dcb7fd592c7642d5c9b9",
+            "venue": "Int. J. Approx. Reason.",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144778431",
+                    "name": "S. Benferhat"
+                },
+                {
+                    "authorId": "1689052",
+                    "name": "S. Kaci"
+                }
+            ],
+            "doi": "10.1016/S0888-613X(03)00018-5",
+            "intent": [],
+            "isInfluential": true,
+            "paperId": "d4f8ad5b1d0876099d2ea833df973a0cec5caa28",
+            "title": "Fusion of possibilistic knowledge bases from a postulate point of view",
+            "url": "https://www.semanticscholar.org/paper/d4f8ad5b1d0876099d2ea833df973a0cec5caa28",
+            "venue": "Int. J. Approx. Reason.",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144778431",
+                    "name": "S. Benferhat"
+                },
+                {
+                    "authorId": "144969774",
+                    "name": "D. Dubois"
+                },
+                {
+                    "authorId": "1689052",
+                    "name": "S. Kaci"
+                },
+                {
+                    "authorId": "1700697",
+                    "name": "H. Prade"
+                }
+            ],
+            "doi": "10.1023/A:1014446411602",
+            "intent": [],
+            "isInfluential": true,
+            "paperId": "4201352db4d55f594d91ee7d974d617e2978817f",
+            "title": "Possibilistic Merging and Distance-Based Fusion of Propositional Information",
+            "url": "https://www.semanticscholar.org/paper/4201352db4d55f594d91ee7d974d617e2978817f",
+            "venue": "Annals of Mathematics and Artificial Intelligence",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1679371",
+                    "name": "S. Konieczny"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "007ae8aa2220640cdaeed3cbfdc9715ad45a3680",
+            "title": "On the Difference between Merging Knowledge Bases and Combining them",
+            "url": "https://www.semanticscholar.org/paper/007ae8aa2220640cdaeed3cbfdc9715ad45a3680",
+            "venue": "KR",
+            "year": 2000
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144778431",
+                    "name": "S. Benferhat"
+                },
+                {
+                    "authorId": "144969774",
+                    "name": "D. Dubois"
+                },
+                {
+                    "authorId": "1700697",
+                    "name": "H. Prade"
+                },
+                {
+                    "authorId": "144826976",
+                    "name": "Mary-Anne Williams"
+                }
+            ],
+            "doi": "10.1007/3-540-48159-1_16",
+            "intent": [],
+            "isInfluential": true,
+            "paperId": "9b00cb64bcb07aea8f25ce738fc642117365bd0d",
+            "title": "A Practical Approach to Fusing Prioritized Knowledge Bases",
+            "url": "https://www.semanticscholar.org/paper/9b00cb64bcb07aea8f25ce738fc642117365bd0d",
+            "venue": "EPIA",
+            "year": 1999
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1679371",
+                    "name": "S. Konieczny"
+                },
+                {
+                    "authorId": "2398171",
+                    "name": "R. P\u00e9rez"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "17c9455ec860d88916da24e4b9fd8dedad22ffed",
+            "title": "On the Logic of Merging",
+            "url": "https://www.semanticscholar.org/paper/17c9455ec860d88916da24e4b9fd8dedad22ffed",
+            "venue": "KR",
+            "year": 1998
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "15773387",
+                    "name": "D. Gabbay"
+                },
+                {
+                    "authorId": "2445192",
+                    "name": "C. Hogger"
+                },
+                {
+                    "authorId": "2107755478",
+                    "name": "J. Robinson"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "fb4f7e26fa47aed6c86e153de395ea6fff4c6e6c",
+            "title": "Handbook of Logic in Artificial Intelligence and Logic Programming: Volume 3: Nonmonotonic Reasoning and Uncertain Reasoning",
+            "url": "https://www.semanticscholar.org/paper/fb4f7e26fa47aed6c86e153de395ea6fff4c6e6c",
+            "venue": "",
+            "year": 1994
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144969774",
+                    "name": "D. Dubois"
+                },
+                {
+                    "authorId": "145417235",
+                    "name": "J. Lang"
+                },
+                {
+                    "authorId": "1700697",
+                    "name": "H. Prade"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "4949bd6a9e4d2cafb86f5127d4bf7be4959d4234",
+            "title": "Possibilistic logic",
+            "url": "https://www.semanticscholar.org/paper/4949bd6a9e4d2cafb86f5127d4bf7be4959d4234",
+            "venue": "",
+            "year": 1994
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1730628",
+                    "name": "P. Fishburn"
+                }
+            ],
+            "doi": "10.1287/MNSC.20.11.1442",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "fc7c0291a743b929d3ae5678263aa7e3d9a4dd8c",
+            "title": "LEXICOGRAPHIC ORDERS, UTILITIES AND DECISION RULES: A SURVEY",
+            "url": "https://www.semanticscholar.org/paper/fc7c0291a743b929d3ae5678263aa7e3d9a4dd8c",
+            "venue": "",
+            "year": 1974
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1730054",
+                    "name": "G. Qi"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "2aaff7fb140899457caae53d73d8d4892c63537d",
+            "title": "Fusion of uncertain information in the framework of possibilistic logic",
+            "url": "https://www.semanticscholar.org/paper/2aaff7fb140899457caae53d73d8d4892c63537d",
+            "venue": "",
+            "year": 2006
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Mathematics",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Merging Knowledge Bases in Possibilistic Logic by Lexicographic Aggregation",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/3a60caf8d1dbf3d1a49e1608851c9bf93e53c96c",
+    "venue": "Conference on Uncertainty in Artificial Intelligence",
+    "year": 2010
+}

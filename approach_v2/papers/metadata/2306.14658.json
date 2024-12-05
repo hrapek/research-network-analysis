@@ -1,0 +1,1492 @@
+{
+    "abstract": "While there has been a growing research interest in developing out-of-distribution (OOD) detection methods, there has been comparably little discussion around how these methods should be evaluated. Given their relevance for safe(r) AI, it is important to examine whether the basis for comparing OOD detection methods is consistent with practical needs. In this work, we take a closer look at the go-to metrics for evaluating OOD detection, and question the approach of exclusively reducing OOD detection to a binary classification task with little consideration for the detection threshold. We illustrate the limitations of current metrics (AUROC & its friends) and propose a new metric - Area Under the Threshold Curve (AUTC), which explicitly penalizes poor separation between ID and OOD samples. Scripts and data are available at https://github.com/glhr/beyond-auroc",
+    "arxivId": "2306.14658",
+    "authors": [
+        {
+            "authorId": "1453374038",
+            "name": "Galadrielle Humblot-Renaux",
+            "url": "https://www.semanticscholar.org/author/1453374038"
+        },
+        {
+            "authorId": "7855312",
+            "name": "Sergio Escalera",
+            "url": "https://www.semanticscholar.org/author/7855312"
+        },
+        {
+            "authorId": "1700569",
+            "name": "T. Moeslund",
+            "url": "https://www.semanticscholar.org/author/1700569"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": "2404.01775",
+            "authors": [
+                {
+                    "authorId": "1453374038",
+                    "name": "Galadrielle Humblot-Renaux"
+                },
+                {
+                    "authorId": "2294569056",
+                    "name": "Sergio Escalera"
+                },
+                {
+                    "authorId": "1700569",
+                    "name": "T. Moeslund"
+                }
+            ],
+            "doi": "10.1109/CVPR52733.2024.02135",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "44ca6e1d150320e2076233528c490a14ec6ca405",
+            "title": "A Noisy Elephant in the Room: Is Your out-of-Distribution Detector Robust to Label Noise?",
+            "url": "https://www.semanticscholar.org/paper/44ca6e1d150320e2076233528c490a14ec6ca405",
+            "venue": "2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2024
+        },
+        {
+            "arxivId": "2403.07532",
+            "authors": [
+                {
+                    "authorId": "2171748177",
+                    "name": "Matteo Sodano"
+                },
+                {
+                    "authorId": "89384880",
+                    "name": "Federico Magistri"
+                },
+                {
+                    "authorId": "2121966001",
+                    "name": "Lucas Nunes"
+                },
+                {
+                    "authorId": "3350812",
+                    "name": "Jens Behley"
+                },
+                {
+                    "authorId": "1722062",
+                    "name": "C. Stachniss"
+                }
+            ],
+            "doi": "10.1109/CVPR52733.2024.00307",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7a4481aa38af308ddc4925a74c76713997a36fb6",
+            "title": "Open-World Semantic Segmentation Including Class Similarity",
+            "url": "https://www.semanticscholar.org/paper/7a4481aa38af308ddc4925a74c76713997a36fb6",
+            "venue": "2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2024
+        }
+    ],
+    "corpusId": 259251915,
+    "doi": "10.1109/CVPRW59228.2023.00402",
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": true,
+    "isPublisherLicensed": true,
+    "is_open_access": true,
+    "is_publisher_licensed": true,
+    "numCitedBy": 2,
+    "numCiting": 41,
+    "paperId": "a97426ca2bb03523a226a1ebde4efeb58851b2e7",
+    "references": [
+        {
+            "arxivId": "2210.07242",
+            "authors": [
+                {
+                    "authorId": "2295601",
+                    "name": "Jingkang Yang"
+                },
+                {
+                    "authorId": "2297143153",
+                    "name": "Pengyun Wang"
+                },
+                {
+                    "authorId": "9083667",
+                    "name": "Dejian Zou"
+                },
+                {
+                    "authorId": "2218011359",
+                    "name": "Zitang Zhou"
+                },
+                {
+                    "authorId": "2053138915",
+                    "name": "Kun Ding"
+                },
+                {
+                    "authorId": "1749122",
+                    "name": "Wen-Hsiao Peng"
+                },
+                {
+                    "authorId": "2109293355",
+                    "name": "Haoqi Wang"
+                },
+                {
+                    "authorId": "1745485",
+                    "name": "Guangyao Chen"
+                },
+                {
+                    "authorId": "143771569",
+                    "name": "Bo Li"
+                },
+                {
+                    "authorId": "31454397",
+                    "name": "Yiyou Sun"
+                },
+                {
+                    "authorId": "151480429",
+                    "name": "Xuefeng Du"
+                },
+                {
+                    "authorId": "9368124",
+                    "name": "Kaiyang Zhou"
+                },
+                {
+                    "authorId": "1726357",
+                    "name": "Wayne Zhang"
+                },
+                {
+                    "authorId": "3422872",
+                    "name": "Dan Hendrycks"
+                },
+                {
+                    "authorId": "1527103472",
+                    "name": "Yixuan Li"
+                },
+                {
+                    "authorId": "2145254462",
+                    "name": "Ziwei Liu"
+                }
+            ],
+            "doi": "10.48550/arXiv.2210.07242",
+            "intent": [
+                "background",
+                "methodology",
+                "result"
+            ],
+            "isInfluential": true,
+            "paperId": "4e9e30f4702f64af5aacbb5791172c5b37510dc3",
+            "title": "OpenOOD: Benchmarking Generalized Out-of-Distribution Detection",
+            "url": "https://www.semanticscholar.org/paper/4e9e30f4702f64af5aacbb5791172c5b37510dc3",
+            "venue": "NeurIPS",
+            "year": 2022
+        },
+        {
+            "arxivId": "2206.15186",
+            "authors": [
+                {
+                    "authorId": "1444768042",
+                    "name": "Deval Mehta"
+                },
+                {
+                    "authorId": "1869980",
+                    "name": "Y. Gal"
+                },
+                {
+                    "authorId": "40415931",
+                    "name": "Adrian Bowling"
+                },
+                {
+                    "authorId": "94085349",
+                    "name": "Paul Bonnington"
+                },
+                {
+                    "authorId": "1808390",
+                    "name": "ZongYuan Ge"
+                }
+            ],
+            "doi": "10.48550/arXiv.2206.15186",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "3ccd600bab618a919c0e6e69d1724c9afd453a5a",
+            "title": "Out-of-Distribution Detection for Long-tailed and Fine-grained Skin Lesion Images",
+            "url": "https://www.semanticscholar.org/paper/3ccd600bab618a919c0e6e69d1724c9afd453a5a",
+            "venue": "MICCAI",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2176453517",
+                    "name": "Senqi Cao"
+                },
+                {
+                    "authorId": "2155968395",
+                    "name": "Zhongfei Zhang"
+                }
+            ],
+            "doi": "10.1109/CVPR52688.2022.00469",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8ef5a28955ce4fbd170e4dddbd37930e025edb69",
+            "title": "Deep Hybrid Models for Out-of-Distribution Detection",
+            "url": "https://www.semanticscholar.org/paper/8ef5a28955ce4fbd170e4dddbd37930e025edb69",
+            "venue": "2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2022
+        },
+        {
+            "arxivId": "2205.00403",
+            "authors": [
+                {
+                    "authorId": "2108345570",
+                    "name": "J. Liu"
+                },
+                {
+                    "authorId": "151216770",
+                    "name": "Shreyas Padhy"
+                },
+                {
+                    "authorId": "92095972",
+                    "name": "Jie Jessie Ren"
+                },
+                {
+                    "authorId": "143872641",
+                    "name": "Zi Lin"
+                },
+                {
+                    "authorId": "38356166",
+                    "name": "Yeming Wen"
+                },
+                {
+                    "authorId": "3451901",
+                    "name": "Ghassen Jerfel"
+                },
+                {
+                    "authorId": "81408931",
+                    "name": "Zachary Nado"
+                },
+                {
+                    "authorId": "144108062",
+                    "name": "Jasper Snoek"
+                },
+                {
+                    "authorId": "47497262",
+                    "name": "Dustin Tran"
+                },
+                {
+                    "authorId": "40627523",
+                    "name": "Balaji Lakshminarayanan"
+                }
+            ],
+            "doi": "10.48550/arXiv.2205.00403",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "60f2ae3b448b035e957603e84d1a073ad708879b",
+            "title": "A Simple Approach to Improve Single-Model Deep Uncertainty via Distance-Awareness",
+            "url": "https://www.semanticscholar.org/paper/60f2ae3b448b035e957603e84d1a073ad708879b",
+            "venue": "J. Mach. Learn. Res.",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "7139645",
+                    "name": "David Zimmerer"
+                },
+                {
+                    "authorId": "93088018",
+                    "name": "Peter M. Full"
+                },
+                {
+                    "authorId": "7886986",
+                    "name": "Fabian Isensee"
+                },
+                {
+                    "authorId": "1661131601",
+                    "name": "Paul F. Jager"
+                },
+                {
+                    "authorId": "144784171",
+                    "name": "T. Adler"
+                },
+                {
+                    "authorId": "152800798",
+                    "name": "Jens Petersen"
+                },
+                {
+                    "authorId": "1923275244",
+                    "name": "Gregor Koehler"
+                },
+                {
+                    "authorId": "118012992",
+                    "name": "T. Ross"
+                },
+                {
+                    "authorId": "47131776",
+                    "name": "Annika Reinke"
+                },
+                {
+                    "authorId": "41158824",
+                    "name": "Antanas Kascenas"
+                },
+                {
+                    "authorId": "11002730",
+                    "name": "B. S. Jensen"
+                },
+                {
+                    "authorId": "1404000098",
+                    "name": "Alison Q. O'Neil"
+                },
+                {
+                    "authorId": "144748334",
+                    "name": "Jeremy Tan"
+                },
+                {
+                    "authorId": "9543707",
+                    "name": "Benjamin Hou"
+                },
+                {
+                    "authorId": "40703414",
+                    "name": "James Batten"
+                },
+                {
+                    "authorId": "152128293",
+                    "name": "Huaqi Qiu"
+                },
+                {
+                    "authorId": "2015193",
+                    "name": "Bernhard Kainz"
+                },
+                {
+                    "authorId": "2125336203",
+                    "name": "Nina Shvetsova"
+                },
+                {
+                    "authorId": "1491640350",
+                    "name": "Irina Fedulova"
+                },
+                {
+                    "authorId": "9454279",
+                    "name": "D. Dylov"
+                },
+                {
+                    "authorId": "2163530506",
+                    "name": "Baolun Yu"
+                },
+                {
+                    "authorId": "23151356",
+                    "name": "Jianyang Zhai"
+                },
+                {
+                    "authorId": "123925173",
+                    "name": "Jingtao Hu"
+                },
+                {
+                    "authorId": "2122911826",
+                    "name": "Runxuan Si"
+                },
+                {
+                    "authorId": "2516087",
+                    "name": "Sihang Zhou"
+                },
+                {
+                    "authorId": "1421268306",
+                    "name": "Siqi Wang"
+                },
+                {
+                    "authorId": "2144455690",
+                    "name": "Xinyang Li"
+                },
+                {
+                    "authorId": "2163539343",
+                    "name": "Xuerun Chen"
+                },
+                {
+                    "authorId": "2163745699",
+                    "name": "Yang Zhao"
+                },
+                {
+                    "authorId": "2037388029",
+                    "name": "Sergio Naval Marimont"
+                },
+                {
+                    "authorId": "32389902",
+                    "name": "G. Tarroni"
+                },
+                {
+                    "authorId": "5479644",
+                    "name": "Victor Saase"
+                },
+                {
+                    "authorId": "1397958668",
+                    "name": "L. Maier-Hein"
+                },
+                {
+                    "authorId": "2139962185",
+                    "name": "K. Maier-Hein"
+                }
+            ],
+            "doi": "10.1109/TMI.2022.3170077",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "63ff7c225079eba3838d45b11bb15a58037f1415",
+            "title": "MOOD 2020: A Public Benchmark for Out-of-Distribution Detection and Localization on Medical Images",
+            "url": "https://www.semanticscholar.org/paper/63ff7c225079eba3838d45b11bb15a58037f1415",
+            "venue": "IEEE Transactions on Medical Imaging",
+            "year": 2022
+        },
+        {
+            "arxivId": "2204.06507",
+            "authors": [
+                {
+                    "authorId": "31454397",
+                    "name": "Yiyou Sun"
+                },
+                {
+                    "authorId": "2143847067",
+                    "name": "Yifei Ming"
+                },
+                {
+                    "authorId": "1832364",
+                    "name": "Xiaojin Zhu"
+                },
+                {
+                    "authorId": "1527103472",
+                    "name": "Yixuan Li"
+                }
+            ],
+            "doi": "10.48550/arXiv.2204.06507",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "8b1233107bff00355d4d1656795ec62d4f85e523",
+            "title": "Out-of-distribution Detection with Deep Nearest Neighbors",
+            "url": "https://www.semanticscholar.org/paper/8b1233107bff00355d4d1656795ec62d4f85e523",
+            "venue": "ICML",
+            "year": 2022
+        },
+        {
+            "arxivId": "2203.10807",
+            "authors": [
+                {
+                    "authorId": "2109293355",
+                    "name": "Haoqi Wang"
+                },
+                {
+                    "authorId": "49969902",
+                    "name": "Zhizhong Li"
+                },
+                {
+                    "authorId": "2205018430",
+                    "name": "Litong Feng"
+                },
+                {
+                    "authorId": "1726357",
+                    "name": "Wayne Zhang"
+                }
+            ],
+            "doi": "10.1109/CVPR52688.2022.00487",
+            "intent": [
+                "background",
+                "result"
+            ],
+            "isInfluential": false,
+            "paperId": "3b0284d501e9b1b6c199d8b07c6826a165c4b4f2",
+            "title": "ViM: Out-Of-Distribution with Virtual-logit Matching",
+            "url": "https://www.semanticscholar.org/paper/3b0284d501e9b1b6c199d8b07c6826a165c4b4f2",
+            "venue": "2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2022
+        },
+        {
+            "arxivId": "2110.14051",
+            "authors": [
+                {
+                    "authorId": "13082059",
+                    "name": "Mohammadreza Salehi"
+                },
+                {
+                    "authorId": "2140581174",
+                    "name": "Hossein Mirzaei"
+                },
+                {
+                    "authorId": "3422872",
+                    "name": "Dan Hendrycks"
+                },
+                {
+                    "authorId": "1527103472",
+                    "name": "Yixuan Li"
+                },
+                {
+                    "authorId": "2547227",
+                    "name": "M. H. Rohban"
+                },
+                {
+                    "authorId": "2884918",
+                    "name": "M. Sabokrou"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8b153cc2c7f5ea9f307f12ea945a5e9196ee5c52",
+            "title": "A Unified Survey on Anomaly, Novelty, Open-Set, and Out-of-Distribution Detection: Solutions and Future Challenges",
+            "url": "https://www.semanticscholar.org/paper/8b153cc2c7f5ea9f307f12ea945a5e9196ee5c52",
+            "venue": "Trans. Mach. Learn. Res.",
+            "year": 2021
+        },
+        {
+            "arxivId": "2110.11334",
+            "authors": [
+                {
+                    "authorId": "2295601",
+                    "name": "Jingkang Yang"
+                },
+                {
+                    "authorId": "9368124",
+                    "name": "Kaiyang Zhou"
+                },
+                {
+                    "authorId": "1527103472",
+                    "name": "Yixuan Li"
+                },
+                {
+                    "authorId": "2117940996",
+                    "name": "Ziwei Liu"
+                }
+            ],
+            "doi": "10.1007/s11263-024-02117-4",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7b2180d7fa0d65e8756401cb077bf3dea3f9b575",
+            "title": "Generalized Out-of-Distribution Detection: A Survey",
+            "url": "https://www.semanticscholar.org/paper/7b2180d7fa0d65e8756401cb077bf3dea3f9b575",
+            "venue": "Int. J. Comput. Vis.",
+            "year": 2021
+        },
+        {
+            "arxivId": "2110.00218",
+            "authors": [
+                {
+                    "authorId": "1516136186",
+                    "name": "Rui Huang"
+                },
+                {
+                    "authorId": "8421519",
+                    "name": "Andrew Geng"
+                },
+                {
+                    "authorId": "1527103472",
+                    "name": "Yixuan Li"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "3b316377f1d7cbcf3c907c4d8b08c05f4521b541",
+            "title": "On the Importance of Gradients for Detecting Distributional Shifts in the Wild",
+            "url": "https://www.semanticscholar.org/paper/3b316377f1d7cbcf3c907c4d8b08c05f4521b541",
+            "venue": "NeurIPS",
+            "year": 2021
+        },
+        {
+            "arxivId": "2109.14885",
+            "authors": [
+                {
+                    "authorId": "21741423",
+                    "name": "Karina Zadorozhny"
+                },
+                {
+                    "authorId": "80032381",
+                    "name": "P. Thoral"
+                },
+                {
+                    "authorId": "2035038",
+                    "name": "P. Elbers"
+                },
+                {
+                    "authorId": "32346780",
+                    "name": "G. Cin\u00e1"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "0e96edb6ed08803cc21bf5612fb01a8eca94c67b",
+            "title": "Out-of-Distribution Detection for Medical Applications: Guidelines for Practical Evaluation",
+            "url": "https://www.semanticscholar.org/paper/0e96edb6ed08803cc21bf5612fb01a8eca94c67b",
+            "venue": "ArXiv",
+            "year": 2021
+        },
+        {
+            "arxivId": "2108.11941",
+            "authors": [
+                {
+                    "authorId": "2295601",
+                    "name": "Jingkang Yang"
+                },
+                {
+                    "authorId": "2109293355",
+                    "name": "Haoqi Wang"
+                },
+                {
+                    "authorId": "2205018430",
+                    "name": "Litong Feng"
+                },
+                {
+                    "authorId": "2117851634",
+                    "name": "Xiaopeng Yan"
+                },
+                {
+                    "authorId": "1993661696",
+                    "name": "Huabin Zheng"
+                },
+                {
+                    "authorId": "1726357",
+                    "name": "Wayne Zhang"
+                },
+                {
+                    "authorId": "2117940996",
+                    "name": "Ziwei Liu"
+                }
+            ],
+            "doi": "10.1109/ICCV48922.2021.00819",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "714d78a452562adcacbb9f28f39dd64a8198e6ea",
+            "title": "Semantically Coherent Out-of-Distribution Detection",
+            "url": "https://www.semanticscholar.org/paper/714d78a452562adcacbb9f28f39dd64a8198e6ea",
+            "venue": "2021 IEEE/CVF International Conference on Computer Vision (ICCV)",
+            "year": 2021
+        },
+        {
+            "arxivId": "2106.03004",
+            "authors": [
+                {
+                    "authorId": "30176974",
+                    "name": "Stanislav Fort"
+                },
+                {
+                    "authorId": "92095972",
+                    "name": "Jie Jessie Ren"
+                },
+                {
+                    "authorId": "40627523",
+                    "name": "Balaji Lakshminarayanan"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c3ddd90b53dc797029c4576af01b9c35bb846a44",
+            "title": "Exploring the Limits of Out-of-Distribution Detection",
+            "url": "https://www.semanticscholar.org/paper/c3ddd90b53dc797029c4576af01b9c35bb846a44",
+            "venue": "NeurIPS",
+            "year": 2021
+        },
+        {
+            "arxivId": "2105.01879",
+            "authors": [
+                {
+                    "authorId": "40372975",
+                    "name": "Rui Huang"
+                },
+                {
+                    "authorId": "1527103472",
+                    "name": "Yixuan Li"
+                }
+            ],
+            "doi": "10.1109/CVPR46437.2021.00860",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f19092561296244e1dafe7d799e7906e96a63773",
+            "title": "MOS: Towards Scaling Out-of-distribution Detection for Large Semantic Space",
+            "url": "https://www.semanticscholar.org/paper/f19092561296244e1dafe7d799e7906e96a63773",
+            "venue": "2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2021
+        },
+        {
+            "arxivId": "2104.03829",
+            "authors": [
+                {
+                    "authorId": "23360006",
+                    "name": "Abhijit Guha Roy"
+                },
+                {
+                    "authorId": "92095972",
+                    "name": "Jie Jessie Ren"
+                },
+                {
+                    "authorId": "40151244",
+                    "name": "Shekoofeh Azizi"
+                },
+                {
+                    "authorId": "2059439110",
+                    "name": "Aaron Loh"
+                },
+                {
+                    "authorId": "144223091",
+                    "name": "Vivek Natarajan"
+                },
+                {
+                    "authorId": "40608942",
+                    "name": "Basil Mustafa"
+                },
+                {
+                    "authorId": "39034356",
+                    "name": "Nick Pawlowski"
+                },
+                {
+                    "authorId": "40859061",
+                    "name": "J. Freyberg"
+                },
+                {
+                    "authorId": "2143862099",
+                    "name": "Yuan Liu"
+                },
+                {
+                    "authorId": "2067791369",
+                    "name": "Zach Beaver"
+                },
+                {
+                    "authorId": "2065730254",
+                    "name": "Nam S. Vo"
+                },
+                {
+                    "authorId": "2065730079",
+                    "name": "P. Bui"
+                },
+                {
+                    "authorId": "2010229965",
+                    "name": "Samantha Winter"
+                },
+                {
+                    "authorId": "1811412312",
+                    "name": "Patricia MacWilliams"
+                },
+                {
+                    "authorId": "102388768",
+                    "name": "G. Corrado"
+                },
+                {
+                    "authorId": "2047820428",
+                    "name": "Umesh Telang"
+                },
+                {
+                    "authorId": "2118113191",
+                    "name": "Yun Liu"
+                },
+                {
+                    "authorId": "122347685",
+                    "name": "taylan. cemgil"
+                },
+                {
+                    "authorId": "6413143",
+                    "name": "A. Karthikesalingam"
+                },
+                {
+                    "authorId": "40627523",
+                    "name": "Balaji Lakshminarayanan"
+                },
+                {
+                    "authorId": "46258792",
+                    "name": "Jim Winkens"
+                }
+            ],
+            "doi": "10.1016/j.media.2021.102274",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c1bf7fe467d90fac3415911e569ea87588dfd166",
+            "title": "Does Your Dermatology Classifier Know What It Doesn't Know? Detecting the Long-Tail of Unseen Conditions",
+            "url": "https://www.semanticscholar.org/paper/c1bf7fe467d90fac3415911e569ea87588dfd166",
+            "venue": "Medical Image Anal.",
+            "year": 2021
+        },
+        {
+            "arxivId": "2010.03759",
+            "authors": [
+                {
+                    "authorId": "46641825",
+                    "name": "Weitang Liu"
+                },
+                {
+                    "authorId": "2118776393",
+                    "name": "Xiaoyun Wang"
+                },
+                {
+                    "authorId": "1758404",
+                    "name": "John Douglas Owens"
+                },
+                {
+                    "authorId": "1527103472",
+                    "name": "Yixuan Li"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "35b966347dae2f0d496ea713edf03a68211838a5",
+            "title": "Energy-based Out-of-distribution Detection",
+            "url": "https://www.semanticscholar.org/paper/35b966347dae2f0d496ea713edf03a68211838a5",
+            "venue": "NeurIPS",
+            "year": 2020
+        },
+        {
+            "arxivId": "2006.10108",
+            "authors": [
+                {
+                    "authorId": "29833921",
+                    "name": "Jeremiah Zhe Liu"
+                },
+                {
+                    "authorId": "143872641",
+                    "name": "Zi Lin"
+                },
+                {
+                    "authorId": "151216770",
+                    "name": "Shreyas Padhy"
+                },
+                {
+                    "authorId": "47497262",
+                    "name": "Dustin Tran"
+                },
+                {
+                    "authorId": "2113816700",
+                    "name": "Tania Bedrax-Weiss"
+                },
+                {
+                    "authorId": "40627523",
+                    "name": "Balaji Lakshminarayanan"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "298f67a9719e74192296fa2428776c46161a256a",
+            "title": "Simple and Principled Uncertainty Estimation with Deterministic Deep Learning via Distance Awareness",
+            "url": "https://www.semanticscholar.org/paper/298f67a9719e74192296fa2428776c46161a256a",
+            "venue": "NeurIPS",
+            "year": 2020
+        },
+        {
+            "arxivId": "2005.09241",
+            "authors": [
+                {
+                    "authorId": "2406263",
+                    "name": "Damien Teney"
+                },
+                {
+                    "authorId": "33315685",
+                    "name": "Kushal Kafle"
+                },
+                {
+                    "authorId": "153677280",
+                    "name": "Robik Shrestha"
+                },
+                {
+                    "authorId": "8088602",
+                    "name": "Ehsan Abbasnejad"
+                },
+                {
+                    "authorId": "3290098",
+                    "name": "Christopher Kanan"
+                },
+                {
+                    "authorId": "5546141",
+                    "name": "A. Hengel"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ad322ec0617a9bdf1dabd2a51e626a9c474ed9e3",
+            "title": "On the Value of Out-of-Distribution Testing: An Example of Goodhart's Law",
+            "url": "https://www.semanticscholar.org/paper/ad322ec0617a9bdf1dabd2a51e626a9c474ed9e3",
+            "venue": "NeurIPS",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3228458",
+                    "name": "Sina Mohseni"
+                },
+                {
+                    "authorId": "118527696",
+                    "name": "Mandar Pitale"
+                },
+                {
+                    "authorId": "2223656090",
+                    "name": "Jbs Yadawa"
+                },
+                {
+                    "authorId": "2969311",
+                    "name": "Zhangyang Wang"
+                }
+            ],
+            "doi": "10.1609/AAAI.V34I04.5966",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "5771af144ce1d4d783a0af70c190a74e5123d0a0",
+            "title": "Self-Supervised Learning for Generalizable Out-of-Distribution Detection",
+            "url": "https://www.semanticscholar.org/paper/5771af144ce1d4d783a0af70c190a74e5123d0a0",
+            "venue": "AAAI",
+            "year": 2020
+        },
+        {
+            "arxivId": "2003.08505",
+            "authors": [
+                {
+                    "authorId": "2059965503",
+                    "name": "Kevin Musgrave"
+                },
+                {
+                    "authorId": "50172592",
+                    "name": "Serge J. Belongie"
+                },
+                {
+                    "authorId": "38760573",
+                    "name": "Ser-Nam Lim"
+                }
+            ],
+            "doi": "10.1007/978-3-030-58595-2_41",
+            "intent": [
+                "result"
+            ],
+            "isInfluential": false,
+            "paperId": "3926c80eb33d12ba2838e0890c372431192f42a6",
+            "title": "A Metric Learning Reality Check",
+            "url": "https://www.semanticscholar.org/paper/3926c80eb33d12ba2838e0890c372431192f42a6",
+            "venue": "ECCV",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "51878608",
+                    "name": "E. Zisselman"
+                },
+                {
+                    "authorId": "3025260",
+                    "name": "Aviv Tamar"
+                }
+            ],
+            "doi": "10.1109/CVPR42600.2020.01401",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "af5b1a35271efd17ff3d5ddd152bacc96dff0e81",
+            "title": "Deep Residual Flow for Out of Distribution Detection",
+            "url": "https://www.semanticscholar.org/paper/af5b1a35271efd17ff3d5ddd152bacc96dff0e81",
+            "venue": "2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2020
+        },
+        {
+            "arxivId": "1908.04951",
+            "authors": [
+                {
+                    "authorId": "2087411522",
+                    "name": "Qing Yu"
+                },
+                {
+                    "authorId": "1712839",
+                    "name": "K. Aizawa"
+                }
+            ],
+            "doi": "10.1109/ICCV.2019.00961",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b9bd435b65d8214f1bcab9268ac2fce509cfffe6",
+            "title": "Unsupervised Out-of-Distribution Detection by Maximum Classifier Discrepancy",
+            "url": "https://www.semanticscholar.org/paper/b9bd435b65d8214f1bcab9268ac2fce509cfffe6",
+            "venue": "2019 IEEE/CVF International Conference on Computer Vision (ICCV)",
+            "year": 2019
+        },
+        {
+            "arxivId": "1906.02845",
+            "authors": [
+                {
+                    "authorId": "92095972",
+                    "name": "Jie Jessie Ren"
+                },
+                {
+                    "authorId": "35025299",
+                    "name": "Peter J. Liu"
+                },
+                {
+                    "authorId": "35105647",
+                    "name": "Emily Fertig"
+                },
+                {
+                    "authorId": "144108062",
+                    "name": "Jasper Snoek"
+                },
+                {
+                    "authorId": "48663822",
+                    "name": "R. Poplin"
+                },
+                {
+                    "authorId": "2446263",
+                    "name": "M. DePristo"
+                },
+                {
+                    "authorId": "2403637",
+                    "name": "Joshua V. Dillon"
+                },
+                {
+                    "authorId": "40627523",
+                    "name": "Balaji Lakshminarayanan"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "925182b91f51f8f2b747f7829e9d25ffc2729e5d",
+            "title": "Likelihood Ratios for Out-of-Distribution Detection",
+            "url": "https://www.semanticscholar.org/paper/925182b91f51f8f2b747f7829e9d25ffc2729e5d",
+            "venue": "NeurIPS",
+            "year": 2019
+        },
+        {
+            "arxivId": "1811.04110",
+            "authors": [
+                {
+                    "authorId": "24021418",
+                    "name": "A. Dhamija"
+                },
+                {
+                    "authorId": "38636666",
+                    "name": "Manuel G\u00fcnther"
+                },
+                {
+                    "authorId": "32163276",
+                    "name": "T. Boult"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "d98ec42c5bc64b06b5d6e259467528e0121ae69b",
+            "title": "Reducing Network Agnostophobia",
+            "url": "https://www.semanticscholar.org/paper/d98ec42c5bc64b06b5d6e259467528e0121ae69b",
+            "venue": "NeurIPS",
+            "year": 2018
+        },
+        {
+            "arxivId": "1807.03888",
+            "authors": [
+                {
+                    "authorId": "3436470",
+                    "name": "Kimin Lee"
+                },
+                {
+                    "authorId": "2208511",
+                    "name": "Kibok Lee"
+                },
+                {
+                    "authorId": "1697141",
+                    "name": "Honglak Lee"
+                },
+                {
+                    "authorId": "143720148",
+                    "name": "Jinwoo Shin"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d03ca175e2b2745126e792fdc31dfadae4c63afa",
+            "title": "A Simple Unified Framework for Detecting Out-of-Distribution Samples and Adversarial Attacks",
+            "url": "https://www.semanticscholar.org/paper/d03ca175e2b2745126e792fdc31dfadae4c63afa",
+            "venue": "NeurIPS",
+            "year": 2018
+        },
+        {
+            "arxivId": "1711.09325",
+            "authors": [
+                {
+                    "authorId": "3436470",
+                    "name": "Kimin Lee"
+                },
+                {
+                    "authorId": "1697141",
+                    "name": "Honglak Lee"
+                },
+                {
+                    "authorId": "2208511",
+                    "name": "Kibok Lee"
+                },
+                {
+                    "authorId": "143720148",
+                    "name": "Jinwoo Shin"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "36653f8705b56e39642bcd123494eb680cd1636b",
+            "title": "Training Confidence-calibrated Classifiers for Detecting Out-of-Distribution Samples",
+            "url": "https://www.semanticscholar.org/paper/36653f8705b56e39642bcd123494eb680cd1636b",
+            "venue": "ICLR",
+            "year": 2017
+        },
+        {
+            "arxivId": "1706.02690",
+            "authors": [
+                {
+                    "authorId": "3075943",
+                    "name": "Shiyu Liang"
+                },
+                {
+                    "authorId": "1527103472",
+                    "name": "Yixuan Li"
+                },
+                {
+                    "authorId": "143808204",
+                    "name": "R. Srikant"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "547c854985629cfa9404a5ba8ca29367b5f8c25f",
+            "title": "Enhancing The Reliability of Out-of-distribution Image Detection in Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/547c854985629cfa9404a5ba8ca29367b5f8c25f",
+            "venue": "ICLR",
+            "year": 2017
+        },
+        {
+            "arxivId": "1612.01474",
+            "authors": [
+                {
+                    "authorId": "40627523",
+                    "name": "Balaji Lakshminarayanan"
+                },
+                {
+                    "authorId": "1863250",
+                    "name": "A. Pritzel"
+                },
+                {
+                    "authorId": "1723876",
+                    "name": "C. Blundell"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "802168a81571dde28f5ddb94d84677bc007afa7b",
+            "title": "Simple and Scalable Predictive Uncertainty Estimation using Deep Ensembles",
+            "url": "https://www.semanticscholar.org/paper/802168a81571dde28f5ddb94d84677bc007afa7b",
+            "venue": "NIPS",
+            "year": 2016
+        },
+        {
+            "arxivId": "1610.02136",
+            "authors": [
+                {
+                    "authorId": "3422872",
+                    "name": "Dan Hendrycks"
+                },
+                {
+                    "authorId": "1700980",
+                    "name": "Kevin Gimpel"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "6ff2a434578ff2746b9283e45abf296887f48a2d",
+            "title": "A Baseline for Detecting Misclassified and Out-of-Distribution Examples in Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/6ff2a434578ff2746b9283e45abf296887f48a2d",
+            "venue": "ICLR",
+            "year": 2016
+        },
+        {
+            "arxivId": "1606.06565",
+            "authors": [
+                {
+                    "authorId": "2698777",
+                    "name": "Dario Amodei"
+                },
+                {
+                    "authorId": "37232298",
+                    "name": "C. Olah"
+                },
+                {
+                    "authorId": "5164568",
+                    "name": "J. Steinhardt"
+                },
+                {
+                    "authorId": "145791315",
+                    "name": "P. Christiano"
+                },
+                {
+                    "authorId": "47971768",
+                    "name": "John Schulman"
+                },
+                {
+                    "authorId": "30415265",
+                    "name": "Dandelion Man\u00e9"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e86f71ca2948d17b003a5f068db1ecb2b77827f7",
+            "title": "Concrete Problems in AI Safety",
+            "url": "https://www.semanticscholar.org/paper/e86f71ca2948d17b003a5f068db1ecb2b77827f7",
+            "venue": "ArXiv",
+            "year": 2016
+        },
+        {
+            "arxivId": "1506.03365",
+            "authors": [
+                {
+                    "authorId": "1807197",
+                    "name": "F. Yu"
+                },
+                {
+                    "authorId": "1591143181",
+                    "name": "Yinda Zhang"
+                },
+                {
+                    "authorId": "3340170",
+                    "name": "Shuran Song"
+                },
+                {
+                    "authorId": "2233674",
+                    "name": "Ari Seff"
+                },
+                {
+                    "authorId": "40599257",
+                    "name": "Jianxiong Xiao"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "4dcdae25a5e33682953f0853ee4cf7ca93be58a9",
+            "title": "LSUN: Construction of a Large-scale Image Dataset using Deep Learning with Humans in the Loop",
+            "url": "https://www.semanticscholar.org/paper/4dcdae25a5e33682953f0853ee4cf7ca93be58a9",
+            "venue": "ArXiv",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [],
+            "doi": "10.1007/978-3-031-14771-5",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d106abc2870d818e5c074fbc324e1310b18d8dd1",
+            "title": "Multimodal AI in Healthcare: A Paradigm Shift in Health Intelligence",
+            "url": "https://www.semanticscholar.org/paper/d106abc2870d818e5c074fbc324e1310b18d8dd1",
+            "venue": "Studies in Computational Intelligence",
+            "year": 2023
+        },
+        {
+            "arxivId": "1911.11132",
+            "authors": [
+                {
+                    "authorId": "3422872",
+                    "name": "Dan Hendrycks"
+                },
+                {
+                    "authorId": "104444594",
+                    "name": "Steven Basart"
+                },
+                {
+                    "authorId": "16787428",
+                    "name": "Mantas Mazeika"
+                },
+                {
+                    "authorId": "1380103052",
+                    "name": "Andy Zou"
+                },
+                {
+                    "authorId": "1850973",
+                    "name": "Mohammadreza Mostajabi"
+                },
+                {
+                    "authorId": "5164568",
+                    "name": "J. Steinhardt"
+                },
+                {
+                    "authorId": "143711382",
+                    "name": "D. Song"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "919441bd618c2aff89dfa5affdb62cf6e0c4e293",
+            "title": "Scaling Out-of-Distribution Detection for Real-World Settings",
+            "url": "https://www.semanticscholar.org/paper/919441bd618c2aff89dfa5affdb62cf6e0c4e293",
+            "venue": "ICML",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145636331",
+                    "name": "Thomas Liao"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "1bbf8e4af901a1ab9dffe47cc3e41b1e667ec255",
+            "title": "Are We Learning Yet? A Meta Review of Evaluation Failures Across Machine Learning",
+            "url": "https://www.semanticscholar.org/paper/1bbf8e4af901a1ab9dffe47cc3e41b1e667ec255",
+            "venue": "NeurIPS Datasets and Benchmarks",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2401258",
+                    "name": "Ya Le"
+                },
+                {
+                    "authorId": "3897285",
+                    "name": "Xuan S. Yang"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "384ce792cf2b2afbe001f2168bfe7d5e7804c736",
+            "title": "Tiny ImageNet Visual Recognition Challenge",
+            "url": "https://www.semanticscholar.org/paper/384ce792cf2b2afbe001f2168bfe7d5e7804c736",
+            "venue": "",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "34180232",
+                    "name": "Yuval Netzer"
+                },
+                {
+                    "authorId": "2156632012",
+                    "name": "Tao Wang"
+                },
+                {
+                    "authorId": "144638694",
+                    "name": "Adam Coates"
+                },
+                {
+                    "authorId": "1726358",
+                    "name": "A. Bissacco"
+                },
+                {
+                    "authorId": "144397975",
+                    "name": "Bo Wu"
+                },
+                {
+                    "authorId": "34699434",
+                    "name": "A. Ng"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "02227c94dd41fe0b439e050d377b0beb5d427cda",
+            "title": "Reading Digits in Natural Images with Unsupervised Feature Learning",
+            "url": "https://www.semanticscholar.org/paper/02227c94dd41fe0b439e050d377b0beb5d427cda",
+            "venue": "",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2064160",
+                    "name": "A. Krizhevsky"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "5d90f06bb70a0a3dced62413346235c02b1aa086",
+            "title": "Learning Multiple Layers of Features from Tiny Images",
+            "url": "https://www.semanticscholar.org/paper/5d90f06bb70a0a3dced62413346235c02b1aa086",
+            "venue": "",
+            "year": 2009
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Beyond AUROC & co. for evaluating out-of-distribution detection performance",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/a97426ca2bb03523a226a1ebde4efeb58851b2e7",
+    "venue": "2023 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)",
+    "year": 2023
+}

@@ -1,0 +1,988 @@
+{
+    "abstract": "The Frank-Wolfe algorithm is a popular method in structurally constrained machine learning applications, due to its fast per-iteration complexity. However, one major limitation of the method is a slow rate of convergence that is difficult to accelerate due to erratic, zig-zagging step directions, even asymptotically close to the solution. We view this as an artifact of discretization; that is to say, the Frank-Wolfe \\emph{flow}, which is its trajectory at asymptotically small step sizes, does not zig-zag, and reducing discretization error will go hand-in-hand in producing a more stabilized method, with better convergence properties. We propose two improvements: a multistep Frank-Wolfe method that directly applies optimized higher-order discretization schemes; and an LMO-averaging scheme with reduced discretization error, and whose local convergence rate over general convex sets accelerates from a rate of $O(1/k)$ to up to $O(1/k^{3/2})$.",
+    "arxivId": "2304.01432",
+    "authors": [
+        {
+            "authorId": "2111607206",
+            "name": "Zhaoyue Chen",
+            "url": "https://www.semanticscholar.org/author/2111607206"
+        },
+        {
+            "authorId": "2108935606",
+            "name": "Yifan Sun",
+            "url": "https://www.semanticscholar.org/author/2108935606"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": "2311.05313",
+            "authors": [
+                {
+                    "authorId": "145729210",
+                    "name": "S. Pokutta"
+                }
+            ],
+            "doi": "10.1365/s13291-023-00275-x",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "bf97c34d0ee0c1201aa31d75c354738cbe32f57c",
+            "title": "The Frank-Wolfe Algorithm: A Short Introduction",
+            "url": "https://www.semanticscholar.org/paper/bf97c34d0ee0c1201aa31d75c354738cbe32f57c",
+            "venue": "Jahresbericht der Deutschen Mathematiker-Vereinigung",
+            "year": 2023
+        }
+    ],
+    "corpusId": 257921810,
+    "doi": "10.48550/arXiv.2304.01432",
+    "fieldsOfStudy": [
+        "Computer Science",
+        "Mathematics"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": true,
+    "isPublisherLicensed": true,
+    "is_open_access": true,
+    "is_publisher_licensed": true,
+    "numCitedBy": 1,
+    "numCiting": 37,
+    "paperId": "185026f2627bcf1f09fa03b6066d73dbadbfe2da",
+    "references": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1591119505",
+                    "name": "Yilang Zhang"
+                },
+                {
+                    "authorId": "2145726951",
+                    "name": "Bingcong Li"
+                },
+                {
+                    "authorId": "144321300",
+                    "name": "G. Giannakis"
+                }
+            ],
+            "doi": "10.1109/ICASSP39728.2021.9414485",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "533d15900121b1af75f489be3ccbb8c2a6d2c8ae",
+            "title": "Accelerating Frank-Wolfe with Weighted Average Gradients",
+            "url": "https://www.semanticscholar.org/paper/533d15900121b1af75f489be3ccbb8c2a6d2c8ae",
+            "venue": "ICASSP 2021 - 2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+            "year": 2021
+        },
+        {
+            "arxivId": "2010.00848",
+            "authors": [
+                {
+                    "authorId": "3060709",
+                    "name": "F. Iutzeler"
+                },
+                {
+                    "authorId": "35080700",
+                    "name": "J. Malick"
+                }
+            ],
+            "doi": "10.1007/s11228-020-00561-1",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "1bbadd0830b0ce0966532204aafbd28cb11ac559",
+            "title": "Nonsmoothness in Machine Learning: Specific Structure, Proximal Identification, and Applications",
+            "url": "https://www.semanticscholar.org/paper/1bbadd0830b0ce0966532204aafbd28cb11ac559",
+            "venue": "Set-Valued and Variational Analysis",
+            "year": 2020
+        },
+        {
+            "arxivId": "2006.16142",
+            "authors": [
+                {
+                    "authorId": "46573184",
+                    "name": "Lijun Ding"
+                },
+                {
+                    "authorId": "2599803",
+                    "name": "Jicong Fan"
+                },
+                {
+                    "authorId": "2384128",
+                    "name": "Madeleine Udell"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "95c740e5ed4563fcde1ea402c527fb88001c3bff",
+            "title": "kFW: A Frank-Wolfe style algorithm with stronger subproblem oracles",
+            "url": "https://www.semanticscholar.org/paper/95c740e5ed4563fcde1ea402c527fb88001c3bff",
+            "venue": "ArXiv",
+            "year": 2020
+        },
+        {
+            "arxivId": "2006.11116",
+            "authors": [
+                {
+                    "authorId": "2145726951",
+                    "name": "Bingcong Li"
+                },
+                {
+                    "authorId": "3404264",
+                    "name": "M. Couti\u00f1o"
+                },
+                {
+                    "authorId": "144321300",
+                    "name": "G. Giannakis"
+                },
+                {
+                    "authorId": "143668698",
+                    "name": "G. Leus"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "result"
+            ],
+            "isInfluential": true,
+            "paperId": "03f9e082ba060701b741cfcc0b2697af133f4c6c",
+            "title": "How Does Momentum Help Frank Wolfe?",
+            "url": "https://www.semanticscholar.org/paper/03f9e082ba060701b741cfcc0b2697af133f4c6c",
+            "venue": "ArXiv",
+            "year": 2020
+        },
+        {
+            "arxivId": "2002.09718",
+            "authors": [
+                {
+                    "authorId": "2213925",
+                    "name": "Yifan Sun"
+                },
+                {
+                    "authorId": "144570279",
+                    "name": "F. Bach"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7293f2e05be59d04162b8a481ad22b1766477a81",
+            "title": "Safe Screening for the Generalized Conditional Gradient Method",
+            "url": "https://www.semanticscholar.org/paper/7293f2e05be59d04162b8a481ad22b1766477a81",
+            "venue": "ArXiv",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2213925",
+                    "name": "Yifan Sun"
+                },
+                {
+                    "authorId": "32366721",
+                    "name": "Halyun Jeong"
+                },
+                {
+                    "authorId": "3348081",
+                    "name": "J. Nutini"
+                },
+                {
+                    "authorId": "145610994",
+                    "name": "Mark W. Schmidt"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a0c314c20f4fe1540ad08a23969bdc5e0371167f",
+            "title": "Are we there yet? Manifold identification of gradient-related proximal methods",
+            "url": "https://www.semanticscholar.org/paper/a0c314c20f4fe1540ad08a23969bdc5e0371167f",
+            "venue": "AISTATS",
+            "year": 2019
+        },
+        {
+            "arxivId": "1902.03694",
+            "authors": [
+                {
+                    "authorId": "144861199",
+                    "name": "Bin Shi"
+                },
+                {
+                    "authorId": "145697585",
+                    "name": "S. Du"
+                },
+                {
+                    "authorId": "33747720",
+                    "name": "Weijie J. Su"
+                },
+                {
+                    "authorId": "1694621",
+                    "name": "Michael I. Jordan"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "71c6301055ab7c55f8c7667c1bebdc087f2d1318",
+            "title": "Acceleration via Symplectic Discretization of High-Resolution Differential Equations",
+            "url": "https://www.semanticscholar.org/paper/71c6301055ab7c55f8c7667c1bebdc087f2d1318",
+            "venue": "NeurIPS",
+            "year": 2019
+        },
+        {
+            "arxivId": "1805.00521",
+            "authors": [
+                {
+                    "authorId": "50561307",
+                    "name": "J. Zhang"
+                },
+                {
+                    "authorId": "2706423",
+                    "name": "Aryan Mokhtari"
+                },
+                {
+                    "authorId": "3072326",
+                    "name": "S. Sra"
+                },
+                {
+                    "authorId": "1688304",
+                    "name": "A. Jadbabaie"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "3ec64420c0c65156938ccab5aeb56f910fcd602b",
+            "title": "Direct Runge-Kutta Discretization Achieves Acceleration",
+            "url": "https://www.semanticscholar.org/paper/3ec64420c0c65156938ccab5aeb56f910fcd602b",
+            "venue": "NeurIPS",
+            "year": 2018
+        },
+        {
+            "arxivId": "1802.02554",
+            "authors": [
+                {
+                    "authorId": "7449825",
+                    "name": "C. Poon"
+                },
+                {
+                    "authorId": "40657911",
+                    "name": "Jingwei Liang"
+                },
+                {
+                    "authorId": "144193542",
+                    "name": "C. Schoenlieb"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "73dbb9894437c82a47519cf630cce360ce02951c",
+            "title": "Local Convergence Properties of SAGA/Prox-SVRG and Acceleration",
+            "url": "https://www.semanticscholar.org/paper/73dbb9894437c82a47519cf630cce360ce02951c",
+            "venue": "ICML",
+            "year": 2018
+        },
+        {
+            "arxivId": "1712.08859",
+            "authors": [
+                {
+                    "authorId": "3348081",
+                    "name": "J. Nutini"
+                },
+                {
+                    "authorId": "3266173",
+                    "name": "I. Laradji"
+                },
+                {
+                    "authorId": "145610994",
+                    "name": "Mark W. Schmidt"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "aac612fd5661eb405705b80ff39974e019b3e16b",
+            "title": "Let's Make Block Coordinate Descent Converge Faster: Faster Greedy Rules, Message-Passing, Active-Set Complexity, and Superlinear Convergence",
+            "url": "https://www.semanticscholar.org/paper/aac612fd5661eb405705b80ff39974e019b3e16b",
+            "venue": "",
+            "year": 2017
+        },
+        {
+            "arxivId": "1712.03577",
+            "authors": [
+                {
+                    "authorId": "3348081",
+                    "name": "J. Nutini"
+                },
+                {
+                    "authorId": "145610994",
+                    "name": "Mark W. Schmidt"
+                },
+                {
+                    "authorId": "143987865",
+                    "name": "W. Hare"
+                }
+            ],
+            "doi": "10.1007/s11590-018-1325-z",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ec9f6912cd0a9d4df8361932b2ce39be7f1f8a62",
+            "title": "\u201cActive-set complexity\u201d of proximal gradient: How long does it take to find the sparsity pattern?",
+            "url": "https://www.semanticscholar.org/paper/ec9f6912cd0a9d4df8361932b2ce39be7f1f8a62",
+            "venue": "Optimization Letters",
+            "year": 2017
+        },
+        {
+            "arxivId": "1712.02485",
+            "authors": [
+                {
+                    "authorId": "9727549",
+                    "name": "Jelena Diakonikolas"
+                },
+                {
+                    "authorId": "1689494",
+                    "name": "L. Orecchia"
+                }
+            ],
+            "doi": "10.1137/18M1172314",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "3fc1ec36252e3e3999a351c6b9793adc825f7c28",
+            "title": "The Approximate Duality Gap Technique: A Unified Theory of First-Order Methods",
+            "url": "https://www.semanticscholar.org/paper/3fc1ec36252e3e3999a351c6b9793adc825f7c28",
+            "venue": "SIAM J. Optim.",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "40657911",
+                    "name": "Jingwei Liang"
+                },
+                {
+                    "authorId": "144812306",
+                    "name": "M. Fadili"
+                },
+                {
+                    "authorId": "145481009",
+                    "name": "G. Peyr\u00e9"
+                }
+            ],
+            "doi": "10.1007/s10957-017-1061-z",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8e1ffa8931fa084cb4e2c400a1c6659d1d93b87b",
+            "title": "Local Convergence Properties of Douglas\u2013Rachford and Alternating Direction Method of Multipliers",
+            "url": "https://www.semanticscholar.org/paper/8e1ffa8931fa084cb4e2c400a1c6659d1d93b87b",
+            "venue": "Journal of Optimization Theory and Applications",
+            "year": 2017
+        },
+        {
+            "arxivId": "1611.05780",
+            "authors": [
+                {
+                    "authorId": "3147064",
+                    "name": "Eug\u00e8ne Ndiaye"
+                },
+                {
+                    "authorId": "2442024",
+                    "name": "Olivier Fercoq"
+                },
+                {
+                    "authorId": "1797840",
+                    "name": "Alexandre Gramfort"
+                },
+                {
+                    "authorId": "143627573",
+                    "name": "J. Salmon"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c3f7842b05298a6d53fae724c39705c1e5ff098c",
+            "title": "Gap Safe screening rules for sparsity enforcing penalties",
+            "url": "https://www.semanticscholar.org/paper/c3f7842b05298a6d53fae724c39705c1e5ff098c",
+            "venue": "J. Mach. Learn. Res.",
+            "year": 2016
+        },
+        {
+            "arxivId": "1511.05932",
+            "authors": [
+                {
+                    "authorId": "1388317459",
+                    "name": "Simon Lacoste-Julien"
+                },
+                {
+                    "authorId": "2456863",
+                    "name": "Martin Jaggi"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "8b56449fa9aeadcf86181697e9ec2269419d8817",
+            "title": "On the Global Linear Convergence of Frank-Wolfe Optimization Variants",
+            "url": "https://www.semanticscholar.org/paper/8b56449fa9aeadcf86181697e9ec2269419d8817",
+            "venue": "NIPS",
+            "year": 2015
+        },
+        {
+            "arxivId": "1511.02204",
+            "authors": [
+                {
+                    "authorId": "1771659",
+                    "name": "R. Freund"
+                },
+                {
+                    "authorId": "3025797",
+                    "name": "Paul Grigas"
+                },
+                {
+                    "authorId": "48912652",
+                    "name": "R. Mazumder"
+                }
+            ],
+            "doi": "10.1137/15M104726X",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "df281cf43b070b4a53ad893ae94eb58e0b74c2ad",
+            "title": "An Extended Frank-Wolfe Method with \"In-Face\" Directions, and Its Application to Low-Rank Matrix Completion",
+            "url": "https://www.semanticscholar.org/paper/df281cf43b070b4a53ad893ae94eb58e0b74c2ad",
+            "venue": "SIAM J. Optim.",
+            "year": 2015
+        },
+        {
+            "arxivId": "1511.02124",
+            "authors": [
+                {
+                    "authorId": "145253891",
+                    "name": "R. G. Krishnan"
+                },
+                {
+                    "authorId": "1388317459",
+                    "name": "Simon Lacoste-Julien"
+                },
+                {
+                    "authorId": "1746662",
+                    "name": "D. Sontag"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ccf9b939330f73d7f87d3d606349c3352bf2713d",
+            "title": "Barrier Frank-Wolfe for Marginal Inference",
+            "url": "https://www.semanticscholar.org/paper/ccf9b939330f73d7f87d3d606349c3352bf2713d",
+            "venue": "NIPS",
+            "year": 2015
+        },
+        {
+            "arxivId": "1503.01243",
+            "authors": [
+                {
+                    "authorId": "33747720",
+                    "name": "Weijie J. Su"
+                },
+                {
+                    "authorId": "1843103",
+                    "name": "Stephen P. Boyd"
+                },
+                {
+                    "authorId": "2006869",
+                    "name": "E. Cand\u00e8s"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "6a17e23fd63f1bccca7e0e602152ce31170e5945",
+            "title": "A Differential Equation for Modeling Nesterov's Accelerated Gradient Method: Theory and Insights",
+            "url": "https://www.semanticscholar.org/paper/6a17e23fd63f1bccca7e0e602152ce31170e5945",
+            "venue": "J. Mach. Learn. Res.",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2319608",
+                    "name": "Armand Joulin"
+                },
+                {
+                    "authorId": "3355264",
+                    "name": "K. Tang"
+                },
+                {
+                    "authorId": "48004138",
+                    "name": "Li Fei-Fei"
+                }
+            ],
+            "doi": "10.1007/978-3-319-10599-4_17",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "6b1ac8e438041ac02cc8fab5762ca069c386f473",
+            "title": "Efficient Image and Video Co-localization with Frank-Wolfe Algorithm",
+            "url": "https://www.semanticscholar.org/paper/6b1ac8e438041ac02cc8fab5762ca069c386f473",
+            "venue": "ECCV",
+            "year": 2014
+        },
+        {
+            "arxivId": "1407.5611",
+            "authors": [
+                {
+                    "authorId": "40657911",
+                    "name": "Jingwei Liang"
+                },
+                {
+                    "authorId": "144812306",
+                    "name": "M. Fadili"
+                },
+                {
+                    "authorId": "145481009",
+                    "name": "G. Peyr\u00e9"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9e91b52f68dccc5509668f204813d3441fe3f7f6",
+            "title": "Local Linear Convergence of Forward-Backward under Partial Smoothness",
+            "url": "https://www.semanticscholar.org/paper/9e91b52f68dccc5509668f204813d3441fe3f7f6",
+            "venue": "NIPS",
+            "year": 2014
+        },
+        {
+            "arxivId": "1406.1305",
+            "authors": [
+                {
+                    "authorId": "52292717",
+                    "name": "D. Garber"
+                },
+                {
+                    "authorId": "34840427",
+                    "name": "Elad Hazan"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "760a2ef68eb08aad617e4f9d569684d020e48427",
+            "title": "Faster Rates for the Frank-Wolfe Method over Strongly-Convex Sets",
+            "url": "https://www.semanticscholar.org/paper/760a2ef68eb08aad617e4f9d569684d020e48427",
+            "venue": "ICML",
+            "year": 2014
+        },
+        {
+            "arxivId": "1307.0873",
+            "authors": [
+                {
+                    "authorId": "1771659",
+                    "name": "R. Freund"
+                },
+                {
+                    "authorId": "3025797",
+                    "name": "Paul Grigas"
+                }
+            ],
+            "doi": "10.1007/s10107-014-0841-6",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "00a9806b5d521bbdc31ba602220289f9d3021362",
+            "title": "New analysis and results for the Frank\u2013Wolfe method",
+            "url": "https://www.semanticscholar.org/paper/00a9806b5d521bbdc31ba602220289f9d3021362",
+            "venue": "Mathematical Programming",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2456863",
+                    "name": "Martin Jaggi"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology",
+                "result"
+            ],
+            "isInfluential": true,
+            "paperId": "961eabeaebd7035cd7668c9917fa9c39462e1113",
+            "title": "Revisiting Frank-Wolfe: Projection-Free Sparse Convex Optimization",
+            "url": "https://www.semanticscholar.org/paper/961eabeaebd7035cd7668c9917fa9c39462e1113",
+            "venue": "ICML",
+            "year": 2013
+        },
+        {
+            "arxivId": "1207.4747",
+            "authors": [
+                {
+                    "authorId": "2289357465",
+                    "name": "Simon Lacoste-Julien"
+                },
+                {
+                    "authorId": "2289415536",
+                    "name": "Martin Jaggi"
+                },
+                {
+                    "authorId": "2289630750",
+                    "name": "Mark Schmidt"
+                },
+                {
+                    "authorId": "7344844",
+                    "name": "Patrick A. Pletscher"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "result",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "b832e1ce81132533c01c2170a88009673d902fa9",
+            "title": "Block-Coordinate Frank-Wolfe Optimization for Structural SVMs",
+            "url": "https://www.semanticscholar.org/paper/b832e1ce81132533c01c2170a88009673d902fa9",
+            "venue": "ICML",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1735587",
+                    "name": "R. Sanfelice"
+                },
+                {
+                    "authorId": "39854944",
+                    "name": "R. Goebel"
+                },
+                {
+                    "authorId": "144648193",
+                    "name": "A. Teel"
+                }
+            ],
+            "doi": "10.1051/COCV:2008008",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "451380eb887fef5e09168259110e6e47bc4cb9b4",
+            "title": "GENERALIZED SOLUTIONS TO HYBRID DYNAMICAL SYSTEMS",
+            "url": "https://www.semanticscholar.org/paper/451380eb887fef5e09168259110e6e47bc4cb9b4",
+            "venue": "",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1743797",
+                    "name": "Isabelle M Guyon"
+                },
+                {
+                    "authorId": "2317393",
+                    "name": "S. Gunn"
+                },
+                {
+                    "authorId": "1399356737",
+                    "name": "Asa Ben-Hur"
+                },
+                {
+                    "authorId": "2088846",
+                    "name": "G. Dror"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e1bfd52ce6e38e3e542df2b977ee2c1481f8782a",
+            "title": "Result Analysis of the NIPS 2003 Feature Selection Challenge",
+            "url": "https://www.semanticscholar.org/paper/e1bfd52ce6e38e3e542df2b977ee2c1481f8782a",
+            "venue": "NIPS",
+            "year": 2004
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143987865",
+                    "name": "W. Hare"
+                },
+                {
+                    "authorId": "32238160",
+                    "name": "A. Lewis"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "aa44d485917929e559b277cee8559b944c4bf950",
+            "title": "Identifying active constraints via partial smoothness and prox-regularity",
+            "url": "https://www.semanticscholar.org/paper/aa44d485917929e559b277cee8559b944c4bf950",
+            "venue": "",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2256815",
+                    "name": "J. Gu\u00e9lat"
+                },
+                {
+                    "authorId": "144683424",
+                    "name": "P. Marcotte"
+                }
+            ],
+            "doi": "10.1007/BF01589445",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "a7cd90abfc891d775d6fb889641da8fcfe4825b1",
+            "title": "Some comments on Wolfe's \u2018away step\u2019",
+            "url": "https://www.semanticscholar.org/paper/a7cd90abfc891d775d6fb889641da8fcfe4825b1",
+            "venue": "Math. Program.",
+            "year": 1986
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144581556",
+                    "name": "J. Dunn"
+                },
+                {
+                    "authorId": "47419399",
+                    "name": "P. Lax"
+                }
+            ],
+            "doi": "10.1016/0022-247X(78)90137-3",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "80216d7ae014fe9325857f4f2bb541230ae7afee",
+            "title": "Conditional gradient algorithms with open loop step size rules",
+            "url": "https://www.semanticscholar.org/paper/80216d7ae014fe9325857f4f2bb541230ae7afee",
+            "venue": "",
+            "year": 1978
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "41069233",
+                    "name": "M. Canon"
+                },
+                {
+                    "authorId": "24133167",
+                    "name": "C. Cullum"
+                }
+            ],
+            "doi": "10.1137/0306032",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "5f69d232da18fa4aa82182fca398e415c9c43d01",
+            "title": "A Tight Upper Bound on the Rate of Convergence of Frank-Wolfe Algorithm",
+            "url": "https://www.semanticscholar.org/paper/5f69d232da18fa4aa82182fca398e415c9c43d01",
+            "venue": "",
+            "year": 1968
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "35138813",
+                    "name": "M. Frank"
+                },
+                {
+                    "authorId": "145820374",
+                    "name": "P. Wolfe"
+                }
+            ],
+            "doi": "10.1002/NAV.3800030109",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "37ae0ead03605de4c72f6d77af19b9001c0937f9",
+            "title": "An algorithm for quadratic programming",
+            "url": "https://www.semanticscholar.org/paper/37ae0ead03605de4c72f6d77af19b9001c0937f9",
+            "venue": "",
+            "year": 1956
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2738621",
+                    "name": "Jacob D. Abernethy"
+                },
+                {
+                    "authorId": "2757901",
+                    "name": "Jun-Kun Wang"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "f81dd1680b2b6101256a5de6ac1f5df3d5604559",
+            "title": "On Frank-Wolfe and Equilibrium Computation",
+            "url": "https://www.semanticscholar.org/paper/f81dd1680b2b6101256a5de6ac1f5df3d5604559",
+            "venue": "NIPS",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "68974292",
+                    "name": "M. Ja\u0107imovi\u0107"
+                },
+                {
+                    "authorId": "103073930",
+                    "name": "A. Geary"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "c658566495dfa517d026f21d338c03a35591e3f4",
+            "title": "A Continuous Conditional Gradient Method",
+            "url": "https://www.semanticscholar.org/paper/c658566495dfa517d026f21d338c03a35591e3f4",
+            "venue": "",
+            "year": 1999
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2243494524",
+                    "name": "Jean-Philippe Vial"
+                }
+            ],
+            "doi": "10.1016/0304-4068(82)90026-X",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "15ce8729ec8ed739702cef4855d4217bab0024aa",
+            "title": "Strong Convexity of Sets and Functions",
+            "url": "https://www.semanticscholar.org/paper/15ce8729ec8ed739702cef4855d4217bab0024aa",
+            "venue": "",
+            "year": 1982
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "102842648",
+                    "name": "E. Levitin"
+                },
+                {
+                    "authorId": "1703847",
+                    "name": "Boris Polyak"
+                }
+            ],
+            "doi": "10.1016/0041-5553(66)90114-5",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "5c8b18d2234db5e38887a3224f807ca029de67d3",
+            "title": "Constrained minimization methods",
+            "url": "https://www.semanticscholar.org/paper/5c8b18d2234db5e38887a3224f807ca029de67d3",
+            "venue": "",
+            "year": 1966
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Mathematics",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        },
+        {
+            "category": "Mathematics",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Reducing Discretization Error in the Frank-Wolfe Method",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/185026f2627bcf1f09fa03b6066d73dbadbfe2da",
+    "venue": "International Conference on Artificial Intelligence and Statistics",
+    "year": 2023
+}

@@ -1,0 +1,866 @@
+{
+    "abstract": "An artificial intelligence-augmented Streamline Upwind/Petrov-Galerkin finite element scheme (AiStab-FEM) is proposed for solving singularly perturbed partial differential equations. In particular, an artificial neural network framework is proposed to predict optimal values for the stabilization parameter. The neural network is trained by minimizing a physics-informed cost function, where the equation's mesh and physical parameters are used as input features. Further, the predicted stabilization parameter is normalized with the gradient of the Galerkin solution to treat the boundary/interior layer region adequately. The proposed approach suppresses the undershoots and overshoots in the stabilized finite element solution and outperforms the existing neural network-based partial differential equation solvers such as Physics-Informed Neural Networks and Variational Neural Networks.",
+    "arxivId": "2211.13418",
+    "authors": [
+        {
+            "authorId": "48293618",
+            "name": "Sangeeta Yadav",
+            "url": "https://www.semanticscholar.org/author/48293618"
+        },
+        {
+            "authorId": "145356811",
+            "name": "Sashikumaar Ganesan",
+            "url": "https://www.semanticscholar.org/author/145356811"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [],
+    "corpusId": 254017555,
+    "doi": "10.2139/ssrn.4353564",
+    "fieldsOfStudy": [
+        "Mathematics"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": true,
+    "isPublisherLicensed": true,
+    "is_open_access": true,
+    "is_publisher_licensed": true,
+    "numCitedBy": 0,
+    "numCiting": 34,
+    "paperId": "53fd642d465cfd33958abaf98c439158e902dd18",
+    "references": [
+        {
+            "arxivId": "2111.00260",
+            "authors": [
+                {
+                    "authorId": "1396901170",
+                    "name": "T. Tassi"
+                },
+                {
+                    "authorId": "48531731",
+                    "name": "Alberto Zingaro"
+                },
+                {
+                    "authorId": "2924130",
+                    "name": "L. Dede\u2019"
+                }
+            ],
+            "doi": "10.3934/mine.2023032",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "1c4904446200ad085d1e9a0bcffd2e558e33f56a",
+            "title": "A Machine Learning approach to enhance the SUPG stabilization method for advection-dominated differential problems",
+            "url": "https://www.semanticscholar.org/paper/1c4904446200ad085d1e9a0bcffd2e558e33f56a",
+            "venue": "Mathematics in Engineering",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2761762",
+                    "name": "P. Knobloch"
+                },
+                {
+                    "authorId": "2075948989",
+                    "name": "P. Luk\u00e1\u0161"
+                },
+                {
+                    "authorId": "3106615",
+                    "name": "P. Sol\u00edn"
+                }
+            ],
+            "doi": "10.1016/J.CAM.2021.113527",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8d86d411b9488f75cf64e06a9942f3504c208c4c",
+            "title": "Importance of parameter optimization in a nonlinear stabilized method adding a crosswind diffusion",
+            "url": "https://www.semanticscholar.org/paper/8d86d411b9488f75cf64e06a9942f3504c208c4c",
+            "venue": "J. Comput. Appl. Math.",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "104140852",
+                    "name": "Niccol\u00f2 Discacciati"
+                },
+                {
+                    "authorId": "1721985",
+                    "name": "J. Hesthaven"
+                },
+                {
+                    "authorId": "35031532",
+                    "name": "Deep Ray"
+                }
+            ],
+            "doi": "10.1016/j.jcp.2020.109304",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "fa76d71fc04b411ebede4fb2f65b9f73db3c7360",
+            "title": "Controlling oscillations in high-order Discontinuous Galerkin schemes using artificial viscosity tuned by neural networks",
+            "url": "https://www.semanticscholar.org/paper/fa76d71fc04b411ebede4fb2f65b9f73db3c7360",
+            "venue": "J. Comput. Phys.",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2005917536",
+                    "name": "Lukas Schwander"
+                },
+                {
+                    "authorId": "35031532",
+                    "name": "Deep Ray"
+                },
+                {
+                    "authorId": "1721985",
+                    "name": "J. Hesthaven"
+                }
+            ],
+            "doi": "10.1016/j.jcp.2021.110144",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "918934176c0f36224f6f2a93503de8c01cd18333",
+            "title": "Controlling oscillations in spectral methods by local artificial viscosity governed by neural networks",
+            "url": "https://www.semanticscholar.org/paper/918934176c0f36224f6f2a93503de8c01cd18333",
+            "venue": "J. Comput. Phys.",
+            "year": 2020
+        },
+        {
+            "arxivId": "2003.05385",
+            "authors": [
+                {
+                    "authorId": "19293246",
+                    "name": "E. Kharazmi"
+                },
+                {
+                    "authorId": "150358909",
+                    "name": "Zhongqiang Zhang"
+                },
+                {
+                    "authorId": "1720124",
+                    "name": "G. Karniadakis"
+                }
+            ],
+            "doi": "10.1016/j.cma.2020.113547",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "658c43458589b785da6250cea9e377df86c21d61",
+            "title": "hp-VPINNs: Variational Physics-Informed Neural Networks With Domain Decomposition",
+            "url": "https://www.semanticscholar.org/paper/658c43458589b785da6250cea9e377df86c21d61",
+            "venue": "Computer Methods in Applied Mechanics and Engineering",
+            "year": 2020
+        },
+        {
+            "arxivId": "1912.07443",
+            "authors": [
+                {
+                    "authorId": "1403734543",
+                    "name": "Reza Khodayi-mehr"
+                },
+                {
+                    "authorId": "1764546",
+                    "name": "M. Zavlanos"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "cd9c4df7ff333092b787046b8059edb5936e78dd",
+            "title": "VarNet: Variational Neural Networks for the Solution of Partial Differential Equations",
+            "url": "https://www.semanticscholar.org/paper/cd9c4df7ff333092b787046b8059edb5936e78dd",
+            "venue": "L4DC",
+            "year": 2019
+        },
+        {
+            "arxivId": "1912.00873",
+            "authors": [
+                {
+                    "authorId": "19293246",
+                    "name": "E. Kharazmi"
+                },
+                {
+                    "authorId": "2044319822",
+                    "name": "Z. Zhang"
+                },
+                {
+                    "authorId": "1720124",
+                    "name": "G. Karniadakis"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d483f6ecc4685767344822d9e0f03c82b68531ba",
+            "title": "Variational Physics-Informed Neural Networks For Solving Partial Differential Equations",
+            "url": "https://www.semanticscholar.org/paper/d483f6ecc4685767344822d9e0f03c82b68531ba",
+            "venue": "ArXiv",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "35031532",
+                    "name": "Deep Ray"
+                },
+                {
+                    "authorId": "1721985",
+                    "name": "J. Hesthaven"
+                }
+            ],
+            "doi": "10.1016/J.JCP.2019.07.043",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "e2253c8d66e37d7efd7888a598c19f9d422e866e",
+            "title": "Detecting troubled-cells on two-dimensional unstructured grids using a neural network",
+            "url": "https://www.semanticscholar.org/paper/e2253c8d66e37d7efd7888a598c19f9d422e866e",
+            "venue": "J. Comput. Phys.",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2761762",
+                    "name": "P. Knobloch"
+                },
+                {
+                    "authorId": "2075948989",
+                    "name": "P. Luk\u00e1\u0161"
+                },
+                {
+                    "authorId": "3106615",
+                    "name": "P. Sol\u00edn"
+                }
+            ],
+            "doi": "10.1007/S10444-019-09662-4",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c9526aa11d2335684985d08d02130a95a65b7c82",
+            "title": "On error indicators for optimizing parameters in stabilized methods",
+            "url": "https://www.semanticscholar.org/paper/c9526aa11d2335684985d08d02130a95a65b7c82",
+            "venue": "Adv. Comput. Math.",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2116076160",
+                    "name": "Richen Li"
+                },
+                {
+                    "authorId": "144962591",
+                    "name": "Qingbiao Wu"
+                },
+                {
+                    "authorId": "3251698",
+                    "name": "Shengfeng Zhu"
+                }
+            ],
+            "doi": "10.1016/J.JCP.2019.02.051",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "05f0e4ec7ff6b1706b6ff3079f229d1c6de518c4",
+            "title": "Proper orthogonal decomposition with SUPG-stabilized isogeometric analysis for reduced order modelling of unsteady convection-dominated convection-diffusion-reaction problems",
+            "url": "https://www.semanticscholar.org/paper/05f0e4ec7ff6b1706b6ff3079f229d1c6de518c4",
+            "venue": "J. Comput. Phys.",
+            "year": 2019
+        },
+        {
+            "arxivId": "1903.03040",
+            "authors": [
+                {
+                    "authorId": "143662496",
+                    "name": "K. Lye"
+                },
+                {
+                    "authorId": "1767117",
+                    "name": "Siddhartha Mishra"
+                },
+                {
+                    "authorId": "35031532",
+                    "name": "Deep Ray"
+                }
+            ],
+            "doi": "10.1016/j.jcp.2020.109339",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "4fdd6c45c821eb03f2278a56c99fe72d9eb29661",
+            "title": "Deep learning observables in computational fluid dynamics",
+            "url": "https://www.semanticscholar.org/paper/4fdd6c45c821eb03f2278a56c99fe72d9eb29661",
+            "venue": "J. Comput. Phys.",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145401977",
+                    "name": "M. Raissi"
+                },
+                {
+                    "authorId": "3410970",
+                    "name": "P. Perdikaris"
+                },
+                {
+                    "authorId": "1720124",
+                    "name": "G. Karniadakis"
+                }
+            ],
+            "doi": "10.1016/j.jcp.2018.10.045",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "d86084808994ac54ef4840ae65295f3c0ec4decd",
+            "title": "Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations",
+            "url": "https://www.semanticscholar.org/paper/d86084808994ac54ef4840ae65295f3c0ec4decd",
+            "venue": "J. Comput. Phys.",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "35031532",
+                    "name": "Deep Ray"
+                },
+                {
+                    "authorId": "1721985",
+                    "name": "J. Hesthaven"
+                }
+            ],
+            "doi": "10.1016/j.jcp.2018.04.029",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "2f8af28a213d614ec3b7f7d3f407095d838c944c",
+            "title": "An artificial neural network as a troubled-cell indicator",
+            "url": "https://www.semanticscholar.org/paper/2f8af28a213d614ec3b7f7d3f407095d838c944c",
+            "venue": "J. Comput. Phys.",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2155521752",
+                    "name": "Jian Yu"
+                },
+                {
+                    "authorId": "1721985",
+                    "name": "J. Hesthaven"
+                },
+                {
+                    "authorId": "145071037",
+                    "name": "Chao Yan"
+                }
+            ],
+            "doi": "10.1016/j.compfluid.2022.105592",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "2942672a338801130bf96af011ce89fe88be7810",
+            "title": "A data-driven shock capturing approach for discontinuous Galekin methods",
+            "url": "https://www.semanticscholar.org/paper/2942672a338801130bf96af011ce89fe88be7810",
+            "venue": "Computers &amp; Fluids",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3430659",
+                    "name": "M. H. Veiga"
+                },
+                {
+                    "authorId": "1808457",
+                    "name": "R. Abgrall"
+                }
+            ],
+            "doi": "10.5167/UZH-168538",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "9c6f11df861e8f647ca5ff4e263738fee98627e1",
+            "title": "Towards a general stabilisation method for conservation laws using a multilayer Perceptron neural network: 1D scalar and system of equations",
+            "url": "https://www.semanticscholar.org/paper/9c6f11df861e8f647ca5ff4e263738fee98627e1",
+            "venue": "",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1721985",
+                    "name": "J. Hesthaven"
+                }
+            ],
+            "doi": "10.1137/1.9781611975109",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "ca46c28ef834d57af1a0ce1d6393cca1c8395acb",
+            "title": "Numerical Methods for Conservation Laws: From Analysis to Algorithms",
+            "url": "https://www.semanticscholar.org/paper/ca46c28ef834d57af1a0ce1d6393cca1c8395acb",
+            "venue": "",
+            "year": 2017
+        },
+        {
+            "arxivId": "1711.10561",
+            "authors": [
+                {
+                    "authorId": "145401977",
+                    "name": "M. Raissi"
+                },
+                {
+                    "authorId": "3410970",
+                    "name": "P. Perdikaris"
+                },
+                {
+                    "authorId": "1720124",
+                    "name": "G. Karniadakis"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "fa352e8e4d9ec2f4b66965dd9cea75167950152a",
+            "title": "Physics Informed Deep Learning (Part I): Data-driven Solutions of Nonlinear Partial Differential Equations",
+            "url": "https://www.semanticscholar.org/paper/fa352e8e4d9ec2f4b66965dd9cea75167950152a",
+            "venue": "ArXiv",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145356811",
+                    "name": "Sashikumaar Ganesan"
+                },
+                {
+                    "authorId": "2227504",
+                    "name": "L. Tobiska"
+                }
+            ],
+            "doi": "10.1017/9781108235013",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "87e8ce3b782610e532d0df6dce133e8767f65bae",
+            "title": "Finite Elements: Theory and Algorithms",
+            "url": "https://www.semanticscholar.org/paper/87e8ce3b782610e532d0df6dce133e8767f65bae",
+            "venue": "",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "50114640",
+                    "name": "Faranak Behzadi"
+                },
+                {
+                    "authorId": "102945388",
+                    "name": "J. Newman"
+                }
+            ],
+            "doi": "10.1016/j.procs.2016.05.476",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "08c4014dc492017b13659c605cbea3715021e23d",
+            "title": "A Semi-Discrete SUPG Method for Contaminant Transport in Shallow Water Models",
+            "url": "https://www.semanticscholar.org/paper/08c4014dc492017b13659c605cbea3715021e23d",
+            "venue": "ICCS",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "4508788",
+                    "name": "S. Giere"
+                },
+                {
+                    "authorId": "1699295",
+                    "name": "T. Iliescu"
+                },
+                {
+                    "authorId": "50752696",
+                    "name": "V. John"
+                },
+                {
+                    "authorId": "145449882",
+                    "name": "D. Wells"
+                }
+            ],
+            "doi": "10.1016/J.CMA.2015.01.020",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "44579e841c0ec3d2b1001e52c3f29b873293ea67",
+            "title": "SUPG reduced order models for convection-dominated convection\u2013diffusion\u2013reaction equations",
+            "url": "https://www.semanticscholar.org/paper/44579e841c0ec3d2b1001e52c3f29b873293ea67",
+            "venue": "",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1727283",
+                    "name": "J. D. Frutos"
+                },
+                {
+                    "authorId": "1402918322",
+                    "name": "B. Garc\u00eda-Archilla"
+                },
+                {
+                    "authorId": "50752696",
+                    "name": "V. John"
+                },
+                {
+                    "authorId": "145387886",
+                    "name": "J. Novo"
+                }
+            ],
+            "doi": "10.1016/J.CMA.2014.01.022",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "6dc0e42dc70103f8863f3f2f049bb901a3f315d6",
+            "title": "An adaptive SUPG method for evolutionary convection\u2013diffusion equations",
+            "url": "https://www.semanticscholar.org/paper/6dc0e42dc70103f8863f3f2f049bb901a3f315d6",
+            "venue": "",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145356811",
+                    "name": "Sashikumaar Ganesan"
+                }
+            ],
+            "doi": "10.1051/M2AN/2012012",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "fc23b37bf9aa972a71fcfc9299f12c60cd15dbca",
+            "title": "An operator-splitting Galerkin/SUPG finite element method for population balance equations : stability and convergence",
+            "url": "https://www.semanticscholar.org/paper/fc23b37bf9aa972a71fcfc9299f12c60cd15dbca",
+            "venue": "",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "50752696",
+                    "name": "V. John"
+                },
+                {
+                    "authorId": "2761762",
+                    "name": "P. Knobloch"
+                },
+                {
+                    "authorId": "3468990",
+                    "name": "Ulrich Wilbrandt"
+                }
+            ],
+            "doi": "10.1016/J.CMA.2011.04.016",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "e2aa77b28b0bfc09d49ee097e983abfb4443d2fa",
+            "title": "A posteriori optimization of parameters in stabilized methods for convection-diffusion problems - Part II",
+            "url": "https://www.semanticscholar.org/paper/e2aa77b28b0bfc09d49ee097e983abfb4443d2fa",
+            "venue": "J. Comput. Appl. Math.",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "50752696",
+                    "name": "V. John"
+                },
+                {
+                    "authorId": "145387886",
+                    "name": "J. Novo"
+                }
+            ],
+            "doi": "10.1137/100789002",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "25066de058fcf9da18bc92a11f08fe396d84eeca",
+            "title": "Error Analysis of the SUPG Finite Element Discretization of Evolutionary Convection-Diffusion-Reaction Equations",
+            "url": "https://www.semanticscholar.org/paper/25066de058fcf9da18bc92a11f08fe396d84eeca",
+            "venue": "SIAM J. Numer. Anal.",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2454336",
+                    "name": "E. Burman"
+                }
+            ],
+            "doi": "10.1016/J.CMA.2009.11.023",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "66e2c7d5463ae14c50baf05739957c465ef92810",
+            "title": "Consistent SUPG-method for transient transport problems: Stability and convergence",
+            "url": "https://www.semanticscholar.org/paper/66e2c7d5463ae14c50baf05739957c465ef92810",
+            "venue": "",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2761762",
+                    "name": "P. Knobloch"
+                }
+            ],
+            "doi": "10.1007/s10444-008-9075-6",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "fbf4d16e39d943671541f8a0a988bebcca247288",
+            "title": "On the choice of the SUPG parameter at outflow boundary layers",
+            "url": "https://www.semanticscholar.org/paper/fbf4d16e39d943671541f8a0a988bebcca247288",
+            "venue": "Adv. Comput. Math.",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "50752696",
+                    "name": "V. John"
+                },
+                {
+                    "authorId": "2761762",
+                    "name": "P. Knobloch"
+                }
+            ],
+            "doi": "10.1016/J.CMA.2006.11.013",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "ceb9109641a7dc172177738a197eefd74aeeb837",
+            "title": "On spurious oscillations at layers diminishing (SOLD) methods for convection\u2013diffusion equations: Part I \u2013 A review",
+            "url": "https://www.semanticscholar.org/paper/ceb9109641a7dc172177738a197eefd74aeeb837",
+            "venue": "",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2385330",
+                    "name": "R. Verf\u00fcrth"
+                }
+            ],
+            "doi": "10.1137/040604273",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "5a80971f901264479ef617d2cce8c30ed74562ed",
+            "title": "Robust A Posteriori Error Estimates for Nonstationary Convection-Diffusion Equations",
+            "url": "https://www.semanticscholar.org/paper/5a80971f901264479ef617d2cce8c30ed74562ed",
+            "venue": "SIAM J. Numer. Anal.",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "39797561",
+                    "name": "A. Brooks"
+                },
+                {
+                    "authorId": "144547398",
+                    "name": "T. Hughes"
+                }
+            ],
+            "doi": "10.1016/0045-7825(82)90071-8",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "91736659836574967d11e9fe3c64644b4b4713b6",
+            "title": "Streamline upwind/Petrov-Galerkin formulations for convection dominated flows with particular emphasis on the incompressible Navier-Stokes equations",
+            "url": "https://www.semanticscholar.org/paper/91736659836574967d11e9fe3c64644b4b4713b6",
+            "venue": "",
+            "year": 1990
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1764952",
+                    "name": "K. Hornik"
+                },
+                {
+                    "authorId": "2964655",
+                    "name": "M. Stinchcombe"
+                },
+                {
+                    "authorId": "2149702798",
+                    "name": "H. White"
+                }
+            ],
+            "doi": "10.1016/0893-6080(89)90020-8",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "f22f6972e66bdd2e769fa64b0df0a13063c0c101",
+            "title": "Multilayer feedforward networks are universal approximators",
+            "url": "https://www.semanticscholar.org/paper/f22f6972e66bdd2e769fa64b0df0a13063c0c101",
+            "venue": "Neural Networks",
+            "year": 1989
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2109056528",
+                    "name": "Claes Johnson"
+                },
+                {
+                    "authorId": "2092263",
+                    "name": "U. N\u00e4vert"
+                },
+                {
+                    "authorId": "93869631",
+                    "name": "J. Pitk\u00e4ranta"
+                }
+            ],
+            "doi": "10.1016/0045-7825(84)90158-0",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "948c92b34e1bb380a8bfb050f5be80ae4e2d1826",
+            "title": "Finite element methods for linear hyperbolic problems",
+            "url": "https://www.semanticscholar.org/paper/948c92b34e1bb380a8bfb050f5be80ae4e2d1826",
+            "venue": "",
+            "year": 1984
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "49804834",
+                    "name": "Sangeeta Yadav"
+                },
+                {
+                    "authorId": "145356811",
+                    "name": "Sashikumaar Ganesan"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "24e3d4ca67a52e2117ec6136c6111a5e5f8a36a8",
+            "title": "SPDE-Net: Neural Network based prediction of stabilization parameter for SUPG technique",
+            "url": "https://www.semanticscholar.org/paper/24e3d4ca67a52e2117ec6136c6111a5e5f8a36a8",
+            "venue": "ACML",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2761762",
+                    "name": "P. Knobloch"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "0bfeb501d34d5869fff494871e2f23c6ca2248ad",
+            "title": "On the definition of the SUPG parameter.",
+            "url": "https://www.semanticscholar.org/paper/0bfeb501d34d5869fff494871e2f23c6ca2248ad",
+            "venue": "",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144625730",
+                    "name": "H. Roos"
+                },
+                {
+                    "authorId": "145160779",
+                    "name": "M. Stynes"
+                },
+                {
+                    "authorId": "2227504",
+                    "name": "L. Tobiska"
+                }
+            ],
+            "doi": "10.1007/978-3-662-03206-0",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "b1924a6bddc07c6271a8281d32591c85a23262f6",
+            "title": "Numerical Methods for Singularly Perturbed Differential Equations",
+            "url": "https://www.semanticscholar.org/paper/b1924a6bddc07c6271a8281d32591c85a23262f6",
+            "venue": "",
+            "year": 1996
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Mathematics",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        },
+        {
+            "category": "Engineering",
+            "source": "s2-fos-model"
+        },
+        {
+            "category": "Physics",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Ai-Augmented Stabilized Finite Element Method",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/53fd642d465cfd33958abaf98c439158e902dd18",
+    "venue": "Social Science Research Network",
+    "year": 2022
+}

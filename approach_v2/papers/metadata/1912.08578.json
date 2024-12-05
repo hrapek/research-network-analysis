@@ -1,0 +1,3964 @@
+{
+    "abstract": "In this article, we explore the feasibility of applying proximal policy optimization, a state-of-the-art deep reinforcement learning algorithm for continuous control tasks, on the dual-objective problem of controlling an underactuated autonomous surface vehicle to follow an a priori known path while avoiding collisions with non-moving obstacles along the way. The AI agent, which is equipped with multiple rangefinder sensors for obstacle detection, is trained and evaluated in a challenging, stochastically generated simulation environment based on the OpenAI gym Python toolkit. Notably, the agent is provided with real-time insight into its own reward function, allowing it to dynamically adapt its guidance strategy. Depending on its strategy, which ranges from radical path-adherence to radical obstacle avoidance, the trained agent achieves an episodic success rate close to 100%",
+    "arxivId": "1912.08578",
+    "authors": [
+        {
+            "authorId": "1468980364",
+            "name": "Eivind Meyer",
+            "url": "https://www.semanticscholar.org/author/1468980364"
+        },
+        {
+            "authorId": "1380762385",
+            "name": "Haakon Robinson",
+            "url": "https://www.semanticscholar.org/author/1380762385"
+        },
+        {
+            "authorId": "49219413",
+            "name": "A. Rasheed",
+            "url": "https://www.semanticscholar.org/author/49219413"
+        },
+        {
+            "authorId": "3071838",
+            "name": "O. San",
+            "url": "https://www.semanticscholar.org/author/3071838"
+        }
+    ],
+    "citationVelocity": 14,
+    "citations": [
+        {
+            "arxivId": "2411.03465",
+            "authors": [
+                {
+                    "authorId": "2064802269",
+                    "name": "Daniel Menges"
+                },
+                {
+                    "authorId": "2244288579",
+                    "name": "Adil Rasheed"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "928cb3ad13cbf2abc0a70b79a07ae6815a08abda",
+            "title": "Digital Twin for Autonomous Surface Vessels: Enabler for Safe Maritime Navigation",
+            "url": "https://www.semanticscholar.org/paper/928cb3ad13cbf2abc0a70b79a07ae6815a08abda",
+            "venue": "",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1956314588",
+                    "name": "Ivana Collado-Gonzalez"
+                },
+                {
+                    "authorId": "1956496038",
+                    "name": "Alejandro Gonzalez-Garcia"
+                },
+                {
+                    "authorId": "2189816772",
+                    "name": "Rodolfo Cuan-Urquizo"
+                },
+                {
+                    "authorId": "36887657",
+                    "name": "C. Sotelo"
+                },
+                {
+                    "authorId": "145056112",
+                    "name": "D. Sotelo"
+                },
+                {
+                    "authorId": "3096519",
+                    "name": "H. Casta\u00f1eda"
+                }
+            ],
+            "doi": "10.1016/j.oceaneng.2024.118998",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "19458663fc8dfd7f230a761bd2882eb43afba344",
+            "title": "Adaptive sliding mode control with nonlinear MPC-based obstacle avoidance using LiDAR for an autonomous surface vehicle under disturbances",
+            "url": "https://www.semanticscholar.org/paper/19458663fc8dfd7f230a761bd2882eb43afba344",
+            "venue": "Ocean Engineering",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2244411013",
+                    "name": "Aksel Vaaler"
+                },
+                {
+                    "authorId": "2269468499",
+                    "name": "Svein Jostein Husa"
+                },
+                {
+                    "authorId": "2064802269",
+                    "name": "Daniel Menges"
+                },
+                {
+                    "authorId": "2126436316",
+                    "name": "T. N. Larsen"
+                },
+                {
+                    "authorId": "2244288579",
+                    "name": "Adil Rasheed"
+                }
+            ],
+            "doi": "10.1016/j.artint.2024.104201",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "2dbe0bd9afa52c5e9a2b79a9e37a56f4bc7790d8",
+            "title": "Modular control architecture for safe marine navigation: Reinforcement learning with predictive safety filters",
+            "url": "https://www.semanticscholar.org/paper/2dbe0bd9afa52c5e9a2b79a9e37a56f4bc7790d8",
+            "venue": "Artif. Intell.",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2315788445",
+                    "name": "Zhiyao Li"
+                },
+                {
+                    "authorId": "2276988327",
+                    "name": "Yiming Zhu"
+                },
+                {
+                    "authorId": "2108161123",
+                    "name": "Yiting Wang"
+                },
+                {
+                    "authorId": "2301732449",
+                    "name": "Yong Zhang"
+                },
+                {
+                    "authorId": "2300266282",
+                    "name": "Lei Wang"
+                }
+            ],
+            "doi": "10.1016/j.joes.2024.11.001",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "2c7b39b41f6db8db965548f950f0e151374258d9",
+            "title": "Path following control of under-actuated autonomous surface vehicle based on random motion trajectory dataset and offline reinforcement learning",
+            "url": "https://www.semanticscholar.org/paper/2c7b39b41f6db8db965548f950f0e151374258d9",
+            "venue": "Journal of Ocean Engineering and Science",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2269853755",
+                    "name": "Guoquan Chen"
+                },
+                {
+                    "authorId": "2320185988",
+                    "name": "Zike Huang"
+                },
+                {
+                    "authorId": "2320126076",
+                    "name": "Weijun Wang"
+                },
+                {
+                    "authorId": "2298948707",
+                    "name": "Shenhua Yang"
+                }
+            ],
+            "doi": "10.3390/jmse12091562",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "49c90ea5102db5832a705cb0fae14e62bdffbb6f",
+            "title": "A Novel Dynamically Adjusted Entropy Algorithm for Collision Avoidance in Autonomous Ships Based on Deep Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/49c90ea5102db5832a705cb0fae14e62bdffbb6f",
+            "venue": "Journal of Marine Science and Engineering",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2109926119",
+                    "name": "M. Pereira"
+                },
+                {
+                    "authorId": "1915037",
+                    "name": "A. Pinto"
+                }
+            ],
+            "doi": "10.1016/j.engappai.2024.108506",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "b5b3bb9e890e0a766764cc9f52348ddb1b2e3edc",
+            "title": "Reinforcement learning based robot navigation using illegal actions for autonomous docking of surface vehicles in unknown environments",
+            "url": "https://www.semanticscholar.org/paper/b5b3bb9e890e0a766764cc9f52348ddb1b2e3edc",
+            "venue": "Eng. Appl. Artif. Intell.",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2310272158",
+                    "name": "Liangbin Zhao"
+                },
+                {
+                    "authorId": "2310317656",
+                    "name": "Xingrui Yu"
+                },
+                {
+                    "authorId": "2243415090",
+                    "name": "Xiuju Fu"
+                }
+            ],
+            "doi": "10.1109/CAI59869.2024.00012",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "ab0b593e0a28fe23c8d32da11394269d939d865a",
+            "title": "A Comparative Study of Reinforcement Learning-based Collision Avoidance for Maritime Autonomous Surface Ships",
+            "url": "https://www.semanticscholar.org/paper/ab0b593e0a28fe23c8d32da11394269d939d865a",
+            "venue": "2024 IEEE Conference on Artificial Intelligence (CAI)",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2311728546",
+                    "name": "Tian Xie"
+                },
+                {
+                    "authorId": "2311822515",
+                    "name": "Yi Zhou"
+                }
+            ],
+            "doi": "10.1109/CCDC62350.2024.10587377",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "fbab5e0c7b4faafd82bf29a04026297212ac5e00",
+            "title": "Ant Colony Enhanced Q-Learning Algorithm for Mobile Robot Path Planning",
+            "url": "https://www.semanticscholar.org/paper/fbab5e0c7b4faafd82bf29a04026297212ac5e00",
+            "venue": "2024 36th Chinese Control and Decision Conference (CCDC)",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2322678554",
+                    "name": "Grzegorz Wozniak"
+                },
+                {
+                    "authorId": "134699251",
+                    "name": "S. Bhat"
+                },
+                {
+                    "authorId": "95137588",
+                    "name": "Ivan Stenius"
+                }
+            ],
+            "doi": "10.1109/OCEANS51537.2024.10682215",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "40bdebfcf4ddcbdf542a718d285ef4ac1e57d407",
+            "title": "Using Reinforcement Learning for Hydrobatic Maneuvering with Autonomous Underwater Vehicles",
+            "url": "https://www.semanticscholar.org/paper/40bdebfcf4ddcbdf542a718d285ef4ac1e57d407",
+            "venue": "OCEANS 2024 - Singapore",
+            "year": 2024
+        },
+        {
+            "arxivId": "2404.00623",
+            "authors": [
+                {
+                    "authorId": "2126436316",
+                    "name": "T. N. Larsen"
+                },
+                {
+                    "authorId": "2294363560",
+                    "name": "Eirik Runde Barlaug"
+                },
+                {
+                    "authorId": "2187349322",
+                    "name": "Adil Rasheed"
+                }
+            ],
+            "doi": "10.48550/arXiv.2404.00623",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "cbee769c5ac7033e91fb31f8345d8a5241e50cc8",
+            "title": "Variational Autoencoders for exteroceptive perception in reinforcement learning-based collision avoidance",
+            "url": "https://www.semanticscholar.org/paper/cbee769c5ac7033e91fb31f8345d8a5241e50cc8",
+            "venue": "Volume 1: Offshore Technology",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2294818719",
+                    "name": "Paul Lee"
+                },
+                {
+                    "authorId": "52195774",
+                    "name": "G. Theotokatos"
+                },
+                {
+                    "authorId": "27094149",
+                    "name": "E. Boulougouris"
+                }
+            ],
+            "doi": "10.3390/jmse12040557",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "dd158913314aaa14f2fa7be8376ee8fd60645296",
+            "title": "Robust Decision-Making for the Reactive Collision Avoidance of Autonomous Ships against Various Perception Sensor Noise Levels",
+            "url": "https://www.semanticscholar.org/paper/dd158913314aaa14f2fa7be8376ee8fd60645296",
+            "venue": "Journal of Marine Science and Engineering",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2287876989",
+                    "name": "Weidong Xie"
+                },
+                {
+                    "authorId": "2287597654",
+                    "name": "Longhui Gang"
+                },
+                {
+                    "authorId": "2259495201",
+                    "name": "Mingheng Zhang"
+                },
+                {
+                    "authorId": "2287303459",
+                    "name": "Tong Liu"
+                },
+                {
+                    "authorId": "2287464479",
+                    "name": "Zhixun Lan"
+                }
+            ],
+            "doi": "10.3390/jmse12030372",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "a6be68614380f3ebf3af6f30de964e1e0dae28ba",
+            "title": "Optimizing Multi-Vessel Collision Avoidance Decision Making for Autonomous Surface Vessels: A COLREGs-Compliant Deep Reinforcement Learning Approach",
+            "url": "https://www.semanticscholar.org/paper/a6be68614380f3ebf3af6f30de964e1e0dae28ba",
+            "venue": "Journal of Marine Science and Engineering",
+            "year": 2024
+        },
+        {
+            "arxivId": "2402.05662",
+            "authors": [
+                {
+                    "authorId": "153628398",
+                    "name": "P. N. Hansen"
+                },
+                {
+                    "authorId": "2274105680",
+                    "name": "Dimitrios Papageorgiou"
+                },
+                {
+                    "authorId": "2768181",
+                    "name": "R. Galeazzi"
+                },
+                {
+                    "authorId": "2241604947",
+                    "name": "Mogens Blanke"
+                }
+            ],
+            "doi": "10.48550/arXiv.2402.05662",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "9c21bf626843b47aa7e5dbf9965e5d5813c0f54e",
+            "title": "Stochastic COLREGs Evaluation for Safe Navigation under Uncertainty",
+            "url": "https://www.semanticscholar.org/paper/9c21bf626843b47aa7e5dbf9965e5d5813c0f54e",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": "2401.04032",
+            "authors": [
+                {
+                    "authorId": "2064802269",
+                    "name": "Daniel Menges"
+                },
+                {
+                    "authorId": "2278429285",
+                    "name": "Andreas Von Brandis"
+                },
+                {
+                    "authorId": "2244288579",
+                    "name": "Adil Rasheed"
+                }
+            ],
+            "doi": "10.1115/omae2024-122628",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "40673eb3362b1688823f0c335e19eef12d701020",
+            "title": "Digital Twin of Autonomous Surface Vessels for Safe Maritime Navigation Enabled Through Predictive Modeling and Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/40673eb3362b1688823f0c335e19eef12d701020",
+            "venue": "Volume 5B: Ocean Engineering",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2068744259",
+                    "name": "Rong Zhen"
+                },
+                {
+                    "authorId": "93048335",
+                    "name": "Ziqian Shi"
+                },
+                {
+                    "authorId": "2214864702",
+                    "name": "Qiyong Gu"
+                },
+                {
+                    "authorId": "2274716819",
+                    "name": "Shenhua Yang"
+                }
+            ],
+            "doi": "10.1016/j.oceaneng.2023.116524",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "941586492575d8965b0d6d4a19d472cec9dbebc7",
+            "title": "A novel deterministic search-based algorithm for multi-ship collaborative collision avoidance decision-making",
+            "url": "https://www.semanticscholar.org/paper/941586492575d8965b0d6d4a19d472cec9dbebc7",
+            "venue": "Ocean Engineering",
+            "year": 2024
+        },
+        {
+            "arxivId": "2312.01855",
+            "authors": [
+                {
+                    "authorId": "2244411013",
+                    "name": "Aksel Vaaler"
+                },
+                {
+                    "authorId": "2269468499",
+                    "name": "Svein Jostein Husa"
+                },
+                {
+                    "authorId": "2064802269",
+                    "name": "Daniel Menges"
+                },
+                {
+                    "authorId": "2126436316",
+                    "name": "T. N. Larsen"
+                },
+                {
+                    "authorId": "2244288579",
+                    "name": "Adil Rasheed"
+                }
+            ],
+            "doi": "10.48550/arXiv.2312.01855",
+            "intent": [
+                "background",
+                "result",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "862496c45d5e8c5b054d0e7c2088ab9e6f7d3312",
+            "title": "Modular Control Architecture for Safe Marine Navigation: Reinforcement Learning and Predictive Safety Filters",
+            "url": "https://www.semanticscholar.org/paper/862496c45d5e8c5b054d0e7c2088ab9e6f7d3312",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": "2311.16841",
+            "authors": [
+                {
+                    "authorId": "80865521",
+                    "name": "Fabian Hart"
+                },
+                {
+                    "authorId": "2007263321",
+                    "name": "Martin Waltz"
+                },
+                {
+                    "authorId": "2083264",
+                    "name": "Ostap Okhrin"
+                }
+            ],
+            "doi": "10.48550/arXiv.2311.16841",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "6ce8ec9cfd8d1b1d014a7f2ce1d22d55b9f684c3",
+            "title": "Two-step dynamic obstacle avoidance",
+            "url": "https://www.semanticscholar.org/paper/6ce8ec9cfd8d1b1d014a7f2ce1d22d55b9f684c3",
+            "venue": "Knowl. Based Syst.",
+            "year": 2023
+        },
+        {
+            "arxivId": "2308.16767",
+            "authors": [
+                {
+                    "authorId": "1819520",
+                    "name": "F. Thaler"
+                },
+                {
+                    "authorId": "5360201",
+                    "name": "F. Rammerstorfer"
+                },
+                {
+                    "authorId": "143636459",
+                    "name": "J. A. G\u00f3mez"
+                },
+                {
+                    "authorId": "2061662413",
+                    "name": "Ra\u00fal Crespo"
+                },
+                {
+                    "authorId": "2236700064",
+                    "name": "Leticia Pasqual"
+                },
+                {
+                    "authorId": "2237647360",
+                    "name": "Markus Postl"
+                }
+            ],
+            "doi": "10.48550/arXiv.2308.16767",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c5c8513b3b704db37a62beb0ec38f91d700d5b0d",
+            "title": "Reinforcement learning for safety-critical control of an automated vehicle",
+            "url": "https://www.semanticscholar.org/paper/c5c8513b3b704db37a62beb0ec38f91d700d5b0d",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "153305031",
+                    "name": "Meriem Ben Miled"
+                },
+                {
+                    "authorId": "2248716809",
+                    "name": "Davide Grande"
+                },
+                {
+                    "authorId": "2145431198",
+                    "name": "Xudong Li"
+                },
+                {
+                    "authorId": "2248307067",
+                    "name": "Yuanchang Liu"
+                }
+            ],
+            "doi": "10.1109/CASE56687.2023.10260600",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a9cd29221fab6816155aa590484758f866af72e7",
+            "title": "Exploring the Technical Advances and Limits of Autonomous UAVs for Precise Agriculture in Constrained Environments",
+            "url": "https://www.semanticscholar.org/paper/a9cd29221fab6816155aa590484758f866af72e7",
+            "venue": "2023 IEEE 19th International Conference on Automation Science and Engineering (CASE)",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2124446890",
+                    "name": "Muhammad Rabani Mohd Romlay"
+                },
+                {
+                    "authorId": "2124446938",
+                    "name": "Azhar Mohd Ibrahim"
+                },
+                {
+                    "authorId": "2726699",
+                    "name": "S. Toha"
+                },
+                {
+                    "authorId": "2124447593",
+                    "name": "Philippe De Wilde"
+                },
+                {
+                    "authorId": "1729313",
+                    "name": "Ibrahim Venkat"
+                },
+                {
+                    "authorId": "2228511020",
+                    "name": "Muhammad Syahmi Ahmad"
+                }
+            ],
+            "doi": "10.1007/s00521-023-08856-8",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "22d35eec58ea3b4fd48d90ff772d720eaf7e52a7",
+            "title": "Obstacle avoidance for a robotic navigation aid using Fuzzy Logic Controller-Optimal Reciprocal Collision Avoidance (FLC-ORCA)",
+            "url": "https://www.semanticscholar.org/paper/22d35eec58ea3b4fd48d90ff772d720eaf7e52a7",
+            "venue": "Neural Computing and Applications",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "31333339",
+                    "name": "Arezoo Hasankhani"
+                },
+                {
+                    "authorId": "2540221",
+                    "name": "Yufei Tang"
+                },
+                {
+                    "authorId": "19309876",
+                    "name": "James H. VanZwieten"
+                }
+            ],
+            "doi": "10.2139/ssrn.4349106",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "037069a75f1a94ba26f9f0cc33d2aada8d10767a",
+            "title": "Integrated Path Planning and Control Through Proximal Policy Optimization for a Marine Current Turbine \u22c6",
+            "url": "https://www.semanticscholar.org/paper/037069a75f1a94ba26f9f0cc33d2aada8d10767a",
+            "venue": "SSRN Electronic Journal",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2146261381",
+                    "name": "Mingcheng Zhang"
+                },
+                {
+                    "authorId": "2062037594",
+                    "name": "Yan Chao"
+                },
+                {
+                    "authorId": "2054962965",
+                    "name": "Wei Dai"
+                },
+                {
+                    "authorId": "2392512",
+                    "name": "Xiaojia Xiang"
+                },
+                {
+                    "authorId": "2105788902",
+                    "name": "K. H. Low"
+                }
+            ],
+            "doi": "10.1016/j.geits.2023.100107",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7ad8f795bb2fea2181a3835b4550d1430cfe3966",
+            "title": "Tactical conflict resolution in urban airspace for unmanned aerial vehicles operations using attention-based deep reinforcement learning",
+            "url": "https://www.semanticscholar.org/paper/7ad8f795bb2fea2181a3835b4550d1430cfe3966",
+            "venue": "Green Energy and Intelligent Transportation",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2320598121",
+                    "name": "K. Vaishnavi"
+                },
+                {
+                    "authorId": "2221751249",
+                    "name": "G. P. Reddy"
+                },
+                {
+                    "authorId": "2221630811",
+                    "name": "T. B. Reddy"
+                },
+                {
+                    "authorId": "2286495846",
+                    "name": "N. Ch"
+                },
+                {
+                    "authorId": "2286355159",
+                    "name": "Srimannarayana Iyengar"
+                },
+                {
+                    "authorId": "47982705",
+                    "name": "Subhani Shaik"
+                }
+            ],
+            "doi": "10.9734/jamcs/2023/v38i81787",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e7384263ea77d0cc85ce4e6ba41aecc22a84b945",
+            "title": "Real-time Object Detection Using Deep Learning",
+            "url": "https://www.semanticscholar.org/paper/e7384263ea77d0cc85ce4e6ba41aecc22a84b945",
+            "venue": "Journal of Advances in Mathematics and Computer Science",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2064868678",
+                    "name": "Guangran Cheng"
+                },
+                {
+                    "authorId": "2146016665",
+                    "name": "Yuanda Wang"
+                },
+                {
+                    "authorId": "1609965436",
+                    "name": "Lu Dong"
+                },
+                {
+                    "authorId": "2113721415",
+                    "name": "Wenzhe Cai"
+                },
+                {
+                    "authorId": "145928755",
+                    "name": "Changyin Sun"
+                }
+            ],
+            "doi": "10.1007/s00521-023-08385-4",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "caa1180f48cf32c9f6b70b179792e0b380ed06ee",
+            "title": "Multi-objective deep reinforcement learning for crowd-aware robot navigation with dynamic human preference",
+            "url": "https://www.semanticscholar.org/paper/caa1180f48cf32c9f6b70b179792e0b380ed06ee",
+            "venue": "Neural Computing and Applications",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "152209129",
+                    "name": "Seihan Cho"
+                },
+                {
+                    "authorId": "8501681",
+                    "name": "Raimarius Delgado"
+                },
+                {
+                    "authorId": "50537234",
+                    "name": "Byoung-Wook Choi"
+                }
+            ],
+            "doi": "10.3390/electronics12061426",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "4256872e7abe8b7b2990a2851bdaf457bec2518b",
+            "title": "Feasibility Study for a Python-Based Embedded Real-Time Control System",
+            "url": "https://www.semanticscholar.org/paper/4256872e7abe8b7b2990a2851bdaf457bec2518b",
+            "venue": "Electronics",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2155300360",
+                    "name": "Peng Wang"
+                },
+                {
+                    "authorId": "2201103267",
+                    "name": "Ranran Liu"
+                },
+                {
+                    "authorId": "2152149919",
+                    "name": "Xinliang Tian"
+                },
+                {
+                    "authorId": "2000252562",
+                    "name": "Xiantao Zhang"
+                },
+                {
+                    "authorId": "2065512838",
+                    "name": "Lei Qiao"
+                },
+                {
+                    "authorId": "2201531780",
+                    "name": "Yuntao Wang"
+                }
+            ],
+            "doi": "10.1016/j.oceaneng.2023.113670",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "bdb971079c7cbbffd752197ae246146939bfc18c",
+            "title": "Obstacle avoidance for environmentally-driven USVs based on deep reinforcement learning in large-scale uncertain environments",
+            "url": "https://www.semanticscholar.org/paper/bdb971079c7cbbffd752197ae246146939bfc18c",
+            "venue": "Ocean Engineering",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2146248818",
+                    "name": "Zheng Li"
+                },
+                {
+                    "authorId": "9069436",
+                    "name": "Shihua Yuan"
+                },
+                {
+                    "authorId": "152544054",
+                    "name": "Xufeng Yin"
+                },
+                {
+                    "authorId": "50879539",
+                    "name": "Xueyuan Li"
+                },
+                {
+                    "authorId": "9084714",
+                    "name": "Shouxing Tang"
+                }
+            ],
+            "doi": "10.3390/s23020844",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "35efd6bd5cd4bf3048df03ae9e3a455c8abbe2f5",
+            "title": "Research into Autonomous Vehicles Following and Obstacle Avoidance Based on Deep Reinforcement Learning Method under Map Constraints",
+            "url": "https://www.semanticscholar.org/paper/35efd6bd5cd4bf3048df03ae9e3a455c8abbe2f5",
+            "venue": "Sensors",
+            "year": 2023
+        },
+        {
+            "arxivId": "2212.06415",
+            "authors": [
+                {
+                    "authorId": "71112688",
+                    "name": "Kouki Wakita"
+                },
+                {
+                    "authorId": "1721701",
+                    "name": "Youhei Akimoto"
+                },
+                {
+                    "authorId": "2042403724",
+                    "name": "D. M. Rachman"
+                },
+                {
+                    "authorId": "91124254",
+                    "name": "Yoshiki Miyauchi"
+                },
+                {
+                    "authorId": "143828345",
+                    "name": "A. Maki"
+                }
+            ],
+            "doi": "10.1007/s00773-023-00962-5",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "cfe17bda2a8f50ba0d3b49044e24ade3f1280293",
+            "title": "Collision probability reduction method for tracking control in automatic docking/berthing using reinforcement learning",
+            "url": "https://www.semanticscholar.org/paper/cfe17bda2a8f50ba0d3b49044e24ade3f1280293",
+            "venue": "Journal of Marine Science and Technology",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1956496038",
+                    "name": "Alejandro Gonzalez-Garcia"
+                },
+                {
+                    "authorId": "1956314588",
+                    "name": "Ivana Collado-Gonzalez"
+                },
+                {
+                    "authorId": "2189816772",
+                    "name": "Rodolfo Cuan-Urquizo"
+                },
+                {
+                    "authorId": "36887657",
+                    "name": "C. Sotelo"
+                },
+                {
+                    "authorId": "145056112",
+                    "name": "D. Sotelo"
+                },
+                {
+                    "authorId": "3096519",
+                    "name": "H. Casta\u00f1eda"
+                }
+            ],
+            "doi": "10.1016/j.oceaneng.2022.112900",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "ae40dfa42d30e8345fa2ae122d7b653407188fa4",
+            "title": "Path-following and LiDAR-based obstacle avoidance via NMPC for an autonomous surface vehicle",
+            "url": "https://www.semanticscholar.org/paper/ae40dfa42d30e8345fa2ae122d7b653407188fa4",
+            "venue": "Ocean Engineering",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "9431722",
+                    "name": "Liangmou Hu"
+                },
+                {
+                    "authorId": "143846701",
+                    "name": "Huosheng Hu"
+                },
+                {
+                    "authorId": "145411833",
+                    "name": "W. Naeem"
+                },
+                {
+                    "authorId": "2145027187",
+                    "name": "Zidong Wang"
+                }
+            ],
+            "doi": "10.1016/j.jai.2022.100003",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "eca8c79f2a0c469e26af514481e72edb97a26a35",
+            "title": "A review on COLREGs-compliant navigation of autonomous surface vehicles: From traditional to learning-based approaches",
+            "url": "https://www.semanticscholar.org/paper/eca8c79f2a0c469e26af514481e72edb97a26a35",
+            "venue": "Journal of Automation and Intelligence",
+            "year": 2022
+        },
+        {
+            "arxivId": "2211.01004",
+            "authors": [
+                {
+                    "authorId": "2007263321",
+                    "name": "Martin Waltz"
+                },
+                {
+                    "authorId": "2083264",
+                    "name": "Ostap Okhrin"
+                }
+            ],
+            "doi": "10.48550/arXiv.2211.01004",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "19418a88d6043b84ea8b3d4861d436914a5c740a",
+            "title": "Spatial-temporal recurrent reinforcement learning for autonomous ships",
+            "url": "https://www.semanticscholar.org/paper/19418a88d6043b84ea8b3d4861d436914a5c740a",
+            "venue": "Neural Networks",
+            "year": 2022
+        },
+        {
+            "arxivId": "2210.08487",
+            "authors": [
+                {
+                    "authorId": "2056924035",
+                    "name": "Yuanyuan Qiao"
+                },
+                {
+                    "authorId": "2111612363",
+                    "name": "Jiaxin Yin"
+                },
+                {
+                    "authorId": "2158626783",
+                    "name": "Wei Wang"
+                },
+                {
+                    "authorId": "143982694",
+                    "name": "F\u00e1bio Duarte"
+                },
+                {
+                    "authorId": "2118579476",
+                    "name": "Jie Yang"
+                },
+                {
+                    "authorId": "145320204",
+                    "name": "C. Ratti"
+                }
+            ],
+            "doi": "10.1109/TITS.2023.3235911",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "bb49dc76a027de4e8ce1dd9f1b557e745b900561",
+            "title": "Survey of Deep Learning for Autonomous Surface Vehicles in Marine Environments",
+            "url": "https://www.semanticscholar.org/paper/bb49dc76a027de4e8ce1dd9f1b557e745b900561",
+            "venue": "IEEE Transactions on Intelligent Transportation Systems",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "46601832",
+                    "name": "Xiaowen Kong"
+                },
+                {
+                    "authorId": "2189473861",
+                    "name": "Yun Jing"
+                },
+                {
+                    "authorId": "48016309",
+                    "name": "H. Wang"
+                },
+                {
+                    "authorId": "9651528",
+                    "name": "Anqing Wang"
+                },
+                {
+                    "authorId": "143621702",
+                    "name": "Dan Wang"
+                }
+            ],
+            "doi": "10.1109/ITSC55140.2022.9921945",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "5ed65cb52d1422be70aff483e741845749e2489a",
+            "title": "Safety-Critical Path Following Guidance of Intelligent Surface Vehicles for Automatic Docking Subject to Static and Dynamic Obstacles",
+            "url": "https://www.semanticscholar.org/paper/5ed65cb52d1422be70aff483e741845749e2489a",
+            "venue": "2022 IEEE 25th International Conference on Intelligent Transportation Systems (ITSC)",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2184257196",
+                    "name": "Rodrigo Picinini M\u00e9xas"
+                },
+                {
+                    "authorId": "2174238704",
+                    "name": "Fabiana Rodrigues Leta"
+                },
+                {
+                    "authorId": "1593333171",
+                    "name": "E. W. Gonzalez Clua"
+                }
+            ],
+            "doi": "10.1109/TLA.2022.9878171",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "32dea90ce361ae0138936a46b55bc3d149ca540d",
+            "title": "Comparison of Reinforcement and Imitation Learning algorithms in autonomous sailboat Digital Twins",
+            "url": "https://www.semanticscholar.org/paper/32dea90ce361ae0138936a46b55bc3d149ca540d",
+            "venue": "IEEE Latin America Transactions",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2222987240",
+                    "name": "Xiu-quan Cheng"
+                },
+                {
+                    "authorId": "48692315",
+                    "name": "Shaobo Zhang"
+                },
+                {
+                    "authorId": "2110844919",
+                    "name": "Sizhu Cheng"
+                },
+                {
+                    "authorId": "9326231",
+                    "name": "Qinxiang Xia"
+                },
+                {
+                    "authorId": "2108047932",
+                    "name": "Junhao Zhang"
+                }
+            ],
+            "doi": "10.3390/app12146874",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "329c9151b43ad6e3497bfd519d1fff96db5c4eae",
+            "title": "Path-Following and Obstacle Avoidance Control of Nonholonomic Wheeled Mobile Robot Based on Deep Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/329c9151b43ad6e3497bfd519d1fff96db5c4eae",
+            "venue": "Applied Sciences",
+            "year": 2022
+        },
+        {
+            "arxivId": "2207.02767",
+            "authors": [
+                {
+                    "authorId": "2102459",
+                    "name": "Pouria Sarhadi"
+                },
+                {
+                    "authorId": "145411833",
+                    "name": "W. Naeem"
+                },
+                {
+                    "authorId": "9288759",
+                    "name": "N. Athanasopoulos"
+                }
+            ],
+            "doi": "10.48550/arXiv.2207.02767",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c1e9d914d4a560871bbcfd31f9d7376d011cc6b6",
+            "title": "A Survey of Recent Machine Learning Solutions for Ship Collision Avoidance and Mission Planning",
+            "url": "https://www.semanticscholar.org/paper/c1e9d914d4a560871bbcfd31f9d7376d011cc6b6",
+            "venue": "IFAC-PapersOnLine",
+            "year": 2022
+        },
+        {
+            "arxivId": "2205.06858",
+            "authors": [
+                {
+                    "authorId": "1380762385",
+                    "name": "Haakon Robinson"
+                },
+                {
+                    "authorId": "11347090",
+                    "name": "Suraj Pawar"
+                },
+                {
+                    "authorId": "49219413",
+                    "name": "A. Rasheed"
+                },
+                {
+                    "authorId": "3071838",
+                    "name": "O. San"
+                }
+            ],
+            "doi": "10.48550/arXiv.2205.06858",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "518a4b3c36c8a0e651caa603ea10d0875a1fbc27",
+            "title": "Physics guided neural networks for modelling of non-linear dynamics",
+            "url": "https://www.semanticscholar.org/paper/518a4b3c36c8a0e651caa603ea10d0875a1fbc27",
+            "venue": "Neural Networks",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2112800883",
+                    "name": "Xiaohui Hou"
+                },
+                {
+                    "authorId": "3305744",
+                    "name": "Junzhi Zhang"
+                },
+                {
+                    "authorId": "2087126522",
+                    "name": "Chengkun He"
+                },
+                {
+                    "authorId": "2150356565",
+                    "name": "Chao Li"
+                },
+                {
+                    "authorId": "2087369434",
+                    "name": "Yuan Ji"
+                },
+                {
+                    "authorId": "2109522878",
+                    "name": "Jinheng Han"
+                }
+            ],
+            "doi": "10.1016/j.isatra.2022.03.021",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "0a4933c17a63bfbc1cbaf97b56bf9d25205fd9d4",
+            "title": "Crash mitigation controller for unavoidable T-bone collisions using reinforcement learning.",
+            "url": "https://www.semanticscholar.org/paper/0a4933c17a63bfbc1cbaf97b56bf9d25205fd9d4",
+            "venue": "ISA transactions",
+            "year": 2022
+        },
+        {
+            "arxivId": "2112.00115",
+            "authors": [
+                {
+                    "authorId": "2126436316",
+                    "name": "T. N. Larsen"
+                },
+                {
+                    "authorId": "1751662846",
+                    "name": "Amalie Heiberg"
+                },
+                {
+                    "authorId": "1468980364",
+                    "name": "Eivind Meyer"
+                },
+                {
+                    "authorId": "49219413",
+                    "name": "A. Rasheed"
+                },
+                {
+                    "authorId": "3071838",
+                    "name": "O. San"
+                },
+                {
+                    "authorId": "50412265",
+                    "name": "Damiano Varagnolo"
+                }
+            ],
+            "doi": "10.1016/j.neunet.2022.04.008",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "a72722146407a06c1bf9ca9c26b9f54af4645530",
+            "title": "Risk-based implementation of COLREGs for autonomous surface vehicles using deep reinforcement learning",
+            "url": "https://www.semanticscholar.org/paper/a72722146407a06c1bf9ca9c26b9f54af4645530",
+            "venue": "Neural Networks",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2126436316",
+                    "name": "T. N. Larsen"
+                },
+                {
+                    "authorId": "2126436059",
+                    "name": "Halvor \u00d8deg\u00e5rd Teigen"
+                },
+                {
+                    "authorId": "2126435818",
+                    "name": "Torkel Laache"
+                },
+                {
+                    "authorId": "50412265",
+                    "name": "Damiano Varagnolo"
+                },
+                {
+                    "authorId": "49219413",
+                    "name": "A. Rasheed"
+                }
+            ],
+            "doi": "10.3389/frobt.2021.738113",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "6e6c50336b2c360f9eda6ea09f9578cbf6473468",
+            "title": "Comparing Deep Reinforcement Learning Algorithms\u2019 Ability to Safely Navigate Challenging Waters",
+            "url": "https://www.semanticscholar.org/paper/6e6c50336b2c360f9eda6ea09f9578cbf6473468",
+            "venue": "Frontiers in Robotics and AI",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "34929616",
+                    "name": "P. Srinivasu"
+                },
+                {
+                    "authorId": "2090262681",
+                    "name": "A. Bhoi"
+                },
+                {
+                    "authorId": "3314907",
+                    "name": "Rutvij H. Jhaveri"
+                },
+                {
+                    "authorId": "2198893829",
+                    "name": "G. T. Reddy"
+                },
+                {
+                    "authorId": "2053273309",
+                    "name": "Muhammad Bilal"
+                }
+            ],
+            "doi": "10.1007/s11554-021-01122-x",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "8ae19b7c2194c5db934c3c4087428688071f2afa",
+            "title": "Probabilistic Deep Q Network for real-time path planning in censorious robotic procedures using force sensors",
+            "url": "https://www.semanticscholar.org/paper/8ae19b7c2194c5db934c3c4087428688071f2afa",
+            "venue": "Journal of Real-Time Image Processing",
+            "year": 2021
+        },
+        {
+            "arxivId": "2103.14629",
+            "authors": [
+                {
+                    "authorId": "3071838",
+                    "name": "O. San"
+                },
+                {
+                    "authorId": "49219413",
+                    "name": "A. Rasheed"
+                },
+                {
+                    "authorId": "1834820",
+                    "name": "T. Kvamsdal"
+                }
+            ],
+            "doi": "10.1002/gamm.202100007",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e9e84cc5c4f9a1fceb1bf72d14f1424e12f5fc41",
+            "title": "Hybrid analysis and modeling, eclecticism, and multifidelity computing toward digital twin revolution",
+            "url": "https://www.semanticscholar.org/paper/e9e84cc5c4f9a1fceb1bf72d14f1424e12f5fc41",
+            "venue": "GAMM-Mitteilungen",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2116560424",
+                    "name": "Ange Wang"
+                },
+                {
+                    "authorId": "47550461",
+                    "name": "Hongzhi Guan"
+                },
+                {
+                    "authorId": "2108237483",
+                    "name": "Pengfei Wang"
+                },
+                {
+                    "authorId": "7795833",
+                    "name": "Liqun Peng"
+                },
+                {
+                    "authorId": "97568334",
+                    "name": "Yunqiang Xue"
+                }
+            ],
+            "doi": "10.1109/ACCESS.2021.3053351",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "05692c7a006a44733771a62d6123a527c3d1853e",
+            "title": "Cross-Regional Customized Bus Route Planning Considering Staggered Commuting During the COVID-19",
+            "url": "https://www.semanticscholar.org/paper/05692c7a006a44733771a62d6123a527c3d1853e",
+            "venue": "IEEE Access",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2051296242",
+                    "name": "Abu Jafar Md Muzahid"
+                },
+                {
+                    "authorId": "2292036",
+                    "name": "S. F. Kamarulzaman"
+                },
+                {
+                    "authorId": "143812431",
+                    "name": "M. Rahim"
+                }
+            ],
+            "doi": "10.1109/ETCCE51779.2020.9350869",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "073068995d1c73d38a5072aa18a63dfd7fce3fe4",
+            "title": "Learning-Based Conceptual framework for Threat Assessment of Multiple Vehicle Collision in Autonomous Driving",
+            "url": "https://www.semanticscholar.org/paper/073068995d1c73d38a5072aa18a63dfd7fce3fe4",
+            "venue": "2020 Emerging Technology in Computing, Communication and Electronics (ETCCE)",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1956496038",
+                    "name": "Alejandro Gonzalez-Garcia"
+                },
+                {
+                    "authorId": "3096519",
+                    "name": "H. Casta\u00f1eda"
+                },
+                {
+                    "authorId": "35041931",
+                    "name": "Leonardo Garrido"
+                }
+            ],
+            "doi": "10.1109/IEEECONF38699.2020.9389360",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "45eff47db87a8ceb64c8a5354eacdcc4b46596e9",
+            "title": "USV Path-Following Control Based On Deep Reinforcement Learning and Adaptive Control",
+            "url": "https://www.semanticscholar.org/paper/45eff47db87a8ceb64c8a5354eacdcc4b46596e9",
+            "venue": "Global Oceans 2020: Singapore \u2013 U.S. Gulf Coast",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1824476",
+                    "name": "Yunduan Cui"
+                },
+                {
+                    "authorId": "65854543",
+                    "name": "S. Osaki"
+                },
+                {
+                    "authorId": "3248224",
+                    "name": "Takamitsu Matsubara"
+                }
+            ],
+            "doi": "10.1002/rob.21990",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a358c7a7a0afc7b7a900525249385e6bd1056e62",
+            "title": "Autonomous boat driving system using sample\u2010efficient model predictive control\u2010based reinforcement learning approach",
+            "url": "https://www.semanticscholar.org/paper/a358c7a7a0afc7b7a900525249385e6bd1056e62",
+            "venue": "J. Field Robotics",
+            "year": 2020
+        },
+        {
+            "arxivId": "2008.07240",
+            "authors": [
+                {
+                    "authorId": "46324444",
+                    "name": "Qingrui Zhang"
+                },
+                {
+                    "authorId": "2014616288",
+                    "name": "Wei Pan"
+                },
+                {
+                    "authorId": "1970906",
+                    "name": "V. Reppa"
+                }
+            ],
+            "doi": "10.1109/TITS.2021.3086033",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e3f1de7f94439cc496caa68b7629c5c336d933c8",
+            "title": "Model-Reference Reinforcement Learning for Collision-Free Tracking Control of Autonomous Surface Vehicles",
+            "url": "https://www.semanticscholar.org/paper/e3f1de7f94439cc496caa68b7629c5c336d933c8",
+            "venue": "IEEE Transactions on Intelligent Transportation Systems",
+            "year": 2020
+        },
+        {
+            "arxivId": "2006.09792",
+            "authors": [
+                {
+                    "authorId": "1491380451",
+                    "name": "Simen Theie Havenstrom"
+                },
+                {
+                    "authorId": "49219413",
+                    "name": "A. Rasheed"
+                },
+                {
+                    "authorId": "3071838",
+                    "name": "O. San"
+                }
+            ],
+            "doi": "10.3389/frobt.2020.566037",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "e8bdc41162e95735b6d6b635b6bdffb4c45dabc8",
+            "title": "Deep Reinforcement Learning Controller for 3D Path Following and Collision Avoidance by Autonomous Underwater Vehicles",
+            "url": "https://www.semanticscholar.org/paper/e8bdc41162e95735b6d6b635b6bdffb4c45dabc8",
+            "venue": "Frontiers in Robotics and AI",
+            "year": 2020
+        },
+        {
+            "arxivId": "2006.09540",
+            "authors": [
+                {
+                    "authorId": "1468980364",
+                    "name": "Eivind Meyer"
+                },
+                {
+                    "authorId": "1751662846",
+                    "name": "Amalie Heiberg"
+                },
+                {
+                    "authorId": "49219413",
+                    "name": "A. Rasheed"
+                },
+                {
+                    "authorId": "3071838",
+                    "name": "O. San"
+                }
+            ],
+            "doi": "10.1109/ACCESS.2020.3022600",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "40f85c3f1223286e8b1ef988ecea614b6c312dec",
+            "title": "COLREG-Compliant Collision Avoidance for Unmanned Surface Vehicle Using Deep Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/40f85c3f1223286e8b1ef988ecea614b6c312dec",
+            "venue": "IEEE Access",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1739965103",
+                    "name": "Rajesh Gupta"
+                },
+                {
+                    "authorId": "51002080",
+                    "name": "Aparna Kumari"
+                },
+                {
+                    "authorId": "49252696",
+                    "name": "Sudeep Tanwar"
+                }
+            ],
+            "doi": "10.1002/ett.4009",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "01730dc286d0fd52859e2bcf37be8aa7ba98dbf0",
+            "title": "A taxonomy of blockchain envisioned edge\u2010as\u2010a\u2010connected autonomous vehicles",
+            "url": "https://www.semanticscholar.org/paper/01730dc286d0fd52859e2bcf37be8aa7ba98dbf0",
+            "venue": "Trans. Emerg. Telecommun. Technol.",
+            "year": 2020
+        },
+        {
+            "arxivId": "2003.13839",
+            "authors": [
+                {
+                    "authorId": "46324444",
+                    "name": "Qingrui Zhang"
+                },
+                {
+                    "authorId": "2014616288",
+                    "name": "Wei Pan"
+                },
+                {
+                    "authorId": "1970906",
+                    "name": "V. Reppa"
+                }
+            ],
+            "doi": "10.1109/CDC42340.2020.9304347",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "99b966f37405639490e35f794130856d0d35bdb5",
+            "title": "Model-Reference Reinforcement Learning Control of Autonomous Surface Vehicles",
+            "url": "https://www.semanticscholar.org/paper/99b966f37405639490e35f794130856d0d35bdb5",
+            "venue": "2020 59th IEEE Conference on Decision and Control (CDC)",
+            "year": 2020
+        },
+        {
+            "arxivId": "2002.01022",
+            "authors": [
+                {
+                    "authorId": "1491380451",
+                    "name": "Simen Theie Havenstrom"
+                },
+                {
+                    "authorId": "1491380459",
+                    "name": "Camilla Sterud"
+                },
+                {
+                    "authorId": "49219413",
+                    "name": "A. Rasheed"
+                },
+                {
+                    "authorId": "3071838",
+                    "name": "O. San"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "result",
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "646de798d144743f06a731cf8f8ae67e45c063c2",
+            "title": "Proportional integral derivative controller assisted reinforcement learning for path following by autonomous underwater vehicles",
+            "url": "https://www.semanticscholar.org/paper/646de798d144743f06a731cf8f8ae67e45c063c2",
+            "venue": "ArXiv",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2126436316",
+                    "name": "T. N. Larsen"
+                },
+                {
+                    "authorId": "2267967190",
+                    "name": "Hannah Hansen"
+                },
+                {
+                    "authorId": "2187349322",
+                    "name": "Adil Rasheed"
+                }
+            ],
+            "doi": "10.1016/j.ifacol.2023.10.870",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "2e7c863949f247bf77d163ee871e80c5f5c0764e",
+            "title": "Risk-based Convolutional Perception Models for Collision Avoidance in Autonomous Marine Surface Vessels using Deep Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/2e7c863949f247bf77d163ee871e80c5f5c0764e",
+            "venue": "IFAC-PapersOnLine",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2068140331",
+                    "name": "S. Luis"
+                },
+                {
+                    "authorId": "65836546",
+                    "name": "D. Reina"
+                },
+                {
+                    "authorId": "1686969",
+                    "name": "S. T. Mar\u00edn"
+                }
+            ],
+            "doi": "10.1109/ACCESS.2021.3053348",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c9563a9ea9ef0d887a98a759d3f5de698869dd10",
+            "title": "A Multiagent Deep Reinforcement Learning Approach for Path Planning in Autonomous Surface Vehicles: The Ypacara\u00ed Lake Patrolling Case",
+            "url": "https://www.semanticscholar.org/paper/c9563a9ea9ef0d887a98a759d3f5de698869dd10",
+            "venue": "IEEE Access",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2138823271",
+                    "name": "Jakob L\u00f8ver"
+                },
+                {
+                    "authorId": "2097798951",
+                    "name": "Vilde B. Gj\u00e6rum"
+                },
+                {
+                    "authorId": "35547052",
+                    "name": "A. Lekkas"
+                }
+            ],
+            "doi": "10.1016/j.ifacol.2021.10.086",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "3fa5996b3eca7c4f85f54e8a5c94a17481493961",
+            "title": "Explainable AI methods on a deep reinforcement learning agent for automatic docking",
+            "url": "https://www.semanticscholar.org/paper/3fa5996b3eca7c4f85f54e8a5c94a17481493961",
+            "venue": "IFAC-PapersOnLine",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "74972879",
+                    "name": "Jos\u00e9 Amendola"
+                },
+                {
+                    "authorId": "1903797279",
+                    "name": "Lucas S. Miura"
+                },
+                {
+                    "authorId": "2209202",
+                    "name": "Anna Helena Reali Costa"
+                },
+                {
+                    "authorId": "70089890",
+                    "name": "F. G. Cozman"
+                },
+                {
+                    "authorId": "9437367",
+                    "name": "E. Tannuri"
+                }
+            ],
+            "doi": "10.1109/ACCESS.2020.3015661",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "4b183c75350fa834ad0f7dd1dead8a42a34d8ae7",
+            "title": "Navigation in Restricted Channels Under Environmental Conditions: Fast-Time Simulation by Asynchronous Deep Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/4b183c75350fa834ad0f7dd1dead8a42a34d8ae7",
+            "venue": "IEEE Access",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2240429138",
+                    "name": "P\u00e4di Bolet\u00edn"
+                },
+                {
+                    "authorId": "2269793363",
+                    "name": "Cient\u00edfico de Ciencias B\u00e1sicas"
+                },
+                {
+                    "authorId": "2269801157",
+                    "name": "Ingenier\u00edas del Icbi"
+                },
+                {
+                    "authorId": "2269532454",
+                    "name": "J. Castillo-Aparicio"
+                },
+                {
+                    "authorId": "2269534479",
+                    "name": "A. Z. Vega-Arroyo"
+                },
+                {
+                    "authorId": "2333359247",
+                    "name": "J. Gonz\u00e1lez-Sierra"
+                },
+                {
+                    "authorId": "2193522193",
+                    "name": "Y. Lozano-Hern\u00e1ndez"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "cc070fc2da902c5372e454eac454770b0989d667",
+            "title": "Control de formaci\u00f3n con evasi\u00f3n de colisiones en agentes de primer y segundo orden Formation control with collision avoidance for first and second order agents",
+            "url": "https://www.semanticscholar.org/paper/cc070fc2da902c5372e454eac454770b0989d667",
+            "venue": "",
+            "year": null
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2331527307",
+                    "name": "\u2020. DhimiterPikuli"
+                },
+                {
+                    "authorId": "2331527472",
+                    "name": "\u2021. JordanCosio"
+                },
+                {
+                    "authorId": "1382657362",
+                    "name": "Xavier Alameda-Pineda"
+                },
+                {
+                    "authorId": "2275978833",
+                    "name": "Thierry Fraichard"
+                },
+                {
+                    "authorId": "2287041",
+                    "name": "Pierre-Brice Wieber"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "361d45c26e65e3abb48f3151b7172fa865114bf0",
+            "title": "Navigating the Practical Pitfalls of Reinforcement Learning for Social Robot Navigation",
+            "url": "https://www.semanticscholar.org/paper/361d45c26e65e3abb48f3151b7172fa865114bf0",
+            "venue": "",
+            "year": null
+        }
+    ],
+    "corpusId": 209405379,
+    "doi": "10.1109/ACCESS.2020.2976586",
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 2,
+    "isOpenAccess": true,
+    "isPublisherLicensed": true,
+    "is_open_access": true,
+    "is_publisher_licensed": true,
+    "numCitedBy": 59,
+    "numCiting": 61,
+    "paperId": "d3c08bd9ef0f2e5aa3192b4f038e414e40948fe6",
+    "references": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2053486178",
+                    "name": "Pauli Virtanen"
+                },
+                {
+                    "authorId": "3912995",
+                    "name": "R. Gommers"
+                },
+                {
+                    "authorId": "35525979",
+                    "name": "T. Oliphant"
+                },
+                {
+                    "authorId": "2065380893",
+                    "name": "Matt Haberland"
+                },
+                {
+                    "authorId": "144896751",
+                    "name": "Tyler Reddy"
+                },
+                {
+                    "authorId": "3084321",
+                    "name": "D. Cournapeau"
+                },
+                {
+                    "authorId": "2143743195",
+                    "name": "Evgeni Burovski"
+                },
+                {
+                    "authorId": "143825690",
+                    "name": "Pearu Peterson"
+                },
+                {
+                    "authorId": "2214143",
+                    "name": "Warren Weckesser"
+                },
+                {
+                    "authorId": "2065294575",
+                    "name": "Jonathan Bright"
+                },
+                {
+                    "authorId": "2066718598",
+                    "name": "St\u00e9fan J. van der Walt"
+                },
+                {
+                    "authorId": "144082394",
+                    "name": "M. Brett"
+                },
+                {
+                    "authorId": "2115849250",
+                    "name": "Joshua Wilson"
+                },
+                {
+                    "authorId": "2061249",
+                    "name": "K. Millman"
+                },
+                {
+                    "authorId": "101711386",
+                    "name": "N. Mayorov"
+                },
+                {
+                    "authorId": "2072898697",
+                    "name": "Andrew R. J. Nelson"
+                },
+                {
+                    "authorId": "48376304",
+                    "name": "E. Jones"
+                },
+                {
+                    "authorId": "2066375342",
+                    "name": "Robert Kern"
+                },
+                {
+                    "authorId": "144752199",
+                    "name": "Eric Larson"
+                },
+                {
+                    "authorId": "144873258",
+                    "name": "C. Carey"
+                },
+                {
+                    "authorId": "49005409",
+                    "name": "\u0130lhan Polat"
+                },
+                {
+                    "authorId": "2150672343",
+                    "name": "Yu Feng"
+                },
+                {
+                    "authorId": "2054115424",
+                    "name": "Eric W. Moore"
+                },
+                {
+                    "authorId": "2081469",
+                    "name": "J. Vanderplas"
+                },
+                {
+                    "authorId": "98592399",
+                    "name": "D. Laxalde"
+                },
+                {
+                    "authorId": "15571182",
+                    "name": "Josef Perktold"
+                },
+                {
+                    "authorId": "2772998",
+                    "name": "R. Cimrman"
+                },
+                {
+                    "authorId": "35265702",
+                    "name": "Ian Henriksen"
+                },
+                {
+                    "authorId": "153037053",
+                    "name": "E. Quintero"
+                },
+                {
+                    "authorId": "2065073027",
+                    "name": "Charles R. Harris"
+                },
+                {
+                    "authorId": "6402888",
+                    "name": "A. Archibald"
+                },
+                {
+                    "authorId": "19235619",
+                    "name": "Ant\u00f4nio H. Ribeiro"
+                },
+                {
+                    "authorId": "2570016",
+                    "name": "Fabian Pedregosa"
+                },
+                {
+                    "authorId": "1491359454",
+                    "name": "P. van Mulbregt"
+                },
+                {
+                    "authorId": "2064378280",
+                    "name": "Aditya Alessandro Pietro Alex Andreas Andreas Anthony Ant Vijaykumar Bardelli Rothberg Hilboll Kloeckner Sco"
+                },
+                {
+                    "authorId": "1491360442",
+                    "name": "A. Vijaykumar"
+                },
+                {
+                    "authorId": "46473152",
+                    "name": "Alessandro Pietro Bardelli"
+                },
+                {
+                    "authorId": "13044073",
+                    "name": "Alex Rothberg"
+                },
+                {
+                    "authorId": "5301477",
+                    "name": "A. Hilboll"
+                },
+                {
+                    "authorId": "117221049",
+                    "name": "Andre Kloeckner"
+                },
+                {
+                    "authorId": "2860725",
+                    "name": "A. Scopatz"
+                },
+                {
+                    "authorId": "2116599554",
+                    "name": "Antony Lee"
+                },
+                {
+                    "authorId": "2842990",
+                    "name": "Ariel S. Rokem"
+                },
+                {
+                    "authorId": "144291907",
+                    "name": "C. N. Woods"
+                },
+                {
+                    "authorId": "80845765",
+                    "name": "Chad Fulton"
+                },
+                {
+                    "authorId": "122327721",
+                    "name": "Charles Masson"
+                },
+                {
+                    "authorId": "1491360726",
+                    "name": "C. H\u00e4ggstr\u00f6m"
+                },
+                {
+                    "authorId": "73014178",
+                    "name": "Clark Fitzgerald"
+                },
+                {
+                    "authorId": "46347313",
+                    "name": "D. Nicholson"
+                },
+                {
+                    "authorId": "1491359271",
+                    "name": "David R. Hagen"
+                },
+                {
+                    "authorId": "1721034",
+                    "name": "D. Pasechnik"
+                },
+                {
+                    "authorId": "1759500",
+                    "name": "E. Olivetti"
+                },
+                {
+                    "authorId": "2151071148",
+                    "name": "Eric Martin"
+                },
+                {
+                    "authorId": "34422202",
+                    "name": "Eric Wieser"
+                },
+                {
+                    "authorId": "2110243690",
+                    "name": "Fabrice Silva"
+                },
+                {
+                    "authorId": "15628537",
+                    "name": "F. Lenders"
+                },
+                {
+                    "authorId": "2052594289",
+                    "name": "Florian Wilhelm"
+                },
+                {
+                    "authorId": "113071069",
+                    "name": "G. Young"
+                },
+                {
+                    "authorId": "2058961413",
+                    "name": "Gavin A. Price"
+                },
+                {
+                    "authorId": "40657747",
+                    "name": "G. Ingold"
+                },
+                {
+                    "authorId": "2059529796",
+                    "name": "Gregory E. Allen"
+                },
+                {
+                    "authorId": "87747838",
+                    "name": "Gregory R. Lee"
+                },
+                {
+                    "authorId": "40936461",
+                    "name": "H. Audren"
+                },
+                {
+                    "authorId": "35148114",
+                    "name": "I. Probst"
+                },
+                {
+                    "authorId": "144455209",
+                    "name": "J. Dietrich"
+                },
+                {
+                    "authorId": "2669435",
+                    "name": "J. Silterra"
+                },
+                {
+                    "authorId": "38847103",
+                    "name": "James T. Webber"
+                },
+                {
+                    "authorId": "31387499",
+                    "name": "J. Slavi\u010d"
+                },
+                {
+                    "authorId": "3083916",
+                    "name": "J. Nothman"
+                },
+                {
+                    "authorId": "2151427",
+                    "name": "J. Buchner"
+                },
+                {
+                    "authorId": "2562288",
+                    "name": "Johannes Kulick"
+                },
+                {
+                    "authorId": "3010882",
+                    "name": "Johannes L. Sch\u00f6nberger"
+                },
+                {
+                    "authorId": "1491360335",
+                    "name": "J. V. De Miranda Cardoso"
+                },
+                {
+                    "authorId": "145935219",
+                    "name": "J. Reimer"
+                },
+                {
+                    "authorId": "2068517007",
+                    "name": "J. Harrington"
+                },
+                {
+                    "authorId": "152794754",
+                    "name": "Juan Rodr\u00edguez"
+                },
+                {
+                    "authorId": "1398851518",
+                    "name": "Juan Nunez-Iglesias"
+                },
+                {
+                    "authorId": "48736174",
+                    "name": "Justin Kuczynski"
+                },
+                {
+                    "authorId": "50159131",
+                    "name": "K. Tritz"
+                },
+                {
+                    "authorId": "47049820",
+                    "name": "M. Thoma"
+                },
+                {
+                    "authorId": "144620446",
+                    "name": "M. Newville"
+                },
+                {
+                    "authorId": "2997408",
+                    "name": "Matthias K\u00fcmmerer"
+                },
+                {
+                    "authorId": "48393751",
+                    "name": "Maximilian Bolingbroke"
+                },
+                {
+                    "authorId": "2980014",
+                    "name": "Michael Tartre"
+                },
+                {
+                    "authorId": "36917288",
+                    "name": "M. Pak"
+                },
+                {
+                    "authorId": "2116828326",
+                    "name": "Nathaniel J. Smith"
+                },
+                {
+                    "authorId": "28955794",
+                    "name": "N. Nowaczyk"
+                },
+                {
+                    "authorId": "1491361121",
+                    "name": "Nikolay Shebanov"
+                },
+                {
+                    "authorId": "144208188",
+                    "name": "O. Pavlyk"
+                },
+                {
+                    "authorId": "96695635",
+                    "name": "P. A. Brodtkorb"
+                },
+                {
+                    "authorId": "2111215482",
+                    "name": "Perry Lee"
+                },
+                {
+                    "authorId": "144431879",
+                    "name": "R. McGibbon"
+                },
+                {
+                    "authorId": "3449704",
+                    "name": "Roman Feldbauer"
+                },
+                {
+                    "authorId": "2112242667",
+                    "name": "Sam Lewis"
+                },
+                {
+                    "authorId": "152330021",
+                    "name": "S. Tygier"
+                },
+                {
+                    "authorId": "34953991",
+                    "name": "Scott Sievert"
+                },
+                {
+                    "authorId": "1737624",
+                    "name": "S. Vigna"
+                },
+                {
+                    "authorId": "2053615130",
+                    "name": "Stefan Peterson"
+                },
+                {
+                    "authorId": "5891171",
+                    "name": "S. More"
+                },
+                {
+                    "authorId": "92169827",
+                    "name": "Tadeusz Pudlik"
+                },
+                {
+                    "authorId": "66273392",
+                    "name": "T. Oshima"
+                },
+                {
+                    "authorId": "1915727",
+                    "name": "T. Pingel"
+                },
+                {
+                    "authorId": "144512158",
+                    "name": "T. Robitaille"
+                },
+                {
+                    "authorId": "3419085",
+                    "name": "Thomas Spura"
+                },
+                {
+                    "authorId": "2646100",
+                    "name": "T. Jones"
+                },
+                {
+                    "authorId": "90587764",
+                    "name": "T. Cera"
+                },
+                {
+                    "authorId": "1491358355",
+                    "name": "Tim Leslie"
+                },
+                {
+                    "authorId": "2207047",
+                    "name": "Tiziano Zito"
+                },
+                {
+                    "authorId": "1491360459",
+                    "name": "Tom Krauss"
+                },
+                {
+                    "authorId": "10515643",
+                    "name": "U. Upadhyay"
+                },
+                {
+                    "authorId": "1722413",
+                    "name": "Y. Halchenko"
+                },
+                {
+                    "authorId": "1398440330",
+                    "name": "Y. V\u00e1zquez-Baeza"
+                }
+            ],
+            "doi": "10.1038/s41592-019-0686-2",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "854eca61a57d2c1ea1019663caf022bc8fd0b909",
+            "title": "SciPy 1.0: fundamental algorithms for scientific computing in Python",
+            "url": "https://www.semanticscholar.org/paper/854eca61a57d2c1ea1019663caf022bc8fd0b909",
+            "venue": "Nature Methods",
+            "year": 2019
+        },
+        {
+            "arxivId": "1907.00198",
+            "authors": [
+                {
+                    "authorId": "26985691",
+                    "name": "Bj\u00f8rn-Olav H. Eriksen"
+                },
+                {
+                    "authorId": "40212358",
+                    "name": "Glenn Bitar"
+                },
+                {
+                    "authorId": "2898727",
+                    "name": "M. Breivik"
+                },
+                {
+                    "authorId": "35547052",
+                    "name": "A. Lekkas"
+                }
+            ],
+            "doi": "10.3389/frobt.2020.00011",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "312cc6bc258e66cdc252e508651581696729016b",
+            "title": "Hybrid Collision Avoidance for ASVs Compliant With COLREGs Rules 8 and 13\u201317",
+            "url": "https://www.semanticscholar.org/paper/312cc6bc258e66cdc252e508651581696729016b",
+            "venue": "Frontiers in Robotics and AI",
+            "year": 2019
+        },
+        {
+            "arxivId": "1907.00039",
+            "authors": [
+                {
+                    "authorId": "26985691",
+                    "name": "Bj\u00f8rn-Olav H. Eriksen"
+                },
+                {
+                    "authorId": "2898727",
+                    "name": "M. Breivik"
+                },
+                {
+                    "authorId": "3440521",
+                    "name": "E. F. Wilthil"
+                },
+                {
+                    "authorId": "32559799",
+                    "name": "A. Fl\u00e5ten"
+                },
+                {
+                    "authorId": "145487374",
+                    "name": "E. Brekke"
+                }
+            ],
+            "doi": "10.1002/rob.21900",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9f134bc3d1d7b6ecca60ba677ddb92485e4d5aeb",
+            "title": "The branching\u2010course model predictive control algorithm for maritime collision avoidance",
+            "url": "https://www.semanticscholar.org/paper/9f134bc3d1d7b6ecca60ba677ddb92485e4d5aeb",
+            "venue": "J. Field Robotics",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2413676",
+                    "name": "D. Kufoalor"
+                },
+                {
+                    "authorId": "145487374",
+                    "name": "E. Brekke"
+                },
+                {
+                    "authorId": "1738481",
+                    "name": "T. Johansen"
+                }
+            ],
+            "doi": "10.1109/IROS.2018.8594382",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "87cb254a86ce59d2904f6a3057ff940ca131b264",
+            "title": "Proactive Collision Avoidance for ASVs using A Dynamic Reciprocal Velocity Obstacles Method",
+            "url": "https://www.semanticscholar.org/paper/87cb254a86ce59d2904f6a3057ff940ca131b264",
+            "venue": "2018 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+            "year": 2018
+        },
+        {
+            "arxivId": "1809.07731",
+            "authors": [
+                {
+                    "authorId": "1759633",
+                    "name": "A. Mahmood"
+                },
+                {
+                    "authorId": "2623246",
+                    "name": "D. Korenkevych"
+                },
+                {
+                    "authorId": "1966922",
+                    "name": "G. Vasan"
+                },
+                {
+                    "authorId": "2107700616",
+                    "name": "W. Ma"
+                },
+                {
+                    "authorId": "32837403",
+                    "name": "J. Bergstra"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "40cc7cdffa0a861cb557410518246d97d1678642",
+            "title": "Benchmarking Reinforcement Learning Algorithms on Real-World Robots",
+            "url": "https://www.semanticscholar.org/paper/40cc7cdffa0a861cb557410518246d97d1678642",
+            "venue": "CoRL",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2075193603",
+                    "name": "I. B. Hagen"
+                },
+                {
+                    "authorId": "2413676",
+                    "name": "D. Kufoalor"
+                },
+                {
+                    "authorId": "145487374",
+                    "name": "E. Brekke"
+                },
+                {
+                    "authorId": "1738481",
+                    "name": "T. Johansen"
+                }
+            ],
+            "doi": "10.1109/ICRA.2018.8463182",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "47d307e92244efd3f210ef95a00058f41a8054bf",
+            "title": "MPC-based Collision Avoidance Strategy for Existing Marine Vessel Guidance Systems",
+            "url": "https://www.semanticscholar.org/paper/47d307e92244efd3f210ef95a00058f41a8054bf",
+            "venue": "2018 IEEE International Conference on Robotics and Automation (ICRA)",
+            "year": 2018
+        },
+        {
+            "arxivId": "1712.01815",
+            "authors": [
+                {
+                    "authorId": "145824029",
+                    "name": "David Silver"
+                },
+                {
+                    "authorId": "2067208983",
+                    "name": "T. Hubert"
+                },
+                {
+                    "authorId": "4337102",
+                    "name": "Julian Schrittwieser"
+                },
+                {
+                    "authorId": "2460849",
+                    "name": "Ioannis Antonoglou"
+                },
+                {
+                    "authorId": "40227832",
+                    "name": "Matthew Lai"
+                },
+                {
+                    "authorId": "35099444",
+                    "name": "A. Guez"
+                },
+                {
+                    "authorId": "1975889",
+                    "name": "Marc Lanctot"
+                },
+                {
+                    "authorId": "2175946",
+                    "name": "L. Sifre"
+                },
+                {
+                    "authorId": "2106164",
+                    "name": "D. Kumaran"
+                },
+                {
+                    "authorId": "1686971",
+                    "name": "T. Graepel"
+                },
+                {
+                    "authorId": "2542999",
+                    "name": "T. Lillicrap"
+                },
+                {
+                    "authorId": "34838386",
+                    "name": "K. Simonyan"
+                },
+                {
+                    "authorId": "48987704",
+                    "name": "D. Hassabis"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "38fb1902c6a2ab4f767d4532b28a92473ea737aa",
+            "title": "Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm",
+            "url": "https://www.semanticscholar.org/paper/38fb1902c6a2ab4f767d4532b28a92473ea737aa",
+            "venue": "ArXiv",
+            "year": 2017
+        },
+        {
+            "arxivId": "1709.06560",
+            "authors": [
+                {
+                    "authorId": "40068904",
+                    "name": "Peter Henderson"
+                },
+                {
+                    "authorId": "18014232",
+                    "name": "Riashat Islam"
+                },
+                {
+                    "authorId": "143902541",
+                    "name": "Philip Bachman"
+                },
+                {
+                    "authorId": "145134886",
+                    "name": "Joelle Pineau"
+                },
+                {
+                    "authorId": "144368601",
+                    "name": "Doina Precup"
+                },
+                {
+                    "authorId": "2462512",
+                    "name": "D. Meger"
+                }
+            ],
+            "doi": "10.1609/aaai.v32i1.11694",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "33690ff21ef1efb576410e656f2e60c89d0307d6",
+            "title": "Deep Reinforcement Learning that Matters",
+            "url": "https://www.semanticscholar.org/paper/33690ff21ef1efb576410e656f2e60c89d0307d6",
+            "venue": "AAAI",
+            "year": 2017
+        },
+        {
+            "arxivId": "1708.05144",
+            "authors": [
+                {
+                    "authorId": "3374063",
+                    "name": "Yuhuai Wu"
+                },
+                {
+                    "authorId": "2711409",
+                    "name": "Elman Mansimov"
+                },
+                {
+                    "authorId": "1785346",
+                    "name": "R. Grosse"
+                },
+                {
+                    "authorId": "145657522",
+                    "name": "Shun Liao"
+                },
+                {
+                    "authorId": "2503659",
+                    "name": "Jimmy Ba"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2b6f2b163372e3417b687cc43313f2a630e7bca7",
+            "title": "Scalable trust-region method for deep reinforcement learning using Kronecker-factored approximation",
+            "url": "https://www.semanticscholar.org/paper/2b6f2b163372e3417b687cc43313f2a630e7bca7",
+            "venue": "NIPS",
+            "year": 2017
+        },
+        {
+            "arxivId": "1707.06347",
+            "authors": [
+                {
+                    "authorId": "47971768",
+                    "name": "John Schulman"
+                },
+                {
+                    "authorId": "143909660",
+                    "name": "Filip Wolski"
+                },
+                {
+                    "authorId": "6515819",
+                    "name": "Prafulla Dhariwal"
+                },
+                {
+                    "authorId": "38909097",
+                    "name": "Alec Radford"
+                },
+                {
+                    "authorId": "2067138712",
+                    "name": "Oleg Klimov"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "dce6f9d4017b1785979e7520fd0834ef8cf02f4b",
+            "title": "Proximal Policy Optimization Algorithms",
+            "url": "https://www.semanticscholar.org/paper/dce6f9d4017b1785979e7520fd0834ef8cf02f4b",
+            "venue": "ArXiv",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "70308463",
+                    "name": "L. Tai"
+                },
+                {
+                    "authorId": "2107958221",
+                    "name": "Jingwei Zhang"
+                },
+                {
+                    "authorId": null,
+                    "name": "Ming Liu"
+                },
+                {
+                    "authorId": "145581493",
+                    "name": "J. Boedecker"
+                },
+                {
+                    "authorId": "2106871731",
+                    "name": "Wolfram Burgard"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8d218715b292f423799bb574e24bd03a6fb861dd",
+            "title": "A Survey of Deep Network Solutions for Learning Control in Robotics: From Reinforcement to Imitation",
+            "url": "https://www.semanticscholar.org/paper/8d218715b292f423799bb574e24bd03a6fb861dd",
+            "venue": "",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "26985691",
+                    "name": "Bj\u00f8rn-Olav H. Eriksen"
+                },
+                {
+                    "authorId": "2898727",
+                    "name": "M. Breivik"
+                },
+                {
+                    "authorId": "1703935",
+                    "name": "K. Pettersen"
+                },
+                {
+                    "authorId": "144091251",
+                    "name": "M. Wiig"
+                }
+            ],
+            "doi": "10.1109/CCA.2016.7587879",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b1a716473edcdc34cf8d771345dfe6854cd210a3",
+            "title": "A modified dynamic window algorithm for horizontal collision avoidance for AUVs",
+            "url": "https://www.semanticscholar.org/paper/b1a716473edcdc34cf8d771345dfe6854cd210a3",
+            "venue": "2016 IEEE Conference on Control Applications (CCA)",
+            "year": 2016
+        },
+        {
+            "arxivId": "1606.01540",
+            "authors": [
+                {
+                    "authorId": "2065151121",
+                    "name": "Greg Brockman"
+                },
+                {
+                    "authorId": "34415167",
+                    "name": "Vicki Cheung"
+                },
+                {
+                    "authorId": "152877508",
+                    "name": "Ludwig Pettersson"
+                },
+                {
+                    "authorId": "2113526509",
+                    "name": "Jonas Schneider"
+                },
+                {
+                    "authorId": "47971768",
+                    "name": "John Schulman"
+                },
+                {
+                    "authorId": "2109541439",
+                    "name": "Jie Tang"
+                },
+                {
+                    "authorId": "2563432",
+                    "name": "Wojciech Zaremba"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "2b10281297ee001a9f3f4ea1aa9bea6b638c27df",
+            "title": "OpenAI Gym",
+            "url": "https://www.semanticscholar.org/paper/2b10281297ee001a9f3f4ea1aa9bea6b638c27df",
+            "venue": "ArXiv",
+            "year": 2016
+        },
+        {
+            "arxivId": "1602.01783",
+            "authors": [
+                {
+                    "authorId": "3255983",
+                    "name": "Volodymyr Mnih"
+                },
+                {
+                    "authorId": "36045539",
+                    "name": "Adri\u00e0 Puigdom\u00e8nech Badia"
+                },
+                {
+                    "authorId": "153583218",
+                    "name": "Mehdi Mirza"
+                },
+                {
+                    "authorId": "1753223",
+                    "name": "Alex Graves"
+                },
+                {
+                    "authorId": "2542999",
+                    "name": "T. Lillicrap"
+                },
+                {
+                    "authorId": "3367786",
+                    "name": "Tim Harley"
+                },
+                {
+                    "authorId": "145824029",
+                    "name": "David Silver"
+                },
+                {
+                    "authorId": "2645384",
+                    "name": "K. Kavukcuoglu"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "69e76e16740ed69f4dc55361a3d319ac2f1293dd",
+            "title": "Asynchronous Methods for Deep Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/69e76e16740ed69f4dc55361a3d319ac2f1293dd",
+            "venue": "ICML",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145824029",
+                    "name": "David Silver"
+                },
+                {
+                    "authorId": "1885349",
+                    "name": "Aja Huang"
+                },
+                {
+                    "authorId": "2772217",
+                    "name": "Chris J. Maddison"
+                },
+                {
+                    "authorId": "35099444",
+                    "name": "A. Guez"
+                },
+                {
+                    "authorId": "2175946",
+                    "name": "L. Sifre"
+                },
+                {
+                    "authorId": "47568983",
+                    "name": "George van den Driessche"
+                },
+                {
+                    "authorId": "4337102",
+                    "name": "Julian Schrittwieser"
+                },
+                {
+                    "authorId": "2460849",
+                    "name": "Ioannis Antonoglou"
+                },
+                {
+                    "authorId": "2749418",
+                    "name": "Vedavyas Panneershelvam"
+                },
+                {
+                    "authorId": "1975889",
+                    "name": "Marc Lanctot"
+                },
+                {
+                    "authorId": "48373216",
+                    "name": "S. Dieleman"
+                },
+                {
+                    "authorId": "2401609",
+                    "name": "Dominik Grewe"
+                },
+                {
+                    "authorId": "4111313",
+                    "name": "John Nham"
+                },
+                {
+                    "authorId": "2583391",
+                    "name": "Nal Kalchbrenner"
+                },
+                {
+                    "authorId": "1701686",
+                    "name": "I. Sutskever"
+                },
+                {
+                    "authorId": "2542999",
+                    "name": "T. Lillicrap"
+                },
+                {
+                    "authorId": "40662181",
+                    "name": "M. Leach"
+                },
+                {
+                    "authorId": "2645384",
+                    "name": "K. Kavukcuoglu"
+                },
+                {
+                    "authorId": "1686971",
+                    "name": "T. Graepel"
+                },
+                {
+                    "authorId": "48987704",
+                    "name": "D. Hassabis"
+                }
+            ],
+            "doi": "10.1038/nature16961",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "846aedd869a00c09b40f1f1f35673cb22bc87490",
+            "title": "Mastering the game of Go with deep neural networks and tree search",
+            "url": "https://www.semanticscholar.org/paper/846aedd869a00c09b40f1f1f35673cb22bc87490",
+            "venue": "Nature",
+            "year": 2016
+        },
+        {
+            "arxivId": "1509.02971",
+            "authors": [
+                {
+                    "authorId": "2542999",
+                    "name": "T. Lillicrap"
+                },
+                {
+                    "authorId": "2323922",
+                    "name": "Jonathan J. Hunt"
+                },
+                {
+                    "authorId": "1863250",
+                    "name": "A. Pritzel"
+                },
+                {
+                    "authorId": "2801204",
+                    "name": "N. Heess"
+                },
+                {
+                    "authorId": "1968210",
+                    "name": "Tom Erez"
+                },
+                {
+                    "authorId": "2109481",
+                    "name": "Yuval Tassa"
+                },
+                {
+                    "authorId": "145824029",
+                    "name": "David Silver"
+                },
+                {
+                    "authorId": "1688276",
+                    "name": "Daan Wierstra"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "024006d4c2a89f7acacc6e4438d156525b60a98f",
+            "title": "Continuous control with deep reinforcement learning",
+            "url": "https://www.semanticscholar.org/paper/024006d4c2a89f7acacc6e4438d156525b60a98f",
+            "venue": "ICLR",
+            "year": 2015
+        },
+        {
+            "arxivId": "1506.02438",
+            "authors": [
+                {
+                    "authorId": "47971768",
+                    "name": "John Schulman"
+                },
+                {
+                    "authorId": "29912342",
+                    "name": "Philipp Moritz"
+                },
+                {
+                    "authorId": "1736651",
+                    "name": "S. Levine"
+                },
+                {
+                    "authorId": "1694621",
+                    "name": "Michael I. Jordan"
+                },
+                {
+                    "authorId": "1689992",
+                    "name": "P. Abbeel"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "d316c82c12cf4c45f9e85211ef3d1fa62497bff8",
+            "title": "High-Dimensional Continuous Control Using Generalized Advantage Estimation",
+            "url": "https://www.semanticscholar.org/paper/d316c82c12cf4c45f9e85211ef3d1fa62497bff8",
+            "venue": "ICLR",
+            "year": 2015
+        },
+        {
+            "arxivId": "1502.05477",
+            "authors": [
+                {
+                    "authorId": "47971768",
+                    "name": "John Schulman"
+                },
+                {
+                    "authorId": "1736651",
+                    "name": "S. Levine"
+                },
+                {
+                    "authorId": "1689992",
+                    "name": "P. Abbeel"
+                },
+                {
+                    "authorId": "1694621",
+                    "name": "Michael I. Jordan"
+                },
+                {
+                    "authorId": "29912342",
+                    "name": "Philipp Moritz"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "449532187c94af3dd3aa55e16d2c50f7854d2199",
+            "title": "Trust Region Policy Optimization",
+            "url": "https://www.semanticscholar.org/paper/449532187c94af3dd3aa55e16d2c50f7854d2199",
+            "venue": "ICML",
+            "year": 2015
+        },
+        {
+            "arxivId": "1412.6980",
+            "authors": [
+                {
+                    "authorId": "1726807",
+                    "name": "Diederik P. Kingma"
+                },
+                {
+                    "authorId": "2503659",
+                    "name": "Jimmy Ba"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "a6cb366736791bcccc5c8639de5a8f9636bf87e8",
+            "title": "Adam: A Method for Stochastic Optimization",
+            "url": "https://www.semanticscholar.org/paper/a6cb366736791bcccc5c8639de5a8f9636bf87e8",
+            "venue": "ICLR",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2770605",
+                    "name": "Zheping Yan"
+                },
+                {
+                    "authorId": "2109871198",
+                    "name": "Yufei Zhao"
+                },
+                {
+                    "authorId": "49215348",
+                    "name": "S. Hou"
+                },
+                {
+                    "authorId": "9184780",
+                    "name": "Honghan Zhang"
+                },
+                {
+                    "authorId": "1696306",
+                    "name": "Yalin Zheng"
+                }
+            ],
+            "doi": "10.1155/2013/841376",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "956771ca4d0641c0b4aacf1c5c1ab6d17400c4bb",
+            "title": "Obstacle Avoidance for Unmanned Undersea Vehicle in Unknown Unstructured Environment",
+            "url": "https://www.semanticscholar.org/paper/956771ca4d0641c0b4aacf1c5c1ab6d17400c4bb",
+            "venue": "",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1762477",
+                    "name": "R. Beard"
+                },
+                {
+                    "authorId": "3248423",
+                    "name": "T. McLain"
+                }
+            ],
+            "doi": "10.1515/9781400840601",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "955ec4678be44cdb5c00ecad136866d7bd77ea25",
+            "title": "Small Unmanned Aircraft: Theory and Practice",
+            "url": "https://www.semanticscholar.org/paper/955ec4678be44cdb5c00ecad136866d7bd77ea25",
+            "venue": "",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2872569",
+                    "name": "T. Fossen"
+                }
+            ],
+            "doi": "10.1002/9781119575016",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "027544d3074db9794efa1265b8ce491bdfa04e3d",
+            "title": "Handbook of Marine Craft Hydrodynamics and Motion Control",
+            "url": "https://www.semanticscholar.org/paper/027544d3074db9794efa1265b8ce491bdfa04e3d",
+            "venue": "",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143910556",
+                    "name": "S. Garrido"
+                },
+                {
+                    "authorId": "144403161",
+                    "name": "L. Moreno"
+                },
+                {
+                    "authorId": "3290797",
+                    "name": "M. Abderrahim"
+                },
+                {
+                    "authorId": "2371381",
+                    "name": "F. Monar"
+                }
+            ],
+            "doi": "10.1109/IROS.2006.282649",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "c5f5248d92255ce7e6603b09acaec6abbef66d7b",
+            "title": "Path Planning for Mobile Robot Navigation using Voronoi Diagram and Fast Marching",
+            "url": "https://www.semanticscholar.org/paper/c5f5248d92255ce7e6603b09acaec6abbef66d7b",
+            "venue": "2006 IEEE/RSJ International Conference on Intelligent Robots and Systems",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2285118740",
+                    "name": "C. M. Bishop"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "61a1565016477b2092a212e7af0e789a250bc552",
+            "title": "Pattern Recognition and Machine Learning (Information Science and Statistics)",
+            "url": "https://www.semanticscholar.org/paper/61a1565016477b2092a212e7af0e789a250bc552",
+            "venue": "",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2610574",
+                    "name": "Ian M. Mitchell"
+                },
+                {
+                    "authorId": "1705102",
+                    "name": "A. Bayen"
+                },
+                {
+                    "authorId": "1693894",
+                    "name": "C. Tomlin"
+                }
+            ],
+            "doi": "10.1109/TAC.2005.851439",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "25b0fff82aca2734d3b1b3a2d0c21c21b63fd626",
+            "title": "A time-dependent Hamilton-Jacobi formulation of reachable sets for continuous dynamic games",
+            "url": "https://www.semanticscholar.org/paper/25b0fff82aca2734d3b1b3a2d0c21c21b63fd626",
+            "venue": "IEEE Transactions on Automatic Control",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2213983",
+                    "name": "R. Skjetne"
+                },
+                {
+                    "authorId": "2725236",
+                    "name": "\u00d8. Smogeli"
+                },
+                {
+                    "authorId": "2872569",
+                    "name": "T. Fossen"
+                }
+            ],
+            "doi": "10.1016/S1474-6670(17)31732-9",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "fdf9edfea29292704a3d3b862183d903b67ab75d",
+            "title": "Modeling, identification, and adaptive maneuvering of CyberShip II: A complete design with experiments",
+            "url": "https://www.semanticscholar.org/paper/fdf9edfea29292704a3d3b862183d903b67ab75d",
+            "venue": "",
+            "year": 2004
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144695232",
+                    "name": "S. Kakade"
+                },
+                {
+                    "authorId": "144162125",
+                    "name": "J. Langford"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "523b4ce1c2a1336962444abc1dec215756c2f3e6",
+            "title": "Approximately Optimal Approximate Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/523b4ce1c2a1336962444abc1dec215756c2f3e6",
+            "venue": "ICML",
+            "year": 2002
+        },
+        {
+            "arxivId": "1301.2315",
+            "authors": [
+                {
+                    "authorId": "37228807",
+                    "name": "Lex Weaver"
+                },
+                {
+                    "authorId": "2595807",
+                    "name": "Nigel Tao"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "4d92df4a844c94fbb31b95157488e4b562b4f681",
+            "title": "The Optimal Reward Baseline for Gradient-Based Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/4d92df4a844c94fbb31b95157488e4b562b4f681",
+            "venue": "UAI",
+            "year": 2001
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1699645",
+                    "name": "R. Sutton"
+                },
+                {
+                    "authorId": "145689002",
+                    "name": "David A. McAllester"
+                },
+                {
+                    "authorId": "1699868",
+                    "name": "Satinder Singh"
+                },
+                {
+                    "authorId": "144830983",
+                    "name": "Y. Mansour"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a20f0ce0616def7cc9a87446c228906cd5da093b",
+            "title": "Policy Gradient Methods for Reinforcement Learning with Function Approximation",
+            "url": "https://www.semanticscholar.org/paper/a20f0ce0616def7cc9a87446c228906cd5da093b",
+            "venue": "NIPS",
+            "year": 1999
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1717724",
+                    "name": "O. Brock"
+                },
+                {
+                    "authorId": "1717425",
+                    "name": "O. Khatib"
+                }
+            ],
+            "doi": "10.1109/ROBOT.1999.770002",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9ba11955f7d8c93163288c33f9c3ed4cffc89a31",
+            "title": "High-speed navigation using the global dynamic window approach",
+            "url": "https://www.semanticscholar.org/paper/9ba11955f7d8c93163288c33f9c3ed4cffc89a31",
+            "venue": "Proceedings 1999 IEEE International Conference on Robotics and Automation (Cat. No.99CH36288C)",
+            "year": 1999
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1779713",
+                    "name": "P. Fiorini"
+                },
+                {
+                    "authorId": "1692299",
+                    "name": "Z. Shiller"
+                }
+            ],
+            "doi": "10.1177/027836499801700706",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "3f77f8b0e1a3e3dcedb0953a42018b6948b60617",
+            "title": "Motion Planning in Dynamic Environments Using Velocity Obstacles",
+            "url": "https://www.semanticscholar.org/paper/3f77f8b0e1a3e3dcedb0953a42018b6948b60617",
+            "venue": "Int. J. Robotics Res.",
+            "year": 1998
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145197953",
+                    "name": "D. Fox"
+                },
+                {
+                    "authorId": "2106871731",
+                    "name": "Wolfram Burgard"
+                },
+                {
+                    "authorId": "144867807",
+                    "name": "S. Thrun"
+                }
+            ],
+            "doi": "10.1109/100.580977",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ccfb06935ea9c8832ec6086000f71cf584a79679",
+            "title": "The dynamic window approach to collision avoidance",
+            "url": "https://www.semanticscholar.org/paper/ccfb06935ea9c8832ec6086000f71cf584a79679",
+            "venue": "IEEE Robotics Autom. Mag.",
+            "year": 1997
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1786249",
+                    "name": "D. Bertsekas"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "a82db864e472b5aa6313596ef9919f64e3363b1f",
+            "title": "Dynamic Programming and Optimal Control, Two Volume Set",
+            "url": "https://www.semanticscholar.org/paper/a82db864e472b5aa6313596ef9919f64e3363b1f",
+            "venue": "",
+            "year": 1995
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1687718",
+                    "name": "Y. Koren"
+                },
+                {
+                    "authorId": "34767446",
+                    "name": "J. Borenstein"
+                }
+            ],
+            "doi": "10.1109/ROBOT.1991.131810",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "07cc4371c8d3ddf7de0189f73227c3f0d896d66d",
+            "title": "Potential field methods and their inherent limitations for mobile robot navigation",
+            "url": "https://www.semanticscholar.org/paper/07cc4371c8d3ddf7de0189f73227c3f0d896d66d",
+            "venue": "Proceedings. 1991 IEEE International Conference on Robotics and Automation",
+            "year": 1991
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1729041",
+                    "name": "J. Canny"
+                },
+                {
+                    "authorId": "1749706",
+                    "name": "J. Reif"
+                }
+            ],
+            "doi": "10.1109/SFCS.1987.42",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "257ed98246e0ad6182d58200545bd78b077a65f6",
+            "title": "New lower bound techniques for robot motion planning problems",
+            "url": "https://www.semanticscholar.org/paper/257ed98246e0ad6182d58200545bd78b077a65f6",
+            "venue": "28th Annual Symposium on Foundations of Computer Science (sfcs 1987)",
+            "year": 1987
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1717425",
+                    "name": "O. Khatib"
+                }
+            ],
+            "doi": "10.1177/027836498600500106",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c8a04d0cbb9f70e86800b11b594c9a05d7b6bac0",
+            "title": "Real-Time Obstacle Avoidance for Manipulators and Mobile Robots",
+            "url": "https://www.semanticscholar.org/paper/c8a04d0cbb9f70e86800b11b594c9a05d7b6bac0",
+            "venue": "Proceedings. 1985 IEEE International Conference on Robotics and Automation",
+            "year": 1985
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2578610",
+                    "name": "E. Fehlberg"
+                }
+            ],
+            "doi": "10.1007/BF02241732",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "b61bde97cc0ba07fb74ebe6f2e772467af9da976",
+            "title": "Klassische Runge-Kutta-Formeln vierter und niedrigerer Ordnung mit Schrittweiten-Kontrolle und ihre Anwendung auf W\u00e4rmeleitungsprobleme",
+            "url": "https://www.semanticscholar.org/paper/b61bde97cc0ba07fb74ebe6f2e772467af9da976",
+            "venue": "Computing",
+            "year": 1970
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3108177",
+                    "name": "P. Hart"
+                },
+                {
+                    "authorId": "144497046",
+                    "name": "N. Nilsson"
+                },
+                {
+                    "authorId": "28791020",
+                    "name": "B. Raphael"
+                }
+            ],
+            "doi": "10.1109/TSSC.1968.300136",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "221aa3be55a4ead8fc2aa83b12aac370bfba72f5",
+            "title": "A Formal Basis for the Heuristic Determination of Minimum Cost Paths",
+            "url": "https://www.semanticscholar.org/paper/221aa3be55a4ead8fc2aa83b12aac370bfba72f5",
+            "venue": "IEEE Trans. Syst. Sci. Cybern.",
+            "year": 1968
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144091251",
+                    "name": "M. Wiig"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ee8bd01b9df223d5e104c55ca52b7b634d35c3bd",
+            "title": "Collision Avoidance and Path Following for Underactuated Marine Vehicles",
+            "url": "https://www.semanticscholar.org/paper/ee8bd01b9df223d5e104c55ca52b7b634d35c3bd",
+            "venue": "",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "150094457",
+                    "name": "Einvald Serigstad"
+                },
+                {
+                    "authorId": "26985691",
+                    "name": "Bj\u00f8rn-Olav H. Eriksen"
+                },
+                {
+                    "authorId": "2898727",
+                    "name": "M. Breivik"
+                }
+            ],
+            "doi": "10.1016/J.IFACOL.2018.09.460",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "4169c2ac02da6524f6d88c723e67107f038188a0",
+            "title": "Hybrid Collision Avoidance for Autonomous Surface Vehicles",
+            "url": "https://www.semanticscholar.org/paper/4169c2ac02da6524f6d88c723e67107f038188a0",
+            "venue": "",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "65936485",
+                    "name": "Andreas B. Martinsen"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "26cc0debfb4a92c901220519cd9f9b65ba50cef1",
+            "title": "End-to-end training for path following and control of marine vehicles",
+            "url": "https://www.semanticscholar.org/paper/26cc0debfb4a92c901220519cd9f9b65ba50cef1",
+            "venue": "",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2840566",
+                    "name": "Yuxiao Chen"
+                },
+                {
+                    "authorId": "145406976",
+                    "name": "H. Peng"
+                },
+                {
+                    "authorId": "8564504",
+                    "name": "J. Grizzle"
+                }
+            ],
+            "doi": "10.1109/TCST.2017.2654063",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "12bb592967af70686568e9077493479acdab0b1f",
+            "title": "Obstacle Avoidance for Low-Speed Autonomous Vehicles With Barrier Function",
+            "url": "https://www.semanticscholar.org/paper/12bb592967af70686568e9077493479acdab0b1f",
+            "venue": "IEEE Transactions on Control Systems Technology",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "40212358",
+                    "name": "Glenn Bitar"
+                },
+                {
+                    "authorId": "2898727",
+                    "name": "M. Breivik"
+                },
+                {
+                    "authorId": "35547052",
+                    "name": "A. Lekkas"
+                }
+            ],
+            "doi": "10.1016/J.IFACOL.2018.09.456",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "010535e04d45d6f66c84af2064038f4d6abaee01",
+            "title": "Energy-Optimized Path Planning for Autonomous Ferries",
+            "url": "https://www.semanticscholar.org/paper/010535e04d45d6f66c84af2064038f4d6abaee01",
+            "venue": "",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "47971768",
+                    "name": "John Schulman"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e31692a74427b58b6154e37da7535e142ceceb4b",
+            "title": "Optimizing Expectations: From Deep Reinforcement Learning to Stochastic Computation Graphs",
+            "url": "https://www.semanticscholar.org/paper/e31692a74427b58b6154e37da7535e142ceceb4b",
+            "venue": "",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1688882",
+                    "name": "Yann LeCun"
+                },
+                {
+                    "authorId": "1751762",
+                    "name": "Yoshua Bengio"
+                },
+                {
+                    "authorId": "1695689",
+                    "name": "Geoffrey E. Hinton"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "2913c2bf3f92b5ae369400a42b2d27cc5bc05ecb",
+            "title": "Deep Learning",
+            "url": "https://www.semanticscholar.org/paper/2913c2bf3f92b5ae369400a42b2d27cc5bc05ecb",
+            "venue": "",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2762989",
+                    "name": "Dimitra Panagou"
+                }
+            ],
+            "doi": "10.1109/ICRA.2014.6907210",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "bdf98f07cf408ea295f840a0d9ae379cf99826b0",
+            "title": "Motion planning and collision avoidance using navigation vector fields",
+            "url": "https://www.semanticscholar.org/paper/bdf98f07cf408ea295f840a0d9ae379cf99826b0",
+            "venue": "2014 IEEE International Conference on Robotics and Automation (ICRA)",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3785830",
+                    "name": "Mauro Candeloro"
+                },
+                {
+                    "authorId": "35547052",
+                    "name": "A. Lekkas"
+                },
+                {
+                    "authorId": "34563242",
+                    "name": "A. S\u00f8rensen"
+                },
+                {
+                    "authorId": "2872569",
+                    "name": "T. Fossen"
+                }
+            ],
+            "doi": "10.3182/20130918-4-JP-3022.00064",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "eababca7dc57c5d279752a397fa1828c17e054e4",
+            "title": "Continuous Curvature Path Planning using Voronoi diagrams and Fermat's spirals",
+            "url": "https://www.semanticscholar.org/paper/eababca7dc57c5d279752a397fa1828c17e054e4",
+            "venue": "",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "40348337",
+                    "name": "I. M. Viola"
+                },
+                {
+                    "authorId": "101398287",
+                    "name": "R. Flay"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "761b0c4b1e08292b631893c172cac60d0aea5bab",
+            "title": "The Society of Naval Architects and Marine Engineers",
+            "url": "https://www.semanticscholar.org/paper/761b0c4b1e08292b631893c172cac60d0aea5bab",
+            "venue": "",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2898727",
+                    "name": "M. Breivik"
+                },
+                {
+                    "authorId": "2872569",
+                    "name": "T. Fossen"
+                }
+            ],
+            "doi": "10.5772/6696",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "9ff0555d5c14e837957b6e4f74a754543de689d0",
+            "title": "Guidance Laws for Autonomous Underwater Vehicles",
+            "url": "https://www.semanticscholar.org/paper/9ff0555d5c14e837957b6e4f74a754543de689d0",
+            "venue": "",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "bac0865712de2a95efe1b2875917b4372ba8bea5",
+            "title": "Collision Avoidance for Unmanned Surface Vehicles",
+            "url": "https://www.semanticscholar.org/paper/bac0865712de2a95efe1b2875917b4372ba8bea5",
+            "venue": "",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2111121078",
+                    "name": "J. Silva"
+                },
+                {
+                    "authorId": "153865741",
+                    "name": "B. Terra"
+                },
+                {
+                    "authorId": "145194083",
+                    "name": "R. Martins"
+                },
+                {
+                    "authorId": "144626155",
+                    "name": "J. Sousa"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "5b1c6a0062846208a69211f974ba4cd04d4a7375",
+            "title": "Modeling and Simulation of the LAUV Autonomous Underwater Vehicle",
+            "url": "https://www.semanticscholar.org/paper/5b1c6a0062846208a69211f974ba4cd04d4a7375",
+            "venue": "",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2116648700",
+                    "name": "Ronald J. Williams"
+                }
+            ],
+            "doi": "10.1023/A:1022672621406",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "4c915c1eecb217c123a36dc6d3ce52d12c742614",
+            "title": "Simple Statistical Gradient-Following Algorithms for Connectionist Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/4c915c1eecb217c123a36dc6d3ce52d12c742614",
+            "venue": "Machine Learning",
+            "year": 2004
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2238176724",
+                    "name": "R. S. Sutton"
+                },
+                {
+                    "authorId": "1730590",
+                    "name": "A. Barto"
+                }
+            ],
+            "doi": "10.1109/TNN.1998.712192",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "97efafdb4a3942ab3efba53ded7413199f79c054",
+            "title": "Reinforcement Learning: An Introduction",
+            "url": "https://www.semanticscholar.org/paper/97efafdb4a3942ab3efba53ded7413199f79c054",
+            "venue": "IEEE Trans. Neural Networks",
+            "year": 1998
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1683060",
+                    "name": "S. LaValle"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "d967d9550f831a8b3f5cb00f8835a4c866da60ad",
+            "title": "Rapidly-exploring random trees : a new tool for path planning",
+            "url": "https://www.semanticscholar.org/paper/d967d9550f831a8b3f5cb00f8835a4c866da60ad",
+            "venue": "",
+            "year": 1998
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2223704956",
+                    "name": "J Lrdg"
+                },
+                {
+                    "authorId": "2066626542",
+                    "name": "M. Lengyel"
+                },
+                {
+                    "authorId": "1580286494",
+                    "name": "B. Reichert"
+                },
+                {
+                    "authorId": "69503703",
+                    "name": "P. Donald"
+                },
+                {
+                    "authorId": "2074319406",
+                    "name": "Greenberg"
+                },
+                {
+                    "authorId": "2223704716",
+                    "name": "T Lpw"
+                },
+                {
+                    "authorId": "2223704951",
+                    "name": "M. A. W. Lozano-P Erez"
+                },
+                {
+                    "authorId": "2223704998",
+                    "name": "An"
+                },
+                {
+                    "authorId": "2028868942",
+                    "name": "Hst"
+                },
+                {
+                    "authorId": "2201149",
+                    "name": "T. Horsch"
+                },
+                {
+                    "authorId": "119449934",
+                    "name": "F. Schwarz"
+                },
+                {
+                    "authorId": "2223704755",
+                    "name": "References Atbm"
+                },
+                {
+                    "authorId": "2078826892",
+                    "name": "J M Ahuactzin"
+                },
+                {
+                    "authorId": "2223704713",
+                    "name": "E.-G Talbi"
+                },
+                {
+                    "authorId": "1484716792",
+                    "name": "P. Bess\u00ec"
+                },
+                {
+                    "authorId": "69027960",
+                    "name": "E. Mazer"
+                },
+                {
+                    "authorId": "2223704752",
+                    "name": "P C Ch"
+                },
+                {
+                    "authorId": "2153249830",
+                    "name": "Y. K. Chen"
+                },
+                {
+                    "authorId": "2057878591",
+                    "name": "Hwang"
+                },
+                {
+                    "authorId": "2223704739",
+                    "name": "Sandros"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7e98801ab0b438115ea4d86fdd4babe7ae178561",
+            "title": "Probabilistic Roadmaps for Path Planning in High-Dimensional Con(cid:12)guration Spaces",
+            "url": "https://www.semanticscholar.org/paper/7e98801ab0b438115ea4d86fdd4babe7ae178561",
+            "venue": "",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "34767446",
+                    "name": "J. Borenstein"
+                },
+                {
+                    "authorId": "1687718",
+                    "name": "Y. Koren"
+                }
+            ],
+            "doi": "10.1109/70.88137",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "529cf7a716e6c9da99c6a468730f22398f75c1a4",
+            "title": "The vector field histogram-fast obstacle avoidance for mobile robots",
+            "url": "https://www.semanticscholar.org/paper/529cf7a716e6c9da99c6a468730f22398f75c1a4",
+            "venue": "IEEE Trans. Robotics Autom.",
+            "year": 1991
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        },
+        {
+            "category": "Engineering",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Taming an Autonomous Surface Vehicle for Path Following and Collision Avoidance Using Deep Reinforcement Learning",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/d3c08bd9ef0f2e5aa3192b4f038e414e40948fe6",
+    "venue": "IEEE Access",
+    "year": 2019
+}

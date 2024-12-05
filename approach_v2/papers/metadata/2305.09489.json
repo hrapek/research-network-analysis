@@ -1,0 +1,1208 @@
+{
+    "abstract": "Denoising Diffusion Probabilistic Models (DDPMs) have made great strides in generating high-quality samples in both discrete and continuous domains.\n\nHowever, Discrete DDPMs (D3PMs) have yet to be applied to the domain of Symbolic Music.\n\nThis work presents the direct generation of Polyphonic Symbolic Music using D3PMs.\n\nOur model exhibits state-of-the-art sample quality, according to current quantitative evaluation metrics, and allows for flexible infilling at the note level.\n\nWe further show, that our models are accessible to post-hoc classifier guidance, widening the scope of possible applications.\n\nHowever, we also cast a critical view on quantitative evaluation of music sample quality via statistical metrics, and present a simple algorithm that can confound our metrics with completely spurious, non-musical samples.",
+    "arxivId": "2305.09489",
+    "authors": [
+        {
+            "authorId": "2217347305",
+            "name": "Matthias Plasser",
+            "url": "https://www.semanticscholar.org/author/2217347305"
+        },
+        {
+            "authorId": "1854910522",
+            "name": "S. Peter",
+            "url": "https://www.semanticscholar.org/author/1854910522"
+        },
+        {
+            "authorId": "145964711",
+            "name": "G. Widmer",
+            "url": "https://www.semanticscholar.org/author/145964711"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2319751051",
+                    "name": "Jinlong Zhu"
+                },
+                {
+                    "authorId": "118063648",
+                    "name": "Keigo Sakurai"
+                },
+                {
+                    "authorId": "3470264",
+                    "name": "Ren Togo"
+                },
+                {
+                    "authorId": "144392699",
+                    "name": "Takahiro Ogawa"
+                },
+                {
+                    "authorId": "144029207",
+                    "name": "M. Haseyama"
+                }
+            ],
+            "doi": "10.1109/GCCE62371.2024.10760546",
+            "intent": [],
+            "isInfluential": true,
+            "paperId": "f47f0b311090f591232776f4962e07fa8f79235b",
+            "title": "Structured Polyphonic Music Generation with Diffusion Transformer",
+            "url": "https://www.semanticscholar.org/paper/f47f0b311090f591232776f4962e07fa8f79235b",
+            "venue": "2024 IEEE 13th Global Conference on Consumer Electronics (GCCE)",
+            "year": 2024
+        },
+        {
+            "arxivId": "2408.01950",
+            "authors": [
+                {
+                    "authorId": "2051641428",
+                    "name": "Shipei Liu"
+                },
+                {
+                    "authorId": "2238133055",
+                    "name": "Xiaoya Fan"
+                },
+                {
+                    "authorId": "2165684275",
+                    "name": "Guowei Wu"
+                }
+            ],
+            "doi": "10.48550/arXiv.2408.01950",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "b132b84284b7da1f89ced9c1dd56c77b1ff041d0",
+            "title": "Why Perturbing Symbolic Music is Necessary: Fitting the Distribution of Never-used Notes through a Joint Probabilistic Diffusion Model",
+            "url": "https://www.semanticscholar.org/paper/b132b84284b7da1f89ced9c1dd56c77b1ff041d0",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": "2407.10462",
+            "authors": [
+                {
+                    "authorId": "2116740369",
+                    "name": "Jing Luo"
+                },
+                {
+                    "authorId": "2275293553",
+                    "name": "Xinyu Yang"
+                },
+                {
+                    "authorId": "3320845",
+                    "name": "Dorien Herremans"
+                }
+            ],
+            "doi": "10.48550/arXiv.2407.10462",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5f0d96e5d209bd66d39694dc02a09a3563936e27",
+            "title": "BandControlNet: Parallel Transformers-based Steerable Popular Music Generation with Fine-Grained Spatiotemporal Features",
+            "url": "https://www.semanticscholar.org/paper/5f0d96e5d209bd66d39694dc02a09a3563936e27",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2317108606",
+                    "name": "Taras Alexander Sosedko"
+                },
+                {
+                    "authorId": "2317107089",
+                    "name": "Dietmar Matthes"
+                },
+                {
+                    "authorId": "2317108292",
+                    "name": "Peter Knott"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ac348f7bd5eb9c7ea60b7e17c5a01524eb6eab5f",
+            "title": "Generation Of Synthetic Clutter Signals With Denoising Diffusion Probabilistic Models",
+            "url": "https://www.semanticscholar.org/paper/ac348f7bd5eb9c7ea60b7e17c5a01524eb6eab5f",
+            "venue": "2024 International Radar Symposium (IRS)",
+            "year": 2024
+        },
+        {
+            "arxivId": "2406.14850",
+            "authors": [
+                {
+                    "authorId": "2307964698",
+                    "name": "Huan Zhang"
+                },
+                {
+                    "authorId": "31933750",
+                    "name": "Shreyan Chowdhury"
+                },
+                {
+                    "authorId": "2080784576",
+                    "name": "C. Cancino-Chac'on"
+                },
+                {
+                    "authorId": "2308136533",
+                    "name": "Jinhua Liang"
+                },
+                {
+                    "authorId": "2237991009",
+                    "name": "Simon Dixon"
+                },
+                {
+                    "authorId": "2256203977",
+                    "name": "Gerhard Widmer"
+                }
+            ],
+            "doi": "10.3390/app14156543",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "4015b6315b1738e8abeaa3bbfff50cd4b932d8b5",
+            "title": "DExter: Learning and Controlling Performance Expression with Diffusion Models",
+            "url": "https://www.semanticscholar.org/paper/4015b6315b1738e8abeaa3bbfff50cd4b932d8b5",
+            "venue": "Applied Sciences",
+            "year": 2024
+        },
+        {
+            "arxivId": "2405.12666",
+            "authors": [
+                {
+                    "authorId": "101602321",
+                    "name": "Nicolas Jonason"
+                },
+                {
+                    "authorId": "2267243551",
+                    "name": "Luca Casini"
+                },
+                {
+                    "authorId": "2267247063",
+                    "name": "Bob L. T. Sturm"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "df17247de8bf11c0c461bbfe11a4750c03d58ea5",
+            "title": "SYMPLEX: Controllable Symbolic Music Generation using Simplex Diffusion with Vocabulary Priors",
+            "url": "https://www.semanticscholar.org/paper/df17247de8bf11c0c461bbfe11a4750c03d58ea5",
+            "venue": "",
+            "year": 2024
+        },
+        {
+            "arxivId": "2310.16334",
+            "authors": [
+                {
+                    "authorId": "2145802164",
+                    "name": "Jingwei Zhao"
+                },
+                {
+                    "authorId": "38746431",
+                    "name": "Gus G. Xia"
+                },
+                {
+                    "authorId": "2301543573",
+                    "name": "Ziyu Wang"
+                },
+                {
+                    "authorId": "2261674562",
+                    "name": "Ye Wang"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "fea54213f9d618ee6ad20a1928198f679d813a17",
+            "title": "Structured Multi-Track Accompaniment Arrangement via Style Prior Modelling",
+            "url": "https://www.semanticscholar.org/paper/fea54213f9d618ee6ad20a1928198f679d813a17",
+            "venue": "",
+            "year": 2023
+        }
+    ],
+    "corpusId": 258715306,
+    "doi": "10.48550/arXiv.2305.09489",
+    "fieldsOfStudy": [
+        "Computer Science",
+        "Engineering"
+    ],
+    "influentialCitationCount": 1,
+    "isOpenAccess": true,
+    "isPublisherLicensed": true,
+    "is_open_access": true,
+    "is_publisher_licensed": true,
+    "numCitedBy": 7,
+    "numCiting": 31,
+    "paperId": "481fbda08a74cf5632ddb39b264963f68dc04ddb",
+    "references": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2178462079",
+                    "name": "M. Civit"
+                },
+                {
+                    "authorId": "1404302491",
+                    "name": "Javier Civit-Masot"
+                },
+                {
+                    "authorId": "145162433",
+                    "name": "F. Cuadrado"
+                },
+                {
+                    "authorId": "1726224",
+                    "name": "Mar\u00eda Jos\u00e9 Escalona Cuaresma"
+                }
+            ],
+            "doi": "10.1016/j.eswa.2022.118190",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "add535b2e7a20710082d94e64b5f0bddb3e1b7c3",
+            "title": "A systematic review of artificial intelligence-based music generation: Scope, applications, and future trends",
+            "url": "https://www.semanticscholar.org/paper/add535b2e7a20710082d94e64b5f0bddb3e1b7c3",
+            "venue": "Expert Syst. Appl.",
+            "year": 2022
+        },
+        {
+            "arxivId": "2206.05408",
+            "authors": [
+                {
+                    "authorId": "41231781",
+                    "name": "Curtis Hawthorne"
+                },
+                {
+                    "authorId": "35577716",
+                    "name": "Ian Simon"
+                },
+                {
+                    "authorId": "2070857331",
+                    "name": "Adam Roberts"
+                },
+                {
+                    "authorId": "3404556",
+                    "name": "Neil Zeghidour"
+                },
+                {
+                    "authorId": "33685819",
+                    "name": "Josh Gardner"
+                },
+                {
+                    "authorId": "30450247",
+                    "name": "Ethan Manilow"
+                },
+                {
+                    "authorId": "9695761",
+                    "name": "Jesse Engel"
+                }
+            ],
+            "doi": "10.48550/arXiv.2206.05408",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d8e6ee480b6b3371bd9385ed05b8b915a87362b7",
+            "title": "Multi-instrument Music Synthesis with Spectrogram Diffusion",
+            "url": "https://www.semanticscholar.org/paper/d8e6ee480b6b3371bd9385ed05b8b915a87362b7",
+            "venue": "ISMIR",
+            "year": 2022
+        },
+        {
+            "arxivId": "2111.12701",
+            "authors": [
+                {
+                    "authorId": "1796272751",
+                    "name": "Sam Bond-Taylor"
+                },
+                {
+                    "authorId": "2141760883",
+                    "name": "P. Hessey"
+                },
+                {
+                    "authorId": "2072856977",
+                    "name": "Hiroshi Sasaki"
+                },
+                {
+                    "authorId": "1803808",
+                    "name": "T. Breckon"
+                },
+                {
+                    "authorId": "2240006",
+                    "name": "Chris G. Willcocks"
+                }
+            ],
+            "doi": "10.1007/978-3-031-20050-2_11",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "80035bfa3f822364fbc62de6df2d5df13a0c47ff",
+            "title": "Unleashing Transformers: Parallel Token Prediction with Discrete Absorbing Diffusion for Fast High-Resolution Image Generation from Vector-Quantized Codes",
+            "url": "https://www.semanticscholar.org/paper/80035bfa3f822364fbc62de6df2d5df13a0c47ff",
+            "venue": "ECCV",
+            "year": 2021
+        },
+        {
+            "arxivId": "2107.05223",
+            "authors": [
+                {
+                    "authorId": "2118969424",
+                    "name": "Yi-Hui Chou"
+                },
+                {
+                    "authorId": "2056276700",
+                    "name": "I-Chun Chen"
+                },
+                {
+                    "authorId": "2142457104",
+                    "name": "Chin-Jui Chang"
+                },
+                {
+                    "authorId": "1902327722",
+                    "name": "Joann Ching"
+                },
+                {
+                    "authorId": "145142378",
+                    "name": "Yi-Hsuan Yang"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d99550de0b6bb882deacf3f19b8622211a640d10",
+            "title": "BERT-like Pre-training for Symbolic Piano Music Classification Tasks",
+            "url": "https://www.semanticscholar.org/paper/d99550de0b6bb882deacf3f19b8622211a640d10",
+            "venue": "",
+            "year": 2021
+        },
+        {
+            "arxivId": "2107.03006",
+            "authors": [
+                {
+                    "authorId": "2058365883",
+                    "name": "Jacob Austin"
+                },
+                {
+                    "authorId": "2150444707",
+                    "name": "Daniel D. Johnson"
+                },
+                {
+                    "authorId": "2126278",
+                    "name": "Jonathan Ho"
+                },
+                {
+                    "authorId": "1725299",
+                    "name": "Daniel Tarlow"
+                },
+                {
+                    "authorId": "9965217",
+                    "name": "Rianne van den Berg"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "91b32fc0a23f0af53229fceaae9cce43a0406d2e",
+            "title": "Structured Denoising Diffusion Models in Discrete State-Spaces",
+            "url": "https://www.semanticscholar.org/paper/91b32fc0a23f0af53229fceaae9cce43a0406d2e",
+            "venue": "NeurIPS",
+            "year": 2021
+        },
+        {
+            "arxivId": "2106.05630",
+            "authors": [
+                {
+                    "authorId": "2109759226",
+                    "name": "Mingliang Zeng"
+                },
+                {
+                    "authorId": "48391466",
+                    "name": "Xu Tan"
+                },
+                {
+                    "authorId": "2151038979",
+                    "name": "Rui Wang"
+                },
+                {
+                    "authorId": "1613055688",
+                    "name": "Zeqian Ju"
+                },
+                {
+                    "authorId": "143826491",
+                    "name": "Tao Qin"
+                },
+                {
+                    "authorId": "2110264337",
+                    "name": "Tie-Yan Liu"
+                }
+            ],
+            "doi": "10.18653/v1/2021.findings-acl.70",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "79604e29340a8336003d1e8a348083b6249cc754",
+            "title": "MusicBERT: Symbolic Music Understanding with Large-Scale Pre-Training",
+            "url": "https://www.semanticscholar.org/paper/79604e29340a8336003d1e8a348083b6249cc754",
+            "venue": "FINDINGS",
+            "year": 2021
+        },
+        {
+            "arxivId": "2105.05233",
+            "authors": [
+                {
+                    "authorId": "6515819",
+                    "name": "Prafulla Dhariwal"
+                },
+                {
+                    "authorId": "38967461",
+                    "name": "Alex Nichol"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "64ea8f180d0682e6c18d1eb688afdb2027c02794",
+            "title": "Diffusion Models Beat GANs on Image Synthesis",
+            "url": "https://www.semanticscholar.org/paper/64ea8f180d0682e6c18d1eb688afdb2027c02794",
+            "venue": "NeurIPS",
+            "year": 2021
+        },
+        {
+            "arxivId": "2103.16091",
+            "authors": [
+                {
+                    "authorId": "2148612552",
+                    "name": "Gautam Mittal"
+                },
+                {
+                    "authorId": "9695761",
+                    "name": "Jesse Engel"
+                },
+                {
+                    "authorId": "41231781",
+                    "name": "Curtis Hawthorne"
+                },
+                {
+                    "authorId": "35577716",
+                    "name": "Ian Simon"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "93d00ea9c87268f867b4addb8043be35d6996d18",
+            "title": "Symbolic Music Generation with Diffusion Models",
+            "url": "https://www.semanticscholar.org/paper/93d00ea9c87268f867b4addb8043be35d6996d18",
+            "venue": "ISMIR",
+            "year": 2021
+        },
+        {
+            "arxivId": "2102.05379",
+            "authors": [
+                {
+                    "authorId": "65928943",
+                    "name": "Emiel Hoogeboom"
+                },
+                {
+                    "authorId": "39227113",
+                    "name": "Didrik Nielsen"
+                },
+                {
+                    "authorId": "144818264",
+                    "name": "P. Jaini"
+                },
+                {
+                    "authorId": "51131843",
+                    "name": "Patrick Forr'e"
+                },
+                {
+                    "authorId": "1678311",
+                    "name": "M. Welling"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "add5f3f820b393e7ce5ed467814253824ecc484b",
+            "title": "Argmax Flows and Multinomial Diffusion: Learning Categorical Distributions",
+            "url": "https://www.semanticscholar.org/paper/add5f3f820b393e7ce5ed467814253824ecc484b",
+            "venue": "NeurIPS",
+            "year": 2021
+        },
+        {
+            "arxivId": "2101.02402",
+            "authors": [
+                {
+                    "authorId": "37188394",
+                    "name": "Wen-Yi Hsiao"
+                },
+                {
+                    "authorId": "2026963790",
+                    "name": "Jen-Yu Liu"
+                },
+                {
+                    "authorId": "5866983",
+                    "name": "Yin-Cheng Yeh"
+                },
+                {
+                    "authorId": "145142378",
+                    "name": "Yi-Hsuan Yang"
+                }
+            ],
+            "doi": "10.1609/aaai.v35i1.16091",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "eb0931c39904a40c6cb4aa35c9b21d5e3b7dc856",
+            "title": "Compound Word Transformer: Learning to Compose Full-Song Music over Dynamic Directed Hypergraphs",
+            "url": "https://www.semanticscholar.org/paper/eb0931c39904a40c6cb4aa35c9b21d5e3b7dc856",
+            "venue": "AAAI",
+            "year": 2021
+        },
+        {
+            "arxivId": "2009.09761",
+            "authors": [
+                {
+                    "authorId": "33470361",
+                    "name": "Zhifeng Kong"
+                },
+                {
+                    "authorId": "2056440915",
+                    "name": "Wei Ping"
+                },
+                {
+                    "authorId": "34060310",
+                    "name": "Jiaji Huang"
+                },
+                {
+                    "authorId": "2074107557",
+                    "name": "Kexin Zhao"
+                },
+                {
+                    "authorId": "2301680",
+                    "name": "Bryan Catanzaro"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "34bf13e58c7226d615afead0c0f679432502940e",
+            "title": "DiffWave: A Versatile Diffusion Model for Audio Synthesis",
+            "url": "https://www.semanticscholar.org/paper/34bf13e58c7226d615afead0c0f679432502940e",
+            "venue": "ICLR",
+            "year": 2020
+        },
+        {
+            "arxivId": "2006.11239",
+            "authors": [
+                {
+                    "authorId": "2126278",
+                    "name": "Jonathan Ho"
+                },
+                {
+                    "authorId": "1623995772",
+                    "name": "Ajay Jain"
+                },
+                {
+                    "authorId": "1689992",
+                    "name": "P. Abbeel"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "5c126ae3421f05768d8edd97ecd44b1364e2c99a",
+            "title": "Denoising Diffusion Probabilistic Models",
+            "url": "https://www.semanticscholar.org/paper/5c126ae3421f05768d8edd97ecd44b1364e2c99a",
+            "venue": "NeurIPS",
+            "year": 2020
+        },
+        {
+            "arxivId": "2005.14165",
+            "authors": [
+                {
+                    "authorId": "31035595",
+                    "name": "Tom B. Brown"
+                },
+                {
+                    "authorId": "2056658938",
+                    "name": "Benjamin Mann"
+                },
+                {
+                    "authorId": "39849748",
+                    "name": "Nick Ryder"
+                },
+                {
+                    "authorId": "2065894334",
+                    "name": "Melanie Subbiah"
+                },
+                {
+                    "authorId": "152724169",
+                    "name": "J. Kaplan"
+                },
+                {
+                    "authorId": "6515819",
+                    "name": "Prafulla Dhariwal"
+                },
+                {
+                    "authorId": "2072676",
+                    "name": "Arvind Neelakantan"
+                },
+                {
+                    "authorId": "67311962",
+                    "name": "Pranav Shyam"
+                },
+                {
+                    "authorId": "144864359",
+                    "name": "Girish Sastry"
+                },
+                {
+                    "authorId": "119609682",
+                    "name": "Amanda Askell"
+                },
+                {
+                    "authorId": "144517868",
+                    "name": "Sandhini Agarwal"
+                },
+                {
+                    "authorId": "1404060687",
+                    "name": "Ariel Herbert-Voss"
+                },
+                {
+                    "authorId": "2064404342",
+                    "name": "Gretchen Krueger"
+                },
+                {
+                    "authorId": "103143311",
+                    "name": "T. Henighan"
+                },
+                {
+                    "authorId": "48422824",
+                    "name": "R. Child"
+                },
+                {
+                    "authorId": "1992922591",
+                    "name": "A. Ramesh"
+                },
+                {
+                    "authorId": "2052152920",
+                    "name": "Daniel M. Ziegler"
+                },
+                {
+                    "authorId": "49387725",
+                    "name": "Jeff Wu"
+                },
+                {
+                    "authorId": "2059411355",
+                    "name": "Clemens Winter"
+                },
+                {
+                    "authorId": "144239765",
+                    "name": "Christopher Hesse"
+                },
+                {
+                    "authorId": "2108828435",
+                    "name": "Mark Chen"
+                },
+                {
+                    "authorId": "2064673055",
+                    "name": "Eric Sigler"
+                },
+                {
+                    "authorId": "1380985420",
+                    "name": "Ma-teusz Litwin"
+                },
+                {
+                    "authorId": "145565184",
+                    "name": "Scott Gray"
+                },
+                {
+                    "authorId": "1490681878",
+                    "name": "B. Chess"
+                },
+                {
+                    "authorId": "2115193883",
+                    "name": "Jack Clark"
+                },
+                {
+                    "authorId": "133740015",
+                    "name": "Christopher Berner"
+                },
+                {
+                    "authorId": "52238703",
+                    "name": "Sam McCandlish"
+                },
+                {
+                    "authorId": "38909097",
+                    "name": "Alec Radford"
+                },
+                {
+                    "authorId": "1701686",
+                    "name": "I. Sutskever"
+                },
+                {
+                    "authorId": "2698777",
+                    "name": "Dario Amodei"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "90abbc2cf38462b954ae1b772fac9532e2ccd8b0",
+            "title": "Language Models are Few-Shot Learners",
+            "url": "https://www.semanticscholar.org/paper/90abbc2cf38462b954ae1b772fac9532e2ccd8b0",
+            "venue": "NeurIPS",
+            "year": 2020
+        },
+        {
+            "arxivId": "2002.09797",
+            "authors": [
+                {
+                    "authorId": "2057127601",
+                    "name": "Muhammad Ferjad Naeem"
+                },
+                {
+                    "authorId": "2390510",
+                    "name": "Seong Joon Oh"
+                },
+                {
+                    "authorId": "2847986",
+                    "name": "Youngjung Uh"
+                },
+                {
+                    "authorId": "30187096",
+                    "name": "Yunjey Choi"
+                },
+                {
+                    "authorId": "8351571",
+                    "name": "Jaejun Yoo"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c76750c3fe9011cc62e8c73df07c126711f51d1c",
+            "title": "Reliable Fidelity and Diversity Metrics for Generative Models",
+            "url": "https://www.semanticscholar.org/paper/c76750c3fe9011cc62e8c73df07c126711f51d1c",
+            "venue": "ICML",
+            "year": 2020
+        },
+        {
+            "arxivId": "1803.05428",
+            "authors": [
+                {
+                    "authorId": "145625142",
+                    "name": "Adam Roberts"
+                },
+                {
+                    "authorId": "9695761",
+                    "name": "Jesse Engel"
+                },
+                {
+                    "authorId": "2402716",
+                    "name": "Colin Raffel"
+                },
+                {
+                    "authorId": "41231781",
+                    "name": "Curtis Hawthorne"
+                },
+                {
+                    "authorId": "2396681",
+                    "name": "D. Eck"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "2b050df9e24eb65b0d37f13c6eea1d29b4e316ce",
+            "title": "A Hierarchical Latent Vector Model for Learning Long-Term Structure in Music",
+            "url": "https://www.semanticscholar.org/paper/2b050df9e24eb65b0d37f13c6eea1d29b4e316ce",
+            "venue": "ICML",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2479962",
+                    "name": "Bob L. Sturm"
+                },
+                {
+                    "authorId": "1400943928",
+                    "name": "Oded Ben-Tal"
+                }
+            ],
+            "doi": "10.5920/JCMS.2017.09",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "eb1bf54a8e594f62b2f1d33927494ce8a0b187ae",
+            "title": "Taking the Models back to Music Practice: Evaluating Generative Transcription Models built using Deep Learning",
+            "url": "https://www.semanticscholar.org/paper/eb1bf54a8e594f62b2f1d33927494ce8a0b187ae",
+            "venue": "",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "49668403",
+                    "name": "Justin Matejka"
+                },
+                {
+                    "authorId": "1703735",
+                    "name": "G. Fitzmaurice"
+                }
+            ],
+            "doi": "10.1145/3025453.3025912",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7319234cc18a3fcaf55b57400e25f9f3114313bb",
+            "title": "Same Stats, Different Graphs: Generating Datasets with Varied Appearance and Identical Statistics through Simulated Annealing",
+            "url": "https://www.semanticscholar.org/paper/7319234cc18a3fcaf55b57400e25f9f3114313bb",
+            "venue": "CHI",
+            "year": 2017
+        },
+        {
+            "arxivId": "1703.10847",
+            "authors": [
+                {
+                    "authorId": "9922427",
+                    "name": "Li-Chia Yang"
+                },
+                {
+                    "authorId": "2462651",
+                    "name": "Szu-Yu Chou"
+                },
+                {
+                    "authorId": "145142378",
+                    "name": "Yi-Hsuan Yang"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "1fa6ba95b8383fad600bcbd6033c6eec73296381",
+            "title": "MidiNet: A Convolutional Generative Adversarial Network for Symbolic-Domain Music Generation",
+            "url": "https://www.semanticscholar.org/paper/1fa6ba95b8383fad600bcbd6033c6eec73296381",
+            "venue": "ISMIR",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "8669566",
+                    "name": "Kat R. Agres"
+                },
+                {
+                    "authorId": "26543644",
+                    "name": "J. Forth"
+                },
+                {
+                    "authorId": "1808338",
+                    "name": "Geraint A. Wiggins"
+                }
+            ],
+            "doi": "10.1145/2967506",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "857a05ed56816d1185b8e5b29fb80f321f2275b8",
+            "title": "Evaluation of Musical Creativity and Musical Metacreation Systems",
+            "url": "https://www.semanticscholar.org/paper/857a05ed56816d1185b8e5b29fb80f321f2275b8",
+            "venue": "CIE",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1754040",
+                    "name": "L. Aiello"
+                }
+            ],
+            "doi": "10.1016/j.artint.2016.02.003",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "430daa3d94f0a25efde6d2a73edb7951ca06598c",
+            "title": "The multifaceted impact of Ada Lovelace in the digital age",
+            "url": "https://www.semanticscholar.org/paper/430daa3d94f0a25efde6d2a73edb7951ca06598c",
+            "venue": "Artif. Intell.",
+            "year": 2016
+        },
+        {
+            "arxivId": "1503.03585",
+            "authors": [
+                {
+                    "authorId": "1407546424",
+                    "name": "Jascha Narain Sohl-Dickstein"
+                },
+                {
+                    "authorId": "2144479710",
+                    "name": "Eric A. Weiss"
+                },
+                {
+                    "authorId": "2333223",
+                    "name": "Niru Maheswaranathan"
+                },
+                {
+                    "authorId": "25769960",
+                    "name": "S. Ganguli"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "2dcef55a07f8607a819c21fe84131ea269cc2e3c",
+            "title": "Deep Unsupervised Learning using Nonequilibrium Thermodynamics",
+            "url": "https://www.semanticscholar.org/paper/2dcef55a07f8607a819c21fe84131ea269cc2e3c",
+            "venue": "ICML",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "119078662",
+                    "name": "Diego Varela"
+                },
+                {
+                    "authorId": "118715172",
+                    "name": "G. Benedetto"
+                },
+                {
+                    "authorId": "1412884845",
+                    "name": "J. S\u00e1nchez\u2010Santos"
+                }
+            ],
+            "doi": "10.17979/EJGE.2014.3.2.4299",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "636b5da182fed078ee963900c49b3e8c41a5ec8d",
+            "title": "Editorial statement: Lessons from Goodhart\u2019s law for the management of the journal",
+            "url": "https://www.semanticscholar.org/paper/636b5da182fed078ee963900c49b3e8c41a5ec8d",
+            "venue": "",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "153440022",
+                    "name": "I. Goodfellow"
+                },
+                {
+                    "authorId": "1403025868",
+                    "name": "Jean Pouget-Abadie"
+                },
+                {
+                    "authorId": "153583218",
+                    "name": "Mehdi Mirza"
+                },
+                {
+                    "authorId": "2113742925",
+                    "name": "Bing Xu"
+                },
+                {
+                    "authorId": "1393680089",
+                    "name": "David Warde-Farley"
+                },
+                {
+                    "authorId": "1955694",
+                    "name": "Sherjil Ozair"
+                },
+                {
+                    "authorId": "1760871",
+                    "name": "Aaron C. Courville"
+                },
+                {
+                    "authorId": "1751762",
+                    "name": "Yoshua Bengio"
+                }
+            ],
+            "doi": "10.1145/3422622",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "13bc4e683075bdd6a3f0155241c276a772d4aa06",
+            "title": "Generative adversarial networks",
+            "url": "https://www.semanticscholar.org/paper/13bc4e683075bdd6a3f0155241c276a772d4aa06",
+            "venue": "Commun. ACM",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2059358552",
+                    "name": "P. Cochat"
+                },
+                {
+                    "authorId": "13267685",
+                    "name": "L. Vaucoret"
+                },
+                {
+                    "authorId": "2097644863",
+                    "name": "J. Sarles"
+                }
+            ],
+            "doi": "10.1136/ebmh.11.4.102",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "bc6dff14a130c57a91d5a21339c23471faf1d46f",
+            "title": "Et al",
+            "url": "https://www.semanticscholar.org/paper/bc6dff14a130c57a91d5a21339c23471faf1d46f",
+            "venue": "Archives de pediatrie : organe officiel de la Societe francaise de pediatrie",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "39848341",
+                    "name": "Romain Lopez"
+                },
+                {
+                    "authorId": "1441878314",
+                    "name": "Pierre Boyeau"
+                },
+                {
+                    "authorId": "2163873",
+                    "name": "N. Yosef"
+                },
+                {
+                    "authorId": "1694621",
+                    "name": "Michael I. Jordan"
+                },
+                {
+                    "authorId": "39967607",
+                    "name": "J. Regier"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "ef4f5a50837a7c1b3e87b9300ffc7ba00d461a0f",
+            "title": "AUTO-ENCODING VARIATIONAL BAYES",
+            "url": "https://www.semanticscholar.org/paper/ef4f5a50837a7c1b3e87b9300ffc7ba00d461a0f",
+            "venue": "",
+            "year": 2020
+        },
+        {
+            "arxivId": "1810.04805",
+            "authors": [
+                {
+                    "authorId": "39172707",
+                    "name": "Jacob Devlin"
+                },
+                {
+                    "authorId": "1744179",
+                    "name": "Ming-Wei Chang"
+                },
+                {
+                    "authorId": "2544107",
+                    "name": "Kenton Lee"
+                },
+                {
+                    "authorId": "3259253",
+                    "name": "Kristina Toutanova"
+                }
+            ],
+            "doi": "10.18653/v1/N19-1423",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "df2b0e26d0599ce3e70df8a9da02e51594e0e992",
+            "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+            "url": "https://www.semanticscholar.org/paper/df2b0e26d0599ce3e70df8a9da02e51594e0e992",
+            "venue": "NAACL",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1697177",
+                    "name": "Bart Verheij"
+                },
+                {
+                    "authorId": "32239759",
+                    "name": "M. Wiering"
+                }
+            ],
+            "doi": "10.1007/978-3-319-76892-2",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "de4b9bc12ddb6b9f6090c032ef5c6290bd64ef36",
+            "title": "Artificial Intelligence",
+            "url": "https://www.semanticscholar.org/paper/de4b9bc12ddb6b9f6090c032ef5c6290bd64ef36",
+            "venue": "Communications in Computer and Information Science",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2402716",
+                    "name": "Colin Raffel"
+                }
+            ],
+            "doi": "10.7916/D8N58MHV",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "da766ce5c3c44376663e93df84650d6d2059bc3c",
+            "title": "Learning-Based Methods for Comparing Sequences, with Applications to Audio-to-MIDI Alignment and Matching",
+            "url": "https://www.semanticscholar.org/paper/da766ce5c3c44376663e93df84650d6d2059bc3c",
+            "venue": "",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "48764797",
+                    "name": "M. Pearce"
+                },
+                {
+                    "authorId": "1808338",
+                    "name": "Geraint A. Wiggins"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c1cb675ecddaf28f2c241921bb16399a1a9e19c9",
+            "title": "Towards A Framework for the Evaluation of Machine Compositions",
+            "url": "https://www.semanticscholar.org/paper/c1cb675ecddaf28f2c241921bb16399a1a9e19c9",
+            "venue": "",
+            "year": 2001
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Engineering",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Discrete Diffusion Probabilistic Models for Symbolic Music Generation",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/481fbda08a74cf5632ddb39b264963f68dc04ddb",
+    "venue": "International Joint Conference on Artificial Intelligence",
+    "year": 2023
+}

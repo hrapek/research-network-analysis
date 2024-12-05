@@ -1,0 +1,310 @@
+{
+    "abstract": "This article gives an analysis of the NormalHedge algorithm in continuous time. The NormalHedge algorithm is described and analyzed in discrete time in [CFH]. The continuous time analysis is mathematically cleaner, simpler and tighter than the discrete time analysis. To motivate the continuous time framework consider the problem of portfolio management. Suppose we are managing N different financial instruments allowed to define a desired distribution of our wealth among the instruments. We ignore the details of the buy and sell orders that have to be placed in order to reach the desired distribution, we also ignore issues that have to do with transaction costs, buy-sell spreads and the like. We assume that at each moment the buy and sell prices for a unit of a particular instrument are the same and that there are no transaction costs. Our goal is to find an algorithm for managing the portfolio distribution. In other words, we are looking for a mapping from past prices to a distribution over the instruments. As we are considering continuous time, the past can be arbitrarily close to the present. Formally speaking, we say that the portfolio distribution is \u201ccausal\u201d or \u201cunanticipating\u201d to remove the possibly of defining a portfolio which is a function of the future gains as his would clearly be a cheat. We are interested in considering continuous time, because instrument prices can fluctuate very rapidly. To model this very rapid fluctuation we use a type of stochastic process called an It\u00f4 process to model the log of the price as a function of time. Intuitively, an It\u00f4 process is a linear combination of a differentiable process and white noise. A more formal definition is given below. To read more about It\u00f4 processes see [Osk03]. Our algorithm and its analysis do not make any additional assumption on the price movement of the instruments. Of course, with no additional assumption we cannot have any guarantees regarding our future wealth. For example, if the price of all of the instruments decreases at a particular moment by 10%, our wealth will necessary decrease by 10%, regardless of our wealth distribution. However, surprisingly enough, we can give a guarantee on the regret associated with our method without any additional assumptions. Regret quantifies the difference between our wealth at time t and the wealth we would have had if we invested all of our money in the best one of the N instruments. Specifically, denote the log price of instrument i at time t by X i t and assume that the initial unit price for all instruments is one, i.e. X i 0 = log(1) = 0. Let Gt be the log of our wealth at time t. We define our regret at time t as",
+    "arxivId": "0904.3356",
+    "authors": [
+        {
+            "authorId": "1703537",
+            "name": "Y. Freund",
+            "url": "https://www.semanticscholar.org/author/1703537"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": "2309.16044",
+            "authors": [
+                {
+                    "authorId": "2117992745",
+                    "name": "Zhiyu Zhang"
+                },
+                {
+                    "authorId": "2248181938",
+                    "name": "Heng Yang"
+                },
+                {
+                    "authorId": "9407860",
+                    "name": "Ashok Cutkosky"
+                },
+                {
+                    "authorId": "1691402",
+                    "name": "I. Paschalidis"
+                }
+            ],
+            "doi": "10.48550/arXiv.2309.16044",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "1954672bd6f28e7f30ebe7b7727acfbc82c407cb",
+            "title": "Improving Adaptive Online Learning Using Refined Discretization",
+            "url": "https://www.semanticscholar.org/paper/1954672bd6f28e7f30ebe7b7727acfbc82c407cb",
+            "venue": "ALT",
+            "year": 2023
+        },
+        {
+            "arxivId": "2301.13349",
+            "authors": [
+                {
+                    "authorId": "2117992745",
+                    "name": "Zhiyu Zhang"
+                },
+                {
+                    "authorId": "9407860",
+                    "name": "Ashok Cutkosky"
+                },
+                {
+                    "authorId": "1691402",
+                    "name": "I. Paschalidis"
+                }
+            ],
+            "doi": "10.48550/arXiv.2301.13349",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "efa164de424f51168c0258ced4c93ab7f9ff6bea",
+            "title": "Unconstrained Dynamic Regret via Sparse Coding",
+            "url": "https://www.semanticscholar.org/paper/efa164de424f51168c0258ced4c93ab7f9ff6bea",
+            "venue": "NeurIPS",
+            "year": 2023
+        },
+        {
+            "arxivId": "2206.00236",
+            "authors": [
+                {
+                    "authorId": "1382006799",
+                    "name": "V. S. Portella"
+                },
+                {
+                    "authorId": "3382597",
+                    "name": "Christopher Liaw"
+                },
+                {
+                    "authorId": "2257309136",
+                    "name": "Nicholas J. A. Harvey"
+                }
+            ],
+            "doi": "10.48550/arXiv.2206.00236",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "9a0cfafcc9b27236242fc0a588dbd0445af1fbbc",
+            "title": "Continuous Prediction with Experts' Advice",
+            "url": "https://www.semanticscholar.org/paper/9a0cfafcc9b27236242fc0a588dbd0445af1fbbc",
+            "venue": "J. Mach. Learn. Res.",
+            "year": 2022
+        },
+        {
+            "arxivId": "2203.07577",
+            "authors": [
+                {
+                    "authorId": "2297867615",
+                    "name": "Laura Greenstreet"
+                },
+                {
+                    "authorId": "143842694",
+                    "name": "Nicholas J. A. Harvey"
+                },
+                {
+                    "authorId": "1382006799",
+                    "name": "V. S. Portella"
+                }
+            ],
+            "doi": "10.48550/arXiv.2203.07577",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "703764e406ae20739e8a20a894eeaed70641be07",
+            "title": "Efficient and Optimal Fixed-Time Regret with Two Experts",
+            "url": "https://www.semanticscholar.org/paper/703764e406ae20739e8a20a894eeaed70641be07",
+            "venue": "ALT",
+            "year": 2022
+        },
+        {
+            "arxivId": "2002.08994",
+            "authors": [
+                {
+                    "authorId": "143842694",
+                    "name": "Nicholas J. A. Harvey"
+                },
+                {
+                    "authorId": "3382597",
+                    "name": "Christopher Liaw"
+                },
+                {
+                    "authorId": "52153792",
+                    "name": "E. Perkins"
+                },
+                {
+                    "authorId": "52170512",
+                    "name": "Sikander Randhawa"
+                }
+            ],
+            "doi": "10.4171/msl/38",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "c38beb67c99a5c61de3bef36fb9e0e6754370e2a",
+            "title": "Optimal anytime regret with two experts",
+            "url": "https://www.semanticscholar.org/paper/c38beb67c99a5c61de3bef36fb9e0e6754370e2a",
+            "venue": "Mathematical Statistics and Learning",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3483465",
+                    "name": "Pongphat Taptagaporn"
+                }
+            ],
+            "doi": "10.21953/LSE.H156AH8BZIN7",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "5adbf21282d67db09eb1c0b492d27229f9e4f2cb",
+            "title": "Algorithmic learning from financial predictions",
+            "url": "https://www.semanticscholar.org/paper/5adbf21282d67db09eb1c0b492d27229f9e4f2cb",
+            "venue": "",
+            "year": 2017
+        }
+    ],
+    "corpusId": 2721232,
+    "doi": null,
+    "fieldsOfStudy": [
+        "Mathematics",
+        "Computer Science"
+    ],
+    "influentialCitationCount": 1,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 6,
+    "numCiting": 5,
+    "paperId": "6c734c09c983c5beb429e1857952dd7d7291b29d",
+    "references": [
+        {
+            "arxivId": "0903.2851",
+            "authors": [
+                {
+                    "authorId": "38120884",
+                    "name": "Kamalika Chaudhuri"
+                },
+                {
+                    "authorId": "1703537",
+                    "name": "Y. Freund"
+                },
+                {
+                    "authorId": "143724861",
+                    "name": "Daniel J. Hsu"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "5aad993b1419957c25119a79495f1cdec3a4d235",
+            "title": "A Parameter-free Hedging Algorithm",
+            "url": "https://www.semanticscholar.org/paper/5aad993b1419957c25119a79495f1cdec3a4d235",
+            "venue": "NIPS",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1752732",
+                    "name": "T. Cover"
+                },
+                {
+                    "authorId": "1699656",
+                    "name": "E. Ordentlich"
+                }
+            ],
+            "doi": "10.1109/18.485708",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "31eb9205e2317a410fbea08fc877c7b15849982b",
+            "title": "Universal portfolios with side information",
+            "url": "https://www.semanticscholar.org/paper/31eb9205e2317a410fbea08fc877c7b15849982b",
+            "venue": "IEEE Trans. Inf. Theory",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2270971391",
+                    "name": "Peter E. Kloeden"
+                }
+            ],
+            "doi": "10.1017/S0305004100030735",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "0996fcdfc91a433d27b510567439a89f1fab9ce4",
+            "title": "Stochastic differential equations",
+            "url": "https://www.semanticscholar.org/paper/0996fcdfc91a433d27b510567439a89f1fab9ce4",
+            "venue": "Mathematical Proceedings of the Cambridge Philosophical Society",
+            "year": 1955
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1752732",
+                    "name": "T. Cover"
+                }
+            ],
+            "doi": "10.1142/9789814293501_0015",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "75a669d355f5cbdbc5b4ed14b8d114fdbe428943",
+            "title": "Universal Portfolios",
+            "url": "https://www.semanticscholar.org/paper/75a669d355f5cbdbc5b4ed14b8d114fdbe428943",
+            "venue": "",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2588491",
+                    "name": "B. \u00d8ksendal"
+                }
+            ],
+            "doi": "10.1007/978-3-642-14394-6_5",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "fbbc2c872544225397d0cff190844c99fb872792",
+            "title": "Stochastic Differential Equations",
+            "url": "https://www.semanticscholar.org/paper/fbbc2c872544225397d0cff190844c99fb872792",
+            "venue": "",
+            "year": 1985
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Mathematics",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Mathematics",
+            "source": "s2-fos-model"
+        },
+        {
+            "category": "Business",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "A method for Hedging in continuous time",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/6c734c09c983c5beb429e1857952dd7d7291b29d",
+    "venue": "arXiv.org",
+    "year": 2009
+}

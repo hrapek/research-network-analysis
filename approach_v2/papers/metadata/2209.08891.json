@@ -1,0 +1,3003 @@
+{
+    "abstract": "Models for text-to-image synthesis, such as DALL-E 2 and Stable Diffusion, have recently drawn a lot of interest from academia and the general public. These models are capable of producing high-quality images that depict a variety of concepts and styles when conditioned on textual descriptions. However, these models adopt cultural characteristics associated with specific Unicode scripts from their vast amount of training data, which may not be immediately apparent. We show that by simply inserting single non-Latin characters in the textual description, common models reflect cultural biases in their generated images. We analyze this behavior both qualitatively and quantitatively and identify a model\u2019s text encoder as the root cause of the phenomenon. Such behavior can be interpreted as a model feature, offering users a simple way to customize the image generation and reflect their own cultural background. Yet, malicious users or service providers may also try to intentionally bias the image generation. One goal might be to create racist stereotypes by replacing Latin characters with similarly-looking characters from non-Latin scripts, so-called homoglyphs. To mitigate such unnoticed script attacks, we propose a novel homoglyph unlearning method to fine-tune a text encoder, making it robust against homoglyph manipulations.",
+    "arxivId": "2209.08891",
+    "authors": [
+        {
+            "authorId": "2140415179",
+            "name": "Lukas Struppek",
+            "url": "https://www.semanticscholar.org/author/2140415179"
+        },
+        {
+            "authorId": "2140396795",
+            "name": "Dominik Hintersdorf",
+            "url": "https://www.semanticscholar.org/author/2140396795"
+        },
+        {
+            "authorId": "2055616945",
+            "name": "Felix Friedrich",
+            "url": "https://www.semanticscholar.org/author/2055616945"
+        },
+        {
+            "authorId": "2166299958",
+            "name": "Manuel Brack",
+            "url": "https://www.semanticscholar.org/author/2166299958"
+        },
+        {
+            "authorId": "40896023",
+            "name": "P. Schramowski",
+            "url": "https://www.semanticscholar.org/author/40896023"
+        },
+        {
+            "authorId": "2066493115",
+            "name": "K. Kersting",
+            "url": "https://www.semanticscholar.org/author/2066493115"
+        }
+    ],
+    "citationVelocity": 9,
+    "citations": [
+        {
+            "arxivId": "2409.18214",
+            "authors": [
+                {
+                    "authorId": "2286777159",
+                    "name": "Yi Zhang"
+                },
+                {
+                    "authorId": "2279081101",
+                    "name": "Zhen Chen"
+                },
+                {
+                    "authorId": "2266166157",
+                    "name": "Chih-Hong Cheng"
+                },
+                {
+                    "authorId": "8103173",
+                    "name": "Wenjie Ruan"
+                },
+                {
+                    "authorId": "2273388936",
+                    "name": "Xiaowei Huang"
+                },
+                {
+                    "authorId": "2323432615",
+                    "name": "Dezong Zhao"
+                },
+                {
+                    "authorId": "2323372944",
+                    "name": "David Flynn"
+                },
+                {
+                    "authorId": "47915799",
+                    "name": "S. Khastgir"
+                },
+                {
+                    "authorId": "2267428660",
+                    "name": "Xingyu Zhao"
+                }
+            ],
+            "doi": "10.48550/arXiv.2409.18214",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "26d27a2555c8b899ae8f855ad4f577c8396202d7",
+            "title": "Trustworthy Text-to-Image Diffusion Models: A Timely and Focused Survey",
+            "url": "https://www.semanticscholar.org/paper/26d27a2555c8b899ae8f855ad4f577c8396202d7",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2240536272",
+                    "name": "Amon Rapp"
+                },
+                {
+                    "authorId": "2194563919",
+                    "name": "Chiara Di Lodovico"
+                },
+                {
+                    "authorId": "2119003687",
+                    "name": "Federico Torrielli"
+                },
+                {
+                    "authorId": "49246337",
+                    "name": "Luigi Di Caro"
+                }
+            ],
+            "doi": "10.1016/j.ijhcs.2024.103375",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "19be4df85f54ee69f60e440166ee9a775bc24279",
+            "title": "How do People Experience the Images Created by Generative Artificial Intelligence? An Exploration of People's Perceptions, Appraisals, and Emotions Related to a Gen-AI Text-to-image Model and its Creations",
+            "url": "https://www.semanticscholar.org/paper/19be4df85f54ee69f60e440166ee9a775bc24279",
+            "venue": "International Journal of Human-Computer Studies",
+            "year": 2024
+        },
+        {
+            "arxivId": "2408.04671",
+            "authors": [
+                {
+                    "authorId": "46208576",
+                    "name": "Lorenzo Berlincioni"
+                },
+                {
+                    "authorId": "2074063286",
+                    "name": "Luca Cultrera"
+                },
+                {
+                    "authorId": "41172759",
+                    "name": "Federico Becattini"
+                },
+                {
+                    "authorId": "1801509",
+                    "name": "Marco Bertini"
+                },
+                {
+                    "authorId": "8196487",
+                    "name": "A. Bimbo"
+                }
+            ],
+            "doi": "10.48550/arXiv.2408.04671",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9daa5bec09f77aa9423a9c9f18585c05e1cc80e4",
+            "title": "Prompt and Prejudice",
+            "url": "https://www.semanticscholar.org/paper/9daa5bec09f77aa9423a9c9f18585c05e1cc80e4",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2235098848",
+                    "name": "Wala Elsharif"
+                },
+                {
+                    "authorId": "2317926691",
+                    "name": "Marco Agus"
+                },
+                {
+                    "authorId": "27066815",
+                    "name": "M. Alzubaidi"
+                },
+                {
+                    "authorId": "2244319255",
+                    "name": "J. She"
+                }
+            ],
+            "doi": "10.1109/MIPR62202.2024.00071",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f7fba0028b9f7aab7ea28c7a9e07bfe9996248f1",
+            "title": "Cultural Relevance Index: Measuring Cultural Relevance in AI-Generated Images",
+            "url": "https://www.semanticscholar.org/paper/f7fba0028b9f7aab7ea28c7a9e07bfe9996248f1",
+            "venue": "2024 IEEE 7th International Conference on Multimedia Information Processing and Retrieval (MIPR)",
+            "year": 2024
+        },
+        {
+            "arxivId": "2408.00283",
+            "authors": [
+                {
+                    "authorId": "2073395889",
+                    "name": "S. Mittal"
+                },
+                {
+                    "authorId": "2266229647",
+                    "name": "Arnav Sudan"
+                },
+                {
+                    "authorId": "2250562057",
+                    "name": "M. Vatsa"
+                },
+                {
+                    "authorId": "2041134713",
+                    "name": "Richa Singh"
+                },
+                {
+                    "authorId": "2071335303",
+                    "name": "Tamar Glaser"
+                },
+                {
+                    "authorId": "2256650936",
+                    "name": "Tal Hassner"
+                }
+            ],
+            "doi": "10.48550/arXiv.2408.00283",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "1e6daad32910eda48493bc43f41a149be87df7bf",
+            "title": "Navigating Text-to-Image Generative Bias across Indic Languages",
+            "url": "https://www.semanticscholar.org/paper/1e6daad32910eda48493bc43f41a149be87df7bf",
+            "venue": "ECCV",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2140415179",
+                    "name": "Lukas Struppek"
+                },
+                {
+                    "authorId": "2140396795",
+                    "name": "Dominik Hintersdorf"
+                },
+                {
+                    "authorId": "2055616945",
+                    "name": "Felix Friedrich"
+                },
+                {
+                    "authorId": "2166299958",
+                    "name": "Manuel Brack"
+                },
+                {
+                    "authorId": "40896023",
+                    "name": "P. Schramowski"
+                },
+                {
+                    "authorId": "2066493115",
+                    "name": "K. Kersting"
+                }
+            ],
+            "doi": "10.24963/ijcai.2024/958",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c4182360eb3ff678d1b3522b80da8ac243d27611",
+            "title": "Exploiting Cultural Biases via Homoglyphs inText-to-Image Synthesis (Abstract Reprint)",
+            "url": "https://www.semanticscholar.org/paper/c4182360eb3ff678d1b3522b80da8ac243d27611",
+            "venue": "IJCAI",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2320861150",
+                    "name": "Shah Prerak"
+                }
+            ],
+            "doi": "10.1109/ICSTSN61422.2024.10671230",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7a8eb41aeef6350a79a959a2188914f1cc6e7720",
+            "title": "Addressing Bias in Text-to-Image Generation: A Review of Mitigation Methods",
+            "url": "https://www.semanticscholar.org/paper/7a8eb41aeef6350a79a959a2188914f1cc6e7720",
+            "venue": "2024 Third International Conference on Smart Technologies and Systems for Next Generation Computing (ICSTSN)",
+            "year": 2024
+        },
+        {
+            "arxivId": "2407.15861",
+            "authors": [
+                {
+                    "authorId": "2279759011",
+                    "name": "Chenyu Zhang"
+                },
+                {
+                    "authorId": "2296381502",
+                    "name": "Mingwang Hu"
+                },
+                {
+                    "authorId": "2312604722",
+                    "name": "Wenhui Li"
+                },
+                {
+                    "authorId": "2238386048",
+                    "name": "Lanjun Wang"
+                }
+            ],
+            "doi": "10.48550/arXiv.2407.15861",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "be00cb5bb7ba7a88203f11a3568a9869a71b6175",
+            "title": "Adversarial Attacks and Defenses on Text-to-Image Diffusion Models: A Survey",
+            "url": "https://www.semanticscholar.org/paper/be00cb5bb7ba7a88203f11a3568a9869a71b6175",
+            "venue": "Inf. Fusion",
+            "year": 2024
+        },
+        {
+            "arxivId": "2408.00001",
+            "authors": [
+                {
+                    "authorId": "2108977186",
+                    "name": "Wenhao Wang"
+                },
+                {
+                    "authorId": "2267731577",
+                    "name": "Yifan Sun"
+                },
+                {
+                    "authorId": "15556978",
+                    "name": "Zongxin Yang"
+                },
+                {
+                    "authorId": "2125634511",
+                    "name": "Zhengdong Hu"
+                },
+                {
+                    "authorId": "2296990692",
+                    "name": "Zhentao Tan"
+                },
+                {
+                    "authorId": "2297815073",
+                    "name": "Yi Yang"
+                }
+            ],
+            "doi": "10.48550/arXiv.2408.00001",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2c5d684f688e7f692356867552378fca8af3fe81",
+            "title": "Replication in Visual Diffusion Models: A Survey and Outlook",
+            "url": "https://www.semanticscholar.org/paper/2c5d684f688e7f692356867552378fca8af3fe81",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": "2406.05602",
+            "authors": [
+                {
+                    "authorId": "1642287388",
+                    "name": "P. W. Shin"
+                },
+                {
+                    "authorId": "2295188259",
+                    "name": "Jihyun Janice Ahn"
+                },
+                {
+                    "authorId": "2265583938",
+                    "name": "Wenpeng Yin"
+                },
+                {
+                    "authorId": "39862527",
+                    "name": "Jack Sampson"
+                },
+                {
+                    "authorId": "1733274",
+                    "name": "N. Vijaykrishnan"
+                }
+            ],
+            "doi": "10.48550/arXiv.2406.05602",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f080aeb322b0bb3885df3f17abb7ffa89927a4aa",
+            "title": "Can Prompt Modifiers Control Bias? A Comparative Analysis of Text-to-Image Generative Models",
+            "url": "https://www.semanticscholar.org/paper/f080aeb322b0bb3885df3f17abb7ffa89927a4aa",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2301074176",
+                    "name": "Lili Zhang"
+                },
+                {
+                    "authorId": "2301175253",
+                    "name": "Xi Liao"
+                },
+                {
+                    "authorId": "2301077128",
+                    "name": "Zaijia Yang"
+                },
+                {
+                    "authorId": "2302112070",
+                    "name": "Baihang Gao"
+                },
+                {
+                    "authorId": "2301071092",
+                    "name": "Chunjie Wang"
+                },
+                {
+                    "authorId": "2262199233",
+                    "name": "Qiuling Yang"
+                },
+                {
+                    "authorId": "2156786166",
+                    "name": "Deshun Li"
+                }
+            ],
+            "doi": "10.1145/3613904.3642877",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "8b0977400aa0195a96cd79389e9947bcdc48aa1b",
+            "title": "Partiality and Misconception: Investigating Cultural Representativeness in Text-to-Image Models",
+            "url": "https://www.semanticscholar.org/paper/8b0977400aa0195a96cd79389e9947bcdc48aa1b",
+            "venue": "CHI",
+            "year": 2024
+        },
+        {
+            "arxivId": "2404.03242",
+            "authors": [
+                {
+                    "authorId": "2295299549",
+                    "name": "Tianwei Chen"
+                },
+                {
+                    "authorId": "2294876537",
+                    "name": "Yusuke Hirota"
+                },
+                {
+                    "authorId": "3186326",
+                    "name": "Mayu Otani"
+                },
+                {
+                    "authorId": "26385137",
+                    "name": "Noa Garc\u00eda"
+                },
+                {
+                    "authorId": "2268760114",
+                    "name": "Yuta Nakashima"
+                }
+            ],
+            "doi": "10.1109/CVPR52733.2024.01030",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e60db1b7c7d1c4a210bc86089ba5a1dfdbe24bc7",
+            "title": "Would Deep Generative Models Amplify Bias in Future Models?",
+            "url": "https://www.semanticscholar.org/paper/e60db1b7c7d1c4a210bc86089ba5a1dfdbe24bc7",
+            "venue": "2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2024
+        },
+        {
+            "arxivId": "2404.01030",
+            "authors": [
+                {
+                    "authorId": "2165227666",
+                    "name": "Yixin Wan"
+                },
+                {
+                    "authorId": "1677386832",
+                    "name": "Arjun Subramonian"
+                },
+                {
+                    "authorId": "51494507",
+                    "name": "Anaelia Ovalle"
+                },
+                {
+                    "authorId": "2294515390",
+                    "name": "Zongyu Lin"
+                },
+                {
+                    "authorId": "51153314",
+                    "name": "Ashima Suvarna"
+                },
+                {
+                    "authorId": "2265382308",
+                    "name": "Christina Chance"
+                },
+                {
+                    "authorId": "103404553",
+                    "name": "Hritik Bansal"
+                },
+                {
+                    "authorId": "2265382705",
+                    "name": "Rebecca Pattichis"
+                },
+                {
+                    "authorId": "2284691768",
+                    "name": "Kai-Wei Chang"
+                }
+            ],
+            "doi": "10.48550/arXiv.2404.01030",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "8c323eca1406bd4020c98d6b5f00ff8f2b7f3340",
+            "title": "Survey of Bias In Text-to-Image Generation: Definition, Evaluation, and Mitigation",
+            "url": "https://www.semanticscholar.org/paper/8c323eca1406bd4020c98d6b5f00ff8f2b7f3340",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": "2402.07562",
+            "authors": [
+                {
+                    "authorId": "2167971040",
+                    "name": "Shengfang Zhai"
+                },
+                {
+                    "authorId": "2283874958",
+                    "name": "Weilong Wang"
+                },
+                {
+                    "authorId": "2283868974",
+                    "name": "Jiajun Li"
+                },
+                {
+                    "authorId": "3431029",
+                    "name": "Yinpeng Dong"
+                },
+                {
+                    "authorId": "2267649469",
+                    "name": "Hang Su"
+                },
+                {
+                    "authorId": "2283843399",
+                    "name": "Qingni Shen"
+                }
+            ],
+            "doi": "10.48550/arXiv.2402.07562",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f1d6ffada931c3a09c52840c77100eb435e822a5",
+            "title": "Discovering Universal Semantic Triggers for Text-to-Image Synthesis",
+            "url": "https://www.semanticscholar.org/paper/f1d6ffada931c3a09c52840c77100eb435e822a5",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": "2311.18345",
+            "authors": [
+                {
+                    "authorId": "2268757319",
+                    "name": "Amelia Katirai"
+                },
+                {
+                    "authorId": "26385137",
+                    "name": "Noa Garc\u00eda"
+                },
+                {
+                    "authorId": "2268760763",
+                    "name": "Kazuki Ide"
+                },
+                {
+                    "authorId": "2268760114",
+                    "name": "Yuta Nakashima"
+                },
+                {
+                    "authorId": "2268757754",
+                    "name": "Atsuo Kishimoto"
+                }
+            ],
+            "doi": "10.1007/s43681-024-00517-3",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7b8d5e28015a9fd0b7fe7392e4964172dce6df95",
+            "title": "Situating the social issues of image generation models in the model life cycle: a sociotechnical approach",
+            "url": "https://www.semanticscholar.org/paper/7b8d5e28015a9fd0b7fe7392e4964172dce6df95",
+            "venue": "AI and Ethics",
+            "year": 2023
+        },
+        {
+            "arxivId": "2311.09680",
+            "authors": [
+                {
+                    "authorId": "46673455",
+                    "name": "Ziyan Guo"
+                },
+                {
+                    "authorId": "2112318242",
+                    "name": "Li Xu"
+                },
+                {
+                    "authorId": "2267153103",
+                    "name": "Jun Liu"
+                }
+            ],
+            "doi": "10.48550/arXiv.2311.09680",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "6dc8f09f3f39d41c21ec167b8a0ed9f12552f487",
+            "title": "Trustworthy Large Models in Vision: A Survey",
+            "url": "https://www.semanticscholar.org/paper/6dc8f09f3f39d41c21ec167b8a0ed9f12552f487",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": "2310.09247",
+            "authors": [
+                {
+                    "authorId": "2258548547",
+                    "name": "Anton Baryshnikov"
+                },
+                {
+                    "authorId": "1491753352",
+                    "name": "Max Ryabinin"
+                }
+            ],
+            "doi": "10.48550/arXiv.2310.09247",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2c38ab72d91a27c62d774689924e8d53e821fe06",
+            "title": "Hypernymy Understanding Evaluation of Text-to-Image Models via WordNet Hierarchy",
+            "url": "https://www.semanticscholar.org/paper/2c38ab72d91a27c62d774689924e8d53e821fe06",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": "2306.00905",
+            "authors": [
+                {
+                    "authorId": "46583583",
+                    "name": "Jialu Wang"
+                },
+                {
+                    "authorId": "2211348054",
+                    "name": "Xinyue Liu"
+                },
+                {
+                    "authorId": "143721760",
+                    "name": "Zonglin Di"
+                },
+                {
+                    "authorId": "40457368",
+                    "name": "Y. Liu"
+                },
+                {
+                    "authorId": "48631993",
+                    "name": "Xin Eric Wang"
+                }
+            ],
+            "doi": "10.48550/arXiv.2306.00905",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "de614e9e462018460a89a5a1928db7899a4fabfb",
+            "title": "T2IAT: Measuring Valence and Stereotypical Biases in Text-to-Image Generation",
+            "url": "https://www.semanticscholar.org/paper/de614e9e462018460a89a5a1928db7899a4fabfb",
+            "venue": "ACL",
+            "year": 2023
+        },
+        {
+            "arxivId": "2211.02408",
+            "authors": [
+                {
+                    "authorId": "2140415179",
+                    "name": "Lukas Struppek"
+                },
+                {
+                    "authorId": "2140396795",
+                    "name": "Dominik Hintersdorf"
+                },
+                {
+                    "authorId": "2066493115",
+                    "name": "K. Kersting"
+                }
+            ],
+            "doi": "10.1109/ICCV51070.2023.00423",
+            "intent": [],
+            "isInfluential": true,
+            "paperId": "929844531ce69c56edbe19f5b03dc87ff83851aa",
+            "title": "Rickrolling the Artist: Injecting Backdoors into Text Encoders for Text-to-Image Synthesis",
+            "url": "https://www.semanticscholar.org/paper/929844531ce69c56edbe19f5b03dc87ff83851aa",
+            "venue": "2023 IEEE/CVF International Conference on Computer Vision (ICCV)",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "40245666",
+                    "name": "Patibandla Chanakya"
+                },
+                {
+                    "authorId": "40188402",
+                    "name": "P. Harsha"
+                },
+                {
+                    "authorId": "2329746536",
+                    "name": "Krishna Pratap Singh"
+                }
+            ],
+            "doi": "10.1109/ACCESS.2024.3491017",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0f43661a0d28a2f9805ab4baef37edcfb0e5034c",
+            "title": "Robustness of Generative Adversarial CLIPs Against Single-Character Adversarial Attacks in Text-to-Image Generation",
+            "url": "https://www.semanticscholar.org/paper/0f43661a0d28a2f9805ab4baef37edcfb0e5034c",
+            "venue": "IEEE Access",
+            "year": 2024
+        }
+    ],
+    "corpusId": 256827140,
+    "doi": "10.1613/jair.1.15388",
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 2,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 20,
+    "numCiting": 97,
+    "paperId": "4494d7639ab0377c33433acee687887c002ecd52",
+    "references": [
+        {
+            "arxivId": "2308.09991",
+            "authors": [
+                {
+                    "authorId": "2190755364",
+                    "name": "Fulong Ye"
+                },
+                {
+                    "authorId": "2152756082",
+                    "name": "Guangyi Liu"
+                },
+                {
+                    "authorId": "3285045",
+                    "name": "Xinya Wu"
+                },
+                {
+                    "authorId": "51183248",
+                    "name": "Ledell Yu Wu"
+                }
+            ],
+            "doi": "10.48550/arXiv.2308.09991",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7e9d953c92a7666e648d4741a9cb67a977a99731",
+            "title": "AltDiffusion: A Multilingual Text-to-Image Diffusion Model",
+            "url": "https://www.semanticscholar.org/paper/7e9d953c92a7666e648d4741a9cb67a977a99731",
+            "venue": "AAAI",
+            "year": 2023
+        },
+        {
+            "arxivId": "2302.10893",
+            "authors": [
+                {
+                    "authorId": "2055616945",
+                    "name": "Felix Friedrich"
+                },
+                {
+                    "authorId": "40896023",
+                    "name": "P. Schramowski"
+                },
+                {
+                    "authorId": "2166299958",
+                    "name": "Manuel Brack"
+                },
+                {
+                    "authorId": "2140415179",
+                    "name": "Lukas Struppek"
+                },
+                {
+                    "authorId": "2140396795",
+                    "name": "Dominik Hintersdorf"
+                },
+                {
+                    "authorId": "2165225321",
+                    "name": "Sasha Luccioni"
+                },
+                {
+                    "authorId": "2066493115",
+                    "name": "K. Kersting"
+                }
+            ],
+            "doi": "10.48550/arXiv.2302.10893",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "90a1843a2c1259708a6b11df7f6701ec0643e6ae",
+            "title": "Fair Diffusion: Instructing Text-to-Image Generation Models on Fairness",
+            "url": "https://www.semanticscholar.org/paper/90a1843a2c1259708a6b11df7f6701ec0643e6ae",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": "2301.07093",
+            "authors": [
+                {
+                    "authorId": "1527091339",
+                    "name": "Yuheng Li"
+                },
+                {
+                    "authorId": "2143856368",
+                    "name": "Haotian Liu"
+                },
+                {
+                    "authorId": "31060482",
+                    "name": "Qingyang Wu"
+                },
+                {
+                    "authorId": "46185973",
+                    "name": "Fangzhou Mu"
+                },
+                {
+                    "authorId": "120157163",
+                    "name": "Jianwei Yang"
+                },
+                {
+                    "authorId": "48441311",
+                    "name": "Jianfeng Gao"
+                },
+                {
+                    "authorId": "2109737569",
+                    "name": "Chunyuan Li"
+                },
+                {
+                    "authorId": "144756076",
+                    "name": "Yong Jae Lee"
+                }
+            ],
+            "doi": "10.1109/CVPR52729.2023.02156",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "994a1ce6677b496bd3c0c63aceafc6556005e994",
+            "title": "GLIGEN: Open-Set Grounded Text-to-Image Generation",
+            "url": "https://www.semanticscholar.org/paper/994a1ce6677b496bd3c0c63aceafc6556005e994",
+            "venue": "2023 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2023
+        },
+        {
+            "arxivId": "2211.03759",
+            "authors": [
+                {
+                    "authorId": "49224924",
+                    "name": "Federico Bianchi"
+                },
+                {
+                    "authorId": "13014201",
+                    "name": "Pratyusha Kalluri"
+                },
+                {
+                    "authorId": "41152329",
+                    "name": "Esin Durmus"
+                },
+                {
+                    "authorId": "8759332",
+                    "name": "Faisal Ladhak"
+                },
+                {
+                    "authorId": "2149615775",
+                    "name": "Myra Cheng"
+                },
+                {
+                    "authorId": "2101317501",
+                    "name": "Debora Nozza"
+                },
+                {
+                    "authorId": "2117567142",
+                    "name": "Tatsunori Hashimoto"
+                },
+                {
+                    "authorId": "1746807",
+                    "name": "Dan Jurafsky"
+                },
+                {
+                    "authorId": "145085305",
+                    "name": "James Y. Zou"
+                },
+                {
+                    "authorId": "144537437",
+                    "name": "Aylin Caliskan"
+                }
+            ],
+            "doi": "10.1145/3593013.3594095",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "a19fa76c42fcfed057694805312ba5d308980a21",
+            "title": "Easily Accessible Text-to-Image Generation Amplifies Demographic Stereotypes at Large Scale",
+            "url": "https://www.semanticscholar.org/paper/a19fa76c42fcfed057694805312ba5d308980a21",
+            "venue": "FAccT",
+            "year": 2022
+        },
+        {
+            "arxivId": "2210.15257",
+            "authors": [
+                {
+                    "authorId": null,
+                    "name": "Zhida Feng"
+                },
+                {
+                    "authorId": "144470702",
+                    "name": "Zhenyu Zhang"
+                },
+                {
+                    "authorId": "2118210682",
+                    "name": "Xintong Yu"
+                },
+                {
+                    "authorId": "37578937",
+                    "name": "Yewei Fang"
+                },
+                {
+                    "authorId": "2145482889",
+                    "name": "Lanxin Li"
+                },
+                {
+                    "authorId": "2109214103",
+                    "name": "Xuyi Chen"
+                },
+                {
+                    "authorId": "2140025135",
+                    "name": "Yuxiang Lu"
+                },
+                {
+                    "authorId": "2144130913",
+                    "name": "Jiaxiang Liu"
+                },
+                {
+                    "authorId": "2318321",
+                    "name": "Weichong Yin"
+                },
+                {
+                    "authorId": "144588144",
+                    "name": "Shi Feng"
+                },
+                {
+                    "authorId": "2117103617",
+                    "name": "Yu Sun"
+                },
+                {
+                    "authorId": "50007795",
+                    "name": "Hao Tian"
+                },
+                {
+                    "authorId": "40354707",
+                    "name": "Hua Wu"
+                },
+                {
+                    "authorId": "2155569278",
+                    "name": "Haifeng Wang"
+                }
+            ],
+            "doi": "10.1109/CVPR52729.2023.00977",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ee9c6f9f9702553f404856287e1388a2916d5383",
+            "title": "ERNIE-ViLG 2.0: Improving Text-to-Image Diffusion Model with Knowledge-Enhanced Mixture-of-Denoising-Experts",
+            "url": "https://www.semanticscholar.org/paper/ee9c6f9f9702553f404856287e1388a2916d5383",
+            "venue": "2023 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2022
+        },
+        {
+            "arxivId": "2210.15230",
+            "authors": [
+                {
+                    "authorId": "103404553",
+                    "name": "Hritik Bansal"
+                },
+                {
+                    "authorId": "144508458",
+                    "name": "Da Yin"
+                },
+                {
+                    "authorId": "2051713098",
+                    "name": "Masoud Monajatipoor"
+                },
+                {
+                    "authorId": "2782886",
+                    "name": "Kai-Wei Chang"
+                }
+            ],
+            "doi": "10.48550/arXiv.2210.15230",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "23c818b5df6a2c8f8837f0e69741164f01946fef",
+            "title": "How well can Text-to-Image Generative Models understand Ethical Natural Language Interventions?",
+            "url": "https://www.semanticscholar.org/paper/23c818b5df6a2c8f8837f0e69741164f01946fef",
+            "venue": "EMNLP",
+            "year": 2022
+        },
+        {
+            "arxivId": "2210.08402",
+            "authors": [
+                {
+                    "authorId": "2137341362",
+                    "name": "Christoph Schuhmann"
+                },
+                {
+                    "authorId": "2125377840",
+                    "name": "Romain Beaumont"
+                },
+                {
+                    "authorId": "2137306046",
+                    "name": "Richard Vencu"
+                },
+                {
+                    "authorId": "2007745319",
+                    "name": "Cade Gordon"
+                },
+                {
+                    "authorId": "2113839396",
+                    "name": "Ross Wightman"
+                },
+                {
+                    "authorId": "40063601",
+                    "name": "Mehdi Cherti"
+                },
+                {
+                    "authorId": "2137419050",
+                    "name": "Theo Coombes"
+                },
+                {
+                    "authorId": "2137380426",
+                    "name": "Aarush Katta"
+                },
+                {
+                    "authorId": "2137306237",
+                    "name": "Clayton Mullis"
+                },
+                {
+                    "authorId": "52193502",
+                    "name": "Mitchell Wortsman"
+                },
+                {
+                    "authorId": "40896023",
+                    "name": "P. Schramowski"
+                },
+                {
+                    "authorId": "2165304339",
+                    "name": "Srivatsa Kundurthy"
+                },
+                {
+                    "authorId": "104998244",
+                    "name": "Katherine Crowson"
+                },
+                {
+                    "authorId": "152772922",
+                    "name": "Ludwig Schmidt"
+                },
+                {
+                    "authorId": "8095484",
+                    "name": "R. Kaczmarczyk"
+                },
+                {
+                    "authorId": "2191688",
+                    "name": "J. Jitsev"
+                }
+            ],
+            "doi": "10.48550/arXiv.2210.08402",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "e5c8960eb2ec034ffbd353ef39fd1cb541d3c7c9",
+            "title": "LAION-5B: An open large-scale dataset for training next generation image-text models",
+            "url": "https://www.semanticscholar.org/paper/e5c8960eb2ec034ffbd353ef39fd1cb541d3c7c9",
+            "venue": "NeurIPS",
+            "year": 2022
+        },
+        {
+            "arxivId": "2210.00939",
+            "authors": [
+                {
+                    "authorId": "2186865215",
+                    "name": "Susung Hong"
+                },
+                {
+                    "authorId": "12035749",
+                    "name": "Gyuseong Lee"
+                },
+                {
+                    "authorId": "8310837",
+                    "name": "Wooseok Jang"
+                },
+                {
+                    "authorId": "2596437",
+                    "name": "Seung Wook Kim"
+                }
+            ],
+            "doi": "10.1109/ICCV51070.2023.00686",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0eca1993fd78649aa94c49a73277546aeeb76e21",
+            "title": "Improving Sample Quality of Diffusion Models Using Self-Attention Guidance",
+            "url": "https://www.semanticscholar.org/paper/0eca1993fd78649aa94c49a73277546aeeb76e21",
+            "venue": "2023 IEEE/CVF International Conference on Computer Vision (ICCV)",
+            "year": 2022
+        },
+        {
+            "arxivId": "2209.14491",
+            "authors": [
+                {
+                    "authorId": "2928777",
+                    "name": "Wenhu Chen"
+                },
+                {
+                    "authorId": "2804000",
+                    "name": "Hexiang Hu"
+                },
+                {
+                    "authorId": "2139922989",
+                    "name": "Chitwan Saharia"
+                },
+                {
+                    "authorId": "50056360",
+                    "name": "William W. Cohen"
+                }
+            ],
+            "doi": "10.48550/arXiv.2209.14491",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ec1ac8df419a241c3cc6bfd209a38b494af792ee",
+            "title": "Re-Imagen: Retrieval-Augmented Text-to-Image Generator",
+            "url": "https://www.semanticscholar.org/paper/ec1ac8df419a241c3cc6bfd209a38b494af792ee",
+            "venue": "ICLR",
+            "year": 2022
+        },
+        {
+            "arxivId": "2208.04135",
+            "authors": [
+                {
+                    "authorId": "2249763478",
+                    "name": "Raphael Milliere"
+                }
+            ],
+            "doi": "10.48550/arXiv.2208.04135",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7ac353d4468753e9a6cab80102b5f3fa4f9d6d60",
+            "title": "Adversarial Attacks on Image Generation With Made-Up Words",
+            "url": "https://www.semanticscholar.org/paper/7ac353d4468753e9a6cab80102b5f3fa4f9d6d60",
+            "venue": "ArXiv",
+            "year": 2022
+        },
+        {
+            "arxivId": "2208.00005",
+            "authors": [
+                {
+                    "authorId": "117698162",
+                    "name": "Colin Conwell"
+                },
+                {
+                    "authorId": "37774552",
+                    "name": "T. Ullman"
+                }
+            ],
+            "doi": "10.48550/arXiv.2208.00005",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "2a55ef45fd687311aa735232ad571e25aeaaed99",
+            "title": "Testing Relational Understanding in Text-Guided Image Generation",
+            "url": "https://www.semanticscholar.org/paper/2a55ef45fd687311aa735232ad571e25aeaaed99",
+            "venue": "ArXiv",
+            "year": 2022
+        },
+        {
+            "arxivId": "2206.10789",
+            "authors": [
+                {
+                    "authorId": "150167366",
+                    "name": "Jiahui Yu"
+                },
+                {
+                    "authorId": "2145139570",
+                    "name": "Yuanzhong Xu"
+                },
+                {
+                    "authorId": "23978705",
+                    "name": "Jing Yu Koh"
+                },
+                {
+                    "authorId": "1821711",
+                    "name": "Thang Luong"
+                },
+                {
+                    "authorId": "1396954703",
+                    "name": "Gunjan Baid"
+                },
+                {
+                    "authorId": "2331539",
+                    "name": "Zirui Wang"
+                },
+                {
+                    "authorId": "2053781980",
+                    "name": "Vijay Vasudevan"
+                },
+                {
+                    "authorId": "31702389",
+                    "name": "Alexander Ku"
+                },
+                {
+                    "authorId": "2118771180",
+                    "name": "Yinfei Yang"
+                },
+                {
+                    "authorId": "143990191",
+                    "name": "Burcu Karagol Ayan"
+                },
+                {
+                    "authorId": "2044655623",
+                    "name": "Ben Hutchinson"
+                },
+                {
+                    "authorId": "143911112",
+                    "name": "Wei Han"
+                },
+                {
+                    "authorId": "27456119",
+                    "name": "Zarana Parekh"
+                },
+                {
+                    "authorId": "2158973314",
+                    "name": "Xin Li"
+                },
+                {
+                    "authorId": null,
+                    "name": "Han Zhang"
+                },
+                {
+                    "authorId": "1387994164",
+                    "name": "Jason Baldridge"
+                },
+                {
+                    "authorId": "48607963",
+                    "name": "Yonghui Wu"
+                }
+            ],
+            "doi": "10.48550/arXiv.2206.10789",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "1243e13254bb4ea1f71b4be8a3e4e54ffd02d2fe",
+            "title": "Scaling Autoregressive Models for Content-Rich Text-to-Image Generation",
+            "url": "https://www.semanticscholar.org/paper/1243e13254bb4ea1f71b4be8a3e4e54ffd02d2fe",
+            "venue": "Trans. Mach. Learn. Res.",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2171362585",
+                    "name": "Ioannis Pastaltzidis"
+                },
+                {
+                    "authorId": "1753998",
+                    "name": "N. Dimitriou"
+                },
+                {
+                    "authorId": "2101048118",
+                    "name": "K. Quezada-Tav\u00e1rez"
+                },
+                {
+                    "authorId": "72079363",
+                    "name": "Stergios Aidinlis"
+                },
+                {
+                    "authorId": "31689335",
+                    "name": "Thomas Marquenie"
+                },
+                {
+                    "authorId": "118624225",
+                    "name": "Agata Gurzawska"
+                },
+                {
+                    "authorId": "143636644",
+                    "name": "D. Tzovaras"
+                }
+            ],
+            "doi": "10.1145/3531146.3534644",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f0cc477e06c855a16321ac90dc55719a377d8799",
+            "title": "Data augmentation for fairness-aware machine learning: Preventing algorithmic bias in law enforcement systems",
+            "url": "https://www.semanticscholar.org/paper/f0cc477e06c855a16321ac90dc55719a377d8799",
+            "venue": "FAccT",
+            "year": 2022
+        },
+        {
+            "arxivId": "2206.06149",
+            "authors": [
+                {
+                    "authorId": "1507650929",
+                    "name": "Maarten Buyl"
+                },
+                {
+                    "authorId": "2139603835",
+                    "name": "Christina Cociancig"
+                },
+                {
+                    "authorId": "2170074138",
+                    "name": "Cristina Frattone"
+                },
+                {
+                    "authorId": "2170072415",
+                    "name": "Nele Roekens"
+                }
+            ],
+            "doi": "10.1145/3531146.3533169",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "4cc4e9cfd7b0684717aa6629fee10e03b4e5d7e6",
+            "title": "Tackling Algorithmic Disability Discrimination in the Hiring Process: An Ethical, Legal and Technical Analysis",
+            "url": "https://www.semanticscholar.org/paper/4cc4e9cfd7b0684717aa6629fee10e03b4e5d7e6",
+            "venue": "FAccT",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2065083806",
+                    "name": "Gaurav Parmar"
+                },
+                {
+                    "authorId": "2109976035",
+                    "name": "Richard Zhang"
+                },
+                {
+                    "authorId": "1922024303",
+                    "name": "Jun-Yan Zhu"
+                }
+            ],
+            "doi": "10.1109/CVPR52688.2022.01112",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c539f6ab5818bde96f61298856cb0c38f6268369",
+            "title": "On Aliased Resizing and Surprising Subtleties in GAN Evaluation",
+            "url": "https://www.semanticscholar.org/paper/c539f6ab5818bde96f61298856cb0c38f6268369",
+            "venue": "2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2022
+        },
+        {
+            "arxivId": "2205.11487",
+            "authors": [
+                {
+                    "authorId": "51497543",
+                    "name": "Chitwan Saharia"
+                },
+                {
+                    "authorId": "144333684",
+                    "name": "William Chan"
+                },
+                {
+                    "authorId": "2054003577",
+                    "name": "Saurabh Saxena"
+                },
+                {
+                    "authorId": "2111917831",
+                    "name": "Lala Li"
+                },
+                {
+                    "authorId": "21040156",
+                    "name": "Jay Whang"
+                },
+                {
+                    "authorId": "40081727",
+                    "name": "Emily L. Denton"
+                },
+                {
+                    "authorId": "81419386",
+                    "name": "Seyed Kamyar Seyed Ghasemipour"
+                },
+                {
+                    "authorId": "143990191",
+                    "name": "Burcu Karagol Ayan"
+                },
+                {
+                    "authorId": "1982213",
+                    "name": "S. S. Mahdavi"
+                },
+                {
+                    "authorId": "143826364",
+                    "name": "Raphael Gontijo Lopes"
+                },
+                {
+                    "authorId": "2887364",
+                    "name": "Tim Salimans"
+                },
+                {
+                    "authorId": "2126278",
+                    "name": "Jonathan Ho"
+                },
+                {
+                    "authorId": "1793739",
+                    "name": "David J. Fleet"
+                },
+                {
+                    "authorId": "144739074",
+                    "name": "Mohammad Norouzi"
+                }
+            ],
+            "doi": "10.48550/arXiv.2205.11487",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9695824d7a01fad57ba9c01d7d76a519d78d65e7",
+            "title": "Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding",
+            "url": "https://www.semanticscholar.org/paper/9695824d7a01fad57ba9c01d7d76a519d78d65e7",
+            "venue": "NeurIPS",
+            "year": 2022
+        },
+        {
+            "arxivId": "2205.10764",
+            "authors": [
+                {
+                    "authorId": "100508901",
+                    "name": "R. Wolfe"
+                },
+                {
+                    "authorId": "1968771",
+                    "name": "M. Banaji"
+                },
+                {
+                    "authorId": "144537437",
+                    "name": "Aylin Caliskan"
+                }
+            ],
+            "doi": "10.1145/3531146.3533185",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "3cfea2a4291ea4e5e0061d8a626e414e27ec5ac5",
+            "title": "Evidence for Hypodescent in Visual Semantic AI",
+            "url": "https://www.semanticscholar.org/paper/3cfea2a4291ea4e5e0061d8a626e414e27ec5ac5",
+            "venue": "FAccT",
+            "year": 2022
+        },
+        {
+            "arxivId": "2204.13807",
+            "authors": [
+                {
+                    "authorId": "2139514097",
+                    "name": "G. Marcus"
+                },
+                {
+                    "authorId": "144883814",
+                    "name": "E. Davis"
+                },
+                {
+                    "authorId": "20996436",
+                    "name": "S. Aaronson"
+                }
+            ],
+            "doi": "10.48550/arXiv.2204.13807",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "1b72a2842c535502f639e6082562723717582046",
+            "title": "A very preliminary analysis of DALL-E 2",
+            "url": "https://www.semanticscholar.org/paper/1b72a2842c535502f639e6082562723717582046",
+            "venue": "ArXiv",
+            "year": 2022
+        },
+        {
+            "arxivId": "2204.06125",
+            "authors": [
+                {
+                    "authorId": "1992922591",
+                    "name": "A. Ramesh"
+                },
+                {
+                    "authorId": "6515819",
+                    "name": "Prafulla Dhariwal"
+                },
+                {
+                    "authorId": "38967461",
+                    "name": "Alex Nichol"
+                },
+                {
+                    "authorId": "30414789",
+                    "name": "Casey Chu"
+                },
+                {
+                    "authorId": "2108828435",
+                    "name": "Mark Chen"
+                }
+            ],
+            "doi": "10.48550/arXiv.2204.06125",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c57293882b2561e1ba03017902df9fc2f289dea2",
+            "title": "Hierarchical Text-Conditional Image Generation with CLIP Latents",
+            "url": "https://www.semanticscholar.org/paper/c57293882b2561e1ba03017902df9fc2f289dea2",
+            "venue": "ArXiv",
+            "year": 2022
+        },
+        {
+            "arxivId": "2203.13131",
+            "authors": [
+                {
+                    "authorId": "90840812",
+                    "name": "Oran Gafni"
+                },
+                {
+                    "authorId": "33964593",
+                    "name": "Adam Polyak"
+                },
+                {
+                    "authorId": "1388005058",
+                    "name": "Oron Ashual"
+                },
+                {
+                    "authorId": "2086827528",
+                    "name": "Shelly Sheynin"
+                },
+                {
+                    "authorId": "153432684",
+                    "name": "Devi Parikh"
+                },
+                {
+                    "authorId": "2188620",
+                    "name": "Yaniv Taigman"
+                }
+            ],
+            "doi": "10.48550/arXiv.2203.13131",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "15e234a67f30d6761f1d7670d501095d1697b69c",
+            "title": "Make-A-Scene: Scene-Based Text-to-Image Generation with Human Priors",
+            "url": "https://www.semanticscholar.org/paper/15e234a67f30d6761f1d7670d501095d1697b69c",
+            "venue": "ECCV",
+            "year": 2022
+        },
+        {
+            "arxivId": "2202.03907",
+            "authors": [
+                {
+                    "authorId": "2328547395",
+                    "name": "S. Vethman"
+                },
+                {
+                    "authorId": "5182881",
+                    "name": "A. Adhikari"
+                },
+                {
+                    "authorId": "2113815060",
+                    "name": "M. D. Boer"
+                },
+                {
+                    "authorId": "2086378097",
+                    "name": "J. V. Genabeek"
+                },
+                {
+                    "authorId": "1696916",
+                    "name": "C. Veenman"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "18a0e3444fbd1c8b86821262007219f735fd716d",
+            "title": "Context-Aware Discrimination Detection in Job Vacancies using Computational Language Models",
+            "url": "https://www.semanticscholar.org/paper/18a0e3444fbd1c8b86821262007219f735fd716d",
+            "venue": "ArXiv",
+            "year": 2022
+        },
+        {
+            "arxivId": "2201.12179",
+            "authors": [
+                {
+                    "authorId": "2140415179",
+                    "name": "Lukas Struppek"
+                },
+                {
+                    "authorId": "2140396795",
+                    "name": "Dominik Hintersdorf"
+                },
+                {
+                    "authorId": "2151686575",
+                    "name": "Antonio De Almeida Correia"
+                },
+                {
+                    "authorId": "2151203742",
+                    "name": "Antonia Adler"
+                },
+                {
+                    "authorId": "2066493115",
+                    "name": "K. Kersting"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5ac14e7ed4b1c4891fa7a8de4f872a7699e4e7ad",
+            "title": "Plug & Play Attacks: Towards Robust and Flexible Model Inversion Attacks",
+            "url": "https://www.semanticscholar.org/paper/5ac14e7ed4b1c4891fa7a8de4f872a7699e4e7ad",
+            "venue": "ICML",
+            "year": 2022
+        },
+        {
+            "arxivId": "2112.10752",
+            "authors": [
+                {
+                    "authorId": "1660819540",
+                    "name": "Robin Rombach"
+                },
+                {
+                    "authorId": "119843260",
+                    "name": "A. Blattmann"
+                },
+                {
+                    "authorId": "2053482699",
+                    "name": "Dominik Lorenz"
+                },
+                {
+                    "authorId": "35175531",
+                    "name": "Patrick Esser"
+                },
+                {
+                    "authorId": "1796707",
+                    "name": "B. Ommer"
+                }
+            ],
+            "doi": "10.1109/CVPR52688.2022.01042",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c10075b3746a9f3dd5811970e93c8ca3ad39b39d",
+            "title": "High-Resolution Image Synthesis with Latent Diffusion Models",
+            "url": "https://www.semanticscholar.org/paper/c10075b3746a9f3dd5811970e93c8ca3ad39b39d",
+            "venue": "2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2021
+        },
+        {
+            "arxivId": "2112.10741",
+            "authors": [
+                {
+                    "authorId": "38967461",
+                    "name": "Alex Nichol"
+                },
+                {
+                    "authorId": "6515819",
+                    "name": "Prafulla Dhariwal"
+                },
+                {
+                    "authorId": "1992922591",
+                    "name": "A. Ramesh"
+                },
+                {
+                    "authorId": "67311962",
+                    "name": "Pranav Shyam"
+                },
+                {
+                    "authorId": "2051714782",
+                    "name": "Pamela Mishkin"
+                },
+                {
+                    "authorId": "39593364",
+                    "name": "Bob McGrew"
+                },
+                {
+                    "authorId": "1701686",
+                    "name": "I. Sutskever"
+                },
+                {
+                    "authorId": "2108828435",
+                    "name": "Mark Chen"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7002ae048e4b8c9133a55428441e8066070995cb",
+            "title": "GLIDE: Towards Photorealistic Image Generation and Editing with Text-Guided Diffusion Models",
+            "url": "https://www.semanticscholar.org/paper/7002ae048e4b8c9133a55428441e8066070995cb",
+            "venue": "ICML",
+            "year": 2021
+        },
+        {
+            "arxivId": "2112.04359",
+            "authors": [
+                {
+                    "authorId": "51932191",
+                    "name": "Laura Weidinger"
+                },
+                {
+                    "authorId": "1386957852",
+                    "name": "John F. J. Mellor"
+                },
+                {
+                    "authorId": "94483529",
+                    "name": "Maribeth Rauh"
+                },
+                {
+                    "authorId": "2143349026",
+                    "name": "Conor Griffin"
+                },
+                {
+                    "authorId": "9960452",
+                    "name": "Jonathan Uesato"
+                },
+                {
+                    "authorId": "2421691",
+                    "name": "Po-Sen Huang"
+                },
+                {
+                    "authorId": "2149615775",
+                    "name": "Myra Cheng"
+                },
+                {
+                    "authorId": "2143471164",
+                    "name": "Mia Glaese"
+                },
+                {
+                    "authorId": "1718064",
+                    "name": "Borja Balle"
+                },
+                {
+                    "authorId": "51880633",
+                    "name": "Atoosa Kasirzadeh"
+                },
+                {
+                    "authorId": "40947466",
+                    "name": "Zachary Kenton"
+                },
+                {
+                    "authorId": "121572121",
+                    "name": "S. Brown"
+                },
+                {
+                    "authorId": "2099067441",
+                    "name": "W. Hawkins"
+                },
+                {
+                    "authorId": "3382781",
+                    "name": "T. Stepleton"
+                },
+                {
+                    "authorId": "118927199",
+                    "name": "Courtney Biles"
+                },
+                {
+                    "authorId": "8318698",
+                    "name": "Abeba Birhane"
+                },
+                {
+                    "authorId": "1652697400",
+                    "name": "Julia Haas"
+                },
+                {
+                    "authorId": "2554988",
+                    "name": "Laura Rimell"
+                },
+                {
+                    "authorId": "2234342",
+                    "name": "Lisa Anne Hendricks"
+                },
+                {
+                    "authorId": "103087275",
+                    "name": "William S. Isaac"
+                },
+                {
+                    "authorId": "2102678638",
+                    "name": "Sean Legassick"
+                },
+                {
+                    "authorId": "2060655766",
+                    "name": "G. Irving"
+                },
+                {
+                    "authorId": "116589025",
+                    "name": "Iason Gabriel"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "fd1b829261ba04bb92e0ab60c4f6e7cea0d99fbf",
+            "title": "Ethical and social risks of harm from Language Models",
+            "url": "https://www.semanticscholar.org/paper/fd1b829261ba04bb92e0ab60c4f6e7cea0d99fbf",
+            "venue": "ArXiv",
+            "year": 2021
+        },
+        {
+            "arxivId": "2111.06628",
+            "authors": [
+                {
+                    "authorId": "2140415179",
+                    "name": "Lukas Struppek"
+                },
+                {
+                    "authorId": "2140396795",
+                    "name": "Dominik Hintersdorf"
+                },
+                {
+                    "authorId": "1779795",
+                    "name": "D. Neider"
+                },
+                {
+                    "authorId": "1746871",
+                    "name": "K. Kersting"
+                }
+            ],
+            "doi": "10.1145/3531146.3533073",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0b43b36e14902a8433cafdde208cd880b4156aed",
+            "title": "Learning to Break Deep Perceptual Hashing: The Use Case NeuralHash",
+            "url": "https://www.semanticscholar.org/paper/0b43b36e14902a8433cafdde208cd880b4156aed",
+            "venue": "FAccT",
+            "year": 2021
+        },
+        {
+            "arxivId": "2111.02114",
+            "authors": [
+                {
+                    "authorId": "2137341362",
+                    "name": "Christoph Schuhmann"
+                },
+                {
+                    "authorId": "2137306046",
+                    "name": "Richard Vencu"
+                },
+                {
+                    "authorId": "2125377840",
+                    "name": "Romain Beaumont"
+                },
+                {
+                    "authorId": "8095484",
+                    "name": "R. Kaczmarczyk"
+                },
+                {
+                    "authorId": "2137306237",
+                    "name": "Clayton Mullis"
+                },
+                {
+                    "authorId": "2137380426",
+                    "name": "Aarush Katta"
+                },
+                {
+                    "authorId": "2137419050",
+                    "name": "Theo Coombes"
+                },
+                {
+                    "authorId": "2191688",
+                    "name": "J. Jitsev"
+                },
+                {
+                    "authorId": "51891020",
+                    "name": "Aran Komatsuzaki"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "b668ce936cff0b0ca8b635cd5f25a62eaf4eb3df",
+            "title": "LAION-400M: Open Dataset of CLIP-Filtered 400 Million Image-Text Pairs",
+            "url": "https://www.semanticscholar.org/paper/b668ce936cff0b0ca8b635cd5f25a62eaf4eb3df",
+            "venue": "ArXiv",
+            "year": 2021
+        },
+        {
+            "arxivId": "2110.01963",
+            "authors": [
+                {
+                    "authorId": "8318698",
+                    "name": "Abeba Birhane"
+                },
+                {
+                    "authorId": "2670978",
+                    "name": "Vinay Uday Prabhu"
+                },
+                {
+                    "authorId": "26432578",
+                    "name": "Emmanuel Kahembwe"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "267f1de5ff863ab03f8c48c7ac3df1d422de7c3b",
+            "title": "Multimodal datasets: misogyny, pornography, and malignant stereotypes",
+            "url": "https://www.semanticscholar.org/paper/267f1de5ff863ab03f8c48c7ac3df1d422de7c3b",
+            "venue": "ArXiv",
+            "year": 2021
+        },
+        {
+            "arxivId": "2109.05433",
+            "authors": [
+                {
+                    "authorId": "46583583",
+                    "name": "Jialu Wang"
+                },
+                {
+                    "authorId": "2152799147",
+                    "name": "Yang Liu"
+                },
+                {
+                    "authorId": "47120131",
+                    "name": "X. Wang"
+                }
+            ],
+            "doi": "10.18653/v1/2021.emnlp-main.151",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "60c498956cb5737c4964aaca0b920592bd7f5689",
+            "title": "Are Gender-Neutral Queries Really Gender-Neutral? Mitigating Gender Bias in Image Search",
+            "url": "https://www.semanticscholar.org/paper/60c498956cb5737c4964aaca0b920592bd7f5689",
+            "venue": "EMNLP",
+            "year": 2021
+        },
+        {
+            "arxivId": "2106.09898",
+            "authors": [
+                {
+                    "authorId": "103441820",
+                    "name": "N. Boucher"
+                },
+                {
+                    "authorId": "47473421",
+                    "name": "Ilia Shumailov"
+                },
+                {
+                    "authorId": "40171469",
+                    "name": "Ross Anderson"
+                },
+                {
+                    "authorId": "1967156",
+                    "name": "Nicolas Papernot"
+                }
+            ],
+            "doi": "10.1109/sp46214.2022.9833641",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "cbc1e8bbfe98f94c0d13d111b824cf603b62712c",
+            "title": "Bad Characters: Imperceptible NLP Attacks",
+            "url": "https://www.semanticscholar.org/paper/cbc1e8bbfe98f94c0d13d111b824cf603b62712c",
+            "venue": "2022 IEEE Symposium on Security and Privacy (SP)",
+            "year": 2021
+        },
+        {
+            "arxivId": "2106.09667",
+            "authors": [
+                {
+                    "authorId": "2483738",
+                    "name": "Nicholas Carlini"
+                },
+                {
+                    "authorId": "1763579",
+                    "name": "A. Terzis"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "6c50e8db8d44a3399a78adb8fab2d7f81a029c33",
+            "title": "Poisoning and Backdooring Contrastive Learning",
+            "url": "https://www.semanticscholar.org/paper/6c50e8db8d44a3399a78adb8fab2d7f81a029c33",
+            "venue": "ICLR",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "66099712",
+                    "name": "Maximilian Kasy"
+                },
+                {
+                    "authorId": "5651696",
+                    "name": "Rediet Abebe"
+                }
+            ],
+            "doi": "10.1145/3442188.3445919",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "97c13c17f0651ccf43f81ea1feb92fd14f2a7e47",
+            "title": "Fairness, Equality, and Power in Algorithmic Decision-Making",
+            "url": "https://www.semanticscholar.org/paper/97c13c17f0651ccf43f81ea1feb92fd14f2a7e47",
+            "venue": "FAccT",
+            "year": 2021
+        },
+        {
+            "arxivId": "2103.00020",
+            "authors": [
+                {
+                    "authorId": "38909097",
+                    "name": "Alec Radford"
+                },
+                {
+                    "authorId": "2110935237",
+                    "name": "Jong Wook Kim"
+                },
+                {
+                    "authorId": "2004021329",
+                    "name": "Chris Hallacy"
+                },
+                {
+                    "authorId": "1992922591",
+                    "name": "A. Ramesh"
+                },
+                {
+                    "authorId": "40087786",
+                    "name": "Gabriel Goh"
+                },
+                {
+                    "authorId": "144517868",
+                    "name": "Sandhini Agarwal"
+                },
+                {
+                    "authorId": "144864359",
+                    "name": "Girish Sastry"
+                },
+                {
+                    "authorId": "119609682",
+                    "name": "Amanda Askell"
+                },
+                {
+                    "authorId": "2051714782",
+                    "name": "Pamela Mishkin"
+                },
+                {
+                    "authorId": "2115193883",
+                    "name": "Jack Clark"
+                },
+                {
+                    "authorId": "2064404342",
+                    "name": "Gretchen Krueger"
+                },
+                {
+                    "authorId": "1701686",
+                    "name": "I. Sutskever"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "6f870f7f02a8c59c3e23f407f3ef00dd1dcf8fc4",
+            "title": "Learning Transferable Visual Models From Natural Language Supervision",
+            "url": "https://www.semanticscholar.org/paper/6f870f7f02a8c59c3e23f407f3ef00dd1dcf8fc4",
+            "venue": "ICML",
+            "year": 2021
+        },
+        {
+            "arxivId": "2102.12092",
+            "authors": [
+                {
+                    "authorId": "1992922591",
+                    "name": "A. Ramesh"
+                },
+                {
+                    "authorId": "2068123790",
+                    "name": "Mikhail Pavlov"
+                },
+                {
+                    "authorId": "40087786",
+                    "name": "Gabriel Goh"
+                },
+                {
+                    "authorId": "145565184",
+                    "name": "Scott Gray"
+                },
+                {
+                    "authorId": "153387869",
+                    "name": "Chelsea Voss"
+                },
+                {
+                    "authorId": "38909097",
+                    "name": "Alec Radford"
+                },
+                {
+                    "authorId": "2108828435",
+                    "name": "Mark Chen"
+                },
+                {
+                    "authorId": "1701686",
+                    "name": "I. Sutskever"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2cd605106b88c85d7d8b865b1ef0f8c8293debf1",
+            "title": "Zero-Shot Text-to-Image Generation",
+            "url": "https://www.semanticscholar.org/paper/2cd605106b88c85d7d8b865b1ef0f8c8293debf1",
+            "venue": "ICML",
+            "year": 2021
+        },
+        {
+            "arxivId": "2102.09672",
+            "authors": [
+                {
+                    "authorId": "38967461",
+                    "name": "Alex Nichol"
+                },
+                {
+                    "authorId": "6515819",
+                    "name": "Prafulla Dhariwal"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "de18baa4964804cf471d85a5a090498242d2e79f",
+            "title": "Improved Denoising Diffusion Probabilistic Models",
+            "url": "https://www.semanticscholar.org/paper/de18baa4964804cf471d85a5a090498242d2e79f",
+            "venue": "ICML",
+            "year": 2021
+        },
+        {
+            "arxivId": "2012.11066",
+            "authors": [
+                {
+                    "authorId": "3174388",
+                    "name": "Nathan Kallus"
+                },
+                {
+                    "authorId": "2005764793",
+                    "name": "Angela Zhou"
+                }
+            ],
+            "doi": "10.1145/3442188.3445895",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "bbeb4a5f7b39987754c1b5c0888a8e28ad87cd95",
+            "title": "Fairness, Welfare, and Equity in Personalized Pricing",
+            "url": "https://www.semanticscholar.org/paper/bbeb4a5f7b39987754c1b5c0888a8e28ad87cd95",
+            "venue": "FAccT",
+            "year": 2020
+        },
+        {
+            "arxivId": "2012.05345",
+            "authors": [
+                {
+                    "authorId": "3427127",
+                    "name": "Amandalynne Paullada"
+                },
+                {
+                    "authorId": "81316798",
+                    "name": "Inioluwa Deborah Raji"
+                },
+                {
+                    "authorId": "2471699",
+                    "name": "Emily M. Bender"
+                },
+                {
+                    "authorId": "40081727",
+                    "name": "Emily L. Denton"
+                },
+                {
+                    "authorId": "40540250",
+                    "name": "A. Hanna"
+                }
+            ],
+            "doi": "10.1016/j.patter.2021.100336",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "c09f44e0088342ec618c7a2deeab1526d73b2d6b",
+            "title": "Data and its (dis)contents: A survey of dataset development and use in machine learning research",
+            "url": "https://www.semanticscholar.org/paper/c09f44e0088342ec618c7a2deeab1526d73b2d6b",
+            "venue": "Patterns",
+            "year": 2020
+        },
+        {
+            "arxivId": "2012.01193",
+            "authors": [
+                {
+                    "authorId": null,
+                    "name": "Mark Weber"
+                },
+                {
+                    "authorId": "8202372",
+                    "name": "M. Yurochkin"
+                },
+                {
+                    "authorId": "33005557",
+                    "name": "S. Botros"
+                },
+                {
+                    "authorId": "2331363",
+                    "name": "Vanio Slavov Markov"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "6a4cde3fde260b816a9a783eaf81eb5792f518dc",
+            "title": "Black Loans Matter: Distributionally Robust Fairness for Fighting Subgroup Discrimination",
+            "url": "https://www.semanticscholar.org/paper/6a4cde3fde260b816a9a783eaf81eb5792f518dc",
+            "venue": "ArXiv",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2121373489",
+                    "name": "Geoffrey Simpson"
+                },
+                {
+                    "authorId": "103311621",
+                    "name": "T. Moore"
+                },
+                {
+                    "authorId": "144968165",
+                    "name": "R. Clayton"
+                }
+            ],
+            "doi": "10.1109/eCrime51433.2020.9493251",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e9865df6d0aee5f4481149b9addddd2a255403da",
+            "title": "Ten years of attacks on companies using visual impersonation of domain names",
+            "url": "https://www.semanticscholar.org/paper/e9865df6d0aee5f4481149b9addddd2a255403da",
+            "venue": "2020 APWG Symposium on Electronic Crime Research (eCrime)",
+            "year": 2020
+        },
+        {
+            "arxivId": "2006.11239",
+            "authors": [
+                {
+                    "authorId": "2126278",
+                    "name": "Jonathan Ho"
+                },
+                {
+                    "authorId": "1623995772",
+                    "name": "Ajay Jain"
+                },
+                {
+                    "authorId": "1689992",
+                    "name": "P. Abbeel"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "5c126ae3421f05768d8edd97ecd44b1364e2c99a",
+            "title": "Denoising Diffusion Probabilistic Models",
+            "url": "https://www.semanticscholar.org/paper/5c126ae3421f05768d8edd97ecd44b1364e2c99a",
+            "venue": "NeurIPS",
+            "year": 2020
+        },
+        {
+            "arxivId": "2006.09011",
+            "authors": [
+                {
+                    "authorId": "115504645",
+                    "name": "Yang Song"
+                },
+                {
+                    "authorId": "2490652",
+                    "name": "Stefano Ermon"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "1156e277fa7ec195b043161d3c5c97715da17658",
+            "title": "Improved Techniques for Training Score-Based Generative Models",
+            "url": "https://www.semanticscholar.org/paper/1156e277fa7ec195b043161d3c5c97715da17658",
+            "venue": "NeurIPS",
+            "year": 2020
+        },
+        {
+            "arxivId": "1908.09635",
+            "authors": [
+                {
+                    "authorId": "51997673",
+                    "name": "Ninareh Mehrabi"
+                },
+                {
+                    "authorId": "2775559",
+                    "name": "Fred Morstatter"
+                },
+                {
+                    "authorId": "51884035",
+                    "name": "N. Saxena"
+                },
+                {
+                    "authorId": "1782658",
+                    "name": "Kristina Lerman"
+                },
+                {
+                    "authorId": "143728483",
+                    "name": "A. Galstyan"
+                }
+            ],
+            "doi": "10.1145/3457607",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0090023afc66cd2741568599057f4e82b566137c",
+            "title": "A Survey on Bias and Fairness in Machine Learning",
+            "url": "https://www.semanticscholar.org/paper/0090023afc66cd2741568599057f4e82b566137c",
+            "venue": "ACM Comput. Surv.",
+            "year": 2019
+        },
+        {
+            "arxivId": "1805.11202",
+            "authors": [
+                {
+                    "authorId": "1504550516",
+                    "name": "Depeng Xu"
+                },
+                {
+                    "authorId": "2241342380",
+                    "name": "Shuhan Yuan"
+                },
+                {
+                    "authorId": "48570932",
+                    "name": "Lu Zhang"
+                },
+                {
+                    "authorId": "7916525",
+                    "name": "Xintao Wu"
+                }
+            ],
+            "doi": "10.1109/BigData.2018.8622525",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "6ea90ce79d9f4d962e34b3c8a73fb41455a87322",
+            "title": "FairGAN: Fairness-aware Generative Adversarial Networks",
+            "url": "https://www.semanticscholar.org/paper/6ea90ce79d9f4d962e34b3c8a73fb41455a87322",
+            "venue": "2018 IEEE International Conference on Big Data (Big Data)",
+            "year": 2018
+        },
+        {
+            "arxivId": "1801.04354",
+            "authors": [
+                {
+                    "authorId": "38637026",
+                    "name": "Ji Gao"
+                },
+                {
+                    "authorId": "3369052",
+                    "name": "Jack Lanchantin"
+                },
+                {
+                    "authorId": "1749399",
+                    "name": "M. Soffa"
+                },
+                {
+                    "authorId": "1791105",
+                    "name": "Yanjun Qi"
+                }
+            ],
+            "doi": "10.1109/SPW.2018.00016",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "fa12574c228542151ccd7d4e3f42cc4896cd274a",
+            "title": "Black-Box Generation of Adversarial Text Sequences to Evade Deep Learning Classifiers",
+            "url": "https://www.semanticscholar.org/paper/fa12574c228542151ccd7d4e3f42cc4896cd274a",
+            "venue": "2018 IEEE Security and Privacy Workshops (SPW)",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1678656",
+                    "name": "I. Loshchilov"
+                },
+                {
+                    "authorId": "144661829",
+                    "name": "F. Hutter"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "d07284a6811f1b2745d91bdb06b040b57f226882",
+            "title": "Decoupled Weight Decay Regularization",
+            "url": "https://www.semanticscholar.org/paper/d07284a6811f1b2745d91bdb06b040b57f226882",
+            "venue": "ICLR",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2445103",
+                    "name": "M. Heusel"
+                },
+                {
+                    "authorId": "19219270",
+                    "name": "Hubert Ramsauer"
+                },
+                {
+                    "authorId": "2465270",
+                    "name": "Thomas Unterthiner"
+                },
+                {
+                    "authorId": "37082831",
+                    "name": "Bernhard Nessler"
+                },
+                {
+                    "authorId": "3308557",
+                    "name": "Sepp Hochreiter"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "231af7dc01a166cac3b5b01ca05778238f796e41",
+            "title": "GANs Trained by a Two Time-Scale Update Rule Converge to a Local Nash Equilibrium",
+            "url": "https://www.semanticscholar.org/paper/231af7dc01a166cac3b5b01ca05778238f796e41",
+            "venue": "NIPS",
+            "year": 2017
+        },
+        {
+            "arxivId": "1610.05820",
+            "authors": [
+                {
+                    "authorId": "2520493",
+                    "name": "R. Shokri"
+                },
+                {
+                    "authorId": "34828439",
+                    "name": "M. Stronati"
+                },
+                {
+                    "authorId": "3469125",
+                    "name": "Congzheng Song"
+                },
+                {
+                    "authorId": "1723945",
+                    "name": "Vitaly Shmatikov"
+                }
+            ],
+            "doi": "10.1109/SP.2017.41",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f0dcc9aa31dc9b31b836bcac1b140c8c94a2982d",
+            "title": "Membership Inference Attacks Against Machine Learning Models",
+            "url": "https://www.semanticscholar.org/paper/f0dcc9aa31dc9b31b836bcac1b140c8c94a2982d",
+            "venue": "2017 IEEE Symposium on Security and Privacy (SP)",
+            "year": 2016
+        },
+        {
+            "arxivId": "1608.07187",
+            "authors": [
+                {
+                    "authorId": "144537437",
+                    "name": "Aylin Caliskan"
+                },
+                {
+                    "authorId": "145315445",
+                    "name": "J. Bryson"
+                },
+                {
+                    "authorId": "47735253",
+                    "name": "Arvind Narayanan"
+                }
+            ],
+            "doi": "10.1126/science.aal4230",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "5966d7c7f60898d610812e24c64d4d57855ad86a",
+            "title": "Semantics derived automatically from language corpora contain human-like biases",
+            "url": "https://www.semanticscholar.org/paper/5966d7c7f60898d610812e24c64d4d57855ad86a",
+            "venue": "Science",
+            "year": 2016
+        },
+        {
+            "arxivId": "1412.6572",
+            "authors": [
+                {
+                    "authorId": "153440022",
+                    "name": "I. Goodfellow"
+                },
+                {
+                    "authorId": "1789737",
+                    "name": "Jonathon Shlens"
+                },
+                {
+                    "authorId": "2574060",
+                    "name": "Christian Szegedy"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "bee044c8e8903fb67523c1f8c105ab4718600cdb",
+            "title": "Explaining and Harnessing Adversarial Examples",
+            "url": "https://www.semanticscholar.org/paper/bee044c8e8903fb67523c1f8c105ab4718600cdb",
+            "venue": "ICLR",
+            "year": 2014
+        },
+        {
+            "arxivId": "1405.0312",
+            "authors": [
+                {
+                    "authorId": "33493200",
+                    "name": "Tsung-Yi Lin"
+                },
+                {
+                    "authorId": "145854440",
+                    "name": "M. Maire"
+                },
+                {
+                    "authorId": "50172592",
+                    "name": "Serge J. Belongie"
+                },
+                {
+                    "authorId": "48966748",
+                    "name": "James Hays"
+                },
+                {
+                    "authorId": "1690922",
+                    "name": "P. Perona"
+                },
+                {
+                    "authorId": "1770537",
+                    "name": "Deva Ramanan"
+                },
+                {
+                    "authorId": "3127283",
+                    "name": "Piotr Doll\u00e1r"
+                },
+                {
+                    "authorId": "1699161",
+                    "name": "C. L. Zitnick"
+                }
+            ],
+            "doi": "10.1007/978-3-319-10602-1_48",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "71b7178df5d2b112d07e45038cb5637208659ff7",
+            "title": "Microsoft COCO: Common Objects in Context",
+            "url": "https://www.semanticscholar.org/paper/71b7178df5d2b112d07e45038cb5637208659ff7",
+            "venue": "ECCV",
+            "year": 2014
+        },
+        {
+            "arxivId": "1312.6199",
+            "authors": [
+                {
+                    "authorId": "2574060",
+                    "name": "Christian Szegedy"
+                },
+                {
+                    "authorId": "2563432",
+                    "name": "Wojciech Zaremba"
+                },
+                {
+                    "authorId": "1701686",
+                    "name": "I. Sutskever"
+                },
+                {
+                    "authorId": "143627859",
+                    "name": "Joan Bruna"
+                },
+                {
+                    "authorId": "1761978",
+                    "name": "D. Erhan"
+                },
+                {
+                    "authorId": "153440022",
+                    "name": "I. Goodfellow"
+                },
+                {
+                    "authorId": "2276554",
+                    "name": "R. Fergus"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d891dc72cbd40ffaeefdc79f2e7afe1e530a23ad",
+            "title": "Intriguing properties of neural networks",
+            "url": "https://www.semanticscholar.org/paper/d891dc72cbd40ffaeefdc79f2e7afe1e530a23ad",
+            "venue": "ICLR",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "40102566",
+                    "name": "Sehee Han"
+                },
+                {
+                    "authorId": "4684936",
+                    "name": "Heaseung Kim"
+                },
+                {
+                    "authorId": "48411817",
+                    "name": "Hee-Sun Lee"
+                }
+            ],
+            "doi": "10.1186/1475-9276-11-3",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "d92f93474c1b6baab08a83bb0f1eeded3f0fb4bc",
+            "title": "A multilevel analysis of social capital and self-reported health: evidence from Seoul, South Korea",
+            "url": "https://www.semanticscholar.org/paper/d92f93474c1b6baab08a83bb0f1eeded3f0fb4bc",
+            "venue": "International Journal for Equity in Health",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2086401455",
+                    "name": "John Goyder"
+                },
+                {
+                    "authorId": "30140966",
+                    "name": "Kristyn Frank"
+                }
+            ],
+            "doi": "10.2307/20460616",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "96e2bc5be80462060f57c065367a34eb194724d5",
+            "title": "A Scale of Occupational Prestige in Canada, Based on NOC Major Groups",
+            "url": "https://www.semanticscholar.org/paper/96e2bc5be80462060f57c065367a34eb194724d5",
+            "venue": "",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1718798",
+                    "name": "E. Gabrilovich"
+                },
+                {
+                    "authorId": "2086920",
+                    "name": "Alex Gontmakher"
+                }
+            ],
+            "doi": "10.1145/503124.503156",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9754d6793d756a7924fe1da8120780f658ce4704",
+            "title": "The homograph attack",
+            "url": "https://www.semanticscholar.org/paper/9754d6793d756a7924fe1da8120780f658ce4704",
+            "venue": "CACM",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3864246",
+                    "name": "A. Greenwald"
+                },
+                {
+                    "authorId": "49986173",
+                    "name": "D. McGhee"
+                },
+                {
+                    "authorId": "2072435656",
+                    "name": "Jordan L. K. Schwartz"
+                }
+            ],
+            "doi": "10.1037/0022-3514.74.6.1464",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "10cc2d53ff8349d3432b8f822d58e4ddee3d475e",
+            "title": "Measuring individual differences in implicit cognition: the implicit association test.",
+            "url": "https://www.semanticscholar.org/paper/10cc2d53ff8349d3432b8f822d58e4ddee3d475e",
+            "venue": "Journal of personality and social psychology",
+            "year": 1998
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "40382684",
+                    "name": "L. Farrand"
+                }
+            ],
+            "doi": "10.1126/science.5.110.206",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "2eabced6a0bd3d76fa209aa97abec6ea061dc9f0",
+            "title": "THE AMERICAN PSYCHOLOGICAL ASSOCIATION.",
+            "url": "https://www.semanticscholar.org/paper/2eabced6a0bd3d76fa209aa97abec6ea061dc9f0",
+            "venue": "Science",
+            "year": 1897
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "49715476",
+                    "name": "F. Carlsson"
+                },
+                {
+                    "authorId": "65924658",
+                    "name": "Philipp Eisen"
+                },
+                {
+                    "authorId": "2131031068",
+                    "name": "Faton Rekathati"
+                },
+                {
+                    "authorId": "2068514641",
+                    "name": "Magnus Sahlgren"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "b51c531926d4b9fc398d1aacf1719d32c497940e",
+            "title": "Cross-lingual and Multilingual CLIP",
+            "url": "https://www.semanticscholar.org/paper/b51c531926d4b9fc398d1aacf1719d32c497940e",
+            "venue": "LREC",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2140415179",
+                    "name": "Lukas Struppek"
+                },
+                {
+                    "authorId": "2140396795",
+                    "name": "Dominik Hintersdorf"
+                },
+                {
+                    "authorId": "2066493115",
+                    "name": "K. Kersting"
+                }
+            ],
+            "doi": "10.48550/arXiv.2211.02408",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5ca211fdff184981c37df166be96b9829d605184",
+            "title": "Rickrolling the Artist: Injecting Invisible Backdoors into Text-Guided Image Generation Models",
+            "url": "https://www.semanticscholar.org/paper/5ca211fdff184981c37df166be96b9829d605184",
+            "venue": "ArXiv",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2140396795",
+                    "name": "Dominik Hintersdorf"
+                },
+                {
+                    "authorId": "2140415179",
+                    "name": "Lukas Struppek"
+                },
+                {
+                    "authorId": "2066493115",
+                    "name": "K. Kersting"
+                }
+            ],
+            "doi": "10.48550/arXiv.2209.07341",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c3843b5a1511d9fc131433c7993f74e3012c7d25",
+            "title": "CLIPping Privacy: Identity Inference Attacks on Multi-Modal Machine Learning Models",
+            "url": "https://www.semanticscholar.org/paper/c3843b5a1511d9fc131433c7993f74e3012c7d25",
+            "venue": "ArXiv",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "38909097",
+                    "name": "Alec Radford"
+                },
+                {
+                    "authorId": "49387725",
+                    "name": "Jeff Wu"
+                },
+                {
+                    "authorId": "48422824",
+                    "name": "R. Child"
+                },
+                {
+                    "authorId": "150970919",
+                    "name": "D. Luan"
+                },
+                {
+                    "authorId": "2698777",
+                    "name": "Dario Amodei"
+                },
+                {
+                    "authorId": "1701686",
+                    "name": "I. Sutskever"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9405cc0d6169988371b2755e573cc28650d14dfe",
+            "title": "Language Models are Unsupervised Multitask Learners",
+            "url": "https://www.semanticscholar.org/paper/9405cc0d6169988371b2755e573cc28650d14dfe",
+            "venue": "",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2262142027",
+                    "name": "Individualized Treat"
+                },
+                {
+                    "authorId": "2262204742",
+                    "name": "Jinsung Yoon"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c68796f833a7151f0a63d1d1608dc902b4fdc9b6",
+            "title": "GENERATIVE ADVERSARIAL NETS",
+            "url": "https://www.semanticscholar.org/paper/c68796f833a7151f0a63d1d1608dc902b4fdc9b6",
+            "venue": "",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1389036863",
+                    "name": "Jordan L. Boyd-Graber"
+                },
+                {
+                    "authorId": "1755162",
+                    "name": "Philipp Koehn"
+                }
+            ],
+            "doi": "10.1007/978-0-387-39940-9_923",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "70d6dfdc40c4681ba5d51d60116db0311b5126ce",
+            "title": "Language Models",
+            "url": "https://www.semanticscholar.org/paper/70d6dfdc40c4681ba5d51d60116db0311b5126ce",
+            "venue": "Encyclopedia of Database Systems",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1803520",
+                    "name": "L. Maaten"
+                },
+                {
+                    "authorId": "1695689",
+                    "name": "Geoffrey E. Hinton"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "1c46943103bd7b7a2c7be86859995a4144d1938b",
+            "title": "Visualizing Data using t-SNE",
+            "url": "https://www.semanticscholar.org/paper/1c46943103bd7b7a2c7be86859995a4144d1938b",
+            "venue": "",
+            "year": 2008
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        },
+        {
+            "category": "Linguistics",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Exploiting Cultural Biases via Homoglyphs in Text-to-Image Synthesis",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/4494d7639ab0377c33433acee687887c002ecd52",
+    "venue": "Journal of Artificial Intelligence Research",
+    "year": 2022
+}

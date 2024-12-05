@@ -1,0 +1,2753 @@
+{
+    "abstract": "We study an approach to policy selection for large relational Markov Decision Processes (MDPs). We consider a variant of approximate policy iteration (API) that replaces the usual value-function learning step with a learning step in policy space. This is advantageous in domains where good policies are easier to represent and learn than the corresponding value functions, which is often the case for the relational MDPs we are interested in. In order to apply API to such problems, we introduce a relational policy language and corresponding learner. In addition, we introduce a new bootstrapping routine for goal-based planning domains, based on random walks. Such bootstrapping is necessary for many large relational MDPs, where reward is extremely sparse, as API is ineffective in such domains when initialized with an uninformed policy. Our experiments show that the resulting system is able to find good policies for a number of classical planning domains and their stochastic variants by solving them as extremely large relational MDPs. The experiments also point to some limitations of our approach, suggesting future work.",
+    "arxivId": "1109.2156",
+    "authors": [
+        {
+            "authorId": "2257230181",
+            "name": "Alan Fern",
+            "url": "https://www.semanticscholar.org/author/2257230181"
+        },
+        {
+            "authorId": "1718146",
+            "name": "R. Givan",
+            "url": "https://www.semanticscholar.org/author/1718146"
+        },
+        {
+            "authorId": "1809846",
+            "name": "S. Yoon",
+            "url": "https://www.semanticscholar.org/author/1809846"
+        }
+    ],
+    "citationVelocity": 6,
+    "citations": [
+        {
+            "arxivId": "2409.20259",
+            "authors": [
+                {
+                    "authorId": "2323512611",
+                    "name": "Martin Funkquist"
+                },
+                {
+                    "authorId": "1979797",
+                    "name": "Simon St\u00e5hlberg"
+                },
+                {
+                    "authorId": "1806598",
+                    "name": "Hector Geffner"
+                }
+            ],
+            "doi": "10.48550/arXiv.2409.20259",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "4ff75395522c61d447233b60f8a7969ce2fb9a8a",
+            "title": "Learning to Ground Existentially Quantified Goals",
+            "url": "https://www.semanticscholar.org/paper/4ff75395522c61d447233b60f8a7969ce2fb9a8a",
+            "venue": "Proceedings of the TwentyFirst International Conference on Principles of Knowledge Representation and Reasoning",
+            "year": 2024
+        },
+        {
+            "arxivId": "2409.15892",
+            "authors": [
+                {
+                    "authorId": "2072988278",
+                    "name": "Dominik Drexler"
+                },
+                {
+                    "authorId": "1979797",
+                    "name": "Simon St\u00e5hlberg"
+                },
+                {
+                    "authorId": "1694156",
+                    "name": "Blai Bonet"
+                },
+                {
+                    "authorId": "1806598",
+                    "name": "Hector Geffner"
+                }
+            ],
+            "doi": "10.48550/arXiv.2409.15892",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "cde5df1190348614d83113a464dfe13cec7e0b3a",
+            "title": "Symmetries and Expressive Requirements for Learning General Policies",
+            "url": "https://www.semanticscholar.org/paper/cde5df1190348614d83113a464dfe13cec7e0b3a",
+            "venue": "Proceedings of the TwentyFirst International Conference on Principles of Knowledge Representation and Reasoning",
+            "year": 2024
+        },
+        {
+            "arxivId": "2404.02499",
+            "authors": [
+                {
+                    "authorId": "2294721428",
+                    "name": "Till Hofmann"
+                },
+                {
+                    "authorId": "1806598",
+                    "name": "Hector Geffner"
+                }
+            ],
+            "doi": "10.48550/arXiv.2404.02499",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "224b62061751d50db24829598fb5228a70587265",
+            "title": "Learning Generalized Policies for Fully Observable Non-Deterministic Planning Domains",
+            "url": "https://www.semanticscholar.org/paper/224b62061751d50db24829598fb5228a70587265",
+            "venue": "IJCAI",
+            "year": 2024
+        },
+        {
+            "arxivId": "2403.16824",
+            "authors": [
+                {
+                    "authorId": "1694156",
+                    "name": "Blai Bonet"
+                },
+                {
+                    "authorId": "2072988278",
+                    "name": "Dominik Drexler"
+                },
+                {
+                    "authorId": "1806598",
+                    "name": "Hector Geffner"
+                }
+            ],
+            "doi": "10.48550/arXiv.2403.16824",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f8e24dd4e422d811af4ebdca0394d6a3f012f2f8",
+            "title": "On Policy Reuse: An Expressive Language for Representing and Executing General Policies that Call Other Policies",
+            "url": "https://www.semanticscholar.org/paper/f8e24dd4e422d811af4ebdca0394d6a3f012f2f8",
+            "venue": "ICAPS",
+            "year": 2024
+        },
+        {
+            "arxivId": "2403.11734",
+            "authors": [
+                {
+                    "authorId": "1979797",
+                    "name": "Simon St\u00e5hlberg"
+                },
+                {
+                    "authorId": "1694156",
+                    "name": "Blai Bonet"
+                },
+                {
+                    "authorId": "1806598",
+                    "name": "Hector Geffner"
+                }
+            ],
+            "doi": "10.48550/arXiv.2403.11734",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f895fab081fc45aa969e48eb3e51a28d777fcacc",
+            "title": "Learning General Policies for Classical Planning Domains: Getting Beyond C2",
+            "url": "https://www.semanticscholar.org/paper/f895fab081fc45aa969e48eb3e51a28d777fcacc",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": "2311.05490",
+            "authors": [
+                {
+                    "authorId": "1694156",
+                    "name": "Blai Bonet"
+                },
+                {
+                    "authorId": "1806598",
+                    "name": "Hector Geffner"
+                }
+            ],
+            "doi": "10.48550/arXiv.2311.05490",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "6effc6f163bdb29bb6359cc7782f6f4d1575e221",
+            "title": "General Policies, Subgoal Structure, and Planning Width",
+            "url": "https://www.semanticscholar.org/paper/6effc6f163bdb29bb6359cc7782f6f4d1575e221",
+            "venue": "J. Artif. Intell. Res.",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2742007",
+                    "name": "Harsha Kokel"
+                },
+                {
+                    "authorId": "34107316",
+                    "name": "Junkyu Lee"
+                },
+                {
+                    "authorId": "144801999",
+                    "name": "Michael Katz"
+                },
+                {
+                    "authorId": "1821852",
+                    "name": "Shirin Sohrabi"
+                },
+                {
+                    "authorId": "145993352",
+                    "name": "Kavitha Srinivas"
+                }
+            ],
+            "doi": "10.24963/ijcai.2023/599",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "871d1b76cb8670703804af75b572e1ad03893381",
+            "title": "Action Space Reduction for Planning Domains",
+            "url": "https://www.semanticscholar.org/paper/871d1b76cb8670703804af75b572e1ad03893381",
+            "venue": "IJCAI",
+            "year": 2023
+        },
+        {
+            "arxivId": "2301.11087",
+            "authors": [
+                {
+                    "authorId": "3410468",
+                    "name": "Javier Segovia Aguas"
+                },
+                {
+                    "authorId": "1728891",
+                    "name": "Sergio Jim\u00e9nez Celorrio"
+                },
+                {
+                    "authorId": "143808510",
+                    "name": "Anders Jonsson"
+                }
+            ],
+            "doi": "10.48550/arXiv.2301.11087",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f4722e9dabc8904dcac876001f7feb9df2b7f0e2",
+            "title": "Generalized Planning as Heuristic Search: A new planning search-space that leverages pointers over objects",
+            "url": "https://www.semanticscholar.org/paper/f4722e9dabc8904dcac876001f7feb9df2b7f0e2",
+            "venue": "Artif. Intell.",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2742007",
+                    "name": "Harsha Kokel"
+                },
+                {
+                    "authorId": "145986014",
+                    "name": "Sriraam Natarajan"
+                },
+                {
+                    "authorId": "1723632",
+                    "name": "Balaraman Ravindran"
+                },
+                {
+                    "authorId": "1729906",
+                    "name": "Prasad Tadepalli"
+                }
+            ],
+            "doi": "10.1007/s00521-022-08119-y",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e2b88a974046d1ca0fcc074dd3d44ac4719dfbd2",
+            "title": "RePReL: a unified framework for integrating relational planning and reinforcement learning for effective abstraction in discrete and continuous domains",
+            "url": "https://www.semanticscholar.org/paper/e2b88a974046d1ca0fcc074dd3d44ac4719dfbd2",
+            "venue": "Neural Computing and Applications",
+            "year": 2022
+        },
+        {
+            "arxivId": "2207.05259",
+            "authors": [
+                {
+                    "authorId": "1694156",
+                    "name": "Blai Bonet"
+                },
+                {
+                    "authorId": "1806598",
+                    "name": "Hector Geffner"
+                }
+            ],
+            "doi": "10.48550/arXiv.2207.05259",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "df2d4a8f14a71779d4bc35e6bdd5a3aca27d1f14",
+            "title": "Language-Based Causal Representation Learning",
+            "url": "https://www.semanticscholar.org/paper/df2d4a8f14a71779d4bc35e6bdd5a3aca27d1f14",
+            "venue": "ArXiv",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "41092405",
+                    "name": "Diego Aineto"
+                },
+                {
+                    "authorId": "145410477",
+                    "name": "Sergio Jim\u00e9nez"
+                },
+                {
+                    "authorId": "2193178",
+                    "name": "E. Onaind\u00eda"
+                }
+            ],
+            "doi": "10.1613/jair.1.13073",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "746da334ad86916dd772a4dc7604f865491df035",
+            "title": "A Comprehensive Framework for Learning Declarative Action Models",
+            "url": "https://www.semanticscholar.org/paper/746da334ad86916dd772a4dc7604f865491df035",
+            "venue": "J. Artif. Intell. Res.",
+            "year": 2022
+        },
+        {
+            "arxivId": "2205.06002",
+            "authors": [
+                {
+                    "authorId": "1979797",
+                    "name": "Simon St\u00e5hlberg"
+                },
+                {
+                    "authorId": "1694156",
+                    "name": "Blai Bonet"
+                },
+                {
+                    "authorId": "1806598",
+                    "name": "Hector Geffner"
+                }
+            ],
+            "doi": "10.48550/arXiv.2205.06002",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "360813ee47a6d53a3f1f82ba29dab725144bc279",
+            "title": "Learning Generalized Policies Without Supervision Using GNNs",
+            "url": "https://www.semanticscholar.org/paper/360813ee47a6d53a3f1f82ba29dab725144bc279",
+            "venue": "KR",
+            "year": 2022
+        },
+        {
+            "arxivId": "2204.12665",
+            "authors": [
+                {
+                    "authorId": "72254820",
+                    "name": "Rushang Karia"
+                },
+                {
+                    "authorId": "145305735",
+                    "name": "Siddharth Srivastava"
+                }
+            ],
+            "doi": "10.48550/arXiv.2204.12665",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "f4c27d3a1ce6d9e9b8b89048be8a684150d42cef",
+            "title": "Relational Abstractions for Generalized Reinforcement Learning on Symbolic Problems",
+            "url": "https://www.semanticscholar.org/paper/f4c27d3a1ce6d9e9b8b89048be8a684150d42cef",
+            "venue": "IJCAI",
+            "year": 2022
+        },
+        {
+            "arxivId": "2204.04301",
+            "authors": [
+                {
+                    "authorId": "72254820",
+                    "name": "Rushang Karia"
+                },
+                {
+                    "authorId": "40908958",
+                    "name": "Rashmeet Kaur Nayyar"
+                },
+                {
+                    "authorId": "145305735",
+                    "name": "Siddharth Srivastava"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "44a0427036c297534d7faae89cbad70a0188e16d",
+            "title": "Learning Generalized Policy Automata for Relational Stochastic Shortest Path Problems",
+            "url": "https://www.semanticscholar.org/paper/44a0427036c297534d7faae89cbad70a0188e16d",
+            "venue": "NeurIPS",
+            "year": 2022
+        },
+        {
+            "arxivId": "2109.10129",
+            "authors": [
+                {
+                    "authorId": "1979797",
+                    "name": "Simon St\u00e5hlberg"
+                },
+                {
+                    "authorId": "1694156",
+                    "name": "Blai Bonet"
+                },
+                {
+                    "authorId": "1806598",
+                    "name": "Hector Geffner"
+                }
+            ],
+            "doi": "10.1609/icaps.v32i1.19851",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "30fb5a3fecb56f775f582652abb2d4df9291bc3e",
+            "title": "Learning General Optimal Policies with Graph Neural Networks: Expressive Power, Transparency, and Limits",
+            "url": "https://www.semanticscholar.org/paper/30fb5a3fecb56f775f582652abb2d4df9291bc3e",
+            "venue": "ICAPS",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2742007",
+                    "name": "Harsha Kokel"
+                },
+                {
+                    "authorId": "2101316510",
+                    "name": "Arjun Manoharan"
+                },
+                {
+                    "authorId": "145986014",
+                    "name": "Sriraam Natarajan"
+                },
+                {
+                    "authorId": "1723632",
+                    "name": "Balaraman Ravindran"
+                },
+                {
+                    "authorId": "1729906",
+                    "name": "Prasad Tadepalli"
+                }
+            ],
+            "doi": "10.1609/icaps.v31i1.16001",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "3b513d8d62ee7a76cb6f1abd6beb214dd2402e88",
+            "title": "RePReL: Integrating Relational Planning and Reinforcement Learning for Effective Abstraction",
+            "url": "https://www.semanticscholar.org/paper/3b513d8d62ee7a76cb6f1abd6beb214dd2402e88",
+            "venue": "ICAPS",
+            "year": 2021
+        },
+        {
+            "arxivId": "2006.05595",
+            "authors": [
+                {
+                    "authorId": "93128294",
+                    "name": "Srijita Das"
+                },
+                {
+                    "authorId": "143927103",
+                    "name": "S. Natarajan"
+                },
+                {
+                    "authorId": "2091913080",
+                    "name": "Kaushik Roy"
+                },
+                {
+                    "authorId": "145726861",
+                    "name": "Ronald E. Parr"
+                },
+                {
+                    "authorId": "1746871",
+                    "name": "K. Kersting"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b2b364fb7d36937c21e9422aaf9df5b4b0af0016",
+            "title": "Fitted Q-Learning for Relational Domains",
+            "url": "https://www.semanticscholar.org/paper/b2b364fb7d36937c21e9422aaf9df5b4b0af0016",
+            "venue": "ArXiv",
+            "year": 2020
+        },
+        {
+            "arxivId": "2002.07375",
+            "authors": [
+                {
+                    "authorId": "51488734",
+                    "name": "Sankalp Garg"
+                },
+                {
+                    "authorId": "144401147",
+                    "name": "Aniket Bajpai"
+                },
+                {
+                    "authorId": "2674444",
+                    "name": "Mausam"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "fd78343a4fca0a196e2ab1a0d4001a76418427da",
+            "title": "Generalized Neural Policies for Relational MDPs",
+            "url": "https://www.semanticscholar.org/paper/fd78343a4fca0a196e2ab1a0d4001a76418427da",
+            "venue": "ICML 2020",
+            "year": 2020
+        },
+        {
+            "arxivId": "1811.07231",
+            "authors": [
+                {
+                    "authorId": "1694156",
+                    "name": "Blai Bonet"
+                },
+                {
+                    "authorId": "2478383",
+                    "name": "Guillem Franc\u00e8s"
+                },
+                {
+                    "authorId": "1806598",
+                    "name": "Hector Geffner"
+                }
+            ],
+            "doi": "10.1609/aaai.v33i01.33012703",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "481e8bc7591290403ef2b0a0bb7a50566c6d6ca0",
+            "title": "Learning Features and Abstract Actions for Computing Generalized Plans",
+            "url": "https://www.semanticscholar.org/paper/481e8bc7591290403ef2b0a0bb7a50566c6d6ca0",
+            "venue": "AAAI",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3229250",
+                    "name": "Murugeswari Issakkimuthu"
+                },
+                {
+                    "authorId": "145841336",
+                    "name": "Alan Fern"
+                },
+                {
+                    "authorId": "1729906",
+                    "name": "Prasad Tadepalli"
+                }
+            ],
+            "doi": "10.1609/icaps.v28i1.13873",
+            "intent": [
+                "result",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "176fd8bc708aa573c23852ca753592ade7367e86",
+            "title": "Training Deep Reactive Policies for Probabilistic Planning Problems",
+            "url": "https://www.semanticscholar.org/paper/176fd8bc708aa573c23852ca753592ade7367e86",
+            "venue": "ICAPS",
+            "year": 2018
+        },
+        {
+            "arxivId": "1804.04577",
+            "authors": [
+                {
+                    "authorId": "1786249",
+                    "name": "D. Bertsekas"
+                }
+            ],
+            "doi": "10.1109/JAS.2018.7511249",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "6ed3d0584a617ef87e20e151be29eeb6672a73b9",
+            "title": "Feature-based aggregation and deep reinforcement learning: a survey and some new implementations",
+            "url": "https://www.semanticscholar.org/paper/6ed3d0584a617ef87e20e151be29eeb6672a73b9",
+            "venue": "IEEE/CAA Journal of Automatica Sinica",
+            "year": 2018
+        },
+        {
+            "arxivId": "1801.10055",
+            "authors": [
+                {
+                    "authorId": "1694156",
+                    "name": "Blai Bonet"
+                },
+                {
+                    "authorId": "1806598",
+                    "name": "Hector Geffner"
+                }
+            ],
+            "doi": "10.24963/ijcai.2018/649",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "c7fc148f76383818adb53f90601423e6b28da122",
+            "title": "Features, Projections, and Representation Change for Generalized Planning",
+            "url": "https://www.semanticscholar.org/paper/c7fc148f76383818adb53f90601423e6b28da122",
+            "venue": "IJCAI",
+            "year": 2018
+        },
+        {
+            "arxivId": "1801.06766",
+            "authors": [
+                {
+                    "authorId": "2872113",
+                    "name": "M. Namaki"
+                },
+                {
+                    "authorId": "35774662",
+                    "name": "F. R. Chowdhury"
+                },
+                {
+                    "authorId": "2589314",
+                    "name": "M. R. Islam"
+                },
+                {
+                    "authorId": "2089333",
+                    "name": "J. Doppa"
+                },
+                {
+                    "authorId": "2948541",
+                    "name": "Yinghui Wu"
+                }
+            ],
+            "doi": "10.1609/icaps.v27i1.13849",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "19c284f50869970a31f45cbec20d2db90aa278e3",
+            "title": "Learning to Speed Up Query Planning in Graph Databases",
+            "url": "https://www.semanticscholar.org/paper/19c284f50869970a31f45cbec20d2db90aa278e3",
+            "venue": "ICAPS",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1740042",
+                    "name": "L. D. Raedt"
+                },
+                {
+                    "authorId": "1746871",
+                    "name": "K. Kersting"
+                },
+                {
+                    "authorId": "145986014",
+                    "name": "Sriraam Natarajan"
+                },
+                {
+                    "authorId": "143715817",
+                    "name": "D. Poole"
+                }
+            ],
+            "doi": "10.1007/978-3-031-01574-8",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "06996e180cab25c3644387bd93fb6bad6cb76556",
+            "title": "Statistical Relational Artificial Intelligence: Logic, Probability, and Computation",
+            "url": "https://www.semanticscholar.org/paper/06996e180cab25c3644387bd93fb6bad6cb76556",
+            "venue": "Statistical Relational Artificial Intelligence",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1746871",
+                    "name": "K. Kersting"
+                },
+                {
+                    "authorId": "145986014",
+                    "name": "Sriraam Natarajan"
+                }
+            ],
+            "doi": "10.1007/s13218-015-0386-8",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "dde3c2431abc4d1153e4867d001b9439488a3ffb",
+            "title": "Statistical Relational Artificial Intelligence: From Distributions through Actions to Optimization",
+            "url": "https://www.semanticscholar.org/paper/dde3c2431abc4d1153e4867d001b9439488a3ffb",
+            "venue": "KI - K\u00fcnstliche Intelligenz",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1403817924",
+                    "name": "Francisco Mart\u00ednez-Gil"
+                }
+            ],
+            "doi": "10.2312/14456",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0719864c86fb23aa59252bc98c6ee6408979a1f3",
+            "title": "Reinforcement learning in a Multi-agent Framework for Pedestrian Simulation",
+            "url": "https://www.semanticscholar.org/paper/0719864c86fb23aa59252bc98c6ee6408979a1f3",
+            "venue": "",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1689774",
+                    "name": "B. Scherrer"
+                },
+                {
+                    "authorId": "1737555",
+                    "name": "M. Geist"
+                }
+            ],
+            "doi": "10.1007/978-3-662-44845-8_3",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "3ef19ada4d0267a549e47adcc4675a2318f42443",
+            "title": "Local Policy Search in a Convex Space and Conservative Policy Iteration as Boosted Policy Search",
+            "url": "https://www.semanticscholar.org/paper/3ef19ada4d0267a549e47adcc4675a2318f42443",
+            "venue": "ECML/PKDD",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3038127",
+                    "name": "Victor Gabillon"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "ea938228d9312ae6538b7af313a6964d5a07037f",
+            "title": "Budgeted Classification-based Policy Iteration",
+            "url": "https://www.semanticscholar.org/paper/ea938228d9312ae6538b7af313a6964d5a07037f",
+            "venue": "",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1738142",
+                    "name": "D. Magazzeni"
+                },
+                {
+                    "authorId": "2661719",
+                    "name": "F. Py"
+                },
+                {
+                    "authorId": "145130479",
+                    "name": "M. Fox"
+                },
+                {
+                    "authorId": "144954846",
+                    "name": "D. Long"
+                },
+                {
+                    "authorId": "145271883",
+                    "name": "K. Rajan"
+                }
+            ],
+            "doi": "10.1007/s10514-013-9375-7",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "d3d0abad43241abe42de274ec458ee9c7fe7852d",
+            "title": "Policy learning for autonomous feature tracking",
+            "url": "https://www.semanticscholar.org/paper/d3d0abad43241abe42de274ec458ee9c7fe7852d",
+            "venue": "Autonomous Robots",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1806598",
+                    "name": "Hector Geffner"
+                },
+                {
+                    "authorId": "1694156",
+                    "name": "Blai Bonet"
+                }
+            ],
+            "doi": "10.1007/978-3-031-01564-9",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "ae85a28b462a0ae5866bfaf49d97029a77cc60c9",
+            "title": "A Concise Introduction to Models and Methods for Automated Planning",
+            "url": "https://www.semanticscholar.org/paper/ae85a28b462a0ae5866bfaf49d97029a77cc60c9",
+            "venue": "Synthesis Lectures on Artificial Intelligence and Machine Learning",
+            "year": 2013
+        },
+        {
+            "arxivId": "1206.6460",
+            "authors": [
+                {
+                    "authorId": "2089333",
+                    "name": "J. Doppa"
+                },
+                {
+                    "authorId": "145841336",
+                    "name": "Alan Fern"
+                },
+                {
+                    "authorId": "1729906",
+                    "name": "Prasad Tadepalli"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e658596f1d4479b9ba0eca44647225c3bf379c35",
+            "title": "Output Space Search for Structured Prediction",
+            "url": "https://www.semanticscholar.org/paper/e658596f1d4479b9ba0eca44647225c3bf379c35",
+            "venue": "ICML",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2204237",
+                    "name": "Wang-Zhou Dai"
+                },
+                {
+                    "authorId": "144705629",
+                    "name": "Yang Yu"
+                },
+                {
+                    "authorId": "2149133792",
+                    "name": "Zhi-Hua Zhou"
+                }
+            ],
+            "doi": "10.1109/ICDMW.2011.112",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "cefe0653c4a2b6508d694f19cde87c89b68b4a85",
+            "title": "Lifted-Rollout for Approximate Policy Iteration of Markov Decision Process",
+            "url": "https://www.semanticscholar.org/paper/cefe0653c4a2b6508d694f19cde87c89b68b4a85",
+            "venue": "2011 IEEE 11th International Conference on Data Mining Workshops",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145841336",
+                    "name": "Alan Fern"
+                },
+                {
+                    "authorId": "1746048",
+                    "name": "R. Khardon"
+                },
+                {
+                    "authorId": "1729906",
+                    "name": "Prasad Tadepalli"
+                }
+            ],
+            "doi": "10.1007/s10994-011-5234-y",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2d25b59c18291610982ae2ca54ac829998d3040e",
+            "title": "The first learning track of the international planning competition",
+            "url": "https://www.semanticscholar.org/paper/2d25b59c18291610982ae2ca54ac829998d3040e",
+            "venue": "Machine Learning",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2934040",
+                    "name": "Boris Defourny"
+                },
+                {
+                    "authorId": "1751167",
+                    "name": "D. Ernst"
+                },
+                {
+                    "authorId": "1695713",
+                    "name": "L. Wehenkel"
+                }
+            ],
+            "doi": "10.1007/978-3-642-04944-6_6",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "b7518e19695840b3110dbebc24f6b9da53263b7f",
+            "title": "Bounds for Multistage Stochastic Programs Using Supervised Learning Strategies",
+            "url": "https://www.semanticscholar.org/paper/b7518e19695840b3110dbebc24f6b9da53263b7f",
+            "venue": "SAGA",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "46309851",
+                    "name": "J. Levine"
+                },
+                {
+                    "authorId": "3453119",
+                    "name": "C. Westerberg"
+                },
+                {
+                    "authorId": "33658809",
+                    "name": "Michelle Galea"
+                },
+                {
+                    "authorId": "48576825",
+                    "name": "Dave Humphreys"
+                }
+            ],
+            "doi": "10.1145/1569901.1570062",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "d2f3030843759e06c8d3edf7118c073f6f4d9510",
+            "title": "Evolutionary-based learning of generalised policies for AI planning domains",
+            "url": "https://www.semanticscholar.org/paper/d2f3030843759e06c8d3edf7118c073f6f4d9510",
+            "venue": "GECCO",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1732536",
+                    "name": "S. Sanner"
+                },
+                {
+                    "authorId": "145646162",
+                    "name": "Craig Boutilier"
+                }
+            ],
+            "doi": "10.1016/j.artint.2008.11.003",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "8defd9a7a432a3be38ea70f7f8abe2762832e0d3",
+            "title": "Practical solution techniques for first-order MDPs",
+            "url": "https://www.semanticscholar.org/paper/8defd9a7a432a3be38ea70f7f8abe2762832e0d3",
+            "venue": "Artif. Intell.",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1776632",
+                    "name": "O. Buffet"
+                },
+                {
+                    "authorId": "2042818",
+                    "name": "Douglas Aberdeen"
+                }
+            ],
+            "doi": "10.1016/J.ARTINT.2008.11.008",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5699f1001a4c5c68c4e2f53c692af0f4be0f48ed",
+            "title": "The factored policy-gradient planner",
+            "url": "https://www.semanticscholar.org/paper/5699f1001a4c5c68c4e2f53c692af0f4be0f48ed",
+            "venue": "Artif. Intell.",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2304156",
+                    "name": "Ioannis Rexakis"
+                },
+                {
+                    "authorId": "1784072",
+                    "name": "M. Lagoudakis"
+                }
+            ],
+            "doi": "10.1109/ICMLA.2008.31",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "405eb050a3d6af0d0ace568707e1d3a9bccd4426",
+            "title": "Classifier-Based Policy Representation",
+            "url": "https://www.semanticscholar.org/paper/405eb050a3d6af0d0ace568707e1d3a9bccd4426",
+            "venue": "2008 Seventh International Conference on Machine Learning and Applications",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1805731",
+                    "name": "T. D. L. Rosa"
+                },
+                {
+                    "authorId": "1728891",
+                    "name": "Sergio Jim\u00e9nez Celorrio"
+                },
+                {
+                    "authorId": "1788554",
+                    "name": "D. Borrajo"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "369012c4b8342a25c140835f14f63b57d4aeb635",
+            "title": "Learning Relational Decision Trees for Guiding Heuristic Planning",
+            "url": "https://www.semanticscholar.org/paper/369012c4b8342a25c140835f14f63b57d4aeb635",
+            "venue": "ICAPS",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1723510",
+                    "name": "Charles Gretton"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "2ad75a749636f0330a559c61057225ef34afe6cf",
+            "title": "Gradient-Based Relational Reinforcement Learning of Temporally Extended Policies",
+            "url": "https://www.semanticscholar.org/paper/2ad75a749636f0330a559c61057225ef34afe6cf",
+            "venue": "ICAPS",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2136788",
+                    "name": "T. Croonenborghs"
+                },
+                {
+                    "authorId": "1695114",
+                    "name": "K. Driessens"
+                },
+                {
+                    "authorId": "1743332",
+                    "name": "M. Bruynooghe"
+                }
+            ],
+            "doi": "10.1007/978-3-540-78469-2_12",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "070fc9af3ca5a62de583961f17469f8c0ceefec9",
+            "title": "Learning Relational Options for Inductive Transfer in Relational Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/070fc9af3ca5a62de583961f17469f8c0ceefec9",
+            "venue": "ILP",
+            "year": 2007
+        },
+        {
+            "arxivId": "1111.0068",
+            "authors": [
+                {
+                    "authorId": "48586680",
+                    "name": "Chenggang Wang"
+                },
+                {
+                    "authorId": "145593737",
+                    "name": "Saket Joshi"
+                },
+                {
+                    "authorId": "1746048",
+                    "name": "R. Khardon"
+                }
+            ],
+            "doi": "10.1613/jair.2489",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0a4ecb6d0cec1f6e77da2d69ac56c59c4f6aff5b",
+            "title": "First Order Decision Diagrams for Relational MDPs",
+            "url": "https://www.semanticscholar.org/paper/0a4ecb6d0cec1f6e77da2d69ac56c59c4f6aff5b",
+            "venue": "IJCAI",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "72254820",
+                    "name": "Rushang Karia"
+                },
+                {
+                    "authorId": "40908958",
+                    "name": "Rashmeet Kaur Nayyar"
+                },
+                {
+                    "authorId": "145305735",
+                    "name": "Siddharth Srivastava"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "29737e3371b2d39a711aa24ee83e81b1605b5df0",
+            "title": "Learning Generalized Policy Classes for Stochastic Shortest Path Problems",
+            "url": "https://www.semanticscholar.org/paper/29737e3371b2d39a711aa24ee83e81b1605b5df0",
+            "venue": "",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "72254820",
+                    "name": "Rushang Karia"
+                },
+                {
+                    "authorId": "40908958",
+                    "name": "Rashmeet Kaur Nayyar"
+                },
+                {
+                    "authorId": "145305735",
+                    "name": "Siddharth Srivastava"
+                }
+            ],
+            "doi": "10.48550/arXiv.2204.04301",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "5241c016734bb2de1dc52f7af7da2a0c57154898",
+            "title": "Preliminary Results on Using Abstract AND-OR Graphs for Generalized Solving of Stochastic Shortest Path Problems",
+            "url": "https://www.semanticscholar.org/paper/5241c016734bb2de1dc52f7af7da2a0c57154898",
+            "venue": "ArXiv",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1728891",
+                    "name": "Sergio Jim\u00e9nez Celorrio"
+                },
+                {
+                    "authorId": "3410468",
+                    "name": "Javier Segovia Aguas"
+                },
+                {
+                    "authorId": "143808510",
+                    "name": "Anders Jonsson"
+                }
+            ],
+            "doi": "10.1017/S0269888918000231",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "41f997048470808e915fa949546c96a6af06296c",
+            "title": "A review of generalized planning",
+            "url": "https://www.semanticscholar.org/paper/41f997048470808e915fa949546c96a6af06296c",
+            "venue": "The Knowledge Engineering Review",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3254390",
+                    "name": "A. Lazaric"
+                },
+                {
+                    "authorId": "1678622",
+                    "name": "M. Ghavamzadeh"
+                },
+                {
+                    "authorId": "1708654",
+                    "name": "R. Munos"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "3c44b254cb8c8544f46377aed79ea560fabc6dc0",
+            "title": "Analysis of Classification-based Policy Iteration Algorithms",
+            "url": "https://www.semanticscholar.org/paper/3c44b254cb8c8544f46377aed79ea560fabc6dc0",
+            "venue": "J. Mach. Learn. Res.",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "9578863",
+                    "name": "Brendan Juba"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c3e49eed95ea5e072229190349f6c979fde30bd2",
+            "title": "Integrated Common Sense Learning and Planning in POMDPs",
+            "url": "https://www.semanticscholar.org/paper/c3e49eed95ea5e072229190349f6c979fde30bd2",
+            "venue": "J. Mach. Learn. Res.",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2541098",
+                    "name": "M. V. Otterlo"
+                }
+            ],
+            "doi": "10.1007/978-3-642-27645-3_8",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "812de51ea15a8e317561fa00d133d6548cf088a7",
+            "title": "Solving Relational and First-Order Logical Markov Decision Processes: A Survey",
+            "url": "https://www.semanticscholar.org/paper/812de51ea15a8e317561fa00d133d6548cf088a7",
+            "venue": "Reinforcement Learning",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1707550",
+                    "name": "S. Zilberstein"
+                },
+                {
+                    "authorId": "145630605",
+                    "name": "Marek Petrik"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f40aefa4af5e770afc205cb3cd42955138807b71",
+            "title": "Optimization-based approximate dynamic programming",
+            "url": "https://www.semanticscholar.org/paper/f40aefa4af5e770afc205cb3cd42955138807b71",
+            "venue": "",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2558054",
+                    "name": "E. Rachelson"
+                },
+                {
+                    "authorId": "1784072",
+                    "name": "M. Lagoudakis"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "result"
+            ],
+            "isInfluential": false,
+            "paperId": "9ec3e62212a0b9037e0a3d0f4702582a39f43575",
+            "title": "On the locality of action domination in sequential decision making",
+            "url": "https://www.semanticscholar.org/paper/9ec3e62212a0b9037e0a3d0f4702582a39f43575",
+            "venue": "ISAIM",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2300086020",
+                    "name": "Siddharth Srivastava"
+                },
+                {
+                    "authorId": "1808597",
+                    "name": "N. Immerman"
+                },
+                {
+                    "authorId": "1707550",
+                    "name": "S. Zilberstein"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "750fe7d4bb2a687670aa28fd0728c4e063b03603",
+            "title": "A new representation and associated algorithms for generalized planning",
+            "url": "https://www.semanticscholar.org/paper/750fe7d4bb2a687670aa28fd0728c4e063b03603",
+            "venue": "",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3038127",
+                    "name": "Victor Gabillon"
+                },
+                {
+                    "authorId": "3254390",
+                    "name": "A. Lazaric"
+                },
+                {
+                    "authorId": "1678622",
+                    "name": "M. Ghavamzadeh"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "cfc36de2a727bbf5814c09b89405685392919f13",
+            "title": "Rollout Allocation Strategies for Classification-based Policy Iteration",
+            "url": "https://www.semanticscholar.org/paper/cfc36de2a727bbf5814c09b89405685392919f13",
+            "venue": "",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2331687660",
+                    "name": "M. P. Singh"
+                },
+                {
+                    "authorId": "2331677970",
+                    "name": "Ed"
+                },
+                {
+                    "authorId": "2331677924",
+                    "name": "Adaptive Hypermedia"
+                },
+                {
+                    "authorId": "2331673088",
+                    "name": "Adaptive Web"
+                },
+                {
+                    "authorId": "2331673603",
+                    "name": "Peter Brusilovsky"
+                },
+                {
+                    "authorId": "2240104094",
+                    "name": "Wolfgang Nejdl"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "ed600e320a6bb0578fce6d5fef5b63721424efb3",
+            "title": "IAS-UVA-0803 Algorithms and Bounds for Rollout Sampling Approximate Policy Iteration",
+            "url": "https://www.semanticscholar.org/paper/ed600e320a6bb0578fce6d5fef5b63721424efb3",
+            "venue": "",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145841336",
+                    "name": "Alan Fern"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "a6b18c87f0c35674f584e940de46ef0f59e5b043",
+            "title": "1 Reinforcement Learning in Relational Domains : A Policy-Language Approach",
+            "url": "https://www.semanticscholar.org/paper/a6b18c87f0c35674f584e940de46ef0f59e5b043",
+            "venue": "",
+            "year": null
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2099551763",
+                    "name": "Lille-Nord Europe"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "bbe7db183ffe24afcfa0016413e46a2867ceef33",
+            "title": "Project-team Sequel Sequential Learning Futurs",
+            "url": "https://www.semanticscholar.org/paper/bbe7db183ffe24afcfa0016413e46a2867ceef33",
+            "venue": "",
+            "year": null
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2312066313",
+                    "name": "Javier Segovia-Aguas"
+                },
+                {
+                    "authorId": "2188720439",
+                    "name": "Sergio Jim\u00e9nez"
+                },
+                {
+                    "authorId": "2312066819",
+                    "name": "Anders Jonsson"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "28f2e21175c19881f1917a2f712f9a5ffc2ea1cd",
+            "title": "Arti\ufb01cial Intelligence",
+            "url": "https://www.semanticscholar.org/paper/28f2e21175c19881f1917a2f712f9a5ffc2ea1cd",
+            "venue": "",
+            "year": null
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1694156",
+                    "name": "Blai Bonet"
+                },
+                {
+                    "authorId": "2072988278",
+                    "name": "Dominik Drexler"
+                },
+                {
+                    "authorId": "1806598",
+                    "name": "Hector Geffner"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "22a953d92a118aec6a1cbe6264ee64a972c99f8a",
+            "title": "General and Reusable Indexical Policies and Sketches",
+            "url": "https://www.semanticscholar.org/paper/22a953d92a118aec6a1cbe6264ee64a972c99f8a",
+            "venue": "",
+            "year": null
+        }
+    ],
+    "corpusId": 265100821,
+    "doi": "10.1613/jair.1700",
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 7,
+    "isOpenAccess": true,
+    "isPublisherLicensed": true,
+    "is_open_access": true,
+    "is_publisher_licensed": true,
+    "numCitedBy": 57,
+    "numCiting": 120,
+    "paperId": "0f0888750bc0b40dd8b8d07417666ffb1e6d387c",
+    "references": [
+        {
+            "arxivId": "1106.0675",
+            "authors": [
+                {
+                    "authorId": "144915519",
+                    "name": "J. Hoffmann"
+                },
+                {
+                    "authorId": "145304209",
+                    "name": "Bernhard Nebel"
+                }
+            ],
+            "doi": "10.1613/jair.855",
+            "intent": [
+                "result",
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7c1f7b4b57b36fcec7199d60added8cc223a7a30",
+            "title": "The FF Planning System: Fast Plan Generation Through Heuristic Search",
+            "url": "https://www.semanticscholar.org/paper/7c1f7b4b57b36fcec7199d60added8cc223a7a30",
+            "venue": "J. Artif. Intell. Res.",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "93659473",
+                    "name": "D. Lombardo"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "0ad4c36510ef0cae76443f413daffe732e288f58",
+            "title": "Fly the airplane",
+            "url": "https://www.semanticscholar.org/paper/0ad4c36510ef0cae76443f413daffe732e288f58",
+            "venue": "",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143688987",
+                    "name": "X. Yan"
+                },
+                {
+                    "authorId": "2796350",
+                    "name": "P. Diaconis"
+                },
+                {
+                    "authorId": "1703039",
+                    "name": "Paat Rusmevichientong"
+                },
+                {
+                    "authorId": "1731282",
+                    "name": "Benjamin Van Roy"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2f530a5255c6398884f3a2cbb80fd5207523d902",
+            "title": "Solitaire: Man Versus Machine",
+            "url": "https://www.semanticscholar.org/paper/2f530a5255c6398884f3a2cbb80fd5207523d902",
+            "venue": "NIPS",
+            "year": 2004
+        },
+        {
+            "arxivId": "1207.4107",
+            "authors": [
+                {
+                    "authorId": "1723510",
+                    "name": "Charles Gretton"
+                },
+                {
+                    "authorId": "1685896",
+                    "name": "S. Thi\u00e9baux"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8f3f8680c2a01ac6ba4c7f27adb450360ca1b320",
+            "title": "Exploiting First-Order Regression in Inductive Policy Selection",
+            "url": "https://www.semanticscholar.org/paper/8f3f8680c2a01ac6ba4c7f27adb450360ca1b320",
+            "venue": "UAI",
+            "year": 2004
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1746871",
+                    "name": "K. Kersting"
+                },
+                {
+                    "authorId": "2541098",
+                    "name": "M. V. Otterlo"
+                },
+                {
+                    "authorId": "1740042",
+                    "name": "L. D. Raedt"
+                }
+            ],
+            "doi": "10.1145/1015330.1015401",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "54766230de13caafee3509ff495effbee22456f8",
+            "title": "Bellman goes relational",
+            "url": "https://www.semanticscholar.org/paper/54766230de13caafee3509ff495effbee22456f8",
+            "venue": "ICML",
+            "year": 2004
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145841336",
+                    "name": "Alan Fern"
+                },
+                {
+                    "authorId": "1809846",
+                    "name": "S. Yoon"
+                },
+                {
+                    "authorId": "1718146",
+                    "name": "R. Givan"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "c52e0989718dda4369a72b833a94402eebba334d",
+            "title": "Approximate Policy Iteration with a Policy Language Bias",
+            "url": "https://www.semanticscholar.org/paper/c52e0989718dda4369a72b833a94402eebba334d",
+            "venue": "NIPS",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1756566",
+                    "name": "J. Bagnell"
+                },
+                {
+                    "authorId": "144695232",
+                    "name": "S. Kakade"
+                },
+                {
+                    "authorId": "34699434",
+                    "name": "A. Ng"
+                },
+                {
+                    "authorId": "1753432",
+                    "name": "J. Schneider"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d925fca2d6859c43e4c91a53fca96528de0c28dc",
+            "title": "Policy Search by Dynamic Programming",
+            "url": "https://www.semanticscholar.org/paper/d925fca2d6859c43e4c91a53fca96528de0c28dc",
+            "venue": "NIPS",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1784072",
+                    "name": "M. Lagoudakis"
+                },
+                {
+                    "authorId": "145726861",
+                    "name": "Ronald E. Parr"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e1f9cb45bd8f0300a013a3da3e15546bfeeb60d0",
+            "title": "Reinforcement Learning as Classification: Leveraging Modern Classifiers",
+            "url": "https://www.semanticscholar.org/paper/e1f9cb45bd8f0300a013a3da3e15546bfeeb60d0",
+            "venue": "ICML",
+            "year": 2003
+        },
+        {
+            "arxivId": "1107.0043",
+            "authors": [
+                {
+                    "authorId": "145197953",
+                    "name": "D. Fox"
+                },
+                {
+                    "authorId": "2106871731",
+                    "name": "Wolfram Burgard"
+                },
+                {
+                    "authorId": "144867807",
+                    "name": "S. Thrun"
+                }
+            ],
+            "doi": "10.1613/jair.1400",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "86a5154b6bcbe3d56f8a0efeca76432e1d1c093f",
+            "title": "A Maximal Tractable Class of Soft Constraints",
+            "url": "https://www.semanticscholar.org/paper/86a5154b6bcbe3d56f8a0efeca76432e1d1c093f",
+            "venue": "IJCAI",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1730156",
+                    "name": "Carlos Guestrin"
+                },
+                {
+                    "authorId": "1736370",
+                    "name": "D. Koller"
+                },
+                {
+                    "authorId": "49368653",
+                    "name": "C. Gearhart"
+                },
+                {
+                    "authorId": "2382213",
+                    "name": "Neal Kanodia"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "00a23f41628c0989cee332521ec415ae63778b31",
+            "title": "Generalizing plans to new environments in relational MDPs",
+            "url": "https://www.semanticscholar.org/paper/00a23f41628c0989cee332521ec415ae63778b31",
+            "venue": "IJCAI 2003",
+            "year": 2003
+        },
+        {
+            "arxivId": "1106.1822",
+            "authors": [
+                {
+                    "authorId": "1730156",
+                    "name": "Carlos Guestrin"
+                },
+                {
+                    "authorId": "1736370",
+                    "name": "D. Koller"
+                },
+                {
+                    "authorId": "145726861",
+                    "name": "Ronald E. Parr"
+                },
+                {
+                    "authorId": "2262405",
+                    "name": "Shobha Venkataraman"
+                }
+            ],
+            "doi": "10.1613/jair.1000",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "2430b4748c4ffe8782ae4763d327ce48f3655639",
+            "title": "Efficient Solution Algorithms for Factored MDPs",
+            "url": "https://www.semanticscholar.org/paper/2430b4748c4ffe8782ae4763d327ce48f3655639",
+            "venue": "J. Artif. Intell. Res.",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1718146",
+                    "name": "R. Givan"
+                },
+                {
+                    "authorId": "1680510",
+                    "name": "T. Dean"
+                },
+                {
+                    "authorId": "47158391",
+                    "name": "M. Greig"
+                }
+            ],
+            "doi": "10.1016/S0004-3702(02)00376-4",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "2020aca3838a0e8a723761e74899b183d6b56f30",
+            "title": "Equivalence notions and model minimization in Markov decision processes",
+            "url": "https://www.semanticscholar.org/paper/2020aca3838a0e8a723761e74899b183d6b56f30",
+            "venue": "Artif. Intell.",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "38240360",
+                    "name": "Terry L. Zimmerman"
+                },
+                {
+                    "authorId": "1740315",
+                    "name": "S. Kambhampati"
+                }
+            ],
+            "doi": "10.1609/aimag.v24i2.1705",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "15fe1d9c3de386e733f157b6f77f7882330ad183",
+            "title": "Learning-Assisted Automated Planning: Looking Back, Taking Stock, Going Forward",
+            "url": "https://www.semanticscholar.org/paper/15fe1d9c3de386e733f157b6f77f7882330ad183",
+            "venue": "AI Mag.",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2299685",
+                    "name": "A. McGovern"
+                },
+                {
+                    "authorId": "46571874",
+                    "name": "E. Moss"
+                },
+                {
+                    "authorId": "1730590",
+                    "name": "A. Barto"
+                }
+            ],
+            "doi": "10.1023/A:1017976211990",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "04899a75c7e815a5d21b99da8c3de952932f7388",
+            "title": "Building a Basic Block Instruction Scheduler with Reinforcement Learning and Rollouts",
+            "url": "https://www.semanticscholar.org/paper/04899a75c7e815a5d21b99da8c3de952932f7388",
+            "venue": "Machine Learning",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3266579",
+                    "name": "R. Aler"
+                },
+                {
+                    "authorId": "1788554",
+                    "name": "D. Borrajo"
+                },
+                {
+                    "authorId": "1767570",
+                    "name": "P. I. Vi\u00f1uela"
+                }
+            ],
+            "doi": "10.1016/S0004-3702(02)00246-1",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d2607ae6bc8eca408e74d872961bf07755033e62",
+            "title": "Using genetic programming to learn and improve control knowledge",
+            "url": "https://www.semanticscholar.org/paper/d2607ae6bc8eca408e74d872961bf07755033e62",
+            "venue": "Artif. Intell.",
+            "year": 2002
+        },
+        {
+            "arxivId": "1301.0614",
+            "authors": [
+                {
+                    "authorId": "1809846",
+                    "name": "S. Yoon"
+                },
+                {
+                    "authorId": "145841336",
+                    "name": "Alan Fern"
+                },
+                {
+                    "authorId": "1718146",
+                    "name": "R. Givan"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "fe6318747b2d0bc3037fa745e164186574cef319",
+            "title": "Inductive Policy Selection for First-Order MDPs",
+            "url": "https://www.semanticscholar.org/paper/fe6318747b2d0bc3037fa745e164186574cef319",
+            "venue": "UAI",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1736882",
+                    "name": "F. Bacchus"
+                }
+            ],
+            "doi": "10.1609/AIMAG.V22I3.1571",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e8ad7f4c9c411a95780b27290e0bf182cb256f21",
+            "title": "AIPS 2000 Planning Competition: The Fifth International Conference on Artificial Intelligence Planning and Scheduling Systems",
+            "url": "https://www.semanticscholar.org/paper/e8ad7f4c9c411a95780b27290e0bf182cb256f21",
+            "venue": "",
+            "year": 2001
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145646162",
+                    "name": "Craig Boutilier"
+                },
+                {
+                    "authorId": "143931627",
+                    "name": "R. Reiter"
+                },
+                {
+                    "authorId": "2064278710",
+                    "name": "Bob Price"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "9d59f87b881017e6ef0198636a77ad04b7ebea7a",
+            "title": "Symbolic Dynamic Programming for First-Order MDPs",
+            "url": "https://www.semanticscholar.org/paper/9d59f87b881017e6ef0198636a77ad04b7ebea7a",
+            "venue": "IJCAI",
+            "year": 2001
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1695114",
+                    "name": "K. Driessens"
+                }
+            ],
+            "doi": "10.1007/978-1-4899-7687-1_726",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5703c2643f7e8012b9bfb2ed53f34114acfc10f8",
+            "title": "Relational Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/5703c2643f7e8012b9bfb2ed53f34114acfc10f8",
+            "venue": "Encyclopedia of Machine Learning and Data Mining",
+            "year": 2001
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2998779",
+                    "name": "Muhammad Afzal Upal"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9e36ffd5e503d724d0f499739698a54b56044362",
+            "title": "Learning Plan Rewriting Rules",
+            "url": "https://www.semanticscholar.org/paper/9e36ffd5e503d724d0f499739698a54b56044362",
+            "venue": "FLAIRS",
+            "year": 2001
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2110867261",
+                    "name": "Gang Wu"
+                },
+                {
+                    "authorId": "1744311",
+                    "name": "E. Chong"
+                },
+                {
+                    "authorId": "1718146",
+                    "name": "R. Givan"
+                }
+            ],
+            "doi": "10.1109/INFCOM.2001.916622",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "564c295ae6de8d3204d634f7240da4342de251eb",
+            "title": "Congestion control via online sampling",
+            "url": "https://www.semanticscholar.org/paper/564c295ae6de8d3204d634f7240da4342de251eb",
+            "venue": "Proceedings IEEE INFOCOM 2001. Conference on Computer Communications. Twentieth Annual Joint Conference of the IEEE Computer and Communications Society (Cat. No.01CH37213)",
+            "year": 2001
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144299726",
+                    "name": "Thomas G. Dietterich"
+                },
+                {
+                    "authorId": "2153691324",
+                    "name": "Xin Wang"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e27c86fee8f59acbebf157a1a86e0f42c6ec1278",
+            "title": "Batch Value Function Approximation via Support Vectors",
+            "url": "https://www.semanticscholar.org/paper/e27c86fee8f59acbebf157a1a86e0f42c6ec1278",
+            "venue": "NIPS",
+            "year": 2001
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145646162",
+                    "name": "Craig Boutilier"
+                },
+                {
+                    "authorId": "143654598",
+                    "name": "R. Dearden"
+                },
+                {
+                    "authorId": "1770007",
+                    "name": "M. Goldszmidt"
+                }
+            ],
+            "doi": "10.1016/S0004-3702(00)00033-3",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7f8673fb4d9bf5d72d7d73895df20f538326d8b0",
+            "title": "Stochastic dynamic programming with factored representations",
+            "url": "https://www.semanticscholar.org/paper/7f8673fb4d9bf5d72d7d73895df20f538326d8b0",
+            "venue": "Artif. Intell.",
+            "year": 2000
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1954234",
+                    "name": "Yi-Cheng Huang"
+                },
+                {
+                    "authorId": "1744679",
+                    "name": "B. Selman"
+                },
+                {
+                    "authorId": "1690271",
+                    "name": "Henry A. Kautz"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "0a02add9b2f2150baaafb592e85c53f80b802de9",
+            "title": "Learning Declarative Control Rules for Constraint-BAsed Planning",
+            "url": "https://www.semanticscholar.org/paper/0a02add9b2f2150baaafb592e85c53f80b802de9",
+            "venue": "ICML",
+            "year": 2000
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2110741568",
+                    "name": "Mario Mart\u00edn"
+                },
+                {
+                    "authorId": "1806598",
+                    "name": "Hector Geffner"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "8772fb005b24a3f71729f6cd36beeffc9ea13f41",
+            "title": "Learning Generalized Policies in Planning Using Concept Languages",
+            "url": "https://www.semanticscholar.org/paper/8772fb005b24a3f71729f6cd36beeffc9ea13f41",
+            "venue": "KR",
+            "year": 2000
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1746048",
+                    "name": "R. Khardon"
+                }
+            ],
+            "doi": "10.1016/S0004-3702(99)00060-0",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "697993428021172e5c9b32e536568f491ba39e51",
+            "title": "Learning Action Strategies for Planning Domains",
+            "url": "https://www.semanticscholar.org/paper/697993428021172e5c9b32e536568f491ba39e51",
+            "venue": "Artif. Intell.",
+            "year": 1999
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2056642528",
+                    "name": "M. Kearns"
+                },
+                {
+                    "authorId": "144830983",
+                    "name": "Y. Mansour"
+                },
+                {
+                    "authorId": "34699434",
+                    "name": "A. Ng"
+                }
+            ],
+            "doi": "10.1023/A:1017932429737",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "9cbaf9fd844fc405a7d086cb942c8e2594937c08",
+            "title": "A Sparse Sampling Algorithm for Near-Optimal Planning in Large Markov Decision Processes",
+            "url": "https://www.semanticscholar.org/paper/9cbaf9fd844fc405a7d086cb942c8e2594937c08",
+            "venue": "Machine Learning",
+            "year": 1999
+        },
+        {
+            "arxivId": "cs/9806102",
+            "authors": [
+                {
+                    "authorId": "50064811",
+                    "name": "L. Finkelstein"
+                },
+                {
+                    "authorId": "2309269",
+                    "name": "Shaul Markovitch"
+                }
+            ],
+            "doi": "10.1613/jair.484",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "74ab3dfe2d88b7291be60e64fdc090295b9d628d",
+            "title": "A Selective Macro-learning Algorithm and its Application to the NxN Sliding-Tile Puzzle",
+            "url": "https://www.semanticscholar.org/paper/74ab3dfe2d88b7291be60e64fdc090295b9d628d",
+            "venue": "J. Artif. Intell. Res.",
+            "year": 1998
+        },
+        {
+            "arxivId": "1302.1533",
+            "authors": [
+                {
+                    "authorId": "1680510",
+                    "name": "T. Dean"
+                },
+                {
+                    "authorId": "1718146",
+                    "name": "R. Givan"
+                },
+                {
+                    "authorId": "2059486234",
+                    "name": "Sonia M. Leach"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d07163c3b4ad1172aaedde167a0cacec376a4787",
+            "title": "Model Reduction Techniques for Computing Approximately Optimal Solutions for Markov Decision Processes",
+            "url": "https://www.semanticscholar.org/paper/d07163c3b4ad1172aaedde167a0cacec376a4787",
+            "venue": "UAI",
+            "year": 1997
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1680510",
+                    "name": "T. Dean"
+                },
+                {
+                    "authorId": "1718146",
+                    "name": "R. Givan"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "86f899ad953659ab6c267ae658c038fcaf1faca2",
+            "title": "Model Minimization in Markov Decision Processes",
+            "url": "https://www.semanticscholar.org/paper/86f899ad953659ab6c267ae658c038fcaf1faca2",
+            "venue": "AAAI/IAAI",
+            "year": 1997
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145338584",
+                    "name": "C. Reddy"
+                },
+                {
+                    "authorId": "1729906",
+                    "name": "Prasad Tadepalli"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "result"
+            ],
+            "isInfluential": false,
+            "paperId": "de42d23daa8af52318f6e701c00ec8294e8fb4a4",
+            "title": "Learning Goal-Decomposition Rules Using Exercises",
+            "url": "https://www.semanticscholar.org/paper/de42d23daa8af52318f6e701c00ec8294e8fb4a4",
+            "venue": "AAAI/IAAI",
+            "year": 1997
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1699108",
+                    "name": "G. Tesauro"
+                },
+                {
+                    "authorId": "2796200",
+                    "name": "Gregory R. Galperin"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "3552fba431aa866bf9de293bebf7eff168e9e19c",
+            "title": "On-line Policy Improvement using Monte-Carlo Search",
+            "url": "https://www.semanticscholar.org/paper/3552fba431aa866bf9de293bebf7eff168e9e19c",
+            "venue": "NIPS",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1746048",
+                    "name": "R. Khardon"
+                }
+            ],
+            "doi": "10.1023/A:1007571119753",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "8e32a88dcd02c4503f3ce99ffe1f647b612ef605",
+            "title": "Learning to Take Actions",
+            "url": "https://www.semanticscholar.org/paper/8e32a88dcd02c4503f3ce99ffe1f647b612ef605",
+            "venue": "Machine Learning",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1864095",
+                    "name": "T. Estlin"
+                },
+                {
+                    "authorId": "1797655",
+                    "name": "R. Mooney"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5c2a64dd55c8575644b6f6b9a32d6b205ebab930",
+            "title": "Multi-Strategy Learning of Search Control for Partial-Order Planning",
+            "url": "https://www.semanticscholar.org/paper/5c2a64dd55c8575644b6f6b9a32d6b205ebab930",
+            "venue": "AAAI/IAAI, Vol. 1",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144224173",
+                    "name": "J. Tsitsiklis"
+                },
+                {
+                    "authorId": "1731282",
+                    "name": "Benjamin Van Roy"
+                }
+            ],
+            "doi": "10.1007/BF00114724",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "4a5a283e178f187e64d0c1019314d0a6e1d4ca96",
+            "title": "Feature-based methods for large scale dynamic programming",
+            "url": "https://www.semanticscholar.org/paper/4a5a283e178f187e64d0c1019314d0a6e1d4ca96",
+            "venue": "Proceedings of 1995 34th IEEE Conference on Decision and Control",
+            "year": 1995
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1742183",
+                    "name": "M. Matari\u0107"
+                }
+            ],
+            "doi": "10.1016/b978-1-55860-335-6.50030-1",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "563cf7359970015db2f8a05c41e9efef7025dda2",
+            "title": "Reward Functions for Accelerated Learning",
+            "url": "https://www.semanticscholar.org/paper/563cf7359970015db2f8a05c41e9efef7025dda2",
+            "venue": "ICML",
+            "year": 1994
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1699108",
+                    "name": "G. Tesauro"
+                }
+            ],
+            "doi": "10.1007/BF00992697",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "646ff15fbd38f8c4e2b099ad09e4570179709c73",
+            "title": "Practical issues in temporal difference learning",
+            "url": "https://www.semanticscholar.org/paper/646ff15fbd38f8c4e2b099ad09e4570179709c73",
+            "venue": "Machine Learning",
+            "year": 1992
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145689002",
+                    "name": "David A. McAllester"
+                },
+                {
+                    "authorId": "1718146",
+                    "name": "R. Givan"
+                },
+                {
+                    "authorId": "2130612590",
+                    "name": "Tanveer Fatima"
+                }
+            ],
+            "doi": "10.1145/151261.151264",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c5de52b8a7be0c462eb2750ecc988b2e169e6011",
+            "title": "Taxonomic syntax for first order inference",
+            "url": "https://www.semanticscholar.org/paper/c5de52b8a7be0c462eb2750ecc988b2e169e6011",
+            "venue": "JACM",
+            "year": 1989
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "39419622",
+                    "name": "B. Natarajan"
+                }
+            ],
+            "doi": "10.1016/B978-0-08-094829-4.50008-8",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "71bacd6ae636835af9fa2a904c72e05914dc52f6",
+            "title": "On learning from exercises",
+            "url": "https://www.semanticscholar.org/paper/71bacd6ae636835af9fa2a904c72e05914dc52f6",
+            "venue": "COLT '89",
+            "year": 1989
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145293454",
+                    "name": "Steven Minton"
+                },
+                {
+                    "authorId": "143712374",
+                    "name": "J. Carbonell"
+                },
+                {
+                    "authorId": "1745117",
+                    "name": "Craig A. Knoblock"
+                },
+                {
+                    "authorId": "2796674",
+                    "name": "D. Kuokka"
+                },
+                {
+                    "authorId": "1741101",
+                    "name": "Oren Etzioni"
+                },
+                {
+                    "authorId": "145526918",
+                    "name": "Y. Gil"
+                }
+            ],
+            "doi": "10.1016/0004-3702(89)90047-7",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2766913aabb151107b28279645b915a3aa86c816",
+            "title": "Explanation-Based Learning: A Problem Solving Perspective",
+            "url": "https://www.semanticscholar.org/paper/2766913aabb151107b28279645b915a3aa86c816",
+            "venue": "Artif. Intell.",
+            "year": 1989
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145293454",
+                    "name": "Steven Minton"
+                }
+            ],
+            "doi": "10.1016/0004-3702(90)90059-9",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "eb2f539a17487db2c93785214da2fc7a67a57840",
+            "title": "Quantitative Results Concerning the Utility of Explanation-based Learning",
+            "url": "https://www.semanticscholar.org/paper/eb2f539a17487db2c93785214da2fc7a67a57840",
+            "venue": "Artif. Intell.",
+            "year": 1988
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2113911099",
+                    "name": "R. Rivest"
+                }
+            ],
+            "doi": "10.1007/BF00058680",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "2c386026b24f993aca44a7a684152778d46c51b0",
+            "title": "Learning decision lists",
+            "url": "https://www.semanticscholar.org/paper/2c386026b24f993aca44a7a684152778d46c51b0",
+            "venue": "Machine Learning",
+            "year": 2004
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1829191",
+                    "name": "H\u00e5kan L. S. Younes"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "8a9c3ba0eeb4245811ef6a1eebd8fbaef8d41cab",
+            "title": "Extending PDDL to Model Stochastic Decision Processes",
+            "url": "https://www.semanticscholar.org/paper/8a9c3ba0eeb4245811ef6a1eebd8fbaef8d41cab",
+            "venue": "",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144162125",
+                    "name": "J. Langford"
+                },
+                {
+                    "authorId": "1735228",
+                    "name": "B. Zadrozny"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b135e6c9977e9f69a5d2649f01541b7f526a2110",
+            "title": "Reducing T-step reinforcement learning to classifica-tion",
+            "url": "https://www.semanticscholar.org/paper/b135e6c9977e9f69a5d2649f01541b7f526a2110",
+            "venue": "",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1736882",
+                    "name": "F. Bacchus"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8659870df062b382350050abcba2ca41d9749f2f",
+            "title": "The AIPS '00 Planning Competition",
+            "url": "https://www.semanticscholar.org/paper/8659870df062b382350050abcba2ca41d9749f2f",
+            "venue": "AI Mag.",
+            "year": 2001
+        },
+        {
+            "arxivId": null,
+            "authors": [],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "fd806d60c32f5732914f7f8bc4e0401fbfaab6ca",
+            "title": "Ordered landmarks in planning",
+            "url": "https://www.semanticscholar.org/paper/fd806d60c32f5732914f7f8bc4e0401fbfaab6ca",
+            "venue": "",
+            "year": 2000
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1736882",
+                    "name": "F. Bacchus"
+                },
+                {
+                    "authorId": "2132916",
+                    "name": "F. Kabanza"
+                }
+            ],
+            "doi": "10.1016/S0004-3702(99)00071-5",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "e0e76d0b1b384d43afa02f110a2b558b06a7d193",
+            "title": "Using temporal logics to express search control knowledge for planning",
+            "url": "https://www.semanticscholar.org/paper/e0e76d0b1b384d43afa02f110a2b558b06a7d193",
+            "venue": "Artif. Intell.",
+            "year": 2000
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1982018",
+                    "name": "A. Kristensen"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "504747edc574d5c8162bc0655ea66afaef7f2f11",
+            "title": "Dynamic programming and Markov decision processes",
+            "url": "https://www.semanticscholar.org/paper/504747edc574d5c8162bc0655ea66afaef7f2f11",
+            "venue": "",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145646162",
+                    "name": "Craig Boutilier"
+                },
+                {
+                    "authorId": "143654598",
+                    "name": "R. Dearden"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "ddb3bd5136cea13652a5eca9e286956844d440ac",
+            "title": "Approximate Value Trees in Structured Dynamic Programming",
+            "url": "https://www.semanticscholar.org/paper/ddb3bd5136cea13652a5eca9e286956844d440ac",
+            "venue": "ICML",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1956361",
+                    "name": "M. Veloso"
+                },
+                {
+                    "authorId": "143712374",
+                    "name": "J. Carbonell"
+                },
+                {
+                    "authorId": "2110390815",
+                    "name": "Alicia P\u00e9rez"
+                },
+                {
+                    "authorId": "1788554",
+                    "name": "D. Borrajo"
+                },
+                {
+                    "authorId": "3370368",
+                    "name": "Eugene Fink"
+                },
+                {
+                    "authorId": "143731071",
+                    "name": "J. Blythe"
+                },
+                {
+                    "authorId": "145293454",
+                    "name": "Steven Minton"
+                }
+            ],
+            "doi": "10.1080/09528139508953801",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c362690da56fb12795281f7a84cd45e45a34630f",
+            "title": "Integrating planning and learning: the PRODIGY architecture",
+            "url": "https://www.semanticscholar.org/paper/c362690da56fb12795281f7a84cd45e45a34630f",
+            "venue": "J. Exp. Theor. Artif. Intell.",
+            "year": 1995
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145293454",
+                    "name": "Steven Minton"
+                }
+            ],
+            "doi": "10.1016/c2013-0-08303-x",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5abb0aacf11480b702ffa727de46c134348b1390",
+            "title": "Machine Learning Methods for Planning",
+            "url": "https://www.semanticscholar.org/paper/5abb0aacf11480b702ffa727de46c134348b1390",
+            "venue": "",
+            "year": 1994
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "122652809",
+                    "name": "J. Christen"
+                }
+            ],
+            "doi": "10.1080/J003v02n02_08",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "87d31b29268f5d3491f9b81d2c345fab89f37078",
+            "title": "The airplane.",
+            "url": "https://www.semanticscholar.org/paper/87d31b29268f5d3491f9b81d2c345fab89f37078",
+            "venue": "Occupational therapy in health care",
+            "year": 1985
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Approximate Policy Iteration with a Policy Language Bias: Solving Relational Markov Decision Processes",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/0f0888750bc0b40dd8b8d07417666ffb1e6d387c",
+    "venue": "Journal of Artificial Intelligence Research",
+    "year": 2011
+}

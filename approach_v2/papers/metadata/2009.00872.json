@@ -1,0 +1,2638 @@
+{
+    "abstract": "The success of deep learning in recent years has arguably been driven by the availability of large datasets for training powerful predictive algorithms. In medical applications however, the sensitive nature of the data limits the collection and exchange of large-scale datasets. Privacy-preserving and collaborative learning systems can enable the successful application of machine learning in medicine. However, collaborative protocols such as federated learning require the frequent transfer of parameter updates over a network. To enable the deployment of such protocols to a wide range of systems with varying computational performance, efficient deep learning architectures for resource-constrained environments are required. Here we present MoNet, a small, highly optimized neural-network-based segmentation algorithm leveraging efficient multi-scale image features. MoNet is a shallow, U-Net-like architecture based on repeated, dilated convolutions with decreasing dilation rates. We apply and test our architecture on the challenging clinical tasks of pancreatic segmentation in computed tomography (CT) images as well as brain tumor segmentation in magnetic resonance imaging (MRI) data. We assess our model\u2019s segmentation performance and demonstrate that it provides performance on par with compared architectures while providing superior out-of-sample generalization performance, outperforming larger architectures on an independent validation set, while utilizing significantly fewer parameters. We furthermore confirm the suitability of our architecture for federated learning applications by demonstrating a substantial reduction in serialized model storage requirement as a surrogate for network data transfer. Finally, we evaluate MoNet\u2019s inference latency on the central processing unit (CPU) to determine its utility in environments without access to graphics processing units. Our implementation is publicly available as free and open-source software.",
+    "arxivId": "2009.00872",
+    "authors": [
+        {
+            "authorId": "1922392770",
+            "name": "Moritz Knolle",
+            "url": "https://www.semanticscholar.org/author/1922392770"
+        },
+        {
+            "authorId": "9555451",
+            "name": "Georgios Kaissis",
+            "url": "https://www.semanticscholar.org/author/9555451"
+        },
+        {
+            "authorId": "1560540306",
+            "name": "F. Jungmann",
+            "url": "https://www.semanticscholar.org/author/1560540306"
+        },
+        {
+            "authorId": "46241366",
+            "name": "Sebastian Ziegelmayer",
+            "url": "https://www.semanticscholar.org/author/46241366"
+        },
+        {
+            "authorId": "38781598",
+            "name": "D. Sasse",
+            "url": "https://www.semanticscholar.org/author/38781598"
+        },
+        {
+            "authorId": "2380008",
+            "name": "M. Makowski",
+            "url": "https://www.semanticscholar.org/author/2380008"
+        },
+        {
+            "authorId": "1717710",
+            "name": "D. Rueckert",
+            "url": "https://www.semanticscholar.org/author/1717710"
+        },
+        {
+            "authorId": "4516701",
+            "name": "R. Braren",
+            "url": "https://www.semanticscholar.org/author/4516701"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2248875570",
+                    "name": "Himali Ghorpade"
+                },
+                {
+                    "authorId": "9386207",
+                    "name": "Shrikrishna Kolhar"
+                },
+                {
+                    "authorId": "3453369",
+                    "name": "Jayant Jagtap"
+                },
+                {
+                    "authorId": "48343821",
+                    "name": "Jayasree Chakraborty"
+                }
+            ],
+            "doi": "10.1016/j.mex.2024.102995",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "4f1b632ceda5706843af8bcec51f1b0cbd7d2e1d",
+            "title": "An optimized two stage U-Net approach for segmentation of pancreas and pancreatic tumor",
+            "url": "https://www.semanticscholar.org/paper/4f1b632ceda5706843af8bcec51f1b0cbd7d2e1d",
+            "venue": "MethodsX",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2312674138",
+                    "name": "Weixuan Liu"
+                },
+                {
+                    "authorId": "2295679473",
+                    "name": "Bairui Zhang"
+                },
+                {
+                    "authorId": "2260604717",
+                    "name": "Tao Liu"
+                },
+                {
+                    "authorId": "2243406543",
+                    "name": "Juntao Jiang"
+                },
+                {
+                    "authorId": "2312893560",
+                    "name": "Yong Liu"
+                }
+            ],
+            "doi": "10.3390/s24144749",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "02bb4534a16a034bc33f7a182c9681415f7c32a3",
+            "title": "Artificial Intelligence in Pancreatic Image Analysis: A Review",
+            "url": "https://www.semanticscholar.org/paper/02bb4534a16a034bc33f7a182c9681415f7c32a3",
+            "venue": "Sensors",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2275880679",
+                    "name": "Fabiana Rodrigues da Silva"
+                },
+                {
+                    "authorId": "2275887860",
+                    "name": "Rui Camacho"
+                },
+                {
+                    "authorId": "2113867260",
+                    "name": "J. M. R. Tavares"
+                }
+            ],
+            "doi": "10.3390/electronics13010047",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f1287702e01dd3491dfd4569f2455b59f70fadd9",
+            "title": "Federated Learning in Medical Image Analysis: A Systematic Survey",
+            "url": "https://www.semanticscholar.org/paper/f1287702e01dd3491dfd4569f2455b59f70fadd9",
+            "venue": "Electronics",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2256888981",
+                    "name": "Sukhveer Singh Sandhu"
+                },
+                {
+                    "authorId": "5464316",
+                    "name": "H. Gorji"
+                },
+                {
+                    "authorId": "82099362",
+                    "name": "Pantea Tavakolian"
+                },
+                {
+                    "authorId": "1849450",
+                    "name": "K. Tavakolian"
+                },
+                {
+                    "authorId": "2232293414",
+                    "name": "Alireza Akhbardeh"
+                }
+            ],
+            "doi": "10.3390/diagnostics13193140",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "a9cfe368b83a64ff31ca00f2624ca25f5f471419",
+            "title": "Medical Imaging Applications of Federated Learning",
+            "url": "https://www.semanticscholar.org/paper/a9cfe368b83a64ff31ca00f2624ca25f5f471419",
+            "venue": "Diagnostics",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3156655",
+                    "name": "Chenggong Qiu"
+                },
+                {
+                    "authorId": "1382510649",
+                    "name": "Jie Xue"
+                },
+                {
+                    "authorId": "2144481151",
+                    "name": "Xiyu Liu"
+                },
+                {
+                    "authorId": "2188556115",
+                    "name": "Qi Li"
+                }
+            ],
+            "doi": "10.1007/s41965-022-00115-4",
+            "intent": [],
+            "isInfluential": true,
+            "paperId": "15bc6bea372f88c06f47cb6ff1e36d903c851166",
+            "title": "Deep dynamic spiking neural P systems with applications in organ segmentation",
+            "url": "https://www.semanticscholar.org/paper/15bc6bea372f88c06f47cb6ff1e36d903c851166",
+            "venue": "Journal of Membrane Computing",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2109298549",
+                    "name": "Lifang Chen"
+                },
+                {
+                    "authorId": "2053672277",
+                    "name": "Li Wan"
+                }
+            ],
+            "doi": "10.1007/s00371-022-02656-2",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "573c2afcd634d170908c2f1e47b694f9ae9c9cf4",
+            "title": "CTUNet: automatic pancreas segmentation using a channel-wise transformer and 3D U-Net",
+            "url": "https://www.semanticscholar.org/paper/573c2afcd634d170908c2f1e47b694f9ae9c9cf4",
+            "venue": "The Visual Computer",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2324776242",
+                    "name": "Minqiang Yang"
+                },
+                {
+                    "authorId": "2108544346",
+                    "name": "Yuhong Zhang"
+                },
+                {
+                    "authorId": "36620472",
+                    "name": "Hao Chen"
+                },
+                {
+                    "authorId": "40397893",
+                    "name": "Wei Wang"
+                },
+                {
+                    "authorId": "2167322343",
+                    "name": "Haixu Ni"
+                },
+                {
+                    "authorId": "2109440896",
+                    "name": "Xinlong Chen"
+                },
+                {
+                    "authorId": "2167478699",
+                    "name": "Zhuoheng Li"
+                },
+                {
+                    "authorId": "145449667",
+                    "name": "Chengsheng Mao"
+                }
+            ],
+            "doi": "10.3389/fonc.2022.894970",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c6452cb323dfc1f9c17f00ef2431a392db9e6296",
+            "title": "AX-Unet: A Deep Learning Framework for Image Segmentation to Assist Pancreatic Tumor Diagnosis",
+            "url": "https://www.semanticscholar.org/paper/c6452cb323dfc1f9c17f00ef2431a392db9e6296",
+            "venue": "Frontiers in Oncology",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "5439615",
+                    "name": "S. Naz"
+                },
+                {
+                    "authorId": "2095487751",
+                    "name": "Khoa T. Phan"
+                },
+                {
+                    "authorId": "1519067631",
+                    "name": "Yi-Ping Phoebe Chen"
+                }
+            ],
+            "doi": "10.1002/int.22777",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c8e5b524cb8c5307f6eea4abf39d69b51a830e0a",
+            "title": "A comprehensive review of federated learning for COVID\u201019 detection",
+            "url": "https://www.semanticscholar.org/paper/c8e5b524cb8c5307f6eea4abf39d69b51a830e0a",
+            "venue": "Int. J. Intell. Syst.",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2322339930",
+                    "name": "Ram Chandna"
+                },
+                {
+                    "authorId": "2322235357",
+                    "name": "Aarav Bansal"
+                },
+                {
+                    "authorId": "2322358306",
+                    "name": "Aryan Kumar"
+                },
+                {
+                    "authorId": "2322340645",
+                    "name": "Shrestha Hardia"
+                },
+                {
+                    "authorId": "2322344522",
+                    "name": "Omogbolaga Daramola"
+                },
+                {
+                    "authorId": "2318784794",
+                    "name": "Anirudh Sahu"
+                },
+                {
+                    "authorId": "2322148236",
+                    "name": "Kritika Verma"
+                },
+                {
+                    "authorId": "2311270769",
+                    "name": "Karan Dhingra"
+                },
+                {
+                    "authorId": "2311383021",
+                    "name": "Saloni Verma"
+                }
+            ],
+            "doi": "10.60087/jklst.v3.n4.p169",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "5a683d072c68394c5bd8ec35a7f6e364201f9e39",
+            "title": "Skin disease classification using two path deep transfer learning models",
+            "url": "https://www.semanticscholar.org/paper/5a683d072c68394c5bd8ec35a7f6e364201f9e39",
+            "venue": "Journal of Knowledge Learning and Science Technology ISSN: 2959-6386 (online)",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "66114831",
+                    "name": "C. Shiranthika"
+                },
+                {
+                    "authorId": "8358757",
+                    "name": "Parvaneh Saeedi"
+                },
+                {
+                    "authorId": "1730101",
+                    "name": "I. Baji\u0107"
+                }
+            ],
+            "doi": "10.1109/ACCESS.2023.3281832",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "96da627ea304eb03fdb6ec16f3a872d11ebff846",
+            "title": "Decentralized Learning in Healthcare: A Review of Emerging Techniques",
+            "url": "https://www.semanticscholar.org/paper/96da627ea304eb03fdb6ec16f3a872d11ebff846",
+            "venue": "IEEE Access",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2248875570",
+                    "name": "Himali Ghorpade"
+                },
+                {
+                    "authorId": "3453369",
+                    "name": "Jayant Jagtap"
+                },
+                {
+                    "authorId": "90630252",
+                    "name": "S. Patil"
+                },
+                {
+                    "authorId": "1794896",
+                    "name": "K. Kotecha"
+                },
+                {
+                    "authorId": "2064038663",
+                    "name": "Ajith Abraham"
+                },
+                {
+                    "authorId": "7569423",
+                    "name": "N. Horvat"
+                },
+                {
+                    "authorId": "48343821",
+                    "name": "Jayasree Chakraborty"
+                }
+            ],
+            "doi": "10.1109/ACCESS.2023.3320570",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "997a128666a875f0607d2586d9d75126aa8d7fba",
+            "title": "Automatic Segmentation of Pancreas and Pancreatic Tumor: A Review of a Decade of Research",
+            "url": "https://www.semanticscholar.org/paper/997a128666a875f0607d2586d9d75126aa8d7fba",
+            "venue": "IEEE Access",
+            "year": 2023
+        }
+    ],
+    "corpusId": 237241236,
+    "doi": "10.1371/journal.pone.0255397",
+    "fieldsOfStudy": [
+        "Medicine",
+        "Engineering",
+        "Computer Science"
+    ],
+    "influentialCitationCount": 2,
+    "isOpenAccess": true,
+    "isPublisherLicensed": true,
+    "is_open_access": true,
+    "is_publisher_licensed": true,
+    "numCitedBy": 11,
+    "numCiting": 40,
+    "paperId": "834c95244996ff67eb0e428b8c243038999e5a77",
+    "references": [
+        {
+            "arxivId": "2008.04370",
+            "authors": [
+                {
+                    "authorId": "2346355",
+                    "name": "Ashish Bora"
+                },
+                {
+                    "authorId": "46985085",
+                    "name": "S. Balasubramanian"
+                },
+                {
+                    "authorId": "2490700",
+                    "name": "Boris Babenko"
+                },
+                {
+                    "authorId": "32244194",
+                    "name": "S. Virmani"
+                },
+                {
+                    "authorId": "1811430",
+                    "name": "Subhashini Venugopalan"
+                },
+                {
+                    "authorId": "4836115",
+                    "name": "A. Mitani"
+                },
+                {
+                    "authorId": "2064521442",
+                    "name": "Guilherme de Oliveira Marinho"
+                },
+                {
+                    "authorId": "50162175",
+                    "name": "Jorge A Cuadros"
+                },
+                {
+                    "authorId": "5479856",
+                    "name": "Paisan Ruamviboonsuk"
+                },
+                {
+                    "authorId": "102388768",
+                    "name": "G. Corrado"
+                },
+                {
+                    "authorId": "49506408",
+                    "name": "L. Peng"
+                },
+                {
+                    "authorId": "47191829",
+                    "name": "D. Webster"
+                },
+                {
+                    "authorId": "23648227",
+                    "name": "A. Varadarajan"
+                },
+                {
+                    "authorId": "12809519",
+                    "name": "N. Hammel"
+                },
+                {
+                    "authorId": "2118113191",
+                    "name": "Yun Liu"
+                },
+                {
+                    "authorId": "1411061604",
+                    "name": "Pinal Bavishi"
+                }
+            ],
+            "doi": "10.1016/S2589-7500(20)30250-8",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ab36da919f9d0514c976396ad4aad5f8d629cca4",
+            "title": "Predicting Risk of Developing Diabetic Retinopathy using Deep Learning",
+            "url": "https://www.semanticscholar.org/paper/ab36da919f9d0514c976396ad4aad5f8d629cca4",
+            "venue": "The Lancet. Digital health",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "9555451",
+                    "name": "Georgios Kaissis"
+                },
+                {
+                    "authorId": "2380008",
+                    "name": "M. Makowski"
+                },
+                {
+                    "authorId": "2066492996",
+                    "name": "D. R\u00fcckert"
+                },
+                {
+                    "authorId": "4516701",
+                    "name": "R. Braren"
+                }
+            ],
+            "doi": "10.1038/s42256-020-0186-1",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5123717445799d8137327f4041e8d5a5a2c91379",
+            "title": "Secure, privacy-preserving and federated machine learning in medical imaging",
+            "url": "https://www.semanticscholar.org/paper/5123717445799d8137327f4041e8d5a5a2c91379",
+            "venue": "Nature Machine Intelligence",
+            "year": 2020
+        },
+        {
+            "arxivId": "2005.14165",
+            "authors": [
+                {
+                    "authorId": "31035595",
+                    "name": "Tom B. Brown"
+                },
+                {
+                    "authorId": "2056658938",
+                    "name": "Benjamin Mann"
+                },
+                {
+                    "authorId": "39849748",
+                    "name": "Nick Ryder"
+                },
+                {
+                    "authorId": "2065894334",
+                    "name": "Melanie Subbiah"
+                },
+                {
+                    "authorId": "152724169",
+                    "name": "J. Kaplan"
+                },
+                {
+                    "authorId": "6515819",
+                    "name": "Prafulla Dhariwal"
+                },
+                {
+                    "authorId": "2072676",
+                    "name": "Arvind Neelakantan"
+                },
+                {
+                    "authorId": "67311962",
+                    "name": "Pranav Shyam"
+                },
+                {
+                    "authorId": "144864359",
+                    "name": "Girish Sastry"
+                },
+                {
+                    "authorId": "119609682",
+                    "name": "Amanda Askell"
+                },
+                {
+                    "authorId": "144517868",
+                    "name": "Sandhini Agarwal"
+                },
+                {
+                    "authorId": "1404060687",
+                    "name": "Ariel Herbert-Voss"
+                },
+                {
+                    "authorId": "2064404342",
+                    "name": "Gretchen Krueger"
+                },
+                {
+                    "authorId": "103143311",
+                    "name": "T. Henighan"
+                },
+                {
+                    "authorId": "48422824",
+                    "name": "R. Child"
+                },
+                {
+                    "authorId": "1992922591",
+                    "name": "A. Ramesh"
+                },
+                {
+                    "authorId": "2052152920",
+                    "name": "Daniel M. Ziegler"
+                },
+                {
+                    "authorId": "49387725",
+                    "name": "Jeff Wu"
+                },
+                {
+                    "authorId": "2059411355",
+                    "name": "Clemens Winter"
+                },
+                {
+                    "authorId": "144239765",
+                    "name": "Christopher Hesse"
+                },
+                {
+                    "authorId": "2108828435",
+                    "name": "Mark Chen"
+                },
+                {
+                    "authorId": "2064673055",
+                    "name": "Eric Sigler"
+                },
+                {
+                    "authorId": "1380985420",
+                    "name": "Ma-teusz Litwin"
+                },
+                {
+                    "authorId": "145565184",
+                    "name": "Scott Gray"
+                },
+                {
+                    "authorId": "1490681878",
+                    "name": "B. Chess"
+                },
+                {
+                    "authorId": "2115193883",
+                    "name": "Jack Clark"
+                },
+                {
+                    "authorId": "133740015",
+                    "name": "Christopher Berner"
+                },
+                {
+                    "authorId": "52238703",
+                    "name": "Sam McCandlish"
+                },
+                {
+                    "authorId": "38909097",
+                    "name": "Alec Radford"
+                },
+                {
+                    "authorId": "1701686",
+                    "name": "I. Sutskever"
+                },
+                {
+                    "authorId": "2698777",
+                    "name": "Dario Amodei"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "90abbc2cf38462b954ae1b772fac9532e2ccd8b0",
+            "title": "Language Models are Few-Shot Learners",
+            "url": "https://www.semanticscholar.org/paper/90abbc2cf38462b954ae1b772fac9532e2ccd8b0",
+            "venue": "NeurIPS",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "9555451",
+                    "name": "Georgios Kaissis"
+                },
+                {
+                    "authorId": "1560540306",
+                    "name": "F. Jungmann"
+                },
+                {
+                    "authorId": "46241366",
+                    "name": "Sebastian Ziegelmayer"
+                },
+                {
+                    "authorId": "4533861",
+                    "name": "F. Loh\u00f6fer"
+                },
+                {
+                    "authorId": "2083591846",
+                    "name": "Felix N. Harder"
+                },
+                {
+                    "authorId": "3016757",
+                    "name": "A. Schlitter"
+                },
+                {
+                    "authorId": "4237182",
+                    "name": "A. Muckenhuber"
+                },
+                {
+                    "authorId": "1882435",
+                    "name": "K. Steiger"
+                },
+                {
+                    "authorId": "2337348",
+                    "name": "R. Schirren"
+                },
+                {
+                    "authorId": "144204700",
+                    "name": "H. Friess"
+                },
+                {
+                    "authorId": "30464377",
+                    "name": "R. Schmid"
+                },
+                {
+                    "authorId": "1830071",
+                    "name": "W. Weichert"
+                },
+                {
+                    "authorId": "2380008",
+                    "name": "M. Makowski"
+                },
+                {
+                    "authorId": "4516701",
+                    "name": "R. Braren"
+                }
+            ],
+            "doi": "10.3390/jcm9051250",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ce8584e49dba4fa0c656b6d287144cdf09043d22",
+            "title": "Multiparametric Modelling of Survival in Pancreatic Ductal Adenocarcinoma Using Clinical, Histomorphological, Genetic and Image-Derived Parameters",
+            "url": "https://www.semanticscholar.org/paper/ce8584e49dba4fa0c656b6d287144cdf09043d22",
+            "venue": "Journal of clinical medicine",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "9555451",
+                    "name": "Georgios Kaissis"
+                },
+                {
+                    "authorId": "46241366",
+                    "name": "Sebastian Ziegelmayer"
+                },
+                {
+                    "authorId": "4533861",
+                    "name": "F. Loh\u00f6fer"
+                },
+                {
+                    "authorId": "2083591846",
+                    "name": "Felix N. Harder"
+                },
+                {
+                    "authorId": "1560540306",
+                    "name": "F. Jungmann"
+                },
+                {
+                    "authorId": "38781598",
+                    "name": "D. Sasse"
+                },
+                {
+                    "authorId": "4237182",
+                    "name": "A. Muckenhuber"
+                },
+                {
+                    "authorId": "1380467306",
+                    "name": "Hsi-Yu Yen"
+                },
+                {
+                    "authorId": "1882435",
+                    "name": "K. Steiger"
+                },
+                {
+                    "authorId": "1946167",
+                    "name": "J. Siveke"
+                },
+                {
+                    "authorId": "144204700",
+                    "name": "H. Friess"
+                },
+                {
+                    "authorId": "30464377",
+                    "name": "R. Schmid"
+                },
+                {
+                    "authorId": "1830071",
+                    "name": "W. Weichert"
+                },
+                {
+                    "authorId": "2380008",
+                    "name": "M. Makowski"
+                },
+                {
+                    "authorId": "4516701",
+                    "name": "R. Braren"
+                }
+            ],
+            "doi": "10.3390/jcm9030724",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7b1f714a0c933ff61cef2c664533112942fd0d77",
+            "title": "Image-Based Molecular Phenotyping of Pancreatic Ductal Adenocarcinoma",
+            "url": "https://www.semanticscholar.org/paper/7b1f714a0c933ff61cef2c664533112942fd0d77",
+            "venue": "Journal of clinical medicine",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "136309159",
+                    "name": "\u77e5\u79c0 \u67f4\u7530"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "43f2ad297941db230c089ba353efc3f281ab678c",
+            "title": "5\u5206\u3067\u5206\u304b\u308b!? \u6709\u540d\u8ad6\u6587\u30ca\u30ca\u30e1\u8aad\u307f\uff1aJacob Devlin et al. : BERT : Pre-training of Deep Bidirectional Transformers for Language Understanding",
+            "url": "https://www.semanticscholar.org/paper/43f2ad297941db230c089ba353efc3f281ab678c",
+            "venue": "",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "47059386",
+                    "name": "Ling Zhang"
+                },
+                {
+                    "authorId": "2026596",
+                    "name": "Xiaosong Wang"
+                },
+                {
+                    "authorId": "144041873",
+                    "name": "Dong Yang"
+                },
+                {
+                    "authorId": "31620643",
+                    "name": "Thomas Sanford"
+                },
+                {
+                    "authorId": "35423821",
+                    "name": "S. Harmon"
+                },
+                {
+                    "authorId": "6462472",
+                    "name": "B. Turkbey"
+                },
+                {
+                    "authorId": "145836450",
+                    "name": "B. Wood"
+                },
+                {
+                    "authorId": "144531567",
+                    "name": "H. Roth"
+                },
+                {
+                    "authorId": "2611242",
+                    "name": "A. Myronenko"
+                },
+                {
+                    "authorId": "3262394",
+                    "name": "Daguang Xu"
+                },
+                {
+                    "authorId": "1742135",
+                    "name": "Ziyue Xu"
+                }
+            ],
+            "doi": "10.1109/TMI.2020.2973595",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b37850bfc6e011a4c3d5caaad98787c2ddab193c",
+            "title": "Generalizing Deep Learning for Medical Image Segmentation to Unseen Domains via Deep Stacked Transformation",
+            "url": "https://www.semanticscholar.org/paper/b37850bfc6e011a4c3d5caaad98787c2ddab193c",
+            "venue": "IEEE Transactions on Medical Imaging",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "21290568",
+                    "name": "Qiuchang Sun"
+                },
+                {
+                    "authorId": "13184012",
+                    "name": "Xiaona Lin"
+                },
+                {
+                    "authorId": "2596292",
+                    "name": "Yuanshen Zhao"
+                },
+                {
+                    "authorId": "2146625427",
+                    "name": "Ling Li"
+                },
+                {
+                    "authorId": "2054997307",
+                    "name": "Kai Yan"
+                },
+                {
+                    "authorId": "2113983936",
+                    "name": "Dong Liang"
+                },
+                {
+                    "authorId": "50711719",
+                    "name": "Desheng Sun"
+                },
+                {
+                    "authorId": "49969499",
+                    "name": "Zhicheng Li"
+                }
+            ],
+            "doi": "10.3389/fonc.2020.00053",
+            "intent": [
+                "result"
+            ],
+            "isInfluential": false,
+            "paperId": "9f37d170ad8d426973e2363ea175b33d33588080",
+            "title": "Deep Learning vs. Radiomics for Predicting Axillary Lymph Node Metastasis of Breast Cancer Using Ultrasound Images: Don't Forget the Peritumoral Region",
+            "url": "https://www.semanticscholar.org/paper/9f37d170ad8d426973e2363ea175b33d33588080",
+            "venue": "Frontiers in Oncology",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2047820455",
+                    "name": "S. McKinney"
+                },
+                {
+                    "authorId": "1717409",
+                    "name": "M. Sieniek"
+                },
+                {
+                    "authorId": "40156666",
+                    "name": "Varun Godbole"
+                },
+                {
+                    "authorId": "2069002234",
+                    "name": "Jonathan Godwin"
+                },
+                {
+                    "authorId": "4763345",
+                    "name": "Natasha Antropova"
+                },
+                {
+                    "authorId": "46370967",
+                    "name": "H. Ashrafian"
+                },
+                {
+                    "authorId": "2830305",
+                    "name": "T. Back"
+                },
+                {
+                    "authorId": "1472894368",
+                    "name": "Mary Chesus"
+                },
+                {
+                    "authorId": "1472894007",
+                    "name": "Greg C. Corrado"
+                },
+                {
+                    "authorId": "11388466",
+                    "name": "A. Darzi"
+                },
+                {
+                    "authorId": "1970920",
+                    "name": "M. Etemadi"
+                },
+                {
+                    "authorId": "2001051215",
+                    "name": "Florencia Garcia-Vicente"
+                },
+                {
+                    "authorId": "1864156",
+                    "name": "F. Gilbert"
+                },
+                {
+                    "authorId": "1401807057",
+                    "name": "M. Halling-Brown"
+                },
+                {
+                    "authorId": "48987704",
+                    "name": "D. Hassabis"
+                },
+                {
+                    "authorId": "1472894042",
+                    "name": "Sunny Jansen"
+                },
+                {
+                    "authorId": "6413143",
+                    "name": "A. Karthikesalingam"
+                },
+                {
+                    "authorId": "144887886",
+                    "name": "Christopher J. Kelly"
+                },
+                {
+                    "authorId": "1388915274",
+                    "name": "Dominic King"
+                },
+                {
+                    "authorId": "48072655",
+                    "name": "J. Ledsam"
+                },
+                {
+                    "authorId": "1423630269",
+                    "name": "David S. Melnick"
+                },
+                {
+                    "authorId": "70605050",
+                    "name": "Hormuz Mostofi"
+                },
+                {
+                    "authorId": "49506408",
+                    "name": "L. Peng"
+                },
+                {
+                    "authorId": "40056219",
+                    "name": "J. Reicher"
+                },
+                {
+                    "authorId": "1403031665",
+                    "name": "Bernardino Romera-Paredes"
+                },
+                {
+                    "authorId": "32833207",
+                    "name": "R. Sidebottom"
+                },
+                {
+                    "authorId": "2573615",
+                    "name": "Mustafa Suleyman"
+                },
+                {
+                    "authorId": "145448045",
+                    "name": "Daniel Tse"
+                },
+                {
+                    "authorId": "74009209",
+                    "name": "K. Young"
+                },
+                {
+                    "authorId": "3364908",
+                    "name": "J. Fauw"
+                },
+                {
+                    "authorId": "2894170",
+                    "name": "S. Shetty"
+                }
+            ],
+            "doi": "10.1038/s41586-019-1799-6",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "acb0b04bf282a5a04bd2ca050d8be3dec78a4668",
+            "title": "International evaluation of an AI system for breast cancer screening",
+            "url": "https://www.semanticscholar.org/paper/acb0b04bf282a5a04bd2ca050d8be3dec78a4668",
+            "venue": "Nature",
+            "year": 2020
+        },
+        {
+            "arxivId": "1912.05027",
+            "authors": [
+                {
+                    "authorId": "2098587",
+                    "name": "Xianzhi Du"
+                },
+                {
+                    "authorId": "33493200",
+                    "name": "Tsung-Yi Lin"
+                },
+                {
+                    "authorId": "2192463",
+                    "name": "Pengchong Jin"
+                },
+                {
+                    "authorId": "1898210",
+                    "name": "Golnaz Ghiasi"
+                },
+                {
+                    "authorId": "120805419",
+                    "name": "Mingxing Tan"
+                },
+                {
+                    "authorId": "50355189",
+                    "name": "Yin Cui"
+                },
+                {
+                    "authorId": "2827616",
+                    "name": "Quoc V. Le"
+                },
+                {
+                    "authorId": "1718192",
+                    "name": "Xiaodan Song"
+                }
+            ],
+            "doi": "10.1109/cvpr42600.2020.01161",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "19f3299deda9f33003a6378788806acdb089669f",
+            "title": "SpineNet: Learning Scale-Permuted Backbone for Recognition and Localization",
+            "url": "https://www.semanticscholar.org/paper/19f3299deda9f33003a6378788806acdb089669f",
+            "venue": "2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2019
+        },
+        {
+            "arxivId": "1908.07873",
+            "authors": [
+                {
+                    "authorId": "145530218",
+                    "name": "Tian Li"
+                },
+                {
+                    "authorId": "2894821",
+                    "name": "Anit Kumar Sahu"
+                },
+                {
+                    "authorId": "145532827",
+                    "name": "Ameet Talwalkar"
+                },
+                {
+                    "authorId": "145260024",
+                    "name": "Virginia Smith"
+                }
+            ],
+            "doi": "10.1109/MSP.2020.2975749",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "49bdeb07b045dd77f0bfe2b44436608770235a23",
+            "title": "Federated Learning: Challenges, Methods, and Future Directions",
+            "url": "https://www.semanticscholar.org/paper/49bdeb07b045dd77f0bfe2b44436608770235a23",
+            "venue": "IEEE Signal Processing Magazine",
+            "year": 2019
+        },
+        {
+            "arxivId": "1905.11946",
+            "authors": [
+                {
+                    "authorId": "120805419",
+                    "name": "Mingxing Tan"
+                },
+                {
+                    "authorId": "2827616",
+                    "name": "Quoc V. Le"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "4f2eda8077dc7a69bb2b4e0a1a086cf054adb3f9",
+            "title": "EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/4f2eda8077dc7a69bb2b4e0a1a086cf054adb3f9",
+            "venue": "ICML",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": null,
+                    "name": "Anoop P James L Emma Foad Jemal Ahmed Haftom Niguse Domi Patel Fisher Nichols Abd-Allah Abdela Abdelalim Ab"
+                },
+                {
+                    "authorId": "4501809",
+                    "name": "Anoop P. Patel"
+                },
+                {
+                    "authorId": "32002508",
+                    "name": "J. Fisher"
+                },
+                {
+                    "authorId": "152888823",
+                    "name": "E. Nichols"
+                },
+                {
+                    "authorId": "1380173279",
+                    "name": "F. Abd-Allah"
+                },
+                {
+                    "authorId": "16651307",
+                    "name": "Jemal Abdela"
+                },
+                {
+                    "authorId": "8430656",
+                    "name": "A. Abdelalim"
+                },
+                {
+                    "authorId": "22261520",
+                    "name": "H. Abraha"
+                },
+                {
+                    "authorId": "40600103",
+                    "name": "Dominic Agius"
+                },
+                {
+                    "authorId": "4466057",
+                    "name": "Fares Alahdab"
+                },
+                {
+                    "authorId": "4120272",
+                    "name": "Tahiya Alam"
+                },
+                {
+                    "authorId": "152458912",
+                    "name": "Christine Allen"
+                },
+                {
+                    "authorId": "5840271",
+                    "name": "N. Anber"
+                },
+                {
+                    "authorId": "2534282",
+                    "name": "A. Awasthi"
+                },
+                {
+                    "authorId": "4395724",
+                    "name": "H. Badali"
+                },
+                {
+                    "authorId": "4815558",
+                    "name": "A. Belachew"
+                },
+                {
+                    "authorId": "3707910",
+                    "name": "Ali Bijani"
+                },
+                {
+                    "authorId": "49878238",
+                    "name": "T. Bj\u00f8rge"
+                },
+                {
+                    "authorId": "67266295",
+                    "name": "F. Carvalho"
+                },
+                {
+                    "authorId": "82212920",
+                    "name": "F. Catal\u00e1-L\u00f3pez"
+                },
+                {
+                    "authorId": "88811832",
+                    "name": "J. Choi"
+                },
+                {
+                    "authorId": "4751403",
+                    "name": "A. Daryani"
+                },
+                {
+                    "authorId": "51881692",
+                    "name": "M. G. Degefa"
+                },
+                {
+                    "authorId": "41158172",
+                    "name": "Gebre Teklemariam Demoz"
+                },
+                {
+                    "authorId": "35732806",
+                    "name": "H. Do"
+                },
+                {
+                    "authorId": "48115074",
+                    "name": "M. Dubey"
+                },
+                {
+                    "authorId": "46907688",
+                    "name": "E. Fernandes"
+                },
+                {
+                    "authorId": "98591128",
+                    "name": "I. Filip"
+                },
+                {
+                    "authorId": "116189314",
+                    "name": "Kyle Foreman"
+                },
+                {
+                    "authorId": "40997857",
+                    "name": "A. Gebre"
+                },
+                {
+                    "authorId": "51928643",
+                    "name": "Y. C. D. Geramo"
+                },
+                {
+                    "authorId": "1401624764",
+                    "name": "N. Hafezi-Nejad"
+                },
+                {
+                    "authorId": "144110014",
+                    "name": "S. Hamidi"
+                },
+                {
+                    "authorId": "48424965",
+                    "name": "James D. Harvey"
+                },
+                {
+                    "authorId": "14853114",
+                    "name": "H. Y. Hassen"
+                },
+                {
+                    "authorId": "2088787",
+                    "name": "S. Hay"
+                },
+                {
+                    "authorId": "46181760",
+                    "name": "S. Irvani"
+                },
+                {
+                    "authorId": "144685067",
+                    "name": "M. Jakovljevic"
+                },
+                {
+                    "authorId": "9647308",
+                    "name": "Ravi Prakash Jha"
+                },
+                {
+                    "authorId": "82392523",
+                    "name": "A. Kasaeian"
+                },
+                {
+                    "authorId": "46361321",
+                    "name": "I. Khalil"
+                },
+                {
+                    "authorId": "33782404",
+                    "name": "E. Khan"
+                },
+                {
+                    "authorId": "5181120",
+                    "name": "Y. Khang"
+                },
+                {
+                    "authorId": "90841871",
+                    "name": "Y. Kim"
+                },
+                {
+                    "authorId": "9543455",
+                    "name": "G. Mengistu"
+                },
+                {
+                    "authorId": "145513830",
+                    "name": "K. Mohammad"
+                },
+                {
+                    "authorId": "2202932",
+                    "name": "A. Mokdad"
+                },
+                {
+                    "authorId": "143891085",
+                    "name": "G. Nagel"
+                },
+                {
+                    "authorId": "145191793",
+                    "name": "M. Naghavi"
+                },
+                {
+                    "authorId": "144882162",
+                    "name": "G. Naik"
+                },
+                {
+                    "authorId": "8308365",
+                    "name": "H. Nguyen"
+                },
+                {
+                    "authorId": "2150604049",
+                    "name": "L. H. Nguyen"
+                },
+                {
+                    "authorId": "35826371",
+                    "name": "T. H. Nguyen"
+                },
+                {
+                    "authorId": "40602308",
+                    "name": "M. Nixon"
+                },
+                {
+                    "authorId": "5965356",
+                    "name": "A. Olagunju"
+                },
+                {
+                    "authorId": "2057573556",
+                    "name": "David M Pereira"
+                },
+                {
+                    "authorId": "1402660086",
+                    "name": "G. Pinilla-Monsalve"
+                },
+                {
+                    "authorId": "5015775",
+                    "name": "H. Poustchi"
+                },
+                {
+                    "authorId": "6252161",
+                    "name": "M. Qorbani"
+                },
+                {
+                    "authorId": "1381170185",
+                    "name": "A. Radfar"
+                },
+                {
+                    "authorId": "144210251",
+                    "name": "R. Reiner"
+                },
+                {
+                    "authorId": "5709125",
+                    "name": "G. Roshandel"
+                },
+                {
+                    "authorId": "12117658",
+                    "name": "H. Safari"
+                },
+                {
+                    "authorId": "5195079",
+                    "name": "S. Safiri"
+                },
+                {
+                    "authorId": "144460513",
+                    "name": "A. Samy"
+                },
+                {
+                    "authorId": "4644838",
+                    "name": "S. Sarvi"
+                },
+                {
+                    "authorId": "2199430",
+                    "name": "M. Shaikh"
+                },
+                {
+                    "authorId": "39683905",
+                    "name": "M. Sharif"
+                },
+                {
+                    "authorId": "151194074",
+                    "name": "Rajesh Sharma"
+                },
+                {
+                    "authorId": "4097711",
+                    "name": "S. Sheikhbahaei"
+                },
+                {
+                    "authorId": "4602255",
+                    "name": "R. Shirkoohi"
+                },
+                {
+                    "authorId": "145729992",
+                    "name": "J. Singh"
+                },
+                {
+                    "authorId": "2118905560",
+                    "name": "Mari Smith"
+                },
+                {
+                    "authorId": "1382885331",
+                    "name": "R. Tabar\u00e9s-Seisdedos"
+                },
+                {
+                    "authorId": "145432905",
+                    "name": "B. Tran"
+                },
+                {
+                    "authorId": "41077180",
+                    "name": "Khanh B. Tran"
+                },
+                {
+                    "authorId": "47052060",
+                    "name": "I. Ullah"
+                },
+                {
+                    "authorId": "51475687",
+                    "name": "E. Weiderpass"
+                },
+                {
+                    "authorId": "1379788192",
+                    "name": "Kidu Gidey Weldegwergs"
+                },
+                {
+                    "authorId": "46194198",
+                    "name": "Ebrahim M. Yimer"
+                },
+                {
+                    "authorId": "5259914",
+                    "name": "V. Zadnik"
+                },
+                {
+                    "authorId": "40244958",
+                    "name": "Z. Zaidi"
+                },
+                {
+                    "authorId": "2626241",
+                    "name": "R. Ellenbogen"
+                },
+                {
+                    "authorId": "144960948",
+                    "name": "T. Vos"
+                },
+                {
+                    "authorId": "1858182",
+                    "name": "V. Feigin"
+                },
+                {
+                    "authorId": "145882172",
+                    "name": "C. Murray"
+                },
+                {
+                    "authorId": "4982486",
+                    "name": "C. Fitzmaurice"
+                }
+            ],
+            "doi": "10.1016/S1474-4422(18)30468-X",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "05914a84cc4933867d1084e8fc564f4c3fe34231",
+            "title": "Global, regional, and national burden of brain and other CNS cancer, 1990\u20132016: a systematic analysis for the Global Burden of Disease Study 2016",
+            "url": "https://www.semanticscholar.org/paper/05914a84cc4933867d1084e8fc564f4c3fe34231",
+            "venue": "The Lancet Neurology",
+            "year": 2019
+        },
+        {
+            "arxivId": "1902.09063",
+            "authors": [
+                {
+                    "authorId": "1723040",
+                    "name": "Amber L. Simpson"
+                },
+                {
+                    "authorId": "51504413",
+                    "name": "M. Antonelli"
+                },
+                {
+                    "authorId": "3199900",
+                    "name": "S. Bakas"
+                },
+                {
+                    "authorId": "1981194",
+                    "name": "M. Bilello"
+                },
+                {
+                    "authorId": "1781663",
+                    "name": "K. Farahani"
+                },
+                {
+                    "authorId": "8038506",
+                    "name": "B. Ginneken"
+                },
+                {
+                    "authorId": "1397958699",
+                    "name": "A. Kopp-Schneider"
+                },
+                {
+                    "authorId": "1699344",
+                    "name": "B. Landman"
+                },
+                {
+                    "authorId": "145959882",
+                    "name": "G. Litjens"
+                },
+                {
+                    "authorId": "143893221",
+                    "name": "Bjoern H Menze"
+                },
+                {
+                    "authorId": "1737326",
+                    "name": "O. Ronneberger"
+                },
+                {
+                    "authorId": "144838131",
+                    "name": "R. Summers"
+                },
+                {
+                    "authorId": "152937533",
+                    "name": "Patrick Bilic"
+                },
+                {
+                    "authorId": "50674180",
+                    "name": "P. Christ"
+                },
+                {
+                    "authorId": "143769333",
+                    "name": "R. Do"
+                },
+                {
+                    "authorId": "6622404",
+                    "name": "M. Gollub"
+                },
+                {
+                    "authorId": "1410365744",
+                    "name": "Jennifer Golia-Pernicka"
+                },
+                {
+                    "authorId": "2451191",
+                    "name": "S. Heckers"
+                },
+                {
+                    "authorId": "3060752",
+                    "name": "W. Jarnagin"
+                },
+                {
+                    "authorId": "5964856",
+                    "name": "M. McHugo"
+                },
+                {
+                    "authorId": "1911671",
+                    "name": "S. Napel"
+                },
+                {
+                    "authorId": "37627814",
+                    "name": "Eugene Vorontsov"
+                },
+                {
+                    "authorId": "1397958668",
+                    "name": "L. Maier-Hein"
+                },
+                {
+                    "authorId": "145244251",
+                    "name": "M. Jorge Cardoso"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "4654aa505e5bcdb089d0df202cd7ceabc9d2d41f",
+            "title": "A large annotated medical image dataset for the development and evaluation of segmentation algorithms",
+            "url": "https://www.semanticscholar.org/paper/4654aa505e5bcdb089d0df202cd7ceabc9d2d41f",
+            "venue": "ArXiv",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "20991761",
+                    "name": "E. Collisson"
+                },
+                {
+                    "authorId": "153605057",
+                    "name": "Peter Bailey"
+                },
+                {
+                    "authorId": "144103678",
+                    "name": "D. Chang"
+                },
+                {
+                    "authorId": "3063472",
+                    "name": "A. Biankin"
+                }
+            ],
+            "doi": "10.1038/s41575-019-0109-y",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "6584940bfb94dc12aaabbf933fe8598c4c3f405e",
+            "title": "Molecular subtypes of pancreatic cancer",
+            "url": "https://www.semanticscholar.org/paper/6584940bfb94dc12aaabbf933fe8598c4c3f405e",
+            "venue": "Nature Reviews Gastroenterology & Hepatology",
+            "year": 2019
+        },
+        {
+            "arxivId": "1902.01046",
+            "authors": [
+                {
+                    "authorId": "2039588",
+                    "name": "Keith Bonawitz"
+                },
+                {
+                    "authorId": "153086296",
+                    "name": "Hubert Eichner"
+                },
+                {
+                    "authorId": "1718871",
+                    "name": "W. Grieskamp"
+                },
+                {
+                    "authorId": "68973739",
+                    "name": "Dzmitry Huba"
+                },
+                {
+                    "authorId": "67147139",
+                    "name": "A. Ingerman"
+                },
+                {
+                    "authorId": "2072422622",
+                    "name": "Vladimir Ivanov"
+                },
+                {
+                    "authorId": "3104292",
+                    "name": "Chlo\u00e9 Kiddon"
+                },
+                {
+                    "authorId": "32139366",
+                    "name": "Jakub Konecn\u00fd"
+                },
+                {
+                    "authorId": "49436220",
+                    "name": "S. Mazzocchi"
+                },
+                {
+                    "authorId": "145057514",
+                    "name": "H. B. McMahan"
+                },
+                {
+                    "authorId": "2592207",
+                    "name": "Timon Van Overveldt"
+                },
+                {
+                    "authorId": "2131407",
+                    "name": "David Petrou"
+                },
+                {
+                    "authorId": "1878835",
+                    "name": "Daniel Ramage"
+                },
+                {
+                    "authorId": "68972407",
+                    "name": "Jason Roselander"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "79cf9462a583e1889781868cbf8c31e43b36dd2f",
+            "title": "Towards Federated Learning at Scale: System Design",
+            "url": "https://www.semanticscholar.org/paper/79cf9462a583e1889781868cbf8c31e43b36dd2f",
+            "venue": "SysML",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3797258",
+                    "name": "Z. Obermeyer"
+                },
+                {
+                    "authorId": "2062143",
+                    "name": "S. Mullainathan"
+                }
+            ],
+            "doi": "10.1145/3287560.3287593",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5bd4d39f985259b1d1748fe008acb582ecafc526",
+            "title": "Dissecting Racial Bias in an Algorithm that Guides Health Decisions for 70 Million People",
+            "url": "https://www.semanticscholar.org/paper/5bd4d39f985259b1d1748fe008acb582ecafc526",
+            "venue": "FAT",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145945427",
+                    "name": "J. Winter"
+                },
+                {
+                    "authorId": "144875930",
+                    "name": "E. Davidson"
+                }
+            ],
+            "doi": "10.1080/01972243.2018.1542648",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "736c848038351852eb7037691eaca2e2a2a4c2a2",
+            "title": "Big data governance of personal health information and challenges to contextual integrity",
+            "url": "https://www.semanticscholar.org/paper/736c848038351852eb7037691eaca2e2a2a4c2a2",
+            "venue": "Inf. Soc.",
+            "year": 2019
+        },
+        {
+            "arxivId": "1809.10486",
+            "authors": [
+                {
+                    "authorId": "7886986",
+                    "name": "Fabian Isensee"
+                },
+                {
+                    "authorId": "152800798",
+                    "name": "Jens Petersen"
+                },
+                {
+                    "authorId": "2064804584",
+                    "name": "Andr\u00e9 Klein"
+                },
+                {
+                    "authorId": "7139645",
+                    "name": "David Zimmerer"
+                },
+                {
+                    "authorId": "51433108",
+                    "name": "P. Jaeger"
+                },
+                {
+                    "authorId": "51011129",
+                    "name": "Simon A. A. Kohl"
+                },
+                {
+                    "authorId": "9968602",
+                    "name": "J. Wasserthal"
+                },
+                {
+                    "authorId": "1923275244",
+                    "name": "Gregor Koehler"
+                },
+                {
+                    "authorId": "2458662",
+                    "name": "T. Norajitra"
+                },
+                {
+                    "authorId": "3166449",
+                    "name": "Sebastian J. Wirkert"
+                },
+                {
+                    "authorId": "1397951928",
+                    "name": "Klaus Maier-Hein"
+                }
+            ],
+            "doi": "10.1007/978-3-658-25326-4_7",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "849e99219259a2cc28209b02d0c646b7183dd40e",
+            "title": "nnU-Net: Self-adapting Framework for U-Net-Based Medical Image Segmentation",
+            "url": "https://www.semanticscholar.org/paper/849e99219259a2cc28209b02d0c646b7183dd40e",
+            "venue": "Bildverarbeitung f\u00fcr die Medizin",
+            "year": 2018
+        },
+        {
+            "arxivId": "1804.03999",
+            "authors": [
+                {
+                    "authorId": "2941969",
+                    "name": "O. Oktay"
+                },
+                {
+                    "authorId": "9952952",
+                    "name": "Jo Schlemper"
+                },
+                {
+                    "authorId": "2411551",
+                    "name": "L. L. Folgoc"
+                },
+                {
+                    "authorId": "47804190",
+                    "name": "M. J. Lee"
+                },
+                {
+                    "authorId": "1825371",
+                    "name": "M. Heinrich"
+                },
+                {
+                    "authorId": "38989230",
+                    "name": "K. Misawa"
+                },
+                {
+                    "authorId": "144070506",
+                    "name": "K. Mori"
+                },
+                {
+                    "authorId": "40513205",
+                    "name": "Steven G. McDonagh"
+                },
+                {
+                    "authorId": "3128867",
+                    "name": "Nils Y. Hammerla"
+                },
+                {
+                    "authorId": "2015193",
+                    "name": "Bernhard Kainz"
+                },
+                {
+                    "authorId": "1709824",
+                    "name": "Ben Glocker"
+                },
+                {
+                    "authorId": "1717710",
+                    "name": "D. Rueckert"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "ae1c89817a3a239e5344293138bdd80293983460",
+            "title": "Attention U-Net: Learning Where to Look for the Pancreas",
+            "url": "https://www.semanticscholar.org/paper/ae1c89817a3a239e5344293138bdd80293983460",
+            "venue": "ArXiv",
+            "year": 2018
+        },
+        {
+            "arxivId": "1802.02611",
+            "authors": [
+                {
+                    "authorId": "34192119",
+                    "name": "Liang-Chieh Chen"
+                },
+                {
+                    "authorId": "1844940337",
+                    "name": "Yukun Zhu"
+                },
+                {
+                    "authorId": "2776496",
+                    "name": "G. Papandreou"
+                },
+                {
+                    "authorId": "3302320",
+                    "name": "Florian Schroff"
+                },
+                {
+                    "authorId": "2595180",
+                    "name": "Hartwig Adam"
+                }
+            ],
+            "doi": "10.1007/978-3-030-01234-2_49",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "9217e28b2273eb3b26e4e9b7b498b4661e6e09f5",
+            "title": "Encoder-Decoder with Atrous Separable Convolution for Semantic Image Segmentation",
+            "url": "https://www.semanticscholar.org/paper/9217e28b2273eb3b26e4e9b7b498b4661e6e09f5",
+            "venue": "ECCV",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145469498",
+                    "name": "Andrea S Bauer"
+                },
+                {
+                    "authorId": "3243772",
+                    "name": "P. Nazarov"
+                },
+                {
+                    "authorId": "3555289",
+                    "name": "N. Giese"
+                },
+                {
+                    "authorId": "3103741",
+                    "name": "S. Beghelli"
+                },
+                {
+                    "authorId": "39234483",
+                    "name": "A. Heller"
+                },
+                {
+                    "authorId": "6720755",
+                    "name": "W. Greenhalf"
+                },
+                {
+                    "authorId": "2444991",
+                    "name": "Eithne Costello"
+                },
+                {
+                    "authorId": "2046123",
+                    "name": "A. Muller"
+                },
+                {
+                    "authorId": "48910239",
+                    "name": "Melanie Bier"
+                },
+                {
+                    "authorId": "144623696",
+                    "name": "O. Strobel"
+                },
+                {
+                    "authorId": "4818544",
+                    "name": "T. Hackert"
+                },
+                {
+                    "authorId": "34824612",
+                    "name": "L. Vallar"
+                },
+                {
+                    "authorId": "143784645",
+                    "name": "A. Scarpa"
+                },
+                {
+                    "authorId": "1694555",
+                    "name": "M. B\u00fcchler"
+                },
+                {
+                    "authorId": "4343503",
+                    "name": "J. Neoptolemos"
+                },
+                {
+                    "authorId": "152526918",
+                    "name": "S. Kreis"
+                },
+                {
+                    "authorId": "144029549",
+                    "name": "J. Hoheisel"
+                }
+            ],
+            "doi": "10.1002/ijc.31087",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "df0c711d47b56bb0f529a2cc00b8b8a5af88c756",
+            "title": "Transcriptional variations in the wider peritumoral tissue environment of pancreatic cancer",
+            "url": "https://www.semanticscholar.org/paper/df0c711d47b56bb0f529a2cc00b8b8a5af88c756",
+            "venue": "International journal of cancer",
+            "year": 2017
+        },
+        {
+            "arxivId": "1709.00179",
+            "authors": [
+                {
+                    "authorId": "26369312",
+                    "name": "Ryuhei Hamaguchi"
+                },
+                {
+                    "authorId": "10402103",
+                    "name": "A. Fujita"
+                },
+                {
+                    "authorId": "2065721518",
+                    "name": "Keisuke Nemoto"
+                },
+                {
+                    "authorId": "31432253",
+                    "name": "T. Imaizumi"
+                },
+                {
+                    "authorId": "6098204",
+                    "name": "S. Hikosaka"
+                }
+            ],
+            "doi": "10.1109/WACV.2018.00162",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "d5579b2708a1c713e1b2feb8646533ce26085a3a",
+            "title": "Effective Use of Dilated Convolutions for Segmenting Small Object Instances in Remote Sensing Imagery",
+            "url": "https://www.semanticscholar.org/paper/d5579b2708a1c713e1b2feb8646533ce26085a3a",
+            "venue": "2018 IEEE Winter Conference on Applications of Computer Vision (WACV)",
+            "year": 2017
+        },
+        {
+            "arxivId": "1706.05587",
+            "authors": [
+                {
+                    "authorId": "34192119",
+                    "name": "Liang-Chieh Chen"
+                },
+                {
+                    "authorId": "2776496",
+                    "name": "G. Papandreou"
+                },
+                {
+                    "authorId": "3302320",
+                    "name": "Florian Schroff"
+                },
+                {
+                    "authorId": "2595180",
+                    "name": "Hartwig Adam"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "ee4a012a4b12d11d7ab8c0e79c61e807927a163c",
+            "title": "Rethinking Atrous Convolution for Semantic Image Segmentation",
+            "url": "https://www.semanticscholar.org/paper/ee4a012a4b12d11d7ab8c0e79c61e807927a163c",
+            "venue": "ArXiv",
+            "year": 2017
+        },
+        {
+            "arxivId": "1704.04861",
+            "authors": [
+                {
+                    "authorId": "144727050",
+                    "name": "Andrew G. Howard"
+                },
+                {
+                    "authorId": "2717876",
+                    "name": "Menglong Zhu"
+                },
+                {
+                    "authorId": null,
+                    "name": "Bo Chen"
+                },
+                {
+                    "authorId": "2741985",
+                    "name": "Dmitry Kalenichenko"
+                },
+                {
+                    "authorId": "2108301072",
+                    "name": "Weijun Wang"
+                },
+                {
+                    "authorId": "47447630",
+                    "name": "Tobias Weyand"
+                },
+                {
+                    "authorId": "2612392",
+                    "name": "M. Andreetto"
+                },
+                {
+                    "authorId": "2595180",
+                    "name": "Hartwig Adam"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "3647d6d0f151dc05626449ee09cc7bce55be497e",
+            "title": "MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications",
+            "url": "https://www.semanticscholar.org/paper/3647d6d0f151dc05626449ee09cc7bce55be497e",
+            "venue": "ArXiv",
+            "year": 2017
+        },
+        {
+            "arxivId": "1610.05492",
+            "authors": [
+                {
+                    "authorId": "32139366",
+                    "name": "Jakub Konecn\u00fd"
+                },
+                {
+                    "authorId": "145057514",
+                    "name": "H. B. McMahan"
+                },
+                {
+                    "authorId": "1815972",
+                    "name": "Felix X. Yu"
+                },
+                {
+                    "authorId": "2662221",
+                    "name": "Peter Richt\u00e1rik"
+                },
+                {
+                    "authorId": "9486035",
+                    "name": "A. Suresh"
+                },
+                {
+                    "authorId": "36577444",
+                    "name": "D. Bacon"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "7fcb90f68529cbfab49f471b54719ded7528d0ef",
+            "title": "Federated Learning: Strategies for Improving Communication Efficiency",
+            "url": "https://www.semanticscholar.org/paper/7fcb90f68529cbfab49f471b54719ded7528d0ef",
+            "venue": "ArXiv",
+            "year": 2016
+        },
+        {
+            "arxivId": "1606.04797",
+            "authors": [
+                {
+                    "authorId": "1877512",
+                    "name": "F. Milletar\u00ec"
+                },
+                {
+                    "authorId": "145587209",
+                    "name": "N. Navab"
+                },
+                {
+                    "authorId": "145774206",
+                    "name": "Seyed-Ahmad Ahmadi"
+                }
+            ],
+            "doi": "10.1109/3DV.2016.79",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "50004c086ffd6a201a4b782281aaa930fbfe6ecf",
+            "title": "V-Net: Fully Convolutional Neural Networks for Volumetric Medical Image Segmentation",
+            "url": "https://www.semanticscholar.org/paper/50004c086ffd6a201a4b782281aaa930fbfe6ecf",
+            "venue": "2016 Fourth International Conference on 3D Vision (3DV)",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2277385",
+                    "name": "Timothy Dozat"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "d44efdc542f2cc5e196f04bc76bc783bfd7084af",
+            "title": "Incorporating Nesterov Momentum into Adam",
+            "url": "https://www.semanticscholar.org/paper/d44efdc542f2cc5e196f04bc76bc783bfd7084af",
+            "venue": "",
+            "year": 2016
+        },
+        {
+            "arxivId": "1512.03385",
+            "authors": [
+                {
+                    "authorId": "39353098",
+                    "name": "Kaiming He"
+                },
+                {
+                    "authorId": "1771551",
+                    "name": "X. Zhang"
+                },
+                {
+                    "authorId": "3080683",
+                    "name": "Shaoqing Ren"
+                },
+                {
+                    "authorId": null,
+                    "name": "Jian Sun"
+                }
+            ],
+            "doi": "10.1109/cvpr.2016.90",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "2c03df8b48bf3fa39054345bafabfeff15bfd11d",
+            "title": "Deep Residual Learning for Image Recognition",
+            "url": "https://www.semanticscholar.org/paper/2c03df8b48bf3fa39054345bafabfeff15bfd11d",
+            "venue": "2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2015
+        },
+        {
+            "arxivId": "1511.07122",
+            "authors": [
+                {
+                    "authorId": "1807197",
+                    "name": "F. Yu"
+                },
+                {
+                    "authorId": "145231047",
+                    "name": "V. Koltun"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7f5fc84819c0cf94b771fe15141f65b123f7b8ec",
+            "title": "Multi-Scale Context Aggregation by Dilated Convolutions",
+            "url": "https://www.semanticscholar.org/paper/7f5fc84819c0cf94b771fe15141f65b123f7b8ec",
+            "venue": "ICLR",
+            "year": 2015
+        },
+        {
+            "arxivId": "1511.03575",
+            "authors": [
+                {
+                    "authorId": "32139366",
+                    "name": "Jakub Konecn\u00fd"
+                },
+                {
+                    "authorId": "145057514",
+                    "name": "H. B. McMahan"
+                },
+                {
+                    "authorId": "1878835",
+                    "name": "Daniel Ramage"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "614ec0fe23fe21235126cc5c92ccf5a739a3ae32",
+            "title": "Federated Optimization: Distributed Optimization Beyond the Datacenter",
+            "url": "https://www.semanticscholar.org/paper/614ec0fe23fe21235126cc5c92ccf5a739a3ae32",
+            "venue": "ArXiv",
+            "year": 2015
+        },
+        {
+            "arxivId": "1505.04597",
+            "authors": [
+                {
+                    "authorId": "1737326",
+                    "name": "O. Ronneberger"
+                },
+                {
+                    "authorId": "152702479",
+                    "name": "P. Fischer"
+                },
+                {
+                    "authorId": "1710872",
+                    "name": "T. Brox"
+                }
+            ],
+            "doi": "10.1007/978-3-319-24574-4_28",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "6364fdaa0a0eccd823a779fcdd489173f938e91a",
+            "title": "U-Net: Convolutional Networks for Biomedical Image Segmentation",
+            "url": "https://www.semanticscholar.org/paper/6364fdaa0a0eccd823a779fcdd489173f938e91a",
+            "venue": "MICCAI",
+            "year": 2015
+        },
+        {
+            "arxivId": "1411.4280",
+            "authors": [
+                {
+                    "authorId": "2704494",
+                    "name": "Jonathan Tompson"
+                },
+                {
+                    "authorId": "2558463",
+                    "name": "Ross Goroshin"
+                },
+                {
+                    "authorId": "49147969",
+                    "name": "Arjun Jain"
+                },
+                {
+                    "authorId": "1688882",
+                    "name": "Yann LeCun"
+                },
+                {
+                    "authorId": "2428034",
+                    "name": "C. Bregler"
+                }
+            ],
+            "doi": "10.1109/CVPR.2015.7298664",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ebcea2d842d3d4e320500086aff0deb4cb4412ff",
+            "title": "Efficient object localization using Convolutional Networks",
+            "url": "https://www.semanticscholar.org/paper/ebcea2d842d3d4e320500086aff0deb4cb4412ff",
+            "venue": "2015 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2014
+        },
+        {
+            "arxivId": "1409.0575",
+            "authors": [
+                {
+                    "authorId": "2314850892",
+                    "name": "Olga Russakovsky"
+                },
+                {
+                    "authorId": "153302678",
+                    "name": "Jia Deng"
+                },
+                {
+                    "authorId": "144914140",
+                    "name": "Hao Su"
+                },
+                {
+                    "authorId": "2285165",
+                    "name": "J. Krause"
+                },
+                {
+                    "authorId": "145031342",
+                    "name": "S. Satheesh"
+                },
+                {
+                    "authorId": "2261887230",
+                    "name": "Sean Ma"
+                },
+                {
+                    "authorId": "3109481",
+                    "name": "Zhiheng Huang"
+                },
+                {
+                    "authorId": "2354728",
+                    "name": "A. Karpathy"
+                },
+                {
+                    "authorId": "2556428",
+                    "name": "A. Khosla"
+                },
+                {
+                    "authorId": "145879842",
+                    "name": "Michael S. Bernstein"
+                },
+                {
+                    "authorId": "39668247",
+                    "name": "A. Berg"
+                },
+                {
+                    "authorId": "48004138",
+                    "name": "Li Fei-Fei"
+                }
+            ],
+            "doi": "10.1007/s11263-015-0816-y",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e74f9b7f8eec6ba4704c206b93bc8079af3da4bd",
+            "title": "ImageNet Large Scale Visual Recognition Challenge",
+            "url": "https://www.semanticscholar.org/paper/e74f9b7f8eec6ba4704c206b93bc8079af3da4bd",
+            "venue": "International Journal of Computer Vision",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1781565",
+                    "name": "C. Dwork"
+                },
+                {
+                    "authorId": "1682008",
+                    "name": "Aaron Roth"
+                }
+            ],
+            "doi": "10.1561/0400000042",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0023582fde36430c7e3ae81611a14e558c8f4bae",
+            "title": "The Algorithmic Foundations of Differential Privacy",
+            "url": "https://www.semanticscholar.org/paper/0023582fde36430c7e3ae81611a14e558c8f4bae",
+            "venue": "Found. Trends Theor. Comput. Sci.",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "5136787",
+                    "name": "J. Infante"
+                },
+                {
+                    "authorId": "5899354",
+                    "name": "H. Matsubayashi"
+                },
+                {
+                    "authorId": "5281271",
+                    "name": "N. Sato"
+                },
+                {
+                    "authorId": "145236373",
+                    "name": "J. Tonascia"
+                },
+                {
+                    "authorId": "119312331",
+                    "name": "A. Klein"
+                },
+                {
+                    "authorId": "13716377",
+                    "name": "Taylor A Riall"
+                },
+                {
+                    "authorId": "2714715",
+                    "name": "C. Yeo"
+                },
+                {
+                    "authorId": "1397489879",
+                    "name": "C. Iacobuzio-Donahue"
+                },
+                {
+                    "authorId": "4124096",
+                    "name": "M. Goggins"
+                }
+            ],
+            "doi": "10.1200/JCO.2006.07.8824",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "72eec28a03b4f51579fe39593f7da89458b7bdb9",
+            "title": "Peritumoral fibroblast SPARC expression and patient outcome with resectable pancreatic adenocarcinoma.",
+            "url": "https://www.semanticscholar.org/paper/72eec28a03b4f51579fe39593f7da89458b7bdb9",
+            "venue": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "35216631",
+                    "name": "N. Fukushima"
+                },
+                {
+                    "authorId": "6766864",
+                    "name": "J. Koopmann"
+                },
+                {
+                    "authorId": "5281271",
+                    "name": "N. Sato"
+                },
+                {
+                    "authorId": "144513454",
+                    "name": "N. Prasad"
+                },
+                {
+                    "authorId": "90608082",
+                    "name": "R. Carvalho"
+                },
+                {
+                    "authorId": "10747566",
+                    "name": "S. Leach"
+                },
+                {
+                    "authorId": "5077711",
+                    "name": "R. Hruban"
+                },
+                {
+                    "authorId": "4124096",
+                    "name": "M. Goggins"
+                }
+            ],
+            "doi": "10.1038/modpathol.3800337",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f6e4f2ca8e481ee1a114c5546e0d515497aef0df",
+            "title": "Gene expression alterations in the non-neoplastic parenchyma adjacent to infiltrating pancreatic ductal adenocarcinoma",
+            "url": "https://www.semanticscholar.org/paper/f6e4f2ca8e481ee1a114c5546e0d515497aef0df",
+            "venue": "Modern Pathology",
+            "year": 2005
+        },
+        {
+            "arxivId": "1810.04805",
+            "authors": [
+                {
+                    "authorId": "39172707",
+                    "name": "Jacob Devlin"
+                },
+                {
+                    "authorId": "1744179",
+                    "name": "Ming-Wei Chang"
+                },
+                {
+                    "authorId": "2544107",
+                    "name": "Kenton Lee"
+                },
+                {
+                    "authorId": "3259253",
+                    "name": "Kristina Toutanova"
+                }
+            ],
+            "doi": "10.18653/v1/N19-1423",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "df2b0e26d0599ce3e70df8a9da02e51594e0e992",
+            "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+            "url": "https://www.semanticscholar.org/paper/df2b0e26d0599ce3e70df8a9da02e51594e0e992",
+            "venue": "NAACL",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2217430",
+                    "name": "M. Holschneider"
+                },
+                {
+                    "authorId": "1398530308",
+                    "name": "R. Kronland-Martinet"
+                },
+                {
+                    "authorId": "145515955",
+                    "name": "J. Morlet"
+                },
+                {
+                    "authorId": "1830702",
+                    "name": "P. Tchamitchian"
+                }
+            ],
+            "doi": "10.1007/978-3-642-75988-8_28",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "ef3ed634a28eee78a7e31fc525cf7083e6689345",
+            "title": "A real-time algorithm for signal analysis with the help of the wavelet transform",
+            "url": "https://www.semanticscholar.org/paper/ef3ed634a28eee78a7e31fc525cf7083e6689345",
+            "venue": "",
+            "year": 1989
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Medicine",
+            "source": "external"
+        },
+        {
+            "category": "Engineering",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        },
+        {
+            "category": "Medicine",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Efficient, high-performance semantic segmentation using multi-scale feature extraction",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/834c95244996ff67eb0e428b8c243038999e5a77",
+    "venue": "PLoS ONE",
+    "year": 2020
+}

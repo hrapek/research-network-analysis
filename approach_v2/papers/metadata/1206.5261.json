@@ -1,0 +1,782 @@
+{
+    "abstract": "We present the mixture-of-parents maximum entropy Markov model (MoP-MEMM), a class of directed graphical models extending MEMMs. The MoP-MEMM allows tractable incorporation of long-range dependencies between nodes by restricting the conditional distribution of each node to be a mixture of distributions given the parents. We show how to efficiently compute the exact marginal posterior node distributions, regardless of the range of the dependencies. This enables us to model non-sequential correlations present within text documents, as well as between interconnected documents, such as hyperlinked web pages. We apply the MoP-MEMM to a named entity recognition task and a web page classification task. In each, our model shows significant improvement over the basic MEMM, and is competitive with other long-range sequence models that use approximate inference.",
+    "arxivId": "1206.5261",
+    "authors": [
+        {
+            "authorId": "2313637631",
+            "name": "David S. Rosenberg",
+            "url": "https://www.semanticscholar.org/author/2313637631"
+        },
+        {
+            "authorId": "2313636198",
+            "name": "Dan Klein",
+            "url": "https://www.semanticscholar.org/author/2313636198"
+        },
+        {
+            "authorId": "1685978",
+            "name": "B. Taskar",
+            "url": "https://www.semanticscholar.org/author/1685978"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1690787",
+                    "name": "Chun-Wei Lin"
+                },
+                {
+                    "authorId": "26975284",
+                    "name": "Yinan Shao"
+                },
+                {
+                    "authorId": "2816085",
+                    "name": "Y. Djenouri"
+                },
+                {
+                    "authorId": "1804202",
+                    "name": "Unil Yun"
+                }
+            ],
+            "doi": "10.1016/j.knosys.2020.106548",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "dc34192b847834319e148590c7fb18d49d4c2abe",
+            "title": "ASRNN: A recurrent neural network with an attention model for sequence labeling",
+            "url": "https://www.semanticscholar.org/paper/dc34192b847834319e148590c7fb18d49d4c2abe",
+            "venue": "Knowl. Based Syst.",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1690787",
+                    "name": "Chun-Wei Lin"
+                },
+                {
+                    "authorId": "26975284",
+                    "name": "Yinan Shao"
+                },
+                {
+                    "authorId": "2116922421",
+                    "name": "Ji Zhang"
+                },
+                {
+                    "authorId": "1804202",
+                    "name": "Unil Yun"
+                }
+            ],
+            "doi": "10.1016/j.neucom.2020.04.102",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "3ea233184b19ae53527a624bdd6965ef038b6554",
+            "title": "Enhanced sequence labeling based on latent variable conditional random fields",
+            "url": "https://www.semanticscholar.org/paper/3ea233184b19ae53527a624bdd6965ef038b6554",
+            "venue": "Neurocomputing",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1690787",
+                    "name": "Chun-Wei Lin"
+                },
+                {
+                    "authorId": "26975284",
+                    "name": "Yinan Shao"
+                },
+                {
+                    "authorId": "147792322",
+                    "name": "Philippe Fournier-Viger"
+                },
+                {
+                    "authorId": "1747316",
+                    "name": "H. Fujita"
+                }
+            ],
+            "doi": "10.1016/J.INS.2019.04.059",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2d8ac8ac547f9fd7e79d5679102cb2841f3b3e88",
+            "title": "BILU-NEMH: A BILU neural-encoded mention hypergraph for mention extraction",
+            "url": "https://www.semanticscholar.org/paper/2d8ac8ac547f9fd7e79d5679102cb2841f3b3e88",
+            "venue": "Inf. Sci.",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1690787",
+                    "name": "Chun-Wei Lin"
+                },
+                {
+                    "authorId": "2110420178",
+                    "name": "J. Wu"
+                },
+                {
+                    "authorId": "26975284",
+                    "name": "Yinan Shao"
+                },
+                {
+                    "authorId": "145964270",
+                    "name": "Matin Pirouz"
+                },
+                {
+                    "authorId": "114945298",
+                    "name": "Binbin Zhang"
+                }
+            ],
+            "doi": "10.1007/978-981-15-1758-7_5",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "9da9a3fc2e7c511dcc2850c5d8d5e2eb4eedf1b6",
+            "title": "An Effective BI-encoded Schema for Mention Extraction",
+            "url": "https://www.semanticscholar.org/paper/9da9a3fc2e7c511dcc2850c5d8d5e2eb4eedf1b6",
+            "venue": "MISNC",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1690787",
+                    "name": "Chun-Wei Lin"
+                },
+                {
+                    "authorId": "2110420178",
+                    "name": "J. Wu"
+                },
+                {
+                    "authorId": "26975284",
+                    "name": "Yinan Shao"
+                },
+                {
+                    "authorId": "145964270",
+                    "name": "Matin Pirouz"
+                },
+                {
+                    "authorId": "114945298",
+                    "name": "Binbin Zhang"
+                }
+            ],
+            "doi": "10.1007/978-981-15-1758-7_6",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f6aee248ed89e681ae06077e2528bfa882e60e5a",
+            "title": "A Latent Variable CRF Model for Labeling Prediction",
+            "url": "https://www.semanticscholar.org/paper/f6aee248ed89e681ae06077e2528bfa882e60e5a",
+            "venue": "MISNC",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2067854159",
+                    "name": "Xu Miao"
+                },
+                {
+                    "authorId": "143615848",
+                    "name": "Rajesh P. N. Rao"
+                }
+            ],
+            "doi": "10.1007/s11263-011-0423-5",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "6ab1369c2ef9b721fcd7693cdb3b0f0558b96208",
+            "title": "Fast Structured Prediction Using Large Margin Sigmoid Belief Networks",
+            "url": "https://www.semanticscholar.org/paper/6ab1369c2ef9b721fcd7693cdb3b0f0558b96208",
+            "venue": "International Journal of Computer Vision",
+            "year": 2012
+        },
+        {
+            "arxivId": "1011.4088",
+            "authors": [
+                {
+                    "authorId": "37210858",
+                    "name": "Charles Sutton"
+                },
+                {
+                    "authorId": "143753639",
+                    "name": "A. McCallum"
+                }
+            ],
+            "doi": "10.1561/2200000013",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "eb9c924383aca0d137c736a41271d569a12cf518",
+            "title": "An Introduction to Conditional Random Fields",
+            "url": "https://www.semanticscholar.org/paper/eb9c924383aca0d137c736a41271d569a12cf518",
+            "venue": "Found. Trends Mach. Learn.",
+            "year": 2010
+        },
+        {
+            "arxivId": "1003.4781",
+            "authors": [
+                {
+                    "authorId": "2067854159",
+                    "name": "Xu Miao"
+                },
+                {
+                    "authorId": "143615848",
+                    "name": "Rajesh P. N. Rao"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "6b0f337e34f3e0f30b7039246096d8633a2109ad",
+            "title": "Large Margin Boltzmann Machines and Large Margin Sigmoid Belief Networks",
+            "url": "https://www.semanticscholar.org/paper/6b0f337e34f3e0f30b7039246096d8633a2109ad",
+            "venue": "ArXiv",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2286666287",
+                    "name": "Ming-Tai Wu"
+                },
+                {
+                    "authorId": "2289287676",
+                    "name": "Chun-Wei Lin"
+                },
+                {
+                    "authorId": "26975284",
+                    "name": "Yinan Shao"
+                },
+                {
+                    "authorId": "145964270",
+                    "name": "Matin Pirouz"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "b2fd09fd0b95fe69391f8f7b9ef1fcdc8813689f",
+            "title": "The Sequence Prediction Model of Latent Variable Conditional Random Fields",
+            "url": "https://www.semanticscholar.org/paper/b2fd09fd0b95fe69391f8f7b9ef1fcdc8813689f",
+            "venue": "",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143753639",
+                    "name": "A. McCallum"
+                },
+                {
+                    "authorId": "37210858",
+                    "name": "Charles Sutton"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "5b4510f35b1f0f11edec78969eaf889753cd2bcd",
+            "title": "Efficient training methods for conditional random fields",
+            "url": "https://www.semanticscholar.org/paper/5b4510f35b1f0f11edec78969eaf889753cd2bcd",
+            "venue": "",
+            "year": 2008
+        }
+    ],
+    "corpusId": 2549653,
+    "doi": null,
+    "fieldsOfStudy": [
+        "Computer Science",
+        "Mathematics"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 10,
+    "numCiting": 17,
+    "paperId": "7d745d1d69acb960a110183ec322a33458ef47ad",
+    "references": [
+        {
+            "arxivId": "1207.1409",
+            "authors": [
+                {
+                    "authorId": "37210858",
+                    "name": "Charles Sutton"
+                },
+                {
+                    "authorId": "143753639",
+                    "name": "A. McCallum"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "beb0766d6233836ac1203b224930dc037e2b1dff",
+            "title": "Piecewise Training for Undirected Models",
+            "url": "https://www.semanticscholar.org/paper/beb0766d6233836ac1203b224930dc037e2b1dff",
+            "venue": "UAI",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2784228",
+                    "name": "J. Finkel"
+                },
+                {
+                    "authorId": "3050250",
+                    "name": "Trond Grenager"
+                },
+                {
+                    "authorId": "144783904",
+                    "name": "Christopher D. Manning"
+                }
+            ],
+            "doi": "10.3115/1219840.1219885",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "4f410ab5c8b12b34b38421241366ee456bbebab9",
+            "title": "Incorporating Non-local Information into Information Extraction Systems by Gibbs Sampling",
+            "url": "https://www.semanticscholar.org/paper/4f410ab5c8b12b34b38421241366ee456bbebab9",
+            "venue": "ACL",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3139133",
+                    "name": "Razvan C. Bunescu"
+                },
+                {
+                    "authorId": "1797655",
+                    "name": "R. Mooney"
+                }
+            ],
+            "doi": "10.3115/1218955.1219011",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "f6f9cfb31ab8178456dbc897c812b2d7ad2986f7",
+            "title": "Collective Information Extraction with Relational Markov Networks",
+            "url": "https://www.semanticscholar.org/paper/f6f9cfb31ab8178456dbc897c812b2d7ad2986f7",
+            "venue": "ACL",
+            "year": 2004
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "37210858",
+                    "name": "Charles Sutton"
+                },
+                {
+                    "authorId": "143753639",
+                    "name": "A. McCallum"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "result",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "4488e3309517d119080e143f3729106e4bb6d444",
+            "title": "Collective Segmentation and Labeling of Distant Entities in Information Extraction",
+            "url": "https://www.semanticscholar.org/paper/4488e3309517d119080e143f3729106e4bb6d444",
+            "venue": "",
+            "year": 2004
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1733593",
+                    "name": "J. Curran"
+                },
+                {
+                    "authorId": "144523372",
+                    "name": "S. Clark"
+                }
+            ],
+            "doi": "10.3115/1119176.1119200",
+            "intent": [
+                "result"
+            ],
+            "isInfluential": false,
+            "paperId": "691414980e2575b6788578ed300fb6f1d39d5a72",
+            "title": "Language Independent NER using a Maximum Entropy Tagger",
+            "url": "https://www.semanticscholar.org/paper/691414980e2575b6788578ed300fb6f1d39d5a72",
+            "venue": "CoNLL",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145804005",
+                    "name": "Robert Malouf"
+                }
+            ],
+            "doi": "10.3115/1118853.1118872",
+            "intent": [
+                "result"
+            ],
+            "isInfluential": false,
+            "paperId": "2c9d90880a035d78e6b272ff5388aaf64c111a8a",
+            "title": "Markov Models for Language-independent Named Entity Recognition",
+            "url": "https://www.semanticscholar.org/paper/2c9d90880a035d78e6b272ff5388aaf64c111a8a",
+            "venue": "CoNLL",
+            "year": 2002
+        },
+        {
+            "arxivId": "1301.0604",
+            "authors": [
+                {
+                    "authorId": "1685978",
+                    "name": "B. Taskar"
+                },
+                {
+                    "authorId": "1689992",
+                    "name": "P. Abbeel"
+                },
+                {
+                    "authorId": "1736370",
+                    "name": "D. Koller"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "result",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "9cc36397e1fef5c922d64e88211a7e08ecc64759",
+            "title": "Discriminative Probabilistic Models for Relational Data",
+            "url": "https://www.semanticscholar.org/paper/9cc36397e1fef5c922d64e88211a7e08ecc64759",
+            "venue": "UAI",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144695232",
+                    "name": "S. Kakade"
+                },
+                {
+                    "authorId": "1725303",
+                    "name": "Y. Teh"
+                },
+                {
+                    "authorId": "9330607",
+                    "name": "S. Roweis"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "16477724d72072898c9c9d7fb75e21c6ee54ff38",
+            "title": "An Alternate Objective Function for Markovian Fields",
+            "url": "https://www.semanticscholar.org/paper/16477724d72072898c9c9d7fb75e21c6ee54ff38",
+            "venue": "ICML",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1685978",
+                    "name": "B. Taskar"
+                },
+                {
+                    "authorId": "143991343",
+                    "name": "E. Segal"
+                },
+                {
+                    "authorId": "1736370",
+                    "name": "D. Koller"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "311f963e8bee972f13b9dc6c59f139ee3c733582",
+            "title": "Probabilistic Classification and Clustering in Relational Data",
+            "url": "https://www.semanticscholar.org/paper/311f963e8bee972f13b9dc6c59f139ee3c733582",
+            "venue": "IJCAI",
+            "year": 2001
+        },
+        {
+            "arxivId": "1301.2301",
+            "authors": [
+                {
+                    "authorId": "145668856",
+                    "name": "Avi Pfeffer"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "093567a2f900a181a613edb77a27ace8f4fb7dcf",
+            "title": "Sufficiency, Separability and Temporal Probabilistic Models",
+            "url": "https://www.semanticscholar.org/paper/093567a2f900a181a613edb77a27ace8f4fb7dcf",
+            "venue": "UAI",
+            "year": 2001
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1739581",
+                    "name": "J. Lafferty"
+                },
+                {
+                    "authorId": "143753639",
+                    "name": "A. McCallum"
+                },
+                {
+                    "authorId": "113414328",
+                    "name": "Fernando Pereira"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f4ba954b0412773d047dc41231c733de0c1f4926",
+            "title": "Conditional Random Fields: Probabilistic Models for Segmenting and Labeling Sequence Data",
+            "url": "https://www.semanticscholar.org/paper/f4ba954b0412773d047dc41231c733de0c1f4926",
+            "venue": "ICML",
+            "year": 2001
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1682522",
+                    "name": "Se\u00e1n Slattery"
+                },
+                {
+                    "authorId": "40975594",
+                    "name": "Tom Michael Mitchell"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "95dacab16a2f93cc60c4e9c202196972dc951795",
+            "title": "Discovering Test Set Regularities in Relational Domains",
+            "url": "https://www.semanticscholar.org/paper/95dacab16a2f93cc60c4e9c202196972dc951795",
+            "venue": "ICML",
+            "year": 2000
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143753639",
+                    "name": "A. McCallum"
+                },
+                {
+                    "authorId": "1758106",
+                    "name": "Dayne Freitag"
+                },
+                {
+                    "authorId": "145366908",
+                    "name": "Fernando C Pereira"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "bece46ed303f8eaef2affae2cba4e0aef51fe636",
+            "title": "Maximum Entropy Markov Models for Information Extraction and Segmentation",
+            "url": "https://www.semanticscholar.org/paper/bece46ed303f8eaef2affae2cba4e0aef51fe636",
+            "venue": "ICML",
+            "year": 2000
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144557047",
+                    "name": "M. Craven"
+                },
+                {
+                    "authorId": "2922396",
+                    "name": "Dan DiPasquo"
+                },
+                {
+                    "authorId": "1758106",
+                    "name": "Dayne Freitag"
+                },
+                {
+                    "authorId": "143753639",
+                    "name": "A. McCallum"
+                },
+                {
+                    "authorId": "40975594",
+                    "name": "Tom Michael Mitchell"
+                },
+                {
+                    "authorId": "145172877",
+                    "name": "K. Nigam"
+                },
+                {
+                    "authorId": "1682522",
+                    "name": "Se\u00e1n Slattery"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "8446830f3c05b97c4d12a0751c022d1ae6a5115b",
+            "title": "Learning to Extract Symbolic Knowledge from the World Wide Web",
+            "url": "https://www.semanticscholar.org/paper/8446830f3c05b97c4d12a0751c022d1ae6a5115b",
+            "venue": "AAAI/IAAI",
+            "year": 1998
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "40941894",
+                    "name": "Soumen Chakrabarti"
+                },
+                {
+                    "authorId": "1786444",
+                    "name": "B. Dom"
+                },
+                {
+                    "authorId": "1688317",
+                    "name": "P. Indyk"
+                }
+            ],
+            "doi": "10.1145/276304.276332",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "3261bb81085f59efae1e1c72453c47daaee777ac",
+            "title": "Enhanced hypertext categorization using hyperlinks",
+            "url": "https://www.semanticscholar.org/paper/3261bb81085f59efae1e1c72453c47daaee777ac",
+            "venue": "SIGMOD '98",
+            "year": 1998
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1746034",
+                    "name": "L. Getoor"
+                },
+                {
+                    "authorId": "143991343",
+                    "name": "E. Segal"
+                },
+                {
+                    "authorId": "1685978",
+                    "name": "B. Taskar"
+                },
+                {
+                    "authorId": "1736370",
+                    "name": "D. Koller"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "991dc062c3fcfbe98e27e769843548be63fa8299",
+            "title": "Probabilistic Models of Text and Link Structure for Hypertext Classification",
+            "url": "https://www.semanticscholar.org/paper/991dc062c3fcfbe98e27e769843548be63fa8299",
+            "venue": "",
+            "year": 2001
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144050371",
+                    "name": "Jennifer Neville"
+                },
+                {
+                    "authorId": "144774129",
+                    "name": "David D. Jensen"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "fc168ffb0eaa4074e91ca481e9788e554e7ae616",
+            "title": "Iterative Classification in Relational Data",
+            "url": "https://www.semanticscholar.org/paper/fc168ffb0eaa4074e91ca481e9788e554e7ae616",
+            "venue": "",
+            "year": 2000
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Mathematics",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        },
+        {
+            "category": "Mathematics",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Mixture-of-Parents Maximum Entropy Markov Models",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/7d745d1d69acb960a110183ec322a33458ef47ad",
+    "venue": "Conference on Uncertainty in Artificial Intelligence",
+    "year": 2007
+}

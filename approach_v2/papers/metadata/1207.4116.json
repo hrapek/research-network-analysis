@@ -1,0 +1,1630 @@
+{
+    "abstract": "We present a major improvement to the incremental pruning algorithm for solving partially observable Markov decision processes. Our technique targets the cross-sum step of the dynamic programming (DP) update, a key source of complexity in POMDP algorithms. Instead of reasoning about the whole belief space when pruning the cross-sums, our algorithm divides the belief space into smaller regions and performs independent pruning in each region. We evaluate the benefits of the new technique both analytically and experimentally, and show that it produces very significant performance gains. The results contribute to the scalability of POMDP algorithms to domains that cannot be handled by the best existing techniques.",
+    "arxivId": "1207.4116",
+    "authors": [
+        {
+            "authorId": "40648606",
+            "name": "Z. Feng",
+            "url": "https://www.semanticscholar.org/author/40648606"
+        },
+        {
+            "authorId": "1707550",
+            "name": "S. Zilberstein",
+            "url": "https://www.semanticscholar.org/author/1707550"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2144612696",
+                    "name": "Hao Zhang"
+                }
+            ],
+            "doi": "10.2139/ssrn.3679048",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "e0a3d982cfc05c99b0720b852a4d1c484d20698d",
+            "title": "A New Methodology for the Study of Dynamic Decision-Making with a Continuous Unknown Parameter",
+            "url": "https://www.semanticscholar.org/paper/e0a3d982cfc05c99b0720b852a4d1c484d20698d",
+            "venue": "",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3110000",
+                    "name": "E. Walraven"
+                }
+            ],
+            "doi": "10.4233/UUID:EA79BA64-262F-4696-ABDA-F7D143B97BC9",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "1208c39b6adaf7be450047c09afdb0d7013c1e97",
+            "title": "Planning under Uncertainty in Constrained and Partially Observable Environments",
+            "url": "https://www.semanticscholar.org/paper/1208c39b6adaf7be450047c09afdb0d7013c1e97",
+            "venue": "",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "102871627",
+                    "name": "Razieh Ghandali"
+                },
+                {
+                    "authorId": "2097869302",
+                    "name": "M. Abooie"
+                },
+                {
+                    "authorId": "2246509035",
+                    "name": "Mohammad Saber Fallah Nezhad"
+                }
+            ],
+            "doi": "10.24200/SCI.2018.5490.1306",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d23cf91a2e1d44b9162090d7c226e17717e1c48b",
+            "title": "A POMDP framework to find Optimal Policy in Sustainable Maintenance",
+            "url": "https://www.semanticscholar.org/paper/d23cf91a2e1d44b9162090d7c226e17717e1c48b",
+            "venue": "Scientia Iranica",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1917202",
+                    "name": "D. Roijers"
+                },
+                {
+                    "authorId": "3110000",
+                    "name": "E. Walraven"
+                },
+                {
+                    "authorId": "1723205",
+                    "name": "M. Spaan"
+                }
+            ],
+            "doi": "10.1609/icaps.v28i1.13903",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "0fdfff41d1fbfa2dc418a1dbb3298ad3d5dc9405",
+            "title": "Bootstrapping LPs in Value Iteration for Multi-Objective and Partially Observable MDPs",
+            "url": "https://www.semanticscholar.org/paper/0fdfff41d1fbfa2dc418a1dbb3298ad3d5dc9405",
+            "venue": "ICAPS",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2096503",
+                    "name": "S. Saghafian"
+                }
+            ],
+            "doi": "10.2139/ssrn.2508776",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "8eb1f25984dd8fd98b7e5330a1c753eb3ee73a31",
+            "title": "Ambiguous Partially Observable Markov Decision Processes: Structural Results and Applications",
+            "url": "https://www.semanticscholar.org/paper/8eb1f25984dd8fd98b7e5330a1c753eb3ee73a31",
+            "venue": "J. Econ. Theory",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3110000",
+                    "name": "E. Walraven"
+                },
+                {
+                    "authorId": "1723205",
+                    "name": "M. Spaan"
+                }
+            ],
+            "doi": "10.1609/aaai.v31i1.11032",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "2de577e244d58ff0d61b53466b2c4f56d4798a36",
+            "title": "Accelerated Vector Pruning for Optimal POMDP Solvers",
+            "url": "https://www.semanticscholar.org/paper/2de577e244d58ff0d61b53466b2c4f56d4798a36",
+            "venue": "AAAI",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3454906",
+                    "name": "Selim \u00d6zgen"
+                },
+                {
+                    "authorId": "1780086",
+                    "name": "M. Demirekler"
+                }
+            ],
+            "doi": "10.1007/978-3-319-46073-4_5",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "15bb5bcb8f0981e4ba466f715e52435de4489c07",
+            "title": "A Fast Elimination Method for Pruning in POMDPs",
+            "url": "https://www.semanticscholar.org/paper/15bb5bcb8f0981e4ba466f715e52435de4489c07",
+            "venue": "KI",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2339513",
+                    "name": "Yanling Chang"
+                },
+                {
+                    "authorId": "1728427",
+                    "name": "A. Erera"
+                },
+                {
+                    "authorId": "1720311",
+                    "name": "C. White"
+                }
+            ],
+            "doi": "10.1007/s10479-015-1935-0",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ea68fa7e69f4a05aab5131376e63cc5205e927ad",
+            "title": "A leader\u2013follower partially observed, multiobjective Markov game",
+            "url": "https://www.semanticscholar.org/paper/ea68fa7e69f4a05aab5131376e63cc5205e927ad",
+            "venue": "Annals of Operations Research",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1917202",
+                    "name": "D. Roijers"
+                },
+                {
+                    "authorId": "1766767",
+                    "name": "Shimon Whiteson"
+                },
+                {
+                    "authorId": "1799949",
+                    "name": "F. Oliehoek"
+                }
+            ],
+            "doi": "10.5555/2615731.2617454",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2f0dd03646dc4d9bb55dc78f8c5a7f7dae92e78d",
+            "title": "Linear support for multi-objective coordination graphs",
+            "url": "https://www.semanticscholar.org/paper/2f0dd03646dc4d9bb55dc78f8c5a7f7dae92e78d",
+            "venue": "AAMAS",
+            "year": 2014
+        },
+        {
+            "arxivId": "1404.4388",
+            "authors": [
+                {
+                    "authorId": "2339513",
+                    "name": "Yanling Chang"
+                },
+                {
+                    "authorId": "1728427",
+                    "name": "A. Erera"
+                },
+                {
+                    "authorId": "1720311",
+                    "name": "C. White"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "74b10823592d4ce940e38375a071aaf678a36d86",
+            "title": "Partially Observed, Multi-objective Markov Games",
+            "url": "https://www.semanticscholar.org/paper/74b10823592d4ce940e38375a071aaf678a36d86",
+            "venue": "ArXiv",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "39719344",
+                    "name": "Bo Wu"
+                },
+                {
+                    "authorId": "49170605",
+                    "name": "Hong-Yan Zheng"
+                },
+                {
+                    "authorId": "120956822",
+                    "name": "Yan-Peng Feng"
+                }
+            ],
+            "doi": "10.4028/www.scientific.net/AMM.513-517.1088",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b6a3f0d4b83b39d2024e167724aa6d64953104bf",
+            "title": "A Novel Point-Based Incremental Pruning Algorithm for POMDP",
+            "url": "https://www.semanticscholar.org/paper/b6a3f0d4b83b39d2024e167724aa6d64953104bf",
+            "venue": "",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1917202",
+                    "name": "D. Roijers"
+                },
+                {
+                    "authorId": "1766767",
+                    "name": "Shimon Whiteson"
+                },
+                {
+                    "authorId": "1799949",
+                    "name": "F. Oliehoek"
+                }
+            ],
+            "doi": "10.1007/978-3-642-41575-3_24",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "0815205cc6d10e93c14a5fb8db70372372b5a37d",
+            "title": "Computing Convex Coverage Sets for Multi-objective Coordination Graphs",
+            "url": "https://www.semanticscholar.org/paper/0815205cc6d10e93c14a5fb8db70372372b5a37d",
+            "venue": "ADT",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1799949",
+                    "name": "F. Oliehoek"
+                },
+                {
+                    "authorId": "1723205",
+                    "name": "M. Spaan"
+                }
+            ],
+            "doi": "10.1609/aaai.v26i1.8257",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "73b8130ac2d39fd4a7b7250cc615f408c65ca0ad",
+            "title": "Tree-Based Solution Methods for Multiagent POMDPs with Delayed Communication",
+            "url": "https://www.semanticscholar.org/paper/73b8130ac2d39fd4a7b7250cc615f408c65ca0ad",
+            "venue": "AAAI",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145087434",
+                    "name": "C. Raphael"
+                },
+                {
+                    "authorId": "1719532",
+                    "name": "Guy Shani"
+                }
+            ],
+            "doi": "10.1007/s10472-012-9302-1",
+            "intent": [],
+            "isInfluential": true,
+            "paperId": "4db75beb2ff26d1ad363b1a663c72dc31177be3a",
+            "title": "The Skyline algorithm for POMDP value function pruning",
+            "url": "https://www.semanticscholar.org/paper/4db75beb2ff26d1ad363b1a663c72dc31177be3a",
+            "venue": "Annals of Mathematics and Artificial Intelligence",
+            "year": 2012
+        },
+        {
+            "arxivId": "1401.3910",
+            "authors": [
+                {
+                    "authorId": "2065774063",
+                    "name": "P. Dai"
+                },
+                {
+                    "authorId": "2674444",
+                    "name": "Mausam"
+                },
+                {
+                    "authorId": "1780531",
+                    "name": "Daniel S. Weld"
+                },
+                {
+                    "authorId": "1715289",
+                    "name": "J. Goldsmith"
+                }
+            ],
+            "doi": "10.1613/jair.3390",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "47d0b2e45674f8c60394fc7278578ea6615baa59",
+            "title": "Topological Value Iteration Algorithms",
+            "url": "https://www.semanticscholar.org/paper/47d0b2e45674f8c60394fc7278578ea6615baa59",
+            "venue": "J. Artif. Intell. Res.",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145240713",
+                    "name": "G. Corona"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "93e7e85677de7aaae86650a640c861bd537c9d5a",
+            "title": "Utilisation de croyances heuristiques pour la planification multi-agent dans le cadre des Dec-POMDP. (Using heuristic belief points for Dec-POMDP planning)",
+            "url": "https://www.semanticscholar.org/paper/93e7e85677de7aaae86650a640c861bd537c9d5a",
+            "venue": "",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1995313",
+                    "name": "J. Marecki"
+                },
+                {
+                    "authorId": "1718467",
+                    "name": "M. Srivatsa"
+                },
+                {
+                    "authorId": "1718824",
+                    "name": "Pradeep Varakantham"
+                }
+            ],
+            "doi": "10.1109/SocialCom.2010.119",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a1a850325e09a322e3de6e8e2de32d8305b183fc",
+            "title": "A Decision Theoretic Approach to Data Leakage Prevention",
+            "url": "https://www.semanticscholar.org/paper/a1a850325e09a322e3de6e8e2de32d8305b183fc",
+            "venue": "2010 IEEE Second International Conference on Social Computing",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3297586",
+                    "name": "M. Kneebone"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "6886a047f72b52a01bce16b2db93408961239fa5",
+            "title": "Probabilistic roadmaps in uncertain environments",
+            "url": "https://www.semanticscholar.org/paper/6886a047f72b52a01bce16b2db93408961239fa5",
+            "venue": "",
+            "year": 2010
+        },
+        {
+            "arxivId": "1203.3477",
+            "authors": [
+                {
+                    "authorId": "2332469601",
+                    "name": "Tom Erez"
+                },
+                {
+                    "authorId": "2332467268",
+                    "name": "William D. Smart"
+                }
+            ],
+            "doi": "10.7936/K7MW2FBD",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "1f958791787c07fd051be65052a1dae13e1b338b",
+            "title": "A Scalable Method for Solving High-Dimensional Continuous POMDPs Using Local Approximation",
+            "url": "https://www.semanticscholar.org/paper/1f958791787c07fd051be65052a1dae13e1b338b",
+            "venue": "UAI",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1995313",
+                    "name": "J. Marecki"
+                },
+                {
+                    "authorId": "1718824",
+                    "name": "Pradeep Varakantham"
+                }
+            ],
+            "doi": "10.1145/1838206.1838384",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a747394aeef779f07197f81204d14d3e2fca3aa1",
+            "title": "Risk-sensitive planning in partially observable environments",
+            "url": "https://www.semanticscholar.org/paper/a747394aeef779f07197f81204d14d3e2fca3aa1",
+            "venue": "AAMAS",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2934864",
+                    "name": "Joshua D. Isom"
+                },
+                {
+                    "authorId": "3281204",
+                    "name": "R. LaBarre"
+                },
+                {
+                    "authorId": "144960825",
+                    "name": "R. Braatz"
+                }
+            ],
+            "doi": "10.1109/CDC.2009.5400106",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "44b21550c5e200646fd305cdf9a779b9c6030ef7",
+            "title": "Polynomial-time solution of change detection problems",
+            "url": "https://www.semanticscholar.org/paper/44b21550c5e200646fd305cdf9a779b9c6030ef7",
+            "venue": "Proceedings of the 48h IEEE Conference on Decision and Control (CDC) held jointly with 2009 28th Chinese Control Conference",
+            "year": 2009
+        },
+        {
+            "arxivId": "1401.3460",
+            "authors": [
+                {
+                    "authorId": "35176432",
+                    "name": "D. Bernstein"
+                },
+                {
+                    "authorId": "34903901",
+                    "name": "Chris Amato"
+                },
+                {
+                    "authorId": "1697031",
+                    "name": "E. Hansen"
+                },
+                {
+                    "authorId": "1707550",
+                    "name": "S. Zilberstein"
+                }
+            ],
+            "doi": "10.1613/jair.2667",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b526da36260339117e7cedda5421dcea0316366f",
+            "title": "Policy Iteration for Decentralized Control of Markov Decision Processes",
+            "url": "https://www.semanticscholar.org/paper/b526da36260339117e7cedda5421dcea0316366f",
+            "venue": "J. Artif. Intell. Res.",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145966986",
+                    "name": "Trung H. Bui"
+                }
+            ],
+            "doi": "10.3990/1.9789036527149",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "27e1031dde8a68e5208c8d485c8f65255995ec42",
+            "title": "Toward affective dialogue management using partially observable Markov decision processes",
+            "url": "https://www.semanticscholar.org/paper/27e1031dde8a68e5208c8d485c8f65255995ec42",
+            "venue": "",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2934864",
+                    "name": "Joshua D. Isom"
+                },
+                {
+                    "authorId": "1695337",
+                    "name": "Sean P. Meyn"
+                },
+                {
+                    "authorId": "144960825",
+                    "name": "R. Braatz"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9c23e807c8d765423832be7467d63f8b6c1ea2f3",
+            "title": "Piecewise Linear Dynamic Programming for Constrained POMDPs",
+            "url": "https://www.semanticscholar.org/paper/9c23e807c8d765423832be7467d63f8b6c1ea2f3",
+            "venue": "AAAI",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "38464020",
+                    "name": "Jer\u00f4nimo Pellegrini"
+                },
+                {
+                    "authorId": "153775132",
+                    "name": "J. Wainer"
+                }
+            ],
+            "doi": "10.22456/2175-2745.5694",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "294f694ae723a787f25043265fb3e660f62c573f",
+            "title": "Processos de Decis\u00e3o de Markov: um tutorial",
+            "url": "https://www.semanticscholar.org/paper/294f694ae723a787f25043265fb3e660f62c573f",
+            "venue": "RITA",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1697031",
+                    "name": "E. Hansen"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "result"
+            ],
+            "isInfluential": false,
+            "paperId": "3d5128bb5ae836b8230a4345282f0c897e8ca76c",
+            "title": "Indefinite-Horizon POMDPs with Action-Based Termination",
+            "url": "https://www.semanticscholar.org/paper/3d5128bb5ae836b8230a4345282f0c897e8ca76c",
+            "venue": "AAAI",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1718824",
+                    "name": "Pradeep Varakantham"
+                },
+                {
+                    "authorId": "1747887",
+                    "name": "R. Maheswaran"
+                },
+                {
+                    "authorId": "2059891",
+                    "name": "Tapana Gupta"
+                },
+                {
+                    "authorId": "143736701",
+                    "name": "Milind Tambe"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "1d47ac1669ac6e1c627c951bd73ccab4660bc58c",
+            "title": "Towards Efficient Computation of Error Bounded Solutions in POMDPs: Expected Value Approximation and Dynamic Disjunctive Beliefs",
+            "url": "https://www.semanticscholar.org/paper/1d47ac1669ac6e1c627c951bd73ccab4660bc58c",
+            "venue": "IJCAI",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1809352",
+                    "name": "D. Szer"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "41eeff8625cdb646bbab266d8b14b8d01b67127c",
+            "title": "Contribution \u00e0 la r\u00e9solution des processus de d\u00e9cision markoviens d\u00e9centralis\u00e9s. (Contribution to the resolution of decentralized Markov decision processes)",
+            "url": "https://www.semanticscholar.org/paper/41eeff8625cdb646bbab266d8b14b8d01b67127c",
+            "venue": "",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1707550",
+                    "name": "S. Zilberstein"
+                }
+            ],
+            "doi": "10.21236/ada456374",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d3e32fcf904a21ceab34c58fdc915856df213244",
+            "title": "The Value of Communication in Decentralized Planning and Control",
+            "url": "https://www.semanticscholar.org/paper/d3e32fcf904a21ceab34c58fdc915856df213244",
+            "venue": "",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1718824",
+                    "name": "Pradeep Varakantham"
+                },
+                {
+                    "authorId": "2691283",
+                    "name": "Ranjit R. Nair"
+                },
+                {
+                    "authorId": "143736701",
+                    "name": "Milind Tambe"
+                },
+                {
+                    "authorId": "144921751",
+                    "name": "M. Yokoo"
+                }
+            ],
+            "doi": "10.1145/1160633.1160683",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "fffce4fe2c8952f1410c368cf3be471f57e38145",
+            "title": "Winning back the CUP for distributed POMDPs: planning over continuous belief spaces",
+            "url": "https://www.semanticscholar.org/paper/fffce4fe2c8952f1410c368cf3be471f57e38145",
+            "venue": "AAMAS '06",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "35176432",
+                    "name": "D. Bernstein"
+                },
+                {
+                    "authorId": "1697031",
+                    "name": "E. Hansen"
+                },
+                {
+                    "authorId": "1707550",
+                    "name": "S. Zilberstein"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d58eb0fcfd9ea793ad12372640cb0201dd9d5ba4",
+            "title": "Bounded Policy Iteration for Decentralized POMDPs",
+            "url": "https://www.semanticscholar.org/paper/d58eb0fcfd9ea793ad12372640cb0201dd9d5ba4",
+            "venue": "IJCAI",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1718824",
+                    "name": "Pradeep Varakantham"
+                },
+                {
+                    "authorId": "1747887",
+                    "name": "R. Maheswaran"
+                },
+                {
+                    "authorId": "143736701",
+                    "name": "Milind Tambe"
+                }
+            ],
+            "doi": "10.1007/11678823_5",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "ab2d9b7e70a2c5631cf2a241d0a3e5ff877d30ad",
+            "title": "Implementation Techniques for Solving POMDPs in Personal Assistant Agents",
+            "url": "https://www.semanticscholar.org/paper/ab2d9b7e70a2c5631cf2a241d0a3e5ff877d30ad",
+            "venue": "PROMAS",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1718824",
+                    "name": "Pradeep Varakantham"
+                },
+                {
+                    "authorId": "1747887",
+                    "name": "R. Maheswaran"
+                },
+                {
+                    "authorId": "143736701",
+                    "name": "Milind Tambe"
+                }
+            ],
+            "doi": "10.1145/1082473.1082621",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "e3ed4bff886a23c25aa1a39b5d28d7ffff3034ed",
+            "title": "Exploiting belief bounds: practical POMDPs for personal assistant agents",
+            "url": "https://www.semanticscholar.org/paper/e3ed4bff886a23c25aa1a39b5d28d7ffff3034ed",
+            "venue": "AAMAS '05",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "40648606",
+                    "name": "Z. Feng"
+                },
+                {
+                    "authorId": "1707550",
+                    "name": "S. Zilberstein"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "64de70d83f8812bde8331036228e88667ccc55ea",
+            "title": "Efficient Maximization in Solving POMDPs",
+            "url": "https://www.semanticscholar.org/paper/64de70d83f8812bde8331036228e88667ccc55ea",
+            "venue": "AAAI",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2144612696",
+                    "name": "Hao Zhang"
+                },
+                {
+                    "authorId": "120658916",
+                    "name": "Sauder"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "58f96b933c1b4ca789ae6364a990b37e34943096",
+            "title": "Dynamic Learning and Decision-Making by the Aid of Basis Weight Frontiers1",
+            "url": "https://www.semanticscholar.org/paper/58f96b933c1b4ca789ae6364a990b37e34943096",
+            "venue": "",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2389770",
+                    "name": "Justin Svegliato"
+                },
+                {
+                    "authorId": "19425012",
+                    "name": "Sam Witty"
+                },
+                {
+                    "authorId": "1972973",
+                    "name": "Amir Houmansadr"
+                },
+                {
+                    "authorId": "1707550",
+                    "name": "S. Zilberstein"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "a4d5b4ceb27684854738042e2854c89186405cd0",
+            "title": "Belief-Space Planning for Automated Malware Defense",
+            "url": "https://www.semanticscholar.org/paper/a4d5b4ceb27684854738042e2854c89186405cd0",
+            "venue": "",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2921349",
+                    "name": "L. Rozonoer"
+                },
+                {
+                    "authorId": "1958263",
+                    "name": "B. Mirkin"
+                },
+                {
+                    "authorId": "1794170",
+                    "name": "I. Muchnik"
+                }
+            ],
+            "doi": "10.1007/978-3-319-99492-5",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "61fbd028f75909dc6ce0e14038fce8265ae00e8c",
+            "title": "Braverman Readings in Machine Learning. Key Ideas from Inception to Current State",
+            "url": "https://www.semanticscholar.org/paper/61fbd028f75909dc6ce0e14038fce8265ae00e8c",
+            "venue": "Lecture Notes in Computer Science",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "14296778",
+                    "name": "Forest Agostinelli"
+                },
+                {
+                    "authorId": "51224836",
+                    "name": "Guillaume Hocquet"
+                },
+                {
+                    "authorId": "34650964",
+                    "name": "Sameer Singh"
+                },
+                {
+                    "authorId": "144902513",
+                    "name": "P. Baldi"
+                }
+            ],
+            "doi": "10.1007/978-3-319-99492-5_13",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "b5182b8e0e643f0c94fd315a6de4b716f18d61d3",
+            "title": "From Reinforcement Learning to Deep Reinforcement Learning: An Overview",
+            "url": "https://www.semanticscholar.org/paper/b5182b8e0e643f0c94fd315a6de4b716f18d61d3",
+            "venue": "Braverman Readings in Machine Learning",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1917202",
+                    "name": "D. Roijers"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "4425633f85c540308c93925eb3335cda3faca2f1",
+            "title": "Multi-objective decision-theoretic planning",
+            "url": "https://www.semanticscholar.org/paper/4425633f85c540308c93925eb3335cda3faca2f1",
+            "venue": "",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1917202",
+                    "name": "D. Roijers"
+                },
+                {
+                    "authorId": "1766767",
+                    "name": "Shimon Whiteson"
+                },
+                {
+                    "authorId": "1799949",
+                    "name": "F. Oliehoek"
+                }
+            ],
+            "doi": "10.1613/jair.4550",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "4751faa0b5ababf2626d7e26c583129edf7acfcb",
+            "title": "Computing Convex Coverage Sets for Faster Multi-objective Coordination",
+            "url": "https://www.semanticscholar.org/paper/4751faa0b5ababf2626d7e26c583129edf7acfcb",
+            "venue": "J. Artif. Intell. Res.",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1688150",
+                    "name": "P. Perny"
+                },
+                {
+                    "authorId": "2592427",
+                    "name": "M. Pirlot"
+                },
+                {
+                    "authorId": "2893029",
+                    "name": "A. Tsouki\u00e1s"
+                }
+            ],
+            "doi": "10.1007/978-3-642-41575-3",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "38fc0cdd4e7a1e80a2887d6e375dc010354e4acf",
+            "title": "Algorithmic Decision Theory: Third International Conference, ADT 2013, Bruxelles, Belgium, November 12-14, 2013, Proceedings",
+            "url": "https://www.semanticscholar.org/paper/38fc0cdd4e7a1e80a2887d6e375dc010354e4acf",
+            "venue": "ADT",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1723205",
+                    "name": "M. Spaan"
+                }
+            ],
+            "doi": "10.1007/978-3-642-27645-3_12",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ce2afa4c57366952d7885e3418650f1f54f92387",
+            "title": "Partially Observable Markov Decision Processes",
+            "url": "https://www.semanticscholar.org/paper/ce2afa4c57366952d7885e3418650f1f54f92387",
+            "venue": "Reinforcement Learning",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1780531",
+                    "name": "Daniel S. Weld"
+                },
+                {
+                    "authorId": "2065774063",
+                    "name": "P. Dai"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "a3b067f1580b32265beeb2cb432c923a8db160ea",
+            "title": "Decision making under uncertainty: scalability and applications",
+            "url": "https://www.semanticscholar.org/paper/a3b067f1580b32265beeb2cb432c923a8db160ea",
+            "venue": "",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1707550",
+                    "name": "S. Zilberstein"
+                },
+                {
+                    "authorId": "145630605",
+                    "name": "Marek Petrik"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f40aefa4af5e770afc205cb3cd42955138807b71",
+            "title": "Optimization-based approximate dynamic programming",
+            "url": "https://www.semanticscholar.org/paper/f40aefa4af5e770afc205cb3cd42955138807b71",
+            "venue": "",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1682058",
+                    "name": "H. Zhang"
+                }
+            ],
+            "doi": "10.1287/opre.1090.0697",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7816d9eb7c332b9305d5e4d5da3bad992e689cac",
+            "title": "Partially Observable Markov Decision Processes: A Geometric Technique and Analysis",
+            "url": "https://www.semanticscholar.org/paper/7816d9eb7c332b9305d5e4d5da3bad992e689cac",
+            "venue": "Oper. Res.",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5ac90b449efcea007d71c2cd8e073f58408d3cb3",
+            "title": "Risk-Sensitive Planning in Partially Observable Environments Tracking number : 196",
+            "url": "https://www.semanticscholar.org/paper/5ac90b449efcea007d71c2cd8e073f58408d3cb3",
+            "venue": "",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1707550",
+                    "name": "S. Zilberstein"
+                },
+                {
+                    "authorId": "2379338",
+                    "name": "M. Allen"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "2c2bbfc4155fbd96419ccaa47ad725c949896feb",
+            "title": "Agent interactions in decentralized environments",
+            "url": "https://www.semanticscholar.org/paper/2c2bbfc4155fbd96419ccaa47ad725c949896feb",
+            "venue": "",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2000282184",
+                    "name": "M. Allen"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "8c586105ad3c2c70f21bd4f630c3c2ef8dc96195",
+            "title": "Interactions in Decentralized Environments",
+            "url": "https://www.semanticscholar.org/paper/8c586105ad3c2c70f21bd4f630c3c2ef8dc96195",
+            "venue": "",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144960825",
+                    "name": "R. Braatz"
+                },
+                {
+                    "authorId": "2934864",
+                    "name": "Joshua D. Isom"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "1c992f22aafc510476a6a87fc0a392f8127353e1",
+            "title": "Exact solution of bayes and minimax change-detection problems",
+            "url": "https://www.semanticscholar.org/paper/1c992f22aafc510476a6a87fc0a392f8127353e1",
+            "venue": "",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143736701",
+                    "name": "Milind Tambe"
+                },
+                {
+                    "authorId": "1718824",
+                    "name": "Pradeep Varakantham"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "e022b29d88ce8905673f4f65a62ad4267e593298",
+            "title": "Towards efficient planning for real world partially observable domains",
+            "url": "https://www.semanticscholar.org/paper/e022b29d88ce8905673f4f65a62ad4267e593298",
+            "venue": "",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "40648606",
+                    "name": "Z. Feng"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "659390d889005c890ec5efce6d468ac771d2b6fe",
+            "title": "Region-Based Dynamic Programming for POMDPs",
+            "url": "https://www.semanticscholar.org/paper/659390d889005c890ec5efce6d468ac771d2b6fe",
+            "venue": "AI&M",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "40648606",
+                    "name": "Z. Feng"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "937ff00040310922350fdc77c891876fbfef4417",
+            "title": "Region-Based Dynamic Programming for POMDPs.",
+            "url": "https://www.semanticscholar.org/paper/937ff00040310922350fdc77c891876fbfef4417",
+            "venue": "",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1718824",
+                    "name": "Pradeep Varakantham"
+                },
+                {
+                    "authorId": "1747887",
+                    "name": "R. Maheswaran"
+                },
+                {
+                    "authorId": "143736701",
+                    "name": "Milind Tambe"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "711181186ab685852b07c27437225264164271f8",
+            "title": "Implementation Techniques for Solving POMDPs in Personal Assistant Domains",
+            "url": "https://www.semanticscholar.org/paper/711181186ab685852b07c27437225264164271f8",
+            "venue": "",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1718824",
+                    "name": "Pradeep Varakantham"
+                },
+                {
+                    "authorId": "1747887",
+                    "name": "R. Maheswaran"
+                },
+                {
+                    "authorId": "143736701",
+                    "name": "Milind Tambe"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "4364ad6a53f67a2a07772fab08331e1f53b415a2",
+            "title": "Practical POMDPs for Personal Assistant Domains",
+            "url": "https://www.semanticscholar.org/paper/4364ad6a53f67a2a07772fab08331e1f53b415a2",
+            "venue": "AAAI Spring Symposium: Persistent Assistants: Living and Working with AI",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2009148",
+                    "name": "Emmanuel Benazera"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "b6d11ef7d0b3c02b2ef65b281fed9ad19adb8b4f",
+            "title": "Alternatives to Re-Planning: Methods for Plan Re-Evaluation at Runtime",
+            "url": "https://www.semanticscholar.org/paper/b6d11ef7d0b3c02b2ef65b281fed9ad19adb8b4f",
+            "venue": "",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "35176432",
+                    "name": "D. Bernstein"
+                },
+                {
+                    "authorId": "1707550",
+                    "name": "S. Zilberstein"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0e1b3a0b8589a30e44f181f0c14cdfb611e809d5",
+            "title": "Complexity analysis and optimal algorithms for decentralized decision making",
+            "url": "https://www.semanticscholar.org/paper/0e1b3a0b8589a30e44f181f0c14cdfb611e809d5",
+            "venue": "",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "40648606",
+                    "name": "Z. Feng"
+                },
+                {
+                    "authorId": "1707550",
+                    "name": "S. Zilberstein"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c30f6e85549819bbbf81b989ebb46e1338c73221",
+            "title": "The role of representation and abstraction in stochastic planning",
+            "url": "https://www.semanticscholar.org/paper/c30f6e85549819bbbf81b989ebb46e1338c73221",
+            "venue": "",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "40648606",
+                    "name": "Z. Feng"
+                },
+                {
+                    "authorId": "1697031",
+                    "name": "E. Hansen"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "138b1168d12217ad17e7057e3e5ffe513444ccfd",
+            "title": "An Approach to State Aggregation for POMDPs",
+            "url": "https://www.semanticscholar.org/paper/138b1168d12217ad17e7057e3e5ffe513444ccfd",
+            "venue": "",
+            "year": 2004
+        }
+    ],
+    "corpusId": 11935052,
+    "doi": null,
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 8,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 59,
+    "numCiting": 11,
+    "paperId": "bd6b153d8a1f54b6dac26cf80c23b24c1621e827",
+    "references": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "40648606",
+                    "name": "Z. Feng"
+                },
+                {
+                    "authorId": "1697031",
+                    "name": "E. Hansen"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "b07491fbae30844c7e28ff9ccdd9360fa6e3539f",
+            "title": "Approximate Planning for Factored POMDPs",
+            "url": "https://www.semanticscholar.org/paper/b07491fbae30844c7e28ff9ccdd9360fa6e3539f",
+            "venue": "",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1697031",
+                    "name": "E. Hansen"
+                },
+                {
+                    "authorId": "40648606",
+                    "name": "Z. Feng"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "fe616ed3e042e181f2082090e761daab7bd9d235",
+            "title": "Dynamic Programming for POMDPs Using a Factored State Representation",
+            "url": "https://www.semanticscholar.org/paper/fe616ed3e042e181f2082090e761daab7bd9d235",
+            "venue": "AIPS",
+            "year": 2000
+        },
+        {
+            "arxivId": "1302.1525",
+            "authors": [
+                {
+                    "authorId": "2453007",
+                    "name": "A. Cassandra"
+                },
+                {
+                    "authorId": "144885169",
+                    "name": "M. Littman"
+                },
+                {
+                    "authorId": "3587277",
+                    "name": "N. Zhang"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "ad7ace68720f7dc2fbc8474cd3f6e3a734973c22",
+            "title": "Incremental Pruning: A Simple, Fast, Exact Method for Partially Observable Markov Decision Processes",
+            "url": "https://www.semanticscholar.org/paper/ad7ace68720f7dc2fbc8474cd3f6e3a734973c22",
+            "venue": "UAI",
+            "year": 1997
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144885169",
+                    "name": "M. Littman"
+                },
+                {
+                    "authorId": "2453007",
+                    "name": "A. Cassandra"
+                },
+                {
+                    "authorId": "1709512",
+                    "name": "L. Kaelbling"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ff202a7a7bed4df8866900a66b50bc1cf56c0058",
+            "title": "Efficient dynamic-programming updates in partially observable Markov decision processes",
+            "url": "https://www.semanticscholar.org/paper/ff202a7a7bed4df8866900a66b50bc1cf56c0058",
+            "venue": "",
+            "year": 1995
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144885169",
+                    "name": "M. Littman"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "c255afb5b1fd741be4f41b5138229f789a56fece",
+            "title": "The Witness Algorithm: Solving Partially Observable Markov Decision Processes",
+            "url": "https://www.semanticscholar.org/paper/c255afb5b1fd741be4f41b5138229f789a56fece",
+            "venue": "",
+            "year": 1994
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1720311",
+                    "name": "C. White"
+                }
+            ],
+            "doi": "10.1007/BF02204836",
+            "intent": [
+                "result",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "3781c80f888a9dca69b51089be1554931532fb5d",
+            "title": "A survey of solution techniques for the partially observed Markov decision process",
+            "url": "https://www.semanticscholar.org/paper/3781c80f888a9dca69b51089be1554931532fb5d",
+            "venue": "Ann. Oper. Res.",
+            "year": 1991
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "47753224",
+                    "name": "R. Smallwood"
+                },
+                {
+                    "authorId": "3395263",
+                    "name": "E. Sondik"
+                }
+            ],
+            "doi": "10.1287/opre.21.5.1071",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "450b0047c7314cb47b1b1bf1d081d9472acaa0e4",
+            "title": "The Optimal Control of Partially Observable Markov Processes over a Finite Horizon",
+            "url": "https://www.semanticscholar.org/paper/450b0047c7314cb47b1b1bf1d081d9472acaa0e4",
+            "venue": "Oper. Res.",
+            "year": 1973
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1709512",
+                    "name": "L. Kaelbling"
+                },
+                {
+                    "authorId": "2453007",
+                    "name": "A. Cassandra"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "bd5faed84e43399d465e6133016f374842e8c352",
+            "title": "Exact and approximate algorithms for partially observable markov decision processes",
+            "url": "https://www.semanticscholar.org/paper/bd5faed84e43399d465e6133016f374842e8c352",
+            "venue": "",
+            "year": 1998
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1697031",
+                    "name": "E. Hansen"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "709484ffbf8d52d8a4b755288d688683f366b81b",
+            "title": "An Improved Policy Iteratioll Algorithm for Partially Observable MDPs",
+            "url": "https://www.semanticscholar.org/paper/709484ffbf8d52d8a4b755288d688683f366b81b",
+            "venue": "",
+            "year": 1997
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3587277",
+                    "name": "N. Zhang"
+                },
+                {
+                    "authorId": "2218890984",
+                    "name": "Wenju Liu"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "2ec51d6c70bee13c75761ace0467b4bb9856d0df",
+            "title": "Planning in Stochastic Domains: Problem Characteristics and Approximation",
+            "url": "https://www.semanticscholar.org/paper/2ec51d6c70bee13c75761ace0467b4bb9856d0df",
+            "venue": "",
+            "year": 1996
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Region-Based Incremental Pruning for POMDPs",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/bd6b153d8a1f54b6dac26cf80c23b24c1621e827",
+    "venue": "Conference on Uncertainty in Artificial Intelligence",
+    "year": 2004
+}

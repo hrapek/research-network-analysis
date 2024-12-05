@@ -1,0 +1,695 @@
+{
+    "abstract": "The Abstraction and Reasoning Corpus (ARC) is a general artificial intelligence benchmark that poses difficulties for pure machine learning methods due to its requirement for fluid intelligence with a focus on reasoning and abstraction. In this work, we introduce an ARC solver, Generalized Planning for Abstract Reasoning (GPAR). It casts an ARC problem as a generalized planning (GP) problem, where a solution is formalized as a planning program with pointers. We express each ARC problem using the standard Planning Domain Definition Language (PDDL) coupled with external functions representing object-centric abstractions. We show how to scale up GP solvers via domain knowledge specific to ARC in the form of restrictions over the actions model, predicates, arguments and valid structure of planning programs. Our experiments demonstrate that GPAR outperforms the state-of-the-art solvers on the object-centric tasks of the ARC, showing the effectiveness of GP and the expressiveness of PDDL to model ARC problems. The challenges provided by the ARC benchmark motivate research to advance existing GP solvers and understand new relations with other planning computational models. Code is available at github.com/you68681/GPAR.",
+    "arxivId": "2401.07426",
+    "authors": [
+        {
+            "authorId": "2279547679",
+            "name": "Chao Lei",
+            "url": "https://www.semanticscholar.org/author/2279547679"
+        },
+        {
+            "authorId": "1700694",
+            "name": "N. Lipovetzky",
+            "url": "https://www.semanticscholar.org/author/1700694"
+        },
+        {
+            "authorId": "2028219350",
+            "name": "Krista A. Ehinger",
+            "url": "https://www.semanticscholar.org/author/2028219350"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": "2411.14503",
+            "authors": [
+                {
+                    "authorId": "2279547679",
+                    "name": "Chao Lei"
+                },
+                {
+                    "authorId": "2332043003",
+                    "name": "Yanchuan Chang"
+                },
+                {
+                    "authorId": "1700694",
+                    "name": "N. Lipovetzky"
+                },
+                {
+                    "authorId": "2028219350",
+                    "name": "Krista A. Ehinger"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d901b765310bbaacacae8b525ebc0b38a1ded087",
+            "title": "Planning-Driven Programming: A Large Language Model Programming Workflow",
+            "url": "https://www.semanticscholar.org/paper/d901b765310bbaacacae8b525ebc0b38a1ded087",
+            "venue": "",
+            "year": 2024
+        },
+        {
+            "arxivId": "2410.07866",
+            "authors": [
+                {
+                    "authorId": "2220126432",
+                    "name": "Sejin Kim"
+                },
+                {
+                    "authorId": "2281283297",
+                    "name": "Sundong Kim"
+                }
+            ],
+            "doi": "10.48550/arXiv.2410.07866",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9fb35d68172fb0d9af698915514c691806de6aa3",
+            "title": "System-2 Reasoning via Generality and Adaptation",
+            "url": "https://www.semanticscholar.org/paper/9fb35d68172fb0d9af698915514c691806de6aa3",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": "2410.06405",
+            "authors": [
+                {
+                    "authorId": "2325115684",
+                    "name": "Wenhao Li"
+                },
+                {
+                    "authorId": "47103635",
+                    "name": "Yudong Xu"
+                },
+                {
+                    "authorId": "2325096915",
+                    "name": "Scott Sanner"
+                },
+                {
+                    "authorId": "2325096269",
+                    "name": "Elias Boutros Khalil"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "73d17906c62d3d32be9908b61007821cbc0756e8",
+            "title": "Tackling the Abstraction and Reasoning Corpus with Vision Transformers: the Importance of 2D Representation, Positions, and Objects",
+            "url": "https://www.semanticscholar.org/paper/73d17906c62d3d32be9908b61007821cbc0756e8",
+            "venue": "",
+            "year": 2024
+        },
+        {
+            "arxivId": "2408.12212",
+            "authors": [
+                {
+                    "authorId": "51209414",
+                    "name": "C\u00e9line Hocquette"
+                },
+                {
+                    "authorId": "2285619860",
+                    "name": "Andrew Cropper"
+                }
+            ],
+            "doi": "10.48550/arXiv.2408.12212",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b36d6d1511c312de5a915f6392e0ca99fe20ef9f",
+            "title": "Relational decomposition for program synthesis",
+            "url": "https://www.semanticscholar.org/paper/b36d6d1511c312de5a915f6392e0ca99fe20ef9f",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": "2405.15880",
+            "authors": [
+                {
+                    "authorId": "115508430",
+                    "name": "Shraddha Barke"
+                },
+                {
+                    "authorId": "2303438153",
+                    "name": "Emmanuel Anaya Gonzalez"
+                },
+                {
+                    "authorId": "73097539",
+                    "name": "Saketh Ram Kasibatla"
+                },
+                {
+                    "authorId": "2303399361",
+                    "name": "Taylor Berg-Kirkpatrick"
+                },
+                {
+                    "authorId": "2258443511",
+                    "name": "Nadia Polikarpova"
+                }
+            ],
+            "doi": "10.48550/arXiv.2405.15880",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "5f8b4e2e8c337447bfbcf47044af4a1d5f75f41e",
+            "title": "HYSYNTH: Context-Free LLM Approximation for Guiding Program Synthesis",
+            "url": "https://www.semanticscholar.org/paper/5f8b4e2e8c337447bfbcf47044af4a1d5f75f41e",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": "2405.06399",
+            "authors": [
+                {
+                    "authorId": "2301015920",
+                    "name": "Filipe Marinho Rocha"
+                },
+                {
+                    "authorId": "2301015990",
+                    "name": "Ines Dutra"
+                },
+                {
+                    "authorId": "2301015853",
+                    "name": "V'itor Santos Costa"
+                }
+            ],
+            "doi": "10.48550/arXiv.2405.06399",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9e0a67656039e60e72d820c0036f77a0f8db58b6",
+            "title": "Program Synthesis using Inductive Logic Programming for the Abstraction and Reasoning Corpus",
+            "url": "https://www.semanticscholar.org/paper/9e0a67656039e60e72d820c0036f77a0f8db58b6",
+            "venue": "ArXiv",
+            "year": 2024
+        }
+    ],
+    "corpusId": 266999879,
+    "doi": "10.48550/arXiv.2401.07426",
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 6,
+    "numCiting": 20,
+    "paperId": "0d870d878cfe92e9993ce987a74fe322926e4927",
+    "references": [
+        {
+            "arxivId": "2307.00735",
+            "authors": [
+                {
+                    "authorId": "47500328",
+                    "name": "C. Lei"
+                },
+                {
+                    "authorId": "1700694",
+                    "name": "N. Lipovetzky"
+                },
+                {
+                    "authorId": "2028219350",
+                    "name": "Krista A. Ehinger"
+                }
+            ],
+            "doi": "10.48550/arXiv.2307.00735",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "36f807dfd5779f9d976bf0b6b5ef8cbc48f28361",
+            "title": "Novelty and Lifted Helpful Actions in Generalized Planning",
+            "url": "https://www.semanticscholar.org/paper/36f807dfd5779f9d976bf0b6b5ef8cbc48f28361",
+            "venue": "SOCS",
+            "year": 2023
+        },
+        {
+            "arxivId": "2305.07141",
+            "authors": [
+                {
+                    "authorId": "116808291",
+                    "name": "A. Moskvichev"
+                },
+                {
+                    "authorId": "2146694505",
+                    "name": "Victor Vikram Odouard"
+                },
+                {
+                    "authorId": "152905883",
+                    "name": "Melanie Mitchell"
+                }
+            ],
+            "doi": "10.48550/arXiv.2305.07141",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "0febeb46b8216f12337b448ac81ac505c28782c1",
+            "title": "The ConceptARC Benchmark: Evaluating Understanding and Generalization in the ARC Domain",
+            "url": "https://www.semanticscholar.org/paper/0febeb46b8216f12337b448ac81ac505c28782c1",
+            "venue": "Trans. Mach. Learn. Res.",
+            "year": 2023
+        },
+        {
+            "arxivId": "2210.09880",
+            "authors": [
+                {
+                    "authorId": "47103635",
+                    "name": "Yudong Xu"
+                },
+                {
+                    "authorId": "35252180",
+                    "name": "Elias Boutros Khalil"
+                },
+                {
+                    "authorId": "1732536",
+                    "name": "S. Sanner"
+                }
+            ],
+            "doi": "10.48550/arXiv.2210.09880",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "dcbda9002def84b4b4467e54e1d06a18ac227103",
+            "title": "Graphs, Constraints, and Search for the Abstraction and Reasoning Corpus",
+            "url": "https://www.semanticscholar.org/paper/dcbda9002def84b4b4467e54e1d06a18ac227103",
+            "venue": "AAAI",
+            "year": 2022
+        },
+        {
+            "arxivId": "2205.04850",
+            "authors": [
+                {
+                    "authorId": "3410468",
+                    "name": "Javier Segovia Aguas"
+                },
+                {
+                    "authorId": "1728891",
+                    "name": "Sergio Jim\u00e9nez Celorrio"
+                },
+                {
+                    "authorId": "143808510",
+                    "name": "Anders Jonsson"
+                },
+                {
+                    "authorId": "144790245",
+                    "name": "L. Sebasti\u00e1"
+                }
+            ],
+            "doi": "10.48550/arXiv.2205.04850",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "a43e31642fe654535e84608c5f734733c6014d69",
+            "title": "Scaling-up Generalized Planning as Heuristic Search with Landmarks",
+            "url": "https://www.semanticscholar.org/paper/a43e31642fe654535e84608c5f734733c6014d69",
+            "venue": "SOCS",
+            "year": 2022
+        },
+        {
+            "arxivId": "2202.10284",
+            "authors": [
+                {
+                    "authorId": "2274938245",
+                    "name": "Mikolaj Malki'nski"
+                },
+                {
+                    "authorId": "2066698888",
+                    "name": "Jacek Ma'ndziuk"
+                }
+            ],
+            "doi": "10.1016/j.inffus.2022.11.011",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "02eae58e5ff7edb2f7cbb334e81c3af6b2768b59",
+            "title": "A Review of Emerging Research Directions in Abstract Visual Reasoning",
+            "url": "https://www.semanticscholar.org/paper/02eae58e5ff7edb2f7cbb334e81c3af6b2768b59",
+            "venue": "Inf. Fusion",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3410468",
+                    "name": "Javier Segovia Aguas"
+                },
+                {
+                    "authorId": "1728891",
+                    "name": "Sergio Jim\u00e9nez Celorrio"
+                },
+                {
+                    "authorId": "143808510",
+                    "name": "Anders Jonsson"
+                }
+            ],
+            "doi": "10.1016/J.ARTINT.2018.10.006",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "bda743412ba5659591f5a053874f8dff34b52918",
+            "title": "Computing programs for generalized planning using a classical planner",
+            "url": "https://www.semanticscholar.org/paper/bda743412ba5659591f5a053874f8dff34b52918",
+            "venue": "Artif. Intell.",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1985184",
+                    "name": "P. Haslum"
+                },
+                {
+                    "authorId": "1700694",
+                    "name": "N. Lipovetzky"
+                },
+                {
+                    "authorId": "1738142",
+                    "name": "D. Magazzeni"
+                },
+                {
+                    "authorId": "2428160",
+                    "name": "Christian Muise"
+                }
+            ],
+            "doi": "10.2200/S00900ED2V01Y201902AIM042",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "34440ac53a3b6fff7dc1eaef0b26bd5eb64f94a4",
+            "title": "An Introduction to the Planning Domain Definition Language",
+            "url": "https://www.semanticscholar.org/paper/34440ac53a3b6fff7dc1eaef0b26bd5eb64f94a4",
+            "venue": "An Introduction to the Planning Domain Definition Language",
+            "year": 2019
+        },
+        {
+            "arxivId": "1807.04225",
+            "authors": [
+                {
+                    "authorId": "35030998",
+                    "name": "Adam Santoro"
+                },
+                {
+                    "authorId": "145783676",
+                    "name": "Felix Hill"
+                },
+                {
+                    "authorId": "50181861",
+                    "name": "D. Barrett"
+                },
+                {
+                    "authorId": "4690624",
+                    "name": "Ari S. Morcos"
+                },
+                {
+                    "authorId": "2542999",
+                    "name": "T. Lillicrap"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "acc43abe319bca7652a91f7d4ca6187049fb82e4",
+            "title": "Measuring abstract reasoning in neural networks",
+            "url": "https://www.semanticscholar.org/paper/acc43abe319bca7652a91f7d4ca6187049fb82e4",
+            "venue": "ICML",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2478383",
+                    "name": "Guillem Franc\u00e8s"
+                },
+                {
+                    "authorId": "144625614",
+                    "name": "Miquel Ram\u00edrez"
+                },
+                {
+                    "authorId": "1700694",
+                    "name": "N. Lipovetzky"
+                },
+                {
+                    "authorId": "1806598",
+                    "name": "Hector Geffner"
+                }
+            ],
+            "doi": "10.24963/ijcai.2017/600",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "5426fec049187e4dbc32e953de75fb2b43dcd15a",
+            "title": "Purely Declarative Action Descriptions are Overrated: Classical Planning with Simulators",
+            "url": "https://www.semanticscholar.org/paper/5426fec049187e4dbc32e953de75fb2b43dcd15a",
+            "venue": "IJCAI",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144551177",
+                    "name": "A. Tate"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f48eed915cbb9c6592cdb9df80c1edaeb46959af",
+            "title": "A measure of intelligence",
+            "url": "https://www.semanticscholar.org/paper/f48eed915cbb9c6592cdb9df80c1edaeb46959af",
+            "venue": "",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2573148",
+                    "name": "C. Dornhege"
+                },
+                {
+                    "authorId": "2893553",
+                    "name": "Patrick Eyerich"
+                },
+                {
+                    "authorId": "144763731",
+                    "name": "Thomas Keller"
+                },
+                {
+                    "authorId": "2627706",
+                    "name": "Sebastian Tr\u00fcg"
+                },
+                {
+                    "authorId": "2068714284",
+                    "name": "Michael Brenner"
+                },
+                {
+                    "authorId": "145304209",
+                    "name": "Bernhard Nebel"
+                }
+            ],
+            "doi": "10.1007/978-3-642-25116-0_9",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "957ba54affcc27304d90bb5cb7efc0ee43dbcfcb",
+            "title": "Semantic Attachments for Domain-Independent Planning Systems",
+            "url": "https://www.semanticscholar.org/paper/957ba54affcc27304d90bb5cb7efc0ee43dbcfcb",
+            "venue": "ICAPS",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145305735",
+                    "name": "Siddharth Srivastava"
+                },
+                {
+                    "authorId": "1808597",
+                    "name": "N. Immerman"
+                },
+                {
+                    "authorId": "1707550",
+                    "name": "S. Zilberstein"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "cbb4b0cbd4d6505a9abe75d5804c5a62f0fce7f4",
+            "title": "Learning Generalized Plans Using Abstract Counting",
+            "url": "https://www.semanticscholar.org/paper/cbb4b0cbd4d6505a9abe75d5804c5a62f0fce7f4",
+            "venue": "AAAI",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "48603437",
+                    "name": "A. Newell"
+                },
+                {
+                    "authorId": "2259532335",
+                    "name": "H. Simon"
+                }
+            ],
+            "doi": "10.1016/B978-1-4832-1446-7.50040-6",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "02256c909265b66403b6cb08102174aa0b6ede1d",
+            "title": "GPS, a program that simulates human thought",
+            "url": "https://www.semanticscholar.org/paper/02256c909265b66403b6cb08102174aa0b6ede1d",
+            "venue": "",
+            "year": 1995
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1728891",
+                    "name": "Sergio Jim\u00e9nez Celorrio"
+                },
+                {
+                    "authorId": "3410468",
+                    "name": "Javier Segovia Aguas"
+                },
+                {
+                    "authorId": "143808510",
+                    "name": "Anders Jonsson"
+                }
+            ],
+            "doi": "10.1017/S0269888918000231",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "41f997048470808e915fa949546c96a6af06296c",
+            "title": "A review of generalized planning",
+            "url": "https://www.semanticscholar.org/paper/41f997048470808e915fa949546c96a6af06296c",
+            "venue": "The Knowledge Engineering Review",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1725250",
+                    "name": "C. Grosan"
+                },
+                {
+                    "authorId": "2238656571",
+                    "name": "Ajith Abraham"
+                }
+            ],
+            "doi": "10.1007/978-3-642-21004-4_6",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0e61334db3c76f6000f8946bb98aecf389514d3f",
+            "title": "Knowledge Representation and Reasoning",
+            "url": "https://www.semanticscholar.org/paper/0e61334db3c76f6000f8946bb98aecf389514d3f",
+            "venue": "",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2252285",
+                    "name": "E. Spelke"
+                },
+                {
+                    "authorId": "7709363",
+                    "name": "Katherine D. Kinzler"
+                }
+            ],
+            "doi": "10.4135/9781506307633.n176",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "1207aa55c8a2b47a25fc17c18328910daf3feb71",
+            "title": "Core knowledge.",
+            "url": "https://www.semanticscholar.org/paper/1207aa55c8a2b47a25fc17c18328910daf3feb71",
+            "venue": "Developmental science",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "4940444",
+                    "name": "M. Genesereth"
+                },
+                {
+                    "authorId": "144497046",
+                    "name": "N. Nilsson"
+                }
+            ],
+            "doi": "10.1016/B978-0-934613-31-6.50012-4",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8146a87d33358d35796ca9a19c1e83f57d154953",
+            "title": "CHAPTER 6 \u2013 Nonmonotonic Reasoning",
+            "url": "https://www.semanticscholar.org/paper/8146a87d33358d35796ca9a19c1e83f57d154953",
+            "venue": "",
+            "year": 1987
+        },
+        {
+            "arxivId": null,
+            "authors": [],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "31e9ffdfc70a5c5930fc18c937c38c1e72f9c5e1",
+            "title": "Proceedings of the Twenty-Second International Joint Conference on Artificial Intelligence Generalized Planning: Synthesizing Plans that Work for Multiple Environments",
+            "url": "https://www.semanticscholar.org/paper/31e9ffdfc70a5c5930fc18c937c38c1e72f9c5e1",
+            "venue": "",
+            "year": null
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Generalized Planning for the Abstraction and Reasoning Corpus",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/0d870d878cfe92e9993ce987a74fe322926e4927",
+    "venue": "AAAI Conference on Artificial Intelligence",
+    "year": 2024
+}

@@ -1,0 +1,2798 @@
+{
+    "abstract": "We investigate how to train kernel approximation methods that generalize well under a memory budget. Building on recent theoretical work, we define a measure of kernel approximation error which we find to be more predictive of the empirical generalization performance of kernel approximation methods than conventional metrics. An important consequence of this definition is that a kernel approximation matrix must be high rank to attain close approximation. Because storing a high-rank approximation is memory intensive, we propose using a low-precision quantization of random Fourier features (LP-RFFs) to build a high-rank approximation under a memory budget. Theoretically, we show quantization has a negligible effect on generalization performance in important settings. Empirically, we demonstrate across four benchmark datasets that LP-RFFs can match the performance of full-precision RFFs and the Nystr\u00f6m method, with 3x-10x and 50x-460x less memory, respectively.",
+    "arxivId": "1811.00155",
+    "authors": [
+        {
+            "authorId": "1679327",
+            "name": "Jian Zhang",
+            "url": "https://www.semanticscholar.org/author/1679327"
+        },
+        {
+            "authorId": "40353015",
+            "name": "Avner May",
+            "url": "https://www.semanticscholar.org/author/40353015"
+        },
+        {
+            "authorId": "24593911",
+            "name": "Tri Dao",
+            "url": "https://www.semanticscholar.org/author/24593911"
+        },
+        {
+            "authorId": "2114485554",
+            "name": "C. R\u00e9",
+            "url": "https://www.semanticscholar.org/author/2114485554"
+        }
+    ],
+    "citationVelocity": 4,
+    "citations": [
+        {
+            "arxivId": "2302.11174",
+            "authors": [
+                {
+                    "authorId": "1708233803",
+                    "name": "Ju Yao"
+                },
+                {
+                    "authorId": "2371914",
+                    "name": "N. Benjamin Erichson"
+                },
+                {
+                    "authorId": "20277946",
+                    "name": "Miles E. Lopes"
+                }
+            ],
+            "doi": "10.48550/arXiv.2302.11174",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7b12cf3834392bfcf346b7019f52dcae476f2c9d",
+            "title": "Error Estimation for Random Fourier Features",
+            "url": "https://www.semanticscholar.org/paper/7b12cf3834392bfcf346b7019f52dcae476f2c9d",
+            "venue": "AISTATS",
+            "year": 2023
+        },
+        {
+            "arxivId": "2210.00244",
+            "authors": [
+                {
+                    "authorId": "50204729",
+                    "name": "Kuan Cheng"
+                },
+                {
+                    "authorId": "31360486",
+                    "name": "S. Jiang"
+                },
+                {
+                    "authorId": "2186859994",
+                    "name": "Luojian Wei"
+                },
+                {
+                    "authorId": "2186869740",
+                    "name": "Zhide Wei"
+                }
+            ],
+            "doi": "10.48550/arXiv.2210.00244",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c012b0bbb159d94516946d3d6010ed1a87ea16c2",
+            "title": "On The Relative Error of Random Fourier Features for Preserving Kernel Distance",
+            "url": "https://www.semanticscholar.org/paper/c012b0bbb159d94516946d3d6010ed1a87ea16c2",
+            "venue": "ICLR",
+            "year": 2022
+        },
+        {
+            "arxivId": "2209.01958",
+            "authors": [
+                {
+                    "authorId": "103372000",
+                    "name": "Kouhei Nakaji"
+                },
+                {
+                    "authorId": "48113362",
+                    "name": "Hiroyuki Tezuka"
+                },
+                {
+                    "authorId": "2147320310",
+                    "name": "Naoki Yamamoto"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c37821d8d3497e5fe2b90fc1718045f3dbd771b8",
+            "title": "Deterministic and random features for large-scale quantum kernel machine",
+            "url": "https://www.semanticscholar.org/paper/c37821d8d3497e5fe2b90fc1718045f3dbd771b8",
+            "venue": "",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2181912342",
+                    "name": "Marjorie Xie"
+                },
+                {
+                    "authorId": "3422080",
+                    "name": "S. Muscinelli"
+                },
+                {
+                    "authorId": "7917904",
+                    "name": "K. Harris"
+                },
+                {
+                    "authorId": "1401265175",
+                    "name": "Ashok Litwin-Kumar"
+                }
+            ],
+            "doi": "10.1101/2022.08.15.504040",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b70fa25d75f4dc2591a23dc3e6a11a8e16ae551a",
+            "title": "Task-dependent optimal representations for cerebellar learning",
+            "url": "https://www.semanticscholar.org/paper/b70fa25d75f4dc2591a23dc3e6a11a8e16ae551a",
+            "venue": "bioRxiv",
+            "year": 2022
+        },
+        {
+            "arxivId": "2207.06856",
+            "authors": [
+                {
+                    "authorId": "151254077",
+                    "name": "Wesley J. Maddox"
+                },
+                {
+                    "authorId": "1470461951",
+                    "name": "Andres Potapczynski"
+                },
+                {
+                    "authorId": "145771261",
+                    "name": "A. Wilson"
+                }
+            ],
+            "doi": "10.48550/arXiv.2207.06856",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "3c214b43505889e081c5583829b81f36d0a91f6d",
+            "title": "Low-Precision Arithmetic for Fast Gaussian Processes",
+            "url": "https://www.semanticscholar.org/paper/3c214b43505889e081c5583829b81f36d0a91f6d",
+            "venue": "UAI",
+            "year": 2022
+        },
+        {
+            "arxivId": "2205.15721",
+            "authors": [
+                {
+                    "authorId": "145502968",
+                    "name": "Khoa D Doan"
+                },
+                {
+                    "authorId": "2119185448",
+                    "name": "Peng Yang"
+                },
+                {
+                    "authorId": "2158234798",
+                    "name": "Ping Li"
+                }
+            ],
+            "doi": "10.1109/CVPR52688.2022.00923",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "752c57b1c82d155c8114a21acb0de014919ad185",
+            "title": "One Loss for Quantization: Deep Hashing with Discrete Wasserstein Distributional Matching",
+            "url": "https://www.semanticscholar.org/paper/752c57b1c82d155c8114a21acb0de014919ad185",
+            "venue": "2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2155393173",
+                    "name": "Tingting Wang"
+                },
+                {
+                    "authorId": "2057587585",
+                    "name": "B. Dong"
+                },
+                {
+                    "authorId": "2153281684",
+                    "name": "Kaichun Zhang"
+                },
+                {
+                    "authorId": "2352517",
+                    "name": "Junbao Li"
+                },
+                {
+                    "authorId": "2158353743",
+                    "name": "Lei Xu"
+                }
+            ],
+            "doi": "10.1016/j.knosys.2021.107878",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "a7c9472993bb4ff09cc6801b09fc162bf8398a2d",
+            "title": "Slim-RFFNet: Slim deep convolution random Fourier feature network for image classification",
+            "url": "https://www.semanticscholar.org/paper/a7c9472993bb4ff09cc6801b09fc162bf8398a2d",
+            "venue": "Knowl. Based Syst.",
+            "year": 2021
+        },
+        {
+            "arxivId": "2110.01899",
+            "authors": [
+                {
+                    "authorId": "32810031",
+                    "name": "Hafiz Tiomoko Ali"
+                },
+                {
+                    "authorId": "143895642",
+                    "name": "Zhenyu Liao"
+                },
+                {
+                    "authorId": "1690223",
+                    "name": "Romain Couillet"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "eb1164159adfcfe421587fdcf01a946f4da1c0ff",
+            "title": "Random matrices in service of ML footprint: ternary random features with no performance loss",
+            "url": "https://www.semanticscholar.org/paper/eb1164159adfcfe421587fdcf01a946f4da1c0ff",
+            "venue": "ICLR",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2109108730",
+                    "name": "Zhuan Zhang"
+                },
+                {
+                    "authorId": "34678057",
+                    "name": "Shuisheng Zhou"
+                },
+                {
+                    "authorId": "2122814663",
+                    "name": "Ting Yang"
+                },
+                {
+                    "authorId": "2107928415",
+                    "name": "Junna Zhang"
+                }
+            ],
+            "doi": "10.1007/s10489-021-02618-6",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "6feb36dde770f2ff2cab838f63712d434ba0254d",
+            "title": "Faster doubly stochastic functional gradient by gradient preconditioning for scalable kernel methods",
+            "url": "https://www.semanticscholar.org/paper/6feb36dde770f2ff2cab838f63712d434ba0254d",
+            "venue": "Applied Intelligence",
+            "year": 2021
+        },
+        {
+            "arxivId": "2106.02614",
+            "authors": [
+                {
+                    "authorId": "2154492395",
+                    "name": "Jinjie Zhang"
+                },
+                {
+                    "authorId": "2827359",
+                    "name": "A. Cloninger"
+                },
+                {
+                    "authorId": "3219357",
+                    "name": "Rayan Saab"
+                }
+            ],
+            "doi": "10.1093/imaiai/iaad052",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "b9352dbc20e9ccdd65ae950292079f69dcbbd807",
+            "title": "Sigma-Delta and Distributed Noise-Shaping Quantization Methods for Random Fourier Features",
+            "url": "https://www.semanticscholar.org/paper/b9352dbc20e9ccdd65ae950292079f69dcbbd807",
+            "venue": "Information and Inference: A Journal of the IMA",
+            "year": 2021
+        },
+        {
+            "arxivId": "2102.13079",
+            "authors": [
+                {
+                    "authorId": "47058081",
+                    "name": "Xiaoyun Li"
+                },
+                {
+                    "authorId": "2420746",
+                    "name": "P. Li"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "b954e0c2601418308bdc1819b3a8884e51d4805a",
+            "title": "Quantization Algorithms for Random Fourier Features",
+            "url": "https://www.semanticscholar.org/paper/b954e0c2601418308bdc1819b3a8884e51d4805a",
+            "venue": "ICML",
+            "year": 2021
+        },
+        {
+            "arxivId": "2012.02805",
+            "authors": [
+                {
+                    "authorId": "2032232030",
+                    "name": "Amir Aradnia"
+                },
+                {
+                    "authorId": "1907318",
+                    "name": "M. Haeri"
+                },
+                {
+                    "authorId": "1804518",
+                    "name": "M. Ebadzadeh"
+                }
+            ],
+            "doi": "10.1016/j.ins.2021.10.048",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "d4a34c901f0d0b16972fa917bb7ec23d811cf922",
+            "title": "Adaptive Explicit Kernel Minkowski Weighted K-means",
+            "url": "https://www.semanticscholar.org/paper/d4a34c901f0d0b16972fa917bb7ec23d811cf922",
+            "venue": "Inf. Sci.",
+            "year": 2020
+        },
+        {
+            "arxivId": "2011.01668",
+            "authors": [
+                {
+                    "authorId": "2803059",
+                    "name": "Fanghui Liu"
+                },
+                {
+                    "authorId": "47932717",
+                    "name": "Xiaolin Huang"
+                },
+                {
+                    "authorId": "97042228",
+                    "name": "Yudong Chen"
+                },
+                {
+                    "authorId": "1744439",
+                    "name": "J. Suykens"
+                }
+            ],
+            "doi": "10.1109/TPAMI.2021.3120183",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "57e06349d4446213c71ba176643f0e48e4126956",
+            "title": "Towards a Unified Quadrature Framework for Large-Scale Kernel Machines",
+            "url": "https://www.semanticscholar.org/paper/57e06349d4446213c71ba176643f0e48e4126956",
+            "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+            "year": 2020
+        },
+        {
+            "arxivId": "2007.00360",
+            "authors": [
+                {
+                    "authorId": "144540792",
+                    "name": "Dominic Richards"
+                },
+                {
+                    "authorId": "2494252",
+                    "name": "Patrick Rebeschini"
+                },
+                {
+                    "authorId": "1690976",
+                    "name": "L. Rosasco"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "dba6c643d6cd26b8e5d30c51c2f935df9ac90a7f",
+            "title": "Decentralised Learning with Random Features and Distributed Gradient Descent",
+            "url": "https://www.semanticscholar.org/paper/dba6c643d6cd26b8e5d30c51c2f935df9ac90a7f",
+            "venue": "ICML",
+            "year": 2020
+        },
+        {
+            "arxivId": "2004.11154",
+            "authors": [
+                {
+                    "authorId": "2803059",
+                    "name": "Fanghui Liu"
+                },
+                {
+                    "authorId": "47932717",
+                    "name": "Xiaolin Huang"
+                },
+                {
+                    "authorId": "51310474",
+                    "name": "Yudong Chen"
+                },
+                {
+                    "authorId": "1744439",
+                    "name": "J. Suykens"
+                }
+            ],
+            "doi": "10.1109/TPAMI.2021.3097011",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "7adfcbbe8b2e38c18ebab891826957da515d1261",
+            "title": "Random Features for Kernel Approximation: A Survey on Algorithms, Theory, and Beyond",
+            "url": "https://www.semanticscholar.org/paper/7adfcbbe8b2e38c18ebab891826957da515d1261",
+            "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+            "year": 2020
+        },
+        {
+            "arxivId": "2004.06560",
+            "authors": [
+                {
+                    "authorId": "41019009",
+                    "name": "V. Schellekens"
+                },
+                {
+                    "authorId": "143831681",
+                    "name": "Laurent Jacques"
+                }
+            ],
+            "doi": "10.1093/IMAIAI/IAAB008",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "bab89a656036748e93c52c973bb0e99d603a3d35",
+            "title": "Breaking the waves: asymmetric random periodic features for low-bitrate kernel machines",
+            "url": "https://www.semanticscholar.org/paper/bab89a656036748e93c52c973bb0e99d603a3d35",
+            "venue": "Information and Inference: A Journal of the IMA",
+            "year": 2020
+        },
+        {
+            "arxivId": "1911.09158",
+            "authors": [
+                {
+                    "authorId": "2803059",
+                    "name": "Fanghui Liu"
+                },
+                {
+                    "authorId": "47932717",
+                    "name": "Xiaolin Huang"
+                },
+                {
+                    "authorId": "51310474",
+                    "name": "Yudong Chen"
+                },
+                {
+                    "authorId": "34463165",
+                    "name": "Jie Yang"
+                },
+                {
+                    "authorId": "1744439",
+                    "name": "J. Suykens"
+                }
+            ],
+            "doi": "10.1609/AAAI.V34I04.5920",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7e965ee3157cf619a28ac4f69def864b79665fb3",
+            "title": "Random Fourier Features via Fast Surrogate Leverage Weighted Sampling",
+            "url": "https://www.semanticscholar.org/paper/7e965ee3157cf619a28ac4f69def864b79665fb3",
+            "venue": "AAAI",
+            "year": 2019
+        },
+        {
+            "arxivId": "1911.04975",
+            "authors": [
+                {
+                    "authorId": "72554529",
+                    "name": "Ali (Aliakbar) Panahi"
+                },
+                {
+                    "authorId": "32073033",
+                    "name": "Seyran Saeedi"
+                },
+                {
+                    "authorId": "1721782",
+                    "name": "Tom Arodz"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "48988bd2d17ff4fa00654e3e983acf390bb0f110",
+            "title": "word2ket: Space-efficient Word Embeddings inspired by Quantum Entanglement",
+            "url": "https://www.semanticscholar.org/paper/48988bd2d17ff4fa00654e3e983acf390bb0f110",
+            "venue": "ICLR",
+            "year": 2019
+        },
+        {
+            "arxivId": "1910.06235",
+            "authors": [
+                {
+                    "authorId": "2149164060",
+                    "name": "Shuang Zhou"
+                },
+                {
+                    "authorId": "35087983",
+                    "name": "D. Pati"
+                },
+                {
+                    "authorId": "48469923",
+                    "name": "Tianying Wang"
+                },
+                {
+                    "authorId": "2116588224",
+                    "name": "Yun Yang"
+                },
+                {
+                    "authorId": "34101041",
+                    "name": "R. Carroll"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e084e12e24e3c1c4429a6185b47b1d1a94620520",
+            "title": "Gaussian Processes with Errors in Variables: Theory and Computation",
+            "url": "https://www.semanticscholar.org/paper/e084e12e24e3c1c4429a6185b47b1d1a94620520",
+            "venue": "J. Mach. Learn. Res.",
+            "year": 2019
+        },
+        {
+            "arxivId": "1909.01264",
+            "authors": [
+                {
+                    "authorId": "40353015",
+                    "name": "Avner May"
+                },
+                {
+                    "authorId": "1679327",
+                    "name": "Jian Zhang"
+                },
+                {
+                    "authorId": "24593911",
+                    "name": "Tri Dao"
+                },
+                {
+                    "authorId": "2114485554",
+                    "name": "C. R\u00e9"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "result",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "dd5cdf864d5d0d729b346919aa553b4b4aeed86e",
+            "title": "On the Downstream Performance of Compressed Word Embeddings",
+            "url": "https://www.semanticscholar.org/paper/dd5cdf864d5d0d729b346919aa553b4b4aeed86e",
+            "venue": "NeurIPS",
+            "year": 2019
+        },
+        {
+            "arxivId": "1907.05012",
+            "authors": [
+                {
+                    "authorId": "35308773",
+                    "name": "Antonio A. Ginart"
+                },
+                {
+                    "authorId": "152565355",
+                    "name": "M. Guan"
+                },
+                {
+                    "authorId": "1806083",
+                    "name": "G. Valiant"
+                },
+                {
+                    "authorId": "145085305",
+                    "name": "James Y. Zou"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "6a2efd7e59ec314e29850e744be05eb65ccdfbc4",
+            "title": "Making AI Forget You: Data Deletion in Machine Learning",
+            "url": "https://www.semanticscholar.org/paper/6a2efd7e59ec314e29850e744be05eb65ccdfbc4",
+            "venue": "NeurIPS",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2118389232",
+                    "name": "Zhu Li"
+                },
+                {
+                    "authorId": "50880398",
+                    "name": "Jean-Fran\u00e7ois Ton"
+                },
+                {
+                    "authorId": "2345929",
+                    "name": "Dino Oglic"
+                },
+                {
+                    "authorId": "1698032",
+                    "name": "D. Sejdinovic"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "a4347c48b9ac5ed5bc521e30694f752c87d07c83",
+            "title": "Towards a Unified Analysis of Random Fourier Features",
+            "url": "https://www.semanticscholar.org/paper/a4347c48b9ac5ed5bc521e30694f752c87d07c83",
+            "venue": "ICML",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1500650478",
+                    "name": "Ruoxi Wang"
+                },
+                {
+                    "authorId": "86975634",
+                    "name": "Liu Yingzhou"
+                },
+                {
+                    "authorId": "1717098",
+                    "name": "Michael W. Mahoney"
+                },
+                {
+                    "authorId": "3195327",
+                    "name": "Eric F Darve"
+                }
+            ],
+            "doi": "10.1137/18M1212586",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "53c230e445df92dd5e4de5c1282d2fe75428979b",
+            "title": "Block Basis Factorization for Scalable Kernel Evaluation",
+            "url": "https://www.semanticscholar.org/paper/53c230e445df92dd5e4de5c1282d2fe75428979b",
+            "venue": "SIAM J. Matrix Anal. Appl.",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2141762434",
+                    "name": "Xiaoyun Li"
+                },
+                {
+                    "authorId": "144785122",
+                    "name": "Ping Li"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "739f06659095f70fbd21f6b919b2f1bece0b4c27",
+            "title": "SignRFF: Sign Random Fourier Features",
+            "url": "https://www.semanticscholar.org/paper/739f06659095f70fbd21f6b919b2f1bece0b4c27",
+            "venue": "NeurIPS",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "47058081",
+                    "name": "Xiaoyun Li"
+                },
+                {
+                    "authorId": "2420746",
+                    "name": "P. Li"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "487b970ce9e959d1e257aa590f8c7d1db3b40380",
+            "title": "One-Sketch-for-All: Non-linear Random Features from Compressed Linear Measurements",
+            "url": "https://www.semanticscholar.org/paper/487b970ce9e959d1e257aa590f8c7d1db3b40380",
+            "venue": "AISTATS",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144540792",
+                    "name": "Dominic Richards"
+                },
+                {
+                    "authorId": "2494252",
+                    "name": "Patrick Rebeschini"
+                },
+                {
+                    "authorId": "1690976",
+                    "name": "L. Rosasco"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "39b48770247f0f08d2aa48029d07bab009882e51",
+            "title": "Decentralised Learning with Distributed Gradient Descent and Random Features",
+            "url": "https://www.semanticscholar.org/paper/39b48770247f0f08d2aa48029d07bab009882e51",
+            "venue": "",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2025848889",
+                    "name": "Linda Chamakh"
+                },
+                {
+                    "authorId": "2963867",
+                    "name": "E. Gobet"
+                },
+                {
+                    "authorId": "145675507",
+                    "name": "Z. Szab\u00f3"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "19aea056bdbe655dff286d328c242784ab0d2870",
+            "title": "Orlicz Random Fourier Features",
+            "url": "https://www.semanticscholar.org/paper/19aea056bdbe655dff286d328c242784ab0d2870",
+            "venue": "J. Mach. Learn. Res.",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2115383482",
+                    "name": "Yiwei Shen"
+                },
+                {
+                    "authorId": "3326631",
+                    "name": "P. Bellec"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "b498986c348c4789a2d86953b8455ba630d2ead0",
+            "title": "Asymptotic normality and confidence intervals for derivatives of 2-layers neural network in the random features model",
+            "url": "https://www.semanticscholar.org/paper/b498986c348c4789a2d86953b8455ba630d2ead0",
+            "venue": "NeurIPS",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3428811",
+                    "name": "Kurt Cutajar"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7595a9ed21fc92f39d94901965add98ea488330b",
+            "title": "Broadening the scope of gaussian processes for large-scale learning. (\u00c9largir la port\u00e9e des processus gaussiens pour l'apprentissage \u00e0 grande \u00e9chelle)",
+            "url": "https://www.semanticscholar.org/paper/7595a9ed21fc92f39d94901965add98ea488330b",
+            "venue": "",
+            "year": 2019
+        }
+    ],
+    "corpusId": 53192513,
+    "doi": null,
+    "fieldsOfStudy": [
+        "Computer Science",
+        "Mathematics",
+        "Medicine"
+    ],
+    "influentialCitationCount": 3,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 29,
+    "numCiting": 60,
+    "paperId": "11df1509caa9c0c9a0e6e6876e5ecb51c5e14ae6",
+    "references": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2118389232",
+                    "name": "Zhu Li"
+                },
+                {
+                    "authorId": "50880398",
+                    "name": "Jean-Fran\u00e7ois Ton"
+                },
+                {
+                    "authorId": "2345929",
+                    "name": "Dino Oglic"
+                },
+                {
+                    "authorId": "1698032",
+                    "name": "D. Sejdinovic"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a4347c48b9ac5ed5bc521e30694f752c87d07c83",
+            "title": "Towards a Unified Analysis of Random Fourier Features",
+            "url": "https://www.semanticscholar.org/paper/a4347c48b9ac5ed5bc521e30694f752c87d07c83",
+            "venue": "ICML",
+            "year": 2018
+        },
+        {
+            "arxivId": "1806.09178",
+            "authors": [
+                {
+                    "authorId": "2118389232",
+                    "name": "Zhu Li"
+                },
+                {
+                    "authorId": "50880398",
+                    "name": "Jean-Fran\u00e7ois Ton"
+                },
+                {
+                    "authorId": "2345929",
+                    "name": "Dino Oglic"
+                },
+                {
+                    "authorId": "1698032",
+                    "name": "D. Sejdinovic"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8175f03af1c6aedacc65ed3f515fce87b32e8089",
+            "title": "A Unified Analysis of Random Fourier Features",
+            "url": "https://www.semanticscholar.org/paper/8175f03af1c6aedacc65ed3f515fce87b32e8089",
+            "venue": "ArXiv",
+            "year": 2018
+        },
+        {
+            "arxivId": "1804.09893",
+            "authors": [
+                {
+                    "authorId": "1922753",
+                    "name": "H. Avron"
+                },
+                {
+                    "authorId": "1733218",
+                    "name": "M. Kapralov"
+                },
+                {
+                    "authorId": "2032038",
+                    "name": "Cameron Musco"
+                },
+                {
+                    "authorId": "2767340",
+                    "name": "Christopher Musco"
+                },
+                {
+                    "authorId": "1686804",
+                    "name": "A. Velingker"
+                },
+                {
+                    "authorId": "2872461",
+                    "name": "A. Zandieh"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology",
+                "result"
+            ],
+            "isInfluential": true,
+            "paperId": "3e7bd1e5b0fe9fc64835519deeae1a3a6f4dc14a",
+            "title": "Random Fourier Features for Kernel Ridge Regression: Approximation Bounds and Statistical Guarantees",
+            "url": "https://www.semanticscholar.org/paper/3e7bd1e5b0fe9fc64835519deeae1a3a6f4dc14a",
+            "venue": "ICML",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1805203",
+                    "name": "K. Choromanski"
+                },
+                {
+                    "authorId": "144845456",
+                    "name": "Mark Rowland"
+                },
+                {
+                    "authorId": "2227764",
+                    "name": "Tam\u00e1s Sarl\u00f3s"
+                },
+                {
+                    "authorId": "1808676",
+                    "name": "Vikas Sindhwani"
+                },
+                {
+                    "authorId": "145369890",
+                    "name": "Richard E. Turner"
+                },
+                {
+                    "authorId": "145689461",
+                    "name": "Adrian Weller"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "962ba753d7ea794f4085f96ef191e9016aff31ac",
+            "title": "The Geometry of Random Features",
+            "url": "https://www.semanticscholar.org/paper/962ba753d7ea794f4085f96ef191e9016aff31ac",
+            "venue": "AISTATS",
+            "year": 2018
+        },
+        {
+            "arxivId": "1803.03383",
+            "authors": [
+                {
+                    "authorId": "1801197",
+                    "name": "Christopher De Sa"
+                },
+                {
+                    "authorId": "37866790",
+                    "name": "Megan Leszczynski"
+                },
+                {
+                    "authorId": "1679327",
+                    "name": "Jian Zhang"
+                },
+                {
+                    "authorId": "40897596",
+                    "name": "Alana Marzoev"
+                },
+                {
+                    "authorId": "145284500",
+                    "name": "Christopher R. Aberger"
+                },
+                {
+                    "authorId": "1746638",
+                    "name": "K. Olukotun"
+                },
+                {
+                    "authorId": "2114485554",
+                    "name": "C. R\u00e9"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "0bd9716274618e4f81677be43bf7a452412aa71f",
+            "title": "High-Accuracy Low-Precision Training",
+            "url": "https://www.semanticscholar.org/paper/0bd9716274618e4f81677be43bf7a452412aa71f",
+            "venue": "ArXiv",
+            "year": 2018
+        },
+        {
+            "arxivId": "1709.02605",
+            "authors": [
+                {
+                    "authorId": "24593911",
+                    "name": "Tri Dao"
+                },
+                {
+                    "authorId": "1801197",
+                    "name": "Christopher De Sa"
+                },
+                {
+                    "authorId": "2114485554",
+                    "name": "C. R\u00e9"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "169895d3a9ed3c4383bb71f27ade94e94695b172",
+            "title": "Gaussian Quadrature for Kernel Features",
+            "url": "https://www.semanticscholar.org/paper/169895d3a9ed3c4383bb71f27ade94e94695b172",
+            "venue": "NIPS",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "8020375",
+                    "name": "Yueming Lyu"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "b6e7cce12b7b0327c164602b5a328fb209506296",
+            "title": "Spherical Structured Feature Maps for Kernel Approximation",
+            "url": "https://www.semanticscholar.org/paper/b6e7cce12b7b0327c164602b5a328fb209506296",
+            "venue": "ICML",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2016429687",
+                    "name": "Hantian Zhang"
+                },
+                {
+                    "authorId": "2800851",
+                    "name": "Jerry Li"
+                },
+                {
+                    "authorId": "34680313",
+                    "name": "Kaan Kara"
+                },
+                {
+                    "authorId": "3311387",
+                    "name": "Dan Alistarh"
+                },
+                {
+                    "authorId": "40478933",
+                    "name": "Ji Liu"
+                },
+                {
+                    "authorId": "1776014",
+                    "name": "Ce Zhang"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "7f0d3991feb75f6f2fd50d0f2f80d820f20054cc",
+            "title": "ZipML: Training Linear Models with End-to-End Low Precision, and a Little Bit of Deep Learning",
+            "url": "https://www.semanticscholar.org/paper/7f0d3991feb75f6f2fd50d0f2f80d820f20054cc",
+            "venue": "ICML",
+            "year": 2017
+        },
+        {
+            "arxivId": "1707.01543",
+            "authors": [
+                {
+                    "authorId": "3444254",
+                    "name": "Yuting Wei"
+                },
+                {
+                    "authorId": "2151252957",
+                    "name": "Fanny Yang"
+                },
+                {
+                    "authorId": "1721860",
+                    "name": "M. Wainwright"
+                }
+            ],
+            "doi": "10.1109/TIT.2019.2927563",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "52888f0173275ee042bd09447127f51b2f8e61cd",
+            "title": "Early Stopping for Kernel Boosting Algorithms: A General Analysis With Localized Complexities",
+            "url": "https://www.semanticscholar.org/paper/52888f0173275ee042bd09447127f51b2f8e61cd",
+            "venue": "IEEE Transactions on Information Theory",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1801197",
+                    "name": "Christopher De Sa"
+                },
+                {
+                    "authorId": "1629760440",
+                    "name": "Matthew Feldman"
+                },
+                {
+                    "authorId": "2114485554",
+                    "name": "C. R\u00e9"
+                },
+                {
+                    "authorId": "1746638",
+                    "name": "K. Olukotun"
+                }
+            ],
+            "doi": "10.1145/3079856.3080248",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "4a4e2de108554830462978e9a858ef670180b8c2",
+            "title": "Understanding and optimizing asynchronous low-precision stochastic gradient descent",
+            "url": "https://www.semanticscholar.org/paper/4a4e2de108554830462978e9a858ef670180b8c2",
+            "venue": "2017 ACM/IEEE 44th Annual International Symposium on Computer Architecture (ISCA)",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2986818",
+                    "name": "Adrian M. Caulfield"
+                },
+                {
+                    "authorId": "49842903",
+                    "name": "Eric S. Chung"
+                },
+                {
+                    "authorId": "3651513",
+                    "name": "Andrew Putnam"
+                },
+                {
+                    "authorId": "2818237",
+                    "name": "Hari Angepat"
+                },
+                {
+                    "authorId": "34766892",
+                    "name": "D. Firestone"
+                },
+                {
+                    "authorId": "1684785",
+                    "name": "J. Fowers"
+                },
+                {
+                    "authorId": "2589995",
+                    "name": "M. Haselman"
+                },
+                {
+                    "authorId": "14744223",
+                    "name": "Stephen Heil"
+                },
+                {
+                    "authorId": "47780664",
+                    "name": "Matt Humphrey"
+                },
+                {
+                    "authorId": "2065904471",
+                    "name": "P. Kaur"
+                },
+                {
+                    "authorId": "2145425761",
+                    "name": "Joo-Young Kim"
+                },
+                {
+                    "authorId": "7380875",
+                    "name": "Daniel Lo"
+                },
+                {
+                    "authorId": "1882691",
+                    "name": "Todd Massengill"
+                },
+                {
+                    "authorId": "1682478",
+                    "name": "Kalin Ovtcharov"
+                },
+                {
+                    "authorId": "1691992",
+                    "name": "Michael Papamichael"
+                },
+                {
+                    "authorId": "2065407153",
+                    "name": "Lisa Woods"
+                },
+                {
+                    "authorId": "39577517",
+                    "name": "S. Lanka"
+                },
+                {
+                    "authorId": "2000338",
+                    "name": "Derek Chiou"
+                },
+                {
+                    "authorId": "144859824",
+                    "name": "D. Burger"
+                }
+            ],
+            "doi": "10.1109/MM.2017.51",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b4f2e0ce8364ee4e36103eceaddf0c3382e661d7",
+            "title": "Configurable Clouds",
+            "url": "https://www.semanticscholar.org/paper/b4f2e0ce8364ee4e36103eceaddf0c3382e661d7",
+            "venue": "IEEE Micro",
+            "year": 2017
+        },
+        {
+            "arxivId": "1704.04760",
+            "authors": [
+                {
+                    "authorId": "1715454",
+                    "name": "N. Jouppi"
+                },
+                {
+                    "authorId": "39660914",
+                    "name": "C. Young"
+                },
+                {
+                    "authorId": "2056800684",
+                    "name": "Nishant Patil"
+                },
+                {
+                    "authorId": "2265549299",
+                    "name": "David Patterson"
+                },
+                {
+                    "authorId": "2265528597",
+                    "name": "Gaurav Agrawal"
+                },
+                {
+                    "authorId": "2265528365",
+                    "name": "Raminder Bajwa"
+                },
+                {
+                    "authorId": "2265528604",
+                    "name": "Sarah Bates"
+                },
+                {
+                    "authorId": "2265528570",
+                    "name": "Suresh Bhatia"
+                },
+                {
+                    "authorId": "2265528912",
+                    "name": "Nan Boden"
+                },
+                {
+                    "authorId": "2265529409",
+                    "name": "Al Borchers"
+                },
+                {
+                    "authorId": "2265529523",
+                    "name": "Rick Boyle"
+                },
+                {
+                    "authorId": "2265531532",
+                    "name": "Pierre-luc Cantin"
+                },
+                {
+                    "authorId": "2265528729",
+                    "name": "Clifford Chao"
+                },
+                {
+                    "authorId": "2265550963",
+                    "name": "Chris Clark"
+                },
+                {
+                    "authorId": "2265528756",
+                    "name": "Jeremy Coriell"
+                },
+                {
+                    "authorId": "2265529003",
+                    "name": "Mike Daley"
+                },
+                {
+                    "authorId": "2265528872",
+                    "name": "Matt Dau"
+                },
+                {
+                    "authorId": "2265529729",
+                    "name": "Jeffrey Dean"
+                },
+                {
+                    "authorId": "2265528537",
+                    "name": "Ben Gelb"
+                },
+                {
+                    "authorId": "1398213038",
+                    "name": "Taraneh Ghaemmaghami"
+                },
+                {
+                    "authorId": "2265528754",
+                    "name": "Rajendra Gottipati"
+                },
+                {
+                    "authorId": "2265528752",
+                    "name": "William Gulland"
+                },
+                {
+                    "authorId": "2265528749",
+                    "name": "Robert Hagmann"
+                },
+                {
+                    "authorId": "2265582341",
+                    "name": "C. Richard Ho"
+                },
+                {
+                    "authorId": "2265528842",
+                    "name": "Doug Hogberg"
+                },
+                {
+                    "authorId": "2265596858",
+                    "name": "John Hu"
+                },
+                {
+                    "authorId": "1701671",
+                    "name": "R. Hundt"
+                },
+                {
+                    "authorId": "2265528853",
+                    "name": "Dan Hurt"
+                },
+                {
+                    "authorId": "2265529394",
+                    "name": "Julian Ibarz"
+                },
+                {
+                    "authorId": "10433955",
+                    "name": "A. Jaffey"
+                },
+                {
+                    "authorId": "2265529292",
+                    "name": "Alek Jaworski"
+                },
+                {
+                    "authorId": "2265551723",
+                    "name": "Alexander Kaplan"
+                },
+                {
+                    "authorId": "2265529388",
+                    "name": "Harshit Khaitan"
+                },
+                {
+                    "authorId": "35002044",
+                    "name": "Daniel Killebrew"
+                },
+                {
+                    "authorId": "2265529856",
+                    "name": "Andy Koch"
+                },
+                {
+                    "authorId": "2265642844",
+                    "name": "Naveen Kumar"
+                },
+                {
+                    "authorId": "2265529386",
+                    "name": "Steve Lacy"
+                },
+                {
+                    "authorId": "2258707080",
+                    "name": "James Laudon"
+                },
+                {
+                    "authorId": "2265529416",
+                    "name": "James Law"
+                },
+                {
+                    "authorId": "2265529515",
+                    "name": "Diemthu Le"
+                },
+                {
+                    "authorId": "2265529268",
+                    "name": "Chris Leary"
+                },
+                {
+                    "authorId": "2265576530",
+                    "name": "Zhuyuan Liu"
+                },
+                {
+                    "authorId": "2265532187",
+                    "name": "Kyle Lucke"
+                },
+                {
+                    "authorId": "2265529249",
+                    "name": "Alan Lundin"
+                },
+                {
+                    "authorId": "2265528983",
+                    "name": "Gordon MacKean"
+                },
+                {
+                    "authorId": "2265528640",
+                    "name": "Adriana Maggiore"
+                },
+                {
+                    "authorId": "2265529551",
+                    "name": "Maire Mahony"
+                },
+                {
+                    "authorId": "2265619145",
+                    "name": "Kieran Miller"
+                },
+                {
+                    "authorId": "1395811464",
+                    "name": "R. Nagarajan"
+                },
+                {
+                    "authorId": "1398213032",
+                    "name": "Ravi Narayanaswami"
+                },
+                {
+                    "authorId": "2265529536",
+                    "name": "Ray Ni"
+                },
+                {
+                    "authorId": "2265531761",
+                    "name": "Kathy Nix"
+                },
+                {
+                    "authorId": "3222376",
+                    "name": "Thomas Norrie"
+                },
+                {
+                    "authorId": "3175815",
+                    "name": "Mark Omernick"
+                },
+                {
+                    "authorId": "1398212990",
+                    "name": "Narayana Penukonda"
+                },
+                {
+                    "authorId": "2265528744",
+                    "name": "Andy Phelps"
+                },
+                {
+                    "authorId": "2265552909",
+                    "name": "Jonathan Ross"
+                },
+                {
+                    "authorId": "2265552588",
+                    "name": "Matt Ross"
+                },
+                {
+                    "authorId": "2265528580",
+                    "name": "Amir Salek"
+                },
+                {
+                    "authorId": "2265528564",
+                    "name": "Emad Samadiani"
+                },
+                {
+                    "authorId": "2265528562",
+                    "name": "Chris Severn"
+                },
+                {
+                    "authorId": "2265528974",
+                    "name": "Gregory Sizikov"
+                },
+                {
+                    "authorId": "2265528625",
+                    "name": "Matthew Snelham"
+                },
+                {
+                    "authorId": "2265529370",
+                    "name": "Jed Souter"
+                },
+                {
+                    "authorId": "2265532375",
+                    "name": "Dan Steinberg"
+                },
+                {
+                    "authorId": "1394189636",
+                    "name": "Andy Swing"
+                },
+                {
+                    "authorId": "2265616791",
+                    "name": "Mercedes Tan"
+                },
+                {
+                    "authorId": "2265532008",
+                    "name": "Gregory Thorson"
+                },
+                {
+                    "authorId": "2265529994",
+                    "name": "Bo Tian"
+                },
+                {
+                    "authorId": "2265529013",
+                    "name": "Horia Toma"
+                },
+                {
+                    "authorId": "2265528972",
+                    "name": "Erick Tuttle"
+                },
+                {
+                    "authorId": "2265528643",
+                    "name": "Vijay Vasudevan"
+                },
+                {
+                    "authorId": "2265529413",
+                    "name": "Richard Walter"
+                },
+                {
+                    "authorId": "2265617722",
+                    "name": "Walter Wang"
+                },
+                {
+                    "authorId": "2265529247",
+                    "name": "Eric Wilcox"
+                },
+                {
+                    "authorId": "2265552174",
+                    "name": "Doe Hyun Yoon"
+                }
+            ],
+            "doi": "10.1145/3079856.3080246",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2dfeb5a90abc49ab2a80a492a01a4e2c8e92ec22",
+            "title": "In-datacenter performance analysis of a tensor processing unit",
+            "url": "https://www.semanticscholar.org/paper/2dfeb5a90abc49ab2a80a492a01a4e2c8e92ec22",
+            "venue": "2017 ACM/IEEE 44th Annual International Symposium on Computer Architecture (ISCA)",
+            "year": 2017
+        },
+        {
+            "arxivId": "1701.03577",
+            "authors": [
+                {
+                    "authorId": "40353015",
+                    "name": "Avner May"
+                },
+                {
+                    "authorId": "2691103",
+                    "name": "A. Garakani"
+                },
+                {
+                    "authorId": "2095379",
+                    "name": "Zhiyun Lu"
+                },
+                {
+                    "authorId": "2068108348",
+                    "name": "Dong Guo"
+                },
+                {
+                    "authorId": "2118800090",
+                    "name": "Kuan Liu"
+                },
+                {
+                    "authorId": "1702915",
+                    "name": "A. Bellet"
+                },
+                {
+                    "authorId": "3275727",
+                    "name": "Linxi (Jim) Fan"
+                },
+                {
+                    "authorId": "144426392",
+                    "name": "Michael Collins"
+                },
+                {
+                    "authorId": "143724861",
+                    "name": "Daniel J. Hsu"
+                },
+                {
+                    "authorId": "144707379",
+                    "name": "Brian Kingsbury"
+                },
+                {
+                    "authorId": "1774515",
+                    "name": "M. Picheny"
+                },
+                {
+                    "authorId": "145757665",
+                    "name": "Fei Sha"
+                }
+            ],
+            "doi": "10.7916/D8D80P9T",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "9f928c849cd8ea7659b2262fbc50757de9831b78",
+            "title": "Kernel Approximation Methods for Speech Recognition",
+            "url": "https://www.semanticscholar.org/paper/9f928c849cd8ea7659b2262fbc50757de9831b78",
+            "venue": "J. Mach. Learn. Res.",
+            "year": 2017
+        },
+        {
+            "arxivId": "1610.09072",
+            "authors": [
+                {
+                    "authorId": "1815972",
+                    "name": "Felix X. Yu"
+                },
+                {
+                    "authorId": "9486035",
+                    "name": "A. Suresh"
+                },
+                {
+                    "authorId": "1805203",
+                    "name": "K. Choromanski"
+                },
+                {
+                    "authorId": "1404655176",
+                    "name": "D. Holtmann-Rice"
+                },
+                {
+                    "authorId": "152663162",
+                    "name": "Sanjiv Kumar"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "32e934094c4d17fe4d734b2e169ba5e3cd0ee05e",
+            "title": "Orthogonal Random Features",
+            "url": "https://www.semanticscholar.org/paper/32e934094c4d17fe4d734b2e169ba5e3cd0ee05e",
+            "venue": "NIPS",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2032038",
+                    "name": "Cameron Musco"
+                },
+                {
+                    "authorId": "2767340",
+                    "name": "Christopher Musco"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "6b221ef71545215eeaa0a5420d21e5e64f920eeb",
+            "title": "Recursive Sampling for the Nystrom Method",
+            "url": "https://www.semanticscholar.org/paper/6b221ef71545215eeaa0a5420d21e5e64f920eeb",
+            "venue": "NIPS",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "40353015",
+                    "name": "Avner May"
+                },
+                {
+                    "authorId": "144426392",
+                    "name": "Michael Collins"
+                },
+                {
+                    "authorId": "143724861",
+                    "name": "Daniel J. Hsu"
+                },
+                {
+                    "authorId": "144707379",
+                    "name": "Brian Kingsbury"
+                }
+            ],
+            "doi": "10.1109/ICASSP.2016.7472112",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "0fb875e6f8e653ae66f42a832d1f0fec2be2a3dc",
+            "title": "Compact kernel models for acoustic modeling via random feature selection",
+            "url": "https://www.semanticscholar.org/paper/0fb875e6f8e653ae66f42a832d1f0fec2be2a3dc",
+            "venue": "2016 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": null,
+                    "name": "Jie Chen"
+                },
+                {
+                    "authorId": "3008832",
+                    "name": "Lingfei Wu"
+                },
+                {
+                    "authorId": "3104038",
+                    "name": "Kartik Audhkhasi"
+                },
+                {
+                    "authorId": "144707379",
+                    "name": "Brian Kingsbury"
+                },
+                {
+                    "authorId": "3403771",
+                    "name": "Bhuvana Ramabhadrari"
+                }
+            ],
+            "doi": "10.1109/ICASSP.2016.7472118",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "ca7d45e945362202cd9cb53b63bb45f378df49d0",
+            "title": "Efficient one-vs-one kernel ridge regression for speech recognition",
+            "url": "https://www.semanticscholar.org/paper/ca7d45e945362202cd9cb53b63bb45f378df49d0",
+            "venue": "2016 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+            "year": 2016
+        },
+        {
+            "arxivId": "1602.05310",
+            "authors": [
+                {
+                    "authorId": "1985955",
+                    "name": "Stephen Tu"
+                },
+                {
+                    "authorId": "40458654",
+                    "name": "R. Roelofs"
+                },
+                {
+                    "authorId": "2697906",
+                    "name": "S. Venkataraman"
+                },
+                {
+                    "authorId": "9229182",
+                    "name": "B. Recht"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "24880ceed40ab6433d88cd60343863320c6e0555",
+            "title": "Large Scale Kernel Learning using Block Coordinate Descent",
+            "url": "https://www.semanticscholar.org/paper/24880ceed40ab6433d88cd60343863320c6e0555",
+            "venue": "ArXiv",
+            "year": 2016
+        },
+        {
+            "arxivId": "1602.04474",
+            "authors": [
+                {
+                    "authorId": "145383040",
+                    "name": "Alessandro Rudi"
+                },
+                {
+                    "authorId": "1690976",
+                    "name": "L. Rosasco"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e92cb981bd2f38e5129d38cee0b24315551ab0f5",
+            "title": "Generalization Properties of Learning with Random Features",
+            "url": "https://www.semanticscholar.org/paper/e92cb981bd2f38e5129d38cee0b24315551ab0f5",
+            "venue": "NIPS",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145808540",
+                    "name": "A. Alaoui"
+                },
+                {
+                    "authorId": "143884206",
+                    "name": "Michael W. Mahoney"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "a549bed132e669b3f581df1ac029f4a09115dc3f",
+            "title": "Fast Randomized Kernel Ridge Regression with Statistical Guarantees",
+            "url": "https://www.semanticscholar.org/paper/a549bed132e669b3f581df1ac029f4a09115dc3f",
+            "venue": "NIPS",
+            "year": 2015
+        },
+        {
+            "arxivId": "1510.01722",
+            "authors": [
+                {
+                    "authorId": "1808676",
+                    "name": "Vikas Sindhwani"
+                },
+                {
+                    "authorId": "1784851",
+                    "name": "Tara N. Sainath"
+                },
+                {
+                    "authorId": "152663162",
+                    "name": "Sanjiv Kumar"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "bf76be8df2f2bc56edac98a5d0dfc19c85882eaa",
+            "title": "Structured Transforms for Small-Footprint Deep Learning",
+            "url": "https://www.semanticscholar.org/paper/bf76be8df2f2bc56edac98a5d0dfc19c85882eaa",
+            "venue": "NIPS",
+            "year": 2015
+        },
+        {
+            "arxivId": "1510.00149",
+            "authors": [
+                {
+                    "authorId": "143840275",
+                    "name": "Song Han"
+                },
+                {
+                    "authorId": "3123774",
+                    "name": "Huizi Mao"
+                },
+                {
+                    "authorId": "80724002",
+                    "name": "W. Dally"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "642d0f49b7826adcf986616f4af77e736229990f",
+            "title": "Deep Compression: Compressing Deep Neural Network with Pruning, Trained Quantization and Huffman Coding",
+            "url": "https://www.semanticscholar.org/paper/642d0f49b7826adcf986616f4af77e736229990f",
+            "venue": "ICLR",
+            "year": 2015
+        },
+        {
+            "arxivId": "1506.06438",
+            "authors": [
+                {
+                    "authorId": "1801197",
+                    "name": "Christopher De Sa"
+                },
+                {
+                    "authorId": "1776014",
+                    "name": "Ce Zhang"
+                },
+                {
+                    "authorId": "1746638",
+                    "name": "K. Olukotun"
+                },
+                {
+                    "authorId": "2114485554",
+                    "name": "C. R\u00e9"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "c5641d8b79c983c21bad4e669fc555357de35e4a",
+            "title": "Taming the Wild: A Unified Analysis of Hogwild-Style Algorithms",
+            "url": "https://www.semanticscholar.org/paper/c5641d8b79c983c21bad4e669fc555357de35e4a",
+            "venue": "NIPS",
+            "year": 2015
+        },
+        {
+            "arxivId": "1506.02785",
+            "authors": [
+                {
+                    "authorId": "36326783",
+                    "name": "Danica J. Sutherland"
+                },
+                {
+                    "authorId": "1753432",
+                    "name": "J. Schneider"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "78e95099ec2ac3cb087eb47ba7c87ddb01a19405",
+            "title": "On the Error of Random Fourier Features",
+            "url": "https://www.semanticscholar.org/paper/78e95099ec2ac3cb087eb47ba7c87ddb01a19405",
+            "venue": "UAI",
+            "year": 2015
+        },
+        {
+            "arxivId": "1503.03893",
+            "authors": [
+                {
+                    "authorId": "1815972",
+                    "name": "Felix X. Yu"
+                },
+                {
+                    "authorId": "152663162",
+                    "name": "Sanjiv Kumar"
+                },
+                {
+                    "authorId": "39682833",
+                    "name": "H. Rowley"
+                },
+                {
+                    "authorId": "9546964",
+                    "name": "Shih-Fu Chang"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "result",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "e16276e1590804ea5f79df6ece67c170ba8d5239",
+            "title": "Compact Nonlinear Maps and Circulant Extensions",
+            "url": "https://www.semanticscholar.org/paper/e16276e1590804ea5f79df6ece67c170ba8d5239",
+            "venue": "ArXiv",
+            "year": 2015
+        },
+        {
+            "arxivId": "1502.02551",
+            "authors": [
+                {
+                    "authorId": "2116011472",
+                    "name": "Suyog Gupta"
+                },
+                {
+                    "authorId": "31651864",
+                    "name": "A. Agrawal"
+                },
+                {
+                    "authorId": "33678523",
+                    "name": "K. Gopalakrishnan"
+                },
+                {
+                    "authorId": "32967358",
+                    "name": "P. Narayanan"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "b7cf49e30355633af2db19f35189410c8515e91f",
+            "title": "Deep Learning with Limited Numerical Precision",
+            "url": "https://www.semanticscholar.org/paper/b7cf49e30355633af2db19f35189410c8515e91f",
+            "venue": "ICML",
+            "year": 2015
+        },
+        {
+            "arxivId": "1501.01571",
+            "authors": [
+                {
+                    "authorId": "1788107",
+                    "name": "J. Tropp"
+                }
+            ],
+            "doi": "10.1561/2200000048",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "3504565c8c3cbae18a50247604f07a7e01cde801",
+            "title": "An Introduction to Matrix Concentration Inequalities",
+            "url": "https://www.semanticscholar.org/paper/3504565c8c3cbae18a50247604f07a7e01cde801",
+            "venue": "Found. Trends Mach. Learn.",
+            "year": 2015
+        },
+        {
+            "arxivId": "1412.7149",
+            "authors": [
+                {
+                    "authorId": "8387085",
+                    "name": "Zichao Yang"
+                },
+                {
+                    "authorId": "3009779",
+                    "name": "Marcin Moczulski"
+                },
+                {
+                    "authorId": "1715051",
+                    "name": "Misha Denil"
+                },
+                {
+                    "authorId": "1737568",
+                    "name": "Nando de Freitas"
+                },
+                {
+                    "authorId": "46234526",
+                    "name": "Alex Smola"
+                },
+                {
+                    "authorId": "1779453",
+                    "name": "Le Song"
+                },
+                {
+                    "authorId": "47197117",
+                    "name": "Ziyu Wang"
+                }
+            ],
+            "doi": "10.1109/ICCV.2015.173",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "27a99c21a1324f087b2f144adc119f04137dfd87",
+            "title": "Deep Fried Convnets",
+            "url": "https://www.semanticscholar.org/paper/27a99c21a1324f087b2f144adc119f04137dfd87",
+            "venue": "2015 IEEE International Conference on Computer Vision (ICCV)",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2527556",
+                    "name": "I. E. Yen"
+                },
+                {
+                    "authorId": "2125130375",
+                    "name": "Ting-Wei Lin"
+                },
+                {
+                    "authorId": "2145196483",
+                    "name": "Shou-De Lin"
+                },
+                {
+                    "authorId": "145969795",
+                    "name": "Pradeep Ravikumar"
+                },
+                {
+                    "authorId": "1783667",
+                    "name": "I. Dhillon"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "085aef854310a67fc7cba3ed231cf244a9d2ba51",
+            "title": "Sparse Random Feature Algorithm as Coordinate Descent in Hilbert Space",
+            "url": "https://www.semanticscholar.org/paper/085aef854310a67fc7cba3ed231cf244a9d2ba51",
+            "venue": "NIPS",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1793529",
+                    "name": "Cho-Jui Hsieh"
+                },
+                {
+                    "authorId": "3422911",
+                    "name": "Si Si"
+                },
+                {
+                    "authorId": "1783667",
+                    "name": "I. Dhillon"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ef2cb3b03f95de248be6530c38fea525e5e817ba",
+            "title": "Fast Prediction for Large-Scale Kernel Machines",
+            "url": "https://www.semanticscholar.org/paper/ef2cb3b03f95de248be6530c38fea525e5e817ba",
+            "venue": "NIPS",
+            "year": 2014
+        },
+        {
+            "arxivId": "1412.8293",
+            "authors": [
+                {
+                    "authorId": "1922753",
+                    "name": "H. Avron"
+                },
+                {
+                    "authorId": "1808676",
+                    "name": "Vikas Sindhwani"
+                },
+                {
+                    "authorId": "2791531",
+                    "name": "Jiyan Yang"
+                },
+                {
+                    "authorId": "143884206",
+                    "name": "Michael W. Mahoney"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "2b55f034a3874ad4a4b7f389e6f89e3bf2d1801e",
+            "title": "Quasi-Monte Carlo Feature Maps for Shift-Invariant Kernels",
+            "url": "https://www.semanticscholar.org/paper/2b55f034a3874ad4a4b7f389e6f89e3bf2d1801e",
+            "venue": "J. Mach. Learn. Res.",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3422911",
+                    "name": "Si Si"
+                },
+                {
+                    "authorId": "1793529",
+                    "name": "Cho-Jui Hsieh"
+                },
+                {
+                    "authorId": "1783667",
+                    "name": "I. Dhillon"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "58c85498e23c86f526223e661e250007794c8d67",
+            "title": "Memory Efficient Kernel Approximation",
+            "url": "https://www.semanticscholar.org/paper/58c85498e23c86f526223e661e250007794c8d67",
+            "venue": "ICML",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2421691",
+                    "name": "Po-Sen Huang"
+                },
+                {
+                    "authorId": "1922753",
+                    "name": "H. Avron"
+                },
+                {
+                    "authorId": "1784851",
+                    "name": "Tara N. Sainath"
+                },
+                {
+                    "authorId": "1808676",
+                    "name": "Vikas Sindhwani"
+                },
+                {
+                    "authorId": "1720857",
+                    "name": "B. Ramabhadran"
+                }
+            ],
+            "doi": "10.1109/ICASSP.2014.6853587",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "b3c879b2430a61d8c4393436685c85bcfbd6c6d8",
+            "title": "Kernel methods match Deep Neural Networks on TIMIT",
+            "url": "https://www.semanticscholar.org/paper/b3c879b2430a61d8c4393436685c85bcfbd6c6d8",
+            "venue": "2014 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1784851",
+                    "name": "Tara N. Sainath"
+                },
+                {
+                    "authorId": "144707379",
+                    "name": "Brian Kingsbury"
+                },
+                {
+                    "authorId": "38940652",
+                    "name": "H. Soltau"
+                },
+                {
+                    "authorId": "1720857",
+                    "name": "B. Ramabhadran"
+                }
+            ],
+            "doi": "10.1109/TASL.2013.2284378",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "60145cbebaaceb76ac8ea79717e0314d0ccd7688",
+            "title": "Optimization Techniques to Improve Training Speed of Deep Neural Networks for Large Speech Tasks",
+            "url": "https://www.semanticscholar.org/paper/60145cbebaaceb76ac8ea79717e0314d0ccd7688",
+            "venue": "IEEE Transactions on Audio, Speech, and Language Processing",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1754887",
+                    "name": "A. Juditsky"
+                },
+                {
+                    "authorId": "2070945",
+                    "name": "Guanghui Lan"
+                },
+                {
+                    "authorId": "145853268",
+                    "name": "A. Nemirovski"
+                },
+                {
+                    "authorId": "31474779",
+                    "name": "A. Shapiro"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "96167ed3ebc9a2c3270f6ae96043e6f086eed4de",
+            "title": "Stochastic Approximation approach to Stochastic Programming",
+            "url": "https://www.semanticscholar.org/paper/96167ed3ebc9a2c3270f6ae96043e6f086eed4de",
+            "venue": "",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2827616",
+                    "name": "Quoc V. Le"
+                },
+                {
+                    "authorId": "2227764",
+                    "name": "Tam\u00e1s Sarl\u00f3s"
+                },
+                {
+                    "authorId": "46234526",
+                    "name": "Alex Smola"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "result",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "8ce9de8009d7186a16804e55ad7d2d8ce595d350",
+            "title": "Fastfood - Computing Hilbert Space Expansions in loglinear time",
+            "url": "https://www.semanticscholar.org/paper/8ce9de8009d7186a16804e55ad7d2d8ce595d350",
+            "venue": "ICML",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1784851",
+                    "name": "Tara N. Sainath"
+                },
+                {
+                    "authorId": "144707379",
+                    "name": "Brian Kingsbury"
+                },
+                {
+                    "authorId": "1808676",
+                    "name": "Vikas Sindhwani"
+                },
+                {
+                    "authorId": "3122752",
+                    "name": "E. Arisoy"
+                },
+                {
+                    "authorId": "1720857",
+                    "name": "B. Ramabhadran"
+                }
+            ],
+            "doi": "10.1109/ICASSP.2013.6638949",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "5cea23330c76994cb626df20bed31cc2588033df",
+            "title": "Low-rank matrix factorization for Deep Neural Network training with high-dimensional output targets",
+            "url": "https://www.semanticscholar.org/paper/5cea23330c76994cb626df20bed31cc2588033df",
+            "venue": "2013 IEEE International Conference on Acoustics, Speech and Signal Processing",
+            "year": 2013
+        },
+        {
+            "arxivId": "1303.1849",
+            "authors": [
+                {
+                    "authorId": "9545803",
+                    "name": "Alex Gittens"
+                },
+                {
+                    "authorId": "143884206",
+                    "name": "Michael W. Mahoney"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "7cda32aeefdd3cabd76871b8ee06bd1a1ea2ba10",
+            "title": "Revisiting the Nystrom Method for Improved Large-scale Machine Learning",
+            "url": "https://www.semanticscholar.org/paper/7cda32aeefdd3cabd76871b8ee06bd1a1ea2ba10",
+            "venue": "J. Mach. Learn. Res.",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "40381920",
+                    "name": "Tianbao Yang"
+                },
+                {
+                    "authorId": "2110463675",
+                    "name": "Yu-Feng Li"
+                },
+                {
+                    "authorId": "1694826",
+                    "name": "M. Mahdavi"
+                },
+                {
+                    "authorId": "1675329074",
+                    "name": "Rong Jin"
+                },
+                {
+                    "authorId": "145624000",
+                    "name": "Zhi-Hua Zhou"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "8f77e16f2834eb23307b0436f5422a9752339f0a",
+            "title": "Nystr\u00f6m Method vs Random Fourier Features: A Theoretical and Empirical Comparison",
+            "url": "https://www.semanticscholar.org/paper/8f77e16f2834eb23307b0436f5422a9752339f0a",
+            "venue": "NIPS",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2265937251",
+                    "name": "Sanjiv Kumar"
+                },
+                {
+                    "authorId": "81080659",
+                    "name": "M. Mohri"
+                },
+                {
+                    "authorId": "145532827",
+                    "name": "Ameet Talwalkar"
+                }
+            ],
+            "doi": "10.5555/2503308.2343678",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "50353738eb935a0546aeb2e81882e2f334e32ab8",
+            "title": "Sampling Methods for the Nystr\u00f6m Method",
+            "url": "https://www.semanticscholar.org/paper/50353738eb935a0546aeb2e81882e2f334e32ab8",
+            "venue": "J. Mach. Learn. Res.",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145115014",
+                    "name": "Corinna Cortes"
+                },
+                {
+                    "authorId": "81080659",
+                    "name": "M. Mohri"
+                },
+                {
+                    "authorId": "145532827",
+                    "name": "Ameet Talwalkar"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "a035cccf0f57b505229f0e5db1a1dfedde062d43",
+            "title": "On the Impact of Kernel Approximation on Learning Accuracy",
+            "url": "https://www.semanticscholar.org/paper/a035cccf0f57b505229f0e5db1a1dfedde062d43",
+            "venue": "AISTATS",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "152663162",
+                    "name": "Sanjiv Kumar"
+                },
+                {
+                    "authorId": "81080659",
+                    "name": "M. Mohri"
+                },
+                {
+                    "authorId": "145532827",
+                    "name": "Ameet Talwalkar"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "780165c9c7ebfed946bf47ad8afe471e8680fb25",
+            "title": "Ensemble Nystrom Method",
+            "url": "https://www.semanticscholar.org/paper/780165c9c7ebfed946bf47ad8afe471e8680fb25",
+            "venue": "NIPS",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2242160001",
+                    "name": "Ali Rahimi"
+                },
+                {
+                    "authorId": "2241780069",
+                    "name": "Benjamin Recht"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "47aa6d7381cc9993da60e4547b01f415a04f3cf2",
+            "title": "Weighted Sums of Random Kitchen Sinks: Replacing minimization with randomization in learning",
+            "url": "https://www.semanticscholar.org/paper/47aa6d7381cc9993da60e4547b01f415a04f3cf2",
+            "venue": "NIPS",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2152986588",
+                    "name": "Kai Zhang"
+                },
+                {
+                    "authorId": "1807998",
+                    "name": "I. Tsang"
+                },
+                {
+                    "authorId": "145193332",
+                    "name": "J. Kwok"
+                }
+            ],
+            "doi": "10.1145/1390156.1390311",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ed2f7914bf51168842f33618d50f1e5f21622548",
+            "title": "Improved Nystr\u00f6m low-rank approximation and error analysis",
+            "url": "https://www.semanticscholar.org/paper/ed2f7914bf51168842f33618d50f1e5f21622548",
+            "venue": "ICML '08",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "31558848",
+                    "name": "A. Rahimi"
+                },
+                {
+                    "authorId": "9229182",
+                    "name": "B. Recht"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "7a59fde27461a3ef4a21a249cc403d0d96e4a0d7",
+            "title": "Random Features for Large-Scale Kernel Machines",
+            "url": "https://www.semanticscholar.org/paper/7a59fde27461a3ef4a21a249cc403d0d96e4a0d7",
+            "venue": "NIPS",
+            "year": 2007
+        },
+        {
+            "arxivId": "math/0508276",
+            "authors": [
+                {
+                    "authorId": "2117881943",
+                    "name": "Tong Zhang"
+                },
+                {
+                    "authorId": "144923779",
+                    "name": "Bin Yu"
+                }
+            ],
+            "doi": "10.1214/009053605000000255",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "b0816b4f1fdf1ebc324663f66485e05d58cbd1a7",
+            "title": "Boosting with early stopping: Convergence and consistency",
+            "url": "https://www.semanticscholar.org/paper/b0816b4f1fdf1ebc324663f66485e05d58cbd1a7",
+            "venue": "",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2285968829",
+                    "name": "Christopher K. I Williams"
+                }
+            ],
+            "doi": "10.1198/jasa.2003.s270",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "fc8cda36a0972e7de1ac3a7bcb81dc32da79bee4",
+            "title": "Learning with Kernels: Support Vector Machines, Regularization, Optimization, and Beyond",
+            "url": "https://www.semanticscholar.org/paper/fc8cda36a0972e7de1ac3a7bcb81dc32da79bee4",
+            "venue": "IEEE Transactions on Neural Networks",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1740397",
+                    "name": "M. Gales"
+                }
+            ],
+            "doi": "10.1006/csla.1998.0043",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "2109f8f91301abec8497286160cd6b0f2e65ed05",
+            "title": "Maximum likelihood linear transformations for HMM-based speech recognition",
+            "url": "https://www.semanticscholar.org/paper/2109f8f91301abec8497286160cd6b0f2e65ed05",
+            "venue": "Comput. Speech Lang.",
+            "year": 1998
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2467151",
+                    "name": "John S. Garofolo"
+                },
+                {
+                    "authorId": "145204681",
+                    "name": "L. Lamel"
+                },
+                {
+                    "authorId": "144982775",
+                    "name": "W. Fisher"
+                },
+                {
+                    "authorId": "3241934",
+                    "name": "Jonathan G. Fiscus"
+                },
+                {
+                    "authorId": "1786370",
+                    "name": "D. S. Pallett"
+                },
+                {
+                    "authorId": "35669756",
+                    "name": "Nancy L. Dahlgren"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "47128bb3ce4ed00691c0d7d58c02791c3e963ab7",
+            "title": "Darpa Timit Acoustic-Phonetic Continuous Speech Corpus CD-ROM {TIMIT} | NIST",
+            "url": "https://www.semanticscholar.org/paper/47128bb3ce4ed00691c0d7d58c02791c3e963ab7",
+            "venue": "",
+            "year": 1993
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2477463",
+                    "name": "Itay Hubara"
+                },
+                {
+                    "authorId": "2388466",
+                    "name": "Matthieu Courbariaux"
+                },
+                {
+                    "authorId": "1912398",
+                    "name": "Daniel Soudry"
+                },
+                {
+                    "authorId": "1387872181",
+                    "name": "Ran El-Yaniv"
+                },
+                {
+                    "authorId": "1751762",
+                    "name": "Yoshua Bengio"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "28135fd3e80dda50a673cd556f10b9b972005d27",
+            "title": "Binarized Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/28135fd3e80dda50a673cd556f10b9b972005d27",
+            "venue": "ArXiv",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145715698",
+                    "name": "Christopher K. I. Williams"
+                },
+                {
+                    "authorId": "1680574",
+                    "name": "M. Seeger"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "b6fff8b8ea77f157913986e7af53951d9fc1128e",
+            "title": "Using the Nystr\u00f6m Method to Speed Up Kernel Machines",
+            "url": "https://www.semanticscholar.org/paper/b6fff8b8ea77f157913986e7af53951d9fc1128e",
+            "venue": "NIPS",
+            "year": 2000
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144798098",
+                    "name": "N. Morgan"
+                },
+                {
+                    "authorId": "1733733",
+                    "name": "H. Bourlard"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "6f3175b3930d0c71495a52a7bccb3889e5f33520",
+            "title": "Generalization and Parameter Estimation in Feedforward Netws: Some Experiments",
+            "url": "https://www.semanticscholar.org/paper/6f3175b3930d0c71495a52a7bccb3889e5f33520",
+            "venue": "NIPS",
+            "year": 1989
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Mathematics",
+            "source": "external"
+        },
+        {
+            "category": "Medicine",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        },
+        {
+            "category": "Mathematics",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Low-Precision Random Fourier Features for Memory-Constrained Kernel Approximation",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/11df1509caa9c0c9a0e6e6876e5ecb51c5e14ae6",
+    "venue": "International Conference on Artificial Intelligence and Statistics",
+    "year": 2018
+}

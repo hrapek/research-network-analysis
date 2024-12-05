@@ -1,0 +1,970 @@
+{
+    "abstract": "Pixel-aligned implicit models, such as PIFu, PIFuHD, and ICON, are used for single-view clothed human reconstruction. These models need to be trained using a sampling training scheme. Existing sampling training schemes either fail to capture thin surfaces (e.g. ears, fingers) or cause noisy artefacts in reconstructed meshes. To address these problems, we introduce Fine Structured-Aware Sampling (FSS), a new sampling training scheme to train pixel-aligned implicit models for single-view human reconstruction. FSS resolves the aforementioned problems by proactively adapting to the thickness and complexity of surfaces. In addition, unlike existing sampling training schemes, FSS shows how normals of sample points can be capitalized in the training process to improve results.\nLastly, to further improve the training process, FSS proposes a mesh thickness loss signal for pixel-aligned implicit models. It becomes computationally feasible to introduce this loss once a slight reworking of the pixel-aligned implicit function framework is carried out. Our results show that our methods significantly outperform SOTA methods qualitatively and quantitatively. Our code is publicly available at https://github.com/kcyt/FSS.",
+    "arxivId": "2402.19197",
+    "authors": [
+        {
+            "authorId": "2110194672",
+            "name": "K. Chan",
+            "url": "https://www.semanticscholar.org/author/2110194672"
+        },
+        {
+            "authorId": "2146423021",
+            "name": "Fayao Liu",
+            "url": "https://www.semanticscholar.org/author/2146423021"
+        },
+        {
+            "authorId": "2257446685",
+            "name": "Guosheng Lin",
+            "url": "https://www.semanticscholar.org/author/2257446685"
+        },
+        {
+            "authorId": "2284712989",
+            "name": "Chuan-Sheng Foo",
+            "url": "https://www.semanticscholar.org/author/2284712989"
+        },
+        {
+            "authorId": "2288455211",
+            "name": "Weisi Lin",
+            "url": "https://www.semanticscholar.org/author/2288455211"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2110194672",
+                    "name": "K. Chan"
+                },
+                {
+                    "authorId": "2146423021",
+                    "name": "Fayao Liu"
+                },
+                {
+                    "authorId": "2297433641",
+                    "name": "Guosheng Lin"
+                },
+                {
+                    "authorId": "2284712989",
+                    "name": "Chuan-Sheng Foo"
+                },
+                {
+                    "authorId": "2290282651",
+                    "name": "Weisi Lin"
+                }
+            ],
+            "doi": "10.1109/CVPR52733.2024.00981",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "8292226fa6de5797ed00b8a1f782ff874ba9cfa1",
+            "title": "R-Cyclic Diffuser: Reductive and Cyclic Latent Diffusion for 3D Clothed Human Digitalization",
+            "url": "https://www.semanticscholar.org/paper/8292226fa6de5797ed00b8a1f782ff874ba9cfa1",
+            "venue": "2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2024
+        },
+        {
+            "arxivId": "2211.07955",
+            "authors": [
+                {
+                    "authorId": "2110194672",
+                    "name": "K. Chan"
+                },
+                {
+                    "authorId": "2604251",
+                    "name": "Guosheng Lin"
+                },
+                {
+                    "authorId": "49453102",
+                    "name": "Haiyu Zhao"
+                },
+                {
+                    "authorId": "144968898",
+                    "name": "Weisi Lin"
+                }
+            ],
+            "doi": "10.1007/978-3-031-20086-1_19",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "24b9ceb67b48c5d85658031342cc1431bc4d4b92",
+            "title": "IntegratedPIFu: Integrated Pixel Aligned Implicit Function for Single-View Human Reconstruction",
+            "url": "https://www.semanticscholar.org/paper/24b9ceb67b48c5d85658031342cc1431bc4d4b92",
+            "venue": "ECCV",
+            "year": 2022
+        }
+    ],
+    "corpusId": 268063559,
+    "doi": "10.1609/aaai.v38i2.27856",
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": true,
+    "isPublisherLicensed": true,
+    "is_open_access": true,
+    "is_publisher_licensed": true,
+    "numCitedBy": 2,
+    "numCiting": 24,
+    "paperId": "f75695db8893b38d9bd61f6901f8524ee9ec9645",
+    "references": [
+        {
+            "arxivId": "2312.08730",
+            "authors": [
+                {
+                    "authorId": "2274105293",
+                    "name": "EnPang Hui"
+                },
+                {
+                    "authorId": "66562436",
+                    "name": "Zhongang Cai"
+                },
+                {
+                    "authorId": "2165477990",
+                    "name": "Lei Yang"
+                },
+                {
+                    "authorId": "2274208202",
+                    "name": "Qingyi Tao"
+                },
+                {
+                    "authorId": "2274191399",
+                    "name": "Zhonghua Wu"
+                },
+                {
+                    "authorId": "2274424866",
+                    "name": "Tianwei Zhang"
+                },
+                {
+                    "authorId": "2274221107",
+                    "name": "Ziwei Liu"
+                }
+            ],
+            "doi": "10.48550/arXiv.2312.08730",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "bf78a3ef490de1c3463cdc7efe9ab5f17c40afce",
+            "title": "Towards Robust and Expressive Whole-body Human Pose and Shape Estimation",
+            "url": "https://www.semanticscholar.org/paper/bf78a3ef490de1c3463cdc7efe9ab5f17c40afce",
+            "venue": "NeurIPS",
+            "year": 2023
+        },
+        {
+            "arxivId": "2211.07955",
+            "authors": [
+                {
+                    "authorId": "2110194672",
+                    "name": "K. Chan"
+                },
+                {
+                    "authorId": "2604251",
+                    "name": "Guosheng Lin"
+                },
+                {
+                    "authorId": "49453102",
+                    "name": "Haiyu Zhao"
+                },
+                {
+                    "authorId": "144968898",
+                    "name": "Weisi Lin"
+                }
+            ],
+            "doi": "10.1007/978-3-031-20086-1_19",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "24b9ceb67b48c5d85658031342cc1431bc4d4b92",
+            "title": "IntegratedPIFu: Integrated Pixel Aligned Implicit Function for Single-View Human Reconstruction",
+            "url": "https://www.semanticscholar.org/paper/24b9ceb67b48c5d85658031342cc1431bc4d4b92",
+            "venue": "ECCV",
+            "year": 2022
+        },
+        {
+            "arxivId": "2209.10529",
+            "authors": [
+                {
+                    "authorId": "8011950",
+                    "name": "Huijuan Pang"
+                },
+                {
+                    "authorId": "66562436",
+                    "name": "Zhongang Cai"
+                },
+                {
+                    "authorId": "2165477990",
+                    "name": "Lei Yang"
+                },
+                {
+                    "authorId": "2146332291",
+                    "name": "Tianwei Zhang"
+                },
+                {
+                    "authorId": "2176847706",
+                    "name": "Ziwei Liu"
+                }
+            ],
+            "doi": "10.48550/arXiv.2209.10529",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d020e59cceef5ffc88e6eed74e3407f0a5c8e070",
+            "title": "Benchmarking and Analyzing 3D Human Pose and Shape Estimation Beyond Algorithms",
+            "url": "https://www.semanticscholar.org/paper/d020e59cceef5ffc88e6eed74e3407f0a5c8e070",
+            "venue": "NeurIPS",
+            "year": 2022
+        },
+        {
+            "arxivId": "2204.08906",
+            "authors": [
+                {
+                    "authorId": "1914886",
+                    "name": "Thiemo Alldieck"
+                },
+                {
+                    "authorId": "1975564",
+                    "name": "M. Zanfir"
+                },
+                {
+                    "authorId": "1781120",
+                    "name": "C. Sminchisescu"
+                }
+            ],
+            "doi": "10.1109/CVPR52688.2022.00156",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "dc6f9a04c4b33f36dc5fb61026ff06f72a985dc3",
+            "title": "Photorealistic Monocular 3D Reconstruction of Humans Wearing Clothing",
+            "url": "https://www.semanticscholar.org/paper/dc6f9a04c4b33f36dc5fb61026ff06f72a985dc3",
+            "venue": "2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2022
+        },
+        {
+            "arxivId": "2112.09127",
+            "authors": [
+                {
+                    "authorId": "35964034",
+                    "name": "Yuliang Xiu"
+                },
+                {
+                    "authorId": "2139659025",
+                    "name": "Jinlong Yang"
+                },
+                {
+                    "authorId": "1940674",
+                    "name": "Dimitrios Tzionas"
+                },
+                {
+                    "authorId": "2105795",
+                    "name": "Michael J. Black"
+                }
+            ],
+            "doi": "10.1109/CVPR52688.2022.01294",
+            "intent": [
+                "methodology",
+                "result"
+            ],
+            "isInfluential": false,
+            "paperId": "4ffd87551ab02eca22bd6d5ad945c8d036e80b1d",
+            "title": "ICON: Implicit Clothed humans Obtained from Normals",
+            "url": "https://www.semanticscholar.org/paper/4ffd87551ab02eca22bd6d5ad945c8d036e80b1d",
+            "venue": "2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2021
+        },
+        {
+            "arxivId": "2105.01859",
+            "authors": [
+                {
+                    "authorId": null,
+                    "name": "Tao Yu"
+                },
+                {
+                    "authorId": "41017836",
+                    "name": "Zerong Zheng"
+                },
+                {
+                    "authorId": "3374149",
+                    "name": "Kaiwen Guo"
+                },
+                {
+                    "authorId": "2108283792",
+                    "name": "Pengpeng Liu"
+                },
+                {
+                    "authorId": "144954808",
+                    "name": "Qionghai Dai"
+                },
+                {
+                    "authorId": "1680777",
+                    "name": "Yebin Liu"
+                }
+            ],
+            "doi": "10.1109/CVPR46437.2021.00569",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "7e5fefa74f383ec2d77b72b639e3d6f30dea2970",
+            "title": "Function4D: Real-time Human Volumetric Capture from Very Sparse Consumer RGBD Sensors",
+            "url": "https://www.semanticscholar.org/paper/7e5fefa74f383ec2d77b72b639e3d6f30dea2970",
+            "venue": "2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2021
+        },
+        {
+            "arxivId": "2104.05289",
+            "authors": [
+                {
+                    "authorId": "2115399883",
+                    "name": "Yang Hong"
+                },
+                {
+                    "authorId": "2108487442",
+                    "name": "Juyong Zhang"
+                },
+                {
+                    "authorId": "15679675",
+                    "name": "Boyi Jiang"
+                },
+                {
+                    "authorId": "8280113",
+                    "name": "Yudong Guo"
+                },
+                {
+                    "authorId": "1724542",
+                    "name": "Ligang Liu"
+                },
+                {
+                    "authorId": "1679542",
+                    "name": "H. Bao"
+                }
+            ],
+            "doi": "10.1109/CVPR46437.2021.00060",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "133be7a7e81d7c282ed676a125c6815a985394ce",
+            "title": "StereoPIFu: Depth Aware Clothed Human Digitization via Stereo Vision",
+            "url": "https://www.semanticscholar.org/paper/133be7a7e81d7c282ed676a125c6815a985394ce",
+            "venue": "2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2021
+        },
+        {
+            "arxivId": "2012.15838",
+            "authors": [
+                {
+                    "authorId": "2072712025",
+                    "name": "Sida Peng"
+                },
+                {
+                    "authorId": "2145782988",
+                    "name": "Yuanqing Zhang"
+                },
+                {
+                    "authorId": "121983635",
+                    "name": "Yinghao Xu"
+                },
+                {
+                    "authorId": "2144298123",
+                    "name": "Qianqian Wang"
+                },
+                {
+                    "authorId": "2066148547",
+                    "name": "Qing Shuai"
+                },
+                {
+                    "authorId": "1679542",
+                    "name": "H. Bao"
+                },
+                {
+                    "authorId": "145453113",
+                    "name": "Xiaowei Zhou"
+                }
+            ],
+            "doi": "10.1109/CVPR46437.2021.00894",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "af8faec7c0b8f4b2a28d42a86e0e7d499016c560",
+            "title": "Neural Body: Implicit Neural Representations with Structured Latent Codes for Novel View Synthesis of Dynamic Humans",
+            "url": "https://www.semanticscholar.org/paper/af8faec7c0b8f4b2a28d42a86e0e7d499016c560",
+            "venue": "2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2020
+        },
+        {
+            "arxivId": "2007.03858",
+            "authors": [
+                {
+                    "authorId": "41017836",
+                    "name": "Zerong Zheng"
+                },
+                {
+                    "authorId": null,
+                    "name": "Tao Yu"
+                },
+                {
+                    "authorId": "1680777",
+                    "name": "Yebin Liu"
+                },
+                {
+                    "authorId": "144954808",
+                    "name": "Qionghai Dai"
+                }
+            ],
+            "doi": "10.1109/TPAMI.2021.3050505",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "5ab1c70f9cc0d692dea6b392bdb8f3100d7ca5a7",
+            "title": "PaMIR: Parametric Model-Conditioned Implicit Representation for Image-Based Human Reconstruction",
+            "url": "https://www.semanticscholar.org/paper/5ab1c70f9cc0d692dea6b392bdb8f3100d7ca5a7",
+            "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+            "year": 2020
+        },
+        {
+            "arxivId": "2004.00452",
+            "authors": [
+                {
+                    "authorId": "1645244475",
+                    "name": "Shunsuke Saito"
+                },
+                {
+                    "authorId": "145386542",
+                    "name": "T. Simon"
+                },
+                {
+                    "authorId": "2398245",
+                    "name": "Jason M. Saragih"
+                },
+                {
+                    "authorId": "7996087",
+                    "name": "H. Joo"
+                }
+            ],
+            "doi": "10.1109/cvpr42600.2020.00016",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "3d0148ea1425d87d3b812139599dff61bb09df9a",
+            "title": "PIFuHD: Multi-Level Pixel-Aligned Implicit Function for High-Resolution 3D Human Digitization",
+            "url": "https://www.semanticscholar.org/paper/3d0148ea1425d87d3b812139599dff61bb09df9a",
+            "venue": "2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2020
+        },
+        {
+            "arxivId": "2004.00214",
+            "authors": [
+                {
+                    "authorId": "15679675",
+                    "name": "Boyi Jiang"
+                },
+                {
+                    "authorId": "2108487442",
+                    "name": "Juyong Zhang"
+                },
+                {
+                    "authorId": "2115399883",
+                    "name": "Yang Hong"
+                },
+                {
+                    "authorId": "3438705",
+                    "name": "Jinhao Luo"
+                },
+                {
+                    "authorId": "1724542",
+                    "name": "Ligang Liu"
+                },
+                {
+                    "authorId": "1679542",
+                    "name": "H. Bao"
+                }
+            ],
+            "doi": "10.1007/978-3-030-58565-5_2",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "6b9c682c880fd2117b4c9d1112ecd59f7716c9c7",
+            "title": "BCNet: Learning Body and Cloth Shape from A Single Image",
+            "url": "https://www.semanticscholar.org/paper/6b9c682c880fd2117b4c9d1112ecd59f7716c9c7",
+            "venue": "ECCV",
+            "year": 2020
+        },
+        {
+            "arxivId": "1909.12828",
+            "authors": [
+                {
+                    "authorId": "113950826",
+                    "name": "Nikos Kolotouros"
+                },
+                {
+                    "authorId": "2829330",
+                    "name": "G. Pavlakos"
+                },
+                {
+                    "authorId": "2105795",
+                    "name": "Michael J. Black"
+                },
+                {
+                    "authorId": "1751586",
+                    "name": "Kostas Daniilidis"
+                }
+            ],
+            "doi": "10.1109/ICCV.2019.00234",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "0c2b90305dbeb11950ff71718cb3331048124d50",
+            "title": "Learning to Reconstruct 3D Human Pose and Shape via Model-Fitting in the Loop",
+            "url": "https://www.semanticscholar.org/paper/0c2b90305dbeb11950ff71718cb3331048124d50",
+            "venue": "2019 IEEE/CVF International Conference on Computer Vision (ICCV)",
+            "year": 2019
+        },
+        {
+            "arxivId": "1908.06903",
+            "authors": [
+                {
+                    "authorId": "48046803",
+                    "name": "Bharat Lal Bhatnagar"
+                },
+                {
+                    "authorId": "49796893",
+                    "name": "Garvita Tiwari"
+                },
+                {
+                    "authorId": "1680185",
+                    "name": "C. Theobalt"
+                },
+                {
+                    "authorId": "1403428213",
+                    "name": "Gerard Pons-Moll"
+                }
+            ],
+            "doi": "10.1109/ICCV.2019.00552",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "aa08a7b0d2fa0877bc13793f113a7c8dbc31da66",
+            "title": "Multi-Garment Net: Learning to Dress 3D People From Images",
+            "url": "https://www.semanticscholar.org/paper/aa08a7b0d2fa0877bc13793f113a7c8dbc31da66",
+            "venue": "2019 IEEE/CVF International Conference on Computer Vision (ICCV)",
+            "year": 2019
+        },
+        {
+            "arxivId": "1905.05172",
+            "authors": [
+                {
+                    "authorId": "1645244475",
+                    "name": "Shunsuke Saito"
+                },
+                {
+                    "authorId": "2109582492",
+                    "name": "Zeng Huang"
+                },
+                {
+                    "authorId": "41015901",
+                    "name": "Ryota Natsume"
+                },
+                {
+                    "authorId": "1731030",
+                    "name": "S. Morishima"
+                },
+                {
+                    "authorId": "20615377",
+                    "name": "Angjoo Kanazawa"
+                },
+                {
+                    "authorId": null,
+                    "name": "Hao Li"
+                }
+            ],
+            "doi": "10.1109/ICCV.2019.00239",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "343da6d4cff7ce8c04270487a1f7a037ea0572d6",
+            "title": "PIFu: Pixel-Aligned Implicit Function for High-Resolution Clothed Human Digitization",
+            "url": "https://www.semanticscholar.org/paper/343da6d4cff7ce8c04270487a1f7a037ea0572d6",
+            "venue": "2019 IEEE/CVF International Conference on Computer Vision (ICCV)",
+            "year": 2019
+        },
+        {
+            "arxivId": "1904.05866",
+            "authors": [
+                {
+                    "authorId": "2829330",
+                    "name": "G. Pavlakos"
+                },
+                {
+                    "authorId": "52022007",
+                    "name": "Vasileios Choutas"
+                },
+                {
+                    "authorId": "2066023556",
+                    "name": "N. Ghorbani"
+                },
+                {
+                    "authorId": "1780750",
+                    "name": "Timo Bolkart"
+                },
+                {
+                    "authorId": "144261075",
+                    "name": "Ahmed A. A. Osman"
+                },
+                {
+                    "authorId": "1940674",
+                    "name": "Dimitrios Tzionas"
+                },
+                {
+                    "authorId": "2105795",
+                    "name": "Michael J. Black"
+                }
+            ],
+            "doi": "10.1109/CVPR.2019.01123",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "4be4707aba8d622a0553aa159dc92ae7f9af9c5e",
+            "title": "Expressive Body Capture: 3D Hands, Face, and Body From a Single Image",
+            "url": "https://www.semanticscholar.org/paper/4be4707aba8d622a0553aa159dc92ae7f9af9c5e",
+            "venue": "2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2019
+        },
+        {
+            "arxivId": "1901.00049",
+            "authors": [
+                {
+                    "authorId": "41015901",
+                    "name": "Ryota Natsume"
+                },
+                {
+                    "authorId": "1645244475",
+                    "name": "Shunsuke Saito"
+                },
+                {
+                    "authorId": "2109582492",
+                    "name": "Zeng Huang"
+                },
+                {
+                    "authorId": "2535947",
+                    "name": "Weikai Chen"
+                },
+                {
+                    "authorId": "1797422",
+                    "name": "Chongyang Ma"
+                },
+                {
+                    "authorId": "79482877",
+                    "name": "Hao Li"
+                },
+                {
+                    "authorId": "1731030",
+                    "name": "S. Morishima"
+                }
+            ],
+            "doi": "10.1109/CVPR.2019.00461",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "c2775267c0b6ef92678b6b1730d3791a1f1822ff",
+            "title": "SiCloPe: Silhouette-Based Clothed People",
+            "url": "https://www.semanticscholar.org/paper/c2775267c0b6ef92678b6b1730d3791a1f1822ff",
+            "venue": "2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2018
+        },
+        {
+            "arxivId": "1808.00362",
+            "authors": [
+                {
+                    "authorId": "153360678",
+                    "name": "Stephen Lombardi"
+                },
+                {
+                    "authorId": "2398245",
+                    "name": "Jason M. Saragih"
+                },
+                {
+                    "authorId": "145386542",
+                    "name": "T. Simon"
+                },
+                {
+                    "authorId": "1774867",
+                    "name": "Yaser Sheikh"
+                }
+            ],
+            "doi": "10.1145/3197517.3201401",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "6c1f0948aa1638a24cb01ec35ca3712242a3e3b2",
+            "title": "Deep appearance models for face rendering",
+            "url": "https://www.semanticscholar.org/paper/6c1f0948aa1638a24cb01ec35ca3712242a3e3b2",
+            "venue": "ACM Trans. Graph.",
+            "year": 2018
+        },
+        {
+            "arxivId": "1712.06584",
+            "authors": [
+                {
+                    "authorId": "20615377",
+                    "name": "Angjoo Kanazawa"
+                },
+                {
+                    "authorId": "2105795",
+                    "name": "Michael J. Black"
+                },
+                {
+                    "authorId": "34734622",
+                    "name": "D. Jacobs"
+                },
+                {
+                    "authorId": "143751119",
+                    "name": "Jitendra Malik"
+                }
+            ],
+            "doi": "10.1109/CVPR.2018.00744",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "e73696016b43314a7bef6015dacbe702af472d96",
+            "title": "End-to-End Recovery of Human Shape and Pose",
+            "url": "https://www.semanticscholar.org/paper/e73696016b43314a7bef6015dacbe702af472d96",
+            "venue": "2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+            "year": 2017
+        },
+        {
+            "arxivId": "1711.11585",
+            "authors": [
+                {
+                    "authorId": "2195314",
+                    "name": "Ting-Chun Wang"
+                },
+                {
+                    "authorId": "39793900",
+                    "name": "Ming-Yu Liu"
+                },
+                {
+                    "authorId": "2436356",
+                    "name": "Jun-Yan Zhu"
+                },
+                {
+                    "authorId": "29955511",
+                    "name": "Andrew Tao"
+                },
+                {
+                    "authorId": "1690538",
+                    "name": "J. Kautz"
+                },
+                {
+                    "authorId": "2301680",
+                    "name": "Bryan Catanzaro"
+                }
+            ],
+            "doi": "10.1109/CVPR.2018.00917",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "f0a0c0f0d6a7ff53abea40a8c0c678ed570bf851",
+            "title": "High-Resolution Image Synthesis and Semantic Manipulation with Conditional GANs",
+            "url": "https://www.semanticscholar.org/paper/f0a0c0f0d6a7ff53abea40a8c0c678ed570bf851",
+            "venue": "2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+            "year": 2017
+        },
+        {
+            "arxivId": "1703.04454",
+            "authors": [
+                {
+                    "authorId": "2152735644",
+                    "name": "Chao Zhang"
+                },
+                {
+                    "authorId": "2724685",
+                    "name": "S. Pujades"
+                },
+                {
+                    "authorId": "2105795",
+                    "name": "Michael J. Black"
+                },
+                {
+                    "authorId": "1403428213",
+                    "name": "Gerard Pons-Moll"
+                }
+            ],
+            "doi": "10.1109/CVPR.2017.582",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "8de82ceeab990471ccc7d714fdd69e460c54c223",
+            "title": "Detailed, Accurate, Human Shape Estimation from Clothed 3D Scan Sequences",
+            "url": "https://www.semanticscholar.org/paper/8de82ceeab990471ccc7d714fdd69e460c54c223",
+            "venue": "2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2017
+        },
+        {
+            "arxivId": "1603.06937",
+            "authors": [
+                {
+                    "authorId": "31688710",
+                    "name": "Alejandro Newell"
+                },
+                {
+                    "authorId": "34284131",
+                    "name": "Kaiyu Yang"
+                },
+                {
+                    "authorId": "153302678",
+                    "name": "Jia Deng"
+                }
+            ],
+            "doi": "10.1007/978-3-319-46484-8_29",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "848938e6199bad08f1db6f3239b260cfa901e95f",
+            "title": "Stacked Hourglass Networks for Human Pose Estimation",
+            "url": "https://www.semanticscholar.org/paper/848938e6199bad08f1db6f3239b260cfa901e95f",
+            "venue": "ECCV",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "36676121",
+                    "name": "Alvaro Collet"
+                },
+                {
+                    "authorId": "153486578",
+                    "name": "Ming Chuang"
+                },
+                {
+                    "authorId": "2066139949",
+                    "name": "Pat Sweeney"
+                },
+                {
+                    "authorId": "31582245",
+                    "name": "D. Gillett"
+                },
+                {
+                    "authorId": "32447917",
+                    "name": "D. Evseev"
+                },
+                {
+                    "authorId": "2081677676",
+                    "name": "David Calabrese"
+                },
+                {
+                    "authorId": "144201188",
+                    "name": "Hugues Hoppe"
+                },
+                {
+                    "authorId": "35869859",
+                    "name": "Adam G. Kirk"
+                },
+                {
+                    "authorId": "2074769877",
+                    "name": "Steve Sullivan"
+                }
+            ],
+            "doi": "10.1145/2766945",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d468062762decb2470e2840d4bffcd323e599812",
+            "title": "High-quality streamable free-viewpoint video",
+            "url": "https://www.semanticscholar.org/paper/d468062762decb2470e2840d4bffcd323e599812",
+            "venue": "ACM Trans. Graph.",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1699727",
+                    "name": "W. Lorensen"
+                },
+                {
+                    "authorId": "33205084",
+                    "name": "H. Cline"
+                }
+            ],
+            "doi": "10.1145/37401.37422",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "d92f735b0773b4e697e7e72798eccae2f647acd6",
+            "title": "Marching cubes: A high resolution 3D surface construction algorithm",
+            "url": "https://www.semanticscholar.org/paper/d92f735b0773b4e697e7e72798eccae2f647acd6",
+            "venue": "SIGGRAPH",
+            "year": 1987
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2110194672",
+                    "name": "K. Chan"
+                },
+                {
+                    "authorId": "2604251",
+                    "name": "Guosheng Lin"
+                },
+                {
+                    "authorId": "49453102",
+                    "name": "Haiyu Zhao"
+                },
+                {
+                    "authorId": "144968898",
+                    "name": "Weisi Lin"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "f90d6bf48292c49aa472002761b5ee031cd77416",
+            "title": "S-PIFu: Integrating Parametric Human Models with PIFu for Single-view Clothed Human Reconstruction",
+            "url": "https://www.semanticscholar.org/paper/f90d6bf48292c49aa472002761b5ee031cd77416",
+            "venue": "NeurIPS",
+            "year": 2022
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Fine Structure-Aware Sampling: A New Sampling Training Scheme for Pixel-Aligned Implicit Models in Single-View Human Reconstruction",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/f75695db8893b38d9bd61f6901f8524ee9ec9645",
+    "venue": "AAAI Conference on Artificial Intelligence",
+    "year": 2024
+}

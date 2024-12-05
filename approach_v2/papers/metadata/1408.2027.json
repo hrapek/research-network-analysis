@@ -1,0 +1,951 @@
+{
+    "abstract": "We present a heuristic search algorithm for solving first-order MDPs (FOMDPs). Our approach combines first-order state abstraction that avoids evaluating states individually, and heuristic search that avoids evaluating all states. Firstly, we apply state abstraction directly on the FOMDP avoiding propositionalization. Such kind of abstraction is referred to as first-order state abstraction. Secondly, guided by an admissible heuristic, the search is restricted only to those states that are reachable from the initial state. We demonstrate the usefullness of the above techniques for solving FOMDPs on a system, referred to as FC-Planner, that entered the probabilistic track of the International Planning Competition (IPC'2004).",
+    "arxivId": "1408.2027",
+    "authors": [
+        {
+            "authorId": "3248978",
+            "name": "E. Karabaev",
+            "url": "https://www.semanticscholar.org/author/3248978"
+        },
+        {
+            "authorId": "144225471",
+            "name": "O. Skvortsova",
+            "url": "https://www.semanticscholar.org/author/144225471"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": "1701.01048",
+            "authors": [
+                {
+                    "authorId": "1746048",
+                    "name": "R. Khardon"
+                }
+            ],
+            "doi": "10.7551/mitpress/10548.003.0024",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "cf2a67025d8f6b1d9666adf106158a4b82ff24b0",
+            "title": "Stochastic Planning and Lifted Inference",
+            "url": "https://www.semanticscholar.org/paper/cf2a67025d8f6b1d9666adf106158a4b82ff24b0",
+            "venue": "StarAI@AAAI",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2051367",
+                    "name": "M. Ghallab"
+                },
+                {
+                    "authorId": "1734158",
+                    "name": "Dana S. Nau"
+                },
+                {
+                    "authorId": "145919532",
+                    "name": "P. Traverso"
+                }
+            ],
+            "doi": "10.1017/cbo9781139583923",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "8dd691b69dc3b58f6da9196ab02bbb1810651dc3",
+            "title": "Automated Planning and Acting",
+            "url": "https://www.semanticscholar.org/paper/8dd691b69dc3b58f6da9196ab02bbb1810651dc3",
+            "venue": "",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1740042",
+                    "name": "L. D. Raedt"
+                },
+                {
+                    "authorId": "1746871",
+                    "name": "K. Kersting"
+                },
+                {
+                    "authorId": "145986014",
+                    "name": "Sriraam Natarajan"
+                },
+                {
+                    "authorId": "143715817",
+                    "name": "D. Poole"
+                }
+            ],
+            "doi": "10.1007/978-3-031-01574-8",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "06996e180cab25c3644387bd93fb6bad6cb76556",
+            "title": "Statistical Relational Artificial Intelligence: Logic, Probability, and Computation",
+            "url": "https://www.semanticscholar.org/paper/06996e180cab25c3644387bd93fb6bad6cb76556",
+            "venue": "Statistical Relational Artificial Intelligence",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1746871",
+                    "name": "K. Kersting"
+                },
+                {
+                    "authorId": "145986014",
+                    "name": "Sriraam Natarajan"
+                }
+            ],
+            "doi": "10.1007/s13218-015-0386-8",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "dde3c2431abc4d1153e4867d001b9439488a3ffb",
+            "title": "Statistical Relational Artificial Intelligence: From Distributions through Actions to Optimization",
+            "url": "https://www.semanticscholar.org/paper/dde3c2431abc4d1153e4867d001b9439488a3ffb",
+            "venue": "KI - K\u00fcnstliche Intelligenz",
+            "year": 2015
+        },
+        {
+            "arxivId": "1109.2355",
+            "authors": [
+                {
+                    "authorId": "1685896",
+                    "name": "S. Thi\u00e9baux"
+                },
+                {
+                    "authorId": "1723510",
+                    "name": "Charles Gretton"
+                },
+                {
+                    "authorId": "1814690",
+                    "name": "J. Slaney"
+                },
+                {
+                    "authorId": "2085270520",
+                    "name": "David Price"
+                },
+                {
+                    "authorId": "2132916",
+                    "name": "F. Kabanza"
+                }
+            ],
+            "doi": "10.1613/jair.1676",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "2cb4f3c2480de39abc7322cc019c364195e7d334",
+            "title": "Decision-Theoretic Planning with non-Markovian Rewards",
+            "url": "https://www.semanticscholar.org/paper/2cb4f3c2480de39abc7322cc019c364195e7d334",
+            "venue": "J. Artif. Intell. Res.",
+            "year": 2011
+        },
+        {
+            "arxivId": "1401.3860",
+            "authors": [
+                {
+                    "authorId": "49046135",
+                    "name": "Tobias Lang"
+                },
+                {
+                    "authorId": "144918851",
+                    "name": "Marc Toussaint"
+                }
+            ],
+            "doi": "10.1613/jair.3093",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c7f7274715956691d1b3f908002198236f726440",
+            "title": "Planning with Noisy Probabilistic Relational Rules",
+            "url": "https://www.semanticscholar.org/paper/c7f7274715956691d1b3f908002198236f726440",
+            "venue": "J. Artif. Intell. Res.",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1732536",
+                    "name": "S. Sanner"
+                },
+                {
+                    "authorId": "145646162",
+                    "name": "Craig Boutilier"
+                }
+            ],
+            "doi": "10.1016/j.artint.2008.11.003",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "8defd9a7a432a3be38ea70f7f8abe2762832e0d3",
+            "title": "Practical solution techniques for first-order MDPs",
+            "url": "https://www.semanticscholar.org/paper/8defd9a7a432a3be38ea70f7f8abe2762832e0d3",
+            "venue": "Artif. Intell.",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "39012394",
+                    "name": "Drew Mellor"
+                }
+            ],
+            "doi": "10.1007/978-3-540-88138-4_10",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c7cd43ca1ef60f28effc97394984d12040faf0f4",
+            "title": "A Learning Classifier System Approach to Relational Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/c7cd43ca1ef60f28effc97394984d12040faf0f4",
+            "venue": "IWLCS",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1723510",
+                    "name": "Charles Gretton"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2ad75a749636f0330a559c61057225ef34afe6cf",
+            "title": "Gradient-Based Relational Reinforcement Learning of Temporally Extended Policies",
+            "url": "https://www.semanticscholar.org/paper/2ad75a749636f0330a559c61057225ef34afe6cf",
+            "venue": "ICAPS",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1732536",
+                    "name": "S. Sanner"
+                },
+                {
+                    "authorId": "145646162",
+                    "name": "Craig Boutilier"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "616335863b6a03779ec8c98196c6474f2084c8f2",
+            "title": "Approximate Solution Techniques for Factored First-Order MDPs",
+            "url": "https://www.semanticscholar.org/paper/616335863b6a03779ec8c98196c6474f2084c8f2",
+            "venue": "ICAPS",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1809846",
+                    "name": "S. Yoon"
+                },
+                {
+                    "authorId": "145841336",
+                    "name": "Alan Fern"
+                },
+                {
+                    "authorId": "1718146",
+                    "name": "R. Givan"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5d361c5ac37a016c34051bb15802ee2102d49a80",
+            "title": "FF-Replan: A Baseline for Probabilistic Planning",
+            "url": "https://www.semanticscholar.org/paper/5d361c5ac37a016c34051bb15802ee2102d49a80",
+            "venue": "ICAPS",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1746871",
+                    "name": "K. Kersting"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "1a9fa046babd0630ca1d292d038b59c108cd71b1",
+            "title": "An inductive logic programming approach to statistical relational learning",
+            "url": "https://www.semanticscholar.org/paper/1a9fa046babd0630ca1d292d038b59c108cd71b1",
+            "venue": "AI Commun.",
+            "year": 2006
+        },
+        {
+            "arxivId": "1206.6879",
+            "authors": [
+                {
+                    "authorId": "1732536",
+                    "name": "S. Sanner"
+                },
+                {
+                    "authorId": "145646162",
+                    "name": "Craig Boutilier"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "58f339d23a573d6515e2d30474709af60909ebc3",
+            "title": "Practical Linear Value-approximation Techniques for First-order MDPs",
+            "url": "https://www.semanticscholar.org/paper/58f339d23a573d6515e2d30474709af60909ebc3",
+            "venue": "UAI",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2541098",
+                    "name": "M. V. Otterlo"
+                }
+            ],
+            "doi": "10.1007/978-3-642-27645-3_8",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "812de51ea15a8e317561fa00d133d6548cf088a7",
+            "title": "Solving Relational and First-Order Logical Markov Decision Processes: A Survey",
+            "url": "https://www.semanticscholar.org/paper/812de51ea15a8e317561fa00d133d6548cf088a7",
+            "venue": "Reinforcement Learning",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "49046135",
+                    "name": "Tobias Lang"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "2090bc07e309abff861bb06f23a56c9aa2990c0d",
+            "title": "Planning and exploration in stochastic relational worlds",
+            "url": "https://www.semanticscholar.org/paper/2090bc07e309abff861bb06f23a56c9aa2990c0d",
+            "venue": "",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1746871",
+                    "name": "K. Kersting"
+                },
+                {
+                    "authorId": "143927103",
+                    "name": "S. Natarajan"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "49490378ad40fadbffe1e81c8b169c83a067164c",
+            "title": "Statistical Relational AI : Logic , Probability and Computation",
+            "url": "https://www.semanticscholar.org/paper/49490378ad40fadbffe1e81c8b169c83a067164c",
+            "venue": "",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1732536",
+                    "name": "S. Sanner"
+                },
+                {
+                    "authorId": "1746871",
+                    "name": "K. Kersting"
+                }
+            ],
+            "doi": "10.1007/978-1-4899-7687-1_806",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "ca24fbda192fd8bf450cc5234ab76caa4c899821",
+            "title": "Symbolic Dynamic Programming",
+            "url": "https://www.semanticscholar.org/paper/ca24fbda192fd8bf450cc5234ab76caa4c899821",
+            "venue": "Encyclopedia of Machine Learning and Data Mining",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1732536",
+                    "name": "S. Sanner"
+                },
+                {
+                    "authorId": "1746871",
+                    "name": "K. Kersting"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "fc113cfc3084d20ad1e64b933ac146e09f309bce",
+            "title": "Synonyms Relational Dynamic Programming , Dynamic Programming for Relational Domains , Relational Value Iteration Definition",
+            "url": "https://www.semanticscholar.org/paper/fc113cfc3084d20ad1e64b933ac146e09f309bce",
+            "venue": "",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1732536",
+                    "name": "S. Sanner"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "1765708a752c090fc864c64f14c36b7d34ed09a2",
+            "title": "First-order Decision-theoretic Planning in Structured Relational Environments",
+            "url": "https://www.semanticscholar.org/paper/1765708a752c090fc864c64f14c36b7d34ed09a2",
+            "venue": "",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144225471",
+                    "name": "O. Skvortsova"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "c570a24e2f73af97be82ccdde00a6a708cffc4b1",
+            "title": "Say \u201c No \u201d to Grounding : An Inference Algorithm for First-Order MDPs",
+            "url": "https://www.semanticscholar.org/paper/c570a24e2f73af97be82ccdde00a6a708cffc4b1",
+            "venue": "",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3248978",
+                    "name": "E. Karabaev"
+                },
+                {
+                    "authorId": "2084499612",
+                    "name": "G. Ramm\u00e9"
+                },
+                {
+                    "authorId": "144225471",
+                    "name": "O. Skvortsova"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "16ce1a3836a515f89766057caf002ddf747c6eef",
+            "title": "Efficient Symbolic Reasoning for First-Order MDPs",
+            "url": "https://www.semanticscholar.org/paper/16ce1a3836a515f89766057caf002ddf747c6eef",
+            "venue": "",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2541098",
+                    "name": "M. V. Otterlo"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "1b4471121868c9774aba82d81cb3af75963aeedd",
+            "title": "A survey of reinforcement learning in relational domains",
+            "url": "https://www.semanticscholar.org/paper/1b4471121868c9774aba82d81cb3af75963aeedd",
+            "venue": "",
+            "year": 2005
+        }
+    ],
+    "corpusId": 10469891,
+    "doi": null,
+    "fieldsOfStudy": [
+        "Computer Science",
+        "Mathematics"
+    ],
+    "influentialCitationCount": 1,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 22,
+    "numCiting": 14,
+    "paperId": "ebb66e92df37b3c56d4b1f1ee366ce2919457fcd",
+    "references": [
+        {
+            "arxivId": "1207.4107",
+            "authors": [
+                {
+                    "authorId": "1723510",
+                    "name": "Charles Gretton"
+                },
+                {
+                    "authorId": "1685896",
+                    "name": "S. Thi\u00e9baux"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "8f3f8680c2a01ac6ba4c7f27adb450360ca1b320",
+            "title": "Exploiting First-Order Regression in Inductive Policy Selection",
+            "url": "https://www.semanticscholar.org/paper/8f3f8680c2a01ac6ba4c7f27adb450360ca1b320",
+            "venue": "UAI",
+            "year": 2004
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1746871",
+                    "name": "K. Kersting"
+                },
+                {
+                    "authorId": "2541098",
+                    "name": "M. V. Otterlo"
+                },
+                {
+                    "authorId": "1740042",
+                    "name": "L. D. Raedt"
+                }
+            ],
+            "doi": "10.1145/1015330.1015401",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "54766230de13caafee3509ff495effbee22456f8",
+            "title": "Bellman goes relational",
+            "url": "https://www.semanticscholar.org/paper/54766230de13caafee3509ff495effbee22456f8",
+            "venue": "ICML",
+            "year": 2004
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1405546005",
+                    "name": "Natalia Hernandez-Gardiol"
+                },
+                {
+                    "authorId": "1709512",
+                    "name": "L. Kaelbling"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "69c458bdaa9ad63e072d018d65429d7aa5e09621",
+            "title": "Envelope-based Planning in Relational MDPs",
+            "url": "https://www.semanticscholar.org/paper/69c458bdaa9ad63e072d018d65429d7aa5e09621",
+            "venue": "NIPS",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145841336",
+                    "name": "Alan Fern"
+                },
+                {
+                    "authorId": "1809846",
+                    "name": "S. Yoon"
+                },
+                {
+                    "authorId": "1718146",
+                    "name": "R. Givan"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "c52e0989718dda4369a72b833a94402eebba334d",
+            "title": "Approximate Policy Iteration with a Policy Language Bias",
+            "url": "https://www.semanticscholar.org/paper/c52e0989718dda4369a72b833a94402eebba334d",
+            "venue": "NIPS",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "40648606",
+                    "name": "Z. Feng"
+                },
+                {
+                    "authorId": "1697031",
+                    "name": "E. Hansen"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "cf605cc7adec040fe9afd1a06f8b5200aa430faa",
+            "title": "Symbolic heuristic search for factored Markov decision processes",
+            "url": "https://www.semanticscholar.org/paper/cf605cc7adec040fe9afd1a06f8b5200aa430faa",
+            "venue": "AAAI/IAAI",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145646162",
+                    "name": "Craig Boutilier"
+                },
+                {
+                    "authorId": "143931627",
+                    "name": "R. Reiter"
+                },
+                {
+                    "authorId": "2064278710",
+                    "name": "Bob Price"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "9d59f87b881017e6ef0198636a77ad04b7ebea7a",
+            "title": "Symbolic Dynamic Programming for First-Order MDPs",
+            "url": "https://www.semanticscholar.org/paper/9d59f87b881017e6ef0198636a77ad04b7ebea7a",
+            "venue": "IJCAI",
+            "year": 2001
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1697031",
+                    "name": "E. Hansen"
+                },
+                {
+                    "authorId": "1707550",
+                    "name": "S. Zilberstein"
+                }
+            ],
+            "doi": "10.1016/S0004-3702(01)00106-0",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "20f0d7d9369ae0fc8ba0a9713738d993d30d7e80",
+            "title": "LAO*: A heuristic search algorithm that finds solutions with loops",
+            "url": "https://www.semanticscholar.org/paper/20f0d7d9369ae0fc8ba0a9713738d993d30d7e80",
+            "venue": "Artif. Intell.",
+            "year": 2001
+        },
+        {
+            "arxivId": "1301.6704",
+            "authors": [
+                {
+                    "authorId": "145803385",
+                    "name": "J. Hoey"
+                },
+                {
+                    "authorId": "1403118589",
+                    "name": "Robert St-Aubin"
+                },
+                {
+                    "authorId": "1741933",
+                    "name": "Alan J. Hu"
+                },
+                {
+                    "authorId": "145646162",
+                    "name": "Craig Boutilier"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "9d239a096db28070adb8e2e48cf1d42b6ffadd3e",
+            "title": "SPUDD: Stochastic Planning using Decision Diagrams",
+            "url": "https://www.semanticscholar.org/paper/9d239a096db28070adb8e2e48cf1d42b6ffadd3e",
+            "venue": "UAI",
+            "year": 1999
+        },
+        {
+            "arxivId": "1105.5460",
+            "authors": [
+                {
+                    "authorId": "145646162",
+                    "name": "Craig Boutilier"
+                },
+                {
+                    "authorId": "1680510",
+                    "name": "T. Dean"
+                },
+                {
+                    "authorId": "38413017",
+                    "name": "S. Hanks"
+                }
+            ],
+            "doi": "10.1613/jair.575",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "d7840b8c9f1a457ab33c57d30ee9ed78a866b8ad",
+            "title": "Decision-Theoretic Planning: Structural Assumptions and Computational Leverage",
+            "url": "https://www.semanticscholar.org/paper/d7840b8c9f1a457ab33c57d30ee9ed78a866b8ad",
+            "venue": "J. Artif. Intell. Res.",
+            "year": 1999
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1680510",
+                    "name": "T. Dean"
+                },
+                {
+                    "authorId": "1709512",
+                    "name": "L. Kaelbling"
+                },
+                {
+                    "authorId": "145500761",
+                    "name": "J. Kirman"
+                },
+                {
+                    "authorId": "1738567",
+                    "name": "A. Nicholson"
+                }
+            ],
+            "doi": "10.1016/0004-3702(94)00086-G",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "0a5bac1a42c05d4711bcd23c8caae60eb886fbb3",
+            "title": "Planning under Time Constraints in Stochastic Domains",
+            "url": "https://www.semanticscholar.org/paper/0a5bac1a42c05d4711bcd23c8caae60eb886fbb3",
+            "venue": "Artif. Intell.",
+            "year": 1993
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2932627",
+                    "name": "Steffen H\u00f6lldobler"
+                },
+                {
+                    "authorId": "144225471",
+                    "name": "O. Skvortsova"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "5bde2c31982c6bf9b8924de17e9e592ff4928a94",
+            "title": "A Logic-based Approach to Dynamic Programming",
+            "url": "https://www.semanticscholar.org/paper/5bde2c31982c6bf9b8924de17e9e592ff4928a94",
+            "venue": "",
+            "year": 2004
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1403118589",
+                    "name": "Robert St-Aubin"
+                },
+                {
+                    "authorId": "145803385",
+                    "name": "J. Hoey"
+                },
+                {
+                    "authorId": "145646162",
+                    "name": "Craig Boutilier"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "d448bfc5549f201b36e685f963fd99006ab6ceba",
+            "title": "APRICODD: Approximate Policy Construction Using Decision Diagrams",
+            "url": "https://www.semanticscholar.org/paper/d448bfc5549f201b36e685f963fd99006ab6ceba",
+            "venue": "NIPS",
+            "year": 2000
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1730590",
+                    "name": "A. Barto"
+                },
+                {
+                    "authorId": "1819261",
+                    "name": "Steven J. Bradtke"
+                },
+                {
+                    "authorId": "1699868",
+                    "name": "Satinder Singh"
+                }
+            ],
+            "doi": "10.1016/0004-3702(94)00011-O",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "eaec01700f5ea63af311cfd7a70a3869460ce080",
+            "title": "Learning to Act Using Real-Time Dynamic Programming",
+            "url": "https://www.semanticscholar.org/paper/eaec01700f5ea63af311cfd7a70a3869460ce080",
+            "venue": "Artif. Intell.",
+            "year": 1995
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Mathematics",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "A Heuristic Search Algorithm for Solving First-Order MDPs",
+    "topics": [
+        {
+            "topic": "Admissible heuristic",
+            "topicId": "554505",
+            "url": "https://www.semanticscholar.org/topic/554505"
+        },
+        {
+            "topic": "PowerBuilder Foundation Classes",
+            "topicId": "3607182",
+            "url": "https://www.semanticscholar.org/topic/3607182"
+        },
+        {
+            "topic": "Situation calculus",
+            "topicId": "173201",
+            "url": "https://www.semanticscholar.org/topic/173201"
+        },
+        {
+            "topic": "Dynamic programming",
+            "topicId": "10893",
+            "url": "https://www.semanticscholar.org/topic/10893"
+        },
+        {
+            "topic": "First-order predicate",
+            "topicId": "776889",
+            "url": "https://www.semanticscholar.org/topic/776889"
+        },
+        {
+            "topic": "A* search algorithm",
+            "topicId": "175017",
+            "url": "https://www.semanticscholar.org/topic/175017"
+        },
+        {
+            "topic": "Bellman equation",
+            "topicId": "65628",
+            "url": "https://www.semanticscholar.org/topic/65628"
+        },
+        {
+            "topic": "Approximation algorithm",
+            "topicId": "87",
+            "url": "https://www.semanticscholar.org/topic/87"
+        },
+        {
+            "topic": "Mathematical optimization",
+            "topicId": "89",
+            "url": "https://www.semanticscholar.org/topic/89"
+        },
+        {
+            "topic": "OLGA (technology)",
+            "topicId": "352116",
+            "url": "https://www.semanticscholar.org/topic/352116"
+        },
+        {
+            "topic": "Perturbation theory",
+            "topicId": "5972",
+            "url": "https://www.semanticscholar.org/topic/5972"
+        },
+        {
+            "topic": "First-order reduction",
+            "topicId": "1954345",
+            "url": "https://www.semanticscholar.org/topic/1954345"
+        }
+    ],
+    "url": "https://www.semanticscholar.org/paper/ebb66e92df37b3c56d4b1f1ee366ce2919457fcd",
+    "venue": "Conference on Uncertainty in Artificial Intelligence",
+    "year": 2005
+}

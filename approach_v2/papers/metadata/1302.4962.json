@@ -1,0 +1,888 @@
+{
+    "abstract": "Consider the situation where some evidence e has been entered to a Bayesian network. When performing conflict analysis, sensitivity analysis, or when answering questions like \"What if the finding on X had been y instead of x?\", you need probabilities P(e\u2032|h) where e\u2032 is a subset of e, and h is a configuration of a (possibly empty) set of variables. \n \nCautious propagation is a modification of HUGIN propagation into a Shafer-Shenoy-like architecture. It is less efficient than HUGIN propagation; however, it provides easy access to P(e\u2032|h) for a great deal of relevant subsets e\u2032.",
+    "arxivId": "1302.4962",
+    "authors": [
+        {
+            "authorId": "35191477",
+            "name": "F. V. Jensen",
+            "url": "https://www.semanticscholar.org/author/35191477"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "34907272",
+                    "name": "A. Pastink"
+                },
+                {
+                    "authorId": "1790225",
+                    "name": "L. V. D. Gaag"
+                }
+            ],
+            "doi": "10.3233/978-1-61499-419-0-693",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "418108d2000922f756c7c91378628edaa7da2da8",
+            "title": "The Persistence of Most Probable Explanations in Bayesian Networks",
+            "url": "https://www.semanticscholar.org/paper/418108d2000922f756c7c91378628edaa7da2da8",
+            "venue": "ECAI",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2644517",
+                    "name": "Merel T. Rietbergen"
+                },
+                {
+                    "authorId": "1790225",
+                    "name": "L. V. D. Gaag"
+                },
+                {
+                    "authorId": "1741169",
+                    "name": "H. Bodlaender"
+                }
+            ],
+            "doi": "10.3233/978-1-61499-419-0-759",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "3bd71ee31800591a12eea2b20d6c1beb6cdde09e",
+            "title": "Provisional Propagation for Verifying Monotonicity of Bayesian Networks",
+            "url": "https://www.semanticscholar.org/paper/3bd71ee31800591a12eea2b20d6c1beb6cdde09e",
+            "venue": "ECAI",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1995678",
+                    "name": "Thorsten J. Ottosen"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f33a474b1040e0eab2ee667f02ceccfbccbec10c",
+            "title": "Solutions and Heuristics for Troubleshooting with Dependent Actions and Conditional Costs",
+            "url": "https://www.semanticscholar.org/paper/f33a474b1040e0eab2ee667f02ceccfbccbec10c",
+            "venue": "",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2927258",
+                    "name": "W. Watthayu"
+                }
+            ],
+            "doi": "10.1109/CSA.2008.76",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7716a06b9ea12d69a3d406fb9aaf407f680bed38",
+            "title": "Representing and Solving Influence Diagram in Multi-Criteria Decision Making: A Loopy Belief Propagation Method",
+            "url": "https://www.semanticscholar.org/paper/7716a06b9ea12d69a3d406fb9aaf407f680bed38",
+            "venue": "International Symposium on Computer Science and its Applications",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1903468",
+                    "name": "G. Baio"
+                },
+                {
+                    "authorId": "2940824",
+                    "name": "Fabio Corradi"
+                }
+            ],
+            "doi": "10.1016/J.FORSCIINT.2006.08.017",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0c0b1616dbeda65c205ed2fbd5d8bc4c355bd4fc",
+            "title": "Handling manipulated evidence.",
+            "url": "https://www.semanticscholar.org/paper/0c0b1616dbeda65c205ed2fbd5d8bc4c355bd4fc",
+            "venue": "Forensic science international",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1760422",
+                    "name": "H. Kasai"
+                },
+                {
+                    "authorId": "49465003",
+                    "name": "W. Uchida"
+                },
+                {
+                    "authorId": "3267020",
+                    "name": "S. Kurakake"
+                }
+            ],
+            "doi": "10.1016/j.jss.2007.03.011",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "259f4d511406d4d4de09943ca3571fac18b3c07d",
+            "title": "A Service Provisioning System for Distributed Personalization with Private Data Protection",
+            "url": "https://www.semanticscholar.org/paper/259f4d511406d4d4de09943ca3571fac18b3c07d",
+            "venue": "2006 ACS/IEEE International Conference on Pervasive Services",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2060374119",
+                    "name": "Kevin Grant"
+                },
+                {
+                    "authorId": "2696328",
+                    "name": "M. Horsch"
+                }
+            ],
+            "doi": "10.1007/11589990_8",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "20bd48a73378c1a6f0ea8c2558a516d5df71fac0",
+            "title": "Conditioning Graphs: Practical Structures for Inference in Bayesian Networks",
+            "url": "https://www.semanticscholar.org/paper/20bd48a73378c1a6f0ea8c2558a516d5df71fac0",
+            "venue": "Australian Conference on Artificial Intelligence",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2288788868",
+                    "name": "Hiroyuki Kasai"
+                },
+                {
+                    "authorId": "2288784604",
+                    "name": "Wataru Uchida"
+                },
+                {
+                    "authorId": "3267020",
+                    "name": "S. Kurakake"
+                }
+            ],
+            "doi": "10.1109/SECCMW.2005.1588298",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "3aea69c4df07ff44793ee13ac7b62986316dbbd3",
+            "title": "Privacy preserving ubiquitous service provisioning based on Bayesian network conversion",
+            "url": "https://www.semanticscholar.org/paper/3aea69c4df07ff44793ee13ac7b62986316dbbd3",
+            "venue": "Workshop of the 1st International Conference on Security and Privacy for Emerging Areas in Communication Networks, 2005.",
+            "year": 2005
+        },
+        {
+            "arxivId": "1207.1355",
+            "authors": [
+                {
+                    "authorId": "144880939",
+                    "name": "A. Madsen"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "42c39e3dc6819572f5bc50af2c27275fb8452b56",
+            "title": "A Differential Semantics of Lazy AR Propagation",
+            "url": "https://www.semanticscholar.org/paper/42c39e3dc6819572f5bc50af2c27275fb8452b56",
+            "venue": "UAI",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2927258",
+                    "name": "W. Watthayu"
+                },
+                {
+                    "authorId": "143894540",
+                    "name": "Yun Peng"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "5031c6483478c09777fd308b85aa47466758240d",
+            "title": "A Bayesian network based framework for multi-criteria decision making",
+            "url": "https://www.semanticscholar.org/paper/5031c6483478c09777fd308b85aa47466758240d",
+            "venue": "",
+            "year": 2004
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1769463",
+                    "name": "F. D\u00edez"
+                },
+                {
+                    "authorId": "2582659",
+                    "name": "S. F. Gal\u00e1n"
+                }
+            ],
+            "doi": "10.1002/int.10080",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "96286a694cdf080e50b44f800e0814bcda7b12d6",
+            "title": "Efficient computation for the noisy MAX",
+            "url": "https://www.semanticscholar.org/paper/96286a694cdf080e50b44f800e0814bcda7b12d6",
+            "venue": "Int. J. Intell. Syst.",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1728509",
+                    "name": "L. M. D. Campos"
+                },
+                {
+                    "authorId": "144987054",
+                    "name": "J. A. Gamez"
+                },
+                {
+                    "authorId": "1732961",
+                    "name": "S. Moral"
+                }
+            ],
+            "doi": "10.1142/S0218488501000892",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "fe4268711adddbfcc87e8d5a838510cf10077978",
+            "title": "Simplifying Explanations in Bayesian Belief Networks",
+            "url": "https://www.semanticscholar.org/paper/fe4268711adddbfcc87e8d5a838510cf10077978",
+            "venue": "Int. J. Uncertain. Fuzziness Knowl. Based Syst.",
+            "year": 2001
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144880939",
+                    "name": "A. Madsen"
+                },
+                {
+                    "authorId": "35191477",
+                    "name": "F. V. Jensen"
+                }
+            ],
+            "doi": "10.1016/S0004-3702(99)00062-4",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0b65ff0fbfb05d77e38b514bea5d0a7dafd62051",
+            "title": "LAZY Propagation: A Junction Tree Inference Algorithm Based on Lazy Evaluation",
+            "url": "https://www.semanticscholar.org/paper/0b65ff0fbfb05d77e38b514bea5d0a7dafd62051",
+            "venue": "Artif. Intell.",
+            "year": 1999
+        },
+        {
+            "arxivId": "1301.7398",
+            "authors": [
+                {
+                    "authorId": "144880939",
+                    "name": "A. Madsen"
+                },
+                {
+                    "authorId": "35191477",
+                    "name": "F. V. Jensen"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "f3236a4df536647ad82f9d8dc1665abab49ba481",
+            "title": "Lazy Propagation in Junction Trees",
+            "url": "https://www.semanticscholar.org/paper/f3236a4df536647ad82f9d8dc1665abab49ba481",
+            "venue": "UAI",
+            "year": 1998
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2030307",
+                    "name": "Cecil Huang"
+                },
+                {
+                    "authorId": "1700031",
+                    "name": "Adnan Darwiche"
+                }
+            ],
+            "doi": "10.1016/S0888-613X(96)00069-2",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "1831c39733e0db7362c72eda0388e7f435686439",
+            "title": "Inference in belief networks: A procedural guide",
+            "url": "https://www.semanticscholar.org/paper/1831c39733e0db7362c72eda0388e7f435686439",
+            "venue": "Int. J. Approx. Reason.",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "35191477",
+                    "name": "F. V. Jensen"
+                },
+                {
+                    "authorId": "3256004",
+                    "name": "S. H. Aldenryd"
+                },
+                {
+                    "authorId": "144351838",
+                    "name": "K. Jensen"
+                }
+            ],
+            "doi": "10.1007/3-540-60112-0_28",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "e920ad79d5ecce65e5db219939bd8078707e414a",
+            "title": "Sensitivity Analysis in Bayesian Networks",
+            "url": "https://www.semanticscholar.org/paper/e920ad79d5ecce65e5db219939bd8078707e414a",
+            "venue": "ECSQARU",
+            "year": 1995
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "12742150",
+                    "name": "M. Coombes"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "6fbe39d7cc4d6c7e97b4c4dc00de9d417540ec16",
+            "title": "Landing site reachability and decision making for UAS forced landings",
+            "url": "https://www.semanticscholar.org/paper/6fbe39d7cc4d6c7e97b4c4dc00de9d417540ec16",
+            "venue": "",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "34561147",
+                    "name": "Zina M. Ibrahim"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "471de84a04b350dcb865e24aa5973554cba039f7",
+            "title": "Surprise: an alternative qualitative uncertainty model",
+            "url": "https://www.semanticscholar.org/paper/471de84a04b350dcb865e24aa5973554cba039f7",
+            "venue": "",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2927258",
+                    "name": "W. Watthayu"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "edb635233c8d7c4189248b8994d55c56119f3825",
+            "title": "Loopy Belief Propagation: Bayesian Networks for Multi-Criteria Decision Making (MCDM)",
+            "url": "https://www.semanticscholar.org/paper/edb635233c8d7c4189248b8994d55c56119f3825",
+            "venue": "",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1769463",
+                    "name": "F. D\u00edez"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "02ef87eb7420ce27aa7415c00454a55a9054dbeb",
+            "title": "An efficient factorization for the noisy MAX \u2217",
+            "url": "https://www.semanticscholar.org/paper/02ef87eb7420ce27aa7415c00454a55a9054dbeb",
+            "venue": "",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2246494773",
+                    "name": "S\u00f8ren L. Dittmer"
+                },
+                {
+                    "authorId": "2082243155",
+                    "name": "Dina Skejby"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "e17d3e8da6100ab0683ec3f2a3b2c1cd5022de6f",
+            "title": "Predicting calving dates with Bayesian Networks",
+            "url": "https://www.semanticscholar.org/paper/e17d3e8da6100ab0683ec3f2a3b2c1cd5022de6f",
+            "venue": "",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1451642331",
+                    "name": "D. FranciscoJ."
+                },
+                {
+                    "authorId": "2582659",
+                    "name": "S. F. Gal\u00e1n"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "a570cf1f73cfb2277817238e47ed356fa6b27d98",
+            "title": "An e-cient factorization for the noisy MAX \u2044",
+            "url": "https://www.semanticscholar.org/paper/a570cf1f73cfb2277817238e47ed356fa6b27d98",
+            "venue": "",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "147335702",
+                    "name": "L. Madsen"
+                },
+                {
+                    "authorId": "145564618",
+                    "name": "V. Finn"
+                },
+                {
+                    "authorId": "2086296760",
+                    "name": "JensenDepartment"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "848fd7a574475e2558055c15b0e866819411c379",
+            "title": "Parallelization of Inference in BayesianNetworksAnders",
+            "url": "https://www.semanticscholar.org/paper/848fd7a574475e2558055c15b0e866819411c379",
+            "venue": "",
+            "year": 1999
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "34631309",
+                    "name": "R. Cowell"
+                },
+                {
+                    "authorId": "144845491",
+                    "name": "A. Dawid"
+                },
+                {
+                    "authorId": "2238010277",
+                    "name": "Steffen L. Lauritzen"
+                },
+                {
+                    "authorId": "2251267052",
+                    "name": "David J. Spiegelhalter"
+                }
+            ],
+            "doi": "10.1007/b97670",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "e9ceab52524fdf0d3389636a264041f6f4b7c8de",
+            "title": "Probabilistic Networks and Expert Systems",
+            "url": "https://www.semanticscholar.org/paper/e9ceab52524fdf0d3389636a264041f6f4b7c8de",
+            "venue": "Information Science and Statistics",
+            "year": 1999
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2624386",
+                    "name": "L. Chrisman"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "5c5d8995637dd1fa5cad244024543ff84d7d5efd",
+            "title": "A Roadmap to Research on Bayesian Networks and other Decomposable Probabilistic Models",
+            "url": "https://www.semanticscholar.org/paper/5c5d8995637dd1fa5cad244024543ff84d7d5efd",
+            "venue": "",
+            "year": 1998
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144880939",
+                    "name": "A. Madsen"
+                },
+                {
+                    "authorId": "35191477",
+                    "name": "F. V. Jensen"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "a0880eceb9cf77f0392fcd05fd1d06570119513f",
+            "title": "Lazy Propagation in Junction",
+            "url": "https://www.semanticscholar.org/paper/a0880eceb9cf77f0392fcd05fd1d06570119513f",
+            "venue": "",
+            "year": 1998
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "70538532",
+                    "name": "Daniel McMichaelCooperative"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "73f9700043f70a5b85a55dc4fa12fb190bda4be0",
+            "title": "INFORMATION FUSION, CAUSAL PROBABILISTIC NETWORK AND PROBANET I: Information Fusion Infrastructure and Probabilistic Knowledge Representation",
+            "url": "https://www.semanticscholar.org/paper/73f9700043f70a5b85a55dc4fa12fb190bda4be0",
+            "venue": "",
+            "year": 1997
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2246494773",
+                    "name": "S\u00f8ren L. Dittmer"
+                },
+                {
+                    "authorId": "35191477",
+                    "name": "F. V. Jensen"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "af2cab1b4ca363bdfe6cbc307e98c2136f14d4e2",
+            "title": "Tools for Explanation in Bayesian Networks with Application to an Agricultural Problem",
+            "url": "https://www.semanticscholar.org/paper/af2cab1b4ca363bdfe6cbc307e98c2136f14d4e2",
+            "venue": "",
+            "year": 1997
+        }
+    ],
+    "corpusId": 5459365,
+    "doi": null,
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 2,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 28,
+    "numCiting": 8,
+    "paperId": "90da13af5b76b90776e5e38229870f376f33accf",
+    "references": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "35191477",
+                    "name": "F. V. Jensen"
+                },
+                {
+                    "authorId": "3256004",
+                    "name": "S. H. Aldenryd"
+                },
+                {
+                    "authorId": "144351838",
+                    "name": "K. Jensen"
+                }
+            ],
+            "doi": "10.1007/3-540-60112-0_28",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "e920ad79d5ecce65e5db219939bd8078707e414a",
+            "title": "Sensitivity Analysis in Bayesian Networks",
+            "url": "https://www.semanticscholar.org/paper/e920ad79d5ecce65e5db219939bd8078707e414a",
+            "venue": "ECSQARU",
+            "year": 1995
+        },
+        {
+            "arxivId": "1302.6843",
+            "authors": [
+                {
+                    "authorId": "2932960",
+                    "name": "Ross D. Shachter"
+                },
+                {
+                    "authorId": "46558286",
+                    "name": "S. K. Andersen"
+                },
+                {
+                    "authorId": "1679873",
+                    "name": "Peter Szolovits"
+                }
+            ],
+            "doi": "10.1016/B978-1-55860-332-5.50070-5",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "767e4b4cc2fe67f12e7cffccf824f64803f39207",
+            "title": "Global Conditioning for Probabilistic Inference in Belief Networks",
+            "url": "https://www.semanticscholar.org/paper/767e4b4cc2fe67f12e7cffccf824f64803f39207",
+            "venue": "UAI",
+            "year": 1994
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144845491",
+                    "name": "A. Dawid"
+                }
+            ],
+            "doi": "10.1007/BF01890546",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "b9abff70b0acf9c6bb74d85f3141d76bef2039a5",
+            "title": "Applications of a general propagation algorithm for probabilistic expert systems",
+            "url": "https://www.semanticscholar.org/paper/b9abff70b0acf9c6bb74d85f3141d76bef2039a5",
+            "venue": "",
+            "year": 1992
+        },
+        {
+            "arxivId": "1304.1146",
+            "authors": [
+                {
+                    "authorId": "35191477",
+                    "name": "F. V. Jensen"
+                },
+                {
+                    "authorId": "1400966819",
+                    "name": "Bo Chamberlain"
+                },
+                {
+                    "authorId": "1403426528",
+                    "name": "T. Nordahl"
+                },
+                {
+                    "authorId": "120177012",
+                    "name": "Frank Jensen"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "0f79b7cd184fc6317bfc14ac4208bc69995f825b",
+            "title": "Analysis in HUGIN of data conflict",
+            "url": "https://www.semanticscholar.org/paper/0f79b7cd184fc6317bfc14ac4208bc69995f825b",
+            "venue": "UAI",
+            "year": 1990
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "31445340",
+                    "name": "H. J. Suermondt"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d55a52946a8dd153f3e32d60d8b044a4bfefabbe",
+            "title": "Explanation in Bayesian belief networks",
+            "url": "https://www.semanticscholar.org/paper/d55a52946a8dd153f3e32d60d8b044a4bfefabbe",
+            "venue": "",
+            "year": 1992
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2932960",
+                    "name": "Ross D. Shachter"
+                },
+                {
+                    "authorId": "46558286",
+                    "name": "S. K. Andersen"
+                },
+                {
+                    "authorId": "1679873",
+                    "name": "Peter Szolovits"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "1dfb7bf15fd662f49f6de261e556b41ab3b3f348",
+            "title": "The equivalence of exact methods for probabilistic inference on belief networks",
+            "url": "https://www.semanticscholar.org/paper/1dfb7bf15fd662f49f6de261e556b41ab3b3f348",
+            "venue": "",
+            "year": 1991
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "35191477",
+                    "name": "F. V. Jensen"
+                },
+                {
+                    "authorId": "2050895",
+                    "name": "S. Lauritzen"
+                },
+                {
+                    "authorId": "34760449",
+                    "name": "K. Olesen"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "bb75e5a3b46ec37a72922c706acd87ebab35b666",
+            "title": "Bayesian updating in causal probabilistic networks by local computations",
+            "url": "https://www.semanticscholar.org/paper/bb75e5a3b46ec37a72922c706acd87ebab35b666",
+            "venue": "",
+            "year": 1990
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145500409",
+                    "name": "G. Shafer"
+                },
+                {
+                    "authorId": "1707788",
+                    "name": "Prakash P. Shenoy"
+                }
+            ],
+            "doi": "10.1007/BF01531015",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "ac789d8e373cbb3260b2881d66fe00789adf291f",
+            "title": "Probability propagation",
+            "url": "https://www.semanticscholar.org/paper/ac789d8e373cbb3260b2881d66fe00789adf291f",
+            "venue": "Annals of Mathematics and Artificial Intelligence",
+            "year": 1990
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Cautious Propagation in Bayesian Networks",
+    "topics": [
+        {
+            "topic": "Bayesian network",
+            "topicId": "14005",
+            "url": "https://www.semanticscholar.org/topic/14005"
+        },
+        {
+            "topic": "Software propagation",
+            "topicId": "2021211",
+            "url": "https://www.semanticscholar.org/topic/2021211"
+        },
+        {
+            "topic": "Hugin",
+            "topicId": "700236",
+            "url": "https://www.semanticscholar.org/topic/700236"
+        },
+        {
+            "topic": "Accessibility",
+            "topicId": "3596",
+            "url": "https://www.semanticscholar.org/topic/3596"
+        },
+        {
+            "topic": "Propagation of uncertainty",
+            "topicId": "108367",
+            "url": "https://www.semanticscholar.org/topic/108367"
+        }
+    ],
+    "url": "https://www.semanticscholar.org/paper/90da13af5b76b90776e5e38229870f376f33accf",
+    "venue": "Conference on Uncertainty in Artificial Intelligence",
+    "year": 1995
+}

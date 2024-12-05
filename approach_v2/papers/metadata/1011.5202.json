@@ -1,0 +1,865 @@
+{
+    "abstract": "Generalizing the novel clause elimination procedures developed in [1], we introduce explicit (CCE), hidden (HCCE), and asymmetric (ACCE) variants of a procedure that eliminates covered clauses from CNF formulas. We show that these procedures are more effective in reducing CNF formulas than the respective variants of blocked clause elimination, and may hence be interesting as new preprocessing/simplification techniques for SAT solving.",
+    "arxivId": "1011.5202",
+    "authors": [
+        {
+            "authorId": "2469389",
+            "name": "Marijn J. H. Heule",
+            "url": "https://www.semanticscholar.org/author/2469389"
+        },
+        {
+            "authorId": "1790372",
+            "name": "Matti J\u00e4rvisalo",
+            "url": "https://www.semanticscholar.org/author/1790372"
+        },
+        {
+            "authorId": "1790450",
+            "name": "Armin Biere",
+            "url": "https://www.semanticscholar.org/author/1790450"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": "2408.06199",
+            "authors": [
+                {
+                    "authorId": "1981239",
+                    "name": "Jean-Marie Lagniez"
+                },
+                {
+                    "authorId": "2248791345",
+                    "name": "Pierre Marquis"
+                },
+                {
+                    "authorId": "2315925241",
+                    "name": "Armin Biere"
+                }
+            ],
+            "doi": "10.4230/LIPIcs.SAT.2024.21",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "530a8de03b0621928e6e469e607896dae4bd1068",
+            "title": "Dynamic Blocked Clause Elimination for Projected Model Counting",
+            "url": "https://www.semanticscholar.org/paper/530a8de03b0621928e6e469e607896dae4bd1068",
+            "venue": "SAT",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2239411319",
+                    "name": "Zhen Wang"
+                },
+                {
+                    "authorId": "2239441499",
+                    "name": "Kang Liu"
+                },
+                {
+                    "authorId": "2239526848",
+                    "name": "Chao Xu"
+                }
+            ],
+            "doi": "10.1109/FRSE58934.2023.00015",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "94e45d5a88bb655d9d0896b56410561addaa6a99",
+            "title": "A Bloom Filter-based Algorithm for Fast Detection of Common Variables",
+            "url": "https://www.semanticscholar.org/paper/94e45d5a88bb655d9d0896b56410561addaa6a99",
+            "venue": "2023 International Conference on Frontiers of Robotics and Software Engineering (FRSE)",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1790450",
+                    "name": "Armin Biere"
+                },
+                {
+                    "authorId": "1790372",
+                    "name": "Matti J\u00e4rvisalo"
+                },
+                {
+                    "authorId": "1906110",
+                    "name": "B. Kiesl"
+                }
+            ],
+            "doi": "10.3233/FAIA200992",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f516ef393cbba1866ff9b8f5806c583c051d216f",
+            "title": "Preprocessing in SAT Solving",
+            "url": "https://www.semanticscholar.org/paper/f516ef393cbba1866ff9b8f5806c583c051d216f",
+            "venue": "Handbook of Satisfiability",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "37393870",
+                    "name": "L. Barnett"
+                },
+                {
+                    "authorId": "144960128",
+                    "name": "David M. Cerna"
+                },
+                {
+                    "authorId": "1790450",
+                    "name": "Armin Biere"
+                }
+            ],
+            "doi": "10.1007/978-3-030-51074-9_3",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "c626a29e0187dab4c16e120c57ad6004dba86ab7",
+            "title": "Covered Clauses Are Not Propagation Redundant",
+            "url": "https://www.semanticscholar.org/paper/c626a29e0187dab4c16e120c57ad6004dba86ab7",
+            "venue": "IJCAR",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1906110",
+                    "name": "B. Kiesl"
+                },
+                {
+                    "authorId": "2469389",
+                    "name": "Marijn J. H. Heule"
+                },
+                {
+                    "authorId": "1790450",
+                    "name": "Armin Biere"
+                }
+            ],
+            "doi": "10.1007/978-3-030-31784-3_3",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "11d0d202a9d661484a603b39a81e17be524bd179",
+            "title": "Truth Assignments as Conditional Autarkies",
+            "url": "https://www.semanticscholar.org/paper/11d0d202a9d661484a603b39a81e17be524bd179",
+            "venue": "ATVA",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2288332",
+                    "name": "Ralf Wimmer"
+                },
+                {
+                    "authorId": "143996329",
+                    "name": "Christoph Scholl"
+                },
+                {
+                    "authorId": "144841436",
+                    "name": "B. Becker"
+                }
+            ],
+            "doi": "10.3233/sat190115",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "63b18f14955530daee2ce6adfe006ff8eacddd94",
+            "title": "The (D)QBF Preprocessor HQSpre - Underlying Theory and Its Implementation",
+            "url": "https://www.semanticscholar.org/paper/63b18f14955530daee2ce6adfe006ff8eacddd94",
+            "venue": "J. Satisf. Boolean Model. Comput.",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "39853330",
+                    "name": "Jeremias Berg"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "17f579b4cbf886c647cbdba5159f1a5e9e721544",
+            "title": "Solving Optimization Problems via Maximum Satisfiability: Encodings and Re-Encodings",
+            "url": "https://www.semanticscholar.org/paper/17f579b4cbf886c647cbdba5159f1a5e9e721544",
+            "venue": "",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1906110",
+                    "name": "B. Kiesl"
+                },
+                {
+                    "authorId": "2424496",
+                    "name": "M. Suda"
+                }
+            ],
+            "doi": "10.1007/978-3-319-63046-5_17",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f700537902a0fe7b854212f2ff9c0d339594e2d8",
+            "title": "A Unifying Principle for Clause Elimination in First-Order Logic",
+            "url": "https://www.semanticscholar.org/paper/f700537902a0fe7b854212f2ff9c0d339594e2d8",
+            "venue": "CADE",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2149098871",
+                    "name": "Lei Liu"
+                },
+                {
+                    "authorId": "2152915458",
+                    "name": "Yang Yang"
+                },
+                {
+                    "authorId": "49461429",
+                    "name": "Guangli Li"
+                },
+                {
+                    "authorId": "2151569984",
+                    "name": "Qi Wang"
+                },
+                {
+                    "authorId": "34176934",
+                    "name": "Shuai L\u00fc"
+                }
+            ],
+            "doi": "10.1080/0952813X.2016.1212104",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "33e99f87c490833373940d2e9176ec13f8ca99d7",
+            "title": "Redundancy checking algorithms based on parallel novel extension rule",
+            "url": "https://www.semanticscholar.org/paper/33e99f87c490833373940d2e9176ec13f8ca99d7",
+            "venue": "J. Exp. Theor. Artif. Intell.",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1981239",
+                    "name": "Jean-Marie Lagniez"
+                },
+                {
+                    "authorId": "1694497",
+                    "name": "P. Marquis"
+                }
+            ],
+            "doi": "10.1007/s10817-016-9370-8",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "efdc0f36ac9fa8d293abbc5151b99d4eeea2d963",
+            "title": "On Preprocessing Techniques and Their Impact on Propositional Model Counting",
+            "url": "https://www.semanticscholar.org/paper/efdc0f36ac9fa8d293abbc5151b99d4eeea2d963",
+            "venue": "Journal of Automated Reasoning",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2060752089",
+                    "name": "Ralf Wimmer"
+                },
+                {
+                    "authorId": "2096657183",
+                    "name": "Karina Gitina"
+                },
+                {
+                    "authorId": "3032960",
+                    "name": "Jennifer Nist"
+                },
+                {
+                    "authorId": "114830447",
+                    "name": "Christopher H. Scholl"
+                },
+                {
+                    "authorId": "2064483294",
+                    "name": "Bernd Becker"
+                }
+            ],
+            "doi": "10.1007/978-3-319-24318-4_13",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "55bf9b31d49dbe46231d542517c732f3d63fec7f",
+            "title": "Preprocessing for DQBF",
+            "url": "https://www.semanticscholar.org/paper/55bf9b31d49dbe46231d542517c732f3d63fec7f",
+            "venue": "SAT",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2469389",
+                    "name": "Marijn J. H. Heule"
+                },
+                {
+                    "authorId": "1790372",
+                    "name": "Matti J\u00e4rvisalo"
+                },
+                {
+                    "authorId": "1824961",
+                    "name": "Florian Lonsing"
+                },
+                {
+                    "authorId": "143982677",
+                    "name": "M. Seidl"
+                },
+                {
+                    "authorId": "1790450",
+                    "name": "Armin Biere"
+                }
+            ],
+            "doi": "10.1613/jair.4694",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "adb15534f4d3acc0bc5c91d92bd028f123297718",
+            "title": "Clause Elimination for SAT and QSAT",
+            "url": "https://www.semanticscholar.org/paper/adb15534f4d3acc0bc5c91d92bd028f123297718",
+            "venue": "J. Artif. Intell. Res.",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2469389",
+                    "name": "Marijn J. H. Heule"
+                },
+                {
+                    "authorId": "143982677",
+                    "name": "M. Seidl"
+                },
+                {
+                    "authorId": "1790450",
+                    "name": "Armin Biere"
+                }
+            ],
+            "doi": "10.1007/978-3-319-17524-9_33",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "00193b72fb96cc3a9ff394419654f147053e58b2",
+            "title": "Blocked Literals Are Universal",
+            "url": "https://www.semanticscholar.org/paper/00193b72fb96cc3a9ff394419654f147053e58b2",
+            "venue": "NFM",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2469389",
+                    "name": "Marijn J. H. Heule"
+                },
+                {
+                    "authorId": "143982677",
+                    "name": "M. Seidl"
+                },
+                {
+                    "authorId": "1790450",
+                    "name": "Armin Biere"
+                }
+            ],
+            "doi": "10.1109/FMCAD.2014.6987602",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "30ca3636da413b97a84a0926fa9a113384f43638",
+            "title": "Efficient extraction of Skolem functions from QRAT proofs",
+            "url": "https://www.semanticscholar.org/paper/30ca3636da413b97a84a0926fa9a113384f43638",
+            "venue": "2014 Formal Methods in Computer-Aided Design (FMCAD)",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1809560",
+                    "name": "Norbert Manthey"
+                },
+                {
+                    "authorId": "2074980",
+                    "name": "Tobias Philipp"
+                }
+            ],
+            "doi": "10.1007/978-3-319-11206-0_12",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "6b71e2c0b71911fe5b6e8f60f3458d302debd052",
+            "title": "Formula Simplifications as DRAT Derivations",
+            "url": "https://www.semanticscholar.org/paper/6b71e2c0b71911fe5b6e8f60f3458d302debd052",
+            "venue": "KI",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144859575",
+                    "name": "A. Belov"
+                },
+                {
+                    "authorId": "1723569",
+                    "name": "Ant\u00f3nio Morgado"
+                },
+                {
+                    "authorId": "1393656234",
+                    "name": "Joao Marques-Silva"
+                }
+            ],
+            "doi": "10.1007/978-3-642-45221-5_7",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "bdc243b82074098c3eb99ebf42552bd4d50b22db",
+            "title": "SAT-Based Preprocessing for MaxSAT",
+            "url": "https://www.semanticscholar.org/paper/bdc243b82074098c3eb99ebf42552bd4d50b22db",
+            "venue": "LPAR",
+            "year": 2013
+        },
+        {
+            "arxivId": "1310.2298",
+            "authors": [
+                {
+                    "authorId": "144859575",
+                    "name": "A. Belov"
+                },
+                {
+                    "authorId": "2074837624",
+                    "name": "A. Morgado"
+                },
+                {
+                    "authorId": "1393656234",
+                    "name": "Joao Marques-Silva"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "e7d49776ebb2eabea8f71b534deb3a577146e689",
+            "title": "SAT-based Preprocessing for MaxSAT (extended version)",
+            "url": "https://www.semanticscholar.org/paper/e7d49776ebb2eabea8f71b534deb3a577146e689",
+            "venue": "ArXiv",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144859575",
+                    "name": "A. Belov"
+                },
+                {
+                    "authorId": "1790372",
+                    "name": "Matti J\u00e4rvisalo"
+                },
+                {
+                    "authorId": "1393656234",
+                    "name": "Joao Marques-Silva"
+                }
+            ],
+            "doi": "10.1007/978-3-642-36742-7_8",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "fdf3f186b61e40d55d2d16ce3439d651decaf380",
+            "title": "Formula Preprocessing in MUS Extraction",
+            "url": "https://www.semanticscholar.org/paper/fdf3f186b61e40d55d2d16ce3439d651decaf380",
+            "venue": "TACAS",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1790372",
+                    "name": "Matti J\u00e4rvisalo"
+                },
+                {
+                    "authorId": "2469389",
+                    "name": "Marijn J. H. Heule"
+                },
+                {
+                    "authorId": "1790450",
+                    "name": "Armin Biere"
+                }
+            ],
+            "doi": "10.1007/978-3-642-31365-3_28",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "b6181d736248c05922d0b4ef2ed44ca822708991",
+            "title": "Inprocessing Rules",
+            "url": "https://www.semanticscholar.org/paper/b6181d736248c05922d0b4ef2ed44ca822708991",
+            "venue": "IJCAR",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1790450",
+                    "name": "Armin Biere"
+                },
+                {
+                    "authorId": "1824961",
+                    "name": "Florian Lonsing"
+                },
+                {
+                    "authorId": "143982677",
+                    "name": "M. Seidl"
+                }
+            ],
+            "doi": "10.1007/978-3-642-22438-6_10",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ca26b0232c5e91c265c68c851749100a95890b4d",
+            "title": "Blocked Clause Elimination for QBF",
+            "url": "https://www.semanticscholar.org/paper/ca26b0232c5e91c265c68c851749100a95890b4d",
+            "venue": "CADE",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2314382979",
+                    "name": "Armin Biere"
+                },
+                {
+                    "authorId": "2314376733",
+                    "name": "Tobias Faller"
+                },
+                {
+                    "authorId": "2314367642",
+                    "name": "Katalin Fazekas"
+                },
+                {
+                    "authorId": "2314367671",
+                    "name": "Mathias Fleury"
+                },
+                {
+                    "authorId": "2314382983",
+                    "name": "Nils Froleyks"
+                },
+                {
+                    "authorId": "2314376836",
+                    "name": "Florian Pollitt"
+                }
+            ],
+            "doi": "10.1007/978-3-031-65627-9_7",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c0e4581f9af5680b764797c6e5e57ca0c6c3078e",
+            "title": "CaDiCaL 2.0",
+            "url": "https://www.semanticscholar.org/paper/c0e4581f9af5680b764797c6e5e57ca0c6c3078e",
+            "venue": "CAV",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3360923",
+                    "name": "Joshua Blinkhorn"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ffa101abc607ea1f9a126cd7958c9c38c56028d7",
+            "title": "Simulating DQBF Preprocessing Techniques with Resolution Asymmetric Tautologies",
+            "url": "https://www.semanticscholar.org/paper/ffa101abc607ea1f9a126cd7958c9c38c56028d7",
+            "venue": "Electron. Colloquium Comput. Complex.",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2469389",
+                    "name": "Marijn J. H. Heule"
+                },
+                {
+                    "authorId": "143982677",
+                    "name": "M. Seidl"
+                },
+                {
+                    "authorId": "1790450",
+                    "name": "Armin Biere"
+                }
+            ],
+            "doi": "10.1007/s10817-016-9390-4",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "98b6b42ba312dca4d8ae72fe3601a1777c8dc139",
+            "title": "Solution Validation and Extraction for QBF Preprocessing",
+            "url": "https://www.semanticscholar.org/paper/98b6b42ba312dca4d8ae72fe3601a1777c8dc139",
+            "venue": "Journal of Automated Reasoning",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2469389",
+                    "name": "Marijn J. H. Heule"
+                },
+                {
+                    "authorId": "148162007",
+                    "name": "S. Weaver"
+                }
+            ],
+            "doi": "10.1007/978-3-319-24318-4",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "65ccc527c39f9ba3a791c0a1a15e5e45b69de863",
+            "title": "Theory and Applications of Satisfiability Testing -- SAT 2015",
+            "url": "https://www.semanticscholar.org/paper/65ccc527c39f9ba3a791c0a1a15e5e45b69de863",
+            "venue": "Lecture Notes in Computer Science",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1476349494",
+                    "name": "Matti Jarvisalo"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "213fe9b6e79bc637728c2bf16993150ae724c47d",
+            "title": "Preprocessing (and Inprocessing)",
+            "url": "https://www.semanticscholar.org/paper/213fe9b6e79bc637728c2bf16993150ae724c47d",
+            "venue": "",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "40182849",
+                    "name": "A. Balint"
+                },
+                {
+                    "authorId": "1809560",
+                    "name": "Norbert Manthey"
+                }
+            ],
+            "doi": "10.29007/28ww",
+            "intent": [
+                "result",
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "66aa5f02d9a4049b0cef6d783c2dd8b77aef5ac7",
+            "title": "Boosting the Performance of SLS and CDCL Solvers by Preprocessor Tuning",
+            "url": "https://www.semanticscholar.org/paper/66aa5f02d9a4049b0cef6d783c2dd8b77aef5ac7",
+            "venue": "POS@SAT",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2469389",
+                    "name": "Marijn J. H. Heule"
+                },
+                {
+                    "authorId": "1790372",
+                    "name": "Matti J\u00e4rvisalo"
+                },
+                {
+                    "authorId": "1790450",
+                    "name": "Armin Biere"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "398214d86c92d9d0877d963ec71dd90be2d63a92",
+            "title": "Blocked Clause Elimination and its Extensions",
+            "url": "https://www.semanticscholar.org/paper/398214d86c92d9d0877d963ec71dd90be2d63a92",
+            "venue": "",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2469389",
+                    "name": "Marijn J. H. Heule"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "026db33e8d136723a323ff928163318c60af11a9",
+            "title": "SAT COMPETITION 2016 Solver and Benchmark Descriptions",
+            "url": "https://www.semanticscholar.org/paper/026db33e8d136723a323ff928163318c60af11a9",
+            "venue": "",
+            "year": null
+        }
+    ],
+    "corpusId": 8508663,
+    "doi": "10.29007/cl8s",
+    "fieldsOfStudy": [
+        "Computer Science",
+        "Mathematics"
+    ],
+    "influentialCitationCount": 2,
+    "isOpenAccess": true,
+    "isPublisherLicensed": true,
+    "is_open_access": true,
+    "is_publisher_licensed": true,
+    "numCitedBy": 28,
+    "numCiting": 3,
+    "paperId": "f4ed7a651ac0d7aeec383636535438fec4abfd1a",
+    "references": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2469389",
+                    "name": "Marijn J. H. Heule"
+                },
+                {
+                    "authorId": "1790372",
+                    "name": "Matti J\u00e4rvisalo"
+                },
+                {
+                    "authorId": "1790450",
+                    "name": "Armin Biere"
+                }
+            ],
+            "doi": "10.1007/978-3-642-16242-8_26",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "14a5fe288a6894dbfb649a8e0cef00d7f7bfe6be",
+            "title": "Clause Elimination Procedures for CNF Formulas",
+            "url": "https://www.semanticscholar.org/paper/14a5fe288a6894dbfb649a8e0cef00d7f7bfe6be",
+            "venue": "LPAR",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1790372",
+                    "name": "Matti J\u00e4rvisalo"
+                },
+                {
+                    "authorId": "1790450",
+                    "name": "Armin Biere"
+                },
+                {
+                    "authorId": "2469389",
+                    "name": "Marijn J. H. Heule"
+                }
+            ],
+            "doi": "10.1007/978-3-642-12002-2_10",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "5d3b70d6cb0833017544b5218993a31e6ffab4e1",
+            "title": "Blocked Clause Elimination",
+            "url": "https://www.semanticscholar.org/paper/5d3b70d6cb0833017544b5218993a31e6ffab4e1",
+            "venue": "TACAS",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1697605",
+                    "name": "O. Kullmann"
+                }
+            ],
+            "doi": "10.1016/S0166-218X(99)00037-2",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "0dbbd756d455e69199e0ce98f2bd38d7ae4b8050",
+            "title": "On a Generalization of Extended Resolution",
+            "url": "https://www.semanticscholar.org/paper/0dbbd756d455e69199e0ce98f2bd38d7ae4b8050",
+            "venue": "Discret. Appl. Math.",
+            "year": 1999
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Mathematics",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        },
+        {
+            "category": "Mathematics",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Covered Clause Elimination",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/f4ed7a651ac0d7aeec383636535438fec4abfd1a",
+    "venue": "LPAR short papers",
+    "year": 2010
+}

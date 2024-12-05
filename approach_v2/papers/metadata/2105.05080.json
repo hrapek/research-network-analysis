@@ -1,0 +1,797 @@
+{
+    "abstract": "Artificial Intelligence (AI) and Deep Learning (DL) algorithms are currently applied to a wide range of products and solutions. DL training jobs are highly resource demanding and they experience great benefits when exploiting AI accelerators (e.g., GPUs). However, the effective management of GPU-powered clusters comes with great challenges. Among these, efficient scheduling and resource allocation solutions are crucial to maximize performance and minimize Data Centers operational costs. In this paper we propose ANDREAS, an advanced scheduling solution that tackles these problems jointly, aiming at optimizing DL training runtime workloads and their energy consumption in accelerated clusters. Experiments based on simulation demostrate that we can achieve a cost reduction between 30 and 62% on average with respect to first-principle methods while the validation on a real cluster shows a worst case deviation below 13% between actual and predicted costs, proving the effectiveness of ANDREAS solution in practical scenarios.",
+    "arxivId": "2105.05080",
+    "authors": [
+        {
+            "authorId": "2064482862",
+            "name": "Federica Filippini",
+            "url": "https://www.semanticscholar.org/author/2064482862"
+        },
+        {
+            "authorId": "1739500",
+            "name": "D. Ardagna",
+            "url": "https://www.semanticscholar.org/author/1739500"
+        },
+        {
+            "authorId": "2865015",
+            "name": "M. Lattuada",
+            "url": "https://www.semanticscholar.org/author/2865015"
+        },
+        {
+            "authorId": "1704341",
+            "name": "E. Amaldi",
+            "url": "https://www.semanticscholar.org/author/1704341"
+        },
+        {
+            "authorId": "2152494",
+            "name": "M. Ciavotta",
+            "url": "https://www.semanticscholar.org/author/2152494"
+        },
+        {
+            "authorId": "2090789479",
+            "name": "Maciek Riedl",
+            "url": "https://www.semanticscholar.org/author/2090789479"
+        },
+        {
+            "authorId": "88747953",
+            "name": "Katarzyna Materka",
+            "url": "https://www.semanticscholar.org/author/88747953"
+        },
+        {
+            "authorId": "51135888",
+            "name": "Pawel Skrzypek",
+            "url": "https://www.semanticscholar.org/author/51135888"
+        },
+        {
+            "authorId": "3219373",
+            "name": "F. Magugliani",
+            "url": "https://www.semanticscholar.org/author/3219373"
+        },
+        {
+            "authorId": "32054084",
+            "name": "M. Cicala",
+            "url": "https://www.semanticscholar.org/author/32054084"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2064482862",
+                    "name": "Federica Filippini"
+                },
+                {
+                    "authorId": "2057090",
+                    "name": "Jonatha Anselmi"
+                },
+                {
+                    "authorId": "2268244141",
+                    "name": "Danilo Ardagna"
+                },
+                {
+                    "authorId": "2249765919",
+                    "name": "Bruno Gaujal"
+                }
+            ],
+            "doi": "10.1109/TCC.2023.3336540",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "30c493ed26e38786e7ddfbec279fa121566b198f",
+            "title": "A Stochastic Approach for Scheduling AI Training Jobs in GPU-Based Systems",
+            "url": "https://www.semanticscholar.org/paper/30c493ed26e38786e7ddfbec279fa121566b198f",
+            "venue": "IEEE Transactions on Cloud Computing",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2143505112",
+                    "name": "Zichao Yang"
+                },
+                {
+                    "authorId": "1471242321",
+                    "name": "Heng Wu"
+                },
+                {
+                    "authorId": "2125754544",
+                    "name": "Yuanjia Xu"
+                },
+                {
+                    "authorId": "80611599",
+                    "name": "Yuewen Wu"
+                },
+                {
+                    "authorId": "145901388",
+                    "name": "Hua Zhong"
+                },
+                {
+                    "authorId": "2124777507",
+                    "name": "Wenbo Zhang"
+                }
+            ],
+            "doi": "10.1109/TC.2023.3242200",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "63c1052d76098022b1d3a3811e1bfcaca9077bca",
+            "title": "Hydra: Deadline-Aware and Efficiency-Oriented Scheduling for Deep Learning Jobs on Heterogeneous GPUs",
+            "url": "https://www.semanticscholar.org/paper/63c1052d76098022b1d3a3811e1bfcaca9077bca",
+            "venue": "IEEE Transactions on Computers",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "46213894",
+                    "name": "P. Mammen"
+                },
+                {
+                    "authorId": "2872746",
+                    "name": "Noman Bashir"
+                },
+                {
+                    "authorId": "2629136",
+                    "name": "Ramachandra Rao Kolluri"
+                },
+                {
+                    "authorId": "2295516341",
+                    "name": "Eun Kyung Lee"
+                },
+                {
+                    "authorId": "2267768378",
+                    "name": "Prashant J. Shenoy"
+                }
+            ],
+            "doi": "10.1145/3575813.3595203",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "4c378d4600c2188adce17b6590c3912f607243ff",
+            "title": "CUFF: A Configurable Uncertainty-driven Forecasting Framework for Green AI Clusters",
+            "url": "https://www.semanticscholar.org/paper/4c378d4600c2188adce17b6590c3912f607243ff",
+            "venue": "e-Energy",
+            "year": 2023
+        },
+        {
+            "arxivId": "2205.11913",
+            "authors": [
+                {
+                    "authorId": "2153578116",
+                    "name": "Wei Gao"
+                },
+                {
+                    "authorId": "2150570711",
+                    "name": "Qi Hu"
+                },
+                {
+                    "authorId": "153008904",
+                    "name": "Zhisheng Ye"
+                },
+                {
+                    "authorId": "2075416290",
+                    "name": "Peng Sun"
+                },
+                {
+                    "authorId": "2145745781",
+                    "name": "Xiaolin Wang"
+                },
+                {
+                    "authorId": "36644172",
+                    "name": "Yingwei Luo"
+                },
+                {
+                    "authorId": "2146333441",
+                    "name": "Tianwei Zhang"
+                },
+                {
+                    "authorId": "2114783855",
+                    "name": "Yonggang Wen"
+                }
+            ],
+            "doi": "10.48550/arXiv.2205.11913",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "745093391442971373d2af7549b00651a4636808",
+            "title": "Deep Learning Workload Scheduling in GPU Datacenters: Taxonomy, Challenges and Vision",
+            "url": "https://www.semanticscholar.org/paper/745093391442971373d2af7549b00651a4636808",
+            "venue": "ArXiv",
+            "year": 2022
+        }
+    ],
+    "corpusId": 234357866,
+    "doi": "10.1109/FiCloud49777.2021.00063",
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": true,
+    "isPublisherLicensed": true,
+    "is_open_access": true,
+    "is_publisher_licensed": true,
+    "numCitedBy": 4,
+    "numCiting": 16,
+    "paperId": "8c8d4b090312c5b5a6afac82911c2e0999ca389e",
+    "references": [
+        {
+            "arxivId": "2006.13878",
+            "authors": [
+                {
+                    "authorId": "40292355",
+                    "name": "Vaibhav Saxena"
+                },
+                {
+                    "authorId": "143863352",
+                    "name": "K. R. Jayaram"
+                },
+                {
+                    "authorId": "50338482",
+                    "name": "Saurav Basu"
+                },
+                {
+                    "authorId": "1787471",
+                    "name": "Yogish Sabharwal"
+                },
+                {
+                    "authorId": "2113855685",
+                    "name": "Ashish Verma"
+                }
+            ],
+            "doi": "10.1109/MASCOTS50786.2020.9285954",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "4b67f8e79628db9385e08fc0a4b48a321276e449",
+            "title": "Effective Elastic Scaling of Deep Learning Workloads",
+            "url": "https://www.semanticscholar.org/paper/4b67f8e79628db9385e08fc0a4b48a321276e449",
+            "venue": "2020 28th International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS)",
+            "year": 2020
+        },
+        {
+            "arxivId": "1909.06040",
+            "authors": [
+                {
+                    "authorId": "9561490",
+                    "name": "Yanghua Peng"
+                },
+                {
+                    "authorId": "3393850",
+                    "name": "Yixin Bao"
+                },
+                {
+                    "authorId": "40930325",
+                    "name": "Yangrui Chen"
+                },
+                {
+                    "authorId": "1726963",
+                    "name": "Chuan Wu"
+                },
+                {
+                    "authorId": "2057110081",
+                    "name": "Chen Meng"
+                },
+                {
+                    "authorId": "71666838",
+                    "name": "Wei Lin"
+                }
+            ],
+            "doi": "10.1109/TPDS.2021.3052895",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2f2ab063761101e5af69aad864d0b0d66e8b0a0a",
+            "title": "DL2: A Deep Learning-Driven Scheduler for Deep Learning Clusters",
+            "url": "https://www.semanticscholar.org/paper/2f2ab063761101e5af69aad864d0b0d66e8b0a0a",
+            "venue": "IEEE Transactions on Parallel and Distributed Systems",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2241007",
+                    "name": "Andrea Bartolini"
+                },
+                {
+                    "authorId": "38768758",
+                    "name": "Francesco Beneventi"
+                },
+                {
+                    "authorId": "2078352090",
+                    "name": "Andrea Borghesi"
+                },
+                {
+                    "authorId": "32237253",
+                    "name": "Daniel Cesarini"
+                },
+                {
+                    "authorId": "3458839",
+                    "name": "Antonio Libri"
+                },
+                {
+                    "authorId": "1710649",
+                    "name": "L. Benini"
+                },
+                {
+                    "authorId": "1726076",
+                    "name": "C. Cavazzoni"
+                }
+            ],
+            "doi": "10.1145/3339186.3339215",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7d05e9dd7fb273959d9f30492d76607dcfc2ca6b",
+            "title": "Paving the Way Toward Energy-Aware and Automated Datacentre",
+            "url": "https://www.semanticscholar.org/paper/7d05e9dd7fb273959d9f30492d76607dcfc2ca6b",
+            "venue": "ICPP Workshops",
+            "year": 2019
+        },
+        {
+            "arxivId": "1905.11946",
+            "authors": [
+                {
+                    "authorId": "120805419",
+                    "name": "Mingxing Tan"
+                },
+                {
+                    "authorId": "2827616",
+                    "name": "Quoc V. Le"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "4f2eda8077dc7a69bb2b4e0a1a086cf054adb3f9",
+            "title": "EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/4f2eda8077dc7a69bb2b4e0a1a086cf054adb3f9",
+            "venue": "ICML",
+            "year": 2019
+        },
+        {
+            "arxivId": "1901.05758",
+            "authors": [
+                {
+                    "authorId": "2421588",
+                    "name": "Myeongjae Jeon"
+                },
+                {
+                    "authorId": "2697906",
+                    "name": "S. Venkataraman"
+                },
+                {
+                    "authorId": "3078275",
+                    "name": "Amar Phanishayee"
+                },
+                {
+                    "authorId": "33117655",
+                    "name": "Junjie Qian"
+                },
+                {
+                    "authorId": "9754946",
+                    "name": "Wencong Xiao"
+                },
+                {
+                    "authorId": "145338263",
+                    "name": "Fan Yang"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "54ddd67944520f249b906ba4e817188686eae94d",
+            "title": "Analysis of Large-Scale Multi-Tenant GPU Clusters for DNN Training Workloads",
+            "url": "https://www.semanticscholar.org/paper/54ddd67944520f249b906ba4e817188686eae94d",
+            "venue": "USENIX ATC",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "9754946",
+                    "name": "Wencong Xiao"
+                },
+                {
+                    "authorId": "1875774",
+                    "name": "Romil Bhardwaj"
+                },
+                {
+                    "authorId": "2794488",
+                    "name": "R. Ramjee"
+                },
+                {
+                    "authorId": "1768816",
+                    "name": "Muthian Sivathanu"
+                },
+                {
+                    "authorId": "40045853",
+                    "name": "Nipun Kwatra"
+                },
+                {
+                    "authorId": "144518950",
+                    "name": "Zhenhua Han"
+                },
+                {
+                    "authorId": "15800665",
+                    "name": "Pratyush Patel"
+                },
+                {
+                    "authorId": "1405878917",
+                    "name": "Xuan Peng"
+                },
+                {
+                    "authorId": "47941070",
+                    "name": "Hanyu Zhao"
+                },
+                {
+                    "authorId": "3123382",
+                    "name": "Quanlu Zhang"
+                },
+                {
+                    "authorId": "145338263",
+                    "name": "Fan Yang"
+                },
+                {
+                    "authorId": "93317102",
+                    "name": "Lidong Zhou"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "0606676f16d581fa453f6b7b8a14fc7c4af8d025",
+            "title": "Gandiva: Introspective Cluster Scheduling for Deep Learning",
+            "url": "https://www.semanticscholar.org/paper/0606676f16d581fa453f6b7b8a14fc7c4af8d025",
+            "venue": "OSDI",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3407909",
+                    "name": "E. Gianniti"
+                },
+                {
+                    "authorId": "153824195",
+                    "name": "Li Zhang"
+                },
+                {
+                    "authorId": "1739500",
+                    "name": "D. Ardagna"
+                }
+            ],
+            "doi": "10.1109/CAHPC.2018.8645908",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "95f52b29d069d146058df4b915c140ccf070ce99",
+            "title": "Performance Prediction of GPU-Based Deep Learning Applications",
+            "url": "https://www.semanticscholar.org/paper/95f52b29d069d146058df4b915c140ccf070ce99",
+            "venue": "2018 30th International Symposium on Computer Architecture and High Performance Computing (SBAC-PAD)",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "9561490",
+                    "name": "Yanghua Peng"
+                },
+                {
+                    "authorId": "3393850",
+                    "name": "Yixin Bao"
+                },
+                {
+                    "authorId": "40930325",
+                    "name": "Yangrui Chen"
+                },
+                {
+                    "authorId": "1726963",
+                    "name": "Chuan Wu"
+                },
+                {
+                    "authorId": "145207202",
+                    "name": "Chuanxiong Guo"
+                }
+            ],
+            "doi": "10.1145/3190508.3190517",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "93a06eb066fe58ed7d036e46e4cee53483e16bb8",
+            "title": "Optimus: an efficient dynamic resource scheduler for deep learning clusters",
+            "url": "https://www.semanticscholar.org/paper/93a06eb066fe58ed7d036e46e4cee53483e16bb8",
+            "venue": "EuroSys",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144330701",
+                    "name": "Marcelo Amaral"
+                },
+                {
+                    "authorId": "1678314",
+                    "name": "Jord\u00e0 Polo"
+                },
+                {
+                    "authorId": "144956042",
+                    "name": "David Carrera"
+                },
+                {
+                    "authorId": "6011944",
+                    "name": "Seetharami R. Seelam"
+                },
+                {
+                    "authorId": "1697111",
+                    "name": "M. Steinder"
+                }
+            ],
+            "doi": "10.1145/3126908.3126933",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f7b4139930a42642c71c2af04a013989b7d99be1",
+            "title": "Topology-Aware GPU Scheduling for Learning Workloads in Cloud Environments",
+            "url": "https://www.semanticscholar.org/paper/f7b4139930a42642c71c2af04a013989b7d99be1",
+            "venue": "SC17: International Conference for High Performance Computing, Networking, Storage and Analysis",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2399436",
+                    "name": "S. Madougou"
+                },
+                {
+                    "authorId": "1784556",
+                    "name": "A. Varbanescu"
+                },
+                {
+                    "authorId": "145793422",
+                    "name": "C. D. Laat"
+                },
+                {
+                    "authorId": "3357424",
+                    "name": "R. V. Nieuwpoort"
+                }
+            ],
+            "doi": "10.1016/j.parco.2016.04.002",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2e7bb0cc2ac3a1e03d6e3771af93faadb250d0aa",
+            "title": "The landscape of GPGPU performance modeling tools",
+            "url": "https://www.semanticscholar.org/paper/2e7bb0cc2ac3a1e03d6e3771af93faadb250d0aa",
+            "venue": "Parallel Comput.",
+            "year": 2016
+        },
+        {
+            "arxivId": "1512.07108",
+            "authors": [
+                {
+                    "authorId": "2174964",
+                    "name": "Jiuxiang Gu"
+                },
+                {
+                    "authorId": "2108329894",
+                    "name": "Zhenhua Wang"
+                },
+                {
+                    "authorId": "1859486",
+                    "name": "Jason Kuen"
+                },
+                {
+                    "authorId": "2139431",
+                    "name": "Lianyang Ma"
+                },
+                {
+                    "authorId": "3000984",
+                    "name": "Amir Shahroudy"
+                },
+                {
+                    "authorId": "2521776",
+                    "name": "Bing Shuai"
+                },
+                {
+                    "authorId": "2115433449",
+                    "name": "Ting Liu"
+                },
+                {
+                    "authorId": "2144802333",
+                    "name": "Xingxing Wang"
+                },
+                {
+                    "authorId": "2117909575",
+                    "name": "Gang Wang"
+                },
+                {
+                    "authorId": "1688642",
+                    "name": "Jianfei Cai"
+                },
+                {
+                    "authorId": "40894914",
+                    "name": "Tsuhan Chen"
+                }
+            ],
+            "doi": "10.1016/J.PATCOG.2017.10.013",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "1193317829bfcc9b9dffa5ae85a2e2114254b37e",
+            "title": "Recent advances in convolutional neural networks",
+            "url": "https://www.semanticscholar.org/paper/1193317829bfcc9b9dffa5ae85a2e2114254b37e",
+            "venue": "Pattern Recognit.",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2058099341",
+                    "name": "D. Bernstein"
+                }
+            ],
+            "doi": "10.1109/MCC.2014.51",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f125b540d7453eb58d38f933588f4b80c80959f2",
+            "title": "Containers and Cloud: From LXC to Docker to Kubernetes",
+            "url": "https://www.semanticscholar.org/paper/f125b540d7453eb58d38f933588f4b80c80959f2",
+            "venue": "IEEE Cloud Computing",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3308557",
+                    "name": "Sepp Hochreiter"
+                },
+                {
+                    "authorId": "145341374",
+                    "name": "J. Schmidhuber"
+                }
+            ],
+            "doi": "10.1162/neco.1997.9.8.1735",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "2e9d221c206e9503ceb452302d68d10e293f2a10",
+            "title": "Long Short-Term Memory",
+            "url": "https://www.semanticscholar.org/paper/2e9d221c206e9503ceb452302d68d10e293f2a10",
+            "venue": "Neural Computation",
+            "year": 1997
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3034469",
+                    "name": "Juncheng Gu"
+                },
+                {
+                    "authorId": "2298078243",
+                    "name": "Mosharaf Chowdhury"
+                },
+                {
+                    "authorId": "144276974",
+                    "name": "K. Shin"
+                },
+                {
+                    "authorId": "2438403",
+                    "name": "Yibo Zhu"
+                },
+                {
+                    "authorId": "2421588",
+                    "name": "Myeongjae Jeon"
+                },
+                {
+                    "authorId": "33117655",
+                    "name": "Junjie Qian"
+                },
+                {
+                    "authorId": "1925072",
+                    "name": "H. Liu"
+                },
+                {
+                    "authorId": "145207202",
+                    "name": "Chuanxiong Guo"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8d2d560bf1c4c6930d2d1411e48b642bd5b81179",
+            "title": "Tiresias: A GPU Cluster Manager for Distributed Deep Learning",
+            "url": "https://www.semanticscholar.org/paper/8d2d560bf1c4c6930d2d1411e48b642bd5b81179",
+            "venue": "NSDI",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2157585",
+                    "name": "S. Mishra"
+                },
+                {
+                    "authorId": "1901571",
+                    "name": "Deepak Puthal"
+                },
+                {
+                    "authorId": "144822087",
+                    "name": "B. Sahoo"
+                },
+                {
+                    "authorId": "144533835",
+                    "name": "Suraj Sharma"
+                },
+                {
+                    "authorId": "123912475",
+                    "name": "Zhi Xue"
+                },
+                {
+                    "authorId": "9392149",
+                    "name": "Albert Y. Zomaya"
+                }
+            ],
+            "doi": "10.1109/ACCESS.2018.2872722",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "165fd0e075b4eae59b09019574bebd1789948c19",
+            "title": "Energy-Efficient Deployment of Edge Dataenters for Mobile Clouds in Sustainable IoT",
+            "url": "https://www.semanticscholar.org/paper/165fd0e075b4eae59b09019574bebd1789948c19",
+            "venue": "IEEE Access",
+            "year": 2018
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        },
+        {
+            "category": "Engineering",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "ANDREAS: Artificial intelligence traiNing scheDuler foR accElerAted resource clusterS",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/8c8d4b090312c5b5a6afac82911c2e0999ca389e",
+    "venue": "International Conference on Future Internet of Things and Cloud",
+    "year": 2021
+}

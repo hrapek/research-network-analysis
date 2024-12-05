@@ -1,0 +1,1529 @@
+{
+    "abstract": "The process of transforming input images into corresponding textual explanations stands as a crucial and complex endeavor within the domains of computer vision and natural language processing. In this paper, we propose an innovative ensemble approach that harnesses the capabilities of Contrastive Language-Image Pretraining (CLIP) models. Our ensemble framework encompasses two significant variations of the CLIP model, each meticulously designed to cater to specific nuances within the image-to-text transformation landscape. The first model introduces an elaborated architecture, featuring multiple layers with distinct learning rates, thereby amplifying its adeptness in capturing intricate relationships between images and text. The second model strategically exploits CLIP\u2019s inherent zero-shot learning potential to generate image-text embeddings, subsequently harnessed by a K-Nearest Neighbors (KNN) model. Through this KNN-based paradigm, the model facilitates image-to-text transformation by identifying closely related embeddings within the embedding space. Notably, our ensemble approach is rigorously evaluated, employing the cosine similarity metric to gauge the alignment between model-generated embeddings and ground truth representations. Comparative experiments vividly highlight the superiority of our ensemble strategy over standalone CLIP models. This study not only advances the state-of-the-art in image-to-text transformation but also accentuates the promising trajectory of ensemble learning in effectively addressing intricate multimodal tasks.",
+    "arxivId": "2401.06167",
+    "authors": [
+        {
+            "authorId": "2264122056",
+            "name": "Change Che",
+            "url": "https://www.semanticscholar.org/author/2264122056"
+        },
+        {
+            "authorId": "2268028100",
+            "name": "Qunwei Lin",
+            "url": "https://www.semanticscholar.org/author/2268028100"
+        },
+        {
+            "authorId": "2268031101",
+            "name": "Xinyu Zhao",
+            "url": "https://www.semanticscholar.org/author/2268031101"
+        },
+        {
+            "authorId": "2264942992",
+            "name": "Jiaxin Huang",
+            "url": "https://www.semanticscholar.org/author/2264942992"
+        },
+        {
+            "authorId": "2269702502",
+            "name": "Liqiang Yu",
+            "url": "https://www.semanticscholar.org/author/2269702502"
+        }
+    ],
+    "citationVelocity": 16,
+    "citations": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": null,
+                    "name": "Junchi Tian"
+                },
+                {
+                    "authorId": "2329414525",
+                    "name": "Chang Che"
+                }
+            ],
+            "doi": "10.70393/6a69656173.323336",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "680d7d9146f51a01955a27988aac3867c03f0938",
+            "title": "Automated Machine Learning: A Survey of Tools and Techniques",
+            "url": "https://www.semanticscholar.org/paper/680d7d9146f51a01955a27988aac3867c03f0938",
+            "venue": "Journal of Industrial Engineering and Applied Science",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2333322522",
+                    "name": "Xueyi Cheng"
+                },
+                {
+                    "authorId": "2333273039",
+                    "name": "Chang Che"
+                }
+            ],
+            "doi": "10.70393/6a69656173.323337",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d16efb6f1a83679c3ec4411de6267c5561fdf99f",
+            "title": "Interpretable Machine Learning: Explainability in Algorithm Design",
+            "url": "https://www.semanticscholar.org/paper/d16efb6f1a83679c3ec4411de6267c5561fdf99f",
+            "venue": "Journal of Industrial Engineering and Applied Science",
+            "year": 2024
+        },
+        {
+            "arxivId": "2411.17428",
+            "authors": [
+                {
+                    "authorId": "2269852535",
+                    "name": "Chengyang Liang"
+                },
+                {
+                    "authorId": "2332361565",
+                    "name": "Dong Li"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "39f46e7bd3ff149454aac9c696bc6d060defad3e",
+            "title": "Image Generation with Multimodule Semantic Feature-Aided Selection for Semantic Communications",
+            "url": "https://www.semanticscholar.org/paper/39f46e7bd3ff149454aac9c696bc6d060defad3e",
+            "venue": "",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2332701347",
+                    "name": "Xueyi Cheng"
+                }
+            ],
+            "doi": "10.70088/xpf2b276",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "1b4287acba75335c536767a8cdeaaa101ad7b51c",
+            "title": "A Comprehensive Study of Feature Selection Techniques in Machine Learning Models",
+            "url": "https://www.semanticscholar.org/paper/1b4287acba75335c536767a8cdeaaa101ad7b51c",
+            "venue": "Insights in Computer, Signals and Systems",
+            "year": 2024
+        },
+        {
+            "arxivId": "2408.04072",
+            "authors": [
+                {
+                    "authorId": "2083572783",
+                    "name": "Florian Gr\u00f6tschla"
+                },
+                {
+                    "authorId": "2219931770",
+                    "name": "Luca A. Lanzend\u00f6rfer"
+                },
+                {
+                    "authorId": "2315299125",
+                    "name": "Marco Calzavara"
+                },
+                {
+                    "authorId": "2075356250",
+                    "name": "R. Wattenhofer"
+                }
+            ],
+            "doi": "10.48550/arXiv.2408.04072",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "b79e186568926fc02c7ca5dea5cd1a11bf956193",
+            "title": "AEye: A Visualization Tool for Image Datasets",
+            "url": "https://www.semanticscholar.org/paper/b79e186568926fc02c7ca5dea5cd1a11bf956193",
+            "venue": "2024 IEEE Visualization and Visual Analytics (VIS)",
+            "year": 2024
+        },
+        {
+            "arxivId": "2406.07640",
+            "authors": [
+                {
+                    "authorId": "2197480753",
+                    "name": "Maxime Darrin"
+                },
+                {
+                    "authorId": "2288525111",
+                    "name": "Philippe Formont"
+                },
+                {
+                    "authorId": "144019647",
+                    "name": "Ismail Ben Ayed"
+                },
+                {
+                    "authorId": "2269460072",
+                    "name": "Jackie CK Cheung"
+                },
+                {
+                    "authorId": "2274337028",
+                    "name": "Pablo Piantanida"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "0ace1115f1558296c5323283d5b4f4abd61f381b",
+            "title": "When is an Embedding Model More Promising than Another?",
+            "url": "https://www.semanticscholar.org/paper/0ace1115f1558296c5323283d5b4f4abd61f381b",
+            "venue": "",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2294360738",
+                    "name": "Chang Che"
+                },
+                {
+                    "authorId": "2290858477",
+                    "name": "Chen Li"
+                },
+                {
+                    "authorId": "2294515325",
+                    "name": "Zengyi Huang"
+                }
+            ],
+            "doi": "10.62051/ijcsit.v2n3.01",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "6a134f33a504adb746cdee2fba39c58307f13e9e",
+            "title": "The Integration of Generative Artificial Intelligence and Computer Vision in Industrial Robotic Arms",
+            "url": "https://www.semanticscholar.org/paper/6a134f33a504adb746cdee2fba39c58307f13e9e",
+            "venue": "International Journal of Computer Science and Information Technology",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2307395109",
+                    "name": "Yuning Liu"
+                },
+                {
+                    "authorId": "2307322194",
+                    "name": "Junliang Wang"
+                }
+            ],
+            "doi": "10.54097/y17mrj84",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "04697256deb17d176a7ca9d4a2aa2b682c4ca8df",
+            "title": "Analysis of Financial Market using Generative Artificial Intelligence",
+            "url": "https://www.semanticscholar.org/paper/04697256deb17d176a7ca9d4a2aa2b682c4ca8df",
+            "venue": "Academic Journal of Science and Technology",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2296090893",
+                    "name": "Baoming Wang"
+                },
+                {
+                    "authorId": "2295667823",
+                    "name": "Han Lei"
+                },
+                {
+                    "authorId": "2295664710",
+                    "name": "Zuwei Shui"
+                },
+                {
+                    "authorId": "2301531050",
+                    "name": "Zhou Chen"
+                },
+                {
+                    "authorId": "2295683216",
+                    "name": "Peiyuan Yang"
+                }
+            ],
+            "doi": "10.53469/wjimt.2024.07(03).03",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "aba634dd0899f97f7e27b2e52936ca71576fc05c",
+            "title": "Current State of Autonomous Driving Applications Based on Distributed Perception and Decision-Making",
+            "url": "https://www.semanticscholar.org/paper/aba634dd0899f97f7e27b2e52936ca71576fc05c",
+            "venue": "World Journal of Innovation and Modern Technology",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2298575514",
+                    "name": "Huixiang Li"
+                },
+                {
+                    "authorId": "2298575592",
+                    "name": "Ang Li"
+                },
+                {
+                    "authorId": "2307191496",
+                    "name": "Yuning Liu"
+                },
+                {
+                    "authorId": "2298723808",
+                    "name": "Yiyu Lin"
+                },
+                {
+                    "authorId": "2298605755",
+                    "name": "Yadong Shi"
+                }
+            ],
+            "doi": "10.53469/jtpes.2024.04(05).02",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "19da16ce3b76511debcf200acba51fb97f8bb950",
+            "title": "AI Face Recognition and Processing Technology Based on GPU Computing",
+            "url": "https://www.semanticscholar.org/paper/19da16ce3b76511debcf200acba51fb97f8bb950",
+            "venue": "Journal of Theory and Practice of Engineering Science",
+            "year": 2024
+        },
+        {
+            "arxivId": "2405.07479",
+            "authors": [
+                {
+                    "authorId": "2301167239",
+                    "name": "Houze Liu"
+                },
+                {
+                    "authorId": "2301268547",
+                    "name": "Chongqing Wang"
+                },
+                {
+                    "authorId": "2301457161",
+                    "name": "Xiaoan Zhan"
+                },
+                {
+                    "authorId": "2290719494",
+                    "name": "Haotian Zheng"
+                },
+                {
+                    "authorId": "2294360738",
+                    "name": "Chang Che"
+                }
+            ],
+            "doi": "10.48550/arXiv.2405.07479",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "15aaffafd56e204a74886de54d9cf17b08871b77",
+            "title": "Enhancing 3D Object Detection by Using Neural Network with Self-adaptive Thresholding",
+            "url": "https://www.semanticscholar.org/paper/15aaffafd56e204a74886de54d9cf17b08871b77",
+            "venue": "Applied and Computational Engineering",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2290858477",
+                    "name": "Chen Li"
+                },
+                {
+                    "authorId": "2294515325",
+                    "name": "Zengyi Huang"
+                }
+            ],
+            "doi": "10.54097/6sn88t34",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "15403a5b0e4ab739d31176eab4ea770b1daa697d",
+            "title": "Using Artificial Intelligence to Refine the Implementation Trajectory of Digital Image Processing Technology",
+            "url": "https://www.semanticscholar.org/paper/15403a5b0e4ab739d31176eab4ea770b1daa697d",
+            "venue": "Frontiers in Computing and Intelligent Systems",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2303071752",
+                    "name": "Junliang Wang"
+                }
+            ],
+            "doi": "10.54097/d24rqq11",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "dc568d4085759da16332356625f32407f88d1131",
+            "title": "Research on Development of Generative Artificial Intelligence",
+            "url": "https://www.semanticscholar.org/paper/dc568d4085759da16332356625f32407f88d1131",
+            "venue": "Frontiers in Computing and Intelligent Systems",
+            "year": 2024
+        },
+        {
+            "arxivId": "2404.09322",
+            "authors": [
+                {
+                    "authorId": "2296746024",
+                    "name": "Yufu Wang"
+                },
+                {
+                    "authorId": "2283279782",
+                    "name": "Mingwei Zhu"
+                },
+                {
+                    "authorId": "2289781241",
+                    "name": "Jiaqiang Yuan"
+                },
+                {
+                    "authorId": "2292000973",
+                    "name": "Guanghui Wang"
+                },
+                {
+                    "authorId": "2296751871",
+                    "name": "Hong Zhou"
+                }
+            ],
+            "doi": "10.48550/arXiv.2404.09322",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a999b27303d9217e9963988aa38523635cd7f7cf",
+            "title": "The intelligent prediction and assessment of financial information risk in the cloud computing model",
+            "url": "https://www.semanticscholar.org/paper/a999b27303d9217e9963988aa38523635cd7f7cf",
+            "venue": "Applied and Computational Engineering",
+            "year": 2024
+        },
+        {
+            "arxivId": "2404.03523",
+            "authors": [
+                {
+                    "authorId": "2294360738",
+                    "name": "Chang Che"
+                },
+                {
+                    "authorId": "2294515325",
+                    "name": "Zengyi Huang"
+                },
+                {
+                    "authorId": "2290858477",
+                    "name": "Chen Li"
+                },
+                {
+                    "authorId": "2290719494",
+                    "name": "Haotian Zheng"
+                },
+                {
+                    "authorId": "2291015534",
+                    "name": "Xinyu Tian"
+                }
+            ],
+            "doi": "10.48550/arXiv.2404.03523",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "bdfd54ed0a1a7363433ab5bfc1892532a60e8d82",
+            "title": "Integrating Generative AI into Financial Market Prediction for Improved Decision Making",
+            "url": "https://www.semanticscholar.org/paper/bdfd54ed0a1a7363433ab5bfc1892532a60e8d82",
+            "venue": "Applied and Computational Engineering",
+            "year": 2024
+        },
+        {
+            "arxivId": "2404.01116",
+            "authors": [
+                {
+                    "authorId": "2294360738",
+                    "name": "Chang Che"
+                },
+                {
+                    "authorId": "2290719494",
+                    "name": "Haotian Zheng"
+                },
+                {
+                    "authorId": "2294515325",
+                    "name": "Zengyi Huang"
+                },
+                {
+                    "authorId": "2107592250",
+                    "name": "Weizhou Jiang"
+                },
+                {
+                    "authorId": "2291016110",
+                    "name": "Bo Liu"
+                }
+            ],
+            "doi": "10.48550/arXiv.2404.01116",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d06a0c38c6d8296e4758296c07be7a51ec285965",
+            "title": "Intelligent Robotic Control System Based on Computer Vision Technology",
+            "url": "https://www.semanticscholar.org/paper/d06a0c38c6d8296e4758296c07be7a51ec285965",
+            "venue": "Applied and Computational Engineering",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2294515325",
+                    "name": "Zengyi Huang"
+                },
+                {
+                    "authorId": "2290719494",
+                    "name": "Haotian Zheng"
+                },
+                {
+                    "authorId": "2290858477",
+                    "name": "Chen Li"
+                },
+                {
+                    "authorId": "2294360738",
+                    "name": "Chang Che"
+                }
+            ],
+            "doi": "10.54097/74414c90",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b2945d3094c561be73e49686de264524e436ec00",
+            "title": "Application of Machine Learning-Based K-means Clustering for Financial Fraud Detection",
+            "url": "https://www.semanticscholar.org/paper/b2945d3094c561be73e49686de264524e436ec00",
+            "venue": "Academic Journal of Science and Technology",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2294515325",
+                    "name": "Zengyi Huang"
+                },
+                {
+                    "authorId": "2294360738",
+                    "name": "Chang Che"
+                },
+                {
+                    "authorId": "2290719494",
+                    "name": "Haotian Zheng"
+                },
+                {
+                    "authorId": "2290858477",
+                    "name": "Chen Li"
+                }
+            ],
+            "doi": "10.54097/30r2kk80",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "59667c186ab9b5ac7ba81e21b4d2c021efa83740",
+            "title": "Research on Generative Artificial Intelligence for Virtual Financial Robo-Advisor",
+            "url": "https://www.semanticscholar.org/paper/59667c186ab9b5ac7ba81e21b4d2c021efa83740",
+            "venue": "Academic Journal of Science and Technology",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2298927969",
+                    "name": "Junliang Wang"
+                },
+                {
+                    "authorId": "2298933510",
+                    "name": "Jiahao Xu"
+                },
+                {
+                    "authorId": "2298923132",
+                    "name": "Qishuo Cheng"
+                },
+                {
+                    "authorId": "2298950572",
+                    "name": "Rathna Kumar"
+                }
+            ],
+            "doi": "10.54097/5yzwty57",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "6b7d2502a3a538ebe89f91bcedaadeef57a2b951",
+            "title": "Research on finance Credit Risk Quantification Model Based on Machine Learning Algorithm",
+            "url": "https://www.semanticscholar.org/paper/6b7d2502a3a538ebe89f91bcedaadeef57a2b951",
+            "venue": "Academic Journal of Science and Technology",
+            "year": 2024
+        },
+        {
+            "arxivId": "2403.16212",
+            "authors": [
+                {
+                    "authorId": "2281528408",
+                    "name": "Shaojie Li"
+                },
+                {
+                    "authorId": "2293414037",
+                    "name": "Haichen Qu"
+                },
+                {
+                    "authorId": "2281129411",
+                    "name": "Xinqi Dong"
+                },
+                {
+                    "authorId": "2281169207",
+                    "name": "Bo Dang"
+                },
+                {
+                    "authorId": "2281130565",
+                    "name": "Hengyi Zang"
+                },
+                {
+                    "authorId": "2292900584",
+                    "name": "Yulu Gong"
+                }
+            ],
+            "doi": "10.48550/arXiv.2403.16212",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "b7a0cb002a7e95c3ea7bad5799c9e079f507acd4",
+            "title": "Leveraging Deep Learning and Xception Architecture for High-Accuracy MRI Classification in Alzheimer Diagnosis",
+            "url": "https://www.semanticscholar.org/paper/b7a0cb002a7e95c3ea7bad5799c9e079f507acd4",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": "2403.05801",
+            "authors": [
+                {
+                    "authorId": "2290858477",
+                    "name": "Chen Li"
+                },
+                {
+                    "authorId": "2290719494",
+                    "name": "Haotian Zheng"
+                },
+                {
+                    "authorId": "2291003534",
+                    "name": "Yiping Sun"
+                },
+                {
+                    "authorId": "2290869608",
+                    "name": "Cangqing Wang"
+                },
+                {
+                    "authorId": "2269702502",
+                    "name": "Liqiang Yu"
+                },
+                {
+                    "authorId": "2290879535",
+                    "name": "Che Chang"
+                },
+                {
+                    "authorId": "2291015534",
+                    "name": "Xinyu Tian"
+                },
+                {
+                    "authorId": "2291016110",
+                    "name": "Bo Liu"
+                }
+            ],
+            "doi": "10.1109/MLISE62164.2024.10674566",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7b64ef6f5fa018a39df8597f2c853747b81706e3",
+            "title": "Enhancing Multi-Hop Knowledge Graph Reasoning through Reward Shaping Techniques",
+            "url": "https://www.semanticscholar.org/paper/7b64ef6f5fa018a39df8597f2c853747b81706e3",
+            "venue": "2024 4th International Conference on Machine Learning and Intelligent Systems Engineering (MLISE)",
+            "year": 2024
+        },
+        {
+            "arxivId": "2403.15418",
+            "authors": [
+                {
+                    "authorId": "2269702502",
+                    "name": "Liqiang Yu"
+                },
+                {
+                    "authorId": "2290858477",
+                    "name": "Chen Li"
+                },
+                {
+                    "authorId": "2307391532",
+                    "name": "Longsen Gao"
+                },
+                {
+                    "authorId": "2291016110",
+                    "name": "Bo Liu"
+                },
+                {
+                    "authorId": "2264122056",
+                    "name": "Change Che"
+                }
+            ],
+            "doi": "10.1109/ICAACE61206.2024.10548255",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "4ee527144e61fd999dd431b1f90fb32966412580",
+            "title": "Stochastic Analysis of Touch-Tone Frequency Recognition in Two-Way Radio Systems for Dialed Telephone Number Identification",
+            "url": "https://www.semanticscholar.org/paper/4ee527144e61fd999dd431b1f90fb32966412580",
+            "venue": "2024 7th International Conference on Advanced Algorithms and Control Engineering (ICAACE)",
+            "year": 2024
+        },
+        {
+            "arxivId": "2403.00842",
+            "authors": [
+                {
+                    "authorId": "2283187038",
+                    "name": "Jianfeng Chen"
+                },
+                {
+                    "authorId": "2275094901",
+                    "name": "Jize Xiong"
+                },
+                {
+                    "authorId": "2275100856",
+                    "name": "Yixu Wang"
+                },
+                {
+                    "authorId": "2289842902",
+                    "name": "Qi Xin"
+                },
+                {
+                    "authorId": "2275081263",
+                    "name": "Hong Zhou"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "8ec45c9084aa172813443286a88429421280e1d5",
+            "title": "Implementation of an AI-based MRD evaluation and prediction model for multiple myeloma",
+            "url": "https://www.semanticscholar.org/paper/8ec45c9084aa172813443286a88429421280e1d5",
+            "venue": "",
+            "year": 2024
+        },
+        {
+            "arxivId": "2402.09442",
+            "authors": [
+                {
+                    "authorId": "2268784655",
+                    "name": "Weixiang Wan"
+                },
+                {
+                    "authorId": "2268798337",
+                    "name": "Wenjian Sun"
+                },
+                {
+                    "authorId": "2268864180",
+                    "name": "Qiang Zeng"
+                },
+                {
+                    "authorId": "2268854986",
+                    "name": "Linying Pan"
+                },
+                {
+                    "authorId": "2268958571",
+                    "name": "Jingyu Xu"
+                },
+                {
+                    "authorId": "2284503474",
+                    "name": "Bo Liu"
+                }
+            ],
+            "doi": "10.1109/ICCECE61317.2024.10504189",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "b8e109a81f08c20faa6b21708aac5ec335f16035",
+            "title": "Progress in Artificial Intelligence Applications Based on the Combination of Self-Driven Sensors and Deep Learning",
+            "url": "https://www.semanticscholar.org/paper/b8e109a81f08c20faa6b21708aac5ec335f16035",
+            "venue": "2024 4th International Conference on Consumer Electronics and Computer Engineering (ICCECE)",
+            "year": 2024
+        },
+        {
+            "arxivId": "2401.02013",
+            "authors": [
+                {
+                    "authorId": "2149267217",
+                    "name": "Jing Wu"
+                },
+                {
+                    "authorId": "2292340338",
+                    "name": "Suiyao Chen"
+                },
+                {
+                    "authorId": "2277837895",
+                    "name": "Qi Zhao"
+                },
+                {
+                    "authorId": "1986610061",
+                    "name": "Renat Sergazinov"
+                },
+                {
+                    "authorId": "2277812179",
+                    "name": "Chen Li"
+                },
+                {
+                    "authorId": "2277811584",
+                    "name": "Shengjie Liu"
+                },
+                {
+                    "authorId": "2277988868",
+                    "name": "Chongchao Zhao"
+                },
+                {
+                    "authorId": "2277732367",
+                    "name": "Tianpei Xie"
+                },
+                {
+                    "authorId": "2277786853",
+                    "name": "Hanqing Guo"
+                },
+                {
+                    "authorId": "2277742801",
+                    "name": "Cheng Ji"
+                },
+                {
+                    "authorId": "2277751276",
+                    "name": "Daniel Cociorva"
+                },
+                {
+                    "authorId": "2277740069",
+                    "name": "Hakan Brunzel"
+                }
+            ],
+            "doi": "10.48550/arXiv.2401.02013",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "146efd9ed4ce53d9da48d302f95a8f597bc22b8b",
+            "title": "SwitchTab: Switched Autoencoders Are Effective Tabular Learners",
+            "url": "https://www.semanticscholar.org/paper/146efd9ed4ce53d9da48d302f95a8f597bc22b8b",
+            "venue": "AAAI",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2279388657",
+                    "name": "Qi Xin"
+                },
+                {
+                    "authorId": "2279364324",
+                    "name": "Yuhang He"
+                },
+                {
+                    "authorId": "2277028229",
+                    "name": "Yiming Pan"
+                },
+                {
+                    "authorId": "2277237751",
+                    "name": "Yong Wang"
+                },
+                {
+                    "authorId": "2277024318",
+                    "name": "Shuqian Du"
+                }
+            ],
+            "doi": "10.62051/ijcsit.v1n1.05",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "d65342effccc82d40c54d975ff97e4a0ad4d0347",
+            "title": "The implementation of an AI-driven advertising push system based on a NLP algorithm",
+            "url": "https://www.semanticscholar.org/paper/d65342effccc82d40c54d975ff97e4a0ad4d0347",
+            "venue": "International Journal of Computer Science and Information Technology",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2277024318",
+                    "name": "Shuqian Du"
+                },
+                {
+                    "authorId": "2277149223",
+                    "name": "Linxiao Li"
+                },
+                {
+                    "authorId": "2277237751",
+                    "name": "Yong Wang"
+                },
+                {
+                    "authorId": "2277152180",
+                    "name": "Yuxiang Liu"
+                },
+                {
+                    "authorId": "2277028229",
+                    "name": "Yiming Pan"
+                }
+            ],
+            "doi": "10.53469/jtpes.2023.03(12).01",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "37e0cccfc969fb61b7e1fe77289d9399daef247a",
+            "title": "Application of HPV-16 in Liquid-Based thin Layer Cytology of Host Genetic Lesions Based on AI Diagnostic Technology Presentation of Liquid",
+            "url": "https://www.semanticscholar.org/paper/37e0cccfc969fb61b7e1fe77289d9399daef247a",
+            "venue": "Journal of Theory and Practice of Engineering Science",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2277152180",
+                    "name": "Yuxiang Liu"
+                },
+                {
+                    "authorId": "2277062685",
+                    "name": "Shiheng Duan"
+                },
+                {
+                    "authorId": "2277162715",
+                    "name": "Zepeng Shen"
+                },
+                {
+                    "authorId": "2277173027",
+                    "name": "Zheng He"
+                },
+                {
+                    "authorId": "2277149223",
+                    "name": "Linxiao Li"
+                }
+            ],
+            "doi": "10.53469/jtpes.2023.03(12).04",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "274773854946a24cf506f33200259c2973d19ebb",
+            "title": "Grasp and Inspection of Mechanical Parts based on Visual Image Recognition Technology",
+            "url": "https://www.semanticscholar.org/paper/274773854946a24cf506f33200259c2973d19ebb",
+            "venue": "Journal of Theory and Practice of Engineering Science",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2268854986",
+                    "name": "Linying Pan"
+                },
+                {
+                    "authorId": "2268798337",
+                    "name": "Wenjian Sun"
+                },
+                {
+                    "authorId": "2268784655",
+                    "name": "Weixiang Wan"
+                },
+                {
+                    "authorId": "2268864180",
+                    "name": "Qiang Zeng"
+                },
+                {
+                    "authorId": "2268958571",
+                    "name": "Jingyu Xu"
+                }
+            ],
+            "doi": "10.53469/jtpes.2023.03(12).03",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d7e9c9ea1ceba7f3e375566af1b090ef57fb6eea",
+            "title": "Research Progress of Diabetic Disease Prediction Model in Deep Learning",
+            "url": "https://www.semanticscholar.org/paper/d7e9c9ea1ceba7f3e375566af1b090ef57fb6eea",
+            "venue": "Journal of Theory and Practice of Engineering Science",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2277036918",
+                    "name": "Yanqi Zong"
+                },
+                {
+                    "authorId": "2277160263",
+                    "name": "Luqi Lin"
+                },
+                {
+                    "authorId": "2277045462",
+                    "name": "Sihao Wang"
+                },
+                {
+                    "authorId": "2277168093",
+                    "name": "Zhengrong Cui"
+                },
+                {
+                    "authorId": "2277029873",
+                    "name": "Yizhi Chen"
+                }
+            ],
+            "doi": "10.53469/jtpes.2023.03(12).05",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "80fe901586c6aa2e7f6c29318aed325ce8a4b927",
+            "title": "Improvements and Challenges in StarCraft II Macro-Management A Study on the MSC Dataset",
+            "url": "https://www.semanticscholar.org/paper/80fe901586c6aa2e7f6c29318aed325ce8a4b927",
+            "venue": "Journal of Theory and Practice of Engineering Science",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2269702502",
+                    "name": "Liqiang Yu"
+                },
+                {
+                    "authorId": "2268031101",
+                    "name": "Xinyu Zhao"
+                },
+                {
+                    "authorId": "2264942992",
+                    "name": "Jiaxin Huang"
+                },
+                {
+                    "authorId": "2263951052",
+                    "name": "Hao Hu"
+                },
+                {
+                    "authorId": "2263769868",
+                    "name": "Bo Liu"
+                }
+            ],
+            "doi": "10.53469/jtpes.2023.03(12).02",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7712a49b0737b491afe1b751a100abe8aceb26b8",
+            "title": "Research on Machine Learning with Algorithms and Development",
+            "url": "https://www.semanticscholar.org/paper/7712a49b0737b491afe1b751a100abe8aceb26b8",
+            "venue": "Journal of Theory and Practice of Engineering Science",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2263769868",
+                    "name": "Bo Liu"
+                },
+                {
+                    "authorId": "2268031101",
+                    "name": "Xinyu Zhao"
+                },
+                {
+                    "authorId": "2263951052",
+                    "name": "Hao Hu"
+                },
+                {
+                    "authorId": "2268028100",
+                    "name": "Qunwei Lin"
+                },
+                {
+                    "authorId": "2264942992",
+                    "name": "Jiaxin Huang"
+                }
+            ],
+            "doi": "10.53469/jtpes.2023.03(12).06",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "c59e1ef9b7ec21bf2e0404abf81be51913ae0b88",
+            "title": "Detection of Esophageal Cancer Lesions Based on CBAM Faster R-CNN",
+            "url": "https://www.semanticscholar.org/paper/c59e1ef9b7ec21bf2e0404abf81be51913ae0b88",
+            "venue": "Journal of Theory and Practice of Engineering Science",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2277162715",
+                    "name": "Zepeng Shen"
+                },
+                {
+                    "authorId": "2280438433",
+                    "name": "Kuo Wei"
+                },
+                {
+                    "authorId": "2281130565",
+                    "name": "Hengyi Zang"
+                },
+                {
+                    "authorId": "2277149223",
+                    "name": "Linxiao Li"
+                },
+                {
+                    "authorId": "2280880167",
+                    "name": "Guanghui Wang"
+                }
+            ],
+            "doi": "10.54097/ykhccb53",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "b0a47876403d63916f0ba9b7ecced66a336c4a9c",
+            "title": "The Application of Artificial Intelligence to The Bayesian Model Algorithm for Combining Genome Data",
+            "url": "https://www.semanticscholar.org/paper/b0a47876403d63916f0ba9b7ecced66a336c4a9c",
+            "venue": "Academic Journal of Science and Technology",
+            "year": 2023
+        }
+    ],
+    "corpusId": 265608466,
+    "doi": "10.1145/3627377.3627442",
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 1,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 33,
+    "numCiting": 17,
+    "paperId": "e048186e53c80a23f505ed88d8bd3f012921d945",
+    "references": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2579192",
+                    "name": "Weinan Dai"
+                },
+                {
+                    "authorId": "1381291922",
+                    "name": "Chengjie Mou"
+                },
+                {
+                    "authorId": "2146667876",
+                    "name": "Jun Wu"
+                },
+                {
+                    "authorId": "2212065735",
+                    "name": "Xuesong Ye"
+                }
+            ],
+            "doi": "10.1109/ICETCI57876.2023.10176810",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "8b89a38643c752d397b96a87840eee7c52ad86ce",
+            "title": "Diabetic Retinopathy Detection with Enhanced Vision Transformers: The Twins-PCPVT Solution",
+            "url": "https://www.semanticscholar.org/paper/8b89a38643c752d397b96a87840eee7c52ad86ce",
+            "venue": "2023 IEEE 3rd International Conference on Electronic Technology, Communication and Information (ICETCI)",
+            "year": 2023
+        },
+        {
+            "arxivId": "2101.11986",
+            "authors": [
+                {
+                    "authorId": "2087091296",
+                    "name": "Li Yuan"
+                },
+                {
+                    "authorId": "2144861793",
+                    "name": "Yunpeng Chen"
+                },
+                {
+                    "authorId": null,
+                    "name": "Tao Wang"
+                },
+                {
+                    "authorId": "23476952",
+                    "name": "Weihao Yu"
+                },
+                {
+                    "authorId": "145356288",
+                    "name": "Yujun Shi"
+                },
+                {
+                    "authorId": "40983412",
+                    "name": "Francis E. H. Tay"
+                },
+                {
+                    "authorId": "33221685",
+                    "name": "Jiashi Feng"
+                },
+                {
+                    "authorId": "143653681",
+                    "name": "Shuicheng Yan"
+                }
+            ],
+            "doi": "10.1109/ICCV48922.2021.00060",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "dbe077f8521ecbe0a1477d6148c726d4f053d9c9",
+            "title": "Tokens-to-Token ViT: Training Vision Transformers from Scratch on ImageNet",
+            "url": "https://www.semanticscholar.org/paper/dbe077f8521ecbe0a1477d6148c726d4f053d9c9",
+            "venue": "2021 IEEE/CVF International Conference on Computer Vision (ICCV)",
+            "year": 2021
+        },
+        {
+            "arxivId": "1908.02265",
+            "authors": [
+                {
+                    "authorId": "8553015",
+                    "name": "Jiasen Lu"
+                },
+                {
+                    "authorId": "1746610",
+                    "name": "Dhruv Batra"
+                },
+                {
+                    "authorId": "153432684",
+                    "name": "Devi Parikh"
+                },
+                {
+                    "authorId": "2297229",
+                    "name": "Stefan Lee"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "65a9c7b0800c86a196bc14e7621ff895cc6ab287",
+            "title": "ViLBERT: Pretraining Task-Agnostic Visiolinguistic Representations for Vision-and-Language Tasks",
+            "url": "https://www.semanticscholar.org/paper/65a9c7b0800c86a196bc14e7621ff895cc6ab287",
+            "venue": "NeurIPS",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "48267618",
+                    "name": "Piyush Sharma"
+                },
+                {
+                    "authorId": "2066767241",
+                    "name": "Nan Ding"
+                },
+                {
+                    "authorId": "7685850",
+                    "name": "Sebastian Goodman"
+                },
+                {
+                    "authorId": "1737285",
+                    "name": "Radu Soricut"
+                }
+            ],
+            "doi": "10.18653/v1/P18-1238",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b4df354db88a70183a64dbc9e56cf14e7669a6c0",
+            "title": "Conceptual Captions: A Cleaned, Hypernymed, Image Alt-text Dataset For Automatic Image Captioning",
+            "url": "https://www.semanticscholar.org/paper/b4df354db88a70183a64dbc9e56cf14e7669a6c0",
+            "venue": "ACL",
+            "year": 2018
+        },
+        {
+            "arxivId": "1709.03376",
+            "authors": [
+                {
+                    "authorId": "2174964",
+                    "name": "Jiuxiang Gu"
+                },
+                {
+                    "authorId": "1688642",
+                    "name": "Jianfei Cai"
+                },
+                {
+                    "authorId": "2096527",
+                    "name": "G. Wang"
+                },
+                {
+                    "authorId": "40894914",
+                    "name": "Tsuhan Chen"
+                }
+            ],
+            "doi": "10.1609/aaai.v32i1.12266",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "7f14e73dade94b8b1f276dcd91257aa7de5f19d7",
+            "title": "Stack-Captioning: Coarse-to-Fine Learning for Image Captioning",
+            "url": "https://www.semanticscholar.org/paper/7f14e73dade94b8b1f276dcd91257aa7de5f19d7",
+            "venue": "AAAI",
+            "year": 2017
+        },
+        {
+            "arxivId": "1703.04394",
+            "authors": [
+                {
+                    "authorId": "3370667",
+                    "name": "Yongqin Xian"
+                },
+                {
+                    "authorId": "48920094",
+                    "name": "B. Schiele"
+                },
+                {
+                    "authorId": "2893664",
+                    "name": "Zeynep Akata"
+                }
+            ],
+            "doi": "10.1109/CVPR.2017.328",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "89e88ab5b7ba7557573ad773a0a077484bee3759",
+            "title": "Zero-Shot Learning \u2014 The Good, the Bad and the Ugly",
+            "url": "https://www.semanticscholar.org/paper/89e88ab5b7ba7557573ad773a0a077484bee3759",
+            "venue": "2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2017
+        },
+        {
+            "arxivId": "1612.00563",
+            "authors": [
+                {
+                    "authorId": "2071376",
+                    "name": "Steven J. Rennie"
+                },
+                {
+                    "authorId": "2293163",
+                    "name": "E. Marcheret"
+                },
+                {
+                    "authorId": "2211263",
+                    "name": "Youssef Mroueh"
+                },
+                {
+                    "authorId": "39320489",
+                    "name": "Jerret Ross"
+                },
+                {
+                    "authorId": "1782589",
+                    "name": "Vaibhava Goel"
+                }
+            ],
+            "doi": "10.1109/CVPR.2017.131",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "6c8353697cdbb98dfba4f493875778c4286d3e3a",
+            "title": "Self-Critical Sequence Training for Image Captioning",
+            "url": "https://www.semanticscholar.org/paper/6c8353697cdbb98dfba4f493875778c4286d3e3a",
+            "venue": "2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2016
+        },
+        {
+            "arxivId": "1605.00459",
+            "authors": [
+                {
+                    "authorId": "50369944",
+                    "name": "Desmond Elliott"
+                },
+                {
+                    "authorId": "37922370",
+                    "name": "Stella Frank"
+                },
+                {
+                    "authorId": "3540477",
+                    "name": "K. Sima'an"
+                },
+                {
+                    "authorId": "1702974",
+                    "name": "Lucia Specia"
+                }
+            ],
+            "doi": "10.18653/v1/W16-3210",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "bc9db6117d0026bc5b11eeba2303d2bddc96c306",
+            "title": "Multi30K: Multilingual English-German Image Descriptions",
+            "url": "https://www.semanticscholar.org/paper/bc9db6117d0026bc5b11eeba2303d2bddc96c306",
+            "venue": "VL@ACL",
+            "year": 2016
+        },
+        {
+            "arxivId": "1511.07571",
+            "authors": [
+                {
+                    "authorId": "2115231104",
+                    "name": "Justin Johnson"
+                },
+                {
+                    "authorId": "2354728",
+                    "name": "A. Karpathy"
+                },
+                {
+                    "authorId": "48004138",
+                    "name": "Li Fei-Fei"
+                }
+            ],
+            "doi": "10.1109/CVPR.2016.494",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d7ce5665a72c0b607f484c1b448875f02ddfac3b",
+            "title": "DenseCap: Fully Convolutional Localization Networks for Dense Captioning",
+            "url": "https://www.semanticscholar.org/paper/d7ce5665a72c0b607f484c1b448875f02ddfac3b",
+            "venue": "2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2015
+        },
+        {
+            "arxivId": "1511.06434",
+            "authors": [
+                {
+                    "authorId": "38909097",
+                    "name": "Alec Radford"
+                },
+                {
+                    "authorId": "2096458",
+                    "name": "Luke Metz"
+                },
+                {
+                    "authorId": "2127604",
+                    "name": "Soumith Chintala"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8388f1be26329fa45e5807e968a641ce170ea078",
+            "title": "Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks",
+            "url": "https://www.semanticscholar.org/paper/8388f1be26329fa45e5807e968a641ce170ea078",
+            "venue": "ICLR",
+            "year": 2015
+        },
+        {
+            "arxivId": "1412.2306",
+            "authors": [
+                {
+                    "authorId": "2354728",
+                    "name": "A. Karpathy"
+                },
+                {
+                    "authorId": "48004138",
+                    "name": "Li Fei-Fei"
+                }
+            ],
+            "doi": "10.1109/CVPR.2015.7298932",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "55e022fb7581bb9e1fce678d21fb25ffbb3fbb88",
+            "title": "Deep visual-semantic alignments for generating image descriptions",
+            "url": "https://www.semanticscholar.org/paper/55e022fb7581bb9e1fce678d21fb25ffbb3fbb88",
+            "venue": "2015 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2014
+        },
+        {
+            "arxivId": "1411.5726",
+            "authors": [
+                {
+                    "authorId": "8137017",
+                    "name": "Ramakrishna Vedantam"
+                },
+                {
+                    "authorId": "1699161",
+                    "name": "C. L. Zitnick"
+                },
+                {
+                    "authorId": "153432684",
+                    "name": "Devi Parikh"
+                }
+            ],
+            "doi": "10.1109/CVPR.2015.7299087",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "258986132bf17755fe8263e42429fe73218c1534",
+            "title": "CIDEr: Consensus-based image description evaluation",
+            "url": "https://www.semanticscholar.org/paper/258986132bf17755fe8263e42429fe73218c1534",
+            "venue": "2015 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145345847",
+                    "name": "S. Darwish"
+                },
+                {
+                    "authorId": "2053415009",
+                    "name": "Raad A. Ali"
+                }
+            ],
+            "doi": "10.7763/IJCTE.2015.V7.921",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "3ebf944f53600100febeeb6629411265e854a071",
+            "title": "Observations on Using Type-2 Fuzzy Logic for Reducing Semantic Gap in Content-Based Image Retrieval System",
+            "url": "https://www.semanticscholar.org/paper/3ebf944f53600100febeeb6629411265e854a071",
+            "venue": "",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1707702",
+                    "name": "Leif E. Peterson"
+                }
+            ],
+            "doi": "10.4249/scholarpedia.1883",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "6e0121548ae114b8ed70b5189cbc4800d8b4290d",
+            "title": "K-nearest neighbor",
+            "url": "https://www.semanticscholar.org/paper/6e0121548ae114b8ed70b5189cbc4800d8b4290d",
+            "venue": "Scholarpedia",
+            "year": 2009
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Enhancing Multimodal Understanding with CLIP-Based Image-to-Text Transformation",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/e048186e53c80a23f505ed88d8bd3f012921d945",
+    "venue": "ICBDT",
+    "year": 2023
+}

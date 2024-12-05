@@ -1,0 +1,1447 @@
+{
+    "abstract": "Classification models based on deep neural networks (DNNs) must be calibrated to measure the reliability of predictions. Some recent calibration methods have employed a probabilistic model on the probability simplex. However, these calibration methods cannot preserve the accuracy of pre-trained models, even those with a high classification accuracy. We propose an accuracy-preserving calibration method using the Concrete distribution as the probabilistic model on the probability simplex. We theoretically prove that a DNN model trained on cross-entropy loss has optimality as the parameter of the Concrete distribution. We also propose an efficient method that synthetically generates samples for training probabilistic models on the probability simplex. We demonstrate that the proposed method can outperform previous methods in accuracy-preserving calibration tasks using benchmarks.",
+    "arxivId": "2402.13765",
+    "authors": [
+        {
+            "authorId": "101368663",
+            "name": "Yasushi Esaki",
+            "url": "https://www.semanticscholar.org/author/101368663"
+        },
+        {
+            "authorId": "2187455748",
+            "name": "Akihiro Nakamura",
+            "url": "https://www.semanticscholar.org/author/2187455748"
+        },
+        {
+            "authorId": "1677093614",
+            "name": "Keisuke Kawano",
+            "url": "https://www.semanticscholar.org/author/1677093614"
+        },
+        {
+            "authorId": "3450697",
+            "name": "Ryoko Tokuhisa",
+            "url": "https://www.semanticscholar.org/author/3450697"
+        },
+        {
+            "authorId": "34687538",
+            "name": "Takuro Kutsuna",
+            "url": "https://www.semanticscholar.org/author/34687538"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [],
+    "corpusId": 267770672,
+    "doi": "10.48550/arXiv.2402.13765",
+    "fieldsOfStudy": [
+        "Computer Science",
+        "Mathematics"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 0,
+    "numCiting": 58,
+    "paperId": "6d6e545ce1fd637fbce7549e668dbded40ac8581",
+    "references": [
+        {
+            "arxivId": "2208.00461",
+            "authors": [
+                {
+                    "authorId": "2179883203",
+                    "name": "S\u00e9rgio A. Balanya"
+                },
+                {
+                    "authorId": "66769721",
+                    "name": "Juan Maro\u00f1as"
+                },
+                {
+                    "authorId": "2006349106",
+                    "name": "Daniel Ramos"
+                }
+            ],
+            "doi": "10.48550/arXiv.2208.00461",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "559d4bdb3241044bbbc50a902372290ddebd2126",
+            "title": "Adaptive Temperature Scaling for Robust Calibration of Deep Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/559d4bdb3241044bbbc50a902372290ddebd2126",
+            "venue": "Neural Comput. Appl.",
+            "year": 2022
+        },
+        {
+            "arxivId": "2207.06211",
+            "authors": [
+                {
+                    "authorId": "5646188",
+                    "name": "Thomas Joy"
+                },
+                {
+                    "authorId": "2088918572",
+                    "name": "Francesco Pinto"
+                },
+                {
+                    "authorId": "153317808",
+                    "name": "S. Lim"
+                },
+                {
+                    "authorId": "143635540",
+                    "name": "Philip H. S. Torr"
+                },
+                {
+                    "authorId": "144679302",
+                    "name": "P. Dokania"
+                }
+            ],
+            "doi": "10.48550/arXiv.2207.06211",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "63916bb5363d37b9a3adfd1a56dee3710190fce1",
+            "title": "Sample-dependent Adaptive Temperature Scaling for Improved Calibration",
+            "url": "https://www.semanticscholar.org/paper/63916bb5363d37b9a3adfd1a56dee3710190fce1",
+            "venue": "AAAI",
+            "year": 2022
+        },
+        {
+            "arxivId": "2204.03323",
+            "authors": [
+                {
+                    "authorId": "144037977",
+                    "name": "Kumar Abhishek"
+                },
+                {
+                    "authorId": "2347231",
+                    "name": "Colin J. Brown"
+                },
+                {
+                    "authorId": "3049056",
+                    "name": "G. Hamarneh"
+                }
+            ],
+            "doi": "10.1186/s40537-024-00898-6",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b79fa0eae625973628d93af9bdc5dda5d16e83dd",
+            "title": "Multi-sample \\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$\\zeta $$\\end{document}\u03b6-mixup: richer, more realistic syn",
+            "url": "https://www.semanticscholar.org/paper/b79fa0eae625973628d93af9bdc5dda5d16e83dd",
+            "venue": "J. Big Data",
+            "year": 2022
+        },
+        {
+            "arxivId": "2112.10327",
+            "authors": [
+                {
+                    "authorId": "3024963",
+                    "name": "Telmo de Menezes e Silva Filho"
+                },
+                {
+                    "authorId": "2112980202",
+                    "name": "Hao Song"
+                },
+                {
+                    "authorId": "1399591467",
+                    "name": "Miquel Perello-Nieto"
+                },
+                {
+                    "authorId": "2126710957",
+                    "name": "Ra\u00fal Santos-Rodr\u00edguez"
+                },
+                {
+                    "authorId": "66368615",
+                    "name": "Meelis Kull"
+                },
+                {
+                    "authorId": "47840704",
+                    "name": "Peter A. Flach"
+                }
+            ],
+            "doi": "10.1007/s10994-023-06336-7",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "f471af0ba7d366233da32a1f7151fde42816790f",
+            "title": "Classifier calibration: a survey on how to assess and improve predicted class probabilities",
+            "url": "https://www.semanticscholar.org/paper/f471af0ba7d366233da32a1f7151fde42816790f",
+            "venue": "Machine Learning",
+            "year": 2021
+        },
+        {
+            "arxivId": "2112.07184",
+            "authors": [
+                {
+                    "authorId": "145712106",
+                    "name": "Volodymyr Kuleshov"
+                },
+                {
+                    "authorId": "79617707",
+                    "name": "Shachi Deshpande"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "da0cc87ac2fd65abd7a271eae90724d1dd5c8cf4",
+            "title": "Calibrated and Sharp Uncertainties in Deep Learning via Density Estimation",
+            "url": "https://www.semanticscholar.org/paper/da0cc87ac2fd65abd7a271eae90724d1dd5c8cf4",
+            "venue": "ICML",
+            "year": 2021
+        },
+        {
+            "arxivId": "2110.11334",
+            "authors": [
+                {
+                    "authorId": "2295601",
+                    "name": "Jingkang Yang"
+                },
+                {
+                    "authorId": "9368124",
+                    "name": "Kaiyang Zhou"
+                },
+                {
+                    "authorId": "1527103472",
+                    "name": "Yixuan Li"
+                },
+                {
+                    "authorId": "2117940996",
+                    "name": "Ziwei Liu"
+                }
+            ],
+            "doi": "10.1007/s11263-024-02117-4",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "7b2180d7fa0d65e8756401cb077bf3dea3f9b575",
+            "title": "Generalized Out-of-Distribution Detection: A Survey",
+            "url": "https://www.semanticscholar.org/paper/7b2180d7fa0d65e8756401cb077bf3dea3f9b575",
+            "venue": "Int. J. Comput. Vis.",
+            "year": 2021
+        },
+        {
+            "arxivId": "2107.03342",
+            "authors": [
+                {
+                    "authorId": "2051292610",
+                    "name": "J. Gawlikowski"
+                },
+                {
+                    "authorId": "1486494981",
+                    "name": "Cedrique Rovile Njieutcheu Tassi"
+                },
+                {
+                    "authorId": "2051285705",
+                    "name": "Mohsin Ali"
+                },
+                {
+                    "authorId": "2329051",
+                    "name": "Jongseo Lee"
+                },
+                {
+                    "authorId": "1753619041",
+                    "name": "Matthias Humt"
+                },
+                {
+                    "authorId": "2118032380",
+                    "name": "Jianxiang Feng"
+                },
+                {
+                    "authorId": "2124880868",
+                    "name": "Anna M. Kruspe"
+                },
+                {
+                    "authorId": "1453548521",
+                    "name": "Rudolph Triebel"
+                },
+                {
+                    "authorId": "2054660189",
+                    "name": "P. Jung"
+                },
+                {
+                    "authorId": "46525320",
+                    "name": "R. Roscher"
+                },
+                {
+                    "authorId": "1380493607",
+                    "name": "M. Shahzad"
+                },
+                {
+                    "authorId": "2121300248",
+                    "name": "Wen Yang"
+                },
+                {
+                    "authorId": "1740759",
+                    "name": "R. Bamler"
+                },
+                {
+                    "authorId": "46875441",
+                    "name": "Xiaoxiang Zhu"
+                }
+            ],
+            "doi": "10.1007/s10462-023-10562-9",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "fc70db46738fff97d9ee3d66c6f9c57794d7b4fa",
+            "title": "A survey of uncertainty in deep neural networks",
+            "url": "https://www.semanticscholar.org/paper/fc70db46738fff97d9ee3d66c6f9c57794d7b4fa",
+            "venue": "Artificial Intelligence Review",
+            "year": 2021
+        },
+        {
+            "arxivId": "2105.06987",
+            "authors": [
+                {
+                    "authorId": "1491753352",
+                    "name": "Max Ryabinin"
+                },
+                {
+                    "authorId": "145275970",
+                    "name": "A. Malinin"
+                },
+                {
+                    "authorId": "1740397",
+                    "name": "M. Gales"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "cb85e2b1cd5ef3619348edba4ff169b45e177f94",
+            "title": "Scaling Ensemble Distribution Distillation to Many Classes with Proxy Targets",
+            "url": "https://www.semanticscholar.org/paper/cb85e2b1cd5ef3619348edba4ff169b45e177f94",
+            "venue": "NeurIPS",
+            "year": 2021
+        },
+        {
+            "arxivId": "2102.12182",
+            "authors": [
+                {
+                    "authorId": "1583683907",
+                    "name": "Christian Tomani"
+                },
+                {
+                    "authorId": "1695302",
+                    "name": "D. Cremers"
+                },
+                {
+                    "authorId": "2315845",
+                    "name": "F. Buettner"
+                }
+            ],
+            "doi": "10.1007/978-3-031-19778-9_32",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "0238cc486709789953830da439e75a8d33340e85",
+            "title": "Parameterized Temperature Scaling for Boosting the Expressive Power in Post-Hoc Uncertainty Calibration",
+            "url": "https://www.semanticscholar.org/paper/0238cc486709789953830da439e75a8d33340e85",
+            "venue": "ECCV",
+            "year": 2021
+        },
+        {
+            "arxivId": "2003.07329",
+            "authors": [
+                {
+                    "authorId": "2107967251",
+                    "name": "Jize Zhang"
+                },
+                {
+                    "authorId": "1749353",
+                    "name": "B. Kailkhura"
+                },
+                {
+                    "authorId": "50495911",
+                    "name": "T. Y. Han"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "aa5a4433aa08834a69b4afb7917b1c7107a529a6",
+            "title": "Mix-n-Match: Ensemble and Compositional Methods for Uncertainty Calibration in Deep Learning",
+            "url": "https://www.semanticscholar.org/paper/aa5a4433aa08834a69b4afb7917b1c7107a529a6",
+            "venue": "ICML",
+            "year": 2020
+        },
+        {
+            "arxivId": "2002.11531",
+            "authors": [
+                {
+                    "authorId": "72453193",
+                    "name": "Jakob Lindqvist"
+                },
+                {
+                    "authorId": "91642132",
+                    "name": "Amanda Olmin"
+                },
+                {
+                    "authorId": "1759780",
+                    "name": "F. Lindsten"
+                },
+                {
+                    "authorId": "145652111",
+                    "name": "L. Svensson"
+                }
+            ],
+            "doi": "10.1109/MLSP49062.2020.9231703",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "c4c3642a375aa1af0fcd406001c33af6b6552a21",
+            "title": "A General Framework for Ensemble Distribution Distillation",
+            "url": "https://www.semanticscholar.org/paper/c4c3642a375aa1af0fcd406001c33af6b6552a21",
+            "venue": "2020 IEEE 30th International Workshop on Machine Learning for Signal Processing (MLSP)",
+            "year": 2020
+        },
+        {
+            "arxivId": "2002.10118",
+            "authors": [
+                {
+                    "authorId": "36037289",
+                    "name": "Agustinus Kristiadi"
+                },
+                {
+                    "authorId": "143610806",
+                    "name": "Matthias Hein"
+                },
+                {
+                    "authorId": "2517795",
+                    "name": "Philipp Hennig"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "4ee09045d7276103f5a4d7c0938c188418ba002f",
+            "title": "Being Bayesian, Even Just a Bit, Fixes Overconfidence in ReLU Networks",
+            "url": "https://www.semanticscholar.org/paper/4ee09045d7276103f5a4d7c0938c188418ba002f",
+            "venue": "ICML",
+            "year": 2020
+        },
+        {
+            "arxivId": "2002.08791",
+            "authors": [
+                {
+                    "authorId": "145771261",
+                    "name": "A. Wilson"
+                },
+                {
+                    "authorId": "7991830",
+                    "name": "Pavel Izmailov"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "af9280741ef627f0d6c8437605d002d3bfc2d1b1",
+            "title": "Bayesian Deep Learning and a Probabilistic Perspective of Generalization",
+            "url": "https://www.semanticscholar.org/paper/af9280741ef627f0d6c8437605d002d3bfc2d1b1",
+            "venue": "NeurIPS",
+            "year": 2020
+        },
+        {
+            "arxivId": "1910.09457",
+            "authors": [
+                {
+                    "authorId": "1691955",
+                    "name": "Eyke H\u00fcllermeier"
+                },
+                {
+                    "authorId": "3249834",
+                    "name": "W. Waegeman"
+                }
+            ],
+            "doi": "10.1007/s10994-021-05946-3",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b631ba962b4403a9c0fd9cce446ef3b1e21ea059",
+            "title": "Aleatoric and epistemic uncertainty in machine learning: an introduction to concepts and methods",
+            "url": "https://www.semanticscholar.org/paper/b631ba962b4403a9c0fd9cce446ef3b1e21ea059",
+            "venue": "Machine Learning",
+            "year": 2019
+        },
+        {
+            "arxivId": "1908.09822",
+            "authors": [
+                {
+                    "authorId": "2087067777",
+                    "name": "Yang Zou"
+                },
+                {
+                    "authorId": "1751019",
+                    "name": "Zhiding Yu"
+                },
+                {
+                    "authorId": "2144499630",
+                    "name": "Xiaofeng Liu"
+                },
+                {
+                    "authorId": "2152187093",
+                    "name": "B. Kumar"
+                },
+                {
+                    "authorId": "2110201006",
+                    "name": "Jinsong Wang"
+                }
+            ],
+            "doi": "10.1109/ICCV.2019.00608",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8ebcf0b5183786978ccdb59ca8926de0457470be",
+            "title": "Confidence Regularized Self-Training",
+            "url": "https://www.semanticscholar.org/paper/8ebcf0b5183786978ccdb59ca8926de0457470be",
+            "venue": "2019 IEEE/CVF International Conference on Computer Vision (ICCV)",
+            "year": 2019
+        },
+        {
+            "arxivId": "1908.07235",
+            "authors": [
+                {
+                    "authorId": "34505275",
+                    "name": "Tiago Ramalho"
+                },
+                {
+                    "authorId": "145422492",
+                    "name": "M. Corbalan"
+                }
+            ],
+            "doi": "10.1007/978-3-030-62144-5_7",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "7f6e745cdaeaf9e3d88fd547777d817c9a93e57e",
+            "title": "Density estimation in representation space to predict model uncertainty",
+            "url": "https://www.semanticscholar.org/paper/7f6e745cdaeaf9e3d88fd547777d817c9a93e57e",
+            "venue": "Communications in Computer and Information Science",
+            "year": 2019
+        },
+        {
+            "arxivId": "1906.04933",
+            "authors": [
+                {
+                    "authorId": "2057706926",
+                    "name": "Jonathan Wenger"
+                },
+                {
+                    "authorId": "1704879",
+                    "name": "H. Kjellstr\u00f6m"
+                },
+                {
+                    "authorId": "2750689",
+                    "name": "Rudolph Triebel"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "c7a11a289062304d00b00a9673f094b14d4eac8d",
+            "title": "Non-Parametric Calibration for Classification",
+            "url": "https://www.semanticscholar.org/paper/c7a11a289062304d00b00a9673f094b14d4eac8d",
+            "venue": "AISTATS",
+            "year": 2019
+        },
+        {
+            "arxivId": "1905.11001",
+            "authors": [
+                {
+                    "authorId": "1780360",
+                    "name": "S. Thulasidasan"
+                },
+                {
+                    "authorId": "2530185",
+                    "name": "Gopinath Chennupati"
+                },
+                {
+                    "authorId": "1748118",
+                    "name": "J. Bilmes"
+                },
+                {
+                    "authorId": "144296799",
+                    "name": "Tanmoy Bhattacharya"
+                },
+                {
+                    "authorId": "32393114",
+                    "name": "S. Michalak"
+                }
+            ],
+            "doi": "10.2172/1525811",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "7b2e26fd3e862c5f58c522a13ae86a768aaaccad",
+            "title": "On Mixup Training: Improved Calibration and Predictive Uncertainty for Deep Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/7b2e26fd3e862c5f58c522a13ae86a768aaaccad",
+            "venue": "NeurIPS",
+            "year": 2019
+        },
+        {
+            "arxivId": "1905.00076",
+            "authors": [
+                {
+                    "authorId": "145275970",
+                    "name": "A. Malinin"
+                },
+                {
+                    "authorId": "112902445",
+                    "name": "Bruno Mlodozeniec"
+                },
+                {
+                    "authorId": "1740397",
+                    "name": "M. Gales"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "result",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "117deae28bc57323f446d7f7700395909b8d19c6",
+            "title": "Ensemble Distribution Distillation",
+            "url": "https://www.semanticscholar.org/paper/117deae28bc57323f446d7f7700395909b8d19c6",
+            "venue": "ICLR",
+            "year": 2019
+        },
+        {
+            "arxivId": "1809.02499",
+            "authors": [
+                {
+                    "authorId": "1694050",
+                    "name": "Hongyu Guo"
+                },
+                {
+                    "authorId": "2047889",
+                    "name": "Yongyi Mao"
+                },
+                {
+                    "authorId": "1747018",
+                    "name": "Richong Zhang"
+                }
+            ],
+            "doi": "10.1609/AAAI.V33I01.33013714",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d3eef9744324abc397c82b112b026aad3ec56708",
+            "title": "MixUp as Locally Linear Out-Of-Manifold Regularization",
+            "url": "https://www.semanticscholar.org/paper/d3eef9744324abc397c82b112b026aad3ec56708",
+            "venue": "AAAI",
+            "year": 2018
+        },
+        {
+            "arxivId": "1808.01974",
+            "authors": [
+                {
+                    "authorId": "2597292",
+                    "name": "Chuanqi Tan"
+                },
+                {
+                    "authorId": "143823065",
+                    "name": "F. Sun"
+                },
+                {
+                    "authorId": "145868988",
+                    "name": "Tao Kong"
+                },
+                {
+                    "authorId": "2109866658",
+                    "name": "Wenchang Zhang"
+                },
+                {
+                    "authorId": "2146345020",
+                    "name": "Chao Yang"
+                },
+                {
+                    "authorId": "50557305",
+                    "name": "Chunfang Liu"
+                }
+            ],
+            "doi": "10.1007/978-3-030-01424-7_27",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "9235d511dea04aa563a577ab236506b8eb8242ff",
+            "title": "A Survey on Deep Transfer Learning",
+            "url": "https://www.semanticscholar.org/paper/9235d511dea04aa563a577ab236506b8eb8242ff",
+            "venue": "ICANN",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "50346446",
+                    "name": "Vikas Verma"
+                },
+                {
+                    "authorId": "49071560",
+                    "name": "Alex Lamb"
+                },
+                {
+                    "authorId": "12757989",
+                    "name": "Christopher Beckham"
+                },
+                {
+                    "authorId": "2249759218",
+                    "name": "Amir Najafi"
+                },
+                {
+                    "authorId": "3168518",
+                    "name": "Ioannis Mitliagkas"
+                },
+                {
+                    "authorId": "1401804750",
+                    "name": "David Lopez-Paz"
+                },
+                {
+                    "authorId": "1751762",
+                    "name": "Yoshua Bengio"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "1b59eea8ec4684381a885b59acd09c9151a49487",
+            "title": "Manifold Mixup: Better Representations by Interpolating Hidden States",
+            "url": "https://www.semanticscholar.org/paper/1b59eea8ec4684381a885b59acd09c9151a49487",
+            "venue": "ICML",
+            "year": 2018
+        },
+        {
+            "arxivId": "1806.01768",
+            "authors": [
+                {
+                    "authorId": "1715430",
+                    "name": "M. Sensoy"
+                },
+                {
+                    "authorId": "11213556",
+                    "name": "M. Kandemir"
+                },
+                {
+                    "authorId": "1795727",
+                    "name": "Lance M. Kaplan"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "138fafc2d679bc6446ff74f55dfd316b0d5674b9",
+            "title": "Evidential Deep Learning to Quantify Classification Uncertainty",
+            "url": "https://www.semanticscholar.org/paper/138fafc2d679bc6446ff74f55dfd316b0d5674b9",
+            "venue": "NeurIPS",
+            "year": 2018
+        },
+        {
+            "arxivId": "1802.10501",
+            "authors": [
+                {
+                    "authorId": "145275970",
+                    "name": "A. Malinin"
+                },
+                {
+                    "authorId": "1740397",
+                    "name": "M. Gales"
+                }
+            ],
+            "doi": "10.17863/CAM.35237",
+            "intent": [
+                "background",
+                "result",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "9fcb88ec529aba79a5860e8fde76e7f4762a267d",
+            "title": "Predictive Uncertainty Estimation via Prior Networks",
+            "url": "https://www.semanticscholar.org/paper/9fcb88ec529aba79a5860e8fde76e7f4762a267d",
+            "venue": "NeurIPS",
+            "year": 2018
+        },
+        {
+            "arxivId": "1801.02929",
+            "authors": [
+                {
+                    "authorId": "2111678375",
+                    "name": "H. Inoue"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "22b6f5febae9ecab5f080fb94b4437951a337e12",
+            "title": "Data Augmentation by Pairing Samples for Images Classification",
+            "url": "https://www.semanticscholar.org/paper/22b6f5febae9ecab5f080fb94b4437951a337e12",
+            "venue": "ArXiv",
+            "year": 2018
+        },
+        {
+            "arxivId": "1710.09412",
+            "authors": [
+                {
+                    "authorId": "2108880169",
+                    "name": "Hongyi Zhang"
+                },
+                {
+                    "authorId": "5723508",
+                    "name": "Moustapha Ciss\u00e9"
+                },
+                {
+                    "authorId": "2921469",
+                    "name": "Yann Dauphin"
+                },
+                {
+                    "authorId": "1401804750",
+                    "name": "David Lopez-Paz"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "4feef0fd284feb1233399b400eb897f59ec92755",
+            "title": "mixup: Beyond Empirical Risk Minimization",
+            "url": "https://www.semanticscholar.org/paper/4feef0fd284feb1233399b400eb897f59ec92755",
+            "venue": "ICLR",
+            "year": 2017
+        },
+        {
+            "arxivId": "1708.07747",
+            "authors": [
+                {
+                    "authorId": "145642373",
+                    "name": "Han Xiao"
+                },
+                {
+                    "authorId": "4565995",
+                    "name": "Kashif Rasul"
+                },
+                {
+                    "authorId": "2742129",
+                    "name": "Roland Vollgraf"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "f9c602cc436a9ea2f9e7db48c77d924e09ce3c32",
+            "title": "Fashion-MNIST: a Novel Image Dataset for Benchmarking Machine Learning Algorithms",
+            "url": "https://www.semanticscholar.org/paper/f9c602cc436a9ea2f9e7db48c77d924e09ce3c32",
+            "venue": "ArXiv",
+            "year": 2017
+        },
+        {
+            "arxivId": "1706.04599",
+            "authors": [
+                {
+                    "authorId": "144993411",
+                    "name": "Chuan Guo"
+                },
+                {
+                    "authorId": "10804137",
+                    "name": "Geoff Pleiss"
+                },
+                {
+                    "authorId": "2117103358",
+                    "name": "Yu Sun"
+                },
+                {
+                    "authorId": "7446832",
+                    "name": "Kilian Q. Weinberger"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "d65ce2b8300541414bfe51d03906fca72e93523c",
+            "title": "On Calibration of Modern Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/d65ce2b8300541414bfe51d03906fca72e93523c",
+            "venue": "ICML",
+            "year": 2017
+        },
+        {
+            "arxivId": "1611.01144",
+            "authors": [
+                {
+                    "authorId": "145116380",
+                    "name": "Eric Jang"
+                },
+                {
+                    "authorId": "2046135",
+                    "name": "S. Gu"
+                },
+                {
+                    "authorId": "16443937",
+                    "name": "Ben Poole"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "29e944711a354c396fad71936f536e83025b6ce0",
+            "title": "Categorical Reparameterization with Gumbel-Softmax",
+            "url": "https://www.semanticscholar.org/paper/29e944711a354c396fad71936f536e83025b6ce0",
+            "venue": "ICLR",
+            "year": 2016
+        },
+        {
+            "arxivId": "1611.00712",
+            "authors": [
+                {
+                    "authorId": "2772217",
+                    "name": "Chris J. Maddison"
+                },
+                {
+                    "authorId": "1714004",
+                    "name": "A. Mnih"
+                },
+                {
+                    "authorId": "1725303",
+                    "name": "Y. Teh"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "515a21e90117941150923e559729c59f5fdade1c",
+            "title": "The Concrete Distribution: A Continuous Relaxation of Discrete Random Variables",
+            "url": "https://www.semanticscholar.org/paper/515a21e90117941150923e559729c59f5fdade1c",
+            "venue": "ICLR",
+            "year": 2016
+        },
+        {
+            "arxivId": "1608.06993",
+            "authors": [
+                {
+                    "authorId": "143983679",
+                    "name": "Gao Huang"
+                },
+                {
+                    "authorId": "2109168016",
+                    "name": "Zhuang Liu"
+                },
+                {
+                    "authorId": "7446832",
+                    "name": "Kilian Q. Weinberger"
+                }
+            ],
+            "doi": "10.1109/CVPR.2017.243",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "5694e46284460a648fe29117cbc55f6c9be3fa3c",
+            "title": "Densely Connected Convolutional Networks",
+            "url": "https://www.semanticscholar.org/paper/5694e46284460a648fe29117cbc55f6c9be3fa3c",
+            "venue": "2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2016
+        },
+        {
+            "arxivId": "1608.03983",
+            "authors": [
+                {
+                    "authorId": "1678656",
+                    "name": "I. Loshchilov"
+                },
+                {
+                    "authorId": "144661829",
+                    "name": "F. Hutter"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "b022f2a277a4bf5f42382e86e4380b96340b9e86",
+            "title": "SGDR: Stochastic Gradient Descent with Warm Restarts",
+            "url": "https://www.semanticscholar.org/paper/b022f2a277a4bf5f42382e86e4380b96340b9e86",
+            "venue": "ICLR",
+            "year": 2016
+        },
+        {
+            "arxivId": "1512.03385",
+            "authors": [
+                {
+                    "authorId": "39353098",
+                    "name": "Kaiming He"
+                },
+                {
+                    "authorId": "1771551",
+                    "name": "X. Zhang"
+                },
+                {
+                    "authorId": "3080683",
+                    "name": "Shaoqing Ren"
+                },
+                {
+                    "authorId": null,
+                    "name": "Jian Sun"
+                }
+            ],
+            "doi": "10.1109/cvpr.2016.90",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "2c03df8b48bf3fa39054345bafabfeff15bfd11d",
+            "title": "Deep Residual Learning for Image Recognition",
+            "url": "https://www.semanticscholar.org/paper/2c03df8b48bf3fa39054345bafabfeff15bfd11d",
+            "venue": "2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2015
+        },
+        {
+            "arxivId": "1506.03365",
+            "authors": [
+                {
+                    "authorId": "1807197",
+                    "name": "F. Yu"
+                },
+                {
+                    "authorId": "1591143181",
+                    "name": "Yinda Zhang"
+                },
+                {
+                    "authorId": "3340170",
+                    "name": "Shuran Song"
+                },
+                {
+                    "authorId": "2233674",
+                    "name": "Ari Seff"
+                },
+                {
+                    "authorId": "40599257",
+                    "name": "Jianxiong Xiao"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "4dcdae25a5e33682953f0853ee4cf7ca93be58a9",
+            "title": "LSUN: Construction of a Large-scale Image Dataset using Deep Learning with Humans in the Loop",
+            "url": "https://www.semanticscholar.org/paper/4dcdae25a5e33682953f0853ee4cf7ca93be58a9",
+            "venue": "ArXiv",
+            "year": 2015
+        },
+        {
+            "arxivId": "1412.6980",
+            "authors": [
+                {
+                    "authorId": "1726807",
+                    "name": "Diederik P. Kingma"
+                },
+                {
+                    "authorId": "2503659",
+                    "name": "Jimmy Ba"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "a6cb366736791bcccc5c8639de5a8f9636bf87e8",
+            "title": "Adam: A Method for Stochastic Optimization",
+            "url": "https://www.semanticscholar.org/paper/a6cb366736791bcccc5c8639de5a8f9636bf87e8",
+            "venue": "ICLR",
+            "year": 2014
+        },
+        {
+            "arxivId": "1409.1556",
+            "authors": [
+                {
+                    "authorId": "34838386",
+                    "name": "K. Simonyan"
+                },
+                {
+                    "authorId": "1688869",
+                    "name": "Andrew Zisserman"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "eb42cf88027de515750f230b23b1a057dc782108",
+            "title": "Very Deep Convolutional Networks for Large-Scale Image Recognition",
+            "url": "https://www.semanticscholar.org/paper/eb42cf88027de515750f230b23b1a057dc782108",
+            "venue": "ICLR",
+            "year": 2014
+        },
+        {
+            "arxivId": "2010.16061",
+            "authors": [
+                {
+                    "authorId": "144871539",
+                    "name": "D. Powers"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "6d03a38c5ddb7c7cd1ceb59b28907dc918c5d83a",
+            "title": "Evaluation: from precision, recall and F-measure to ROC, informedness, markedness and correlation",
+            "url": "https://www.semanticscholar.org/paper/6d03a38c5ddb7c7cd1ceb59b28907dc918c5d83a",
+            "venue": "ArXiv",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144638694",
+                    "name": "Adam Coates"
+                },
+                {
+                    "authorId": "34699434",
+                    "name": "A. Ng"
+                },
+                {
+                    "authorId": "1697141",
+                    "name": "Honglak Lee"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "be9a17321537d9289875fe475b71f4821457b435",
+            "title": "An Analysis of Single-Layer Networks in Unsupervised Feature Learning",
+            "url": "https://www.semanticscholar.org/paper/be9a17321537d9289875fe475b71f4821457b435",
+            "venue": "AISTATS",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3119801",
+                    "name": "Xavier Glorot"
+                },
+                {
+                    "authorId": "1713934",
+                    "name": "Antoine Bordes"
+                },
+                {
+                    "authorId": "1751762",
+                    "name": "Yoshua Bengio"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "67107f78a84bdb2411053cb54e94fa226eea6d8e",
+            "title": "Deep Sparse Rectifier Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/67107f78a84bdb2411053cb54e94fa226eea6d8e",
+            "venue": "AISTATS",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "90841478",
+                    "name": "Y-Lan Boureau"
+                },
+                {
+                    "authorId": "144189388",
+                    "name": "J. Ponce"
+                },
+                {
+                    "authorId": "1688882",
+                    "name": "Yann LeCun"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "405aed4b8ecdd869b2e83095dde51c396334115f",
+            "title": "A Theoretical Analysis of Feature Pooling in Visual Recognition",
+            "url": "https://www.semanticscholar.org/paper/405aed4b8ecdd869b2e83095dde51c396334115f",
+            "venue": "ICML",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1752732",
+                    "name": "T. Cover"
+                },
+                {
+                    "authorId": "2115282352",
+                    "name": "Joy A. Thomas"
+                }
+            ],
+            "doi": "10.1002/047174882X",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7dbdb4209626fd92d2436a058663206216036e68",
+            "title": "Elements of Information Theory",
+            "url": "https://www.semanticscholar.org/paper/7dbdb4209626fd92d2436a058663206216036e68",
+            "venue": "",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "49433662",
+                    "name": "E. Gumbel"
+                }
+            ],
+            "doi": "10.1214/AOMS/1177731747",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "35b858f7e1a8b9d00daf0c23d1ffdae8a4fb22b2",
+            "title": "The Return Period of Flood Flows",
+            "url": "https://www.semanticscholar.org/paper/35b858f7e1a8b9d00daf0c23d1ffdae8a4fb22b2",
+            "venue": "",
+            "year": 1941
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1398427281",
+                    "name": "R. Cardell-Oliver"
+                },
+                {
+                    "authorId": "49854372",
+                    "name": "C. H\u00fcbner"
+                },
+                {
+                    "authorId": "72169892",
+                    "name": "M. Leopold"
+                },
+                {
+                    "authorId": "41199766",
+                    "name": "Jason Beringer"
+                }
+            ],
+            "doi": "10.1145/3359427.3361912",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "122dc2de3138070e9bcceba7c4ddc681712b9aec",
+            "title": "Dataset",
+            "url": "https://www.semanticscholar.org/paper/122dc2de3138070e9bcceba7c4ddc681712b9aec",
+            "venue": "Proceedings of the 2nd Workshop on Data Acquisition To Analysis  - DATA'19",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "34180232",
+                    "name": "Yuval Netzer"
+                },
+                {
+                    "authorId": "2156632012",
+                    "name": "Tao Wang"
+                },
+                {
+                    "authorId": "144638694",
+                    "name": "Adam Coates"
+                },
+                {
+                    "authorId": "1726358",
+                    "name": "A. Bissacco"
+                },
+                {
+                    "authorId": "144397975",
+                    "name": "Bo Wu"
+                },
+                {
+                    "authorId": "34699434",
+                    "name": "A. Ng"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "02227c94dd41fe0b439e050d377b0beb5d427cda",
+            "title": "Reading Digits in Natural Images with Unsupervised Feature Learning",
+            "url": "https://www.semanticscholar.org/paper/02227c94dd41fe0b439e050d377b0beb5d427cda",
+            "venue": "",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "52184096",
+                    "name": "L. Bottou"
+                }
+            ],
+            "doi": "10.1007/978-3-7908-2604-3_16",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "fbc6562814e08e416e28a268ce7beeaa3d0708c8",
+            "title": "Large-Scale Machine Learning with Stochastic Gradient Descent",
+            "url": "https://www.semanticscholar.org/paper/fbc6562814e08e416e28a268ce7beeaa3d0708c8",
+            "venue": "COMPSTAT",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2064160",
+                    "name": "A. Krizhevsky"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "5d90f06bb70a0a3dced62413346235c02b1aa086",
+            "title": "Learning Multiple Layers of Features from Tiny Images",
+            "url": "https://www.semanticscholar.org/paper/5d90f06bb70a0a3dced62413346235c02b1aa086",
+            "venue": "",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1688882",
+                    "name": "Yann LeCun"
+                },
+                {
+                    "authorId": "52184096",
+                    "name": "L. Bottou"
+                },
+                {
+                    "authorId": "1751762",
+                    "name": "Yoshua Bengio"
+                },
+                {
+                    "authorId": "1721248",
+                    "name": "P. Haffner"
+                }
+            ],
+            "doi": "10.1109/5.726791",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "162d958ff885f1462aeda91cd72582323fd6a1f4",
+            "title": "Gradient-based learning applied to document recognition",
+            "url": "https://www.semanticscholar.org/paper/162d958ff885f1462aeda91cd72582323fd6a1f4",
+            "venue": "Proc. IEEE",
+            "year": 1998
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145732246",
+                    "name": "E. Polak"
+                }
+            ],
+            "doi": "10.1007/978-1-4612-0663-7",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "8a7a76383e0176fd48d953a92aa54d46f7d63b5b",
+            "title": "Optimization: Algorithms and Consistent Approximations",
+            "url": "https://www.semanticscholar.org/paper/8a7a76383e0176fd48d953a92aa54d46f7d63b5b",
+            "venue": "",
+            "year": 1997
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Mathematics",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        },
+        {
+            "category": "Mathematics",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Accuracy-Preserving Calibration via Statistical Modeling on Probability Simplex",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/6d6e545ce1fd637fbce7549e668dbded40ac8581",
+    "venue": "International Conference on Artificial Intelligence and Statistics",
+    "year": 2024
+}

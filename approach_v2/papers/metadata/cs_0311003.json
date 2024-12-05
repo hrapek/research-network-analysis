@@ -1,0 +1,673 @@
+{
+    "abstract": "This paper illustrates how a Prolog program, using chronological backtracking to find a solution in some search space, can be enhanced to perform intelligent backtracking. The enhancement crucially relies on the impurity of Prolog that allows a program to store information when a dead end is reached. To illustrate the technique, a simple search program is enhanced.",
+    "arxivId": "cs/0311003",
+    "authors": [
+        {
+            "authorId": "1743332",
+            "name": "M. Bruynooghe",
+            "url": "https://www.semanticscholar.org/author/1743332"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": "2305.16137",
+            "authors": [
+                {
+                    "authorId": "144757547",
+                    "name": "W. Drabent"
+                }
+            ],
+            "doi": "10.48550/arXiv.2305.16137",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "cd1e04692d10abb01c6db179d2a3206905887717",
+            "title": "Implementing backjumping by means of exception handling",
+            "url": "https://www.semanticscholar.org/paper/cd1e04692d10abb01c6db179d2a3206905887717",
+            "venue": "Theory Pract. Log. Program.",
+            "year": 2023
+        },
+        {
+            "arxivId": "2305.07878",
+            "authors": [
+                {
+                    "authorId": "1804943",
+                    "name": "Tom Schrijvers"
+                },
+                {
+                    "authorId": "2058425846",
+                    "name": "Birthe van den Berg"
+                },
+                {
+                    "authorId": "1782541",
+                    "name": "Fabrizio Riguzzi"
+                }
+            ],
+            "doi": "10.48550/arXiv.2305.07878",
+            "intent": [
+                "background",
+                "result"
+            ],
+            "isInfluential": true,
+            "paperId": "256059fec45c3ba94ff97856b58b851a1b1c0d0a",
+            "title": "Automatic Differentiation in Prolog",
+            "url": "https://www.semanticscholar.org/paper/256059fec45c3ba94ff97856b58b851a1b1c0d0a",
+            "venue": "Theory Pract. Log. Program.",
+            "year": 2023
+        },
+        {
+            "arxivId": "2008.09610",
+            "authors": [
+                {
+                    "authorId": "144757547",
+                    "name": "W. Drabent"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "79de9399cc3d723031b459c9a51dd2130579addc",
+            "title": "Implementing backjumping by throw/1 and catch/3 of Prolog",
+            "url": "https://www.semanticscholar.org/paper/79de9399cc3d723031b459c9a51dd2130579addc",
+            "venue": "ArXiv",
+            "year": 2020
+        },
+        {
+            "arxivId": "2008.04720",
+            "authors": [
+                {
+                    "authorId": "144242294",
+                    "name": "E. Robbins"
+                },
+                {
+                    "authorId": "48052045",
+                    "name": "A. King"
+                },
+                {
+                    "authorId": "1991567",
+                    "name": "J. M. Howe"
+                }
+            ],
+            "doi": "10.1017/S1471068420000435",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "8cf05edc6e38e59b10b856db5b117a4bdaa69ed6",
+            "title": "Backjumping is Exception Handling",
+            "url": "https://www.semanticscholar.org/paper/8cf05edc6e38e59b10b856db5b117a4bdaa69ed6",
+            "venue": "Theory and Practice of Logic Programming",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "8480416",
+                    "name": "Xingxing Hao"
+                },
+                {
+                    "authorId": "48211068",
+                    "name": "Jing Liu"
+                }
+            ],
+            "doi": "10.1007/s00500-015-1815-1",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "4013dcf8332bb408e9b8020dd399d1a0354cde97",
+            "title": "A multiagent evolutionary algorithm with direct and indirect combined representation for constraint satisfaction problems",
+            "url": "https://www.semanticscholar.org/paper/4013dcf8332bb408e9b8020dd399d1a0354cde97",
+            "venue": "Soft Computing",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1991567",
+                    "name": "J. M. Howe"
+                },
+                {
+                    "authorId": "48052045",
+                    "name": "A. King"
+                }
+            ],
+            "doi": "10.1016/j.tcs.2012.02.024",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "ff04c237848f76236fe99c5a5c9f5af73f2ad6a1",
+            "title": "A pearl on SAT and SMT solving in Prolog",
+            "url": "https://www.semanticscholar.org/paper/ff04c237848f76236fe99c5a5c9f5af73f2ad6a1",
+            "venue": "Theor. Comput. Sci.",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1991567",
+                    "name": "J. M. Howe"
+                },
+                {
+                    "authorId": "48052045",
+                    "name": "A. King"
+                }
+            ],
+            "doi": "10.1007/978-3-642-12251-4_13",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "507de6da59fbac9df7b186bd3e749a2550fc4ebc",
+            "title": "A Pearl on SAT Solving in Prolog",
+            "url": "https://www.semanticscholar.org/paper/507de6da59fbac9df7b186bd3e749a2550fc4ebc",
+            "venue": "FLOPS",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1792191",
+                    "name": "L. Koninck"
+                },
+                {
+                    "authorId": "1804943",
+                    "name": "Tom Schrijvers"
+                },
+                {
+                    "authorId": "1686000",
+                    "name": "Bart Demoen"
+                }
+            ],
+            "doi": "10.1007/978-3-540-92243-8_2",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "356638e2850e33c78a34c42093accc3946538afc",
+            "title": "A Flexible Search Framework for CHR",
+            "url": "https://www.semanticscholar.org/paper/356638e2850e33c78a34c42093accc3946538afc",
+            "venue": "Constraint Handling Rules",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144199974",
+                    "name": "A. Mohamed"
+                },
+                {
+                    "authorId": "143939600",
+                    "name": "M. Yusoff"
+                },
+                {
+                    "authorId": "1783932",
+                    "name": "Sofianita Mutalib"
+                },
+                {
+                    "authorId": "1744510",
+                    "name": "S. A. Rahman"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "b731708fe375b1f833f479181db811c1ba195020",
+            "title": "Modified branch and bound algorithm",
+            "url": "https://www.semanticscholar.org/paper/b731708fe375b1f833f479181db811c1ba195020",
+            "venue": "",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2081854371",
+                    "name": "D\u00e1vid Han\u00e1k"
+                },
+                {
+                    "authorId": "1718847",
+                    "name": "Nagarajan Kandasamy"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "aa616608fdc215be56a01438d302326183f396c6",
+            "title": "Synthesising Robust Schedules for Minimum Disruption Repair Using Linear Programming",
+            "url": "https://www.semanticscholar.org/paper/aa616608fdc215be56a01438d302326183f396c6",
+            "venue": "Acta Cybern.",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1804943",
+                    "name": "Tom Schrijvers"
+                },
+                {
+                    "authorId": "1753713",
+                    "name": "Thom W. Fr\u00fchwirth"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "a114eb2a70cdffd72cade8774c3481cc95dc1ed0",
+            "title": "Proceedings of the third workshop on constraint handling rules",
+            "url": "https://www.semanticscholar.org/paper/a114eb2a70cdffd72cade8774c3481cc95dc1ed0",
+            "venue": "",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1792191",
+                    "name": "L. Koninck"
+                },
+                {
+                    "authorId": "1804943",
+                    "name": "Tom Schrijvers"
+                },
+                {
+                    "authorId": "1686000",
+                    "name": "Bart Demoen"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "5675934ff9c82ad4e024d3fa69664369ff7375fe",
+            "title": "Flexible search strategies in Prolog CHR",
+            "url": "https://www.semanticscholar.org/paper/5675934ff9c82ad4e024d3fa69664369ff7375fe",
+            "venue": "",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1867234",
+                    "name": "Anssi Yli-Jyr\u00e4"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "e93080d02aa0c8e842cdeaa655ff49f426b8ed43",
+            "title": "CONTRIBUTIONS TO THE THEORY OF FINITE-STATE BASED GRAMMARS",
+            "url": "https://www.semanticscholar.org/paper/e93080d02aa0c8e842cdeaa655ff49f426b8ed43",
+            "venue": "",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144199974",
+                    "name": "A. Mohamed"
+                },
+                {
+                    "authorId": "143939600",
+                    "name": "M. Yusoff"
+                },
+                {
+                    "authorId": "2686853",
+                    "name": "I. A. Mohtar"
+                },
+                {
+                    "authorId": "1783932",
+                    "name": "Sofianita Mutalib"
+                },
+                {
+                    "authorId": "1744510",
+                    "name": "S. A. Rahman"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "ee2bcf7ab9dfb4d870a4572e22e894ba879781d6",
+            "title": "Constraint satisfaction problem using modified branch and bound algorithm",
+            "url": "https://www.semanticscholar.org/paper/ee2bcf7ab9dfb4d870a4572e22e894ba879781d6",
+            "venue": "",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1691703",
+                    "name": "J. Jaffar"
+                },
+                {
+                    "authorId": "1794252",
+                    "name": "A. Santosa"
+                },
+                {
+                    "authorId": "145238634",
+                    "name": "R. Voicu"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "82b9742068b15e046aa7233865363628e78542dd",
+            "title": "Abstraction in Search-Based Optimization",
+            "url": "https://www.semanticscholar.org/paper/82b9742068b15e046aa7233865363628e78542dd",
+            "venue": "",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1792191",
+                    "name": "L. Koninck"
+                },
+                {
+                    "authorId": "1804943",
+                    "name": "Tom Schrijvers"
+                },
+                {
+                    "authorId": "1686000",
+                    "name": "Bart Demoen"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "e458e3dd22eeb9e01eedb0ebbaf01e7d64285a07",
+            "title": "Search Strategies in CHR(Prolog)",
+            "url": "https://www.semanticscholar.org/paper/e458e3dd22eeb9e01eedb0ebbaf01e7d64285a07",
+            "venue": "",
+            "year": 2006
+        }
+    ],
+    "corpusId": 3138893,
+    "doi": "10.1017/S1471068403001893",
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 5,
+    "isOpenAccess": true,
+    "isPublisherLicensed": true,
+    "is_open_access": true,
+    "is_publisher_licensed": true,
+    "numCitedBy": 16,
+    "numCiting": 11,
+    "paperId": "13700773688a5b88b7a86bc81e20db9accc5286a",
+    "references": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1751239",
+                    "name": "R. Dechter"
+                },
+                {
+                    "authorId": "2622479",
+                    "name": "Daniel Frost"
+                }
+            ],
+            "doi": "10.1016/S0004-3702(02)00120-0",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "213d55abbf2958aaf5f2911c7479ccf80d9378ea",
+            "title": "Backjump-based backtracking for constraint satisfaction problems",
+            "url": "https://www.semanticscholar.org/paper/213d55abbf2958aaf5f2911c7479ccf80d9378ea",
+            "venue": "Artif. Intell.",
+            "year": 2002
+        },
+        {
+            "arxivId": "cs/0003067",
+            "authors": [
+                {
+                    "authorId": "1743332",
+                    "name": "M. Bruynooghe"
+                },
+                {
+                    "authorId": "1809378",
+                    "name": "Henk Vandecasteele"
+                },
+                {
+                    "authorId": "144693127",
+                    "name": "D. D. Waal"
+                },
+                {
+                    "authorId": "1700695",
+                    "name": "M. Denecker"
+                }
+            ],
+            "doi": "10.1007/BFb0056611",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "21f800337f71372e0b5a186241c84c49b673b352",
+            "title": "Detecting Unsolvable Queries for Definite Logic Programs",
+            "url": "https://www.semanticscholar.org/paper/21f800337f71372e0b5a186241c84c49b673b352",
+            "venue": "J. Funct. Log. Program.",
+            "year": 1998
+        },
+        {
+            "arxivId": "cs/9308101",
+            "authors": [
+                {
+                    "authorId": "2255387030",
+                    "name": "Matthew L. Ginsberg"
+                }
+            ],
+            "doi": "10.1613/jair.1",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "8e997aed067360cc4bce0ee91ad9883bb3291568",
+            "title": "Dynamic Backtracking",
+            "url": "https://www.semanticscholar.org/paper/8e997aed067360cc4bce0ee91ad9883bb3291568",
+            "venue": "J. Artif. Intell. Res.",
+            "year": 1993
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1743332",
+                    "name": "M. Bruynooghe"
+                }
+            ],
+            "doi": "10.1016/0020-0190(81)90074-0",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "6eb3d9417caedd93610f924877d4fcd8eb81c29f",
+            "title": "Solving Combinatorial Search Problems by Intelligent Backtracking",
+            "url": "https://www.semanticscholar.org/paper/6eb3d9417caedd93610f924877d4fcd8eb81c29f",
+            "venue": "Inf. Process. Lett.",
+            "year": 1981
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1743332",
+                    "name": "M. Bruynooghe"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "4a3f83ed37071a827af7ffc13fca62106c7ae692",
+            "title": "Intelligent Backtracking Revisted",
+            "url": "https://www.semanticscholar.org/paper/4a3f83ed37071a827af7ffc13fca62106c7ae692",
+            "venue": "Computational Logic - Essays in Honor of Alan Robinson",
+            "year": 1991
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145504967",
+                    "name": "A. Robinson"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "3efe08cf87de5017a57a9459eabc508cfdfc7dac",
+            "title": "Computational Logic - Essays in Honor of Alan Robinson",
+            "url": "https://www.semanticscholar.org/paper/3efe08cf87de5017a57a9459eabc508cfdfc7dac",
+            "venue": "Computational Logic - Essays in Honor of Alan Robinson",
+            "year": 1991
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "8388443",
+                    "name": "Pascal Van Hentenryck"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "b82d410f8e03952107ad75d1003d85fe92a382e2",
+            "title": "Constraint satisfaction in logic programming",
+            "url": "https://www.semanticscholar.org/paper/b82d410f8e03952107ad75d1003d85fe92a382e2",
+            "venue": "Logic programming",
+            "year": 1989
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3136634",
+                    "name": "Willem Rosiers"
+                },
+                {
+                    "authorId": "1743332",
+                    "name": "M. Bruynooghe"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "789dcccfb7ca98b20465ff38aec752e45d3cd63a",
+            "title": "Empirical Study of some Constraints Satisfaction Algorithms",
+            "url": "https://www.semanticscholar.org/paper/789dcccfb7ca98b20465ff38aec752e45d3cd63a",
+            "venue": "AIMSA",
+            "year": 1986
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1743332",
+                    "name": "M. Bruynooghe"
+                },
+                {
+                    "authorId": "1747400",
+                    "name": "L. Pereira"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b917fd1b3aed30b79f631921783c5ef1209e7fbc",
+            "title": "Deduction Revision by Intelligent Backtracking",
+            "url": "https://www.semanticscholar.org/paper/b917fd1b3aed30b79f631921783c5ef1209e7fbc",
+            "venue": "Implementations of Prolog",
+            "year": 1984
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145282631",
+                    "name": "J. A. Robinson"
+                }
+            ],
+            "doi": "10.1007/978-3-642-81952-0_27",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "9e15384995e5e8b0bd8ceb197804b37285a77c70",
+            "title": "Automatic Deduction with Hyper-Resolution",
+            "url": "https://www.semanticscholar.org/paper/9e15384995e5e8b0bd8ceb197804b37285a77c70",
+            "venue": "",
+            "year": 1983
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "PROGRAMMING PEARL: Enhancing a search algorithm to perform intelligent backtracking",
+    "topics": [
+        {
+            "topic": "Backtracking",
+            "topicId": "60014",
+            "url": "https://www.semanticscholar.org/topic/60014"
+        },
+        {
+            "topic": "Prolog",
+            "topicId": "6038",
+            "url": "https://www.semanticscholar.org/topic/6038"
+        },
+        {
+            "topic": "Search algorithm",
+            "topicId": "12313",
+            "url": "https://www.semanticscholar.org/topic/12313"
+        }
+    ],
+    "url": "https://www.semanticscholar.org/paper/13700773688a5b88b7a86bc81e20db9accc5286a",
+    "venue": "Theory and Practice of Logic Programming",
+    "year": 2003
+}

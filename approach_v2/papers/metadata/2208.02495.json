@@ -1,0 +1,936 @@
+{
+    "abstract": "ReconfAIGERation encodes the Independent Set Reconfiguration problem into a circuit in AIGER format. The bad state property encodes that the target independent set is reached, without violating the token jump rule. A witness for the model checking problem is decoded into a reconfiguration sequence. Encoding and Solving To encode the ISR problem into AIGER (version 1.9 [1]) we define a circuit with one latch and two inputs per node. The latches encode if the node is in the current independent set. The inputs are divided into two groups: freed and marked. At each step, exactly one1 node in the current IS is freed and one not in the current IS marked, thus enforcing the token jump rule. The independent set constraint is easily encoded by combining gates for each edge in the graph. The tool aigtoaig is used to translate the human readable output from the previous step (.aag) into a binary encoded format (.aig). For the existent-track the Aiger enconding is solved by the model checker ABC [4]. ABC runs multiple model checking algorithms in parallel. Among them is an implementation of IC3/PDR [3]. It can therefore prove the unsolvability of a problem. For the shortest-track the model checking problem is solved with the Bounded Model Checker CaMiCaL [6]. In Bounded Model Checking (BMC) To encode the at-most-one part we used the product encoding [5] since a naive square encoding runs out of memory before the encoding is completed on some of the instances.",
+    "arxivId": "2208.02495",
+    "authors": [
+        {
+            "authorId": "39535151",
+            "name": "Takehide Soh",
+            "url": "https://www.semanticscholar.org/author/39535151"
+        },
+        {
+            "authorId": "2070397318",
+            "name": "Y. Okamoto",
+            "url": "https://www.semanticscholar.org/author/2070397318"
+        },
+        {
+            "authorId": "2882375",
+            "name": "Takehiro Ito",
+            "url": "https://www.semanticscholar.org/author/2882375"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2275654496",
+                    "name": "Takahisa Toda"
+                },
+                {
+                    "authorId": "2261928744",
+                    "name": "Takehiro Ito"
+                },
+                {
+                    "authorId": "2275653060",
+                    "name": "Jun Kawahara"
+                },
+                {
+                    "authorId": "2261737331",
+                    "name": "Takehide Soh"
+                },
+                {
+                    "authorId": "2275606575",
+                    "name": "Akira Suzuki"
+                },
+                {
+                    "authorId": "2275643767",
+                    "name": "Junichi Teruyama"
+                }
+            ],
+            "doi": "10.1109/ICTAI59109.2023.00050",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0b2005065e21ebf78edc52197883d124cbb8374e",
+            "title": "Solving Reconfiguration Problems of First-Order Expressible Properties of Graph Vertices with Boolean Satisfiability",
+            "url": "https://www.semanticscholar.org/paper/0b2005065e21ebf78edc52197883d124cbb8374e",
+            "venue": "2023 IEEE 35th International Conference on Tools with Artificial Intelligence (ICTAI)",
+            "year": 2023
+        },
+        {
+            "arxivId": "2307.10688",
+            "authors": [
+                {
+                    "authorId": "2224018488",
+                    "name": "Yuya Yamada"
+                },
+                {
+                    "authorId": "2994034",
+                    "name": "Mutsunori Banbara"
+                },
+                {
+                    "authorId": "1728869",
+                    "name": "Katsumi Inoue"
+                },
+                {
+                    "authorId": "1809337",
+                    "name": "Torsten Schaub"
+                }
+            ],
+            "doi": "10.48550/arXiv.2307.10688",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "aecb7382d8e911d1f04c1cd4c2f5497e7f20c75e",
+            "title": "Bounded Combinatorial Reconfiguration with Answer Set Programming",
+            "url": "https://www.semanticscholar.org/paper/aecb7382d8e911d1f04c1cd4c2f5497e7f20c75e",
+            "venue": "JELIA",
+            "year": 2023
+        },
+        {
+            "arxivId": "2301.02020",
+            "authors": [
+                {
+                    "authorId": "2753735",
+                    "name": "N. Bousquet"
+                },
+                {
+                    "authorId": "1477284320",
+                    "name": "Bastien Durain"
+                },
+                {
+                    "authorId": "103112769",
+                    "name": "Th\u00e9o Pierron"
+                },
+                {
+                    "authorId": "2193557159",
+                    "name": "St'ephan Thomass'e"
+                }
+            ],
+            "doi": "10.48550/arXiv.2301.02020",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "751cd791d0fb7167e4fd2b3babaa65122b52c601",
+            "title": "Extremal Independent Set Reconfiguration",
+            "url": "https://www.semanticscholar.org/paper/751cd791d0fb7167e4fd2b3babaa65122b52c601",
+            "venue": "Electron. J. Comb.",
+            "year": 2023
+        },
+        {
+            "arxivId": "2207.13959",
+            "authors": [
+                {
+                    "authorId": "2882375",
+                    "name": "Takehiro Ito"
+                },
+                {
+                    "authorId": "48924271",
+                    "name": "J. Kawahara"
+                },
+                {
+                    "authorId": "41022054",
+                    "name": "Yu Nakahata"
+                },
+                {
+                    "authorId": "39535151",
+                    "name": "Takehide Soh"
+                },
+                {
+                    "authorId": "49810000",
+                    "name": "Akira Suzuki"
+                },
+                {
+                    "authorId": "2403715",
+                    "name": "Junichi Teruyama"
+                },
+                {
+                    "authorId": "3185226",
+                    "name": "Takahisa Toda"
+                }
+            ],
+            "doi": "10.48550/arXiv.2207.13959",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "1f6c017ba3ec30c0a82a06ae74f198b354c3b4de",
+            "title": "ZDD-Based Algorithmic Framework for Solving Shortest Reconfiguration Problems",
+            "url": "https://www.semanticscholar.org/paper/1f6c017ba3ec30c0a82a06ae74f198b354c3b4de",
+            "venue": "CPAIOR",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2261737331",
+                    "name": "Takehide Soh"
+                },
+                {
+                    "authorId": "2310750652",
+                    "name": "Takumu Watanabe"
+                },
+                {
+                    "authorId": "2310706529",
+                    "name": "Jun Kawahara"
+                },
+                {
+                    "authorId": "2275606575",
+                    "name": "Akira Suzuki"
+                },
+                {
+                    "authorId": "2261928744",
+                    "name": "Takehiro Ito"
+                }
+            ],
+            "doi": "10.4230/LIPIcs.SEA.2024.26",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "4d5840d974e1970de66f1b41603fc5e0a04a7e47",
+            "title": "Scalable Hard Instances for Independent Set Reconfiguration",
+            "url": "https://www.semanticscholar.org/paper/4d5840d974e1970de66f1b41603fc5e0a04a7e47",
+            "venue": "SEA",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "50344470",
+                    "name": "Remo Christen"
+                },
+                {
+                    "authorId": "39291495",
+                    "name": "Salom\u00e9 Eriksson"
+                },
+                {
+                    "authorId": "2255600869",
+                    "name": "Michael Katz"
+                },
+                {
+                    "authorId": "2255453556",
+                    "name": "Christian Muise"
+                },
+                {
+                    "authorId": "2193117165",
+                    "name": "Alice Petrov"
+                },
+                {
+                    "authorId": "2285326555",
+                    "name": "Florian Pommerening"
+                },
+                {
+                    "authorId": "2357436",
+                    "name": "Jendrik Seipp"
+                },
+                {
+                    "authorId": "2391557",
+                    "name": "Silvan Sievers"
+                },
+                {
+                    "authorId": "2255595127",
+                    "name": "David Speck"
+                }
+            ],
+            "doi": "10.3233/FAIA230303",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "dc6a380628eed3c4c92dd26bb37206f6894b9869",
+            "title": "PARIS: Planning Algorithms for Reconfiguring Independent Sets",
+            "url": "https://www.semanticscholar.org/paper/dc6a380628eed3c4c92dd26bb37206f6894b9869",
+            "venue": "ECAI",
+            "year": 2023
+        }
+    ],
+    "corpusId": 251320668,
+    "doi": "10.48550/arXiv.2208.02495",
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 2,
+    "isOpenAccess": true,
+    "isPublisherLicensed": true,
+    "is_open_access": true,
+    "is_publisher_licensed": true,
+    "numCitedBy": 6,
+    "numCiting": 30,
+    "paperId": "a7c1937b66a22ed1e64df9efd20f7789bd1cd3dd",
+    "references": [
+        {
+            "arxivId": "2207.13959",
+            "authors": [
+                {
+                    "authorId": "2882375",
+                    "name": "Takehiro Ito"
+                },
+                {
+                    "authorId": "48924271",
+                    "name": "J. Kawahara"
+                },
+                {
+                    "authorId": "41022054",
+                    "name": "Yu Nakahata"
+                },
+                {
+                    "authorId": "39535151",
+                    "name": "Takehide Soh"
+                },
+                {
+                    "authorId": "49810000",
+                    "name": "Akira Suzuki"
+                },
+                {
+                    "authorId": "2403715",
+                    "name": "Junichi Teruyama"
+                },
+                {
+                    "authorId": "3185226",
+                    "name": "Takahisa Toda"
+                }
+            ],
+            "doi": "10.48550/arXiv.2207.13959",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "1f6c017ba3ec30c0a82a06ae74f198b354c3b4de",
+            "title": "ZDD-Based Algorithmic Framework for Solving Shortest Reconfiguration Problems",
+            "url": "https://www.semanticscholar.org/paper/1f6c017ba3ec30c0a82a06ae74f198b354c3b4de",
+            "venue": "CPAIOR",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2161008497",
+                    "name": "Julian von Tschammer"
+                },
+                {
+                    "authorId": "2457907",
+                    "name": "Robert Mattm\u00fcller"
+                },
+                {
+                    "authorId": "34441152",
+                    "name": "David Speck"
+                }
+            ],
+            "doi": "10.1609/icaps.v32i1.19823",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "51f8c97676954274a36f52b74597745a486906ed",
+            "title": "Loopless Top-K Planning",
+            "url": "https://www.semanticscholar.org/paper/51f8c97676954274a36f52b74597745a486906ed",
+            "venue": "ICAPS",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "34441152",
+                    "name": "David Speck"
+                },
+                {
+                    "authorId": "2223619",
+                    "name": "Florian Gei\u00dfer"
+                },
+                {
+                    "authorId": "2457907",
+                    "name": "Robert Mattm\u00fcller"
+                }
+            ],
+            "doi": "10.1609/icaps.v30i1.6670",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "727b7d801b20340fbc9c32fd11027ae430277dac",
+            "title": "When Perfect Is Not Good Enough: On the Search Behaviour of Symbolic Heuristic Search",
+            "url": "https://www.semanticscholar.org/paper/727b7d801b20340fbc9c32fd11027ae430277dac",
+            "venue": "ICAPS",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "34441152",
+                    "name": "David Speck"
+                },
+                {
+                    "authorId": "2457907",
+                    "name": "Robert Mattm\u00fcller"
+                },
+                {
+                    "authorId": "145304209",
+                    "name": "Bernhard Nebel"
+                }
+            ],
+            "doi": "10.1609/AAAI.V34I06.6552",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "182b351909974a23ee8b688ca2d9fbc6bb7543d1",
+            "title": "Symbolic Top-k Planning",
+            "url": "https://www.semanticscholar.org/paper/182b351909974a23ee8b688ca2d9fbc6bb7543d1",
+            "venue": "AAAI",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1856525",
+                    "name": "A. Conte"
+                },
+                {
+                    "authorId": "1776817",
+                    "name": "R. Grossi"
+                },
+                {
+                    "authorId": "145180394",
+                    "name": "Andrea Marino"
+                }
+            ],
+            "doi": "10.1016/j.ic.2019.104464",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c0277586ba43e57e8618c63606ac48252210f067",
+            "title": "Large-scale clique cover of real-world networks",
+            "url": "https://www.semanticscholar.org/paper/c0277586ba43e57e8618c63606ac48252210f067",
+            "venue": "Inf. Comput.",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "153236368",
+                    "name": "Katalin Fazekas"
+                },
+                {
+                    "authorId": "1790450",
+                    "name": "Armin Biere"
+                },
+                {
+                    "authorId": "143996329",
+                    "name": "Christoph Scholl"
+                }
+            ],
+            "doi": "10.1007/978-3-030-24258-9_9",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "433e0fdfecf516ec240bf7547e11e075bb751fb2",
+            "title": "Incremental Inprocessing in SAT Solving",
+            "url": "https://www.semanticscholar.org/paper/433e0fdfecf516ec240bf7547e11e075bb751fb2",
+            "venue": "SAT",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1985184",
+                    "name": "P. Haslum"
+                },
+                {
+                    "authorId": "1700694",
+                    "name": "N. Lipovetzky"
+                },
+                {
+                    "authorId": "1738142",
+                    "name": "D. Magazzeni"
+                },
+                {
+                    "authorId": "2428160",
+                    "name": "Christian Muise"
+                }
+            ],
+            "doi": "10.2200/S00900ED2V01Y201902AIM042",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "34440ac53a3b6fff7dc1eaef0b26bd5eb64f94a4",
+            "title": "An Introduction to the Planning Domain Definition Language",
+            "url": "https://www.semanticscholar.org/paper/34440ac53a3b6fff7dc1eaef0b26bd5eb64f94a4",
+            "venue": "An Introduction to the Planning Domain Definition Language",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143748893",
+                    "name": "Takeru Inoue"
+                },
+                {
+                    "authorId": "145005831",
+                    "name": "H. Iwashita"
+                },
+                {
+                    "authorId": "48924271",
+                    "name": "J. Kawahara"
+                },
+                {
+                    "authorId": "1755680",
+                    "name": "S. Minato"
+                }
+            ],
+            "doi": "10.1007/s10009-014-0352-z",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "4eea4c0baf7e54d80e6621d5ad950504cc2b7ab7",
+            "title": "Graphillion: software library for very large sets of labeled graphs",
+            "url": "https://www.semanticscholar.org/paper/4eea4c0baf7e54d80e6621d5ad950504cc2b7ab7",
+            "venue": "International Journal on Software Tools for Technology Transfer",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1695969",
+                    "name": "Aaron R. Bradley"
+                }
+            ],
+            "doi": "10.1007/978-3-642-18275-4_7",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "1da60e7f46402ae98db22c3ca3ddeb0853af46bd",
+            "title": "SAT-Based Model Checking without Unrolling",
+            "url": "https://www.semanticscholar.org/paper/1da60e7f46402ae98db22c3ca3ddeb0853af46bd",
+            "venue": "VMCAI",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2074388",
+                    "name": "E. Keyder"
+                },
+                {
+                    "authorId": "144310960",
+                    "name": "Silvia Richter"
+                },
+                {
+                    "authorId": "3208076",
+                    "name": "M. Helmert"
+                }
+            ],
+            "doi": "10.3233/978-1-60750-606-5-335",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "2ec18385311bc07839e1500f3e84f61b565e96d5",
+            "title": "Sound and Complete Landmarks for And/Or Graphs",
+            "url": "https://www.semanticscholar.org/paper/2ec18385311bc07839e1500f3e84f61b565e96d5",
+            "venue": "ECAI",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1737060",
+                    "name": "R. Brayton"
+                },
+                {
+                    "authorId": "145682557",
+                    "name": "A. Mishchenko"
+                }
+            ],
+            "doi": "10.1007/978-3-642-14295-6_5",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "1c1ee7b39616c52e96d91e243dc8996cfed11027",
+            "title": "ABC: An Academic Industrial-Strength Verification Tool",
+            "url": "https://www.semanticscholar.org/paper/1c1ee7b39616c52e96d91e243dc8996cfed11027",
+            "venue": "CAV",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2238463803",
+                    "name": "K. S. Barber"
+                },
+                {
+                    "authorId": "2285220405",
+                    "name": "D. Faith"
+                },
+                {
+                    "authorId": "1725911",
+                    "name": "K. Fullam"
+                },
+                {
+                    "authorId": "2947049",
+                    "name": "T. Graser"
+                },
+                {
+                    "authorId": "32099211",
+                    "name": "David C. Han"
+                },
+                {
+                    "authorId": "2287692328",
+                    "name": "J. Jeong"
+                },
+                {
+                    "authorId": "120085851",
+                    "name": "Joonoo Kim"
+                },
+                {
+                    "authorId": "1737246",
+                    "name": "D. Lam"
+                },
+                {
+                    "authorId": "143685714",
+                    "name": "R. McKay"
+                },
+                {
+                    "authorId": "2285335794",
+                    "name": "M. Pal"
+                },
+                {
+                    "authorId": "2155095585",
+                    "name": "Jisun Park"
+                },
+                {
+                    "authorId": "144992824",
+                    "name": "M. Vanzin"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "2983fbddbf7594544e72c674aa88826836475540",
+            "title": "Sensible Agent Technology Improving Coordination and Communication in Biosurveillance Domains",
+            "url": "https://www.semanticscholar.org/paper/2983fbddbf7594544e72c674aa88826836475540",
+            "venue": "IJCAI",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144801999",
+                    "name": "Michael Katz"
+                },
+                {
+                    "authorId": "1735824",
+                    "name": "Carmel Domshlak"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "ba6d1178617698f5ded2e3e2ba5fd7d60a2f7a36",
+            "title": "Structural Patterns Heuristics via Fork Decomposition",
+            "url": "https://www.semanticscholar.org/paper/ba6d1178617698f5ded2e3e2ba5fd7d60a2f7a36",
+            "venue": "ICAPS",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144310960",
+                    "name": "Silvia Richter"
+                },
+                {
+                    "authorId": "3208076",
+                    "name": "M. Helmert"
+                },
+                {
+                    "authorId": "38538688",
+                    "name": "Matthias Westphal"
+                }
+            ],
+            "doi": "10.2307/j.ctt1zxsjcs",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "59aa6d69f2acd9d68907a180cccb1e05b7297fbe",
+            "title": "Landmarks Revisited",
+            "url": "https://www.semanticscholar.org/paper/59aa6d69f2acd9d68907a180cccb1e05b7297fbe",
+            "venue": "AAAI",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1694156",
+                    "name": "Blai Bonet"
+                },
+                {
+                    "authorId": "1806598",
+                    "name": "Hector Geffner"
+                }
+            ],
+            "doi": "10.1016/S0004-3702(01)00108-4",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "2387b8880e989197e5d2e6c5642fdde4f3561600",
+            "title": "Planning as heuristic search",
+            "url": "https://www.semanticscholar.org/paper/2387b8880e989197e5d2e6c5642fdde4f3561600",
+            "venue": "Artif. Intell.",
+            "year": 2001
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144507365",
+                    "name": "Christer B\u00e4ckstr\u00f6m"
+                },
+                {
+                    "authorId": "145304209",
+                    "name": "Bernhard Nebel"
+                }
+            ],
+            "doi": "10.1111/j.1467-8640.1995.tb00052.x",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "36f69a01f692ace8b2bf1841cccf144daec9e73a",
+            "title": "COMPLEXITY RESULTS FOR SAS+ PLANNING",
+            "url": "https://www.semanticscholar.org/paper/36f69a01f692ace8b2bf1841cccf144daec9e73a",
+            "venue": "Comput. Intell.",
+            "year": 1995
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1755680",
+                    "name": "S. Minato"
+                }
+            ],
+            "doi": "10.1145/157485.164890",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "95936223362a16a50de2959475d87aefe2a1fec7",
+            "title": "Zero-Suppressed BDDs for Set Manipulation in Combinatorial Problems",
+            "url": "https://www.semanticscholar.org/paper/95936223362a16a50de2959475d87aefe2a1fec7",
+            "venue": "30th ACM/IEEE Design Automation Conference",
+            "year": 1993
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "7326926",
+                    "name": "W. Worlton"
+                }
+            ],
+            "doi": "10.13182/NSE70-A19705",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7457476bd4719212ab257ad96483a642a35d61bd",
+            "title": "The Art of Computer Programming",
+            "url": "https://www.semanticscholar.org/paper/7457476bd4719212ab257ad96483a642a35d61bd",
+            "venue": "",
+            "year": 1968
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3108177",
+                    "name": "P. Hart"
+                },
+                {
+                    "authorId": "144497046",
+                    "name": "N. Nilsson"
+                },
+                {
+                    "authorId": "28791020",
+                    "name": "B. Raphael"
+                }
+            ],
+            "doi": "10.1109/TSSC.1968.300136",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "221aa3be55a4ead8fc2aa83b12aac370bfba72f5",
+            "title": "A Formal Basis for the Heuristic Determination of Minimum Cost Paths",
+            "url": "https://www.semanticscholar.org/paper/221aa3be55a4ead8fc2aa83b12aac370bfba72f5",
+            "venue": "IEEE Trans. Syst. Sci. Cybern.",
+            "year": 1968
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2073342252",
+                    "name": "J. Doran"
+                },
+                {
+                    "authorId": "2076374054",
+                    "name": "D. Michie"
+                }
+            ],
+            "doi": "10.1098/rspa.1966.0205",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "be456bdefef3575ce103f34f9e5f7c7009f6d147",
+            "title": "Experiments with the Graph Traverser program",
+            "url": "https://www.semanticscholar.org/paper/be456bdefef3575ce103f34f9e5f7c7009f6d147",
+            "venue": "Proceedings of the Royal Society of London. Series A. Mathematical and Physical Sciences",
+            "year": 1966
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "40138825",
+                    "name": "\u00c1. Torralba"
+                },
+                {
+                    "authorId": "2674274",
+                    "name": "Vidal Alc\u00e1zar"
+                },
+                {
+                    "authorId": "1688363",
+                    "name": "Peter Kissmann"
+                },
+                {
+                    "authorId": "1692486",
+                    "name": "S. Edelkamp"
+                }
+            ],
+            "doi": "10.1016/j.artint.2016.10.001",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "eab674683b49d9a7b6ab42886e327b1bd1547005",
+            "title": "Efficient symbolic search for cost-optimal planning",
+            "url": "https://www.semanticscholar.org/paper/eab674683b49d9a7b6ab42886e327b1bd1547005",
+            "venue": "Artif. Intell.",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2008889",
+                    "name": "Jingchao Chen"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "11ead39e2799fcb85a9064037080c0f2a1733d82",
+            "title": "A New SAT Encoding of the At-Most-One Constraint",
+            "url": "https://www.semanticscholar.org/paper/11ead39e2799fcb85a9064037080c0f2a1733d82",
+            "venue": "",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1742667",
+                    "name": "A. Cimatti"
+                },
+                {
+                    "authorId": "143877541",
+                    "name": "E. Clarke"
+                },
+                {
+                    "authorId": "2713205",
+                    "name": "E. Giunchiglia"
+                },
+                {
+                    "authorId": "1720285",
+                    "name": "Fausto Giunchiglia"
+                },
+                {
+                    "authorId": "1707579",
+                    "name": "M. Pistore"
+                },
+                {
+                    "authorId": "9138004",
+                    "name": "Marco Roveri"
+                },
+                {
+                    "authorId": "1797956",
+                    "name": "R. Sebastiani"
+                },
+                {
+                    "authorId": "1834340",
+                    "name": "A. Tacchella"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "dc3468f9373769e6b9711d3156c4648e1aa9f919",
+            "title": "Nusmv version 2: an opensource tool for symbolic model checking",
+            "url": "https://www.semanticscholar.org/paper/dc3468f9373769e6b9711d3156c4648e1aa9f919",
+            "venue": "CAV 2002",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "34673652",
+                    "name": "R. Bryant"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "38efda194ce8ca7166119ae403e43aef57f62f7c",
+            "title": "Graph-based Algorithm for Boolean Function Manipulation",
+            "url": "https://www.semanticscholar.org/paper/38efda194ce8ca7166119ae403e43aef57f62f7c",
+            "venue": "",
+            "year": 1989
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Core Challenge 2022: Solver and Graph Descriptions",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/a7c1937b66a22ed1e64df9efd20f7789bd1cd3dd",
+    "venue": "arXiv.org",
+    "year": 2022
+}

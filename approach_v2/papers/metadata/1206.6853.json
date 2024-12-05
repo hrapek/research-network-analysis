@@ -1,0 +1,3419 @@
+{
+    "abstract": "There are several existing algorithms that under appropriate assumptions can reliably identify a subset of the underlying causal relationships from observational data. This paper introduces the first computationally feasible score-based algorithm that can reliably identify causal relationships in the large sample limit for discrete models, while allowing for the possibility that there are unobserved common causes. In doing so, the algorithm does not ever need to assign scores to causal structures with unobserved common causes. The algorithm is based on the identification of so called Y substructures within Bayesian network structures that can be learned from observational data. An example of a Y substructure is A -> C, B -> C, C -> D. After providing background on causal discovery, the paper proves the conditions under which the algorithm is reliable in the large sample limit.",
+    "arxivId": "1206.6853",
+    "authors": [
+        {
+            "authorId": "145945701",
+            "name": "S. Mani",
+            "url": "https://www.semanticscholar.org/author/145945701"
+        },
+        {
+            "authorId": "1726406",
+            "name": "G. Cooper",
+            "url": "https://www.semanticscholar.org/author/1726406"
+        },
+        {
+            "authorId": "143648560",
+            "name": "P. Spirtes",
+            "url": "https://www.semanticscholar.org/author/143648560"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": "2407.08602",
+            "authors": [
+                {
+                    "authorId": "2310700143",
+                    "name": "Martin Huber"
+                }
+            ],
+            "doi": "10.1186/s41937-024-00131-4",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "20d88618b5978716ea3451e167e2411c5d5322e8",
+            "title": "An introduction to causal discovery",
+            "url": "https://www.semanticscholar.org/paper/20d88618b5978716ea3451e167e2411c5d5322e8",
+            "venue": "Swiss Journal of Economics and Statistics",
+            "year": 2024
+        },
+        {
+            "arxivId": "2407.04448",
+            "authors": [
+                {
+                    "authorId": "2310237498",
+                    "name": "Nicolas Apfel"
+                },
+                {
+                    "authorId": "2092531464",
+                    "name": "Julia Hatamyar"
+                },
+                {
+                    "authorId": "2259935411",
+                    "name": "Martin Huber"
+                },
+                {
+                    "authorId": "2086595876",
+                    "name": "Jannis Kueck"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8880ea63aa693e84ae24d302b25609cd29a33fc7",
+            "title": "Learning control variables and instruments for causal analysis in observational data",
+            "url": "https://www.semanticscholar.org/paper/8880ea63aa693e84ae24d302b25609cd29a33fc7",
+            "venue": "",
+            "year": 2024
+        },
+        {
+            "arxivId": "2404.18232",
+            "authors": [
+                {
+                    "authorId": "2283543839",
+                    "name": "Daniel Malinsky"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b2f51537119e9360315493be669fbc7d8b2cc243",
+            "title": "A cautious approach to constraint-based causal model selection",
+            "url": "https://www.semanticscholar.org/paper/b2f51537119e9360315493be669fbc7d8b2cc243",
+            "venue": "",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "34716133",
+                    "name": "Bryan Andrews"
+                },
+                {
+                    "authorId": "2414718",
+                    "name": "C. Wongchokprasitti"
+                },
+                {
+                    "authorId": "1765482",
+                    "name": "S. Visweswaran"
+                },
+                {
+                    "authorId": "2081109528",
+                    "name": "C. Lakhani"
+                },
+                {
+                    "authorId": "2057929615",
+                    "name": "C. Patel"
+                },
+                {
+                    "authorId": "1726406",
+                    "name": "G. Cooper"
+                }
+            ],
+            "doi": "10.1016/j.artmed.2023.102546",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c205c6e0228caef97b0a1be8f4ac3966cb55b635",
+            "title": "A new method for estimating the probability of causal relationships from observational data: Application to the study of the short-term effects of air pollution on cardiovascular and respiratory disease",
+            "url": "https://www.semanticscholar.org/paper/c205c6e0228caef97b0a1be8f4ac3966cb55b635",
+            "venue": "Artif. Intell. Medicine",
+            "year": 2023
+        },
+        {
+            "arxivId": "2302.08070",
+            "authors": [
+                {
+                    "authorId": "51112828",
+                    "name": "Shantanu Gupta"
+                },
+                {
+                    "authorId": "77936509",
+                    "name": "David Benjamin Childers"
+                },
+                {
+                    "authorId": "32219137",
+                    "name": "Zachary Chase Lipton"
+                }
+            ],
+            "doi": "10.48550/arXiv.2302.08070",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2d9205dd31dfd89b0e31f4ab9a07223f79918e2b",
+            "title": "Local Causal Discovery for Estimating Causal Effects",
+            "url": "https://www.semanticscholar.org/paper/2d9205dd31dfd89b0e31f4ab9a07223f79918e2b",
+            "venue": "CLeaR",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2205339318",
+                    "name": "Guillem Hern\u00e1ndez Guillamet"
+                },
+                {
+                    "authorId": "146749517",
+                    "name": "F. L. Segu\u00ed"
+                },
+                {
+                    "authorId": "1400992870",
+                    "name": "Josep Vidal-Alaball"
+                },
+                {
+                    "authorId": "2205277716",
+                    "name": "Beatriz L\u00f3pez"
+                }
+            ],
+            "doi": "10.1016/j.compbiomed.2023.106636",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f7eff3f319a907f2c1ee49897b7d1ea4f05e4dd9",
+            "title": "CauRuler: Causal irredundant association rule miner for complex patient trajectory modelling",
+            "url": "https://www.semanticscholar.org/paper/f7eff3f319a907f2c1ee49897b7d1ea4f05e4dd9",
+            "venue": "Comput. Biol. Medicine",
+            "year": 2023
+        },
+        {
+            "arxivId": "2206.06685",
+            "authors": [
+                {
+                    "authorId": "2170164540",
+                    "name": "Ruta Binkyt.e-Sadauskien.e"
+                },
+                {
+                    "authorId": "8356809",
+                    "name": "K. Makhlouf"
+                },
+                {
+                    "authorId": "2119532934",
+                    "name": "Carlos Pinz'on"
+                },
+                {
+                    "authorId": "1722898",
+                    "name": "Sami Zhioua"
+                },
+                {
+                    "authorId": "1722055",
+                    "name": "C. Palamidessi"
+                }
+            ],
+            "doi": "10.48550/arXiv.2206.06685",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b5233c5ae539412c49fc4bd3a151c2c62e3f0a0d",
+            "title": "Causal Discovery for Fairness",
+            "url": "https://www.semanticscholar.org/paper/b5233c5ae539412c49fc4bd3a151c2c62e3f0a0d",
+            "venue": "AFCP",
+            "year": 2022
+        },
+        {
+            "arxivId": "2205.05715",
+            "authors": [
+                {
+                    "authorId": "2065079791",
+                    "name": "David Watson"
+                },
+                {
+                    "authorId": "2187716",
+                    "name": "Ricardo Silva"
+                }
+            ],
+            "doi": "10.48550/arXiv.2205.05715",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "6e41ff8fd1ce817074ceedf03bb2bd6df538db3b",
+            "title": "Causal discovery under a confounder blanket",
+            "url": "https://www.semanticscholar.org/paper/6e41ff8fd1ce817074ceedf03bb2bd6df538db3b",
+            "venue": "UAI",
+            "year": 2022
+        },
+        {
+            "arxivId": "2203.15890",
+            "authors": [
+                {
+                    "authorId": "47624715",
+                    "name": "M. Huber"
+                },
+                {
+                    "authorId": "2086595876",
+                    "name": "Jannis Kueck"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "c0aa8a460d5ddbf0aa381c940efbd0bbfa09652c",
+            "title": "Testing the identification of causal effects in observational data",
+            "url": "https://www.semanticscholar.org/paper/c0aa8a460d5ddbf0aa381c940efbd0bbfa09652c",
+            "venue": "",
+            "year": 2022
+        },
+        {
+            "arxivId": "2203.01848",
+            "authors": [
+                {
+                    "authorId": "143938588",
+                    "name": "Philip Versteeg"
+                },
+                {
+                    "authorId": "2155988713",
+                    "name": "Cheng Zhang"
+                },
+                {
+                    "authorId": "1696158",
+                    "name": "J. Mooij"
+                }
+            ],
+            "doi": "10.48550/arXiv.2203.01848",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "407429aacc87ac8b1d08ff4104e49d7300ea3f9d",
+            "title": "Local Constraint-Based Causal Discovery under Selection Bias",
+            "url": "https://www.semanticscholar.org/paper/407429aacc87ac8b1d08ff4104e49d7300ea3f9d",
+            "venue": "CLeaR",
+            "year": 2022
+        },
+        {
+            "arxivId": "2107.09765",
+            "authors": [
+                {
+                    "authorId": "152214561",
+                    "name": "Jaime Sevilla"
+                },
+                {
+                    "authorId": "2047929043",
+                    "name": "Alexandra Mayn"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "9a13ea20127860d77c10fca0e54fde1ac61ffefd",
+            "title": "A conditional independence test for causality in econometrics",
+            "url": "https://www.semanticscholar.org/paper/9a13ea20127860d77c10fca0e54fde1ac61ffefd",
+            "venue": "",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "52001781",
+                    "name": "M. Sazal"
+                },
+                {
+                    "authorId": "150334326",
+                    "name": "Vitalii Stebliankin"
+                },
+                {
+                    "authorId": "3317907",
+                    "name": "K. Mathee"
+                },
+                {
+                    "authorId": "40442847",
+                    "name": "C. Yoo"
+                },
+                {
+                    "authorId": "145538991",
+                    "name": "G. Narasimhan"
+                }
+            ],
+            "doi": "10.1038/s41598-021-84905-3",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "93cff23ac40bd6414956b1f5e09b54f8d498a888",
+            "title": "Causal effects in microbiomes using interventional calculus",
+            "url": "https://www.semanticscholar.org/paper/93cff23ac40bd6414956b1f5e09b54f8d498a888",
+            "venue": "Scientific Reports",
+            "year": 2021
+        },
+        {
+            "arxivId": "2102.12685",
+            "authors": [
+                {
+                    "authorId": "1382582145",
+                    "name": "Zhuangyan Fang"
+                },
+                {
+                    "authorId": "2145577494",
+                    "name": "Yue Liu"
+                },
+                {
+                    "authorId": "144505108",
+                    "name": "Z. Geng"
+                },
+                {
+                    "authorId": "2145996261",
+                    "name": "Yangbo He"
+                }
+            ],
+            "doi": "10.1016/j.artint.2022.103669",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "641183971f5d277181d1b17888167f38d9349ede",
+            "title": "A Local Method for Identifying Causal Relations under Markov Equivalence",
+            "url": "https://www.semanticscholar.org/paper/641183971f5d277181d1b17888167f38d9349ede",
+            "venue": "Artif. Intell.",
+            "year": 2021
+        },
+        {
+            "arxivId": "2003.11706",
+            "authors": [
+                {
+                    "authorId": "147593015",
+                    "name": "Mehrzad Saremi"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "8a04bb2e8042694933271c77fabf83b22231b69c",
+            "title": "A Critique on the Interventional Detection of Causal Relationships",
+            "url": "https://www.semanticscholar.org/paper/8a04bb2e8042694933271c77fabf83b22231b69c",
+            "venue": "ArXiv",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "32755209",
+                    "name": "M. Sinha"
+                },
+                {
+                    "authorId": "1729906",
+                    "name": "Prasad Tadepalli"
+                },
+                {
+                    "authorId": "35475748",
+                    "name": "S. Ramsey"
+                }
+            ],
+            "doi": "10.1101/2020.02.18.955153",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "c262eba7c68aaf17d227cff68df38f10d043265e",
+            "title": "Voting-based integration algorithm improves causal network learning from interventional and observational data: an application to cell signaling network inference",
+            "url": "https://www.semanticscholar.org/paper/c262eba7c68aaf17d227cff68df38f10d043265e",
+            "venue": "bioRxiv",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "47435627",
+                    "name": "Xinpeng Shen"
+                },
+                {
+                    "authorId": "48837343",
+                    "name": "Sisi Ma"
+                },
+                {
+                    "authorId": "2728840",
+                    "name": "P. Vemuri"
+                },
+                {
+                    "authorId": "2791563",
+                    "name": "Gy\u00f6rgy J. Simon"
+                },
+                {
+                    "authorId": "2103310960",
+                    "name": "Michael W. Paul Ronald Clifford R. Andrew J. William John Weiner Aisen Petersen Jack Saykin Jagust Trojanowk"
+                },
+                {
+                    "authorId": "2985407",
+                    "name": "M. Weiner"
+                },
+                {
+                    "authorId": "3989370",
+                    "name": "P. Aisen"
+                },
+                {
+                    "authorId": "2580797",
+                    "name": "R. Petersen"
+                },
+                {
+                    "authorId": "144402064",
+                    "name": "C. Jack"
+                },
+                {
+                    "authorId": "7992909",
+                    "name": "A. Saykin"
+                },
+                {
+                    "authorId": "1789459",
+                    "name": "W. Jagust"
+                },
+                {
+                    "authorId": "152215100",
+                    "name": "J. Trojanowki"
+                },
+                {
+                    "authorId": "1699926",
+                    "name": "A. Toga"
+                },
+                {
+                    "authorId": "2097278",
+                    "name": "L. Beckett"
+                },
+                {
+                    "authorId": "24921137",
+                    "name": "R. Green"
+                },
+                {
+                    "authorId": "2259522390",
+                    "name": "J. Morris"
+                },
+                {
+                    "authorId": "143773376",
+                    "name": "L. Shaw"
+                },
+                {
+                    "authorId": "4807167",
+                    "name": "Z. Khachaturian"
+                },
+                {
+                    "authorId": "1404420265",
+                    "name": "Greg Sorensen"
+                },
+                {
+                    "authorId": "2077654",
+                    "name": "M. Carrillo"
+                },
+                {
+                    "authorId": "2604336",
+                    "name": "L. Kuller"
+                },
+                {
+                    "authorId": "2057029",
+                    "name": "M. Raichle"
+                },
+                {
+                    "authorId": "114059147",
+                    "name": "S. Paul"
+                },
+                {
+                    "authorId": "1872431",
+                    "name": "P. Davies"
+                },
+                {
+                    "authorId": "4293657",
+                    "name": "H. Fillit"
+                },
+                {
+                    "authorId": "2123659",
+                    "name": "F. Hefti"
+                },
+                {
+                    "authorId": "4295663",
+                    "name": "D. Holtzman"
+                },
+                {
+                    "authorId": "2071919413",
+                    "name": "M. Mesulam"
+                },
+                {
+                    "authorId": "117901517",
+                    "name": "W. Potter"
+                },
+                {
+                    "authorId": "2360073",
+                    "name": "P. Snyder"
+                },
+                {
+                    "authorId": "2072865215",
+                    "name": "Adam Schwartz"
+                },
+                {
+                    "authorId": "152494843",
+                    "name": "T. Montine"
+                },
+                {
+                    "authorId": "2032593497",
+                    "name": "Ronald G. Thomas"
+                },
+                {
+                    "authorId": "1973436",
+                    "name": "M. Donohue"
+                },
+                {
+                    "authorId": "1471171407",
+                    "name": "Sarah Walter"
+                },
+                {
+                    "authorId": "4198167",
+                    "name": "D. Gessert"
+                },
+                {
+                    "authorId": "3944111",
+                    "name": "T. Sather"
+                },
+                {
+                    "authorId": "6957747",
+                    "name": "G. Jiminez"
+                },
+                {
+                    "authorId": "50491217",
+                    "name": "Archana Balasubramanian"
+                },
+                {
+                    "authorId": "2142470337",
+                    "name": "Jennifer Mason"
+                },
+                {
+                    "authorId": "115601535",
+                    "name": "Iris Sim"
+                },
+                {
+                    "authorId": "34189754",
+                    "name": "D. Harvey"
+                },
+                {
+                    "authorId": "2436668",
+                    "name": "M. Bernstein"
+                },
+                {
+                    "authorId": "2054663105",
+                    "name": "Nick Fox"
+                },
+                {
+                    "authorId": "2287207065",
+                    "name": "Paul M. Thompson"
+                },
+                {
+                    "authorId": "2755172",
+                    "name": "N. Schuff"
+                },
+                {
+                    "authorId": "2470295",
+                    "name": "C. DeCarli"
+                },
+                {
+                    "authorId": "2366111",
+                    "name": "B. Borowski"
+                },
+                {
+                    "authorId": "1404367702",
+                    "name": "J. Gunter"
+                },
+                {
+                    "authorId": "52169215",
+                    "name": "M. Senjem"
+                },
+                {
+                    "authorId": "39045225",
+                    "name": "David T. Jones"
+                },
+                {
+                    "authorId": "1921177",
+                    "name": "K. Kantarci"
+                },
+                {
+                    "authorId": "32878235",
+                    "name": "C. Ward"
+                },
+                {
+                    "authorId": "1795763",
+                    "name": "R. Koeppe"
+                },
+                {
+                    "authorId": "153060772",
+                    "name": "N. Foster"
+                },
+                {
+                    "authorId": "1802991",
+                    "name": "E. Reiman"
+                },
+                {
+                    "authorId": "1752005",
+                    "name": "Kewei Chen"
+                },
+                {
+                    "authorId": "1826053",
+                    "name": "C. Mathis"
+                },
+                {
+                    "authorId": "33051173",
+                    "name": "S. Landau"
+                },
+                {
+                    "authorId": "2792502",
+                    "name": "N. Cairns"
+                },
+                {
+                    "authorId": "144556578",
+                    "name": "E. Franklin"
+                },
+                {
+                    "authorId": "1402859421",
+                    "name": "L. Taylor-Reinwald"
+                },
+                {
+                    "authorId": "153766517",
+                    "name": "V. Lee"
+                },
+                {
+                    "authorId": "6256758",
+                    "name": "M. Korecka"
+                },
+                {
+                    "authorId": "6566620",
+                    "name": "M. Figurski"
+                },
+                {
+                    "authorId": "1422409367",
+                    "name": "K. Crawford"
+                },
+                {
+                    "authorId": "50592560",
+                    "name": "S. Neu"
+                },
+                {
+                    "authorId": "2065393",
+                    "name": "T. Foroud"
+                },
+                {
+                    "authorId": "2213246",
+                    "name": "S. Potkin"
+                },
+                {
+                    "authorId": "40012710",
+                    "name": "K. Faber"
+                },
+                {
+                    "authorId": "15319264",
+                    "name": "Sungeun Kim"
+                },
+                {
+                    "authorId": "2177008",
+                    "name": "K. Nho"
+                },
+                {
+                    "authorId": "143615646",
+                    "name": "L. Thal"
+                },
+                {
+                    "authorId": "3709257",
+                    "name": "N. Buckholtz"
+                },
+                {
+                    "authorId": "35047388",
+                    "name": "M. Albert"
+                },
+                {
+                    "authorId": "70849956",
+                    "name": "Richard Frank"
+                },
+                {
+                    "authorId": "11369015",
+                    "name": "J. Hsiao"
+                },
+                {
+                    "authorId": "2865376",
+                    "name": "J. Kaye"
+                },
+                {
+                    "authorId": "2439811",
+                    "name": "J. Quinn"
+                },
+                {
+                    "authorId": "4676198",
+                    "name": "L. Silbert"
+                },
+                {
+                    "authorId": "32129846",
+                    "name": "B. Lind"
+                },
+                {
+                    "authorId": "47870229",
+                    "name": "R. Carter"
+                },
+                {
+                    "authorId": "5709649",
+                    "name": "S. Dolen"
+                },
+                {
+                    "authorId": "144958304",
+                    "name": "L. Schneider"
+                },
+                {
+                    "authorId": "1402038397",
+                    "name": "S. Pawluczyk"
+                },
+                {
+                    "authorId": "3514673",
+                    "name": "Mauricio Beccera"
+                },
+                {
+                    "authorId": "6677879",
+                    "name": "L. Teodoro"
+                },
+                {
+                    "authorId": "1400731649",
+                    "name": "B. Spann"
+                },
+                {
+                    "authorId": "2753695",
+                    "name": "J. Brewer"
+                },
+                {
+                    "authorId": "4486673",
+                    "name": "H. Vanderswag"
+                },
+                {
+                    "authorId": "145215543",
+                    "name": "A. Fleisher"
+                },
+                {
+                    "authorId": "3900421",
+                    "name": "J. Heidebrink"
+                },
+                {
+                    "authorId": "50574185",
+                    "name": "J. Lord"
+                },
+                {
+                    "authorId": "143875222",
+                    "name": "S. Mason"
+                },
+                {
+                    "authorId": "6787205",
+                    "name": "C. Albers"
+                },
+                {
+                    "authorId": "2254721488",
+                    "name": "D. Knopman"
+                },
+                {
+                    "authorId": "1422245088",
+                    "name": "K. Johnson"
+                },
+                {
+                    "authorId": "3076872",
+                    "name": "R. Doody"
+                },
+                {
+                    "authorId": "1400114957",
+                    "name": "J. Villanueva-Meyer"
+                },
+                {
+                    "authorId": "3956245",
+                    "name": "V. Pavlik"
+                },
+                {
+                    "authorId": "115625316",
+                    "name": "V. Shibley"
+                },
+                {
+                    "authorId": "49427536",
+                    "name": "M. Chowdhury"
+                },
+                {
+                    "authorId": "5023212",
+                    "name": "S. Rountree"
+                },
+                {
+                    "authorId": "38859101",
+                    "name": "M. Dang"
+                },
+                {
+                    "authorId": "145096684",
+                    "name": "Y. Stern"
+                },
+                {
+                    "authorId": "3652114",
+                    "name": "L. Honig"
+                },
+                {
+                    "authorId": "49434600",
+                    "name": "K. Bell"
+                },
+                {
+                    "authorId": "2519697",
+                    "name": "B. Ances"
+                },
+                {
+                    "authorId": "69390019",
+                    "name": "M. Carroll"
+                },
+                {
+                    "authorId": "1402038571",
+                    "name": "M. Creech"
+                },
+                {
+                    "authorId": "5880109",
+                    "name": "M. Mintun"
+                },
+                {
+                    "authorId": "1399426076",
+                    "name": "S. Schneider"
+                },
+                {
+                    "authorId": "1402882789",
+                    "name": "A. Oliver"
+                },
+                {
+                    "authorId": "143898279",
+                    "name": "D. Marson"
+                },
+                {
+                    "authorId": "6597943",
+                    "name": "D. Geldmacher"
+                },
+                {
+                    "authorId": "48455230",
+                    "name": "M. N. Love"
+                },
+                {
+                    "authorId": "92546132",
+                    "name": "R. Griffith"
+                },
+                {
+                    "authorId": "2117733178",
+                    "name": "D. Clark"
+                },
+                {
+                    "authorId": "4176129",
+                    "name": "J. Brockington"
+                },
+                {
+                    "authorId": "2246775",
+                    "name": "E. Roberson"
+                },
+                {
+                    "authorId": "2067427578",
+                    "name": "H. Grossman"
+                },
+                {
+                    "authorId": "5074900",
+                    "name": "Effie M. Mitsis"
+                },
+                {
+                    "authorId": "6131654",
+                    "name": "R. Shah"
+                },
+                {
+                    "authorId": "1397977817",
+                    "name": "L. deToledo\u2010Morrell"
+                },
+                {
+                    "authorId": "2909904",
+                    "name": "R. Duara"
+                },
+                {
+                    "authorId": "1402845762",
+                    "name": "M. Greig\u2010Custo"
+                },
+                {
+                    "authorId": "145656118",
+                    "name": "W. Barker"
+                },
+                {
+                    "authorId": "8474541",
+                    "name": "C. Onyike"
+                },
+                {
+                    "authorId": "1400040017",
+                    "name": "D. D\u2019Agostino"
+                },
+                {
+                    "authorId": "5530497",
+                    "name": "Stephanie J. Kielb"
+                },
+                {
+                    "authorId": "2104049424",
+                    "name": "M. Sadowski"
+                },
+                {
+                    "authorId": "144932772",
+                    "name": "M. O. Sheikh"
+                },
+                {
+                    "authorId": "51283550",
+                    "name": "A. Ulysse"
+                },
+                {
+                    "authorId": "116757353",
+                    "name": "Mrunalini Gaikwad"
+                },
+                {
+                    "authorId": "144685569",
+                    "name": "P. Doraiswamy"
+                },
+                {
+                    "authorId": "3473115",
+                    "name": "J. Petrella"
+                },
+                {
+                    "authorId": "1412061524",
+                    "name": "S. Borges-Neto"
+                },
+                {
+                    "authorId": "2113247195",
+                    "name": "T. Wong"
+                },
+                {
+                    "authorId": "47655569",
+                    "name": "Edward Coleman"
+                },
+                {
+                    "authorId": "145601268",
+                    "name": "S. Arnold"
+                },
+                {
+                    "authorId": "4574649",
+                    "name": "J. Karlawish"
+                },
+                {
+                    "authorId": "32855978",
+                    "name": "D. Wolk"
+                },
+                {
+                    "authorId": "143729509",
+                    "name": "C. Clark"
+                },
+                {
+                    "authorId": "31669741",
+                    "name": "Charles D. Smith"
+                },
+                {
+                    "authorId": "1782115",
+                    "name": "G. Jicha"
+                },
+                {
+                    "authorId": "1471184980",
+                    "name": "Peter Hardy"
+                },
+                {
+                    "authorId": "32836501",
+                    "name": "P. Sinha"
+                },
+                {
+                    "authorId": "20845756",
+                    "name": "Elizabeth Oates"
+                },
+                {
+                    "authorId": "37816670",
+                    "name": "G. Conrad"
+                },
+                {
+                    "authorId": "144355733",
+                    "name": "O. Lopez"
+                },
+                {
+                    "authorId": "70183815",
+                    "name": "M. Oakley"
+                },
+                {
+                    "authorId": "47160300",
+                    "name": "D. Simpson"
+                },
+                {
+                    "authorId": "4277686",
+                    "name": "A. Porsteinsson"
+                },
+                {
+                    "authorId": "1399680588",
+                    "name": "B. Goldstein"
+                },
+                {
+                    "authorId": "1421813464",
+                    "name": "K. Martin"
+                },
+                {
+                    "authorId": "1399639560",
+                    "name": "K. Makino"
+                },
+                {
+                    "authorId": "73062280",
+                    "name": "M. Ismail"
+                },
+                {
+                    "authorId": "36993669",
+                    "name": "C. Brand"
+                },
+                {
+                    "authorId": "145551612",
+                    "name": "Adrian Preda"
+                },
+                {
+                    "authorId": "1400181904",
+                    "name": "D. Nguyen"
+                },
+                {
+                    "authorId": "2584327",
+                    "name": "K. Womack"
+                },
+                {
+                    "authorId": "46429079",
+                    "name": "D. Mathews"
+                },
+                {
+                    "authorId": "4658057",
+                    "name": "M. Quiceno"
+                },
+                {
+                    "authorId": "3436448",
+                    "name": "A. Levey"
+                },
+                {
+                    "authorId": "6016749",
+                    "name": "J. Lah"
+                },
+                {
+                    "authorId": "5357918",
+                    "name": "J. Cellar"
+                },
+                {
+                    "authorId": "34909913",
+                    "name": "J. Burns"
+                },
+                {
+                    "authorId": "5047556",
+                    "name": "R. Swerdlow"
+                },
+                {
+                    "authorId": "144458474",
+                    "name": "W. Brooks"
+                },
+                {
+                    "authorId": "2208469",
+                    "name": "L. Apostolova"
+                },
+                {
+                    "authorId": "48407791",
+                    "name": "K. Tingus"
+                },
+                {
+                    "authorId": "2307011",
+                    "name": "E. Woo"
+                },
+                {
+                    "authorId": "30946181",
+                    "name": "D. Silverman"
+                },
+                {
+                    "authorId": "145522849",
+                    "name": "P. Lu"
+                },
+                {
+                    "authorId": "3421069",
+                    "name": "G. Bartzokis"
+                },
+                {
+                    "authorId": "1399608247",
+                    "name": "N. Graff-Radford"
+                },
+                {
+                    "authorId": "1402038453",
+                    "name": "F. Parfitt"
+                },
+                {
+                    "authorId": "1432756318",
+                    "name": "K. Poki-Walker"
+                },
+                {
+                    "authorId": "145127901",
+                    "name": "M. Farlow"
+                },
+                {
+                    "authorId": "3972667",
+                    "name": "A. Hake"
+                },
+                {
+                    "authorId": "36545016",
+                    "name": "B. Matthews"
+                },
+                {
+                    "authorId": "2042293",
+                    "name": "J. Brosch"
+                },
+                {
+                    "authorId": "39706956",
+                    "name": "S. Herring"
+                },
+                {
+                    "authorId": "144051070",
+                    "name": "C. V. van Dyck"
+                },
+                {
+                    "authorId": "3321621",
+                    "name": "R. Carson"
+                },
+                {
+                    "authorId": "3856700",
+                    "name": "M. Macavoy"
+                },
+                {
+                    "authorId": "1490453637",
+                    "name": "P. Varma"
+                },
+                {
+                    "authorId": "114187679",
+                    "name": "H. Chertkow"
+                },
+                {
+                    "authorId": "145358173",
+                    "name": "H. Bergman"
+                },
+                {
+                    "authorId": "6835041",
+                    "name": "C. Hosein"
+                },
+                {
+                    "authorId": "2172926597",
+                    "name": "S. Black"
+                },
+                {
+                    "authorId": "1681378",
+                    "name": "B. Stefanovic"
+                },
+                {
+                    "authorId": "153189276",
+                    "name": "Curtis Caldwell"
+                },
+                {
+                    "authorId": "123540198",
+                    "name": "G. Hsiung"
+                },
+                {
+                    "authorId": "3622429",
+                    "name": "B. Mudge"
+                },
+                {
+                    "authorId": "2872450",
+                    "name": "V. Sossi"
+                },
+                {
+                    "authorId": "35137539",
+                    "name": "H. Feldman"
+                },
+                {
+                    "authorId": "6016087",
+                    "name": "M. Assaly"
+                },
+                {
+                    "authorId": "1993675",
+                    "name": "E. Finger"
+                },
+                {
+                    "authorId": "6055875",
+                    "name": "S. Pasternack"
+                },
+                {
+                    "authorId": "5829751",
+                    "name": "Irina Rachisky"
+                },
+                {
+                    "authorId": "152132227",
+                    "name": "J. Rogers"
+                },
+                {
+                    "authorId": "2406166",
+                    "name": "D. Trost"
+                },
+                {
+                    "authorId": "2549235",
+                    "name": "A. Kertesz"
+                },
+                {
+                    "authorId": "2040125",
+                    "name": "C. Bernick"
+                },
+                {
+                    "authorId": "5410825",
+                    "name": "D. Munic"
+                },
+                {
+                    "authorId": "2690538",
+                    "name": "E. Rogalski"
+                },
+                {
+                    "authorId": "5683345",
+                    "name": "K. Lipowski"
+                },
+                {
+                    "authorId": "145379808",
+                    "name": "S. Weintraub"
+                },
+                {
+                    "authorId": "21162735",
+                    "name": "B. Bonakdarpour"
+                },
+                {
+                    "authorId": "36769830",
+                    "name": "D. Kerwin"
+                },
+                {
+                    "authorId": "49762907",
+                    "name": "Chuang\u2010Kuo Wu"
+                },
+                {
+                    "authorId": "144776434",
+                    "name": "N. Johnson"
+                },
+                {
+                    "authorId": "38720773",
+                    "name": "C. Sadowsky"
+                },
+                {
+                    "authorId": "4988332",
+                    "name": "Teresa Villena"
+                },
+                {
+                    "authorId": "29239567",
+                    "name": "R. Turner"
+                },
+                {
+                    "authorId": "145833341",
+                    "name": "K. Johnson"
+                },
+                {
+                    "authorId": "48602808",
+                    "name": "B. Reynolds"
+                },
+                {
+                    "authorId": "2289371",
+                    "name": "R. Sperling"
+                },
+                {
+                    "authorId": "32207254",
+                    "name": "Keith A. Johnson"
+                },
+                {
+                    "authorId": "4205480",
+                    "name": "G. Marshall"
+                },
+                {
+                    "authorId": "2235415",
+                    "name": "J. Yesavage"
+                },
+                {
+                    "authorId": "2209775386",
+                    "name": "Joy Taylor"
+                },
+                {
+                    "authorId": "1403405867",
+                    "name": "B. Lane"
+                },
+                {
+                    "authorId": "34984218",
+                    "name": "A. Rosen"
+                },
+                {
+                    "authorId": "2405556",
+                    "name": "J. Tinklenberg"
+                },
+                {
+                    "authorId": "1784806",
+                    "name": "M. Sabbagh"
+                },
+                {
+                    "authorId": "3384338",
+                    "name": "C. Belden"
+                },
+                {
+                    "authorId": "39623530",
+                    "name": "S. Jacobson"
+                },
+                {
+                    "authorId": "4681362",
+                    "name": "Sherye A. Sirrel"
+                },
+                {
+                    "authorId": "4766599",
+                    "name": "N. Kowall"
+                },
+                {
+                    "authorId": "2029704",
+                    "name": "R. Killiany"
+                },
+                {
+                    "authorId": "3183891",
+                    "name": "A. Budson"
+                },
+                {
+                    "authorId": "2513938",
+                    "name": "A. Norbash"
+                },
+                {
+                    "authorId": "38815111",
+                    "name": "P. L. Johnson"
+                },
+                {
+                    "authorId": "3230229",
+                    "name": "T. Obisesan"
+                },
+                {
+                    "authorId": "4967602",
+                    "name": "S. Wolday"
+                },
+                {
+                    "authorId": "1681469",
+                    "name": "Joanne S. Allard"
+                },
+                {
+                    "authorId": "20427753",
+                    "name": "A. Lerner"
+                },
+                {
+                    "authorId": "4029181",
+                    "name": "P. Ogrocki"
+                },
+                {
+                    "authorId": "3411072",
+                    "name": "C. Tatsuoka"
+                },
+                {
+                    "authorId": "6122794",
+                    "name": "P. Fatica"
+                },
+                {
+                    "authorId": "145785705",
+                    "name": "E. Fletcher"
+                },
+                {
+                    "authorId": "2382546",
+                    "name": "P. Maillard"
+                },
+                {
+                    "authorId": "5438234",
+                    "name": "J. Olichney"
+                },
+                {
+                    "authorId": "2470295",
+                    "name": "C. DeCarli"
+                },
+                {
+                    "authorId": "2575670",
+                    "name": "Owen Carmichael"
+                },
+                {
+                    "authorId": "38485165",
+                    "name": "S. Kittur"
+                },
+                {
+                    "authorId": "144794378",
+                    "name": "M. Borrie"
+                },
+                {
+                    "authorId": "2110570827",
+                    "name": "T. Lee"
+                },
+                {
+                    "authorId": "144984822",
+                    "name": "R. Bartha"
+                },
+                {
+                    "authorId": "145114604",
+                    "name": "Sterling C. Johnson"
+                },
+                {
+                    "authorId": "2540018",
+                    "name": "S. Asthana"
+                },
+                {
+                    "authorId": "144376213",
+                    "name": "C. Carlsson"
+                },
+                {
+                    "authorId": "6323147",
+                    "name": "P. Tariot"
+                },
+                {
+                    "authorId": "4611558",
+                    "name": "A. Burke"
+                },
+                {
+                    "authorId": "4567728",
+                    "name": "A. Milliken"
+                },
+                {
+                    "authorId": "6727299",
+                    "name": "Nadira Trncic"
+                },
+                {
+                    "authorId": "145215543",
+                    "name": "A. Fleisher"
+                },
+                {
+                    "authorId": "51031880",
+                    "name": "S. Reeder"
+                },
+                {
+                    "authorId": "48861734",
+                    "name": "V. Bates"
+                },
+                {
+                    "authorId": "5898585",
+                    "name": "H. Capote"
+                },
+                {
+                    "authorId": "5597129",
+                    "name": "M. Rainka"
+                },
+                {
+                    "authorId": "2417734",
+                    "name": "D. Scharre"
+                },
+                {
+                    "authorId": "143930236",
+                    "name": "M. Kataki"
+                },
+                {
+                    "authorId": "37768308",
+                    "name": "Brendan Kelly"
+                },
+                {
+                    "authorId": "40212899",
+                    "name": "E. Zimmerman"
+                },
+                {
+                    "authorId": "1402038064",
+                    "name": "D. Celmins"
+                },
+                {
+                    "authorId": "73613631",
+                    "name": "Alice D. Brown"
+                },
+                {
+                    "authorId": "145709900",
+                    "name": "G. Pearlson"
+                },
+                {
+                    "authorId": "36836237",
+                    "name": "K. Blank"
+                },
+                {
+                    "authorId": "1406199961",
+                    "name": "K. Anderson"
+                },
+                {
+                    "authorId": "3196920",
+                    "name": "L. Flashman"
+                },
+                {
+                    "authorId": "36239213",
+                    "name": "M. Seltzer"
+                },
+                {
+                    "authorId": "5662145",
+                    "name": "M. Hynes"
+                },
+                {
+                    "authorId": "5142141",
+                    "name": "R. Santulli"
+                },
+                {
+                    "authorId": "4842151",
+                    "name": "K. Sink"
+                },
+                {
+                    "authorId": "5223221",
+                    "name": "Leslie Gordineer"
+                },
+                {
+                    "authorId": "38218069",
+                    "name": "J. Williamson"
+                },
+                {
+                    "authorId": "152851296",
+                    "name": "P. Garg"
+                },
+                {
+                    "authorId": "1401886047",
+                    "name": "F. Watkins"
+                },
+                {
+                    "authorId": "2132127",
+                    "name": "B. Ott"
+                },
+                {
+                    "authorId": "6519500",
+                    "name": "G. Tremont"
+                },
+                {
+                    "authorId": "5496310",
+                    "name": "L. Daiello"
+                },
+                {
+                    "authorId": "2658010",
+                    "name": "S. Salloway"
+                },
+                {
+                    "authorId": "38632710",
+                    "name": "P. Malloy"
+                },
+                {
+                    "authorId": "145403682",
+                    "name": "S. Correia"
+                },
+                {
+                    "authorId": "2184196",
+                    "name": "H. Rosen"
+                },
+                {
+                    "authorId": "2234319680",
+                    "name": "B. Miller"
+                },
+                {
+                    "authorId": "152168353",
+                    "name": "D. Perry"
+                },
+                {
+                    "authorId": "6867377",
+                    "name": "J. Mintzer"
+                },
+                {
+                    "authorId": "48959252",
+                    "name": "K. Spicer"
+                },
+                {
+                    "authorId": "34890238",
+                    "name": "D. Bachman"
+                },
+                {
+                    "authorId": "7008732",
+                    "name": "N. Pomara"
+                },
+                {
+                    "authorId": "1402038306",
+                    "name": "R. Hernando"
+                },
+                {
+                    "authorId": "5871899",
+                    "name": "A. Sarrael"
+                },
+                {
+                    "authorId": "2625850",
+                    "name": "S. Schultz"
+                },
+                {
+                    "authorId": "39338874",
+                    "name": "Karen E. Smith"
+                },
+                {
+                    "authorId": "8282195",
+                    "name": "H. Koleva"
+                },
+                {
+                    "authorId": "2052883097",
+                    "name": "K. W. Nam"
+                },
+                {
+                    "authorId": "7999276",
+                    "name": "H. Shim"
+                },
+                {
+                    "authorId": "2333779",
+                    "name": "N. Relkin"
+                },
+                {
+                    "authorId": "6895885",
+                    "name": "G. Chaing"
+                },
+                {
+                    "authorId": "144485121",
+                    "name": "Michael P. Lin"
+                },
+                {
+                    "authorId": "5392796",
+                    "name": "L. Ravdin"
+                },
+                {
+                    "authorId": "123010727",
+                    "name": "Amanda G. Smith"
+                },
+                {
+                    "authorId": "40648189",
+                    "name": "B. A. Raj"
+                },
+                {
+                    "authorId": "5696028",
+                    "name": "K. Fargher"
+                }
+            ],
+            "doi": "10.1038/s41598-020-59669-x",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "15f05734ebf473a5df36b99fa500afa085e90ced",
+            "title": "Challenges and Opportunities with Causal Discovery Algorithms: Application to Alzheimer\u2019s Pathophysiology",
+            "url": "https://www.semanticscholar.org/paper/15f05734ebf473a5df36b99fa500afa085e90ced",
+            "venue": "Scientific Reports",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "33108433",
+                    "name": "Pranjul Yadav"
+                },
+                {
+                    "authorId": "1707756",
+                    "name": "M. Steinbach"
+                },
+                {
+                    "authorId": "143632654",
+                    "name": "Regina Castro"
+                },
+                {
+                    "authorId": "2732053",
+                    "name": "P. Caraballo"
+                },
+                {
+                    "authorId": "2107978833",
+                    "name": "Vipin Kumar"
+                },
+                {
+                    "authorId": "2791563",
+                    "name": "Gy\u00f6rgy J. Simon"
+                }
+            ],
+            "doi": "10.1109/BigData47090.2019.9005977",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d547af2b25af9f3c23989f29a7a082cb7b4660bc",
+            "title": "Frequent Causal Pattern Mining: A Computationally Efficient Framework For Estimating Bias-Corrected Effects",
+            "url": "https://www.semanticscholar.org/paper/d547af2b25af9f3c23989f29a7a082cb7b4660bc",
+            "venue": "2019 IEEE International Conference on Big Data (Big Data)",
+            "year": 2019
+        },
+        {
+            "arxivId": "1909.03818",
+            "authors": [
+                {
+                    "authorId": "10728610",
+                    "name": "I. G. Bucur"
+                },
+                {
+                    "authorId": "3234629",
+                    "name": "Tom Claassen"
+                },
+                {
+                    "authorId": "1790356",
+                    "name": "T. Heskes"
+                }
+            ],
+            "doi": "10.1016/j.ijar.2019.08.012",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "88ceb8806060e0a81a9e9d7648acaecb34487edf",
+            "title": "Large-Scale Local Causal Inference of Gene Regulatory Relationships",
+            "url": "https://www.semanticscholar.org/paper/88ceb8806060e0a81a9e9d7648acaecb34487edf",
+            "venue": "Int. J. Approx. Reason.",
+            "year": 2019
+        },
+        {
+            "arxivId": "1809.06827",
+            "authors": [
+                {
+                    "authorId": "10728610",
+                    "name": "I. G. Bucur"
+                },
+                {
+                    "authorId": "51440819",
+                    "name": "T. V. Bussel"
+                },
+                {
+                    "authorId": "3234629",
+                    "name": "Tom Claassen"
+                },
+                {
+                    "authorId": "1790356",
+                    "name": "T. Heskes"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "4416ed1e6be3f835150a62218d09502ff76331e0",
+            "title": "A Bayesian Approach for Inferring Local Causal Structure in Gene Regulatory Networks",
+            "url": "https://www.semanticscholar.org/paper/4416ed1e6be3f835150a62218d09502ff76331e0",
+            "venue": "PGM",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2268674096",
+                    "name": "Sara Magliacane"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "688ba248e5904a33a646cf1776254d56e8e451a3",
+            "title": "Logics for causal inference under uncertainty",
+            "url": "https://www.semanticscholar.org/paper/688ba248e5904a33a646cf1776254d56e8e451a3",
+            "venue": "",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "16283365",
+                    "name": "Konstantine Tchourine"
+                },
+                {
+                    "authorId": "14200418",
+                    "name": "C. Vogel"
+                },
+                {
+                    "authorId": "144402510",
+                    "name": "Richard Bonneau"
+                }
+            ],
+            "doi": "10.1101/104885",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9fe2df078875416b4cd2a133c8877c144103bc8a",
+            "title": "Explicit Modeling of RNA Stability Improves Large-Scale Inference of Transcription Regulation",
+            "url": "https://www.semanticscholar.org/paper/9fe2df078875416b4cd2a133c8877c144103bc8a",
+            "venue": "bioRxiv",
+            "year": 2017
+        },
+        {
+            "arxivId": "1611.04660",
+            "authors": [
+                {
+                    "authorId": "33108433",
+                    "name": "Pranjul Yadav"
+                },
+                {
+                    "authorId": "1877008",
+                    "name": "Lisiane Pruinelli"
+                },
+                {
+                    "authorId": "113999568",
+                    "name": "Ale J. Hoff"
+                },
+                {
+                    "authorId": "1707756",
+                    "name": "M. Steinbach"
+                },
+                {
+                    "authorId": "7785557",
+                    "name": "B. Westra"
+                },
+                {
+                    "authorId": "2107978833",
+                    "name": "Vipin Kumar"
+                },
+                {
+                    "authorId": "2791563",
+                    "name": "Gy\u00f6rgy J. Simon"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "fe86a27d5145dbc17c65558f43814d29514747be",
+            "title": "Causal Inference in Observational Data",
+            "url": "https://www.semanticscholar.org/paper/fe86a27d5145dbc17c65558f43814d29514747be",
+            "venue": "ArXiv",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "7236497",
+                    "name": "Swati Hira"
+                },
+                {
+                    "authorId": "2131838",
+                    "name": "P. Deshpande"
+                }
+            ],
+            "doi": "10.1186/s40064-016-3292-0",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c12b03f672eac4fef4e11ea1640c837975c88d83",
+            "title": "Mining precise cause and effect rules in large time series data of socio-economic indicators",
+            "url": "https://www.semanticscholar.org/paper/c12b03f672eac4fef4e11ea1640c837975c88d83",
+            "venue": "SpringerPlus",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144725536",
+                    "name": "Elena Sokolova"
+                },
+                {
+                    "authorId": "3445298",
+                    "name": "M. Hoogman"
+                },
+                {
+                    "authorId": "145121373",
+                    "name": "P. Groot"
+                },
+                {
+                    "authorId": "3234629",
+                    "name": "Tom Claassen"
+                },
+                {
+                    "authorId": "1790356",
+                    "name": "T. Heskes"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "eaa9466fa774e3586ea93e85772f6f71f3e62396",
+            "title": "Computing Lower and Upper Bounds on the Probability of Causal Statements",
+            "url": "https://www.semanticscholar.org/paper/eaa9466fa774e3586ea93e85772f6f71f3e62396",
+            "venue": "Probabilistic Graphical Models",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2072964740",
+                    "name": "Manal Alharbi"
+                },
+                {
+                    "authorId": "143856869",
+                    "name": "S. Rajasekaran"
+                }
+            ],
+            "doi": "10.1109/ISSPIT.2015.7394344",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "3d68f0135db8b65d4136b880763e8001a46cbff3",
+            "title": "Conjunctive combined causal rules mining",
+            "url": "https://www.semanticscholar.org/paper/3d68f0135db8b65d4136b880763e8001a46cbff3",
+            "venue": "2015 IEEE International Symposium on Signal Processing and Information Technology (ISSPIT)",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "5627739",
+                    "name": "J. Nemzek"
+                },
+                {
+                    "authorId": "8078461",
+                    "name": "Andrew P. Hodges"
+                },
+                {
+                    "authorId": "1679167",
+                    "name": "Y. He"
+                }
+            ],
+            "doi": "10.1186/s13104-015-1488-y",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d440b17453e77da7b8a70d86b1ace59f7a5975b1",
+            "title": "Bayesian network analysis of multi-compartmentalized immune responses in a murine model of sepsis and direct lung injury",
+            "url": "https://www.semanticscholar.org/paper/d440b17453e77da7b8a70d86b1ace59f7a5975b1",
+            "venue": "BMC Research Notes",
+            "year": 2015
+        },
+        {
+            "arxivId": "1508.03819",
+            "authors": [
+                {
+                    "authorId": "1786185",
+                    "name": "Jiuyong Li"
+                },
+                {
+                    "authorId": "3141770",
+                    "name": "T. Le"
+                },
+                {
+                    "authorId": "1518051372",
+                    "name": "Lin Liu"
+                },
+                {
+                    "authorId": "2108374005",
+                    "name": "Jixue Liu"
+                },
+                {
+                    "authorId": "2111473952",
+                    "name": "Zhou Jin"
+                },
+                {
+                    "authorId": "2153219806",
+                    "name": "Bing-Yu Sun"
+                },
+                {
+                    "authorId": "2531680",
+                    "name": "Saisai Ma"
+                }
+            ],
+            "doi": "10.1145/2746410",
+            "intent": [
+                "result",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "9b16e198eeb49533062e264ba2c88fa7c1213843",
+            "title": "From Observational Studies to Causal Rule Mining",
+            "url": "https://www.semanticscholar.org/paper/9b16e198eeb49533062e264ba2c88fa7c1213843",
+            "venue": "ACM Trans. Intell. Syst. Technol.",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1696158",
+                    "name": "J. Mooij"
+                },
+                {
+                    "authorId": "152686780",
+                    "name": "J. Cremers"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "4c9958fba03e84d82c938d54b94ba7ce5e719a56",
+            "title": "An empirical study of one of the simplest causal prediction algorithms",
+            "url": "https://www.semanticscholar.org/paper/4c9958fba03e84d82c938d54b94ba7ce5e719a56",
+            "venue": "",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "46228078",
+                    "name": "Karlie S. McDonald"
+                },
+                {
+                    "authorId": "144862459",
+                    "name": "D. Ryder"
+                },
+                {
+                    "authorId": "144058267",
+                    "name": "M. Tighe"
+                }
+            ],
+            "doi": "10.1016/j.jenvman.2015.02.031",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "71441112eddc7362871494b7e919a0a2f846f110",
+            "title": "Developing best-practice Bayesian Belief Networks in ecological risk assessments for freshwater and estuarine ecosystems: a quantitative review.",
+            "url": "https://www.semanticscholar.org/paper/71441112eddc7362871494b7e919a0a2f846f110",
+            "venue": "Journal of environmental management",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "48503752",
+                    "name": "Yiheng Liang"
+                },
+                {
+                    "authorId": "1806619",
+                    "name": "Armin R. Mikler"
+                }
+            ],
+            "doi": "10.1109/BigData.2014.7004421",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "31218fd916fb716e96d5689e35ba711dfa4f5056",
+            "title": "Big data problems on discovering and analyzing causal relationships in epidemiological data",
+            "url": "https://www.semanticscholar.org/paper/31218fd916fb716e96d5689e35ba711dfa4f5056",
+            "venue": "2014 IEEE International Conference on Big Data (Big Data)",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2199638",
+                    "name": "Sofia Triantafillou"
+                },
+                {
+                    "authorId": "3032369",
+                    "name": "I. Tsamardinos"
+                },
+                {
+                    "authorId": "2179370",
+                    "name": "Anna Roumpelaki"
+                }
+            ],
+            "doi": "10.1007/978-3-319-11433-0_32",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "91f0f685c4480cff895b53340ee4954037cd7302",
+            "title": "Learning Neighborhoods of High Confidence in Constraint-Based Causal Discovery",
+            "url": "https://www.semanticscholar.org/paper/91f0f685c4480cff895b53340ee4954037cd7302",
+            "venue": "Probabilistic Graphical Models",
+            "year": 2014
+        },
+        {
+            "arxivId": "1406.0531",
+            "authors": [
+                {
+                    "authorId": "2187716",
+                    "name": "Ricardo Silva"
+                },
+                {
+                    "authorId": "2156105",
+                    "name": "R. Evans"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "d1393e305bc20fa3ad3a83a0282a8bddce29ade6",
+            "title": "Causal Inference through a Witness Protection Program",
+            "url": "https://www.semanticscholar.org/paper/d1393e305bc20fa3ad3a83a0282a8bddce29ade6",
+            "venue": "J. Mach. Learn. Res.",
+            "year": 2014
+        },
+        {
+            "arxivId": "1401.5636",
+            "authors": [
+                {
+                    "authorId": "47505252",
+                    "name": "Takanori Inazumi"
+                },
+                {
+                    "authorId": "1704749",
+                    "name": "T. Washio"
+                },
+                {
+                    "authorId": "2053931",
+                    "name": "Shohei Shimizu"
+                },
+                {
+                    "authorId": "1723323",
+                    "name": "J. Suzuki"
+                },
+                {
+                    "authorId": "38696575",
+                    "name": "Akihiro Yamamoto"
+                },
+                {
+                    "authorId": "1704932",
+                    "name": "Y. Kawahara"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "d53e4bdb9bb95012d7b4d67a1f7bae8a7f07bfe8",
+            "title": "Causal Discovery in a Binary Exclusive-or Skew Acyclic Model: BExSAM",
+            "url": "https://www.semanticscholar.org/paper/d53e4bdb9bb95012d7b4d67a1f7bae8a7f07bfe8",
+            "venue": "ArXiv",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1786185",
+                    "name": "Jiuyong Li"
+                },
+                {
+                    "authorId": "3141770",
+                    "name": "T. Le"
+                },
+                {
+                    "authorId": "1518051372",
+                    "name": "Lin Liu"
+                },
+                {
+                    "authorId": "2108374005",
+                    "name": "Jixue Liu"
+                },
+                {
+                    "authorId": "2111473952",
+                    "name": "Zhou Jin"
+                },
+                {
+                    "authorId": "2153219806",
+                    "name": "Bing-Yu Sun"
+                }
+            ],
+            "doi": "10.1109/ICDMW.2013.88",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "40fe734efb05972405ddc3d2e9d8cdc346fb46d8",
+            "title": "Mining Causal Association Rules",
+            "url": "https://www.semanticscholar.org/paper/40fe734efb05972405ddc3d2e9d8cdc346fb46d8",
+            "venue": "2013 IEEE 13th International Conference on Data Mining Workshops",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2111473952",
+                    "name": "Zhou Jin"
+                },
+                {
+                    "authorId": "1786185",
+                    "name": "Jiuyong Li"
+                },
+                {
+                    "authorId": "1518051372",
+                    "name": "Lin Liu"
+                },
+                {
+                    "authorId": "3141770",
+                    "name": "T. Le"
+                },
+                {
+                    "authorId": "2153219806",
+                    "name": "Bing-Yu Sun"
+                },
+                {
+                    "authorId": "1730575",
+                    "name": "Rujing Wang"
+                }
+            ],
+            "doi": "10.1109/ICDM.2012.36",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8b16fdeedf13ada2ec8177a1829bdcf258317011",
+            "title": "Discovery of Causal Rules Using Partial Association",
+            "url": "https://www.semanticscholar.org/paper/8b16fdeedf13ada2ec8177a1829bdcf258317011",
+            "venue": "2012 IEEE 12th International Conference on Data Mining",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2990531",
+                    "name": "D. Marbach"
+                },
+                {
+                    "authorId": "2587258",
+                    "name": "J. Costello"
+                },
+                {
+                    "authorId": "2208072",
+                    "name": "R. K\u00fcffner"
+                },
+                {
+                    "authorId": "144709696",
+                    "name": "N. Vega"
+                },
+                {
+                    "authorId": "3316021",
+                    "name": "R. Prill"
+                },
+                {
+                    "authorId": "143823466",
+                    "name": "Diogo M. Camacho"
+                },
+                {
+                    "authorId": "35232859",
+                    "name": "K. Allison"
+                },
+                {
+                    "authorId": "2809250",
+                    "name": "Manolis Kellis"
+                },
+                {
+                    "authorId": "2231125920",
+                    "name": "J. Collins"
+                },
+                {
+                    "authorId": "2003079",
+                    "name": "G. Stolovitzky"
+                }
+            ],
+            "doi": "10.1038/nmeth.2016",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c27e16cf9b626e983ad6372a25e98e060053afcb",
+            "title": "Wisdom of crowds for robust gene network inference",
+            "url": "https://www.semanticscholar.org/paper/c27e16cf9b626e983ad6372a25e98e060053afcb",
+            "venue": "Nature Methods",
+            "year": 2012
+        },
+        {
+            "arxivId": "1202.3711",
+            "authors": [
+                {
+                    "authorId": "3234629",
+                    "name": "Tom Claassen"
+                },
+                {
+                    "authorId": "1790356",
+                    "name": "T. Heskes"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "6f6b71b7ace2c2f07b715e1378f08e868e7f96d0",
+            "title": "A Logical Characterization of Constraint-Based Causal Discovery",
+            "url": "https://www.semanticscholar.org/paper/6f6b71b7ace2c2f07b715e1378f08e868e7f96d0",
+            "venue": "UAI",
+            "year": 2011
+        },
+        {
+            "arxivId": "1202.3736",
+            "authors": [
+                {
+                    "authorId": "47505252",
+                    "name": "Takanori Inazumi"
+                },
+                {
+                    "authorId": "1704749",
+                    "name": "T. Washio"
+                },
+                {
+                    "authorId": "2053931",
+                    "name": "Shohei Shimizu"
+                },
+                {
+                    "authorId": "1723323",
+                    "name": "J. Suzuki"
+                },
+                {
+                    "authorId": "38696575",
+                    "name": "Akihiro Yamamoto"
+                },
+                {
+                    "authorId": "1704932",
+                    "name": "Y. Kawahara"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "fcf1b78b2b1213756eb32ff595641559eb232197",
+            "title": "Discovering causal structures in binary exclusive-or skew acyclic models",
+            "url": "https://www.semanticscholar.org/paper/fcf1b78b2b1213756eb32ff595641559eb232197",
+            "venue": "UAI",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3234629",
+                    "name": "Tom Claassen"
+                },
+                {
+                    "authorId": "1790356",
+                    "name": "T. Heskes"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "2605b9b62e746c6c4e607874647ddf91d7eb4a95",
+            "title": "Causal discovery in multiple models from different experiments",
+            "url": "https://www.semanticscholar.org/paper/2605b9b62e746c6c4e607874647ddf91d7eb4a95",
+            "venue": "NIPS",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2116858683",
+                    "name": "Laura E. Brown"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "dbe9b405458ed3ac9f449e10a65288a3e305a5d1",
+            "title": "Novel Methods for Variable Selection in Non-faithful Domains, Understanding Support Vector Machines, Learning Regions of Bayesian Networks, and Prediction Under Manipulation",
+            "url": "https://www.semanticscholar.org/paper/dbe9b405458ed3ac9f449e10a65288a3e305a5d1",
+            "venue": "",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "38803288",
+                    "name": "Afsaneh Shirazi"
+                },
+                {
+                    "authorId": "2152179732",
+                    "name": "Jianying Hu"
+                },
+                {
+                    "authorId": "2110447955",
+                    "name": "Moninder Singh"
+                },
+                {
+                    "authorId": "1687987",
+                    "name": "M. Squillante"
+                },
+                {
+                    "authorId": "144053687",
+                    "name": "A. Mojsilovic"
+                }
+            ],
+            "doi": "10.1109/SOLI.2009.5203963",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "46178a2265dfbbe80cdd4a0c524932d64fbe7574",
+            "title": "A framework for combined bayesian analysis and optimization for services delivery",
+            "url": "https://www.semanticscholar.org/paper/46178a2265dfbbe80cdd4a0c524932d64fbe7574",
+            "venue": "2009 IEEE/INFORMS International Conference on Service Operations, Logistics and Informatics",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2060661",
+                    "name": "D. Brokenshire"
+                },
+                {
+                    "authorId": "2107989525",
+                    "name": "Vivekanandan Kumar"
+                }
+            ],
+            "doi": "10.3233/978-1-60750-028-5-257",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "0863361e482afe4ae812da170bc7c1ad741a01f6",
+            "title": "Discovering Causal Models of Self-Regulated Learning",
+            "url": "https://www.semanticscholar.org/paper/0863361e482afe4ae812da170bc7c1ad741a01f6",
+            "venue": "AIED",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "40442847",
+                    "name": "C. Yoo"
+                },
+                {
+                    "authorId": "3037045",
+                    "name": "Erik M. Brilz"
+                }
+            ],
+            "doi": "10.1111/j.1749-6632.2008.03749.x",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a9b60b6182cdcacee675bbae807d44b6d2d148c5",
+            "title": "The Five\u2010Gene\u2010Network Data Analysis with Local Causal Discovery Algorithm Using Causal Bayesian Networks",
+            "url": "https://www.semanticscholar.org/paper/a9b60b6182cdcacee675bbae807d44b6d2d148c5",
+            "venue": "Annals of the New York Academy of Sciences",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2116858683",
+                    "name": "Laura E. Brown"
+                },
+                {
+                    "authorId": "3032369",
+                    "name": "I. Tsamardinos"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "708b53cdfb7ca06b5fda4f23e7b3418805d9a7f5",
+            "title": "A Strategy for Making Predictions Under Manipulation",
+            "url": "https://www.semanticscholar.org/paper/708b53cdfb7ca06b5fda4f23e7b3418805d9a7f5",
+            "venue": "WCCI Causation and Prediction Challenge",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145945701",
+                    "name": "S. Mani"
+                },
+                {
+                    "authorId": "1803212",
+                    "name": "C. Aliferis"
+                },
+                {
+                    "authorId": "1702228",
+                    "name": "A. Statnikov"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "218f2d347d6160ffa59d4c6a3110091fe404dab5",
+            "title": "Bayesian Algorithms for Causal Data Mining",
+            "url": "https://www.semanticscholar.org/paper/218f2d347d6160ffa59d4c6a3110091fe404dab5",
+            "venue": "NIPS Causality: Objectives and Assessment",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1743797",
+                    "name": "Isabelle M Guyon"
+                },
+                {
+                    "authorId": "1700657",
+                    "name": "D. Janzing"
+                },
+                {
+                    "authorId": "66191239",
+                    "name": "Bernhard Schlkopf"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f478f9b043284821c17df22972ee2a065789bd60",
+            "title": "Causality: Objectives and assessment",
+            "url": "https://www.semanticscholar.org/paper/f478f9b043284821c17df22972ee2a065789bd60",
+            "venue": "NIPS 2008",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3234629",
+                    "name": "Tom Claassen"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "956b4854244b6ed1ed3d4a4e7fec948629e53e0c",
+            "title": "Causal discovery and logic",
+            "url": "https://www.semanticscholar.org/paper/956b4854244b6ed1ed3d4a4e7fec948629e53e0c",
+            "venue": "",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2046269008",
+                    "name": "Havisha Nadendla"
+                },
+                {
+                    "authorId": "2289233930",
+                    "name": "Pujit Pavan Etha"
+                },
+                {
+                    "authorId": "2171571",
+                    "name": "Pradeep Chowriappa"
+                }
+            ],
+            "doi": "10.1109/ACCESS.2024.3372369",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c42113f230e1134f87afdd36dc4787989960753a",
+            "title": "Overcoming Confounding Bias in Causal Discovery Using Minimum Redundancy and Maximum Relevancy Constraint",
+            "url": "https://www.semanticscholar.org/paper/c42113f230e1134f87afdd36dc4787989960753a",
+            "venue": "IEEE Access",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "47624715",
+                    "name": "M. Huber"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "efd76087fcb04fa3d2379a83ffa80ca022d233c0",
+            "title": "Testing the identi\ufb01cation of causal e\ufb00ects in data",
+            "url": "https://www.semanticscholar.org/paper/efd76087fcb04fa3d2379a83ffa80ca022d233c0",
+            "venue": "",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2129692358",
+                    "name": "Y. Sreeraman"
+                },
+                {
+                    "authorId": "144375804",
+                    "name": "S. Pandian"
+                }
+            ],
+            "doi": "10.32604/iasc.2021.017256",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "52dce4c47e6cb2241583aab604a5e87ac9fd080f",
+            "title": "Design and Experimentation of Causal Relationship Discovery among Features of Healthcare Datasets",
+            "url": "https://www.semanticscholar.org/paper/52dce4c47e6cb2241583aab604a5e87ac9fd080f",
+            "venue": "Intelligent Automation & Soft Computing",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "152214561",
+                    "name": "Jaime Sevilla"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9b21a44053e0667becd6e9517d5df707bd0cd3d7",
+            "title": "Explaining data using causal Bayesian networks",
+            "url": "https://www.semanticscholar.org/paper/9b21a44053e0667becd6e9517d5df707bd0cd3d7",
+            "venue": "NL4XAI",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2072642455",
+                    "name": "J. M. Alonso"
+                },
+                {
+                    "authorId": "2280598821",
+                    "name": "Alejandro Catala"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "cb66b1fd9056c0564bc7939f2ef60cc4e91ddcf9",
+            "title": "2nd Workshop on Interactive Natural Language Technology for Explainable Arti\ufb01cial Intelligence",
+            "url": "https://www.semanticscholar.org/paper/cb66b1fd9056c0564bc7939f2ef60cc4e91ddcf9",
+            "venue": "",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "6efb696463e7e7e58352c791c502ddb0ba841e7c",
+            "title": "Causal Structure Learning from Experiments and Observations",
+            "url": "https://www.semanticscholar.org/paper/6efb696463e7e7e58352c791c502ddb0ba841e7c",
+            "venue": "",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "97692412",
+                    "name": "X. Fang"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "711282b852a187563c7e792b93525d7de7beaa91",
+            "title": "Uplift modeling for randomized experiments and observational studies",
+            "url": "https://www.semanticscholar.org/paper/711282b852a187563c7e792b93525d7de7beaa91",
+            "venue": "",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2187716",
+                    "name": "Ricardo Silva"
+                },
+                {
+                    "authorId": "2053931",
+                    "name": "Shohei Shimizu"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d603cc8ae3cfa9418499443f25034359fa8afd17",
+            "title": "Learning Instrumental Variables with Structural and Non-Gaussianity Assumptions",
+            "url": "https://www.semanticscholar.org/paper/d603cc8ae3cfa9418499443f25034359fa8afd17",
+            "venue": "J. Mach. Learn. Res.",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2072964740",
+                    "name": "Manal Alharbi"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "f869ae10cd0f554006790863616dca0a125a6330",
+            "title": "Efficient Methods for Mining Association Rules from Uncertain Data",
+            "url": "https://www.semanticscholar.org/paper/f869ae10cd0f554006790863616dca0a125a6330",
+            "venue": "",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": null,
+                    "name": "Manal Alharbi"
+                },
+                {
+                    "authorId": "143856869",
+                    "name": "S. Rajasekaran"
+                }
+            ],
+            "doi": "10.1109/ISSPIT.2015.7394368",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "07cc29791d036db6fec408cf2e0096fb4af34b3b",
+            "title": "Disjunctive combined causal rules mining",
+            "url": "https://www.semanticscholar.org/paper/07cc29791d036db6fec408cf2e0096fb4af34b3b",
+            "venue": "2015 IEEE International Symposium on Signal Processing and Information Technology (ISSPIT)",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "152686780",
+                    "name": "J. Cremers"
+                },
+                {
+                    "authorId": "1696158",
+                    "name": "J. Mooij"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "873810695941f9b59265c8e388cd88f7ee03d575",
+            "title": "An Empirical Study of the Simplest Causal Prediction Algorithm",
+            "url": "https://www.semanticscholar.org/paper/873810695941f9b59265c8e388cd88f7ee03d575",
+            "venue": "ACI@UAI",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2054920847",
+                    "name": "Adrian Joseph"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "0120647102dd5ab73113a74000824a266d969398",
+            "title": "Simple low cost causal discovery using mutual information and domain knowledge",
+            "url": "https://www.semanticscholar.org/paper/0120647102dd5ab73113a74000824a266d969398",
+            "venue": "",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3234629",
+                    "name": "Tom Claassen"
+                },
+                {
+                    "authorId": "1790356",
+                    "name": "T. Heskes"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9de7533fb9ea36076b99a4a2d432f94481cea08c",
+            "title": "Learning causal network structure from multiple (in)dependence models",
+            "url": "https://www.semanticscholar.org/paper/9de7533fb9ea36076b99a4a2d432f94481cea08c",
+            "venue": "",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145945701",
+                    "name": "S. Mani"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e5b734873a1a4c5d1195c2c2e91c1c750917f0fb",
+            "title": "Causal Discovery Algorithms based on Y Structures",
+            "url": "https://www.semanticscholar.org/paper/e5b734873a1a4c5d1195c2c2e91c1c750917f0fb",
+            "venue": "",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "119444423",
+                    "name": "Cuadernos de Econom\u00eda"
+                },
+                {
+                    "authorId": "2261985996",
+                    "name": "Alex Coad Dominik"
+                },
+                {
+                    "authorId": "2261993237",
+                    "name": "Janzing Paul"
+                },
+                {
+                    "authorId": "2261985535",
+                    "name": "Nightingale A. Coad"
+                },
+                {
+                    "authorId": "2261985533",
+                    "name": "D. Janzing"
+                },
+                {
+                    "authorId": "2261986476",
+                    "name": "Sara Amoroso"
+                },
+                {
+                    "authorId": "2261986175",
+                    "name": "Eric Bartelsman"
+                },
+                {
+                    "authorId": "2261963881",
+                    "name": "Marco Capasso"
+                },
+                {
+                    "authorId": "1418007383",
+                    "name": "Sebastiano Cattaruzzo"
+                },
+                {
+                    "authorId": "3098280",
+                    "name": "Francesca Chiaromonte"
+                },
+                {
+                    "authorId": "2261986575",
+                    "name": "Sergio Chi\u00f3n"
+                },
+                {
+                    "authorId": "2259293115",
+                    "name": "Giovanni Dosi"
+                },
+                {
+                    "authorId": "3235283",
+                    "name": "O. Granstrand"
+                },
+                {
+                    "authorId": "66198939",
+                    "name": "Marco Grazzi"
+                },
+                {
+                    "authorId": "2261984129",
+                    "name": "Alex Kleibrink"
+                },
+                {
+                    "authorId": "2071033",
+                    "name": "Alessio Moneta"
+                },
+                {
+                    "authorId": "2261985881",
+                    "name": "Gabriel Natividad"
+                },
+                {
+                    "authorId": "1580505211",
+                    "name": "Jens Sorvik"
+                },
+                {
+                    "authorId": "145706341",
+                    "name": "Mercedes Teruel"
+                },
+                {
+                    "authorId": "47050236",
+                    "name": "A. Vezzani"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "cb4938800dd7bfd0932ec5267fa41b891b1358c4",
+            "title": "TOOLS FOR CAUSAL INFERENCE FROM CROSS-SECTIONAL INNOVATION SURVEYS WITH CONTINUOUS OR DISCRETE VARIABLES: THEORY AND APPLICATIONS",
+            "url": "https://www.semanticscholar.org/paper/cb4938800dd7bfd0932ec5267fa41b891b1358c4",
+            "venue": "",
+            "year": null
+        },
+        {
+            "arxivId": null,
+            "authors": [],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "0cb5a8827ad89bb364301d1d258b016b56576b7c",
+            "title": "An Empirical Study of the Simplest Causal Prediction Algorithm",
+            "url": "https://www.semanticscholar.org/paper/0cb5a8827ad89bb364301d1d258b016b56576b7c",
+            "venue": "",
+            "year": null
+        }
+    ],
+    "corpusId": 128327,
+    "doi": null,
+    "fieldsOfStudy": [
+        "Computer Science",
+        "Mathematics"
+    ],
+    "influentialCitationCount": 6,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 63,
+    "numCiting": 22,
+    "paperId": "dedca83485828adbb1d9954b682ffc4c96cc9ae2",
+    "references": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2820860",
+                    "name": "R. Neapolitan"
+                }
+            ],
+            "doi": "10.1145/1327942.1327961",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d7cf0e940fe0d909c8c87450ee18f03450b2e208",
+            "title": "Learning Bayesian networks",
+            "url": "https://www.semanticscholar.org/paper/d7cf0e940fe0d909c8c87450ee18f03450b2e208",
+            "venue": "KDD '07",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2059370547",
+                    "name": "Nicholas Rose"
+                }
+            ],
+            "doi": "10.1198/tech.2005.s835",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f95c515a6a742a762e0537326bc6a39593067095",
+            "title": "Highly Structured Stochastic Systems",
+            "url": "https://www.semanticscholar.org/paper/f95c515a6a742a762e0537326bc6a39593067095",
+            "venue": "Technometrics",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145607066",
+                    "name": "J. Robins"
+                },
+                {
+                    "authorId": "2758080",
+                    "name": "R. Scheines"
+                },
+                {
+                    "authorId": "143648560",
+                    "name": "P. Spirtes"
+                },
+                {
+                    "authorId": "1733999",
+                    "name": "L. Wasserman"
+                }
+            ],
+            "doi": "10.1093/BIOMET/90.3.491",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "eee8de0365d0addde788ac0fc15931a19e154949",
+            "title": "Uniform consistency in causal inference",
+            "url": "https://www.semanticscholar.org/paper/eee8de0365d0addde788ac0fc15931a19e154949",
+            "venue": "",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145544528",
+                    "name": "T. Burr"
+                }
+            ],
+            "doi": "10.1198/tech.2003.s776",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "1c6356a688a273889fb71bab17973ed10483d97f",
+            "title": "Causation, Prediction, and Search",
+            "url": "https://www.semanticscholar.org/paper/1c6356a688a273889fb71bab17973ed10483d97f",
+            "venue": "Technometrics",
+            "year": 2003
+        },
+        {
+            "arxivId": "1301.0608",
+            "authors": [
+                {
+                    "authorId": "47068849",
+                    "name": "Jin Tian"
+                },
+                {
+                    "authorId": "145430701",
+                    "name": "J. Pearl"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "3c818cff1c82f46f0109a05105c8aa6d304f97f1",
+            "title": "On the Testable Implications of Causal Models with Hidden Variables",
+            "url": "https://www.semanticscholar.org/paper/3c818cff1c82f46f0109a05105c8aa6d304f97f1",
+            "venue": "UAI",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "10726446",
+                    "name": "T. Richardson"
+                },
+                {
+                    "authorId": "143648560",
+                    "name": "P. Spirtes"
+                }
+            ],
+            "doi": "10.1214/AOS/1031689015",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "3f4e2874b33bd9cbb9d74662f4ea33781b5a1397",
+            "title": "Ancestral graph Markov models",
+            "url": "https://www.semanticscholar.org/paper/3f4e2874b33bd9cbb9d74662f4ea33781b5a1397",
+            "venue": "",
+            "year": 2002
+        },
+        {
+            "arxivId": "1302.4958",
+            "authors": [
+                {
+                    "authorId": "48099028",
+                    "name": "D. Heckerman"
+                }
+            ],
+            "doi": "10.1017/CBO9780511611308.012",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "f900aff97ed09a7e2ab89f07bf5bdf93531a91c3",
+            "title": "A Bayesian Approach to Learning Causal Networks",
+            "url": "https://www.semanticscholar.org/paper/f900aff97ed09a7e2ab89f07bf5bdf93531a91c3",
+            "venue": "UAI",
+            "year": 1995
+        },
+        {
+            "arxivId": "1302.4983",
+            "authors": [
+                {
+                    "authorId": "143648560",
+                    "name": "P. Spirtes"
+                },
+                {
+                    "authorId": "50004012",
+                    "name": "Christopher Meek"
+                },
+                {
+                    "authorId": "10726446",
+                    "name": "T. Richardson"
+                }
+            ],
+            "doi": "10.7551/mitpress/2006.003.0009",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "998689f250121428024eed926b3c9e57727be83c",
+            "title": "Causal Inference in the Presence of Latent Variables and Selection Bias",
+            "url": "https://www.semanticscholar.org/paper/998689f250121428024eed926b3c9e57727be83c",
+            "venue": "UAI",
+            "year": 1995
+        },
+        {
+            "arxivId": "1302.6815",
+            "authors": [
+                {
+                    "authorId": "48099028",
+                    "name": "D. Heckerman"
+                },
+                {
+                    "authorId": "144527211",
+                    "name": "D. Geiger"
+                },
+                {
+                    "authorId": "1724065",
+                    "name": "D. M. Chickering"
+                }
+            ],
+            "doi": "10.1007/BF00994016",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "206f12e0f963dff4dc4edc5c9cab985a5b9e5d71",
+            "title": "Learning Bayesian networks: The combination of knowledge and statistical data",
+            "url": "https://www.semanticscholar.org/paper/206f12e0f963dff4dc4edc5c9cab985a5b9e5d71",
+            "venue": "Machine Learning",
+            "year": 1994
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1988445",
+                    "name": "Thomas Verma"
+                },
+                {
+                    "authorId": "145430701",
+                    "name": "J. Pearl"
+                }
+            ],
+            "doi": "10.1145/3501714.3501732",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "17d451204a460a4739c7b1627a128a125f4af120",
+            "title": "Equivalence and Synthesis of Causal Models",
+            "url": "https://www.semanticscholar.org/paper/17d451204a460a4739c7b1627a128a125f4af120",
+            "venue": "UAI",
+            "year": 1990
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2985732",
+                    "name": "R. Nishii"
+                }
+            ],
+            "doi": "10.1016/0047-259X(88)90137-6",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "8a6bcc79a5b2ae8747fe0c09b59f6ad4c73ea970",
+            "title": "Maximum likelihood principle and model selection when the true model is unspecified",
+            "url": "https://www.semanticscholar.org/paper/8a6bcc79a5b2ae8747fe0c09b59f6ad4c73ea970",
+            "venue": "",
+            "year": 1988
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145564815",
+                    "name": "D. Haughton"
+                }
+            ],
+            "doi": "10.1214/AOS/1176350709",
+            "intent": [
+                "result"
+            ],
+            "isInfluential": false,
+            "paperId": "2eedb7c688b6756f1fda0c268dc75c71ee50ace3",
+            "title": "On the Choice of a Model to Fit Data from an Exponential Family",
+            "url": "https://www.semanticscholar.org/paper/2eedb7c688b6756f1fda0c268dc75c71ee50ace3",
+            "venue": "",
+            "year": 1988
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "48099028",
+                    "name": "D. Heckerman"
+                },
+                {
+                    "authorId": "50004012",
+                    "name": "Christopher Meek"
+                },
+                {
+                    "authorId": "1726406",
+                    "name": "G. Cooper"
+                }
+            ],
+            "doi": "10.1007/3-540-33486-6_1",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f674b43fc56b6e3e6794e1fd640f6781b4e43491",
+            "title": "A Bayesian Approach to Causal Discovery",
+            "url": "https://www.semanticscholar.org/paper/f674b43fc56b6e3e6794e1fd640f6781b4e43491",
+            "venue": "",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1726406",
+                    "name": "G. Cooper"
+                },
+                {
+                    "authorId": "145945701",
+                    "name": "S. Mani"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "935941f2959a28d03d0fc70b9f38a27e38bca6fd",
+            "title": "A bayesian local causal discovery framework",
+            "url": "https://www.semanticscholar.org/paper/935941f2959a28d03d0fc70b9f38a27e38bca6fd",
+            "venue": "",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145945701",
+                    "name": "S. Mani"
+                },
+                {
+                    "authorId": "1726406",
+                    "name": "G. Cooper"
+                }
+            ],
+            "doi": "10.3233/978-1-60750-949-3-731",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "1ff9efedd0742563a3535430abce498e12109c5a",
+            "title": "Causal Discovery Using A Bayesian Local Causal Discovery Algorithm",
+            "url": "https://www.semanticscholar.org/paper/1ff9efedd0742563a3535430abce498e12109c5a",
+            "venue": "MedInfo",
+            "year": 2004
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1724065",
+                    "name": "D. M. Chickering"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "result"
+            ],
+            "isInfluential": false,
+            "paperId": "07e6b38dc70fc45e50ee780f36e767bed15544fb",
+            "title": "Optimal Structure Identification With Greedy Search",
+            "url": "https://www.semanticscholar.org/paper/07e6b38dc70fc45e50ee780f36e767bed15544fb",
+            "venue": "J. Mach. Learn. Res.",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143648560",
+                    "name": "P. Spirtes"
+                },
+                {
+                    "authorId": "3058012",
+                    "name": "C. Glymour"
+                },
+                {
+                    "authorId": "2758080",
+                    "name": "R. Scheines"
+                }
+            ],
+            "doi": "10.1007/978-1-4612-2748-9",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5b3b9fe128e6849d59a26d7ceda57baad2524815",
+            "title": "Causation, prediction, and search",
+            "url": "https://www.semanticscholar.org/paper/5b3b9fe128e6849d59a26d7ceda57baad2524815",
+            "venue": "",
+            "year": 1993
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145430701",
+                    "name": "J. Pearl"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "1826df6f270cae70afacb5f6ae1d5175db903d5e",
+            "title": "Probabilistic reasoning in intelligent systems - networks of plausible inference",
+            "url": "https://www.semanticscholar.org/paper/1826df6f270cae70afacb5f6ae1d5175db903d5e",
+            "venue": "Morgan Kaufmann series in representation and reasoning",
+            "year": 1989
+        },
+        {
+            "arxivId": null,
+            "authors": [],
+            "doi": "10.1016/c2009-0-27609-4",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "5bf6f01402e1648b7d1e6c9200ede6cb1af30123",
+            "title": "Probabilistic reasoning in intelligent systems",
+            "url": "https://www.semanticscholar.org/paper/5bf6f01402e1648b7d1e6c9200ede6cb1af30123",
+            "venue": "",
+            "year": 1988
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Mathematics",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        },
+        {
+            "category": "Mathematics",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "A Theoretical Study of Y Structures for Causal Discovery",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/dedca83485828adbb1d9954b682ffc4c96cc9ae2",
+    "venue": "Conference on Uncertainty in Artificial Intelligence",
+    "year": 2006
+}

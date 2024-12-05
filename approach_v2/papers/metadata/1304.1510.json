@@ -1,0 +1,883 @@
+{
+    "abstract": "We introduce and analyze the problem of the compilation of decision models from a decision-theoretic perspective. The techniques described allow us to evaluate various configurations of compiled knowledge given the nature of evidential relationships in a domain, the utilities associated with alternative actions, the costs of run-time delays, and the costs of memory. We describe procedures for selecting a subset of the total observations available to be incorporated into a compiled situation-action mapping, in the context of a binary decision with conditional independence of evidence. The methods allow us to incrementally select the best pieces of evidence to add to the set of compiled knowledge in an engineering setting. After presenting several approaches to compilation, we exercise one of the methods to provide insight into the relationship between the distribution over weights of evidence and the preferred degree of compilation.",
+    "arxivId": "1304.1510",
+    "authors": [
+        {
+            "authorId": "48099028",
+            "name": "D. Heckerman",
+            "url": "https://www.semanticscholar.org/author/48099028"
+        },
+        {
+            "authorId": "1778725",
+            "name": "J. Breese",
+            "url": "https://www.semanticscholar.org/author/1778725"
+        },
+        {
+            "authorId": "145479841",
+            "name": "E. Horvitz",
+            "url": "https://www.semanticscholar.org/author/145479841"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": "1911.06263",
+            "authors": [
+                {
+                    "authorId": "2254667926",
+                    "name": "David Heckerman"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5c13bc644c29bfa84eb47aa1f42b9012805cf472",
+            "title": "Probabilistic Similarity Networks",
+            "url": "https://www.semanticscholar.org/paper/5c13bc644c29bfa84eb47aa1f42b9012805cf472",
+            "venue": "",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2069848429",
+                    "name": "Xiang Jianwei"
+                },
+                {
+                    "authorId": "2060842987",
+                    "name": "Liu Shuang"
+                },
+                {
+                    "authorId": "145760434",
+                    "name": "Xu Han"
+                }
+            ],
+            "doi": "10.1145/3318299.3318314",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7533909d4577be75112f6951f69e08749d49af93",
+            "title": "A Monte-Carlo Approach to the Value of Information in Crowdsourcing Quality Control Tasks",
+            "url": "https://www.semanticscholar.org/paper/7533909d4577be75112f6951f69e08749d49af93",
+            "venue": "ICMLC '19",
+            "year": 2019
+        },
+        {
+            "arxivId": "1304.1094",
+            "authors": [
+                {
+                    "authorId": "2738963",
+                    "name": "K. Basye"
+                },
+                {
+                    "authorId": "2288790407",
+                    "name": "Moises Lejtert"
+                },
+                {
+                    "authorId": "2288790821",
+                    "name": "Keiji Kanazawat"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "8d8dd3fb670245ed58814a2aa06501127e501a7c",
+            "title": "Reducing Uncertainty in Navigation and Exploration",
+            "url": "https://www.semanticscholar.org/paper/8d8dd3fb670245ed58814a2aa06501127e501a7c",
+            "venue": "ArXiv",
+            "year": 2013
+        },
+        {
+            "arxivId": "1302.6795",
+            "authors": [
+                {
+                    "authorId": "69471023",
+                    "name": "Bruce D'Ambrosio"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "aa940043a11f18faed3a72f9c07ab1a7991c7800",
+            "title": "Symbolic Probabilitistic Inference in Large BN2O Networks",
+            "url": "https://www.semanticscholar.org/paper/aa940043a11f18faed3a72f9c07ab1a7991c7800",
+            "venue": "ArXiv",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1752599",
+                    "name": "K. Morik"
+                },
+                {
+                    "authorId": "49649484",
+                    "name": "M. Kaiser"
+                },
+                {
+                    "authorId": "2072576",
+                    "name": "V. Klingspor"
+                }
+            ],
+            "doi": "10.1007/978-1-4615-5239-0",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "74f5fa1988007fa725527bc84b721aedeb4008d0",
+            "title": "Making Robots Smarter",
+            "url": "https://www.semanticscholar.org/paper/74f5fa1988007fa725527bc84b721aedeb4008d0",
+            "venue": "Springer US",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145479841",
+                    "name": "E. Horvitz"
+                }
+            ],
+            "doi": "10.1016/S0004-3702(00)00082-5",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "b44348f701651a41df5af9b6c1b12cb25a5d9137",
+            "title": "Principles and applications of continual computation",
+            "url": "https://www.semanticscholar.org/paper/b44348f701651a41df5af9b6c1b12cb25a5d9137",
+            "venue": "Artif. Intell.",
+            "year": 2001
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145479841",
+                    "name": "E. Horvitz"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9cbbc5b50f5a9c256256bedbcc80533d96c5d47d",
+            "title": "Continual Computation Policies for Allocating Offline and Real-Time Resources",
+            "url": "https://www.semanticscholar.org/paper/9cbbc5b50f5a9c256256bedbcc80533d96c5d47d",
+            "venue": "IJCAI",
+            "year": 1999
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2271457000",
+                    "name": "Eric Horvitz"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "be7b0bce2fd1cb2ac714b9e0d6be2c13b05728ea",
+            "title": "Thinking Ahead: Continual Computation Policies for Allocating Offline and Real-Time Resources",
+            "url": "https://www.semanticscholar.org/paper/be7b0bce2fd1cb2ac714b9e0d6be2c13b05728ea",
+            "venue": "IJCAI 1999",
+            "year": 1999
+        },
+        {
+            "arxivId": "1301.6706",
+            "authors": [
+                {
+                    "authorId": "2696328",
+                    "name": "M. Horsch"
+                },
+                {
+                    "authorId": "143715817",
+                    "name": "D. Poole"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "efdc877f8cf5748e29ce4e3ac1a3b48b36fab0db",
+            "title": "Estimating the Value of Computation in Flexible Information Refinement",
+            "url": "https://www.semanticscholar.org/paper/efdc877f8cf5748e29ce4e3ac1a3b48b36fab0db",
+            "venue": "UAI",
+            "year": 1999
+        },
+        {
+            "arxivId": "1301.7384",
+            "authors": [
+                {
+                    "authorId": "2696328",
+                    "name": "M. Horsch"
+                },
+                {
+                    "authorId": "143715817",
+                    "name": "D. Poole"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "243886cf1c294a018a2c113c8820794df285cf41",
+            "title": "An Anytime Algorithm for Decision Making under Uncertainty",
+            "url": "https://www.semanticscholar.org/paper/243886cf1c294a018a2c113c8820794df285cf41",
+            "venue": "UAI",
+            "year": 1998
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145479841",
+                    "name": "E. Horvitz"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "33097462f8fe7e9571d982abb000900a3e8a7b30",
+            "title": "Models of Continual Computation",
+            "url": "https://www.semanticscholar.org/paper/33097462f8fe7e9571d982abb000900a3e8a7b30",
+            "venue": "AAAI/IAAI",
+            "year": 1997
+        },
+        {
+            "arxivId": "1302.3583",
+            "authors": [
+                {
+                    "authorId": "2696328",
+                    "name": "M. Horsch"
+                },
+                {
+                    "authorId": "143715817",
+                    "name": "D. Poole"
+                }
+            ],
+            "doi": "10.14288/1.0051145",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c7bd01104d4013339919f950e6c4c1cfc3dca399",
+            "title": "Flexible Policy Construction by Information Refinement",
+            "url": "https://www.semanticscholar.org/paper/c7bd01104d4013339919f950e6c4c1cfc3dca399",
+            "venue": "UAI",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "69471023",
+                    "name": "Bruce D'Ambrosio"
+                }
+            ],
+            "doi": "10.1117/12.169384",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "afe8c5afc536dce1207f3c57f090991ff561a410",
+            "title": "Real-time value-driven diagnosis",
+            "url": "https://www.semanticscholar.org/paper/afe8c5afc536dce1207f3c57f090991ff561a410",
+            "venue": "Defense, Security, and Sensing",
+            "year": 1994
+        },
+        {
+            "arxivId": "1303.1494",
+            "authors": [
+                {
+                    "authorId": "2266894",
+                    "name": "P. Lehner"
+                },
+                {
+                    "authorId": "145182531",
+                    "name": "A. Sadigh"
+                }
+            ],
+            "doi": "10.1016/B978-1-4832-1451-1.50045-7",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "59316b53a3be21ef455a19283be8bf2afb462234",
+            "title": "Two Procedures for Compiling Influence Diagrams",
+            "url": "https://www.semanticscholar.org/paper/59316b53a3be21ef455a19283be8bf2afb462234",
+            "venue": "UAI",
+            "year": 1993
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1699246",
+                    "name": "K. Poh"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "4d1937eb3cff62c387e1f65918328a513cf148f3",
+            "title": "Utility-based categorization",
+            "url": "https://www.semanticscholar.org/paper/4d1937eb3cff62c387e1f65918328a513cf148f3",
+            "venue": "",
+            "year": 1993
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1680510",
+                    "name": "T. Dean"
+                }
+            ],
+            "doi": "10.1002/int.4550060405",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "3bbae20b765afad46cbb11f8693de1c91a609229",
+            "title": "Decision\u2010theoretic control of inference for time\u2010critical applications",
+            "url": "https://www.semanticscholar.org/paper/3bbae20b765afad46cbb11f8693de1c91a609229",
+            "venue": "Int. J. Intell. Syst.",
+            "year": 1991
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3159612",
+                    "name": "M. Boddy"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "22ac32ac5057555b36cd40eb32c217c5a66aa6fe",
+            "title": "Solving Time-Dependent Problems: A Decision-Theoretic Approach to Planning in Dynamic Environments",
+            "url": "https://www.semanticscholar.org/paper/22ac32ac5057555b36cd40eb32c217c5a66aa6fe",
+            "venue": "",
+            "year": 1991
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1809009",
+                    "name": "S. Musman"
+                },
+                {
+                    "authorId": "1695489",
+                    "name": "LiWu Chang"
+                },
+                {
+                    "authorId": "34565012",
+                    "name": "L. Booker"
+                }
+            ],
+            "doi": "10.1109/TAI.1990.130430",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "bfc2597a44546c14e9799f2c6a48c8a36933d821",
+            "title": "A real time control strategy for Bayesian belief networks with application to ship classification problem solving",
+            "url": "https://www.semanticscholar.org/paper/bfc2597a44546c14e9799f2c6a48c8a36933d821",
+            "venue": "[1990] Proceedings of the 2nd International IEEE Conference on Tools for Artificial Intelligence",
+            "year": 1990
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2247390572",
+                    "name": "Thomas Dean"
+                },
+                {
+                    "authorId": "2286133442",
+                    "name": "Keiji Kanazawa"
+                },
+                {
+                    "authorId": "2247397720",
+                    "name": "John Shewchuk"
+                }
+            ],
+            "doi": "10.1109/ISIC.1990.128525",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "80f86ad6e639682ec67b62e705636390ea76be20",
+            "title": "Prediction, observation and estimation in planning and control",
+            "url": "https://www.semanticscholar.org/paper/80f86ad6e639682ec67b62e705636390ea76be20",
+            "venue": "Proceedings. 5th IEEE International Symposium on Intelligent Control 1990",
+            "year": 1990
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1731683",
+                    "name": "P. Bonissone"
+                },
+                {
+                    "authorId": "2075550474",
+                    "name": "Peter C. Halverson"
+                }
+            ],
+            "doi": "10.1007/BF01840465",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "2771b2d267e2d84ffb98afcb6ec80cd3700c733e",
+            "title": "Time-constrained reasoning under uncertainty",
+            "url": "https://www.semanticscholar.org/paper/2771b2d267e2d84ffb98afcb6ec80cd3700c733e",
+            "venue": "Real-Time Systems",
+            "year": 1990
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1701341",
+                    "name": "J. Hendler"
+                },
+                {
+                    "authorId": "144551177",
+                    "name": "A. Tate"
+                },
+                {
+                    "authorId": "145068683",
+                    "name": "M. Drummond"
+                }
+            ],
+            "doi": "10.1609/aimag.v11i2.833",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8c61e00235aefe108c6b26cbdb25ee943167054c",
+            "title": "AI Planning: Systems and Techniques",
+            "url": "https://www.semanticscholar.org/paper/8c61e00235aefe108c6b26cbdb25ee943167054c",
+            "venue": "AI Mag.",
+            "year": 1990
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "48632783",
+                    "name": "Wenbo Ma"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "1c0516819ca3fee6aa539a5b5e5109223f363ae5",
+            "title": "Agent-based model of passenger flows in airport terminals",
+            "url": "https://www.semanticscholar.org/paper/1c0516819ca3fee6aa539a5b5e5109223f363ae5",
+            "venue": "",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "102424337",
+                    "name": "J\u00fcrgen-Peter Kretschmer"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "4efdb2b25d715936f5eada7b651cba37ef3161b8",
+            "title": "The Sequencing Problem in Sequential Investigation Processes",
+            "url": "https://www.semanticscholar.org/paper/4efdb2b25d715936f5eada7b651cba37ef3161b8",
+            "venue": "",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2266894",
+                    "name": "P. Lehner"
+                },
+                {
+                    "authorId": "145182531",
+                    "name": "A. Sadigh"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "6ce7eccb78d300df82cfc5c21980c78282eae6c5",
+            "title": "A PROCEDURE FOR COMPILING INFLUENCE DIAGRAMS",
+            "url": "https://www.semanticscholar.org/paper/6ce7eccb78d300df82cfc5c21980c78282eae6c5",
+            "venue": "",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145479841",
+                    "name": "E. Horvitz"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "ab1c32fc26e9874c7ce1cc5dd71b1c3c0c29618d",
+            "title": "Models of Continual Co",
+            "url": "https://www.semanticscholar.org/paper/ab1c32fc26e9874c7ce1cc5dd71b1c3c0c29618d",
+            "venue": "",
+            "year": 1999
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "50785579",
+                    "name": "N. Friedman"
+                },
+                {
+                    "authorId": "1736370",
+                    "name": "D. Koller"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7b8090a74990da3f4cc84de71275284eabe37481",
+            "title": "Qualitative Planning under Assumptions: A Preliminary Report",
+            "url": "https://www.semanticscholar.org/paper/7b8090a74990da3f4cc84de71275284eabe37481",
+            "venue": "",
+            "year": 1994
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "31430928",
+                    "name": "G. Ogasawara"
+                },
+                {
+                    "authorId": "145107462",
+                    "name": "Stuart J. Russell"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "1a02a7743506939eb3f611e1a4b022fa57f16f86",
+            "title": "Two Techniques for Tractable Decision-Theoretic Planning*",
+            "url": "https://www.semanticscholar.org/paper/1a02a7743506939eb3f611e1a4b022fa57f16f86",
+            "venue": "",
+            "year": 1994
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1774398",
+                    "name": "P. Gmytrasiewicz"
+                },
+                {
+                    "authorId": "123336917",
+                    "name": "J. Rosenschein"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "b57f3c83fb83de3068fe57350dcd8fbd6290adad",
+            "title": "The Utility of Embedded Knowledge-Oriented Actions",
+            "url": "https://www.semanticscholar.org/paper/b57f3c83fb83de3068fe57350dcd8fbd6290adad",
+            "venue": "",
+            "year": 1993
+        }
+    ],
+    "corpusId": 14467915,
+    "doi": null,
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 28,
+    "numCiting": 12,
+    "paperId": "9b795a1f630a4559bcd0344a1c30127a3ae11148",
+    "references": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "48099028",
+                    "name": "D. Heckerman"
+                }
+            ],
+            "doi": "10.1002/net.3230200508",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b64851333008e6331f8815619c5a513a3354c9c9",
+            "title": "Probabilistic similarity networks",
+            "url": "https://www.semanticscholar.org/paper/b64851333008e6331f8815619c5a513a3354c9c9",
+            "venue": "Networks",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1709111",
+                    "name": "E. Shortliffe"
+                },
+                {
+                    "authorId": "2254667926",
+                    "name": "David Heckerman"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "40c131fcb77b5cd804b361765be52edae667e4a3",
+            "title": "Probabilistic Similarity Networks",
+            "url": "https://www.semanticscholar.org/paper/40c131fcb77b5cd804b361765be52edae667e4a3",
+            "venue": "",
+            "year": 1991
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "46558286",
+                    "name": "S. K. Andersen"
+                }
+            ],
+            "doi": "10.1016/0004-3702(91)90084-W",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "18aa8a0502e717c114312a3ba63dbb76fbcab47c",
+            "title": "Probabilistic reasoning in intelligent systems: Networks of plausible inference",
+            "url": "https://www.semanticscholar.org/paper/18aa8a0502e717c114312a3ba63dbb76fbcab47c",
+            "venue": "",
+            "year": 1991
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145479841",
+                    "name": "E. Horvitz"
+                },
+                {
+                    "authorId": "1726406",
+                    "name": "G. Cooper"
+                },
+                {
+                    "authorId": "48099028",
+                    "name": "D. Heckerman"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "387a6e3f774def96ffcf7c2adcf850b6dad6ace2",
+            "title": "Reflection and Action Under Scarce Resources: Theoretical Principles and Empirical Study",
+            "url": "https://www.semanticscholar.org/paper/387a6e3f774def96ffcf7c2adcf850b6dad6ace2",
+            "venue": "IJCAI",
+            "year": 1989
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "72419159",
+                    "name": "R. Brooks"
+                }
+            ],
+            "doi": "10.7551/mitpress/1716.003.0009",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "bab1ed20532b44088d9bb4cc7c9612756b3f4cc3",
+            "title": "PLANNING IS JUST A WAY OF AVOIDING FIGURING OUT WHAT TO DO NEXT",
+            "url": "https://www.semanticscholar.org/paper/bab1ed20532b44088d9bb4cc7c9612756b3f4cc3",
+            "venue": "",
+            "year": 1987
+        },
+        {
+            "arxivId": "1304.2759",
+            "authors": [
+                {
+                    "authorId": "145479841",
+                    "name": "E. Horvitz"
+                }
+            ],
+            "doi": "10.1016/0888-613x(88)90148-x",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "da6231ac3da628e748d407c3842bc06b32433ab6",
+            "title": "Reasoning about beliefs and actions under computational resource constraints",
+            "url": "https://www.semanticscholar.org/paper/da6231ac3da628e748d407c3842bc06b32433ab6",
+            "venue": "Int. J. Approx. Reason.",
+            "year": 1987
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1778725",
+                    "name": "J. Breese"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b420ce31f56a34df13caa73730056183a3108976",
+            "title": "Knowledge representation and inference in intelligent decision systems",
+            "url": "https://www.semanticscholar.org/paper/b420ce31f56a34df13caa73730056183a3108976",
+            "venue": "",
+            "year": 1987
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2356307",
+                    "name": "C. Langlotz"
+                },
+                {
+                    "authorId": "1709111",
+                    "name": "E. Shortliffe"
+                },
+                {
+                    "authorId": "3109683",
+                    "name": "Lawrence M. Fagan"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d9b1413e8797837f2bad54a4f533df0e701f5f64",
+            "title": "Using Decision Theory to Justify Heuristics",
+            "url": "https://www.semanticscholar.org/paper/d9b1413e8797837f2bad54a4f533df0e701f5f64",
+            "venue": "AAAI",
+            "year": 1986
+        },
+        {
+            "arxivId": "1304.3091",
+            "authors": [
+                {
+                    "authorId": "48099028",
+                    "name": "D. Heckerman"
+                }
+            ],
+            "doi": "10.1016/B978-0-444-70396-5.50007-8",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "dc9a5468dbde1ddc4295f8792afce80ff10998d1",
+            "title": "An axiomatic framework for belief updates",
+            "url": "https://www.semanticscholar.org/paper/dc9a5468dbde1ddc4295f8792afce80ff10998d1",
+            "venue": "UAI",
+            "year": 1986
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2251211",
+                    "name": "S. Rosenschein"
+                },
+                {
+                    "authorId": "1709512",
+                    "name": "L. Kaelbling"
+                }
+            ],
+            "doi": "10.1016/B978-0-934613-04-0.50009-0",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "c79d8b0c1b169119a40e73f979f3359dbaa20d13",
+            "title": "The Synthesis of Digital Machines With Provable Epistemic Properties",
+            "url": "https://www.semanticscholar.org/paper/c79d8b0c1b169119a40e73f979f3359dbaa20d13",
+            "venue": "TARK",
+            "year": 1986
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1709512",
+                    "name": "L. Kaelbling"
+                }
+            ],
+            "doi": "10.1016/B978-0-934613-30-9.50019-6",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "cde4c508777fcbbd3c5e8c31b32a06dd12aa422f",
+            "title": "An Architecture for Intelligent Reactive Systems",
+            "url": "https://www.semanticscholar.org/paper/cde4c508777fcbbd3c5e8c31b32a06dd12aa422f",
+            "venue": "",
+            "year": 1987
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        },
+        {
+            "category": "Mathematics",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "The Compilation of Decision Models",
+    "topics": [
+        {
+            "topic": "Compiler",
+            "topicId": "13817",
+            "url": "https://www.semanticscholar.org/topic/13817"
+        },
+        {
+            "topic": "Computation",
+            "topicId": "339",
+            "url": "https://www.semanticscholar.org/topic/339"
+        },
+        {
+            "topic": "Decision theory",
+            "topicId": "31461",
+            "url": "https://www.semanticscholar.org/topic/31461"
+        },
+        {
+            "topic": "Reactive planning",
+            "topicId": "44037",
+            "url": "https://www.semanticscholar.org/topic/44037"
+        }
+    ],
+    "url": "https://www.semanticscholar.org/paper/9b795a1f630a4559bcd0344a1c30127a3ae11148",
+    "venue": "Conference on Uncertainty in Artificial Intelligence",
+    "year": 2013
+}

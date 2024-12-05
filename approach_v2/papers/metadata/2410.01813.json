@@ -1,0 +1,2435 @@
+{
+    "abstract": "The disparity in healthcare personnel expertise and medical resources across different regions of the world is a pressing social issue. Artificial intelligence technology offers new opportunities to alleviate this issue. Segment Anything Model (SAM), which excels in intelligent image segmentation, has demonstrated exceptional performance in medical monitoring and assisted diagnosis. Unfortunately, the huge computational and storage overhead of SAM poses significant challenges for deployment on resource-limited edge devices. Quantization is an effective solution for model compression; however, traditional methods rely heavily on original data for calibration, which raises widespread concerns about medical data privacy and security. In this paper, we propose a data-free quantization framework for SAM, called DFQ-SAM, which learns and calibrates quantization parameters without any original data, thus effectively preserving data privacy during model compression. Specifically, we propose pseudo-positive label evolution for segmentation, combined with patch similarity, to fully leverage the semantic and distribution priors in pre-trained models, which facilitates high-quality data synthesis as a substitute for real data. Furthermore, we introduce scale reparameterization to ensure the accuracy of low-bit quantization. We perform extensive segmentation experiments on various datasets, and DFQ-SAM consistently provides significant performance on low-bit quantization. DFQ-SAM eliminates the need for data transfer in cloud-edge collaboration, thereby protecting sensitive data from potential attacks. It enables secure, fast, and personalized healthcare services at the edge, which enhances system efficiency and optimizes resource allocation, and thus facilitating the pervasive application of artificial intelligence in worldwide healthcare.",
+    "arxivId": "2410.01813",
+    "authors": [
+        {
+            "authorId": "6966340",
+            "name": "Zhikai Li",
+            "url": "https://www.semanticscholar.org/author/6966340"
+        },
+        {
+            "authorId": "2283320014",
+            "name": "Jing Zhang",
+            "url": "https://www.semanticscholar.org/author/2283320014"
+        },
+        {
+            "authorId": "2257035774",
+            "name": "Qingyi Gu",
+            "url": "https://www.semanticscholar.org/author/2257035774"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [],
+    "corpusId": 273098855,
+    "doi": "10.48550/arXiv.2410.01813",
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 0,
+    "numCiting": 46,
+    "paperId": "14a0a796c6c6c13adf173eb204763c08db26b4fc",
+    "references": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "6966340",
+                    "name": "Zhikai Li"
+                },
+                {
+                    "authorId": "3718525",
+                    "name": "Xianlei Long"
+                },
+                {
+                    "authorId": "2158318928",
+                    "name": "Junrui Xiao"
+                },
+                {
+                    "authorId": "2257035774",
+                    "name": "Qingyi Gu"
+                }
+            ],
+            "doi": "10.1016/j.patcog.2024.110788",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "2aca17377b0a123ac980ae5f4cbb2bf087c0bdba",
+            "title": "HTQ: Exploring the High-Dimensional Trade-Off of mixed-precision quantization",
+            "url": "https://www.semanticscholar.org/paper/2aca17377b0a123ac980ae5f4cbb2bf087c0bdba",
+            "venue": "Pattern Recognit.",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2321681750",
+                    "name": "Chunxiao Fan"
+                },
+                {
+                    "authorId": "2321690488",
+                    "name": "Ziqi Wang"
+                },
+                {
+                    "authorId": "2237968578",
+                    "name": "Dan Guo"
+                },
+                {
+                    "authorId": "2306391639",
+                    "name": "Meng Wang"
+                }
+            ],
+            "doi": "10.1109/CVPR52733.2024.00534",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b5fd09bfa5bc081372d7ebd7017586587be58715",
+            "title": "Data-Free Quantization via Pseudo-label Filtering",
+            "url": "https://www.semanticscholar.org/paper/b5fd09bfa5bc081372d7ebd7017586587be58715",
+            "venue": "2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2024
+        },
+        {
+            "arxivId": "2405.03144",
+            "authors": [
+                {
+                    "authorId": "2261398158",
+                    "name": "Chengtao Lv"
+                },
+                {
+                    "authorId": "2191043568",
+                    "name": "Hong Chen"
+                },
+                {
+                    "authorId": "2261414086",
+                    "name": "Jinyang Guo"
+                },
+                {
+                    "authorId": "71056959",
+                    "name": "Yifu Ding"
+                },
+                {
+                    "authorId": "2269045935",
+                    "name": "Xianglong Liu"
+                }
+            ],
+            "doi": "10.1109/CVPR52733.2024.01509",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "112eb0d25bf07aa4d4a8f0bfd829fcd8643bc0ec",
+            "title": "PTQ4SAM: Post-Training Quantization for Segment Anything",
+            "url": "https://www.semanticscholar.org/paper/112eb0d25bf07aa4d4a8f0bfd829fcd8643bc0ec",
+            "venue": "2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2024
+        },
+        {
+            "arxivId": "2402.05628",
+            "authors": [
+                {
+                    "authorId": "6966340",
+                    "name": "Zhikai Li"
+                },
+                {
+                    "authorId": "2279218925",
+                    "name": "Xuewen Liu"
+                },
+                {
+                    "authorId": "2283320014",
+                    "name": "Jing Zhang"
+                },
+                {
+                    "authorId": "2257035774",
+                    "name": "Qingyi Gu"
+                }
+            ],
+            "doi": "10.48550/arXiv.2402.05628",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "4819c866fc634a45ad5e8b8847b3497d23ccdf49",
+            "title": "RepQuant: Towards Accurate Post-Training Quantization of Large Transformer Models via Scale Reparameterization",
+            "url": "https://www.semanticscholar.org/paper/4819c866fc634a45ad5e8b8847b3497d23ccdf49",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": "2311.17081",
+            "authors": [
+                {
+                    "authorId": "2268720728",
+                    "name": "Xiaobao Wei"
+                },
+                {
+                    "authorId": "2268711797",
+                    "name": "Jiajun Cao"
+                },
+                {
+                    "authorId": "2268733263",
+                    "name": "Yizhu Jin"
+                },
+                {
+                    "authorId": "2268759683",
+                    "name": "Ming Lu"
+                },
+                {
+                    "authorId": "2268716324",
+                    "name": "Guangyu Wang"
+                },
+                {
+                    "authorId": "2242835846",
+                    "name": "Shanghang Zhang"
+                }
+            ],
+            "doi": "10.48550/arXiv.2311.17081",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "03262d71228e57d58939f2ecea85f462fe459a73",
+            "title": "I-MedSAM: Implicit Medical Image Segmentation with Segment Anything",
+            "url": "https://www.semanticscholar.org/paper/03262d71228e57d58939f2ecea85f462fe459a73",
+            "venue": "ECCV",
+            "year": 2023
+        },
+        {
+            "arxivId": "2308.16184",
+            "authors": [
+                {
+                    "authorId": "97939094",
+                    "name": "Junlong Cheng"
+                },
+                {
+                    "authorId": "153173943",
+                    "name": "Jin Ye"
+                },
+                {
+                    "authorId": "67198844",
+                    "name": "Zhongying Deng"
+                },
+                {
+                    "authorId": "2157811157",
+                    "name": "Jianpin Chen"
+                },
+                {
+                    "authorId": "2118911039",
+                    "name": "Tian-Xin Li"
+                },
+                {
+                    "authorId": "48016595",
+                    "name": "Hao Wang"
+                },
+                {
+                    "authorId": "150352016",
+                    "name": "Yanzhou Su"
+                },
+                {
+                    "authorId": "15767038",
+                    "name": "Ziyan Huang"
+                },
+                {
+                    "authorId": "2235999188",
+                    "name": "Jilong Chen"
+                },
+                {
+                    "authorId": "2112654668",
+                    "name": "Lei Jiang"
+                },
+                {
+                    "authorId": "2115410686",
+                    "name": "Hui Sun"
+                },
+                {
+                    "authorId": "1720735918",
+                    "name": "Junjun He"
+                },
+                {
+                    "authorId": "48692127",
+                    "name": "Shaoting Zhang"
+                },
+                {
+                    "authorId": "2152186761",
+                    "name": "Min Zhu"
+                },
+                {
+                    "authorId": "145858545",
+                    "name": "Y. Qiao"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "d7fb24b589f714cb237c05b2f5312c41f88cec68",
+            "title": "SAM-Med2D",
+            "url": "https://www.semanticscholar.org/paper/d7fb24b589f714cb237c05b2f5312c41f88cec68",
+            "venue": "",
+            "year": 2023
+        },
+        {
+            "arxivId": "2306.14289",
+            "authors": [
+                {
+                    "authorId": "31044159",
+                    "name": "Chaoning Zhang"
+                },
+                {
+                    "authorId": "2195713168",
+                    "name": "Dongshen Han"
+                },
+                {
+                    "authorId": "2209185953",
+                    "name": "Yu Qiao"
+                },
+                {
+                    "authorId": "2214125697",
+                    "name": "Jung Uk Kim"
+                },
+                {
+                    "authorId": "40547898",
+                    "name": "S. Bae"
+                },
+                {
+                    "authorId": "2108261094",
+                    "name": "Seungkyu Lee"
+                },
+                {
+                    "authorId": "2159807650",
+                    "name": "Choong-Seon Hong"
+                }
+            ],
+            "doi": "10.48550/arXiv.2306.14289",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "fdaa21fce5ee5aadf1bb8c55d5f7c3155b905846",
+            "title": "Faster Segment Anything: Towards Lightweight SAM for Mobile Applications",
+            "url": "https://www.semanticscholar.org/paper/fdaa21fce5ee5aadf1bb8c55d5f7c3155b905846",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": "2306.12156",
+            "authors": [
+                {
+                    "authorId": "2118489444",
+                    "name": "Xu Zhao"
+                },
+                {
+                    "authorId": "50759222",
+                    "name": "Wen-Yan Ding"
+                },
+                {
+                    "authorId": "2167834971",
+                    "name": "Yongqi An"
+                },
+                {
+                    "authorId": "10682321",
+                    "name": "Yinglong Du"
+                },
+                {
+                    "authorId": "40418746",
+                    "name": "Tao Yu"
+                },
+                {
+                    "authorId": "2145625171",
+                    "name": "Min Li"
+                },
+                {
+                    "authorId": "2113727378",
+                    "name": "Ming Tang"
+                },
+                {
+                    "authorId": "49606029",
+                    "name": "Jinqiao Wang"
+                }
+            ],
+            "doi": "10.48550/arXiv.2306.12156",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c01e94a36be5b3578fedb17205205b330290a778",
+            "title": "Fast Segment Anything",
+            "url": "https://www.semanticscholar.org/paper/c01e94a36be5b3578fedb17205205b330290a778",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2215717596",
+                    "name": "F\u00e9lix Quinton"
+                },
+                {
+                    "authorId": "2047115654",
+                    "name": "R. Popoff"
+                },
+                {
+                    "authorId": "151492027",
+                    "name": "Benoit Presles"
+                },
+                {
+                    "authorId": "145251037",
+                    "name": "Sarah Leclerc"
+                },
+                {
+                    "authorId": "2159113035",
+                    "name": "Fabrice M\u00e9riaudeau"
+                },
+                {
+                    "authorId": "2047118273",
+                    "name": "G. Nodari"
+                },
+                {
+                    "authorId": "2052089025",
+                    "name": "O. Lopez"
+                },
+                {
+                    "authorId": "1800339654",
+                    "name": "Julie Pellegrinelli"
+                },
+                {
+                    "authorId": "115215744",
+                    "name": "O. Chevallier"
+                },
+                {
+                    "authorId": "1873153",
+                    "name": "D. Ginhac"
+                },
+                {
+                    "authorId": "7585580",
+                    "name": "J. Vrigneaud"
+                },
+                {
+                    "authorId": "5658559",
+                    "name": "J. Alberini"
+                }
+            ],
+            "doi": "10.3390/data8050079",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c501f9984f0de6e85e2ab83982bc064291a25b83",
+            "title": "A Tumour and Liver Automatic Segmentation (ATLAS) Dataset on Contrast-Enhanced Magnetic Resonance Imaging for Hepatocellular Carcinoma",
+            "url": "https://www.semanticscholar.org/paper/c501f9984f0de6e85e2ab83982bc064291a25b83",
+            "venue": "Data",
+            "year": 2023
+        },
+        {
+            "arxivId": "2304.02643",
+            "authors": [
+                {
+                    "authorId": "2064802835",
+                    "name": "A. Kirillov"
+                },
+                {
+                    "authorId": "13131689",
+                    "name": "Eric Mintun"
+                },
+                {
+                    "authorId": "2065647966",
+                    "name": "Nikhila Ravi"
+                },
+                {
+                    "authorId": "2053590350",
+                    "name": "Hanzi Mao"
+                },
+                {
+                    "authorId": "2213549340",
+                    "name": "Chloe Rolland"
+                },
+                {
+                    "authorId": "47029037",
+                    "name": "Laura Gustafson"
+                },
+                {
+                    "authorId": "15727192",
+                    "name": "Tete Xiao"
+                },
+                {
+                    "authorId": "153188991",
+                    "name": "Spencer Whitehead"
+                },
+                {
+                    "authorId": "39668247",
+                    "name": "A. Berg"
+                },
+                {
+                    "authorId": "3317278",
+                    "name": "Wan-Yen Lo"
+                },
+                {
+                    "authorId": "3127283",
+                    "name": "Piotr Doll\u00e1r"
+                },
+                {
+                    "authorId": "2983898",
+                    "name": "Ross B. Girshick"
+                }
+            ],
+            "doi": "10.1109/ICCV51070.2023.00371",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7470a1702c8c86e6f28d32cfa315381150102f5b",
+            "title": "Segment Anything",
+            "url": "https://www.semanticscholar.org/paper/7470a1702c8c86e6f28d32cfa315381150102f5b",
+            "venue": "2023 IEEE/CVF International Conference on Computer Vision (ICCV)",
+            "year": 2023
+        },
+        {
+            "arxivId": "2212.08254",
+            "authors": [
+                {
+                    "authorId": "6966340",
+                    "name": "Zhikai Li"
+                },
+                {
+                    "authorId": "2158318928",
+                    "name": "Junrui Xiao"
+                },
+                {
+                    "authorId": "2196890428",
+                    "name": "Lianwei Yang"
+                },
+                {
+                    "authorId": "47384812",
+                    "name": "Qingyi Gu"
+                }
+            ],
+            "doi": "10.1109/ICCV51070.2023.01580",
+            "intent": [
+                "background",
+                "result",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "529ddd65f6c252aaea91d6a8e5b55b7bc3951841",
+            "title": "RepQ-ViT: Scale Reparameterization for Post-Training Quantization of Vision Transformers",
+            "url": "https://www.semanticscholar.org/paper/529ddd65f6c252aaea91d6a8e5b55b7bc3951841",
+            "venue": "2023 IEEE/CVF International Conference on Computer Vision (ICCV)",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3403367",
+                    "name": "S. Gatidis"
+                },
+                {
+                    "authorId": "66738579",
+                    "name": "Tobias Hepp"
+                },
+                {
+                    "authorId": "2133324201",
+                    "name": "Marcel Fr\u00fch"
+                },
+                {
+                    "authorId": "81994623",
+                    "name": "C. la Foug\u00e8re"
+                },
+                {
+                    "authorId": "2104109460",
+                    "name": "K. Nikolaou"
+                },
+                {
+                    "authorId": "4184286",
+                    "name": "C. Pfannenberg"
+                },
+                {
+                    "authorId": "1707625",
+                    "name": "B. Scholkopf"
+                },
+                {
+                    "authorId": "2324726606",
+                    "name": "Thomas Kuestner"
+                },
+                {
+                    "authorId": "2805942",
+                    "name": "C. Cyran"
+                },
+                {
+                    "authorId": "143648587",
+                    "name": "D. Rubin"
+                }
+            ],
+            "doi": "10.1038/s41597-022-01718-3",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "b1ad6c2df869534e868803b7bc9957e330f10672",
+            "title": "A whole-body FDG-PET/CT Dataset with manually annotated Tumor Lesions",
+            "url": "https://www.semanticscholar.org/paper/b1ad6c2df869534e868803b7bc9957e330f10672",
+            "venue": "Scientific Data",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "6966340",
+                    "name": "Zhikai Li"
+                },
+                {
+                    "authorId": "2109604527",
+                    "name": "Liping Ma"
+                },
+                {
+                    "authorId": "3718525",
+                    "name": "Xianlei Long"
+                },
+                {
+                    "authorId": "2158318928",
+                    "name": "Junrui Xiao"
+                },
+                {
+                    "authorId": "47384812",
+                    "name": "Qingyi Gu"
+                }
+            ],
+            "doi": "10.1016/j.neucom.2022.09.076",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "1b0c97f368ad599991edf5d15a640fcd9361c480",
+            "title": "Dual-discriminator adversarial framework for data-free quantization",
+            "url": "https://www.semanticscholar.org/paper/1b0c97f368ad599991edf5d15a640fcd9361c480",
+            "venue": "Neurocomputing",
+            "year": 2022
+        },
+        {
+            "arxivId": "2209.05687",
+            "authors": [
+                {
+                    "authorId": "6966340",
+                    "name": "Zhikai Li"
+                },
+                {
+                    "authorId": "9291442",
+                    "name": "Mengjuan Chen"
+                },
+                {
+                    "authorId": "2158318928",
+                    "name": "Junrui Xiao"
+                },
+                {
+                    "authorId": "47384812",
+                    "name": "Qingyi Gu"
+                }
+            ],
+            "doi": "10.48550/arXiv.2209.05687",
+            "intent": [
+                "background",
+                "result",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "ac0730c8cf3a148b56f01def5ff0b809460481f8",
+            "title": "PSAQ-ViT V2: Towards Accurate and General Data-Free Quantization for Vision Transformers",
+            "url": "https://www.semanticscholar.org/paper/ac0730c8cf3a148b56f01def5ff0b809460481f8",
+            "venue": "IEEE transactions on neural networks and learning systems",
+            "year": 2022
+        },
+        {
+            "arxivId": "2207.01405",
+            "authors": [
+                {
+                    "authorId": "6966340",
+                    "name": "Zhikai Li"
+                },
+                {
+                    "authorId": "47384812",
+                    "name": "Qingyi Gu"
+                }
+            ],
+            "doi": "10.1109/ICCV51070.2023.01565",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "9fb327c55a30b9771a364f45f33f77778756a164",
+            "title": "I-ViT: Integer-only Quantization for Efficient Vision Transformer Inference",
+            "url": "https://www.semanticscholar.org/paper/9fb327c55a30b9771a364f45f33f77778756a164",
+            "venue": "2023 IEEE/CVF International Conference on Computer Vision (ICCV)",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "48871073",
+                    "name": "C. Pramesh"
+                },
+                {
+                    "authorId": "3629923",
+                    "name": "R. Badwe"
+                },
+                {
+                    "authorId": "1397726781",
+                    "name": "N. Bhoo-Pathy"
+                },
+                {
+                    "authorId": "2106140158",
+                    "name": "C. Booth"
+                },
+                {
+                    "authorId": "3823550",
+                    "name": "G. Chinnaswamy"
+                },
+                {
+                    "authorId": "3842231",
+                    "name": "A. Dare"
+                },
+                {
+                    "authorId": "39949776",
+                    "name": "Victor P. de Andrade"
+                },
+                {
+                    "authorId": "2054173515",
+                    "name": "David J. Hunter"
+                },
+                {
+                    "authorId": "2162949044",
+                    "name": "Satish Gopal"
+                },
+                {
+                    "authorId": "114003238",
+                    "name": "M. Gospodarowicz"
+                },
+                {
+                    "authorId": "145126855",
+                    "name": "S. Gunasekera"
+                },
+                {
+                    "authorId": "2274149392",
+                    "name": "A. Ilbawi"
+                },
+                {
+                    "authorId": "4114327",
+                    "name": "S. Kapambwe"
+                },
+                {
+                    "authorId": "47950998",
+                    "name": "P. Kingham"
+                },
+                {
+                    "authorId": "6625278",
+                    "name": "T. Kutluk"
+                },
+                {
+                    "authorId": "32220607",
+                    "name": "N. Lamichhane"
+                },
+                {
+                    "authorId": "24357900",
+                    "name": "M. Mutebi"
+                },
+                {
+                    "authorId": "2780858",
+                    "name": "J. Orem"
+                },
+                {
+                    "authorId": "3374047",
+                    "name": "G. Parham"
+                },
+                {
+                    "authorId": "2823349",
+                    "name": "P. Ranganathan"
+                },
+                {
+                    "authorId": "5137775",
+                    "name": "M. Sengar"
+                },
+                {
+                    "authorId": "2066309890",
+                    "name": "R. Sullivan"
+                },
+                {
+                    "authorId": "145720754",
+                    "name": "S. Swaminathan"
+                },
+                {
+                    "authorId": "6864085",
+                    "name": "I. Tannock"
+                },
+                {
+                    "authorId": "2066259940",
+                    "name": "Vivek Tomar"
+                },
+                {
+                    "authorId": "145075773",
+                    "name": "V. Vanderpuye"
+                },
+                {
+                    "authorId": "52035694",
+                    "name": "C. Varghese"
+                },
+                {
+                    "authorId": "51475687",
+                    "name": "E. Weiderpass"
+                }
+            ],
+            "doi": "10.1038/s41591-022-01738-x",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5b1d02e14a0e84d4ed716e99b243c56fd5de167b",
+            "title": "Priorities for cancer research in low- and middle-income countries: a global perspective",
+            "url": "https://www.semanticscholar.org/paper/5b1d02e14a0e84d4ed716e99b243c56fd5de167b",
+            "venue": "Nature Medicine",
+            "year": 2022
+        },
+        {
+            "arxivId": "2203.02250",
+            "authors": [
+                {
+                    "authorId": "6966340",
+                    "name": "Zhikai Li"
+                },
+                {
+                    "authorId": "2109604527",
+                    "name": "Liping Ma"
+                },
+                {
+                    "authorId": "9291442",
+                    "name": "Mengjuan Chen"
+                },
+                {
+                    "authorId": "2158318928",
+                    "name": "Junrui Xiao"
+                },
+                {
+                    "authorId": "47384812",
+                    "name": "Qingyi Gu"
+                }
+            ],
+            "doi": "10.1007/978-3-031-20083-0_10",
+            "intent": [
+                "result",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "fb5324a22f3e3208a07634433d8e3e403876582f",
+            "title": "Patch Similarity Aware Data-Free Quantization for Vision Transformers",
+            "url": "https://www.semanticscholar.org/paper/fb5324a22f3e3208a07634433d8e3e403876582f",
+            "venue": "ECCV",
+            "year": 2022
+        },
+        {
+            "arxivId": "2111.09136",
+            "authors": [
+                {
+                    "authorId": "2112888098",
+                    "name": "Yunshan Zhong"
+                },
+                {
+                    "authorId": "49352079",
+                    "name": "Mingbao Lin"
+                },
+                {
+                    "authorId": "2141029301",
+                    "name": "Gongrui Nan"
+                },
+                {
+                    "authorId": "2144167531",
+                    "name": "Jianzhuang Liu"
+                },
+                {
+                    "authorId": "1740430",
+                    "name": "Baochang Zhang"
+                },
+                {
+                    "authorId": "40161651",
+                    "name": "Yonghong Tian"
+                },
+                {
+                    "authorId": "1572139630",
+                    "name": "Rongrong Ji"
+                }
+            ],
+            "doi": "10.1109/CVPR52688.2022.01202",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "22c0468f6c83d5a2ed31e790794d70f3ed3b8906",
+            "title": "IntraQ: Learning Synthetic Images with Intra-Class Heterogeneity for Zero-Shot Network Quantization",
+            "url": "https://www.semanticscholar.org/paper/22c0468f6c83d5a2ed31e790794d70f3ed3b8906",
+            "venue": "2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1393650672",
+                    "name": "A. Brito"
+                },
+                {
+                    "authorId": "8910381",
+                    "name": "Elena Semenova"
+                },
+                {
+                    "authorId": "3539423",
+                    "name": "G. Dudas"
+                },
+                {
+                    "authorId": "104498923",
+                    "name": "G. Hassler"
+                },
+                {
+                    "authorId": "1636883653",
+                    "name": "C. Kalinich"
+                },
+                {
+                    "authorId": "1600634656",
+                    "name": "M. Kraemer"
+                },
+                {
+                    "authorId": "7194794",
+                    "name": "S. Hill"
+                },
+                {
+                    "authorId": "2107039898",
+                    "name": "Danish Covid-19 Genome Consortium"
+                },
+                {
+                    "authorId": "144348241",
+                    "name": "E. Sabino"
+                },
+                {
+                    "authorId": "145006760",
+                    "name": "O. Pybus"
+                },
+                {
+                    "authorId": "1755780",
+                    "name": "C. Dye"
+                },
+                {
+                    "authorId": "2141780249",
+                    "name": "S. Bhatt"
+                },
+                {
+                    "authorId": "2127497",
+                    "name": "S. Flaxman"
+                },
+                {
+                    "authorId": "2716962",
+                    "name": "M. Suchard"
+                },
+                {
+                    "authorId": "3869580",
+                    "name": "N. Grubaugh"
+                },
+                {
+                    "authorId": "40643070",
+                    "name": "G. Baele"
+                },
+                {
+                    "authorId": "2536934",
+                    "name": "Nuno R. Faria"
+                }
+            ],
+            "doi": "10.1101/2021.08.21.21262393",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "190a47d5c6f432396b0ebbe29502869c2c47be1c",
+            "title": "Global disparities in SARS-CoV-2 genomic surveillance",
+            "url": "https://www.semanticscholar.org/paper/190a47d5c6f432396b0ebbe29502869c2c47be1c",
+            "venue": "medRxiv",
+            "year": 2021
+        },
+        {
+            "arxivId": "2106.05735",
+            "authors": [
+                {
+                    "authorId": "51504413",
+                    "name": "M. Antonelli"
+                },
+                {
+                    "authorId": "47131776",
+                    "name": "Annika Reinke"
+                },
+                {
+                    "authorId": "3199900",
+                    "name": "S. Bakas"
+                },
+                {
+                    "authorId": "1781663",
+                    "name": "K. Farahani"
+                },
+                {
+                    "authorId": "2110705738",
+                    "name": "AnnetteKopp-Schneider"
+                },
+                {
+                    "authorId": "1699344",
+                    "name": "B. Landman"
+                },
+                {
+                    "authorId": "145959882",
+                    "name": "G. Litjens"
+                },
+                {
+                    "authorId": "143893221",
+                    "name": "Bjoern H Menze"
+                },
+                {
+                    "authorId": "1737326",
+                    "name": "O. Ronneberger"
+                },
+                {
+                    "authorId": "2110777665",
+                    "name": "Ronald M.Summers"
+                },
+                {
+                    "authorId": "8038506",
+                    "name": "B. Ginneken"
+                },
+                {
+                    "authorId": "1981194",
+                    "name": "M. Bilello"
+                },
+                {
+                    "authorId": "152937533",
+                    "name": "Patrick Bilic"
+                },
+                {
+                    "authorId": "50674180",
+                    "name": "P. Christ"
+                },
+                {
+                    "authorId": "152271968",
+                    "name": "R. Do"
+                },
+                {
+                    "authorId": "6622404",
+                    "name": "M. Gollub"
+                },
+                {
+                    "authorId": "2451191",
+                    "name": "S. Heckers"
+                },
+                {
+                    "authorId": "34754023",
+                    "name": "H. Huisman"
+                },
+                {
+                    "authorId": "3060752",
+                    "name": "W. Jarnagin"
+                },
+                {
+                    "authorId": "5964856",
+                    "name": "M. McHugo"
+                },
+                {
+                    "authorId": "1911671",
+                    "name": "S. Napel"
+                },
+                {
+                    "authorId": "2110766208",
+                    "name": "Jennifer S. Goli Pernicka"
+                },
+                {
+                    "authorId": "143942774",
+                    "name": "K. Rhode"
+                },
+                {
+                    "authorId": "1399458493",
+                    "name": "C. Tobon-Gomez"
+                },
+                {
+                    "authorId": "37627814",
+                    "name": "Eugene Vorontsov"
+                },
+                {
+                    "authorId": "4960344",
+                    "name": "J. Meakin"
+                },
+                {
+                    "authorId": "143951081",
+                    "name": "S. Ourselin"
+                },
+                {
+                    "authorId": "12078222",
+                    "name": "M. Wiesenfarth"
+                },
+                {
+                    "authorId": "9739979",
+                    "name": "P. Arbel\u00e1ez"
+                },
+                {
+                    "authorId": "66180471",
+                    "name": "Byeonguk Bae"
+                },
+                {
+                    "authorId": "2111636970",
+                    "name": "Sihong Chen"
+                },
+                {
+                    "authorId": "35020836",
+                    "name": "L. Daza"
+                },
+                {
+                    "authorId": "2145122569",
+                    "name": "Jian-Jun Feng"
+                },
+                {
+                    "authorId": "49694644",
+                    "name": "Baochun He"
+                },
+                {
+                    "authorId": "7886986",
+                    "name": "Fabian Isensee"
+                },
+                {
+                    "authorId": "51486223",
+                    "name": "Yuanfeng Ji"
+                },
+                {
+                    "authorId": "1916938",
+                    "name": "F. Jia"
+                },
+                {
+                    "authorId": "145979410",
+                    "name": "Namkug Kim"
+                },
+                {
+                    "authorId": "2122905321",
+                    "name": "Ildoo Kim"
+                },
+                {
+                    "authorId": "1737693",
+                    "name": "D. Merhof"
+                },
+                {
+                    "authorId": "1792577",
+                    "name": "A. Pai"
+                },
+                {
+                    "authorId": "40860208",
+                    "name": "Beomhee Park"
+                },
+                {
+                    "authorId": "117451694",
+                    "name": "Mathias Perslev"
+                },
+                {
+                    "authorId": "2368882",
+                    "name": "R. Rezaiifar"
+                },
+                {
+                    "authorId": "51241400",
+                    "name": "Oliver Rippel"
+                },
+                {
+                    "authorId": "15056316",
+                    "name": "Ignacio Sarasua"
+                },
+                {
+                    "authorId": "41187410",
+                    "name": "Wei Shen"
+                },
+                {
+                    "authorId": "145264369",
+                    "name": "Jaemin Son"
+                },
+                {
+                    "authorId": "2232606",
+                    "name": "C. Wachinger"
+                },
+                {
+                    "authorId": "2144688834",
+                    "name": "Liansheng Wang"
+                },
+                {
+                    "authorId": "2152539822",
+                    "name": "Yan Wang"
+                },
+                {
+                    "authorId": "32234354",
+                    "name": "Yingda Xia"
+                },
+                {
+                    "authorId": "3262394",
+                    "name": "Daguang Xu"
+                },
+                {
+                    "authorId": "2115510312",
+                    "name": "Zhanwei Xu"
+                },
+                {
+                    "authorId": "2110381386",
+                    "name": "Yefeng Zheng"
+                },
+                {
+                    "authorId": "1723040",
+                    "name": "Amber L. Simpson"
+                },
+                {
+                    "authorId": "1397958668",
+                    "name": "L. Maier-Hein"
+                },
+                {
+                    "authorId": "145244249",
+                    "name": "M. Cardoso"
+                }
+            ],
+            "doi": "10.1038/s41467-022-30695-9",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "979a9f247700d00ff2c3f0612d5eb001379f93c8",
+            "title": "The Medical Segmentation Decathlon",
+            "url": "https://www.semanticscholar.org/paper/979a9f247700d00ff2c3f0612d5eb001379f93c8",
+            "venue": "Nature Communications",
+            "year": 2021
+        },
+        {
+            "arxivId": "2103.13630",
+            "authors": [
+                {
+                    "authorId": "10419477",
+                    "name": "A. Gholami"
+                },
+                {
+                    "authorId": "2109586102",
+                    "name": "Sehoon Kim"
+                },
+                {
+                    "authorId": "143879884",
+                    "name": "Zhen Dong"
+                },
+                {
+                    "authorId": "9088433",
+                    "name": "Z. Yao"
+                },
+                {
+                    "authorId": "1717098",
+                    "name": "Michael W. Mahoney"
+                },
+                {
+                    "authorId": "1732330",
+                    "name": "K. Keutzer"
+                }
+            ],
+            "doi": "10.1201/9781003162810-13",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "093253653cd0b55970c390d77b75137c4095dc29",
+            "title": "A Survey of Quantization Methods for Efficient Neural Network Inference",
+            "url": "https://www.semanticscholar.org/paper/093253653cd0b55970c390d77b75137c4095dc29",
+            "venue": "Low-Power Computer Vision",
+            "year": 2021
+        },
+        {
+            "arxivId": "2103.01049",
+            "authors": [
+                {
+                    "authorId": "2156004638",
+                    "name": "Xiangguo Zhang"
+                },
+                {
+                    "authorId": "1381853008",
+                    "name": "Haotong Qin"
+                },
+                {
+                    "authorId": "71056959",
+                    "name": "Yifu Ding"
+                },
+                {
+                    "authorId": "152217579",
+                    "name": "Ruihao Gong"
+                },
+                {
+                    "authorId": "3275555",
+                    "name": "Qing Yan"
+                },
+                {
+                    "authorId": "1380391852",
+                    "name": "Renshuai Tao"
+                },
+                {
+                    "authorId": "1527101214",
+                    "name": "Yuhang Li"
+                },
+                {
+                    "authorId": "5237666",
+                    "name": "F. Yu"
+                },
+                {
+                    "authorId": "6820648",
+                    "name": "Xianglong Liu"
+                }
+            ],
+            "doi": "10.1109/CVPR46437.2021.01540",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "99eeeca965c4384fa242d706b7db790111e0f233",
+            "title": "Diversifying Sample Generation for Accurate Data-Free Quantization",
+            "url": "https://www.semanticscholar.org/paper/99eeeca965c4384fa242d706b7db790111e0f233",
+            "venue": "2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2021
+        },
+        {
+            "arxivId": "2102.04306",
+            "authors": [
+                {
+                    "authorId": "90972805",
+                    "name": "Jieneng Chen"
+                },
+                {
+                    "authorId": "2946371",
+                    "name": "Yongyi Lu"
+                },
+                {
+                    "authorId": "2156559",
+                    "name": "Qihang Yu"
+                },
+                {
+                    "authorId": "1932191260",
+                    "name": "Xiangde Luo"
+                },
+                {
+                    "authorId": "3419364",
+                    "name": "E. Adeli"
+                },
+                {
+                    "authorId": "2152539822",
+                    "name": "Yan Wang"
+                },
+                {
+                    "authorId": "50706692",
+                    "name": "Le Lu"
+                },
+                {
+                    "authorId": "145081362",
+                    "name": "A. Yuille"
+                },
+                {
+                    "authorId": "7743268",
+                    "name": "Yuyin Zhou"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "24b8a0b02bcb7934967757fc59d273a71ba67e30",
+            "title": "TransUNet: Transformers Make Strong Encoders for Medical Image Segmentation",
+            "url": "https://www.semanticscholar.org/paper/24b8a0b02bcb7934967757fc59d273a71ba67e30",
+            "venue": "ArXiv",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "28758216",
+                    "name": "Akshay Chawla"
+                },
+                {
+                    "authorId": "1989015",
+                    "name": "Hongxu Yin"
+                },
+                {
+                    "authorId": "2824500",
+                    "name": "Pavlo Molchanov"
+                },
+                {
+                    "authorId": "2974008",
+                    "name": "J. \u00c1lvarez"
+                }
+            ],
+            "doi": "10.1109/WACV48630.2021.00333",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "f38dacf69cbe327e9c4f3622dd12525f4692cf21",
+            "title": "Data-free Knowledge Distillation for Object Detection",
+            "url": "https://www.semanticscholar.org/paper/f38dacf69cbe327e9c4f3622dd12525f4692cf21",
+            "venue": "2021 IEEE Winter Conference on Applications of Computer Vision (WACV)",
+            "year": 2021
+        },
+        {
+            "arxivId": "2012.04885",
+            "authors": [
+                {
+                    "authorId": "47673594",
+                    "name": "Shanshan Wang"
+                },
+                {
+                    "authorId": "2133092040",
+                    "name": "Cheng Li"
+                },
+                {
+                    "authorId": "121357296",
+                    "name": "Rongpin Wang"
+                },
+                {
+                    "authorId": "3168855",
+                    "name": "Zaiyi Liu"
+                },
+                {
+                    "authorId": "151474549",
+                    "name": "Meiyun Wang"
+                },
+                {
+                    "authorId": "31913581",
+                    "name": "H. Tan"
+                },
+                {
+                    "authorId": "144661830",
+                    "name": "Yaping Wu"
+                },
+                {
+                    "authorId": "2108702083",
+                    "name": "Xinfeng Liu"
+                },
+                {
+                    "authorId": "2115410686",
+                    "name": "Hui Sun"
+                },
+                {
+                    "authorId": "2115428170",
+                    "name": "Rui Yang"
+                },
+                {
+                    "authorId": "89121677",
+                    "name": "Xin Liu"
+                },
+                {
+                    "authorId": "2155098791",
+                    "name": "Jie Chen"
+                },
+                {
+                    "authorId": "1739176377",
+                    "name": "Hui-Chong Zhou"
+                },
+                {
+                    "authorId": "2261263744",
+                    "name": "Ismail Ben Ayed"
+                },
+                {
+                    "authorId": "50681788",
+                    "name": "Hairong Zheng"
+                }
+            ],
+            "doi": "10.1038/s41467-021-26216-9",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a0e856430bc91597bf0e8ce30b6babc84462efa0",
+            "title": "Annotation-efficient deep learning for automatic medical image segmentation",
+            "url": "https://www.semanticscholar.org/paper/a0e856430bc91597bf0e8ce30b6babc84462efa0",
+            "venue": "Nature Communications",
+            "year": 2020
+        },
+        {
+            "arxivId": "2010.14808",
+            "authors": [
+                {
+                    "authorId": "46282518",
+                    "name": "Jun Ma"
+                },
+                {
+                    "authorId": "2118390623",
+                    "name": "Yao Zhang"
+                },
+                {
+                    "authorId": "145248267",
+                    "name": "Song Gu"
+                },
+                {
+                    "authorId": "1591132058",
+                    "name": "Yichi Zhang"
+                },
+                {
+                    "authorId": "2115802295",
+                    "name": "Cheng Zhu"
+                },
+                {
+                    "authorId": "2121314003",
+                    "name": "Qiyuan Wang"
+                },
+                {
+                    "authorId": "2146074312",
+                    "name": "Xin Liu"
+                },
+                {
+                    "authorId": "8704624",
+                    "name": "Xingle An"
+                },
+                {
+                    "authorId": "2058147231",
+                    "name": "Cheng Ge"
+                },
+                {
+                    "authorId": "2004045237",
+                    "name": "Shucheng Cao"
+                },
+                {
+                    "authorId": "2145907910",
+                    "name": "Qi Zhang"
+                },
+                {
+                    "authorId": "13877308",
+                    "name": "Shangqing Liu"
+                },
+                {
+                    "authorId": "2121327265",
+                    "name": "Yunpeng Wang"
+                },
+                {
+                    "authorId": "2110540292",
+                    "name": "Yuhui Li"
+                },
+                {
+                    "authorId": "47074128",
+                    "name": "Congcong Wang"
+                },
+                {
+                    "authorId": "2153098690",
+                    "name": "Jian He"
+                },
+                {
+                    "authorId": "50031111",
+                    "name": "Xiaoping Yang"
+                }
+            ],
+            "doi": "10.1109/TPAMI.2021.3100536",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "8aefc1469ba378389e1742340d25a24ba21a94a6",
+            "title": "AbdomenCT-1K: Is Abdominal Organ Segmentation a Solved Problem?",
+            "url": "https://www.semanticscholar.org/paper/8aefc1469ba378389e1742340d25a24ba21a94a6",
+            "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+            "year": 2020
+        },
+        {
+            "arxivId": "2010.11929",
+            "authors": [
+                {
+                    "authorId": "2841331",
+                    "name": "Alexey Dosovitskiy"
+                },
+                {
+                    "authorId": "39611591",
+                    "name": "Lucas Beyer"
+                },
+                {
+                    "authorId": "144629422",
+                    "name": "Alexander Kolesnikov"
+                },
+                {
+                    "authorId": "3319373",
+                    "name": "Dirk Weissenborn"
+                },
+                {
+                    "authorId": "2743563",
+                    "name": "Xiaohua Zhai"
+                },
+                {
+                    "authorId": "2465270",
+                    "name": "Thomas Unterthiner"
+                },
+                {
+                    "authorId": "2274215058",
+                    "name": "Mostafa Dehghani"
+                },
+                {
+                    "authorId": "46352821",
+                    "name": "Matthias Minderer"
+                },
+                {
+                    "authorId": "2280399",
+                    "name": "G. Heigold"
+                },
+                {
+                    "authorId": "1802148",
+                    "name": "S. Gelly"
+                },
+                {
+                    "authorId": "39328010",
+                    "name": "Jakob Uszkoreit"
+                },
+                {
+                    "authorId": "2815290",
+                    "name": "N. Houlsby"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "268d347e8a55b5eb82fb5e7d2f800e33c75ab18a",
+            "title": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale",
+            "url": "https://www.semanticscholar.org/paper/268d347e8a55b5eb82fb5e7d2f800e33c75ab18a",
+            "venue": "ICLR",
+            "year": 2020
+        },
+        {
+            "arxivId": "2003.03603",
+            "authors": [
+                {
+                    "authorId": "2157422974",
+                    "name": "Shoukai Xu"
+                },
+                {
+                    "authorId": "1796268589",
+                    "name": "Haokun Li"
+                },
+                {
+                    "authorId": "3194022",
+                    "name": "Bohan Zhuang"
+                },
+                {
+                    "authorId": "49270464",
+                    "name": "Jing Liu"
+                },
+                {
+                    "authorId": "32879676",
+                    "name": "Jiezhang Cao"
+                },
+                {
+                    "authorId": "1557349917",
+                    "name": "Chuangrun Liang"
+                },
+                {
+                    "authorId": "2823637",
+                    "name": "Mingkui Tan"
+                }
+            ],
+            "doi": "10.1007/978-3-030-58610-2_1",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "32a939d781623bbd080e52ce6d8dbebf8d1e5f66",
+            "title": "Generative Low-bitwidth Data Free Quantization",
+            "url": "https://www.semanticscholar.org/paper/32a939d781623bbd080e52ce6d8dbebf8d1e5f66",
+            "venue": "ECCV",
+            "year": 2020
+        },
+        {
+            "arxivId": "2001.00281",
+            "authors": [
+                {
+                    "authorId": "5358865",
+                    "name": "Yaohui Cai"
+                },
+                {
+                    "authorId": "9088433",
+                    "name": "Z. Yao"
+                },
+                {
+                    "authorId": "143879884",
+                    "name": "Zhen Dong"
+                },
+                {
+                    "authorId": "10419477",
+                    "name": "A. Gholami"
+                },
+                {
+                    "authorId": "1717098",
+                    "name": "Michael W. Mahoney"
+                },
+                {
+                    "authorId": "1732330",
+                    "name": "K. Keutzer"
+                }
+            ],
+            "doi": "10.1109/cvpr42600.2020.01318",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "0acc25f3993bd9431418ae275aa12a536b740b77",
+            "title": "ZeroQ: A Novel Zero Shot Quantization Framework",
+            "url": "https://www.semanticscholar.org/paper/0acc25f3993bd9431418ae275aa12a536b740b77",
+            "venue": "2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2020
+        },
+        {
+            "arxivId": "1902.08153",
+            "authors": [
+                {
+                    "authorId": "2357931",
+                    "name": "S. K. Esser"
+                },
+                {
+                    "authorId": "46571359",
+                    "name": "J. McKinstry"
+                },
+                {
+                    "authorId": "2064431971",
+                    "name": "Deepika Bablani"
+                },
+                {
+                    "authorId": "2730753",
+                    "name": "R. Appuswamy"
+                },
+                {
+                    "authorId": "1944330",
+                    "name": "D. Modha"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "dc160709bbe528b506a37ead334f60d258413357",
+            "title": "Learned Step Size Quantization",
+            "url": "https://www.semanticscholar.org/paper/dc160709bbe528b506a37ead334f60d258413357",
+            "venue": "ICLR",
+            "year": 2019
+        },
+        {
+            "arxivId": "1902.06426",
+            "authors": [
+                {
+                    "authorId": "48313894",
+                    "name": "M. Allan"
+                },
+                {
+                    "authorId": "153153335",
+                    "name": "Alexey A. Shvets"
+                },
+                {
+                    "authorId": "24039963",
+                    "name": "T. Kurmann"
+                },
+                {
+                    "authorId": null,
+                    "name": "Zichen Zhang"
+                },
+                {
+                    "authorId": "32685035",
+                    "name": "Rahul Duggal"
+                },
+                {
+                    "authorId": "47064945",
+                    "name": "Yun-Hsuan Su"
+                },
+                {
+                    "authorId": "3180607",
+                    "name": "Nicola Rieke"
+                },
+                {
+                    "authorId": "3422200",
+                    "name": "Iro Laina"
+                },
+                {
+                    "authorId": "2150699",
+                    "name": "Niveditha Kalavakonda"
+                },
+                {
+                    "authorId": "2462340",
+                    "name": "S. Bodenstedt"
+                },
+                {
+                    "authorId": "1405177851",
+                    "name": "Luis C. Garc\u00eda-Peraza"
+                },
+                {
+                    "authorId": "47112939",
+                    "name": "Wenqi Li"
+                },
+                {
+                    "authorId": "19231037",
+                    "name": "V. Iglovikov"
+                },
+                {
+                    "authorId": "3369681",
+                    "name": "Huoling Luo"
+                },
+                {
+                    "authorId": "2146236917",
+                    "name": "Jian Yang"
+                },
+                {
+                    "authorId": "2825517",
+                    "name": "D. Stoyanov"
+                },
+                {
+                    "authorId": "1397958668",
+                    "name": "L. Maier-Hein"
+                },
+                {
+                    "authorId": "47515221",
+                    "name": "S. Speidel"
+                },
+                {
+                    "authorId": "1715489",
+                    "name": "M. Azizian"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "e705aeaa9440744c8341b14c7404f6a91e694571",
+            "title": "2017 Robotic Instrument Segmentation Challenge",
+            "url": "https://www.semanticscholar.org/paper/e705aeaa9440744c8341b14c7404f6a91e694571",
+            "venue": "ArXiv",
+            "year": 2019
+        },
+        {
+            "arxivId": "1811.08886",
+            "authors": [
+                {
+                    "authorId": "2119044211",
+                    "name": "Kuan Wang"
+                },
+                {
+                    "authorId": "47781592",
+                    "name": "Zhijian Liu"
+                },
+                {
+                    "authorId": "49417466",
+                    "name": "Yujun Lin"
+                },
+                {
+                    "authorId": "46698300",
+                    "name": "Ji Lin"
+                },
+                {
+                    "authorId": "143840275",
+                    "name": "Song Han"
+                }
+            ],
+            "doi": "10.1109/CVPR.2019.00881",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "54c4642d017830e1faddbb49f0377228d2b01493",
+            "title": "HAQ: Hardware-Aware Automated Quantization With Mixed Precision",
+            "url": "https://www.semanticscholar.org/paper/54c4642d017830e1faddbb49f0377228d2b01493",
+            "venue": "2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2018
+        },
+        {
+            "arxivId": "1807.10165",
+            "authors": [
+                {
+                    "authorId": "2198519",
+                    "name": "Zongwei Zhou"
+                },
+                {
+                    "authorId": "1988405",
+                    "name": "M. R. Siddiquee"
+                },
+                {
+                    "authorId": "1930128",
+                    "name": "Nima Tajbakhsh"
+                },
+                {
+                    "authorId": "2674518",
+                    "name": "Jianming Liang"
+                }
+            ],
+            "doi": "10.1007/978-3-030-00889-5_1",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a6876ea89e677a7cc42dd43f27165ff6fd414de5",
+            "title": "UNet++: A Nested U-Net Architecture for Medical Image Segmentation",
+            "url": "https://www.semanticscholar.org/paper/a6876ea89e677a7cc42dd43f27165ff6fd414de5",
+            "venue": "DLMIA/ML-CDS@MICCAI",
+            "year": 2018
+        },
+        {
+            "arxivId": "1806.08342",
+            "authors": [
+                {
+                    "authorId": "2065915235",
+                    "name": "Raghuraman Krishnamoorthi"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "3d8b62c060f8444907e7c975c6ae590373b51ed4",
+            "title": "Quantizing deep convolutional networks for efficient inference: A whitepaper",
+            "url": "https://www.semanticscholar.org/paper/3d8b62c060f8444907e7c975c6ae590373b51ed4",
+            "venue": "ArXiv",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145288087",
+                    "name": "O. Bernard"
+                },
+                {
+                    "authorId": "2185063",
+                    "name": "A. Lalande"
+                },
+                {
+                    "authorId": "38987414",
+                    "name": "Cl\u00e9ment Zotti"
+                },
+                {
+                    "authorId": "29957379",
+                    "name": "F. Cervenansky"
+                },
+                {
+                    "authorId": "72347325",
+                    "name": "Xin Yang"
+                },
+                {
+                    "authorId": "1714602",
+                    "name": "P. Heng"
+                },
+                {
+                    "authorId": "38867898",
+                    "name": "Irem Cetin"
+                },
+                {
+                    "authorId": "2364820",
+                    "name": "K. Lekadir"
+                },
+                {
+                    "authorId": "145571255",
+                    "name": "O. Camara"
+                },
+                {
+                    "authorId": "94277803",
+                    "name": "M. G. Gonz\u00e1lez Ballester"
+                },
+                {
+                    "authorId": "1719285",
+                    "name": "G. Sanrom\u00e1"
+                },
+                {
+                    "authorId": "1911671",
+                    "name": "S. Napel"
+                },
+                {
+                    "authorId": "144236487",
+                    "name": "S. Petersen"
+                },
+                {
+                    "authorId": "2441655",
+                    "name": "G. Tziritas"
+                },
+                {
+                    "authorId": "119636047",
+                    "name": "E. Grinias"
+                },
+                {
+                    "authorId": "31728301",
+                    "name": "Mahendra Khened"
+                },
+                {
+                    "authorId": "51061318",
+                    "name": "V. Kollerathu"
+                },
+                {
+                    "authorId": "2053121",
+                    "name": "Ganapathy Krishnamurthi"
+                },
+                {
+                    "authorId": "5429745",
+                    "name": "Marc-Michel Roh\u00e9"
+                },
+                {
+                    "authorId": "1715990",
+                    "name": "X. Pennec"
+                },
+                {
+                    "authorId": "1770888",
+                    "name": "Maxime Sermesant"
+                },
+                {
+                    "authorId": "7886986",
+                    "name": "Fabian Isensee"
+                },
+                {
+                    "authorId": "2055050727",
+                    "name": "Paul F. J\u00e4ger"
+                },
+                {
+                    "authorId": "1397951928",
+                    "name": "Klaus Maier-Hein"
+                },
+                {
+                    "authorId": "93088018",
+                    "name": "Peter M. Full"
+                },
+                {
+                    "authorId": "144651288",
+                    "name": "I. Wolf"
+                },
+                {
+                    "authorId": "10805740",
+                    "name": "S. Engelhardt"
+                },
+                {
+                    "authorId": "19212631",
+                    "name": "Christian F. Baumgartner"
+                },
+                {
+                    "authorId": "36284274",
+                    "name": "Lisa M. Koch"
+                },
+                {
+                    "authorId": "1907022",
+                    "name": "J. Wolterink"
+                },
+                {
+                    "authorId": "3165444",
+                    "name": "I. I\u0161gum"
+                },
+                {
+                    "authorId": "35136799",
+                    "name": "Yeonggul Jang"
+                },
+                {
+                    "authorId": "47547674",
+                    "name": "Yoonmi Hong"
+                },
+                {
+                    "authorId": "22218247",
+                    "name": "Jay Patravali"
+                },
+                {
+                    "authorId": "145342039",
+                    "name": "Shubham Jain"
+                },
+                {
+                    "authorId": "6808491",
+                    "name": "O. Humbert"
+                },
+                {
+                    "authorId": "1687510",
+                    "name": "Pierre-Marc Jodoin"
+                }
+            ],
+            "doi": "10.1109/TMI.2018.2837502",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "9406246f6972c03e5bfaac4df4676648dc4ac935",
+            "title": "Deep Learning Techniques for Automatic MRI Cardiac Multi-Structures Segmentation and Diagnosis: Is the Problem Solved?",
+            "url": "https://www.semanticscholar.org/paper/9406246f6972c03e5bfaac4df4676648dc4ac935",
+            "venue": "IEEE Transactions on Medical Imaging",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "51018812",
+                    "name": "H. Gelband"
+                },
+                {
+                    "authorId": "34778379",
+                    "name": "R. Sankaranarayanan"
+                },
+                {
+                    "authorId": "3674617",
+                    "name": "C. Gauvreau"
+                },
+                {
+                    "authorId": "47791551",
+                    "name": "S. Horton"
+                },
+                {
+                    "authorId": "1999356",
+                    "name": "B. Anderson"
+                },
+                {
+                    "authorId": "143607197",
+                    "name": "F. Bray"
+                },
+                {
+                    "authorId": "1979701",
+                    "name": "J. Cleary"
+                },
+                {
+                    "authorId": "3842231",
+                    "name": "A. Dare"
+                },
+                {
+                    "authorId": "143948877",
+                    "name": "L. Denny"
+                },
+                {
+                    "authorId": "6239556",
+                    "name": "M. Gospodarowicz"
+                },
+                {
+                    "authorId": "1805877",
+                    "name": "S. Gupta"
+                },
+                {
+                    "authorId": "2783156",
+                    "name": "S. Howard"
+                },
+                {
+                    "authorId": "49754705",
+                    "name": "D. Jaffray"
+                },
+                {
+                    "authorId": "4740674",
+                    "name": "F. Knaul"
+                },
+                {
+                    "authorId": "4402335",
+                    "name": "C. Levin"
+                },
+                {
+                    "authorId": "5391790",
+                    "name": "L. Rabeneck"
+                },
+                {
+                    "authorId": "3666913",
+                    "name": "P. Rajaraman"
+                },
+                {
+                    "authorId": "32609117",
+                    "name": "T. Sullivan"
+                },
+                {
+                    "authorId": "39126773",
+                    "name": "E. Trimble"
+                },
+                {
+                    "authorId": "145623687",
+                    "name": "P. Jha"
+                }
+            ],
+            "doi": "10.1016/S0140-6736(15)00755-2",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ae2eccec7e499c8227be6cd2dd9ed0dc341d0278",
+            "title": "Costs, affordability, and feasibility of an essential package of cancer control interventions in low-income and middle-income countries: key messages from Disease Control Priorities, 3rd edition",
+            "url": "https://www.semanticscholar.org/paper/ae2eccec7e499c8227be6cd2dd9ed0dc341d0278",
+            "venue": "The Lancet",
+            "year": 2016
+        },
+        {
+            "arxivId": "1710.05006",
+            "authors": [
+                {
+                    "authorId": "48087135",
+                    "name": "D. Gutman"
+                },
+                {
+                    "authorId": "40589056",
+                    "name": "N. Codella"
+                },
+                {
+                    "authorId": "145214646",
+                    "name": "M. E. Celebi"
+                },
+                {
+                    "authorId": "3472379",
+                    "name": "Brian Helba"
+                },
+                {
+                    "authorId": "3015437",
+                    "name": "M. Marchetti"
+                },
+                {
+                    "authorId": "2640103",
+                    "name": "N. Mishra"
+                },
+                {
+                    "authorId": "2300591",
+                    "name": "A. Halpern"
+                }
+            ],
+            "doi": "10.1109/ISBI.2018.8363547",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "0746aead5432e64c060e042ad38d9766194f1061",
+            "title": "Skin lesion analysis toward melanoma detection: A challenge at the 2017 International symposium on biomedical imaging (ISBI), hosted by the international skin imaging collaboration (ISIC)",
+            "url": "https://www.semanticscholar.org/paper/0746aead5432e64c060e042ad38d9766194f1061",
+            "venue": "2018 IEEE 15th International Symposium on Biomedical Imaging (ISBI 2018)",
+            "year": 2016
+        },
+        {
+            "arxivId": "1605.01397",
+            "authors": [
+                {
+                    "authorId": "145386376",
+                    "name": "David Gutman"
+                },
+                {
+                    "authorId": "40589056",
+                    "name": "N. Codella"
+                },
+                {
+                    "authorId": "2133295142",
+                    "name": "Emre M. Celebi"
+                },
+                {
+                    "authorId": "3472379",
+                    "name": "Brian Helba"
+                },
+                {
+                    "authorId": "2216729213",
+                    "name": "Michael Marchetti"
+                },
+                {
+                    "authorId": "2640103",
+                    "name": "N. Mishra"
+                },
+                {
+                    "authorId": "2137298810",
+                    "name": "Allan Halpern"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "dd285594ee34fb46b2afdc1b40c6b7993d607d65",
+            "title": "Skin Lesion Analysis toward Melanoma Detection: A Challenge at the International Symposium on Biomedical Imaging (ISBI) 2016, hosted by the International Skin Imaging Collaboration (ISIC)",
+            "url": "https://www.semanticscholar.org/paper/dd285594ee34fb46b2afdc1b40c6b7993d607d65",
+            "venue": "ArXiv",
+            "year": 2016
+        },
+        {
+            "arxivId": "1412.6980",
+            "authors": [
+                {
+                    "authorId": "1726807",
+                    "name": "Diederik P. Kingma"
+                },
+                {
+                    "authorId": "2503659",
+                    "name": "Jimmy Ba"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "a6cb366736791bcccc5c8639de5a8f9636bf87e8",
+            "title": "Adam: A Method for Stochastic Optimization",
+            "url": "https://www.semanticscholar.org/paper/a6cb366736791bcccc5c8639de5a8f9636bf87e8",
+            "venue": "ICLR",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2119830",
+                    "name": "K. Chalkidou"
+                },
+                {
+                    "authorId": "5632649",
+                    "name": "P. Marquez"
+                },
+                {
+                    "authorId": "145001008",
+                    "name": "P. Dhillon"
+                },
+                {
+                    "authorId": "6599976",
+                    "name": "Y. Teerawattananon"
+                },
+                {
+                    "authorId": "6217932",
+                    "name": "T. Anothaisintawee"
+                },
+                {
+                    "authorId": "5082599",
+                    "name": "C. Gadelha"
+                },
+                {
+                    "authorId": "145972250",
+                    "name": "R. Sullivan"
+                }
+            ],
+            "doi": "10.1016/S1470-2045(13)70547-3",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "be700b7efe97da39ef066a97642ae9a49daf9a18",
+            "title": "Evidence-informed frameworks for cost-effective cancer care and prevention in low, middle, and high-income countries.",
+            "url": "https://www.semanticscholar.org/paper/be700b7efe97da39ef066a97642ae9a49daf9a18",
+            "venue": "The Lancet. Oncology",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2256769486",
+                    "name": "Haoyu Wang"
+                },
+                {
+                    "authorId": "2261393415",
+                    "name": "Sizheng Guo"
+                },
+                {
+                    "authorId": "153173943",
+                    "name": "Jin Ye"
+                },
+                {
+                    "authorId": "2075351182",
+                    "name": "Zhongyi Deng"
+                },
+                {
+                    "authorId": "2237743184",
+                    "name": "Junlong Cheng"
+                },
+                {
+                    "authorId": "2118911039",
+                    "name": "Tian-Xin Li"
+                },
+                {
+                    "authorId": "2238398486",
+                    "name": "Jianpin Chen"
+                },
+                {
+                    "authorId": "121873665",
+                    "name": "Yan-Cheng Su"
+                },
+                {
+                    "authorId": "15767038",
+                    "name": "Ziyan Huang"
+                },
+                {
+                    "authorId": "2158713265",
+                    "name": "Yiqing Shen"
+                },
+                {
+                    "authorId": "2261364011",
+                    "name": "Bin Fu"
+                },
+                {
+                    "authorId": "2237786370",
+                    "name": "Shaoting Zhang"
+                },
+                {
+                    "authorId": "1720735918",
+                    "name": "Junjun He"
+                },
+                {
+                    "authorId": "2261364205",
+                    "name": "Yu Qiao"
+                }
+            ],
+            "doi": "10.48550/arXiv.2310.15161",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "99c1438439358435247c7147ddbaa8d47f0e8937",
+            "title": "SAM-Med3D",
+            "url": "https://www.semanticscholar.org/paper/99c1438439358435247c7147ddbaa8d47f0e8937",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2143854906",
+                    "name": "Jun Ma"
+                },
+                {
+                    "authorId": "2153215904",
+                    "name": "Bo Wang"
+                }
+            ],
+            "doi": "10.48550/arXiv.2304.12306",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "4dd869a2c17cacd03b3e8a9b7efcd48f40651925",
+            "title": "Segment Anything in Medical Images",
+            "url": "https://www.semanticscholar.org/paper/4dd869a2c17cacd03b3e8a9b7efcd48f40651925",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "49450333",
+                    "name": "D. Patil"
+                },
+                {
+                    "authorId": "70518518",
+                    "name": "Sonal G. Deore"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ae68948d2f0d2b4e9eb107f6af1d67066c0c6fdf",
+            "title": "Medical Image Segmentation: A Review",
+            "url": "https://www.semanticscholar.org/paper/ae68948d2f0d2b4e9eb107f6af1d67066c0c6fdf",
+            "venue": "",
+            "year": 2013
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Medicine",
+            "source": "s2-fos-model"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Privacy-Preserving SAM Quantization for Efficient Edge Intelligence in Healthcare",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/14a0a796c6c6c13adf173eb204763c08db26b4fc",
+    "venue": "arXiv.org",
+    "year": 2024
+}

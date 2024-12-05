@@ -1,0 +1,1394 @@
+{
+    "abstract": "Artificial Intelligence (AI) is often an integral part of modern decision support systems. The best-performing predictive models used in AI-based decision support systems lack transparency. Explainable Artificial Intelligence (XAI) aims to create AI systems that can explain their rationale to human users. Local explanations in XAI can provide information about the causes of individual predictions in terms of feature importance. However, a critical drawback of existing local explanation methods is their inability to quantify the uncertainty associated with a feature's importance. This paper introduces an extension of a feature importance explanation method, Calibrated Explanations, previously only supporting classification, with support for standard regression and probabilistic regression, i.e., the probability that the target is above an arbitrary threshold. The extension for regression keeps all the benefits of Calibrated Explanations, such as calibration of the prediction from the underlying model with confidence intervals, uncertainty quantification of feature importance, and allows both factual and counterfactual explanations. Calibrated Explanations for standard regression provides fast, reliable, stable, and robust explanations. Calibrated Explanations for probabilistic regression provides an entirely new way of creating probabilistic explanations from any ordinary regression model, allowing dynamic selection of thresholds. The method is model agnostic with easily understood conditional rules. An implementation in Python is freely available on GitHub and for installation using both pip and conda, making the results in this paper easily replicable.",
+    "arxivId": "2308.16245",
+    "authors": [
+        {
+            "authorId": "2215915210",
+            "name": "Tuwe Lofstrom",
+            "url": "https://www.semanticscholar.org/author/2215915210"
+        },
+        {
+            "authorId": "2215949529",
+            "name": "Helena Lofstrom",
+            "url": "https://www.semanticscholar.org/author/2215949529"
+        },
+        {
+            "authorId": "144827708",
+            "name": "U. Johansson",
+            "url": "https://www.semanticscholar.org/author/144827708"
+        },
+        {
+            "authorId": "150065963",
+            "name": "C. Sonstrod",
+            "url": "https://www.semanticscholar.org/author/150065963"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": "2410.21129",
+            "authors": [
+                {
+                    "authorId": "66495918",
+                    "name": "Tuwe L\u00f6fstr\u00f6m"
+                },
+                {
+                    "authorId": "2217975176",
+                    "name": "Fatima Rabia Yapicioglu"
+                },
+                {
+                    "authorId": "2326949982",
+                    "name": "Alessandra Stramiglio"
+                },
+                {
+                    "authorId": "100515588",
+                    "name": "Helena L\u00f6fstr\u00f6m"
+                },
+                {
+                    "authorId": "2326949851",
+                    "name": "Fabio Vitali"
+                }
+            ],
+            "doi": "10.48550/arXiv.2410.21129",
+            "intent": [
+                "result",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "f3027d258715b4da256e1a4918d7d0ce755de70e",
+            "title": "Fast Calibrated Explanations: Efficient and Uncertainty-Aware Explanations for Machine Learning Models",
+            "url": "https://www.semanticscholar.org/paper/f3027d258715b4da256e1a4918d7d0ce755de70e",
+            "venue": "ArXiv",
+            "year": 2024
+        }
+    ],
+    "corpusId": 261395308,
+    "doi": "10.48550/arXiv.2308.16245",
+    "fieldsOfStudy": [
+        "Computer Science",
+        "Mathematics"
+    ],
+    "influentialCitationCount": 1,
+    "isOpenAccess": true,
+    "isPublisherLicensed": true,
+    "is_open_access": true,
+    "is_publisher_licensed": true,
+    "numCitedBy": 1,
+    "numCiting": 52,
+    "paperId": "a5d1cdc6b47c70cde276ac625b2772bc181c8a49",
+    "references": [
+        {
+            "arxivId": "2312.10648",
+            "authors": [
+                {
+                    "authorId": "2072038627",
+                    "name": "Patrick Altmeyer"
+                },
+                {
+                    "authorId": "2275056005",
+                    "name": "Mojtaba Farmanbar"
+                },
+                {
+                    "authorId": "2078547722",
+                    "name": "A. V. Deursen"
+                },
+                {
+                    "authorId": "2257290335",
+                    "name": "Cynthia C. S. Liem"
+                }
+            ],
+            "doi": "10.48550/arXiv.2312.10648",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "1c56c092cfd0807164515af9b5bb0843bc38e96c",
+            "title": "Faithful Model Explanations through Energy-Constrained Conformal Counterfactuals",
+            "url": "https://www.semanticscholar.org/paper/1c56c092cfd0807164515af9b5bb0843bc38e96c",
+            "venue": "AAAI",
+            "year": 2023
+        },
+        {
+            "arxivId": "2308.11975",
+            "authors": [
+                {
+                    "authorId": "32612420",
+                    "name": "Amr Alkhatib"
+                },
+                {
+                    "authorId": "49234144",
+                    "name": "Henrik Bostrom"
+                },
+                {
+                    "authorId": "2187458074",
+                    "name": "Sofiane Ennadir"
+                },
+                {
+                    "authorId": "144827708",
+                    "name": "U. Johansson"
+                }
+            ],
+            "doi": "10.48550/arXiv.2308.11975",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8f41988493f5c6da5d695f7c6d58ad3995c8ec99",
+            "title": "Approximating Score-based Explanation Techniques Using Conformal Regression",
+            "url": "https://www.semanticscholar.org/paper/8f41988493f5c6da5d695f7c6d58ad3995c8ec99",
+            "venue": "COPA",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "151499046",
+                    "name": "Andr\u00e9 Artelt"
+                },
+                {
+                    "authorId": "2154772907",
+                    "name": "Roel W. Visser"
+                },
+                {
+                    "authorId": "2141841364",
+                    "name": "Barbara Hammer"
+                }
+            ],
+            "doi": "10.1016/j.neucom.2023.126722",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0e061d604fe37810f14e9e3d9a7c01aa2a0da535",
+            "title": "\"I do not know! but why?\" - Local model-agnostic example-based explanations of reject",
+            "url": "https://www.semanticscholar.org/paper/0e061d604fe37810f14e9e3d9a7c01aa2a0da535",
+            "venue": "Neurocomputing",
+            "year": 2023
+        },
+        {
+            "arxivId": "2305.02305",
+            "authors": [
+                {
+                    "authorId": "2215949529",
+                    "name": "Helena Lofstrom"
+                },
+                {
+                    "authorId": "2215915210",
+                    "name": "Tuwe Lofstrom"
+                },
+                {
+                    "authorId": "144827708",
+                    "name": "U. Johansson"
+                },
+                {
+                    "authorId": "150065963",
+                    "name": "C. Sonstrod"
+                }
+            ],
+            "doi": "10.48550/arXiv.2305.02305",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "20ce4facd2daaaa57b0eba2c71c49529e44ed8ac",
+            "title": "Calibrated Explanations: with Uncertainty Information and Counterfactuals",
+            "url": "https://www.semanticscholar.org/paper/20ce4facd2daaaa57b0eba2c71c49529e44ed8ac",
+            "venue": "Expert Syst. Appl.",
+            "year": 2023
+        },
+        {
+            "arxivId": "2207.01898",
+            "authors": [
+                {
+                    "authorId": "151499046",
+                    "name": "Andr\u00e9 Artelt"
+                },
+                {
+                    "authorId": "2141841364",
+                    "name": "Barbara Hammer"
+                }
+            ],
+            "doi": "10.1109/SSCI51031.2022.10022139",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ea0b56156bc442b0141ad476328cc2ea60861065",
+            "title": "\u201cEven if \u2026\u201d \u2013 Diverse Semifactual Explanations of Reject",
+            "url": "https://www.semanticscholar.org/paper/ea0b56156bc442b0141ad476328cc2ea60861065",
+            "venue": "2022 IEEE Symposium Series on Computational Intelligence (SSCI)",
+            "year": 2022
+        },
+        {
+            "arxivId": "2206.11104",
+            "authors": [
+                {
+                    "authorId": "40228633",
+                    "name": "Chirag Agarwal"
+                },
+                {
+                    "authorId": "2158817696",
+                    "name": "Eshika Saxena"
+                },
+                {
+                    "authorId": "1387484410",
+                    "name": "Satyapriya Krishna"
+                },
+                {
+                    "authorId": "89583148",
+                    "name": "Martin Pawelczyk"
+                },
+                {
+                    "authorId": "2142541079",
+                    "name": "Nari Johnson"
+                },
+                {
+                    "authorId": "65971246",
+                    "name": "Isha Puri"
+                },
+                {
+                    "authorId": "2095762",
+                    "name": "M. Zitnik"
+                },
+                {
+                    "authorId": "1892673",
+                    "name": "Himabindu Lakkaraju"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "868e35374cb9c0fc6e4cfb17f96835aefcf520cc",
+            "title": "OpenXAI: Towards a Transparent Evaluation of Model Explanations",
+            "url": "https://www.semanticscholar.org/paper/868e35374cb9c0fc6e4cfb17f96835aefcf520cc",
+            "venue": "",
+            "year": 2022
+        },
+        {
+            "arxivId": "2205.07623",
+            "authors": [
+                {
+                    "authorId": "151499046",
+                    "name": "Andr\u00e9 Artelt"
+                },
+                {
+                    "authorId": "2154772907",
+                    "name": "Roel W. Visser"
+                },
+                {
+                    "authorId": "2141841364",
+                    "name": "Barbara Hammer"
+                }
+            ],
+            "doi": "10.48550/arXiv.2205.07623",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d47aa5a9ac9c2885d09478ce45ebd3388ae51495",
+            "title": "Model Agnostic Local Explanations of Reject",
+            "url": "https://www.semanticscholar.org/paper/d47aa5a9ac9c2885d09478ce45ebd3388ae51495",
+            "venue": "ESANN",
+            "year": 2022
+        },
+        {
+            "arxivId": "2203.13929",
+            "authors": [
+                {
+                    "authorId": "100515588",
+                    "name": "Helena L\u00f6fstr\u00f6m"
+                },
+                {
+                    "authorId": "47247473",
+                    "name": "K. Hammar"
+                },
+                {
+                    "authorId": "144827708",
+                    "name": "U. Johansson"
+                }
+            ],
+            "doi": "10.1007/978-3-031-07481-3_7",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "52cd20f09a1a8c872183f7c9eb6d60f66cac7b1a",
+            "title": "A Meta Survey of Quality Evaluation Criteria in Explanation Methods",
+            "url": "https://www.semanticscholar.org/paper/52cd20f09a1a8c872183f7c9eb6d60f66cac7b1a",
+            "venue": "CAiSE Forum",
+            "year": 2022
+        },
+        {
+            "arxivId": "2112.11407",
+            "authors": [
+                {
+                    "authorId": "98558320",
+                    "name": "S. Letzgus"
+                },
+                {
+                    "authorId": "82010145",
+                    "name": "Patrick Wagner"
+                },
+                {
+                    "authorId": "95930534",
+                    "name": "Jonas Lederer"
+                },
+                {
+                    "authorId": "1699054",
+                    "name": "W. Samek"
+                },
+                {
+                    "authorId": "2113612432",
+                    "name": "Klaus-Robert M\u00fcller"
+                },
+                {
+                    "authorId": "144535526",
+                    "name": "G. Montavon"
+                }
+            ],
+            "doi": "10.1109/MSP.2022.3153277",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "694acda5ce20708c69ae471d5a95b44efd6ce514",
+            "title": "Toward Explainable Artificial Intelligence for Regression Models: A methodological perspective",
+            "url": "https://www.semanticscholar.org/paper/694acda5ce20708c69ae471d5a95b44efd6ce514",
+            "venue": "IEEE Signal Processing Magazine",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "51239629",
+                    "name": "Jianlong Zhou"
+                },
+                {
+                    "authorId": "1764455",
+                    "name": "A. Gandomi"
+                },
+                {
+                    "authorId": "2149500413",
+                    "name": "Fang Chen"
+                },
+                {
+                    "authorId": "1749801",
+                    "name": "Andreas Holzinger"
+                }
+            ],
+            "doi": "10.3390/ELECTRONICS10050593",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "49774cf91b00381501c960fc976e982c0eb51b68",
+            "title": "Evaluating the Quality of Machine Learning Explanations: A Survey on Methods and Metrics",
+            "url": "https://www.semanticscholar.org/paper/49774cf91b00381501c960fc976e982c0eb51b68",
+            "venue": "Electronics",
+            "year": 2021
+        },
+        {
+            "arxivId": "2011.07586",
+            "authors": [
+                {
+                    "authorId": "32326200",
+                    "name": "Umang Bhatt"
+                },
+                {
+                    "authorId": "2108127520",
+                    "name": "Yunfeng Zhang"
+                },
+                {
+                    "authorId": "2303655512",
+                    "name": "Javier Antor\u00e1n"
+                },
+                {
+                    "authorId": "144921048",
+                    "name": "Q. Liao"
+                },
+                {
+                    "authorId": "1706272",
+                    "name": "P. Sattigeri"
+                },
+                {
+                    "authorId": "2295664733",
+                    "name": "Riccardo Fogliato"
+                },
+                {
+                    "authorId": "47722094",
+                    "name": "Gabrielle Gauthier Melan\u00e7on"
+                },
+                {
+                    "authorId": "13026224",
+                    "name": "R. Krishnan"
+                },
+                {
+                    "authorId": "145487711",
+                    "name": "Jason Stanley"
+                },
+                {
+                    "authorId": "1798616",
+                    "name": "Omesh Tickoo"
+                },
+                {
+                    "authorId": "1896095",
+                    "name": "L. Nachman"
+                },
+                {
+                    "authorId": "3144230",
+                    "name": "R. Chunara"
+                },
+                {
+                    "authorId": "145689461",
+                    "name": "Adrian Weller"
+                },
+                {
+                    "authorId": "4990825",
+                    "name": "Alice Xiang"
+                }
+            ],
+            "doi": "10.1145/3461702.3462571",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "3973e0fab69a00f5ed6a81ca408f60c420fa6e61",
+            "title": "Uncertainty as a Form of Transparency: Measuring, Communicating, and Using Uncertainty",
+            "url": "https://www.semanticscholar.org/paper/3973e0fab69a00f5ed6a81ca408f60c420fa6e61",
+            "venue": "AIES",
+            "year": 2020
+        },
+        {
+            "arxivId": "2008.05030",
+            "authors": [
+                {
+                    "authorId": "153794305",
+                    "name": "Dylan Slack"
+                },
+                {
+                    "authorId": "67233765",
+                    "name": "Sophie Hilgard"
+                },
+                {
+                    "authorId": "34650964",
+                    "name": "Sameer Singh"
+                },
+                {
+                    "authorId": "1892673",
+                    "name": "Himabindu Lakkaraju"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "097a125fea441e2973cee1a95b77cc8582a4ed8c",
+            "title": "Reliable Post hoc Explanations: Modeling Uncertainty in Explainability",
+            "url": "https://www.semanticscholar.org/paper/097a125fea441e2973cee1a95b77cc8582a4ed8c",
+            "venue": "NeurIPS",
+            "year": 2020
+        },
+        {
+            "arxivId": "2005.01992",
+            "authors": [
+                {
+                    "authorId": "144334436",
+                    "name": "M. Moradi"
+                },
+                {
+                    "authorId": "3004898",
+                    "name": "M. Samwald"
+                }
+            ],
+            "doi": "10.1016/J.ESWA.2020.113941",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d8c430e88405ad2cbbe84d476369abe43999a120",
+            "title": "Post-hoc explanation of black-box classifiers using confident itemsets",
+            "url": "https://www.semanticscholar.org/paper/d8c430e88405ad2cbbe84d476369abe43999a120",
+            "venue": "Expert Syst. Appl.",
+            "year": 2020
+        },
+        {
+            "arxivId": "2001.08298",
+            "authors": [
+                {
+                    "authorId": "1490644118",
+                    "name": "Zana Bu\u00e7inca"
+                },
+                {
+                    "authorId": "2113316454",
+                    "name": "Phoebe Lin"
+                },
+                {
+                    "authorId": "1770992",
+                    "name": "Krzysztof Z Gajos"
+                },
+                {
+                    "authorId": "143730651",
+                    "name": "Elena L. Glassman"
+                }
+            ],
+            "doi": "10.1145/3377325.3377498",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "4244da5fc9b7e57ae7bb0c1b4c08c662af595a23",
+            "title": "Proxy tasks and subjective measures can be misleading in evaluating explainable AI systems",
+            "url": "https://www.semanticscholar.org/paper/4244da5fc9b7e57ae7bb0c1b4c08c662af595a23",
+            "venue": "IUI",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "108437064",
+                    "name": "B. Dimanov"
+                },
+                {
+                    "authorId": "32326200",
+                    "name": "Umang Bhatt"
+                },
+                {
+                    "authorId": "1708741",
+                    "name": "M. Jamnik"
+                },
+                {
+                    "authorId": "145689461",
+                    "name": "Adrian Weller"
+                }
+            ],
+            "doi": "10.17863/CAM.48825",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "95d4cdaec450c0e26e45f13e231c075c1809ac7c",
+            "title": "You Shouldn't Trust Me: Learning Models Which Conceal Unfairness From Multiple Explanation Methods",
+            "url": "https://www.semanticscholar.org/paper/95d4cdaec450c0e26e45f13e231c075c1809ac7c",
+            "venue": "SafeAI@AAAI",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "46216076",
+                    "name": "Bradley C. Boehmke"
+                },
+                {
+                    "authorId": "35664117",
+                    "name": "Brandon M. Greenwell"
+                }
+            ],
+            "doi": "10.1201/9780367816377-16",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "b0c34618ffd1154f35863e2ce7250ac6b6f2c424",
+            "title": "Interpretable Machine Learning",
+            "url": "https://www.semanticscholar.org/paper/b0c34618ffd1154f35863e2ce7250ac6b6f2c424",
+            "venue": "Hands-On Machine Learning with R",
+            "year": 2019
+        },
+        {
+            "arxivId": "1910.14421",
+            "authors": [
+                {
+                    "authorId": "47814143",
+                    "name": "Amir Hossein Akhavan Rahnama"
+                },
+                {
+                    "authorId": "1777235",
+                    "name": "Henrik Bostr\u00f6m"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "95a0810583c430d0b180afbb63f6f7a5260af957",
+            "title": "A study of data and label shift in the LIME framework",
+            "url": "https://www.semanticscholar.org/paper/95a0810583c430d0b180afbb63f6f7a5260af957",
+            "venue": "ArXiv",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "48279064",
+                    "name": "M. Ridley"
+                }
+            ],
+            "doi": "10.29242/rli.299.3",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "34ed480d4a84b03a3dbd6a9258d2343aa8694393",
+            "title": "Explainable artificial intelligence",
+            "url": "https://www.semanticscholar.org/paper/34ed480d4a84b03a3dbd6a9258d2343aa8694393",
+            "venue": "Research Handbook on Big Data Law",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144827708",
+                    "name": "U. Johansson"
+                },
+                {
+                    "authorId": "66495918",
+                    "name": "Tuwe L\u00f6fstr\u00f6m"
+                },
+                {
+                    "authorId": "1777235",
+                    "name": "Henrik Bostr\u00f6m"
+                },
+                {
+                    "authorId": "1804914",
+                    "name": "Cecilia S\u00f6nstr\u00f6d"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5318f7249069ab0d984f91f57a5df7f4ef3d21ab",
+            "title": "Interpretable and specialized conformal predictors",
+            "url": "https://www.semanticscholar.org/paper/5318f7249069ab0d984f91f57a5df7f4ef3d21ab",
+            "venue": "COPA",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "33791144",
+                    "name": "D. V. Carvalho"
+                },
+                {
+                    "authorId": "35153466",
+                    "name": "E. M. Pereira"
+                },
+                {
+                    "authorId": "3698192",
+                    "name": "Jaime S. Cardoso"
+                }
+            ],
+            "doi": "10.3390/ELECTRONICS8080832",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "46c266b3d1274dacd7fce27ee8cb4d587f087a58",
+            "title": "Machine Learning Interpretability: A Survey on Methods and Metrics",
+            "url": "https://www.semanticscholar.org/paper/46c266b3d1274dacd7fce27ee8cb4d587f087a58",
+            "venue": "Electronics",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2121780",
+                    "name": "David Gunning"
+                },
+                {
+                    "authorId": "1969847",
+                    "name": "D. Aha"
+                }
+            ],
+            "doi": "10.1609/AIMAG.V40I2.2850",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "06645d735b59b14479ae1d0392136bbf44227d0f",
+            "title": "DARPA's Explainable Artificial Intelligence (XAI) Program",
+            "url": "https://www.semanticscholar.org/paper/06645d735b59b14479ae1d0392136bbf44227d0f",
+            "venue": "AI Mag.",
+            "year": 2019
+        },
+        {
+            "arxivId": "1905.07697",
+            "authors": [
+                {
+                    "authorId": "120935900",
+                    "name": "R. Mothilal"
+                },
+                {
+                    "authorId": "144676398",
+                    "name": "Amit Sharma"
+                },
+                {
+                    "authorId": "40348583",
+                    "name": "Chenhao Tan"
+                }
+            ],
+            "doi": "10.1145/3351095.3372850",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c2413fa296543159b32d16350d9e29f7db528790",
+            "title": "Explaining machine learning classifiers through diverse counterfactual explanations",
+            "url": "https://www.semanticscholar.org/paper/c2413fa296543159b32d16350d9e29f7db528790",
+            "venue": "FAT*",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "37292975",
+                    "name": "Danding Wang"
+                },
+                {
+                    "authorId": "2117860470",
+                    "name": "Qian Yang"
+                },
+                {
+                    "authorId": "20956040",
+                    "name": "Ashraf Abdul"
+                },
+                {
+                    "authorId": "1995703",
+                    "name": "Brian Y. Lim"
+                }
+            ],
+            "doi": "10.1145/3290605.3300831",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f738a685cd06dbc6a59a511b53ef5b0c65d03b47",
+            "title": "Designing Theory-Driven User-Centric Explainable AI",
+            "url": "https://www.semanticscholar.org/paper/f738a685cd06dbc6a59a511b53ef5b0c65d03b47",
+            "venue": "CHI",
+            "year": 2019
+        },
+        {
+            "arxivId": "1902.01876",
+            "authors": [
+                {
+                    "authorId": "8780591",
+                    "name": "Shane T. Mueller"
+                },
+                {
+                    "authorId": "1701142",
+                    "name": "R. Hoffman"
+                },
+                {
+                    "authorId": "1703064",
+                    "name": "W. Clancey"
+                },
+                {
+                    "authorId": "68975512",
+                    "name": "Abigail Emrey"
+                },
+                {
+                    "authorId": "145555383",
+                    "name": "Gary Klein"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "5c3a72f47ed8d58c0554210828af1ce4bbf2dbcd",
+            "title": "Explanation in Human-AI Systems: A Literature Meta-Review, Synopsis of Key Ideas and Publications, and Bibliography for Explainable AI",
+            "url": "https://www.semanticscholar.org/paper/5c3a72f47ed8d58c0554210828af1ce4bbf2dbcd",
+            "venue": "ArXiv",
+            "year": 2019
+        },
+        {
+            "arxivId": "1812.04608",
+            "authors": [
+                {
+                    "authorId": "1701142",
+                    "name": "R. Hoffman"
+                },
+                {
+                    "authorId": "8780591",
+                    "name": "Shane T. Mueller"
+                },
+                {
+                    "authorId": "145555383",
+                    "name": "Gary Klein"
+                },
+                {
+                    "authorId": "7983004",
+                    "name": "Jordan Litman"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "be711f681580d3a02c8bc4c4dab0c7a043f4e1d2",
+            "title": "Metrics for Explainable AI: Challenges and Prospects",
+            "url": "https://www.semanticscholar.org/paper/be711f681580d3a02c8bc4c4dab0c7a043f4e1d2",
+            "venue": "ArXiv",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "9139705",
+                    "name": "Amina Adadi"
+                },
+                {
+                    "authorId": "50487490",
+                    "name": "M. Berrada"
+                }
+            ],
+            "doi": "10.1109/ACCESS.2018.2870052",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "21dff47a4142445f83016da0819ffe6dd2947f66",
+            "title": "Peeking Inside the Black-Box: A Survey on Explainable Artificial Intelligence (XAI)",
+            "url": "https://www.semanticscholar.org/paper/21dff47a4142445f83016da0819ffe6dd2947f66",
+            "venue": "IEEE Access",
+            "year": 2018
+        },
+        {
+            "arxivId": "1806.08049",
+            "authors": [
+                {
+                    "authorId": "1390096054",
+                    "name": "David Alvarez-Melis"
+                },
+                {
+                    "authorId": "35132120",
+                    "name": "T. Jaakkola"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b7fcbb19c75ad65be522b64d5f4b23dbcb3b883b",
+            "title": "On the Robustness of Interpretability Methods",
+            "url": "https://www.semanticscholar.org/paper/b7fcbb19c75ad65be522b64d5f4b23dbcb3b883b",
+            "venue": "ArXiv",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "78846919",
+                    "name": "Marco Tulio Ribeiro"
+                },
+                {
+                    "authorId": "34650964",
+                    "name": "Sameer Singh"
+                },
+                {
+                    "authorId": "1730156",
+                    "name": "Carlos Guestrin"
+                }
+            ],
+            "doi": "10.1609/aaai.v32i1.11491",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "1d8f4f76ac6534627ef8a1c24b9937d8ab2a5c5f",
+            "title": "Anchors: High-Precision Model-Agnostic Explanations",
+            "url": "https://www.semanticscholar.org/paper/1d8f4f76ac6534627ef8a1c24b9937d8ab2a5c5f",
+            "venue": "AAAI",
+            "year": 2018
+        },
+        {
+            "arxivId": "1802.01933",
+            "authors": [
+                {
+                    "authorId": "1704327",
+                    "name": "Riccardo Guidotti"
+                },
+                {
+                    "authorId": "2296962",
+                    "name": "A. Monreale"
+                },
+                {
+                    "authorId": "1707206",
+                    "name": "F. Turini"
+                },
+                {
+                    "authorId": "1693341",
+                    "name": "D. Pedreschi"
+                },
+                {
+                    "authorId": "1685102",
+                    "name": "F. Giannotti"
+                }
+            ],
+            "doi": "10.1145/3236009",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f7325d232c7ac7d2daaf6605377058db5b5b83cc",
+            "title": "A Survey of Methods for Explaining Black Box Models",
+            "url": "https://www.semanticscholar.org/paper/f7325d232c7ac7d2daaf6605377058db5b5b83cc",
+            "venue": "ACM Comput. Surv.",
+            "year": 2018
+        },
+        {
+            "arxivId": "1711.00399",
+            "authors": [
+                {
+                    "authorId": "12806133",
+                    "name": "Sandra Wachter"
+                },
+                {
+                    "authorId": "3127701",
+                    "name": "B. Mittelstadt"
+                },
+                {
+                    "authorId": "2052380526",
+                    "name": "Chris Russell"
+                }
+            ],
+            "doi": "10.2139/ssrn.3063289",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "4f309712e705210df5695240a5d5fb53ea1f8641",
+            "title": "Counterfactual Explanations Without Opening the Black Box: Automated Decisions and the GDPR",
+            "url": "https://www.semanticscholar.org/paper/4f309712e705210df5695240a5d5fb53ea1f8641",
+            "venue": "ArXiv",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145675281",
+                    "name": "V. Vovk"
+                },
+                {
+                    "authorId": "6759475",
+                    "name": "Jieli Shen"
+                },
+                {
+                    "authorId": "19253036",
+                    "name": "Valery Manokhin"
+                },
+                {
+                    "authorId": "2447668",
+                    "name": "Min\u2010ge Xie"
+                }
+            ],
+            "doi": "10.1007/s10994-018-5755-8",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "248c65995b3dee2e25df967d45fe2c557ac43b61",
+            "title": "Nonparametric predictive distributions based on conformal prediction",
+            "url": "https://www.semanticscholar.org/paper/248c65995b3dee2e25df967d45fe2c557ac43b61",
+            "venue": "Machine Learning",
+            "year": 2017
+        },
+        {
+            "arxivId": "1705.07874",
+            "authors": [
+                {
+                    "authorId": "23451726",
+                    "name": "Scott M. Lundberg"
+                },
+                {
+                    "authorId": "2180463",
+                    "name": "Su-In Lee"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "442e10a3c6640ded9408622005e3c2a8906ce4c2",
+            "title": "A Unified Approach to Interpreting Model Predictions",
+            "url": "https://www.semanticscholar.org/paper/442e10a3c6640ded9408622005e3c2a8906ce4c2",
+            "venue": "NIPS",
+            "year": 2017
+        },
+        {
+            "arxivId": "1602.04938",
+            "authors": [
+                {
+                    "authorId": "78846919",
+                    "name": "Marco Tulio Ribeiro"
+                },
+                {
+                    "authorId": "34650964",
+                    "name": "Sameer Singh"
+                },
+                {
+                    "authorId": "1730156",
+                    "name": "Carlos Guestrin"
+                }
+            ],
+            "doi": "10.1145/2939672.2939778",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "c0883f5930a232a9c1ad601c978caede29155979",
+            "title": "\u201cWhy Should I Trust You?\u201d: Explaining the Predictions of Any Classifier",
+            "url": "https://www.semanticscholar.org/paper/c0883f5930a232a9c1ad601c978caede29155979",
+            "venue": "NAACL",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2304568",
+                    "name": "Antonis Lambrou"
+                },
+                {
+                    "authorId": "1796115",
+                    "name": "I. Nouretdinov"
+                },
+                {
+                    "authorId": "1808081",
+                    "name": "H. Papadopoulos"
+                }
+            ],
+            "doi": "10.1007/s10472-014-9420-z",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "f5eea925dc6ebe932c6b4ccfef195af397618cf1",
+            "title": "Inductive Venn Prediction",
+            "url": "https://www.semanticscholar.org/paper/f5eea925dc6ebe932c6b4ccfef195af397618cf1",
+            "venue": "Annals of Mathematics and Artificial Intelligence",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1402953187",
+                    "name": "J. A. Alvarado-Valencia"
+                },
+                {
+                    "authorId": "2440643",
+                    "name": "L. Barrero"
+                }
+            ],
+            "doi": "10.1016/j.chb.2014.03.047",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "873b67c1fd2a6fcbc218cce0038c5e2896fd6321",
+            "title": "Reliance, trust and heuristics in judgmental forecasting",
+            "url": "https://www.semanticscholar.org/paper/873b67c1fd2a6fcbc218cce0038c5e2896fd6321",
+            "venue": "Comput. Hum. Behav.",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145147309",
+                    "name": "David Martens"
+                },
+                {
+                    "authorId": "1752722",
+                    "name": "F. Provost"
+                }
+            ],
+            "doi": "10.25300/misq/2014/38.1.04",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "add9930a368c1f281a1428d09ba65751edf06555",
+            "title": "Explaining Data-Driven Document Classifications",
+            "url": "https://www.semanticscholar.org/paper/add9930a368c1f281a1428d09ba65751edf06555",
+            "venue": "MIS Q.",
+            "year": 2013
+        },
+        {
+            "arxivId": "1211.0025",
+            "authors": [
+                {
+                    "authorId": "145675281",
+                    "name": "V. Vovk"
+                },
+                {
+                    "authorId": "2119023",
+                    "name": "I. Petej"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "33851509aa018893ff6d76e28b40bc4e5dd6e5c5",
+            "title": "Venn-Abers Predictors",
+            "url": "https://www.semanticscholar.org/paper/33851509aa018893ff6d76e28b40bc4e5dd6e5c5",
+            "venue": "UAI",
+            "year": 2012
+        },
+        {
+            "arxivId": "1208.0806",
+            "authors": [
+                {
+                    "authorId": "145675281",
+                    "name": "V. Vovk"
+                }
+            ],
+            "doi": "10.1007/s10472-013-9368-4",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "fe1ffa1995e1d8f72a890def5ef45aff95490454",
+            "title": "Cross-conformal predictors",
+            "url": "https://www.semanticscholar.org/paper/fe1ffa1995e1d8f72a890def5ef45aff95490454",
+            "venue": "Annals of Mathematics and Artificial Intelligence",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1808081",
+                    "name": "H. Papadopoulos"
+                },
+                {
+                    "authorId": "1793317",
+                    "name": "A. Gammerman"
+                },
+                {
+                    "authorId": "2071868178",
+                    "name": "V. Vovk"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a5fe164d205ebc0464df46219535b1453ca13003",
+            "title": "Normalized nonconformity measures for regression Conformal Prediction",
+            "url": "https://www.semanticscholar.org/paper/a5fe164d205ebc0464df46219535b1453ca13003",
+            "venue": "",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145675281",
+                    "name": "V. Vovk"
+                },
+                {
+                    "authorId": "1793317",
+                    "name": "A. Gammerman"
+                },
+                {
+                    "authorId": "145500409",
+                    "name": "G. Shafer"
+                }
+            ],
+            "doi": "10.1007/978-3-031-06649-8",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "1776b5ba5d2b17f6e6a043d57d36126e2af90315",
+            "title": "Algorithmic Learning in a Random World",
+            "url": "https://www.semanticscholar.org/paper/1776b5ba5d2b17f6e6a043d57d36126e2af90315",
+            "venue": "",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145675281",
+                    "name": "V. Vovk"
+                },
+                {
+                    "authorId": "145500409",
+                    "name": "G. Shafer"
+                },
+                {
+                    "authorId": "1796115",
+                    "name": "I. Nouretdinov"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0d25ff9951327964270b2e64f2c7f089af15b931",
+            "title": "Self-calibrating Probability Forecasting",
+            "url": "https://www.semanticscholar.org/paper/0d25ff9951327964270b2e64f2c7f089af15b931",
+            "venue": "NIPS",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1808081",
+                    "name": "H. Papadopoulos"
+                },
+                {
+                    "authorId": "2657088",
+                    "name": "Kostas Proedrou"
+                },
+                {
+                    "authorId": "145675281",
+                    "name": "V. Vovk"
+                },
+                {
+                    "authorId": "1793317",
+                    "name": "A. Gammerman"
+                }
+            ],
+            "doi": "10.1007/3-540-36755-1_29",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7f96ca1a46b8e1fabcad6d459e7820dd348675f7",
+            "title": "Inductive Confidence Machines for Regression",
+            "url": "https://www.semanticscholar.org/paper/7f96ca1a46b8e1fabcad6d459e7820dd348675f7",
+            "venue": "ECML",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "41131547",
+                    "name": "R. Pace"
+                },
+                {
+                    "authorId": "2053501673",
+                    "name": "Ronald P. Barry"
+                }
+            ],
+            "doi": "10.1016/S0167-7152(96)00140-X",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "d0116e7670c00392d3f12e473e80ea77e6a377b8",
+            "title": "Sparse spatial autoregressions",
+            "url": "https://www.semanticscholar.org/paper/d0116e7670c00392d3f12e473e80ea77e6a377b8",
+            "venue": "",
+            "year": 1997
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "100515588",
+                    "name": "Helena L\u00f6fstr\u00f6m"
+                },
+                {
+                    "authorId": "66495918",
+                    "name": "Tuwe L\u00f6fstr\u00f6m"
+                }
+            ],
+            "doi": "10.1007/978-3-031-63787-2_17",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "e33466ca31e4f8e699cd0e0b3aa3e8c629370b38",
+            "title": "Conditional Calibrated Explanations: Finding a Path Between Bias and Uncertainty",
+            "url": "https://www.semanticscholar.org/paper/e33466ca31e4f8e699cd0e0b3aa3e8c629370b38",
+            "venue": "xAI",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1777235",
+                    "name": "Henrik Bostr\u00f6m"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "b47c8e35c23e0c7252d07f79022fd316edec16b9",
+            "title": "crepes: a Python Package for Generating Conformal Regressors and Predictive Systems",
+            "url": "https://www.semanticscholar.org/paper/b47c8e35c23e0c7252d07f79022fd316edec16b9",
+            "venue": "COPA",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2061462269",
+                    "name": "J. Platt"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "42e5ed832d4310ce4378c44d05570439df28a393",
+            "title": "Probabilistic Outputs for Support vector Machines and Comparisons to Regularized Likelihood Methods",
+            "url": "https://www.semanticscholar.org/paper/42e5ed832d4310ce4378c44d05570439df28a393",
+            "venue": "",
+            "year": 1999
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Mathematics",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        },
+        {
+            "category": "Mathematics",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Calibrated Explanations for Regression",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/a5d1cdc6b47c70cde276ac625b2772bc181c8a49",
+    "venue": "arXiv.org",
+    "year": 2023
+}

@@ -1,0 +1,1722 @@
+{
+    "abstract": "Artificial intelligence, and specifically deep neural networks (DNNs), has rapidly emerged in the past decade as the standard for several tasks from specific advertising to object detection. The performance offered has led DNN algorithms to become a part of critical embedded systems, requiring both efficiency and reliability. In particular, DNNs are subject to malicious examples designed in a way to fool the network while being undetectable to the human observer: the adversarial examples. While previous studies propose frameworks to implement such attacks in black box settings, those often rely on the hypothesis that the attacker has access to the logits of the neural network, breaking the assumption of the traditional black box. In this paper, we investigate a real black box scenario where the attacker has no access to the logits. In particular, we propose an architecture-agnostic attack which solve this constraint by extracting the logits. Our method combines hardware and software attacks, by performing a side-channel attack that exploits electromagnetic leakages to extract the logits for a given input, allowing an attacker to estimate the gradients and produce state-of-the-art adversarial examples to fool the targeted neural network. Through this example of adversarial attack, we demonstrate the effectiveness of logits extraction using side-channel as a first step for more general attack frameworks requiring either the logits or the confidence scores.",
+    "arxivId": "2311.14005",
+    "authors": [
+        {
+            "authorId": "2267786646",
+            "name": "Beno\u00eet Coqueret",
+            "url": "https://www.semanticscholar.org/author/2267786646"
+        },
+        {
+            "authorId": "2267786845",
+            "name": "Mathieu Carbone",
+            "url": "https://www.semanticscholar.org/author/2267786845"
+        },
+        {
+            "authorId": "2267784845",
+            "name": "Olivier Sentieys",
+            "url": "https://www.semanticscholar.org/author/2267784845"
+        },
+        {
+            "authorId": "2267788687",
+            "name": "Gabriel Zaid",
+            "url": "https://www.semanticscholar.org/author/2267788687"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [],
+    "corpusId": 265360074,
+    "doi": "10.1145/3605764.3623903",
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": true,
+    "isPublisherLicensed": true,
+    "is_open_access": true,
+    "is_publisher_licensed": true,
+    "numCitedBy": 0,
+    "numCiting": 57,
+    "paperId": "180fbbdeacbed89a77ae10ed56524369491ea49a",
+    "references": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "67042729",
+                    "name": "Lo\u00efc Masure"
+                },
+                {
+                    "authorId": "1386672383",
+                    "name": "Ga\u00ebtan Cassiers"
+                },
+                {
+                    "authorId": "35164061",
+                    "name": "J. Hendrickx"
+                },
+                {
+                    "authorId": "1706533",
+                    "name": "Fran\u00e7ois-Xavier Standaert"
+                }
+            ],
+            "doi": "10.46586/tches.v2023.i3.522-569",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "12205e253050e4898b29771be19f2bb9c5fae689",
+            "title": "Information Bounds and Convergence Rates for Side-Channel Security Evaluators",
+            "url": "https://www.semanticscholar.org/paper/12205e253050e4898b29771be19f2bb9c5fae689",
+            "venue": "IACR Cryptol. ePrint Arch.",
+            "year": 2023
+        },
+        {
+            "arxivId": "2304.12876",
+            "authors": [
+                {
+                    "authorId": "2105791128",
+                    "name": "Mathieu Dumont"
+                },
+                {
+                    "authorId": "2186303285",
+                    "name": "Kevin Hector"
+                },
+                {
+                    "authorId": "3070099",
+                    "name": "Pierre-Alain Mo\u00ebllic"
+                },
+                {
+                    "authorId": "2416333",
+                    "name": "J. Dutertre"
+                },
+                {
+                    "authorId": "1957343",
+                    "name": "S. Ponti\u00e9"
+                }
+            ],
+            "doi": "10.48550/arXiv.2304.12876",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "da9dd0eaf79ab02caf8744158c6ba4dba3206bf8",
+            "title": "Evaluation of Parameter-based Attacks against Embedded Neural Networks with Laser Injection",
+            "url": "https://www.semanticscholar.org/paper/da9dd0eaf79ab02caf8744158c6ba4dba3206bf8",
+            "venue": "SAFECOMP",
+            "year": 2023
+        },
+        {
+            "arxivId": "2211.05590",
+            "authors": [
+                {
+                    "authorId": "2098791930",
+                    "name": "Raphael Joud"
+                },
+                {
+                    "authorId": "3070099",
+                    "name": "Pierre-Alain Mo\u00ebllic"
+                },
+                {
+                    "authorId": "1957343",
+                    "name": "S. Ponti\u00e9"
+                },
+                {
+                    "authorId": "35029807",
+                    "name": "J. Rigaud"
+                }
+            ],
+            "doi": "10.48550/arXiv.2211.05590",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "4c57688fde64650fe767a2ba57341520595b5b13",
+            "title": "A Practical Introduction to Side-Channel Extraction of Deep Neural Network Parameters",
+            "url": "https://www.semanticscholar.org/paper/4c57688fde64650fe767a2ba57341520595b5b13",
+            "venue": "CARDIS",
+            "year": 2022
+        },
+        {
+            "arxivId": "2210.07692",
+            "authors": [
+                {
+                    "authorId": "3493948",
+                    "name": "Manuele Rusci"
+                },
+                {
+                    "authorId": "1657736606",
+                    "name": "Marco Fariselli"
+                },
+                {
+                    "authorId": "2187873990",
+                    "name": "Martin Croome"
+                },
+                {
+                    "authorId": "1685141",
+                    "name": "F. Paci"
+                },
+                {
+                    "authorId": "50690175",
+                    "name": "E. Flamand"
+                }
+            ],
+            "doi": "10.48550/arXiv.2210.07692",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "a44b90f36c4b03068f50b04bef7bb968f4eae88f",
+            "title": "Accelerating RNN-based Speech Enhancement on a Multi-Core MCU with Mixed FP16-INT8 Post-Training Quantization",
+            "url": "https://www.semanticscholar.org/paper/a44b90f36c4b03068f50b04bef7bb968f4eae88f",
+            "venue": "PKDD/ECML Workshops",
+            "year": 2022
+        },
+        {
+            "arxivId": "2207.04209",
+            "authors": [
+                {
+                    "authorId": "2125017639",
+                    "name": "Chang Yue"
+                },
+                {
+                    "authorId": "117426360",
+                    "name": "Peizhuo Lv"
+                },
+                {
+                    "authorId": "52405008",
+                    "name": "Ruigang Liang"
+                },
+                {
+                    "authorId": "2119201206",
+                    "name": "Kai Chen"
+                }
+            ],
+            "doi": "10.48550/arXiv.2207.04209",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "04fa46382ee60b2271b1698038f17c9f16680ed3",
+            "title": "Invisible Backdoor Attacks Using Data Poisoning in the Frequency Domain",
+            "url": "https://www.semanticscholar.org/paper/04fa46382ee60b2271b1698038f17c9f16680ed3",
+            "venue": "ArXiv",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2603818",
+                    "name": "P. S. Bangare"
+                },
+                {
+                    "authorId": "8908548",
+                    "name": "Kishor P. Patil"
+                }
+            ],
+            "doi": "10.1109/icacite53722.2022.9823709",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "595fe2227f4989d24dff52bc1b9ac01cfad83bac",
+            "title": "Security Issues and Challenges in Internet of Things (IOT) System",
+            "url": "https://www.semanticscholar.org/paper/595fe2227f4989d24dff52bc1b9ac01cfad83bac",
+            "venue": "2022 2nd International Conference on Advance Computing and Innovative Technologies in Engineering (ICACITE)",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "67042729",
+                    "name": "Lo\u00efc Masure"
+                },
+                {
+                    "authorId": "52147107",
+                    "name": "Nicolas Belleville"
+                },
+                {
+                    "authorId": "2816125",
+                    "name": "Eleonora Cagli"
+                },
+                {
+                    "authorId": "7338999",
+                    "name": "Marie-Angela Cornelie"
+                },
+                {
+                    "authorId": "2980561",
+                    "name": "Damien Courouss\u00e9"
+                },
+                {
+                    "authorId": "2026534",
+                    "name": "C\u00e9cile Canovas"
+                },
+                {
+                    "authorId": "134313787",
+                    "name": "Laurent Maingault"
+                }
+            ],
+            "doi": "10.1007/978-3-030-58951-6_22",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d4eb975f00c877b7c5583a356208be2e2dcba51e",
+            "title": "Deep Learning Side-Channel Analysis on Large-Scale Traces - A Case Study on a Polymorphic AES",
+            "url": "https://www.semanticscholar.org/paper/d4eb975f00c877b7c5583a356208be2e2dcba51e",
+            "venue": "IACR Cryptol. ePrint Arch.",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1638059883",
+                    "name": "By Lei Deng"
+                },
+                {
+                    "authorId": "1730243",
+                    "name": "Guoqi Li"
+                },
+                {
+                    "authorId": "143840275",
+                    "name": "Song Han"
+                },
+                {
+                    "authorId": "29889772",
+                    "name": "Luping Shi"
+                },
+                {
+                    "authorId": "1410066063",
+                    "name": "Yuan Xie"
+                }
+            ],
+            "doi": "10.1109/JPROC.2020.2976475",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "e70d609ce18cd61799b087bf3a5e14c1ce70a41a",
+            "title": "Model Compression and Hardware Acceleration for Neural Networks: A Comprehensive Survey",
+            "url": "https://www.semanticscholar.org/paper/e70d609ce18cd61799b087bf3a5e14c1ce70a41a",
+            "venue": "Proceedings of the IEEE",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2094520010",
+                    "name": "R. Zingg"
+                },
+                {
+                    "authorId": "2053980846",
+                    "name": "M. Rosenthal"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "9274710fb6f2e4185d741b1191ea60186c966f50",
+            "title": "Artificial intelligence on microcontrollers",
+            "url": "https://www.semanticscholar.org/paper/9274710fb6f2e4185d741b1191ea60186c966f50",
+            "venue": "",
+            "year": 2020
+        },
+        {
+            "arxivId": "1912.01703",
+            "authors": [
+                {
+                    "authorId": "3407277",
+                    "name": "Adam Paszke"
+                },
+                {
+                    "authorId": "39793298",
+                    "name": "Sam Gross"
+                },
+                {
+                    "authorId": "1403239967",
+                    "name": "Francisco Massa"
+                },
+                {
+                    "authorId": "1977806",
+                    "name": "Adam Lerer"
+                },
+                {
+                    "authorId": "2065251344",
+                    "name": "James Bradbury"
+                },
+                {
+                    "authorId": "114250963",
+                    "name": "Gregory Chanan"
+                },
+                {
+                    "authorId": "2059271276",
+                    "name": "Trevor Killeen"
+                },
+                {
+                    "authorId": "3370429",
+                    "name": "Zeming Lin"
+                },
+                {
+                    "authorId": "3365851",
+                    "name": "N. Gimelshein"
+                },
+                {
+                    "authorId": "3029482",
+                    "name": "L. Antiga"
+                },
+                {
+                    "authorId": "3050846",
+                    "name": "Alban Desmaison"
+                },
+                {
+                    "authorId": "1473151134",
+                    "name": "Andreas K\u00f6pf"
+                },
+                {
+                    "authorId": "2052812305",
+                    "name": "E. Yang"
+                },
+                {
+                    "authorId": "2375710",
+                    "name": "Zach DeVito"
+                },
+                {
+                    "authorId": "10707709",
+                    "name": "Martin Raison"
+                },
+                {
+                    "authorId": "41203992",
+                    "name": "Alykhan Tejani"
+                },
+                {
+                    "authorId": "22236100",
+                    "name": "Sasank Chilamkurthy"
+                },
+                {
+                    "authorId": "32163737",
+                    "name": "Benoit Steiner"
+                },
+                {
+                    "authorId": "152599430",
+                    "name": "Lu Fang"
+                },
+                {
+                    "authorId": "2113829116",
+                    "name": "Junjie Bai"
+                },
+                {
+                    "authorId": "2127604",
+                    "name": "Soumith Chintala"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "3c8a456509e6c0805354bd40a35e3f2dbf8069b1",
+            "title": "PyTorch: An Imperative Style, High-Performance Deep Learning Library",
+            "url": "https://www.semanticscholar.org/paper/3c8a456509e6c0805354bd40a35e3f2dbf8069b1",
+            "venue": "NeurIPS",
+            "year": 2019
+        },
+        {
+            "arxivId": "1910.00744",
+            "authors": [
+                {
+                    "authorId": "2381187",
+                    "name": "D. Rolnick"
+                },
+                {
+                    "authorId": "3282030",
+                    "name": "Konrad Paul Kording"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "daeeb049fd8f0fdb47f6e2e247c21be140f798fa",
+            "title": "Reverse-engineering deep ReLU networks",
+            "url": "https://www.semanticscholar.org/paper/daeeb049fd8f0fdb47f6e2e247c21be140f798fa",
+            "venue": "ICML",
+            "year": 2019
+        },
+        {
+            "arxivId": "1909.12741",
+            "authors": [
+                {
+                    "authorId": "1381203703",
+                    "name": "R\u00e9mi Bernhard"
+                },
+                {
+                    "authorId": "3070099",
+                    "name": "Pierre-Alain Mo\u00ebllic"
+                },
+                {
+                    "authorId": "2416333",
+                    "name": "J. Dutertre"
+                }
+            ],
+            "doi": "10.1109/CW.2019.00057",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "783a916c6706ebc443e00c1990cafe71ec32b69e",
+            "title": "Impact of Low-Bitwidth Quantization on the Adversarial Robustness for Embedded Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/783a916c6706ebc443e00c1990cafe71ec32b69e",
+            "venue": "2019 International Conference on Cyberworlds (CW)",
+            "year": 2019
+        },
+        {
+            "arxivId": "1901.00121",
+            "authors": [
+                {
+                    "authorId": "9740142",
+                    "name": "Ahmad Shawahna"
+                },
+                {
+                    "authorId": "1800189",
+                    "name": "S. M. Sait"
+                },
+                {
+                    "authorId": "1393259190",
+                    "name": "A. El-Maleh"
+                }
+            ],
+            "doi": "10.1109/ACCESS.2018.2890150",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "cc557a8b361445db05d5b7211fec4ad5aa7f97b3",
+            "title": "FPGA-Based Accelerators of Deep Learning Networks for Learning and Classification: A Review",
+            "url": "https://www.semanticscholar.org/paper/cc557a8b361445db05d5b7211fec4ad5aa7f97b3",
+            "venue": "IEEE Access",
+            "year": 2019
+        },
+        {
+            "arxivId": "1807.07978",
+            "authors": [
+                {
+                    "authorId": "34562927",
+                    "name": "Andrew Ilyas"
+                },
+                {
+                    "authorId": "39468283",
+                    "name": "Logan Engstrom"
+                },
+                {
+                    "authorId": "143826246",
+                    "name": "A. Madry"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "10ab21b120e305b6d3cbf81c5a906d36521152f1",
+            "title": "Prior Convictions: Black-Box Adversarial Attacks with Bandits and Priors",
+            "url": "https://www.semanticscholar.org/paper/10ab21b120e305b6d3cbf81c5a906d36521152f1",
+            "venue": "ICLR",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "122332636",
+                    "name": "Hendrik M. Wendland"
+                }
+            ],
+            "doi": "10.1177/1023263X18769500",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "4ec2c1bc77bd169536ec0549440cdcd785ee5a31",
+            "title": "When good is not good enough",
+            "url": "https://www.semanticscholar.org/paper/4ec2c1bc77bd169536ec0549440cdcd785ee5a31",
+            "venue": "Maastricht Journal of European and Comparative Law",
+            "year": 2018
+        },
+        {
+            "arxivId": "1804.08598",
+            "authors": [
+                {
+                    "authorId": "34562927",
+                    "name": "Andrew Ilyas"
+                },
+                {
+                    "authorId": "39468283",
+                    "name": "Logan Engstrom"
+                },
+                {
+                    "authorId": "38939786",
+                    "name": "Anish Athalye"
+                },
+                {
+                    "authorId": "32815692",
+                    "name": "Jessy Lin"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "b3f83e8416010e9c3a705a0b6390d268e5ddf5c0",
+            "title": "Black-box Adversarial Attacks with Limited Queries and Information",
+            "url": "https://www.semanticscholar.org/paper/b3f83e8416010e9c3a705a0b6390d268e5ddf5c0",
+            "venue": "ICML",
+            "year": 2018
+        },
+        {
+            "arxivId": "1802.05666",
+            "authors": [
+                {
+                    "authorId": "9960452",
+                    "name": "Jonathan Uesato"
+                },
+                {
+                    "authorId": "1389654226",
+                    "name": "Brendan O'Donoghue"
+                },
+                {
+                    "authorId": "3422336",
+                    "name": "A\u00e4ron van den Oord"
+                },
+                {
+                    "authorId": "143967473",
+                    "name": "Pushmeet Kohli"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "f4b434c3ab979ecdd71bbed894b34de77590c6dd",
+            "title": "Adversarial Risk and the Dangers of Evaluating Against Weak Attacks",
+            "url": "https://www.semanticscholar.org/paper/f4b434c3ab979ecdd71bbed894b34de77590c6dd",
+            "venue": "ICML",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2108162298",
+                    "name": "Yannan Liu"
+                },
+                {
+                    "authorId": "2337781",
+                    "name": "Lingxiao Wei"
+                },
+                {
+                    "authorId": "2075400209",
+                    "name": "Bo Luo"
+                },
+                {
+                    "authorId": "144239164",
+                    "name": "Q. Xu"
+                }
+            ],
+            "doi": "10.1109/ICCAD.2017.8203770",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "900d130f25f453948fedf7df5faf4ab710fb5e94",
+            "title": "Fault injection attack on deep neural network",
+            "url": "https://www.semanticscholar.org/paper/900d130f25f453948fedf7df5faf4ab710fb5e94",
+            "venue": "2017 IEEE/ACM International Conference on Computer-Aided Design (ICCAD)",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2816125",
+                    "name": "Eleonora Cagli"
+                },
+                {
+                    "authorId": "2287662992",
+                    "name": "C\u00e9cile Canovas"
+                },
+                {
+                    "authorId": "1726631",
+                    "name": "E. Prouff"
+                }
+            ],
+            "doi": "10.1007/978-3-319-66787-4_3",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "af100e71ca4d0de62220b2d29dcfea404073b8f3",
+            "title": "Convolutional Neural Networks with Data Augmentation Against Jitter-Based Countermeasures - Profiling Attacks Without Pre-processing",
+            "url": "https://www.semanticscholar.org/paper/af100e71ca4d0de62220b2d29dcfea404073b8f3",
+            "venue": "CHES",
+            "year": 2017
+        },
+        {
+            "arxivId": "1708.03999",
+            "authors": [
+                {
+                    "authorId": "153191489",
+                    "name": "Pin-Yu Chen"
+                },
+                {
+                    "authorId": "49723481",
+                    "name": "Huan Zhang"
+                },
+                {
+                    "authorId": "49738125",
+                    "name": "Yash Sharma"
+                },
+                {
+                    "authorId": "2882166",
+                    "name": "Jinfeng Yi"
+                },
+                {
+                    "authorId": "1793529",
+                    "name": "Cho-Jui Hsieh"
+                }
+            ],
+            "doi": "10.1145/3128572.3140448",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "9ab7319dbe80549ba80e3320d0546d741a7a5791",
+            "title": "ZOO: Zeroth Order Optimization Based Black-box Attacks to Deep Neural Networks without Training Substitute Models",
+            "url": "https://www.semanticscholar.org/paper/9ab7319dbe80549ba80e3320d0546d741a7a5791",
+            "venue": "AISec@CCS",
+            "year": 2017
+        },
+        {
+            "arxivId": "1704.04861",
+            "authors": [
+                {
+                    "authorId": "144727050",
+                    "name": "Andrew G. Howard"
+                },
+                {
+                    "authorId": "2717876",
+                    "name": "Menglong Zhu"
+                },
+                {
+                    "authorId": null,
+                    "name": "Bo Chen"
+                },
+                {
+                    "authorId": "2741985",
+                    "name": "Dmitry Kalenichenko"
+                },
+                {
+                    "authorId": "2108301072",
+                    "name": "Weijun Wang"
+                },
+                {
+                    "authorId": "47447630",
+                    "name": "Tobias Weyand"
+                },
+                {
+                    "authorId": "2612392",
+                    "name": "M. Andreetto"
+                },
+                {
+                    "authorId": "2595180",
+                    "name": "Hartwig Adam"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "3647d6d0f151dc05626449ee09cc7bce55be497e",
+            "title": "MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications",
+            "url": "https://www.semanticscholar.org/paper/3647d6d0f151dc05626449ee09cc7bce55be497e",
+            "venue": "ArXiv",
+            "year": 2017
+        },
+        {
+            "arxivId": "1702.05983",
+            "authors": [
+                {
+                    "authorId": "2146241447",
+                    "name": "Weiwei Hu"
+                },
+                {
+                    "authorId": "143692919",
+                    "name": "Ying Tan"
+                }
+            ],
+            "doi": "10.1007/978-981-19-8991-9_29",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "86e5827087e11dc929d592ee7b3d7581fc48265e",
+            "title": "Generating Adversarial Malware Examples for Black-Box Attacks Based on GAN",
+            "url": "https://www.semanticscholar.org/paper/86e5827087e11dc929d592ee7b3d7581fc48265e",
+            "venue": "DMBD",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2726537",
+                    "name": "Houssem Maghrebi"
+                },
+                {
+                    "authorId": "3474230",
+                    "name": "Thibault Portigliatti"
+                },
+                {
+                    "authorId": "1726631",
+                    "name": "E. Prouff"
+                }
+            ],
+            "doi": "10.1007/978-3-319-49445-6_1",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "82024003820d52ef344fb210d050f469f60ddf4b",
+            "title": "Breaking Cryptographic Implementations Using Deep Learning Techniques",
+            "url": "https://www.semanticscholar.org/paper/82024003820d52ef344fb210d050f469f60ddf4b",
+            "venue": "SPACE",
+            "year": 2016
+        },
+        {
+            "arxivId": "1612.07119",
+            "authors": [
+                {
+                    "authorId": "2067445",
+                    "name": "Yaman Umuroglu"
+                },
+                {
+                    "authorId": "1809409",
+                    "name": "Nicholas J. Fraser"
+                },
+                {
+                    "authorId": "1779727",
+                    "name": "Giulio Gambardella"
+                },
+                {
+                    "authorId": "1791399",
+                    "name": "Michaela Blott"
+                },
+                {
+                    "authorId": "1682246",
+                    "name": "P. Leong"
+                },
+                {
+                    "authorId": "2054413",
+                    "name": "Magnus Jahre"
+                },
+                {
+                    "authorId": "145732571",
+                    "name": "K. Vissers"
+                }
+            ],
+            "doi": "10.1145/3020078.3021744",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "3b2491ddeeaa7beae4d311b217c292a9e16112cf",
+            "title": "FINN: A Framework for Fast, Scalable Binarized Neural Network Inference",
+            "url": "https://www.semanticscholar.org/paper/3b2491ddeeaa7beae4d311b217c292a9e16112cf",
+            "venue": "FPGA",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2816125",
+                    "name": "Eleonora Cagli"
+                },
+                {
+                    "authorId": "2026534",
+                    "name": "C\u00e9cile Canovas"
+                },
+                {
+                    "authorId": "1726631",
+                    "name": "E. Prouff"
+                }
+            ],
+            "doi": "10.1007/978-3-319-54669-8_1",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ca3594b81ba585550230c23efc19a3cfcfe520a5",
+            "title": "Kernel Discriminant Analysis for Information Extraction in the Presence of Masking",
+            "url": "https://www.semanticscholar.org/paper/ca3594b81ba585550230c23efc19a3cfcfe520a5",
+            "venue": "CARDIS",
+            "year": 2016
+        },
+        {
+            "arxivId": "1610.00768",
+            "authors": [
+                {
+                    "authorId": "1967156",
+                    "name": "Nicolas Papernot"
+                },
+                {
+                    "authorId": "2978170",
+                    "name": "Fartash Faghri"
+                },
+                {
+                    "authorId": "2483738",
+                    "name": "Nicholas Carlini"
+                },
+                {
+                    "authorId": "153440022",
+                    "name": "I. Goodfellow"
+                },
+                {
+                    "authorId": "40285565",
+                    "name": "Reuben Feinman"
+                },
+                {
+                    "authorId": "145714153",
+                    "name": "Alexey Kurakin"
+                },
+                {
+                    "authorId": "3011497",
+                    "name": "Cihang Xie"
+                },
+                {
+                    "authorId": "49738125",
+                    "name": "Yash Sharma"
+                },
+                {
+                    "authorId": "31035595",
+                    "name": "Tom B. Brown"
+                },
+                {
+                    "authorId": "39788470",
+                    "name": "Aurko Roy"
+                },
+                {
+                    "authorId": "2139376",
+                    "name": "Alexander Matyasko"
+                },
+                {
+                    "authorId": "2641675",
+                    "name": "Vahid Behzadan"
+                },
+                {
+                    "authorId": "5641536",
+                    "name": "Karen Hambardzumyan"
+                },
+                {
+                    "authorId": "2852303",
+                    "name": "Zhishuai Zhang"
+                },
+                {
+                    "authorId": "144458540",
+                    "name": "Yi-Lin Juang"
+                },
+                {
+                    "authorId": "2118215674",
+                    "name": "Zhi Li"
+                },
+                {
+                    "authorId": "9541640",
+                    "name": "Ryan Sheatsley"
+                },
+                {
+                    "authorId": "145437002",
+                    "name": "Abhibhav Garg"
+                },
+                {
+                    "authorId": "9960452",
+                    "name": "Jonathan Uesato"
+                },
+                {
+                    "authorId": "145556052",
+                    "name": "W. Gierke"
+                },
+                {
+                    "authorId": "3431029",
+                    "name": "Yinpeng Dong"
+                },
+                {
+                    "authorId": "39835551",
+                    "name": "David Berthelot"
+                },
+                {
+                    "authorId": "118838370",
+                    "name": "P. Hendricks"
+                },
+                {
+                    "authorId": "19237612",
+                    "name": "Jonas Rauber"
+                },
+                {
+                    "authorId": "103423330",
+                    "name": "Rujun Long"
+                },
+                {
+                    "authorId": "144061974",
+                    "name": "P. Mcdaniel"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d86c9623d56e469aec73a76758a829891b0b2a09",
+            "title": "Technical Report on the CleverHans v2.1.0 Adversarial Examples Library",
+            "url": "https://www.semanticscholar.org/paper/d86c9623d56e469aec73a76758a829891b0b2a09",
+            "venue": "",
+            "year": 2016
+        },
+        {
+            "arxivId": "1608.06993",
+            "authors": [
+                {
+                    "authorId": "143983679",
+                    "name": "Gao Huang"
+                },
+                {
+                    "authorId": "2109168016",
+                    "name": "Zhuang Liu"
+                },
+                {
+                    "authorId": "7446832",
+                    "name": "Kilian Q. Weinberger"
+                }
+            ],
+            "doi": "10.1109/CVPR.2017.243",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5694e46284460a648fe29117cbc55f6c9be3fa3c",
+            "title": "Densely Connected Convolutional Networks",
+            "url": "https://www.semanticscholar.org/paper/5694e46284460a648fe29117cbc55f6c9be3fa3c",
+            "venue": "2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "4721512",
+                    "name": "Nicolas Bruneau"
+                },
+                {
+                    "authorId": "1688300",
+                    "name": "S. Guilley"
+                },
+                {
+                    "authorId": "2563182",
+                    "name": "Annelie Heuser"
+                },
+                {
+                    "authorId": "22578964",
+                    "name": "Damien Marion"
+                },
+                {
+                    "authorId": "1755659",
+                    "name": "O. Rioul"
+                }
+            ],
+            "doi": "10.1007/s13389-017-0170-9",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b46d1e2a800923176ff88eb27c2e21e1211f5765",
+            "title": "Optimal side-channel attacks for multivariate leakages and multiple models",
+            "url": "https://www.semanticscholar.org/paper/b46d1e2a800923176ff88eb27c2e21e1211f5765",
+            "venue": "Journal of Cryptographic Engineering",
+            "year": 2016
+        },
+        {
+            "arxivId": "1608.04644",
+            "authors": [
+                {
+                    "authorId": "2483738",
+                    "name": "Nicholas Carlini"
+                },
+                {
+                    "authorId": "145394689",
+                    "name": "D. Wagner"
+                }
+            ],
+            "doi": "10.1109/SP.2017.49",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "df40ce107a71b770c9d0354b78fdd8989da80d2f",
+            "title": "Towards Evaluating the Robustness of Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/df40ce107a71b770c9d0354b78fdd8989da80d2f",
+            "venue": "2017 IEEE Symposium on Security and Privacy (SP)",
+            "year": 2016
+        },
+        {
+            "arxivId": "1609.02943",
+            "authors": [
+                {
+                    "authorId": "2444919",
+                    "name": "Florian Tram\u00e8r"
+                },
+                {
+                    "authorId": "2153304355",
+                    "name": "Fan Zhang"
+                },
+                {
+                    "authorId": "1687161",
+                    "name": "A. Juels"
+                },
+                {
+                    "authorId": "1746214",
+                    "name": "M. Reiter"
+                },
+                {
+                    "authorId": "1707461",
+                    "name": "Thomas Ristenpart"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "8a95423d0059f7c5b1422f0ef1aa60b9e26aab7e",
+            "title": "Stealing Machine Learning Models via Prediction APIs",
+            "url": "https://www.semanticscholar.org/paper/8a95423d0059f7c5b1422f0ef1aa60b9e26aab7e",
+            "venue": "USENIX Security Symposium",
+            "year": 2016
+        },
+        {
+            "arxivId": "1607.02533",
+            "authors": [
+                {
+                    "authorId": "145714153",
+                    "name": "Alexey Kurakin"
+                },
+                {
+                    "authorId": "153440022",
+                    "name": "I. Goodfellow"
+                },
+                {
+                    "authorId": "1751569",
+                    "name": "Samy Bengio"
+                }
+            ],
+            "doi": "10.1201/9781351251389-8",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "b544ca32b66b4c9c69bcfa00d63ee4b799d8ab6b",
+            "title": "Adversarial examples in the physical world",
+            "url": "https://www.semanticscholar.org/paper/b544ca32b66b4c9c69bcfa00d63ee4b799d8ab6b",
+            "venue": "ICLR",
+            "year": 2016
+        },
+        {
+            "arxivId": "1605.08695",
+            "authors": [
+                {
+                    "authorId": "2057642721",
+                    "name": "Mart\u00edn Abadi"
+                },
+                {
+                    "authorId": "144758007",
+                    "name": "P. Barham"
+                },
+                {
+                    "authorId": "2108406634",
+                    "name": "Jianmin Chen"
+                },
+                {
+                    "authorId": "2545358",
+                    "name": "Z. Chen"
+                },
+                {
+                    "authorId": "36347083",
+                    "name": "Andy Davis"
+                },
+                {
+                    "authorId": "49959210",
+                    "name": "J. Dean"
+                },
+                {
+                    "authorId": "145139947",
+                    "name": "M. Devin"
+                },
+                {
+                    "authorId": "1780892",
+                    "name": "Sanjay Ghemawat"
+                },
+                {
+                    "authorId": "2060655766",
+                    "name": "G. Irving"
+                },
+                {
+                    "authorId": "2090818",
+                    "name": "M. Isard"
+                },
+                {
+                    "authorId": "1942300",
+                    "name": "M. Kudlur"
+                },
+                {
+                    "authorId": "3369421",
+                    "name": "J. Levenberg"
+                },
+                {
+                    "authorId": "3089272",
+                    "name": "R. Monga"
+                },
+                {
+                    "authorId": "144375552",
+                    "name": "Sherry Moore"
+                },
+                {
+                    "authorId": "20154699",
+                    "name": "D. Murray"
+                },
+                {
+                    "authorId": "32163737",
+                    "name": "Benoit Steiner"
+                },
+                {
+                    "authorId": "2080690",
+                    "name": "P. Tucker"
+                },
+                {
+                    "authorId": "2053781980",
+                    "name": "Vijay Vasudevan"
+                },
+                {
+                    "authorId": "47941411",
+                    "name": "Pete Warden"
+                },
+                {
+                    "authorId": "35078078",
+                    "name": "M. Wicke"
+                },
+                {
+                    "authorId": "2117163698",
+                    "name": "Yuan Yu"
+                },
+                {
+                    "authorId": "2108113547",
+                    "name": "Xiaoqiang Zhang"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "4954fa180728932959997a4768411ff9136aac81",
+            "title": "TensorFlow: A system for large-scale machine learning",
+            "url": "https://www.semanticscholar.org/paper/4954fa180728932959997a4768411ff9136aac81",
+            "venue": "OSDI",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2623167",
+                    "name": "Matt Fredrikson"
+                },
+                {
+                    "authorId": "1680133",
+                    "name": "S. Jha"
+                },
+                {
+                    "authorId": "1707461",
+                    "name": "Thomas Ristenpart"
+                }
+            ],
+            "doi": "10.1145/2810103.2813677",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d1b9a3b11e6c9571a1553556f82b605b2b4baec3",
+            "title": "Model Inversion Attacks that Exploit Confidence Information and Basic Countermeasures",
+            "url": "https://www.semanticscholar.org/paper/d1b9a3b11e6c9571a1553556f82b605b2b4baec3",
+            "venue": "CCS",
+            "year": 2015
+        },
+        {
+            "arxivId": "1510.00149",
+            "authors": [
+                {
+                    "authorId": "143840275",
+                    "name": "Song Han"
+                },
+                {
+                    "authorId": "3123774",
+                    "name": "Huizi Mao"
+                },
+                {
+                    "authorId": "80724002",
+                    "name": "W. Dally"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "642d0f49b7826adcf986616f4af77e736229990f",
+            "title": "Deep Compression: Compressing Deep Neural Network with Pruning, Trained Quantization and Huffman Coding",
+            "url": "https://www.semanticscholar.org/paper/642d0f49b7826adcf986616f4af77e736229990f",
+            "venue": "ICLR",
+            "year": 2015
+        },
+        {
+            "arxivId": "1506.02640",
+            "authors": [
+                {
+                    "authorId": "40497777",
+                    "name": "Joseph Redmon"
+                },
+                {
+                    "authorId": "2038685",
+                    "name": "S. Divvala"
+                },
+                {
+                    "authorId": "2983898",
+                    "name": "Ross B. Girshick"
+                },
+                {
+                    "authorId": "143787583",
+                    "name": "Ali Farhadi"
+                }
+            ],
+            "doi": "10.1109/CVPR.2016.91",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f8e79ac0ea341056ef20f2616628b3e964764cfd",
+            "title": "You Only Look Once: Unified, Real-Time Object Detection",
+            "url": "https://www.semanticscholar.org/paper/f8e79ac0ea341056ef20f2616628b3e964764cfd",
+            "venue": "2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2015
+        },
+        {
+            "arxivId": "1503.02531",
+            "authors": [
+                {
+                    "authorId": "1695689",
+                    "name": "Geoffrey E. Hinton"
+                },
+                {
+                    "authorId": "1689108",
+                    "name": "O. Vinyals"
+                },
+                {
+                    "authorId": "49959210",
+                    "name": "J. Dean"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "0c908739fbff75f03469d13d4a1a07de3414ee19",
+            "title": "Distilling the Knowledge in a Neural Network",
+            "url": "https://www.semanticscholar.org/paper/0c908739fbff75f03469d13d4a1a07de3414ee19",
+            "venue": "ArXiv",
+            "year": 2015
+        },
+        {
+            "arxivId": "1412.6980",
+            "authors": [
+                {
+                    "authorId": "1726807",
+                    "name": "Diederik P. Kingma"
+                },
+                {
+                    "authorId": "2503659",
+                    "name": "Jimmy Ba"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "a6cb366736791bcccc5c8639de5a8f9636bf87e8",
+            "title": "Adam: A Method for Stochastic Optimization",
+            "url": "https://www.semanticscholar.org/paper/a6cb366736791bcccc5c8639de5a8f9636bf87e8",
+            "venue": "ICLR",
+            "year": 2014
+        },
+        {
+            "arxivId": "1412.6572",
+            "authors": [
+                {
+                    "authorId": "153440022",
+                    "name": "I. Goodfellow"
+                },
+                {
+                    "authorId": "1789737",
+                    "name": "Jonathon Shlens"
+                },
+                {
+                    "authorId": "2574060",
+                    "name": "Christian Szegedy"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "bee044c8e8903fb67523c1f8c105ab4718600cdb",
+            "title": "Explaining and Harnessing Adversarial Examples",
+            "url": "https://www.semanticscholar.org/paper/bee044c8e8903fb67523c1f8c105ab4718600cdb",
+            "venue": "ICLR",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2862807",
+                    "name": "Marios O. Choudary"
+                },
+                {
+                    "authorId": "1683032",
+                    "name": "M. Kuhn"
+                }
+            ],
+            "doi": "10.1007/978-3-319-16763-3_6",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a1b1d4f2a84f4ba454bde03bc3a15136d9ffb98d",
+            "title": "Efficient Stochastic Methods: Profiled Attacks Beyond 8 Bits",
+            "url": "https://www.semanticscholar.org/paper/a1b1d4f2a84f4ba454bde03bc3a15136d9ffb98d",
+            "venue": "CARDIS",
+            "year": 2014
+        },
+        {
+            "arxivId": "1312.6199",
+            "authors": [
+                {
+                    "authorId": "2574060",
+                    "name": "Christian Szegedy"
+                },
+                {
+                    "authorId": "2563432",
+                    "name": "Wojciech Zaremba"
+                },
+                {
+                    "authorId": "1701686",
+                    "name": "I. Sutskever"
+                },
+                {
+                    "authorId": "143627859",
+                    "name": "Joan Bruna"
+                },
+                {
+                    "authorId": "1761978",
+                    "name": "D. Erhan"
+                },
+                {
+                    "authorId": "153440022",
+                    "name": "I. Goodfellow"
+                },
+                {
+                    "authorId": "2276554",
+                    "name": "R. Fergus"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d891dc72cbd40ffaeefdc79f2e7afe1e530a23ad",
+            "title": "Intriguing properties of neural networks",
+            "url": "https://www.semanticscholar.org/paper/d891dc72cbd40ffaeefdc79f2e7afe1e530a23ad",
+            "venue": "ICLR",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1705882",
+                    "name": "Omar Choudary"
+                },
+                {
+                    "authorId": "1683032",
+                    "name": "M. Kuhn"
+                }
+            ],
+            "doi": "10.1007/978-3-319-08302-5_17",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ca00a2ef0249ee6a392d7811b0514c6ad6c3d2db",
+            "title": "Efficient Template Attacks",
+            "url": "https://www.semanticscholar.org/paper/ca00a2ef0249ee6a392d7811b0514c6ad6c3d2db",
+            "venue": "CARDIS",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1743786",
+                    "name": "S. Mangard"
+                },
+                {
+                    "authorId": "2286175444",
+                    "name": "Elisabeth Oswald"
+                },
+                {
+                    "authorId": "97339153",
+                    "name": "Thomas Popp"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "12e6e118d0f02cd266f21db52001d83752ab2543",
+            "title": "Power analysis attacks - revealing the secrets of smart cards",
+            "url": "https://www.semanticscholar.org/paper/12e6e118d0f02cd266f21db52001d83752ab2543",
+            "venue": "",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2824663",
+                    "name": "C. Archambeau"
+                },
+                {
+                    "authorId": "144658735",
+                    "name": "Eric Peeters"
+                },
+                {
+                    "authorId": "1706533",
+                    "name": "Fran\u00e7ois-Xavier Standaert"
+                },
+                {
+                    "authorId": "1693348",
+                    "name": "J. Quisquater"
+                }
+            ],
+            "doi": "10.1007/11894063_1",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7bbe28b9f93f8a31b7105a2fb7b12edb450c4644",
+            "title": "Template Attacks in Principal Subspaces",
+            "url": "https://www.semanticscholar.org/paper/7bbe28b9f93f8a31b7105a2fb7b12edb450c4644",
+            "venue": "CHES",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144905310",
+                    "name": "Suresh Chari"
+                },
+                {
+                    "authorId": "1760396",
+                    "name": "J. Rao"
+                },
+                {
+                    "authorId": "1717108",
+                    "name": "P. Rohatgi"
+                }
+            ],
+            "doi": "10.1007/3-540-36400-5_3",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f7a0d42044b26be8d509310ba20fd8d665943eba",
+            "title": "Template Attacks",
+            "url": "https://www.semanticscholar.org/paper/f7a0d42044b26be8d509310ba20fd8d665943eba",
+            "venue": "CHES",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "50046084",
+                    "name": "P. Brown"
+                }
+            ],
+            "doi": "10.1086/NTJ41792243",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c3e38545207ba24a1434cc7521b6d589023345e6",
+            "title": "ON \"EXPLOITATION\"",
+            "url": "https://www.semanticscholar.org/paper/c3e38545207ba24a1434cc7521b6d589023345e6",
+            "venue": "National Tax Journal",
+            "year": 1971
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1753746",
+                    "name": "L. Batina"
+                },
+                {
+                    "authorId": "40428273",
+                    "name": "S. Bhasin"
+                },
+                {
+                    "authorId": "3237001",
+                    "name": "Dirmanto Jap"
+                },
+                {
+                    "authorId": "1686538",
+                    "name": "S. Picek"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b12c15503435cffee16bdd156766dcf390eeb8f8",
+            "title": "CSI NN: Reverse Engineering of Neural Network Architectures Through Electromagnetic Side Channel",
+            "url": "https://www.semanticscholar.org/paper/b12c15503435cffee16bdd156766dcf390eeb8f8",
+            "venue": "USENIX Security Symposium",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2262142027",
+                    "name": "Individualized Treat"
+                },
+                {
+                    "authorId": "2262204742",
+                    "name": "Jinsung Yoon"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c68796f833a7151f0a63d1d1608dc902b4fdc9b6",
+            "title": "GENERATIVE ADVERSARIAL NETS",
+            "url": "https://www.semanticscholar.org/paper/c68796f833a7151f0a63d1d1608dc902b4fdc9b6",
+            "venue": "",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2113979381",
+                    "name": "Xing Hao"
+                },
+                {
+                    "authorId": "8273966",
+                    "name": "Guigang Zhang"
+                },
+                {
+                    "authorId": "2118869556",
+                    "name": "Shang Ma"
+                }
+            ],
+            "doi": "10.1142/S1793351X16500045",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "4f8d648c52edf74e41b0996128aa536e13cc7e82",
+            "title": "Deep Learning",
+            "url": "https://www.semanticscholar.org/paper/4f8d648c52edf74e41b0996128aa536e13cc7e82",
+            "venue": "Int. J. Semantic Comput.",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "4277384",
+                    "name": "G. Becker"
+                },
+                {
+                    "authorId": "123197115",
+                    "name": "J. Cooper"
+                },
+                {
+                    "authorId": "83496590",
+                    "name": "E. DeMulder"
+                },
+                {
+                    "authorId": "2084198926",
+                    "name": "G. Goodwill"
+                },
+                {
+                    "authorId": "143699506",
+                    "name": "J. Jaffe"
+                },
+                {
+                    "authorId": "46332299",
+                    "name": "G. Kenworthy"
+                },
+                {
+                    "authorId": "2105397087",
+                    "name": "T. Kouzminov"
+                },
+                {
+                    "authorId": "3326520",
+                    "name": "A. Leiserson"
+                },
+                {
+                    "authorId": "2973835",
+                    "name": "M. Marson"
+                },
+                {
+                    "authorId": "1717108",
+                    "name": "P. Rohatgi"
+                },
+                {
+                    "authorId": "32856065",
+                    "name": "S. Saab"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "60b993cb11fff28c9ea657b0e2882867b8f810e1",
+            "title": "Test Vector Leakage Assessment ( TVLA ) methodology in practice",
+            "url": "https://www.semanticscholar.org/paper/60b993cb11fff28c9ea657b0e2882867b8f810e1",
+            "venue": "",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1688882",
+                    "name": "Yann LeCun"
+                },
+                {
+                    "authorId": "52184096",
+                    "name": "L. Bottou"
+                },
+                {
+                    "authorId": "1751762",
+                    "name": "Yoshua Bengio"
+                },
+                {
+                    "authorId": "1721248",
+                    "name": "P. Haffner"
+                }
+            ],
+            "doi": "10.1109/5.726791",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "162d958ff885f1462aeda91cd72582323fd6a1f4",
+            "title": "Gradient-based learning applied to document recognition",
+            "url": "https://www.semanticscholar.org/paper/162d958ff885f1462aeda91cd72582323fd6a1f4",
+            "venue": "Proc. IEEE",
+            "year": 1998
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        },
+        {
+            "category": "Engineering",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "When Side-Channel Attacks Break the Black-Box Property of Embedded Artificial Intelligence",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/180fbbdeacbed89a77ae10ed56524369491ea49a",
+    "venue": "AISec@CCS",
+    "year": 2023
+}

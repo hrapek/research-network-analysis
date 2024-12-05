@@ -1,0 +1,2221 @@
+{
+    "abstract": "Recently, the intersection of Large Language Models (LLMs) and Computer Vision (CV) has emerged as a pivotal area of research, driving significant advancements in the field of Artificial Intelligence (AI). As transformers have become the backbone of many state-of-the-art models in both Natural Language Processing (NLP) and CV, understanding their evolution and potential enhancements is crucial. This survey paper delves into the latest progressions in the domain of transformers and their subsequent successors, emphasizing their potential to revolutionize Vision Transformers (ViTs) and LLMs. This survey also presents a comparative analysis, juxtaposing the performance metrics of several leading paid and open-source LLMs, shedding light on their strengths and areas of improvement as well as a literature review on how LLMs are being used to tackle vision related tasks. Furthermore, the survey presents a comprehensive collection of datasets employed to train LLMs, offering insights into the diverse data available to achieve high performance in various pre-training and downstream tasks of LLMs. The survey is concluded by highlighting open directions in the field, suggesting potential venues for future research and development. This survey aims to underscores the profound intersection of LLMs on CV, leading to a new era of integrated and advanced AI models.",
+    "arxivId": "2311.16673",
+    "authors": [
+        {
+            "authorId": "1799418216",
+            "name": "Raby Hamadi",
+            "url": "https://www.semanticscholar.org/author/1799418216"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": "2409.18991",
+            "authors": [
+                {
+                    "authorId": "2321058649",
+                    "name": "Ming Li"
+                },
+                {
+                    "authorId": "2319648854",
+                    "name": "Keyu Chen"
+                },
+                {
+                    "authorId": "2319608188",
+                    "name": "Ziqian Bi"
+                },
+                {
+                    "authorId": "2322495607",
+                    "name": "Ming Liu"
+                },
+                {
+                    "authorId": "2319606006",
+                    "name": "Benji Peng"
+                },
+                {
+                    "authorId": "2319611972",
+                    "name": "Qian Niu"
+                },
+                {
+                    "authorId": "2319615017",
+                    "name": "Junyu Liu"
+                },
+                {
+                    "authorId": "2322363547",
+                    "name": "Jinlang Wang"
+                },
+                {
+                    "authorId": "2322292279",
+                    "name": "Sen Zhang"
+                },
+                {
+                    "authorId": "2323322733",
+                    "name": "Xuanhe Pan"
+                },
+                {
+                    "authorId": "2237064214",
+                    "name": "Jiawei Xu"
+                },
+                {
+                    "authorId": "2319607771",
+                    "name": "Pohsun Feng"
+                }
+            ],
+            "doi": "10.48550/arXiv.2409.18991",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2221c16dd781b1c35339c1bddd9d436fcf985192",
+            "title": "Surveying the MLLM Landscape: A Meta-Review of Current Surveys",
+            "url": "https://www.semanticscholar.org/paper/2221c16dd781b1c35339c1bddd9d436fcf985192",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": "2405.12752",
+            "authors": [
+                {
+                    "authorId": "2302475019",
+                    "name": "Ji Ma"
+                },
+                {
+                    "authorId": "2134989055",
+                    "name": "Wei Suo"
+                },
+                {
+                    "authorId": "2155302795",
+                    "name": "Peng Wang"
+                },
+                {
+                    "authorId": "2290443425",
+                    "name": "Yanning Zhang"
+                }
+            ],
+            "doi": "10.48550/arXiv.2405.12752",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "7c000199b4835fc6c0887ddfc696c390f9f036bc",
+            "title": "C3L: Content Correlated Vision-Language Instruction Tuning Data Generation via Contrastive Learning",
+            "url": "https://www.semanticscholar.org/paper/7c000199b4835fc6c0887ddfc696c390f9f036bc",
+            "venue": "IJCAI",
+            "year": 2024
+        }
+    ],
+    "corpusId": 265466034,
+    "doi": "10.48550/arXiv.2311.16673",
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 2,
+    "numCiting": 45,
+    "paperId": "7e9b5dcba69b4f2b00941596e2fb9c2d9ea8daa9",
+    "references": [
+        {
+            "arxivId": "2402.00159",
+            "authors": [
+                {
+                    "authorId": "3328733",
+                    "name": "Luca Soldaini"
+                },
+                {
+                    "authorId": "2282136328",
+                    "name": "Rodney Kinney"
+                },
+                {
+                    "authorId": "2166136235",
+                    "name": "Akshita Bhagia"
+                },
+                {
+                    "authorId": "2264248042",
+                    "name": "Dustin Schwenk"
+                },
+                {
+                    "authorId": "2282136757",
+                    "name": "David Atkinson"
+                },
+                {
+                    "authorId": "2202417686",
+                    "name": "Russell Authur"
+                },
+                {
+                    "authorId": "50757607",
+                    "name": "Ben Bogin"
+                },
+                {
+                    "authorId": "37619618",
+                    "name": "Khyathi Raghavi Chandu"
+                },
+                {
+                    "authorId": "2282136556",
+                    "name": "Jennifer Dumas"
+                },
+                {
+                    "authorId": "51131518",
+                    "name": "Yanai Elazar"
+                },
+                {
+                    "authorId": "2275055850",
+                    "name": "Valentin Hofmann"
+                },
+                {
+                    "authorId": "47286118",
+                    "name": "A. Jha"
+                },
+                {
+                    "authorId": "2282203839",
+                    "name": "Sachin Kumar"
+                },
+                {
+                    "authorId": "2259003726",
+                    "name": "L. Lucy"
+                },
+                {
+                    "authorId": "2156533327",
+                    "name": "Xinxi Lyu"
+                },
+                {
+                    "authorId": "2052363815",
+                    "name": "Nathan Lambert"
+                },
+                {
+                    "authorId": "2124977543",
+                    "name": "Ian Magnusson"
+                },
+                {
+                    "authorId": "2146964035",
+                    "name": "Jacob Daniel Morrison"
+                },
+                {
+                    "authorId": "2037383772",
+                    "name": "Niklas Muennighoff"
+                },
+                {
+                    "authorId": "23175870",
+                    "name": "Aakanksha Naik"
+                },
+                {
+                    "authorId": "2282136595",
+                    "name": "Crystal Nam"
+                },
+                {
+                    "authorId": "2267244582",
+                    "name": "Matthew E. Peters"
+                },
+                {
+                    "authorId": "3023068",
+                    "name": "Abhilasha Ravichander"
+                },
+                {
+                    "authorId": "46666605",
+                    "name": "Kyle Richardson"
+                },
+                {
+                    "authorId": "101568984",
+                    "name": "Zejiang Shen"
+                },
+                {
+                    "authorId": "2268272",
+                    "name": "Emma Strubell"
+                },
+                {
+                    "authorId": "34202134",
+                    "name": "Nishant Subramani"
+                },
+                {
+                    "authorId": "3385516",
+                    "name": "Oyvind Tafjord"
+                },
+                {
+                    "authorId": "2158819969",
+                    "name": "Pete Walsh"
+                },
+                {
+                    "authorId": "2137813791",
+                    "name": "Luke S. Zettlemoyer"
+                },
+                {
+                    "authorId": "2264002618",
+                    "name": "Noah A. Smith"
+                },
+                {
+                    "authorId": "2264251662",
+                    "name": "Hanna Hajishirzi"
+                },
+                {
+                    "authorId": "2260133345",
+                    "name": "Iz Beltagy"
+                },
+                {
+                    "authorId": "3458736",
+                    "name": "Dirk Groeneveld"
+                },
+                {
+                    "authorId": "34176020",
+                    "name": "Jesse Dodge"
+                },
+                {
+                    "authorId": "46258841",
+                    "name": "Kyle Lo"
+                }
+            ],
+            "doi": "10.48550/arXiv.2402.00159",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "ad1bb59e3e18a0dd8503c3961d6074f162baf710",
+            "title": "Dolma: an Open Corpus of Three Trillion Tokens for Language Model Pretraining Research",
+            "url": "https://www.semanticscholar.org/paper/ad1bb59e3e18a0dd8503c3961d6074f162baf710",
+            "venue": "ACL",
+            "year": 2024
+        },
+        {
+            "arxivId": "2310.09478",
+            "authors": [
+                {
+                    "authorId": "2153417252",
+                    "name": "Jun Chen"
+                },
+                {
+                    "authorId": "1388731230",
+                    "name": "Deyao Zhu"
+                },
+                {
+                    "authorId": "2151708219",
+                    "name": "Xiaoqian Shen"
+                },
+                {
+                    "authorId": "2262463251",
+                    "name": "Xiang Li"
+                },
+                {
+                    "authorId": "2258786725",
+                    "name": "Zechun Liu"
+                },
+                {
+                    "authorId": "2325206338",
+                    "name": "Pengchuan Zhang"
+                },
+                {
+                    "authorId": "2065915235",
+                    "name": "Raghuraman Krishnamoorthi"
+                },
+                {
+                    "authorId": "144137037",
+                    "name": "Vikas Chandra"
+                },
+                {
+                    "authorId": "2259018056",
+                    "name": "Yunyang Xiong"
+                },
+                {
+                    "authorId": "1712479",
+                    "name": "Mohamed Elhoseiny"
+                }
+            ],
+            "doi": "10.48550/arXiv.2310.09478",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "1ddbd08ad8cf22a5c66c4242194c4286328533bf",
+            "title": "MiniGPT-v2: large language model as a unified interface for vision-language multi-task learning",
+            "url": "https://www.semanticscholar.org/paper/1ddbd08ad8cf22a5c66c4242194c4286328533bf",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": "2309.11235",
+            "authors": [
+                {
+                    "authorId": "2243452789",
+                    "name": "Guan Wang"
+                },
+                {
+                    "authorId": "2110844331",
+                    "name": "Sijie Cheng"
+                },
+                {
+                    "authorId": "2242851906",
+                    "name": "Xianyuan Zhan"
+                },
+                {
+                    "authorId": "2243283400",
+                    "name": "Xiangang Li"
+                },
+                {
+                    "authorId": "2243314934",
+                    "name": "Sen Song"
+                },
+                {
+                    "authorId": "40457423",
+                    "name": "Yang Liu"
+                }
+            ],
+            "doi": "10.48550/arXiv.2309.11235",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "29f032fc875576b5c3c6b1c2d76af8639bacfb88",
+            "title": "OpenChat: Advancing Open-source Language Models with Mixed-Quality Data",
+            "url": "https://www.semanticscholar.org/paper/29f032fc875576b5c3c6b1c2d76af8639bacfb88",
+            "venue": "ICLR",
+            "year": 2023
+        },
+        {
+            "arxivId": "2309.11523",
+            "authors": [
+                {
+                    "authorId": "2218598523",
+                    "name": "Qihang Fan"
+                },
+                {
+                    "authorId": "32885778",
+                    "name": "Huaibo Huang"
+                },
+                {
+                    "authorId": "2244559750",
+                    "name": "Mingrui Chen"
+                },
+                {
+                    "authorId": "2243404770",
+                    "name": "Hongmin Liu"
+                },
+                {
+                    "authorId": "2243338248",
+                    "name": "Ran He"
+                }
+            ],
+            "doi": "10.1109/CVPR52733.2024.00539",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "59708496c88f173276a40d779a1f83bcfe2e7842",
+            "title": "RMT: Retentive Networks Meet Vision Transformers",
+            "url": "https://www.semanticscholar.org/paper/59708496c88f173276a40d779a1f83bcfe2e7842",
+            "venue": "2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2023
+        },
+        {
+            "arxivId": "2308.12477",
+            "authors": [
+                {
+                    "authorId": "2065276972",
+                    "name": "Melissa Dell"
+                },
+                {
+                    "authorId": "2060946945",
+                    "name": "Jacob Carlson"
+                },
+                {
+                    "authorId": "2213685503",
+                    "name": "Tom Bryan"
+                },
+                {
+                    "authorId": "2187300621",
+                    "name": "Emily Silcock"
+                },
+                {
+                    "authorId": "123956738",
+                    "name": "Abhishek Arora"
+                },
+                {
+                    "authorId": "101568984",
+                    "name": "Zejiang Shen"
+                },
+                {
+                    "authorId": "2187300148",
+                    "name": "Luca D'Amico-Wong"
+                },
+                {
+                    "authorId": "104268348",
+                    "name": "Q. Le"
+                },
+                {
+                    "authorId": "108508865",
+                    "name": "Pablo Querubin"
+                },
+                {
+                    "authorId": "98911148",
+                    "name": "Leander Heldring"
+                }
+            ],
+            "doi": "10.48550/arXiv.2308.12477",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b19cafe2492adf09e2339376c7d295e3dbedfef9",
+            "title": "American Stories: A Large-Scale Structured Text Dataset of Historical U.S. Newspapers",
+            "url": "https://www.semanticscholar.org/paper/b19cafe2492adf09e2339376c7d295e3dbedfef9",
+            "venue": "NeurIPS",
+            "year": 2023
+        },
+        {
+            "arxivId": "2308.09568",
+            "authors": [
+                {
+                    "authorId": "2164012501",
+                    "name": "Shuhui Wu"
+                },
+                {
+                    "authorId": "1387822299",
+                    "name": "Zengming Tang"
+                },
+                {
+                    "authorId": "2232665252",
+                    "name": "Zongyi Guo"
+                },
+                {
+                    "authorId": "2232659769",
+                    "name": "Weiwei Zhang"
+                },
+                {
+                    "authorId": "1720787615",
+                    "name": "Baoliang Cui"
+                },
+                {
+                    "authorId": "144465837",
+                    "name": "Haihong Tang"
+                },
+                {
+                    "authorId": "1776903",
+                    "name": "Weiming Lu"
+                }
+            ],
+            "doi": "10.48550/arXiv.2308.09568",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "eb5cf10406a8ad31e0ebe56b36571d5db4758a62",
+            "title": "PUMGPT: A Large Vision-Language Model for Product Understanding",
+            "url": "https://www.semanticscholar.org/paper/eb5cf10406a8ad31e0ebe56b36571d5db4758a62",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": "2308.07317",
+            "authors": [
+                {
+                    "authorId": "2220131789",
+                    "name": "Ariel N. Lee"
+                },
+                {
+                    "authorId": "2229049259",
+                    "name": "Cole J. Hunter"
+                },
+                {
+                    "authorId": "31601235",
+                    "name": "Nataniel Ruiz"
+                }
+            ],
+            "doi": "10.48550/arXiv.2308.07317",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "96f6ad72733599db609332987ec6b65e30f11d07",
+            "title": "Platypus: Quick, Cheap, and Powerful Refinement of LLMs",
+            "url": "https://www.semanticscholar.org/paper/96f6ad72733599db609332987ec6b65e30f11d07",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": "2307.08621",
+            "authors": [
+                {
+                    "authorId": "2108540694",
+                    "name": "Yutao Sun"
+                },
+                {
+                    "authorId": "145307652",
+                    "name": "Li Dong"
+                },
+                {
+                    "authorId": "3110003",
+                    "name": "Shaohan Huang"
+                },
+                {
+                    "authorId": "2118866998",
+                    "name": "Shuming Ma"
+                },
+                {
+                    "authorId": "4866834",
+                    "name": "Yuqing Xia"
+                },
+                {
+                    "authorId": "2870618",
+                    "name": "Jilong Xue"
+                },
+                {
+                    "authorId": "2115642141",
+                    "name": "Jianyong Wang"
+                },
+                {
+                    "authorId": "49807919",
+                    "name": "Furu Wei"
+                }
+            ],
+            "doi": "10.48550/arXiv.2307.08621",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "240103933ffe3dac2179cc160a2bd91299357a53",
+            "title": "Retentive Network: A Successor to Transformer for Large Language Models",
+            "url": "https://www.semanticscholar.org/paper/240103933ffe3dac2179cc160a2bd91299357a53",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": "2306.11644",
+            "authors": [
+                {
+                    "authorId": "3317356",
+                    "name": "Suriya Gunasekar"
+                },
+                {
+                    "authorId": "2153910714",
+                    "name": "Yi Zhang"
+                },
+                {
+                    "authorId": "29956361",
+                    "name": "J. Aneja"
+                },
+                {
+                    "authorId": "2157424631",
+                    "name": "C. C. T. Mendes"
+                },
+                {
+                    "authorId": "50672277",
+                    "name": "Allison Del Giorno"
+                },
+                {
+                    "authorId": "40528805",
+                    "name": "Sivakanth Gopi"
+                },
+                {
+                    "authorId": "51900416",
+                    "name": "Mojan Javaheripi"
+                },
+                {
+                    "authorId": "2160340819",
+                    "name": "Piero Kauffmann"
+                },
+                {
+                    "authorId": "144977605",
+                    "name": "Gustavo de Rosa"
+                },
+                {
+                    "authorId": "2347792",
+                    "name": "Olli Saarikivi"
+                },
+                {
+                    "authorId": "24929535",
+                    "name": "A. Salim"
+                },
+                {
+                    "authorId": "47973411",
+                    "name": "S. Shah"
+                },
+                {
+                    "authorId": "145560551",
+                    "name": "Harkirat Singh Behl"
+                },
+                {
+                    "authorId": "2153689937",
+                    "name": "Xin Wang"
+                },
+                {
+                    "authorId": "121645690",
+                    "name": "S\u00e9bastien Bubeck"
+                },
+                {
+                    "authorId": "2315830",
+                    "name": "Ronen Eldan"
+                },
+                {
+                    "authorId": "2186481",
+                    "name": "A. Kalai"
+                },
+                {
+                    "authorId": "2109308930",
+                    "name": "Y. Lee"
+                },
+                {
+                    "authorId": "152244300",
+                    "name": "Yuan-Fang Li"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "2922768fd451ecdb45f48c1a83eb57f54a91221b",
+            "title": "Textbooks Are All You Need",
+            "url": "https://www.semanticscholar.org/paper/2922768fd451ecdb45f48c1a83eb57f54a91221b",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": "2306.06687",
+            "authors": [
+                {
+                    "authorId": "13050405",
+                    "name": "Zhen-fei Yin"
+                },
+                {
+                    "authorId": "2110170885",
+                    "name": "Jiong Wang"
+                },
+                {
+                    "authorId": "2115872322",
+                    "name": "Jianjian Cao"
+                },
+                {
+                    "authorId": "2144146362",
+                    "name": "Zhelun Shi"
+                },
+                {
+                    "authorId": "2115296810",
+                    "name": "Dingning Liu"
+                },
+                {
+                    "authorId": "2027599235",
+                    "name": "Mukai Li"
+                },
+                {
+                    "authorId": "2053947248",
+                    "name": "Lu Sheng"
+                },
+                {
+                    "authorId": "50010487",
+                    "name": "Lei Bai"
+                },
+                {
+                    "authorId": "2116084167",
+                    "name": "Xiaoshui Huang"
+                },
+                {
+                    "authorId": "2184760304",
+                    "name": "Zhiyong Wang"
+                },
+                {
+                    "authorId": "3001348",
+                    "name": "Wanli Ouyang"
+                },
+                {
+                    "authorId": "1388486428",
+                    "name": "Jing Shao"
+                }
+            ],
+            "doi": "10.48550/arXiv.2306.06687",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "fd755dc7b5b206c17fd953db04e1c888d45b6e4e",
+            "title": "LAMM: Language-Assisted Multi-Modal Instruction-Tuning Dataset, Framework, and Benchmark",
+            "url": "https://www.semanticscholar.org/paper/fd755dc7b5b206c17fd953db04e1c888d45b6e4e",
+            "venue": "NeurIPS",
+            "year": 2023
+        },
+        {
+            "arxivId": "2306.05685",
+            "authors": [
+                {
+                    "authorId": "2149970173",
+                    "name": "Lianmin Zheng"
+                },
+                {
+                    "authorId": "2537924",
+                    "name": "Wei-Lin Chiang"
+                },
+                {
+                    "authorId": "2209360681",
+                    "name": "Ying Sheng"
+                },
+                {
+                    "authorId": "92721493",
+                    "name": "Siyuan Zhuang"
+                },
+                {
+                    "authorId": "1390573666",
+                    "name": "Zhanghao Wu"
+                },
+                {
+                    "authorId": "2152482391",
+                    "name": "Yonghao Zhuang"
+                },
+                {
+                    "authorId": "143872641",
+                    "name": "Zi Lin"
+                },
+                {
+                    "authorId": "2141335450",
+                    "name": "Zhuohan Li"
+                },
+                {
+                    "authorId": "2117961435",
+                    "name": "Dacheng Li"
+                },
+                {
+                    "authorId": "143977260",
+                    "name": "E. Xing"
+                },
+                {
+                    "authorId": "145140331",
+                    "name": "Haotong Zhang"
+                },
+                {
+                    "authorId": "49988044",
+                    "name": "Joseph E. Gonzalez"
+                },
+                {
+                    "authorId": "2055174324",
+                    "name": "Ion Stoica"
+                }
+            ],
+            "doi": "10.48550/arXiv.2306.05685",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a0a79dad89857a96f8f71b14238e5237cbfc4787",
+            "title": "Judging LLM-as-a-judge with MT-Bench and Chatbot Arena",
+            "url": "https://www.semanticscholar.org/paper/a0a79dad89857a96f8f71b14238e5237cbfc4787",
+            "venue": "NeurIPS",
+            "year": 2023
+        },
+        {
+            "arxivId": "2306.01693",
+            "authors": [
+                {
+                    "authorId": "7806955",
+                    "name": "Zeqiu Wu"
+                },
+                {
+                    "authorId": "2112209725",
+                    "name": "Yushi Hu"
+                },
+                {
+                    "authorId": "3040379",
+                    "name": "Weijia Shi"
+                },
+                {
+                    "authorId": "46217681",
+                    "name": "Nouha Dziri"
+                },
+                {
+                    "authorId": "32849969",
+                    "name": "Alane Suhr"
+                },
+                {
+                    "authorId": "19179135",
+                    "name": "Prithviraj Ammanabrolu"
+                },
+                {
+                    "authorId": "144365875",
+                    "name": "Noah A. Smith"
+                },
+                {
+                    "authorId": "144339506",
+                    "name": "Mari Ostendorf"
+                },
+                {
+                    "authorId": "2548384",
+                    "name": "Hannaneh Hajishirzi"
+                }
+            ],
+            "doi": "10.48550/arXiv.2306.01693",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e2e52461194bc81351da7caa978ac42e9e9549cc",
+            "title": "Fine-Grained Human Feedback Gives Better Rewards for Language Model Training",
+            "url": "https://www.semanticscholar.org/paper/e2e52461194bc81351da7caa978ac42e9e9549cc",
+            "venue": "NeurIPS",
+            "year": 2023
+        },
+        {
+            "arxivId": "2305.11175",
+            "authors": [
+                {
+                    "authorId": "47825073",
+                    "name": "Wen Wang"
+                },
+                {
+                    "authorId": "66350249",
+                    "name": "Zhe Chen"
+                },
+                {
+                    "authorId": "2679938",
+                    "name": "Xiaokang Chen"
+                },
+                {
+                    "authorId": "2109215916",
+                    "name": "Jiannan Wu"
+                },
+                {
+                    "authorId": "2578924",
+                    "name": "Xizhou Zhu"
+                },
+                {
+                    "authorId": "2170730254",
+                    "name": "Gang Zeng"
+                },
+                {
+                    "authorId": "47571885",
+                    "name": "Ping Luo"
+                },
+                {
+                    "authorId": "2115137018",
+                    "name": "Tong Lu"
+                },
+                {
+                    "authorId": "2141009492",
+                    "name": "Jie Zhou"
+                },
+                {
+                    "authorId": "145858545",
+                    "name": "Y. Qiao"
+                },
+                {
+                    "authorId": "3304536",
+                    "name": "Jifeng Dai"
+                }
+            ],
+            "doi": "10.48550/arXiv.2305.11175",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "42a30dc5470f54ec249f25d3c31e05d7c376c8e3",
+            "title": "VisionLLM: Large Language Model is also an Open-Ended Decoder for Vision-Centric Tasks",
+            "url": "https://www.semanticscholar.org/paper/42a30dc5470f54ec249f25d3c31e05d7c376c8e3",
+            "venue": "NeurIPS",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2352513",
+                    "name": "P. Ray"
+                }
+            ],
+            "doi": "10.1016/j.iotcps.2023.04.003",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "4651e2cff4e4f20bf6039c4719dbbe8cbe05b278",
+            "title": "ChatGPT: A comprehensive review on background, applications, key challenges, bias, ethics, limitations and future scope",
+            "url": "https://www.semanticscholar.org/paper/4651e2cff4e4f20bf6039c4719dbbe8cbe05b278",
+            "venue": "Internet of Things and Cyber-Physical Systems",
+            "year": 2023
+        },
+        {
+            "arxivId": "2303.18223",
+            "authors": [
+                {
+                    "authorId": "2542603",
+                    "name": "Wayne Xin Zhao"
+                },
+                {
+                    "authorId": "1423651904",
+                    "name": "Kun Zhou"
+                },
+                {
+                    "authorId": "2018027",
+                    "name": "Junyi Li"
+                },
+                {
+                    "authorId": "1997234792",
+                    "name": "Tianyi Tang"
+                },
+                {
+                    "authorId": "72541556",
+                    "name": "Xiaolei Wang"
+                },
+                {
+                    "authorId": "151472453",
+                    "name": "Yupeng Hou"
+                },
+                {
+                    "authorId": "2007666579",
+                    "name": "Yingqian Min"
+                },
+                {
+                    "authorId": "2107926615",
+                    "name": "Beichen Zhang"
+                },
+                {
+                    "authorId": "2155570461",
+                    "name": "Junjie Zhang"
+                },
+                {
+                    "authorId": "2198280871",
+                    "name": "Zican Dong"
+                },
+                {
+                    "authorId": "2111895473",
+                    "name": "Yifan Du"
+                },
+                {
+                    "authorId": "2181967397",
+                    "name": "Chen Yang"
+                },
+                {
+                    "authorId": "2109315001",
+                    "name": "Yushuo Chen"
+                },
+                {
+                    "authorId": "46842323",
+                    "name": "Z. Chen"
+                },
+                {
+                    "authorId": "2118240359",
+                    "name": "Jinhao Jiang"
+                },
+                {
+                    "authorId": "1708171825",
+                    "name": "Ruiyang Ren"
+                },
+                {
+                    "authorId": "2209136299",
+                    "name": "Yifan Li"
+                },
+                {
+                    "authorId": "2109887979",
+                    "name": "Xinyu Tang"
+                },
+                {
+                    "authorId": "2119618242",
+                    "name": "Zikang Liu"
+                },
+                {
+                    "authorId": "2108129670",
+                    "name": "Peiyu Liu"
+                },
+                {
+                    "authorId": "50204644",
+                    "name": "J. Nie"
+                },
+                {
+                    "authorId": "153693432",
+                    "name": "Ji-rong Wen"
+                }
+            ],
+            "doi": "10.48550/arXiv.2303.18223",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0b3904d0e229796aff0bda43bb386513353bc992",
+            "title": "A Survey of Large Language Models",
+            "url": "https://www.semanticscholar.org/paper/0b3904d0e229796aff0bda43bb386513353bc992",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": "2212.04501",
+            "authors": [
+                {
+                    "authorId": "2116810910",
+                    "name": "Yue Zhao"
+                },
+                {
+                    "authorId": "1806773",
+                    "name": "Ishan Misra"
+                },
+                {
+                    "authorId": "51506875",
+                    "name": "Philipp Krahenbuhl"
+                },
+                {
+                    "authorId": "3102850",
+                    "name": "Rohit Girdhar"
+                }
+            ],
+            "doi": "10.1109/CVPR52729.2023.00637",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "933b37b21e9d61139660088adb032ff3fdf56d86",
+            "title": "Learning Video Representations from Large Language Models",
+            "url": "https://www.semanticscholar.org/paper/933b37b21e9d61139660088adb032ff3fdf56d86",
+            "venue": "2023 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2022
+        },
+        {
+            "arxivId": "2211.11733",
+            "authors": [
+                {
+                    "authorId": "93556973",
+                    "name": "Sivan Doveh"
+                },
+                {
+                    "authorId": "26373647",
+                    "name": "Assaf Arbelle"
+                },
+                {
+                    "authorId": "1879259",
+                    "name": "Sivan Harary"
+                },
+                {
+                    "authorId": "1819152",
+                    "name": "Rameswar Panda"
+                },
+                {
+                    "authorId": "46796686",
+                    "name": "Roei Herzig"
+                },
+                {
+                    "authorId": "50053043",
+                    "name": "Eli Schwartz"
+                },
+                {
+                    "authorId": null,
+                    "name": "Donghyun Kim"
+                },
+                {
+                    "authorId": "2711839",
+                    "name": "R. Giryes"
+                },
+                {
+                    "authorId": "1723233",
+                    "name": "R. Feris"
+                },
+                {
+                    "authorId": "1743045",
+                    "name": "S. Ullman"
+                },
+                {
+                    "authorId": "2142741421",
+                    "name": "Leonid Karlinsky"
+                }
+            ],
+            "doi": "10.1109/CVPR52729.2023.00261",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a9dc989c00e2860a3dabfda4d12f3b3485a8a8df",
+            "title": "Teaching Structured Vision & Language Concepts to Vision & Language Models",
+            "url": "https://www.semanticscholar.org/paper/a9dc989c00e2860a3dabfda4d12f3b3485a8a8df",
+            "venue": "2023 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2022
+        },
+        {
+            "arxivId": "2210.08402",
+            "authors": [
+                {
+                    "authorId": "2137341362",
+                    "name": "Christoph Schuhmann"
+                },
+                {
+                    "authorId": "2125377840",
+                    "name": "Romain Beaumont"
+                },
+                {
+                    "authorId": "2137306046",
+                    "name": "Richard Vencu"
+                },
+                {
+                    "authorId": "2007745319",
+                    "name": "Cade Gordon"
+                },
+                {
+                    "authorId": "2113839396",
+                    "name": "Ross Wightman"
+                },
+                {
+                    "authorId": "40063601",
+                    "name": "Mehdi Cherti"
+                },
+                {
+                    "authorId": "2137419050",
+                    "name": "Theo Coombes"
+                },
+                {
+                    "authorId": "2137380426",
+                    "name": "Aarush Katta"
+                },
+                {
+                    "authorId": "2137306237",
+                    "name": "Clayton Mullis"
+                },
+                {
+                    "authorId": "52193502",
+                    "name": "Mitchell Wortsman"
+                },
+                {
+                    "authorId": "40896023",
+                    "name": "P. Schramowski"
+                },
+                {
+                    "authorId": "2165304339",
+                    "name": "Srivatsa Kundurthy"
+                },
+                {
+                    "authorId": "104998244",
+                    "name": "Katherine Crowson"
+                },
+                {
+                    "authorId": "152772922",
+                    "name": "Ludwig Schmidt"
+                },
+                {
+                    "authorId": "8095484",
+                    "name": "R. Kaczmarczyk"
+                },
+                {
+                    "authorId": "2191688",
+                    "name": "J. Jitsev"
+                }
+            ],
+            "doi": "10.48550/arXiv.2210.08402",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "e5c8960eb2ec034ffbd353ef39fd1cb541d3c7c9",
+            "title": "LAION-5B: An open large-scale dataset for training next generation image-text models",
+            "url": "https://www.semanticscholar.org/paper/e5c8960eb2ec034ffbd353ef39fd1cb541d3c7c9",
+            "venue": "NeurIPS",
+            "year": 2022
+        },
+        {
+            "arxivId": "2209.06794",
+            "authors": [
+                {
+                    "authorId": "2145309103",
+                    "name": "Xi Chen"
+                },
+                {
+                    "authorId": "144129720",
+                    "name": "Xiao Wang"
+                },
+                {
+                    "authorId": "2059199",
+                    "name": "Soravit Changpinyo"
+                },
+                {
+                    "authorId": "8797855",
+                    "name": "A. Piergiovanni"
+                },
+                {
+                    "authorId": "31148950",
+                    "name": "Piotr Padlewski"
+                },
+                {
+                    "authorId": "3821662",
+                    "name": "Daniel M. Salz"
+                },
+                {
+                    "authorId": "7685850",
+                    "name": "Sebastian Goodman"
+                },
+                {
+                    "authorId": "3213962",
+                    "name": "Adam Grycner"
+                },
+                {
+                    "authorId": "40608942",
+                    "name": "Basil Mustafa"
+                },
+                {
+                    "authorId": "39611591",
+                    "name": "Lucas Beyer"
+                },
+                {
+                    "authorId": "144629422",
+                    "name": "Alexander Kolesnikov"
+                },
+                {
+                    "authorId": "1794202",
+                    "name": "J. Puigcerver"
+                },
+                {
+                    "authorId": "2066767241",
+                    "name": "Nan Ding"
+                },
+                {
+                    "authorId": "1996199677",
+                    "name": "Keran Rong"
+                },
+                {
+                    "authorId": "153769937",
+                    "name": "Hassan Akbari"
+                },
+                {
+                    "authorId": "2159632445",
+                    "name": "Gaurav Mishra"
+                },
+                {
+                    "authorId": "2692973",
+                    "name": "Linting Xue"
+                },
+                {
+                    "authorId": "2904055",
+                    "name": "Ashish V. Thapliyal"
+                },
+                {
+                    "authorId": "40518045",
+                    "name": "James Bradbury"
+                },
+                {
+                    "authorId": "7987770",
+                    "name": "Weicheng Kuo"
+                },
+                {
+                    "authorId": "2678444",
+                    "name": "Mojtaba Seyedhosseini"
+                },
+                {
+                    "authorId": "2082436672",
+                    "name": "Chao Jia"
+                },
+                {
+                    "authorId": "143990191",
+                    "name": "Burcu Karagol Ayan"
+                },
+                {
+                    "authorId": "145814174",
+                    "name": "C. Riquelme"
+                },
+                {
+                    "authorId": "2079614268",
+                    "name": "A. Steiner"
+                },
+                {
+                    "authorId": "145426908",
+                    "name": "A. Angelova"
+                },
+                {
+                    "authorId": "2743563",
+                    "name": "Xiaohua Zhai"
+                },
+                {
+                    "authorId": "2815290",
+                    "name": "N. Houlsby"
+                },
+                {
+                    "authorId": "1737285",
+                    "name": "Radu Soricut"
+                }
+            ],
+            "doi": "10.48550/arXiv.2209.06794",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "28630034bb29760df01ab033b743e30b37f336ae",
+            "title": "PaLI: A Jointly-Scaled Multilingual Language-Image Model",
+            "url": "https://www.semanticscholar.org/paper/28630034bb29760df01ab033b743e30b37f336ae",
+            "venue": "ICLR",
+            "year": 2022
+        },
+        {
+            "arxivId": "2204.07356",
+            "authors": [
+                {
+                    "authorId": "32545338",
+                    "name": "Siqu Long"
+                },
+                {
+                    "authorId": "2162737605",
+                    "name": "Feiqi Cao"
+                },
+                {
+                    "authorId": "2046142",
+                    "name": "S. Han"
+                },
+                {
+                    "authorId": "2118697460",
+                    "name": "Haiqing Yang"
+                }
+            ],
+            "doi": "10.48550/arXiv.2204.07356",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "66ee488cf3dad5bb83804124367460edddd3c271",
+            "title": "Vision-and-Language Pretrained Models: A Survey",
+            "url": "https://www.semanticscholar.org/paper/66ee488cf3dad5bb83804124367460edddd3c271",
+            "venue": "IJCAI",
+            "year": 2022
+        },
+        {
+            "arxivId": "2202.06767",
+            "authors": [
+                {
+                    "authorId": "27028148",
+                    "name": "Jiaxi Gu"
+                },
+                {
+                    "authorId": "1840054391",
+                    "name": "Xiaojun Meng"
+                },
+                {
+                    "authorId": "46182317",
+                    "name": "Guansong Lu"
+                },
+                {
+                    "authorId": "48557122",
+                    "name": "Lu Hou"
+                },
+                {
+                    "authorId": "40896269",
+                    "name": "Minzhe Niu"
+                },
+                {
+                    "authorId": "2153397698",
+                    "name": "Xiaodan Liang"
+                },
+                {
+                    "authorId": "1429192500",
+                    "name": "Lewei Yao"
+                },
+                {
+                    "authorId": "2140386536",
+                    "name": "Runhu Huang"
+                },
+                {
+                    "authorId": "143715293",
+                    "name": "W. Zhang"
+                },
+                {
+                    "authorId": "114904950",
+                    "name": "Xingda Jiang"
+                },
+                {
+                    "authorId": "1691522",
+                    "name": "Chunjing Xu"
+                },
+                {
+                    "authorId": "2143534132",
+                    "name": "Hang Xu"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "fe0e647ac5bbe9b127caddfcb52b9f723d6f158c",
+            "title": "Wukong: A 100 Million Large-scale Chinese Cross-modal Pre-training Benchmark",
+            "url": "https://www.semanticscholar.org/paper/fe0e647ac5bbe9b127caddfcb52b9f723d6f158c",
+            "venue": "NeurIPS",
+            "year": 2022
+        },
+        {
+            "arxivId": "2111.11431",
+            "authors": [
+                {
+                    "authorId": "1606411716",
+                    "name": "Karan Desai"
+                },
+                {
+                    "authorId": "40237549",
+                    "name": "Gaurav Kaul"
+                },
+                {
+                    "authorId": "2124031779",
+                    "name": "Zubin Aysola"
+                },
+                {
+                    "authorId": "2115231104",
+                    "name": "Justin Johnson"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "da4261a957eaa96bf626e9641ef68ebed1d5333f",
+            "title": "RedCaps: web-curated image-text data created by the people, for the people",
+            "url": "https://www.semanticscholar.org/paper/da4261a957eaa96bf626e9641ef68ebed1d5333f",
+            "venue": "NeurIPS Datasets and Benchmarks",
+            "year": 2021
+        },
+        {
+            "arxivId": "2111.07783",
+            "authors": [
+                {
+                    "authorId": "1429192500",
+                    "name": "Lewei Yao"
+                },
+                {
+                    "authorId": "2140386536",
+                    "name": "Runhu Huang"
+                },
+                {
+                    "authorId": "48557122",
+                    "name": "Lu Hou"
+                },
+                {
+                    "authorId": "46182317",
+                    "name": "Guansong Lu"
+                },
+                {
+                    "authorId": "40896269",
+                    "name": "Minzhe Niu"
+                },
+                {
+                    "authorId": "2143534132",
+                    "name": "Hang Xu"
+                },
+                {
+                    "authorId": "40250403",
+                    "name": "Xiaodan Liang"
+                },
+                {
+                    "authorId": "7718952",
+                    "name": "Zhenguo Li"
+                },
+                {
+                    "authorId": "2110310493",
+                    "name": "Xin Jiang"
+                },
+                {
+                    "authorId": "1691522",
+                    "name": "Chunjing Xu"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f675c62abfa788ea0be85d3124eba15a14d5e9d6",
+            "title": "FILIP: Fine-grained Interactive Language-Image Pre-Training",
+            "url": "https://www.semanticscholar.org/paper/f675c62abfa788ea0be85d3124eba15a14d5e9d6",
+            "venue": "ICLR",
+            "year": 2021
+        },
+        {
+            "arxivId": "2111.02114",
+            "authors": [
+                {
+                    "authorId": "2137341362",
+                    "name": "Christoph Schuhmann"
+                },
+                {
+                    "authorId": "2137306046",
+                    "name": "Richard Vencu"
+                },
+                {
+                    "authorId": "2125377840",
+                    "name": "Romain Beaumont"
+                },
+                {
+                    "authorId": "8095484",
+                    "name": "R. Kaczmarczyk"
+                },
+                {
+                    "authorId": "2137306237",
+                    "name": "Clayton Mullis"
+                },
+                {
+                    "authorId": "2137380426",
+                    "name": "Aarush Katta"
+                },
+                {
+                    "authorId": "2137419050",
+                    "name": "Theo Coombes"
+                },
+                {
+                    "authorId": "2191688",
+                    "name": "J. Jitsev"
+                },
+                {
+                    "authorId": "51891020",
+                    "name": "Aran Komatsuzaki"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "b668ce936cff0b0ca8b635cd5f25a62eaf4eb3df",
+            "title": "LAION-400M: Open Dataset of CLIP-Filtered 400 Million Image-Text Pairs",
+            "url": "https://www.semanticscholar.org/paper/b668ce936cff0b0ca8b635cd5f25a62eaf4eb3df",
+            "venue": "ArXiv",
+            "year": 2021
+        },
+        {
+            "arxivId": "2103.01913",
+            "authors": [
+                {
+                    "authorId": "1391084712",
+                    "name": "Krishna Srinivasan"
+                },
+                {
+                    "authorId": "2062947723",
+                    "name": "K. Raman"
+                },
+                {
+                    "authorId": "2809410",
+                    "name": "Jiecao Chen"
+                },
+                {
+                    "authorId": "1815447",
+                    "name": "Michael Bendersky"
+                },
+                {
+                    "authorId": "1763978",
+                    "name": "Marc Najork"
+                }
+            ],
+            "doi": "10.1145/3404835.3463257",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "98e565fa06f6c7bf7c46833b5106b26dc45130c4",
+            "title": "WIT: Wikipedia-based Image Text Dataset for Multimodal Multilingual Machine Learning",
+            "url": "https://www.semanticscholar.org/paper/98e565fa06f6c7bf7c46833b5106b26dc45130c4",
+            "venue": "SIGIR",
+            "year": 2021
+        },
+        {
+            "arxivId": "2103.00020",
+            "authors": [
+                {
+                    "authorId": "38909097",
+                    "name": "Alec Radford"
+                },
+                {
+                    "authorId": "2110935237",
+                    "name": "Jong Wook Kim"
+                },
+                {
+                    "authorId": "2004021329",
+                    "name": "Chris Hallacy"
+                },
+                {
+                    "authorId": "1992922591",
+                    "name": "A. Ramesh"
+                },
+                {
+                    "authorId": "40087786",
+                    "name": "Gabriel Goh"
+                },
+                {
+                    "authorId": "144517868",
+                    "name": "Sandhini Agarwal"
+                },
+                {
+                    "authorId": "144864359",
+                    "name": "Girish Sastry"
+                },
+                {
+                    "authorId": "119609682",
+                    "name": "Amanda Askell"
+                },
+                {
+                    "authorId": "2051714782",
+                    "name": "Pamela Mishkin"
+                },
+                {
+                    "authorId": "2115193883",
+                    "name": "Jack Clark"
+                },
+                {
+                    "authorId": "2064404342",
+                    "name": "Gretchen Krueger"
+                },
+                {
+                    "authorId": "1701686",
+                    "name": "I. Sutskever"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "6f870f7f02a8c59c3e23f407f3ef00dd1dcf8fc4",
+            "title": "Learning Transferable Visual Models From Natural Language Supervision",
+            "url": "https://www.semanticscholar.org/paper/6f870f7f02a8c59c3e23f407f3ef00dd1dcf8fc4",
+            "venue": "ICML",
+            "year": 2021
+        },
+        {
+            "arxivId": "2102.08981",
+            "authors": [
+                {
+                    "authorId": "2059199",
+                    "name": "Soravit Changpinyo"
+                },
+                {
+                    "authorId": "46756891",
+                    "name": "P. Sharma"
+                },
+                {
+                    "authorId": "2066767241",
+                    "name": "Nan Ding"
+                },
+                {
+                    "authorId": "1737285",
+                    "name": "Radu Soricut"
+                }
+            ],
+            "doi": "10.1109/CVPR46437.2021.00356",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "394be105b87e9bfe72c20efe6338de10604e1a11",
+            "title": "Conceptual 12M: Pushing Web-Scale Image-Text Pre-Training To Recognize Long-Tail Visual Concepts",
+            "url": "https://www.semanticscholar.org/paper/394be105b87e9bfe72c20efe6338de10604e1a11",
+            "venue": "2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2021
+        },
+        {
+            "arxivId": "2102.05918",
+            "authors": [
+                {
+                    "authorId": "2082436672",
+                    "name": "Chao Jia"
+                },
+                {
+                    "authorId": "2781059",
+                    "name": "Yinfei Yang"
+                },
+                {
+                    "authorId": "2110629849",
+                    "name": "Ye Xia"
+                },
+                {
+                    "authorId": "2109060286",
+                    "name": "Yi-Ting Chen"
+                },
+                {
+                    "authorId": "27456119",
+                    "name": "Zarana Parekh"
+                },
+                {
+                    "authorId": "143950636",
+                    "name": "Hieu Pham"
+                },
+                {
+                    "authorId": "2827616",
+                    "name": "Quoc V. Le"
+                },
+                {
+                    "authorId": "2305450",
+                    "name": "Yun-Hsuan Sung"
+                },
+                {
+                    "authorId": "2110121852",
+                    "name": "Zhen Li"
+                },
+                {
+                    "authorId": "2066508193",
+                    "name": "Tom Duerig"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "141a5033d9994242b18bb3b217e79582f1ee9306",
+            "title": "Scaling Up Visual and Vision-Language Representation Learning With Noisy Text Supervision",
+            "url": "https://www.semanticscholar.org/paper/141a5033d9994242b18bb3b217e79582f1ee9306",
+            "venue": "ICML",
+            "year": 2021
+        },
+        {
+            "arxivId": "2010.11929",
+            "authors": [
+                {
+                    "authorId": "2841331",
+                    "name": "Alexey Dosovitskiy"
+                },
+                {
+                    "authorId": "39611591",
+                    "name": "Lucas Beyer"
+                },
+                {
+                    "authorId": "144629422",
+                    "name": "Alexander Kolesnikov"
+                },
+                {
+                    "authorId": "3319373",
+                    "name": "Dirk Weissenborn"
+                },
+                {
+                    "authorId": "2743563",
+                    "name": "Xiaohua Zhai"
+                },
+                {
+                    "authorId": "2465270",
+                    "name": "Thomas Unterthiner"
+                },
+                {
+                    "authorId": "2274215058",
+                    "name": "Mostafa Dehghani"
+                },
+                {
+                    "authorId": "46352821",
+                    "name": "Matthias Minderer"
+                },
+                {
+                    "authorId": "2280399",
+                    "name": "G. Heigold"
+                },
+                {
+                    "authorId": "1802148",
+                    "name": "S. Gelly"
+                },
+                {
+                    "authorId": "39328010",
+                    "name": "Jakob Uszkoreit"
+                },
+                {
+                    "authorId": "2815290",
+                    "name": "N. Houlsby"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "268d347e8a55b5eb82fb5e7d2f800e33c75ab18a",
+            "title": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale",
+            "url": "https://www.semanticscholar.org/paper/268d347e8a55b5eb82fb5e7d2f800e33c75ab18a",
+            "venue": "ICLR",
+            "year": 2020
+        },
+        {
+            "arxivId": "2004.13621",
+            "authors": [
+                {
+                    "authorId": "3459894",
+                    "name": "Hengshuang Zhao"
+                },
+                {
+                    "authorId": "1729056",
+                    "name": "Jiaya Jia"
+                },
+                {
+                    "authorId": "145231047",
+                    "name": "V. Koltun"
+                }
+            ],
+            "doi": "10.1109/CVPR42600.2020.01009",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "54c7445f319823c7dcc948c830e75e2fa7460b33",
+            "title": "Exploring Self-Attention for Image Recognition",
+            "url": "https://www.semanticscholar.org/paper/54c7445f319823c7dcc948c830e75e2fa7460b33",
+            "venue": "2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2020
+        },
+        {
+            "arxivId": "1912.03098",
+            "authors": [
+                {
+                    "authorId": "1403171438",
+                    "name": "J. Pont-Tuset"
+                },
+                {
+                    "authorId": "1823362",
+                    "name": "J. Uijlings"
+                },
+                {
+                    "authorId": "2059199",
+                    "name": "Soravit Changpinyo"
+                },
+                {
+                    "authorId": "1737285",
+                    "name": "Radu Soricut"
+                },
+                {
+                    "authorId": "143865718",
+                    "name": "V. Ferrari"
+                }
+            ],
+            "doi": "10.1007/978-3-030-58558-7_38",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "439369de9514e41e0f03fed552d8f6e5aebf51b2",
+            "title": "Connecting Vision and Language with Localized Narratives",
+            "url": "https://www.semanticscholar.org/paper/439369de9514e41e0f03fed552d8f6e5aebf51b2",
+            "venue": "ECCV",
+            "year": 2019
+        },
+        {
+            "arxivId": "1808.03314",
+            "authors": [
+                {
+                    "authorId": "2042620",
+                    "name": "A. Sherstinsky"
+                }
+            ],
+            "doi": "10.1016/j.physd.2019.132306",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2113af2c71526b211612586daa185d326712cb9c",
+            "title": "Fundamentals of Recurrent Neural Network (RNN) and Long Short-Term Memory (LSTM) Network",
+            "url": "https://www.semanticscholar.org/paper/2113af2c71526b211612586daa185d326712cb9c",
+            "venue": "Physica D: Nonlinear Phenomena",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "48267618",
+                    "name": "Piyush Sharma"
+                },
+                {
+                    "authorId": "2066767241",
+                    "name": "Nan Ding"
+                },
+                {
+                    "authorId": "7685850",
+                    "name": "Sebastian Goodman"
+                },
+                {
+                    "authorId": "1737285",
+                    "name": "Radu Soricut"
+                }
+            ],
+            "doi": "10.18653/v1/P18-1238",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "b4df354db88a70183a64dbc9e56cf14e7669a6c0",
+            "title": "Conceptual Captions: A Cleaned, Hypernymed, Image Alt-text Dataset For Automatic Image Captioning",
+            "url": "https://www.semanticscholar.org/paper/b4df354db88a70183a64dbc9e56cf14e7669a6c0",
+            "venue": "ACL",
+            "year": 2018
+        },
+        {
+            "arxivId": "1706.03762",
+            "authors": [
+                {
+                    "authorId": "40348417",
+                    "name": "Ashish Vaswani"
+                },
+                {
+                    "authorId": "1846258",
+                    "name": "Noam M. Shazeer"
+                },
+                {
+                    "authorId": "3877127",
+                    "name": "Niki Parmar"
+                },
+                {
+                    "authorId": "39328010",
+                    "name": "Jakob Uszkoreit"
+                },
+                {
+                    "authorId": "145024664",
+                    "name": "Llion Jones"
+                },
+                {
+                    "authorId": "19177000",
+                    "name": "Aidan N. Gomez"
+                },
+                {
+                    "authorId": "40527594",
+                    "name": "Lukasz Kaiser"
+                },
+                {
+                    "authorId": "3443442",
+                    "name": "Illia Polosukhin"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "204e3073870fae3d05bcbc2f6a8e263d9b72e776",
+            "title": "Attention is All you Need",
+            "url": "https://www.semanticscholar.org/paper/204e3073870fae3d05bcbc2f6a8e263d9b72e776",
+            "venue": "NIPS",
+            "year": 2017
+        },
+        {
+            "arxivId": "1602.07332",
+            "authors": [
+                {
+                    "authorId": "145237361",
+                    "name": "Ranjay Krishna"
+                },
+                {
+                    "authorId": "2117748",
+                    "name": "Yuke Zhu"
+                },
+                {
+                    "authorId": "50499889",
+                    "name": "O. Groth"
+                },
+                {
+                    "authorId": "2115231104",
+                    "name": "Justin Johnson"
+                },
+                {
+                    "authorId": "1382195702",
+                    "name": "K. Hata"
+                },
+                {
+                    "authorId": "40591424",
+                    "name": "Joshua Kravitz"
+                },
+                {
+                    "authorId": "2110910215",
+                    "name": "Stephanie Chen"
+                },
+                {
+                    "authorId": "1944225",
+                    "name": "Yannis Kalantidis"
+                },
+                {
+                    "authorId": "2040091191",
+                    "name": "Li-Jia Li"
+                },
+                {
+                    "authorId": "1760364",
+                    "name": "David A. Shamma"
+                },
+                {
+                    "authorId": "145879842",
+                    "name": "Michael S. Bernstein"
+                },
+                {
+                    "authorId": "48004138",
+                    "name": "Li Fei-Fei"
+                }
+            ],
+            "doi": "10.1007/s11263-016-0981-7",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "afcf4dbd2ef300e5c4b35043d4fbe516807cdf7d",
+            "title": "Visual Genome: Connecting Language and Vision Using Crowdsourced Dense Image Annotations",
+            "url": "https://www.semanticscholar.org/paper/afcf4dbd2ef300e5c4b35043d4fbe516807cdf7d",
+            "venue": "International Journal of Computer Vision",
+            "year": 2016
+        },
+        {
+            "arxivId": "1511.08458",
+            "authors": [
+                {
+                    "authorId": "1399833554",
+                    "name": "K. O\u2019Shea"
+                },
+                {
+                    "authorId": "2053923268",
+                    "name": "Ryan Nash"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f46714d200d69eb9cb5cce176297b89a3f5e3a2c",
+            "title": "An Introduction to Convolutional Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/f46714d200d69eb9cb5cce176297b89a3f5e3a2c",
+            "venue": "ArXiv",
+            "year": 2015
+        },
+        {
+            "arxivId": "1504.00325",
+            "authors": [
+                {
+                    "authorId": "39717886",
+                    "name": "Xinlei Chen"
+                },
+                {
+                    "authorId": "2113484216",
+                    "name": "Hao Fang"
+                },
+                {
+                    "authorId": "33493200",
+                    "name": "Tsung-Yi Lin"
+                },
+                {
+                    "authorId": "8137017",
+                    "name": "Ramakrishna Vedantam"
+                },
+                {
+                    "authorId": "144157872",
+                    "name": "Saurabh Gupta"
+                },
+                {
+                    "authorId": "3127283",
+                    "name": "Piotr Doll\u00e1r"
+                },
+                {
+                    "authorId": "1699161",
+                    "name": "C. L. Zitnick"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "696ca58d93f6404fea0fc75c62d1d7b378f47628",
+            "title": "Microsoft COCO Captions: Data Collection and Evaluation Server",
+            "url": "https://www.semanticscholar.org/paper/696ca58d93f6404fea0fc75c62d1d7b378f47628",
+            "venue": "ArXiv",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2004053",
+                    "name": "Vicente Ordonez"
+                },
+                {
+                    "authorId": "145564333",
+                    "name": "Girish Kulkarni"
+                },
+                {
+                    "authorId": "1685538",
+                    "name": "Tamara L. Berg"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "8e080b98efbe65c02a116439205ca2344b9f7cd4",
+            "title": "Im2Text: Describing Images Using 1 Million Captioned Photographs",
+            "url": "https://www.semanticscholar.org/paper/8e080b98efbe65c02a116439205ca2344b9f7cd4",
+            "venue": "NIPS",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "151261268",
+                    "name": "Yining Hong"
+                },
+                {
+                    "authorId": "2226286961",
+                    "name": "Haoyu Zhen"
+                },
+                {
+                    "authorId": "2158502526",
+                    "name": "Peihao Chen"
+                },
+                {
+                    "authorId": "9696154",
+                    "name": "Shuhong Zheng"
+                },
+                {
+                    "authorId": "15394275",
+                    "name": "Yilun Du"
+                },
+                {
+                    "authorId": "2111329651",
+                    "name": "Zhenfang Chen"
+                },
+                {
+                    "authorId": "2056157586",
+                    "name": "Chuang Gan"
+                }
+            ],
+            "doi": "10.48550/arXiv.2307.12981",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7637ed79d30d0139901175ae4abedd822c217ab4",
+            "title": "3D-LLM: Injecting the 3D World into Large Language Models",
+            "url": "https://www.semanticscholar.org/paper/7637ed79d30d0139901175ae4abedd822c217ab4",
+            "venue": "NeurIPS",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2214823312",
+                    "name": "Muhammad Usman Hadi"
+                },
+                {
+                    "authorId": "2275365182",
+                    "name": "al tashi"
+                },
+                {
+                    "authorId": "2275365829",
+                    "name": "Rizwan Qureshi"
+                },
+                {
+                    "authorId": "2220607387",
+                    "name": "Abbas Shah"
+                },
+                {
+                    "authorId": "2305336473",
+                    "name": "M. Irfan"
+                },
+                {
+                    "authorId": "2275200609",
+                    "name": "Anas Zafar"
+                },
+                {
+                    "authorId": "2090439687",
+                    "name": "Muhammad Bilal Shaikh"
+                },
+                {
+                    "authorId": "2275351697",
+                    "name": "Naveed Akhtar"
+                },
+                {
+                    "authorId": "2225532969",
+                    "name": "Jia Wu"
+                },
+                {
+                    "authorId": "2311069722",
+                    "name": "Seyedali Mirjalili"
+                },
+                {
+                    "authorId": "2132241284",
+                    "name": "Qasem Al-Tashi"
+                },
+                {
+                    "authorId": "52043367",
+                    "name": "Amgad Muneer"
+                },
+                {
+                    "authorId": "1403206186",
+                    "name": "M. Al-garadi"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "3e2734025037fc626873c56e05ddb43ccccd3858",
+            "title": "A Survey on Large Language Models: Applications, Challenges, Limitations, and Practical Usage",
+            "url": "https://www.semanticscholar.org/paper/3e2734025037fc626873c56e05ddb43ccccd3858",
+            "venue": "",
+            "year": null
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Large Language Models Meet Computer Vision: A Brief Survey",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/7e9b5dcba69b4f2b00941596e2fb9c2d9ea8daa9",
+    "venue": "arXiv.org",
+    "year": 2023
+}

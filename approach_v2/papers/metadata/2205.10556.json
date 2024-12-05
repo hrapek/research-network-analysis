@@ -1,0 +1,537 @@
+{
+    "abstract": "This manuscript presents a not typical implementation of the cycle generative adversarial networks (Cycle-GAN) method for eye-tracking tasks. For the implementation of this purpose, we developed the program that accepts images with any expansion from a camera and determines and cut the contour of the face and eyes by OpenCV and dlib libraries and converts these images in a resolution of 400 by 300 pixels. These images we used for training Cycle-GAN model. Usually, the Cycle-GAN does not require marking, but in this case, we used labeling. Images for training manually with an error of no more than 1 pixel for 4000 images were marked. In all labeling images, we painted a pupil with an unnatural for eyes bright green color and trained the neural network model to replace the pupil of the eye with a circle that is painted bright green. At the model\u2019s output, we have an image where the pupil is painted in bright green. In the final, the position of the pupil (given color in the video stream) can be easily detected due to the function of the OpenCV library \u2013 inRange. The program code and custom dataset are presented in the public domain. https://github.com/Ildaron/6.Cycle-GAN-custom_data",
+    "arxivId": "2205.10556",
+    "authors": [
+        {
+            "authorId": "95943596",
+            "name": "I. Rakhmatulin",
+            "url": "https://www.semanticscholar.org/author/95943596"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [],
+    "corpusId": 248987008,
+    "doi": "10.48550/arXiv.2205.10556",
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": true,
+    "isPublisherLicensed": true,
+    "is_open_access": true,
+    "is_publisher_licensed": true,
+    "numCitedBy": 0,
+    "numCiting": 19,
+    "paperId": "9445847dfe59338296850138ec519bb7396a5abd",
+    "references": [
+        {
+            "arxivId": "2010.05480",
+            "authors": [
+                {
+                    "authorId": "95943596",
+                    "name": "I. Rakhmatulin"
+                }
+            ],
+            "doi": "10.2139/ssrn.3765930",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f649aa72f83179f481e3826504eaca5915ed9666",
+            "title": "A review of the low-cost eye-tracking systems for 2010-2020",
+            "url": "https://www.semanticscholar.org/paper/f649aa72f83179f481e3826504eaca5915ed9666",
+            "venue": "ArXiv",
+            "year": 2020
+        },
+        {
+            "arxivId": "1910.00694",
+            "authors": [
+                {
+                    "authorId": "123374226",
+                    "name": "A. Chaudhary"
+                },
+                {
+                    "authorId": "3378608",
+                    "name": "Rakshit Kothari"
+                },
+                {
+                    "authorId": "47309247",
+                    "name": "Manoj Acharya"
+                },
+                {
+                    "authorId": "38769455",
+                    "name": "Shusil Dangi"
+                },
+                {
+                    "authorId": "1379932324",
+                    "name": "Nitinraj Nair"
+                },
+                {
+                    "authorId": "39958072",
+                    "name": "Reynold J. Bailey"
+                },
+                {
+                    "authorId": "3290098",
+                    "name": "Christopher Kanan"
+                },
+                {
+                    "authorId": "35653558",
+                    "name": "Gabriel J. Diaz"
+                },
+                {
+                    "authorId": "2899726",
+                    "name": "J. Pelz"
+                }
+            ],
+            "doi": "10.1109/ICCVW.2019.00568",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "330dc33a7f5b3ede14a01b9bb03d2e88f9d7a926",
+            "title": "RITnet: Real-time Semantic Segmentation of the Eye for Gaze Tracking",
+            "url": "https://www.semanticscholar.org/paper/330dc33a7f5b3ede14a01b9bb03d2e88f9d7a926",
+            "venue": "2019 IEEE/CVF International Conference on Computer Vision Workshop (ICCVW)",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2841222",
+                    "name": "F. H. Borsato"
+                },
+                {
+                    "authorId": "23125434",
+                    "name": "C. Morimoto"
+                }
+            ],
+            "doi": "10.1145/3314111.3319841",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "03ee86c04c9e88c8af3041de2480de96fcbe53ab",
+            "title": "Towards a low cost and high speed mobile eye tracker",
+            "url": "https://www.semanticscholar.org/paper/03ee86c04c9e88c8af3041de2480de96fcbe53ab",
+            "venue": "ETRA",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2115746379",
+                    "name": "Y. Kwon"
+                },
+                {
+                    "authorId": "49360298",
+                    "name": "M. Park"
+                }
+            ],
+            "doi": "10.1109/CVPR.2019.00191",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "f373bccc69bec811fa93b27d59a560b9e4ed0946",
+            "title": "Predicting Future Frames Using Retrospective Cycle GAN",
+            "url": "https://www.semanticscholar.org/paper/f373bccc69bec811fa93b27d59a560b9e4ed0946",
+            "venue": "2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "13361910",
+                    "name": "Honghe Huang"
+                },
+                {
+                    "authorId": "2110290050",
+                    "name": "Yi Xu"
+                },
+                {
+                    "authorId": "2053903329",
+                    "name": "Xiao Hua"
+                },
+                {
+                    "authorId": "21624831",
+                    "name": "Weixiong Yan"
+                },
+                {
+                    "authorId": "2145433254",
+                    "name": "Yanjie Huang"
+                }
+            ],
+            "doi": "10.1016/J.JVCIR.2019.01.007",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "fa73fb35d1e073ee11c9005fa8f872acd6e777c4",
+            "title": "A crowdsourced system for robust eye tracking",
+            "url": "https://www.semanticscholar.org/paper/fa73fb35d1e073ee11c9005fa8f872acd6e777c4",
+            "venue": "J. Vis. Commun. Image Represent.",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "6097894",
+                    "name": "A. Vernetti"
+                },
+                {
+                    "authorId": "5130812",
+                    "name": "Nata\u015fa Ganea"
+                },
+                {
+                    "authorId": "47455526",
+                    "name": "L. Tucker"
+                },
+                {
+                    "authorId": "3692247",
+                    "name": "T. Charman"
+                },
+                {
+                    "authorId": "145546235",
+                    "name": "Mark H. Johnson"
+                },
+                {
+                    "authorId": "5563298",
+                    "name": "Atsushi Senju"
+                }
+            ],
+            "doi": "10.1016/j.dcn.2018.05.007",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9754f4e1cac02c231bf82e3da118e4fce94fa163",
+            "title": "Infant neural sensitivity to eye gaze depends on early experience of gaze communication",
+            "url": "https://www.semanticscholar.org/paper/9754f4e1cac02c231bf82e3da118e4fce94fa163",
+            "venue": "Developmental Cognitive Neuroscience",
+            "year": 2018
+        },
+        {
+            "arxivId": "1804.08572",
+            "authors": [
+                {
+                    "authorId": "48467498",
+                    "name": "Rajeev Ranjan"
+                },
+                {
+                    "authorId": "24817039",
+                    "name": "Shalini De Mello"
+                },
+                {
+                    "authorId": "1690538",
+                    "name": "J. Kautz"
+                }
+            ],
+            "doi": "10.1109/CVPRW.2018.00290",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "affd45bdd5e7e20932b1caffd121600629d1a5e5",
+            "title": "Light-Weight Head Pose Invariant Gaze Tracking",
+            "url": "https://www.semanticscholar.org/paper/affd45bdd5e7e20932b1caffd121600629d1a5e5",
+            "venue": "2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2053950978",
+                    "name": "Linn\u00e9a Larsson"
+                },
+                {
+                    "authorId": "2877128",
+                    "name": "A. Schwaller"
+                },
+                {
+                    "authorId": "2226198",
+                    "name": "M. Nystr\u00f6m"
+                },
+                {
+                    "authorId": "2557280",
+                    "name": "M. Stridh"
+                }
+            ],
+            "doi": "10.1016/j.jneumeth.2016.09.005",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "1b6acf6f1e74439ff804d8d4d095489a857a4e40",
+            "title": "Head movement compensation and multi-modal event detection in eye-tracking data for unconstrained head movements",
+            "url": "https://www.semanticscholar.org/paper/1b6acf6f1e74439ff804d8d4d095489a857a4e40",
+            "venue": "Journal of Neuroscience Methods",
+            "year": 2016
+        },
+        {
+            "arxivId": "1606.05814",
+            "authors": [
+                {
+                    "authorId": "34987921",
+                    "name": "K. Krafka"
+                },
+                {
+                    "authorId": "2556428",
+                    "name": "A. Khosla"
+                },
+                {
+                    "authorId": "1712418",
+                    "name": "Petr Kellnhofer"
+                },
+                {
+                    "authorId": "2065931750",
+                    "name": "Harini Kannan"
+                },
+                {
+                    "authorId": "3422895",
+                    "name": "S. Bhandarkar"
+                },
+                {
+                    "authorId": "1752521",
+                    "name": "W. Matusik"
+                },
+                {
+                    "authorId": "143805211",
+                    "name": "A. Torralba"
+                }
+            ],
+            "doi": "10.1109/CVPR.2016.239",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0695751eb18cd138d7d9441378739882a8afc919",
+            "title": "Eye Tracking for Everyone",
+            "url": "https://www.semanticscholar.org/paper/0695751eb18cd138d7d9441378739882a8afc919",
+            "venue": "2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "153440022",
+                    "name": "I. Goodfellow"
+                },
+                {
+                    "authorId": "1403025868",
+                    "name": "Jean Pouget-Abadie"
+                },
+                {
+                    "authorId": "153583218",
+                    "name": "Mehdi Mirza"
+                },
+                {
+                    "authorId": "2113742925",
+                    "name": "Bing Xu"
+                },
+                {
+                    "authorId": "1393680089",
+                    "name": "David Warde-Farley"
+                },
+                {
+                    "authorId": "1955694",
+                    "name": "Sherjil Ozair"
+                },
+                {
+                    "authorId": "1760871",
+                    "name": "Aaron C. Courville"
+                },
+                {
+                    "authorId": "1751762",
+                    "name": "Yoshua Bengio"
+                }
+            ],
+            "doi": "10.1145/3422622",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "13bc4e683075bdd6a3f0155241c276a772d4aa06",
+            "title": "Generative adversarial networks",
+            "url": "https://www.semanticscholar.org/paper/13bc4e683075bdd6a3f0155241c276a772d4aa06",
+            "venue": "Commun. ACM",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2108575264",
+                    "name": "Ji Woo Lee"
+                },
+                {
+                    "authorId": "1809933",
+                    "name": "C. Cho"
+                },
+                {
+                    "authorId": "3221306",
+                    "name": "K. Shin"
+                },
+                {
+                    "authorId": "1801980",
+                    "name": "E. Lee"
+                },
+                {
+                    "authorId": "4634733",
+                    "name": "K. Park"
+                }
+            ],
+            "doi": "10.1016/J.OPTLASENG.2011.12.001",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e639354576e385c96c477e985f2267dcf80612f1",
+            "title": "3D gaze tracking method using Purkinje images on eye optical model and pupil",
+            "url": "https://www.semanticscholar.org/paper/e639354576e385c96c477e985f2267dcf80612f1",
+            "venue": "",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2278082",
+                    "name": "D. Torricelli"
+                },
+                {
+                    "authorId": "2141146",
+                    "name": "S. Conforto"
+                },
+                {
+                    "authorId": "2261327",
+                    "name": "M. Schmid"
+                },
+                {
+                    "authorId": "1403246889",
+                    "name": "T. D'Alessio"
+                }
+            ],
+            "doi": "10.1016/j.cmpb.2008.06.008",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e197b143ad0b028e46b723b75f6986b7170cd832",
+            "title": "A neural-based remote eye gaze tracker under natural head motion",
+            "url": "https://www.semanticscholar.org/paper/e197b143ad0b028e46b723b75f6986b7170cd832",
+            "venue": "Comput. Methods Programs Biomed.",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2666929",
+                    "name": "N. Piratla"
+                },
+                {
+                    "authorId": "1685097",
+                    "name": "A. Jayasumana"
+                }
+            ],
+            "doi": "10.1006/jnca.2002.0142",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "1c6f55eb9b1e13e784bfd1e3bd2223bddbb40b9d",
+            "title": "A neural network based real-time gaze tracker",
+            "url": "https://www.semanticscholar.org/paper/1c6f55eb9b1e13e784bfd1e3bd2223bddbb40b9d",
+            "venue": "J. Netw. Comput. Appl.",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "95943596",
+                    "name": "I. Rakhmatulin"
+                },
+                {
+                    "authorId": "2245673",
+                    "name": "A. Duchowski"
+                }
+            ],
+            "doi": "10.1016/j.procs.2020.09.041",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c573456b8125fcd98a2728bdc4a5be04b93b495a",
+            "title": "Deep Neural Networks for Low-Cost Eye Tracking",
+            "url": "https://www.semanticscholar.org/paper/c573456b8125fcd98a2728bdc4a5be04b93b495a",
+            "venue": "KES",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "101146712",
+                    "name": "Zhassulan M. Shokishalov"
+                },
+                {
+                    "authorId": "48017279",
+                    "name": "H. Wang"
+                }
+            ],
+            "doi": "10.1016/J.PROCS.2019.02.062",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "b01158c654281f1c20f0d05fc21e99fcb4471cd9",
+            "title": "Applying Eye Tracking in Information Security",
+            "url": "https://www.semanticscholar.org/paper/b01158c654281f1c20f0d05fc21e99fcb4471cd9",
+            "venue": "Procedia Computer Science",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2084637886",
+                    "name": "Harshad Rai"
+                },
+                {
+                    "authorId": "153328659",
+                    "name": "Naman Shukla"
+                },
+                {
+                    "authorId": "2286159937",
+                    "name": "Ziyu Zhou"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "dd6d044696df5e4353ff7c92b8009e1201c85129",
+            "title": "Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks",
+            "url": "https://www.semanticscholar.org/paper/dd6d044696df5e4353ff7c92b8009e1201c85129",
+            "venue": "",
+            "year": 2018
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Cycle-GAN for eye-tracking",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/9445847dfe59338296850138ec519bb7396a5abd",
+    "venue": "arXiv.org",
+    "year": 2022
+}

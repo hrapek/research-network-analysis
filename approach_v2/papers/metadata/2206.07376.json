@@ -1,0 +1,2422 @@
+{
+    "abstract": "Keeping risk under control is often more crucial than maximizing expected reward in real-world decision-making situations, such as finance, robotics, autonomous driving, etc. The most natural choice of risk measures is variance, while it penalizes the upside volatility as much as the downside part. Instead, the (downside) semivariance, which captures the negative deviation of a random variable under its mean, is more suitable for risk-averse proposes. This paper aims at optimizing the mean-semivariance (MSV) criterion in reinforcement learning w.r.t. steady rewards. Since semivariance is time-inconsistent and does not satisfy the standard Bellman equation, the traditional dynamic programming methods are inapplicable to MSV problems directly. To tackle this challenge, we resort to the Perturbation Analysis (PA) theory and establish the performance difference formula for MSV. We reveal that the MSV problem can be solved by iteratively solving a sequence of RL problems with a policy-dependent reward function. Further, we propose two on-policy algorithms based on the policy gradient theory and the trust region method. Finally, we conduct diverse experiments from simple bandit problems to continuous control tasks in MuJoCo, which demonstrate the effectiveness of our proposed methods.",
+    "arxivId": "2206.07376",
+    "authors": [
+        {
+            "authorId": "32704046",
+            "name": "Xiaoteng Ma",
+            "url": "https://www.semanticscholar.org/author/32704046"
+        },
+        {
+            "authorId": "2118868195",
+            "name": "Shuai Ma",
+            "url": "https://www.semanticscholar.org/author/2118868195"
+        },
+        {
+            "authorId": "2107063909",
+            "name": "Li Xia",
+            "url": "https://www.semanticscholar.org/author/2107063909"
+        },
+        {
+            "authorId": "36281262",
+            "name": "Qianchuan Zhao",
+            "url": "https://www.semanticscholar.org/author/36281262"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": "2407.06887",
+            "authors": [
+                {
+                    "authorId": "2266061161",
+                    "name": "Christel Baier"
+                },
+                {
+                    "authorId": "69913726",
+                    "name": "Jakob Piribauer"
+                },
+                {
+                    "authorId": "2310434033",
+                    "name": "Maximilian Starke"
+                }
+            ],
+            "doi": "10.48550/arXiv.2407.06887",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "d7e170c8bebe9b62805a972ff8f9d07b0e151055",
+            "title": "Risk-averse optimization of total rewards in Markovian models using deviation measures",
+            "url": "https://www.semanticscholar.org/paper/d7e170c8bebe9b62805a972ff8f9d07b0e151055",
+            "venue": "CONCUR",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2158734924",
+                    "name": "\u00c1ngel Samaniego Alc\u00e1ntar"
+                }
+            ],
+            "doi": "10.22201/fca.24488410e.2023.3409",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f3bcc38bd63cee0ad64f6c40b9286955423c903b",
+            "title": "Semi-variance optimization for the components of the Dow Jones Industrial Average index",
+            "url": "https://www.semanticscholar.org/paper/f3bcc38bd63cee0ad64f6c40b9286955423c903b",
+            "venue": "Contadur\u00eda y Administraci\u00f3n",
+            "year": 2023
+        }
+    ],
+    "corpusId": 249674908,
+    "doi": "10.1613/jair.1.13833",
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": true,
+    "isPublisherLicensed": true,
+    "is_open_access": true,
+    "is_publisher_licensed": true,
+    "numCitedBy": 2,
+    "numCiting": 73,
+    "paperId": "c3a2e7d52d975b50c9e98e6cca4a7449b3068c2f",
+    "references": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2118868195",
+                    "name": "Shuai Ma"
+                },
+                {
+                    "authorId": "32704046",
+                    "name": "Xiaoteng Ma"
+                },
+                {
+                    "authorId": "2107063909",
+                    "name": "Li Xia"
+                }
+            ],
+            "doi": "10.1016/j.rico.2022.100165",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "080f9fa28f5d02387237925e79ef363adf97907b",
+            "title": "An optimistic value iteration for mean\u2013variance optimization in discounted Markov decision processes",
+            "url": "https://www.semanticscholar.org/paper/080f9fa28f5d02387237925e79ef363adf97907b",
+            "venue": "Results in Control and Optimization",
+            "year": 2022
+        },
+        {
+            "arxivId": "2201.05737",
+            "authors": [
+                {
+                    "authorId": "2118868195",
+                    "name": "Shuai Ma"
+                },
+                {
+                    "authorId": "32704046",
+                    "name": "Xiaoteng Ma"
+                },
+                {
+                    "authorId": "2107063909",
+                    "name": "Li Xia"
+                }
+            ],
+            "doi": "10.1016/j.ejor.2023.06.022",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "40ce6413f6ad4f59ffc97473d31cf81ae1abfaa3",
+            "title": "A unified algorithm framework for mean-variance optimization in discounted Markov decision processes",
+            "url": "https://www.semanticscholar.org/paper/40ce6413f6ad4f59ffc97473d31cf81ae1abfaa3",
+            "venue": "Eur. J. Oper. Res.",
+            "year": 2022
+        },
+        {
+            "arxivId": "2106.07329",
+            "authors": [
+                {
+                    "authorId": null,
+                    "name": "Yiming Zhang"
+                },
+                {
+                    "authorId": "1829862",
+                    "name": "K. Ross"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "50201f6e31aada9fbc3c22296fffaf69a89bffbe",
+            "title": "On-Policy Deep Reinforcement Learning for the Average-Reward Criterion",
+            "url": "https://www.semanticscholar.org/paper/50201f6e31aada9fbc3c22296fffaf69a89bffbe",
+            "venue": "ICML",
+            "year": 2021
+        },
+        {
+            "arxivId": "2106.03442",
+            "authors": [
+                {
+                    "authorId": "32704046",
+                    "name": "Xiaoteng Ma"
+                },
+                {
+                    "authorId": "2585098",
+                    "name": "Xiao-Jing Tang"
+                },
+                {
+                    "authorId": "2107063909",
+                    "name": "Li Xia"
+                },
+                {
+                    "authorId": "2146157882",
+                    "name": "Jun Yang"
+                },
+                {
+                    "authorId": "36281262",
+                    "name": "Qianchuan Zhao"
+                }
+            ],
+            "doi": "10.24963/ijcai.2021/385",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "fa40aca6a2ecfd870f9a1eb1a47293bb94b92997",
+            "title": "Average-Reward Reinforcement Learning with Trust Region Methods",
+            "url": "https://www.semanticscholar.org/paper/fa40aca6a2ecfd870f9a1eb1a47293bb94b92997",
+            "venue": "IJCAI",
+            "year": 2021
+        },
+        {
+            "arxivId": "2008.03707",
+            "authors": [
+                {
+                    "authorId": "145046900",
+                    "name": "L. Xia"
+                }
+            ],
+            "doi": "10.1111/poms.13252",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "59b4cbfbbc1c12f267f034b339164b660db34000",
+            "title": "Risk\u2010Sensitive Markov Decision Processes with Combined Metrics of Mean and Variance",
+            "url": "https://www.semanticscholar.org/paper/59b4cbfbbc1c12f267f034b339164b660db34000",
+            "venue": "Production and Operations Management",
+            "year": 2020
+        },
+        {
+            "arxivId": "2006.13827",
+            "authors": [
+                {
+                    "authorId": "11349854",
+                    "name": "Yingjie Fei"
+                },
+                {
+                    "authorId": "150358650",
+                    "name": "Zhuoran Yang"
+                },
+                {
+                    "authorId": "51310474",
+                    "name": "Yudong Chen"
+                },
+                {
+                    "authorId": "3113442",
+                    "name": "Zhaoran Wang"
+                },
+                {
+                    "authorId": "2308486",
+                    "name": "Qiaomin Xie"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "604ef08af1e7fd2634bff6bdd6ce729de783ac5f",
+            "title": "Risk-Sensitive Reinforcement Learning: Near-Optimal Risk-Sample Tradeoff in Regret",
+            "url": "https://www.semanticscholar.org/paper/604ef08af1e7fd2634bff6bdd6ce729de783ac5f",
+            "venue": "NeurIPS",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "32704046",
+                    "name": "Xiaoteng Ma"
+                },
+                {
+                    "authorId": "2107063909",
+                    "name": "Li Xia"
+                },
+                {
+                    "authorId": "47230320",
+                    "name": "Zhengyuan Zhou"
+                },
+                {
+                    "authorId": "2146157882",
+                    "name": "Jun Yang"
+                },
+                {
+                    "authorId": "36281262",
+                    "name": "Qianchuan Zhao"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ce54f25907510d52c659e017ef65c7b8d63f2296",
+            "title": "DSAC: Distributional Soft Actor Critic for Risk-Sensitive Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/ce54f25907510d52c659e017ef65c7b8d63f2296",
+            "venue": "",
+            "year": 2020
+        },
+        {
+            "arxivId": "2004.10888",
+            "authors": [
+                {
+                    "authorId": "2503523",
+                    "name": "Shangtong Zhang"
+                },
+                {
+                    "authorId": "2156641089",
+                    "name": "Bo Liu"
+                },
+                {
+                    "authorId": "1766767",
+                    "name": "Shimon Whiteson"
+                }
+            ],
+            "doi": "10.1609/aaai.v35i12.17302",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "11d558cf04914a19068338705526593fe7fb6cd3",
+            "title": "Mean-Variance Policy Iteration for Risk-Averse Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/11d558cf04914a19068338705526593fe7fb6cd3",
+            "venue": "AAAI",
+            "year": 2020
+        },
+        {
+            "arxivId": "1912.06680",
+            "authors": [
+                {
+                    "authorId": "133740015",
+                    "name": "Christopher Berner"
+                },
+                {
+                    "authorId": "2065151121",
+                    "name": "Greg Brockman"
+                },
+                {
+                    "authorId": "1466431052",
+                    "name": "Brooke Chan"
+                },
+                {
+                    "authorId": "34415167",
+                    "name": "Vicki Cheung"
+                },
+                {
+                    "authorId": "1474237245",
+                    "name": "Przemyslaw Debiak"
+                },
+                {
+                    "authorId": "1468636850",
+                    "name": "Christy Dennison"
+                },
+                {
+                    "authorId": "2065430571",
+                    "name": "David Farhi"
+                },
+                {
+                    "authorId": "2065826788",
+                    "name": "Quirin Fischer"
+                },
+                {
+                    "authorId": "1468728082",
+                    "name": "Shariq Hashme"
+                },
+                {
+                    "authorId": "144239765",
+                    "name": "Christopher Hesse"
+                },
+                {
+                    "authorId": "1944541",
+                    "name": "R. J\u00f3zefowicz"
+                },
+                {
+                    "authorId": "145565184",
+                    "name": "Scott Gray"
+                },
+                {
+                    "authorId": "2061321863",
+                    "name": "Catherine Olsson"
+                },
+                {
+                    "authorId": "2713380",
+                    "name": "J. Pachocki"
+                },
+                {
+                    "authorId": "2136008481",
+                    "name": "Michael Petrov"
+                },
+                {
+                    "authorId": "1463773776",
+                    "name": "Henrique Pond\u00e9 de Oliveira Pinto"
+                },
+                {
+                    "authorId": "34042420",
+                    "name": "Jonathan Raiman"
+                },
+                {
+                    "authorId": "2887364",
+                    "name": "Tim Salimans"
+                },
+                {
+                    "authorId": "1468877169",
+                    "name": "Jeremy Schlatter"
+                },
+                {
+                    "authorId": "2113526509",
+                    "name": "Jonas Schneider"
+                },
+                {
+                    "authorId": "2700360",
+                    "name": "Szymon Sidor"
+                },
+                {
+                    "authorId": "1701686",
+                    "name": "I. Sutskever"
+                },
+                {
+                    "authorId": "2109541439",
+                    "name": "Jie Tang"
+                },
+                {
+                    "authorId": "143909660",
+                    "name": "Filip Wolski"
+                },
+                {
+                    "authorId": "2108244542",
+                    "name": "Susan Zhang"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b19729b27a1b4c24b52f87308c907653300afa7f",
+            "title": "Dota 2 with Large Scale Deep Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/b19729b27a1b4c24b52f87308c907653300afa7f",
+            "venue": "ArXiv",
+            "year": 2019
+        },
+        {
+            "arxivId": "1912.03193",
+            "authors": [
+                {
+                    "authorId": "153641684",
+                    "name": "Qianggang Ding"
+                },
+                {
+                    "authorId": "50425528",
+                    "name": "Sifan Wu"
+                },
+                {
+                    "authorId": "2156232554",
+                    "name": "Hao Sun"
+                },
+                {
+                    "authorId": "15563288",
+                    "name": "Jiadong Guo"
+                },
+                {
+                    "authorId": "2148902488",
+                    "name": "Jian Guo"
+                }
+            ],
+            "doi": "10.24963/ijcai.2020/632",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "2bcda4b9698f1315d40c692b403b379db6d276f5",
+            "title": "Risk-Averse Trust Region Optimization for Reward-Volatility Reduction",
+            "url": "https://www.semanticscholar.org/paper/2bcda4b9698f1315d40c692b403b379db6d276f5",
+            "venue": "IJCAI",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1689108",
+                    "name": "O. Vinyals"
+                },
+                {
+                    "authorId": "2256699276",
+                    "name": "Igor Babuschkin"
+                },
+                {
+                    "authorId": "144792148",
+                    "name": "Wojciech M. Czarnecki"
+                },
+                {
+                    "authorId": "143949035",
+                    "name": "Micha\u00ebl Mathieu"
+                },
+                {
+                    "authorId": "145585375",
+                    "name": "Andrew Dudzik"
+                },
+                {
+                    "authorId": "8270717",
+                    "name": "Junyoung Chung"
+                },
+                {
+                    "authorId": "2114950020",
+                    "name": "David Choi"
+                },
+                {
+                    "authorId": "2067745837",
+                    "name": "Richard Powell"
+                },
+                {
+                    "authorId": "23988602",
+                    "name": "T. Ewalds"
+                },
+                {
+                    "authorId": "1737522",
+                    "name": "Petko Georgiev"
+                },
+                {
+                    "authorId": "2894414",
+                    "name": "Junhyuk Oh"
+                },
+                {
+                    "authorId": "48257711",
+                    "name": "Dan Horgan"
+                },
+                {
+                    "authorId": "35250693",
+                    "name": "M. Kroiss"
+                },
+                {
+                    "authorId": "1841008",
+                    "name": "Ivo Danihelka"
+                },
+                {
+                    "authorId": "1885349",
+                    "name": "Aja Huang"
+                },
+                {
+                    "authorId": "2175946",
+                    "name": "L. Sifre"
+                },
+                {
+                    "authorId": "2072572294",
+                    "name": "Trevor Cai"
+                },
+                {
+                    "authorId": "70495322",
+                    "name": "J. Agapiou"
+                },
+                {
+                    "authorId": "3093886",
+                    "name": "Max Jaderberg"
+                },
+                {
+                    "authorId": "9948791",
+                    "name": "A. Vezhnevets"
+                },
+                {
+                    "authorId": "37212795",
+                    "name": "R\u00e9mi Leblond"
+                },
+                {
+                    "authorId": "3408089",
+                    "name": "Tobias Pohlen"
+                },
+                {
+                    "authorId": "2795508",
+                    "name": "Valentin Dalibard"
+                },
+                {
+                    "authorId": "2508525",
+                    "name": "D. Budden"
+                },
+                {
+                    "authorId": "1390139201",
+                    "name": "Yury Sulsky"
+                },
+                {
+                    "authorId": "2065370007",
+                    "name": "James Molloy"
+                },
+                {
+                    "authorId": "40470211",
+                    "name": "T. Paine"
+                },
+                {
+                    "authorId": "146372255",
+                    "name": "Caglar Gulcehre"
+                },
+                {
+                    "authorId": "2117966548",
+                    "name": "Ziyun Wang"
+                },
+                {
+                    "authorId": "2054956",
+                    "name": "T. Pfaff"
+                },
+                {
+                    "authorId": "3374063",
+                    "name": "Yuhuai Wu"
+                },
+                {
+                    "authorId": "81387328",
+                    "name": "Roman Ring"
+                },
+                {
+                    "authorId": "1755465",
+                    "name": "Dani Yogatama"
+                },
+                {
+                    "authorId": "1389776790",
+                    "name": "Dario W\u00fcnsch"
+                },
+                {
+                    "authorId": "152182296",
+                    "name": "Katrina McKinney"
+                },
+                {
+                    "authorId": "2060575515",
+                    "name": "Oliver Smith"
+                },
+                {
+                    "authorId": "1725157",
+                    "name": "T. Schaul"
+                },
+                {
+                    "authorId": "2542999",
+                    "name": "T. Lillicrap"
+                },
+                {
+                    "authorId": "2645384",
+                    "name": "K. Kavukcuoglu"
+                },
+                {
+                    "authorId": "48987704",
+                    "name": "D. Hassabis"
+                },
+                {
+                    "authorId": "17937882",
+                    "name": "C. Apps"
+                },
+                {
+                    "authorId": "145824029",
+                    "name": "David Silver"
+                }
+            ],
+            "doi": "10.1038/s41586-019-1724-z",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "361c00b22e29d0816ca896513d2c165e26399821",
+            "title": "Grandmaster level in StarCraft II using multi-agent reinforcement learning",
+            "url": "https://www.semanticscholar.org/paper/361c00b22e29d0816ca896513d2c165e26399821",
+            "venue": "Nature",
+            "year": 2019
+        },
+        {
+            "arxivId": "1909.11652",
+            "authors": [
+                {
+                    "authorId": "3195183",
+                    "name": "Anusha Nagabandi"
+                },
+                {
+                    "authorId": "70162540",
+                    "name": "K. Konolige"
+                },
+                {
+                    "authorId": "1736651",
+                    "name": "S. Levine"
+                },
+                {
+                    "authorId": "2109446216",
+                    "name": "Vikash Kumar"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7a450675968d31b8363e21fb5d5b72474c128076",
+            "title": "Deep Dynamics Models for Learning Dexterous Manipulation",
+            "url": "https://www.semanticscholar.org/paper/7a450675968d31b8363e21fb5d5b72474c128076",
+            "venue": "CoRL",
+            "year": 2019
+        },
+        {
+            "arxivId": "1906.08253",
+            "authors": [
+                {
+                    "authorId": "35163402",
+                    "name": "Michael Janner"
+                },
+                {
+                    "authorId": "2550764",
+                    "name": "Justin Fu"
+                },
+                {
+                    "authorId": "2634261",
+                    "name": "Marvin Zhang"
+                },
+                {
+                    "authorId": "1736651",
+                    "name": "S. Levine"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "9001698e033524864d4d45f051a5ba362d4afd9e",
+            "title": "When to Trust Your Model: Model-Based Policy Optimization",
+            "url": "https://www.semanticscholar.org/paper/9001698e033524864d4d45f051a5ba362d4afd9e",
+            "venue": "NeurIPS",
+            "year": 2019
+        },
+        {
+            "arxivId": "1905.06125",
+            "authors": [
+                {
+                    "authorId": "5377654",
+                    "name": "B. Mavrin"
+                },
+                {
+                    "authorId": "2503523",
+                    "name": "Shangtong Zhang"
+                },
+                {
+                    "authorId": "40609469",
+                    "name": "Hengshuai Yao"
+                },
+                {
+                    "authorId": "2515229",
+                    "name": "Linglong Kong"
+                },
+                {
+                    "authorId": "47822523",
+                    "name": "Kaiwen Wu"
+                },
+                {
+                    "authorId": "40508553",
+                    "name": "Yaoliang Yu"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f6b218453170edcbb51e49dd44ba2f83af53ef92",
+            "title": "Distributional Reinforcement Learning for Efficient Exploration",
+            "url": "https://www.semanticscholar.org/paper/f6b218453170edcbb51e49dd44ba2f83af53ef92",
+            "venue": "ICML",
+            "year": 2019
+        },
+        {
+            "arxivId": "1904.12901",
+            "authors": [
+                {
+                    "authorId": "1387885286",
+                    "name": "Gabriel Dulac-Arnold"
+                },
+                {
+                    "authorId": "3187297",
+                    "name": "D. Mankowitz"
+                },
+                {
+                    "authorId": "143772943",
+                    "name": "Todd Hester"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "896e5529de1da1e4494033404721b70339bb9557",
+            "title": "Challenges of Real-World Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/896e5529de1da1e4494033404721b70339bb9557",
+            "venue": "ArXiv",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1891500",
+                    "name": "Qingda Wei"
+                }
+            ],
+            "doi": "10.1016/J.SYSCONLE.2019.02.001",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "791bafdc78479c1bfefa0327d5d18042816985af",
+            "title": "Mean-semivariance optimality for continuous-time Markov decision processes",
+            "url": "https://www.semanticscholar.org/paper/791bafdc78479c1bfefa0327d5d18042816985af",
+            "venue": "Syst. Control. Lett.",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2702465",
+                    "name": "Tim Bollerslev"
+                },
+                {
+                    "authorId": "2240720103",
+                    "name": "Sophia Zhengzi Li"
+                },
+                {
+                    "authorId": "2112632310",
+                    "name": "Bingzhi Zhao"
+                }
+            ],
+            "doi": "10.2139/ssrn.2565660",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "07c6dd2b44d63542689419b5032111514780bc36",
+            "title": "Good Volatility, Bad Volatility, and the Cross Section of Stock Returns",
+            "url": "https://www.semanticscholar.org/paper/07c6dd2b44d63542689419b5032111514780bc36",
+            "venue": "Journal of Financial and Quantitative Analysis",
+            "year": 2018
+        },
+        {
+            "arxivId": "1809.02292",
+            "authors": [
+                {
+                    "authorId": null,
+                    "name": "Bo Liu"
+                },
+                {
+                    "authorId": "51437774",
+                    "name": "Tengyang Xie"
+                },
+                {
+                    "authorId": "47104078",
+                    "name": "Yangyang Xu"
+                },
+                {
+                    "authorId": "1678622",
+                    "name": "M. Ghavamzadeh"
+                },
+                {
+                    "authorId": "1819830",
+                    "name": "Yinlam Chow"
+                },
+                {
+                    "authorId": "40431009",
+                    "name": "Daoming Lyu"
+                },
+                {
+                    "authorId": "1705580",
+                    "name": "Daesub Yoon"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "d2458d091a99ce5619185a803140871350cf69ae",
+            "title": "A Block Coordinate Ascent Algorithm for Mean-Variance Optimization",
+            "url": "https://www.semanticscholar.org/paper/d2458d091a99ce5619185a803140871350cf69ae",
+            "venue": "NeurIPS",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "73227160",
+                    "name": "Wei Chen"
+                },
+                {
+                    "authorId": "2202835161",
+                    "name": "Dandan Li"
+                },
+                {
+                    "authorId": "2115337910",
+                    "name": "Shan Lu"
+                },
+                {
+                    "authorId": "2109218540",
+                    "name": "Weiyi Liu"
+                }
+            ],
+            "doi": "10.1007/s00500-018-3281-z",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "043c6061b013b926dac72849d130b0dc649e133c",
+            "title": "Multi-period mean\u2013semivariance portfolio optimization based on uncertain measure",
+            "url": "https://www.semanticscholar.org/paper/043c6061b013b926dac72849d130b0dc649e133c",
+            "venue": "Soft Computing",
+            "year": 2018
+        },
+        {
+            "arxivId": "1806.06920",
+            "authors": [
+                {
+                    "authorId": "2799799",
+                    "name": "A. Abdolmaleki"
+                },
+                {
+                    "authorId": "2060551",
+                    "name": "Jost Tobias Springenberg"
+                },
+                {
+                    "authorId": "2109481",
+                    "name": "Yuval Tassa"
+                },
+                {
+                    "authorId": "1708654",
+                    "name": "R. Munos"
+                },
+                {
+                    "authorId": "2801204",
+                    "name": "N. Heess"
+                },
+                {
+                    "authorId": "3137672",
+                    "name": "Martin A. Riedmiller"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": true,
+            "paperId": "a8ef08940341381390d9a5672546354d0ce51328",
+            "title": "Maximum a Posteriori Policy Optimisation",
+            "url": "https://www.semanticscholar.org/paper/a8ef08940341381390d9a5672546354d0ce51328",
+            "venue": "ICLR",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145824029",
+                    "name": "David Silver"
+                },
+                {
+                    "authorId": "4337102",
+                    "name": "Julian Schrittwieser"
+                },
+                {
+                    "authorId": "34838386",
+                    "name": "K. Simonyan"
+                },
+                {
+                    "authorId": "2460849",
+                    "name": "Ioannis Antonoglou"
+                },
+                {
+                    "authorId": "1885349",
+                    "name": "Aja Huang"
+                },
+                {
+                    "authorId": "35099444",
+                    "name": "A. Guez"
+                },
+                {
+                    "authorId": "2067208983",
+                    "name": "T. Hubert"
+                },
+                {
+                    "authorId": "2067596385",
+                    "name": "Lucas baker"
+                },
+                {
+                    "authorId": "40227832",
+                    "name": "Matthew Lai"
+                },
+                {
+                    "authorId": "34848283",
+                    "name": "Adrian Bolton"
+                },
+                {
+                    "authorId": "2275897",
+                    "name": "Yutian Chen"
+                },
+                {
+                    "authorId": "2542999",
+                    "name": "T. Lillicrap"
+                },
+                {
+                    "authorId": "2059412590",
+                    "name": "Fan Hui"
+                },
+                {
+                    "authorId": "2175946",
+                    "name": "L. Sifre"
+                },
+                {
+                    "authorId": "47568983",
+                    "name": "George van den Driessche"
+                },
+                {
+                    "authorId": "1686971",
+                    "name": "T. Graepel"
+                },
+                {
+                    "authorId": "48987704",
+                    "name": "D. Hassabis"
+                }
+            ],
+            "doi": "10.1038/nature24270",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c27db32efa8137cbf654902f8f728f338e55cd1c",
+            "title": "Mastering the game of Go without human knowledge",
+            "url": "https://www.semanticscholar.org/paper/c27db32efa8137cbf654902f8f728f338e55cd1c",
+            "venue": "Nature",
+            "year": 2017
+        },
+        {
+            "arxivId": "1707.06347",
+            "authors": [
+                {
+                    "authorId": "47971768",
+                    "name": "John Schulman"
+                },
+                {
+                    "authorId": "143909660",
+                    "name": "Filip Wolski"
+                },
+                {
+                    "authorId": "6515819",
+                    "name": "Prafulla Dhariwal"
+                },
+                {
+                    "authorId": "38909097",
+                    "name": "Alec Radford"
+                },
+                {
+                    "authorId": "2067138712",
+                    "name": "Oleg Klimov"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "dce6f9d4017b1785979e7520fd0834ef8cf02f4b",
+            "title": "Proximal Policy Optimization Algorithms",
+            "url": "https://www.semanticscholar.org/paper/dce6f9d4017b1785979e7520fd0834ef8cf02f4b",
+            "venue": "ArXiv",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3025260",
+                    "name": "Aviv Tamar"
+                },
+                {
+                    "authorId": "1819830",
+                    "name": "Yinlam Chow"
+                },
+                {
+                    "authorId": "1678622",
+                    "name": "M. Ghavamzadeh"
+                },
+                {
+                    "authorId": "1712535",
+                    "name": "Shie Mannor"
+                }
+            ],
+            "doi": "10.1109/TAC.2016.2644871",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7ac1a99e71e62dbdfa056f5927340fa59e6b7a0b",
+            "title": "Sequential Decision Making With Coherent Risk",
+            "url": "https://www.semanticscholar.org/paper/7ac1a99e71e62dbdfa056f5927340fa59e6b7a0b",
+            "venue": "IEEE Transactions on Automatic Control",
+            "year": 2017
+        },
+        {
+            "arxivId": "1705.10528",
+            "authors": [
+                {
+                    "authorId": "3381809",
+                    "name": "Joshua Achiam"
+                },
+                {
+                    "authorId": "145641013",
+                    "name": "David Held"
+                },
+                {
+                    "authorId": "3025260",
+                    "name": "Aviv Tamar"
+                },
+                {
+                    "authorId": "1689992",
+                    "name": "P. Abbeel"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "7a4193d0b042643a8bb9ec262ed7f9d509bdb12e",
+            "title": "Constrained Policy Optimization",
+            "url": "https://www.semanticscholar.org/paper/7a4193d0b042643a8bb9ec262ed7f9d509bdb12e",
+            "venue": "ICML",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2117704000",
+                    "name": "L. Xia"
+                }
+            ],
+            "doi": "10.1016/j.automatica.2016.06.018",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "309982ecf0884c840413838f78063091ee17b602",
+            "title": "Optimization of Markov decision processes under the variance criterion",
+            "url": "https://www.semanticscholar.org/paper/309982ecf0884c840413838f78063091ee17b602",
+            "venue": "Autom.",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3203751",
+                    "name": "E. Delage"
+                },
+                {
+                    "authorId": "2500534",
+                    "name": "D. Kuhn"
+                },
+                {
+                    "authorId": "7425260",
+                    "name": "W. Wiesemann"
+                }
+            ],
+            "doi": "10.1287/MNSC.2018.3108",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8d7feddf84fec7a6d8bd7a70caa0916148f20e44",
+            "title": "\"Dice\"-sion-Making Under Uncertainty: When Can a Random Decision Reduce Risk?",
+            "url": "https://www.semanticscholar.org/paper/8d7feddf84fec7a6d8bd7a70caa0916148f20e44",
+            "venue": "Manag. Sci.",
+            "year": 2016
+        },
+        {
+            "arxivId": "1606.01540",
+            "authors": [
+                {
+                    "authorId": "2065151121",
+                    "name": "Greg Brockman"
+                },
+                {
+                    "authorId": "34415167",
+                    "name": "Vicki Cheung"
+                },
+                {
+                    "authorId": "152877508",
+                    "name": "Ludwig Pettersson"
+                },
+                {
+                    "authorId": "2113526509",
+                    "name": "Jonas Schneider"
+                },
+                {
+                    "authorId": "47971768",
+                    "name": "John Schulman"
+                },
+                {
+                    "authorId": "2109541439",
+                    "name": "Jie Tang"
+                },
+                {
+                    "authorId": "2563432",
+                    "name": "Wojciech Zaremba"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "2b10281297ee001a9f3f4ea1aa9bea6b638c27df",
+            "title": "OpenAI Gym",
+            "url": "https://www.semanticscholar.org/paper/2b10281297ee001a9f3f4ea1aa9bea6b638c27df",
+            "venue": "ArXiv",
+            "year": 2016
+        },
+        {
+            "arxivId": "1512.01629",
+            "authors": [
+                {
+                    "authorId": "1819830",
+                    "name": "Yinlam Chow"
+                },
+                {
+                    "authorId": "1678622",
+                    "name": "M. Ghavamzadeh"
+                },
+                {
+                    "authorId": "2542753",
+                    "name": "Lucas Janson"
+                },
+                {
+                    "authorId": "1696085",
+                    "name": "M. Pavone"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "759bbd8dd50cb4790cad7a3bccbdfcbfee5e3e89",
+            "title": "Risk-Constrained Reinforcement Learning with Percentile Risk Criteria",
+            "url": "https://www.semanticscholar.org/paper/759bbd8dd50cb4790cad7a3bccbdfcbfee5e3e89",
+            "venue": "J. Mach. Learn. Res.",
+            "year": 2015
+        },
+        {
+            "arxivId": "1506.02438",
+            "authors": [
+                {
+                    "authorId": "47971768",
+                    "name": "John Schulman"
+                },
+                {
+                    "authorId": "29912342",
+                    "name": "Philipp Moritz"
+                },
+                {
+                    "authorId": "1736651",
+                    "name": "S. Levine"
+                },
+                {
+                    "authorId": "1694621",
+                    "name": "Michael I. Jordan"
+                },
+                {
+                    "authorId": "1689992",
+                    "name": "P. Abbeel"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d316c82c12cf4c45f9e85211ef3d1fa62497bff8",
+            "title": "High-Dimensional Continuous Control Using Generalized Advantage Estimation",
+            "url": "https://www.semanticscholar.org/paper/d316c82c12cf4c45f9e85211ef3d1fa62497bff8",
+            "venue": "ICLR",
+            "year": 2015
+        },
+        {
+            "arxivId": "1506.02188",
+            "authors": [
+                {
+                    "authorId": "1819830",
+                    "name": "Yinlam Chow"
+                },
+                {
+                    "authorId": "3025260",
+                    "name": "Aviv Tamar"
+                },
+                {
+                    "authorId": "1712535",
+                    "name": "Shie Mannor"
+                },
+                {
+                    "authorId": "1696085",
+                    "name": "M. Pavone"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f583f9e720c16f6bb50f9d624b61c3bc851be008",
+            "title": "Risk-Sensitive and Robust Decision-Making: a CVaR Optimization Approach",
+            "url": "https://www.semanticscholar.org/paper/f583f9e720c16f6bb50f9d624b61c3bc851be008",
+            "venue": "NIPS",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "49421778",
+                    "name": "Yongjun Liu"
+                },
+                {
+                    "authorId": "123247299",
+                    "name": "Wei-guo Zhang"
+                }
+            ],
+            "doi": "10.1016/j.ejor.2014.10.061",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "9be251bd9f604f6fbb58cf13367b54c624417fd1",
+            "title": "A multi-period fuzzy portfolio optimization model with minimum transaction lots",
+            "url": "https://www.semanticscholar.org/paper/9be251bd9f604f6fbb58cf13367b54c624417fd1",
+            "venue": "Eur. J. Oper. Res.",
+            "year": 2015
+        },
+        {
+            "arxivId": "1502.05477",
+            "authors": [
+                {
+                    "authorId": "47971768",
+                    "name": "John Schulman"
+                },
+                {
+                    "authorId": "1736651",
+                    "name": "S. Levine"
+                },
+                {
+                    "authorId": "1689992",
+                    "name": "P. Abbeel"
+                },
+                {
+                    "authorId": "1694621",
+                    "name": "Michael I. Jordan"
+                },
+                {
+                    "authorId": "29912342",
+                    "name": "Philipp Moritz"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "449532187c94af3dd3aa55e16d2c50f7854d2199",
+            "title": "Trust Region Policy Optimization",
+            "url": "https://www.semanticscholar.org/paper/449532187c94af3dd3aa55e16d2c50f7854d2199",
+            "venue": "ICML",
+            "year": 2015
+        },
+        {
+            "arxivId": "1406.3339",
+            "authors": [
+                {
+                    "authorId": "1819830",
+                    "name": "Yinlam Chow"
+                },
+                {
+                    "authorId": "1678622",
+                    "name": "M. Ghavamzadeh"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "fd85c9deeee062cf4aeeb682274b3c3c073270ba",
+            "title": "Algorithms for CVaR Optimization in MDPs",
+            "url": "https://www.semanticscholar.org/paper/fd85c9deeee062cf4aeeb682274b3c3c073270ba",
+            "venue": "NIPS",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2536655",
+                    "name": "A. Gosavi"
+                }
+            ],
+            "doi": "10.1080/03081079.2014.883387",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "bf86851b09cbf52f69a95f93e858657c688eff2f",
+            "title": "Variance-penalized Markov decision processes: dynamic programming and reinforcement learning techniques",
+            "url": "https://www.semanticscholar.org/paper/bf86851b09cbf52f69a95f93e858657c688eff2f",
+            "venue": "Int. J. Gen. Syst.",
+            "year": 2014
+        },
+        {
+            "arxivId": "1404.3862",
+            "authors": [
+                {
+                    "authorId": "3025260",
+                    "name": "Aviv Tamar"
+                },
+                {
+                    "authorId": "2136461",
+                    "name": "Yonatan Glassner"
+                },
+                {
+                    "authorId": "1712535",
+                    "name": "Shie Mannor"
+                }
+            ],
+            "doi": "10.1609/aaai.v29i1.9561",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "2e939ed3bb378ea966bf9f710fc1138f4e16ef38",
+            "title": "Optimizing the CVaR via Sampling",
+            "url": "https://www.semanticscholar.org/paper/2e939ed3bb378ea966bf9f710fc1138f4e16ef38",
+            "venue": "AAAI",
+            "year": 2014
+        },
+        {
+            "arxivId": "1403.6530",
+            "authors": [
+                {
+                    "authorId": "1389984923",
+                    "name": "Prashanth L.A."
+                },
+                {
+                    "authorId": "1678622",
+                    "name": "M. Ghavamzadeh"
+                }
+            ],
+            "doi": "10.1007/s10994-016-5569-5",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "e1b05335f3ffd5bd1b7555e0b3a1b19f9ec07f0f",
+            "title": "Variance-constrained actor-critic algorithms for discounted and average reward MDPs",
+            "url": "https://www.semanticscholar.org/paper/e1b05335f3ffd5bd1b7555e0b3a1b19f9ec07f0f",
+            "venue": "Machine Learning",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144832491",
+                    "name": "E. Todorov"
+                },
+                {
+                    "authorId": "1968210",
+                    "name": "Tom Erez"
+                },
+                {
+                    "authorId": "2109481",
+                    "name": "Yuval Tassa"
+                }
+            ],
+            "doi": "10.1109/IROS.2012.6386109",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "b354ee518bfc1ac0d8ac447eece9edb69e92eae1",
+            "title": "MuJoCo: A physics engine for model-based control",
+            "url": "https://www.semanticscholar.org/paper/b354ee518bfc1ac0d8ac447eece9edb69e92eae1",
+            "venue": "2012 IEEE/RSJ International Conference on Intelligent Robots and Systems",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "123247299",
+                    "name": "Wei-guo Zhang"
+                },
+                {
+                    "authorId": "49421778",
+                    "name": "Yongjun Liu"
+                },
+                {
+                    "authorId": "143919977",
+                    "name": "Wei-jun Xu"
+                }
+            ],
+            "doi": "10.1016/j.ejor.2012.04.023",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "18a7f348a27d3f8a1eed470b1e3ab6d657f442a4",
+            "title": "A possibilistic mean-semivariance-entropy model for multi-period portfolio selection with transaction costs",
+            "url": "https://www.semanticscholar.org/paper/18a7f348a27d3f8a1eed470b1e3ab6d657f442a4",
+            "venue": "Eur. J. Oper. Res.",
+            "year": 2012
+        },
+        {
+            "arxivId": "1206.6404",
+            "authors": [
+                {
+                    "authorId": "9440777",
+                    "name": "Dotan Di Castro"
+                },
+                {
+                    "authorId": "3025260",
+                    "name": "Aviv Tamar"
+                },
+                {
+                    "authorId": "1712535",
+                    "name": "Shie Mannor"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e27fb84fccd3d9724df8ce35fe14149da5de3251",
+            "title": "Policy Gradients with Variance Related Risk Criteria",
+            "url": "https://www.semanticscholar.org/paper/e27fb84fccd3d9724df8ce35fe14149da5de3251",
+            "venue": "ICML",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1996654",
+                    "name": "A. Ruszczynski"
+                }
+            ],
+            "doi": "10.1007/s10107-010-0393-3",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "9469acb31c371323cb726385ff206b7708df94b7",
+            "title": "Risk-averse dynamic programming for Markov decision processes",
+            "url": "https://www.semanticscholar.org/paper/9469acb31c371323cb726385ff206b7708df94b7",
+            "venue": "Math. Program.",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "31474779",
+                    "name": "A. Shapiro"
+                },
+                {
+                    "authorId": "3016531",
+                    "name": "Darinka Dentcheva"
+                },
+                {
+                    "authorId": "1996654",
+                    "name": "A. Ruszczynski"
+                }
+            ],
+            "doi": "10.1137/1.9780898718751",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f1af9d46eaee472ceb53b6de6bbf8c30ac281716",
+            "title": "Lectures on Stochastic Programming: Modeling and Theory",
+            "url": "https://www.semanticscholar.org/paper/f1af9d46eaee472ceb53b6de6bbf8c30ac281716",
+            "venue": "",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2722252",
+                    "name": "W. Briec"
+                },
+                {
+                    "authorId": "3190281",
+                    "name": "K. Kerstens"
+                }
+            ],
+            "doi": "10.1016/J.OMEGA.2006.07.007",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "02be90c3389270fa773434bdd294fb697cb229db",
+            "title": "Multi-horizon Markowitz portfolio performance appraisals: A general approach",
+            "url": "https://www.semanticscholar.org/paper/02be90c3389270fa773434bdd294fb697cb229db",
+            "venue": "",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2059358552",
+                    "name": "P. Cochat"
+                },
+                {
+                    "authorId": "13267685",
+                    "name": "L. Vaucoret"
+                },
+                {
+                    "authorId": "2097644863",
+                    "name": "J. Sarles"
+                }
+            ],
+            "doi": "10.1136/ebmh.11.4.102",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "bc6dff14a130c57a91d5a21339c23471faf1d46f",
+            "title": "Et al",
+            "url": "https://www.semanticscholar.org/paper/bc6dff14a130c57a91d5a21339c23471faf1d46f",
+            "venue": "Archives de pediatrie : organe officiel de la Societe francaise de pediatrie",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2117115147",
+                    "name": "Wei Yan"
+                },
+                {
+                    "authorId": "1740542249",
+                    "name": "Rong Hui Miao"
+                },
+                {
+                    "authorId": "1733511",
+                    "name": "Shurong Li"
+                }
+            ],
+            "doi": "10.1016/j.amc.2007.04.036",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "159a9e943dfabd4f2edab645f0bf5432a2d896dc",
+            "title": "Multi-period semi-variance portfolio selection: Model and numerical solution",
+            "url": "https://www.semanticscholar.org/paper/159a9e943dfabd4f2edab645f0bf5432a2d896dc",
+            "venue": "Appl. Math. Comput.",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1731421",
+                    "name": "Xi-Ren Cao"
+                }
+            ],
+            "doi": "10.1016/j.arcontrol.2009.03.003",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "21babbb7816abc59e07245786040b99d70562140",
+            "title": "Stochastic learning and optimization - A sensitivity-based approach",
+            "url": "https://www.semanticscholar.org/paper/21babbb7816abc59e07245786040b99d70562140",
+            "venue": "Annu. Rev. Control.",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145853268",
+                    "name": "A. Nemirovski"
+                },
+                {
+                    "authorId": "31474779",
+                    "name": "A. Shapiro"
+                }
+            ],
+            "doi": "10.1137/050622328",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "862a46acc6a7f37834327e778abbfbe91386ef04",
+            "title": "Convex Approximations of Chance Constrained Programs",
+            "url": "https://www.semanticscholar.org/paper/862a46acc6a7f37834327e778abbfbe91386ef04",
+            "venue": "SIAM J. Optim.",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3190281",
+                    "name": "K. Kerstens"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "317dcc01e1ff3aef4a23ae8bbb3fd3ddca5bcecb",
+            "title": "Multi-horizon Markowitz Portfolio Performance Appraisals",
+            "url": "https://www.semanticscholar.org/paper/317dcc01e1ff3aef4a23ae8bbb3fd3ddca5bcecb",
+            "venue": "",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2136886",
+                    "name": "V. Borkar"
+                },
+                {
+                    "authorId": "1695337",
+                    "name": "Sean P. Meyn"
+                }
+            ],
+            "doi": "10.1287/moor.27.1.192.334",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f868ec8eb5e1ba13f0c0092e68f72d49a65679c3",
+            "title": "Risk-Sensitive Optimal Control for Markov Decision Processes with Monotone Cost",
+            "url": "https://www.semanticscholar.org/paper/f868ec8eb5e1ba13f0c0092e68f72d49a65679c3",
+            "venue": "Math. Oper. Res.",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "48108939",
+                    "name": "Duan Li"
+                },
+                {
+                    "authorId": "2150369198",
+                    "name": "W. Ng"
+                }
+            ],
+            "doi": "10.1111/1467-9965.00100",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "e678144fc7741a1a46f7aa85e9adb10f75aa93b3",
+            "title": "Optimal Dynamic Portfolio Selection: Multiperiod Mean\u2010Variance Formulation",
+            "url": "https://www.semanticscholar.org/paper/e678144fc7741a1a46f7aa85e9adb10f75aa93b3",
+            "venue": "",
+            "year": 2000
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "39806742",
+                    "name": "Kun-Jen Chung"
+                }
+            ],
+            "doi": "10.1287/opre.42.1.184",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "8a34658ef7da543c2f6aa214b75a74bc574aa784",
+            "title": "Mean-Variance Tradeoffs in an Undiscounted MDP: The Unichain Case",
+            "url": "https://www.semanticscholar.org/paper/8a34658ef7da543c2f6aa214b75a74bc574aa784",
+            "venue": "Oper. Res.",
+            "year": 1994
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "50018942",
+                    "name": "H. Markowitz"
+                },
+                {
+                    "authorId": "2091932686",
+                    "name": "P. Todd"
+                },
+                {
+                    "authorId": "2556326",
+                    "name": "Ganlin Xu"
+                },
+                {
+                    "authorId": "2069622108",
+                    "name": "Yuji Yamane"
+                }
+            ],
+            "doi": "10.1007/BF02282055",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "1ed943fdd8433c9c4323a90c1dd6155b55e96674",
+            "title": "Computation of mean-semivariance efficient sets by the Critical Line Algorithm",
+            "url": "https://www.semanticscholar.org/paper/1ed943fdd8433c9c4323a90c1dd6155b55e96674",
+            "venue": "Ann. Oper. Res.",
+            "year": 1993
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1701499",
+                    "name": "J. Filar"
+                },
+                {
+                    "authorId": "2513431",
+                    "name": "L. Kallenberg"
+                },
+                {
+                    "authorId": "2110727312",
+                    "name": "Huey-Miin Lee"
+                }
+            ],
+            "doi": "10.1287/moor.14.1.147",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "05fde9039a3c7db11a7e0f933a59fe94505c46ad",
+            "title": "Variance-Penalized Markov Decision Processes",
+            "url": "https://www.semanticscholar.org/paper/05fde9039a3c7db11a7e0f933a59fe94505c46ad",
+            "venue": "Math. Oper. Res.",
+            "year": 1989
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143939601",
+                    "name": "F. Choobineh"
+                },
+                {
+                    "authorId": "98600593",
+                    "name": "D. Branting"
+                }
+            ],
+            "doi": "10.1016/0377-2217(86)90332-2",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "0476134350de2e53dd7749974c0819bd9993e4f7",
+            "title": "A simple approximation for semivariance",
+            "url": "https://www.semanticscholar.org/paper/0476134350de2e53dd7749974c0819bd9993e4f7",
+            "venue": "",
+            "year": 1986
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2948080",
+                    "name": "M. J. Sobel"
+                }
+            ],
+            "doi": "10.2307/3213832",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "216ef8a1d170e88776b7b65f2342a94efdf4d68e",
+            "title": "The variance of discounted Markov decision processes",
+            "url": "https://www.semanticscholar.org/paper/216ef8a1d170e88776b7b65f2342a94efdf4d68e",
+            "venue": "Journal of Applied Probability",
+            "year": 1982
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "35335083",
+                    "name": "R. Thrall"
+                }
+            ],
+            "doi": "10.21236/ada049700",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "1b4b9507d9ff065cc5a3d4a30d604eb4ec41bfe2",
+            "title": "Mathematics of Operations Research.",
+            "url": "https://www.semanticscholar.org/paper/1b4b9507d9ff065cc5a3d4a30d604eb4ec41bfe2",
+            "venue": "",
+            "year": 1978
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2237725584",
+                    "name": "Harry M. Markowitz"
+                }
+            ],
+            "doi": "10.1111/j.1540-6261.1952.tb01525.x",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "a888bbc54bcb4aa483e42bb2997b7698abf6ab63",
+            "title": "Portfolio Selection",
+            "url": "https://www.semanticscholar.org/paper/a888bbc54bcb4aa483e42bb2997b7698abf6ab63",
+            "venue": "",
+            "year": 1971
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2064713703",
+                    "name": "D. R. Cox"
+                }
+            ],
+            "doi": "10.1007/bf02476839",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "46b0da13839aa3ea215db4996e452b9623ef17e4",
+            "title": "Journal of Applied Probability",
+            "url": "https://www.semanticscholar.org/paper/46b0da13839aa3ea215db4996e452b9623ef17e4",
+            "venue": "Canadian Mathematical Bulletin",
+            "year": 1964
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "152210352",
+                    "name": "Fan Zhou"
+                },
+                {
+                    "authorId": "2026139463",
+                    "name": "Jianing Wang"
+                },
+                {
+                    "authorId": "48971705",
+                    "name": "Xingdong Feng"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9f873fecd24e0cfb800249a30ecd8e3b3155e709",
+            "title": "Non-Crossing Quantile Regression for Distributional Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/9f873fecd24e0cfb800249a30ecd8e3b3155e709",
+            "venue": "NeurIPS",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2239347014",
+                    "name": "Debabrata Pal"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "c1ecd5cb0c65b1c84fe937f56f5c2737c4864ed6",
+            "title": "Volume 37",
+            "url": "https://www.semanticscholar.org/paper/c1ecd5cb0c65b1c84fe937f56f5c2737c4864ed6",
+            "venue": "",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2087057589",
+                    "name": "Jonas Schmitt"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "fdee709aef718de16df6a876080aea9abeff79eb",
+            "title": "Portfolio Selection Efficient Diversification Of Investments",
+            "url": "https://www.semanticscholar.org/paper/fdee709aef718de16df6a876080aea9abeff79eb",
+            "venue": "",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2110194270",
+                    "name": "Javier Garc\u00eda"
+                },
+                {
+                    "authorId": "143901279",
+                    "name": "F. Fern\u00e1ndez"
+                }
+            ],
+            "doi": "10.5555/2789272.2886795",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c0f2c4104ef6e36bb67022001179887e6600d24d",
+            "title": "A comprehensive survey on safe reinforcement learning",
+            "url": "https://www.semanticscholar.org/paper/c0f2c4104ef6e36bb67022001179887e6600d24d",
+            "venue": "J. Mach. Learn. Res.",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2245614938",
+                    "name": "William W. Hogan"
+                },
+                {
+                    "authorId": "2054883642",
+                    "name": "James M. Warren"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "925666b3ff10e2998ec98a56a6047ce9e0836ada",
+            "title": "JOURNAL OF FINANCIAL AND QUANTITATIVE ANALYSIS January 1974 TOWARD THE DEVELOPMENT OF AN EQUILIBRIUM CAPITAL- MARKET MODEL BASED ON SEMIVARIANCE",
+            "url": "https://www.semanticscholar.org/paper/925666b3ff10e2998ec98a56a6047ce9e0836ada",
+            "venue": "",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2282970157",
+                    "name": "R. S\u0142owi\u0144ski"
+                },
+                {
+                    "authorId": "2283125432",
+                    "name": "J. F. Oliveira"
+                },
+                {
+                    "authorId": "2282972334",
+                    "name": "S. Rebennack"
+                },
+                {
+                    "authorId": "2282976204",
+                    "name": "R. Teunter"
+                },
+                {
+                    "authorId": "2282972328",
+                    "name": "M. Yearworth"
+                },
+                {
+                    "authorId": "2282970151",
+                    "name": "A. Mercer"
+                },
+                {
+                    "authorId": "2282970133",
+                    "name": "B. Tilanus"
+                },
+                {
+                    "authorId": "2282970325",
+                    "name": "H.-J. Zimmermann"
+                },
+                {
+                    "authorId": "2282970593",
+                    "name": "C. Archetti"
+                },
+                {
+                    "authorId": "2282970971",
+                    "name": "R. Bai"
+                },
+                {
+                    "authorId": "1411430787",
+                    "name": "A. Barbosa\u2010P\u00f3voa"
+                },
+                {
+                    "authorId": "2282972289",
+                    "name": "T\u00e9cnico Lisboa"
+                },
+                {
+                    "authorId": "2282970591",
+                    "name": "A. Ben-Tal"
+                },
+                {
+                    "authorId": "70110862",
+                    "name": "J. Billaut"
+                },
+                {
+                    "authorId": "2282975529",
+                    "name": "N. Boysen"
+                },
+                {
+                    "authorId": "2282970849",
+                    "name": "S. Bozoki"
+                },
+                {
+                    "authorId": "2282971501",
+                    "name": "J. Branke"
+                },
+                {
+                    "authorId": "2671746",
+                    "name": "D. Briskorn"
+                },
+                {
+                    "authorId": "35085552",
+                    "name": "M. Caramia"
+                },
+                {
+                    "authorId": "2282971497",
+                    "name": "J. Carlier"
+                },
+                {
+                    "authorId": "2282972342",
+                    "name": "J. Crook"
+                },
+                {
+                    "authorId": "2318159",
+                    "name": "F. D. Croce"
+                },
+                {
+                    "authorId": "2282976189",
+                    "name": "E. Demeulemeester"
+                },
+                {
+                    "authorId": "2278072377",
+                    "name": "KU Leuven"
+                },
+                {
+                    "authorId": "90175319",
+                    "name": "B. Leuven"
+                },
+                {
+                    "authorId": "2282970397",
+                    "name": "Disney"
+                },
+                {
+                    "authorId": "3096268",
+                    "name": "M. Doumpos"
+                },
+                {
+                    "authorId": "2282971465",
+                    "name": "M. Figueira"
+                },
+                {
+                    "authorId": "2282971411",
+                    "name": "L. A. Franco"
+                },
+                {
+                    "authorId": "1747260",
+                    "name": "A. Gavious"
+                },
+                {
+                    "authorId": "2264437174",
+                    "name": "J. Gondzio"
+                },
+                {
+                    "authorId": "71972167",
+                    "name": "S. Greco"
+                },
+                {
+                    "authorId": "2253575",
+                    "name": "V. Hemmelmayr"
+                },
+                {
+                    "authorId": "112900682",
+                    "name": "S. Howick"
+                },
+                {
+                    "authorId": "1681731",
+                    "name": "M. Inuiguchi"
+                },
+                {
+                    "authorId": "2123159716",
+                    "name": "F. Jaehn"
+                },
+                {
+                    "authorId": "2283271523",
+                    "name": "M. P. Johnson"
+                },
+                {
+                    "authorId": "2081932284",
+                    "name": "D. Kadzi\u0144ski"
+                },
+                {
+                    "authorId": "2605631",
+                    "name": "C. Kao"
+                },
+                {
+                    "authorId": "2282972259",
+                    "name": "G. Kou"
+                },
+                {
+                    "authorId": "1720190",
+                    "name": "M. Kovalyov"
+                },
+                {
+                    "authorId": "2185954019",
+                    "name": "T. Liu"
+                },
+                {
+                    "authorId": "2241681543",
+                    "name": "R. M\u2019Hallah"
+                },
+                {
+                    "authorId": "2282976174",
+                    "name": "R. Mart\u00ed"
+                },
+                {
+                    "authorId": "2283452221",
+                    "name": "J. M. Martinez"
+                },
+                {
+                    "authorId": "1766902",
+                    "name": "B. Matarazzo"
+                },
+                {
+                    "authorId": "2282970393",
+                    "name": "W. Michalowski"
+                },
+                {
+                    "authorId": "2198107309",
+                    "name": "A. Minca"
+                },
+                {
+                    "authorId": "1734450",
+                    "name": "A. Nagurney"
+                },
+                {
+                    "authorId": "2269693211",
+                    "name": "Y. Peng"
+                },
+                {
+                    "authorId": "1710552",
+                    "name": "U. Pferschy"
+                },
+                {
+                    "authorId": "2260693532",
+                    "name": "M. Recchioni"
+                },
+                {
+                    "authorId": "2282977749",
+                    "name": "R. Ruiz"
+                },
+                {
+                    "authorId": "34382972",
+                    "name": "S. Salman"
+                },
+                {
+                    "authorId": "2282972214",
+                    "name": "C. Schwindt"
+                },
+                {
+                    "authorId": "87911539",
+                    "name": "D. Shabtay"
+                },
+                {
+                    "authorId": "152909108",
+                    "name": "S. Shen"
+                },
+                {
+                    "authorId": "2263303073",
+                    "name": "T. S. Spengler"
+                },
+                {
+                    "authorId": "2282972212",
+                    "name": "F. M. B. Toledo"
+                },
+                {
+                    "authorId": "2282972278",
+                    "name": "P. Toth"
+                },
+                {
+                    "authorId": "2274548805",
+                    "name": "D. Tuyttens"
+                },
+                {
+                    "authorId": "30495557",
+                    "name": "G. Berghe"
+                },
+                {
+                    "authorId": "2249179311",
+                    "name": "R. Vetschera"
+                },
+                {
+                    "authorId": "123292720",
+                    "name": "J. Wallenius"
+                },
+                {
+                    "authorId": "119328468",
+                    "name": "J. Weglarz"
+                },
+                {
+                    "authorId": "2249397",
+                    "name": "D. Wozabal"
+                },
+                {
+                    "authorId": "2274470240",
+                    "name": "H. Xu"
+                },
+                {
+                    "authorId": "2265575482",
+                    "name": "X. Zhou"
+                },
+                {
+                    "authorId": "2108915512",
+                    "name": "J. Zhu"
+                }
+            ],
+            "doi": "10.1016/0040-1625(90)90023-o",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "216c2352dd7b899efc3848319494c53c43824c5c",
+            "title": "EUROPEAN JOURNAL OF OPERATIONAL RESEARCH",
+            "url": "https://www.semanticscholar.org/paper/216c2352dd7b899efc3848319494c53c43824c5c",
+            "venue": "",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144953574",
+                    "name": "Javier Estrada"
+                }
+            ],
+            "doi": "10.1016/J.IREF.2005.03.003",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "19705e2046933b7c6031b5526a235fa7dda73e64",
+            "title": "Mean-semivariance behavior: Downside risk and capital asset pricing",
+            "url": "https://www.semanticscholar.org/paper/19705e2046933b7c6031b5526a235fa7dda73e64",
+            "venue": "",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "6397357",
+                    "name": "S. Rachlin"
+                }
+            ],
+            "doi": "10.1023/A:1022092606475",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "0629859c68cf0cb0c449f68184a8ae78a48f9e21",
+            "title": "Volume 70",
+            "url": "https://www.semanticscholar.org/paper/0629859c68cf0cb0c449f68184a8ae78a48f9e21",
+            "venue": "Psychiatric Quarterly",
+            "year": 2004
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2238176724",
+                    "name": "R. S. Sutton"
+                },
+                {
+                    "authorId": "1730590",
+                    "name": "A. Barto"
+                }
+            ],
+            "doi": "10.1109/TNN.1998.712192",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "97efafdb4a3942ab3efba53ded7413199f79c054",
+            "title": "Reinforcement Learning: An Introduction",
+            "url": "https://www.semanticscholar.org/paper/97efafdb4a3942ab3efba53ded7413199f79c054",
+            "venue": "IEEE Trans. Neural Networks",
+            "year": 1998
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2666238",
+                    "name": "S. Marcus"
+                },
+                {
+                    "authorId": "2240846045",
+                    "name": "Emmanuel Fernn Andez-Gaucherand"
+                },
+                {
+                    "authorId": "2240836608",
+                    "name": "Daniel Hernn Andez-Hernn Andez"
+                },
+                {
+                    "authorId": "1718340",
+                    "name": "S. Coraluppi"
+                },
+                {
+                    "authorId": "2675288",
+                    "name": "P. Fard"
+                }
+            ],
+            "doi": "10.1007/978-1-4612-4120-1_14",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "aa2eb0a72ad35846a1d0d1cff2a2b21cf6902624",
+            "title": "Risk Sensitive Markov Decision Processes",
+            "url": "https://www.semanticscholar.org/paper/aa2eb0a72ad35846a1d0d1cff2a2b21cf6902624",
+            "venue": "",
+            "year": 1997
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        },
+        {
+            "category": "Mathematics",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Mean-Semivariance Policy Optimization via Risk-Averse Reinforcement Learning",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/c3a2e7d52d975b50c9e98e6cca4a7449b3068c2f",
+    "venue": "Journal of Artificial Intelligence Research",
+    "year": 2022
+}

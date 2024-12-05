@@ -1,0 +1,897 @@
+{
+    "abstract": "Explainable artificial intelligence (XAI) methods lack ground truth. In its place, method developers have relied on axioms to determine desirable properties for their explanations\u2019 behavior. For high stakes uses of machine learning that require explainability, it is not sufficient to rely on axioms as the implementation, or its usage, can fail to live up to the ideal. As a result, there exists active research on validating the performance of XAI methods. The need for validation is especially magnified in domains with a reliance on XAI. A procedure frequently used to assess their utility, and to some extent their fidelity, is an ablation study . By perturbing the input variables in rank order of importance, the goal is to assess the sensitivity of the model\u2019s performance. Perturbing important variables should correlate with larger decreases in measures of model capability than perturbing less important features. While the intent is clear, the actual implementation details have not been studied rigorously for tabular data. Using five datasets, three XAI methods, four baselines, and three perturbations, we aim to show 1) how varying perturbations and adding simple guardrails can help to avoid potentially flawed conclusions, 2) how treatment of categorical variables is an important consideration in both post-hoc explainability and ablation studies, and 3) how to identify useful baselines for XAI methods and viable perturbations for ablation studies.",
+    "arxivId": "2207.05566",
+    "authors": [
+        {
+            "authorId": "2175779926",
+            "name": "Isha Hameed",
+            "url": "https://www.semanticscholar.org/author/2175779926"
+        },
+        {
+            "authorId": "2059084816",
+            "name": "Samuel Sharpe",
+            "url": "https://www.semanticscholar.org/author/2059084816"
+        },
+        {
+            "authorId": "2081612111",
+            "name": "Daniel Barcklow",
+            "url": "https://www.semanticscholar.org/author/2081612111"
+        },
+        {
+            "authorId": "1450395966",
+            "name": "Justin Au-yeung",
+            "url": "https://www.semanticscholar.org/author/1450395966"
+        },
+        {
+            "authorId": null,
+            "name": "Sahil Verma",
+            "url": null
+        },
+        {
+            "authorId": "1390669078",
+            "name": "Jocelyn Huang",
+            "url": "https://www.semanticscholar.org/author/1390669078"
+        },
+        {
+            "authorId": "14206973",
+            "name": "Brian Barr",
+            "url": "https://www.semanticscholar.org/author/14206973"
+        },
+        {
+            "authorId": "8954363",
+            "name": "C. B. Bruss",
+            "url": "https://www.semanticscholar.org/author/8954363"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": "2408.11401",
+            "authors": [
+                {
+                    "authorId": "2316559037",
+                    "name": "Szymon Oplatek"
+                },
+                {
+                    "authorId": "146543800",
+                    "name": "Dawid Rymarczyk"
+                },
+                {
+                    "authorId": "2316558279",
+                    "name": "Bartosz Zieli'nski"
+                }
+            ],
+            "doi": "10.48550/arXiv.2408.11401",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "1b0b1f4845a6ee9a07741cc0f69e9914350038ce",
+            "title": "Revisiting FunnyBirds evaluation framework for prototypical parts networks",
+            "url": "https://www.semanticscholar.org/paper/1b0b1f4845a6ee9a07741cc0f69e9914350038ce",
+            "venue": "xAI",
+            "year": 2024
+        },
+        {
+            "arxivId": "2407.19897",
+            "authors": [
+                {
+                    "authorId": "2313632723",
+                    "name": "Samuel Sithakoul"
+                },
+                {
+                    "authorId": "2313633603",
+                    "name": "Sara Meftah"
+                },
+                {
+                    "authorId": "48728341",
+                    "name": "Cl\u00e9ment Feutry"
+                }
+            ],
+            "doi": "10.48550/arXiv.2407.19897",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "365225a4966067a5d91e64aed5656d174053ddef",
+            "title": "BEExAI: Benchmark to Evaluate Explainable AI",
+            "url": "https://www.semanticscholar.org/paper/365225a4966067a5d91e64aed5656d174053ddef",
+            "venue": "xAI",
+            "year": 2024
+        },
+        {
+            "arxivId": "2406.11871",
+            "authors": [
+                {
+                    "authorId": "152632219",
+                    "name": "Srijoni Majumdar"
+                },
+                {
+                    "authorId": "2244680746",
+                    "name": "Edith Elkind"
+                },
+                {
+                    "authorId": "3129259",
+                    "name": "Evangelos Pournaras"
+                }
+            ],
+            "doi": "10.48550/arXiv.2406.11871",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8de0810c1992ddd8af814da5fbf39d3a10f2167f",
+            "title": "Generative AI Voting: Fair Collective Choice is Resilient to LLM Biases and Inconsistencies",
+            "url": "https://www.semanticscholar.org/paper/8de0810c1992ddd8af814da5fbf39d3a10f2167f",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2279669614",
+                    "name": "Rafael Henrique Nogalha de Lima"
+                },
+                {
+                    "authorId": "2187600308",
+                    "name": "Aur\u00e9lio Ribeiro Costa"
+                },
+                {
+                    "authorId": "144800794",
+                    "name": "T. P. Faleiros"
+                },
+                {
+                    "authorId": "2159387059",
+                    "name": "C. G. Ralha"
+                }
+            ],
+            "doi": "10.1109/SSCI52147.2023.10371808",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "cec67cdc83c2f524dd536a5c33b7317bf6362f28",
+            "title": "An Actor-Critic Architecture for Community Detection Ablation Study",
+            "url": "https://www.semanticscholar.org/paper/cec67cdc83c2f524dd536a5c33b7317bf6362f28",
+            "venue": "2023 IEEE Symposium Series on Computational Intelligence (SSCI)",
+            "year": 2023
+        },
+        {
+            "arxivId": "2311.07763",
+            "authors": [
+                {
+                    "authorId": "2266467642",
+                    "name": "Brian Barr"
+                },
+                {
+                    "authorId": "2266468486",
+                    "name": "Noah Fatsi"
+                },
+                {
+                    "authorId": "1467377641",
+                    "name": "Leif Hancox-Li"
+                },
+                {
+                    "authorId": "2266467896",
+                    "name": "Peter Richter"
+                },
+                {
+                    "authorId": "2266468687",
+                    "name": "Daniel Proano"
+                },
+                {
+                    "authorId": "2266468055",
+                    "name": "Caleb Mok"
+                }
+            ],
+            "doi": "10.48550/arXiv.2311.07763",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "1f69f1b02aee5d0d0ad94889c54b4de9d34d2405",
+            "title": "The Disagreement Problem in Faithfulness Metrics",
+            "url": "https://www.semanticscholar.org/paper/1f69f1b02aee5d0d0ad94889c54b4de9d34d2405",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2226259615",
+                    "name": "Phuong Quynh Le"
+                },
+                {
+                    "authorId": "17698891",
+                    "name": "Meike Nauta"
+                },
+                {
+                    "authorId": "2075328011",
+                    "name": "Van Bach Nguyen"
+                },
+                {
+                    "authorId": "66163851",
+                    "name": "Shreyasi Pathak"
+                },
+                {
+                    "authorId": "3044872",
+                    "name": "J\u00f6rg Schl\u00f6tterer"
+                },
+                {
+                    "authorId": "2194180216",
+                    "name": "Christin Seifert"
+                }
+            ],
+            "doi": "10.24963/ijcai.2023/747",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "6dc07f8541ae83b7c2c00a0819c2907fa0f0e737",
+            "title": "Benchmarking eXplainable AI - A Survey on Available Toolkits and Open Challenges",
+            "url": "https://www.semanticscholar.org/paper/6dc07f8541ae83b7c2c00a0819c2907fa0f0e737",
+            "venue": "IJCAI",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1942444",
+                    "name": "H. Salmane"
+                },
+                {
+                    "authorId": "2074548913",
+                    "name": "Josu\u00e9 Manuel Rivera Vel\u00e1zquez"
+                },
+                {
+                    "authorId": "1683263",
+                    "name": "L. Khoudour"
+                },
+                {
+                    "authorId": "2052092026",
+                    "name": "Nguyen Anh Minh Mai"
+                },
+                {
+                    "authorId": "16991648",
+                    "name": "Pierre Duthon"
+                },
+                {
+                    "authorId": "1751089",
+                    "name": "Alain Crouzil"
+                },
+                {
+                    "authorId": "72707525",
+                    "name": "G. Saint-Pierre"
+                },
+                {
+                    "authorId": "1697856",
+                    "name": "S. Velast\u00edn"
+                }
+            ],
+            "doi": "10.3390/s23063223",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "e6a8c0398523936d1661b46557dcf13c3d5a3659",
+            "title": "3D Object Detection for Self-Driving Cars Using Video and LiDAR: An Ablation Study",
+            "url": "https://www.semanticscholar.org/paper/e6a8c0398523936d1661b46557dcf13c3d5a3659",
+            "venue": "Sensors",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "39964293",
+                    "name": "Kapil Deshpande"
+                },
+                {
+                    "authorId": "2129067830",
+                    "name": "Jan Holzweber"
+                },
+                {
+                    "authorId": "2292606926",
+                    "name": "Stefan Thalhuber"
+                },
+                {
+                    "authorId": "2292595732",
+                    "name": "Alexander H\u00e4mmerle"
+                },
+                {
+                    "authorId": "2292599029",
+                    "name": "Michael Mayrhofer"
+                },
+                {
+                    "authorId": "2292591933",
+                    "name": "Andreas Pichler"
+                },
+                {
+                    "authorId": "2292511420",
+                    "name": "Pedro Luiz de Paula Filho"
+                }
+            ],
+            "doi": "10.1016/j.procs.2024.01.075",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "5c67415764fd036f8661e68fe95bc1d151fd6eb8",
+            "title": "Manufacturing Line Ablation, an approach to perform reliable early prediction",
+            "url": "https://www.semanticscholar.org/paper/5c67415764fd036f8661e68fe95bc1d151fd6eb8",
+            "venue": "Procedia Computer Science",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145239270",
+                    "name": "Urja Pawar"
+                },
+                {
+                    "authorId": "1820938001",
+                    "name": "Donna O'Shea"
+                },
+                {
+                    "authorId": "2269467842",
+                    "name": "Ruairi O'Reilly"
+                },
+                {
+                    "authorId": "2297612750",
+                    "name": "Maebh Costello"
+                },
+                {
+                    "authorId": "2297607589",
+                    "name": "Christian Beder"
+                }
+            ],
+            "doi": "10.1109/OJCS.2024.3389781",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9f82e472cbbd4b34507bab4a2c44805dcba27f3c",
+            "title": "Optimal Neighborhood Contexts in Explainable AI: An Explanandum-Based Evaluation",
+            "url": "https://www.semanticscholar.org/paper/9f82e472cbbd4b34507bab4a2c44805dcba27f3c",
+            "venue": "IEEE Open Journal of the Computer Society",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2083094475",
+                    "name": "Evandro S. Ortigossa"
+                },
+                {
+                    "authorId": "2191746605",
+                    "name": "Thales Gon\u00e7alves"
+                },
+                {
+                    "authorId": "2526506",
+                    "name": "L. G. Nonato"
+                }
+            ],
+            "doi": "10.1109/ACCESS.2024.3409843",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c4ee978438cde7a24df0f7c5f5c6c8143b16836a",
+            "title": "EXplainable Artificial Intelligence (XAI)\u2014From Theory to Methods and Applications",
+            "url": "https://www.semanticscholar.org/paper/c4ee978438cde7a24df0f7c5f5c6c8143b16836a",
+            "venue": "IEEE Access",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2206878558",
+                    "name": "Enow Albert"
+                },
+                {
+                    "authorId": "90358143",
+                    "name": "N. Bille"
+                },
+                {
+                    "authorId": "2207518238",
+                    "name": "N. L\u00e9onard"
+                }
+            ],
+            "doi": "10.25081/ia.2023-04",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d1e677295f5d5f38880d1a4d39e49a3a346befba",
+            "title": "Detection: A convolutional network method for plant disease recognition",
+            "url": "https://www.semanticscholar.org/paper/d1e677295f5d5f38880d1a4d39e49a3a346befba",
+            "venue": "Innovations in Agriculture",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "51503528",
+                    "name": "Iordanis Fostiropoulos"
+                },
+                {
+                    "authorId": "2239100051",
+                    "name": "Laurent Itti"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "4668c51cc5ca4ae32720d43e74304a1b1fcea1f8",
+            "title": "ABLATOR: Robust Horizontal-Scaling of Machine Learning Ablation Experiments",
+            "url": "https://www.semanticscholar.org/paper/4668c51cc5ca4ae32720d43e74304a1b1fcea1f8",
+            "venue": "AutoML",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "8242729",
+                    "name": "David G\u00e9rault"
+                },
+                {
+                    "authorId": "30631626",
+                    "name": "Anna Hambitzer"
+                },
+                {
+                    "authorId": "2316736963",
+                    "name": "Moritz Huppert"
+                },
+                {
+                    "authorId": "1686538",
+                    "name": "S. Picek"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "cdeecde4080703c548bf6532bb8dd8aebc282aaa",
+            "title": "SoK: 5 Years of Neural Differential Cryptanalysis",
+            "url": "https://www.semanticscholar.org/paper/cdeecde4080703c548bf6532bb8dd8aebc282aaa",
+            "venue": "",
+            "year": null
+        }
+    ],
+    "corpusId": 250450932,
+    "doi": "10.48550/arXiv.2207.05566",
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 1,
+    "isOpenAccess": true,
+    "isPublisherLicensed": true,
+    "is_open_access": true,
+    "is_publisher_licensed": true,
+    "numCitedBy": 13,
+    "numCiting": 14,
+    "paperId": "902de1240956e37cd4c8a1b86c1917635ebc07cb",
+    "references": [
+        {
+            "arxivId": "2110.14270",
+            "authors": [
+                {
+                    "authorId": "1810684853",
+                    "name": "Emanuele Albini"
+                },
+                {
+                    "authorId": "2117316193",
+                    "name": "Jason Long"
+                },
+                {
+                    "authorId": "22214449",
+                    "name": "Danial Dervovic"
+                },
+                {
+                    "authorId": "1738142",
+                    "name": "D. Magazzeni"
+                }
+            ],
+            "doi": "10.1145/3531146.3533168",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0bafbc8fa8080e17de5e47bd3391aa82fe73924e",
+            "title": "Counterfactual Shapley Additive Explanations",
+            "url": "https://www.semanticscholar.org/paper/0bafbc8fa8080e17de5e47bd3391aa82fe73924e",
+            "venue": "FAccT",
+            "year": 2021
+        },
+        {
+            "arxivId": "2106.00786",
+            "authors": [
+                {
+                    "authorId": "144625004",
+                    "name": "Peter Hase"
+                },
+                {
+                    "authorId": "8303959",
+                    "name": "Harry Xie"
+                },
+                {
+                    "authorId": "143977268",
+                    "name": "Mohit Bansal"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e8a44417703e9facebf5a630069b7484664d6087",
+            "title": "The Out-of-Distribution Problem in Explainability and Search Methods for Feature Importance Explanations",
+            "url": "https://www.semanticscholar.org/paper/e8a44417703e9facebf5a630069b7484664d6087",
+            "venue": "NeurIPS",
+            "year": 2021
+        },
+        {
+            "arxivId": "2101.00905",
+            "authors": [
+                {
+                    "authorId": "73114784",
+                    "name": "Johannes Haug"
+                },
+                {
+                    "authorId": "2044198879",
+                    "name": "Stefan Zurn"
+                },
+                {
+                    "authorId": "2044199234",
+                    "name": "Peter El-Jiz"
+                },
+                {
+                    "authorId": "1686448",
+                    "name": "Gjergji Kasneci"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "d3f6279f00fa5e8922f330a9b50cfb95b9a39503",
+            "title": "On Baselines for Local Feature Attributions",
+            "url": "https://www.semanticscholar.org/paper/d3f6279f00fa5e8922f330a9b50cfb95b9a39503",
+            "venue": "ArXiv",
+            "year": 2021
+        },
+        {
+            "arxivId": "2011.14878",
+            "authors": [
+                {
+                    "authorId": "115697510",
+                    "name": "Ian Covert"
+                },
+                {
+                    "authorId": "23451726",
+                    "name": "Scott M. Lundberg"
+                },
+                {
+                    "authorId": "2180463",
+                    "name": "Su-In Lee"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c3871d9f7039a118a14a3a115d52f3326efa6992",
+            "title": "Explaining by Removing: A Unified Framework for Model Explanation",
+            "url": "https://www.semanticscholar.org/paper/c3871d9f7039a118a14a3a115d52f3326efa6992",
+            "venue": "J. Mach. Learn. Res.",
+            "year": 2020
+        },
+        {
+            "arxivId": "2009.07896",
+            "authors": [
+                {
+                    "authorId": "3281905",
+                    "name": "Narine Kokhlikyan"
+                },
+                {
+                    "authorId": "7401089",
+                    "name": "Vivek Miglani"
+                },
+                {
+                    "authorId": "2110608350",
+                    "name": "Miguel Martin"
+                },
+                {
+                    "authorId": "2113762559",
+                    "name": "Edward Wang"
+                },
+                {
+                    "authorId": "2410669",
+                    "name": "B. Alsallakh"
+                },
+                {
+                    "authorId": "2068158743",
+                    "name": "Jonathan Reynolds"
+                },
+                {
+                    "authorId": "2064272647",
+                    "name": "Alexander Melnikov"
+                },
+                {
+                    "authorId": "1946922431",
+                    "name": "Natalia Kliushkina"
+                },
+                {
+                    "authorId": "143630761",
+                    "name": "Carlos Araya"
+                },
+                {
+                    "authorId": "2111431610",
+                    "name": "Siqi Yan"
+                },
+                {
+                    "authorId": "1947581612",
+                    "name": "Orion Reblitz-Richardson"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "8c3babcb113081d0c4cfdfbd6fb3518a595892c9",
+            "title": "Captum: A unified and generic model interpretability library for PyTorch",
+            "url": "https://www.semanticscholar.org/paper/8c3babcb113081d0c4cfdfbd6fb3518a595892c9",
+            "venue": "ArXiv",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "8575816",
+                    "name": "Pascal Sturmfels"
+                },
+                {
+                    "authorId": "23451726",
+                    "name": "Scott M. Lundberg"
+                },
+                {
+                    "authorId": "2180463",
+                    "name": "Su-In Lee"
+                }
+            ],
+            "doi": "10.23915/distill.00022",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5ca973f48d42ab33f798bee42f2af74f9cdd8d26",
+            "title": "Visualizing the Impact of Feature Attribution Baselines",
+            "url": "https://www.semanticscholar.org/paper/5ca973f48d42ab33f798bee42f2af74f9cdd8d26",
+            "venue": "",
+            "year": 2020
+        },
+        {
+            "arxivId": "1911.02508",
+            "authors": [
+                {
+                    "authorId": "153794305",
+                    "name": "Dylan Slack"
+                },
+                {
+                    "authorId": "67233765",
+                    "name": "Sophie Hilgard"
+                },
+                {
+                    "authorId": "71986218",
+                    "name": "Emily Jia"
+                },
+                {
+                    "authorId": "34650964",
+                    "name": "Sameer Singh"
+                },
+                {
+                    "authorId": "1892673",
+                    "name": "Himabindu Lakkaraju"
+                }
+            ],
+            "doi": "10.1145/3375627.3375830",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "653864b10564ab4712c07a3d4043a1d794b13c46",
+            "title": "Fooling LIME and SHAP: Adversarial Attacks on Post hoc Explanation Methods",
+            "url": "https://www.semanticscholar.org/paper/653864b10564ab4712c07a3d4043a1d794b13c46",
+            "venue": "AIES",
+            "year": 2019
+        },
+        {
+            "arxivId": "1905.03151",
+            "authors": [
+                {
+                    "authorId": "145403451",
+                    "name": "G. Hooker"
+                },
+                {
+                    "authorId": "3422652",
+                    "name": "L. Mentch"
+                },
+                {
+                    "authorId": "47707186",
+                    "name": "Siyu Zhou"
+                }
+            ],
+            "doi": "10.1007/s11222-021-10057-z",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "29a4d6988a14ac694f4a73017705fe1506bcca92",
+            "title": "Unrestricted permutation forces extrapolation: variable importance requires at least one more model, or there is no free variable importance",
+            "url": "https://www.semanticscholar.org/paper/29a4d6988a14ac694f4a73017705fe1506bcca92",
+            "venue": "Statistics and Computing",
+            "year": 2019
+        },
+        {
+            "arxivId": "1810.03292",
+            "authors": [
+                {
+                    "authorId": "145949622",
+                    "name": "Julius Adebayo"
+                },
+                {
+                    "authorId": "2058362",
+                    "name": "J. Gilmer"
+                },
+                {
+                    "authorId": "2065563823",
+                    "name": "M. Muelly"
+                },
+                {
+                    "authorId": "153440022",
+                    "name": "I. Goodfellow"
+                },
+                {
+                    "authorId": "1775622",
+                    "name": "Moritz Hardt"
+                },
+                {
+                    "authorId": "3351164",
+                    "name": "Been Kim"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8dc8f3e0127adc6985d4695e9b69d04717b2fde8",
+            "title": "Sanity Checks for Saliency Maps",
+            "url": "https://www.semanticscholar.org/paper/8dc8f3e0127adc6985d4695e9b69d04717b2fde8",
+            "venue": "NeurIPS",
+            "year": 2018
+        },
+        {
+            "arxivId": "1806.10758",
+            "authors": [
+                {
+                    "authorId": "50237813",
+                    "name": "Sara Hooker"
+                },
+                {
+                    "authorId": "1761978",
+                    "name": "D. Erhan"
+                },
+                {
+                    "authorId": "2113697",
+                    "name": "Pieter-Jan Kindermans"
+                },
+                {
+                    "authorId": "3351164",
+                    "name": "Been Kim"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "5f614777d25efd14b7426e99cb2544f2d6be133e",
+            "title": "A Benchmark for Interpretability Methods in Deep Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/5f614777d25efd14b7426e99cb2544f2d6be133e",
+            "venue": "NeurIPS",
+            "year": 2018
+        },
+        {
+            "arxivId": "1705.07874",
+            "authors": [
+                {
+                    "authorId": "23451726",
+                    "name": "Scott M. Lundberg"
+                },
+                {
+                    "authorId": "2180463",
+                    "name": "Su-In Lee"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "442e10a3c6640ded9408622005e3c2a8906ce4c2",
+            "title": "A Unified Approach to Interpreting Model Predictions",
+            "url": "https://www.semanticscholar.org/paper/442e10a3c6640ded9408622005e3c2a8906ce4c2",
+            "venue": "NIPS",
+            "year": 2017
+        },
+        {
+            "arxivId": "1703.01365",
+            "authors": [
+                {
+                    "authorId": "30740726",
+                    "name": "Mukund Sundararajan"
+                },
+                {
+                    "authorId": "40511120",
+                    "name": "Ankur Taly"
+                },
+                {
+                    "authorId": "34789908",
+                    "name": "Qiqi Yan"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "f302e136c41db5de1d624412f68c9174cf7ae8be",
+            "title": "Axiomatic Attribution for Deep Networks",
+            "url": "https://www.semanticscholar.org/paper/f302e136c41db5de1d624412f68c9174cf7ae8be",
+            "venue": "ICML",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2423230",
+                    "name": "L. Breiman"
+                }
+            ],
+            "doi": "10.1023/A:1010933404324",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "8e0be569ea77b8cb29bb0e8b031887630fe7a96c",
+            "title": "Random Forests",
+            "url": "https://www.semanticscholar.org/paper/8e0be569ea77b8cb29bb0e8b031887630fe7a96c",
+            "venue": "Machine Learning",
+            "year": 2001
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "BASED-XAI: Breaking Ablation Studies Down for Explainable Artificial Intelligence",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/902de1240956e37cd4c8a1b86c1917635ebc07cb",
+    "venue": "arXiv.org",
+    "year": 2022
+}

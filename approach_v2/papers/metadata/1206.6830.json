@@ -1,0 +1,795 @@
+{
+    "abstract": "We investigate methods for parameter learning from incomplete data that is not missing at random. Likelihood-based methods then require the optimization of a profile likelihood that takes all possible missingness mechanisms into account. Optimzing this profile likelihood poses two main difficulties: multiple (local) maxima, and its very high-dimensional parameter space. In this paper a new method is presented for optimizing the profile likelihood that addresses the second difficulty: in the proposed AI&M (adjusting imputation and mazimization) procedure the optimization is performed by operations in the space of data completions, rather than directly in the parameter space of the profile likelihood. We apply the AI&M method to learning parameters for Bayesian networks. The method is compared against conservative inference, which takes into account each possible data completion, and against EM. The results indicate that likelihood-based inference is still feasible in the case of unknown missingness mechanisms, and that conservative inference is unnecessarily weak. On the other hand, our results also provide evidence that the EM algorithm is still quite effective when the data is not missing at random.",
+    "arxivId": "1206.6830",
+    "authors": [
+        {
+            "authorId": "2057536",
+            "name": "M. Jaeger",
+            "url": "https://www.semanticscholar.org/author/2057536"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "32895293",
+                    "name": "Kuang Zhou"
+                },
+                {
+                    "authorId": "2139879",
+                    "name": "Yimin Shi"
+                }
+            ],
+            "doi": "10.3390/e22101106",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "7c03d1023bad609d73aff4c6b5c4f2e5da38a567",
+            "title": "Evidential Estimation of an Uncertain Mixed Exponential Distribution under Progressive Censoring",
+            "url": "https://www.semanticscholar.org/paper/7c03d1023bad609d73aff4c6b5c4f2e5da38a567",
+            "venue": "Entropy",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1758128",
+                    "name": "R. Guillaume"
+                },
+                {
+                    "authorId": "144969774",
+                    "name": "D. Dubois"
+                }
+            ],
+            "doi": "10.1016/j.ijar.2020.03.003",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d105ef33445abdad8eac3be74a50a8bad9411987",
+            "title": "A min-max regret approach to maximum likelihood inference under incomplete data",
+            "url": "https://www.semanticscholar.org/paper/d105ef33445abdad8eac3be74a50a8bad9411987",
+            "venue": "Int. J. Approx. Reason.",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "40056275",
+                    "name": "J. Rohmer"
+                }
+            ],
+            "doi": "10.1016/j.engappai.2019.103384",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "8951f80dafdd4b408d7ad8dac6d793c15a26d86d",
+            "title": "Uncertainties in conditional probability tables of discrete Bayesian Belief Networks: A comprehensive review",
+            "url": "https://www.semanticscholar.org/paper/8951f80dafdd4b408d7ad8dac6d793c15a26d86d",
+            "venue": "Eng. Appl. Artif. Intell.",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1713903",
+                    "name": "In\u00e9s Couso"
+                },
+                {
+                    "authorId": "144969774",
+                    "name": "D. Dubois"
+                }
+            ],
+            "doi": "10.1016/j.ijar.2017.10.030",
+            "intent": [
+                "result"
+            ],
+            "isInfluential": true,
+            "paperId": "6108f5baf85fa8d3836378c968226ce2af7cf738",
+            "title": "A general framework for maximizing likelihood under incomplete data",
+            "url": "https://www.semanticscholar.org/paper/6108f5baf85fa8d3836378c968226ce2af7cf738",
+            "venue": "Int. J. Approx. Reason.",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "47068849",
+                    "name": "Jin Tian"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "d584df35400d6da31ab722290b15ff0b32150d78",
+            "title": "Recovering Probability Distributions from Missing Data",
+            "url": "https://www.semanticscholar.org/paper/d584df35400d6da31ab722290b15ff0b32150d78",
+            "venue": "ACML",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1713903",
+                    "name": "In\u00e9s Couso"
+                },
+                {
+                    "authorId": "144969774",
+                    "name": "D. Dubois"
+                },
+                {
+                    "authorId": "1691955",
+                    "name": "Eyke H\u00fcllermeier"
+                }
+            ],
+            "doi": "10.1007/978-3-319-67582-4_1",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "16bee982e319fcad4b5515ba0eeba853368525bc",
+            "title": "Maximum Likelihood Estimation and Coarse Data",
+            "url": "https://www.semanticscholar.org/paper/16bee982e319fcad4b5515ba0eeba853368525bc",
+            "venue": "SUM",
+            "year": 2017
+        },
+        {
+            "arxivId": "1611.04709",
+            "authors": [
+                {
+                    "authorId": "47068849",
+                    "name": "Jin Tian"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "154312adde92c5f5bc4a8be8f470fe92d1bf7022",
+            "title": "Recoverability of Joint Distribution from Missing Data",
+            "url": "https://www.semanticscholar.org/paper/154312adde92c5f5bc4a8be8f470fe92d1bf7022",
+            "venue": "ArXiv",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "47068849",
+                    "name": "Jin Tian"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b5528c21d061d43b3bdc712c8c6d8e39eb2ed1b6",
+            "title": "Missing at Random in Graphical Models",
+            "url": "https://www.semanticscholar.org/paper/b5528c21d061d43b3bdc712c8c6d8e39eb2ed1b6",
+            "venue": "AISTATS",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1707715",
+                    "name": "M. Mahjoub"
+                },
+                {
+                    "authorId": "49268195",
+                    "name": "Abdessalem Bouzaiene"
+                },
+                {
+                    "authorId": "2632797",
+                    "name": "Nabil Ghanmy"
+                }
+            ],
+            "doi": "10.1007/978-3-642-31346-2_54",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "c086062adf3d83fba8f78754c8d6085b76d93574",
+            "title": "Tutorial and Selected Approaches on Parameter Learning in Bayesian Network with Incomplete Data",
+            "url": "https://www.semanticscholar.org/paper/c086062adf3d83fba8f78754c8d6085b76d93574",
+            "venue": "ISNN",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2108177161",
+                    "name": "Yongmian Zhang"
+                },
+                {
+                    "authorId": "50426357",
+                    "name": "Q. Ji"
+                }
+            ],
+            "doi": "10.1109/TSMCB.2009.2021272",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "6acc3b32cb6f053c18af93b4ecb0aa8897997e3d",
+            "title": "Efficient Sensor Selection for Active Information Fusion",
+            "url": "https://www.semanticscholar.org/paper/6acc3b32cb6f053c18af93b4ecb0aa8897997e3d",
+            "venue": "IEEE Transactions on Systems, Man, and Cybernetics, Part B (Cybernetics)",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2460793",
+                    "name": "Wenhui Liao"
+                },
+                {
+                    "authorId": "50426357",
+                    "name": "Q. Ji"
+                }
+            ],
+            "doi": "10.1016/j.patcog.2009.04.006",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "5d485501f9c2030ab33f97972aa7585d3a0d59a7",
+            "title": "Learning Bayesian network parameters under incomplete data with domain knowledge",
+            "url": "https://www.semanticscholar.org/paper/5d485501f9c2030ab33f97972aa7585d3a0d59a7",
+            "venue": "Pattern Recognit.",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2460793",
+                    "name": "Wenhui Liao"
+                },
+                {
+                    "authorId": "50426357",
+                    "name": "Q. Ji"
+                }
+            ],
+            "doi": "10.1109/ICPR.2008.4761074",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "80e45359204a1442ba8de34376f678e65298fcdc",
+            "title": "Exploiting qualitative domain knowledge for learning Bayesian network parameters with incomplete data",
+            "url": "https://www.semanticscholar.org/paper/80e45359204a1442ba8de34376f678e65298fcdc",
+            "venue": "2008 19th International Conference on Pattern Recognition",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2057536",
+                    "name": "M. Jaeger"
+                }
+            ],
+            "doi": "10.1007/11871842_66",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "1a6107128cbdf772b011057fd8c6d7ac795ac49d",
+            "title": "On Testing the Missing at Random Assumption",
+            "url": "https://www.semanticscholar.org/paper/1a6107128cbdf772b011057fd8c6d7ac795ac49d",
+            "venue": "ECML",
+            "year": 2006
+        },
+        {
+            "arxivId": "0811.0683",
+            "authors": [
+                {
+                    "authorId": "1965528",
+                    "name": "R. Gill"
+                },
+                {
+                    "authorId": "2032315",
+                    "name": "Peter D. G\u00fcunwald"
+                }
+            ],
+            "doi": "10.1214/07-AOS532",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "af556c2b299e369822049053c81958385cd6e743",
+            "title": "An algorithmic and a geometric characterization of Coarsening At Random",
+            "url": "https://www.semanticscholar.org/paper/af556c2b299e369822049053c81958385cd6e743",
+            "venue": "ArXiv",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2057536",
+                    "name": "M. Jaeger"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "6b5e9c4b95e962c722d2cd22e1f19a6539d76876",
+            "title": "The AIM and EM Algorithms for Learning from Coarse Data",
+            "url": "https://www.semanticscholar.org/paper/6b5e9c4b95e962c722d2cd22e1f19a6539d76876",
+            "venue": "J. Mach. Learn. Res.",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "79368357",
+                    "name": "Janith Don"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "62b9d2e953aa8f354acfd0da82f5497c754ff4c0",
+            "title": "Learning and Reasoning with Imperfect Data",
+            "url": "https://www.semanticscholar.org/paper/62b9d2e953aa8f354acfd0da82f5497c754ff4c0",
+            "venue": "",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143865322",
+                    "name": "L. S\u00e1nchez"
+                },
+                {
+                    "authorId": "1713903",
+                    "name": "In\u00e9s Couso"
+                }
+            ],
+            "doi": "10.1016/j.ijar.2017.10.008",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "02bbbf6b6d700c034c817639fce6a5dbdbe40be0",
+            "title": "A framework for learning fuzzy rule-based models with epistemic set-valued data and generalized loss functions",
+            "url": "https://www.semanticscholar.org/paper/02bbbf6b6d700c034c817639fce6a5dbdbe40be0",
+            "venue": "Int. J. Approx. Reason.",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2089333",
+                    "name": "J. Doppa"
+                },
+                {
+                    "authorId": "7433456",
+                    "name": "Mohammad NasrEsfahani"
+                },
+                {
+                    "authorId": "2261204",
+                    "name": "Mohammad S. Sorower"
+                },
+                {
+                    "authorId": "49920503",
+                    "name": "Jed Irvine"
+                },
+                {
+                    "authorId": "144299726",
+                    "name": "Thomas G. Dietterich"
+                },
+                {
+                    "authorId": "1694273",
+                    "name": "Xiaoli Z. Fern"
+                },
+                {
+                    "authorId": "1729906",
+                    "name": "Prasad Tadepalli"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "34e34831a57931ff6f304e47d73c31c1735eae78",
+            "title": "Learning Rules from Incomplete Examples via Observation Models",
+            "url": "https://www.semanticscholar.org/paper/34e34831a57931ff6f304e47d73c31c1735eae78",
+            "venue": "",
+            "year": 2011
+        }
+    ],
+    "corpusId": 9758158,
+    "doi": null,
+    "fieldsOfStudy": [
+        "Mathematics",
+        "Computer Science"
+    ],
+    "influentialCitationCount": 2,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 18,
+    "numCiting": 19,
+    "paperId": "a6045bd19455c8ace2909b3f7d39895986815748",
+    "references": [
+        {
+            "arxivId": "math/0508314",
+            "authors": [
+                {
+                    "authorId": "2057536",
+                    "name": "M. Jaeger"
+                }
+            ],
+            "doi": "10.1214/009053605000000363",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "2a350b47e4e7c5545cf76575152e30d1f9c5db92",
+            "title": "Ignorability for categorical data",
+            "url": "https://www.semanticscholar.org/paper/2a350b47e4e7c5545cf76575152e30d1f9c5db92",
+            "venue": "",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3210428",
+                    "name": "C. Manski"
+                }
+            ],
+            "doi": "10.1016/j.ijar.2004.10.006",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "00d9f4ae7c07250bc880d80600b7a252d6a5b1d0",
+            "title": "Partial identification with missing data: concepts and findings",
+            "url": "https://www.semanticscholar.org/paper/00d9f4ae7c07250bc880d80600b7a252d6a5b1d0",
+            "venue": "Int. J. Approx. Reason.",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2257896905",
+                    "name": "Marco Ramoni"
+                },
+                {
+                    "authorId": "2248008846",
+                    "name": "Paola Sebastiani"
+                }
+            ],
+            "doi": "10.1023/A:1010968702992",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "bdb58d1c2ba6fb141f719d9f2ebfbeb0f472ea3d",
+            "title": "Robust Learning with Missing Data",
+            "url": "https://www.semanticscholar.org/paper/bdb58d1c2ba6fb141f719d9f2ebfbeb0f472ea3d",
+            "venue": "Machine Learning",
+            "year": 2001
+        },
+        {
+            "arxivId": "1302.1565",
+            "authors": [
+                {
+                    "authorId": "1750921",
+                    "name": "M. Ramoni"
+                },
+                {
+                    "authorId": "2714284",
+                    "name": "P. Sebastiani"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b60bd9928ec0552f291023ce487eebfc0ec0256d",
+            "title": "Learning Bayesian Networks from Incomplete Databases",
+            "url": "https://www.semanticscholar.org/paper/b60bd9928ec0552f291023ce487eebfc0ec0256d",
+            "venue": "UAI",
+            "year": 1997
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1699193",
+                    "name": "D. Heitjan"
+                },
+                {
+                    "authorId": "2235217",
+                    "name": "D. Rubin"
+                }
+            ],
+            "doi": "10.1214/AOS/1176348396",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d182dc7da5991d98e7e633e30724f20bc7a5a21c",
+            "title": "Ignorability and Coarse Data",
+            "url": "https://www.semanticscholar.org/paper/d182dc7da5991d98e7e633e30724f20bc7a5a21c",
+            "venue": "",
+            "year": 1991
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "6771809",
+                    "name": "E. Nordheim"
+                }
+            ],
+            "doi": "10.1080/01621459.1984.10477094",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "38ca00349e4a2026724edfaf659765623d3d5ca8",
+            "title": "Inference from Nonrandomly Missing Categorical Data: An Example from a Genetic Study on Turner's Syndrome",
+            "url": "https://www.semanticscholar.org/paper/38ca00349e4a2026724edfaf659765623d3d5ca8",
+            "venue": "",
+            "year": 1984
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2262707535",
+                    "name": "Author C. F. Jeff Wu"
+                },
+                {
+                    "authorId": "2262693742",
+                    "name": "F. BYC."
+                },
+                {
+                    "authorId": "2262694848",
+                    "name": "WU Jeff"
+                }
+            ],
+            "doi": "10.1214/AOS/1176346060",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "acd7d08468e6dd7234d474860ab64d5a33cacfdc",
+            "title": "ON THE CONVERGENCE PROPERTIES OF THE EM ALGORITHM",
+            "url": "https://www.semanticscholar.org/paper/acd7d08468e6dd7234d474860ab64d5a33cacfdc",
+            "venue": "",
+            "year": 1983
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144845491",
+                    "name": "A. Dawid"
+                },
+                {
+                    "authorId": "48455749",
+                    "name": "J. Dickey"
+                }
+            ],
+            "doi": "10.1080/01621459.1977.10479968",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "10b29e63bcc2652673ac358f1392b1154714f261",
+            "title": "Likelihood and Bayesian Inference from Selectively Reported Data",
+            "url": "https://www.semanticscholar.org/paper/10b29e63bcc2652673ac358f1392b1154714f261",
+            "venue": "",
+            "year": 1977
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2235217",
+                    "name": "D. Rubin"
+                }
+            ],
+            "doi": "10.1002/J.2333-8504.1975.TB01053.X",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "89c0bb5205839067f1f48815d70748bf47aafddc",
+            "title": "INFERENCE AND MISSING DATA",
+            "url": "https://www.semanticscholar.org/paper/89c0bb5205839067f1f48815d70748bf47aafddc",
+            "venue": "",
+            "year": 1975
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1825163",
+                    "name": "Marco Zaffalon"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "bff3b890d2d80236a19cbe5af8309e72170834fb",
+            "title": "Conservative Rules for Predictive Inference with Incomplete Data",
+            "url": "https://www.semanticscholar.org/paper/bff3b890d2d80236a19cbe5af8309e72170834fb",
+            "venue": "ISIPTA",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1717822",
+                    "name": "Lyle Ungar"
+                }
+            ],
+            "doi": "10.1007/s00330-005-0141-x",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "3c8338279ed5b502e824b4699b887091e2c525cd",
+            "title": "Missing data",
+            "url": "https://www.semanticscholar.org/paper/3c8338279ed5b502e824b4699b887091e2c525cd",
+            "venue": "European Radiology",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "46738747",
+                    "name": "Francesca Molinari"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "870de9fb4de80f6d5d3922389778864fc30b0508",
+            "title": "Partial Identi\u2026cation of Probability Distributions with Misclassi\u2026ed Data",
+            "url": "https://www.semanticscholar.org/paper/870de9fb4de80f6d5d3922389778864fc30b0508",
+            "venue": "",
+            "year": 2004
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3210428",
+                    "name": "C. Manski"
+                }
+            ],
+            "doi": "10.1007/b97478",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f887a830ce8c0d98f7a6fbeaa621985322df7f9d",
+            "title": "Partial Identification of Probability Distributions",
+            "url": "https://www.semanticscholar.org/paper/f887a830ce8c0d98f7a6fbeaa621985322df7f9d",
+            "venue": "",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "34631309",
+                    "name": "R. Cowell"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f929ddf5152122c3dcc569ce3be5a2b1e0232664",
+            "title": "Parameter learning from incomplete data for Bayesian networks",
+            "url": "https://www.semanticscholar.org/paper/f929ddf5152122c3dcc569ce3be5a2b1e0232664",
+            "venue": "AISTATS",
+            "year": 1999
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1965528",
+                    "name": "R. Gill"
+                },
+                {
+                    "authorId": "2807672",
+                    "name": "M. Laan"
+                },
+                {
+                    "authorId": "145607066",
+                    "name": "J. Robins"
+                }
+            ],
+            "doi": "10.1007/978-1-4684-6316-3_14",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "170dd719366ae29b82e78f9e3c8f6e758aedeb1c",
+            "title": "Coarsening at Random: Characterizations, Conjectures, Counter-Examples",
+            "url": "https://www.semanticscholar.org/paper/170dd719366ae29b82e78f9e3c8f6e758aedeb1c",
+            "venue": "",
+            "year": 1997
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145382036",
+                    "name": "R. Little"
+                }
+            ],
+            "doi": "10.1080/01621459.1982.10477792",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "519c1fd69d3b568764330da16a994922bc528dbd",
+            "title": "Models for Nonresponse in Sample Surveys",
+            "url": "https://www.semanticscholar.org/paper/519c1fd69d3b568764330da16a994922bc528dbd",
+            "venue": "",
+            "year": 1982
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Mathematics",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        },
+        {
+            "category": "Mathematics",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "The AI&M Procedure for Learning from Incomplete Data",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/a6045bd19455c8ace2909b3f7d39895986815748",
+    "venue": "Conference on Uncertainty in Artificial Intelligence",
+    "year": 2006
+}

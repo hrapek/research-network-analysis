@@ -1,0 +1,775 @@
+{
+    "abstract": "The rapid integration of artificial intelligence (AI) into various industries has introduced new challenges in governance and regulation, particularly regarding the understanding of complex AI systems. A critical demand from decision-makers is the ability to explain the results of machine learning models, which is essential for fostering trust and ensuring ethical AI practices. In this paper, we develop six distinct model-agnostic metrics designed to quantify the extent to which model predictions can be explained. These metrics measure different aspects of model explainability, ranging from local importance, global importance, and surrogate predictions, allowing for a comprehensive evaluation of how models generate their outputs. Furthermore, by computing our metrics, we can rank models in terms of explainability criteria such as importance concentration and consistency, prediction fluctuation, and surrogate fidelity and stability, offering a valuable tool for selecting models based not only on accuracy but also on transparency. We demonstrate the practical utility of these metrics on classification and regression tasks, and integrate these metrics into an existing Python package for public use.",
+    "arxivId": "2302.12094",
+    "authors": [
+        {
+            "authorId": "115359104",
+            "name": "Cristian Mu\u00f1oz",
+            "url": "https://www.semanticscholar.org/author/115359104"
+        },
+        {
+            "authorId": "47223833",
+            "name": "Kleyton da Costa",
+            "url": "https://www.semanticscholar.org/author/47223833"
+        },
+        {
+            "authorId": "2300370984",
+            "name": "Bernardo Modenesi",
+            "url": "https://www.semanticscholar.org/author/2300370984"
+        },
+        {
+            "authorId": "2127728158",
+            "name": "A. Koshiyama",
+            "url": "https://www.semanticscholar.org/author/2127728158"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": "2311.17228",
+            "authors": [
+                {
+                    "authorId": "2268672908",
+                    "name": "Dave Mbiazi"
+                },
+                {
+                    "authorId": "1417469573",
+                    "name": "Meghana Bhange"
+                },
+                {
+                    "authorId": "2268673385",
+                    "name": "Maryam Babaei"
+                },
+                {
+                    "authorId": "2086069040",
+                    "name": "Ivaxi Sheth"
+                },
+                {
+                    "authorId": "1674543637",
+                    "name": "P. Kenfack"
+                }
+            ],
+            "doi": "10.48550/arXiv.2311.17228",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "049444292ec98f55a53d89c1e78c1f1e0d0b9d50",
+            "title": "Survey on AI Ethics: A Socio-technical Perspective",
+            "url": "https://www.semanticscholar.org/paper/049444292ec98f55a53d89c1e78c1f1e0d0b9d50",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2277663821",
+                    "name": "Sidi Mohamed Dafali"
+                },
+                {
+                    "authorId": "1866438",
+                    "name": "M. Kissi"
+                },
+                {
+                    "authorId": "2671564",
+                    "name": "Omar El Beggar"
+                }
+            ],
+            "doi": "10.1109/SITA60746.2023.10373599",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "bd1438bb8d1cae1052e3bfcde9de56e686754a52",
+            "title": "Comparative Study between Global and Local Explainable Models",
+            "url": "https://www.semanticscholar.org/paper/bd1438bb8d1cae1052e3bfcde9de56e686754a52",
+            "venue": "2023 14th International Conference on Intelligent Systems: Theories and Applications (SITA)",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2220359802",
+                    "name": "Firas Ketata"
+                },
+                {
+                    "authorId": "74989891",
+                    "name": "Z. A. Masry"
+                },
+                {
+                    "authorId": "2312611252",
+                    "name": "Slim Yacoub"
+                },
+                {
+                    "authorId": "2264201103",
+                    "name": "Noureddine Zerhouni"
+                }
+            ],
+            "doi": "10.1109/ACCESS.2024.3431691",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "5ef67ac82cbdb8271398caf932fec2546281b787",
+            "title": "A Methodology for Reliability Analysis of Explainable Machine Learning: Application to Endocrinology Diseases",
+            "url": "https://www.semanticscholar.org/paper/5ef67ac82cbdb8271398caf932fec2546281b787",
+            "venue": "IEEE Access",
+            "year": 2024
+        }
+    ],
+    "corpusId": 257102646,
+    "doi": null,
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 3,
+    "numCiting": 20,
+    "paperId": "740608e4e2a3da73b15f277024422d8983cf7ac3",
+    "references": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1700893781",
+                    "name": "M. Pawlicki"
+                }
+            ],
+            "doi": "10.1109/DSAA60987.2023.10302535",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f101a193065b2c2d07c71afe9c9e8d4a835e4802",
+            "title": "Towards Quality Measures for xAI algorithms: Explanation Stability",
+            "url": "https://www.semanticscholar.org/paper/f101a193065b2c2d07c71afe9c9e8d4a835e4802",
+            "venue": "2023 IEEE 10th International Conference on Data Science and Advanced Analytics (DSAA)",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "47495965",
+                    "name": "Sajid Ali"
+                },
+                {
+                    "authorId": "2999175",
+                    "name": "Tamer Abuhmed"
+                },
+                {
+                    "authorId": "1412328163",
+                    "name": "Shaker El-Sappagh"
+                },
+                {
+                    "authorId": "2065671060",
+                    "name": "Khan Muhammad"
+                },
+                {
+                    "authorId": "2151319597",
+                    "name": "J. Alonso-Moral"
+                },
+                {
+                    "authorId": "144833154",
+                    "name": "R. Confalonieri"
+                },
+                {
+                    "authorId": "1704327",
+                    "name": "Riccardo Guidotti"
+                },
+                {
+                    "authorId": "9221552",
+                    "name": "J. Ser"
+                },
+                {
+                    "authorId": "1423321194",
+                    "name": "N. D\u00edaz-Rodr\u00edguez"
+                },
+                {
+                    "authorId": "2098723448",
+                    "name": "Francisco Herrera"
+                }
+            ],
+            "doi": "10.1016/j.inffus.2023.101805",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "bb01d7be9b49c8a018e134c7f132c39b7d9973ad",
+            "title": "Explainable Artificial Intelligence (XAI): What we know and what is left to attain Trustworthy Artificial Intelligence",
+            "url": "https://www.semanticscholar.org/paper/bb01d7be9b49c8a018e134c7f132c39b7d9973ad",
+            "venue": "Inf. Fusion",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2148537774",
+                    "name": "Lucas M. Thimoteo"
+                },
+                {
+                    "authorId": "2257021023",
+                    "name": "Marley M. B. R. Vellasco"
+                },
+                {
+                    "authorId": "2273003608",
+                    "name": "Jorge Amaral"
+                },
+                {
+                    "authorId": "2273003249",
+                    "name": "Karla Figueiredo"
+                },
+                {
+                    "authorId": "2148538065",
+                    "name": "C\u00e1tia Lie Yokoyama"
+                },
+                {
+                    "authorId": "152870264",
+                    "name": "Erito Marques"
+                }
+            ],
+            "doi": "10.1007/s40313-021-00858-y",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "2fdd3d52e1879112fe6c10ed02b4c6e1c40d6e05",
+            "title": "Explainable Artificial Intelligence for COVID-19 Diagnosis Through Blood Test Variables",
+            "url": "https://www.semanticscholar.org/paper/2fdd3d52e1879112fe6c10ed02b4c6e1c40d6e05",
+            "venue": "Journal of Control, Automation and Electrical Systems",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "51239629",
+                    "name": "Jianlong Zhou"
+                },
+                {
+                    "authorId": "1764455",
+                    "name": "A. Gandomi"
+                },
+                {
+                    "authorId": "2149500413",
+                    "name": "Fang Chen"
+                },
+                {
+                    "authorId": "1749801",
+                    "name": "Andreas Holzinger"
+                }
+            ],
+            "doi": "10.3390/ELECTRONICS10050593",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "49774cf91b00381501c960fc976e982c0eb51b68",
+            "title": "Evaluating the Quality of Machine Learning Explanations: A Survey on Methods and Metrics",
+            "url": "https://www.semanticscholar.org/paper/49774cf91b00381501c960fc976e982c0eb51b68",
+            "venue": "Electronics",
+            "year": 2021
+        },
+        {
+            "arxivId": "2102.13076",
+            "authors": [
+                {
+                    "authorId": "1885229792",
+                    "name": "F. Bodria"
+                },
+                {
+                    "authorId": "1685102",
+                    "name": "F. Giannotti"
+                },
+                {
+                    "authorId": "1704327",
+                    "name": "Riccardo Guidotti"
+                },
+                {
+                    "authorId": "1998031158",
+                    "name": "Francesca Naretto"
+                },
+                {
+                    "authorId": "1693341",
+                    "name": "D. Pedreschi"
+                },
+                {
+                    "authorId": "2120595",
+                    "name": "S. Rinzivillo"
+                }
+            ],
+            "doi": "10.1007/s10618-023-00933-9",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "93a55b04045ff7fff78de473f5ff52cbcfb9a948",
+            "title": "Benchmarking and survey of explanation methods for black box models",
+            "url": "https://www.semanticscholar.org/paper/93a55b04045ff7fff78de473f5ff52cbcfb9a948",
+            "venue": "Data Mining and Knowledge Discovery",
+            "year": 2021
+        },
+        {
+            "arxivId": "2011.04917",
+            "authors": [
+                {
+                    "authorId": "120935900",
+                    "name": "R. Mothilal"
+                },
+                {
+                    "authorId": "133841722",
+                    "name": "Divyat Mahajan"
+                },
+                {
+                    "authorId": "40348583",
+                    "name": "Chenhao Tan"
+                },
+                {
+                    "authorId": "2143678801",
+                    "name": "Amit Sharma"
+                }
+            ],
+            "doi": "10.1145/3461702.3462597",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "09a33ec2f03c3e083e26edd0a8c1f8a7def6ca1d",
+            "title": "Towards Unifying Feature Attribution and Counterfactual Explanations: Different Means to the Same End",
+            "url": "https://www.semanticscholar.org/paper/09a33ec2f03c3e083e26edd0a8c1f8a7def6ca1d",
+            "venue": "AIES",
+            "year": 2020
+        },
+        {
+            "arxivId": "2009.04521",
+            "authors": [
+                {
+                    "authorId": "1935310411",
+                    "name": "Thomas Fel"
+                },
+                {
+                    "authorId": "51879352",
+                    "name": "David Vigouroux"
+                },
+                {
+                    "authorId": "2117570481",
+                    "name": "R\u00e9mi Cad\u00e8ne"
+                },
+                {
+                    "authorId": "1981539",
+                    "name": "Thomas Serre"
+                }
+            ],
+            "doi": "10.1109/WACV51458.2022.00163",
+            "intent": [
+                "result",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0ba3035c81ed67af4578495376f83f31722c1708",
+            "title": "How Good is your Explanation? Algorithmic Stability Measures to Assess the Quality of Explanations for Deep Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/0ba3035c81ed67af4578495376f83f31722c1708",
+            "venue": "2022 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "5742338",
+                    "name": "Radwa Elshawi"
+                },
+                {
+                    "authorId": "1397581130",
+                    "name": "M. Al-Mallah"
+                },
+                {
+                    "authorId": "1783693",
+                    "name": "Sherif Sakr"
+                }
+            ],
+            "doi": "10.1186/s12911-019-0874-0",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "9bc9fb325eb6783158065ce3f582e2d69f13f2ca",
+            "title": "On the interpretability of machine learning-based model for predicting hypertension",
+            "url": "https://www.semanticscholar.org/paper/9bc9fb325eb6783158065ce3f582e2d69f13f2ca",
+            "venue": "BMC Medical Informatics and Decision Making",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "151241326",
+                    "name": "U. Khaire"
+                },
+                {
+                    "authorId": "50550943",
+                    "name": "R. Dhanalakshmi"
+                }
+            ],
+            "doi": "10.1016/J.JKSUCI.2019.06.012",
+            "intent": [
+                "result"
+            ],
+            "isInfluential": false,
+            "paperId": "3bccf31bb0cada2e7b24fab7d60abf921f940a6d",
+            "title": "Stability of feature selection algorithm: A review",
+            "url": "https://www.semanticscholar.org/paper/3bccf31bb0cada2e7b24fab7d60abf921f940a6d",
+            "venue": "J. King Saud Univ. Comput. Inf. Sci.",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1805967",
+                    "name": "Radwa El Shawi"
+                },
+                {
+                    "authorId": "2068579152",
+                    "name": "Youssef Mohamed"
+                },
+                {
+                    "authorId": "1397581130",
+                    "name": "M. Al-Mallah"
+                },
+                {
+                    "authorId": "144250946",
+                    "name": "S. Sakr"
+                }
+            ],
+            "doi": "10.1109/CBMS.2019.00065",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "613369e6587489c5fb37156180116b10ab243477",
+            "title": "Interpretability in HealthCare A Comparative Study of Local Machine Learning Interpretability Techniques",
+            "url": "https://www.semanticscholar.org/paper/613369e6587489c5fb37156180116b10ab243477",
+            "venue": "2019 IEEE 32nd International Symposium on Computer-Based Medical Systems (CBMS)",
+            "year": 2019
+        },
+        {
+            "arxivId": "1905.12698",
+            "authors": [
+                {
+                    "authorId": "1695275",
+                    "name": "Ronny Luss"
+                },
+                {
+                    "authorId": "153191489",
+                    "name": "Pin-Yu Chen"
+                },
+                {
+                    "authorId": "2145784",
+                    "name": "Amit Dhurandhar"
+                },
+                {
+                    "authorId": "1706272",
+                    "name": "P. Sattigeri"
+                },
+                {
+                    "authorId": "2108127520",
+                    "name": "Yunfeng Zhang"
+                },
+                {
+                    "authorId": "145455859",
+                    "name": "Karthikeyan Shanmugam"
+                },
+                {
+                    "authorId": "3468992",
+                    "name": "Chun-Chen Tu"
+                }
+            ],
+            "doi": "10.1145/3447548.3467265",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "33849e7ef73d299ce4fbe0d2093dedf5218cf27e",
+            "title": "Leveraging Latent Features for Local Explanations",
+            "url": "https://www.semanticscholar.org/paper/33849e7ef73d299ce4fbe0d2093dedf5218cf27e",
+            "venue": "KDD",
+            "year": 2019
+        },
+        {
+            "arxivId": "1901.08558",
+            "authors": [
+                {
+                    "authorId": "144906813",
+                    "name": "Philipp Schmidt"
+                },
+                {
+                    "authorId": "2170760",
+                    "name": "F. Biessmann"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e852935e024915738d5cb7830a0369f57207a2e4",
+            "title": "Quantifying Interpretability and Trust in Machine Learning Systems",
+            "url": "https://www.semanticscholar.org/paper/e852935e024915738d5cb7830a0369f57207a2e4",
+            "venue": "ArXiv",
+            "year": 2019
+        },
+        {
+            "arxivId": "1812.04608",
+            "authors": [
+                {
+                    "authorId": "1701142",
+                    "name": "R. Hoffman"
+                },
+                {
+                    "authorId": "8780591",
+                    "name": "Shane T. Mueller"
+                },
+                {
+                    "authorId": "145555383",
+                    "name": "Gary Klein"
+                },
+                {
+                    "authorId": "7983004",
+                    "name": "Jordan Litman"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "be711f681580d3a02c8bc4c4dab0c7a043f4e1d2",
+            "title": "Metrics for Explainable AI: Challenges and Prospects",
+            "url": "https://www.semanticscholar.org/paper/be711f681580d3a02c8bc4c4dab0c7a043f4e1d2",
+            "venue": "ArXiv",
+            "year": 2018
+        },
+        {
+            "arxivId": "1806.07538",
+            "authors": [
+                {
+                    "authorId": "1390096054",
+                    "name": "David Alvarez-Melis"
+                },
+                {
+                    "authorId": "35132120",
+                    "name": "T. Jaakkola"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0cf102da6dd4276115c63cbb6797f24ed450fea1",
+            "title": "Towards Robust Interpretability with Self-Explaining Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/0cf102da6dd4276115c63cbb6797f24ed450fea1",
+            "venue": "NeurIPS",
+            "year": 2018
+        },
+        {
+            "arxivId": "1802.01933",
+            "authors": [
+                {
+                    "authorId": "1704327",
+                    "name": "Riccardo Guidotti"
+                },
+                {
+                    "authorId": "2296962",
+                    "name": "A. Monreale"
+                },
+                {
+                    "authorId": "1707206",
+                    "name": "F. Turini"
+                },
+                {
+                    "authorId": "1693341",
+                    "name": "D. Pedreschi"
+                },
+                {
+                    "authorId": "1685102",
+                    "name": "F. Giannotti"
+                }
+            ],
+            "doi": "10.1145/3236009",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f7325d232c7ac7d2daaf6605377058db5b5b83cc",
+            "title": "A Survey of Methods for Explaining Black Box Models",
+            "url": "https://www.semanticscholar.org/paper/f7325d232c7ac7d2daaf6605377058db5b5b83cc",
+            "venue": "ACM Comput. Surv.",
+            "year": 2018
+        },
+        {
+            "arxivId": "1802.00682",
+            "authors": [
+                {
+                    "authorId": "35807269",
+                    "name": "Menaka Narayanan"
+                },
+                {
+                    "authorId": "2113754344",
+                    "name": "Emily Chen"
+                },
+                {
+                    "authorId": "2109576017",
+                    "name": "Jeffrey He"
+                },
+                {
+                    "authorId": "3351164",
+                    "name": "Been Kim"
+                },
+                {
+                    "authorId": "1831199",
+                    "name": "S. Gershman"
+                },
+                {
+                    "authorId": "1388372395",
+                    "name": "F. Doshi-Velez"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e6705dd6a795608dda47d0d64a2fc01bc3facd74",
+            "title": "How do Humans Understand Explanations from Machine Learning Systems? An Evaluation of the Human-Interpretability of Explanation",
+            "url": "https://www.semanticscholar.org/paper/e6705dd6a795608dda47d0d64a2fc01bc3facd74",
+            "venue": "ArXiv",
+            "year": 2018
+        },
+        {
+            "arxivId": "1707.01154",
+            "authors": [
+                {
+                    "authorId": "1892673",
+                    "name": "Himabindu Lakkaraju"
+                },
+                {
+                    "authorId": "1783184",
+                    "name": "Ece Kamar"
+                },
+                {
+                    "authorId": "145727186",
+                    "name": "R. Caruana"
+                },
+                {
+                    "authorId": "1702139",
+                    "name": "J. Leskovec"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "41578296efae9cdb1a54c7ef642465a3f91d8724",
+            "title": "Interpretable & Explorable Approximations of Black Box Models",
+            "url": "https://www.semanticscholar.org/paper/41578296efae9cdb1a54c7ef642465a3f91d8724",
+            "venue": "ArXiv",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1960437",
+                    "name": "Marcus Buckmann"
+                },
+                {
+                    "authorId": "47476153",
+                    "name": "Andreas Joseph"
+                },
+                {
+                    "authorId": "2122120761",
+                    "name": "Helena Robertson"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "7cdfe23ba97127212aa1445f24f4919267bd5e8d",
+            "title": "An interpretable machine learning work\ufb02ow with an application to economic forecasting",
+            "url": "https://www.semanticscholar.org/paper/7cdfe23ba97127212aa1445f24f4919267bd5e8d",
+            "venue": "",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "40110198",
+                    "name": "A. Rosenfeld"
+                }
+            ],
+            "doi": "10.5555/3463952.3463962",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d2f7a1c3f849caf3227ad1be92eb7033ecf0a5d6",
+            "title": "Better Metrics for Evaluating Explainable Artificial Intelligence",
+            "url": "https://www.semanticscholar.org/paper/d2f7a1c3f849caf3227ad1be92eb7033ecf0a5d6",
+            "venue": "AAMAS",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143743324",
+                    "name": "Sarah Nogueira"
+                },
+                {
+                    "authorId": "2104610",
+                    "name": "Konstantinos Sechidis"
+                },
+                {
+                    "authorId": "2262802107",
+                    "name": "G. Brown"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "result"
+            ],
+            "isInfluential": false,
+            "paperId": "456f688d742ad3c086a9372c4e35251094904210",
+            "title": "On the Stability of Feature Selection Algorithms",
+            "url": "https://www.semanticscholar.org/paper/456f688d742ad3c086a9372c4e35251094904210",
+            "venue": "J. Mach. Learn. Res.",
+            "year": 2017
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Evaluating Explainability in Machine Learning Predictions through Explainer-Agnostic Metrics",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/740608e4e2a3da73b15f277024422d8983cf7ac3",
+    "venue": "",
+    "year": 2023
+}

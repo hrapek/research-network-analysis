@@ -1,0 +1,833 @@
+{
+    "abstract": "Optimization problems are crucial in artificial intelligence. Optimization algorithms are generally used to adjust the performance of artificial intelligence models to minimize the error of mapping inputs to outputs. Current evaluation methods on optimization algorithms generally consider the performance in terms of quality. However, not all optimization algorithms for all test cases are evaluated equal from quality, the computation time should be also considered for optimization tasks. In this paper, we investigate the quality and computation time of optimization algorithms in optimization problems, instead of the one-for-all evaluation of quality. We select the well-known optimization algorithms (Bayesian optimization and evolutionary algorithms) and evaluate them on the benchmark test functions in terms of quality and computation time. The results show that BO is suitable to be applied in the optimization tasks that are needed to obtain desired quality in the limited function evaluations, and the EAs are suitable to search the optimal of the tasks that are allowed to find the optimal solution with enough function evaluations. This paper provides the recommendation to select suitable optimization algorithms for optimization problems with different numbers of function evaluations, which contributes to the efficiency that obtains the desired quality with less computation time for optimization problems.",
+    "arxivId": "2111.10595",
+    "authors": [
+        {
+            "authorId": "2022000909",
+            "name": "Zhicheng He",
+            "url": "https://www.semanticscholar.org/author/2022000909"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [],
+    "corpusId": 244477919,
+    "doi": null,
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 0,
+    "numCiting": 28,
+    "paperId": "f75cbac3d2a8959a5e5452ed408ee85cdd286687",
+    "references": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2153265605",
+                    "name": "Zhenyu Gao"
+                },
+                {
+                    "authorId": "9259512",
+                    "name": "Gongjin Lan"
+                }
+            ],
+            "doi": "10.1145/3449726.3459509",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "99ac8c9f32e084e183bb36920e4a1c6bd9493946",
+            "title": "A NEAT-based multiclass classification method with class binarization",
+            "url": "https://www.semanticscholar.org/paper/99ac8c9f32e084e183bb36920e4a1c6bd9493946",
+            "venue": "GECCO Companion",
+            "year": 2021
+        },
+        {
+            "arxivId": "2010.09531",
+            "authors": [
+                {
+                    "authorId": "9259512",
+                    "name": "Gongjin Lan"
+                },
+                {
+                    "authorId": "1999187832",
+                    "name": "M. V. Hooft"
+                },
+                {
+                    "authorId": "9041485",
+                    "name": "Matteo De Carlo"
+                },
+                {
+                    "authorId": "1849327",
+                    "name": "Jakub M. Tomczak"
+                },
+                {
+                    "authorId": "143725191",
+                    "name": "A. Eiben"
+                }
+            ],
+            "doi": "10.1016/J.NEUCOM.2021.03.030",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "79418aab433e87b4a356d992e68fb50ec0b39bb0",
+            "title": "Learning Locomotion Skills in Evolvable Robots",
+            "url": "https://www.semanticscholar.org/paper/79418aab433e87b4a356d992e68fb50ec0b39bb0",
+            "venue": "Neurocomputing",
+            "year": 2020
+        },
+        {
+            "arxivId": "2005.04166",
+            "authors": [
+                {
+                    "authorId": "9259512",
+                    "name": "Gongjin Lan"
+                },
+                {
+                    "authorId": "1849327",
+                    "name": "Jakub M. Tomczak"
+                },
+                {
+                    "authorId": "1917202",
+                    "name": "D. Roijers"
+                },
+                {
+                    "authorId": "143725191",
+                    "name": "A. Eiben"
+                }
+            ],
+            "doi": "10.1016/j.swevo.2021.100970",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2c321e0ff8d8b3b5156ad92d9b596f77d05e7ece",
+            "title": "Time Efficiency in Optimization with a Bayesian-Evolutionary Algorithm",
+            "url": "https://www.semanticscholar.org/paper/2c321e0ff8d8b3b5156ad92d9b596f77d05e7ece",
+            "venue": "Swarm Evol. Comput.",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143725191",
+                    "name": "A. Eiben"
+                },
+                {
+                    "authorId": "40176860",
+                    "name": "J. E. Smith"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "211382cbcbf571a8220cc290462a7fe0afc41d34",
+            "title": "Introduction to Evolutionary Computing 2nd Edition",
+            "url": "https://www.semanticscholar.org/paper/211382cbcbf571a8220cc290462a7fe0afc41d34",
+            "venue": "",
+            "year": 2020
+        },
+        {
+            "arxivId": "2001.07804",
+            "authors": [
+                {
+                    "authorId": "9259512",
+                    "name": "Gongjin Lan"
+                },
+                {
+                    "authorId": "9041485",
+                    "name": "Matteo De Carlo"
+                },
+                {
+                    "authorId": "1490633104",
+                    "name": "Fuda van Diggelen"
+                },
+                {
+                    "authorId": "1849327",
+                    "name": "Jakub M. Tomczak"
+                },
+                {
+                    "authorId": "1917202",
+                    "name": "D. Roijers"
+                },
+                {
+                    "authorId": "143725191",
+                    "name": "A. Eiben"
+                }
+            ],
+            "doi": "10.1016/J.ASOC.2021.107688",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "e895927f2e1f71e73a455c2353b837ce1a6b1ee2",
+            "title": "Learning Directed Locomotion in Modular Robots with Evolvable Morphologies",
+            "url": "https://www.semanticscholar.org/paper/e895927f2e1f71e73a455c2353b837ce1a6b1ee2",
+            "venue": "Appl. Soft Comput.",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "9259512",
+                    "name": "Gongjin Lan"
+                },
+                {
+                    "authorId": "47369184",
+                    "name": "L. D. Vries"
+                },
+                {
+                    "authorId": "2167158928",
+                    "name": "Shuai Wang"
+                }
+            ],
+            "doi": "10.1109/SSCI44817.2019.9002863",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d6162ddfaca9cb118ddf31aa89a7e1f0e8b36a4a",
+            "title": "Evolving Efficient Deep Neural Networks for Real-time Object Recognition",
+            "url": "https://www.semanticscholar.org/paper/d6162ddfaca9cb118ddf31aa89a7e1f0e8b36a4a",
+            "venue": "2019 IEEE Symposium Series on Computational Intelligence (SSCI)",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "9259512",
+                    "name": "Gongjin Lan"
+                },
+                {
+                    "authorId": "2108323674",
+                    "name": "Jiunhan Chen"
+                },
+                {
+                    "authorId": "143725191",
+                    "name": "A. Eiben"
+                }
+            ],
+            "doi": "10.1109/SSCI44817.2019.9002696",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0d4413117f15186bb41b2fccaf8c0ed0654d715f",
+            "title": "Simulated and Real-World Evolution of Predator Robots",
+            "url": "https://www.semanticscholar.org/paper/0d4413117f15186bb41b2fccaf8c0ed0654d715f",
+            "venue": "2019 IEEE Symposium Series on Computational Intelligence (SSCI)",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1443777878",
+                    "name": "Hanbo Xu"
+                },
+                {
+                    "authorId": "9259512",
+                    "name": "Gongjin Lan"
+                },
+                {
+                    "authorId": "1443736853",
+                    "name": "Shaoguan Wu"
+                },
+                {
+                    "authorId": "2052598556",
+                    "name": "Qi Hao"
+                }
+            ],
+            "doi": "10.1109/ITSC.2019.8916872",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9ca11ab0214f5ed102c307eb5ee04c8f9e2a8276",
+            "title": "Online Intelligent Calibration of Cameras and LiDARs for Autonomous Driving Systems*",
+            "url": "https://www.semanticscholar.org/paper/9ca11ab0214f5ed102c307eb5ee04c8f9e2a8276",
+            "venue": "2019 IEEE Intelligent Transportation Systems Conference (ITSC)",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "9259512",
+                    "name": "Gongjin Lan"
+                },
+                {
+                    "authorId": "2108323674",
+                    "name": "Jiunhan Chen"
+                },
+                {
+                    "authorId": "143725191",
+                    "name": "A. Eiben"
+                }
+            ],
+            "doi": "10.1145/3319619.3322033",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b2c69baa6ffecc9f803f0436323ee94bc9e75331",
+            "title": "Evolutionary predator-prey robot systems: from simulation to real world",
+            "url": "https://www.semanticscholar.org/paper/b2c69baa6ffecc9f803f0436323ee94bc9e75331",
+            "venue": "GECCO",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "153171583",
+                    "name": "Jia Wu"
+                },
+                {
+                    "authorId": "2109243152",
+                    "name": "Xiuyun Chen"
+                },
+                {
+                    "authorId": "1682058",
+                    "name": "H. Zhang"
+                },
+                {
+                    "authorId": "2068236437",
+                    "name": "Li-Dong Xiong"
+                },
+                {
+                    "authorId": "1878461",
+                    "name": "Hang Lei"
+                },
+                {
+                    "authorId": "48136123",
+                    "name": "S. Deng"
+                }
+            ],
+            "doi": "10.11989/JEST.1674-862X.80904120",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "ec6200bdcc23b79a71555962cde50306c4029f1a",
+            "title": "Hyperparameter Optimization for Machine Learning Models Based on Bayesian Optimization",
+            "url": "https://www.semanticscholar.org/paper/ec6200bdcc23b79a71555962cde50306c4029f1a",
+            "venue": "",
+            "year": 2019
+        },
+        {
+            "arxivId": "1807.02811",
+            "authors": [
+                {
+                    "authorId": "1922747",
+                    "name": "P. Frazier"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "c27078d60737ea10e8ca4f05acd114fef29c8276",
+            "title": "A Tutorial on Bayesian Optimization",
+            "url": "https://www.semanticscholar.org/paper/c27078d60737ea10e8ca4f05acd114fef29c8276",
+            "venue": "ArXiv",
+            "year": 2018
+        },
+        {
+            "arxivId": "1711.00673",
+            "authors": [
+                {
+                    "authorId": "88739736",
+                    "name": "Binxin Ru"
+                },
+                {
+                    "authorId": "145960612",
+                    "name": "Mark McLeod"
+                },
+                {
+                    "authorId": "10746977",
+                    "name": "Diego Granziol"
+                },
+                {
+                    "authorId": "144484861",
+                    "name": "Michael A. Osborne"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7c77d4410a588304a1499c5ee6f1bba7833cfc52",
+            "title": "Fast Information-theoretic Bayesian Optimisation",
+            "url": "https://www.semanticscholar.org/paper/7c77d4410a588304a1499c5ee6f1bba7833cfc52",
+            "venue": "ICML",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "9259512",
+                    "name": "Gongjin Lan"
+                },
+                {
+                    "authorId": "2118673899",
+                    "name": "Jinhao Liang"
+                },
+                {
+                    "authorId": "47061887",
+                    "name": "Guocheng Liu"
+                },
+                {
+                    "authorId": "2052598556",
+                    "name": "Qi Hao"
+                }
+            ],
+            "doi": "10.1109/AINA.2017.27",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c3cb4f2fad208b3613a4e342753eb80cbee6e0b8",
+            "title": "Development of a Smart Floor for Target Localization with Bayesian Binary Sensing",
+            "url": "https://www.semanticscholar.org/paper/c3cb4f2fad208b3613a4e342753eb80cbee6e0b8",
+            "venue": "2017 IEEE 31st International Conference on Advanced Information Networking and Applications (AINA)",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "9259512",
+                    "name": "Gongjin Lan"
+                },
+                {
+                    "authorId": "9095641",
+                    "name": "Ziyun Luo"
+                },
+                {
+                    "authorId": "2052598556",
+                    "name": "Qi Hao"
+                }
+            ],
+            "doi": "10.1109/COMPCOMM.2016.7924850",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "1973010ac858d2d4a328591ee9244887ed391a88",
+            "title": "Development of a virtual reality teleconference system using distributed depth sensors",
+            "url": "https://www.semanticscholar.org/paper/1973010ac858d2d4a328591ee9244887ed391a88",
+            "venue": "2016 2nd IEEE International Conference on Computer and Communications (ICCC)",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "9259512",
+                    "name": "Gongjin Lan"
+                },
+                {
+                    "authorId": "2115943144",
+                    "name": "Jiaming Sun"
+                },
+                {
+                    "authorId": "2128663795",
+                    "name": "Chengyang Li"
+                },
+                {
+                    "authorId": null,
+                    "name": "Zebin Ou"
+                },
+                {
+                    "authorId": "9095641",
+                    "name": "Ziyun Luo"
+                },
+                {
+                    "authorId": "2118673899",
+                    "name": "Jinhao Liang"
+                },
+                {
+                    "authorId": "2052598556",
+                    "name": "Qi Hao"
+                }
+            ],
+            "doi": "10.1109/MFI.2016.7849534",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9da9fea7f431afef866e82dc52c11204033dcae4",
+            "title": "Development of UAV based virtual reality systems",
+            "url": "https://www.semanticscholar.org/paper/9da9fea7f431afef866e82dc52c11204033dcae4",
+            "venue": "2016 IEEE International Conference on Multisensor Fusion and Integration for Intelligent Systems (MFI)",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "9259512",
+                    "name": "Gongjin Lan"
+                },
+                {
+                    "authorId": "2109753671",
+                    "name": "Xiaoli Hu"
+                },
+                {
+                    "authorId": "2052598556",
+                    "name": "Qi Hao"
+                }
+            ],
+            "doi": "10.1109/ISCID.2015.12",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9114f72ae731c74a2f68117712379422b1641b8e",
+            "title": "A Bayesian Approach for Targets Localization Using Binary Sensor Networks",
+            "url": "https://www.semanticscholar.org/paper/9114f72ae731c74a2f68117712379422b1641b8e",
+            "venue": "2015 8th International Symposium on Computational Intelligence and Design (ISCID)",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144266132",
+                    "name": "Steven R. Young"
+                },
+                {
+                    "authorId": "2483864",
+                    "name": "Derek C. Rose"
+                },
+                {
+                    "authorId": "1970334",
+                    "name": "T. Karnowski"
+                },
+                {
+                    "authorId": "8600116",
+                    "name": "Seung-Hwan Lim"
+                },
+                {
+                    "authorId": "36395353",
+                    "name": "R. Patton"
+                }
+            ],
+            "doi": "10.1145/2834892.2834896",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "489bacac4af45eb8a1d28c286f7b8f253d732bda",
+            "title": "Optimizing deep learning hyper-parameters through an evolutionary algorithm",
+            "url": "https://www.semanticscholar.org/paper/489bacac4af45eb8a1d28c286f7b8f253d732bda",
+            "venue": "MLHPC@SC",
+            "year": 2015
+        },
+        {
+            "arxivId": "1012.2599",
+            "authors": [
+                {
+                    "authorId": "144180357",
+                    "name": "E. Brochu"
+                },
+                {
+                    "authorId": "2221163",
+                    "name": "Vlad M. Cora"
+                },
+                {
+                    "authorId": "1737568",
+                    "name": "Nando de Freitas"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "cd5a26b89f0799db1cbc1dff5607cb6815739fe7",
+            "title": "A Tutorial on Bayesian Optimization of Expensive Cost Functions, with Application to Active User Modeling and Hierarchical Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/cd5a26b89f0799db1cbc1dff5607cb6815739fe7",
+            "venue": "ArXiv",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143980067",
+                    "name": "L. Thiele"
+                },
+                {
+                    "authorId": "1693228",
+                    "name": "K. Miettinen"
+                },
+                {
+                    "authorId": "145751073",
+                    "name": "P. Korhonen"
+                },
+                {
+                    "authorId": "8599938",
+                    "name": "J. M. Luque"
+                }
+            ],
+            "doi": "10.1162/evco.2009.17.3.411",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7238f36410c5b04b7d3af735e38951bfd1a5d4e6",
+            "title": "A Preference-Based Evolutionary Algorithm for Multi-Objective Optimization",
+            "url": "https://www.semanticscholar.org/paper/7238f36410c5b04b7d3af735e38951bfd1a5d4e6",
+            "venue": "Evolutionary Computation",
+            "year": 2009
+        },
+        {
+            "arxivId": "0805.0231",
+            "authors": [
+                {
+                    "authorId": "2260580165",
+                    "name": "Nikolaus Hansen"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "e4798bc1ce29f6f6daa43901b37b4165c84201e2",
+            "title": "CMA-ES with Two-Point Step-Size Adaptation",
+            "url": "https://www.semanticscholar.org/paper/e4798bc1ce29f6f6daa43901b37b4165c84201e2",
+            "venue": "ArXiv",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "34756481",
+                    "name": "R. Gir\u00e1ldez"
+                },
+                {
+                    "authorId": "2331894178",
+                    "name": "Jes\u00fas S Aguilar"
+                },
+                {
+                    "authorId": "2331893672",
+                    "name": "Ruiz"
+                },
+                {
+                    "authorId": "2241384669",
+                    "name": "Jos\u00e9 C Riquelme"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "4ab74162253506c5f4458b58b711beb6f8816e2c",
+            "title": "Ieee Transactions on Systems, Man and Cybernetics, Part C: Applications and Reviews Knowledge\u2013based Fast Evaluation for Evolutionary Learning",
+            "url": "https://www.semanticscholar.org/paper/4ab74162253506c5f4458b58b711beb6f8816e2c",
+            "venue": "",
+            "year": null
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145080287",
+                    "name": "K. Deb"
+                },
+                {
+                    "authorId": "1740572",
+                    "name": "Ashish Anand"
+                },
+                {
+                    "authorId": "5113463",
+                    "name": "D. Joshi"
+                }
+            ],
+            "doi": "10.1162/106365602760972767",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "e4deba81c0c0cf8a0c32064ed59b8216d3412a33",
+            "title": "A Computationally Efficient Evolutionary Algorithm for Real-Parameter Optimization",
+            "url": "https://www.semanticscholar.org/paper/e4deba81c0c0cf8a0c32064ed59b8216d3412a33",
+            "venue": "Evolutionary Computation",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "120640002",
+                    "name": "Wenyin Liu"
+                },
+                {
+                    "authorId": "144964966",
+                    "name": "D. Dori"
+                }
+            ],
+            "doi": "10.1007/s001380050045",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "ff54aab5163ba9411dea0ec46f37b47e24679ec4",
+            "title": "A protocol for performance evaluation of line detection algorithms\n",
+            "url": "https://www.semanticscholar.org/paper/ff54aab5163ba9411dea0ec46f37b47e24679ec4",
+            "venue": "Machine Vision and Applications",
+            "year": 1997
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2121568878",
+                    "name": "Hongche Liu"
+                },
+                {
+                    "authorId": "40908101",
+                    "name": "T. Hong"
+                },
+                {
+                    "authorId": "152880105",
+                    "name": "M. Herman"
+                },
+                {
+                    "authorId": "2201820",
+                    "name": "Ted Camus"
+                },
+                {
+                    "authorId": "9215658",
+                    "name": "R. Chellappa"
+                }
+            ],
+            "doi": "10.1006/cviu.1998.0675",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c0bcd3a2c7581689e568e4cfcd54fcf55f802c1c",
+            "title": "Accuracy vs Efficiency Trade-offs in Optical Flow Algorithms",
+            "url": "https://www.semanticscholar.org/paper/c0bcd3a2c7581689e568e4cfcd54fcf55f802c1c",
+            "venue": "Comput. Vis. Image Underst.",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3011711",
+                    "name": "Jakob Bossek"
+                }
+            ],
+            "doi": "10.32614/RJ-2017-004",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "39f3ea5a21a46f4fb528ad34a7082cb06261a62e",
+            "title": "smoof: Single- and Multi-Objective Optimization Test Functions",
+            "url": "https://www.semanticscholar.org/paper/39f3ea5a21a46f4fb528ad34a7082cb06261a62e",
+            "venue": "R J.",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3176527",
+                    "name": "T. Ladd"
+                },
+                {
+                    "authorId": "2262432836",
+                    "name": "Fedor Jelezko"
+                },
+                {
+                    "authorId": "2281753925",
+                    "name": "Raymond Laflamme"
+                },
+                {
+                    "authorId": "2291004080",
+                    "name": "Yasunobu Nakamura"
+                },
+                {
+                    "authorId": "2290911296",
+                    "name": "Christopher R. Monroe"
+                },
+                {
+                    "authorId": "2290919538",
+                    "name": "Jeremy Lloyd O'Brien"
+                }
+            ],
+            "doi": "10.1038/nature08812",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "2202e06c04553723b42837d30492057cc27b3c17",
+            "title": "Quantum computers",
+            "url": "https://www.semanticscholar.org/paper/2202e06c04553723b42837d30492057cc27b3c17",
+            "venue": "Nature",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "73113969",
+                    "name": "Chongsheng Zhang"
+                },
+                {
+                    "authorId": "150952519",
+                    "name": "Changchang Liu"
+                },
+                {
+                    "authorId": "2928371",
+                    "name": "Xiangliang Zhang"
+                },
+                {
+                    "authorId": "2125475",
+                    "name": "G. Almpanidis"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "161a6368c824a4636c9af4f6aa0cef20380d64ee",
+            "title": "Expert Systems With Applications",
+            "url": "https://www.semanticscholar.org/paper/161a6368c824a4636c9af4f6aa0cef20380d64ee",
+            "venue": "",
+            "year": null
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Quality and Computation Time in Optimization Problems",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/f75cbac3d2a8959a5e5452ed408ee85cdd286687",
+    "venue": "arXiv.org",
+    "year": 2021
+}

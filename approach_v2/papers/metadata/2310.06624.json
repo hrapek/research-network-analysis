@@ -1,0 +1,869 @@
+{
+    "abstract": "Contract bridge is a game characterized by incomplete information, posing an exciting challenge for artificial intelligence methods. This paper proposes the BridgeHand2Vec approach, which leverages a neural network to embed a bridge player's hand (consisting of 13 cards) into a vector space. The resulting representation reflects the strength of the hand in the game and enables interpretable distances to be determined between different hands. This representation is derived by training a neural network to estimate the number of tricks that a pair of players can take. In the remainder of this paper, we analyze the properties of the resulting vector space and provide examples of its application in reinforcement learning, and opening bid classification. Although this was not our main goal, the neural network used for the vectorization achieves SOTA results on the DDBP2 problem (estimating the number of tricks for two given hands).",
+    "arxivId": "2310.06624",
+    "authors": [
+        {
+            "authorId": "2210640332",
+            "name": "Anna Sztyber-Betley",
+            "url": "https://www.semanticscholar.org/author/2210640332"
+        },
+        {
+            "authorId": "2256988685",
+            "name": "Filip Kolodziej",
+            "url": "https://www.semanticscholar.org/author/2256988685"
+        },
+        {
+            "authorId": "2256992385",
+            "name": "Piotr Duszak",
+            "url": "https://www.semanticscholar.org/author/2256992385"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [],
+    "corpusId": 263829594,
+    "doi": "10.3233/FAIA230526",
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": true,
+    "isPublisherLicensed": true,
+    "is_open_access": true,
+    "is_publisher_licensed": true,
+    "numCitedBy": 0,
+    "numCiting": 29,
+    "paperId": "898f5f4e194c314d7d4402a3ddbd38c0bcfb83bc",
+    "references": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2141934495",
+                    "name": "Xiaoyu Zhang"
+                },
+                {
+                    "authorId": "2157221824",
+                    "name": "Wei Liu"
+                },
+                {
+                    "authorId": "2156747462",
+                    "name": "Linhui Lou"
+                },
+                {
+                    "authorId": "47829900",
+                    "name": "Fan Yang"
+                }
+            ],
+            "doi": "10.3390/s22051877",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "05664e33d55240c778e48d45c6619ed1b14712be",
+            "title": "AI Enabled Bridge Bidding Supporting Interactive Visualization",
+            "url": "https://www.semanticscholar.org/paper/05664e33d55240c778e48d45c6619ed1b14712be",
+            "venue": "Sensors",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2141934495",
+                    "name": "Xiaoyu Zhang"
+                },
+                {
+                    "authorId": "2157221824",
+                    "name": "Wei Liu"
+                },
+                {
+                    "authorId": "47829900",
+                    "name": "Fan Yang"
+                }
+            ],
+            "doi": "10.1109/HPCC-SmartCity-DSS50907.2020.00134",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "3cf76ad214c3974bb3f91b9a8233c3e91c40c634",
+            "title": "A Neural Model for Automatic Bidding of Contract Bridge",
+            "url": "https://www.semanticscholar.org/paper/3cf76ad214c3974bb3f91b9a8233c3e91c40c634",
+            "venue": "2020 IEEE 22nd International Conference on High Performance Computing and Communications; IEEE 18th International Conference on Smart City; IEEE 6th International Conference on Data Science and Systems (HPCC/SmartCity/DSS)",
+            "year": 2020
+        },
+        {
+            "arxivId": "2011.14124",
+            "authors": [
+                {
+                    "authorId": "49860549",
+                    "name": "Edward Lockhart"
+                },
+                {
+                    "authorId": "2625574",
+                    "name": "Neil Burch"
+                },
+                {
+                    "authorId": "2294262",
+                    "name": "Nolan Bard"
+                },
+                {
+                    "authorId": "148016269",
+                    "name": "Sebastian Borgeaud"
+                },
+                {
+                    "authorId": "3241600",
+                    "name": "Tom Eccles"
+                },
+                {
+                    "authorId": "1466466597",
+                    "name": "Lucas Smaira"
+                },
+                {
+                    "authorId": "2108985585",
+                    "name": "Ray Smith"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b93d867be14b98b45ec9b8647d614acd70a86c51",
+            "title": "Human-Agent Cooperation in Bridge Bidding",
+            "url": "https://www.semanticscholar.org/paper/b93d867be14b98b45ec9b8647d614acd70a86c51",
+            "venue": "ArXiv",
+            "year": 2020
+        },
+        {
+            "arxivId": "2008.06495",
+            "authors": [
+                {
+                    "authorId": "39402399",
+                    "name": "Yuandong Tian"
+                },
+                {
+                    "authorId": "22194612",
+                    "name": "Qucheng Gong"
+                },
+                {
+                    "authorId": "148207479",
+                    "name": "Tina Jiang"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "36862cda6ba2591c07f6031215aa440b2b0d22bb",
+            "title": "Joint Policy Search for Multi-agent Collaboration with Imperfect Information",
+            "url": "https://www.semanticscholar.org/paper/36862cda6ba2591c07f6031215aa440b2b0d22bb",
+            "venue": "NeurIPS",
+            "year": 2020
+        },
+        {
+            "arxivId": "1912.11323",
+            "authors": [
+                {
+                    "authorId": "7173257",
+                    "name": "Gal Cohensius"
+                },
+                {
+                    "authorId": "39506910",
+                    "name": "R. Meir"
+                },
+                {
+                    "authorId": "37300633",
+                    "name": "Roni Stern"
+                },
+                {
+                    "authorId": "1382650252",
+                    "name": "Nadav Oved"
+                }
+            ],
+            "doi": "10.3233/FAIA200117",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b48c648fa96f52a10fae3e6a5b616ac8d5f0d41c",
+            "title": "Bidding in Spades",
+            "url": "https://www.semanticscholar.org/paper/b48c648fa96f52a10fae3e6a5b616ac8d5f0d41c",
+            "venue": "ECAI",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2502026",
+                    "name": "Hendrik Baier"
+                },
+                {
+                    "authorId": "150031491",
+                    "name": "Adam Sattaur"
+                },
+                {
+                    "authorId": "144473215",
+                    "name": "E. Powley"
+                },
+                {
+                    "authorId": "1693696",
+                    "name": "Sam Devlin"
+                },
+                {
+                    "authorId": "1728604",
+                    "name": "Jeff Rollason"
+                },
+                {
+                    "authorId": "1714467",
+                    "name": "P. Cowling"
+                }
+            ],
+            "doi": "10.1109/TG.2018.2835764",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2566aa11e077768d1d73575102b2116ccd63fd1a",
+            "title": "Emulating Human Play in a Leading Mobile Card Game",
+            "url": "https://www.semanticscholar.org/paper/2566aa11e077768d1d73575102b2116ccd63fd1a",
+            "venue": "IEEE Transactions on Games",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "22194612",
+                    "name": "Qucheng Gong"
+                },
+                {
+                    "authorId": "2143496330",
+                    "name": "Yu Jiang"
+                },
+                {
+                    "authorId": "39402399",
+                    "name": "Yuandong Tian"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "0efbc8711034d06d7566c32d26c54adc3026a596",
+            "title": "Simple is Better: Training an End-to-end Contract Bridge Bidding Agent without Human Knowledge",
+            "url": "https://www.semanticscholar.org/paper/0efbc8711034d06d7566c32d26c54adc3026a596",
+            "venue": "",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1681735",
+                    "name": "J. Ma\u0144dziuk"
+                },
+                {
+                    "authorId": "52194747",
+                    "name": "Jakub Suchan"
+                }
+            ],
+            "doi": "10.1109/IJCNN.2019.8851900",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "064901e7a0bf47795985d84e7f263b17167e3d7b",
+            "title": "Who should bid higher, NS or WE, in a given Bridge deal\u0192",
+            "url": "https://www.semanticscholar.org/paper/064901e7a0bf47795985d84e7f263b17167e3d7b",
+            "venue": "2019 International Joint Conference on Neural Networks (IJCNN)",
+            "year": 2019
+        },
+        {
+            "arxivId": "1903.00900",
+            "authors": [
+                {
+                    "authorId": "145119160",
+                    "name": "Jiang Rong"
+                },
+                {
+                    "authorId": "143826491",
+                    "name": "Tao Qin"
+                },
+                {
+                    "authorId": "143706345",
+                    "name": "Bo An"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "56629f3a0d2ee3a36d96db7bbef8e935c30539a7",
+            "title": "Competitive Bridge Bidding with Deep Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/56629f3a0d2ee3a36d96db7bbef8e935c30539a7",
+            "venue": "AAMAS",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1681735",
+                    "name": "J. Ma\u0144dziuk"
+                },
+                {
+                    "authorId": "52194747",
+                    "name": "Jakub Suchan"
+                }
+            ],
+            "doi": "10.1007/978-3-030-04212-7_23",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "a859731025f1b8e46be1600172ab0b6d5a871f9c",
+            "title": "Solving the Double Dummy Bridge Problem with Shallow Autoencoders",
+            "url": "https://www.semanticscholar.org/paper/a859731025f1b8e46be1600172ab0b6d5a871f9c",
+            "venue": "ICONIP",
+            "year": 2018
+        },
+        {
+            "arxivId": "1810.04444",
+            "authors": [
+                {
+                    "authorId": "152307789",
+                    "name": "Zheng Tian"
+                },
+                {
+                    "authorId": "9399556",
+                    "name": "Shihao Zou"
+                },
+                {
+                    "authorId": "2059381536",
+                    "name": "Ian Davies"
+                },
+                {
+                    "authorId": "80460077",
+                    "name": "Tim Warr"
+                },
+                {
+                    "authorId": "2112297361",
+                    "name": "Lisheng Wu"
+                },
+                {
+                    "authorId": "1398842047",
+                    "name": "Haitham Bou-Ammar"
+                },
+                {
+                    "authorId": "48094081",
+                    "name": "Jun Wang"
+                }
+            ],
+            "doi": "10.1609/AAAI.V34I05.6217",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "2a2f9b13bdfe9bfbd448fe67edfb76fb99b282ad",
+            "title": "Learning to Communicate Implicitly by Actions",
+            "url": "https://www.semanticscholar.org/paper/2a2f9b13bdfe9bfbd448fe67edfb76fb99b282ad",
+            "venue": "AAAI",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2434014",
+                    "name": "Andrzej Janusz"
+                },
+                {
+                    "authorId": "145514740",
+                    "name": "D. \u015al\u0119zak"
+                }
+            ],
+            "doi": "10.1109/SMC.2018.00580",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "14ab37912a8abc09283232db97da692ba581d469",
+            "title": "Investigating Similarity between Hearthstone Cards: Text Embeddings and Interchangeability Approaches",
+            "url": "https://www.semanticscholar.org/paper/14ab37912a8abc09283232db97da692ba581d469",
+            "venue": "2018 IEEE International Conference on Systems, Man, and Cybernetics (SMC)",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2003545",
+                    "name": "V. Ventos"
+                },
+                {
+                    "authorId": "46249289",
+                    "name": "Yves Costel"
+                },
+                {
+                    "authorId": "1776193",
+                    "name": "O. Teytaud"
+                },
+                {
+                    "authorId": "46198975",
+                    "name": "Solene Thepaut Ventos"
+                }
+            ],
+            "doi": "10.1109/ICTAI.2017.00193",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "fd2289230e85232ce7c2a15adbf950c8a88f1d5d",
+            "title": "Boosting a Bridge Artificial Intelligence",
+            "url": "https://www.semanticscholar.org/paper/fd2289230e85232ce7c2a15adbf950c8a88f1d5d",
+            "venue": "2017 IEEE 29th International Conference on Tools with Artificial Intelligence (ICTAI)",
+            "year": 2017
+        },
+        {
+            "arxivId": "1712.01815",
+            "authors": [
+                {
+                    "authorId": "145824029",
+                    "name": "David Silver"
+                },
+                {
+                    "authorId": "2067208983",
+                    "name": "T. Hubert"
+                },
+                {
+                    "authorId": "4337102",
+                    "name": "Julian Schrittwieser"
+                },
+                {
+                    "authorId": "2460849",
+                    "name": "Ioannis Antonoglou"
+                },
+                {
+                    "authorId": "40227832",
+                    "name": "Matthew Lai"
+                },
+                {
+                    "authorId": "35099444",
+                    "name": "A. Guez"
+                },
+                {
+                    "authorId": "1975889",
+                    "name": "Marc Lanctot"
+                },
+                {
+                    "authorId": "2175946",
+                    "name": "L. Sifre"
+                },
+                {
+                    "authorId": "2106164",
+                    "name": "D. Kumaran"
+                },
+                {
+                    "authorId": "1686971",
+                    "name": "T. Graepel"
+                },
+                {
+                    "authorId": "2542999",
+                    "name": "T. Lillicrap"
+                },
+                {
+                    "authorId": "34838386",
+                    "name": "K. Simonyan"
+                },
+                {
+                    "authorId": "48987704",
+                    "name": "D. Hassabis"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "38fb1902c6a2ab4f767d4532b28a92473ea737aa",
+            "title": "Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm",
+            "url": "https://www.semanticscholar.org/paper/38fb1902c6a2ab4f767d4532b28a92473ea737aa",
+            "venue": "ArXiv",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2685623",
+                    "name": "Noam Brown"
+                },
+                {
+                    "authorId": "145714168",
+                    "name": "T. Sandholm"
+                }
+            ],
+            "doi": "10.24963/ijcai.2017/772",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0dcc5e613f2adff3f1eade232cd0488a4cde50ca",
+            "title": "Libratus: The Superhuman AI for No-Limit Poker",
+            "url": "https://www.semanticscholar.org/paper/0dcc5e613f2adff3f1eade232cd0488a4cde50ca",
+            "venue": "IJCAI",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3182790",
+                    "name": "Piotr Beling"
+                }
+            ],
+            "doi": "10.1109/TCIAIG.2015.2505240",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "e69e5f23ca83092f5080dd97510b937dc4bbd487",
+            "title": "Partition Search Revisited",
+            "url": "https://www.semanticscholar.org/paper/e69e5f23ca83092f5080dd97510b937dc4bbd487",
+            "venue": "IEEE Transactions on Computational Intelligence and AI in Games",
+            "year": 2017
+        },
+        {
+            "arxivId": "1701.01724",
+            "authors": [
+                {
+                    "authorId": "35208406",
+                    "name": "Matej Moravc\u00edk"
+                },
+                {
+                    "authorId": "8649018",
+                    "name": "Martin Schmid"
+                },
+                {
+                    "authorId": "2625574",
+                    "name": "Neil Burch"
+                },
+                {
+                    "authorId": "1759154",
+                    "name": "V. Lis\u00fd"
+                },
+                {
+                    "authorId": "2551974",
+                    "name": "Dustin Morrill"
+                },
+                {
+                    "authorId": "2294262",
+                    "name": "Nolan Bard"
+                },
+                {
+                    "authorId": "48112534",
+                    "name": "Trevor Davis"
+                },
+                {
+                    "authorId": "144514513",
+                    "name": "K. Waugh"
+                },
+                {
+                    "authorId": "1681530",
+                    "name": "Michael Bradley Johanson"
+                },
+                {
+                    "authorId": "143913104",
+                    "name": "Michael H. Bowling"
+                }
+            ],
+            "doi": "10.1126/science.aam6960",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a2155552ca5afb784a3c1d67a5bcbd4e688b6e05",
+            "title": "DeepStack: Expert-level artificial intelligence in heads-up no-limit poker",
+            "url": "https://www.semanticscholar.org/paper/a2155552ca5afb784a3c1d67a5bcbd4e688b6e05",
+            "venue": "Science",
+            "year": 2017
+        },
+        {
+            "arxivId": "1607.03290",
+            "authors": [
+                {
+                    "authorId": "3438923",
+                    "name": "Chih-Kuan Yeh"
+                },
+                {
+                    "authorId": "2650640",
+                    "name": "Cheng-Yu Hsieh"
+                },
+                {
+                    "authorId": "1798966",
+                    "name": "Hsuan-Tien Lin"
+                }
+            ],
+            "doi": "10.3233/978-1-61499-672-9-1362",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f56a042a4ef408f219f13a3af3b8b2be6d8ca2fe",
+            "title": "Automatic Bridge Bidding Using Deep Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/f56a042a4ef408f219f13a3af3b8b2be6d8ca2fe",
+            "venue": "IEEE Transactions on Games",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145824029",
+                    "name": "David Silver"
+                },
+                {
+                    "authorId": "1885349",
+                    "name": "Aja Huang"
+                },
+                {
+                    "authorId": "2772217",
+                    "name": "Chris J. Maddison"
+                },
+                {
+                    "authorId": "35099444",
+                    "name": "A. Guez"
+                },
+                {
+                    "authorId": "2175946",
+                    "name": "L. Sifre"
+                },
+                {
+                    "authorId": "47568983",
+                    "name": "George van den Driessche"
+                },
+                {
+                    "authorId": "4337102",
+                    "name": "Julian Schrittwieser"
+                },
+                {
+                    "authorId": "2460849",
+                    "name": "Ioannis Antonoglou"
+                },
+                {
+                    "authorId": "2749418",
+                    "name": "Vedavyas Panneershelvam"
+                },
+                {
+                    "authorId": "1975889",
+                    "name": "Marc Lanctot"
+                },
+                {
+                    "authorId": "48373216",
+                    "name": "S. Dieleman"
+                },
+                {
+                    "authorId": "2401609",
+                    "name": "Dominik Grewe"
+                },
+                {
+                    "authorId": "4111313",
+                    "name": "John Nham"
+                },
+                {
+                    "authorId": "2583391",
+                    "name": "Nal Kalchbrenner"
+                },
+                {
+                    "authorId": "1701686",
+                    "name": "I. Sutskever"
+                },
+                {
+                    "authorId": "2542999",
+                    "name": "T. Lillicrap"
+                },
+                {
+                    "authorId": "40662181",
+                    "name": "M. Leach"
+                },
+                {
+                    "authorId": "2645384",
+                    "name": "K. Kavukcuoglu"
+                },
+                {
+                    "authorId": "1686971",
+                    "name": "T. Graepel"
+                },
+                {
+                    "authorId": "48987704",
+                    "name": "D. Hassabis"
+                }
+            ],
+            "doi": "10.1038/nature16961",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "846aedd869a00c09b40f1f1f35673cb22bc87490",
+            "title": "Mastering the game of Go with deep neural networks and tree search",
+            "url": "https://www.semanticscholar.org/paper/846aedd869a00c09b40f1f1f35673cb22bc87490",
+            "venue": "Nature",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2047446108",
+                    "name": "Tomas Mikolov"
+                },
+                {
+                    "authorId": "144105277",
+                    "name": "Wen-tau Yih"
+                },
+                {
+                    "authorId": "1681543",
+                    "name": "G. Zweig"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c4fd9c86b2b41df51a6fe212406dda81b1997fd4",
+            "title": "Linguistic Regularities in Continuous Space Word Representations",
+            "url": "https://www.semanticscholar.org/paper/c4fd9c86b2b41df51a6fe212406dda81b1997fd4",
+            "venue": "NAACL",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "32686763",
+                    "name": "K. Mossakowski"
+                },
+                {
+                    "authorId": "1681735",
+                    "name": "J. Ma\u0144dziuk"
+                }
+            ],
+            "doi": "10.1109/TNN.2008.2005526",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "2d388ec9bec444cc70d4a4542f0c06bc8219509f",
+            "title": "Learning Without Human Expertise: A Case Study of the Double Dummy Bridge Problem",
+            "url": "https://www.semanticscholar.org/paper/2d388ec9bec444cc70d4a4542f0c06bc8219509f",
+            "venue": "IEEE Transactions on Neural Networks",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2143188581",
+                    "name": "Szymon Kowalik"
+                },
+                {
+                    "authorId": "1681735",
+                    "name": "J. Ma\u0144dziuk"
+                }
+            ],
+            "doi": "10.1007/978-3-030-92273-3_2",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "bbbf1fc5ddd21a71c715ed8d251b1ec869e7e3bd",
+            "title": "Towards Human-Level Performance in Solving Double Dummy Bridge Problem",
+            "url": "https://www.semanticscholar.org/paper/bbbf1fc5ddd21a71c715ed8d251b1ec869e7e3bd",
+            "venue": "ICONIP",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "120742532",
+                    "name": "Michael Mernagh"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f7c84418f33ca30e6c47cedb66df24d6104b2887",
+            "title": "Learning a Double Dummy Bridge Solver",
+            "url": "https://www.semanticscholar.org/paper/f7c84418f33ca30e6c47cedb66df24d6104b2887",
+            "venue": "",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1803520",
+                    "name": "L. Maaten"
+                },
+                {
+                    "authorId": "1695689",
+                    "name": "Geoffrey E. Hinton"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "1c46943103bd7b7a2c7be86859995a4144d1938b",
+            "title": "Visualizing Data using t-SNE",
+            "url": "https://www.semanticscholar.org/paper/1c46943103bd7b7a2c7be86859995a4144d1938b",
+            "venue": "",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2255387030",
+                    "name": "Matthew L. Ginsberg"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e3773d1b638ddb39bc5fff23e68d243de9597128",
+            "title": "\u00c2\u00f3\u00f9\u00f6\u00f2\u00f2\u00f0 \u00d3\u00f3 \u00d6\u00f8\u00f8\u00ac Blockin",
+            "url": "https://www.semanticscholar.org/paper/e3773d1b638ddb39bc5fff23e68d243de9597128",
+            "venue": "",
+            "year": 2001
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "BridgeHand2Vec Bridge Hand Representation",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/898f5f4e194c314d7d4402a3ddbd38c0bcfb83bc",
+    "venue": "European Conference on Artificial Intelligence",
+    "year": 2023
+}

@@ -1,0 +1,884 @@
+{
+    "abstract": "Compositional generalization is the capacity to recognize and imagine a large amount of novel combinations from known components. It is a key in human intelligence, but current neural networks generally lack such ability. This report connects a series of our work for compositional generalization, and summarizes an approach. The first part contains concepts and properties. The second part looks into a machine learning approach. The approach uses architecture design and regularization to regulate information of representations. This report focuses on basic ideas with intuitive and illustrative explanations. We hope this work would be helpful to clarify fundamentals of compositional generalization and lead to advance artificial intelligence.",
+    "arxivId": "2102.04225",
+    "authors": [
+        {
+            "authorId": "2111188503",
+            "name": "Yuanpeng Li",
+            "url": "https://www.semanticscholar.org/author/2111188503"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [],
+    "corpusId": 231847083,
+    "doi": null,
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 0,
+    "numCiting": 32,
+    "paperId": "dcb67a471a3c6f782cf237ced1da28d3da23553c",
+    "references": [
+        {
+            "arxivId": "2201.01942",
+            "authors": [
+                {
+                    "authorId": "2111188503",
+                    "name": "Yuanpeng Li"
+                },
+                {
+                    "authorId": "3130228",
+                    "name": "Joel Hestness"
+                },
+                {
+                    "authorId": "1712479",
+                    "name": "Mohamed Elhoseiny"
+                },
+                {
+                    "authorId": "2116733833",
+                    "name": "Liang Zhao"
+                },
+                {
+                    "authorId": "2244184",
+                    "name": "Kenneth Ward Church"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "978dbc014f9d6116169c0dcaf8480c49319703ba",
+            "title": "Efficiently Disentangle Causal Representations",
+            "url": "https://www.semanticscholar.org/paper/978dbc014f9d6116169c0dcaf8480c49319703ba",
+            "venue": "ArXiv",
+            "year": 2022
+        },
+        {
+            "arxivId": "2011.15091",
+            "authors": [
+                {
+                    "authorId": "1996705",
+                    "name": "Anirudh Goyal"
+                },
+                {
+                    "authorId": "1751762",
+                    "name": "Yoshua Bengio"
+                }
+            ],
+            "doi": "10.1098/rspa.2021.0068",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7e38476342ce1fcc8ef0dcd23686539395961769",
+            "title": "Inductive biases for deep learning of higher-level cognition",
+            "url": "https://www.semanticscholar.org/paper/7e38476342ce1fcc8ef0dcd23686539395961769",
+            "venue": "Proceedings of the Royal Society A",
+            "year": 2020
+        },
+        {
+            "arxivId": "2010.03706",
+            "authors": [
+                {
+                    "authorId": "1992708068",
+                    "name": "Ekin Aky\u00fcrek"
+                },
+                {
+                    "authorId": "1754469865",
+                    "name": "Afra Feyza Aky\u00fcrek"
+                },
+                {
+                    "authorId": "2112400",
+                    "name": "Jacob Andreas"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5cc8ea815bd05be3b28519b489afe6de278a4209",
+            "title": "Learning to Recombine and Resample Data for Compositional Generalization",
+            "url": "https://www.semanticscholar.org/paper/5cc8ea815bd05be3b28519b489afe6de278a4209",
+            "venue": "ICLR",
+            "year": 2020
+        },
+        {
+            "arxivId": "2006.10627",
+            "authors": [
+                {
+                    "authorId": "1409707585",
+                    "name": "Qian Liu"
+                },
+                {
+                    "authorId": "2119217081",
+                    "name": "Shengnan An"
+                },
+                {
+                    "authorId": "153249455",
+                    "name": "Jian-Guang Lou"
+                },
+                {
+                    "authorId": null,
+                    "name": "Bei Chen"
+                },
+                {
+                    "authorId": "2284174",
+                    "name": "Zeqi Lin"
+                },
+                {
+                    "authorId": "152673873",
+                    "name": "Yan Gao"
+                },
+                {
+                    "authorId": "152108463",
+                    "name": "Bin Zhou"
+                },
+                {
+                    "authorId": "2144620206",
+                    "name": "Nanning Zheng"
+                },
+                {
+                    "authorId": "1485159990",
+                    "name": "Dongmei Zhang"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "336ee50043b916c9e932338c02fd1abc87a6e849",
+            "title": "Compositional Generalization by Learning Analytical Expressions",
+            "url": "https://www.semanticscholar.org/paper/336ee50043b916c9e932338c02fd1abc87a6e849",
+            "venue": "NeurIPS",
+            "year": 2020
+        },
+        {
+            "arxivId": "2006.06609",
+            "authors": [
+                {
+                    "authorId": "12371246",
+                    "name": "Alon Talmor"
+                },
+                {
+                    "authorId": "3385516",
+                    "name": "Oyvind Tafjord"
+                },
+                {
+                    "authorId": "48323507",
+                    "name": "Peter Clark"
+                },
+                {
+                    "authorId": "79775260",
+                    "name": "Yoav Goldberg"
+                },
+                {
+                    "authorId": "1750652",
+                    "name": "Jonathan Berant"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "79e5447a394ad178aa0fdaef1d2f1ecf9bf07e88",
+            "title": "Teaching Pre-Trained Models to Systematically Reason Over Implicit Knowledge",
+            "url": "https://www.semanticscholar.org/paper/79e5447a394ad178aa0fdaef1d2f1ecf9bf07e88",
+            "venue": "ArXiv",
+            "year": 2020
+        },
+        {
+            "arxivId": "2005.00785",
+            "authors": [
+                {
+                    "authorId": "2148654757",
+                    "name": "Xisen Jin"
+                },
+                {
+                    "authorId": "3109653",
+                    "name": "Junyi Du"
+                },
+                {
+                    "authorId": "1384550891",
+                    "name": "Xiang Ren"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ca48348e0d00b5c3766b9a1ed8864ffce9285d96",
+            "title": "Visually Grounded Continual Learning of Compositional Semantics",
+            "url": "https://www.semanticscholar.org/paper/ca48348e0d00b5c3766b9a1ed8864ffce9285d96",
+            "venue": "ArXiv",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "88090186",
+                    "name": "Jonathan Gordon"
+                },
+                {
+                    "authorId": "1401804750",
+                    "name": "David Lopez-Paz"
+                },
+                {
+                    "authorId": "145283199",
+                    "name": "Marco Baroni"
+                },
+                {
+                    "authorId": "3365029",
+                    "name": "Diane Bouchacourt"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "3249dec80e963cbc86d941b819c549a325613f8c",
+            "title": "Permutation Equivariant Models for Compositional Generalization in Language",
+            "url": "https://www.semanticscholar.org/paper/3249dec80e963cbc86d941b819c549a325613f8c",
+            "venue": "ICLR",
+            "year": 2020
+        },
+        {
+            "arxivId": "2003.05161",
+            "authors": [
+                {
+                    "authorId": "2065612731",
+                    "name": "Laura Ruis"
+                },
+                {
+                    "authorId": "2112400",
+                    "name": "Jacob Andreas"
+                },
+                {
+                    "authorId": "145283199",
+                    "name": "Marco Baroni"
+                },
+                {
+                    "authorId": "3365029",
+                    "name": "Diane Bouchacourt"
+                },
+                {
+                    "authorId": "2373318",
+                    "name": "B. Lake"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "4bc2bb6584774b0d8ad0b4f5215dc2075487c192",
+            "title": "A Benchmark for Systematic Generalization in Grounded Language Understanding",
+            "url": "https://www.semanticscholar.org/paper/4bc2bb6584774b0d8ad0b4f5215dc2075487c192",
+            "venue": "NeurIPS",
+            "year": 2020
+        },
+        {
+            "arxivId": "1912.09713",
+            "authors": [
+                {
+                    "authorId": "51027911",
+                    "name": "Daniel Keysers"
+                },
+                {
+                    "authorId": "3094520",
+                    "name": "Nathanael Sch\u00e4rli"
+                },
+                {
+                    "authorId": "1471909492",
+                    "name": "Nathan Scales"
+                },
+                {
+                    "authorId": "2836674",
+                    "name": "Hylke Buisman"
+                },
+                {
+                    "authorId": "2362932",
+                    "name": "Daniel Furrer"
+                },
+                {
+                    "authorId": "1471005695",
+                    "name": "S. Kashubin"
+                },
+                {
+                    "authorId": "1470531643",
+                    "name": "Nikola Momchev"
+                },
+                {
+                    "authorId": "1470524352",
+                    "name": "Danila Sinopalnikov"
+                },
+                {
+                    "authorId": "3140227",
+                    "name": "Lukasz Stafiniak"
+                },
+                {
+                    "authorId": "1470473803",
+                    "name": "Tibor Tihon"
+                },
+                {
+                    "authorId": "3045792",
+                    "name": "Dmitry Tsarkov"
+                },
+                {
+                    "authorId": "2118450238",
+                    "name": "Xiao Wang"
+                },
+                {
+                    "authorId": "2807540",
+                    "name": "Marc van Zee"
+                },
+                {
+                    "authorId": "1698617",
+                    "name": "O. Bousquet"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5cdab78acc4f3aab429a0dd41c3ec7e605d42e7b",
+            "title": "Measuring Compositional Generalization: A Comprehensive Method on Realistic Data",
+            "url": "https://www.semanticscholar.org/paper/5cdab78acc4f3aab429a0dd41c3ec7e605d42e7b",
+            "venue": "ICLR",
+            "year": 2019
+        },
+        {
+            "arxivId": "1912.12179",
+            "authors": [
+                {
+                    "authorId": "8118056",
+                    "name": "Tristan Sylvain"
+                },
+                {
+                    "authorId": "1471743441",
+                    "name": "Linda Petrini"
+                },
+                {
+                    "authorId": "40482726",
+                    "name": "R. Devon Hjelm"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b15ab23efa4f260336e0c8dc66179d04c2993533",
+            "title": "Locality and compositionality in zero-shot learning",
+            "url": "https://www.semanticscholar.org/paper/b15ab23efa4f260336e0c8dc66179d04c2993533",
+            "venue": "ICLR",
+            "year": 2019
+        },
+        {
+            "arxivId": "1911.00811",
+            "authors": [
+                {
+                    "authorId": "80833908",
+                    "name": "Atticus Geiger"
+                },
+                {
+                    "authorId": "2421422",
+                    "name": "Ignacio Cases"
+                },
+                {
+                    "authorId": "2425578",
+                    "name": "L. Karttunen"
+                },
+                {
+                    "authorId": "144922861",
+                    "name": "Christopher Potts"
+                }
+            ],
+            "doi": "10.18653/v1/D19-1456",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "dfb443f6ea3a7d388b0b93f6d44563526c06bcba",
+            "title": "Posing Fair Generalization Tasks for Natural Language Inference",
+            "url": "https://www.semanticscholar.org/paper/dfb443f6ea3a7d388b0b93f6d44563526c06bcba",
+            "venue": "EMNLP",
+            "year": 2019
+        },
+        {
+            "arxivId": "1910.02612",
+            "authors": [
+                {
+                    "authorId": "2111188503",
+                    "name": "Yuanpeng Li"
+                },
+                {
+                    "authorId": "2116734918",
+                    "name": "Liang Zhao"
+                },
+                {
+                    "authorId": null,
+                    "name": "Jianyu Wang"
+                },
+                {
+                    "authorId": "3130228",
+                    "name": "Joel Hestness"
+                }
+            ],
+            "doi": "10.18653/v1/D19-1438",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2785e7e7f625630eeeedbc45124acf7931ba878d",
+            "title": "Compositional Generalization for Primitive Substitutions",
+            "url": "https://www.semanticscholar.org/paper/2785e7e7f625630eeeedbc45124acf7931ba878d",
+            "venue": "EMNLP",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2111188503",
+                    "name": "Yuanpeng Li"
+                },
+                {
+                    "authorId": "2116734918",
+                    "name": "Liang Zhao"
+                },
+                {
+                    "authorId": "2244184",
+                    "name": "Kenneth Ward Church"
+                },
+                {
+                    "authorId": "1712479",
+                    "name": "Mohamed Elhoseiny"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "daaf8b821c07dc2de2b8d9e8bbb5cb41cab15f94",
+            "title": "Compositional Language Continual Learning",
+            "url": "https://www.semanticscholar.org/paper/daaf8b821c07dc2de2b8d9e8bbb5cb41cab15f94",
+            "venue": "ICLR",
+            "year": 2019
+        },
+        {
+            "arxivId": "1909.10893",
+            "authors": [
+                {
+                    "authorId": "1996705",
+                    "name": "Anirudh Goyal"
+                },
+                {
+                    "authorId": "49071560",
+                    "name": "Alex Lamb"
+                },
+                {
+                    "authorId": "46616544",
+                    "name": "Jordan Hoffmann"
+                },
+                {
+                    "authorId": "2462516",
+                    "name": "Shagun Sodhani"
+                },
+                {
+                    "authorId": "1736651",
+                    "name": "S. Levine"
+                },
+                {
+                    "authorId": "1751762",
+                    "name": "Yoshua Bengio"
+                },
+                {
+                    "authorId": "1707625",
+                    "name": "B. Scholkopf"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "67a9dde04f367efc903b6d06097df9bdd9887ae7",
+            "title": "Recurrent Independent Mechanisms",
+            "url": "https://www.semanticscholar.org/paper/67a9dde04f367efc903b6d06097df9bdd9887ae7",
+            "venue": "ICLR",
+            "year": 2019
+        },
+        {
+            "arxivId": "1906.05381",
+            "authors": [
+                {
+                    "authorId": "2373318",
+                    "name": "B. Lake"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "3eb44cc190093ba35e5cb6c54d107cd9220d58f5",
+            "title": "Compositional generalization through meta sequence-to-sequence learning",
+            "url": "https://www.semanticscholar.org/paper/3eb44cc190093ba35e5cb6c54d107cd9220d58f5",
+            "venue": "NeurIPS",
+            "year": 2019
+        },
+        {
+            "arxivId": "1904.09708",
+            "authors": [
+                {
+                    "authorId": "1382532296",
+                    "name": "Jacob Russin"
+                },
+                {
+                    "authorId": "35005710",
+                    "name": "Jason Jo"
+                },
+                {
+                    "authorId": "1390067049",
+                    "name": "R. O\u2019Reilly"
+                },
+                {
+                    "authorId": "1751762",
+                    "name": "Yoshua Bengio"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f9318ec295ce285d613240e8e7df9bf0410d291a",
+            "title": "Compositional generalization in a deep seq2seq model by separating syntax and semantics",
+            "url": "https://www.semanticscholar.org/paper/f9318ec295ce285d613240e8e7df9bf0410d291a",
+            "venue": "ArXiv",
+            "year": 2019
+        },
+        {
+            "arxivId": "1904.09545",
+            "authors": [
+                {
+                    "authorId": "2112400",
+                    "name": "Jacob Andreas"
+                }
+            ],
+            "doi": "10.18653/v1/2020.acl-main.676",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d4ae9dff186553d98eef4a275762b4cb15e1e41d",
+            "title": "Good-Enough Compositional Data Augmentation",
+            "url": "https://www.semanticscholar.org/paper/d4ae9dff186553d98eef4a275762b4cb15e1e41d",
+            "venue": "ACL",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "152951058",
+                    "name": "Drew A. Hudson"
+                },
+                {
+                    "authorId": "144783904",
+                    "name": "Christopher D. Manning"
+                }
+            ],
+            "doi": "10.1109/CVPR.2019.00686",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a7ac99d7cf3f568ab1a741392144b646b856ae0c",
+            "title": "GQA: A New Dataset for Real-World Visual Reasoning and Compositional Question Answering",
+            "url": "https://www.semanticscholar.org/paper/a7ac99d7cf3f568ab1a741392144b646b856ae0c",
+            "venue": "2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2019
+        },
+        {
+            "arxivId": "1901.10912",
+            "authors": [
+                {
+                    "authorId": "1751762",
+                    "name": "Yoshua Bengio"
+                },
+                {
+                    "authorId": "7636193",
+                    "name": "T. Deleu"
+                },
+                {
+                    "authorId": "40050919",
+                    "name": "Nasim Rahaman"
+                },
+                {
+                    "authorId": "145604319",
+                    "name": "Nan Rosemary Ke"
+                },
+                {
+                    "authorId": "134730235",
+                    "name": "S\u00e9bastien Lachapelle"
+                },
+                {
+                    "authorId": "2361575",
+                    "name": "O. Bilaniuk"
+                },
+                {
+                    "authorId": "1996705",
+                    "name": "Anirudh Goyal"
+                },
+                {
+                    "authorId": "1972076",
+                    "name": "C. Pal"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "492ba3ad3f0cb85f0636bc275fecd7e7960709da",
+            "title": "A Meta-Transfer Objective for Learning to Disentangle Causal Mechanisms",
+            "url": "https://www.semanticscholar.org/paper/492ba3ad3f0cb85f0636bc275fecd7e7960709da",
+            "venue": "ICLR",
+            "year": 2019
+        },
+        {
+            "arxivId": "1804.03599",
+            "authors": [
+                {
+                    "authorId": "145463968",
+                    "name": "Christopher P. Burgess"
+                },
+                {
+                    "authorId": "39051054",
+                    "name": "I. Higgins"
+                },
+                {
+                    "authorId": "3422676",
+                    "name": "Arka Pal"
+                },
+                {
+                    "authorId": "2367480",
+                    "name": "L. Matthey"
+                },
+                {
+                    "authorId": "47969823",
+                    "name": "Nicholas Watters"
+                },
+                {
+                    "authorId": "2755582",
+                    "name": "Guillaume Desjardins"
+                },
+                {
+                    "authorId": "2289726",
+                    "name": "Alexander Lerchner"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "287547fc81364e64d196abb8d891ade3f6599a5a",
+            "title": "Understanding disentangling in \u03b2-VAE",
+            "url": "https://www.semanticscholar.org/paper/287547fc81364e64d196abb8d891ade3f6599a5a",
+            "venue": "ArXiv",
+            "year": 2018
+        },
+        {
+            "arxivId": "1709.08568",
+            "authors": [
+                {
+                    "authorId": "1751762",
+                    "name": "Yoshua Bengio"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "0fff5c49c05c27c22ac7685130197146491f0b36",
+            "title": "The Consciousness Prior",
+            "url": "https://www.semanticscholar.org/paper/0fff5c49c05c27c22ac7685130197146491f0b36",
+            "venue": "ArXiv",
+            "year": 2017
+        },
+        {
+            "arxivId": "1703.00810",
+            "authors": [
+                {
+                    "authorId": "1411405900",
+                    "name": "Ravid Shwartz-Ziv"
+                },
+                {
+                    "authorId": "1777660",
+                    "name": "Naftali Tishby"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "267980e417f1d01a897e87fa409f64e2a76b96cd",
+            "title": "Opening the Black Box of Deep Neural Networks via Information",
+            "url": "https://www.semanticscholar.org/paper/267980e417f1d01a897e87fa409f64e2a76b96cd",
+            "venue": "ArXiv",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "39051054",
+                    "name": "I. Higgins"
+                },
+                {
+                    "authorId": "2367480",
+                    "name": "L. Matthey"
+                },
+                {
+                    "authorId": "3422676",
+                    "name": "Arka Pal"
+                },
+                {
+                    "authorId": "145463968",
+                    "name": "Christopher P. Burgess"
+                },
+                {
+                    "authorId": "3119801",
+                    "name": "Xavier Glorot"
+                },
+                {
+                    "authorId": "46378362",
+                    "name": "M. Botvinick"
+                },
+                {
+                    "authorId": "14594344",
+                    "name": "S. Mohamed"
+                },
+                {
+                    "authorId": "2289726",
+                    "name": "Alexander Lerchner"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "a90226c41b79f8b06007609f39f82757073641e2",
+            "title": "beta-VAE: Learning Basic Visual Concepts with a Constrained Variational Framework",
+            "url": "https://www.semanticscholar.org/paper/a90226c41b79f8b06007609f39f82757073641e2",
+            "venue": "ICLR 2016",
+            "year": 2016
+        },
+        {
+            "arxivId": "1511.02799",
+            "authors": [
+                {
+                    "authorId": "2112400",
+                    "name": "Jacob Andreas"
+                },
+                {
+                    "authorId": "34849128",
+                    "name": "Marcus Rohrbach"
+                },
+                {
+                    "authorId": "1753210",
+                    "name": "Trevor Darrell"
+                },
+                {
+                    "authorId": "38666915",
+                    "name": "D. Klein"
+                }
+            ],
+            "doi": "10.1109/CVPR.2016.12",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "21c99706bb26e9012bfb4d8d48009a3d45af59b2",
+            "title": "Neural Module Networks",
+            "url": "https://www.semanticscholar.org/paper/21c99706bb26e9012bfb4d8d48009a3d45af59b2",
+            "venue": "2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "122359019",
+                    "name": "N. McGlynn"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "2f2961362355e45fa014ca0bb8ce4495aedf8824",
+            "title": "Thinking fast and slow.",
+            "url": "https://www.semanticscholar.org/paper/2f2961362355e45fa014ca0bb8ce4495aedf8824",
+            "venue": "Australian veterinary journal",
+            "year": 2014
+        },
+        {
+            "arxivId": "1305.0445",
+            "authors": [
+                {
+                    "authorId": "1751762",
+                    "name": "Yoshua Bengio"
+                }
+            ],
+            "doi": "10.1007/978-3-642-39593-2_1",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "72d32c986b47d6b880dad0c3f155fe23d2939038",
+            "title": "Deep Learning of Representations: Looking Forward",
+            "url": "https://www.semanticscholar.org/paper/72d32c986b47d6b880dad0c3f155fe23d2939038",
+            "venue": "SLSP",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1864187",
+                    "name": "S. Solomon"
+                },
+                {
+                    "authorId": "4433870",
+                    "name": "P. Lennie"
+                }
+            ],
+            "doi": "10.1038/nrn2094",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8403effac4decc0b26ce05734074b90ac601d490",
+            "title": "The machinery of colour vision",
+            "url": "https://www.semanticscholar.org/paper/8403effac4decc0b26ce05734074b90ac601d490",
+            "venue": "Nature Reviews Neuroscience",
+            "year": 2007
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Concepts, Properties and an Approach for Compositional Generalization",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/dcb67a471a3c6f782cf237ced1da28d3da23553c",
+    "venue": "arXiv.org",
+    "year": 2021
+}

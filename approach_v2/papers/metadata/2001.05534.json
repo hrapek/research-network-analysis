@@ -1,0 +1,1900 @@
+{
+    "abstract": "ABSTRACT In this manuscript, we analyze a data set containing information on children with Hodgkin Lymphoma (HL) enrolled on a clinical trial. Treatments received and survival status were collected together with other covariates such as demographics and clinical measurements. Our main task is to explore the potential of machine learning (ML) algorithms in a survival analysis context in order to improve over the Cox Proportional Hazard (CoxPH) model. We discuss the weaknesses of the CoxPH model we would like to improve upon and then we introduce multiple algorithms, from well-established ones to state-of-the-art models, that solve these issues. We then compare every model according to the concordance index and the Brier score. Finally, we produce a series of recommendations, based on our experience, for practitioners that would like to benefit from the recent advances in artificial intelligence.",
+    "arxivId": "2001.05534",
+    "authors": [
+        {
+            "authorId": "49848789",
+            "name": "C\u00e9dric Beaulac",
+            "url": "https://www.semanticscholar.org/author/49848789"
+        },
+        {
+            "authorId": "31987667",
+            "name": "J. Rosenthal",
+            "url": "https://www.semanticscholar.org/author/31987667"
+        },
+        {
+            "authorId": "145891415",
+            "name": "Q. Pei",
+            "url": "https://www.semanticscholar.org/author/145891415"
+        },
+        {
+            "authorId": "5833839",
+            "name": "D. Friedman",
+            "url": "https://www.semanticscholar.org/author/5833839"
+        },
+        {
+            "authorId": "4692378",
+            "name": "S. Wolden",
+            "url": "https://www.semanticscholar.org/author/4692378"
+        },
+        {
+            "authorId": "144170968",
+            "name": "D. Hodgson",
+            "url": "https://www.semanticscholar.org/author/144170968"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2042060947",
+                    "name": "Eric Vaags"
+                },
+                {
+                    "authorId": "2233841",
+                    "name": "B. Lence"
+                },
+                {
+                    "authorId": "2270393037",
+                    "name": "Sudhir Kshirsagar"
+                }
+            ],
+            "doi": "10.1061/jitse4.iseng-2176",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "a5d1fe7180a232a2a5ac8f79e16b066e1c6f6e80",
+            "title": "Comparative Analysis of Machine Learning and Survival Analysis Combinations for Water Main Failure Prediction",
+            "url": "https://www.semanticscholar.org/paper/a5d1fe7180a232a2a5ac8f79e16b066e1c6f6e80",
+            "venue": "Journal of Infrastructure Systems",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2253563032",
+                    "name": "A. Ezquerro"
+                },
+                {
+                    "authorId": "2253581593",
+                    "name": "Brais Cancela"
+                },
+                {
+                    "authorId": "1443682086",
+                    "name": "Ana L\u00f3pez-Cheda"
+                }
+            ],
+            "doi": "10.3390/math11194150",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "3095972ccb4b6a802c4952763397daf186fc61fd",
+            "title": "On the Reliability of Machine Learning Models for Survival Analysis When Cure Is a Possibility",
+            "url": "https://www.semanticscholar.org/paper/3095972ccb4b6a802c4952763397daf186fc61fd",
+            "venue": "Mathematics",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3777083",
+                    "name": "D. Chihara"
+                },
+                {
+                    "authorId": "6680981",
+                    "name": "L. Nastoupil"
+                },
+                {
+                    "authorId": "2168335317",
+                    "name": "C. Flowers"
+                }
+            ],
+            "doi": "10.1111/bjh.18861",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "abc2de6f16cc32470a9a892c0a7028b059445e79",
+            "title": "Clinical approaches for integrating machine learning for patients with lymphoma: Current strategies and future perspectives",
+            "url": "https://www.semanticscholar.org/paper/abc2de6f16cc32470a9a892c0a7028b059445e79",
+            "venue": "British journal of haematology",
+            "year": 2023
+        },
+        {
+            "arxivId": "2205.01188",
+            "authors": [
+                {
+                    "authorId": "2148640182",
+                    "name": "Ghazal Mirabnahrazam"
+                },
+                {
+                    "authorId": "143843052",
+                    "name": "Da Ma"
+                },
+                {
+                    "authorId": "49848789",
+                    "name": "C\u00e9dric Beaulac"
+                },
+                {
+                    "authorId": "2108337648",
+                    "name": "Sieun Lee"
+                },
+                {
+                    "authorId": "2755877",
+                    "name": "K. Popuri"
+                },
+                {
+                    "authorId": "2203036405",
+                    "name": "Hyunwoo Lee"
+                },
+                {
+                    "authorId": "40093150",
+                    "name": "Jiguo Cao"
+                },
+                {
+                    "authorId": "3257409",
+                    "name": "J. Galvin"
+                },
+                {
+                    "authorId": "2152503691",
+                    "name": "Lei Wang"
+                },
+                {
+                    "authorId": "1919343",
+                    "name": "M. Beg"
+                },
+                {
+                    "authorId": "46184578",
+                    "name": "Alzheimer's Disease Neuroimaging Initiative"
+                }
+            ],
+            "doi": "10.1016/j.neurobiolaging.2022.10.005",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "1f566592daad9b89f41e54d713b0646dee6e4fad",
+            "title": "Predicting time-to-conversion for dementia of Alzheimer's type using multi-modal deep survival analysis",
+            "url": "https://www.semanticscholar.org/paper/1f566592daad9b89f41e54d713b0646dee6e4fad",
+            "venue": "Neurobiology of Aging",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2106668715",
+                    "name": "Julia Mor\u00e1n-S\u00e1nchez"
+                },
+                {
+                    "authorId": "1409438598",
+                    "name": "A. Santisteban-Espejo"
+                },
+                {
+                    "authorId": "1400752653",
+                    "name": "Miguel Angel Martin-Piedra"
+                },
+                {
+                    "authorId": "84467673",
+                    "name": "J. P\u00e9rez-Requena"
+                },
+                {
+                    "authorId": "1404775750",
+                    "name": "M. Garc\u00eda-Rojo"
+                }
+            ],
+            "doi": "10.3390/biom11060793",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "4effe5f64204ba90ec4fd5125a5d79a8fb972a0e",
+            "title": "Translational Applications of Artificial Intelligence and Machine Learning for Diagnostic Pathology in Lymphoid Neoplasms: A Comprehensive and Evolutive Analysis",
+            "url": "https://www.semanticscholar.org/paper/4effe5f64204ba90ec4fd5125a5d79a8fb972a0e",
+            "venue": "Biomolecules",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2042060947",
+                    "name": "Eric Vaags"
+                }
+            ],
+            "doi": "10.14288/1.0402556",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "ef25e6e0618b86db77203f83de86aebf49f0dcfc",
+            "title": "Improving prediction of water main failures using statistical and machine learning algorithms",
+            "url": "https://www.semanticscholar.org/paper/ef25e6e0618b86db77203f83de86aebf49f0dcfc",
+            "venue": "",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2056912405",
+                    "name": "D. A. Queiroz"
+                },
+                {
+                    "authorId": "2286033511",
+                    "name": "Gabriel Sousa"
+                },
+                {
+                    "authorId": "2286310964",
+                    "name": "Almeida Assun\u00e7\u00e3o"
+                },
+                {
+                    "authorId": "2286287445",
+                    "name": "Kamila Alves"
+                },
+                {
+                    "authorId": "2286086856",
+                    "name": "Silva Ferreira"
+                },
+                {
+                    "authorId": "2286280640",
+                    "name": "Vilian Veloso"
+                },
+                {
+                    "authorId": "2175696712",
+                    "name": "Moura F\u00e9"
+                },
+                {
+                    "authorId": "2175696955",
+                    "name": "Vit\u00f3ria Paglione Balestero de Lima"
+                },
+                {
+                    "authorId": "2175698193",
+                    "name": "Fernanda Antunes Dias"
+                },
+                {
+                    "authorId": "116530956",
+                    "name": "T\u00falio C Medeiros"
+                },
+                {
+                    "authorId": "2286273916",
+                    "name": "Karen Nayara de Souza Braz"
+                },
+                {
+                    "authorId": "2286288540",
+                    "name": "Rodrigo Augusto"
+                },
+                {
+                    "authorId": "2286311011",
+                    "name": "Rosa Siviero"
+                },
+                {
+                    "authorId": "4109406",
+                    "name": "P. Alegranci"
+                },
+                {
+                    "authorId": "2286279730",
+                    "name": "Eveline Aparecida"
+                },
+                {
+                    "authorId": "2286288581",
+                    "name": "Isquierdo Fonseca de Queiroz"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "4a22bb810247398643c5df0083d29f199543a211",
+            "title": "Prediction of survival in breast cancer patients using Random Forest classifier and ReliefF feature selection method",
+            "url": "https://www.semanticscholar.org/paper/4a22bb810247398643c5df0083d29f199543a211",
+            "venue": "",
+            "year": 2021
+        }
+    ],
+    "corpusId": 210718536,
+    "doi": "10.1080/08839514.2020.1815151",
+    "fieldsOfStudy": [
+        "Medicine",
+        "Biology",
+        "Mathematics",
+        "Computer Science"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 7,
+    "numCiting": 57,
+    "paperId": "3a5af407c82f247f529ed86d91f255b5f78460c8",
+    "references": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1970375",
+                    "name": "T. Hothorn"
+                },
+                {
+                    "authorId": "1764952",
+                    "name": "K. Hornik"
+                },
+                {
+                    "authorId": "3147116",
+                    "name": "C. Strobl"
+                },
+                {
+                    "authorId": "2144516",
+                    "name": "A. Zeileis"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "355881a3fccb32fb3b1a3a7dab4d04073fcf569f",
+            "title": "A Laboratory for Recursive Partytioning [R package party version 1.3-5]",
+            "url": "https://www.semanticscholar.org/paper/355881a3fccb32fb3b1a3a7dab4d04073fcf569f",
+            "venue": "",
+            "year": 2020
+        },
+        {
+            "arxivId": "1908.02337",
+            "authors": [
+                {
+                    "authorId": "2130207122",
+                    "name": "Lili Zhao"
+                },
+                {
+                    "authorId": "2392922",
+                    "name": "Dai Feng"
+                }
+            ],
+            "doi": "10.1109/JBHI.2020.2980204",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e61e6ee03e05247a05de919f8e13226356eefbf7",
+            "title": "Deep Neural Networks for Survival Analysis Using Pseudo Values",
+            "url": "https://www.semanticscholar.org/paper/e61e6ee03e05247a05de919f8e13226356eefbf7",
+            "venue": "IEEE Journal of Biomedical and Health Informatics",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "83926797",
+                    "name": "Bing-Zhong Jing"
+                },
+                {
+                    "authorId": "2146343469",
+                    "name": "Tao Zhang"
+                },
+                {
+                    "authorId": "8491994",
+                    "name": "Zixian Wang"
+                },
+                {
+                    "authorId": "4351892",
+                    "name": "Ying Jin"
+                },
+                {
+                    "authorId": "24699449",
+                    "name": "Kuiyuan Liu"
+                },
+                {
+                    "authorId": "2057145355",
+                    "name": "Wenze Qiu"
+                },
+                {
+                    "authorId": "123672520",
+                    "name": "L. Ke"
+                },
+                {
+                    "authorId": "2145324258",
+                    "name": "Ying Sun"
+                },
+                {
+                    "authorId": "2115067122",
+                    "name": "Caisheng He"
+                },
+                {
+                    "authorId": "2128313943",
+                    "name": "Dan Hou"
+                },
+                {
+                    "authorId": "46815808",
+                    "name": "Linquan Tang"
+                },
+                {
+                    "authorId": "3298675",
+                    "name": "X. Lv"
+                },
+                {
+                    "authorId": "10519502",
+                    "name": "Chaofeng Li"
+                }
+            ],
+            "doi": "10.1016/J.ARTMED.2019.06.001",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "e3762ba9e4b7710342fa6b9ad12d9ac848661917",
+            "title": "A deep survival analysis method based on ranking",
+            "url": "https://www.semanticscholar.org/paper/e3762ba9e4b7710342fa6b9ad12d9ac848661917",
+            "venue": "Artif. Intell. Medicine",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1398423531",
+                    "name": "A. Rodr\u00edguez-Ruiz"
+                },
+                {
+                    "authorId": "39587174",
+                    "name": "K. L\u00e5ng"
+                },
+                {
+                    "authorId": "1398964823",
+                    "name": "A. Gubern-M\u00e9rida"
+                },
+                {
+                    "authorId": "38980147",
+                    "name": "M. Broeders"
+                },
+                {
+                    "authorId": "2616433",
+                    "name": "G. Gennaro"
+                },
+                {
+                    "authorId": "4457141",
+                    "name": "P. Clauser"
+                },
+                {
+                    "authorId": "144993459",
+                    "name": "T. Helbich"
+                },
+                {
+                    "authorId": "47235581",
+                    "name": "M. Chevalier"
+                },
+                {
+                    "authorId": "145695707",
+                    "name": "T. Tan"
+                },
+                {
+                    "authorId": "2805206",
+                    "name": "T. Mertelmeier"
+                },
+                {
+                    "authorId": "21773293",
+                    "name": "M. Wallis"
+                },
+                {
+                    "authorId": "145590341",
+                    "name": "I. Andersson"
+                },
+                {
+                    "authorId": "2231959",
+                    "name": "S. Zackrisson"
+                },
+                {
+                    "authorId": "1794036",
+                    "name": "R. Mann"
+                },
+                {
+                    "authorId": "3156326",
+                    "name": "I. Sechopoulos"
+                }
+            ],
+            "doi": "10.1093/jnci/djy222",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "77b01422d4fa697454e1bec218433532d7c1e906",
+            "title": "Stand-Alone Artificial Intelligence for Breast Cancer Detection in Mammography: Comparison With 101 Radiologists.",
+            "url": "https://www.semanticscholar.org/paper/77b01422d4fa697454e1bec218433532d7c1e906",
+            "venue": "Journal of the National Cancer Institute",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "51248761",
+                    "name": "E. Christodoulou"
+                },
+                {
+                    "authorId": "2213454893",
+                    "name": "Jie Ma"
+                },
+                {
+                    "authorId": "2003566",
+                    "name": "G. Collins"
+                },
+                {
+                    "authorId": "144517928",
+                    "name": "E. Steyerberg"
+                },
+                {
+                    "authorId": "2726910",
+                    "name": "J. Verbakel"
+                },
+                {
+                    "authorId": "10108730",
+                    "name": "B. Van calster"
+                }
+            ],
+            "doi": "10.1016/j.jclinepi.2019.02.004",
+            "intent": [
+                "background",
+                "result"
+            ],
+            "isInfluential": false,
+            "paperId": "649dd1fcd3f375ccd1a485af88b3dd8d0d289ee6",
+            "title": "A systematic review shows no performance benefit of machine learning over logistic regression for clinical prediction models.",
+            "url": "https://www.semanticscholar.org/paper/649dd1fcd3f375ccd1a485af88b3dd8d0d289ee6",
+            "venue": "Journal of clinical epidemiology",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1398423531",
+                    "name": "A. Rodr\u00edguez-Ruiz"
+                },
+                {
+                    "authorId": "1771920",
+                    "name": "E. Krupinski"
+                },
+                {
+                    "authorId": "1682982",
+                    "name": "J. Mordang"
+                },
+                {
+                    "authorId": "48188253",
+                    "name": "K. Schilling"
+                },
+                {
+                    "authorId": "1420643148",
+                    "name": "S. Heywang-K\u00f6brunner"
+                },
+                {
+                    "authorId": "3156326",
+                    "name": "I. Sechopoulos"
+                },
+                {
+                    "authorId": "1794036",
+                    "name": "R. Mann"
+                }
+            ],
+            "doi": "10.1148/radiol.2018181371",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "3c151694087e7e8dd0dd555c81a3700c31b148e9",
+            "title": "Detection of Breast Cancer with Mammography: Effect of an Artificial Intelligence Support System.",
+            "url": "https://www.semanticscholar.org/paper/3c151694087e7e8dd0dd555c81a3700c31b148e9",
+            "venue": "Radiology",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "17799711",
+                    "name": "Javier E. Flores"
+                },
+                {
+                    "authorId": "2036256",
+                    "name": "J. Cavanaugh"
+                }
+            ],
+            "doi": "10.1002/9781118445112.stat05932.pub2",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "66dff8fb22299259f680aa9318883b9c831f83c0",
+            "title": "Partial Likelihood",
+            "url": "https://www.semanticscholar.org/paper/66dff8fb22299259f680aa9318883b9c831f83c0",
+            "venue": "Wiley StatsRef: Statistics Reference Online",
+            "year": 2018
+        },
+        {
+            "arxivId": "1811.12323",
+            "authors": [
+                {
+                    "authorId": "49848789",
+                    "name": "C\u00e9dric Beaulac"
+                },
+                {
+                    "authorId": "31987667",
+                    "name": "J. Rosenthal"
+                },
+                {
+                    "authorId": "145897648",
+                    "name": "D. Hodgson"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "e7d633fb94a22ea9ce024baacb0783649eca1e93",
+            "title": "A Deep Latent-Variable Model Application to Select Treatment Intensity in Survival Analysis",
+            "url": "https://www.semanticscholar.org/paper/e7d633fb94a22ea9ce024baacb0783649eca1e93",
+            "venue": "ArXiv",
+            "year": 2018
+        },
+        {
+            "arxivId": "1807.03653",
+            "authors": [
+                {
+                    "authorId": "32454628",
+                    "name": "A. Naz\u00e1bal"
+                },
+                {
+                    "authorId": "145790527",
+                    "name": "P. Olmos"
+                },
+                {
+                    "authorId": "1744700",
+                    "name": "Zoubin Ghahramani"
+                },
+                {
+                    "authorId": "144991545",
+                    "name": "Isabel Valera"
+                }
+            ],
+            "doi": "10.1016/j.patcog.2020.107501",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "a9597f3bb790c607ce0a87277523226feac5a8d7",
+            "title": "Handling Incomplete Heterogeneous Data using VAEs",
+            "url": "https://www.semanticscholar.org/paper/a9597f3bb790c607ce0a87277523226feac5a8d7",
+            "venue": "Pattern Recognit.",
+            "year": 2018
+        },
+        {
+            "arxivId": "1801.05512",
+            "authors": [
+                {
+                    "authorId": "35426159",
+                    "name": "Stephane Fotso"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background",
+                "result"
+            ],
+            "isInfluential": true,
+            "paperId": "55ed6e83cba98f6f9a73ee02365f02bb054fae79",
+            "title": "Deep Neural Networks for Survival Analysis Based on a Multi-Task Framework",
+            "url": "https://www.semanticscholar.org/paper/55ed6e83cba98f6f9a73ee02365f02bb054fae79",
+            "venue": "ArXiv",
+            "year": 2018
+        },
+        {
+            "arxivId": "1705.10245",
+            "authors": [
+                {
+                    "authorId": "39175553",
+                    "name": "Margaux Luck"
+                },
+                {
+                    "authorId": "8118056",
+                    "name": "Tristan Sylvain"
+                },
+                {
+                    "authorId": "153117825",
+                    "name": "H. Cardinal"
+                },
+                {
+                    "authorId": "144390922",
+                    "name": "Andrea Lodi"
+                },
+                {
+                    "authorId": "1751762",
+                    "name": "Yoshua Bengio"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background",
+                "result"
+            ],
+            "isInfluential": true,
+            "paperId": "ef65b08bdf351166d49f184a42db10211d25f997",
+            "title": "Deep Learning for Patient-Specific Kidney Graft Survival Analysis",
+            "url": "https://www.semanticscholar.org/paper/ef65b08bdf351166d49f184a42db10211d25f997",
+            "venue": "ArXiv",
+            "year": 2017
+        },
+        {
+            "arxivId": "1705.08821",
+            "authors": [
+                {
+                    "authorId": "2075783",
+                    "name": "Christos Louizos"
+                },
+                {
+                    "authorId": "2304764",
+                    "name": "Uri Shalit"
+                },
+                {
+                    "authorId": "1696158",
+                    "name": "J. Mooij"
+                },
+                {
+                    "authorId": "1746662",
+                    "name": "D. Sontag"
+                },
+                {
+                    "authorId": "1804104",
+                    "name": "R. Zemel"
+                },
+                {
+                    "authorId": "1401897750",
+                    "name": "Max Welling"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "20d117f0cccf4aaaeadfdeb58d7af0fc201f7a9a",
+            "title": "Causal Effect Inference with Deep Latent-Variable Models",
+            "url": "https://www.semanticscholar.org/paper/20d117f0cccf4aaaeadfdeb58d7af0fc201f7a9a",
+            "venue": "NIPS",
+            "year": 2017
+        },
+        {
+            "arxivId": "1703.02442",
+            "authors": [
+                {
+                    "authorId": "2118113191",
+                    "name": "Yun Liu"
+                },
+                {
+                    "authorId": "9946097",
+                    "name": "Krishna Gadepalli"
+                },
+                {
+                    "authorId": "144739074",
+                    "name": "Mohammad Norouzi"
+                },
+                {
+                    "authorId": "35188630",
+                    "name": "George E. Dahl"
+                },
+                {
+                    "authorId": "1749805",
+                    "name": "Timo Kohlberger"
+                },
+                {
+                    "authorId": "2139775691",
+                    "name": "Aleksey Boyko"
+                },
+                {
+                    "authorId": "1811430",
+                    "name": "Subhashini Venugopalan"
+                },
+                {
+                    "authorId": "2065297282",
+                    "name": "Aleksei Timofeev"
+                },
+                {
+                    "authorId": "1409247170",
+                    "name": "Phil Q. Nelson"
+                },
+                {
+                    "authorId": "102388768",
+                    "name": "G. Corrado"
+                },
+                {
+                    "authorId": "145817225",
+                    "name": "J. Hipp"
+                },
+                {
+                    "authorId": "49506408",
+                    "name": "L. Peng"
+                },
+                {
+                    "authorId": "2924473",
+                    "name": "Martin C. Stumpe"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "915adc7d9aacc46b6b8575f4a8be4b7cb4a1caf7",
+            "title": "Detecting Cancer Metastases on Gigapixel Pathology Images",
+            "url": "https://www.semanticscholar.org/paper/915adc7d9aacc46b6b8575f4a8be4b7cb4a1caf7",
+            "venue": "ArXiv",
+            "year": 2017
+        },
+        {
+            "arxivId": "1608.02158",
+            "authors": [
+                {
+                    "authorId": "2615814",
+                    "name": "R. Ranganath"
+                },
+                {
+                    "authorId": "3237761",
+                    "name": "A. Perotte"
+                },
+                {
+                    "authorId": "2763493",
+                    "name": "No\u00e9mie Elhadad"
+                },
+                {
+                    "authorId": "1796335",
+                    "name": "D. Blei"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background",
+                "result"
+            ],
+            "isInfluential": true,
+            "paperId": "3b41bb3a470fbfba54283331f31256cc09f0f37e",
+            "title": "Deep Survival Analysis",
+            "url": "https://www.semanticscholar.org/paper/3b41bb3a470fbfba54283331f31256cc09f0f37e",
+            "venue": "MLHC",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "121704213",
+                    "name": "Yanfeng Li"
+                },
+                {
+                    "authorId": "2643087",
+                    "name": "Houjin Chen"
+                },
+                {
+                    "authorId": "2119908701",
+                    "name": "Lin Cao"
+                },
+                {
+                    "authorId": "2157406060",
+                    "name": "Jinyuan Ma"
+                }
+            ],
+            "doi": "10.4172/2157-7420.1000238",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "a1bfca428f91eb4e70a2612d432409d0f172f175",
+            "title": "A Survey of Computer-aided Detection of Breast Cancer with Mammography",
+            "url": "https://www.semanticscholar.org/paper/a1bfca428f91eb4e70a2612d432409d0f172f175",
+            "venue": "",
+            "year": 2016
+        },
+        {
+            "arxivId": "1606.00931",
+            "authors": [
+                {
+                    "authorId": "32074066",
+                    "name": "Jared Katzman"
+                },
+                {
+                    "authorId": "1762788",
+                    "name": "Uri Shaham"
+                },
+                {
+                    "authorId": "2827359",
+                    "name": "A. Cloninger"
+                },
+                {
+                    "authorId": "2068835779",
+                    "name": "Jonathan Bates"
+                },
+                {
+                    "authorId": "2114746306",
+                    "name": "Tingting Jiang"
+                },
+                {
+                    "authorId": "40021520",
+                    "name": "Y. Kluger"
+                }
+            ],
+            "doi": "10.1186/s12874-018-0482-1",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "bb9903551f9dd7bfc00b85416222e38296b12b9c",
+            "title": "DeepSurv: personalized treatment recommender system using a Cox proportional hazards deep neural network",
+            "url": "https://www.semanticscholar.org/paper/bb9903551f9dd7bfc00b85416222e38296b12b9c",
+            "venue": "BMC Medical Research Methodology",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "73776482",
+                    "name": "N. Sidiropoulos"
+                },
+                {
+                    "authorId": "2075674",
+                    "name": "Sina Hadi Sohi"
+                },
+                {
+                    "authorId": "48297306",
+                    "name": "N. Rapin"
+                },
+                {
+                    "authorId": "2532542",
+                    "name": "F. O. Bagger"
+                }
+            ],
+            "doi": "10.1101/028191",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "1e6e733596afbb33e737f09ef5e65ee9c93302cb",
+            "title": "SinaPlot: an enhanced chart for simple and truthful representation of single observations over multiple classes",
+            "url": "https://www.semanticscholar.org/paper/1e6e733596afbb33e737f09ef5e65ee9c93302cb",
+            "venue": "bioRxiv",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "5833839",
+                    "name": "D. Friedman"
+                },
+                {
+                    "authorId": "2115384596",
+                    "name": "Lu Chen"
+                },
+                {
+                    "authorId": "4692378",
+                    "name": "S. Wolden"
+                },
+                {
+                    "authorId": "40154962",
+                    "name": "A. Buxton"
+                },
+                {
+                    "authorId": "5240845",
+                    "name": "K. McCarten"
+                },
+                {
+                    "authorId": "145281886",
+                    "name": "T. Fitzgerald"
+                },
+                {
+                    "authorId": "49501479",
+                    "name": "S. Kessel"
+                },
+                {
+                    "authorId": "8545330",
+                    "name": "P. D. de Alarcon"
+                },
+                {
+                    "authorId": "31915788",
+                    "name": "Allen R. Chen"
+                },
+                {
+                    "authorId": "8344338",
+                    "name": "N. Kobrinsky"
+                },
+                {
+                    "authorId": "11778098",
+                    "name": "P. Ehrlich"
+                },
+                {
+                    "authorId": "40347294",
+                    "name": "R. Hutchison"
+                },
+                {
+                    "authorId": "4652865",
+                    "name": "L. Constine"
+                },
+                {
+                    "authorId": "6719146",
+                    "name": "C. Schwartz"
+                }
+            ],
+            "doi": "10.1200/JCO.2013.52.5410",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "6a3b03bbf89ff25ece3d8b0a18bb464f288858a2",
+            "title": "Dose-intensive response-based chemotherapy and radiation therapy for children and adolescents with newly diagnosed intermediate-risk hodgkin lymphoma: a report from the Children's Oncology Group Study AHOD0031.",
+            "url": "https://www.semanticscholar.org/paper/6a3b03bbf89ff25ece3d8b0a18bb464f288858a2",
+            "venue": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+            "year": 2014
+        },
+        {
+            "arxivId": "1312.6114",
+            "authors": [
+                {
+                    "authorId": "1726807",
+                    "name": "Diederik P. Kingma"
+                },
+                {
+                    "authorId": "1678311",
+                    "name": "M. Welling"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "5f5dc5b9a2ba710937e2c413b37b053cd673df02",
+            "title": "Auto-Encoding Variational Bayes",
+            "url": "https://www.semanticscholar.org/paper/5f5dc5b9a2ba710937e2c413b37b053cd673df02",
+            "venue": "ICLR",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2108261054",
+                    "name": "Hung-Chia Chen"
+                },
+                {
+                    "authorId": "1859321",
+                    "name": "R. Kodell"
+                },
+                {
+                    "authorId": "34650842",
+                    "name": "K. Cheng"
+                },
+                {
+                    "authorId": "2108203172",
+                    "name": "James J. Chen"
+                }
+            ],
+            "doi": "10.1186/1471-2288-12-102",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7d05fd0a7f1fb25fbbd746b2671de98ecc4020d6",
+            "title": "Assessment of performance of survival prediction models for cancer prognosis",
+            "url": "https://www.semanticscholar.org/paper/7d05fd0a7f1fb25fbbd746b2671de98ecc4020d6",
+            "venue": "BMC Medical Research Methodology",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1998964",
+                    "name": "N. Speybroeck"
+                }
+            ],
+            "doi": "10.1007/s00038-011-0315-z",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "fbf9f8650c9521472f0297e7c82292235738449b",
+            "title": "Classification and regression trees",
+            "url": "https://www.semanticscholar.org/paper/fbf9f8650c9521472f0297e7c82292235738449b",
+            "venue": "International Journal of Public Health",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "40040135",
+                    "name": "Chun-Nam Yu"
+                },
+                {
+                    "authorId": "143686063",
+                    "name": "R. Greiner"
+                },
+                {
+                    "authorId": "38637273",
+                    "name": "Hsiu-Chin Lin"
+                },
+                {
+                    "authorId": "2216140",
+                    "name": "V. Baracos"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "b387e97f968880858a5624ff6ea8cb92155d120e",
+            "title": "Learning Patient-Specific Cancer Survival Distributions as a Sequence of Dependent Regressors",
+            "url": "https://www.semanticscholar.org/paper/b387e97f968880858a5624ff6ea8cb92155d120e",
+            "venue": "NIPS",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1405556308",
+                    "name": "Imad Bou-Hamad"
+                },
+                {
+                    "authorId": "2052098",
+                    "name": "Denis Larocque"
+                },
+                {
+                    "authorId": "1403757612",
+                    "name": "H. Ben-Ameur"
+                }
+            ],
+            "doi": "10.1214/09-SS047",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "b83578059c00952c1c75a008b6d1c5ff1b834dd9",
+            "title": "A review of survival trees",
+            "url": "https://www.semanticscholar.org/paper/b83578059c00952c1c75a008b6d1c5ff1b834dd9",
+            "venue": "",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2799698",
+                    "name": "N. Simon"
+                },
+                {
+                    "authorId": "3056361",
+                    "name": "J. Friedman"
+                },
+                {
+                    "authorId": "1784682",
+                    "name": "T. Hastie"
+                },
+                {
+                    "authorId": "1761784",
+                    "name": "R. Tibshirani"
+                }
+            ],
+            "doi": "10.18637/JSS.V039.I05",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "b9f6e9ac6c1f07a1875b07791ab08a9d37936f14",
+            "title": "Regularization Paths for Cox's Proportional Hazards Model via Coordinate Descent.",
+            "url": "https://www.semanticscholar.org/paper/b9f6e9ac6c1f07a1875b07791ab08a9d37936f14",
+            "venue": "Journal of statistical software",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2741460",
+                    "name": "H. Ishwaran"
+                },
+                {
+                    "authorId": "1991683",
+                    "name": "U. B. Kogalur"
+                },
+                {
+                    "authorId": "4661345",
+                    "name": "Eiran Z. Gorodeski"
+                },
+                {
+                    "authorId": "49458818",
+                    "name": "A. Minn"
+                },
+                {
+                    "authorId": "2371803",
+                    "name": "M. Lauer"
+                }
+            ],
+            "doi": "10.1198/jasa.2009.tm08622",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "70486662a68628ab534a2865a59d3ce5bced0fd0",
+            "title": "High-Dimensional Variable Selection for Survival Data",
+            "url": "https://www.semanticscholar.org/paper/70486662a68628ab534a2865a59d3ce5bced0fd0",
+            "venue": "",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3056361",
+                    "name": "J. Friedman"
+                },
+                {
+                    "authorId": "1784682",
+                    "name": "T. Hastie"
+                },
+                {
+                    "authorId": "1761784",
+                    "name": "R. Tibshirani"
+                }
+            ],
+            "doi": "10.18637/JSS.V033.I01",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "0a14824290453b95d051ec9cc299d0f61ad82b23",
+            "title": "Regularization Paths for Generalized Linear Models via Coordinate Descent.",
+            "url": "https://www.semanticscholar.org/paper/0a14824290453b95d051ec9cc299d0f61ad82b23",
+            "venue": "Journal of statistical software",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3060764",
+                    "name": "Michael P. Rogers"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "6b316f5df97bcf0effc887ace6bbdc133811d430",
+            "title": "Python: the tutorial",
+            "url": "https://www.semanticscholar.org/paper/6b316f5df97bcf0effc887ace6bbdc133811d430",
+            "venue": "",
+            "year": 2009
+        },
+        {
+            "arxivId": "0811.2844",
+            "authors": [
+                {
+                    "authorId": "2741460",
+                    "name": "H. Ishwaran"
+                },
+                {
+                    "authorId": "1991683",
+                    "name": "U. B. Kogalur"
+                }
+            ],
+            "doi": "10.1016/J.SPL.2010.02.020",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "4a1ff2620ef7f5f8fbf552066215a5ba57cb6058",
+            "title": "Consistency of Random Survival Forests.",
+            "url": "https://www.semanticscholar.org/paper/4a1ff2620ef7f5f8fbf552066215a5ba57cb6058",
+            "venue": "Statistics & probability letters",
+            "year": 2008
+        },
+        {
+            "arxivId": "0811.1645",
+            "authors": [
+                {
+                    "authorId": "2741460",
+                    "name": "H. Ishwaran"
+                },
+                {
+                    "authorId": "1991683",
+                    "name": "U. B. Kogalur"
+                },
+                {
+                    "authorId": "144218662",
+                    "name": "E. Blackstone"
+                },
+                {
+                    "authorId": "2371803",
+                    "name": "M. Lauer"
+                }
+            ],
+            "doi": "10.1214/08-AOAS169",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "3957eedd032ba9dee0b40ab90c861b55f91e89a4",
+            "title": "Random survival forests",
+            "url": "https://www.semanticscholar.org/paper/3957eedd032ba9dee0b40ab90c861b55f91e89a4",
+            "venue": "",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145769639",
+                    "name": "V. Raykar"
+                },
+                {
+                    "authorId": "2454529",
+                    "name": "H. Steck"
+                },
+                {
+                    "authorId": "1765150",
+                    "name": "Balaji Krishnapuram"
+                },
+                {
+                    "authorId": "1398288964",
+                    "name": "Cary Dehing-Oberije"
+                },
+                {
+                    "authorId": "1693233",
+                    "name": "P. Lambin"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8bf8fff0c0867a9a6235e3f1dfe713116f83e0ad",
+            "title": "On Ranking in Survival Analysis: Bounds on the Concordance Index",
+            "url": "https://www.semanticscholar.org/paper/8bf8fff0c0867a9a6235e3f1dfe713116f83e0ad",
+            "venue": "NIPS",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3147116",
+                    "name": "C. Strobl"
+                },
+                {
+                    "authorId": "1751504",
+                    "name": "A. Boulesteix"
+                },
+                {
+                    "authorId": "2144516",
+                    "name": "A. Zeileis"
+                },
+                {
+                    "authorId": "1970375",
+                    "name": "T. Hothorn"
+                }
+            ],
+            "doi": "10.1186/1471-2105-8-25",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "76e2ddca03e0d78e14764d4fbc92c714ee46be9a",
+            "title": "Bias in random forest variable importance measures: Illustrations, sources and a solution",
+            "url": "https://www.semanticscholar.org/paper/76e2ddca03e0d78e14764d4fbc92c714ee46be9a",
+            "venue": "BMC Bioinformatics",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1970375",
+                    "name": "T. Hothorn"
+                },
+                {
+                    "authorId": "1764952",
+                    "name": "K. Hornik"
+                },
+                {
+                    "authorId": "2144516",
+                    "name": "A. Zeileis"
+                }
+            ],
+            "doi": "10.1198/106186006X133933",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "072d09ba865b5c2cfac279696c555730f0cdbce4",
+            "title": "Unbiased Recursive Partitioning: A Conditional Inference Framework",
+            "url": "https://www.semanticscholar.org/paper/072d09ba865b5c2cfac279696c555730f0cdbce4",
+            "venue": "",
+            "year": 2006
+        },
+        {
+            "arxivId": "math/0606441",
+            "authors": [
+                {
+                    "authorId": "1781982",
+                    "name": "D. Hand"
+                }
+            ],
+            "doi": "10.1214/088342306000000060",
+            "intent": [
+                "background",
+                "result"
+            ],
+            "isInfluential": false,
+            "paperId": "d12fbc23cff452074a286b099cd475fdd3dcd91a",
+            "title": "Classifier Technology and the Illusion of Progress",
+            "url": "https://www.semanticscholar.org/paper/d12fbc23cff452074a286b099cd475fdd3dcd91a",
+            "venue": "",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2242096331",
+                    "name": "F E Harrell"
+                },
+                {
+                    "authorId": "67236902",
+                    "name": "Kerry L Lee"
+                },
+                {
+                    "authorId": "84132013",
+                    "name": "D. B. Mark"
+                }
+            ],
+            "doi": "10.1002/0470023678.CH2B(I)",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "a6d33daa0e093a50b1b58e3aa34191c4b5acda92",
+            "title": "Prognostic/Clinical Prediction Models: Multivariable Prognostic Models: Issues in Developing Models, Evaluating Assumptions and Adequacy, and Measuring and Reducing Errors",
+            "url": "https://www.semanticscholar.org/paper/a6d33daa0e093a50b1b58e3aa34191c4b5acda92",
+            "venue": "",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1970375",
+                    "name": "T. Hothorn"
+                },
+                {
+                    "authorId": "3034582",
+                    "name": "B. Lausen"
+                },
+                {
+                    "authorId": "2836909",
+                    "name": "A. Benner"
+                },
+                {
+                    "authorId": "1398599326",
+                    "name": "M. Radespiel-Tr\u00f6ger"
+                }
+            ],
+            "doi": "10.1002/SIM.1593",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "3be9646ca993c1444c473f4d140397b2556a3284",
+            "title": "Bagging survival trees",
+            "url": "https://www.semanticscholar.org/paper/3be9646ca993c1444c473f4d140397b2556a3284",
+            "venue": "Statistics in medicine",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "36167134",
+                    "name": "E. Graf"
+                },
+                {
+                    "authorId": "2818558",
+                    "name": "C. Schmoor"
+                },
+                {
+                    "authorId": "32511206",
+                    "name": "W. Sauerbrei"
+                },
+                {
+                    "authorId": "71926639",
+                    "name": "M. Schumacher"
+                }
+            ],
+            "doi": "10.1002/(SICI)1097-0258(19990915/30)18:17/18<2529::AID-SIM274>3.0.CO;2-5",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "7cafbf6ea89b077abbbd6a824e557b308c3e8292",
+            "title": "Assessment and comparison of prognostic classification schemes for survival data.",
+            "url": "https://www.semanticscholar.org/paper/7cafbf6ea89b077abbbd6a824e557b308c3e8292",
+            "venue": "Statistics in medicine",
+            "year": 1999
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2423230",
+                    "name": "L. Breiman"
+                }
+            ],
+            "doi": "10.1007/BF00058655",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d1ee87290fa827f1217b8fa2bccb3485da1a300e",
+            "title": "Bagging Predictors",
+            "url": "https://www.semanticscholar.org/paper/d1ee87290fa827f1217b8fa2bccb3485da1a300e",
+            "venue": "Machine Learning",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "49850030",
+                    "name": "M. LeBlanc"
+                },
+                {
+                    "authorId": "37961450",
+                    "name": "J. Crowley"
+                }
+            ],
+            "doi": "10.2307/2532300",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "76c968a00fd34df5a64071c0b27bb4e3331235b4",
+            "title": "Relative risk trees for censored survival data.",
+            "url": "https://www.semanticscholar.org/paper/76c968a00fd34df5a64071c0b27bb4e3331235b4",
+            "venue": "Biometrics",
+            "year": 1992
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "39848341",
+                    "name": "Romain Lopez"
+                },
+                {
+                    "authorId": "1441878314",
+                    "name": "Pierre Boyeau"
+                },
+                {
+                    "authorId": "2163873",
+                    "name": "N. Yosef"
+                },
+                {
+                    "authorId": "1694621",
+                    "name": "Michael I. Jordan"
+                },
+                {
+                    "authorId": "39967607",
+                    "name": "J. Regier"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "ef4f5a50837a7c1b3e87b9300ffc7ba00d461a0f",
+            "title": "AUTO-ENCODING VARIATIONAL BAYES",
+            "url": "https://www.semanticscholar.org/paper/ef4f5a50837a7c1b3e87b9300ffc7ba00d461a0f",
+            "venue": "",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1726807",
+                    "name": "Diederik P. Kingma"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "6a8366fb07e43d098d00b3ae8d1bf882b85135b0",
+            "title": "Variational inference & deep learning: A new synthesis",
+            "url": "https://www.semanticscholar.org/paper/6a8366fb07e43d098d00b3ae8d1bf882b85135b0",
+            "venue": "",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1688882",
+                    "name": "Yann LeCun"
+                },
+                {
+                    "authorId": "1751762",
+                    "name": "Yoshua Bengio"
+                },
+                {
+                    "authorId": "1695689",
+                    "name": "Geoffrey E. Hinton"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "2913c2bf3f92b5ae369400a42b2d27cc5bc05ecb",
+            "title": "Deep Learning",
+            "url": "https://www.semanticscholar.org/paper/2913c2bf3f92b5ae369400a42b2d27cc5bc05ecb",
+            "venue": "",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "68986511",
+                    "name": "R. Team"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "659408b243cec55de8d0a3bc51b81173007aa89b",
+            "title": "R: A language and environment for statistical computing.",
+            "url": "https://www.semanticscholar.org/paper/659408b243cec55de8d0a3bc51b81173007aa89b",
+            "venue": "",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1970375",
+                    "name": "T. Hothorn"
+                },
+                {
+                    "authorId": "1764952",
+                    "name": "K. Hornik"
+                },
+                {
+                    "authorId": "41188842",
+                    "name": "Wirtschaftsuniversit\u00e4t Wien"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "0d44a58c901f0ed18612cd0e0269177bf44720e4",
+            "title": "party : A Laboratory for Recursive Partytioning",
+            "url": "https://www.semanticscholar.org/paper/0d44a58c901f0ed18612cd0e0269177bf44720e4",
+            "venue": "",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "ea2c877a1d96f7f53b0661aa6dcc353d7b042dbf",
+            "title": "ipred : Improved Predictors",
+            "url": "https://www.semanticscholar.org/paper/ea2c877a1d96f7f53b0661aa6dcc353d7b042dbf",
+            "venue": "",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1970375",
+                    "name": "T. Hothorn"
+                },
+                {
+                    "authorId": "145825806",
+                    "name": "P. B\u00fchlmann"
+                },
+                {
+                    "authorId": "2225350",
+                    "name": "S. Dudoit"
+                },
+                {
+                    "authorId": "37349593",
+                    "name": "A. Molinaro"
+                },
+                {
+                    "authorId": "3033525",
+                    "name": "M. J. van der Laan"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "4b10d37fddbbab46ea21a64856e42747653cc5de",
+            "title": "Survival ensembles.",
+            "url": "https://www.semanticscholar.org/paper/4b10d37fddbbab46ea21a64856e42747653cc5de",
+            "venue": "Biostatistics",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2423230",
+                    "name": "L. Breiman"
+                }
+            ],
+            "doi": "10.1023/A:1010933404324",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8e0be569ea77b8cb29bb0e8b031887630fe7a96c",
+            "title": "Random Forests",
+            "url": "https://www.semanticscholar.org/paper/8e0be569ea77b8cb29bb0e8b031887630fe7a96c",
+            "venue": "Machine Learning",
+            "year": 2001
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1784682",
+                    "name": "T. Hastie"
+                },
+                {
+                    "authorId": "1761784",
+                    "name": "R. Tibshirani"
+                },
+                {
+                    "authorId": "3056361",
+                    "name": "J. Friedman"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "31781483a98cc06a227f686b86b96b9fd78a6590",
+            "title": "The elements of statistical learning. 2001",
+            "url": "https://www.semanticscholar.org/paper/31781483a98cc06a227f686b86b96b9fd78a6590",
+            "venue": "",
+            "year": 2001
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1784682",
+                    "name": "T. Hastie"
+                },
+                {
+                    "authorId": "3056361",
+                    "name": "J. Friedman"
+                },
+                {
+                    "authorId": "1761784",
+                    "name": "R. Tibshirani"
+                }
+            ],
+            "doi": "10.1007/978-0-387-84858-7",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "4cd4ccd9225f0a3c79cd4c72bd171039e28f2ab6",
+            "title": "The Elements of Statistical Learning: Data Mining, Inference, and Prediction",
+            "url": "https://www.semanticscholar.org/paper/4cd4ccd9225f0a3c79cd4c72bd171039e28f2ab6",
+            "venue": "Springer Series in Statistics",
+            "year": 2001
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2244916844",
+                    "name": "Michael LeBlanc"
+                },
+                {
+                    "authorId": "2244917195",
+                    "name": "John Crowley"
+                }
+            ],
+            "doi": "10.1007/978-1-4615-2009-2_6",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "92460ccc9ede9a48b05721d5721913db91aa3ad5",
+            "title": "A review of tree-based prognostic models.",
+            "url": "https://www.semanticscholar.org/paper/92460ccc9ede9a48b05721d5721913db91aa3ad5",
+            "venue": "Cancer treatment and research",
+            "year": 1995
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": null,
+                    "name": "D."
+                },
+                {
+                    "authorId": null,
+                    "name": "R."
+                },
+                {
+                    "authorId": "2070948120",
+                    "name": "Cox"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "efe973075ac6c86965fdc937e44d5bbac34d00c9",
+            "title": "Regression Models and Life-Tables",
+            "url": "https://www.semanticscholar.org/paper/efe973075ac6c86965fdc937e44d5bbac34d00c9",
+            "venue": "",
+            "year": null
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Medicine",
+            "source": "external"
+        },
+        {
+            "category": "Biology",
+            "source": "external"
+        },
+        {
+            "category": "Mathematics",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Medicine",
+            "source": "s2-fos-model"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "An evaluation of machine learning techniques to predict the outcome of children treated for Hodgkin-Lymphoma on the AHOD0031 trial",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/3a5af407c82f247f529ed86d91f255b5f78460c8",
+    "venue": "Applied Artificial Intelligence",
+    "year": 2020
+}

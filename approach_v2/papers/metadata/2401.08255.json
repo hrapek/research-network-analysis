@@ -1,0 +1,651 @@
+{
+    "abstract": "Current adversarial attack algorithms, where an adversary changes a text to fool a victim model, have been repeatedly shown to be effective against text classifiers. These attacks, however, generally assume that the victim model is monolingual and cannot be used to target multilingual victim models, a significant limitation given the increased use of these models. For this reason, in this work we propose an approach to fine-tune a multilingual paraphrase model with an adversarial objective so that it becomes able to generate effective adversarial examples against multilingual classifiers. The training objective incorporates a set of pre-trained models to ensure text quality and language consistency of the generated text. In addition, all the models are suitably connected to the generator by vocabulary-mapping matrices, allowing for full end-to-end differentiability of the overall training pipeline. The experimental validation over two multilingual datasets and five languages has shown the effectiveness of the proposed approach compared to existing baselines, particularly in terms of query efficiency. We also provide a detailed analysis of the generated attacks and discuss limitations and opportunities for future research.",
+    "arxivId": "2401.08255",
+    "authors": [
+        {
+            "authorId": "153664720",
+            "name": "Tom Roth",
+            "url": "https://www.semanticscholar.org/author/153664720"
+        },
+        {
+            "authorId": "19229462",
+            "name": "Inigo Jauregi Unanue",
+            "url": "https://www.semanticscholar.org/author/19229462"
+        },
+        {
+            "authorId": "1990239",
+            "name": "A. Abuadbba",
+            "url": "https://www.semanticscholar.org/author/1990239"
+        },
+        {
+            "authorId": "2279751368",
+            "name": "Massimo Piccardi",
+            "url": "https://www.semanticscholar.org/author/2279751368"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [],
+    "corpusId": 267028125,
+    "doi": "10.48550/arXiv.2401.08255",
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 0,
+    "numCiting": 26,
+    "paperId": "bf1dcbeecd9a250060f9819fb52bf61e6de91ca0",
+    "references": [
+        {
+            "arxivId": "2307.05782",
+            "authors": [
+                {
+                    "authorId": "2845995",
+                    "name": "Michael R Douglas"
+                }
+            ],
+            "doi": "10.1145/3606337",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d62c4d00b277e948956b6610ce2644e88fe1577b",
+            "title": "Large Language Models",
+            "url": "https://www.semanticscholar.org/paper/d62c4d00b277e948956b6610ce2644e88fe1577b",
+            "venue": "Commun. ACM",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "67076916",
+                    "name": "Guoqin Chang"
+                },
+                {
+                    "authorId": "1863170",
+                    "name": "Haichang Gao"
+                },
+                {
+                    "authorId": "2113322959",
+                    "name": "Zhou Yao"
+                },
+                {
+                    "authorId": "2204281961",
+                    "name": "Haoquan Xiong"
+                }
+            ],
+            "doi": "10.1016/j.neucom.2023.01.071",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c54baca4c262c2336568e65c05ca7c12f8035607",
+            "title": "TextGuise: Adaptive adversarial example attacks on text classification model",
+            "url": "https://www.semanticscholar.org/paper/c54baca4c262c2336568e65c05ca7c12f8035607",
+            "venue": "Neurocomputing",
+            "year": 2023
+        },
+        {
+            "arxivId": "2111.00350",
+            "authors": [
+                {
+                    "authorId": "2109605485",
+                    "name": "Sourya Dipta Das"
+                },
+                {
+                    "authorId": "145489472",
+                    "name": "Ayan Basak"
+                },
+                {
+                    "authorId": "9173984",
+                    "name": "Soumil Mandal"
+                },
+                {
+                    "authorId": "2352983",
+                    "name": "Dipankar Das"
+                }
+            ],
+            "doi": "10.1145/3493700.3493705",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "aa02403b713ff4dbd6636027ea0c693514e210fe",
+            "title": "AdvCodeMix: Adversarial Attack on Code-Mixed Data",
+            "url": "https://www.semanticscholar.org/paper/aa02403b713ff4dbd6636027ea0c693514e210fe",
+            "venue": "COMAD/CODS",
+            "year": 2021
+        },
+        {
+            "arxivId": "2110.15317",
+            "authors": [
+                {
+                    "authorId": "2152195191",
+                    "name": "Lifan Yuan"
+                },
+                {
+                    "authorId": "2155383827",
+                    "name": "Yichi Zhang"
+                },
+                {
+                    "authorId": "123331686",
+                    "name": "Yangyi Chen"
+                },
+                {
+                    "authorId": "2149192010",
+                    "name": "Wei Wei"
+                }
+            ],
+            "doi": "10.18653/v1/2023.findings-acl.446",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d7a8d2d2e73f786caf03c86137428055399e5267",
+            "title": "Bridge the Gap Between CV and NLP! A Gradient-based Textual Adversarial Attack Framework",
+            "url": "https://www.semanticscholar.org/paper/d7a8d2d2e73f786caf03c86137428055399e5267",
+            "venue": "ACL",
+            "year": 2021
+        },
+        {
+            "arxivId": "2104.07646",
+            "authors": [
+                {
+                    "authorId": "144063596",
+                    "name": "Sara Rosenthal"
+                },
+                {
+                    "authorId": "3229805",
+                    "name": "Mihaela A. Bornea"
+                },
+                {
+                    "authorId": "2707234",
+                    "name": "Avirup Sil"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "6abee068bda00e2da31c866627879674c484d012",
+            "title": "Are Multilingual BERT models robust? A Case Study on Adversarial Attacks for Multilingual Question Answering",
+            "url": "https://www.semanticscholar.org/paper/6abee068bda00e2da31c866627879674c484d012",
+            "venue": "ArXiv",
+            "year": 2021
+        },
+        {
+            "arxivId": "2010.02573",
+            "authors": [
+                {
+                    "authorId": "9921376",
+                    "name": "Phillip Keung"
+                },
+                {
+                    "authorId": "2505474",
+                    "name": "Y. Lu"
+                },
+                {
+                    "authorId": "3081065",
+                    "name": "Gy\u00f6rgy Szarvas"
+                },
+                {
+                    "authorId": "144365875",
+                    "name": "Noah A. Smith"
+                }
+            ],
+            "doi": "10.18653/v1/2020.emnlp-main.369",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "df057d8d4346e938ea6e377065a47ee03e9e67be",
+            "title": "The Multilingual Amazon Reviews Corpus",
+            "url": "https://www.semanticscholar.org/paper/df057d8d4346e938ea6e377065a47ee03e9e67be",
+            "venue": "EMNLP",
+            "year": 2020
+        },
+        {
+            "arxivId": "2009.06368",
+            "authors": [
+                {
+                    "authorId": "1693182792",
+                    "name": "Jin Yong Yoo"
+                },
+                {
+                    "authorId": "153769695",
+                    "name": "John X. Morris"
+                },
+                {
+                    "authorId": "1453652787",
+                    "name": "Eli Lifland"
+                },
+                {
+                    "authorId": "121817403",
+                    "name": "Yanjun Qi"
+                }
+            ],
+            "doi": "10.18653/v1/2020.blackboxnlp-1.30",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "adc9533f3d4c3b41b21c10a948a6118018df2a5a",
+            "title": "Searching for a Search Method: Benchmarking Search Algorithms for Generating NLP Adversarial Examples",
+            "url": "https://www.semanticscholar.org/paper/adc9533f3d4c3b41b21c10a948a6118018df2a5a",
+            "venue": "BLACKBOXNLP",
+            "year": 2020
+        },
+        {
+            "arxivId": "2005.00174",
+            "authors": [
+                {
+                    "authorId": "144173853",
+                    "name": "Liwei Song"
+                },
+                {
+                    "authorId": "2047123310",
+                    "name": "Xinwei Yu"
+                },
+                {
+                    "authorId": "35428986",
+                    "name": "Hsuan-Tung Peng"
+                },
+                {
+                    "authorId": "144958935",
+                    "name": "Karthik Narasimhan"
+                }
+            ],
+            "doi": "10.18653/V1/2021.NAACL-MAIN.291",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "64041a45b2db0cbd9d234028195779697158e44b",
+            "title": "Universal Adversarial Attacks with Natural Triggers for Text Classification",
+            "url": "https://www.semanticscholar.org/paper/64041a45b2db0cbd9d234028195779697158e44b",
+            "venue": "NAACL",
+            "year": 2020
+        },
+        {
+            "arxivId": "2004.09984",
+            "authors": [
+                {
+                    "authorId": "2107897400",
+                    "name": "Linyang Li"
+                },
+                {
+                    "authorId": "151482614",
+                    "name": "Ruotian Ma"
+                },
+                {
+                    "authorId": "3187768",
+                    "name": "Qipeng Guo"
+                },
+                {
+                    "authorId": "145905953",
+                    "name": "X. Xue"
+                },
+                {
+                    "authorId": "1767521",
+                    "name": "Xipeng Qiu"
+                }
+            ],
+            "doi": "10.18653/v1/2020.emnlp-main.500",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f5bf1d83a4d3e55e75dcc28a7bda4e99cce85836",
+            "title": "BERT-ATTACK: Adversarial Attack against BERT Using BERT",
+            "url": "https://www.semanticscholar.org/paper/f5bf1d83a4d3e55e75dcc28a7bda4e99cce85836",
+            "venue": "EMNLP",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3080637",
+                    "name": "Yves Scherrer"
+                }
+            ],
+            "doi": "10.5281/ZENODO.3707949",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "ed7ef54578e0335b2e308d0d1d44a64e4fef9697",
+            "title": "TaPaCo: A Corpus of Sentential Paraphrases for 73 Languages",
+            "url": "https://www.semanticscholar.org/paper/ed7ef54578e0335b2e308d0d1d44a64e4fef9697",
+            "venue": "LREC",
+            "year": 2020
+        },
+        {
+            "arxivId": "2003.00104",
+            "authors": [
+                {
+                    "authorId": "51040671",
+                    "name": "Wissam Antoun"
+                },
+                {
+                    "authorId": "1412947005",
+                    "name": "Fady Baly"
+                },
+                {
+                    "authorId": "145336745",
+                    "name": "Hazem M. Hajj"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "1359d2ef45f1550941e22bf046026c89f6edf315",
+            "title": "AraBERT: Transformer-based Model for Arabic Language Understanding",
+            "url": "https://www.semanticscholar.org/paper/1359d2ef45f1550941e22bf046026c89f6edf315",
+            "venue": "OSACT",
+            "year": 2020
+        },
+        {
+            "arxivId": "1910.01108",
+            "authors": [
+                {
+                    "authorId": "51918868",
+                    "name": "Victor Sanh"
+                },
+                {
+                    "authorId": "1380459402",
+                    "name": "Lysandre Debut"
+                },
+                {
+                    "authorId": "40811585",
+                    "name": "Julien Chaumond"
+                },
+                {
+                    "authorId": "50335211",
+                    "name": "Thomas Wolf"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "a54b56af24bb4873ed0163b77df63b92bd018ddc",
+            "title": "DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter",
+            "url": "https://www.semanticscholar.org/paper/a54b56af24bb4873ed0163b77df63b92bd018ddc",
+            "venue": "ArXiv",
+            "year": 2019
+        },
+        {
+            "arxivId": "1907.11932",
+            "authors": [
+                {
+                    "authorId": "2068347799",
+                    "name": "Di Jin"
+                },
+                {
+                    "authorId": "8752221",
+                    "name": "Zhijing Jin"
+                },
+                {
+                    "authorId": "10638646",
+                    "name": "Joey Tianyi Zhou"
+                },
+                {
+                    "authorId": "1679873",
+                    "name": "Peter Szolovits"
+                }
+            ],
+            "doi": "10.1609/AAAI.V34I05.6311",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ae04f3d011511ad8ed7ffdf9fcfb7f11e6899ca2",
+            "title": "Is BERT Really Robust? A Strong Baseline for Natural Language Attack on Text Classification and Entailment",
+            "url": "https://www.semanticscholar.org/paper/ae04f3d011511ad8ed7ffdf9fcfb7f11e6899ca2",
+            "venue": "AAAI",
+            "year": 2019
+        },
+        {
+            "arxivId": "1907.04307",
+            "authors": [
+                {
+                    "authorId": "2781059",
+                    "name": "Yinfei Yang"
+                },
+                {
+                    "authorId": "46724030",
+                    "name": "Daniel Matthew Cer"
+                },
+                {
+                    "authorId": "101721481",
+                    "name": "Amin Ahmad"
+                },
+                {
+                    "authorId": "51150315",
+                    "name": "Mandy Guo"
+                },
+                {
+                    "authorId": "150151081",
+                    "name": "Jax Law"
+                },
+                {
+                    "authorId": "40832517",
+                    "name": "Noah Constant"
+                },
+                {
+                    "authorId": "2056957",
+                    "name": "Gustavo Hern\u00e1ndez \u00c1brego"
+                },
+                {
+                    "authorId": "40827370",
+                    "name": "Steve Yuan"
+                },
+                {
+                    "authorId": "7887562",
+                    "name": "Chris Tar"
+                },
+                {
+                    "authorId": "2305450",
+                    "name": "Yun-Hsuan Sung"
+                },
+                {
+                    "authorId": "2704071",
+                    "name": "B. Strope"
+                },
+                {
+                    "authorId": "2186634",
+                    "name": "R. Kurzweil"
+                }
+            ],
+            "doi": "10.18653/v1/2020.acl-demos.12",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "43ddb69219ce12b0ed213dcae7a16dda40b2c2e6",
+            "title": "Multilingual Universal Sentence Encoder for Semantic Retrieval",
+            "url": "https://www.semanticscholar.org/paper/43ddb69219ce12b0ed213dcae7a16dda40b2c2e6",
+            "venue": "ACL",
+            "year": 2019
+        },
+        {
+            "arxivId": "1904.09675",
+            "authors": [
+                {
+                    "authorId": "123437034",
+                    "name": "Tianyi Zhang"
+                },
+                {
+                    "authorId": "145461044",
+                    "name": "Varsha Kishore"
+                },
+                {
+                    "authorId": "24277779",
+                    "name": "Felix Wu"
+                },
+                {
+                    "authorId": "7446832",
+                    "name": "Kilian Q. Weinberger"
+                },
+                {
+                    "authorId": "3167681",
+                    "name": "Yoav Artzi"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "295065d942abca0711300b2b4c39829551060578",
+            "title": "BERTScore: Evaluating Text Generation with BERT",
+            "url": "https://www.semanticscholar.org/paper/295065d942abca0711300b2b4c39829551060578",
+            "venue": "ICLR",
+            "year": 2019
+        },
+        {
+            "arxivId": "1808.06226",
+            "authors": [
+                {
+                    "authorId": "1765329",
+                    "name": "Taku Kudo"
+                },
+                {
+                    "authorId": "2113584859",
+                    "name": "John Richardson"
+                }
+            ],
+            "doi": "10.18653/v1/D18-2012",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "b5246fa284f86b544a7c31f050b3bd0defd053fd",
+            "title": "SentencePiece: A simple and language independent subword tokenizer and detokenizer for Neural Text Processing",
+            "url": "https://www.semanticscholar.org/paper/b5246fa284f86b544a7c31f050b3bd0defd053fd",
+            "venue": "EMNLP",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3358971",
+                    "name": "Ashwin K. Vijayakumar"
+                },
+                {
+                    "authorId": "144354133",
+                    "name": "Michael Cogswell"
+                },
+                {
+                    "authorId": "35100058",
+                    "name": "Ramprasaath R. Selvaraju"
+                },
+                {
+                    "authorId": "144207643",
+                    "name": "Q. Sun"
+                },
+                {
+                    "authorId": "2297229",
+                    "name": "Stefan Lee"
+                },
+                {
+                    "authorId": "2821130",
+                    "name": "David J. Crandall"
+                },
+                {
+                    "authorId": "1746610",
+                    "name": "Dhruv Batra"
+                }
+            ],
+            "doi": "10.1609/aaai.v32i1.12340",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "1b1e3f7218f1c0f0db56bf2bd9475521454693a1",
+            "title": "Diverse Beam Search for Improved Description of Complex Scenes",
+            "url": "https://www.semanticscholar.org/paper/1b1e3f7218f1c0f0db56bf2bd9475521454693a1",
+            "venue": "AAAI",
+            "year": 2018
+        },
+        {
+            "arxivId": "1610.02424",
+            "authors": [
+                {
+                    "authorId": "3358971",
+                    "name": "Ashwin K. Vijayakumar"
+                },
+                {
+                    "authorId": "144354133",
+                    "name": "Michael Cogswell"
+                },
+                {
+                    "authorId": "35100058",
+                    "name": "Ramprasaath R. Selvaraju"
+                },
+                {
+                    "authorId": "144207643",
+                    "name": "Q. Sun"
+                },
+                {
+                    "authorId": "2297229",
+                    "name": "Stefan Lee"
+                },
+                {
+                    "authorId": "2821130",
+                    "name": "David J. Crandall"
+                },
+                {
+                    "authorId": "1746610",
+                    "name": "Dhruv Batra"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "e4dd95c4341ec7d14317a3d97022773a0822906c",
+            "title": "Diverse Beam Search: Decoding Diverse Solutions from Neural Sequence Models",
+            "url": "https://www.semanticscholar.org/paper/e4dd95c4341ec7d14317a3d97022773a0822906c",
+            "venue": "ArXiv",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "2dfaad5af053c35b5014bd58d1732434bafe821d",
+            "title": "Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, NAACL-HLT 2021, Online, June 6-11, 2021",
+            "url": "https://www.semanticscholar.org/paper/2dfaad5af053c35b5014bd58d1732434bafe821d",
+            "venue": "NAACL-HLT",
+            "year": 2021
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "A Generative Adversarial Attack for Multilingual Text Classifiers",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/bf1dcbeecd9a250060f9819fb52bf61e6de91ca0",
+    "venue": "arXiv.org",
+    "year": 2024
+}

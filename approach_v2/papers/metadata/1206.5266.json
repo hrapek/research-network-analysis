@@ -1,0 +1,569 @@
+{
+    "abstract": "Compiling graphical models has recently been under intense investigation, especially for probabilistic modeling and processing. We present here a novel data structure for compiling weighted graphical models (in particular, probabilistic models), called AND/OR Multi-Valued Decision Diagram (AOMDD). This is a generalization of our previous work on constraint networks, to weighted models. The AOMDD is based on the frameworks of AND/OR search spaces for graphical models, and Ordered Binary Decision Diagrams (OBDD). The AOMDD is a canonical representation of a graphical model, and its size and compilation time are bounded exponentially by the treewidth of the graph, rather than pathwidth as is known for OBDDs. We discuss a Variable Elimination schedule for compilation, and present the general APPLY algorithm that combines two weighted AOMDDs, and also present a search based method for compilation method. The preliminary experimental evaluation is quite encouraging, showing the potential of the AOMDD data structure.",
+    "arxivId": "1206.5266",
+    "authors": [
+        {
+            "authorId": "8364950",
+            "name": "R. Mateescu",
+            "url": "https://www.semanticscholar.org/author/8364950"
+        },
+        {
+            "authorId": "1751239",
+            "name": "R. Dechter",
+            "url": "https://www.semanticscholar.org/author/1751239"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "47338019",
+                    "name": "Nicolas Schmidt"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "a564f096f0dd5d53721dbd56a9f2ded059bd731c",
+            "title": "Compilation de pr\u00e9f\u00e9rences : application \u00e0 la configuration de produit",
+            "url": "https://www.semanticscholar.org/paper/a564f096f0dd5d53721dbd56a9f2ded059bd731c",
+            "venue": "",
+            "year": 2015
+        },
+        {
+            "arxivId": "1401.3458",
+            "authors": [
+                {
+                    "authorId": "1736882",
+                    "name": "F. Bacchus"
+                },
+                {
+                    "authorId": "2990992",
+                    "name": "Shannon Dalmao"
+                },
+                {
+                    "authorId": "1695317",
+                    "name": "T. Pitassi"
+                }
+            ],
+            "doi": "10.1613/jair.2648",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "5addaf0670b7434a6a38fd05d3545662d43d1ebf",
+            "title": "Solving #SAT and Bayesian Inference with Backtracking Search",
+            "url": "https://www.semanticscholar.org/paper/5addaf0670b7434a6a38fd05d3545662d43d1ebf",
+            "venue": "J. Artif. Intell. Res.",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1784290",
+                    "name": "Masakazu Ishihata"
+                },
+                {
+                    "authorId": "1764638",
+                    "name": "Yoshitaka Kameya"
+                },
+                {
+                    "authorId": "2110904481",
+                    "name": "Taisuke Sato"
+                },
+                {
+                    "authorId": "1755680",
+                    "name": "S. Minato"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "73dc5820779b09b6fb6e4712799505c117c7e96b",
+            "title": "An EM Algorithm on BDDs with Order Encoding for Logic-based Probabilistic Models",
+            "url": "https://www.semanticscholar.org/paper/73dc5820779b09b6fb6e4712799505c117c7e96b",
+            "venue": "ACML",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "8364950",
+                    "name": "R. Mateescu"
+                },
+                {
+                    "authorId": "1751239",
+                    "name": "R. Dechter"
+                }
+            ],
+            "doi": "10.1007/s10472-009-9132-y",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c43f4908d2d346fb855057badaeca9d37b52851e",
+            "title": "Mixed deterministic and probabilistic networks",
+            "url": "https://www.semanticscholar.org/paper/c43f4908d2d346fb855057badaeca9d37b52851e",
+            "venue": "Annals of Mathematics and Artificial Intelligence",
+            "year": 2008
+        },
+        {
+            "arxivId": "1401.3448",
+            "authors": [
+                {
+                    "authorId": "8364950",
+                    "name": "R. Mateescu"
+                },
+                {
+                    "authorId": "1751239",
+                    "name": "R. Dechter"
+                },
+                {
+                    "authorId": "2808565",
+                    "name": "Radu Marinescu"
+                }
+            ],
+            "doi": "10.1613/jair.2605",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "34f34712cf49be068230e73cee16e8c010663e5d",
+            "title": "AND/OR Multi-Valued Decision Diagrams (AOMDDs) for Graphical Models",
+            "url": "https://www.semanticscholar.org/paper/34f34712cf49be068230e73cee16e8c010663e5d",
+            "venue": "J. Artif. Intell. Res.",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "8364950",
+                    "name": "R. Mateescu"
+                },
+                {
+                    "authorId": "1751239",
+                    "name": "R. Dechter"
+                }
+            ],
+            "doi": "10.1007/978-3-540-68679-8_15",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "19ffaa57253398cedb51c0914345a14408a1bc61",
+            "title": "AND/OR Multi-valued Decision Diagrams for Constraint Networks",
+            "url": "https://www.semanticscholar.org/paper/19ffaa57253398cedb51c0914345a14408a1bc61",
+            "venue": "Concurrency, Graphs and Models",
+            "year": 2008
+        }
+    ],
+    "corpusId": 2508366,
+    "doi": null,
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 6,
+    "numCiting": 18,
+    "paperId": "b9b64f0959ec51b11cc2c2a559be8e8e534f9832",
+    "references": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1714627",
+                    "name": "D. Peled"
+                },
+                {
+                    "authorId": "2909166",
+                    "name": "Patrizio Pelliccione"
+                },
+                {
+                    "authorId": "2286255787",
+                    "name": "Paola Spoletini"
+                }
+            ],
+            "doi": "10.1201/b13055-18",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "48d7f065caf54d3eee1702d514d22f99929aee3c",
+            "title": "Model Checking",
+            "url": "https://www.semanticscholar.org/paper/48d7f065caf54d3eee1702d514d22f99929aee3c",
+            "venue": "Handbook of Finite State Based Models and Applications",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1755680",
+                    "name": "S. Minato"
+                },
+                {
+                    "authorId": "11104559",
+                    "name": "K. Satoh"
+                },
+                {
+                    "authorId": "2110904481",
+                    "name": "Taisuke Sato"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "5723d6b70d2a46d4fc5cabea025ec78484e9dddb",
+            "title": "Compiling Bayesian Networks by Symbolic Probability Calculation Based on Zero-Suppressed BDDs",
+            "url": "https://www.semanticscholar.org/paper/5723d6b70d2a46d4fc5cabea025ec78484e9dddb",
+            "venue": "IJCAI",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145021957",
+                    "name": "M. Chavira"
+                },
+                {
+                    "authorId": "1700031",
+                    "name": "Adnan Darwiche"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "03f3197f5f2c0415f972111173ed452a39d436d2",
+            "title": "Compiling Bayesian Networks Using Variable Elimination",
+            "url": "https://www.semanticscholar.org/paper/03f3197f5f2c0415f972111173ed452a39d436d2",
+            "venue": "IJCAI",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "8364950",
+                    "name": "R. Mateescu"
+                },
+                {
+                    "authorId": "1751239",
+                    "name": "R. Dechter"
+                }
+            ],
+            "doi": "10.1007/11889205_25",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "7d7a74549613b3bd02c285f3058293867ec15d15",
+            "title": "Compiling Constraint Networks into AND/OR Multi-valued Decision Diagrams (AOMDDs)",
+            "url": "https://www.semanticscholar.org/paper/7d7a74549613b3bd02c285f3058293867ec15d15",
+            "venue": "CP",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "30129039",
+                    "name": "Nic Wilson"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0828624b1af77e51bc99e786c88e983bb4d8dc23",
+            "title": "Decision Diagrams for the Computation of Semiring Valuations",
+            "url": "https://www.semanticscholar.org/paper/0828624b1af77e51bc99e786c88e983bb4d8dc23",
+            "venue": "IJCAI",
+            "year": 2005
+        },
+        {
+            "arxivId": "1207.4135",
+            "authors": [
+                {
+                    "authorId": "145689002",
+                    "name": "David A. McAllester"
+                },
+                {
+                    "authorId": "143707112",
+                    "name": "M. Collins"
+                },
+                {
+                    "authorId": "145366908",
+                    "name": "Fernando C Pereira"
+                }
+            ],
+            "doi": "10.1016/j.jcss.2007.04.015",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "94f5431413f2ad94a42d5fd5fd4ab30134f044d3",
+            "title": "Case-factor diagrams for structured probabilistic modeling",
+            "url": "https://www.semanticscholar.org/paper/94f5431413f2ad94a42d5fd5fd4ab30134f044d3",
+            "venue": "J. Comput. Syst. Sci.",
+            "year": 2004
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1760182",
+                    "name": "H. Fargier"
+                },
+                {
+                    "authorId": "37261430",
+                    "name": "M. Vilarem"
+                }
+            ],
+            "doi": "10.1023/B:CONS.0000049204.75635.7e",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "b198ec288168e09ab59e76da25238dcbecc4e7c0",
+            "title": "Compiling CSPs into Tree-Driven Automata for Interactive Solving",
+            "url": "https://www.semanticscholar.org/paper/b198ec288168e09ab59e76da25238dcbecc4e7c0",
+            "venue": "Constraints",
+            "year": 2003
+        },
+        {
+            "arxivId": "1106.1819",
+            "authors": [
+                {
+                    "authorId": "1700031",
+                    "name": "Adnan Darwiche"
+                },
+                {
+                    "authorId": "1694497",
+                    "name": "P. Marquis"
+                }
+            ],
+            "doi": "10.1613/jair.989",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "33a191d483bea906796c5b82582cfa3324bd5c1e",
+            "title": "A Knowledge Compilation Map",
+            "url": "https://www.semanticscholar.org/paper/33a191d483bea906796c5b82582cfa3324bd5c1e",
+            "venue": "J. Artif. Intell. Res.",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1700031",
+                    "name": "Adnan Darwiche"
+                }
+            ],
+            "doi": "10.1016/S0004-3702(00)00069-2",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "e4a9da1f8f48b3cd8c7b7648c897df1b2766ffe7",
+            "title": "Recursive conditioning",
+            "url": "https://www.semanticscholar.org/paper/e4a9da1f8f48b3cd8c7b7648c897df1b2766ffe7",
+            "venue": "Artif. Intell.",
+            "year": 2001
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1751239",
+                    "name": "R. Dechter"
+                }
+            ],
+            "doi": "10.1016/S0004-3702(99)00059-4",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "5106d33884448e2b8047b80b9dd9034197cd073d",
+            "title": "Bucket Elimination: A Unifying Framework for Reasoning",
+            "url": "https://www.semanticscholar.org/paper/5106d33884448e2b8047b80b9dd9034197cd073d",
+            "venue": "Artif. Intell.",
+            "year": 1999
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1692160",
+                    "name": "R. Bayardo"
+                },
+                {
+                    "authorId": "1710994",
+                    "name": "Daniel P. Miranker"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "465a5674e788cd09ad5cc20d7ce42b30fe2190de",
+            "title": "A Complexity Analysis of Space-Bounded Learning Algorithms for the Constraint Satisfaction Problem",
+            "url": "https://www.semanticscholar.org/paper/465a5674e788cd09ad5cc20d7ce42b30fe2190de",
+            "venue": "AAAI/IAAI, Vol. 1",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2267768400",
+                    "name": "Prakash P. Shenoy"
+                }
+            ],
+            "doi": "10.1287/opre.40.3.463",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b396da26c275f97dd0dd068ac53cc1f454c91bce",
+            "title": "Valuation-Based Systems for Bayesian Decision Analysis",
+            "url": "https://www.semanticscholar.org/paper/b396da26c275f97dd0dd068ac53cc1f454c91bce",
+            "venue": "Oper. Res.",
+            "year": 1992
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2606753",
+                    "name": "Eugene C. Freuder"
+                },
+                {
+                    "authorId": "48308141",
+                    "name": "M. J. Quinn"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "f1e5481cdb3a9fd3f48f32d98947865df03705e1",
+            "title": "Taking Advantage of Stable Sets of Variables in Constraint Satisfaction Problems",
+            "url": "https://www.semanticscholar.org/paper/f1e5481cdb3a9fd3f48f32d98947865df03705e1",
+            "venue": "IJCAI",
+            "year": 1985
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "50520824",
+                    "name": "C. Y. Lee"
+                }
+            ],
+            "doi": "10.1002/J.1538-7305.1959.TB01585.X",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "75b41f7d73d3bde0d4a328aa7d396c0d1fe3d082",
+            "title": "Representation of switching circuits by binary-decision programs",
+            "url": "https://www.semanticscholar.org/paper/75b41f7d73d3bde0d4a328aa7d396c0d1fe3d082",
+            "venue": "",
+            "year": 1959
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2270831658",
+                    "name": "Adnan Aziz"
+                },
+                {
+                    "authorId": "143849852",
+                    "name": "A. Prakash"
+                }
+            ],
+            "doi": "10.1007/978-1-4939-2864-4_416",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "006ce8f641661490c6b4bcaab04565580cc340e4",
+            "title": "Symbolic Model Checking",
+            "url": "https://www.semanticscholar.org/paper/006ce8f641661490c6b4bcaab04565580cc340e4",
+            "venue": "Encyclopedia of Algorithms",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "34673652",
+                    "name": "R. Bryant"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "38efda194ce8ca7166119ae403e43aef57f62f7c",
+            "title": "Graph-based Algorithm for Boolean Function Manipulation",
+            "url": "https://www.semanticscholar.org/paper/38efda194ce8ca7166119ae403e43aef57f62f7c",
+            "venue": "",
+            "year": 1989
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1902488",
+                    "name": "U. Bertel\u00e8"
+                },
+                {
+                    "authorId": "2075112170",
+                    "name": "F. Brioschi"
+                }
+            ],
+            "doi": "10.2307/3007942",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "599fecdb5fec6bf5c99de76088a9a3c37af6f11e",
+            "title": "Nonserial Dynamic Programming",
+            "url": "https://www.semanticscholar.org/paper/599fecdb5fec6bf5c99de76088a9a3c37af6f11e",
+            "venue": "",
+            "year": 1972
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "AND/OR Multi-Valued Decision Diagrams (AOMDDs) for Weighted Graphical Models",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/b9b64f0959ec51b11cc2c2a559be8e8e534f9832",
+    "venue": "Conference on Uncertainty in Artificial Intelligence",
+    "year": 2007
+}

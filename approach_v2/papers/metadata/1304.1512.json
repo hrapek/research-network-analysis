@@ -1,0 +1,3380 @@
+{
+    "abstract": "We introduce a graceful approach to probabilistic inference called bounded conditioning. Bounded conditioning monotonically refines the bounds on posterior probabilities in a belief network with computation, and converges on final probabilities of interest with the allocation of a complete resource fraction. The approach allows a reasoner to exchange arbitrary quantities of computational resource for incremental gains in inference quality. As such, bounded conditioning holds promise as a useful inference technique for reasoning under the general conditions of uncertain and varying reasoning resources. The algorithm solves a probabilistic bounding problem in complex belief networks by breaking the problem into a set of mutually exclusive, tractable subproblems and ordering their solution by the expected effect that each subproblem will have on the final answer. We introduce the algorithm, discuss its characterization, and present its performance on several belief networks, including a complex model for reasoning about problems in intensive-care medicine.",
+    "arxivId": "1304.1512",
+    "authors": [
+        {
+            "authorId": "145479841",
+            "name": "E. Horvitz",
+            "url": "https://www.semanticscholar.org/author/145479841"
+        },
+        {
+            "authorId": "31445340",
+            "name": "H. J. Suermondt",
+            "url": "https://www.semanticscholar.org/author/31445340"
+        },
+        {
+            "authorId": "1726406",
+            "name": "G. Cooper",
+            "url": "https://www.semanticscholar.org/author/1726406"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": "2110.09624",
+            "authors": [
+                {
+                    "authorId": "145479841",
+                    "name": "E. Horvitz"
+                },
+                {
+                    "authorId": "1778725",
+                    "name": "J. Breese"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "486b4ab3f0ead5e7c0fb9233afa288eb2254b0b6",
+            "title": "Ideal Partition of Resources for Metareasoning",
+            "url": "https://www.semanticscholar.org/paper/486b4ab3f0ead5e7c0fb9233afa288eb2254b0b6",
+            "venue": "ArXiv",
+            "year": 2021
+        },
+        {
+            "arxivId": "2105.11132",
+            "authors": [
+                {
+                    "authorId": "117602325",
+                    "name": "Durgesh Kumar Agrawal"
+                },
+                {
+                    "authorId": "2106324164",
+                    "name": "Yash Pote"
+                },
+                {
+                    "authorId": "3207775",
+                    "name": "Kuldeep S. Meel"
+                }
+            ],
+            "doi": "10.24963/ijcai.2021/587",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "5d4cb3cf02b2eee1e00f8758e4ba5da39cbe895f",
+            "title": "Partition Function Estimation: A Quantitative Study",
+            "url": "https://www.semanticscholar.org/paper/5d4cb3cf02b2eee1e00f8758e4ba5da39cbe895f",
+            "venue": "IJCAI",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3202750",
+                    "name": "Falk Lieder"
+                },
+                {
+                    "authorId": "1799860",
+                    "name": "T. Griffiths"
+                },
+                {
+                    "authorId": "147863118",
+                    "name": "Quentin J. M. Huys"
+                },
+                {
+                    "authorId": "144002017",
+                    "name": "Noah D. Goodman"
+                }
+            ],
+            "doi": "10.3758/s13423-017-1286-8",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "81cf49fdf0a58cb5407404f3320cea7cb6c27e36",
+            "title": "The anchoring bias reflects rational use of cognitive resources",
+            "url": "https://www.semanticscholar.org/paper/81cf49fdf0a58cb5407404f3320cea7cb6c27e36",
+            "venue": "Psychonomic bulletin & review",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1774990",
+                    "name": "A. Ajroud"
+                },
+                {
+                    "authorId": "144778431",
+                    "name": "S. Benferhat"
+                }
+            ],
+            "doi": "10.1002/int.21649",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "4787e1324f46a23c0a54b96054a3cdf6b053b546",
+            "title": "An Approximate Algorithm for Min\u2010Based Possibilistic Networks",
+            "url": "https://www.semanticscholar.org/paper/4787e1324f46a23c0a54b96054a3cdf6b053b546",
+            "venue": "Int. J. Intell. Syst.",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1709134",
+                    "name": "Helgi P\u00e1ll Helgason"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "dc13410a7403ad1295e37dd35550c7acc2e581b8",
+            "title": "General Attention Mechanism for Artificial Intelligence Systems",
+            "url": "https://www.semanticscholar.org/paper/dc13410a7403ad1295e37dd35550c7acc2e581b8",
+            "venue": "",
+            "year": 2013
+        },
+        {
+            "arxivId": "1302.4939",
+            "authors": [
+                {
+                    "authorId": "1700031",
+                    "name": "Adnan Darwiche"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "32be0e469d12d4e937a07ca37e1259295eda1070",
+            "title": "Conditioning Methods for Exact and Approximate Inference in Causal Networks",
+            "url": "https://www.semanticscholar.org/paper/32be0e469d12d4e937a07ca37e1259295eda1070",
+            "venue": "UAI 1995",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144486305",
+                    "name": "O. Mengshoel"
+                },
+                {
+                    "authorId": "2027744",
+                    "name": "Abe Ishihara"
+                },
+                {
+                    "authorId": "145800130",
+                    "name": "Erik Reed"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "8e62f1027e05288344d69e076e393ef09f2593ff",
+            "title": "Reactive Bayesian Network Computation using Feedback Control: An Empirical Study",
+            "url": "https://www.semanticscholar.org/paper/8e62f1027e05288344d69e076e393ef09f2593ff",
+            "venue": "BMA",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3069505",
+                    "name": "Tianxi Li"
+                },
+                {
+                    "authorId": "1681967",
+                    "name": "B. Kveton"
+                },
+                {
+                    "authorId": "1887625",
+                    "name": "Yuehua Wu"
+                },
+                {
+                    "authorId": "38927998",
+                    "name": "Ashwin Kashyap"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "25196557366910264d3a9ba30b07a23813e50dee",
+            "title": "Incorporating Metadata into Dynamic Topic Analysis",
+            "url": "https://www.semanticscholar.org/paper/25196557366910264d3a9ba30b07a23813e50dee",
+            "venue": "BMA",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "7344844",
+                    "name": "Patrick A. Pletscher"
+                },
+                {
+                    "authorId": "1706780",
+                    "name": "Cheng Soon Ong"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c1172057c8c9df28de899db1642722fe0cbe62b8",
+            "title": "Part & Clamp: Efficient Structured Output Learning",
+            "url": "https://www.semanticscholar.org/paper/c1172057c8c9df28de899db1642722fe0cbe62b8",
+            "venue": "AISTATS",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1785009",
+                    "name": "Rahul Mangharam"
+                },
+                {
+                    "authorId": "51913012",
+                    "name": "Aminreza Abrahami Saba"
+                }
+            ],
+            "doi": "10.1109/RTSS.2011.41",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7f41d899127f2629053d260bfa27844bf3e6f6f7",
+            "title": "Anytime Algorithms for GPU Architectures",
+            "url": "https://www.semanticscholar.org/paper/7f41d899127f2629053d260bfa27844bf3e6f6f7",
+            "venue": "2011 IEEE 32nd Real-Time Systems Symposium",
+            "year": 2011
+        },
+        {
+            "arxivId": "1105.5462",
+            "authors": [
+                {
+                    "authorId": "35132120",
+                    "name": "T. Jaakkola"
+                },
+                {
+                    "authorId": "1694621",
+                    "name": "Michael I. Jordan"
+                }
+            ],
+            "doi": "10.1613/jair.583",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "6b0d62ffdcebed5da55bd48242ed62ba25d7fd87",
+            "title": "Variational Probabilistic Inference and the QMR-DT Network",
+            "url": "https://www.semanticscholar.org/paper/6b0d62ffdcebed5da55bd48242ed62ba25d7fd87",
+            "venue": "J. Artif. Intell. Res.",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1774990",
+                    "name": "A. Ajroud"
+                },
+                {
+                    "authorId": "144778431",
+                    "name": "S. Benferhat"
+                }
+            ],
+            "doi": "10.1109/NAFIPS.2011.5752011",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "92787fe5c9adacd5a921a8a3fc21c452743352f8",
+            "title": "Approximate inference in qualitative possibilistic networks",
+            "url": "https://www.semanticscholar.org/paper/92787fe5c9adacd5a921a8a3fc21c452743352f8",
+            "venue": "2011 Annual Meeting of the North American Fuzzy Information Processing Society",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144486305",
+                    "name": "O. Mengshoel"
+                },
+                {
+                    "authorId": "144590225",
+                    "name": "D. Roth"
+                },
+                {
+                    "authorId": "50002218",
+                    "name": "D. C. Wilkins"
+                }
+            ],
+            "doi": "10.1007/s10817-010-9170-5",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "488644c9b3350651ef60042249e99458afa6bea4",
+            "title": "Portfolios in Stochastic Local Search: Efficiently Computing Most Probable Explanations in Bayesian Networks",
+            "url": "https://www.semanticscholar.org/paper/488644c9b3350651ef60042249e99458afa6bea4",
+            "venue": "Journal of Automated Reasoning",
+            "year": 2011
+        },
+        {
+            "arxivId": "1401.3833",
+            "authors": [
+                {
+                    "authorId": "1916113",
+                    "name": "Bozhena Bidyuk"
+                },
+                {
+                    "authorId": "1751239",
+                    "name": "R. Dechter"
+                },
+                {
+                    "authorId": "2492844",
+                    "name": "E. Rollon"
+                }
+            ],
+            "doi": "10.1613/jair.2945",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "3b7a41a06c0660dd7461ff7f83cb37b65546a7e2",
+            "title": "Active Tuples-based Scheme for Bounding Posterior Beliefs",
+            "url": "https://www.semanticscholar.org/paper/3b7a41a06c0660dd7461ff7f83cb37b65546a7e2",
+            "venue": "J. Artif. Intell. Res.",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1711607",
+                    "name": "B. Ogunnaike"
+                }
+            ],
+            "doi": "10.1201/B17197-10",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "fabe4e35a2f62b511c73d7c6af66a11dd90abbf6",
+            "title": "Random Variable Transformations",
+            "url": "https://www.semanticscholar.org/paper/fabe4e35a2f62b511c73d7c6af66a11dd90abbf6",
+            "venue": "",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2263730982",
+                    "name": "Adnan Darwiche"
+                }
+            ],
+            "doi": "10.1145/1859204.1859227",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f99ef6010bde4a7b9671464cdd6eae9e485f38ec",
+            "title": "Bayesian networks",
+            "url": "https://www.semanticscholar.org/paper/f99ef6010bde4a7b9671464cdd6eae9e485f38ec",
+            "venue": "Handbook of Knowledge Representation",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2883770",
+                    "name": "R. Andoga"
+                },
+                {
+                    "authorId": "2720847",
+                    "name": "L. F\u0151z\u0151"
+                },
+                {
+                    "authorId": "1933962",
+                    "name": "L. Madar\u00e1sz"
+                }
+            ],
+            "doi": "10.1109/ICCCYB.2008.4721374",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c2b39c10f2d6e0c544dbb1550dcd6d8dcf51431e",
+            "title": "Use of anytime control algorithms in the area of small turbojet engines",
+            "url": "https://www.semanticscholar.org/paper/c2b39c10f2d6e0c544dbb1550dcd6d8dcf51431e",
+            "venue": "2008 IEEE International Conference on Computational Cybernetics",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2661125",
+                    "name": "Carlos Eduardo Bognar"
+                },
+                {
+                    "authorId": "1922588",
+                    "name": "O. Saotome"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "43ca147375e43f15a2f432b49e8583bec34b7049",
+            "title": "Multivariate analysis applied in Bayesian metareasoning",
+            "url": "https://www.semanticscholar.org/paper/43ca147375e43f15a2f432b49e8583bec34b7049",
+            "venue": "",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "152618844",
+                    "name": "Sarah George"
+                },
+                {
+                    "authorId": "48127057",
+                    "name": "Ingrid Zukerman"
+                },
+                {
+                    "authorId": "33463431",
+                    "name": "M. Niemann"
+                }
+            ],
+            "doi": "10.1007/s11257-007-9034-9",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "85557754165f30654470845ca89a6904466b75ca",
+            "title": "Inferences, suppositions and explanatory extensions in argument interpretation",
+            "url": "https://www.semanticscholar.org/paper/85557754165f30654470845ca89a6904466b75ca",
+            "venue": "User Modeling and User-Adapted Interaction",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144486305",
+                    "name": "O. Mengshoel"
+                },
+                {
+                    "authorId": "50002218",
+                    "name": "D. C. Wilkins"
+                },
+                {
+                    "authorId": "144590225",
+                    "name": "D. Roth"
+                }
+            ],
+            "doi": "10.1016/j.artint.2006.09.003",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "f0f930bcde2d6faf032395229d7327071878af68",
+            "title": "Controlled generation of hard and easy Bayesian networks: Impact on maximal clique size in tree clustering",
+            "url": "https://www.semanticscholar.org/paper/f0f930bcde2d6faf032395229d7327071878af68",
+            "venue": "Artif. Intell.",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1916113",
+                    "name": "Bozhena Bidyuk"
+                },
+                {
+                    "authorId": "1751239",
+                    "name": "R. Dechter"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8580c34ada6b40cae599a01426902faa33e802aa",
+            "title": "An Anytime Scheme for Bounding Posterior Beliefs",
+            "url": "https://www.semanticscholar.org/paper/8580c34ada6b40cae599a01426902faa33e802aa",
+            "venue": "AAAI",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1916113",
+                    "name": "Bozhena Bidyuk"
+                },
+                {
+                    "authorId": "1751239",
+                    "name": "R. Dechter"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "23e4d524afe4411374d3e3584c8ed4d6f15b8998",
+            "title": "Improving Bound Propagation",
+            "url": "https://www.semanticscholar.org/paper/23e4d524afe4411374d3e3584c8ed4d6f15b8998",
+            "venue": "ECAI",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "39853177",
+                    "name": "Changhe Yuan"
+                },
+                {
+                    "authorId": "1716478",
+                    "name": "Marek J Druzdzel"
+                }
+            ],
+            "doi": "10.1016/j.mcm.2005.05.020",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "797698e890ae8f2221b27908ba008ebcb54bd379",
+            "title": "Importance sampling algorithms for Bayesian networks: Principles and performance",
+            "url": "https://www.semanticscholar.org/paper/797698e890ae8f2221b27908ba008ebcb54bd379",
+            "venue": "Math. Comput. Model.",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2060374119",
+                    "name": "Kevin Grant"
+                },
+                {
+                    "authorId": "2696328",
+                    "name": "M. Horsch"
+                }
+            ],
+            "doi": "10.1007/11589990_8",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "20bd48a73378c1a6f0ea8c2558a516d5df71fac0",
+            "title": "Conditioning Graphs: Practical Structures for Inference in Bayesian Networks",
+            "url": "https://www.semanticscholar.org/paper/20bd48a73378c1a6f0ea8c2558a516d5df71fac0",
+            "venue": "Australian Conference on Artificial Intelligence",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2413558",
+                    "name": "Rodrigo de Salvo Braz"
+                },
+                {
+                    "authorId": "145957401",
+                    "name": "Eyal Amir"
+                },
+                {
+                    "authorId": "144590225",
+                    "name": "D. Roth"
+                }
+            ],
+            "doi": "10.7551/mitpress/7432.003.0017",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "dae7f7b4819c13a0adf23afc29eb0870ec8e2e16",
+            "title": "Lifted First-Order Probabilistic Inference",
+            "url": "https://www.semanticscholar.org/paper/dae7f7b4819c13a0adf23afc29eb0870ec8e2e16",
+            "venue": "IJCAI",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "152618844",
+                    "name": "Sarah George"
+                },
+                {
+                    "authorId": "48127057",
+                    "name": "Ingrid Zukerman"
+                },
+                {
+                    "authorId": "33463431",
+                    "name": "M. Niemann"
+                }
+            ],
+            "doi": "10.1007/978-3-540-28633-2_34",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "1fb1222f4d4931f9a4f9a2de03463c0e29a87d20",
+            "title": "An Anytime Algorithm for Interpreting Arguments",
+            "url": "https://www.semanticscholar.org/paper/1fb1222f4d4931f9a4f9a2de03463c0e29a87d20",
+            "venue": "PRICAI",
+            "year": 2004
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1736443",
+                    "name": "R. Haenni"
+                }
+            ],
+            "doi": "10.1016/j.ijar.2003.10.009",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "e5469aad892782e49994c4b2e0afb7d475ba72da",
+            "title": "Ordered valuation algebras: a generic framework for approximating inference",
+            "url": "https://www.semanticscholar.org/paper/e5469aad892782e49994c4b2e0afb7d475ba72da",
+            "venue": "Int. J. Approx. Reason.",
+            "year": 2004
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1735824",
+                    "name": "Carmel Domshlak"
+                },
+                {
+                    "authorId": "1719613",
+                    "name": "S. E. Shimony"
+                }
+            ],
+            "doi": "10.1002/int.20021",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c16f45ba5ba339c9fb1319883d0fb9ca5e467b78",
+            "title": "Efficient probabilistic reasoning in BNs with mutual exclusion and context\u2010specific independence",
+            "url": "https://www.semanticscholar.org/paper/c16f45ba5ba339c9fb1319883d0fb9ca5e467b78",
+            "venue": "Int. J. Intell. Syst.",
+            "year": 2004
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "153279354",
+                    "name": "Fabio Ramos"
+                },
+                {
+                    "authorId": "7668712",
+                    "name": "Fabio Gagliardi Cozman"
+                }
+            ],
+            "doi": "10.1016/j.ijar.2004.04.001",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "5b5833e9396f63426be80136fc7d29b8db72c09e",
+            "title": "Anytime anyspace probabilistic inference",
+            "url": "https://www.semanticscholar.org/paper/5b5833e9396f63426be80136fc7d29b8db72c09e",
+            "venue": "Int. J. Approx. Reason.",
+            "year": 2004
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1719613",
+                    "name": "S. E. Shimony"
+                },
+                {
+                    "authorId": "1735824",
+                    "name": "Carmel Domshlak"
+                }
+            ],
+            "doi": "10.1016/S0004-3702(03)00110-3",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "b2c3aa4aa02ef1f2dc6b758c27a71fe58b538a92",
+            "title": "Complexity of probabilistic reasoning in directed-path singly-connected Bayes networks",
+            "url": "https://www.semanticscholar.org/paper/b2c3aa4aa02ef1f2dc6b758c27a71fe58b538a92",
+            "venue": "Artif. Intell.",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1751239",
+                    "name": "R. Dechter"
+                },
+                {
+                    "authorId": "2109771",
+                    "name": "I. Rish"
+                }
+            ],
+            "doi": "10.1145/636865.636866",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "13fbf15dce48e9a4e00654b8d4e6f42718f75062",
+            "title": "Mini-buckets: A general scheme for bounded inference",
+            "url": "https://www.semanticscholar.org/paper/13fbf15dce48e9a4e00654b8d4e6f42718f75062",
+            "venue": "JACM",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "51961343",
+                    "name": "\u5289\u662d\u9e9f"
+                },
+                {
+                    "authorId": "39986827",
+                    "name": "Chao-Lin Liu"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5021dc0d7bd6ed1b5fef234a8328fb973075bf1a",
+            "title": "Advances in Applying Stochastic-Dominance Relationships to Bounding Probability Distributions in Bayesian Networks",
+            "url": "https://www.semanticscholar.org/paper/5021dc0d7bd6ed1b5fef234a8328fb973075bf1a",
+            "venue": "",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "39986827",
+                    "name": "Chao-Lin Liu"
+                },
+                {
+                    "authorId": "1796536",
+                    "name": "Michael P. Wellman"
+                }
+            ],
+            "doi": "10.1016/S0888-613X(01)00067-6",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "008725880c6b9e8541cbb06f167136ab4323ecb5",
+            "title": "Evaluation of Bayesian networks with flexible state-space abstraction methods",
+            "url": "https://www.semanticscholar.org/paper/008725880c6b9e8541cbb06f167136ab4323ecb5",
+            "venue": "Int. J. Approx. Reason.",
+            "year": 2002
+        },
+        {
+            "arxivId": "1106.0246",
+            "authors": [
+                {
+                    "authorId": "145880755",
+                    "name": "C. Bhattacharyya"
+                },
+                {
+                    "authorId": "144106136",
+                    "name": "S. Keerthi"
+                }
+            ],
+            "doi": "10.1613/jair.734",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "043e09c9a4bc290dba2b411f2d8a4b9846e2fd04",
+            "title": "Mean Field Methods for a Special Class of Belief Networks",
+            "url": "https://www.semanticscholar.org/paper/043e09c9a4bc290dba2b411f2d8a4b9846e2fd04",
+            "venue": "J. Artif. Intell. Res.",
+            "year": 2001
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143686063",
+                    "name": "R. Greiner"
+                },
+                {
+                    "authorId": "2319258",
+                    "name": "C. Darken"
+                },
+                {
+                    "authorId": "2236484817",
+                    "name": "N. Iwan Santoso"
+                }
+            ],
+            "doi": "10.1145/375360.375363",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "e7f62798abe98052b1c38a02baccc84df085c853",
+            "title": "Efficient reasoning",
+            "url": "https://www.semanticscholar.org/paper/e7f62798abe98052b1c38a02baccc84df085c853",
+            "venue": "CSUR",
+            "year": 2001
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1697031",
+                    "name": "E. Hansen"
+                },
+                {
+                    "authorId": "1707550",
+                    "name": "S. Zilberstein"
+                }
+            ],
+            "doi": "10.1016/S0004-3702(00)00068-0",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "e5eeb278a8741028dbf06a25a578de1ded7acde6",
+            "title": "Monitoring and control of anytime algorithms: A dynamic programming approach",
+            "url": "https://www.semanticscholar.org/paper/e5eeb278a8741028dbf06a25a578de1ded7acde6",
+            "venue": "Artif. Intell.",
+            "year": 2001
+        },
+        {
+            "arxivId": "1106.0225",
+            "authors": [
+                {
+                    "authorId": "143774015",
+                    "name": "A. Becker"
+                },
+                {
+                    "authorId": "1388380660",
+                    "name": "R. Bar-Yehuda"
+                },
+                {
+                    "authorId": "144527211",
+                    "name": "D. Geiger"
+                }
+            ],
+            "doi": "10.1613/jair.638",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d0c1f7366bf4715c6f1ce002e343e7b25ae21fa6",
+            "title": "Randomized Algorithms for the Loop Cutset Problem",
+            "url": "https://www.semanticscholar.org/paper/d0c1f7366bf4715c6f1ce002e343e7b25ae21fa6",
+            "venue": "J. Artif. Intell. Res.",
+            "year": 2000
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2060744293",
+                    "name": "J. Everett"
+                }
+            ],
+            "doi": "10.1016/S0004-3702(99)00049-1",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "7ea0c28aeea8fc3b446b061daf3864149a8c75d6",
+            "title": "Topological Inference of Teleology: Deriving Function from Structure via Evidential Reasoning",
+            "url": "https://www.semanticscholar.org/paper/7ea0c28aeea8fc3b446b061daf3864149a8c75d6",
+            "venue": "Artif. Intell.",
+            "year": 1999
+        },
+        {
+            "arxivId": "1408.1483",
+            "authors": [
+                {
+                    "authorId": "143774015",
+                    "name": "A. Becker"
+                },
+                {
+                    "authorId": "1388380660",
+                    "name": "R. Bar-Yehuda"
+                },
+                {
+                    "authorId": "144527211",
+                    "name": "D. Geiger"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "aac7d52d5d37ab01de8284da40ec7ed2ed2af43d",
+            "title": "Random Algorithms for the Loop Cutset Problem",
+            "url": "https://www.semanticscholar.org/paper/aac7d52d5d37ab01de8284da40ec7ed2ed2af43d",
+            "venue": "UAI",
+            "year": 1999
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2285930413",
+                    "name": "Bruce D'Ambrosio"
+                }
+            ],
+            "doi": "10.1609/aimag.v20i2.1454",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "0d284bda7c338462fac991dfb55337febfa47710",
+            "title": "Inference in Bayesian Networks",
+            "url": "https://www.semanticscholar.org/paper/0d284bda7c338462fac991dfb55337febfa47710",
+            "venue": "AI Mag.",
+            "year": 1999
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1694621",
+                    "name": "Michael I. Jordan"
+                },
+                {
+                    "authorId": "1744700",
+                    "name": "Zoubin Ghahramani"
+                },
+                {
+                    "authorId": "35132120",
+                    "name": "T. Jaakkola"
+                },
+                {
+                    "authorId": "1796044",
+                    "name": "L. Saul"
+                }
+            ],
+            "doi": "10.1023/A:1007665907178",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "6120cc252bc74239012f11b8b075cb7cb16bee26",
+            "title": "An Introduction to Variational Methods for Graphical Models",
+            "url": "https://www.semanticscholar.org/paper/6120cc252bc74239012f11b8b075cb7cb16bee26",
+            "venue": "Machine Learning",
+            "year": 1999
+        },
+        {
+            "arxivId": "1301.7396",
+            "authors": [
+                {
+                    "authorId": "39986827",
+                    "name": "Chao-Lin Liu"
+                },
+                {
+                    "authorId": "1796536",
+                    "name": "Michael P. Wellman"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "da3406134e9a345bed53d7b2679c895370a45eb3",
+            "title": "Using Qualitative Relationships for Bounding Probability Distributions",
+            "url": "https://www.semanticscholar.org/paper/da3406134e9a345bed53d7b2679c895370a45eb3",
+            "venue": "UAI",
+            "year": 1998
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "50785579",
+                    "name": "N. Friedman"
+                },
+                {
+                    "authorId": "1736370",
+                    "name": "D. Koller"
+                },
+                {
+                    "authorId": "145668856",
+                    "name": "Avi Pfeffer"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "1835df6aa11b5e8ad2e33a92b86f655c5d3903a2",
+            "title": "Structured Representation of Complex Stochastic Systems",
+            "url": "https://www.semanticscholar.org/paper/1835df6aa11b5e8ad2e33a92b86f655c5d3903a2",
+            "venue": "AAAI/IAAI",
+            "year": 1998
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143844811",
+                    "name": "E. Santos"
+                },
+                {
+                    "authorId": "1719613",
+                    "name": "S. E. Shimony"
+                }
+            ],
+            "doi": "10.1109/3468.686701",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "0ed43cdf0a9c7dcfeda762a8e9f28b549a1128db",
+            "title": "Deterministic approximation of marginal probabilities in Bayes nets",
+            "url": "https://www.semanticscholar.org/paper/0ed43cdf0a9c7dcfeda762a8e9f28b549a1128db",
+            "venue": "IEEE Trans. Syst. Man Cybern. Part A",
+            "year": 1998
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143844811",
+                    "name": "E. Santos"
+                },
+                {
+                    "authorId": "1719613",
+                    "name": "S. E. Shimony"
+                },
+                {
+                    "authorId": "31736635",
+                    "name": "E. Williams"
+                }
+            ],
+            "doi": "10.1016/S0888-613X(97)00012-1",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f2c436e1185fd16c46845f422373c9df3a1404d0",
+            "title": "Hybrid algorithms for approximate belief updating in Bayes nets",
+            "url": "https://www.semanticscholar.org/paper/f2c436e1185fd16c46845f422373c9df3a1404d0",
+            "venue": "Int. J. Approx. Reason.",
+            "year": 1997
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3023186",
+                    "name": "Nathalie Jitnah"
+                },
+                {
+                    "authorId": "1738567",
+                    "name": "A. Nicholson"
+                }
+            ],
+            "doi": "10.1007/BFb0035634",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "32c36ac561ec7fc26c07cf665051ea71f3ded4db",
+            "title": "treeNets: A Framework for Anytime Evaluation of Belief Networks",
+            "url": "https://www.semanticscholar.org/paper/32c36ac561ec7fc26c07cf665051ea71f3ded4db",
+            "venue": "ECSQARU-FAPR",
+            "year": 1997
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1895150",
+                    "name": "P. Dagum"
+                },
+                {
+                    "authorId": "145881044",
+                    "name": "M. Luby"
+                }
+            ],
+            "doi": "10.1016/S0004-3702(97)00013-1",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "d0e5040b24f51f400726e7deba7277174e8739df",
+            "title": "An Optimal Approximation Algorithm for Bayesian Inference",
+            "url": "https://www.semanticscholar.org/paper/d0e5040b24f51f400726e7deba7277174e8739df",
+            "venue": "Artif. Intell.",
+            "year": 1997
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1731683",
+                    "name": "P. Bonissone"
+                }
+            ],
+            "doi": "10.1007/s005000050002",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "6015642b105846c266e67e023a2c7e8696bba4fe",
+            "title": "Soft computing: the convergence of emerging reasoning technologies",
+            "url": "https://www.semanticscholar.org/paper/6015642b105846c266e67e023a2c7e8696bba4fe",
+            "venue": "Soft Comput.",
+            "year": 1997
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143715817",
+                    "name": "D. Poole"
+                }
+            ],
+            "doi": "10.1016/S0004-3702(96)00022-7",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "3511024b663ba7e18954312537b554daa21ea2ef",
+            "title": "Probabilistic Conflicts in a Search Algorithm for Estimating Posterior Probabilities in Bayesian Networks",
+            "url": "https://www.semanticscholar.org/paper/3511024b663ba7e18954312537b554daa21ea2ef",
+            "venue": "Artif. Intell.",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "31988236",
+                    "name": "J. Grass"
+                }
+            ],
+            "doi": "10.1145/332148.332154",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "266ca1c70396c6fe1f9d772abe0b85a2f5d803c5",
+            "title": "Reasoning about computational resource allocation",
+            "url": "https://www.semanticscholar.org/paper/266ca1c70396c6fe1f9d772abe0b85a2f5d803c5",
+            "venue": "CROS",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1697031",
+                    "name": "E. Hansen"
+                },
+                {
+                    "authorId": "1707550",
+                    "name": "S. Zilberstein"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "68468264335d151fffcf400f4601be513b1e8a03",
+            "title": "Monitoring the Progress of Anytime Problem-Solving",
+            "url": "https://www.semanticscholar.org/paper/68468264335d151fffcf400f4601be513b1e8a03",
+            "venue": "AAAI/IAAI, Vol. 2",
+            "year": 1996
+        },
+        {
+            "arxivId": "1302.3571",
+            "authors": [
+                {
+                    "authorId": "69471023",
+                    "name": "Bruce D'Ambrosio"
+                },
+                {
+                    "authorId": "12222884",
+                    "name": "Scott A. Burgess"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "3a9f4b7e89049db5babb2a9a85d3d1014467b7fb",
+            "title": "Some Experiments with Real-time Decision Algorithms",
+            "url": "https://www.semanticscholar.org/paper/3a9f4b7e89049db5babb2a9a85d3d1014467b7fb",
+            "venue": "UAI",
+            "year": 1996
+        },
+        {
+            "arxivId": "1302.3596",
+            "authors": [
+                {
+                    "authorId": "1699246",
+                    "name": "K. Poh"
+                },
+                {
+                    "authorId": "145479841",
+                    "name": "E. Horvitz"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "30930d3dd58e662319d0f3cc59852bbea5ae50dc",
+            "title": "A Graph-Theoretic Analysis of Information Value",
+            "url": "https://www.semanticscholar.org/paper/30930d3dd58e662319d0f3cc59852bbea5ae50dc",
+            "venue": "UAI",
+            "year": 1996
+        },
+        {
+            "arxivId": "1302.3602",
+            "authors": [
+                {
+                    "authorId": "143844811",
+                    "name": "E. Santos"
+                },
+                {
+                    "authorId": "1719613",
+                    "name": "S. E. Shimony"
+                },
+                {
+                    "authorId": "31736635",
+                    "name": "E. Williams"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8d2b3ca4ce264be5aa2bef7c801ba2ecc525b94f",
+            "title": "Sample-and-Accumulate Algorithms for Belief Updating in Bayes Networks",
+            "url": "https://www.semanticscholar.org/paper/8d2b3ca4ce264be5aa2bef7c801ba2ecc525b94f",
+            "venue": "UAI",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2057429665",
+                    "name": "Stefano Monti"
+                },
+                {
+                    "authorId": "1726406",
+                    "name": "G. Cooper"
+                }
+            ],
+            "doi": "10.1016/0888-613X(96)00012-6",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "16327e8b0e6fcee3751a7790e01b8427ca5deceb",
+            "title": "Bounded recursive decomposition: a search-based method for belief-network inference under limited resources",
+            "url": "https://www.semanticscholar.org/paper/16327e8b0e6fcee3751a7790e01b8427ca5deceb",
+            "venue": "Int. J. Approx. Reason.",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143774015",
+                    "name": "A. Becker"
+                },
+                {
+                    "authorId": "144527211",
+                    "name": "D. Geiger"
+                }
+            ],
+            "doi": "10.1016/0004-3702(95)00004-6",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "62a00b9320469dcd285b561308071114426452ab",
+            "title": "Optimization of Pearl's Method of Conditioning and Greedy-Like Approximation Algorithms for the Vertex Feedback Set Problem",
+            "url": "https://www.semanticscholar.org/paper/62a00b9320469dcd285b561308071114426452ab",
+            "venue": "Artif. Intell.",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1707550",
+                    "name": "S. Zilberstein"
+                },
+                {
+                    "authorId": "145107462",
+                    "name": "Stuart J. Russell"
+                }
+            ],
+            "doi": "10.1016/0004-3702(94)00074-3",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "4f296f9a0bfceaf44a35748265a2952c66b26138",
+            "title": "Optimal Composition of Real-Time Systems",
+            "url": "https://www.semanticscholar.org/paper/4f296f9a0bfceaf44a35748265a2952c66b26138",
+            "venue": "Artif. Intell.",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "39986827",
+                    "name": "Chao-Lin Liu"
+                },
+                {
+                    "authorId": "1796536",
+                    "name": "Michael P. Wellman"
+                }
+            ],
+            "doi": "10.1145/242587.242601",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "045632f34d097967f0e1b867a88dfe3b441ea895",
+            "title": "On state-space abstraction for anytime evaluation of Bayesian networks",
+            "url": "https://www.semanticscholar.org/paper/045632f34d097967f0e1b867a88dfe3b441ea895",
+            "venue": "SGAR",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1697031",
+                    "name": "E. Hansen"
+                },
+                {
+                    "authorId": "1707550",
+                    "name": "S. Zilberstein"
+                }
+            ],
+            "doi": "10.1145/242587.242593",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "ad49104d10f26524a2624723b23c0f6173fe5ea2",
+            "title": "Monitoring anytime algorithms",
+            "url": "https://www.semanticscholar.org/paper/ad49104d10f26524a2624723b23c0f6173fe5ea2",
+            "venue": "SGAR",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1707550",
+                    "name": "S. Zilberstein"
+                }
+            ],
+            "doi": "10.1609/aimag.v17i3.1232",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ecf9adafc610cd417be2aa4092e809446e0f361f",
+            "title": "Using Anytime Algorithms in Intelligent Systems",
+            "url": "https://www.semanticscholar.org/paper/ecf9adafc610cd417be2aa4092e809446e0f361f",
+            "venue": "AI Mag.",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1707550",
+                    "name": "S. Zilberstein"
+                }
+            ],
+            "doi": "10.1007/BF00162466",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "401aeca2185c88387f3d40df7583ea136abda8cb",
+            "title": "Resource-bounded sensing and planning in autonomous systems",
+            "url": "https://www.semanticscholar.org/paper/401aeca2185c88387f3d40df7583ea136abda8cb",
+            "venue": "Auton. Robots",
+            "year": 1996
+        },
+        {
+            "arxivId": "1302.4950",
+            "authors": [
+                {
+                    "authorId": "1770007",
+                    "name": "M. Goldszmidt"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "79d8a79afaa20b07b1ba8127e95bf799b879f412",
+            "title": "Fast Belief Update Using Order-of-Magnitude Probabilities",
+            "url": "https://www.semanticscholar.org/paper/79d8a79afaa20b07b1ba8127e95bf799b879f412",
+            "venue": "UAI",
+            "year": 1995
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2986992",
+                    "name": "E. Tick"
+                },
+                {
+                    "authorId": "69471023",
+                    "name": "Bruce D'Ambrosio"
+                }
+            ],
+            "doi": "10.1109/IPPS.1995.395858",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "31c7df88d90909019fdc38d1f268391bbfc8d0fe",
+            "title": "Evaluating Bayes nets with concurrent process networks",
+            "url": "https://www.semanticscholar.org/paper/31c7df88d90909019fdc38d1f268391bbfc8d0fe",
+            "venue": "Proceedings of 9th International Parallel Processing Symposium",
+            "year": 1995
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1881895",
+                    "name": "B. Sy"
+                }
+            ],
+            "doi": "10.1007/BF01530955",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "21b81b451c3a8af2d39990964593a20574fc17b7",
+            "title": "An adaptive reasoning approach towards efficient ordering of composite hypotheses",
+            "url": "https://www.semanticscholar.org/paper/21b81b451c3a8af2d39990964593a20574fc17b7",
+            "venue": "Annals of Mathematics and Artificial Intelligence",
+            "year": 1994
+        },
+        {
+            "arxivId": "1302.6842",
+            "authors": [
+                {
+                    "authorId": "143844811",
+                    "name": "E. Santos"
+                },
+                {
+                    "authorId": "1719613",
+                    "name": "S. E. Shimony"
+                }
+            ],
+            "doi": "10.1016/B978-1-55860-332-5.50069-9",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c1ad6aeb084230953264b483bbb293bc4c88f65b",
+            "title": "Belief Updating by Enumerating High-Probability Independence-based Assignments",
+            "url": "https://www.semanticscholar.org/paper/c1ad6aeb084230953264b483bbb293bc4c88f65b",
+            "venue": "UAI",
+            "year": 1994
+        },
+        {
+            "arxivId": "1302.6850",
+            "authors": [
+                {
+                    "authorId": "1796536",
+                    "name": "Michael P. Wellman"
+                },
+                {
+                    "authorId": "39986827",
+                    "name": "Chao-Lin Liu"
+                }
+            ],
+            "doi": "10.1016/B978-1-55860-332-5.50077-8",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "2eadee903cedd34f90820ee591325934fb26fcf4",
+            "title": "State-Space Abstraction for Anytime Evaluation of Probabilistic Networks",
+            "url": "https://www.semanticscholar.org/paper/2eadee903cedd34f90820ee591325934fb26fcf4",
+            "venue": "UAI",
+            "year": 1994
+        },
+        {
+            "arxivId": "1302.6800",
+            "authors": [
+                {
+                    "authorId": "143672554",
+                    "name": "Denise Draper"
+                },
+                {
+                    "authorId": "38413017",
+                    "name": "S. Hanks"
+                }
+            ],
+            "doi": "10.1016/B978-1-55860-332-5.50027-4",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "25e2cc30c561f79a0c397638c53e23e0b56907a3",
+            "title": "Localized Partial Evaluation of Belief Networks",
+            "url": "https://www.semanticscholar.org/paper/25e2cc30c561f79a0c397638c53e23e0b56907a3",
+            "venue": "UAI",
+            "year": 1994
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3159612",
+                    "name": "M. Boddy"
+                },
+                {
+                    "authorId": "1680510",
+                    "name": "T. Dean"
+                }
+            ],
+            "doi": "10.1016/0004-3702(94)90054-X",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "31585092a9fe9d15e0e0c1ff030adca9a023cb2f",
+            "title": "Deliberation Scheduling for Problem Solving in Time-Constrained Environments",
+            "url": "https://www.semanticscholar.org/paper/31585092a9fe9d15e0e0c1ff030adca9a023cb2f",
+            "venue": "Artif. Intell.",
+            "year": 1994
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "69471023",
+                    "name": "Bruce D'Ambrosio"
+                }
+            ],
+            "doi": "10.1117/12.169384",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "afe8c5afc536dce1207f3c57f090991ff561a410",
+            "title": "Real-time value-driven diagnosis",
+            "url": "https://www.semanticscholar.org/paper/afe8c5afc536dce1207f3c57f090991ff561a410",
+            "venue": "Defense, Security, and Sensing",
+            "year": 1994
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1895150",
+                    "name": "P. Dagum"
+                },
+                {
+                    "authorId": "145479841",
+                    "name": "E. Horvitz"
+                }
+            ],
+            "doi": "10.1002/net.3230230506",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "8220937ef3d66d370df245a8f45b18a7d8d67c86",
+            "title": "A Bayesian analysis of simulation algorithms for inference in belief networks",
+            "url": "https://www.semanticscholar.org/paper/8220937ef3d66d370df245a8f45b18a7d8d67c86",
+            "venue": "Networks",
+            "year": 1993
+        },
+        {
+            "arxivId": "1303.1504",
+            "authors": [
+                {
+                    "authorId": "1700031",
+                    "name": "Adnan Darwiche"
+                }
+            ],
+            "doi": "10.1016/B978-1-4832-1451-1.50055-X",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "9c6ba7fd7f1e536178455e6bee3fab52a3d599a7",
+            "title": "Argument Calculus and Networks",
+            "url": "https://www.semanticscholar.org/paper/9c6ba7fd7f1e536178455e6bee3fab52a3d599a7",
+            "venue": "UAI",
+            "year": 1993
+        },
+        {
+            "arxivId": "1303.1490",
+            "authors": [
+                {
+                    "authorId": "69471023",
+                    "name": "Bruce D'Ambrosio"
+                }
+            ],
+            "doi": "10.1016/B978-1-4832-1451-1.50041-X",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "4b8587b0040ad08b6b0cdc43ceda35ab4fc2ef01",
+            "title": "Incremental Probabilistic Inference",
+            "url": "https://www.semanticscholar.org/paper/4b8587b0040ad08b6b0cdc43ceda35ab4fc2ef01",
+            "venue": "UAI",
+            "year": 1993
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "69471023",
+                    "name": "Bruce D'Ambrosio"
+                }
+            ],
+            "doi": "10.21236/ada260959",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "599100415a1e2725b0daf2dc16d20cddffc40f8f",
+            "title": "Real-Time Value-Driven Monitoring and Repair",
+            "url": "https://www.semanticscholar.org/paper/599100415a1e2725b0daf2dc16d20cddffc40f8f",
+            "venue": "",
+            "year": 1992
+        },
+        {
+            "arxivId": "1303.5397",
+            "authors": [
+                {
+                    "authorId": "1895150",
+                    "name": "P. Dagum"
+                },
+                {
+                    "authorId": "145479841",
+                    "name": "E. Horvitz"
+                }
+            ],
+            "doi": "10.1016/B978-1-4832-8287-9.50011-6",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d0d305018012162a22ebcde6380c9f9c15ccad3d",
+            "title": "Reformulating Inference Problems Through Selective Conditioning",
+            "url": "https://www.semanticscholar.org/paper/d0d305018012162a22ebcde6380c9f9c15ccad3d",
+            "venue": "UAI",
+            "year": 1992
+        },
+        {
+            "arxivId": "1303.5722",
+            "authors": [
+                {
+                    "authorId": "145479841",
+                    "name": "E. Horvitz"
+                },
+                {
+                    "authorId": "32708208",
+                    "name": "G. Rutledge"
+                }
+            ],
+            "doi": "10.1016/B978-1-55860-203-8.50023-1",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "8114e49f5b87477b857c0c73fe4ea82734ffee3f",
+            "title": "Time-Dependent Utility and Action Under Uncertainty",
+            "url": "https://www.semanticscholar.org/paper/8114e49f5b87477b857c0c73fe4ea82734ffee3f",
+            "venue": "UAI",
+            "year": 1991
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1680510",
+                    "name": "T. Dean"
+                }
+            ],
+            "doi": "10.1002/int.4550060405",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "3bbae20b765afad46cbb11f8693de1c91a609229",
+            "title": "Decision\u2010theoretic control of inference for time\u2010critical applications",
+            "url": "https://www.semanticscholar.org/paper/3bbae20b765afad46cbb11f8693de1c91a609229",
+            "venue": "Int. J. Intell. Syst.",
+            "year": 1991
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3159612",
+                    "name": "M. Boddy"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "22ac32ac5057555b36cd40eb32c217c5a66aa6fe",
+            "title": "Solving Time-Dependent Problems: A Decision-Theoretic Approach to Planning in Dynamic Environments",
+            "url": "https://www.semanticscholar.org/paper/22ac32ac5057555b36cd40eb32c217c5a66aa6fe",
+            "venue": "",
+            "year": 1991
+        },
+        {
+            "arxivId": "1304.1089",
+            "authors": [
+                {
+                    "authorId": "1778725",
+                    "name": "J. Breese"
+                },
+                {
+                    "authorId": "145479841",
+                    "name": "E. Horvitz"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "b07a5e09daaf90296c1cead402d9fbf73e688433",
+            "title": "Ideal reformulation of belief networks",
+            "url": "https://www.semanticscholar.org/paper/b07a5e09daaf90296c1cead402d9fbf73e688433",
+            "venue": "UAI",
+            "year": 1990
+        },
+        {
+            "arxivId": "1304.1114",
+            "authors": [
+                {
+                    "authorId": "31445340",
+                    "name": "H. J. Suermondt"
+                },
+                {
+                    "authorId": "1726406",
+                    "name": "G. Cooper"
+                },
+                {
+                    "authorId": "48099028",
+                    "name": "D. Heckerman"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "13b8084f2e1899f278bfabd44f962bd66c40610a",
+            "title": "A combination of cutset conditioning with clique-tree propagation in the Pathfinder system",
+            "url": "https://www.semanticscholar.org/paper/13b8084f2e1899f278bfabd44f962bd66c40610a",
+            "venue": "UAI",
+            "year": 1990
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1731683",
+                    "name": "P. Bonissone"
+                },
+                {
+                    "authorId": "2075550474",
+                    "name": "Peter C. Halverson"
+                }
+            ],
+            "doi": "10.1007/BF01840465",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "2771b2d267e2d84ffb98afcb6ec80cd3700c733e",
+            "title": "Time-constrained reasoning under uncertainty",
+            "url": "https://www.semanticscholar.org/paper/2771b2d267e2d84ffb98afcb6ec80cd3700c733e",
+            "venue": "Real-Time Systems",
+            "year": 1990
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145479841",
+                    "name": "E. Horvitz"
+                },
+                {
+                    "authorId": "1726406",
+                    "name": "G. Cooper"
+                },
+                {
+                    "authorId": "48099028",
+                    "name": "D. Heckerman"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "387a6e3f774def96ffcf7c2adcf850b6dad6ace2",
+            "title": "Reflection and Action Under Scarce Resources: Theoretical Principles and Empirical Study",
+            "url": "https://www.semanticscholar.org/paper/387a6e3f774def96ffcf7c2adcf850b6dad6ace2",
+            "venue": "IJCAI",
+            "year": 1989
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1680510",
+                    "name": "T. Dean"
+                },
+                {
+                    "authorId": "40359484",
+                    "name": "K. Kanazawa"
+                }
+            ],
+            "doi": "10.1111/j.1467-8640.1989.tb00324.x",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "959d2b9268294248b47dacfb15009699f0f2e80b",
+            "title": "A model for reasoning about persistence and causation",
+            "url": "https://www.semanticscholar.org/paper/959d2b9268294248b47dacfb15009699f0f2e80b",
+            "venue": "",
+            "year": 1989
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2109168016",
+                    "name": "Zhuang Liu"
+                },
+                {
+                    "authorId": "1753210",
+                    "name": "Trevor Darrell"
+                },
+                {
+                    "authorId": "1782282",
+                    "name": "Evan Shelhamer"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "69a9cda6e334b8a7440c939779507e692da38354",
+            "title": "Confidence Adaptive Anytime Pixel-Level Recognition",
+            "url": "https://www.semanticscholar.org/paper/69a9cda6e334b8a7440c939779507e692da38354",
+            "venue": "ArXiv",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144363397",
+                    "name": "A. Yazdani"
+                },
+                {
+                    "authorId": "101188725",
+                    "name": "M. Shahidzadeh"
+                },
+                {
+                    "authorId": "49226572",
+                    "name": "T. Takada"
+                }
+            ],
+            "doi": "10.1016/j.strusafe.2019.101892",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "963aaf08f712f355a83784c1197fb8abc0bd0b0c",
+            "title": "Bayesian networks for disaggregation of structural reliability",
+            "url": "https://www.semanticscholar.org/paper/963aaf08f712f355a83784c1197fb8abc0bd0b0c",
+            "venue": "",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3202750",
+                    "name": "Falk Lieder"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "630c6860475f8efa6f8873cff22df164305cfb0f",
+            "title": "Beyond bounded rationality: Reverse-engineering and enhancing human intelligence",
+            "url": "https://www.semanticscholar.org/paper/630c6860475f8efa6f8873cff22df164305cfb0f",
+            "venue": "",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1679549",
+                    "name": "Truong X. Nghiem"
+                },
+                {
+                    "authorId": "2790512",
+                    "name": "Y. Pant"
+                },
+                {
+                    "authorId": "1785009",
+                    "name": "Rahul Mangharam"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "8f22193c5631d95ae65a709045b1fa3a52cd9df9",
+            "title": "Robust Model Predictive Control with Anytime Estimation",
+            "url": "https://www.semanticscholar.org/paper/8f22193c5631d95ae65a709045b1fa3a52cd9df9",
+            "venue": "",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1785009",
+                    "name": "Rahul Mangharam"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "caf752a3de3b3d628bafae0e777238980221080a",
+            "title": "Anytime Algorithms for Automotive Architectures UTC Final Report",
+            "url": "https://www.semanticscholar.org/paper/caf752a3de3b3d628bafae0e777238980221080a",
+            "venue": "",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2117897817",
+                    "name": "Hongmei Li"
+                },
+                {
+                    "authorId": "1766273",
+                    "name": "Wenning Hao"
+                },
+                {
+                    "authorId": "3100768",
+                    "name": "Wenyan Gan"
+                },
+                {
+                    "authorId": "2146661449",
+                    "name": "Gang Chen"
+                }
+            ],
+            "doi": "10.1109/WISA.2013.59",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "9b753b81d9d1bd7496269af6b8f330fc5dbd2241",
+            "title": "Survey of Probabilistic Graphical Models",
+            "url": "https://www.semanticscholar.org/paper/9b753b81d9d1bd7496269af6b8f330fc5dbd2241",
+            "venue": "IEEE WISA",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "48191897",
+                    "name": "M. Comes"
+                }
+            ],
+            "doi": "10.5445/IR/1000025214",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "58cc2c98f129105ac75d571572b3fca887ddaf0f",
+            "title": "Decision Maps for Distributed Scenario-Based Multi-Criteria Decision Support",
+            "url": "https://www.semanticscholar.org/paper/58cc2c98f129105ac75d571572b3fca887ddaf0f",
+            "venue": "",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1916113",
+                    "name": "Bozhena Bidyuk"
+                },
+                {
+                    "authorId": "1751239",
+                    "name": "R. Dechter"
+                },
+                {
+                    "authorId": "2492844",
+                    "name": "E. Rollon"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "bb7e793bb70724da2afb24dbd141d9d538f49dd7",
+            "title": "Title Active tuples-based scheme for bounding posterior beliefs Permalink",
+            "url": "https://www.semanticscholar.org/paper/bb7e793bb70724da2afb24dbd141d9d538f49dd7",
+            "venue": "",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2311706",
+                    "name": "M. Bensi"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "f80d086a4509a0d79db2b56ee6827314b473dc9d",
+            "title": "A Bayesian Network Methodology for Infrastructure Seismic Risk Assessment and Decision Support",
+            "url": "https://www.semanticscholar.org/paper/f80d086a4509a0d79db2b56ee6827314b473dc9d",
+            "venue": "",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "46897844",
+                    "name": "J. Irvine"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "result",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "47aca2e0fad3dd2dc80084e3a1103dfcd752d50e",
+            "title": "An Anytime Boosting Scheme for Bounding Posterior Beliefs 1",
+            "url": "https://www.semanticscholar.org/paper/47aca2e0fad3dd2dc80084e3a1103dfcd752d50e",
+            "venue": "",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2883770",
+                    "name": "R. Andoga"
+                },
+                {
+                    "authorId": "1933962",
+                    "name": "L. Madar\u00e1sz"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "ebe92e980913b2a27d9e52e2dd4d453065cfaf48",
+            "title": "Control Algorithms and Modeling of Turbojet Engines",
+            "url": "https://www.semanticscholar.org/paper/ebe92e980913b2a27d9e52e2dd4d453065cfaf48",
+            "venue": "",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1916113",
+                    "name": "Bozhena Bidyuk"
+                },
+                {
+                    "authorId": "1751239",
+                    "name": "R. Dechter"
+                },
+                {
+                    "authorId": "119025132",
+                    "name": "D. Bren"
+                },
+                {
+                    "authorId": "2492844",
+                    "name": "E. Rollon"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "0b836c9eab8fbb599cd9d4f8fb9b616c9b7f8c5e",
+            "title": "An Anytime Boosting Scheme for Bounding Posterior Beliefs 1",
+            "url": "https://www.semanticscholar.org/paper/0b836c9eab8fbb599cd9d4f8fb9b616c9b7f8c5e",
+            "venue": "",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2043262",
+                    "name": "V. Kasyanov"
+                },
+                {
+                    "authorId": "2082923672",
+                    "name": "E. Kasyanova"
+                }
+            ],
+            "doi": "10.1007/978-0-387-84814-3_45",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "334be6c9285f65c890edad9058d486e35d0e90b9",
+            "title": "A Web-Based System for Distance Learning of Programming",
+            "url": "https://www.semanticscholar.org/paper/334be6c9285f65c890edad9058d486e35d0e90b9",
+            "venue": "",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "48127057",
+                    "name": "Ingrid Zukerman"
+                }
+            ],
+            "doi": "10.1007/978-0-387-98197-0_22",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "be70fb5523a21b696bb660bf7771ca46515dfadd",
+            "title": "Towards Probabilistic Argumentation",
+            "url": "https://www.semanticscholar.org/paper/be70fb5523a21b696bb660bf7771ca46515dfadd",
+            "venue": "Argumentation in Artificial Intelligence",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1700031",
+                    "name": "Adnan Darwiche"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7e4fc031a832ead3087cbd449b8a136e23eb3950",
+            "title": "7 Inference in Bayesian Networks : A Historical Perspective",
+            "url": "https://www.semanticscholar.org/paper/7e4fc031a832ead3087cbd449b8a136e23eb3950",
+            "venue": "",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "72797002",
+                    "name": "Acta Avionica"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "94b839c8ea5841269beae3edf11891c9a77950e2",
+            "title": "ANYTIME CONTROL ALGORITHM DESIGN FOR MPM 20 ENGINE",
+            "url": "https://www.semanticscholar.org/paper/94b839c8ea5841269beae3edf11891c9a77950e2",
+            "venue": "",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1881895",
+                    "name": "B. Sy"
+                },
+                {
+                    "authorId": "3111890",
+                    "name": "Yanqiang Yu"
+                },
+                {
+                    "authorId": "38719191",
+                    "name": "G.B. Winter"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7245145ab812116542c58b6b8820b4d33df84f14",
+            "title": "Reasoning Mpge in Belief Networks with Applications to Circuit Diagnosis",
+            "url": "https://www.semanticscholar.org/paper/7245145ab812116542c58b6b8820b4d33df84f14",
+            "venue": "",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3045152",
+                    "name": "Mark Last"
+                },
+                {
+                    "authorId": "2064312726",
+                    "name": "A. Saveliev"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "e9e1a3d0da71234711be184072e547c199722bd6",
+            "title": "Enhanced Anytime Algorithm for Induction of Oblivious Decision Trees",
+            "url": "https://www.semanticscholar.org/paper/e9e1a3d0da71234711be184072e547c199722bd6",
+            "venue": "",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1751239",
+                    "name": "R. Dechter"
+                },
+                {
+                    "authorId": "1916113",
+                    "name": "Bozhena Bidyuk"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "5debf08e6084178268e9cdecea68994b239f6583",
+            "title": "Exploiting graph cutsets for sampling-based approximations in bayesian networks",
+            "url": "https://www.semanticscholar.org/paper/5debf08e6084178268e9cdecea68994b239f6583",
+            "venue": "",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f86630a5152fdde1af4e106c17668ef97ebb264b",
+            "title": "Probabilistic Resolution : an Anytime Bounded Approximation Inference Algorithm for Graphical Models Paper # 1534 Area : Probabilistic Reasoning",
+            "url": "https://www.semanticscholar.org/paper/f86630a5152fdde1af4e106c17668ef97ebb264b",
+            "venue": "",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1716478",
+                    "name": "Marek J Druzdzel"
+                },
+                {
+                    "authorId": "2265929805",
+                    "name": "Changhe Yuan"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "370f1f3cb3f55b79c488a1d77e728db47ff30811",
+            "title": "Importance sampling for bayesian networks: principles, algorithms, and performance",
+            "url": "https://www.semanticscholar.org/paper/370f1f3cb3f55b79c488a1d77e728db47ff30811",
+            "venue": "",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1736443",
+                    "name": "R. Haenni"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "00882598bd2906c907edfd00ff663200e3f7777b",
+            "title": "Resource-Bounded Local Computation",
+            "url": "https://www.semanticscholar.org/paper/00882598bd2906c907edfd00ff663200e3f7777b",
+            "venue": "",
+            "year": 2004
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1916113",
+                    "name": "Bozhena Bidyuk"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f7b0aefc711dd9aa3c47f5c8081028b601a01098",
+            "title": "Approximation Algorithms for Probabilistic Reasoning : Sampling and Iterative Inference",
+            "url": "https://www.semanticscholar.org/paper/f7b0aefc711dd9aa3c47f5c8081028b601a01098",
+            "venue": "",
+            "year": 2004
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1730706",
+                    "name": "K. Korb"
+                },
+                {
+                    "authorId": "1738567",
+                    "name": "A. Nicholson"
+                }
+            ],
+            "doi": "10.5860/choice.41-5948",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0150254af6d36b4e8eef503da2b6c25d16870ffb",
+            "title": "Bayesian Artificial Intelligence",
+            "url": "https://www.semanticscholar.org/paper/0150254af6d36b4e8eef503da2b6c25d16870ffb",
+            "venue": "Computer science and data analysis series",
+            "year": 2004
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1735824",
+                    "name": "Carmel Domshlak"
+                },
+                {
+                    "authorId": "1719613",
+                    "name": "S. E. Shimony"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "166b2db0369a7e0c0e0a85fccd9c35f17ef4ab8c",
+            "title": "Efficient Probabilistic Reasoning in Bayes Nets with Mutual Exclusion and Context Specific Independence",
+            "url": "https://www.semanticscholar.org/paper/166b2db0369a7e0c0e0a85fccd9c35f17ef4ab8c",
+            "venue": "FLAIRS",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "39957469",
+                    "name": "A. Moussa"
+                },
+                {
+                    "authorId": "3340301",
+                    "name": "L. Kohout"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "0fd0a10a4b064a79e34201150443038840fff7ce",
+            "title": "The implementation of intelligent qos networking by the development and utilization of novel cross-disciplinary soft computing theories and techniques",
+            "url": "https://www.semanticscholar.org/paper/0fd0a10a4b064a79e34201150443038840fff7ce",
+            "venue": "",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2408223",
+                    "name": "J. Ide"
+                },
+                {
+                    "authorId": "7668712",
+                    "name": "Fabio Gagliardi Cozman"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "ea7c59ef8dde83d761efb034ba76147fc5bd2acb",
+            "title": "Testing MCMC algorithms with randomly generated Bayesian networks",
+            "url": "https://www.semanticscholar.org/paper/ea7c59ef8dde83d761efb034ba76147fc5bd2acb",
+            "venue": "",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2120852",
+                    "name": "Haipeng Guo"
+                },
+                {
+                    "authorId": "145591174",
+                    "name": "W. Hsu"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "08b6b591424d5548645c4db6944cc3cdc548de14",
+            "title": "A Survey of Algorithms for Real-Time Bayesian Network Inference",
+            "url": "https://www.semanticscholar.org/paper/08b6b591424d5548645c4db6944cc3cdc548de14",
+            "venue": "",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1751239",
+                    "name": "R. Dechter"
+                },
+                {
+                    "authorId": "2109771",
+                    "name": "I. Rish"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "f29d7631e850abdbe4d89c4d493aba69c588af32",
+            "title": "Mini-buckets: a general scheme for approximating inference",
+            "url": "https://www.semanticscholar.org/paper/f29d7631e850abdbe4d89c4d493aba69c588af32",
+            "venue": "",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145829692",
+                    "name": "J. Llinas"
+                }
+            ],
+            "doi": "10.1007/978-94-010-0556-2_5",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "dd6683b1b1127991b523e520e9a6d079bf4c6834",
+            "title": "Reexamining Data Fusion Processing at Levels 2, 3, and 4",
+            "url": "https://www.semanticscholar.org/paper/dd6683b1b1127991b523e520e9a6d079bf4c6834",
+            "venue": "",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2120852",
+                    "name": "Haipeng Guo"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f598992d1b583e2f9f58b72bd417f44594f67ab0",
+            "title": "A BAYESIAN SYSTEM FOR INTEGRATION OF ALGORITHMS FOR REAL-TIME BAYESIAN NETWORK INFERENCE",
+            "url": "https://www.semanticscholar.org/paper/f598992d1b583e2f9f58b72bd417f44594f67ab0",
+            "venue": "",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "30907562",
+                    "name": "D. Parkes"
+                },
+                {
+                    "authorId": "39308199",
+                    "name": "Lloyd G. Greenwald"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "262a1445cb6a83a82c93bd606a3c002c6ec250c1",
+            "title": "Approximate and Compensate: A method for risk-sensitive meta-deliberation and continual computation",
+            "url": "https://www.semanticscholar.org/paper/262a1445cb6a83a82c93bd606a3c002c6ec250c1",
+            "venue": "",
+            "year": 2001
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2265536442",
+                    "name": "Chiranjib Bhattacharyya"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "e4da697909dd1dc607e1c2f9fe4a890888dc0984",
+            "title": "Mean--eld Methods for a Special Class of Belief Networks",
+            "url": "https://www.semanticscholar.org/paper/e4da697909dd1dc607e1c2f9fe4a890888dc0984",
+            "venue": "",
+            "year": 2001
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1699110",
+                    "name": "N. Henze"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c08dc49a581b07cc74179aec1779655a5f17cad0",
+            "title": "Adaptive hyperbooks: adaptation for project-based learning resources",
+            "url": "https://www.semanticscholar.org/paper/c08dc49a581b07cc74179aec1779655a5f17cad0",
+            "venue": "",
+            "year": 2000
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3128621",
+                    "name": "Anthony G. Francis"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "e9447a5e60e56372ca7f5e53fdc281bab96703f4",
+            "title": "CONTEXT-SENSITIVE ASYNCHRONOUS MEMORY",
+            "url": "https://www.semanticscholar.org/paper/e9447a5e60e56372ca7f5e53fdc281bab96703f4",
+            "venue": "",
+            "year": 2000
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "35132120",
+                    "name": "T. Jaakkola"
+                },
+                {
+                    "authorId": "1694621",
+                    "name": "Michael I. Jordan"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "2dd253e6795b923b959f5c1ddf7d81cf4aba3b92",
+            "title": "Variational probabilistic inference and the QMR-DT database",
+            "url": "https://www.semanticscholar.org/paper/2dd253e6795b923b959f5c1ddf7d81cf4aba3b92",
+            "venue": "",
+            "year": 1998
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2257154779",
+                    "name": "Michael I. Jordan"
+                },
+                {
+                    "authorId": "35132120",
+                    "name": "T. Jaakkola"
+                },
+                {
+                    "authorId": "2247178235",
+                    "name": "Lawrence K. Saul"
+                },
+                {
+                    "authorId": "2254667926",
+                    "name": "David Heckerman"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "456c8c61fc13c80b590da121b8dcdc6f1b2defd0",
+            "title": "An Introduction to Variational Methods forGraphical",
+            "url": "https://www.semanticscholar.org/paper/456c8c61fc13c80b590da121b8dcdc6f1b2defd0",
+            "venue": "",
+            "year": 1998
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144299726",
+                    "name": "Thomas G. Dietterich"
+                },
+                {
+                    "authorId": "2077619593",
+                    "name": "Tony Fountain"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "a514273ed38e7677e3ef1a820a7324e7f843a4b1",
+            "title": "Just enough die-level test: optimizing ic test via machine learning and decision theory",
+            "url": "https://www.semanticscholar.org/paper/a514273ed38e7677e3ef1a820a7324e7f843a4b1",
+            "venue": "",
+            "year": 1998
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1740213",
+                    "name": "Pedro M. Domingos"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "6a48cf51167d14ec73bcf1c0e76bed46d0aed8ef",
+            "title": "How to Get a Free Lunch: A Simple Cost Model for Machine Learning Applications",
+            "url": "https://www.semanticscholar.org/paper/6a48cf51167d14ec73bcf1c0e76bed46d0aed8ef",
+            "venue": "",
+            "year": 1998
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "48109380",
+                    "name": "C. Gonzales"
+                },
+                {
+                    "authorId": "66303060",
+                    "name": "P. Wuillemin"
+                }
+            ],
+            "doi": "10.3406/STICE.1998.1384",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "39e43df759bf4bb07642bfa372a69dcca70ea7fa",
+            "title": "R\u00e9seaux bay\u00e9siens en mod\u00e9lisation d'utilisateurs.",
+            "url": "https://www.semanticscholar.org/paper/39e43df759bf4bb07642bfa372a69dcca70ea7fa",
+            "venue": "",
+            "year": 1998
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143686063",
+                    "name": "R. Greiner"
+                },
+                {
+                    "authorId": "2319258",
+                    "name": "C. Darken"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f0daa8a0d18287e6603f7c7ddd06d6840d3a12f4",
+            "title": "Eecient Reasoning",
+            "url": "https://www.semanticscholar.org/paper/f0daa8a0d18287e6603f7c7ddd06d6840d3a12f4",
+            "venue": "",
+            "year": 1998
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1731683",
+                    "name": "P. Bonissone"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "89690c7bef5a1265bb951dcc4531f8571a3fa260",
+            "title": "Fuzzy Logic and Soft Computing: Technology Development and Applications",
+            "url": "https://www.semanticscholar.org/paper/89690c7bef5a1265bb951dcc4531f8571a3fa260",
+            "venue": "",
+            "year": 1997
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2030541",
+                    "name": "P. Ibarg\u00fcengoytia"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "5a49c24ac3fb8aa82c1a028d1e56f9e24b0687d5",
+            "title": "Any time probabilistic sensor validation",
+            "url": "https://www.semanticscholar.org/paper/5a49c24ac3fb8aa82c1a028d1e56f9e24b0687d5",
+            "venue": "",
+            "year": 1997
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "70538532",
+                    "name": "Daniel McMichaelCooperative"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "73f9700043f70a5b85a55dc4fa12fb190bda4be0",
+            "title": "INFORMATION FUSION, CAUSAL PROBABILISTIC NETWORK AND PROBANET I: Information Fusion Infrastructure and Probabilistic Knowledge Representation",
+            "url": "https://www.semanticscholar.org/paper/73f9700043f70a5b85a55dc4fa12fb190bda4be0",
+            "venue": "",
+            "year": 1997
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1707550",
+                    "name": "S. Zilberstein"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "b18553160b9481f9bbca7952e6bde865f9f2cd50",
+            "title": "Intelligent Information Gathering Using Decision Models",
+            "url": "https://www.semanticscholar.org/paper/b18553160b9481f9bbca7952e6bde865f9f2cd50",
+            "venue": "",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1697031",
+                    "name": "E. Hansen"
+                },
+                {
+                    "authorId": "1707550",
+                    "name": "S. Zilberstein"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "3cc3665ff49822995f38e12411699f2062924c80",
+            "title": "Monitoring the Progress of Anyti",
+            "url": "https://www.semanticscholar.org/paper/3cc3665ff49822995f38e12411699f2062924c80",
+            "venue": "",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2079219814",
+                    "name": "A. E. NicholsonDepartment"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "bd8a21186cc8315cee8a8d221bbcb539f31ae1ae",
+            "title": "Belief Network Inference Algorithms: a Study of Performance Based on Domain Characterisation",
+            "url": "https://www.semanticscholar.org/paper/bd8a21186cc8315cee8a8d221bbcb539f31ae1ae",
+            "venue": "",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1719613",
+                    "name": "S. E. Shimony"
+                },
+                {
+                    "authorId": "143844811",
+                    "name": "E. Santos"
+                }
+            ],
+            "doi": "10.1016/0888-613X(95)00112-T",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "a810c061ba1e79f218db0917324cb56a9d43cf17",
+            "title": "Exploiting case-based independence for approximating marginal probabilities",
+            "url": "https://www.semanticscholar.org/paper/a810c061ba1e79f218db0917324cb56a9d43cf17",
+            "venue": "Int. J. Approx. Reason.",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1746690",
+                    "name": "M. Adelantado"
+                },
+                {
+                    "authorId": "1712549",
+                    "name": "S. D. Givry"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "2354ae9895808eeed3801f747143414cc06ce194",
+            "title": "Reactive/Anytime Agents Towards Intelligent Agents with Real-Time Performance",
+            "url": "https://www.semanticscholar.org/paper/2354ae9895808eeed3801f747143414cc06ce194",
+            "venue": "",
+            "year": 1995
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1707550",
+                    "name": "S. Zilberstein"
+                }
+            ],
+            "doi": "10.1609/aimag.v16i2.1136",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d0d0e407f4777c9b3829b28b948ffcf844cb5f86",
+            "title": "Operational Rationality through Compilation of Anytime Algorithms",
+            "url": "https://www.semanticscholar.org/paper/d0d0e407f4777c9b3829b28b948ffcf844cb5f86",
+            "venue": "AI Mag.",
+            "year": 1995
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1707550",
+                    "name": "S. Zilberstein"
+                },
+                {
+                    "authorId": "145107462",
+                    "name": "Stuart J. Russell"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "0463ac59bd6c2d42c775e04e634151a30b1efb8e",
+            "title": "1 APPROXIMATE REASONING USING ANYTIME ALGORITHMS",
+            "url": "https://www.semanticscholar.org/paper/0463ac59bd6c2d42c775e04e634151a30b1efb8e",
+            "venue": "",
+            "year": 1994
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143844811",
+                    "name": "E. Santos"
+                },
+                {
+                    "authorId": "1719613",
+                    "name": "S. E. Shimony"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "8b54aad53151787f0ca01577d85f423e65ed11f1",
+            "title": "Exploiting Ib Assignments for Approximating Marginal Probabilities Exploiting Ib Assignments for Approximating Marginal Probabilities",
+            "url": "https://www.semanticscholar.org/paper/8b54aad53151787f0ca01577d85f423e65ed11f1",
+            "venue": "",
+            "year": 1994
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145500761",
+                    "name": "J. Kirman"
+                },
+                {
+                    "authorId": "1738567",
+                    "name": "A. Nicholson"
+                },
+                {
+                    "authorId": "3277741",
+                    "name": "Moises Lejter"
+                },
+                {
+                    "authorId": "1680510",
+                    "name": "T. Dean"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "result"
+            ],
+            "isInfluential": false,
+            "paperId": "0156b88730b09629f3fa0bd4057733255669949a",
+            "title": "Using Goals to Find Plans with High Expected Utility",
+            "url": "https://www.semanticscholar.org/paper/0156b88730b09629f3fa0bd4057733255669949a",
+            "venue": "",
+            "year": 1993
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "153049046",
+                    "name": "N. Nicholson"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "b63b7db4a9753a43de55c38f738b453dd7825003",
+            "title": "Techniques for handling inference complexity inDynamic Belief",
+            "url": "https://www.semanticscholar.org/paper/b63b7db4a9753a43de55c38f738b453dd7825003",
+            "venue": "",
+            "year": 1993
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143844811",
+                    "name": "E. Santos"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c2331975ba6ad120822df915f7aad528f283494f",
+            "title": "On Spline Approximations for Bayesian Computations on Spline Approximations for Bayesian Computations 1",
+            "url": "https://www.semanticscholar.org/paper/c2331975ba6ad120822df915f7aad528f283494f",
+            "venue": "",
+            "year": 1992
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "40359484",
+                    "name": "K. Kanazawa"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "524248ad170d7de4d251085910367a03f23a226a",
+            "title": "Reasoning about time and probability",
+            "url": "https://www.semanticscholar.org/paper/524248ad170d7de4d251085910367a03f23a226a",
+            "venue": "",
+            "year": 1992
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1731683",
+                    "name": "P. Bonissone"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "6990b8354db549ca399aee3eef252c6cbc40d10e",
+            "title": "pproximate Re A Personal",
+            "url": "https://www.semanticscholar.org/paper/6990b8354db549ca399aee3eef252c6cbc40d10e",
+            "venue": "",
+            "year": 1991
+        },
+        {
+            "arxivId": null,
+            "authors": [],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "a98f1f49ab8d26912849de1739a5883a54653293",
+            "title": "This Is a Publication of the American Association for Artificial Intelligence",
+            "url": "https://www.semanticscholar.org/paper/a98f1f49ab8d26912849de1739a5883a54653293",
+            "venue": "",
+            "year": null
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144665641",
+                    "name": "M. Fehling"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "3986e56f65ab482439be4456aedd6aa567c61a58",
+            "title": "00 Intelligent Real-Time Problem-Solving : 00 Issues , Concepts and Research Methodology iJanuary",
+            "url": "https://www.semanticscholar.org/paper/3986e56f65ab482439be4456aedd6aa567c61a58",
+            "venue": "",
+            "year": null
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2094884801",
+                    "name": "Monti"
+                },
+                {
+                    "authorId": "1726406",
+                    "name": "G. Cooper"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "1da15dbf52068c858ec39b7b86911910bc29633f",
+            "title": "Bounded Rd",
+            "url": "https://www.semanticscholar.org/paper/1da15dbf52068c858ec39b7b86911910bc29633f",
+            "venue": "",
+            "year": null
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2249867437",
+                    "name": "F. Van Harmelen"
+                },
+                {
+                    "authorId": "2245816832",
+                    "name": "V. Lifschitz"
+                },
+                {
+                    "authorId": "2314924151",
+                    "name": "B. Porter"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7f10fc55e49c376bbadca86abe3c97a1c45b2583",
+            "title": "Handbook of Knowledge Representation Edited Bayesian Networks A. Darwiche 11.1 Introduction",
+            "url": "https://www.semanticscholar.org/paper/7f10fc55e49c376bbadca86abe3c97a1c45b2583",
+            "venue": "",
+            "year": null
+        }
+    ],
+    "corpusId": 8901047,
+    "doi": null,
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 6,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 144,
+    "numCiting": 15,
+    "paperId": "6b4c6520c92a68f2bdd27fc59ba8186fcab708d7",
+    "references": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145479841",
+                    "name": "E. Horvitz"
+                },
+                {
+                    "authorId": "48099028",
+                    "name": "D. Heckerman"
+                },
+                {
+                    "authorId": "2335093",
+                    "name": "K. Ng"
+                },
+                {
+                    "authorId": "2287810",
+                    "name": "B. Nathwani"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ce98a337752e73d49054f697905fdf1b2bf1adf2",
+            "title": "Heuristic Abstraction in the Decision-Theoretic Pathfinder System",
+            "url": "https://www.semanticscholar.org/paper/ce98a337752e73d49054f697905fdf1b2bf1adf2",
+            "venue": "",
+            "year": 1989
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145479841",
+                    "name": "E. Horvitz"
+                },
+                {
+                    "authorId": "1726406",
+                    "name": "G. Cooper"
+                },
+                {
+                    "authorId": "48099028",
+                    "name": "D. Heckerman"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "387a6e3f774def96ffcf7c2adcf850b6dad6ace2",
+            "title": "Reflection and Action Under Scarce Resources: Theoretical Principles and Empirical Study",
+            "url": "https://www.semanticscholar.org/paper/387a6e3f774def96ffcf7c2adcf850b6dad6ace2",
+            "venue": "IJCAI",
+            "year": 1989
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145479841",
+                    "name": "E. Horvitz"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ed31558a9fef2bb3fb09914b642b9252d4cd9a77",
+            "title": "Reasoning under Varying and Uncertain Resource Constraints",
+            "url": "https://www.semanticscholar.org/paper/ed31558a9fef2bb3fb09914b642b9252d4cd9a77",
+            "venue": "AAAI",
+            "year": 1988
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1680510",
+                    "name": "T. Dean"
+                },
+                {
+                    "authorId": "3159612",
+                    "name": "M. Boddy"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "143f6b100c13d120e55c3e30e441c4abac7a5db2",
+            "title": "An Analysis of Time-Dependent Planning",
+            "url": "https://www.semanticscholar.org/paper/143f6b100c13d120e55c3e30e441c4abac7a5db2",
+            "venue": "AAAI",
+            "year": 1988
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145479841",
+                    "name": "E. Horvitz"
+                },
+                {
+                    "authorId": "1778725",
+                    "name": "J. Breese"
+                },
+                {
+                    "authorId": "3009522",
+                    "name": "M. Henrion"
+                }
+            ],
+            "doi": "10.1016/0888-613X(88)90120-X",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "6710b1fffd6e850e04f972441732ecf66cf372a2",
+            "title": "Decision theory in expert systems and artificial intelligenc",
+            "url": "https://www.semanticscholar.org/paper/6710b1fffd6e850e04f972441732ecf66cf372a2",
+            "venue": "Int. J. Approx. Reason.",
+            "year": 1988
+        },
+        {
+            "arxivId": "1304.2759",
+            "authors": [
+                {
+                    "authorId": "145479841",
+                    "name": "E. Horvitz"
+                }
+            ],
+            "doi": "10.1016/0888-613x(88)90148-x",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "da6231ac3da628e748d407c3842bc06b32433ab6",
+            "title": "Reasoning about beliefs and actions under computational resource constraints",
+            "url": "https://www.semanticscholar.org/paper/da6231ac3da628e748d407c3842bc06b32433ab6",
+            "venue": "Int. J. Approx. Reason.",
+            "year": 1987
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145430701",
+                    "name": "J. Pearl"
+                }
+            ],
+            "doi": "10.1145/3501714.3501728",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "bb0419bccc2244ed33c9c42341f342511262daa3",
+            "title": "Fusion, Propagation, and Structuring in Belief Networks",
+            "url": "https://www.semanticscholar.org/paper/bb0419bccc2244ed33c9c42341f342511262daa3",
+            "venue": "Artif. Intell.",
+            "year": 1986
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1726406",
+                    "name": "G. Cooper"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "373b1817afebdced6119cb6564a6be187b4823a9",
+            "title": "NESTOR: A Computer-Based Medical Diagnostic Aid That Integrates Causal and Probabilistic Knowledge.",
+            "url": "https://www.semanticscholar.org/paper/373b1817afebdced6119cb6564a6be187b4823a9",
+            "venue": "",
+            "year": 1984
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2152674014",
+                    "name": "Jin H. Kim"
+                },
+                {
+                    "authorId": "145430701",
+                    "name": "J. Pearl"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "f8d16924d37ac2ad2fe23e641673f9f2b5434733",
+            "title": "A Computational Model for Causal and Diagnostic Reasoning in Inference Systems",
+            "url": "https://www.semanticscholar.org/paper/f8d16924d37ac2ad2fe23e641673f9f2b5434733",
+            "venue": "IJCAI",
+            "year": 1983
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1956635",
+                    "name": "I. Beinlich"
+                },
+                {
+                    "authorId": "31445340",
+                    "name": "H. J. Suermondt"
+                },
+                {
+                    "authorId": "37659559",
+                    "name": "R. M. Chavez"
+                },
+                {
+                    "authorId": "1726406",
+                    "name": "G. Cooper"
+                }
+            ],
+            "doi": "10.1007/978-3-642-93437-7_28",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d97676a7505a446670cfc7a2fd0fc2e2672eaf9f",
+            "title": "The ALARM Monitoring System: A Case Study with two Probabilistic Inference Techniques for Belief Networks",
+            "url": "https://www.semanticscholar.org/paper/d97676a7505a446670cfc7a2fd0fc2e2672eaf9f",
+            "venue": "AIME",
+            "year": 1989
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2111034835",
+                    "name": "Yun Peng"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "308d5f8005783516065a025387d09fd6350ae75e",
+            "title": "A Formalization of Parsimonious Covering and Probabilistic Reasoning in Abductive Diagnostic Inferen",
+            "url": "https://www.semanticscholar.org/paper/308d5f8005783516065a025387d09fd6350ae75e",
+            "venue": "",
+            "year": 1985
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Bounded Conditioning: Flexible Inference for Decisions under Scarce Resources",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/6b4c6520c92a68f2bdd27fc59ba8186fcab708d7",
+    "venue": "Conference on Uncertainty in Artificial Intelligence",
+    "year": 2013
+}

@@ -1,0 +1,964 @@
+{
+    "abstract": "Existing plan synthesis approaches in artificial intelligence fall into two categories - domain independent and domain dependent. The domain independent approaches are applicable across a variety of domains, but may not be very efficient in any one given domain. The domain dependent approaches need to be (re)designed for each domain separately, but can be very efficient in the domain for which they are designed. One enticing alternative to these approaches is to automatically synthesize domain independent planners given the knowledge about the domain and the theory of planning. In this paper, we investigate the feasibility of using existing automated software synthesis tools to support such synthesis. Specifically, we describe an architecture called CLAY in which the Kestrel Interactive Development System (KIDS) is used to derive a domain-customized planner through a semi-automatic combination of a declarative theory of planning, and the declarative control knowledge specific to a given domain, to semi-automatically combine them to derive domain-customized planners. We discuss what it means to write a declarative theory of planning and control knowledge for KIDS, and illustrate our approach by generating a class of domain-specific planners using state space refinements. Our experiments show that the synthesized planners can outperform classical refinement planners (implemented as instantiations of UCP, Kambhampati & Srivastava, 1995), using the same control knowledge. We will contrast the costs and benefits of the synthesis approach with conventional methods for customizing domain independent planners.",
+    "arxivId": "cs/9803101",
+    "authors": [
+        {
+            "authorId": "144444290",
+            "name": "B. Srivastava",
+            "url": "https://www.semanticscholar.org/author/144444290"
+        },
+        {
+            "authorId": "1740315",
+            "name": "S. Kambhampati",
+            "url": "https://www.semanticscholar.org/author/1740315"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2060886056",
+                    "name": "A. Micheli"
+                },
+                {
+                    "authorId": "144606000",
+                    "name": "Alessandro Valentini"
+                }
+            ],
+            "doi": "10.1609/aaai.v35i13.17413",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "e6e6da82a45728da81dadd50d03a59ca0eea7185",
+            "title": "Synthesis of Search Heuristics for Temporal Planning via Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/e6e6da82a45728da81dadd50d03a59ca0eea7185",
+            "venue": "AAAI",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "9372411",
+                    "name": "D. Balasubramaniam"
+                },
+                {
+                    "authorId": "143910965",
+                    "name": "Christopher Jefferson"
+                },
+                {
+                    "authorId": "1722782",
+                    "name": "Lars Kotthoff"
+                },
+                {
+                    "authorId": "1711462",
+                    "name": "Ian Miguel"
+                },
+                {
+                    "authorId": "145042851",
+                    "name": "Peter William Nightingale"
+                }
+            ],
+            "doi": "10.1109/ICSE.2012.6227151",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "77b56d29ca967b4097bf81550f88afeed9a711b8",
+            "title": "An automated approach to generating efficient constraint solvers",
+            "url": "https://www.semanticscholar.org/paper/77b56d29ca967b4097bf81550f88afeed9a711b8",
+            "venue": "2012 34th International Conference on Software Engineering (ICSE)",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1844647",
+                    "name": "T. Ellman"
+                },
+                {
+                    "authorId": "39319785",
+                    "name": "Ryan Deak"
+                },
+                {
+                    "authorId": "1814241",
+                    "name": "Jason Fotinatos"
+                }
+            ],
+            "doi": "10.1023/A:1025811105984",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "bedcb8535f31c2becfbf2fea595d8f983368c576",
+            "title": "Automated Synthesis of Numerical Programs for Simulation of Rigid Mechanical Systems in Physics-Based Animation",
+            "url": "https://www.semanticscholar.org/paper/bedcb8535f31c2becfbf2fea595d8f983368c576",
+            "venue": "Automated Software Engineering",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1844647",
+                    "name": "T. Ellman"
+                },
+                {
+                    "authorId": "39319785",
+                    "name": "Ryan Deak"
+                },
+                {
+                    "authorId": "1814241",
+                    "name": "Jason Fotinatos"
+                }
+            ],
+            "doi": "10.1109/ASE.2002.1114998",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "38df7810d86a58ce249a5919fbd9c4ffd8a46b17",
+            "title": "Knowledge-based synthesis of numerical programs for simulation of rigid-body systems in physics-based animation",
+            "url": "https://www.semanticscholar.org/paper/38df7810d86a58ce249a5919fbd9c4ffd8a46b17",
+            "venue": "Proceedings 17th IEEE International Conference on Automated Software Engineering,",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2031548",
+                    "name": "S. Westfold"
+                },
+                {
+                    "authorId": "2219564889",
+                    "name": "Douglas R. Smith"
+                }
+            ],
+            "doi": "10.1017/S0269888901000029",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7afc7a826d4563ec5760f72d48a3605df963a137",
+            "title": "Synthesis of efficient constraint-satisfaction programs",
+            "url": "https://www.semanticscholar.org/paper/7afc7a826d4563ec5760f72d48a3605df963a137",
+            "venue": "The Knowledge Engineering Review",
+            "year": 2001
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1730216",
+                    "name": "Rafael Berlanga Llavori"
+                }
+            ],
+            "doi": "10.1023/A:1008336121961",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "2b7b3945fc8116c5119a4595858f35bb612207e4",
+            "title": "STRPLAN: A Distributed Planner for Object-Centred Application Domains",
+            "url": "https://www.semanticscholar.org/paper/2b7b3945fc8116c5119a4595858f35bb612207e4",
+            "venue": "Applied Intelligence",
+            "year": 1998
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144444290",
+                    "name": "B. Srivastava"
+                },
+                {
+                    "authorId": "1740315",
+                    "name": "S. Kambhampati"
+                },
+                {
+                    "authorId": "1771622",
+                    "name": "A. Mali"
+                }
+            ],
+            "doi": "10.1109/ASE.1997.632820",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "b509d53637baf9752ae54eac857194e8847b2849",
+            "title": "A structured approach for synthesizing planners from specifications",
+            "url": "https://www.semanticscholar.org/paper/b509d53637baf9752ae54eac857194e8847b2849",
+            "venue": "Proceedings 12th IEEE International Conference Automated Software Engineering",
+            "year": 1997
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1740315",
+                    "name": "S. Kambhampati"
+                }
+            ],
+            "doi": "10.1609/aimag.v18i2.1295",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "6fe9adf29d82e8226ae9d11e7c9fd71a9cae87be",
+            "title": "Refinement Planning as a Unifying Framework for Plan Synthesis",
+            "url": "https://www.semanticscholar.org/paper/6fe9adf29d82e8226ae9d11e7c9fd71a9cae87be",
+            "venue": "AI Mag.",
+            "year": 1997
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2436886",
+                    "name": "S. Nedunuri"
+                },
+                {
+                    "authorId": "50761695",
+                    "name": "W. Cook"
+                },
+                {
+                    "authorId": "2219564889",
+                    "name": "Douglas R. Smith"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "5bbcbfb6de8830f6fe8fd8fd8ba5080de091452f",
+            "title": "Cost-Based Learning for Planning",
+            "url": "https://www.semanticscholar.org/paper/5bbcbfb6de8830f6fe8fd8fd8ba5080de091452f",
+            "venue": "",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1736882",
+                    "name": "F. Bacchus"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "baafbb7a53196f01aa93b48fd00da5a7d297da38",
+            "title": "Precondition Control",
+            "url": "https://www.semanticscholar.org/paper/baafbb7a53196f01aa93b48fd00da5a7d297da38",
+            "venue": "",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "48765570",
+                    "name": "L. Warshaw"
+                },
+                {
+                    "authorId": "1710994",
+                    "name": "Daniel P. Miranker"
+                },
+                {
+                    "authorId": "2072084484",
+                    "name": "Kenneth S. Ulrich"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "331c2ce579f47ab4c8c1a36bae4041c6693afdeb",
+            "title": "Definition and Application of a GenVoca Component Description Language *",
+            "url": "https://www.semanticscholar.org/paper/331c2ce579f47ab4c8c1a36bae4041c6693afdeb",
+            "venue": "",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1736882",
+                    "name": "F. Bacchus"
+                },
+                {
+                    "authorId": "2132916",
+                    "name": "F. Kabanza"
+                }
+            ],
+            "doi": "10.1016/S0004-3702(99)00071-5",
+            "intent": [
+                "result"
+            ],
+            "isInfluential": false,
+            "paperId": "e0e76d0b1b384d43afa02f110a2b558b06a7d193",
+            "title": "Using temporal logics to express search control knowledge for planning",
+            "url": "https://www.semanticscholar.org/paper/e0e76d0b1b384d43afa02f110a2b558b06a7d193",
+            "venue": "Artif. Intell.",
+            "year": 2000
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1736882",
+                    "name": "F. Bacchus"
+                },
+                {
+                    "authorId": "144290334",
+                    "name": "C. B. Fraser"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "8c0eab6f4f0927c5590201d322e84aee7fd8b5b4",
+            "title": "Inner and Outer Boundaries of Literals A Mechanism for Computing Domain Specific Information",
+            "url": "https://www.semanticscholar.org/paper/8c0eab6f4f0927c5590201d322e84aee7fd8b5b4",
+            "venue": "",
+            "year": 2000
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2913510",
+                    "name": "Frank Weberskirch"
+                },
+                {
+                    "authorId": "1403737823",
+                    "name": "Hector Mu\u00f1oz-Avila"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "6e50acc9eed85234715902874f3a701edfdba5f9",
+            "title": "Extending Problem Specifications for Plan-Space Planners",
+            "url": "https://www.semanticscholar.org/paper/6e50acc9eed85234715902874f3a701edfdba5f9",
+            "venue": "",
+            "year": 1999
+        },
+        {
+            "arxivId": null,
+            "authors": [],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "9cd1d2da64c3bf354b73678a995c0a55e9282ce5",
+            "title": "This Is a Publication of the American Association for Artificial Intelligence",
+            "url": "https://www.semanticscholar.org/paper/9cd1d2da64c3bf354b73678a995c0a55e9282ce5",
+            "venue": "",
+            "year": null
+        }
+    ],
+    "corpusId": 3263851,
+    "doi": "10.1613/jair.428",
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 1,
+    "isOpenAccess": true,
+    "isPublisherLicensed": true,
+    "is_open_access": true,
+    "is_publisher_licensed": true,
+    "numCitedBy": 15,
+    "numCiting": 32,
+    "paperId": "061ae56c3350b8850e15c0e0f4f7c19d24b9a2ab",
+    "references": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144444290",
+                    "name": "B. Srivastava"
+                },
+                {
+                    "authorId": "1740315",
+                    "name": "S. Kambhampati"
+                },
+                {
+                    "authorId": "1771622",
+                    "name": "A. Mali"
+                }
+            ],
+            "doi": "10.1109/ASE.1997.632820",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "b509d53637baf9752ae54eac857194e8847b2849",
+            "title": "A structured approach for synthesizing planners from specifications",
+            "url": "https://www.semanticscholar.org/paper/b509d53637baf9752ae54eac857194e8847b2849",
+            "venue": "Proceedings 12th IEEE International Conference Automated Software Engineering",
+            "year": 1997
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1740315",
+                    "name": "S. Kambhampati"
+                },
+                {
+                    "authorId": "144106586",
+                    "name": "E. Parker"
+                },
+                {
+                    "authorId": "2913226",
+                    "name": "Eric Lambrecht"
+                }
+            ],
+            "doi": "10.1007/3-540-63912-8_91",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "bdc044acedd6717ad6aae1cf4574b270480d8c68",
+            "title": "Understanding and Extending Graphplan",
+            "url": "https://www.semanticscholar.org/paper/bdc044acedd6717ad6aae1cf4574b270480d8c68",
+            "venue": "ECP",
+            "year": 1997
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1740315",
+                    "name": "S. Kambhampati"
+                }
+            ],
+            "doi": "10.1609/aimag.v18i2.1295",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "6fe9adf29d82e8226ae9d11e7c9fd71a9cae87be",
+            "title": "Refinement Planning as a Unifying Framework for Plan Synthesis",
+            "url": "https://www.semanticscholar.org/paper/6fe9adf29d82e8226ae9d11e7c9fd71a9cae87be",
+            "venue": "AI Mag.",
+            "year": 1997
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1740315",
+                    "name": "S. Kambhampati"
+                },
+                {
+                    "authorId": "3069521",
+                    "name": "Suresh Katukam"
+                },
+                {
+                    "authorId": "2069175413",
+                    "name": "Yong Qu"
+                }
+            ],
+            "doi": "10.1016/S0004-3702(96)00005-7",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "99b8179c17cc560fb894fc9a8b5600a3c053094f",
+            "title": "Failure Driven Dynamic Search Control for Partial Order Planners: An Explanation Based Approach",
+            "url": "https://www.semanticscholar.org/paper/99b8179c17cc560fb894fc9a8b5600a3c053094f",
+            "venue": "Artif. Intell.",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1740315",
+                    "name": "S. Kambhampati"
+                },
+                {
+                    "authorId": "2112094854",
+                    "name": "Xiuping Yang"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "dcc1a5feed5e5e01a72d19e935a536e2cd09823c",
+            "title": "On the Role of Disjunctive Representations and Constraint Propagation in Refinement Planning",
+            "url": "https://www.semanticscholar.org/paper/dcc1a5feed5e5e01a72d19e935a536e2cd09823c",
+            "venue": "KR",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144659218",
+                    "name": "C. Gomes"
+                },
+                {
+                    "authorId": "2219564889",
+                    "name": "Douglas R. Smith"
+                },
+                {
+                    "authorId": "2031548",
+                    "name": "S. Westfold"
+                }
+            ],
+            "doi": "10.1109/KBSE.1996.552819",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "26d09faaa3c98adc9e3280526c3256fd350d4267",
+            "title": "Synthesis of schedulers for planned shutdowns of power plants",
+            "url": "https://www.semanticscholar.org/paper/26d09faaa3c98adc9e3280526c3256fd350d4267",
+            "venue": "Proceedings of the 11th Knowledge-Based Software Engineering Conference",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "46607986",
+                    "name": "M. Burstein"
+                },
+                {
+                    "authorId": "2219564889",
+                    "name": "Douglas R. Smith"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7b6fdacb3ffc2e471c50ab7df8411c12c3dea241",
+            "title": "ITAS: A Portable, Interactive Transportation Scheduling Tool Using a Search Engine Generated from Formal Specifications",
+            "url": "https://www.semanticscholar.org/paper/7b6fdacb3ffc2e471c50ab7df8411c12c3dea241",
+            "venue": "AIPS",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144507365",
+                    "name": "Christer B\u00e4ckstr\u00f6m"
+                },
+                {
+                    "authorId": "145304209",
+                    "name": "Bernhard Nebel"
+                }
+            ],
+            "doi": "10.1111/j.1467-8640.1995.tb00052.x",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "36f69a01f692ace8b2bf1841cccf144daec9e73a",
+            "title": "COMPLEXITY RESULTS FOR SAS+ PLANNING",
+            "url": "https://www.semanticscholar.org/paper/36f69a01f692ace8b2bf1841cccf144daec9e73a",
+            "venue": "Comput. Intell.",
+            "year": 1995
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144659218",
+                    "name": "C. Gomes"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8f305f57813368b783d037401cbd1c775b50612c",
+            "title": "PLANNING IN KIDS",
+            "url": "https://www.semanticscholar.org/paper/8f305f57813368b783d037401cbd1c775b50612c",
+            "venue": "",
+            "year": 1995
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1690967",
+                    "name": "Avrim Blum"
+                },
+                {
+                    "authorId": "2061165715",
+                    "name": "M. Furst"
+                }
+            ],
+            "doi": "10.1016/S0004-3702(96)00047-1",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "48a544859d70a707643c387c7573444ce4caf977",
+            "title": "Fast Planning Through Planning Graph Analysis",
+            "url": "https://www.semanticscholar.org/paper/48a544859d70a707643c387c7573444ce4caf977",
+            "venue": "IJCAI",
+            "year": 1995
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1740315",
+                    "name": "S. Kambhampati"
+                },
+                {
+                    "authorId": "1745117",
+                    "name": "Craig A. Knoblock"
+                },
+                {
+                    "authorId": "152290618",
+                    "name": "Qiang Yang"
+                }
+            ],
+            "doi": "10.1016/0004-3702(94)00076-D",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "ac648a975bd1a4d82ca537053adff73afda44d5c",
+            "title": "Planning as Refinement Search: A Unified Framework for Evaluating Design Tradeoffs in Partial-Order Planning",
+            "url": "https://www.semanticscholar.org/paper/ac648a975bd1a4d82ca537053adff73afda44d5c",
+            "venue": "Artif. Intell.",
+            "year": 1995
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1740315",
+                    "name": "S. Kambhampati"
+                }
+            ],
+            "doi": "10.1145/202187.202192",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d41d9d15862e542947b3501f985540137828e275",
+            "title": "A comparative analysis of partial order planning and task reduction planning",
+            "url": "https://www.semanticscholar.org/paper/d41d9d15862e542947b3501f985540137828e275",
+            "venue": "SGAR",
+            "year": 1995
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2660979",
+                    "name": "M. Yoshikawa"
+                },
+                {
+                    "authorId": "2061403977",
+                    "name": "K. Kaneko"
+                },
+                {
+                    "authorId": "2370983",
+                    "name": "Y. Nomura"
+                },
+                {
+                    "authorId": "1857309",
+                    "name": "Masanobu Watanabe"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "8e516b33df64c3ad1fedfbed6842004d702ee95a",
+            "title": "A Constraint-Based Approach to High-School Timetabling Problems: A Case Study",
+            "url": "https://www.semanticscholar.org/paper/8e516b33df64c3ad1fedfbed6842004d702ee95a",
+            "venue": "AAAI",
+            "year": 1994
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145868650",
+                    "name": "A. Barrett"
+                },
+                {
+                    "authorId": "1780531",
+                    "name": "Daniel S. Weld"
+                }
+            ],
+            "doi": "10.1016/0004-3702(94)90012-4",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "31e97dbdeda15577a96d22f21b56d7cf8c724aa6",
+            "title": "Partial-Order Planning: Evaluating Possible Efficiency Gains",
+            "url": "https://www.semanticscholar.org/paper/31e97dbdeda15577a96d22f21b56d7cf8c724aa6",
+            "venue": "Artif. Intell.",
+            "year": 1994
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3370368",
+                    "name": "Eugene Fink"
+                },
+                {
+                    "authorId": "1956361",
+                    "name": "M. Veloso"
+                }
+            ],
+            "doi": "10.21236/ada278900",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "5c7770dd1719d9eed233b5ec1caa9282b0e6d60f",
+            "title": "Prodigy Planning Algorithm",
+            "url": "https://www.semanticscholar.org/paper/5c7770dd1719d9eed233b5ec1caa9282b0e6d60f",
+            "venue": "",
+            "year": 1994
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2219564889",
+                    "name": "Douglas R. Smith"
+                },
+                {
+                    "authorId": "34090399",
+                    "name": "E. Parra"
+                }
+            ],
+            "doi": "10.1109/KBSE.1993.341197",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "133189d17ab076f0cdc932cb58e8f1f702b5138a",
+            "title": "Transformational approach to transportation scheduling",
+            "url": "https://www.semanticscholar.org/paper/133189d17ab076f0cdc932cb58e8f1f702b5138a",
+            "venue": "Proceedings of 8th Knowledge-Based Software Engineering Conference",
+            "year": 1993
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143712199",
+                    "name": "J. Penberthy"
+                },
+                {
+                    "authorId": "1780531",
+                    "name": "Daniel S. Weld"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "6e1bd5758be5495141d56de31c28d57f55c56f3e",
+            "title": "UCPOP: A Sound, Complete, Partial Order Planner for ADL",
+            "url": "https://www.semanticscholar.org/paper/6e1bd5758be5495141d56de31c28d57f55c56f3e",
+            "venue": "KR",
+            "year": 1992
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145689002",
+                    "name": "David A. McAllester"
+                },
+                {
+                    "authorId": "2641301",
+                    "name": "D. Rosenblitt"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "02cc8ee37b11e7bd96a3bc1095a8bee6b154bcf4",
+            "title": "Systematic Nonlinear Planning",
+            "url": "https://www.semanticscholar.org/paper/02cc8ee37b11e7bd96a3bc1095a8bee6b154bcf4",
+            "venue": "AAAI",
+            "year": 1991
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2219564889",
+                    "name": "Douglas R. Smith"
+                }
+            ],
+            "doi": "10.1109/32.58788",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "2ba2b6c4eda3b98d0827888f08947df40aba7022",
+            "title": "KIDS: A Semiautomatic Program Development System",
+            "url": "https://www.semanticscholar.org/paper/2ba2b6c4eda3b98d0827888f08947df40aba7022",
+            "venue": "IEEE Trans. Software Eng.",
+            "year": 1990
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145293454",
+                    "name": "Steven Minton"
+                }
+            ],
+            "doi": "10.1016/0004-3702(90)90059-9",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "eb2f539a17487db2c93785214da2fc7a67a57840",
+            "title": "Quantitative Results Concerning the Utility of Explanation-based Learning",
+            "url": "https://www.semanticscholar.org/paper/eb2f539a17487db2c93785214da2fc7a67a57840",
+            "venue": "Artif. Intell.",
+            "year": 1988
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2394287",
+                    "name": "J. Lauri\u00e8re"
+                }
+            ],
+            "doi": "10.1016/0004-3702(78)90029-2",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f20d3a3f209052176b18b9db6ddbf4aa71d9a701",
+            "title": "A Language and a Program for Stating and Solving Combinatorial Problems",
+            "url": "https://www.semanticscholar.org/paper/f20d3a3f209052176b18b9db6ddbf4aa71d9a701",
+            "venue": "Artif. Intell.",
+            "year": 1978
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144551177",
+                    "name": "A. Tate"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "0a3ae7ccfc25be129ca6976ec261d29fa63b0f5c",
+            "title": "Generating Project Networks",
+            "url": "https://www.semanticscholar.org/paper/0a3ae7ccfc25be129ca6976ec261d29fa63b0f5c",
+            "venue": "IJCAI",
+            "year": 1977
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1748956",
+                    "name": "R. Fikes"
+                },
+                {
+                    "authorId": "144497046",
+                    "name": "N. Nilsson"
+                }
+            ],
+            "doi": "10.1016/0004-3702(71)90010-5",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c547e1f79e6039d05c5ae433a36612d7f8e4d3f5",
+            "title": "STRIPS: A New Approach to the Application of Theorem Proving to Problem Solving",
+            "url": "https://www.semanticscholar.org/paper/c547e1f79e6039d05c5ae433a36612d7f8e4d3f5",
+            "venue": "IJCAI",
+            "year": 1971
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1740315",
+                    "name": "S. Kambhampati"
+                },
+                {
+                    "authorId": "144444290",
+                    "name": "B. Srivastava"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5cc7d134bff3595f4475e29d40d4d302235ea2e7",
+            "title": "Universal classical planner: an algorithm for unifying state-space and plan-space planning",
+            "url": "https://www.semanticscholar.org/paper/5cc7d134bff3595f4475e29d40d4d302235ea2e7",
+            "venue": "",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1736882",
+                    "name": "F. Bacchus"
+                },
+                {
+                    "authorId": "2132916",
+                    "name": "F. Kabanza"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "result"
+            ],
+            "isInfluential": false,
+            "paperId": "a8f03e8c1b18973568094fbb983e546fe871d8d7",
+            "title": "Using temporal logic to control search in a forward chaining planner",
+            "url": "https://www.semanticscholar.org/paper/a8f03e8c1b18973568094fbb983e546fe871d8d7",
+            "venue": "",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145293454",
+                    "name": "Steven Minton"
+                },
+                {
+                    "authorId": "143712374",
+                    "name": "J. Carbonell"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "791eeec32f29d11216cbd66aec00591e52704eca",
+            "title": "Learning effective search control knowledge: an explanation-based approach",
+            "url": "https://www.semanticscholar.org/paper/791eeec32f29d11216cbd66aec00591e52704eca",
+            "venue": "",
+            "year": 1988
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Synthesizing Customized Planners from Specifications",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/061ae56c3350b8850e15c0e0f4f7c19d24b9a2ab",
+    "venue": "Journal of Artificial Intelligence Research",
+    "year": 1998
+}

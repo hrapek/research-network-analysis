@@ -1,0 +1,1761 @@
+{
+    "abstract": "Adversarial attacks (AAs) pose a significant threat to the reliability and robustness of deep neural networks. While the impact of these attacks on model predictions has been extensively studied, their effect on the learned representations and concepts within these models remains largely unexplored. In this work, we perform an in-depth analysis of the influence of AAs on the concepts learned by convolutional neural networks (CNNs) using eXplainable artificial intelligence (XAI) techniques. Through an extensive set of experiments across various network architectures and targeted AA techniques, we unveil several key findings. First, AAs induce substantial alterations in the concept composition within the feature space, introducing new concepts or modifying existing ones. Second, the adversarial perturbation itself can be linearly decomposed into a set of latent vector components, with a subset of these being responsible for the attack's success. Notably, we discover that these components are target-specific, i.e., are similar for a given target class throughout different AA techniques and starting classes. Our findings provide valuable insights into the nature of AAs and their impact on learned representations, paving the way for the development of more robust and interpretable deep learning models, as well as effective defenses against adversarial threats.",
+    "arxivId": "2403.16782",
+    "authors": [
+        {
+            "authorId": "71771927",
+            "name": "Georgii Mikriukov",
+            "url": "https://www.semanticscholar.org/author/71771927"
+        },
+        {
+            "authorId": "1572561121",
+            "name": "Gesina Schwalbe",
+            "url": "https://www.semanticscholar.org/author/1572561121"
+        },
+        {
+            "authorId": "2293314201",
+            "name": "Franz Motzkus",
+            "url": "https://www.semanticscholar.org/author/2293314201"
+        },
+        {
+            "authorId": "145470320",
+            "name": "Korinna Bade",
+            "url": "https://www.semanticscholar.org/author/145470320"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [],
+    "corpusId": 268680754,
+    "doi": "10.48550/arXiv.2403.16782",
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 0,
+    "numCiting": 56,
+    "paperId": "f6dedcd71f8a80d6657251fb3cf92902fe02ca85",
+    "references": [
+        {
+            "arxivId": "2311.14435",
+            "authors": [
+                {
+                    "authorId": "71771927",
+                    "name": "Georgii Mikriukov"
+                },
+                {
+                    "authorId": "1572561121",
+                    "name": "Gesina Schwalbe"
+                },
+                {
+                    "authorId": "2499577",
+                    "name": "Christian Hellert"
+                },
+                {
+                    "authorId": "145470320",
+                    "name": "Korinna Bade"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "49c02c66a9e6d345a062ea2d5608fa056635e55e",
+            "title": "Local Concept Embeddings for Analysis of Concept Distributions in DNN Feature Spaces",
+            "url": "https://www.semanticscholar.org/paper/49c02c66a9e6d345a062ea2d5608fa056635e55e",
+            "venue": "",
+            "year": 2023
+        },
+        {
+            "arxivId": "2305.07663",
+            "authors": [
+                {
+                    "authorId": "71771927",
+                    "name": "Georgii Mikriukov"
+                },
+                {
+                    "authorId": "1572561121",
+                    "name": "Gesina Schwalbe"
+                },
+                {
+                    "authorId": "2499577",
+                    "name": "Christian Hellert"
+                },
+                {
+                    "authorId": "145470320",
+                    "name": "Korinna Bade"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "a01e8d64cab16f636cb71cc11744423812bbbf85",
+            "title": "Revealing Similar Semantics Inside CNNs: An Interpretable Concept-based Comparison of Feature Spaces",
+            "url": "https://www.semanticscholar.org/paper/a01e8d64cab16f636cb71cc11744423812bbbf85",
+            "venue": "",
+            "year": 2023
+        },
+        {
+            "arxivId": "2304.14864",
+            "authors": [
+                {
+                    "authorId": "71771927",
+                    "name": "Georgii Mikriukov"
+                },
+                {
+                    "authorId": "1572561121",
+                    "name": "Gesina Schwalbe"
+                },
+                {
+                    "authorId": "2499577",
+                    "name": "Christian Hellert"
+                },
+                {
+                    "authorId": "145470320",
+                    "name": "Korinna Bade"
+                }
+            ],
+            "doi": "10.1007/978-3-031-44067-0_26",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c0a6669593793571f52a13887f07c883efd2aabe",
+            "title": "Evaluating the Stability of Semantic Concept Representations in CNNs for Robust Explainability",
+            "url": "https://www.semanticscholar.org/paper/c0a6669593793571f52a13887f07c883efd2aabe",
+            "venue": "xAI",
+            "year": 2023
+        },
+        {
+            "arxivId": "2211.10154",
+            "authors": [
+                {
+                    "authorId": "1935310411",
+                    "name": "Thomas Fel"
+                },
+                {
+                    "authorId": "150916914",
+                    "name": "Agustin Picard"
+                },
+                {
+                    "authorId": "1796342139",
+                    "name": "Louis B\u00e9thune"
+                },
+                {
+                    "authorId": "1742199598",
+                    "name": "Thibaut Boissin"
+                },
+                {
+                    "authorId": "51879352",
+                    "name": "David Vigouroux"
+                },
+                {
+                    "authorId": "2143781661",
+                    "name": "Julien Colin"
+                },
+                {
+                    "authorId": "2117570481",
+                    "name": "R\u00e9mi Cad\u00e8ne"
+                },
+                {
+                    "authorId": "1981539",
+                    "name": "Thomas Serre"
+                }
+            ],
+            "doi": "10.1109/CVPR52729.2023.00266",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "8185c2ac7a4ea46ccccaa76a3b8c02fcf7354b47",
+            "title": "CRAFT: Concept Recursive Activation FacTorization for Explainability",
+            "url": "https://www.semanticscholar.org/paper/8185c2ac7a4ea46ccccaa76a3b8c02fcf7354b47",
+            "venue": "2023 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2022
+        },
+        {
+            "arxivId": "2209.11222",
+            "authors": [
+                {
+                    "authorId": "2026670465",
+                    "name": "Jonathan Crabbe"
+                },
+                {
+                    "authorId": "1729969",
+                    "name": "M. Schaar"
+                }
+            ],
+            "doi": "10.48550/arXiv.2209.11222",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "3aea0c72be64f42f014bc2bbbbd261e524680d19",
+            "title": "Concept Activation Regions: A Generalized Framework For Concept-Based Explanations",
+            "url": "https://www.semanticscholar.org/paper/3aea0c72be64f42f014bc2bbbbd261e524680d19",
+            "venue": "NeurIPS",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "5121011",
+                    "name": "Ching-yu Kao"
+                },
+                {
+                    "authorId": "2155463899",
+                    "name": "Junhao Chen"
+                },
+                {
+                    "authorId": "90808085",
+                    "name": "Karla Markert"
+                },
+                {
+                    "authorId": "3043003",
+                    "name": "Konstantin B\u00f6ttinger"
+                }
+            ],
+            "doi": "10.23919/eusipco55093.2022.9909699",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "297eb6a858ec22aa16f3fc60577677679c13f3b2",
+            "title": "Rectifying adversarial inputs using XAI techniques",
+            "url": "https://www.semanticscholar.org/paper/297eb6a858ec22aa16f3fc60577677679c13f3b2",
+            "venue": "2022 30th European Signal Processing Conference (EUSIPCO)",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3048822",
+                    "name": "Jinyin Chen"
+                },
+                {
+                    "authorId": "2106687227",
+                    "name": "Tianle Yu"
+                },
+                {
+                    "authorId": "2115422820",
+                    "name": "Changan Wu"
+                },
+                {
+                    "authorId": "1796810",
+                    "name": "Haibin Zheng"
+                },
+                {
+                    "authorId": "2118224291",
+                    "name": "Wenhong Zhao"
+                },
+                {
+                    "authorId": "50047934",
+                    "name": "Ling Pang"
+                },
+                {
+                    "authorId": "2108532226",
+                    "name": "Hu Li"
+                }
+            ],
+            "doi": "10.1109/DSIT55514.2022.9943985",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ce8e85cf2d17ee157867614db63216b4c22644d1",
+            "title": "Adversarial Attack Detection Based on Example Semantics and Model Activation Features",
+            "url": "https://www.semanticscholar.org/paper/ce8e85cf2d17ee157867614db63216b4c22644d1",
+            "venue": "2022 5th International Conference on Data Science and Information Technology (DSIT)",
+            "year": 2022
+        },
+        {
+            "arxivId": "2206.04531",
+            "authors": [
+                {
+                    "authorId": "1610926489",
+                    "name": "Andres Felipe Posada-Moreno"
+                },
+                {
+                    "authorId": "1644211190",
+                    "name": "N. Surya"
+                },
+                {
+                    "authorId": "2715093",
+                    "name": "Sebastian Trimpe"
+                }
+            ],
+            "doi": "10.48550/arXiv.2206.04531",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "ab4f9f33118c5abee984767fa261107e1b6f63f9",
+            "title": "ECLAD: Extracting Concepts with Local Aggregated Descriptors",
+            "url": "https://www.semanticscholar.org/paper/ab4f9f33118c5abee984767fa261107e1b6f63f9",
+            "venue": "Pattern Recognit.",
+            "year": 2022
+        },
+        {
+            "arxivId": "2203.04412",
+            "authors": [
+                {
+                    "authorId": "77543631",
+                    "name": "Maura Pintor"
+                },
+                {
+                    "authorId": "1796330109",
+                    "name": "Daniele Angioni"
+                },
+                {
+                    "authorId": "23589978",
+                    "name": "Angelo Sotgiu"
+                },
+                {
+                    "authorId": "65904555",
+                    "name": "Luca Demetrio"
+                },
+                {
+                    "authorId": "2272441",
+                    "name": "Ambra Demontis"
+                },
+                {
+                    "authorId": "1684175",
+                    "name": "B. Biggio"
+                },
+                {
+                    "authorId": "1710171",
+                    "name": "F. Roli"
+                }
+            ],
+            "doi": "10.48550/arXiv.2203.04412",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "c1fa7f9d8d2b3a0df1b32920c37c39871c85e444",
+            "title": "ImageNet-Patch: A Dataset for Benchmarking Machine Learning Robustness against Adversarial Patches",
+            "url": "https://www.semanticscholar.org/paper/c1fa7f9d8d2b3a0df1b32920c37c39871c85e444",
+            "venue": "Pattern Recognit.",
+            "year": 2022
+        },
+        {
+            "arxivId": "2110.07120",
+            "authors": [
+                {
+                    "authorId": "2153500151",
+                    "name": "Davis Brown"
+                },
+                {
+                    "authorId": "51042250",
+                    "name": "Henry Kvinge"
+                }
+            ],
+            "doi": "10.1109/CVPRW59228.2023.00069",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "138fc658c0c8ee82e703e33f8583a2d9afe62e52",
+            "title": "Making Corgis Important for Honeycomb Classification: Adversarial Attacks on Concept-based Explainability Tools",
+            "url": "https://www.semanticscholar.org/paper/138fc658c0c8ee82e703e33f8583a2d9afe62e52",
+            "venue": "2023 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)",
+            "year": 2021
+        },
+        {
+            "arxivId": "2108.00401",
+            "authors": [
+                {
+                    "authorId": "47398812",
+                    "name": "Naveed Akhtar"
+                },
+                {
+                    "authorId": "1747500",
+                    "name": "A. Mian"
+                },
+                {
+                    "authorId": "3469167",
+                    "name": "Navid Kardan"
+                },
+                {
+                    "authorId": "2111863589",
+                    "name": "M. Shah"
+                }
+            ],
+            "doi": "10.1109/ACCESS.2021.3127960",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "1a0829a7bef8ea3ecb33b55871b4498dd328ff68",
+            "title": "Advances in adversarial attacks and defenses in computer vision: A survey",
+            "url": "https://www.semanticscholar.org/paper/1a0829a7bef8ea3ecb33b55871b4498dd328ff68",
+            "venue": "IEEE Access",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1845888030",
+                    "name": "Serin Varghese"
+                },
+                {
+                    "authorId": "2117347070",
+                    "name": "Sharat Gujamagadi"
+                },
+                {
+                    "authorId": "1651133619",
+                    "name": "Marvin Klingner"
+                },
+                {
+                    "authorId": "1845893318",
+                    "name": "Nikhil Kapoor"
+                },
+                {
+                    "authorId": "152442933",
+                    "name": "Andreas B\u00e4r"
+                },
+                {
+                    "authorId": "2087157050",
+                    "name": "Jan David Schneider"
+                },
+                {
+                    "authorId": "1404061423",
+                    "name": "Kira Maag"
+                },
+                {
+                    "authorId": "51132547",
+                    "name": "Peter Schlicht"
+                },
+                {
+                    "authorId": "2026269",
+                    "name": "Fabian H\u00fcger"
+                },
+                {
+                    "authorId": "1679795",
+                    "name": "T. Fingscheidt"
+                }
+            ],
+            "doi": "10.1109/CVPRW53098.2021.00010",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c1ddc2ff8e4ef1a85a5f9bc035d7cfad0c0291ce",
+            "title": "An Unsupervised Temporal Consistency (TC) Loss to Improve the Performance of Semantic Segmentation Networks",
+            "url": "https://www.semanticscholar.org/paper/c1ddc2ff8e4ef1a85a5f9bc035d7cfad0c0291ce",
+            "venue": "2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)",
+            "year": 2021
+        },
+        {
+            "arxivId": "2105.07190",
+            "authors": [
+                {
+                    "authorId": "1572561121",
+                    "name": "Gesina Schwalbe"
+                },
+                {
+                    "authorId": "40009599",
+                    "name": "Bettina Finzel"
+                }
+            ],
+            "doi": "10.1007/s10618-022-00867-8",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "d0119e30a9eb5d261c09180a33e92c6f08581d45",
+            "title": "A comprehensive taxonomy for explainable artificial intelligence: a systematic survey of surveys on methods and concepts",
+            "url": "https://www.semanticscholar.org/paper/d0119e30a9eb5d261c09180a33e92c6f08581d45",
+            "venue": "Data Min. Knowl. Discov.",
+            "year": 2021
+        },
+        {
+            "arxivId": "2105.00290",
+            "authors": [
+                {
+                    "authorId": "102755022",
+                    "name": "Y. Ge"
+                },
+                {
+                    "authorId": "2140938384",
+                    "name": "Yao Xiao"
+                },
+                {
+                    "authorId": "2145167397",
+                    "name": "Zhi Xu"
+                },
+                {
+                    "authorId": "2087062580",
+                    "name": "Meng Zheng"
+                },
+                {
+                    "authorId": "1976152",
+                    "name": "S. Karanam"
+                },
+                {
+                    "authorId": "1846624",
+                    "name": "Terrence Chen"
+                },
+                {
+                    "authorId": "7326223",
+                    "name": "L. Itti"
+                },
+                {
+                    "authorId": "2109685046",
+                    "name": "Ziyan Wu"
+                }
+            ],
+            "doi": "10.1109/CVPR46437.2021.00223",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "6dda67dcab79f570043b57bffb8fc400aa3ca103",
+            "title": "A Peek Into the Reasoning of Neural Networks: Interpreting with Structural Visual Concepts",
+            "url": "https://www.semanticscholar.org/paper/6dda67dcab79f570043b57bffb8fc400aa3ca103",
+            "venue": "2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2021
+        },
+        {
+            "arxivId": "2102.01356",
+            "authors": [
+                {
+                    "authorId": "143808172",
+                    "name": "Tao Bai"
+                },
+                {
+                    "authorId": "32020492",
+                    "name": "Jinqi Luo"
+                },
+                {
+                    "authorId": "2145805584",
+                    "name": "Jun Zhao"
+                },
+                {
+                    "authorId": "1766554",
+                    "name": "B. Wen"
+                },
+                {
+                    "authorId": "40102806",
+                    "name": "Qian Wang"
+                }
+            ],
+            "doi": "10.24963/ijcai.2021/591",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "17af9510a38e4dec93398707f11d833c8af36254",
+            "title": "Recent Advances in Adversarial Training for Adversarial Robustness",
+            "url": "https://www.semanticscholar.org/paper/17af9510a38e4dec93398707f11d833c8af36254",
+            "venue": "IJCAI",
+            "year": 2021
+        },
+        {
+            "arxivId": "2010.01950",
+            "authors": [
+                {
+                    "authorId": "2655312",
+                    "name": "Hoki Kim"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "1f4b3283faf534ef92d7d7fa798b26480605ead9",
+            "title": "Torchattacks : A Pytorch Repository for Adversarial Attacks",
+            "url": "https://www.semanticscholar.org/paper/1f4b3283faf534ef92d7d7fa798b26480605ead9",
+            "venue": "ArXiv",
+            "year": 2020
+        },
+        {
+            "arxivId": "2007.06381",
+            "authors": [
+                {
+                    "authorId": "12872485",
+                    "name": "Laura Rieger"
+                },
+                {
+                    "authorId": "2280917429",
+                    "name": "L. K. Hansen"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "acca8fe674c0968b40e7329c2b53cf7048683e4c",
+            "title": "A simple defense against adversarial attacks on heatmap explanations",
+            "url": "https://www.semanticscholar.org/paper/acca8fe674c0968b40e7329c2b53cf7048683e4c",
+            "venue": "ArXiv",
+            "year": 2020
+        },
+        {
+            "arxivId": "2006.15417",
+            "authors": [
+                {
+                    "authorId": "2109971709",
+                    "name": "Ruihan Zhang"
+                },
+                {
+                    "authorId": "9303604",
+                    "name": "Prashan Madumal"
+                },
+                {
+                    "authorId": "144658641",
+                    "name": "Tim Miller"
+                },
+                {
+                    "authorId": "2028219350",
+                    "name": "Krista A. Ehinger"
+                },
+                {
+                    "authorId": "1868067",
+                    "name": "Benjamin I. P. Rubinstein"
+                }
+            ],
+            "doi": "10.1609/aaai.v35i13.17389",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "92902e212cd1408f2bfbefbbb0157abe1b05a18e",
+            "title": "Invertible Concept-based Explanations for CNN Models with Non-negative Concept Activation Vectors",
+            "url": "https://www.semanticscholar.org/paper/92902e212cd1408f2bfbefbbb0157abe1b05a18e",
+            "venue": "AAAI",
+            "year": 2020
+        },
+        {
+            "arxivId": "2004.13166",
+            "authors": [
+                {
+                    "authorId": "35175531",
+                    "name": "Patrick Esser"
+                },
+                {
+                    "authorId": "1660819540",
+                    "name": "Robin Rombach"
+                },
+                {
+                    "authorId": "1796707",
+                    "name": "B. Ommer"
+                }
+            ],
+            "doi": "10.1109/cvpr42600.2020.00924",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "49c908cfa045032bf15d9dfc3f3a6d9fee5ea919",
+            "title": "A Disentangling Invertible Interpretation Network for Explaining Latent Representations",
+            "url": "https://www.semanticscholar.org/paper/49c908cfa045032bf15d9dfc3f3a6d9fee5ea919",
+            "venue": "2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1572561121",
+                    "name": "Gesina Schwalbe"
+                },
+                {
+                    "authorId": "3037635",
+                    "name": "Martin Schels"
+                }
+            ],
+            "doi": "10.20378/IRB-47276",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "6d158e407a30fb09e26c7411227d1aded69ff8ae",
+            "title": "Concept Enforcement and Modularization as Methods for the ISO 26262 Safety Argumentation of Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/6d158e407a30fb09e26c7411227d1aded69ff8ae",
+            "venue": "",
+            "year": 2020
+        },
+        {
+            "arxivId": "1909.12072",
+            "authors": [
+                {
+                    "authorId": "1699054",
+                    "name": "W. Samek"
+                },
+                {
+                    "authorId": "145034054",
+                    "name": "K. M\u00fcller"
+                }
+            ],
+            "doi": "10.1007/978-3-030-28954-6_1",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "21f214165bda8813c95cfa3e471e24aaf8d5776b",
+            "title": "Towards Explainable Artificial Intelligence",
+            "url": "https://www.semanticscholar.org/paper/21f214165bda8813c95cfa3e471e24aaf8d5776b",
+            "venue": "Explainable AI",
+            "year": 2019
+        },
+        {
+            "arxivId": "1909.03418",
+            "authors": [
+                {
+                    "authorId": "1388062456",
+                    "name": "Gil Fidel"
+                },
+                {
+                    "authorId": "50616846",
+                    "name": "Ron Bitton"
+                },
+                {
+                    "authorId": "1720589",
+                    "name": "A. Shabtai"
+                }
+            ],
+            "doi": "10.1109/IJCNN48605.2020.9207637",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "756686f2ff042432a8dcd44019736b740b4932e9",
+            "title": "When Explainability Meets Adversarial Learning: Detecting Adversarial Examples using SHAP Signatures",
+            "url": "https://www.semanticscholar.org/paper/756686f2ff042432a8dcd44019736b740b4932e9",
+            "venue": "2020 International Joint Conference on Neural Networks (IJCNN)",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "93811144",
+                    "name": "Divyam Madaan"
+                },
+                {
+                    "authorId": "143720148",
+                    "name": "Jinwoo Shin"
+                },
+                {
+                    "authorId": "35788904",
+                    "name": "Sung Ju Hwang"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8d5ed715390944c3bf07f826377ade48de4fba1a",
+            "title": "Adversarial Neural Pruning with Latent Vulnerability Suppression",
+            "url": "https://www.semanticscholar.org/paper/8d5ed715390944c3bf07f826377ade48de4fba1a",
+            "venue": "ICML",
+            "year": 2019
+        },
+        {
+            "arxivId": "1906.07983",
+            "authors": [
+                {
+                    "authorId": "46658900",
+                    "name": "Ann-Kathrin Dombrowski"
+                },
+                {
+                    "authorId": "153628742",
+                    "name": "M. Alber"
+                },
+                {
+                    "authorId": "51004625",
+                    "name": "Christopher J. Anders"
+                },
+                {
+                    "authorId": "47236709",
+                    "name": "M. Ackermann"
+                },
+                {
+                    "authorId": "145034054",
+                    "name": "K. M\u00fcller"
+                },
+                {
+                    "authorId": "52029112",
+                    "name": "P. Kessel"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a0f0a94927c0013fa924ee43c8ddbace1d71e3fb",
+            "title": "Explanations can be manipulated and geometry is to blame",
+            "url": "https://www.semanticscholar.org/paper/a0f0a94927c0013fa924ee43c8ddbace1d71e3fb",
+            "venue": "NeurIPS",
+            "year": 2019
+        },
+        {
+            "arxivId": "1906.04664",
+            "authors": [
+                {
+                    "authorId": "146346077",
+                    "name": "Conner Chyung"
+                },
+                {
+                    "authorId": "1879592819",
+                    "name": "Michael Tsang"
+                },
+                {
+                    "authorId": "47909587",
+                    "name": "Yan Liu"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "582ef1dc6dbe39e6b2f45103af049f2b57a54dd3",
+            "title": "Extracting Interpretable Concept-Based Decision Trees from CNNs",
+            "url": "https://www.semanticscholar.org/paper/582ef1dc6dbe39e6b2f45103af049f2b57a54dd3",
+            "venue": "ArXiv",
+            "year": 2019
+        },
+        {
+            "arxivId": "1905.02175",
+            "authors": [
+                {
+                    "authorId": "34562927",
+                    "name": "Andrew Ilyas"
+                },
+                {
+                    "authorId": "2852106",
+                    "name": "Shibani Santurkar"
+                },
+                {
+                    "authorId": "2754804",
+                    "name": "Dimitris Tsipras"
+                },
+                {
+                    "authorId": "39468283",
+                    "name": "Logan Engstrom"
+                },
+                {
+                    "authorId": "2057910582",
+                    "name": "Brandon Tran"
+                },
+                {
+                    "authorId": "143826246",
+                    "name": "A. Madry"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "1f4294d8e0b0c8559479fac569fc0ea91b4dc0bd",
+            "title": "Adversarial Examples Are Not Bugs, They Are Features",
+            "url": "https://www.semanticscholar.org/paper/1f4294d8e0b0c8559479fac569fc0ea91b4dc0bd",
+            "venue": "NeurIPS",
+            "year": 2019
+        },
+        {
+            "arxivId": "1905.02244",
+            "authors": [
+                {
+                    "authorId": "144727050",
+                    "name": "Andrew G. Howard"
+                },
+                {
+                    "authorId": "144882893",
+                    "name": "M. Sandler"
+                },
+                {
+                    "authorId": "2054191762",
+                    "name": "Grace Chu"
+                },
+                {
+                    "authorId": "34192119",
+                    "name": "Liang-Chieh Chen"
+                },
+                {
+                    "authorId": "2152688442",
+                    "name": "Bo Chen"
+                },
+                {
+                    "authorId": "120805419",
+                    "name": "Mingxing Tan"
+                },
+                {
+                    "authorId": "2108301428",
+                    "name": "Weijun Wang"
+                },
+                {
+                    "authorId": "1844940337",
+                    "name": "Yukun Zhu"
+                },
+                {
+                    "authorId": "34320634",
+                    "name": "Ruoming Pang"
+                },
+                {
+                    "authorId": "2053781980",
+                    "name": "Vijay Vasudevan"
+                },
+                {
+                    "authorId": "2827616",
+                    "name": "Quoc V. Le"
+                },
+                {
+                    "authorId": "2595180",
+                    "name": "Hartwig Adam"
+                }
+            ],
+            "doi": "10.1109/ICCV.2019.00140",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "5e19eba1e6644f7c83f607383d256deea71f87ae",
+            "title": "Searching for MobileNetV3",
+            "url": "https://www.semanticscholar.org/paper/5e19eba1e6644f7c83f607383d256deea71f87ae",
+            "venue": "2019 IEEE/CVF International Conference on Computer Vision (ICCV)",
+            "year": 2019
+        },
+        {
+            "arxivId": "1904.02323",
+            "authors": [
+                {
+                    "authorId": "10735510",
+                    "name": "Fred Hohman"
+                },
+                {
+                    "authorId": "23987950",
+                    "name": "Haekyu Park"
+                },
+                {
+                    "authorId": "152830035",
+                    "name": "Caleb Robinson"
+                },
+                {
+                    "authorId": "1793506",
+                    "name": "Duen Horng Chau"
+                }
+            ],
+            "doi": "10.1109/TVCG.2019.2934659",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "cd8b77d0cedfc1507939b74457f59b6ce5279bac",
+            "title": "Summit: Scaling Deep Learning Interpretability by Visualizing Activation and Attribution Summarizations",
+            "url": "https://www.semanticscholar.org/paper/cd8b77d0cedfc1507939b74457f59b6ce5279bac",
+            "venue": "IEEE Transactions on Visualization and Computer Graphics",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "27316199",
+                    "name": "Amirata Ghorbani"
+                },
+                {
+                    "authorId": "49556437",
+                    "name": "James Wexler"
+                },
+                {
+                    "authorId": "145085305",
+                    "name": "James Y. Zou"
+                },
+                {
+                    "authorId": "3351164",
+                    "name": "Been Kim"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "4ecfa481430b56bc3fcd735114e1954c4b46cff5",
+            "title": "Towards Automatic Concept-based Explanations",
+            "url": "https://www.semanticscholar.org/paper/4ecfa481430b56bc3fcd735114e1954c4b46cff5",
+            "venue": "NeurIPS",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "48395540",
+                    "name": "C. Rudin"
+                }
+            ],
+            "doi": "10.1038/s42256-019-0048-x",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "bc00ff34ec7772080c7039b17f7069a2f7df0889",
+            "title": "Stop explaining black box machine learning models for high stakes decisions and use interpretable models instead",
+            "url": "https://www.semanticscholar.org/paper/bc00ff34ec7772080c7039b17f7069a2f7df0889",
+            "venue": "Nature Machine Intelligence",
+            "year": 2018
+        },
+        {
+            "arxivId": "1810.00024",
+            "authors": [
+                {
+                    "authorId": "47238599",
+                    "name": "Washington Garcia"
+                },
+                {
+                    "authorId": "30827808",
+                    "name": "Joseph I. Choi"
+                },
+                {
+                    "authorId": "83979477",
+                    "name": "S. Adari"
+                },
+                {
+                    "authorId": "1680133",
+                    "name": "S. Jha"
+                },
+                {
+                    "authorId": "1784947",
+                    "name": "Kevin R. B. Butler"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "44c0b2129b43141f36956be137f2321a7630e36f",
+            "title": "Explainable Black-Box Attacks Against Model-based Authentication",
+            "url": "https://www.semanticscholar.org/paper/44c0b2129b43141f36956be137f2321a7630e36f",
+            "venue": "ArXiv",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "51209797",
+                    "name": "Johannes Rabold"
+                },
+                {
+                    "authorId": "1793426",
+                    "name": "M. Siebers"
+                },
+                {
+                    "authorId": "1727734",
+                    "name": "Ute Schmid"
+                }
+            ],
+            "doi": "10.1007/978-3-319-99960-9_7",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "a6293fc91be733f01266413cbeb0e4385afdee5f",
+            "title": "Explaining Black-Box Classifiers with ILP - Empowering LIME with Aleph to Approximate Non-linear Decisions with Relational Rules",
+            "url": "https://www.semanticscholar.org/paper/a6293fc91be733f01266413cbeb0e4385afdee5f",
+            "venue": "ILP",
+            "year": 2018
+        },
+        {
+            "arxivId": "1807.05511",
+            "authors": [
+                {
+                    "authorId": "33698309",
+                    "name": "Zhong-Qiu Zhao"
+                },
+                {
+                    "authorId": null,
+                    "name": "Peng Zheng"
+                },
+                {
+                    "authorId": "51132438",
+                    "name": "Shou-tao Xu"
+                },
+                {
+                    "authorId": "1748808",
+                    "name": "Xindong Wu"
+                }
+            ],
+            "doi": "10.1109/TNNLS.2018.2876865",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7998468d99ab07bb982294d1c9b53a3bf3934fa6",
+            "title": "Object Detection With Deep Learning: A Review",
+            "url": "https://www.semanticscholar.org/paper/7998468d99ab07bb982294d1c9b53a3bf3934fa6",
+            "venue": "IEEE Transactions on Neural Networks and Learning Systems",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1825256",
+                    "name": "Kevin Eykholt"
+                },
+                {
+                    "authorId": "22229139",
+                    "name": "I. Evtimov"
+                },
+                {
+                    "authorId": "35064352",
+                    "name": "Earlence Fernandes"
+                },
+                {
+                    "authorId": "2165245296",
+                    "name": "Bo Li"
+                },
+                {
+                    "authorId": "145416145",
+                    "name": "Amir Rahmati"
+                },
+                {
+                    "authorId": "2723309",
+                    "name": "Chaowei Xiao"
+                },
+                {
+                    "authorId": "49428285",
+                    "name": "Atul Prakash"
+                },
+                {
+                    "authorId": "1769675",
+                    "name": "Tadayoshi Kohno"
+                },
+                {
+                    "authorId": "143711382",
+                    "name": "D. Song"
+                }
+            ],
+            "doi": "10.1109/CVPR.2018.00175",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "f0c5991dbb130fa6b5de011cf7a04f6ed815ef68",
+            "title": "Robust Physical-World Attacks on Deep Learning Visual Classification",
+            "url": "https://www.semanticscholar.org/paper/f0c5991dbb130fa6b5de011cf7a04f6ed815ef68",
+            "venue": "2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+            "year": 2018
+        },
+        {
+            "arxivId": "1802.00420",
+            "authors": [
+                {
+                    "authorId": "38939786",
+                    "name": "Anish Athalye"
+                },
+                {
+                    "authorId": "2483738",
+                    "name": "Nicholas Carlini"
+                },
+                {
+                    "authorId": "145394689",
+                    "name": "D. Wagner"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "651adaa058f821a890f2c5d1053d69eb481a8352",
+            "title": "Obfuscated Gradients Give a False Sense of Security: Circumventing Defenses to Adversarial Examples",
+            "url": "https://www.semanticscholar.org/paper/651adaa058f821a890f2c5d1053d69eb481a8352",
+            "venue": "ICML",
+            "year": 2018
+        },
+        {
+            "arxivId": "1801.03454",
+            "authors": [
+                {
+                    "authorId": "145891577",
+                    "name": "Ruth Fong"
+                },
+                {
+                    "authorId": "1687524",
+                    "name": "A. Vedaldi"
+                }
+            ],
+            "doi": "10.1109/CVPR.2018.00910",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "de99fbe728dfd3d337ab13ae27512ab028444c6a",
+            "title": "Net2Vec: Quantifying and Explaining How Concepts are Encoded by Filters in Deep Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/de99fbe728dfd3d337ab13ae27512ab028444c6a",
+            "venue": "2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+            "year": 2018
+        },
+        {
+            "arxivId": "1712.09665",
+            "authors": [
+                {
+                    "authorId": "31035595",
+                    "name": "Tom B. Brown"
+                },
+                {
+                    "authorId": "30415265",
+                    "name": "Dandelion Man\u00e9"
+                },
+                {
+                    "authorId": "39788470",
+                    "name": "Aurko Roy"
+                },
+                {
+                    "authorId": "2057642721",
+                    "name": "Mart\u00edn Abadi"
+                },
+                {
+                    "authorId": "2058362",
+                    "name": "J. Gilmer"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "e3b17a245dce9a2189a8a4f7538631b69c93812e",
+            "title": "Adversarial Patch",
+            "url": "https://www.semanticscholar.org/paper/e3b17a245dce9a2189a8a4f7538631b69c93812e",
+            "venue": "ArXiv",
+            "year": 2017
+        },
+        {
+            "arxivId": "1711.11279",
+            "authors": [
+                {
+                    "authorId": "3351164",
+                    "name": "Been Kim"
+                },
+                {
+                    "authorId": "145233583",
+                    "name": "M. Wattenberg"
+                },
+                {
+                    "authorId": "2058362",
+                    "name": "J. Gilmer"
+                },
+                {
+                    "authorId": "145941081",
+                    "name": "Carrie J. Cai"
+                },
+                {
+                    "authorId": "49556437",
+                    "name": "James Wexler"
+                },
+                {
+                    "authorId": "1765169",
+                    "name": "F. Vi\u00e9gas"
+                },
+                {
+                    "authorId": "144042306",
+                    "name": "R. Sayres"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "682b9d2212258fd5edbfca589c86390c31a956b0",
+            "title": "Interpretability Beyond Feature Attribution: Quantitative Testing with Concept Activation Vectors (TCAV)",
+            "url": "https://www.semanticscholar.org/paper/682b9d2212258fd5edbfca589c86390c31a956b0",
+            "venue": "ICML",
+            "year": 2017
+        },
+        {
+            "arxivId": "1710.10547",
+            "authors": [
+                {
+                    "authorId": "27316199",
+                    "name": "Amirata Ghorbani"
+                },
+                {
+                    "authorId": "144948925",
+                    "name": "Abubakar Abid"
+                },
+                {
+                    "authorId": "145085305",
+                    "name": "James Y. Zou"
+                }
+            ],
+            "doi": "10.1609/aaai.v33i01.33013681",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "96cf326c91adc96aa59382bf71fbead29ea34c52",
+            "title": "Interpretation of Neural Networks is Fragile",
+            "url": "https://www.semanticscholar.org/paper/96cf326c91adc96aa59382bf71fbead29ea34c52",
+            "venue": "AAAI",
+            "year": 2017
+        },
+        {
+            "arxivId": "1706.06083",
+            "authors": [
+                {
+                    "authorId": "143826246",
+                    "name": "A. Madry"
+                },
+                {
+                    "authorId": "17775913",
+                    "name": "Aleksandar Makelov"
+                },
+                {
+                    "authorId": "152772922",
+                    "name": "Ludwig Schmidt"
+                },
+                {
+                    "authorId": "2754804",
+                    "name": "Dimitris Tsipras"
+                },
+                {
+                    "authorId": "2869958",
+                    "name": "Adrian Vladu"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "7aa38b85fa8cba64d6a4010543f6695dbf5f1386",
+            "title": "Towards Deep Learning Models Resistant to Adversarial Attacks",
+            "url": "https://www.semanticscholar.org/paper/7aa38b85fa8cba64d6a4010543f6695dbf5f1386",
+            "venue": "ICLR",
+            "year": 2017
+        },
+        {
+            "arxivId": "1705.07263",
+            "authors": [
+                {
+                    "authorId": "2483738",
+                    "name": "Nicholas Carlini"
+                },
+                {
+                    "authorId": "145394689",
+                    "name": "D. Wagner"
+                }
+            ],
+            "doi": "10.1145/3128572.3140444",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "99cb08c76c120599abd1d1637e32aaf577f38d39",
+            "title": "Adversarial Examples Are Not Easily Detected: Bypassing Ten Detection Methods",
+            "url": "https://www.semanticscholar.org/paper/99cb08c76c120599abd1d1637e32aaf577f38d39",
+            "venue": "AISec@CCS",
+            "year": 2017
+        },
+        {
+            "arxivId": "1704.05796",
+            "authors": [
+                {
+                    "authorId": "144159726",
+                    "name": "David Bau"
+                },
+                {
+                    "authorId": "145291669",
+                    "name": "Bolei Zhou"
+                },
+                {
+                    "authorId": "2556428",
+                    "name": "A. Khosla"
+                },
+                {
+                    "authorId": "143868587",
+                    "name": "A. Oliva"
+                },
+                {
+                    "authorId": "143805211",
+                    "name": "A. Torralba"
+                }
+            ],
+            "doi": "10.1109/CVPR.2017.354",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "744464cd6fa8341633cd3b5d378faab18a3b543a",
+            "title": "Network Dissection: Quantifying Interpretability of Deep Visual Representations",
+            "url": "https://www.semanticscholar.org/paper/744464cd6fa8341633cd3b5d378faab18a3b543a",
+            "venue": "2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2017
+        },
+        {
+            "arxivId": "1608.04644",
+            "authors": [
+                {
+                    "authorId": "2483738",
+                    "name": "Nicholas Carlini"
+                },
+                {
+                    "authorId": "145394689",
+                    "name": "D. Wagner"
+                }
+            ],
+            "doi": "10.1109/SP.2017.49",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "df40ce107a71b770c9d0354b78fdd8989da80d2f",
+            "title": "Towards Evaluating the Robustness of Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/df40ce107a71b770c9d0354b78fdd8989da80d2f",
+            "venue": "2017 IEEE Symposium on Security and Privacy (SP)",
+            "year": 2016
+        },
+        {
+            "arxivId": "1607.02533",
+            "authors": [
+                {
+                    "authorId": "145714153",
+                    "name": "Alexey Kurakin"
+                },
+                {
+                    "authorId": "153440022",
+                    "name": "I. Goodfellow"
+                },
+                {
+                    "authorId": "1751569",
+                    "name": "Samy Bengio"
+                }
+            ],
+            "doi": "10.1201/9781351251389-8",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "b544ca32b66b4c9c69bcfa00d63ee4b799d8ab6b",
+            "title": "Adversarial examples in the physical world",
+            "url": "https://www.semanticscholar.org/paper/b544ca32b66b4c9c69bcfa00d63ee4b799d8ab6b",
+            "venue": "ICLR",
+            "year": 2016
+        },
+        {
+            "arxivId": "1602.07360",
+            "authors": [
+                {
+                    "authorId": "3346186",
+                    "name": "F. Iandola"
+                },
+                {
+                    "authorId": "2318023",
+                    "name": "Matthew W. Moskewicz"
+                },
+                {
+                    "authorId": "2059241",
+                    "name": "Khalid Ashraf"
+                },
+                {
+                    "authorId": "143840275",
+                    "name": "Song Han"
+                },
+                {
+                    "authorId": "80724002",
+                    "name": "W. Dally"
+                },
+                {
+                    "authorId": "1732330",
+                    "name": "K. Keutzer"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "592d2e65489f23ebd993dbdc0c84eda9ac8aadbe",
+            "title": "SqueezeNet: AlexNet-level accuracy with 50x fewer parameters and <1MB model size",
+            "url": "https://www.semanticscholar.org/paper/592d2e65489f23ebd993dbdc0c84eda9ac8aadbe",
+            "venue": "ArXiv",
+            "year": 2016
+        },
+        {
+            "arxivId": "1512.03385",
+            "authors": [
+                {
+                    "authorId": "39353098",
+                    "name": "Kaiming He"
+                },
+                {
+                    "authorId": "1771551",
+                    "name": "X. Zhang"
+                },
+                {
+                    "authorId": "3080683",
+                    "name": "Shaoqing Ren"
+                },
+                {
+                    "authorId": null,
+                    "name": "Jian Sun"
+                }
+            ],
+            "doi": "10.1109/cvpr.2016.90",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "2c03df8b48bf3fa39054345bafabfeff15bfd11d",
+            "title": "Deep Residual Learning for Image Recognition",
+            "url": "https://www.semanticscholar.org/paper/2c03df8b48bf3fa39054345bafabfeff15bfd11d",
+            "venue": "2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2015
+        },
+        {
+            "arxivId": "1412.6572",
+            "authors": [
+                {
+                    "authorId": "153440022",
+                    "name": "I. Goodfellow"
+                },
+                {
+                    "authorId": "1789737",
+                    "name": "Jonathon Shlens"
+                },
+                {
+                    "authorId": "2574060",
+                    "name": "Christian Szegedy"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "bee044c8e8903fb67523c1f8c105ab4718600cdb",
+            "title": "Explaining and Harnessing Adversarial Examples",
+            "url": "https://www.semanticscholar.org/paper/bee044c8e8903fb67523c1f8c105ab4718600cdb",
+            "venue": "ICLR",
+            "year": 2014
+        },
+        {
+            "arxivId": "1409.1556",
+            "authors": [
+                {
+                    "authorId": "34838386",
+                    "name": "K. Simonyan"
+                },
+                {
+                    "authorId": "1688869",
+                    "name": "Andrew Zisserman"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "eb42cf88027de515750f230b23b1a057dc782108",
+            "title": "Very Deep Convolutional Networks for Large-Scale Image Recognition",
+            "url": "https://www.semanticscholar.org/paper/eb42cf88027de515750f230b23b1a057dc782108",
+            "venue": "ICLR",
+            "year": 2014
+        },
+        {
+            "arxivId": "1312.6199",
+            "authors": [
+                {
+                    "authorId": "2574060",
+                    "name": "Christian Szegedy"
+                },
+                {
+                    "authorId": "2563432",
+                    "name": "Wojciech Zaremba"
+                },
+                {
+                    "authorId": "1701686",
+                    "name": "I. Sutskever"
+                },
+                {
+                    "authorId": "143627859",
+                    "name": "Joan Bruna"
+                },
+                {
+                    "authorId": "1761978",
+                    "name": "D. Erhan"
+                },
+                {
+                    "authorId": "153440022",
+                    "name": "I. Goodfellow"
+                },
+                {
+                    "authorId": "2276554",
+                    "name": "R. Fergus"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d891dc72cbd40ffaeefdc79f2e7afe1e530a23ad",
+            "title": "Intriguing properties of neural networks",
+            "url": "https://www.semanticscholar.org/paper/d891dc72cbd40ffaeefdc79f2e7afe1e530a23ad",
+            "venue": "ICLR",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "153302678",
+                    "name": "Jia Deng"
+                },
+                {
+                    "authorId": "144847596",
+                    "name": "Wei Dong"
+                },
+                {
+                    "authorId": "2166511",
+                    "name": "R. Socher"
+                },
+                {
+                    "authorId": "2040091191",
+                    "name": "Li-Jia Li"
+                },
+                {
+                    "authorId": "94451829",
+                    "name": "K. Li"
+                },
+                {
+                    "authorId": "48004138",
+                    "name": "Li Fei-Fei"
+                }
+            ],
+            "doi": "10.1109/CVPR.2009.5206848",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "d2c733e34d48784a37d717fe43d9e93277a8c53e",
+            "title": "ImageNet: A large-scale hierarchical image database",
+            "url": "https://www.semanticscholar.org/paper/d2c733e34d48784a37d717fe43d9e93277a8c53e",
+            "venue": "2009 IEEE Conference on Computer Vision and Pattern Recognition",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145059765",
+                    "name": "D. Silver"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "fca0e8bb93a8242c153ef966cefade5e19e5ed21",
+            "title": "Feature Visualization",
+            "url": "https://www.semanticscholar.org/paper/fca0e8bb93a8242c153ef966cefade5e19e5ed21",
+            "venue": "Scientific Visualization",
+            "year": 1994
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1572561121",
+                    "name": "Gesina Schwalbe"
+                },
+                {
+                    "authorId": "144389295",
+                    "name": "Christian Wirth"
+                },
+                {
+                    "authorId": "2106181659",
+                    "name": "Ute Schmid"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "78b0c2f1e4ef342c50f6ccf36be3c3967468350a",
+            "title": "Concept Embeddings for Fuzzy Logic Verification of Deep Neural Networks in Perception Tasks",
+            "url": "https://www.semanticscholar.org/paper/78b0c2f1e4ef342c50f6ccf36be3c3967468350a",
+            "venue": "ArXiv",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2912098",
+                    "name": "M. Serrurier"
+                },
+                {
+                    "authorId": "2408697",
+                    "name": "Franck Mamalet"
+                },
+                {
+                    "authorId": "1935310411",
+                    "name": "Thomas Fel"
+                },
+                {
+                    "authorId": "2065593336",
+                    "name": "Louis B'ethune"
+                },
+                {
+                    "authorId": "1742199598",
+                    "name": "Thibaut Boissin"
+                }
+            ],
+            "doi": "10.48550/arXiv.2206.06854",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "613fd7178e1609c6713f669e992c203fe8f8e758",
+            "title": "When adversarial attacks become interpretable counterfactual explanations",
+            "url": "https://www.semanticscholar.org/paper/613fd7178e1609c6713f669e992c203fe8f8e758",
+            "venue": "ArXiv",
+            "year": 2022
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "The Anatomy of Adversarial Attacks: Concept-based XAI Dissection",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/f6dedcd71f8a80d6657251fb3cf92902fe02ca85",
+    "venue": "arXiv.org",
+    "year": 2024
+}

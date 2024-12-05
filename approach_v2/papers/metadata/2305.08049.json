@@ -1,0 +1,1086 @@
+{
+    "abstract": "The Partially Observable Markov Decision Process (POMDP) provides a principled framework for decision making in stochastic partially observable environments. However, computing good solutions for problems with continuous action spaces remains challenging. To ease this challenge, we propose a simple online POMDP solver, called Lazy Cross-Entropy Search Over Policy Trees (LCEOPT). At each planning step, our method uses a novel lazy Cross-Entropy method to search the space of policy trees, which provide a simple policy representation. Specifically, we maintain a distribution on promising finite-horizon policy trees. The distribution is iteratively updated by sampling policies, evaluating them via Monte Carlo simulation, and refitting them to the top-performing ones. Our method is lazy in the sense that it exploits the policy tree representation to avoid redundant computations in policy sampling, evaluation, and distribution update. This leads to computational savings of up to two orders of magnitude. Our LCEOPT is surprisingly simple as compared to existing state-of-the-art methods, yet empirically outperforms them on several continuous-action POMDP problems, particularly for problems with higher-dimensional action spaces.",
+    "arxivId": "2305.08049",
+    "authors": [
+        {
+            "authorId": "2208960076",
+            "name": "Marcus Hoerger",
+            "url": "https://www.semanticscholar.org/author/2208960076"
+        },
+        {
+            "authorId": "2595627",
+            "name": "H. Kurniawati",
+            "url": "https://www.semanticscholar.org/author/2595627"
+        },
+        {
+            "authorId": "121885570",
+            "name": "D.P. Kroese",
+            "url": "https://www.semanticscholar.org/author/121885570"
+        },
+        {
+            "authorId": "50699003",
+            "name": "N. Ye",
+            "url": "https://www.semanticscholar.org/author/50699003"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [],
+    "corpusId": 258685815,
+    "doi": "10.48550/arXiv.2305.08049",
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": true,
+    "isPublisherLicensed": true,
+    "is_open_access": true,
+    "is_publisher_licensed": true,
+    "numCitedBy": 0,
+    "numCiting": 38,
+    "paperId": "53657eaeb7586de2e479a6bacfea24f88bb1f911",
+    "references": [
+        {
+            "arxivId": "2209.05733",
+            "authors": [
+                {
+                    "authorId": "2089397933",
+                    "name": "Marcus Hoerger"
+                },
+                {
+                    "authorId": "2595627",
+                    "name": "H. Kurniawati"
+                },
+                {
+                    "authorId": "1704242",
+                    "name": "Dirk P. Kroese"
+                },
+                {
+                    "authorId": "50699003",
+                    "name": "N. Ye"
+                }
+            ],
+            "doi": "10.48550/arXiv.2209.05733",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "7bfa4b16451447c1976a6af888d53819767e8d58",
+            "title": "Adaptive Discretization using Voronoi Trees for Continuous-Action POMDPs",
+            "url": "https://www.semanticscholar.org/paper/7bfa4b16451447c1976a6af888d53819767e8d58",
+            "venue": "WAFR",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2595627",
+                    "name": "H. Kurniawati"
+                }
+            ],
+            "doi": "10.1146/annurev-control-042920-092451",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "17339deade6b44c67644c5b396530482f2f0e43d",
+            "title": "Partially Observable Markov Decision Processes and Robotics",
+            "url": "https://www.semanticscholar.org/paper/17339deade6b44c67644c5b396530482f2f0e43d",
+            "venue": "Annu. Rev. Control. Robotics Auton. Syst.",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2067659261",
+                    "name": "M. H. Lim"
+                },
+                {
+                    "authorId": "1693894",
+                    "name": "C. Tomlin"
+                },
+                {
+                    "authorId": "2184314",
+                    "name": "Zachary Sunberg"
+                }
+            ],
+            "doi": "10.1109/CDC45484.2021.9683490",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "f9380d81b5fe06429ce8dc70186c9eb1f4f3b174",
+            "title": "Voronoi Progressive Widening: Efficient Online Solvers for Continuous State, Action, and Observation POMDPs",
+            "url": "https://www.semanticscholar.org/paper/f9380d81b5fe06429ce8dc70186c9eb1f4f3b174",
+            "venue": "2021 60th IEEE Conference on Decision and Control (CDC)",
+            "year": 2021
+        },
+        {
+            "arxivId": "2010.03597",
+            "authors": [
+                {
+                    "authorId": "35456066",
+                    "name": "John Mern"
+                },
+                {
+                    "authorId": "2059935327",
+                    "name": "Anil Yildiz"
+                },
+                {
+                    "authorId": "2184314",
+                    "name": "Zachary Sunberg"
+                },
+                {
+                    "authorId": "2305781",
+                    "name": "T. Mukerji"
+                },
+                {
+                    "authorId": "2275756",
+                    "name": "Mykel J. Kochenderfer"
+                }
+            ],
+            "doi": "10.1609/aaai.v35i13.17411",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "108184c22782466c04890a1bff254a7791e93d2d",
+            "title": "Bayesian Optimized Monte Carlo Planning",
+            "url": "https://www.semanticscholar.org/paper/108184c22782466c04890a1bff254a7791e93d2d",
+            "venue": "AAAI",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "41152901",
+                    "name": "Jonathon Schwartz"
+                },
+                {
+                    "authorId": "2595627",
+                    "name": "H. Kurniawati"
+                },
+                {
+                    "authorId": "1403402271",
+                    "name": "E. El-Mahassni"
+                }
+            ],
+            "doi": "10.1609/icaps.v30i1.6666",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b3e5e8745026010364b6db8c891e7253ca3dc119",
+            "title": "POMDP + Information-Decay: Incorporating Defender's Behaviour in Autonomous Penetration Testing",
+            "url": "https://www.semanticscholar.org/paper/b3e5e8745026010364b6db8c891e7253ca3dc119",
+            "venue": "ICAPS",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2115287257",
+                    "name": "Beomjoon Kim"
+                },
+                {
+                    "authorId": "2109976613",
+                    "name": "Kyungjae Lee"
+                },
+                {
+                    "authorId": "26381055",
+                    "name": "Sungbin Lim"
+                },
+                {
+                    "authorId": "1709512",
+                    "name": "L. Kaelbling"
+                },
+                {
+                    "authorId": "1388700951",
+                    "name": "Tomas Lozano-Perez"
+                }
+            ],
+            "doi": "10.1609/AAAI.V34I06.6546",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "0fd064fd9a5e014484f531552e56342e522de21b",
+            "title": "Monte Carlo Tree Search in Continuous Spaces Using Voronoi Optimistic Optimization with Regret Bounds",
+            "url": "https://www.semanticscholar.org/paper/0fd064fd9a5e014484f531552e56342e522de21b",
+            "venue": "AAAI",
+            "year": 2020
+        },
+        {
+            "arxivId": "1811.04551",
+            "authors": [
+                {
+                    "authorId": "35006479",
+                    "name": "Danijar Hafner"
+                },
+                {
+                    "authorId": "2542999",
+                    "name": "T. Lillicrap"
+                },
+                {
+                    "authorId": "33091759",
+                    "name": "Ian S. Fischer"
+                },
+                {
+                    "authorId": "144543406",
+                    "name": "Ruben Villegas"
+                },
+                {
+                    "authorId": "39810222",
+                    "name": "David R Ha"
+                },
+                {
+                    "authorId": "1697141",
+                    "name": "Honglak Lee"
+                },
+                {
+                    "authorId": "2068894907",
+                    "name": "James Davidson"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "fea3e63c97c7292dc6fbcb3ffe7131eb54053986",
+            "title": "Learning Latent Dynamics for Planning from Pixels",
+            "url": "https://www.semanticscholar.org/paper/fea3e63c97c7292dc6fbcb3ffe7131eb54053986",
+            "venue": "ICML",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2332526",
+                    "name": "Marcus H\u00f6rger"
+                },
+                {
+                    "authorId": "2595627",
+                    "name": "H. Kurniawati"
+                },
+                {
+                    "authorId": "144756941",
+                    "name": "A. Elfes"
+                }
+            ],
+            "doi": "10.1109/IROS.2018.8593714",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "04f6cfe23268a798e43e83c9e2023e7c89c6fca1",
+            "title": "A Software Framework for Planning Under Partial Observability",
+            "url": "https://www.semanticscholar.org/paper/04f6cfe23268a798e43e83c9e2023e7c89c6fca1",
+            "venue": "2018 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2113761667",
+                    "name": "Erli Wang"
+                },
+                {
+                    "authorId": "2595627",
+                    "name": "H. Kurniawati"
+                },
+                {
+                    "authorId": "1704242",
+                    "name": "Dirk P. Kroese"
+                }
+            ],
+            "doi": "10.1609/icaps.v28i1.13906",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ebbbe1ab7127a60c58282041a728a541706cf1f4",
+            "title": "An On-Line Planner for POMDPs with Large Discrete Action Space: A Quantile-Based Approach",
+            "url": "https://www.semanticscholar.org/paper/ebbbe1ab7127a60c58282041a728a541706cf1f4",
+            "venue": "ICAPS",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2184314",
+                    "name": "Zachary Sunberg"
+                },
+                {
+                    "authorId": "2275756",
+                    "name": "Mykel J. Kochenderfer"
+                }
+            ],
+            "doi": "10.1609/icaps.v28i1.13882",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "dcd4bf5124c4813388dca713df2a6e8c568c0a9d",
+            "title": "Online Algorithms for POMDPs with Continuous State, Action, and Observation Spaces",
+            "url": "https://www.semanticscholar.org/paper/dcd4bf5124c4813388dca713df2a6e8c568c0a9d",
+            "venue": "ICAPS",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3093004",
+                    "name": "Shayegan Omidshafiei"
+                },
+                {
+                    "authorId": "120393937",
+                    "name": "Ali-akbar Agha-mohammadi"
+                },
+                {
+                    "authorId": "34903901",
+                    "name": "Chris Amato"
+                },
+                {
+                    "authorId": "93778069",
+                    "name": "Shih\u2010Yuan Liu"
+                },
+                {
+                    "authorId": "1713935",
+                    "name": "J. How"
+                },
+                {
+                    "authorId": "40497882",
+                    "name": "J. Vian"
+                }
+            ],
+            "doi": "10.1109/ICRA.2016.7487751",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b4d3c760120fee79840832d1cf0308d1833693b4",
+            "title": "Graph-based Cross Entropy method for solving multi-robot decentralized POMDPs",
+            "url": "https://www.semanticscholar.org/paper/b4d3c760120fee79840832d1cf0308d1833693b4",
+            "venue": "2016 IEEE International Conference on Robotics and Automation (ICRA)",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "34685430",
+                    "name": "K. Seiler"
+                },
+                {
+                    "authorId": "2595627",
+                    "name": "H. Kurniawati"
+                },
+                {
+                    "authorId": "1788158",
+                    "name": "Surya P. N. Singh"
+                }
+            ],
+            "doi": "10.1109/ICRA.2015.7139503",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "34143536909e10234e2ae5aec680a33358a5eedc",
+            "title": "An online and approximate solver for POMDPs with continuous action space",
+            "url": "https://www.semanticscholar.org/paper/34143536909e10234e2ae5aec680a33358a5eedc",
+            "venue": "2015 IEEE International Conference on Robotics and Automation (ICRA)",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144426657",
+                    "name": "Wen Sun"
+                },
+                {
+                    "authorId": "144057564",
+                    "name": "S. Patil"
+                },
+                {
+                    "authorId": "1682091",
+                    "name": "R. Alterovitz"
+                }
+            ],
+            "doi": "10.1109/TRO.2014.2380273",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "07f07f6a56fce60ac88e3354705647ba1fddceb0",
+            "title": "High-Frequency Replanning Under Uncertainty Using Parallel Sampling-Based Motion Planning",
+            "url": "https://www.semanticscholar.org/paper/07f07f6a56fce60ac88e3354705647ba1fddceb0",
+            "venue": "IEEE Transactions on Robotics",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1929279",
+                    "name": "Z. Botev"
+                },
+                {
+                    "authorId": "1704242",
+                    "name": "Dirk P. Kroese"
+                },
+                {
+                    "authorId": "35064932",
+                    "name": "R. Rubinstein"
+                },
+                {
+                    "authorId": "115292111",
+                    "name": "P. L'Ecuyer"
+                }
+            ],
+            "doi": "10.1016/B978-0-444-53859-8.00003-5",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "6b6b078ee9aabf3c17220a2da1e3f0dd822956b7",
+            "title": "Chapter 3 \u2013 The Cross-Entropy Method for Optimization",
+            "url": "https://www.semanticscholar.org/paper/6b6b078ee9aabf3c17220a2da1e3f0dd822956b7",
+            "venue": "",
+            "year": 2013
+        },
+        {
+            "arxivId": "1609.03250",
+            "authors": [
+                {
+                    "authorId": "3337002",
+                    "name": "A. Somani"
+                },
+                {
+                    "authorId": "50699003",
+                    "name": "N. Ye"
+                },
+                {
+                    "authorId": "145463096",
+                    "name": "David Hsu"
+                },
+                {
+                    "authorId": "1740222",
+                    "name": "Wee Sun Lee"
+                }
+            ],
+            "doi": "10.1613/jair.5328",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "270722c0233562d6c423d16d36b2c4adc5ed0829",
+            "title": "DESPOT: Online POMDP Planning with Regularization",
+            "url": "https://www.semanticscholar.org/paper/270722c0233562d6c423d16d36b2c4adc5ed0829",
+            "venue": "NIPS",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2067571868",
+                    "name": "Haoyu Bai"
+                },
+                {
+                    "authorId": "145463096",
+                    "name": "David Hsu"
+                },
+                {
+                    "authorId": "1740222",
+                    "name": "Wee Sun Lee"
+                }
+            ],
+            "doi": "10.1177/0278364914528255",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "27ebe193a60186f888525a23376344254363e39b",
+            "title": "Integrated perception and planning in the continuous space: A POMDP approach",
+            "url": "https://www.semanticscholar.org/paper/27ebe193a60186f888525a23376344254363e39b",
+            "venue": "Int. J. Robotics Res.",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "120393937",
+                    "name": "Ali-akbar Agha-mohammadi"
+                },
+                {
+                    "authorId": "143693749",
+                    "name": "S. Chakravorty"
+                },
+                {
+                    "authorId": "1678972",
+                    "name": "N. Amato"
+                }
+            ],
+            "doi": "10.1109/IROS.2011.6095010",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d5c23544209eeb4985ca5000d3127fe84fa17927",
+            "title": "FIRM: Feedback controller-based information-state roadmap - A framework for motion planning under uncertainty",
+            "url": "https://www.semanticscholar.org/paper/d5c23544209eeb4985ca5000d3127fe84fa17927",
+            "venue": "2011 IEEE/RSJ International Conference on Intelligent Robots and Systems",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2117043",
+                    "name": "Adrien Cou\u00ebtoux"
+                },
+                {
+                    "authorId": "3088253",
+                    "name": "Jean-Baptiste Hoock"
+                },
+                {
+                    "authorId": "2465086",
+                    "name": "Nataliya Sokolovska"
+                },
+                {
+                    "authorId": "1776193",
+                    "name": "O. Teytaud"
+                },
+                {
+                    "authorId": "40358173",
+                    "name": "Nicolas Bonnard"
+                }
+            ],
+            "doi": "10.1007/978-3-642-25566-3_32",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "39503ae2e224a9a88f3bb7ea1c2e3ff3612c3507",
+            "title": "Continuous Upper Confidence Trees",
+            "url": "https://www.semanticscholar.org/paper/39503ae2e224a9a88f3bb7ea1c2e3ff3612c3507",
+            "venue": "LION",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2595627",
+                    "name": "H. Kurniawati"
+                },
+                {
+                    "authorId": "2834579",
+                    "name": "Yanzhu Du"
+                },
+                {
+                    "authorId": "145463096",
+                    "name": "David Hsu"
+                },
+                {
+                    "authorId": "1740222",
+                    "name": "Wee Sun Lee"
+                }
+            ],
+            "doi": "10.1177/0278364910386986",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "0ac69deffe8248fd3833acc09dd68126e25617b8",
+            "title": "Motion planning under uncertainty for robotic tasks with long time horizons",
+            "url": "https://www.semanticscholar.org/paper/0ac69deffe8248fd3833acc09dd68126e25617b8",
+            "venue": "Int. J. Robotics Res.",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145824029",
+                    "name": "David Silver"
+                },
+                {
+                    "authorId": "144056327",
+                    "name": "J. Veness"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "f115acbd94451f58a5bc5062c1d7e6707e5be1f0",
+            "title": "Monte-Carlo Planning in Large POMDPs",
+            "url": "https://www.semanticscholar.org/paper/f115acbd94451f58a5bc5062c1d7e6707e5be1f0",
+            "venue": "NIPS",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144721873",
+                    "name": "J. V. D. Berg"
+                },
+                {
+                    "authorId": "1689992",
+                    "name": "P. Abbeel"
+                },
+                {
+                    "authorId": "144344283",
+                    "name": "Ken Goldberg"
+                }
+            ],
+            "doi": "10.1177/0278364911406562",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "800414f0e84b7279925d38c14fd7d4c63ef02841",
+            "title": "LQG-MP: Optimized path planning for robots with motion uncertainty and imperfect state information",
+            "url": "https://www.semanticscholar.org/paper/800414f0e84b7279925d38c14fd7d4c63ef02841",
+            "venue": "Int. J. Robotics Res.",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2595627",
+                    "name": "H. Kurniawati"
+                },
+                {
+                    "authorId": "145463096",
+                    "name": "David Hsu"
+                },
+                {
+                    "authorId": "1740222",
+                    "name": "Wee Sun Lee"
+                }
+            ],
+            "doi": "10.15607/RSS.2008.IV.009",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "6c485f3d910d46c88f00cdaa9883cc7c43805fb5",
+            "title": "SARSOP: Efficient Point-Based POMDP Planning by Approximating Optimally Reachable Belief Spaces",
+            "url": "https://www.semanticscholar.org/paper/6c485f3d910d46c88f00cdaa9883cc7c43805fb5",
+            "venue": "Robotics: Science and Systems",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2520096",
+                    "name": "R\u00e9mi Coulom"
+                }
+            ],
+            "doi": "10.1007/978-3-540-75538-8_7",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "02cc6a5944d57d2353a55639c7b77336b94f29b6",
+            "title": "Efficient Selectivity and Backup Operators in Monte-Carlo Tree Search",
+            "url": "https://www.semanticscholar.org/paper/02cc6a5944d57d2353a55639c7b77336b94f29b6",
+            "venue": "Computers and Games",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "40618053",
+                    "name": "L. Deng"
+                }
+            ],
+            "doi": "10.1198/tech.2006.s353",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "5c5e69387020d7ca7d49487ca841958dc5e08ce6",
+            "title": "The Cross-Entropy Method: A Unified Approach to Combinatorial Optimization, Monte-Carlo Simulation, and Machine Learning",
+            "url": "https://www.semanticscholar.org/paper/5c5e69387020d7ca7d49487ca841958dc5e08ce6",
+            "venue": "Technometrics",
+            "year": 2006
+        },
+        {
+            "arxivId": "1207.1412",
+            "authors": [
+                {
+                    "authorId": "48658160",
+                    "name": "Trey Smith"
+                },
+                {
+                    "authorId": "1719955",
+                    "name": "R. Simmons"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "a66ad08e4a9d34f452a4f1a5d28a16a39c8c7f52",
+            "title": "Point-Based POMDP Algorithms: Improved Analysis and Implementation",
+            "url": "https://www.semanticscholar.org/paper/a66ad08e4a9d34f452a4f1a5d28a16a39c8c7f52",
+            "venue": "UAI",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1712535",
+                    "name": "Shie Mannor"
+                },
+                {
+                    "authorId": "35064932",
+                    "name": "R. Rubinstein"
+                },
+                {
+                    "authorId": "2469848",
+                    "name": "Y. Gat"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7ffb463ed53eb7dd53658933d09a3959fe25ca45",
+            "title": "The Cross Entropy Method for Fast Policy Search",
+            "url": "https://www.semanticscholar.org/paper/7ffb463ed53eb7dd53658933d09a3959fe25ca45",
+            "venue": "ICML",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145134886",
+                    "name": "Joelle Pineau"
+                },
+                {
+                    "authorId": "2058430108",
+                    "name": "G. Gordon"
+                },
+                {
+                    "authorId": "144867807",
+                    "name": "S. Thrun"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "3e3aaf689cb443cd23c44f733d0a459cfed5af6b",
+            "title": "Point-based value iteration: an anytime algorithm for POMDPs",
+            "url": "https://www.semanticscholar.org/paper/3e3aaf689cb443cd23c44f733d0a459cfed5af6b",
+            "venue": "IJCAI 2003",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3298395",
+                    "name": "M. Arulampalam"
+                },
+                {
+                    "authorId": "1731320",
+                    "name": "S. Maskell"
+                },
+                {
+                    "authorId": "144998829",
+                    "name": "N. Gordon"
+                },
+                {
+                    "authorId": "102907269",
+                    "name": "T. Clapp"
+                }
+            ],
+            "doi": "10.1109/78.978374",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "7f0bbe9dd4aa3bfb8a355a2444f81848b020b7a4",
+            "title": "A tutorial on particle filters for online nonlinear/non-Gaussian Bayesian tracking",
+            "url": "https://www.semanticscholar.org/paper/7f0bbe9dd4aa3bfb8a355a2444f81848b020b7a4",
+            "venue": "IEEE Trans. Signal Process.",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1709512",
+                    "name": "L. Kaelbling"
+                },
+                {
+                    "authorId": "144885169",
+                    "name": "M. Littman"
+                },
+                {
+                    "authorId": "2453007",
+                    "name": "A. Cassandra"
+                }
+            ],
+            "doi": "10.1016/S0004-3702(98)00023-X",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "116d7798c1123cf7fad4176e98f58fd49de4f8f1",
+            "title": "Planning and Acting in Partially Observable Stochastic Domains",
+            "url": "https://www.semanticscholar.org/paper/116d7798c1123cf7fad4176e98f58fd49de4f8f1",
+            "venue": "Artif. Intell.",
+            "year": 1998
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144102674",
+                    "name": "C. Papadimitriou"
+                },
+                {
+                    "authorId": "144224173",
+                    "name": "J. Tsitsiklis"
+                }
+            ],
+            "doi": "10.1287/moor.12.3.441",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d51eb16dfed68bf6e16b8b4516d607370b91189a",
+            "title": "The Complexity of Markov Decision Processes",
+            "url": "https://www.semanticscholar.org/paper/d51eb16dfed68bf6e16b8b4516d607370b91189a",
+            "venue": "Math. Oper. Res.",
+            "year": 1987
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1750941",
+                    "name": "A. Lindquist"
+                }
+            ],
+            "doi": "10.1137/0311025",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9381a588c3e0ce28c0974d5c31e19807a82cf802",
+            "title": "On Feedback Control of Linear Stochastic Systems",
+            "url": "https://www.semanticscholar.org/paper/9381a588c3e0ce28c0974d5c31e19807a82cf802",
+            "venue": "",
+            "year": 1973
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1422501461",
+                    "name": "Estrella Serrano-Guerrero"
+                },
+                {
+                    "authorId": "2311604568",
+                    "name": "Miguel Ruiz-Veguilla"
+                },
+                {
+                    "authorId": "2311591889",
+                    "name": "Agust\u00edn Mart\u00edn-Rodr\u00edguez"
+                },
+                {
+                    "authorId": "1389962070",
+                    "name": "J. F. Rodr\u00edguez-Testal"
+                }
+            ],
+            "doi": "10.1093/acprof:oso/9780195152418.003.0001",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b8175cd5e060ac8ed61796ad198463a862096ed1",
+            "title": "What Is This?",
+            "url": "https://www.semanticscholar.org/paper/b8175cd5e060ac8ed61796ad198463a862096ed1",
+            "venue": "PsycTESTS Dataset",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1701499",
+                    "name": "J. Filar"
+                },
+                {
+                    "authorId": "2105628874",
+                    "name": "Zhihao Qiao"
+                },
+                {
+                    "authorId": "2066093104",
+                    "name": "Nan Ye"
+                }
+            ],
+            "doi": "10.36334/modsim.2019.g2.filar",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e54e714006cc4fc2ef3442ee1198b830acc71813",
+            "title": "POMDPs for sustainable fishery management",
+            "url": "https://www.semanticscholar.org/paper/e54e714006cc4fc2ef3442ee1198b830acc71813",
+            "venue": "",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2089397933",
+                    "name": "Marcus Hoerger"
+                },
+                {
+                    "authorId": "2595627",
+                    "name": "H. Kurniawati"
+                },
+                {
+                    "authorId": "144823195",
+                    "name": "T. Bandyopadhyay"
+                },
+                {
+                    "authorId": "144756941",
+                    "name": "A. Elfes"
+                }
+            ],
+            "doi": "10.1007/978-3-030-43089-4_18",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "689306f4bb534211eadd8a5048708a1a7ffa48cd",
+            "title": "Linearization in Motion Planning under Uncertainty",
+            "url": "https://www.semanticscholar.org/paper/689306f4bb534211eadd8a5048708a1a7ffa48cd",
+            "venue": "WAFR",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2595627",
+                    "name": "H. Kurniawati"
+                },
+                {
+                    "authorId": "2135789751",
+                    "name": "Vinay Yadav"
+                }
+            ],
+            "doi": "10.1007/978-3-319-28872-7_35",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "46af6c768e7c40d816906024916165fe669a9978",
+            "title": "An Online POMDP Solver for Uncertainty Planning in Dynamic Environment",
+            "url": "https://www.semanticscholar.org/paper/46af6c768e7c40d816906024916165fe669a9978",
+            "venue": "ISRR",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1799949",
+                    "name": "F. Oliehoek"
+                },
+                {
+                    "authorId": "34846285",
+                    "name": "Julian F. P. Kooij"
+                },
+                {
+                    "authorId": "31651045",
+                    "name": "N. Vlassis"
+                }
+            ],
+            "doi": "10.1007/978-3-540-74930-1_15",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e3986253025a419b3526ee64d8f3d67470e43d2a",
+            "title": "A Cross-Entropy Approach to Solving Dec-POMDPs",
+            "url": "https://www.semanticscholar.org/paper/e3986253025a419b3526ee64d8f3d67470e43d2a",
+            "venue": "IDC",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "34932490",
+                    "name": "P. Boer"
+                },
+                {
+                    "authorId": "1704242",
+                    "name": "Dirk P. Kroese"
+                },
+                {
+                    "authorId": "1712535",
+                    "name": "Shie Mannor"
+                },
+                {
+                    "authorId": "35064932",
+                    "name": "R. Rubinstein"
+                }
+            ],
+            "doi": "10.1007/S10479-005-5724-Z",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "ebfa3fb595ca0299ab5249c69374c98b74bb62b3",
+            "title": "A Tutorial on the Cross-Entropy Method",
+            "url": "https://www.semanticscholar.org/paper/ebfa3fb595ca0299ab5249c69374c98b74bb62b3",
+            "venue": "Ann. Oper. Res.",
+            "year": 2005
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "A Surprisingly Simple Continuous-Action POMDP Solver: Lazy Cross-Entropy Search Over Policy Trees",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/53657eaeb7586de2e479a6bacfea24f88bb1f911",
+    "venue": "AAAI Conference on Artificial Intelligence",
+    "year": 2023
+}

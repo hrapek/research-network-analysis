@@ -1,0 +1,2354 @@
+{
+    "abstract": "This paper introduces the Intentional Unintentional (IU) agent. This agent endows the deep deterministic policy gradients (DDPG) agent for continuous control with the ability to solve several tasks simultaneously. Learning to solve many tasks simultaneously has been a long-standing, core goal of artificial intelligence, inspired by infant development and motivated by the desire to build flexible robot manipulators capable of many diverse behaviours. We show that the IU agent not only learns to solve many tasks simultaneously but it also learns faster than agents that target a single task at-a-time. In some cases, where the single task DDPG method completely fails, the IU agent successfully solves the task. To demonstrate this, we build a playroom environment using the MuJoCo physics engine, and introduce a grounded formal language to automatically generate tasks.",
+    "arxivId": "1707.03300",
+    "authors": [
+        {
+            "authorId": "12159303",
+            "name": "Serkan Cabi",
+            "url": "https://www.semanticscholar.org/author/12159303"
+        },
+        {
+            "authorId": "2016840",
+            "name": "Sergio Gomez Colmenarejo",
+            "url": "https://www.semanticscholar.org/author/2016840"
+        },
+        {
+            "authorId": "3243579",
+            "name": "Matthew W. Hoffman",
+            "url": "https://www.semanticscholar.org/author/3243579"
+        },
+        {
+            "authorId": "1715051",
+            "name": "Misha Denil",
+            "url": "https://www.semanticscholar.org/author/1715051"
+        },
+        {
+            "authorId": "2117966548",
+            "name": "Ziyun Wang",
+            "url": "https://www.semanticscholar.org/author/2117966548"
+        },
+        {
+            "authorId": "1737568",
+            "name": "Nando de Freitas",
+            "url": "https://www.semanticscholar.org/author/1737568"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": "2301.00051",
+            "authors": [
+                {
+                    "authorId": "40898602",
+                    "name": "Trevor Ablett"
+                },
+                {
+                    "authorId": "2054420513",
+                    "name": "Bryan Chan"
+                },
+                {
+                    "authorId": "144409224",
+                    "name": "Jonathan Kelly"
+                }
+            ],
+            "doi": "10.1109/LRA.2023.3236882",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "b530925ea809ae25be3e86fb5d17e3fa924f7ff6",
+            "title": "Learning From Guided Play: Improving Exploration for Adversarial Imitation Learning With Simple Auxiliary Tasks",
+            "url": "https://www.semanticscholar.org/paper/b530925ea809ae25be3e86fb5d17e3fa924f7ff6",
+            "venue": "IEEE Robotics and Automation Letters",
+            "year": 2022
+        },
+        {
+            "arxivId": "2211.14296",
+            "authors": [
+                {
+                    "authorId": "2052903664",
+                    "name": "Hiroki Furuta"
+                },
+                {
+                    "authorId": "1715282",
+                    "name": "Yusuke Iwasawa"
+                },
+                {
+                    "authorId": "2153732825",
+                    "name": "Yutaka Matsuo"
+                },
+                {
+                    "authorId": "2046135",
+                    "name": "S. Gu"
+                }
+            ],
+            "doi": "10.48550/arXiv.2211.14296",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8745c5b9522c11818418f64fdc880894faeaed16",
+            "title": "A System for Morphology-Task Generalization via Unified Representation and Behavior Distillation",
+            "url": "https://www.semanticscholar.org/paper/8745c5b9522c11818418f64fdc880894faeaed16",
+            "venue": "ICLR",
+            "year": 2022
+        },
+        {
+            "arxivId": "2201.11783",
+            "authors": [
+                {
+                    "authorId": "2117776576",
+                    "name": "R. Kumar"
+                },
+                {
+                    "authorId": "7636193",
+                    "name": "T. Deleu"
+                },
+                {
+                    "authorId": "1865800402",
+                    "name": "Y. Bengio"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "eac4172613328fa02dd8fa320112c4de3a5f280d",
+            "title": "Boosting Exploration in Multi-Task Reinforcement Learning using Adversarial Networks",
+            "url": "https://www.semanticscholar.org/paper/eac4172613328fa02dd8fa320112c4de3a5f280d",
+            "venue": "",
+            "year": 2022
+        },
+        {
+            "arxivId": "2112.08932",
+            "authors": [
+                {
+                    "authorId": "40898602",
+                    "name": "Trevor Ablett"
+                },
+                {
+                    "authorId": "2054420513",
+                    "name": "Bryan Chan"
+                },
+                {
+                    "authorId": "144409224",
+                    "name": "Jonathan Kelly"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "9d2038e233042790929123ff62354eb18ee52e47",
+            "title": "Learning from Guided Play: A Scheduled Hierarchical Approach for Improving Exploration in Adversarial Imitation Learning",
+            "url": "https://www.semanticscholar.org/paper/9d2038e233042790929123ff62354eb18ee52e47",
+            "venue": "ArXiv",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2045080948",
+                    "name": "A. Lazaridis"
+                },
+                {
+                    "authorId": "2955835",
+                    "name": "A. Fachantidis"
+                },
+                {
+                    "authorId": "1697941",
+                    "name": "I. Vlahavas"
+                }
+            ],
+            "doi": "10.1613/jair.1.12412",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f4fd4a5a0901675e19bb4054d8861d2697194fd5",
+            "title": "Deep Reinforcement Learning: A State-of-the-Art Walkthrough",
+            "url": "https://www.semanticscholar.org/paper/f4fd4a5a0901675e19bb4054d8861d2697194fd5",
+            "venue": "J. Artif. Intell. Res.",
+            "year": 2020
+        },
+        {
+            "arxivId": "2012.10147",
+            "authors": [
+                {
+                    "authorId": "2236890",
+                    "name": "Manfred Eppe"
+                },
+                {
+                    "authorId": "32237116",
+                    "name": "Christian Gumbsch"
+                },
+                {
+                    "authorId": "2991958",
+                    "name": "Matthias Kerzel"
+                },
+                {
+                    "authorId": "143671620",
+                    "name": "Phuong D. H. Nguyen"
+                },
+                {
+                    "authorId": "1732540",
+                    "name": "Martin Volker Butz"
+                },
+                {
+                    "authorId": "1736513",
+                    "name": "Stefan Wermter"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "49e73f28ff90a229ddd4d07e0f10380d50417b39",
+            "title": "Hierarchical principles of embodied reinforcement learning: A review",
+            "url": "https://www.semanticscholar.org/paper/49e73f28ff90a229ddd4d07e0f10380d50417b39",
+            "venue": "ArXiv",
+            "year": 2020
+        },
+        {
+            "arxivId": "2011.01758",
+            "authors": [
+                {
+                    "authorId": "3331786",
+                    "name": "Markus Wulfmeier"
+                },
+                {
+                    "authorId": "2631257",
+                    "name": "Arunkumar Byravan"
+                },
+                {
+                    "authorId": "73729987",
+                    "name": "Tim Hertweck"
+                },
+                {
+                    "authorId": "39051054",
+                    "name": "I. Higgins"
+                },
+                {
+                    "authorId": "2110759501",
+                    "name": "Ankush Gupta"
+                },
+                {
+                    "authorId": "1954876",
+                    "name": "Tejas D. Kulkarni"
+                },
+                {
+                    "authorId": "47447264",
+                    "name": "Malcolm Reynolds"
+                },
+                {
+                    "authorId": "3035073",
+                    "name": "Denis Teplyashin"
+                },
+                {
+                    "authorId": "49512734",
+                    "name": "Roland Hafner"
+                },
+                {
+                    "authorId": "2066153554",
+                    "name": "Thomas Lampe"
+                },
+                {
+                    "authorId": "3137672",
+                    "name": "Martin A. Riedmiller"
+                }
+            ],
+            "doi": "10.1109/ICRA48506.2021.9560733",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "b62f094179aa79015c57690c01e76e7d7d75f78c",
+            "title": "Representation Matters: Improving Perception and Exploration for Robotics",
+            "url": "https://www.semanticscholar.org/paper/b62f094179aa79015c57690c01e76e7d7d75f78c",
+            "venue": "2021 IEEE International Conference on Robotics and Automation (ICRA)",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2297598349",
+                    "name": "Juan Martinez-Piazuelo"
+                },
+                {
+                    "authorId": "97796305",
+                    "name": "Daniel E. Ochoa"
+                },
+                {
+                    "authorId": "2410760",
+                    "name": "N. Quijano"
+                },
+                {
+                    "authorId": "27224158",
+                    "name": "L. F. Giraldo"
+                }
+            ],
+            "doi": "10.1109/ACCESS.2020.3025194",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7e801b6e7afce2c5d464fbff5cc127f89a3c63df",
+            "title": "A Multi-Critic Reinforcement Learning Method: An Application to Multi-Tank Water Systems",
+            "url": "https://www.semanticscholar.org/paper/7e801b6e7afce2c5d464fbff5cc127f89a3c63df",
+            "venue": "IEEE Access",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2108922045",
+                    "name": "Cong Ma"
+                },
+                {
+                    "authorId": "49969902",
+                    "name": "Zhizhong Li"
+                },
+                {
+                    "authorId": "1807606",
+                    "name": "Dahua Lin"
+                },
+                {
+                    "authorId": "123275655",
+                    "name": "Jiangshe Zhang"
+                }
+            ],
+            "doi": "10.1016/j.neucom.2020.04.070",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "0ced04ad3dd659f660ad9de9abe53c46efd06ac4",
+            "title": "Parallel Multi-Environment Shaping Algorithm for Complex Multi-step Task",
+            "url": "https://www.semanticscholar.org/paper/0ced04ad3dd659f660ad9de9abe53c46efd06ac4",
+            "venue": "Neurocomputing",
+            "year": 2020
+        },
+        {
+            "arxivId": "2007.15588",
+            "authors": [
+                {
+                    "authorId": "3331786",
+                    "name": "Markus Wulfmeier"
+                },
+                {
+                    "authorId": "143668237",
+                    "name": "Dushyant Rao"
+                },
+                {
+                    "authorId": "49512734",
+                    "name": "Roland Hafner"
+                },
+                {
+                    "authorId": "2066153554",
+                    "name": "Thomas Lampe"
+                },
+                {
+                    "authorId": "2799799",
+                    "name": "A. Abdolmaleki"
+                },
+                {
+                    "authorId": "73729987",
+                    "name": "Tim Hertweck"
+                },
+                {
+                    "authorId": "2366050",
+                    "name": "Michael Neunert"
+                },
+                {
+                    "authorId": "7794353",
+                    "name": "Dhruva Tirumala"
+                },
+                {
+                    "authorId": "1500370330",
+                    "name": "Noah Siegel"
+                },
+                {
+                    "authorId": "2801204",
+                    "name": "N. Heess"
+                },
+                {
+                    "authorId": "3137672",
+                    "name": "Martin A. Riedmiller"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "9e38bbf16a458f9101fab5cae39a4f49d35dcb51",
+            "title": "Data-efficient Hindsight Off-policy Option Learning",
+            "url": "https://www.semanticscholar.org/paper/9e38bbf16a458f9101fab5cae39a4f49d35dcb51",
+            "venue": "ICML",
+            "year": 2020
+        },
+        {
+            "arxivId": "2005.07541",
+            "authors": [
+                {
+                    "authorId": "73729987",
+                    "name": "Tim Hertweck"
+                },
+                {
+                    "authorId": "3137672",
+                    "name": "Martin A. Riedmiller"
+                },
+                {
+                    "authorId": "39793897",
+                    "name": "Michael Bloesch"
+                },
+                {
+                    "authorId": "2060551",
+                    "name": "Jost Tobias Springenberg"
+                },
+                {
+                    "authorId": "1500370330",
+                    "name": "Noah Siegel"
+                },
+                {
+                    "authorId": "3331786",
+                    "name": "Markus Wulfmeier"
+                },
+                {
+                    "authorId": "49512734",
+                    "name": "Roland Hafner"
+                },
+                {
+                    "authorId": "2801204",
+                    "name": "N. Heess"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "064c6f04352edd9dee1ba1124777b3dcc62a740a",
+            "title": "Simple Sensor Intentions for Exploration",
+            "url": "https://www.semanticscholar.org/paper/064c6f04352edd9dee1ba1124777b3dcc62a740a",
+            "venue": "ArXiv",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2518895",
+                    "name": "K. Bali"
+                },
+                {
+                    "authorId": "144848119",
+                    "name": "Y. Ong"
+                },
+                {
+                    "authorId": "2129458064",
+                    "name": "Abhishek Gupta"
+                },
+                {
+                    "authorId": "1751954",
+                    "name": "Puay Siew Tan"
+                }
+            ],
+            "doi": "10.1109/TEVC.2019.2906927",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "123cd32718d9616bf094e43c696274c9b8f4b312",
+            "title": "Multifactorial Evolutionary Algorithm With Online Transfer Parameter Estimation: MFEA-II",
+            "url": "https://www.semanticscholar.org/paper/123cd32718d9616bf094e43c696274c9b8f4b312",
+            "venue": "IEEE Transactions on Evolutionary Computation",
+            "year": 2020
+        },
+        {
+            "arxivId": "2002.11708",
+            "authors": [
+                {
+                    "authorId": "2112518983",
+                    "name": "Alexander C. Li"
+                },
+                {
+                    "authorId": "34026610",
+                    "name": "Lerrel Pinto"
+                },
+                {
+                    "authorId": "1689992",
+                    "name": "P. Abbeel"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7b0871c783e721bfbf9b5d16e575130a07a672cd",
+            "title": "Generalized Hindsight for Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/7b0871c783e721bfbf9b5d16e575130a07a672cd",
+            "venue": "NeurIPS",
+            "year": 2020
+        },
+        {
+            "arxivId": "1905.12621",
+            "authors": [
+                {
+                    "authorId": "3433312",
+                    "name": "G. Vezzani"
+                },
+                {
+                    "authorId": "2129458064",
+                    "name": "Abhishek Gupta"
+                },
+                {
+                    "authorId": "143648309",
+                    "name": "L. Natale"
+                },
+                {
+                    "authorId": "1689992",
+                    "name": "P. Abbeel"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "801eb90352e603b1573a04a36804417d1c9496f0",
+            "title": "Learning latent state representation for speeding up exploration",
+            "url": "https://www.semanticscholar.org/paper/801eb90352e603b1573a04a36804417d1c9496f0",
+            "venue": "ArXiv",
+            "year": 2019
+        },
+        {
+            "arxivId": "1905.09668",
+            "authors": [
+                {
+                    "authorId": "48853634",
+                    "name": "Domingo Esteban"
+                },
+                {
+                    "authorId": "1982539",
+                    "name": "L. Rozo"
+                },
+                {
+                    "authorId": "1745158",
+                    "name": "D. Caldwell"
+                }
+            ],
+            "doi": "10.1109/IROS40897.2019.8968149",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "9be163ef32db64d44cc2fe8e10418949d5b37f7b",
+            "title": "Hierarchical Reinforcement Learning for Concurrent Discovery of Compound and Composable Policies",
+            "url": "https://www.semanticscholar.org/paper/9be163ef32db64d44cc2fe8e10418949d5b37f7b",
+            "venue": "2019 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+            "year": 2019
+        },
+        {
+            "arxivId": "1903.01973",
+            "authors": [
+                {
+                    "authorId": "32245472",
+                    "name": "Corey Lynch"
+                },
+                {
+                    "authorId": "30559411",
+                    "name": "Mohi Khansari"
+                },
+                {
+                    "authorId": "9961095",
+                    "name": "Ted Xiao"
+                },
+                {
+                    "authorId": "2109446216",
+                    "name": "Vikash Kumar"
+                },
+                {
+                    "authorId": "2704494",
+                    "name": "Jonathan Tompson"
+                },
+                {
+                    "authorId": "1736651",
+                    "name": "S. Levine"
+                },
+                {
+                    "authorId": "3142556",
+                    "name": "P. Sermanet"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "99a7df93a2e16bd7ac3349d52cc34417cda7909d",
+            "title": "Learning Latent Plans from Play",
+            "url": "https://www.semanticscholar.org/paper/99a7df93a2e16bd7ac3349d52cc34417cda7909d",
+            "venue": "CoRL",
+            "year": 2019
+        },
+        {
+            "arxivId": "1811.06964",
+            "authors": [
+                {
+                    "authorId": "145116380",
+                    "name": "Eric Jang"
+                },
+                {
+                    "authorId": "144373380",
+                    "name": "Coline Devin"
+                },
+                {
+                    "authorId": "2657155",
+                    "name": "Vincent Vanhoucke"
+                },
+                {
+                    "authorId": "1736651",
+                    "name": "S. Levine"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e6d8ebfd88ee333deccce32b09ee41d271af6dc4",
+            "title": "Grasp2Vec: Learning Object Representations from Self-Supervised Grasping",
+            "url": "https://www.semanticscholar.org/paper/e6d8ebfd88ee333deccce32b09ee41d271af6dc4",
+            "venue": "CoRL",
+            "year": 2018
+        },
+        {
+            "arxivId": "1810.02927",
+            "authors": [
+                {
+                    "authorId": "34758368",
+                    "name": "Fabio Pardo"
+                },
+                {
+                    "authorId": "6495683",
+                    "name": "Vitaly Levdik"
+                },
+                {
+                    "authorId": "1686032",
+                    "name": "Petar Kormushev"
+                }
+            ],
+            "doi": "10.1609/AAAI.V34I04.5983",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "bf2a70ecfe3a0b701a16104cd8b880a41353dd2f",
+            "title": "Scaling All-Goals Updates in Reinforcement Learning Using Convolutional Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/bf2a70ecfe3a0b701a16104cd8b880a41353dd2f",
+            "venue": "AAAI",
+            "year": 2018
+        },
+        {
+            "arxivId": "1810.05017",
+            "authors": [
+                {
+                    "authorId": "40470211",
+                    "name": "T. Paine"
+                },
+                {
+                    "authorId": "2016840",
+                    "name": "Sergio Gomez Colmenarejo"
+                },
+                {
+                    "authorId": "2117966548",
+                    "name": "Ziyun Wang"
+                },
+                {
+                    "authorId": "144828948",
+                    "name": "Scott E. Reed"
+                },
+                {
+                    "authorId": "3152281",
+                    "name": "Y. Aytar"
+                },
+                {
+                    "authorId": "2054956",
+                    "name": "T. Pfaff"
+                },
+                {
+                    "authorId": "3243579",
+                    "name": "Matthew W. Hoffman"
+                },
+                {
+                    "authorId": "1403998955",
+                    "name": "Gabriel Barth-Maron"
+                },
+                {
+                    "authorId": "12159303",
+                    "name": "Serkan Cabi"
+                },
+                {
+                    "authorId": "2508525",
+                    "name": "D. Budden"
+                },
+                {
+                    "authorId": "1737568",
+                    "name": "Nando de Freitas"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "776f3d2250285ac03b2019ecf18668fcdd72a9ce",
+            "title": "One-Shot High-Fidelity Imitation: Training Large-Scale Deep Nets with RL",
+            "url": "https://www.semanticscholar.org/paper/776f3d2250285ac03b2019ecf18668fcdd72a9ce",
+            "venue": "ArXiv",
+            "year": 2018
+        },
+        {
+            "arxivId": "1806.09605",
+            "authors": [
+                {
+                    "authorId": "2300921",
+                    "name": "Vivek Veeriah"
+                },
+                {
+                    "authorId": "2894414",
+                    "name": "Junhyuk Oh"
+                },
+                {
+                    "authorId": "2108384183",
+                    "name": "Satinder Singh"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "35e32d05f6fa83c6485d5e4f8462227453324320",
+            "title": "Many-Goals Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/35e32d05f6fa83c6485d5e4f8462227453324320",
+            "venue": "ArXiv",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "9571638",
+                    "name": "Ishan Durugkar"
+                },
+                {
+                    "authorId": "144848112",
+                    "name": "P. Stone"
+                }
+            ],
+            "doi": "10.1609/aaai.v32i1.12195",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0124db44bb52cc8dd4c56f311464247fcd2336cc",
+            "title": "Adversarial Goal Generation for Intrinsic Motivation",
+            "url": "https://www.semanticscholar.org/paper/0124db44bb52cc8dd4c56f311464247fcd2336cc",
+            "venue": "AAAI",
+            "year": 2018
+        },
+        {
+            "arxivId": "1802.10567",
+            "authors": [
+                {
+                    "authorId": "3137672",
+                    "name": "Martin A. Riedmiller"
+                },
+                {
+                    "authorId": "49512734",
+                    "name": "Roland Hafner"
+                },
+                {
+                    "authorId": "2066153554",
+                    "name": "Thomas Lampe"
+                },
+                {
+                    "authorId": "2366050",
+                    "name": "Michael Neunert"
+                },
+                {
+                    "authorId": "3110620",
+                    "name": "Jonas Degrave"
+                },
+                {
+                    "authorId": "8023592",
+                    "name": "T. Wiele"
+                },
+                {
+                    "authorId": "3255983",
+                    "name": "Volodymyr Mnih"
+                },
+                {
+                    "authorId": "2801204",
+                    "name": "N. Heess"
+                },
+                {
+                    "authorId": "2060551",
+                    "name": "Jost Tobias Springenberg"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "cab81775baae7ba2d056ebbc60437f2e03358ca3",
+            "title": "Learning by Playing - Solving Sparse Reward Tasks from Scratch",
+            "url": "https://www.semanticscholar.org/paper/cab81775baae7ba2d056ebbc60437f2e03358ca3",
+            "venue": "ICML",
+            "year": 2018
+        },
+        {
+            "arxivId": "1802.10546",
+            "authors": [
+                {
+                    "authorId": "1720664",
+                    "name": "Pierre-Yves Oudeyer"
+                }
+            ],
+            "doi": "10.31234/osf.io/3p8f6",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "01cf10722c7f39c0ee4b596e3c3d5f44d7f65427",
+            "title": "Computational Theories of Curiosity-Driven Learning",
+            "url": "https://www.semanticscholar.org/paper/01cf10722c7f39c0ee4b596e3c3d5f44d7f65427",
+            "venue": "ArXiv",
+            "year": 2018
+        },
+        {
+            "arxivId": "1803.00781",
+            "authors": [
+                {
+                    "authorId": "46848496",
+                    "name": "Alexandre P\u00e9r\u00e9"
+                },
+                {
+                    "authorId": "2781532",
+                    "name": "S\u00e9bastien Forestier"
+                },
+                {
+                    "authorId": "3211142",
+                    "name": "Olivier Sigaud"
+                },
+                {
+                    "authorId": "1720664",
+                    "name": "Pierre-Yves Oudeyer"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "330d56c3641cddd8c78440e768cd80795f23cab4",
+            "title": "Unsupervised Learning of Goal Spaces for Intrinsically Motivated Goal Exploration",
+            "url": "https://www.semanticscholar.org/paper/330d56c3641cddd8c78440e768cd80795f23cab4",
+            "venue": "ICLR",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2060551",
+                    "name": "Jost Tobias Springenberg"
+                },
+                {
+                    "authorId": "2117966548",
+                    "name": "Ziyun Wang"
+                },
+                {
+                    "authorId": "2801204",
+                    "name": "N. Heess"
+                },
+                {
+                    "authorId": "3137672",
+                    "name": "Martin A. Riedmiller"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7a5196d05b145ec552912dccedd16a42c88718f1",
+            "title": "Learning Skill Embeddings for Transferable Robot Skills",
+            "url": "https://www.semanticscholar.org/paper/7a5196d05b145ec552912dccedd16a42c88718f1",
+            "venue": "NIPS 2017",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1944801",
+                    "name": "Karol Hausman"
+                },
+                {
+                    "authorId": "2060551",
+                    "name": "Jost Tobias Springenberg"
+                },
+                {
+                    "authorId": "2117966548",
+                    "name": "Ziyun Wang"
+                },
+                {
+                    "authorId": "2801204",
+                    "name": "N. Heess"
+                },
+                {
+                    "authorId": "3137672",
+                    "name": "Martin A. Riedmiller"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "72e87d27e8b3493981daca533b3956fae8b4f316",
+            "title": "Learning Robot Skill Embeddings",
+            "url": "https://www.semanticscholar.org/paper/72e87d27e8b3493981daca533b3956fae8b4f316",
+            "venue": "NIPS 2017",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2117776576",
+                    "name": "R. Kumar"
+                },
+                {
+                    "authorId": "7636193",
+                    "name": "T. Deleu"
+                },
+                {
+                    "authorId": "1865800402",
+                    "name": "Y. Bengio"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "64c141dbeecdca2c9e494aa2aa518b19e7f71d97",
+            "title": "Rethinking Learning Dynamics in RL using Adversarial Networks",
+            "url": "https://www.semanticscholar.org/paper/64c141dbeecdca2c9e494aa2aa518b19e7f71d97",
+            "venue": "ArXiv",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2123247172",
+                    "name": "Alexander Li"
+                },
+                {
+                    "authorId": "1689992",
+                    "name": "P. Abbeel"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "058034310453d97c5e517565906ab48d15cfa0fd",
+            "title": "Algorithms for Multi-task Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/058034310453d97c5e517565906ab48d15cfa0fd",
+            "venue": "",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "123741912",
+                    "name": "P. Fournier"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c0b1d43f03c4d959a0bf57ab03ff6ef83f849872",
+            "title": "Intrinsically Motivated and Interactive Reinforcement Learning: a Developmental Approach. (Apprentissage par Renforcement Intrins\u00e8quement Motiv\u00e9 et Interactif: une approche d\u00e9veloppementale)",
+            "url": "https://www.semanticscholar.org/paper/c0b1d43f03c4d959a0bf57ab03ff6ef83f849872",
+            "venue": "",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1944801",
+                    "name": "Karol Hausman"
+                },
+                {
+                    "authorId": "2060551",
+                    "name": "Jost Tobias Springenberg"
+                },
+                {
+                    "authorId": "2117966548",
+                    "name": "Ziyun Wang"
+                },
+                {
+                    "authorId": "2801204",
+                    "name": "N. Heess"
+                },
+                {
+                    "authorId": "3137672",
+                    "name": "Martin A. Riedmiller"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "5beaeff056549019926075746f8c4f78e30494b0",
+            "title": "EARNING AN E MBEDDING S PACE FOR T RANSFERABLE R OBOT S KILLS",
+            "url": "https://www.semanticscholar.org/paper/5beaeff056549019926075746f8c4f78e30494b0",
+            "venue": "",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2129458064",
+                    "name": "Abhishek Gupta"
+                },
+                {
+                    "authorId": "144848119",
+                    "name": "Y. Ong"
+                }
+            ],
+            "doi": "10.1007/978-3-030-02729-2_6",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d71cbd2199b8edf20e2ac98b70c32e3d954882f9",
+            "title": "Multitask Knowledge Transfer Across Problems",
+            "url": "https://www.semanticscholar.org/paper/d71cbd2199b8edf20e2ac98b70c32e3d954882f9",
+            "venue": "Adaptation, Learning, and Optimization",
+            "year": 2018
+        }
+    ],
+    "corpusId": 24801412,
+    "doi": null,
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 4,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 31,
+    "numCiting": 38,
+    "paperId": "fbde1483960676744ef55243fd8122000049ddc1",
+    "references": [
+        {
+            "arxivId": "1707.01495",
+            "authors": [
+                {
+                    "authorId": "2206490",
+                    "name": "Marcin Andrychowicz"
+                },
+                {
+                    "authorId": "150074096",
+                    "name": "Dwight Crow"
+                },
+                {
+                    "authorId": "2064770039",
+                    "name": "Alex Ray"
+                },
+                {
+                    "authorId": "2113526509",
+                    "name": "Jonas Schneider"
+                },
+                {
+                    "authorId": "2062025076",
+                    "name": "Rachel Fong"
+                },
+                {
+                    "authorId": "2930640",
+                    "name": "P. Welinder"
+                },
+                {
+                    "authorId": "39593364",
+                    "name": "Bob McGrew"
+                },
+                {
+                    "authorId": "2052880384",
+                    "name": "Joshua Tobin"
+                },
+                {
+                    "authorId": "1689992",
+                    "name": "P. Abbeel"
+                },
+                {
+                    "authorId": "2563432",
+                    "name": "Wojciech Zaremba"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "429ed4c9845d0abd1f8204e1d7705919559bc2a2",
+            "title": "Hindsight Experience Replay",
+            "url": "https://www.semanticscholar.org/paper/429ed4c9845d0abd1f8204e1d7705919559bc2a2",
+            "venue": "NIPS",
+            "year": 2017
+        },
+        {
+            "arxivId": "1706.06551",
+            "authors": [
+                {
+                    "authorId": "2910877",
+                    "name": "Karl Moritz Hermann"
+                },
+                {
+                    "authorId": "145783676",
+                    "name": "Felix Hill"
+                },
+                {
+                    "authorId": "2070088720",
+                    "name": "Simon Green"
+                },
+                {
+                    "authorId": "2115096249",
+                    "name": "Fumin Wang"
+                },
+                {
+                    "authorId": null,
+                    "name": "Ryan Faulkner"
+                },
+                {
+                    "authorId": "2794457",
+                    "name": "Hubert Soyer"
+                },
+                {
+                    "authorId": "7635903",
+                    "name": "David Szepesvari"
+                },
+                {
+                    "authorId": "144792148",
+                    "name": "Wojciech M. Czarnecki"
+                },
+                {
+                    "authorId": "3093886",
+                    "name": "Max Jaderberg"
+                },
+                {
+                    "authorId": "3035073",
+                    "name": "Denis Teplyashin"
+                },
+                {
+                    "authorId": "47969243",
+                    "name": "Marcus Wainwright"
+                },
+                {
+                    "authorId": "17937882",
+                    "name": "C. Apps"
+                },
+                {
+                    "authorId": "48987704",
+                    "name": "D. Hassabis"
+                },
+                {
+                    "authorId": "1685771",
+                    "name": "Phil Blunsom"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "019923afa86036b69c0e423f3c2188bfa7050923",
+            "title": "Grounded Language Learning in a Simulated 3D World",
+            "url": "https://www.semanticscholar.org/paper/019923afa86036b69c0e423f3c2188bfa7050923",
+            "venue": "ArXiv",
+            "year": 2017
+        },
+        {
+            "arxivId": "1706.06383",
+            "authors": [
+                {
+                    "authorId": "1715051",
+                    "name": "Misha Denil"
+                },
+                {
+                    "authorId": "2016840",
+                    "name": "Sergio Gomez Colmenarejo"
+                },
+                {
+                    "authorId": "12159303",
+                    "name": "Serkan Cabi"
+                },
+                {
+                    "authorId": "143810408",
+                    "name": "D. Saxton"
+                },
+                {
+                    "authorId": "1737568",
+                    "name": "Nando de Freitas"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "046c4ff0b08361b1ee84fecf1292d385d7bca277",
+            "title": "Programmable Agents",
+            "url": "https://www.semanticscholar.org/paper/046c4ff0b08361b1ee84fecf1292d385d7bca277",
+            "venue": "ArXiv",
+            "year": 2017
+        },
+        {
+            "arxivId": "1706.04208",
+            "authors": [
+                {
+                    "authorId": "1748153",
+                    "name": "H. V. Seijen"
+                },
+                {
+                    "authorId": "35189291",
+                    "name": "Mehdi Fatemi"
+                },
+                {
+                    "authorId": "144100820",
+                    "name": "R. Laroche"
+                },
+                {
+                    "authorId": "8365320",
+                    "name": "Joshua Romoff"
+                },
+                {
+                    "authorId": "48316034",
+                    "name": "Tavian Barnes"
+                },
+                {
+                    "authorId": "32963261",
+                    "name": "Jeffrey Tsang"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "3c63f8b8263cd6cc4c8c7429d46bb656accddc49",
+            "title": "Hybrid Reward Architecture for Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/3c63f8b8263cd6cc4c8c7429d46bb656accddc49",
+            "venue": "NIPS",
+            "year": 2017
+        },
+        {
+            "arxivId": "1704.04341",
+            "authors": [
+                {
+                    "authorId": "144885169",
+                    "name": "M. Littman"
+                },
+                {
+                    "authorId": "3199888",
+                    "name": "U. Topcu"
+                },
+                {
+                    "authorId": "2119313209",
+                    "name": "Jie Fu"
+                },
+                {
+                    "authorId": "1787816",
+                    "name": "C. Isbell"
+                },
+                {
+                    "authorId": "2055605825",
+                    "name": "Min Wen"
+                },
+                {
+                    "authorId": "2700008",
+                    "name": "J. MacGlashan"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e77bb3a20de767338ce0e5d733e54461221419b3",
+            "title": "Environment-Independent Task Specifications via GLTL",
+            "url": "https://www.semanticscholar.org/paper/e77bb3a20de767338ce0e5d733e54461221419b3",
+            "venue": "ArXiv",
+            "year": 2017
+        },
+        {
+            "arxivId": "1704.03003",
+            "authors": [
+                {
+                    "authorId": "1753223",
+                    "name": "Alex Graves"
+                },
+                {
+                    "authorId": "1792298",
+                    "name": "Marc G. Bellemare"
+                },
+                {
+                    "authorId": "10698483",
+                    "name": "Jacob Menick"
+                },
+                {
+                    "authorId": "1708654",
+                    "name": "R. Munos"
+                },
+                {
+                    "authorId": "2645384",
+                    "name": "K. Kavukcuoglu"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "30ec43601d48236f8983d7cc55bed9cc68262b57",
+            "title": "Automated Curriculum Learning for Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/30ec43601d48236f8983d7cc55bed9cc68262b57",
+            "venue": "ICML",
+            "year": 2017
+        },
+        {
+            "arxivId": "1703.09831",
+            "authors": [
+                {
+                    "authorId": "2910174",
+                    "name": "Haonan Yu"
+                },
+                {
+                    "authorId": null,
+                    "name": "Haichao Zhang"
+                },
+                {
+                    "authorId": "145738410",
+                    "name": "W. Xu"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "1c1a24169be56e01b0e36e260f49025260a5c7e7",
+            "title": "A Deep Compositional Framework for Human-like Language Acquisition in Virtual Environment",
+            "url": "https://www.semanticscholar.org/paper/1c1a24169be56e01b0e36e260f49025260a5c7e7",
+            "venue": "ArXiv",
+            "year": 2017
+        },
+        {
+            "arxivId": "1611.01779",
+            "authors": [
+                {
+                    "authorId": "2841331",
+                    "name": "Alexey Dosovitskiy"
+                },
+                {
+                    "authorId": "145231047",
+                    "name": "V. Koltun"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "4c25f50c7451fa72c562e21e3b11e416b11f74c8",
+            "title": "Learning to Act by Predicting the Future",
+            "url": "https://www.semanticscholar.org/paper/4c25f50c7451fa72c562e21e3b11e416b11f74c8",
+            "venue": "ICLR",
+            "year": 2016
+        },
+        {
+            "arxivId": "1611.05397",
+            "authors": [
+                {
+                    "authorId": "3093886",
+                    "name": "Max Jaderberg"
+                },
+                {
+                    "authorId": "3255983",
+                    "name": "Volodymyr Mnih"
+                },
+                {
+                    "authorId": "144792148",
+                    "name": "Wojciech M. Czarnecki"
+                },
+                {
+                    "authorId": "1725157",
+                    "name": "T. Schaul"
+                },
+                {
+                    "authorId": "1700356",
+                    "name": "Joel Z. Leibo"
+                },
+                {
+                    "authorId": "145824029",
+                    "name": "David Silver"
+                },
+                {
+                    "authorId": "2645384",
+                    "name": "K. Kavukcuoglu"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d7bd6e3addd8bc8e2e154048300eea15f030ed33",
+            "title": "Reinforcement Learning with Unsupervised Auxiliary Tasks",
+            "url": "https://www.semanticscholar.org/paper/d7bd6e3addd8bc8e2e154048300eea15f030ed33",
+            "venue": "ICLR",
+            "year": 2016
+        },
+        {
+            "arxivId": "1609.05521",
+            "authors": [
+                {
+                    "authorId": "1830914",
+                    "name": "Guillaume Lample"
+                },
+                {
+                    "authorId": "2328602",
+                    "name": "Devendra Singh Chaplot"
+                }
+            ],
+            "doi": "10.1609/aaai.v31i1.10827",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e0b65d3839e3bf703d156b524d7db7a5e10a2623",
+            "title": "Playing FPS Games with Deep Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/e0b65d3839e3bf703d156b524d7db7a5e10a2623",
+            "venue": "AAAI",
+            "year": 2016
+        },
+        {
+            "arxivId": "1605.03852",
+            "authors": [
+                {
+                    "authorId": "145317727",
+                    "name": "Yulia Tsvetkov"
+                },
+                {
+                    "authorId": "1779225",
+                    "name": "Manaal Faruqui"
+                },
+                {
+                    "authorId": "1379953252",
+                    "name": "Wang Ling"
+                },
+                {
+                    "authorId": "2414040",
+                    "name": "B. MacWhinney"
+                },
+                {
+                    "authorId": "1745899",
+                    "name": "Chris Dyer"
+                }
+            ],
+            "doi": "10.18653/v1/P16-1013",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "2af3485c32ed22911f3bb592406f56671c00aa59",
+            "title": "Learning the Curriculum with Bayesian Optimization for Task-Specific Word Representation Learning",
+            "url": "https://www.semanticscholar.org/paper/2af3485c32ed22911f3bb592406f56671c00aa59",
+            "venue": "ACL",
+            "year": 2016
+        },
+        {
+            "arxivId": "1604.06057",
+            "authors": [
+                {
+                    "authorId": "1954876",
+                    "name": "Tejas D. Kulkarni"
+                },
+                {
+                    "authorId": "144958935",
+                    "name": "Karthik Narasimhan"
+                },
+                {
+                    "authorId": "3231182",
+                    "name": "A. Saeedi"
+                },
+                {
+                    "authorId": "1763295",
+                    "name": "J. Tenenbaum"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d37620e6f8fe678a43e12930743281cd8cca6a66",
+            "title": "Hierarchical Deep Reinforcement Learning: Integrating Temporal Abstraction and Intrinsic Motivation",
+            "url": "https://www.semanticscholar.org/paper/d37620e6f8fe678a43e12930743281cd8cca6a66",
+            "venue": "NIPS",
+            "year": 2016
+        },
+        {
+            "arxivId": "1602.01783",
+            "authors": [
+                {
+                    "authorId": "3255983",
+                    "name": "Volodymyr Mnih"
+                },
+                {
+                    "authorId": "36045539",
+                    "name": "Adri\u00e0 Puigdom\u00e8nech Badia"
+                },
+                {
+                    "authorId": "153583218",
+                    "name": "Mehdi Mirza"
+                },
+                {
+                    "authorId": "1753223",
+                    "name": "Alex Graves"
+                },
+                {
+                    "authorId": "2542999",
+                    "name": "T. Lillicrap"
+                },
+                {
+                    "authorId": "3367786",
+                    "name": "Tim Harley"
+                },
+                {
+                    "authorId": "145824029",
+                    "name": "David Silver"
+                },
+                {
+                    "authorId": "2645384",
+                    "name": "K. Kavukcuoglu"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "69e76e16740ed69f4dc55361a3d319ac2f1293dd",
+            "title": "Asynchronous Methods for Deep Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/69e76e16740ed69f4dc55361a3d319ac2f1293dd",
+            "venue": "ICML",
+            "year": 2016
+        },
+        {
+            "arxivId": "1511.06279",
+            "authors": [
+                {
+                    "authorId": "144828948",
+                    "name": "Scott E. Reed"
+                },
+                {
+                    "authorId": "1737568",
+                    "name": "Nando de Freitas"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "b59d91e0699d4e1896a15bae13fd180bdaf77ea5",
+            "title": "Neural Programmer-Interpreters",
+            "url": "https://www.semanticscholar.org/paper/b59d91e0699d4e1896a15bae13fd180bdaf77ea5",
+            "venue": "ICLR",
+            "year": 2015
+        },
+        {
+            "arxivId": "1509.03044",
+            "authors": [
+                {
+                    "authorId": "47058148",
+                    "name": "Xiujun Li"
+                },
+                {
+                    "authorId": "47681372",
+                    "name": "Lihong Li"
+                },
+                {
+                    "authorId": "1800422",
+                    "name": "Jianfeng Gao"
+                },
+                {
+                    "authorId": "144137069",
+                    "name": "Xiaodong He"
+                },
+                {
+                    "authorId": "1720246",
+                    "name": "Jianshu Chen"
+                },
+                {
+                    "authorId": "144718788",
+                    "name": "L. Deng"
+                },
+                {
+                    "authorId": "2109546234",
+                    "name": "Ji He"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c9804e5df4ea3f4fcc5379ad44bdd0ff743ab20e",
+            "title": "Recurrent Reinforcement Learning: A Hybrid Approach",
+            "url": "https://www.semanticscholar.org/paper/c9804e5df4ea3f4fcc5379ad44bdd0ff743ab20e",
+            "venue": "ArXiv",
+            "year": 2015
+        },
+        {
+            "arxivId": "1509.02971",
+            "authors": [
+                {
+                    "authorId": "2542999",
+                    "name": "T. Lillicrap"
+                },
+                {
+                    "authorId": "2323922",
+                    "name": "Jonathan J. Hunt"
+                },
+                {
+                    "authorId": "1863250",
+                    "name": "A. Pritzel"
+                },
+                {
+                    "authorId": "2801204",
+                    "name": "N. Heess"
+                },
+                {
+                    "authorId": "1968210",
+                    "name": "Tom Erez"
+                },
+                {
+                    "authorId": "2109481",
+                    "name": "Yuval Tassa"
+                },
+                {
+                    "authorId": "145824029",
+                    "name": "David Silver"
+                },
+                {
+                    "authorId": "1688276",
+                    "name": "Daan Wierstra"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "024006d4c2a89f7acacc6e4438d156525b60a98f",
+            "title": "Continuous control with deep reinforcement learning",
+            "url": "https://www.semanticscholar.org/paper/024006d4c2a89f7acacc6e4438d156525b60a98f",
+            "venue": "ICLR",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1725157",
+                    "name": "T. Schaul"
+                },
+                {
+                    "authorId": "48257711",
+                    "name": "Dan Horgan"
+                },
+                {
+                    "authorId": "144717963",
+                    "name": "Karol Gregor"
+                },
+                {
+                    "authorId": "145824029",
+                    "name": "David Silver"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5dc2a215bd7cd5bdd3a0baa8c967575632696fac",
+            "title": "Universal Value Function Approximators",
+            "url": "https://www.semanticscholar.org/paper/5dc2a215bd7cd5bdd3a0baa8c967575632696fac",
+            "venue": "ICML",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3255983",
+                    "name": "Volodymyr Mnih"
+                },
+                {
+                    "authorId": "2645384",
+                    "name": "K. Kavukcuoglu"
+                },
+                {
+                    "authorId": "145824029",
+                    "name": "David Silver"
+                },
+                {
+                    "authorId": "2228824",
+                    "name": "Andrei A. Rusu"
+                },
+                {
+                    "authorId": "144056327",
+                    "name": "J. Veness"
+                },
+                {
+                    "authorId": "1792298",
+                    "name": "Marc G. Bellemare"
+                },
+                {
+                    "authorId": "1753223",
+                    "name": "Alex Graves"
+                },
+                {
+                    "authorId": "3137672",
+                    "name": "Martin A. Riedmiller"
+                },
+                {
+                    "authorId": "145600108",
+                    "name": "A. Fidjeland"
+                },
+                {
+                    "authorId": "2273072",
+                    "name": "Georg Ostrovski"
+                },
+                {
+                    "authorId": "48348688",
+                    "name": "Stig Petersen"
+                },
+                {
+                    "authorId": "50388928",
+                    "name": "Charlie Beattie"
+                },
+                {
+                    "authorId": "49813280",
+                    "name": "Amir Sadik"
+                },
+                {
+                    "authorId": "2460849",
+                    "name": "Ioannis Antonoglou"
+                },
+                {
+                    "authorId": "143776287",
+                    "name": "Helen King"
+                },
+                {
+                    "authorId": "2106164",
+                    "name": "D. Kumaran"
+                },
+                {
+                    "authorId": "1688276",
+                    "name": "Daan Wierstra"
+                },
+                {
+                    "authorId": "34313265",
+                    "name": "S. Legg"
+                },
+                {
+                    "authorId": "48987704",
+                    "name": "D. Hassabis"
+                }
+            ],
+            "doi": "10.1038/nature14236",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "340f48901f72278f6bf78a04ee5b01df208cc508",
+            "title": "Human-level control through deep reinforcement learning",
+            "url": "https://www.semanticscholar.org/paper/340f48901f72278f6bf78a04ee5b01df208cc508",
+            "venue": "Nature",
+            "year": 2015
+        },
+        {
+            "arxivId": "1412.6980",
+            "authors": [
+                {
+                    "authorId": "1726807",
+                    "name": "Diederik P. Kingma"
+                },
+                {
+                    "authorId": "2503659",
+                    "name": "Jimmy Ba"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "a6cb366736791bcccc5c8639de5a8f9636bf87e8",
+            "title": "Adam: A Method for Stochastic Optimization",
+            "url": "https://www.semanticscholar.org/paper/a6cb366736791bcccc5c8639de5a8f9636bf87e8",
+            "venue": "ICLR",
+            "year": 2014
+        },
+        {
+            "arxivId": "1410.4615",
+            "authors": [
+                {
+                    "authorId": "2563432",
+                    "name": "Wojciech Zaremba"
+                },
+                {
+                    "authorId": "1701686",
+                    "name": "I. Sutskever"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "0d0b3ff23fbf1ec7a0dfebd923a3ef224306491a",
+            "title": "Learning to Execute",
+            "url": "https://www.semanticscholar.org/paper/0d0b3ff23fbf1ec7a0dfebd923a3ef224306491a",
+            "venue": "ArXiv",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145824029",
+                    "name": "David Silver"
+                },
+                {
+                    "authorId": "3276293",
+                    "name": "Guy Lever"
+                },
+                {
+                    "authorId": "2801204",
+                    "name": "N. Heess"
+                },
+                {
+                    "authorId": "1804488",
+                    "name": "T. Degris"
+                },
+                {
+                    "authorId": "1688276",
+                    "name": "Daan Wierstra"
+                },
+                {
+                    "authorId": "3137672",
+                    "name": "Martin A. Riedmiller"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "687d0e59d5c35f022ce4638b3e3a6142068efc94",
+            "title": "Deterministic Policy Gradient Algorithms",
+            "url": "https://www.semanticscholar.org/paper/687d0e59d5c35f022ce4638b3e3a6142068efc94",
+            "venue": "ICML",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1398842047",
+                    "name": "Haitham Bou-Ammar"
+                },
+                {
+                    "authorId": "144020269",
+                    "name": "Eric Eaton"
+                },
+                {
+                    "authorId": "12114845",
+                    "name": "P. Ruvolo"
+                },
+                {
+                    "authorId": "39286677",
+                    "name": "Matthew E. Taylor"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "3cdcfe28827bf5bd6f0717ba24af991746e6050e",
+            "title": "Online Multi-Task Learning for Policy Gradient Methods",
+            "url": "https://www.semanticscholar.org/paper/3cdcfe28827bf5bd6f0717ba24af991746e6050e",
+            "venue": "ICML",
+            "year": 2014
+        },
+        {
+            "arxivId": "1402.0590",
+            "authors": [
+                {
+                    "authorId": "1917202",
+                    "name": "D. Roijers"
+                },
+                {
+                    "authorId": "1990124",
+                    "name": "P. Vamplew"
+                },
+                {
+                    "authorId": "1766767",
+                    "name": "Shimon Whiteson"
+                },
+                {
+                    "authorId": "3327913",
+                    "name": "Richard Dazeley"
+                }
+            ],
+            "doi": "10.1613/jair.3987",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a82795a372cec5266e7247054e9aace8f3b6a4f3",
+            "title": "A Survey of Multi-Objective Sequential Decision-Making",
+            "url": "https://www.semanticscholar.org/paper/a82795a372cec5266e7247054e9aace8f3b6a4f3",
+            "venue": "J. Artif. Intell. Res.",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3323211",
+                    "name": "M. Blumberg"
+                },
+                {
+                    "authorId": "40616410",
+                    "name": "H. G. Marques"
+                },
+                {
+                    "authorId": "34567297",
+                    "name": "F. Iida"
+                }
+            ],
+            "doi": "10.1016/j.cub.2013.04.075",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2893f58f0965475b37f54eeb6c0025753243f4df",
+            "title": "Twitching in Sensorimotor Development from Sleeping Rats to Robots",
+            "url": "https://www.semanticscholar.org/paper/2893f58f0965475b37f54eeb6c0025753243f4df",
+            "venue": "Current Biology",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144832491",
+                    "name": "E. Todorov"
+                },
+                {
+                    "authorId": "1968210",
+                    "name": "Tom Erez"
+                },
+                {
+                    "authorId": "2109481",
+                    "name": "Yuval Tassa"
+                }
+            ],
+            "doi": "10.1109/IROS.2012.6386109",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "b354ee518bfc1ac0d8ac447eece9edb69e92eae1",
+            "title": "MuJoCo: A physics engine for model-based control",
+            "url": "https://www.semanticscholar.org/paper/b354ee518bfc1ac0d8ac447eece9edb69e92eae1",
+            "venue": "2012 IEEE/RSJ International Conference on Intelligent Robots and Systems",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1699645",
+                    "name": "R. Sutton"
+                },
+                {
+                    "authorId": "3321484",
+                    "name": "Joseph Modayil"
+                },
+                {
+                    "authorId": "2095990079",
+                    "name": "M. Delp"
+                },
+                {
+                    "authorId": "1804488",
+                    "name": "T. Degris"
+                },
+                {
+                    "authorId": "1780797",
+                    "name": "P. Pilarski"
+                },
+                {
+                    "authorId": "145240145",
+                    "name": "Adam White"
+                },
+                {
+                    "authorId": "144368601",
+                    "name": "Doina Precup"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "50e9a441f56124b7b969e6537b66469a0e1aa707",
+            "title": "Horde: a scalable real-time architecture for learning knowledge from unsupervised sensorimotor interaction",
+            "url": "https://www.semanticscholar.org/paper/50e9a441f56124b7b969e6537b66469a0e1aa707",
+            "venue": "AAMAS",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1751762",
+                    "name": "Yoshua Bengio"
+                },
+                {
+                    "authorId": "2373952",
+                    "name": "J. Louradour"
+                },
+                {
+                    "authorId": "2939803",
+                    "name": "R. Collobert"
+                },
+                {
+                    "authorId": "145183709",
+                    "name": "J. Weston"
+                }
+            ],
+            "doi": "10.1145/1553374.1553380",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "8de174ab5419b9d3127695405efd079808e956e8",
+            "title": "Curriculum learning",
+            "url": "https://www.semanticscholar.org/paper/8de174ab5419b9d3127695405efd079808e956e8",
+            "venue": "ICML '09",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "7282435",
+                    "name": "M. Lungarella"
+                },
+                {
+                    "authorId": "1698471",
+                    "name": "G. Metta"
+                },
+                {
+                    "authorId": "145576002",
+                    "name": "R. Pfeifer"
+                },
+                {
+                    "authorId": "1678909",
+                    "name": "G. Sandini"
+                }
+            ],
+            "doi": "10.1080/09540090310001655110",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9bfea81cbd04ae5997f209ebcd2449776c5bc8fa",
+            "title": "Developmental robotics: a survey",
+            "url": "https://www.semanticscholar.org/paper/9bfea81cbd04ae5997f209ebcd2449776c5bc8fa",
+            "venue": "Connect. Sci.",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145107462",
+                    "name": "Stuart J. Russell"
+                },
+                {
+                    "authorId": "1691792",
+                    "name": "A. Zimdars"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "fa2c122933a1473692c584d9896fc8e1f7b671a0",
+            "title": "Q-Decomposition for Reinforcement Learning Agents",
+            "url": "https://www.semanticscholar.org/paper/fa2c122933a1473692c584d9896fc8e1f7b671a0",
+            "venue": "ICML",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1699645",
+                    "name": "R. Sutton"
+                },
+                {
+                    "authorId": "145689002",
+                    "name": "David A. McAllester"
+                },
+                {
+                    "authorId": "1699868",
+                    "name": "Satinder Singh"
+                },
+                {
+                    "authorId": "144830983",
+                    "name": "Y. Mansour"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a20f0ce0616def7cc9a87446c228906cd5da093b",
+            "title": "Policy Gradient Methods for Reinforcement Learning with Function Approximation",
+            "url": "https://www.semanticscholar.org/paper/a20f0ce0616def7cc9a87446c228906cd5da093b",
+            "venue": "NIPS",
+            "year": 1999
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1699645",
+                    "name": "R. Sutton"
+                },
+                {
+                    "authorId": "144368601",
+                    "name": "Doina Precup"
+                },
+                {
+                    "authorId": "1699868",
+                    "name": "Satinder Singh"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "390ec126ebc0f7f2719e9b2598decc58294b4350",
+            "title": "Intra-Option Learning about Temporally Abstract Actions",
+            "url": "https://www.semanticscholar.org/paper/390ec126ebc0f7f2719e9b2598decc58294b4350",
+            "venue": "ICML",
+            "year": 1998
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144299726",
+                    "name": "Thomas G. Dietterich"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9aa1d909544fd9ffe061b84a90eb344ac303e6d9",
+            "title": "The MAXQ Method for Hierarchical Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/9aa1d909544fd9ffe061b84a90eb344ac303e6d9",
+            "venue": "ICML",
+            "year": 1998
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "72419159",
+                    "name": "R. Brooks"
+                }
+            ],
+            "doi": "10.1016/0004-3702(91)90053-M",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "74f05cd2e847a0472a28c475c78d1654422903a5",
+            "title": "Intelligence without Representation",
+            "url": "https://www.semanticscholar.org/paper/74f05cd2e847a0472a28c475c78d1654422903a5",
+            "venue": "Artif. Intell.",
+            "year": 1991
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3292415",
+                    "name": "E. Thelen"
+                }
+            ],
+            "doi": "10.1016/0003-3472(79)90006-X",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "475ca0b1b6aa772f1d4ddf7c7bec118362525a0d",
+            "title": "Rhythmical stereotypies in normal human infants",
+            "url": "https://www.semanticscholar.org/paper/475ca0b1b6aa772f1d4ddf7c7bec118362525a0d",
+            "venue": "Animal Behaviour",
+            "year": 1979
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2251529033",
+                    "name": "Sarah E. Berger"
+                }
+            ],
+            "doi": "10.1002/0470018860.s00584",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7f02a5a011872ee3ca1fb88546ba21d48975f506",
+            "title": "Motor Development",
+            "url": "https://www.semanticscholar.org/paper/7f02a5a011872ee3ca1fb88546ba21d48975f506",
+            "venue": "",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "81705518",
+                    "name": "J. W. Sparling"
+                },
+                {
+                    "authorId": "2255443938",
+                    "name": "Julia J van Tol"
+                },
+                {
+                    "authorId": "4959007",
+                    "name": "N. Chescheir"
+                }
+            ],
+            "doi": "10.1093/PTJ/79.1.24",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "3528033f4147ad893f64cfee82aa82e4fbeecc8d",
+            "title": "Fetal and neonatal hand movement.",
+            "url": "https://www.semanticscholar.org/paper/3528033f4147ad893f64cfee82aa82e4fbeecc8d",
+            "venue": "Physical therapy",
+            "year": 1999
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1699245",
+                    "name": "T. Winograd"
+                }
+            ],
+            "doi": "10.1016/0010-0285(72)90002-3",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "de4961a6431b9553d9f13319236570a9f033fcab",
+            "title": "Understanding natural language",
+            "url": "https://www.semanticscholar.org/paper/de4961a6431b9553d9f13319236570a9f033fcab",
+            "venue": "",
+            "year": 1972
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "The Intentional Unintentional Agent: Learning to Solve Many Continuous Control Tasks Simultaneously",
+    "topics": [
+        {
+            "topic": "Intentional programming",
+            "topicId": "1449029",
+            "url": "https://www.semanticscholar.org/topic/1449029"
+        },
+        {
+            "topic": "Artificial intelligence",
+            "topicId": "8286",
+            "url": "https://www.semanticscholar.org/topic/8286"
+        },
+        {
+            "topic": "Instruction unit",
+            "topicId": "800073",
+            "url": "https://www.semanticscholar.org/topic/800073"
+        },
+        {
+            "topic": "Formal language",
+            "topicId": "43444",
+            "url": "https://www.semanticscholar.org/topic/43444"
+        },
+        {
+            "topic": "Physics engine",
+            "topicId": "338945",
+            "url": "https://www.semanticscholar.org/topic/338945"
+        },
+        {
+            "topic": "Gradient",
+            "topicId": "3221",
+            "url": "https://www.semanticscholar.org/topic/3221"
+        }
+    ],
+    "url": "https://www.semanticscholar.org/paper/fbde1483960676744ef55243fd8122000049ddc1",
+    "venue": "Conference on Robot Learning",
+    "year": 2017
+}

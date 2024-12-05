@@ -1,0 +1,1530 @@
+{
+    "abstract": "This paper introduces a new approach to generating strongly constrained texts. We consider standardized sentence generation for the typical application of vision screening. To solve this problem, we formalize it as a discrete combinatorial optimization problem and utilize multivalued decision diagrams (MDD), a well-known data structure to deal with constraints. In our context, one key strength of MDD is to compute an exhaustive set of solutions without performing any search. Once the sentences are obtained, we apply a language model (GPT-2) to keep the best ones. We detail this for English and also for French where the agreement and conjugation rules are known to be more complex. Finally, with the help of GPT-2, we get hundreds of bona-fide candidate sentences. When compared with the few dozen sentences usually available in the well-known vision screening test (MNREAD), this brings a major breakthrough in the field of standardized sentence generation. Also, as it can be easily adapted for other languages, it has the potential to make the MNREAD test even more valuable and usable. More generally, this paper highlights MDD as a convincing alternative for constrained text generation, especially when the constraints are hard to satisfy, but also for many other prospects.",
+    "arxivId": "2309.12415",
+    "authors": [
+        {
+            "authorId": "2231483801",
+            "name": "Alexandre Bonlarron",
+            "url": "https://www.semanticscholar.org/author/2231483801"
+        },
+        {
+            "authorId": "39160383",
+            "name": "Aur\u00e9lie Calabr\u00e8se",
+            "url": "https://www.semanticscholar.org/author/39160383"
+        },
+        {
+            "authorId": "2796589",
+            "name": "Pierre Kornprobst",
+            "url": "https://www.semanticscholar.org/author/2796589"
+        },
+        {
+            "authorId": "1710771",
+            "name": "Jean-Charles R\u00e9gin",
+            "url": "https://www.semanticscholar.org/author/1710771"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": "2407.13490",
+            "authors": [
+                {
+                    "authorId": "2311876226",
+                    "name": "Florian R'egin"
+                },
+                {
+                    "authorId": "2311880809",
+                    "name": "Elisabetta De Maria"
+                },
+                {
+                    "authorId": "2311877403",
+                    "name": "Alexandre Bonlarron"
+                }
+            ],
+            "doi": "10.4230/LIPIcs.CP.2024.25",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f3dabc09b27cf99f6ff0c1ce8a577d247a18b3d6",
+            "title": "Combining Constraint Programming Reasoning with Large Language Model Predictions",
+            "url": "https://www.semanticscholar.org/paper/f3dabc09b27cf99f6ff0c1ce8a577d247a18b3d6",
+            "venue": "CP",
+            "year": 2024
+        },
+        {
+            "arxivId": "2406.15473",
+            "authors": [
+                {
+                    "authorId": "2231483801",
+                    "name": "Alexandre Bonlarron"
+                },
+                {
+                    "authorId": "2068356277",
+                    "name": "Jean-Charles R'egin"
+                }
+            ],
+            "doi": "10.24963/ijcai.2024/841",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "f9b959313e9881ecead246206aa4ed6a479e0986",
+            "title": "Intertwining CP and NLP: The Generation of Unreasonably Constrained Sentences",
+            "url": "https://www.semanticscholar.org/paper/f9b959313e9881ecead246206aa4ed6a479e0986",
+            "venue": "IJCAI",
+            "year": 2024
+        },
+        {
+            "arxivId": "2406.10269",
+            "authors": [
+                {
+                    "authorId": "2231483801",
+                    "name": "Alexandre Bonlarron"
+                },
+                {
+                    "authorId": "2068356277",
+                    "name": "Jean-Charles R'egin"
+                }
+            ],
+            "doi": "10.24963/ijcai.2024/204",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "106fba9964eb550e4f86faf7c7be1ad782651ad8",
+            "title": "Markov Constraint as Large Language Model Surrogate",
+            "url": "https://www.semanticscholar.org/paper/106fba9964eb550e4f86faf7c7be1ad782651ad8",
+            "venue": "IJCAI",
+            "year": 2024
+        }
+    ],
+    "corpusId": 260850223,
+    "doi": "10.24963/ijcai.2023/210",
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 1,
+    "isOpenAccess": true,
+    "isPublisherLicensed": true,
+    "is_open_access": true,
+    "is_publisher_licensed": true,
+    "numCitedBy": 3,
+    "numCiting": 61,
+    "paperId": "af4071e8674b32d71df41f3b3111678cbe2a2097",
+    "references": [
+        {
+            "arxivId": "2306.15926",
+            "authors": [
+                {
+                    "authorId": "2025042453",
+                    "name": "Allen Roush"
+                },
+                {
+                    "authorId": "2187454894",
+                    "name": "Sanjay Basu"
+                },
+                {
+                    "authorId": "2187454962",
+                    "name": "Akshay Moorthy"
+                },
+                {
+                    "authorId": "2187454404",
+                    "name": "Dmitry Dubovoy"
+                }
+            ],
+            "doi": "10.48550/arXiv.2306.15926",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "272f130b93a7d9438a2bbcfbaeac7a8af9bb4b8a",
+            "title": "Most Language Models can be Poets too: An AI Writing Assistant and Constrained Text Generation Studio",
+            "url": "https://www.semanticscholar.org/paper/272f130b93a7d9438a2bbcfbaeac7a8af9bb4b8a",
+            "venue": "CAI",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "119863118",
+                    "name": "Xavier Gillard"
+                },
+                {
+                    "authorId": "3139779",
+                    "name": "P. Schaus"
+                }
+            ],
+            "doi": "10.24963/ijcai.2022/659",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "b7c39e369095d74c79ceb8768746f1ea85d301a4",
+            "title": "Large Neighborhood Search with Decision Diagrams",
+            "url": "https://www.semanticscholar.org/paper/b7c39e369095d74c79ceb8768746f1ea85d301a4",
+            "venue": "IJCAI",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "48397147",
+                    "name": "Ruiwei Wang"
+                },
+                {
+                    "authorId": "1713932",
+                    "name": "R. Yap"
+                }
+            ],
+            "doi": "10.1609/aaai.v36i4.20300",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "6be25eac0e7faaa04fa44b793a99fe0f79171ba7",
+            "title": "Encoding Multi-Valued Decision Diagram Constraints as Binary Constraint Trees",
+            "url": "https://www.semanticscholar.org/paper/6be25eac0e7faaa04fa44b793a99fe0f79171ba7",
+            "venue": "AAAI",
+            "year": 2022
+        },
+        {
+            "arxivId": "2205.05216",
+            "authors": [
+                {
+                    "authorId": "2164873004",
+                    "name": "Isaac Rudich"
+                },
+                {
+                    "authorId": "1907863",
+                    "name": "Quentin Cappart"
+                },
+                {
+                    "authorId": "2719301",
+                    "name": "Louis-Martin Rousseau"
+                }
+            ],
+            "doi": "10.4230/LIPIcs.CP.2022.35",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "e0f5e23cf44d3cb219c7ad6ac7abdffd30a25bbb",
+            "title": "Peel-And-Bound: Generating Stronger Relaxed Bounds with Multivalued Decision Diagrams",
+            "url": "https://www.semanticscholar.org/paper/e0f5e23cf44d3cb219c7ad6ac7abdffd30a25bbb",
+            "venue": "CP",
+            "year": 2022
+        },
+        {
+            "arxivId": "2112.08726",
+            "authors": [
+                {
+                    "authorId": "50085131",
+                    "name": "Ximing Lu"
+                },
+                {
+                    "authorId": "2129663",
+                    "name": "S. Welleck"
+                },
+                {
+                    "authorId": "119659229",
+                    "name": "Peter West"
+                },
+                {
+                    "authorId": "2112504145",
+                    "name": "Liwei Jiang"
+                },
+                {
+                    "authorId": "11348687",
+                    "name": "Jungo Kasai"
+                },
+                {
+                    "authorId": "1783281",
+                    "name": "Daniel Khashabi"
+                },
+                {
+                    "authorId": "39227408",
+                    "name": "Ronan Le Bras"
+                },
+                {
+                    "authorId": "3444092",
+                    "name": "Lianhui Qin"
+                },
+                {
+                    "authorId": "2111510510",
+                    "name": "Youngjae Yu"
+                },
+                {
+                    "authorId": "2545335",
+                    "name": "Rowan Zellers"
+                },
+                {
+                    "authorId": "144365875",
+                    "name": "Noah A. Smith"
+                },
+                {
+                    "authorId": "1699545",
+                    "name": "Yejin Choi"
+                }
+            ],
+            "doi": "10.18653/v1/2022.naacl-main.57",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "304cf21da84961469ac9f43405df187441832b61",
+            "title": "NeuroLogic A*esque Decoding: Constrained Text Generation with Lookahead Heuristics",
+            "url": "https://www.semanticscholar.org/paper/304cf21da84961469ac9f43405df187441832b61",
+            "venue": "NAACL",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2126246575",
+                    "name": "Willem-Jan van Hoeve"
+                }
+            ],
+            "doi": "10.1007/s10107-021-01662-x",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c28359027ee34c2b1d3723c0f22c208bae9c9f85",
+            "title": "Graph coloring with decision diagrams",
+            "url": "https://www.semanticscholar.org/paper/c28359027ee34c2b1d3723c0f22c208bae9c9f85",
+            "venue": "Mathematical Programming",
+            "year": 2021
+        },
+        {
+            "arxivId": "2103.07170",
+            "authors": [
+                {
+                    "authorId": "35283208",
+                    "name": "Yixian Liu"
+                },
+                {
+                    "authorId": "2107964289",
+                    "name": "Liwen Zhang"
+                },
+                {
+                    "authorId": "144836032",
+                    "name": "Wenjuan Han"
+                },
+                {
+                    "authorId": "1591125925",
+                    "name": "Yue Zhang"
+                },
+                {
+                    "authorId": "40341553",
+                    "name": "Kewei Tu"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "84b8642048e06bcf37f1667db9d2a25bb21dce37",
+            "title": "Constrained Text Generation with Global Guidance - Case Study on CommonGen",
+            "url": "https://www.semanticscholar.org/paper/84b8642048e06bcf37f1667db9d2a25bb21dce37",
+            "venue": "ArXiv",
+            "year": 2021
+        },
+        {
+            "arxivId": "2012.07436",
+            "authors": [
+                {
+                    "authorId": "2395143",
+                    "name": "Haoyi Zhou"
+                },
+                {
+                    "authorId": "2437353",
+                    "name": "Shanghang Zhang"
+                },
+                {
+                    "authorId": "1752536568",
+                    "name": "J. Peng"
+                },
+                {
+                    "authorId": "2108433304",
+                    "name": "Shuai Zhang"
+                },
+                {
+                    "authorId": "1492113939",
+                    "name": "Jianxin Li"
+                },
+                {
+                    "authorId": "144467554",
+                    "name": "Hui Xiong"
+                },
+                {
+                    "authorId": "2108278607",
+                    "name": "Wan Zhang"
+                }
+            ],
+            "doi": "10.1609/aaai.v35i12.17325",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "5b9d8bcc46b766b47389c912a8e026f81b91b0d8",
+            "title": "Informer: Beyond Efficient Transformer for Long Sequence Time-Series Forecasting",
+            "url": "https://www.semanticscholar.org/paper/5b9d8bcc46b766b47389c912a8e026f81b91b0d8",
+            "venue": "AAAI",
+            "year": 2020
+        },
+        {
+            "arxivId": "2005.14165",
+            "authors": [
+                {
+                    "authorId": "31035595",
+                    "name": "Tom B. Brown"
+                },
+                {
+                    "authorId": "2056658938",
+                    "name": "Benjamin Mann"
+                },
+                {
+                    "authorId": "39849748",
+                    "name": "Nick Ryder"
+                },
+                {
+                    "authorId": "2065894334",
+                    "name": "Melanie Subbiah"
+                },
+                {
+                    "authorId": "152724169",
+                    "name": "J. Kaplan"
+                },
+                {
+                    "authorId": "6515819",
+                    "name": "Prafulla Dhariwal"
+                },
+                {
+                    "authorId": "2072676",
+                    "name": "Arvind Neelakantan"
+                },
+                {
+                    "authorId": "67311962",
+                    "name": "Pranav Shyam"
+                },
+                {
+                    "authorId": "144864359",
+                    "name": "Girish Sastry"
+                },
+                {
+                    "authorId": "119609682",
+                    "name": "Amanda Askell"
+                },
+                {
+                    "authorId": "144517868",
+                    "name": "Sandhini Agarwal"
+                },
+                {
+                    "authorId": "1404060687",
+                    "name": "Ariel Herbert-Voss"
+                },
+                {
+                    "authorId": "2064404342",
+                    "name": "Gretchen Krueger"
+                },
+                {
+                    "authorId": "103143311",
+                    "name": "T. Henighan"
+                },
+                {
+                    "authorId": "48422824",
+                    "name": "R. Child"
+                },
+                {
+                    "authorId": "1992922591",
+                    "name": "A. Ramesh"
+                },
+                {
+                    "authorId": "2052152920",
+                    "name": "Daniel M. Ziegler"
+                },
+                {
+                    "authorId": "49387725",
+                    "name": "Jeff Wu"
+                },
+                {
+                    "authorId": "2059411355",
+                    "name": "Clemens Winter"
+                },
+                {
+                    "authorId": "144239765",
+                    "name": "Christopher Hesse"
+                },
+                {
+                    "authorId": "2108828435",
+                    "name": "Mark Chen"
+                },
+                {
+                    "authorId": "2064673055",
+                    "name": "Eric Sigler"
+                },
+                {
+                    "authorId": "1380985420",
+                    "name": "Ma-teusz Litwin"
+                },
+                {
+                    "authorId": "145565184",
+                    "name": "Scott Gray"
+                },
+                {
+                    "authorId": "1490681878",
+                    "name": "B. Chess"
+                },
+                {
+                    "authorId": "2115193883",
+                    "name": "Jack Clark"
+                },
+                {
+                    "authorId": "133740015",
+                    "name": "Christopher Berner"
+                },
+                {
+                    "authorId": "52238703",
+                    "name": "Sam McCandlish"
+                },
+                {
+                    "authorId": "38909097",
+                    "name": "Alec Radford"
+                },
+                {
+                    "authorId": "1701686",
+                    "name": "I. Sutskever"
+                },
+                {
+                    "authorId": "2698777",
+                    "name": "Dario Amodei"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "90abbc2cf38462b954ae1b772fac9532e2ccd8b0",
+            "title": "Language Models are Few-Shot Learners",
+            "url": "https://www.semanticscholar.org/paper/90abbc2cf38462b954ae1b772fac9532e2ccd8b0",
+            "venue": "NeurIPS",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "9586544",
+                    "name": "H\u00e9l\u00e8ne Verhaeghe"
+                },
+                {
+                    "authorId": "1723408",
+                    "name": "Christophe Lecoutre"
+                },
+                {
+                    "authorId": "3139779",
+                    "name": "P. Schaus"
+                }
+            ],
+            "doi": "10.1007/978-3-030-19212-9_39",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "0f2fa7b5cc792f10c8d5e1f0c8738c1454b51ac1",
+            "title": "Extending Compact-Diagram to Basic Smart Multi-Valued Variable Diagrams",
+            "url": "https://www.semanticscholar.org/paper/0f2fa7b5cc792f10c8d5e1f0c8738c1454b51ac1",
+            "venue": "CPAIOR",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143933320",
+                    "name": "J. Mansfield"
+                },
+                {
+                    "authorId": "117751957",
+                    "name": "Nilsu Atilgan"
+                },
+                {
+                    "authorId": "2068046159",
+                    "name": "A. M. Lewis"
+                },
+                {
+                    "authorId": "1723406",
+                    "name": "G. Legge"
+                }
+            ],
+            "doi": "10.1016/j.visres.2019.01.010",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f349b0fad7bd4dbc69b79aaa72245807014b31d4",
+            "title": "Extending the MNREAD sentence corpus: Computer-generated sentences for measuring visual performance in reading",
+            "url": "https://www.semanticscholar.org/paper/f349b0fad7bd4dbc69b79aaa72245807014b31d4",
+            "venue": "Vision Research",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "9586544",
+                    "name": "H\u00e9l\u00e8ne Verhaeghe"
+                },
+                {
+                    "authorId": "1723408",
+                    "name": "Christophe Lecoutre"
+                },
+                {
+                    "authorId": "3139779",
+                    "name": "P. Schaus"
+                }
+            ],
+            "doi": "10.24963/ijcai.2018/192",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8d5992a9b45d4d8e8c2ece78998463b2627d7631",
+            "title": "Compact-MDD: Efficiently Filtering (s)MDD Constraints with Reversible Sparse Bit-sets",
+            "url": "https://www.semanticscholar.org/paper/8d5992a9b45d4d8e8c2ece78998463b2627d7631",
+            "venue": "IJCAI",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2251335",
+                    "name": "A. Cir\u00e9"
+                }
+            ],
+            "doi": "10.1007/s10601-015-9221-y",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "26d1f1999f52f093eaa00de5b19ea3f1e5c2f7f3",
+            "title": "Decision diagrams for optimization",
+            "url": "https://www.semanticscholar.org/paper/26d1f1999f52f093eaa00de5b19ea3f1e5c2f7f3",
+            "venue": "Constraints",
+            "year": 2018
+        },
+        {
+            "arxivId": "1804.07461",
+            "authors": [
+                {
+                    "authorId": "144906624",
+                    "name": "Alex Wang"
+                },
+                {
+                    "authorId": "50286460",
+                    "name": "Amanpreet Singh"
+                },
+                {
+                    "authorId": "38614754",
+                    "name": "Julian Michael"
+                },
+                {
+                    "authorId": "145783676",
+                    "name": "Felix Hill"
+                },
+                {
+                    "authorId": "39455775",
+                    "name": "Omer Levy"
+                },
+                {
+                    "authorId": "3644767",
+                    "name": "Samuel R. Bowman"
+                }
+            ],
+            "doi": "10.18653/v1/W18-5446",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "451d4a16e425ecbf38c4b1cca0dcf5d9bec8255c",
+            "title": "GLUE: A Multi-Task Benchmark and Analysis Platform for Natural Language Understanding",
+            "url": "https://www.semanticscholar.org/paper/451d4a16e425ecbf38c4b1cca0dcf5d9bec8255c",
+            "venue": "BlackboxNLP@EMNLP",
+            "year": 2018
+        },
+        {
+            "arxivId": "1804.06609",
+            "authors": [
+                {
+                    "authorId": "38842528",
+                    "name": "Matt Post"
+                },
+                {
+                    "authorId": "145088328",
+                    "name": "David Vilar"
+                }
+            ],
+            "doi": "10.18653/v1/N18-1119",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "823f335eee85b42502c8c6cb3ce38b4ae274ef89",
+            "title": "Fast Lexically Constrained Decoding with Dynamic Beam Allocation for Neural Machine Translation",
+            "url": "https://www.semanticscholar.org/paper/823f335eee85b42502c8c6cb3ce38b4ae274ef89",
+            "venue": "NAACL",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2058973982",
+                    "name": "G. Perez"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "30259255f972318a89ab4aca6ad909d1ea2795f4",
+            "title": "Diagrammes de d\u00e9cision : contraintes et algorithmes",
+            "url": "https://www.semanticscholar.org/paper/30259255f972318a89ab4aca6ad909d1ea2795f4",
+            "venue": "",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "40511937",
+                    "name": "G. Perez"
+                },
+                {
+                    "authorId": "1710771",
+                    "name": "Jean-Charles R\u00e9gin"
+                }
+            ],
+            "doi": "10.1007/978-3-319-66158-2_15",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "dd33b061f8dd3cb30afbc7e4ca2a4b9cebf2f2f2",
+            "title": "MDDs: Sampling and Probability Constraints",
+            "url": "https://www.semanticscholar.org/paper/dd33b061f8dd3cb30afbc7e4ca2a4b9cebf2f2f2",
+            "venue": "CP",
+            "year": 2017
+        },
+        {
+            "arxivId": "1706.03762",
+            "authors": [
+                {
+                    "authorId": "40348417",
+                    "name": "Ashish Vaswani"
+                },
+                {
+                    "authorId": "1846258",
+                    "name": "Noam M. Shazeer"
+                },
+                {
+                    "authorId": "3877127",
+                    "name": "Niki Parmar"
+                },
+                {
+                    "authorId": "39328010",
+                    "name": "Jakob Uszkoreit"
+                },
+                {
+                    "authorId": "145024664",
+                    "name": "Llion Jones"
+                },
+                {
+                    "authorId": "19177000",
+                    "name": "Aidan N. Gomez"
+                },
+                {
+                    "authorId": "40527594",
+                    "name": "Lukasz Kaiser"
+                },
+                {
+                    "authorId": "3443442",
+                    "name": "Illia Polosukhin"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "204e3073870fae3d05bcbc2f6a8e263d9b72e776",
+            "title": "Attention is All you Need",
+            "url": "https://www.semanticscholar.org/paper/204e3073870fae3d05bcbc2f6a8e263d9b72e776",
+            "venue": "NIPS",
+            "year": 2017
+        },
+        {
+            "arxivId": "1704.07138",
+            "authors": [
+                {
+                    "authorId": "2140238",
+                    "name": "Chris Hokamp"
+                },
+                {
+                    "authorId": "1688015",
+                    "name": "Qun Liu"
+                }
+            ],
+            "doi": "10.18653/v1/P17-1141",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "82f9637e263251b2387c8e0c87b942bd1b6c3bdd",
+            "title": "Lexically Constrained Decoding for Sequence Generation Using Grid Beam Search",
+            "url": "https://www.semanticscholar.org/paper/82f9637e263251b2387c8e0c87b942bd1b6c3bdd",
+            "venue": "ACL",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145985070",
+                    "name": "Pierre Roy"
+                },
+                {
+                    "authorId": "40511937",
+                    "name": "G. Perez"
+                },
+                {
+                    "authorId": "1710771",
+                    "name": "Jean-Charles R\u00e9gin"
+                },
+                {
+                    "authorId": "2049870",
+                    "name": "Alexandre Papadopoulos"
+                },
+                {
+                    "authorId": "1986454",
+                    "name": "F. Pachet"
+                },
+                {
+                    "authorId": "15277037",
+                    "name": "Marco Marchini"
+                }
+            ],
+            "doi": "10.1007/978-3-319-44953-1_49",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c5fd16feeda277b2167af561f01763cee9d9df30",
+            "title": "Enforcing Structure on Temporal Sequences: The Allen Constraint",
+            "url": "https://www.semanticscholar.org/paper/c5fd16feeda277b2167af561f01763cee9d9df30",
+            "venue": "CP",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "39160383",
+                    "name": "Aur\u00e9lie Calabr\u00e8se"
+                },
+                {
+                    "authorId": "144561682",
+                    "name": "C. Owsley"
+                },
+                {
+                    "authorId": "144347384",
+                    "name": "G. McGwin"
+                },
+                {
+                    "authorId": "1723406",
+                    "name": "G. Legge"
+                }
+            ],
+            "doi": "10.1001/jamaophthalmol.2015.6097",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "00c9899aa382d5dbe8038009d6820c348d5803d3",
+            "title": "Development of a Reading Accessibility Index Using the MNREAD Acuity Chart.",
+            "url": "https://www.semanticscholar.org/paper/00c9899aa382d5dbe8038009d6820c348d5803d3",
+            "venue": "JAMA ophthalmology",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "40511937",
+                    "name": "G. Perez"
+                },
+                {
+                    "authorId": "1710771",
+                    "name": "Jean-Charles R\u00e9gin"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "228ee38f2ab5188a07ea60f870d04506466308b5",
+            "title": "Efficient Operations On MDDs for Building Constraint Programming Models",
+            "url": "https://www.semanticscholar.org/paper/228ee38f2ab5188a07ea60f870d04506466308b5",
+            "venue": "IJCAI",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2049870",
+                    "name": "Alexandre Papadopoulos"
+                },
+                {
+                    "authorId": "145985070",
+                    "name": "Pierre Roy"
+                },
+                {
+                    "authorId": "1710771",
+                    "name": "Jean-Charles R\u00e9gin"
+                },
+                {
+                    "authorId": "1986454",
+                    "name": "F. Pachet"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "3eeaf2541cf4569af837660eaa2932e95a485014",
+            "title": "Generating all Possible Palindromes from Ngram Corpora",
+            "url": "https://www.semanticscholar.org/paper/3eeaf2541cf4569af837660eaa2932e95a485014",
+            "venue": "IJCAI",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "152290618",
+                    "name": "Qiang Yang"
+                },
+                {
+                    "authorId": "48106342",
+                    "name": "M. Wooldridge"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "562d20c7262a7b84feaacb9fb40a1b5692abe245",
+            "title": "Proceedings of the 24th International Conference on Artificial Intelligence",
+            "url": "https://www.semanticscholar.org/paper/562d20c7262a7b84feaacb9fb40a1b5692abe245",
+            "venue": "",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "38997552",
+                    "name": "J. Perrin"
+                },
+                {
+                    "authorId": "2893305",
+                    "name": "D. Paill\u00e9"
+                },
+                {
+                    "authorId": "1731790",
+                    "name": "T. Baccino"
+                }
+            ],
+            "doi": "10.3758/s13428-014-0521-8",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "481eb869350ff6470c36a3651312cc49807f91a3",
+            "title": "A new sentence generator providing material for maximum reading speed measurement",
+            "url": "https://www.semanticscholar.org/paper/481eb869350ff6470c36a3651312cc49807f91a3",
+            "venue": "Behavior Research Methods",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2049870",
+                    "name": "Alexandre Papadopoulos"
+                },
+                {
+                    "authorId": "145985070",
+                    "name": "Pierre Roy"
+                },
+                {
+                    "authorId": "1986454",
+                    "name": "F. Pachet"
+                }
+            ],
+            "doi": "10.1609/aaai.v28i1.9126",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "084b9b895cc309970b185aba79992965c69b2f83",
+            "title": "Avoiding Plagiarism in Markov Sequence Generation",
+            "url": "https://www.semanticscholar.org/paper/084b9b895cc309970b185aba79992965c69b2f83",
+            "venue": "AAAI",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1816314",
+                    "name": "J. Amilhastre"
+                },
+                {
+                    "authorId": "1760182",
+                    "name": "H. Fargier"
+                },
+                {
+                    "authorId": "3084788",
+                    "name": "Alexandre Niveau"
+                },
+                {
+                    "authorId": "1773648",
+                    "name": "C. Pralet"
+                }
+            ],
+            "doi": "10.1142/S021821301460015X",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "86975a06b9f7ed1a5cdeaf0f0b02720ee5965461",
+            "title": "Compiling CSPs: A Complexity Map of (Non-Deterministic) Multivalued Decision Diagrams",
+            "url": "https://www.semanticscholar.org/paper/86975a06b9f7ed1a5cdeaf0f0b02720ee5965461",
+            "venue": "2012 IEEE 24th International Conference on Tools with Artificial Intelligence",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1723408",
+                    "name": "Christophe Lecoutre"
+                }
+            ],
+            "doi": "10.1007/s10601-011-9107-6",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ed083aeb86788151fd99a32feb4472f7c3ecdee7",
+            "title": "STR2: optimized simple tabular reduction for table constraints",
+            "url": "https://www.semanticscholar.org/paper/ed083aeb86788151fd99a32feb4472f7c3ecdee7",
+            "venue": "Constraints",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1986454",
+                    "name": "F. Pachet"
+                },
+                {
+                    "authorId": "145985070",
+                    "name": "Pierre Roy"
+                }
+            ],
+            "doi": "10.1007/s10601-010-9101-4",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "27e5a084817e67aa3e4b0ace1940df5ae52d4cc6",
+            "title": "Markov constraints: steerable generation of Markov sequences",
+            "url": "https://www.semanticscholar.org/paper/27e5a084817e67aa3e4b0ace1940df5ae52d4cc6",
+            "venue": "Constraints",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "7853656",
+                    "name": "Erez Lieberman Aiden"
+                },
+                {
+                    "authorId": "2055571460",
+                    "name": "Jean-Baptiste Michel"
+                }
+            ],
+            "doi": "10.1126/science.1199644",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "71171f8d34d0eec5630a16fff239c978fe53c383",
+            "title": "Quantitative Analysis of Culture Using Millions of Digitized Books",
+            "url": "https://www.semanticscholar.org/paper/71171f8d34d0eec5630a16fff239c978fe53c383",
+            "venue": "Science",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144244786",
+                    "name": "K. C. Cheng"
+                },
+                {
+                    "authorId": "1713932",
+                    "name": "R. Yap"
+                }
+            ],
+            "doi": "10.1007/s10601-009-9087-y",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "5332d509ab2ecd616b00948832064c307adfb06c",
+            "title": "An MDD-based generalized arc consistency algorithm for positive and negative table constraints and some global constraints",
+            "url": "https://www.semanticscholar.org/paper/5332d509ab2ecd616b00948832064c307adfb06c",
+            "venue": "Constraints",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3771112",
+                    "name": "Bernard L\u00e9t\u00e9"
+                },
+                {
+                    "authorId": "1399016439",
+                    "name": "L. Sprenger-Charolles"
+                },
+                {
+                    "authorId": "49728362",
+                    "name": "P. Col\u00e9"
+                }
+            ],
+            "doi": "10.3758/BF03195560",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8adc7c37952345a4cc5b963ff3df6a33f7d5818e",
+            "title": "MANULEX: A grade-level lexical database from French elementary school readers",
+            "url": "https://www.semanticscholar.org/paper/8adc7c37952345a4cc5b963ff3df6a33f7d5818e",
+            "venue": "Behavior research methods, instruments, & computers : a journal of the Psychonomic Society, Inc",
+            "year": 2004
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1834417",
+                    "name": "M. Trick"
+                }
+            ],
+            "doi": "10.1023/A:1021801522545",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "574ce2d0368a8f97f932dea7d238e8651e908427",
+            "title": "A Dynamic Programming Approach for Consistency and Propagation for Knapsack Constraints",
+            "url": "https://www.semanticscholar.org/paper/574ce2d0368a8f97f932dea7d238e8651e908427",
+            "venue": "Ann. Oper. Res.",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2118727319",
+                    "name": "Daniel B. Jones"
+                },
+                {
+                    "authorId": "1876369",
+                    "name": "H. Somers"
+                }
+            ],
+            "doi": "10.4324/9781315072685",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "1ba53e794601feb1f8739ad67eb8934ac93bd8af",
+            "title": "New Methods in Language Processing",
+            "url": "https://www.semanticscholar.org/paper/1ba53e794601feb1f8739ad67eb8934ac93bd8af",
+            "venue": "",
+            "year": 1997
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2248834664",
+                    "name": "Christopher K. I. Williams"
+                },
+                {
+                    "authorId": "2247411478",
+                    "name": "Carl E. Rasmussen"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "4d98ce60f4f8ed822503b8d13b0605f8c5d74ca7",
+            "title": "Gaussian Processes for Regression",
+            "url": "https://www.semanticscholar.org/paper/4d98ce60f4f8ed822503b8d13b0605f8c5d74ca7",
+            "venue": "NIPS",
+            "year": 1995
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "32538203",
+                    "name": "P. Brown"
+                },
+                {
+                    "authorId": "2714577",
+                    "name": "S. D. Pietra"
+                },
+                {
+                    "authorId": "39944066",
+                    "name": "V. D. Pietra"
+                },
+                {
+                    "authorId": "3853032",
+                    "name": "J. Lai"
+                },
+                {
+                    "authorId": "2474650",
+                    "name": "R. Mercer"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "9463e3eca9f3b053fca7ca64abb157aaeac35f4f",
+            "title": "An Estimate of an Upper Bound for the Entropy of English",
+            "url": "https://www.semanticscholar.org/paper/9463e3eca9f3b053fca7ca64abb157aaeac35f4f",
+            "venue": "CL",
+            "year": 1992
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "46523529",
+                    "name": "Guy L. Steele"
+                },
+                {
+                    "authorId": "2070647752",
+                    "name": "Gerald J. Sussman"
+                }
+            ],
+            "doi": "10.1145/390009.804464",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e0b7da094c8adebfffc6b3fe9ba2820832c8262f",
+            "title": "Constraints",
+            "url": "https://www.semanticscholar.org/paper/e0b7da094c8adebfffc6b3fe9ba2820832c8262f",
+            "venue": "APL",
+            "year": 1979
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2165483202",
+                    "name": "Rebecca Gentzel"
+                },
+                {
+                    "authorId": "1707349",
+                    "name": "L. Michel"
+                },
+                {
+                    "authorId": "7841540",
+                    "name": "W. V. Hoeve"
+                }
+            ],
+            "doi": "10.4230/LIPIcs.CP.2022.24",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c8f6d8456e0ccd1ae8282fed7b592fe9b2caf897",
+            "title": "Heuristics for MDD Propagation in HADDOCK",
+            "url": "https://www.semanticscholar.org/paper/c8f6d8456e0ccd1ae8282fed7b592fe9b2caf897",
+            "venue": "CP",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2113377742",
+                    "name": "Victor Jung"
+                },
+                {
+                    "authorId": "1710771",
+                    "name": "Jean-Charles R\u00e9gin"
+                }
+            ],
+            "doi": "10.1007/978-3-031-08011-1_13",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "fb256897b878e90b49c5b2908488241c5c0a2278",
+            "title": "Efficient Operations Between MDDs and Constraints",
+            "url": "https://www.semanticscholar.org/paper/fb256897b878e90b49c5b2908488241c5c0a2278",
+            "venue": "CPAIOR",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "32566481",
+                    "name": "Antoine Simoulin"
+                },
+                {
+                    "authorId": "118913334",
+                    "name": "Beno\u00eet Crabb\u00e9"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "f91f8c6d1c960b340054896201982bcab5997a8b",
+            "title": "Un mod\u00e8le Transformer G\u00e9n\u00e9ratif Pr\u00e9-entrain\u00e9 pour le\n\n_\n\n_\n\n_\n\n_\n\n_\n\n_ fran\u00e7ais (Generative Pre-trained Transformer in\n\n_\n\n_\n\n_\n\n_\n\n_\n\n_ (French) We introduce a French adaptation from the well-known GPT model)",
+            "url": "https://www.semanticscholar.org/paper/f91f8c6d1c960b340054896201982bcab5997a8b",
+            "venue": "JEPTALNRECITAL",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2479037",
+                    "name": "Frank Rudzicz"
+                },
+                {
+                    "authorId": "2319870069",
+                    "name": "Graeme Hirst"
+                }
+            ],
+            "doi": "10.1007/978-981-10-0515-2",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "09ebadba75e882a3874c3b9ce10e9d52226b9d30",
+            "title": "Computational Linguistics",
+            "url": "https://www.semanticscholar.org/paper/09ebadba75e882a3874c3b9ce10e9d52226b9d30",
+            "venue": "Communications in Computer and Information Science",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "5107803",
+                    "name": "Helena M Service"
+                },
+                {
+                    "authorId": "113929075",
+                    "name": "M. Hintsanen"
+                },
+                {
+                    "authorId": "2229870961",
+                    "name": "Taina Hintsa"
+                },
+                {
+                    "authorId": "2238437097",
+                    "name": "T. Lehtim\u00e4ki"
+                },
+                {
+                    "authorId": "2238212186",
+                    "name": "O. Raitakari"
+                },
+                {
+                    "authorId": "2376766",
+                    "name": "J. Viikari"
+                },
+                {
+                    "authorId": "2268742411",
+                    "name": "Liisa Keltikangas-J\u00e4rvinen"
+                }
+            ],
+            "doi": "10.1186/1744-9081-4-40",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "4055c214c99958fbdae76f93b878ba23d763978a",
+            "title": "Does neuregulin-1 play a role in Type A behavior? The cardiovascular risk in young Finns study",
+            "url": "https://www.semanticscholar.org/paper/4055c214c99958fbdae76f93b878ba23d763978a",
+            "venue": "Behavioral and Brain Functions",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1746807",
+                    "name": "Dan Jurafsky"
+                },
+                {
+                    "authorId": "10796472",
+                    "name": "James H. Martin"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "1254c99a381d1f9d6abb23c74be060e4e7876985",
+            "title": "Book Reviews: Speech and Language Processing: An Introduction to Natural Language Processing, Computational Linguistics, and Speech Recognition",
+            "url": "https://www.semanticscholar.org/paper/1254c99a381d1f9d6abb23c74be060e4e7876985",
+            "venue": "CL",
+            "year": 2000
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2289450020",
+                    "name": "Pearson Education"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ef5ea7214480e63635ff24fd21019fc92b03b739",
+            "title": "Speech and language processing: an introduction to natural language processing",
+            "url": "https://www.semanticscholar.org/paper/ef5ea7214480e63635ff24fd21019fc92b03b739",
+            "venue": "",
+            "year": 2000
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1693050",
+                    "name": "F. Somenzi"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9f41a8a310802f4467565f952d01294040477494",
+            "title": "Binary Decision Diagrams",
+            "url": "https://www.semanticscholar.org/paper/9f41a8a310802f4467565f952d01294040477494",
+            "venue": "",
+            "year": 1999
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1932759",
+                    "name": "M. Todd"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "ea8e2d35a8346254a7c4b054cd99526310e86dee",
+            "title": "Mathematical programming",
+            "url": "https://www.semanticscholar.org/paper/ea8e2d35a8346254a7c4b054cd99526310e86dee",
+            "venue": "",
+            "year": 1997
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "33985916",
+                    "name": "I. Osman"
+                },
+                {
+                    "authorId": "144678073",
+                    "name": "G. Laporte"
+                }
+            ],
+            "doi": "10.1007/10479.1572-9338",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2715b31a7d9d48365ad770f9da02c41da5ab8cd0",
+            "title": "Annals of Operations Research",
+            "url": "https://www.semanticscholar.org/paper/2715b31a7d9d48365ad770f9da02c41da5ab8cd0",
+            "venue": "",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "93707734",
+                    "name": "Helmut Schmidt"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "bd0bab6fc8cd43c0ce170ad2f4cb34181b31277d",
+            "title": "Probabilistic part-of-speech tagging using decision trees",
+            "url": "https://www.semanticscholar.org/paper/bd0bab6fc8cd43c0ce170ad2f4cb34181b31277d",
+            "venue": "",
+            "year": 1994
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143933320",
+                    "name": "J. Mansfield"
+                },
+                {
+                    "authorId": "7464053",
+                    "name": "Sonia J. Ahn"
+                },
+                {
+                    "authorId": "1723406",
+                    "name": "G. Legge"
+                },
+                {
+                    "authorId": "5110335",
+                    "name": "A. Luebker"
+                }
+            ],
+            "doi": "10.1364/navs.1993.nsud.3",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "2a80c48634492ef8bd43627ec6c6462e0bfe7bf3",
+            "title": "A New Reading-Acuity Chart for Normal and Low Vision",
+            "url": "https://www.semanticscholar.org/paper/2a80c48634492ef8bd43627ec6c6462e0bfe7bf3",
+            "venue": "Noninvasive Assessment of the Visual System",
+            "year": 1993
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Constraints First: A New MDD-based Model to Generate Sentences Under Constraints",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/af4071e8674b32d71df41f3b3111678cbe2a2097",
+    "venue": "International Joint Conference on Artificial Intelligence",
+    "year": 2023
+}

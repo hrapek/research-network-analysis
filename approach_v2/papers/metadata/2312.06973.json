@@ -1,0 +1,1825 @@
+{
+    "abstract": "Widespread use of artificial intelligence (AI) algorithms and machine learning (ML) models on the one hand and a number of crucial issues pertaining to them warrant the need for explainable artificial intelligence (XAI). A key explainability question is: given this decision was made, what are the input features which contributed to the decision? Although a range of XAI approaches exist to tackle this problem, most of them have significant limitations. Heuristic XAI approaches suffer from the lack of quality guarantees, and often try to approximate Shapley values, which is not the same as explaining which features contribute to a decision. A recent alternative is so-called formal feature attribution (FFA), which defines feature importance as the fraction of formal abductive explanations (AXp's) containing the given feature. This measures feature importance from the view of formally reasoning about the model's behavior. It is challenging to compute FFA using its definition because that involves counting AXp's, although one can approximate it. Based on these results, this paper makes several contributions. First, it gives compelling evidence that computing FFA is intractable, even if the set of contrastive formal explanations (CXp's) is provided, by proving that the problem is #P-hard. Second, by using the duality between AXp's and CXp's, it proposes an efficient heuristic to switch from CXp enumeration to AXp enumeration on-the-fly resulting in an adaptive explanation enumeration algorithm effectively approximating FFA in an anytime fashion. Finally, experimental results obtained on a range of widely used datasets demonstrate the effectiveness of the proposed FFA approximation approach in terms of the error of FFA approximation as well as the number of explanations computed and their diversity given a fixed time limit.",
+    "arxivId": "2312.06973",
+    "authors": [
+        {
+            "authorId": "1892469",
+            "name": "Jinqiang Yu",
+            "url": "https://www.semanticscholar.org/author/1892469"
+        },
+        {
+            "authorId": "2273659998",
+            "name": "Graham Farr",
+            "url": "https://www.semanticscholar.org/author/2273659998"
+        },
+        {
+            "authorId": "2273659991",
+            "name": "Alexey Ignatiev",
+            "url": "https://www.semanticscholar.org/author/2273659991"
+        },
+        {
+            "authorId": "2195991502",
+            "name": "Peter J. Stuckey",
+            "url": "https://www.semanticscholar.org/author/2195991502"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": "2406.11873",
+            "authors": [
+                {
+                    "authorId": "2249763503",
+                    "name": "Jo\u00e3o Marques-Silva"
+                }
+            ],
+            "doi": "10.48550/arXiv.2406.11873",
+            "intent": [
+                "result",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "6d4027977cdf0a68c0df233b8e5adfff923e895d",
+            "title": "Logic-Based Explainability: Past, Present & Future",
+            "url": "https://www.semanticscholar.org/paper/6d4027977cdf0a68c0df233b8e5adfff923e895d",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": "2405.00076",
+            "authors": [
+                {
+                    "authorId": "2299158745",
+                    "name": "Olivier Letoffe"
+                },
+                {
+                    "authorId": "82038527",
+                    "name": "Xuanxiang Huang"
+                },
+                {
+                    "authorId": "2249763503",
+                    "name": "Jo\u00e3o Marques-Silva"
+                }
+            ],
+            "doi": "10.48550/arXiv.2405.00076",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f85b15b92672f8dbd494a365e7cf189ece052c57",
+            "title": "On Correcting SHAP Scores",
+            "url": "https://www.semanticscholar.org/paper/f85b15b92672f8dbd494a365e7cf189ece052c57",
+            "venue": "ArXiv",
+            "year": 2024
+        }
+    ],
+    "corpusId": 266174641,
+    "doi": "10.48550/arXiv.2312.06973",
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 2,
+    "numCiting": 70,
+    "paperId": "8d998f79a97c21d4575df96d40243a81253e07c8",
+    "references": [
+        {
+            "arxivId": "2307.03380",
+            "authors": [
+                {
+                    "authorId": "1892469",
+                    "name": "Jinqiang Yu"
+                },
+                {
+                    "authorId": "145127870",
+                    "name": "Alexey Ignatiev"
+                },
+                {
+                    "authorId": "2195991502",
+                    "name": "Peter J. Stuckey"
+                }
+            ],
+            "doi": "10.48550/arXiv.2307.03380",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "3668d2639e472c95ec4465024a30201bab86c64d",
+            "title": "On Formal Feature Attribution and Its Approximation",
+            "url": "https://www.semanticscholar.org/paper/3668d2639e472c95ec4465024a30201bab86c64d",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": "2307.07514",
+            "authors": [
+                {
+                    "authorId": "1393656234",
+                    "name": "Joao Marques-Silva"
+                },
+                {
+                    "authorId": "82038527",
+                    "name": "Xuanxiang Huang"
+                }
+            ],
+            "doi": "10.1145/3635301",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "36ae0bdc725f121c4d55f20afad01ef1ec1288b9",
+            "title": "Explainability Is Not a Game",
+            "url": "https://www.semanticscholar.org/paper/36ae0bdc725f121c4d55f20afad01ef1ec1288b9",
+            "venue": "Commun. ACM",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "82038527",
+                    "name": "Xuanxiang Huang"
+                },
+                {
+                    "authorId": "3380887",
+                    "name": "Yacine Izza"
+                },
+                {
+                    "authorId": "1393656234",
+                    "name": "Joao Marques-Silva"
+                }
+            ],
+            "doi": "10.1609/aaai.v37i4.25514",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "622657250ba771cb4af66f7e54868314b777bbd4",
+            "title": "Solving Explainability Queries with Quantification: The Case of Feature Relevancy",
+            "url": "https://www.semanticscholar.org/paper/622657250ba771cb4af66f7e54868314b777bbd4",
+            "venue": "AAAI",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1393656234",
+                    "name": "Joao Marques-Silva"
+                },
+                {
+                    "authorId": "145127870",
+                    "name": "Alexey Ignatiev"
+                }
+            ],
+            "doi": "10.3389/frai.2023.1128212",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "8c381cc3d597a0a1060e0fd85bd4dd5927cfa1e0",
+            "title": "No silver bullet: interpretable ML models must be explained",
+            "url": "https://www.semanticscholar.org/paper/8c381cc3d597a0a1060e0fd85bd4dd5927cfa1e0",
+            "venue": "Frontiers in Artificial Intelligence",
+            "year": 2023
+        },
+        {
+            "arxivId": "2302.08160",
+            "authors": [
+                {
+                    "authorId": "82038527",
+                    "name": "Xuanxiang Huang"
+                },
+                {
+                    "authorId": "1393656234",
+                    "name": "Joao Marques-Silva"
+                }
+            ],
+            "doi": "10.48550/arXiv.2302.08160",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "38c08bdb2aa723b8a97c216f99ca71afa1ab66af",
+            "title": "The Inadequacy of Shapley Values for Explainability",
+            "url": "https://www.semanticscholar.org/paper/38c08bdb2aa723b8a97c216f99ca71afa1ab66af",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "20187203",
+                    "name": "Rishabh Misra"
+                },
+                {
+                    "authorId": "152384865",
+                    "name": "Prahal Arora"
+                }
+            ],
+            "doi": "10.1016/j.aiopen.2023.01.001",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "7a7ae511ef697a06d5e4e53ff59374086a3c1369",
+            "title": "Sarcasm detection using news headlines dataset",
+            "url": "https://www.semanticscholar.org/paper/7a7ae511ef697a06d5e4e53ff59374086a3c1369",
+            "venue": "AI Open",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2166510594",
+                    "name": "Jaya Yadav"
+                },
+                {
+                    "authorId": "2150905435",
+                    "name": "S. Shukla"
+                },
+                {
+                    "authorId": "2114155627",
+                    "name": "Kanika Sharma"
+                },
+                {
+                    "authorId": "2058601822",
+                    "name": "Nupur Soni"
+                },
+                {
+                    "authorId": "2114358369",
+                    "name": "S. Agarwal"
+                },
+                {
+                    "authorId": "2181846833",
+                    "name": "Prabhash Chandra Pathak"
+                }
+            ],
+            "doi": "10.1109/ICCAKM54721.2022.9990098",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "6094988c9ebe2621e6cccc7bc6f52248117e19d0",
+            "title": "Frontiers in Artificial Intelligence and Applications",
+            "url": "https://www.semanticscholar.org/paper/6094988c9ebe2621e6cccc7bc6f52248117e19d0",
+            "venue": "2022 3rd International Conference on Computation, Automation and Knowledge Management (ICCAKM)",
+            "year": 2022
+        },
+        {
+            "arxivId": "2210.15675",
+            "authors": [
+                {
+                    "authorId": "82038527",
+                    "name": "Xuanxiang Huang"
+                },
+                {
+                    "authorId": "2120497",
+                    "name": "Martin C. Cooper"
+                },
+                {
+                    "authorId": "1723569",
+                    "name": "Ant\u00f3nio Morgado"
+                },
+                {
+                    "authorId": "1392776659",
+                    "name": "Jordi Planes"
+                },
+                {
+                    "authorId": "1393656234",
+                    "name": "Joao Marques-Silva"
+                }
+            ],
+            "doi": "10.48550/arXiv.2210.15675",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "fda575961bbd1208da68f47e7d36a650e56300a8",
+            "title": "Feature Necessity & Relevancy in ML Classifier Explanations",
+            "url": "https://www.semanticscholar.org/paper/fda575961bbd1208da68f47e7d36a650e56300a8",
+            "venue": "TACAS",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2112744525",
+                    "name": "Jo\u00e3o Ferreira"
+                },
+                {
+                    "authorId": "2067586211",
+                    "name": "Manuel de Sousa Ribeiro"
+                },
+                {
+                    "authorId": "145862114",
+                    "name": "Ricardo Gon\u00e7alves"
+                },
+                {
+                    "authorId": "145757714",
+                    "name": "Jo\u00e3o Leite"
+                }
+            ],
+            "doi": "10.24963/kr.2022/45",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "bd9918f866f00633856d4f544286f19997e5c4c4",
+            "title": "Looking Inside the Black-Box: Logic-based Explanations for Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/bd9918f866f00633856d4f544286f19997e5c4c4",
+            "venue": "KR",
+            "year": 2022
+        },
+        {
+            "arxivId": "2207.12213",
+            "authors": [
+                {
+                    "authorId": "144658846",
+                    "name": "M. Arenas"
+                },
+                {
+                    "authorId": "2066115163",
+                    "name": "Pablo Barcel'o"
+                },
+                {
+                    "authorId": "144750678",
+                    "name": "M. Romero"
+                },
+                {
+                    "authorId": "2064067794",
+                    "name": "Bernardo Subercaseaux"
+                }
+            ],
+            "doi": "10.48550/arXiv.2207.12213",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "3a67b90db0b758ce6734b164ee7b640a7eaac555",
+            "title": "On Computing Probabilistic Explanations for Decision Trees",
+            "url": "https://www.semanticscholar.org/paper/3a67b90db0b758ce6734b164ee7b640a7eaac555",
+            "venue": "NeurIPS",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "40122199",
+                    "name": "Niku Gorji"
+                },
+                {
+                    "authorId": "1876227",
+                    "name": "S. Rubin"
+                }
+            ],
+            "doi": "10.1609/aaai.v36i5.20507",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ae0708938c2b0d3afe231ee03d65d6d4ab4e28e0",
+            "title": "Sufficient Reasons for Classifier Decisions in the Presence of Domain Constraints",
+            "url": "https://www.semanticscholar.org/paper/ae0708938c2b0d3afe231ee03d65d6d4ab4e28e0",
+            "venue": "AAAI",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "82038527",
+                    "name": "Xuanxiang Huang"
+                },
+                {
+                    "authorId": "3380887",
+                    "name": "Yacine Izza"
+                },
+                {
+                    "authorId": "145127870",
+                    "name": "Alexey Ignatiev"
+                },
+                {
+                    "authorId": "2120497",
+                    "name": "Martin C. Cooper"
+                },
+                {
+                    "authorId": "1916126",
+                    "name": "Nicholas M. Asher"
+                },
+                {
+                    "authorId": "1393656234",
+                    "name": "Joao Marques-Silva"
+                }
+            ],
+            "doi": "10.1609/aaai.v36i5.20514",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d21caa6b41fd307480068ce36963373246c4a80d",
+            "title": "Tractable Explanations for d-DNNF Classifiers",
+            "url": "https://www.semanticscholar.org/paper/d21caa6b41fd307480068ce36963373246c4a80d",
+            "venue": "AAAI",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1393656234",
+                    "name": "Joao Marques-Silva"
+                },
+                {
+                    "authorId": "145127870",
+                    "name": "Alexey Ignatiev"
+                }
+            ],
+            "doi": "10.1609/aaai.v36i11.21499",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "aa1c2e349644fc6fb20c876cd15a35aa45a74e2b",
+            "title": "Delivering Trustworthy AI through Formal XAI",
+            "url": "https://www.semanticscholar.org/paper/aa1c2e349644fc6fb20c876cd15a35aa45a74e2b",
+            "venue": "AAAI",
+            "year": 2022
+        },
+        {
+            "arxivId": "2111.01576",
+            "authors": [
+                {
+                    "authorId": "38023684",
+                    "name": "Guy Blanc"
+                },
+                {
+                    "authorId": "2075388219",
+                    "name": "Jane Lange"
+                },
+                {
+                    "authorId": "145175555",
+                    "name": "Li-Yang Tan"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "4ed4711cc471a0f4515b93ad9c6add184d625b22",
+            "title": "Provably efficient, succinct, and precise explanations",
+            "url": "https://www.semanticscholar.org/paper/4ed4711cc471a0f4515b93ad9c6add184d625b22",
+            "venue": "NeurIPS",
+            "year": 2021
+        },
+        {
+            "arxivId": "2110.14795",
+            "authors": [
+                {
+                    "authorId": "47988339",
+                    "name": "Jiancheng Yang"
+                },
+                {
+                    "authorId": "2056570652",
+                    "name": "Rui Shi"
+                },
+                {
+                    "authorId": "1766333",
+                    "name": "D. Wei"
+                },
+                {
+                    "authorId": "2109372409",
+                    "name": "Zequan Liu"
+                },
+                {
+                    "authorId": "2111641300",
+                    "name": "Lin Zhao"
+                },
+                {
+                    "authorId": "39389115",
+                    "name": "B. Ke"
+                },
+                {
+                    "authorId": "143758236",
+                    "name": "H. Pfister"
+                },
+                {
+                    "authorId": "5796401",
+                    "name": "Bingbing Ni"
+                }
+            ],
+            "doi": "10.1038/s41597-022-01721-8",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "a66606a0bb11a1d5a7a14ec09df8a3481121ad6c",
+            "title": "MedMNIST v2 - A large-scale lightweight benchmark for 2D and 3D biomedical image classification",
+            "url": "https://www.semanticscholar.org/paper/a66606a0bb11a1d5a7a14ec09df8a3481121ad6c",
+            "venue": "Scientific Data",
+            "year": 2021
+        },
+        {
+            "arxivId": "2106.00154",
+            "authors": [
+                {
+                    "authorId": "1393656234",
+                    "name": "Joao Marques-Silva"
+                },
+                {
+                    "authorId": "16638972",
+                    "name": "T. Gerspacher"
+                },
+                {
+                    "authorId": "2106505319",
+                    "name": "M. Cooper"
+                },
+                {
+                    "authorId": "145127870",
+                    "name": "Alexey Ignatiev"
+                },
+                {
+                    "authorId": "2701535",
+                    "name": "Nina Narodytska"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "3a28959cbb02d57fa5026de19f88120e4bad8bf8",
+            "title": "Explanations for Monotonic Classifiers",
+            "url": "https://www.semanticscholar.org/paper/3a28959cbb02d57fa5026de19f88120e4bad8bf8",
+            "venue": "ICML",
+            "year": 2021
+        },
+        {
+            "arxivId": "2105.10278",
+            "authors": [
+                {
+                    "authorId": "3380887",
+                    "name": "Yacine Izza"
+                },
+                {
+                    "authorId": "1393656234",
+                    "name": "Joao Marques-Silva"
+                }
+            ],
+            "doi": "10.24963/ijcai.2021/356",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e503379b9c07149c4ad9e55a37f240916cd055ca",
+            "title": "On Explaining Random Forests with SAT",
+            "url": "https://www.semanticscholar.org/paper/e503379b9c07149c4ad9e55a37f240916cd055ca",
+            "venue": "IJCAI",
+            "year": 2021
+        },
+        {
+            "arxivId": "2105.06782",
+            "authors": [
+                {
+                    "authorId": "145127870",
+                    "name": "Alexey Ignatiev"
+                },
+                {
+                    "authorId": "1393656234",
+                    "name": "Joao Marques-Silva"
+                }
+            ],
+            "doi": "10.1007/978-3-030-80223-3_18",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "00d828af1015906846450047af87cd65d01fddc8",
+            "title": "SAT-Based Rigorous Explanations for Decision Lists",
+            "url": "https://www.semanticscholar.org/paper/00d828af1015906846450047af87cd65d01fddc8",
+            "venue": "SAT",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1680661",
+                    "name": "Clark W. Barrett"
+                },
+                {
+                    "authorId": "1797956",
+                    "name": "R. Sebastiani"
+                },
+                {
+                    "authorId": "1775517",
+                    "name": "S. Seshia"
+                },
+                {
+                    "authorId": "35116359",
+                    "name": "C. Tinelli"
+                }
+            ],
+            "doi": "10.3233/faia336",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "a298defcbe68f5a09b0b8f6e5379164f7fd79bc5",
+            "title": "Handbook of Satisfiability",
+            "url": "https://www.semanticscholar.org/paper/a298defcbe68f5a09b0b8f6e5379164f7fd79bc5",
+            "venue": "Handbook of Satisfiability",
+            "year": 2021
+        },
+        {
+            "arxivId": "2008.05803",
+            "authors": [
+                {
+                    "authorId": "1393656234",
+                    "name": "Joao Marques-Silva"
+                },
+                {
+                    "authorId": "1876912007",
+                    "name": "Thomas Gerspacher"
+                },
+                {
+                    "authorId": "2120497",
+                    "name": "Martin C. Cooper"
+                },
+                {
+                    "authorId": "145127870",
+                    "name": "Alexey Ignatiev"
+                },
+                {
+                    "authorId": "2701535",
+                    "name": "Nina Narodytska"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "90e1830cd218bb41a0b0a4080b908aca5ec7b84d",
+            "title": "Explaining Naive Bayes and Other Linear Classifiers with Polynomial Time and Delay",
+            "url": "https://www.semanticscholar.org/paper/90e1830cd218bb41a0b0a4080b908aca5ec7b84d",
+            "venue": "NeurIPS",
+            "year": 2020
+        },
+        {
+            "arxivId": "1912.01703",
+            "authors": [
+                {
+                    "authorId": "3407277",
+                    "name": "Adam Paszke"
+                },
+                {
+                    "authorId": "39793298",
+                    "name": "Sam Gross"
+                },
+                {
+                    "authorId": "1403239967",
+                    "name": "Francisco Massa"
+                },
+                {
+                    "authorId": "1977806",
+                    "name": "Adam Lerer"
+                },
+                {
+                    "authorId": "2065251344",
+                    "name": "James Bradbury"
+                },
+                {
+                    "authorId": "114250963",
+                    "name": "Gregory Chanan"
+                },
+                {
+                    "authorId": "2059271276",
+                    "name": "Trevor Killeen"
+                },
+                {
+                    "authorId": "3370429",
+                    "name": "Zeming Lin"
+                },
+                {
+                    "authorId": "3365851",
+                    "name": "N. Gimelshein"
+                },
+                {
+                    "authorId": "3029482",
+                    "name": "L. Antiga"
+                },
+                {
+                    "authorId": "3050846",
+                    "name": "Alban Desmaison"
+                },
+                {
+                    "authorId": "1473151134",
+                    "name": "Andreas K\u00f6pf"
+                },
+                {
+                    "authorId": "2052812305",
+                    "name": "E. Yang"
+                },
+                {
+                    "authorId": "2375710",
+                    "name": "Zach DeVito"
+                },
+                {
+                    "authorId": "10707709",
+                    "name": "Martin Raison"
+                },
+                {
+                    "authorId": "41203992",
+                    "name": "Alykhan Tejani"
+                },
+                {
+                    "authorId": "22236100",
+                    "name": "Sasank Chilamkurthy"
+                },
+                {
+                    "authorId": "32163737",
+                    "name": "Benoit Steiner"
+                },
+                {
+                    "authorId": "152599430",
+                    "name": "Lu Fang"
+                },
+                {
+                    "authorId": "2113829116",
+                    "name": "Junjie Bai"
+                },
+                {
+                    "authorId": "2127604",
+                    "name": "Soumith Chintala"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "3c8a456509e6c0805354bd40a35e3f2dbf8069b1",
+            "title": "PyTorch: An Imperative Style, High-Performance Deep Learning Library",
+            "url": "https://www.semanticscholar.org/paper/3c8a456509e6c0805354bd40a35e3f2dbf8069b1",
+            "venue": "NeurIPS",
+            "year": 2019
+        },
+        {
+            "arxivId": "1811.10656",
+            "authors": [
+                {
+                    "authorId": "145127870",
+                    "name": "Alexey Ignatiev"
+                },
+                {
+                    "authorId": "2701535",
+                    "name": "Nina Narodytska"
+                },
+                {
+                    "authorId": "1393656234",
+                    "name": "Joao Marques-Silva"
+                }
+            ],
+            "doi": "10.1609/aaai.v33i01.33011511",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "9a044eec8de883d45bd748ef0694324f8b1a7812",
+            "title": "Abduction-Based Explanations for Machine Learning Models",
+            "url": "https://www.semanticscholar.org/paper/9a044eec8de883d45bd748ef0694324f8b1a7812",
+            "venue": "AAAI",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2701535",
+                    "name": "Nina Narodytska"
+                },
+                {
+                    "authorId": "3714351",
+                    "name": "Nikolaj S. Bj\u00f8rner"
+                },
+                {
+                    "authorId": "40442623",
+                    "name": "M. Marinescu"
+                },
+                {
+                    "authorId": "1702872",
+                    "name": "Shmuel Sagiv"
+                }
+            ],
+            "doi": "10.24963/ijcai.2018/188",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "035eeeab6fd66b0b14a69e3d9880824e06cac227",
+            "title": "Core-Guided Minimal Correction Set and Core Enumeration",
+            "url": "https://www.semanticscholar.org/paper/035eeeab6fd66b0b14a69e3d9880824e06cac227",
+            "venue": "IJCAI",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2059830729",
+                    "name": "\u00c9ric Gr\u00e9goire"
+                },
+                {
+                    "authorId": "2066332833",
+                    "name": "Yacine Izza"
+                },
+                {
+                    "authorId": "2086596324",
+                    "name": "Jean-Marie Lagniez"
+                }
+            ],
+            "doi": "10.24963/ijcai.2018/182",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "6e422e45803223a1f0634f0d932944ce62a4b623",
+            "title": "Boosting MCSes Enumeration",
+            "url": "https://www.semanticscholar.org/paper/6e422e45803223a1f0634f0d932944ce62a4b623",
+            "venue": "IJCAI",
+            "year": 2018
+        },
+        {
+            "arxivId": "1805.03364",
+            "authors": [
+                {
+                    "authorId": "145117953",
+                    "name": "Andy Shih"
+                },
+                {
+                    "authorId": "143680053",
+                    "name": "Arthur Choi"
+                },
+                {
+                    "authorId": "1700031",
+                    "name": "Adnan Darwiche"
+                }
+            ],
+            "doi": "10.24963/ijcai.2018/708",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a8cb3df07c340f47fc0f225282e46757a93ca0d0",
+            "title": "A Symbolic Approach to Explaining Bayesian Network Classifiers",
+            "url": "https://www.semanticscholar.org/paper/a8cb3df07c340f47fc0f225282e46757a93ca0d0",
+            "venue": "IJCAI",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1803572",
+                    "name": "Alessandro Previti"
+                },
+                {
+                    "authorId": "2751158",
+                    "name": "Carlos Menc\u00eda"
+                },
+                {
+                    "authorId": "1790372",
+                    "name": "Matti J\u00e4rvisalo"
+                },
+                {
+                    "authorId": "1393656234",
+                    "name": "Joao Marques-Silva"
+                }
+            ],
+            "doi": "10.1609/aaai.v32i1.12213",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d41b3cd2a70e129f6ec05cf9c2b92c2caceb037b",
+            "title": "Premise Set Caching for Enumerating Minimal Correction Subsets",
+            "url": "https://www.semanticscholar.org/paper/d41b3cd2a70e129f6ec05cf9c2b92c2caceb037b",
+            "venue": "AAAI",
+            "year": 2018
+        },
+        {
+            "arxivId": "1708.00400",
+            "authors": [
+                {
+                    "authorId": "3418385",
+                    "name": "Jaroslav Bend\u00edk"
+                },
+                {
+                    "authorId": "1899491",
+                    "name": "Nikola Benes"
+                },
+                {
+                    "authorId": "145081611",
+                    "name": "I. Cern\u00e1"
+                }
+            ],
+            "doi": "10.1007/978-3-030-01090-4_9",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "a822b0d567ddae5a97a83e1630148448a87b587c",
+            "title": "Recursive Online Enumeration of All Minimal Unsatisfiable Subsets",
+            "url": "https://www.semanticscholar.org/paper/a822b0d567ddae5a97a83e1630148448a87b587c",
+            "venue": "ATVA",
+            "year": 2017
+        },
+        {
+            "arxivId": "1706.07269",
+            "authors": [
+                {
+                    "authorId": "144658641",
+                    "name": "Tim Miller"
+                }
+            ],
+            "doi": "10.1016/J.ARTINT.2018.07.007",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "e89dfa306723e8ef031765e9c44e5f6f94fd8fda",
+            "title": "Explanation in Artificial Intelligence: Insights from the Social Sciences",
+            "url": "https://www.semanticscholar.org/paper/e89dfa306723e8ef031765e9c44e5f6f94fd8fda",
+            "venue": "Artif. Intell.",
+            "year": 2017
+        },
+        {
+            "arxivId": "1705.07874",
+            "authors": [
+                {
+                    "authorId": "23451726",
+                    "name": "Scott M. Lundberg"
+                },
+                {
+                    "authorId": "2180463",
+                    "name": "Su-In Lee"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "442e10a3c6640ded9408622005e3c2a8906ce4c2",
+            "title": "A Unified Approach to Interpreting Model Predictions",
+            "url": "https://www.semanticscholar.org/paper/442e10a3c6640ded9408622005e3c2a8906ce4c2",
+            "venue": "NIPS",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1892673",
+                    "name": "Himabindu Lakkaraju"
+                },
+                {
+                    "authorId": "2870504",
+                    "name": "Stephen H. Bach"
+                },
+                {
+                    "authorId": "1702139",
+                    "name": "J. Leskovec"
+                }
+            ],
+            "doi": "10.1145/2939672.2939874",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b710f0c9ca89f997371ce06c142ad25be1b35cca",
+            "title": "Interpretable Decision Sets: A Joint Framework for Description and Prediction",
+            "url": "https://www.semanticscholar.org/paper/b710f0c9ca89f997371ce06c142ad25be1b35cca",
+            "venue": "KDD",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2751158",
+                    "name": "Carlos Menc\u00eda"
+                },
+                {
+                    "authorId": "145127870",
+                    "name": "Alexey Ignatiev"
+                },
+                {
+                    "authorId": "1803572",
+                    "name": "Alessandro Previti"
+                },
+                {
+                    "authorId": "1393656234",
+                    "name": "Joao Marques-Silva"
+                }
+            ],
+            "doi": "10.1007/978-3-319-40970-2_21",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d632b6441b9222d8e0ab4f4495b0fef8e8efc842",
+            "title": "MCS Extraction with Sublinear Oracle Queries",
+            "url": "https://www.semanticscholar.org/paper/d632b6441b9222d8e0ab4f4495b0fef8e8efc842",
+            "venue": "SAT",
+            "year": 2016
+        },
+        {
+            "arxivId": "1603.02754",
+            "authors": [
+                {
+                    "authorId": "1913774",
+                    "name": "Tianqi Chen"
+                },
+                {
+                    "authorId": "1730156",
+                    "name": "Carlos Guestrin"
+                }
+            ],
+            "doi": "10.1145/2939672.2939785",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "26bc9195c6343e4d7f434dd65b4ad67efe2be27a",
+            "title": "XGBoost: A Scalable Tree Boosting System",
+            "url": "https://www.semanticscholar.org/paper/26bc9195c6343e4d7f434dd65b4ad67efe2be27a",
+            "venue": "KDD",
+            "year": 2016
+        },
+        {
+            "arxivId": "1602.04938",
+            "authors": [
+                {
+                    "authorId": "78846919",
+                    "name": "Marco Tulio Ribeiro"
+                },
+                {
+                    "authorId": "34650964",
+                    "name": "Sameer Singh"
+                },
+                {
+                    "authorId": "1730156",
+                    "name": "Carlos Guestrin"
+                }
+            ],
+            "doi": "10.1145/2939672.2939778",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "c0883f5930a232a9c1ad601c978caede29155979",
+            "title": "\u201cWhy Should I Trust You?\u201d: Explaining the Predictions of Any Classifier",
+            "url": "https://www.semanticscholar.org/paper/c0883f5930a232a9c1ad601c978caede29155979",
+            "venue": "NAACL",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2751158",
+                    "name": "Carlos Menc\u00eda"
+                },
+                {
+                    "authorId": "1803572",
+                    "name": "Alessandro Previti"
+                },
+                {
+                    "authorId": "1393656234",
+                    "name": "Joao Marques-Silva"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "6678e66f4839b4c89664815b831d3108c10933bd",
+            "title": "Literal-Based MCS Extraction",
+            "url": "https://www.semanticscholar.org/paper/6678e66f4839b4c89664815b831d3108c10933bd",
+            "venue": "IJCAI",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2396107",
+                    "name": "Mark H. Liffiton"
+                },
+                {
+                    "authorId": "1803572",
+                    "name": "Alessandro Previti"
+                },
+                {
+                    "authorId": "34195338",
+                    "name": "Ammar Malik"
+                },
+                {
+                    "authorId": "1393656234",
+                    "name": "Joao Marques-Silva"
+                }
+            ],
+            "doi": "10.1007/s10601-015-9183-0",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "8b1d5a477a8209ea9c727b2f6f6aba9ca3c32b10",
+            "title": "Fast, flexible MUS enumeration",
+            "url": "https://www.semanticscholar.org/paper/8b1d5a477a8209ea9c727b2f6f6aba9ca3c32b10",
+            "venue": "Constraints",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145127870",
+                    "name": "Alexey Ignatiev"
+                },
+                {
+                    "authorId": "50751618",
+                    "name": "Mikol\u00e1\u0161 Janota"
+                },
+                {
+                    "authorId": "1393656234",
+                    "name": "Joao Marques-Silva"
+                }
+            ],
+            "doi": "10.1007/s10601-015-9195-9",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "37d21bcd3c20a3967401eb319cc49da457023590",
+            "title": "Quantified maximum satisfiability",
+            "url": "https://www.semanticscholar.org/paper/37d21bcd3c20a3967401eb319cc49da457023590",
+            "venue": "Constraints",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1803572",
+                    "name": "Alessandro Previti"
+                },
+                {
+                    "authorId": "1393656234",
+                    "name": "Joao Marques-Silva"
+                }
+            ],
+            "doi": "10.1609/aaai.v27i1.8657",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "1529829aa05ba9895af378234849d3295b8afd14",
+            "title": "Partial MUS Enumeration",
+            "url": "https://www.semanticscholar.org/paper/1529829aa05ba9895af378234849d3295b8afd14",
+            "venue": "AAAI",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2396107",
+                    "name": "Mark H. Liffiton"
+                },
+                {
+                    "authorId": "34195338",
+                    "name": "Ammar Malik"
+                }
+            ],
+            "doi": "10.1007/978-3-642-38171-3_11",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "8761ec6a2df55edca57391cfc045e5d67df1980d",
+            "title": "Enumerating Infeasibility: Finding Multiple MUSes Quickly",
+            "url": "https://www.semanticscholar.org/paper/8761ec6a2df55edca57391cfc045e5d67df1980d",
+            "venue": "CPAIOR",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144718788",
+                    "name": "L. Deng"
+                }
+            ],
+            "doi": "10.1109/MSP.2012.2211477",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "46f74231b9afeb0c290d6d550043c55045284e5f",
+            "title": "The MNIST Database of Handwritten Digit Images for Machine Learning Research [Best of the Web]",
+            "url": "https://www.semanticscholar.org/paper/46f74231b9afeb0c290d6d550043c55045284e5f",
+            "venue": "IEEE Signal Processing Magazine",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144859575",
+                    "name": "A. Belov"
+                },
+                {
+                    "authorId": "1773888",
+                    "name": "I. Lynce"
+                },
+                {
+                    "authorId": "1393656234",
+                    "name": "Joao Marques-Silva"
+                }
+            ],
+            "doi": "10.3233/AIC-2012-0523",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "fc561eb4b915aebe21a366b2051e36aa865a94da",
+            "title": "Towards efficient MUS extraction",
+            "url": "https://www.semanticscholar.org/paper/fc561eb4b915aebe21a366b2051e36aa865a94da",
+            "venue": "AI Commun.",
+            "year": 2012
+        },
+        {
+            "arxivId": "1102.1472",
+            "authors": [
+                {
+                    "authorId": "2935872",
+                    "name": "Karthekeyan Chandrasekaran"
+                },
+                {
+                    "authorId": "47546648",
+                    "name": "R. Karp"
+                },
+                {
+                    "authorId": "1403358323",
+                    "name": "Erick Moreno-Centeno"
+                },
+                {
+                    "authorId": "1737804",
+                    "name": "S. Vempala"
+                }
+            ],
+            "doi": "10.1137/1.9781611973082.48",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "6125075d112534402f1b98381e45fb3726ca5e4e",
+            "title": "Algorithms for implicit hitting set problems",
+            "url": "https://www.semanticscholar.org/paper/6125075d112534402f1b98381e45fb3726ca5e4e",
+            "venue": "SODA '11",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143774250",
+                    "name": "William Webber"
+                },
+                {
+                    "authorId": "144448479",
+                    "name": "Alistair Moffat"
+                },
+                {
+                    "authorId": "1751206",
+                    "name": "J. Zobel"
+                }
+            ],
+            "doi": "10.1145/1852102.1852106",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "b82756edb00e92f7314f1a3e036bf292664ad3a5",
+            "title": "A similarity measure for indefinite rankings",
+            "url": "https://www.semanticscholar.org/paper/b82756edb00e92f7314f1a3e036bf292664ad3a5",
+            "venue": "TOIS",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2073603971",
+                    "name": "Vinod Nair"
+                },
+                {
+                    "authorId": "1695689",
+                    "name": "Geoffrey E. Hinton"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a538b05ebb01a40323997629e171c91aa28b8e2f",
+            "title": "Rectified Linear Units Improve Restricted Boltzmann Machines",
+            "url": "https://www.semanticscholar.org/paper/a538b05ebb01a40323997629e171c91aa28b8e2f",
+            "venue": "ICML",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2396107",
+                    "name": "Mark H. Liffiton"
+                },
+                {
+                    "authorId": "3254198",
+                    "name": "M. Mneimneh"
+                },
+                {
+                    "authorId": "1773888",
+                    "name": "I. Lynce"
+                },
+                {
+                    "authorId": "3206920",
+                    "name": "Zaher S. Andraus"
+                },
+                {
+                    "authorId": "1393656234",
+                    "name": "Joao Marques-Silva"
+                },
+                {
+                    "authorId": "1679181",
+                    "name": "K. Sakallah"
+                }
+            ],
+            "doi": "10.1007/s10601-008-9058-8",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "8fcdd0aaf1b652c105277edad58048eb37bb0126",
+            "title": "A branch and bound algorithm for extracting smallest minimal unsatisfiable subformulas",
+            "url": "https://www.semanticscholar.org/paper/8fcdd0aaf1b652c105277edad58048eb37bb0126",
+            "venue": "Constraints",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2713205",
+                    "name": "E. Giunchiglia"
+                },
+                {
+                    "authorId": "1735029",
+                    "name": "M. Maratea"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "9126e9072f4adb210fa4c9add2326691b434d533",
+            "title": "Solving Optimization Problems with DLL",
+            "url": "https://www.semanticscholar.org/paper/9126e9072f4adb210fa4c9add2326691b434d533",
+            "venue": "ECAI",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2396107",
+                    "name": "Mark H. Liffiton"
+                },
+                {
+                    "authorId": "1679181",
+                    "name": "K. Sakallah"
+                }
+            ],
+            "doi": "10.1007/11499107_13",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "277b1654e911ffdbc3d0e7ab3af5d6ad5e356143",
+            "title": "On Finding All Minimally Unsatisfiable Subformulas",
+            "url": "https://www.semanticscholar.org/paper/277b1654e911ffdbc3d0e7ab3af5d6ad5e356143",
+            "venue": "SAT",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145148600",
+                    "name": "J. Bailey"
+                },
+                {
+                    "authorId": "1682747",
+                    "name": "Peter James Stuckey"
+                }
+            ],
+            "doi": "10.1007/978-3-540-30557-6_14",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "4619116d00e2b29acf97621438a5f2f639f0bae1",
+            "title": "Discovery of Minimal Unsatisfiable Subsets of Constraints Using Hitting Set Dualization",
+            "url": "https://www.semanticscholar.org/paper/4619116d00e2b29acf97621438a5f2f639f0bae1",
+            "venue": "PADL",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2071109542",
+                    "name": "Elazar Birnbaum"
+                },
+                {
+                    "authorId": "2528717",
+                    "name": "E. L. Lozinskii"
+                }
+            ],
+            "doi": "10.1080/0952813021000026795",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "868d27cf682622f5eab8dd11790e309e2d919284",
+            "title": "Consistent subsets of inconsistent systems: structure and behaviour",
+            "url": "https://www.semanticscholar.org/paper/868d27cf682622f5eab8dd11790e309e2d919284",
+            "venue": "J. Exp. Theor. Artif. Intell.",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1723744",
+                    "name": "S. Vadhan"
+                }
+            ],
+            "doi": "10.1137/S0097539797321602",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "34ae5e1ba049b81139868641a0dc5de1f733be13",
+            "title": "The Complexity of Counting in Sparse, Regular, and Planar Graphs",
+            "url": "https://www.semanticscholar.org/paper/34ae5e1ba049b81139868641a0dc5de1f733be13",
+            "venue": "SIAM J. Comput.",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3056361",
+                    "name": "J. Friedman"
+                }
+            ],
+            "doi": "10.1214/AOS/1013203451",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "1679beddda3a183714d380e944fe6bf586c083cd",
+            "title": "Greedy function approximation: A gradient boosting machine.",
+            "url": "https://www.semanticscholar.org/paper/1679beddda3a183714d380e944fe6bf586c083cd",
+            "venue": "",
+            "year": 2001
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2692987",
+                    "name": "Huaiyu Zhu"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "87cbed883368d4a9efd42fdd91f47038f8d8fbe6",
+            "title": "On Information and Sufficiency",
+            "url": "https://www.semanticscholar.org/paper/87cbed883368d4a9efd42fdd91f47038f8d8fbe6",
+            "venue": "",
+            "year": 1997
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1726733",
+                    "name": "Ron Kohavi"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "4207699ff174b7c44337a9c30252db80e777dcfc",
+            "title": "Scaling Up the Accuracy of Naive-Bayes Classifiers: A Decision-Tree Hybrid",
+            "url": "https://www.semanticscholar.org/paper/4207699ff174b7c44337a9c30252db80e777dcfc",
+            "venue": "KDD",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "48323507",
+                    "name": "Peter Clark"
+                },
+                {
+                    "authorId": "2427357",
+                    "name": "Robin Boswell"
+                }
+            ],
+            "doi": "10.1007/BFb0017011",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c1ff999b23053a9ea1ad2cd4d7023295e7566382",
+            "title": "Rule Induction with CN2: Some Recent Improvements",
+            "url": "https://www.semanticscholar.org/paper/c1ff999b23053a9ea1ad2cd4d7023295e7566382",
+            "venue": "EWSL",
+            "year": 1991
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143931627",
+                    "name": "R. Reiter"
+                }
+            ],
+            "doi": "10.1016/0004-3702(87)90062-2",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "e585e431b00f096bf6f75563808414347460bf72",
+            "title": "A Theory of Diagnosis from First Principles",
+            "url": "https://www.semanticscholar.org/paper/e585e431b00f096bf6f75563808414347460bf72",
+            "venue": "Artif. Intell.",
+            "year": 1986
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "34671862",
+                    "name": "J. Provan"
+                },
+                {
+                    "authorId": "6822661",
+                    "name": "M. Ball"
+                }
+            ],
+            "doi": "10.1137/0212053",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "895842fb9f629420baca3f21ef21f355b8c386d2",
+            "title": "The Complexity of Counting Cuts and of Computing the Probability that a Graph is Connected",
+            "url": "https://www.semanticscholar.org/paper/895842fb9f629420baca3f21ef21f355b8c386d2",
+            "venue": "SIAM J. Comput.",
+            "year": 1983
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3235476",
+                    "name": "L. Hyafil"
+                },
+                {
+                    "authorId": "2113911099",
+                    "name": "R. Rivest"
+                }
+            ],
+            "doi": "10.1016/0020-0190(76)90095-8",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b823846c6c8f1861424256467086ecec3fcd4693",
+            "title": "Constructing Optimal Binary Decision Trees is NP-Complete",
+            "url": "https://www.semanticscholar.org/paper/b823846c6c8f1861424256467086ecec3fcd4693",
+            "venue": "Inf. Process. Lett.",
+            "year": 1976
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "40692782",
+                    "name": "M. Kendall"
+                }
+            ],
+            "doi": "10.1093/BIOMET/30.1-2.81",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "d7b7f16ec98591b535f7b03c5e7d3327a4b2cac8",
+            "title": "A NEW MEASURE OF RANK CORRELATION",
+            "url": "https://www.semanticscholar.org/paper/d7b7f16ec98591b535f7b03c5e7d3327a4b2cac8",
+            "venue": "",
+            "year": 1938
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "82038527",
+                    "name": "Xuanxiang Huang"
+                },
+                {
+                    "authorId": "2249763503",
+                    "name": "Jo\u00e3o Marques-Silva"
+                }
+            ],
+            "doi": "10.3233/FAIA230384",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7ee3b17388c2c17194616812e63537677882a6c1",
+            "title": "From Decision Trees to Explained Decision Sets",
+            "url": "https://www.semanticscholar.org/paper/7ee3b17388c2c17194616812e63537677882a6c1",
+            "venue": "ECAI",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1892469",
+                    "name": "Jinqiang Yu"
+                },
+                {
+                    "authorId": "145127870",
+                    "name": "Alexey Ignatiev"
+                },
+                {
+                    "authorId": "2195991502",
+                    "name": "Peter J. Stuckey"
+                }
+            ],
+            "doi": "10.4230/LIPIcs.CP.2023.38",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c9565095c048fe301de872780c3cbca0afa3a9d3",
+            "title": "From Formal Boosted Tree Explanations to Interpretable Rule Sets",
+            "url": "https://www.semanticscholar.org/paper/c9565095c048fe301de872780c3cbca0afa3a9d3",
+            "venue": "CP",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145127870",
+                    "name": "Alexey Ignatiev"
+                },
+                {
+                    "authorId": "2701535",
+                    "name": "Nina Narodytska"
+                },
+                {
+                    "authorId": "4322924",
+                    "name": "Nicholas Asher"
+                },
+                {
+                    "authorId": "1393656234",
+                    "name": "Joao Marques-Silva"
+                }
+            ],
+            "doi": "10.1007/978-3-030-77091-4_21",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "80e923c3c8d4cb466871c33d4d6a65c59a978917",
+            "title": "From Contrastive to Abductive Explanations and Back Again",
+            "url": "https://www.semanticscholar.org/paper/80e923c3c8d4cb466871c33d4d6a65c59a978917",
+            "venue": "AI*IA",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2477463",
+                    "name": "Itay Hubara"
+                },
+                {
+                    "authorId": "2388466",
+                    "name": "Matthieu Courbariaux"
+                },
+                {
+                    "authorId": "1912398",
+                    "name": "Daniel Soudry"
+                },
+                {
+                    "authorId": "1387872181",
+                    "name": "Ran El-Yaniv"
+                },
+                {
+                    "authorId": "1751762",
+                    "name": "Yoshua Bengio"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "28135fd3e80dda50a673cd556f10b9b972005d27",
+            "title": "Binarized Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/28135fd3e80dda50a673cd556f10b9b972005d27",
+            "venue": "ArXiv",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2396107",
+                    "name": "Mark H. Liffiton"
+                },
+                {
+                    "authorId": "1679181",
+                    "name": "K. Sakallah"
+                }
+            ],
+            "doi": "10.1007/s10817-007-9084-z",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "815b2ca4f366cba71778d2bbe7556adbd96ec841",
+            "title": "Algorithms for Computing Minimal Unsatisfiable Subsets of Constraints",
+            "url": "https://www.semanticscholar.org/paper/815b2ca4f366cba71778d2bbe7556adbd96ec841",
+            "venue": "Journal of Automated Reasoning",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2113911099",
+                    "name": "R. Rivest"
+                }
+            ],
+            "doi": "10.1007/BF00058680",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2c386026b24f993aca44a7a684152778d46c51b0",
+            "title": "Learning decision lists",
+            "url": "https://www.semanticscholar.org/paper/2c386026b24f993aca44a7a684152778d46c51b0",
+            "venue": "Machine Learning",
+            "year": 2004
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1741124",
+                    "name": "L. Valiant"
+                }
+            ],
+            "doi": "10.1016/0304-3975(79)90044-6",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9c188b3291a7e83d667764be3377a99e15b4d988",
+            "title": "The Complexity of Computing the Permanent",
+            "url": "https://www.semanticscholar.org/paper/9c188b3291a7e83d667764be3377a99e15b4d988",
+            "venue": "Theor. Comput. Sci.",
+            "year": 1979
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        },
+        {
+            "category": "Mathematics",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Anytime Approximate Formal Feature Attribution",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/8d998f79a97c21d4575df96d40243a81253e07c8",
+    "venue": "International Conference on Theory and Applications of Satisfiability Testing",
+    "year": 2023
+}

@@ -1,0 +1,968 @@
+{
+    "abstract": "Constraint-based applications attempt to identify a solution that meets all defined user requirements. If the requirements are inconsistent with the underlying constraint set, algorithms that compute diagnoses for inconsistent constraints should be implemented to help users resolve the \u201cno solution could be found\u201d dilemma. FastDiag is a typical direct diagnosis algorithm that supports diagnosis calculation without pre-determining conflicts. However, this approach faces runtime performance issues, especially when analyzing complex and large-scale knowledge bases. In this paper, we propose a novel algorithm, so-called FastDiagP, which is based on the idea of speculative programming. This algorithm extends FastDiag by integrating a parallelization mechanism that anticipates and pre-calculates consistency checks requested by FastDiag. This mechanism helps to provide consistency checks with fast answers and boosts the algorithm\u2019s runtime performance. The performance improvements of our proposed algorithm have been shown through empirical results using the Linux-2.6.3.33 configuration knowledge base.",
+    "arxivId": "2305.06951",
+    "authors": [
+        {
+            "authorId": "144335284",
+            "name": "Viet-Man Le",
+            "url": "https://www.semanticscholar.org/author/144335284"
+        },
+        {
+            "authorId": "2213758424",
+            "name": "Cristian Vidal Silva",
+            "url": "https://www.semanticscholar.org/author/2213758424"
+        },
+        {
+            "authorId": "1688968",
+            "name": "A. Felfernig",
+            "url": "https://www.semanticscholar.org/author/1688968"
+        },
+        {
+            "authorId": "2066422509",
+            "name": "David Benavides",
+            "url": "https://www.semanticscholar.org/author/2066422509"
+        },
+        {
+            "authorId": "36457775",
+            "name": "J. Galindo",
+            "url": "https://www.semanticscholar.org/author/36457775"
+        },
+        {
+            "authorId": "13278227",
+            "name": "Thi Ngoc Trang Tran",
+            "url": "https://www.semanticscholar.org/author/13278227"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2280921054",
+                    "name": "David Romero-Organvidez"
+                },
+                {
+                    "authorId": "36457775",
+                    "name": "J. Galindo"
+                },
+                {
+                    "authorId": "1411474175",
+                    "name": "Chico Sundermann"
+                },
+                {
+                    "authorId": "1842642",
+                    "name": "J. Horcas"
+                },
+                {
+                    "authorId": "2280937373",
+                    "name": "David Benavides"
+                }
+            ],
+            "doi": "10.1016/j.jss.2024.112150",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "1d4685e0bd5715898363411db06f8cc1c1c78867",
+            "title": "UVLHub: A feature model data repository using UVL and open science principles",
+            "url": "https://www.semanticscholar.org/paper/1d4685e0bd5715898363411db06f8cc1c1c78867",
+            "venue": "J. Syst. Softw.",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2081477051",
+                    "name": "C. Vidal-Silva"
+                },
+                {
+                    "authorId": "2034283873",
+                    "name": "V. Duarte"
+                },
+                {
+                    "authorId": "1409998639",
+                    "name": "Jesennia C\u00e1rdenas-Cobo"
+                },
+                {
+                    "authorId": "2085966456",
+                    "name": "Iv\u00e1n Veas"
+                }
+            ],
+            "doi": "10.1038/s41598-024-61647-6",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "d8b6d6633ad92a0cfd3f0cda5fe41ebc08ffee73",
+            "title": "Speculative computing for AAFM solutions in large-scale product configurations",
+            "url": "https://www.semanticscholar.org/paper/d8b6d6633ad92a0cfd3f0cda5fe41ebc08ffee73",
+            "venue": "Scientific reports",
+            "year": 2024
+        },
+        {
+            "arxivId": "2405.08297",
+            "authors": [
+                {
+                    "authorId": "3380887",
+                    "name": "Yacine Izza"
+                },
+                {
+                    "authorId": "82038527",
+                    "name": "Xuanxiang Huang"
+                },
+                {
+                    "authorId": "2074837624",
+                    "name": "A. Morgado"
+                },
+                {
+                    "authorId": "2301203550",
+                    "name": "Jordi Planes"
+                },
+                {
+                    "authorId": "145127870",
+                    "name": "Alexey Ignatiev"
+                },
+                {
+                    "authorId": "2249763503",
+                    "name": "Jo\u00e3o Marques-Silva"
+                }
+            ],
+            "doi": "10.48550/arXiv.2405.08297",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9dd420da1af3addd0bc72a7eb10cebe0529338ef",
+            "title": "Distance-Restricted Explanations: Theoretical Underpinnings & Efficient Implementation",
+            "url": "https://www.semanticscholar.org/paper/9dd420da1af3addd0bc72a7eb10cebe0529338ef",
+            "venue": "Proceedings of the TwentyFirst International Conference on Principles of Knowledge Representation and Reasoning",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2294759739",
+                    "name": "Warda Mustafa Saied"
+                },
+                {
+                    "authorId": "2294760960",
+                    "name": "Bayan Elsaed Elakhdar"
+                },
+                {
+                    "authorId": "2294760549",
+                    "name": "Duaa Gamal Hassan"
+                }
+            ],
+            "doi": "10.1109/ICCI61671.2024.10485131",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5b28caf27118ba198e6aca55927e41476ba40d2a",
+            "title": "Comprehensive Synthesis of Decision-Making in Complex Systems",
+            "url": "https://www.semanticscholar.org/paper/5b28caf27118ba198e6aca55927e41476ba40d2a",
+            "venue": "2024 6th International Conference on Computing and Informatics (ICCI)",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "51378722",
+                    "name": "Mathias Uta"
+                },
+                {
+                    "authorId": "2264307908",
+                    "name": "Alexander Felfernig"
+                },
+                {
+                    "authorId": "144335284",
+                    "name": "Viet-Man Le"
+                },
+                {
+                    "authorId": "13278227",
+                    "name": "Thi Ngoc Trang Tran"
+                },
+                {
+                    "authorId": "2233477799",
+                    "name": "Damian Garber"
+                },
+                {
+                    "authorId": "2182737348",
+                    "name": "Sebastian Lubos"
+                },
+                {
+                    "authorId": "2217889336",
+                    "name": "Tamim Burgstaller"
+                }
+            ],
+            "doi": "10.3389/fdata.2024.1304439",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "66d48fc6f70e7cc304a0ecccdce383d6a02f4e96",
+            "title": "Knowledge-based recommender systems: overview and research directions",
+            "url": "https://www.semanticscholar.org/paper/66d48fc6f70e7cc304a0ecccdce383d6a02f4e96",
+            "venue": "Frontiers Big Data",
+            "year": 2024
+        }
+    ],
+    "corpusId": 258615169,
+    "doi": "10.1609/aaai.v37i5.25792",
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": true,
+    "isPublisherLicensed": true,
+    "is_open_access": true,
+    "is_publisher_licensed": true,
+    "numCitedBy": 5,
+    "numCiting": 27,
+    "paperId": "349899ad280bcff77e39689df88e0fc7de852a2d",
+    "references": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1700527",
+                    "name": "R. Heradio"
+                },
+                {
+                    "authorId": "1400612686",
+                    "name": "David Fern\u00e1ndez-Amor\u00f3s"
+                },
+                {
+                    "authorId": "36457775",
+                    "name": "J. Galindo"
+                },
+                {
+                    "authorId": "144672758",
+                    "name": "David Benavides"
+                },
+                {
+                    "authorId": "1751603",
+                    "name": "D. Batory"
+                }
+            ],
+            "doi": "10.1007/s10664-021-10102-5",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "8aba651685b99c3580d7fd141b775a1a29d248f0",
+            "title": "Uniform and scalable sampling of highly configurable systems",
+            "url": "https://www.semanticscholar.org/paper/8aba651685b99c3580d7fd141b775a1a29d248f0",
+            "venue": "Empirical Software Engineering",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2059745423",
+                    "name": "Cristian Vidal"
+                },
+                {
+                    "authorId": "1688968",
+                    "name": "A. Felfernig"
+                },
+                {
+                    "authorId": "36457775",
+                    "name": "J. Galindo"
+                },
+                {
+                    "authorId": "32451050",
+                    "name": "M\u00fcsl\u00fcm Atas"
+                },
+                {
+                    "authorId": "2066422509",
+                    "name": "David Benavides"
+                }
+            ],
+            "doi": "10.1007/s10844-021-00675-4",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "d656f24af33f85242199e9fcae46d1478b5e7e29",
+            "title": "Explanations for over-constrained problems using QuickXPlain with speculative executions",
+            "url": "https://www.semanticscholar.org/paper/d656f24af33f85242199e9fcae46d1478b5e7e29",
+            "venue": "Journal of Intelligent Information Systems",
+            "year": 2021
+        },
+        {
+            "arxivId": "2102.05949",
+            "authors": [
+                {
+                    "authorId": "144335284",
+                    "name": "Viet-Man Le"
+                },
+                {
+                    "authorId": "1688968",
+                    "name": "A. Felfernig"
+                },
+                {
+                    "authorId": "51378722",
+                    "name": "Mathias Uta"
+                },
+                {
+                    "authorId": "144672758",
+                    "name": "David Benavides"
+                },
+                {
+                    "authorId": "36457775",
+                    "name": "J. Galindo"
+                },
+                {
+                    "authorId": "13278227",
+                    "name": "Thi Ngoc Trang Tran"
+                }
+            ],
+            "doi": "10.1109/ICSE-NIER52604.2021.00025",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "3a176d9475127cc00b50aef57bd55526e0923ea4",
+            "title": "DIRECTDEBUG: Automated Testing and Debugging of Feature Models",
+            "url": "https://www.semanticscholar.org/paper/3a176d9475127cc00b50aef57bd55526e0923ea4",
+            "venue": "2021 IEEE/ACM 43rd International Conference on Software Engineering: New Ideas and Emerging Results (ICSE-NIER)",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145127870",
+                    "name": "Alexey Ignatiev"
+                },
+                {
+                    "authorId": "1723569",
+                    "name": "Ant\u00f3nio Morgado"
+                },
+                {
+                    "authorId": "1393656234",
+                    "name": "Joao Marques-Silva"
+                }
+            ],
+            "doi": "10.1007/978-3-319-94144-8_26",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "ea11436ed5979546c5a401d1aff4f7930d9a2ccc",
+            "title": "PySAT: A Python Toolkit for Prototyping with SAT Oracles",
+            "url": "https://www.semanticscholar.org/paper/ea11436ed5979546c5a401d1aff4f7930d9a2ccc",
+            "venue": "SAT",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "37124778",
+                    "name": "S. Mostafa"
+                },
+                {
+                    "authorId": "39511442",
+                    "name": "I. Ahmad"
+                }
+            ],
+            "doi": "10.1080/15598608.2017.1353456",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "453d9358c110197c0103ea13cadad077ad08ee63",
+            "title": "Recent developments in systematic sampling: A review",
+            "url": "https://www.semanticscholar.org/paper/453d9358c110197c0103ea13cadad077ad08ee63",
+            "venue": "",
+            "year": 2018
+        },
+        {
+            "arxivId": "1803.10981",
+            "authors": [
+                {
+                    "authorId": "1726451",
+                    "name": "Ian P. Gent"
+                },
+                {
+                    "authorId": "3215556",
+                    "name": "Ciaran McCreesh"
+                },
+                {
+                    "authorId": "1711462",
+                    "name": "Ian Miguel"
+                },
+                {
+                    "authorId": "1732344",
+                    "name": "Neil C. A. Moore"
+                },
+                {
+                    "authorId": "145042851",
+                    "name": "Peter William Nightingale"
+                },
+                {
+                    "authorId": "1702467",
+                    "name": "P. Prosser"
+                },
+                {
+                    "authorId": "104117865",
+                    "name": "Chris Unsworth"
+                }
+            ],
+            "doi": "10.1017/S1471068418000340",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "325013c2d6140cd0bfe7a3245a016e4ef18b8cce",
+            "title": "A review of literature on parallel constraint solving",
+            "url": "https://www.semanticscholar.org/paper/325013c2d6140cd0bfe7a3245a016e4ef18b8cce",
+            "venue": "Theory and Practice of Logic Programming",
+            "year": 2018
+        },
+        {
+            "arxivId": "2102.09880",
+            "authors": [
+                {
+                    "authorId": "1688968",
+                    "name": "A. Felfernig"
+                },
+                {
+                    "authorId": "39979839",
+                    "name": "Rouven Walter"
+                },
+                {
+                    "authorId": "36457775",
+                    "name": "J. Galindo"
+                },
+                {
+                    "authorId": "144672758",
+                    "name": "David Benavides"
+                },
+                {
+                    "authorId": "17309871",
+                    "name": "Seda Polat Erdeniz"
+                },
+                {
+                    "authorId": "32451050",
+                    "name": "M\u00fcsl\u00fcm Atas"
+                },
+                {
+                    "authorId": "2022120",
+                    "name": "Stefan Reiterer"
+                }
+            ],
+            "doi": "10.1007/s10844-017-0492-1",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a363e0c464e2ae1928b5f696a80fbc90cb679fbb",
+            "title": "Anytime diagnosis for reconfiguration",
+            "url": "https://www.semanticscholar.org/paper/a363e0c464e2ae1928b5f696a80fbc90cb679fbb",
+            "venue": "Journal of Intelligent Information Systems",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1705282",
+                    "name": "D. Jannach"
+                },
+                {
+                    "authorId": "2055652863",
+                    "name": "Thomas Schmitz"
+                },
+                {
+                    "authorId": "7286090",
+                    "name": "Konstantin Schekotihin"
+                }
+            ],
+            "doi": "10.1609/aaai.v29i1.9389",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "fd72159f7f96d7f9d87d4ecff2cdd1e077f6101d",
+            "title": "Parallelized Hitting Set Computation for Model-Based Diagnosis",
+            "url": "https://www.semanticscholar.org/paper/fd72159f7f96d7f9d87d4ecff2cdd1e077f6101d",
+            "venue": "AAAI",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1393656234",
+                    "name": "Joao Marques-Silva"
+                },
+                {
+                    "authorId": "1803572",
+                    "name": "Alessandro Previti"
+                }
+            ],
+            "doi": "10.1007/978-3-319-09284-3_6",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "1df722bfaa426f46e0347c462755971410336968",
+            "title": "On Computing Preferred MUSes and MCSes",
+            "url": "https://www.semanticscholar.org/paper/1df722bfaa426f46e0347c462755971410336968",
+            "venue": "SAT",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1688968",
+                    "name": "A. Felfernig"
+                },
+                {
+                    "authorId": "2071198725",
+                    "name": "Lothar Hotz"
+                },
+                {
+                    "authorId": "145255690",
+                    "name": "C. Bagley"
+                },
+                {
+                    "authorId": "1901348",
+                    "name": "J. Tiihonen"
+                }
+            ],
+            "doi": "10.1016/b978-0-12-415817-7.00029-3",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "e183037513cfa054ba42e4e01e574fed974c9f2e",
+            "title": "Knowledge-Based Configuration: From Research to Business Cases",
+            "url": "https://www.semanticscholar.org/paper/e183037513cfa054ba42e4e01e574fed974c9f2e",
+            "venue": "",
+            "year": 2014
+        },
+        {
+            "arxivId": "2102.09005",
+            "authors": [
+                {
+                    "authorId": "1688968",
+                    "name": "A. Felfernig"
+                },
+                {
+                    "authorId": "18304763",
+                    "name": "Monika Schubert"
+                },
+                {
+                    "authorId": "2413505",
+                    "name": "Christoph Zehentner"
+                }
+            ],
+            "doi": "10.1017/S0890060411000011",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "f5f9293f13e46860cd0ae6177a0d5b42aba623d6",
+            "title": "An efficient diagnosis algorithm for inconsistent constraint sets",
+            "url": "https://www.semanticscholar.org/paper/f5f9293f13e46860cd0ae6177a0d5b42aba623d6",
+            "venue": "Artificial Intelligence for Engineering Design, Analysis and Manufacturing",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144672758",
+                    "name": "David Benavides"
+                },
+                {
+                    "authorId": "145135083",
+                    "name": "Sergio Segura"
+                },
+                {
+                    "authorId": "38103741",
+                    "name": "Antonio Ruiz-Cort\u00e9s"
+                }
+            ],
+            "doi": "10.1016/j.is.2010.01.001",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "7c62fdbfc2baa5dd3e9ab2ac55153dfc9553dda0",
+            "title": "Automated analysis of feature models 20 years later: A literature review",
+            "url": "https://www.semanticscholar.org/paper/7c62fdbfc2baa5dd3e9ab2ac55153dfc9553dda0",
+            "venue": "Inf. Syst.",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1688968",
+                    "name": "A. Felfernig"
+                },
+                {
+                    "authorId": "18304763",
+                    "name": "Monika Schubert"
+                },
+                {
+                    "authorId": "3213735",
+                    "name": "Monika Mandl"
+                },
+                {
+                    "authorId": "145218487",
+                    "name": "G. Friedrich"
+                },
+                {
+                    "authorId": "2500859",
+                    "name": "E. Teppan"
+                }
+            ],
+            "doi": "10.3233/978-1-60750-606-5-1043",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "4fb6272aab1a05377e38d72f01408ced645f0951",
+            "title": "Efficient Explanations for Inconsistent Constraint Sets",
+            "url": "https://www.semanticscholar.org/paper/4fb6272aab1a05377e38d72f01408ced645f0951",
+            "venue": "ECAI",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3023847",
+                    "name": "L. Bordeaux"
+                },
+                {
+                    "authorId": "1728524",
+                    "name": "Y. Hamadi"
+                },
+                {
+                    "authorId": "1756353",
+                    "name": "Horst Samulowitz"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "6b82ddb61f969e946e19dc3d3826a9059136648f",
+            "title": "Experiments with Massively Parallel Constraint Solving",
+            "url": "https://www.semanticscholar.org/paper/6b82ddb61f969e946e19dc3d3826a9059136648f",
+            "venue": "IJCAI",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1688968",
+                    "name": "A. Felfernig"
+                },
+                {
+                    "authorId": "145218487",
+                    "name": "G. Friedrich"
+                },
+                {
+                    "authorId": "18304763",
+                    "name": "Monika Schubert"
+                },
+                {
+                    "authorId": "3213735",
+                    "name": "Monika Mandl"
+                },
+                {
+                    "authorId": "2175169",
+                    "name": "Markus Mairitsch"
+                },
+                {
+                    "authorId": "2500859",
+                    "name": "E. Teppan"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "411072a52677196ffe04252bccba75ff3ec77c35",
+            "title": "Plausible Repairs for Inconsistent Requirements",
+            "url": "https://www.semanticscholar.org/paper/411072a52677196ffe04252bccba75ff3ec77c35",
+            "venue": "IJCAI",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1688968",
+                    "name": "A. Felfernig"
+                },
+                {
+                    "authorId": "1747150",
+                    "name": "R. Burke"
+                }
+            ],
+            "doi": "10.1145/1409540.1409544",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "cafaf6981b4daf5bdc3f38041bb4e88675cd03ef",
+            "title": "Constraint-based recommender systems: technologies and research issues",
+            "url": "https://www.semanticscholar.org/paper/cafaf6981b4daf5bdc3f38041bb4e88675cd03ef",
+            "venue": "ICEC",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2098429708",
+                    "name": "L. Catillo"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "5cb90f88d79bad817affb650e330c145d16a4105",
+            "title": "Planning, Scheduling And Constraint Satisfaction: From Theory To Practice",
+            "url": "https://www.semanticscholar.org/paper/5cb90f88d79bad817affb650e330c145d16a4105",
+            "venue": "",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "35184507",
+                    "name": "Ulrich Junker"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "dee653e324b42311f93adf83611a985028f8b54c",
+            "title": "QUICKXPLAIN: Preferred Explanations and Relaxations for Over-Constrained Problems",
+            "url": "https://www.semanticscholar.org/paper/dee653e324b42311f93adf83611a985028f8b54c",
+            "venue": "AAAI",
+            "year": 2004
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143931627",
+                    "name": "R. Reiter"
+                }
+            ],
+            "doi": "10.1016/0004-3702(87)90062-2",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "e585e431b00f096bf6f75563808414347460bf72",
+            "title": "A Theory of Diagnosis from First Principles",
+            "url": "https://www.semanticscholar.org/paper/e585e431b00f096bf6f75563808414347460bf72",
+            "venue": "Artif. Intell.",
+            "year": 1986
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1964566",
+                    "name": "F. Burton"
+                }
+            ],
+            "doi": "10.1109/TC.1985.6312218",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "944adc818b89a543282f9be3a356df67a09faccd",
+            "title": "Speculative computation, parallelism, and functional programming",
+            "url": "https://www.semanticscholar.org/paper/944adc818b89a543282f9be3a356df67a09faccd",
+            "venue": "IEEE Transactions on Computers",
+            "year": 1985
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1705282",
+                    "name": "D. Jannach"
+                },
+                {
+                    "authorId": "2055652863",
+                    "name": "Thomas Schmitz"
+                },
+                {
+                    "authorId": "7286090",
+                    "name": "Konstantin Schekotihin"
+                }
+            ],
+            "doi": "10.1613/jair.5001",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5abe9c535544f5cbdf2585bf17dd8afe6f631865",
+            "title": "Parallel Model-Based Diagnosis on Multi-Core Computers",
+            "url": "https://www.semanticscholar.org/paper/5abe9c535544f5cbdf2585bf17dd8afe6f631865",
+            "venue": "J. Artif. Intell. Res.",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2071198725",
+                    "name": "Lothar Hotz"
+                },
+                {
+                    "authorId": "1688968",
+                    "name": "A. Felfernig"
+                },
+                {
+                    "authorId": "1697771",
+                    "name": "M. Stumptner"
+                },
+                {
+                    "authorId": "144477046",
+                    "name": "A. Ryabokon"
+                },
+                {
+                    "authorId": "145255690",
+                    "name": "C. Bagley"
+                },
+                {
+                    "authorId": "34365164",
+                    "name": "Katharina Wolter"
+                }
+            ],
+            "doi": "10.1016/B978-0-12-415817-7.00006-2",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9463adafa6e3c3a8e8be3e82de9cbaa1ad1a2469",
+            "title": "Configuration Knowledge Representation and Reasoning",
+            "url": "https://www.semanticscholar.org/paper/9463adafa6e3c3a8e8be3e82de9cbaa1ad1a2469",
+            "venue": "",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144833426",
+                    "name": "F. Rossi"
+                },
+                {
+                    "authorId": "1994523",
+                    "name": "P. V. Beek"
+                },
+                {
+                    "authorId": "1733716",
+                    "name": "T. Walsh"
+                }
+            ],
+            "doi": "10.1016/s1574-6526(06)x8001-x",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "341e501790209f178ded2bd6b8729add7ec8bb02",
+            "title": "Handbook of Constraint Programming",
+            "url": "https://www.semanticscholar.org/paper/341e501790209f178ded2bd6b8729add7ec8bb02",
+            "venue": "Handbook of Constraint Programming",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1697771",
+                    "name": "M. Stumptner"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "fa305bb90ecc28627836bb8ff8e1634b5fa987e1",
+            "title": "An Overview of Knowledge-Based Configuration",
+            "url": "https://www.semanticscholar.org/paper/fa305bb90ecc28627836bb8ff8e1634b5fa987e1",
+            "venue": "AI Commun.",
+            "year": 1997
+        },
+        {
+            "arxivId": null,
+            "authors": [],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "6e067673ee31de8477d0f18d492a8bc1a6699184",
+            "title": "Developmental diagnosis",
+            "url": "https://www.semanticscholar.org/paper/6e067673ee31de8477d0f18d492a8bc1a6699184",
+            "venue": "",
+            "year": 1947
+        },
+        {
+            "arxivId": null,
+            "authors": [],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "890c35334b4223b323b25d530a13ae47653877a0",
+            "title": "Proceedings of the Twenty-Third International Joint Conference on Artificial Intelligence On Computing Minimal Correction Subsets",
+            "url": "https://www.semanticscholar.org/paper/890c35334b4223b323b25d530a13ae47653877a0",
+            "venue": "",
+            "year": null
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "FastDiagP: An Algorithm for Parallelized Direct Diagnosis",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/349899ad280bcff77e39689df88e0fc7de852a2d",
+    "venue": "AAAI Conference on Artificial Intelligence",
+    "year": 2023
+}

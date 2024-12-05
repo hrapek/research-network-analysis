@@ -1,0 +1,854 @@
+{
+    "abstract": "When humans collaborate with each other, they often make decisions by observing others and considering the consequences that their actions may have on the entire team, instead of greedily doing what is best for just themselves. We would like our AI agents to effectively collaborate in a similar way by capturing a model of their partners. In this work, we propose and analyze a decentralized Multi-Armed Bandit (MAB) problem with coupled rewards as an abstraction of more general multi-agent collaboration. We demonstrate that naive extensions of single-agent optimal MAB algorithms fail when applied for decentralized bandit teams. Instead, we propose a Partner-Aware strategy for joint sequential decision-making that extends the well-known single-agent Upper Confidence Bound algorithm. We analytically show that our proposed strategy achieves logarithmic regret, and provide extensive experiments involving human-AI and human-robot collaboration to validate our theoretical findings. Our results show that the proposed partner-aware strategy outperforms other known methods, and our human subject studies suggest humans prefer to collaborate with AI agents implementing our partner-aware strategy.",
+    "arxivId": "2110.00751",
+    "authors": [
+        {
+            "authorId": "8307674",
+            "name": "Erdem Biyik",
+            "url": "https://www.semanticscholar.org/author/8307674"
+        },
+        {
+            "authorId": "145141991",
+            "name": "Anusha Lalitha",
+            "url": "https://www.semanticscholar.org/author/145141991"
+        },
+        {
+            "authorId": "8352011",
+            "name": "R. Saha",
+            "url": "https://www.semanticscholar.org/author/8352011"
+        },
+        {
+            "authorId": "1746299",
+            "name": "A. Goldsmith",
+            "url": "https://www.semanticscholar.org/author/1746299"
+        },
+        {
+            "authorId": "1779671",
+            "name": "Dorsa Sadigh",
+            "url": "https://www.semanticscholar.org/author/1779671"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2154165264",
+                    "name": "Yi Zhang"
+                },
+                {
+                    "authorId": "1797630",
+                    "name": "R. Heath"
+                }
+            ],
+            "doi": "10.1109/MVT.2023.3237940",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "700a4dc05c0402a2d67583fdd6767f75f16f0e5a",
+            "title": "Multi-Armed Bandit for Link Configuration in Millimeter-Wave Networks: An Approach for Solving Sequential Decision-Making Problems",
+            "url": "https://www.semanticscholar.org/paper/700a4dc05c0402a2d67583fdd6767f75f16f0e5a",
+            "venue": "IEEE Vehicular Technology Magazine",
+            "year": 2023
+        },
+        {
+            "arxivId": "2304.11753",
+            "authors": [
+                {
+                    "authorId": "87434848",
+                    "name": "Shahabedin Sagheb"
+                },
+                {
+                    "authorId": "2131950447",
+                    "name": "Soham Gandhi"
+                },
+                {
+                    "authorId": "2426559",
+                    "name": "Dylan P. Losey"
+                }
+            ],
+            "doi": "10.48550/arXiv.2304.11753",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b2d27bccd371255eca0f15c2191bf9bf792ae42a",
+            "title": "Should Collaborative Robots be Transparent?",
+            "url": "https://www.semanticscholar.org/paper/b2d27bccd371255eca0f15c2191bf9bf792ae42a",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": "2301.11802",
+            "authors": [
+                {
+                    "authorId": "145530216",
+                    "name": "Johan \u00d6stman"
+                },
+                {
+                    "authorId": "2317542",
+                    "name": "Ather Gattami"
+                },
+                {
+                    "authorId": "2338283",
+                    "name": "D. Gillblad"
+                }
+            ],
+            "doi": "10.48550/arXiv.2301.11802",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "1d09c55468c01e0abc6cd3448d8e10def2bfe55f",
+            "title": "Decentralized Online Bandit Optimization on Directed Graphs with Regret Bounds",
+            "url": "https://www.semanticscholar.org/paper/1d09c55468c01e0abc6cd3448d8e10def2bfe55f",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2111684100",
+                    "name": "Nicholas Wolczynski"
+                },
+                {
+                    "authorId": "1388405043",
+                    "name": "M. Saar-Tsechansky"
+                },
+                {
+                    "authorId": "2116680347",
+                    "name": "Tong Wang"
+                }
+            ],
+            "doi": "10.48550/arXiv.2210.12849",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "dad36caf6f7e43d2ffd0c353cfc707b6b3659cee",
+            "title": "Learning to Advise Humans By Leveraging Algorithm Discretion",
+            "url": "https://www.semanticscholar.org/paper/dad36caf6f7e43d2ffd0c353cfc707b6b3659cee",
+            "venue": "ArXiv",
+            "year": 2022
+        }
+    ],
+    "corpusId": 238259685,
+    "doi": "10.1609/aaai.v36i9.21158",
+    "fieldsOfStudy": [
+        "Computer Science",
+        "Mathematics"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": true,
+    "isPublisherLicensed": true,
+    "is_open_access": true,
+    "is_publisher_licensed": true,
+    "numCitedBy": 4,
+    "numCiting": 26,
+    "paperId": "a0ad7fd42bb4dc9489a4dcf6eddaee8baf4d5f06",
+    "references": [
+        {
+            "arxivId": "2104.02871",
+            "authors": [
+                {
+                    "authorId": "145117953",
+                    "name": "Andy Shih"
+                },
+                {
+                    "authorId": "31254551",
+                    "name": "Arjun Sawhney"
+                },
+                {
+                    "authorId": "1910920876",
+                    "name": "J. Kondic"
+                },
+                {
+                    "authorId": "2490652",
+                    "name": "Stefano Ermon"
+                },
+                {
+                    "authorId": "1779671",
+                    "name": "Dorsa Sadigh"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "53d035f903070b8b8ea47be79f9957738f63373b",
+            "title": "On the Critical Role of Conventions in Adaptive Human-AI Collaboration",
+            "url": "https://www.semanticscholar.org/paper/53d035f903070b8b8ea47be79f9957738f63373b",
+            "venue": "ICLR",
+            "year": 2021
+        },
+        {
+            "arxivId": "2011.06619",
+            "authors": [
+                {
+                    "authorId": "14484808",
+                    "name": "Annie Xie"
+                },
+                {
+                    "authorId": "2426559",
+                    "name": "Dylan P. Losey"
+                },
+                {
+                    "authorId": "2024728647",
+                    "name": "R. Tolsma"
+                },
+                {
+                    "authorId": "46881670",
+                    "name": "Chelsea Finn"
+                },
+                {
+                    "authorId": "1779671",
+                    "name": "Dorsa Sadigh"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "34b927067f0ae0b2bec9762e5be882559f856654",
+            "title": "Learning Latent Representations to Influence Multi-Agent Interaction",
+            "url": "https://www.semanticscholar.org/paper/34b927067f0ae0b2bec9762e5be882559f856654",
+            "venue": "CoRL",
+            "year": 2020
+        },
+        {
+            "arxivId": "2008.04452",
+            "authors": [
+                {
+                    "authorId": "26367618",
+                    "name": "Zheqing Zhu"
+                },
+                {
+                    "authorId": "8307674",
+                    "name": "Erdem Biyik"
+                },
+                {
+                    "authorId": "1779671",
+                    "name": "Dorsa Sadigh"
+                }
+            ],
+            "doi": "10.1109/IROS45743.2020.9341169",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "48a4fcf3c8aea0ae464bb124872dc5672b44ebbb",
+            "title": "Multi-Agent Safe Planning with Gaussian Processes",
+            "url": "https://www.semanticscholar.org/paper/48a4fcf3c8aea0ae464bb124872dc5672b44ebbb",
+            "venue": "2020 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2989692",
+                    "name": "Tor Lattimore"
+                },
+                {
+                    "authorId": "40868287",
+                    "name": "Csaba Szepesvari"
+                }
+            ],
+            "doi": "10.1017/9781108571401",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "57ffba5ea5e602b5365752e19a6f85a716db1d8b",
+            "title": "Bandit Algorithms",
+            "url": "https://www.semanticscholar.org/paper/57ffba5ea5e602b5365752e19a6f85a716db1d8b",
+            "venue": "",
+            "year": 2020
+        },
+        {
+            "arxivId": "1910.07613",
+            "authors": [
+                {
+                    "authorId": "2426559",
+                    "name": "Dylan P. Losey"
+                },
+                {
+                    "authorId": "70623401",
+                    "name": "Mengxi Li"
+                },
+                {
+                    "authorId": "1775407",
+                    "name": "Jeannette Bohg"
+                },
+                {
+                    "authorId": "1779671",
+                    "name": "Dorsa Sadigh"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5d378b34f867a49c41cf099530254ecb4ec61262",
+            "title": "Learning from My Partner's Actions: Roles in Decentralized Robot Teams",
+            "url": "https://www.semanticscholar.org/paper/5d378b34f867a49c41cf099530254ecb4ec61262",
+            "venue": "CoRL",
+            "year": 2019
+        },
+        {
+            "arxivId": "1910.02100",
+            "authors": [
+                {
+                    "authorId": "2809149",
+                    "name": "Abishek Sankararaman"
+                },
+                {
+                    "authorId": "50101444",
+                    "name": "A. Ganesh"
+                },
+                {
+                    "authorId": "1688634",
+                    "name": "S. Shakkottai"
+                }
+            ],
+            "doi": "10.1145/3366701",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8686fea66b2084c84fb7f76fc1f51981e1b57fde",
+            "title": "Social Learning in Multi Agent Multi Armed Bandits",
+            "url": "https://www.semanticscholar.org/paper/8686fea66b2084c84fb7f76fc1f51981e1b57fde",
+            "venue": "Proc. ACM Meas. Anal. Comput. Syst.",
+            "year": 2019
+        },
+        {
+            "arxivId": "1909.06508",
+            "authors": [
+                {
+                    "authorId": "21704901",
+                    "name": "Connor Brooks"
+                },
+                {
+                    "authorId": "35809186",
+                    "name": "D. Szafir"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d1200e127cb7e71fc677dcb54dd3ea33362de874",
+            "title": "Building Second-Order Mental Models for Human-Robot Interaction",
+            "url": "https://www.semanticscholar.org/paper/d1200e127cb7e71fc677dcb54dd3ea33362de874",
+            "venue": "ArXiv",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2266838640",
+                    "name": "Andrei Lupu"
+                },
+                {
+                    "authorId": "1777414",
+                    "name": "A. Durand"
+                },
+                {
+                    "authorId": "144368601",
+                    "name": "Doina Precup"
+                }
+            ],
+            "doi": "10.1609/AAAI.V33I01.33016112",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "a9a0efc15f6dc849b4717a7d63786cb9d29f0bc4",
+            "title": "Leveraging Observations in Bandits: Between Risks and Benefits",
+            "url": "https://www.semanticscholar.org/paper/a9a0efc15f6dc849b4717a7d63786cb9d29f0bc4",
+            "venue": "AAAI",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2108560159",
+                    "name": "Jin Joo Lee"
+                },
+                {
+                    "authorId": "145757665",
+                    "name": "Fei Sha"
+                },
+                {
+                    "authorId": "1711777",
+                    "name": "C. Breazeal"
+                }
+            ],
+            "doi": "10.1109/HRI.2019.8673023",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "69e43f0b8c50c63d0429037bdb2c1ec11b1233b6",
+            "title": "A Bayesian Theory of Mind Approach to Nonverbal Communication",
+            "url": "https://www.semanticscholar.org/paper/69e43f0b8c50c63d0429037bdb2c1ec11b1233b6",
+            "venue": "2019 14th ACM/IEEE International Conference on Human-Robot Interaction (HRI)",
+            "year": 2019
+        },
+        {
+            "arxivId": "1810.11556",
+            "authors": [
+                {
+                    "authorId": "3201172",
+                    "name": "Yuhang Che"
+                },
+                {
+                    "authorId": "1713767",
+                    "name": "A. Okamura"
+                },
+                {
+                    "authorId": "1779671",
+                    "name": "Dorsa Sadigh"
+                }
+            ],
+            "doi": "10.1109/TRO.2020.2964824",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "035dae889a61dbbc911d3b7b54e06af6c4059c58",
+            "title": "Efficient and Trustworthy Social Navigation via Explicit and Implicit Robot\u2013Human Communication",
+            "url": "https://www.semanticscholar.org/paper/035dae889a61dbbc911d3b7b54e06af6c4059c58",
+            "venue": "IEEE Transactions on Robotics",
+            "year": 2018
+        },
+        {
+            "arxivId": "1810.04468",
+            "authors": [
+                {
+                    "authorId": "2064565872",
+                    "name": "David Mart\u00ednez-Rubio"
+                },
+                {
+                    "authorId": "2080218",
+                    "name": "Varun Kanade"
+                },
+                {
+                    "authorId": "2494252",
+                    "name": "Patrick Rebeschini"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "de747b1fd6967479f9d5cd2c3e3ebeeee3b68cbf",
+            "title": "Decentralized Cooperative Stochastic Multi-armed Bandits",
+            "url": "https://www.semanticscholar.org/paper/de747b1fd6967479f9d5cd2c3e3ebeeee3b68cbf",
+            "venue": "ArXiv",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1840894",
+                    "name": "T. Hellstr\u00f6m"
+                },
+                {
+                    "authorId": "15618794",
+                    "name": "Suna Bensch"
+                }
+            ],
+            "doi": "10.1515/pjbr-2018-0009",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "14c86681aa1d24feffe2c8735efd5c83d595b99b",
+            "title": "Understandable robots - What, Why, and How",
+            "url": "https://www.semanticscholar.org/paper/14c86681aa1d24feffe2c8735efd5c83d595b99b",
+            "venue": "Paladyn J. Behav. Robotics",
+            "year": 2018
+        },
+        {
+            "arxivId": "1806.06464",
+            "authors": [
+                {
+                    "authorId": "1954250",
+                    "name": "Aditya Grover"
+                },
+                {
+                    "authorId": "1401178735",
+                    "name": "Maruan Al-Shedivat"
+                },
+                {
+                    "authorId": "38303675",
+                    "name": "Jayesh K. Gupta"
+                },
+                {
+                    "authorId": "3080409",
+                    "name": "Yuri Burda"
+                },
+                {
+                    "authorId": "144632352",
+                    "name": "Harrison Edwards"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "55837737b08af4c51066f019848c1ab2263f993b",
+            "title": "Learning Policy Representations in Multiagent Systems",
+            "url": "https://www.semanticscholar.org/paper/55837737b08af4c51066f019848c1ab2263f993b",
+            "venue": "ICML",
+            "year": 2018
+        },
+        {
+            "arxivId": "1709.04326",
+            "authors": [
+                {
+                    "authorId": "145356667",
+                    "name": "Jakob N. Foerster"
+                },
+                {
+                    "authorId": "2896187",
+                    "name": "Richard Y. Chen"
+                },
+                {
+                    "authorId": "1401178735",
+                    "name": "Maruan Al-Shedivat"
+                },
+                {
+                    "authorId": "1766767",
+                    "name": "Shimon Whiteson"
+                },
+                {
+                    "authorId": "1689992",
+                    "name": "P. Abbeel"
+                },
+                {
+                    "authorId": "2080746",
+                    "name": "Igor Mordatch"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "1d92cf3f0c86bfde10238fcaf31182a245bc920b",
+            "title": "Learning with Opponent-Learning Awareness",
+            "url": "https://www.semanticscholar.org/paper/1d92cf3f0c86bfde10238fcaf31182a245bc920b",
+            "venue": "AAMAS",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "21161348",
+                    "name": "Chris L. Baker"
+                },
+                {
+                    "authorId": "1402022761",
+                    "name": "J. Jara-Ettinger"
+                },
+                {
+                    "authorId": "2276622",
+                    "name": "R. Saxe"
+                },
+                {
+                    "authorId": "1763295",
+                    "name": "J. Tenenbaum"
+                }
+            ],
+            "doi": "10.1038/s41562-017-0064",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b61cd0fe9d33647cc25f8421f6c8e556b610ed56",
+            "title": "Rational quantitative attribution of beliefs, desires and percepts in human mentalizing",
+            "url": "https://www.semanticscholar.org/paper/b61cd0fe9d33647cc25f8421f6c8e556b610ed56",
+            "venue": "Nature Human Behaviour",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1720728",
+                    "name": "Shahin Shahrampour"
+                },
+                {
+                    "authorId": "1680046",
+                    "name": "A. Rakhlin"
+                },
+                {
+                    "authorId": "1688304",
+                    "name": "A. Jadbabaie"
+                }
+            ],
+            "doi": "10.1109/ICASSP.2017.7952664",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "1e9c4086e79a348aceffeee11b0dea48d04d2678",
+            "title": "Multi-armed bandits in multi-agent networks",
+            "url": "https://www.semanticscholar.org/paper/1e9c4086e79a348aceffeee11b0dea48d04d2678",
+            "venue": "2017 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+            "year": 2017
+        },
+        {
+            "arxivId": "1608.01494",
+            "authors": [
+                {
+                    "authorId": "19224912",
+                    "name": "T. W. U. Madhushani"
+                },
+                {
+                    "authorId": "2352717",
+                    "name": "D. H. S. Maithripala"
+                },
+                {
+                    "authorId": "3032386",
+                    "name": "J. Wijayakulasooriya"
+                },
+                {
+                    "authorId": "40295319",
+                    "name": "J. Berg"
+                }
+            ],
+            "doi": "10.23919/ECC.2019.8796036",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e4d6d8dc6aff4fc170ce19872f886fa47e26dc2a",
+            "title": "Heterogeneous Stochastic Interactions for Multiple Agents in a Multi-armed Bandit Problem",
+            "url": "https://www.semanticscholar.org/paper/e4d6d8dc6aff4fc170ce19872f886fa47e26dc2a",
+            "venue": "2019 18th European Control Conference (ECC)",
+            "year": 2016
+        },
+        {
+            "arxivId": "1606.00911",
+            "authors": [
+                {
+                    "authorId": "3087234",
+                    "name": "Peter Landgren"
+                },
+                {
+                    "authorId": "2726798",
+                    "name": "Vaibhav Srivastava"
+                },
+                {
+                    "authorId": "3301461",
+                    "name": "Naomi Ehrich Leonard"
+                }
+            ],
+            "doi": "10.1109/CDC.2016.7798264",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "4078bf080c3aed975a83557157ad9843129e4cb3",
+            "title": "Distributed cooperative decision-making in multiarmed bandits: Frequentist and Bayesian algorithms",
+            "url": "https://www.semanticscholar.org/paper/4078bf080c3aed975a83557157ad9843129e4cb3",
+            "venue": "2016 IEEE 55th Conference on Decision and Control (CDC)",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3383285",
+                    "name": "S. Devin"
+                },
+                {
+                    "authorId": "145443442",
+                    "name": "R. Alami"
+                }
+            ],
+            "doi": "10.1109/HRI.2016.7451768",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d073e81dde25d0bdcab4044a3f119a36f1bb7206",
+            "title": "An implemented theory of mind to improve human-robot shared plans execution",
+            "url": "https://www.semanticscholar.org/paper/d073e81dde25d0bdcab4044a3f119a36f1bb7206",
+            "venue": "2016 11th ACM/IEEE International Conference on Human-Robot Interaction (HRI)",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145021599",
+                    "name": "Samuel Barrett"
+                },
+                {
+                    "authorId": "3088048",
+                    "name": "Noam Agmon"
+                },
+                {
+                    "authorId": "35388034",
+                    "name": "Noam Hazon"
+                },
+                {
+                    "authorId": "1691597",
+                    "name": "Sarit Kraus"
+                },
+                {
+                    "authorId": "144848112",
+                    "name": "P. Stone"
+                }
+            ],
+            "doi": "10.3233/978-1-61499-419-0-45",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b36b471fc6f88cb6b749aa073bbfedfee8377e4c",
+            "title": "Communicating with Unknown Teammates",
+            "url": "https://www.semanticscholar.org/paper/b36b471fc6f88cb6b749aa073bbfedfee8377e4c",
+            "venue": "ECAI",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1711777",
+                    "name": "C. Breazeal"
+                },
+                {
+                    "authorId": "34704262",
+                    "name": "Cory D. Kidd"
+                },
+                {
+                    "authorId": "1682788",
+                    "name": "A. Thomaz"
+                },
+                {
+                    "authorId": "145666784",
+                    "name": "Guy Hoffman"
+                },
+                {
+                    "authorId": "40090748",
+                    "name": "Matt Berlin"
+                }
+            ],
+            "doi": "10.1109/IROS.2005.1545011",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "4c3d032648939b63bcca1794119115d623fdc376",
+            "title": "Effects of nonverbal communication on efficiency and robustness in human-robot teamwork",
+            "url": "https://www.semanticscholar.org/paper/4c3d032648939b63bcca1794119115d623fdc376",
+            "venue": "2005 IEEE/RSJ International Conference on Intelligent Robots and Systems",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2251053555",
+                    "name": "Herbert A. Simon"
+                }
+            ],
+            "doi": "10.1037//0003-066X.50.7.507",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d0446e45a113f9405dd9b1b985afdd8a33792eef",
+            "title": "The information-processing theory of mind.",
+            "url": "https://www.semanticscholar.org/paper/d0446e45a113f9405dd9b1b985afdd8a33792eef",
+            "venue": "The American psychologist",
+            "year": 1995
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "35212077",
+                    "name": "M. Wise"
+                },
+                {
+                    "authorId": "2054785272",
+                    "name": "Michael Ferguson"
+                },
+                {
+                    "authorId": "2065225221",
+                    "name": "Daniel King"
+                },
+                {
+                    "authorId": "90225552",
+                    "name": "Eric Diehr"
+                },
+                {
+                    "authorId": "90441491",
+                    "name": "David Dymesich"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "569cd8dd665f78ae021b715adea6dd30db5e499d",
+            "title": "Fetch & Freight : Standard Platforms for Service Robot Applications",
+            "url": "https://www.semanticscholar.org/paper/569cd8dd665f78ae021b715adea6dd30db5e499d",
+            "venue": "",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2444841",
+                    "name": "Shunan Zhang"
+                },
+                {
+                    "authorId": "1867276",
+                    "name": "Angela J. Yu"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "48be8f355e3333774f6b7a0d86211fef8883b798",
+            "title": "Cheap but Clever: Human Active Learning in a Bandit Setting",
+            "url": "https://www.semanticscholar.org/paper/48be8f355e3333774f6b7a0d86211fef8883b798",
+            "venue": "CogSci",
+            "year": 2013
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Mathematics",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Partner-Aware Algorithms in Decentralized Cooperative Bandit Teams",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/a0ad7fd42bb4dc9489a4dcf6eddaee8baf4d5f06",
+    "venue": "AAAI Conference on Artificial Intelligence",
+    "year": 2021
+}

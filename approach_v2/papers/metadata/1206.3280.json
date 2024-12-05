@@ -1,0 +1,1240 @@
+{
+    "abstract": "We present a generative model for representing and reasoning about the relationships among events in continuous time. We apply the model to the domain of networked and distributed computing environments where we fit the parameters of the model from timestamp observations, and then use hypothesis testing to discover dependencies between the events and changes in behavior for monitoring and diagnosis. After introducing the model, we present an EM algorithm for fitting the parameters and then present the hypothesis testing approach for both dependence discovery and change-point detection. We validate the approach for both tasks using real data from a trace of network events at Microsoft Research Cambridge. Finally, we formalize the relationship between the proposed model and the noisy-or gate for cases when time can be discretized.",
+    "arxivId": "1206.3280",
+    "authors": [
+        {
+            "authorId": "2755594",
+            "name": "A. Simma",
+            "url": "https://www.semanticscholar.org/author/2755594"
+        },
+        {
+            "authorId": "1770007",
+            "name": "M. Goldszmidt",
+            "url": "https://www.semanticscholar.org/author/1770007"
+        },
+        {
+            "authorId": "1698422",
+            "name": "J. MacCormick",
+            "url": "https://www.semanticscholar.org/author/1698422"
+        },
+        {
+            "authorId": "144758007",
+            "name": "P. Barham",
+            "url": "https://www.semanticscholar.org/author/144758007"
+        },
+        {
+            "authorId": "144247681",
+            "name": "Richard Black",
+            "url": "https://www.semanticscholar.org/author/144247681"
+        },
+        {
+            "authorId": "36224817",
+            "name": "R. Isaacs",
+            "url": "https://www.semanticscholar.org/author/36224817"
+        },
+        {
+            "authorId": "1679929",
+            "name": "R. Mortier",
+            "url": "https://www.semanticscholar.org/author/1679929"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3237019",
+                    "name": "D. Bhattacharjya"
+                },
+                {
+                    "authorId": "1796265659",
+                    "name": "Tian Gao"
+                },
+                {
+                    "authorId": "1762215",
+                    "name": "D. Subramanian"
+                }
+            ],
+            "doi": "10.1609/aaai.v35i8.16835",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "83a40aa5e96d6301481599354ccc01a6823c8691",
+            "title": "Ordinal Historical Dependence in Graphical Event Models with Tree Representations",
+            "url": "https://www.semanticscholar.org/paper/83a40aa5e96d6301481599354ccc01a6823c8691",
+            "venue": "AAAI",
+            "year": 2021
+        },
+        {
+            "arxivId": "2007.15847",
+            "authors": [
+                {
+                    "authorId": "40803596",
+                    "name": "Syed Hasib Akhter Faruqui"
+                },
+                {
+                    "authorId": "2182218",
+                    "name": "A. Alaeddini"
+                },
+                {
+                    "authorId": "2152448740",
+                    "name": "Jing Wang"
+                },
+                {
+                    "authorId": "144799205",
+                    "name": "C. Jaramillo"
+                }
+            ],
+            "doi": "10.1109/ACCESS.2021.3122912",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "67dcc74293730124b4e339b97205c0b310b4d354",
+            "title": "A Functional Model for Structure Learning and Parameter Estimation in Continuous Time Bayesian Network: An Application in Identifying Patterns of Multiple Chronic Conditions",
+            "url": "https://www.semanticscholar.org/paper/67dcc74293730124b4e339b97205c0b310b4d354",
+            "venue": "IEEE Access",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1410216817",
+                    "name": "R. D. Ahmed"
+                },
+                {
+                    "authorId": "1808153",
+                    "name": "G. Dalk\u0131l\u0131\u00e7"
+                },
+                {
+                    "authorId": "30738764",
+                    "name": "Y. M. Erten"
+                }
+            ],
+            "doi": "10.1016/j.eswa.2019.112947",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "a08836f0c19b9c44b1e1e6d21e4e4ff950d80e9a",
+            "title": "DGStream: High quality and efficiency stream clustering algorithm",
+            "url": "https://www.semanticscholar.org/paper/a08836f0c19b9c44b1e1e6d21e4e4ff950d80e9a",
+            "venue": "Expert Syst. Appl.",
+            "year": 2020
+        },
+        {
+            "arxivId": "2002.09575",
+            "authors": [
+                {
+                    "authorId": "1796265659",
+                    "name": "Tian Gao"
+                },
+                {
+                    "authorId": "1762215",
+                    "name": "D. Subramanian"
+                },
+                {
+                    "authorId": "145455859",
+                    "name": "Karthikeyan Shanmugam"
+                },
+                {
+                    "authorId": "3237019",
+                    "name": "D. Bhattacharjya"
+                },
+                {
+                    "authorId": "143999398",
+                    "name": "Nicholas Mattei"
+                }
+            ],
+            "doi": "10.1609/AAAI.V34I04.5810",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8b192503f119a0b0cc30ef5179a00f231c20fb93",
+            "title": "A Multi-Channel Neural Graphical Event Model with Negative Evidence",
+            "url": "https://www.semanticscholar.org/paper/8b192503f119a0b0cc30ef5179a00f231c20fb93",
+            "venue": "AAAI",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145970245",
+                    "name": "K. Islam"
+                },
+                {
+                    "authorId": "3564227",
+                    "name": "C. Shelton"
+                },
+                {
+                    "authorId": "3089190",
+                    "name": "Juan I. Casse"
+                },
+                {
+                    "authorId": "144616817",
+                    "name": "R. Wetzel"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "2ca3790a32b8108e657a846bc43f3de007007ad1",
+            "title": "Marked Point Process for Severity of Illness Assessment",
+            "url": "https://www.semanticscholar.org/paper/2ca3790a32b8108e657a846bc43f3de007007ad1",
+            "venue": "MLHC",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2057098",
+                    "name": "James Goulding"
+                },
+                {
+                    "authorId": "144197412",
+                    "name": "S. Preston"
+                },
+                {
+                    "authorId": "2219644941",
+                    "name": "Gavin Smith"
+                }
+            ],
+            "doi": "10.1109/ICDM.2016.0027",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "3175b449977dd6dab96b6857081a4c8b9c711517",
+            "title": "Event Series Prediction via Non-Homogeneous Poisson Process Modelling",
+            "url": "https://www.semanticscholar.org/paper/3175b449977dd6dab96b6857081a4c8b9c711517",
+            "venue": "2016 IEEE 16th International Conference on Data Mining (ICDM)",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2406477",
+                    "name": "Daniele Codecasa"
+                },
+                {
+                    "authorId": "50641180",
+                    "name": "Fabio Stella"
+                }
+            ],
+            "doi": "10.1007/s10844-014-0345-0",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "7404e4aef9c7c7225514649243f127a286ac57d2",
+            "title": "Classification and clustering with continuous time Bayesian network models",
+            "url": "https://www.semanticscholar.org/paper/7404e4aef9c7c7225514649243f127a286ac57d2",
+            "venue": "Journal of Intelligent Information Systems",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2056660595",
+                    "name": "S. Villa"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "149a2d5869b219dcdf733fe39dd26dc81deabcab",
+            "title": "Continuous Time Bayesian Networks for Reasoning and Decision Making in Finance",
+            "url": "https://www.semanticscholar.org/paper/149a2d5869b219dcdf733fe39dd26dc81deabcab",
+            "venue": "",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2406477",
+                    "name": "Daniele Codecasa"
+                },
+                {
+                    "authorId": "50641180",
+                    "name": "Fabio Stella"
+                }
+            ],
+            "doi": "10.1016/J.IJAR.2014.05.005",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a108961f8de0c47a1146e2853a076aa5c4055674",
+            "title": "Learning continuous time Bayesian network classifiers",
+            "url": "https://www.semanticscholar.org/paper/a108961f8de0c47a1146e2853a076aa5c4055674",
+            "venue": "Int. J. Approx. Reason.",
+            "year": 2014
+        },
+        {
+            "arxivId": "1404.4893",
+            "authors": [
+                {
+                    "authorId": "2406477",
+                    "name": "Daniele Codecasa"
+                },
+                {
+                    "authorId": "50641180",
+                    "name": "Fabio Stella"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "41b4cd4144cb34bd1e0163d33ba915c6f2e1d236",
+            "title": "CTBNCToolkit: Continuous Time Bayesian Network Classifier Toolkit",
+            "url": "https://www.semanticscholar.org/paper/41b4cd4144cb34bd1e0163d33ba915c6f2e1d236",
+            "venue": "ArXiv",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2406477",
+                    "name": "Daniele Codecasa"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "66ee2ebd451157640f8224eedfae2c2230c6d49c",
+            "title": "Continuous time bayesian network classifiers",
+            "url": "https://www.semanticscholar.org/paper/66ee2ebd451157640f8224eedfae2c2230c6d49c",
+            "venue": "",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2406477",
+                    "name": "Daniele Codecasa"
+                },
+                {
+                    "authorId": "50641180",
+                    "name": "Fabio Stella"
+                }
+            ],
+            "doi": "10.1007/978-3-319-08407-7_3",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "be0ecf23699ae53258885a6d5ba85661b65e6bac",
+            "title": "A Classification Based Scoring Function for Continuous Time Bayesian Network Classifiers",
+            "url": "https://www.semanticscholar.org/paper/be0ecf23699ae53258885a6d5ba85661b65e6bac",
+            "venue": "NFMCP",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144729897",
+                    "name": "Ankur P. Parikh"
+                },
+                {
+                    "authorId": "2801698",
+                    "name": "A. Gunawardana"
+                },
+                {
+                    "authorId": "50004012",
+                    "name": "Christopher Meek"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5e231af431b025585058a363ad98fc7713443fbe",
+            "title": "Conjoint Modeling of Temporal Dependencies in Event Streams",
+            "url": "https://www.semanticscholar.org/paper/5e231af431b025585058a363ad98fc7713443fbe",
+            "venue": "BMA",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3069505",
+                    "name": "Tianxi Li"
+                },
+                {
+                    "authorId": "1681967",
+                    "name": "B. Kveton"
+                },
+                {
+                    "authorId": "1887625",
+                    "name": "Yuehua Wu"
+                },
+                {
+                    "authorId": "38927998",
+                    "name": "Ashwin Kashyap"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "25196557366910264d3a9ba30b07a23813e50dee",
+            "title": "Incorporating Metadata into Dynamic Topic Analysis",
+            "url": "https://www.semanticscholar.org/paper/25196557366910264d3a9ba30b07a23813e50dee",
+            "venue": "BMA",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2801698",
+                    "name": "A. Gunawardana"
+                },
+                {
+                    "authorId": "50004012",
+                    "name": "Christopher Meek"
+                },
+                {
+                    "authorId": "2662187",
+                    "name": "Puyang Xu"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "6f3bc0dcc202c06ee5c6ea060b463871e29c8b1c",
+            "title": "A Model for Temporal Dependencies in Event Streams",
+            "url": "https://www.semanticscholar.org/paper/6f3bc0dcc202c06ee5c6ea060b463871e29c8b1c",
+            "venue": "NIPS",
+            "year": 2011
+        },
+        {
+            "arxivId": "1401.3851",
+            "authors": [
+                {
+                    "authorId": "2212230074",
+                    "name": "Jing Xu"
+                },
+                {
+                    "authorId": "3564227",
+                    "name": "C. Shelton"
+                }
+            ],
+            "doi": "10.1613/jair.3050",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "5a882d567f0143f92fff23db35828e50e9ac42b5",
+            "title": "Intrusion Detection using Continuous Time Bayesian Networks",
+            "url": "https://www.semanticscholar.org/paper/5a882d567f0143f92fff23db35828e50e9ac42b5",
+            "venue": "J. Artif. Intell. Res.",
+            "year": 2010
+        },
+        {
+            "arxivId": "1203.3516",
+            "authors": [
+                {
+                    "authorId": "2755594",
+                    "name": "A. Simma"
+                },
+                {
+                    "authorId": "1694621",
+                    "name": "Michael I. Jordan"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "9d400c5652bf1295ab7bea39ccc15864827a5fab",
+            "title": "Modeling Events with Cascades of Poisson Processes",
+            "url": "https://www.semanticscholar.org/paper/9d400c5652bf1295ab7bea39ccc15864827a5fab",
+            "venue": "UAI",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1403952178",
+                    "name": "T. El-Hay"
+                },
+                {
+                    "authorId": "40621424",
+                    "name": "Ido Cohn"
+                },
+                {
+                    "authorId": "50785579",
+                    "name": "N. Friedman"
+                },
+                {
+                    "authorId": "8371031",
+                    "name": "R. Kupferman"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "32d09643d6727399c1ed6f3930d23167e1f2989f",
+            "title": "Continuous-Time Belief Propagation",
+            "url": "https://www.semanticscholar.org/paper/32d09643d6727399c1ed6f3930d23167e1f2989f",
+            "venue": "ICML",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "4648762",
+                    "name": "Jian-Guang Lou"
+                },
+                {
+                    "authorId": "2113771309",
+                    "name": "Qiang Fu"
+                },
+                {
+                    "authorId": "40349008",
+                    "name": "Yi Wang"
+                },
+                {
+                    "authorId": "3893083",
+                    "name": "Jiang Li"
+                }
+            ],
+            "doi": "10.1145/1740390.1740411",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "4ac918f07ed61524b2644ce8436530b5b9da27b5",
+            "title": "Mining dependency in distributed systems through unstructured logs analysis",
+            "url": "https://www.semanticscholar.org/paper/4ac918f07ed61524b2644ce8436530b5b9da27b5",
+            "venue": "OPSR",
+            "year": 2010
+        },
+        {
+            "arxivId": "1205.2655",
+            "authors": [
+                {
+                    "authorId": "40621424",
+                    "name": "Ido Cohn"
+                },
+                {
+                    "authorId": "1403952178",
+                    "name": "T. El-Hay"
+                },
+                {
+                    "authorId": "50785579",
+                    "name": "N. Friedman"
+                },
+                {
+                    "authorId": "8371031",
+                    "name": "R. Kupferman"
+                }
+            ],
+            "doi": "10.5555/1756006.1953022",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9f7dbdfb2fee4862a8f73733f0f52def44900ad1",
+            "title": "Mean Field Variational Approximation for Continuous-Time Bayesian Networks",
+            "url": "https://www.semanticscholar.org/paper/9f7dbdfb2fee4862a8f73733f0f52def44900ad1",
+            "venue": "J. Mach. Learn. Res.",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "47112093",
+                    "name": "Yuan Yu"
+                },
+                {
+                    "authorId": "2090818",
+                    "name": "M. Isard"
+                },
+                {
+                    "authorId": "1780761",
+                    "name": "D. Fetterly"
+                },
+                {
+                    "authorId": "1707533",
+                    "name": "M. Budiu"
+                },
+                {
+                    "authorId": "1758110",
+                    "name": "\u00da. Erlingsson"
+                },
+                {
+                    "authorId": "37037265",
+                    "name": "P. Gunda"
+                },
+                {
+                    "authorId": "145369739",
+                    "name": "J. Currey"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "09c5293b647fca40fde28ac6c38737f07e873e41",
+            "title": "DryadLINQ: A System for General-Purpose Distributed Data-Parallel Computing Using a High-Level Language",
+            "url": "https://www.semanticscholar.org/paper/09c5293b647fca40fde28ac6c38737f07e873e41",
+            "venue": "OSDI",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144758007",
+                    "name": "P. Barham"
+                },
+                {
+                    "authorId": "144247681",
+                    "name": "Richard Black"
+                },
+                {
+                    "authorId": "1770007",
+                    "name": "M. Goldszmidt"
+                },
+                {
+                    "authorId": "36224817",
+                    "name": "R. Isaacs"
+                },
+                {
+                    "authorId": "1698422",
+                    "name": "J. MacCormick"
+                },
+                {
+                    "authorId": "1679929",
+                    "name": "R. Mortier"
+                },
+                {
+                    "authorId": "2755594",
+                    "name": "A. Simma"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "4dab512d77b9db9cffab3ec5c9ab9ce215bad8d2",
+            "title": "Constellation: automated discovery of service and host dependencies in networked systems",
+            "url": "https://www.semanticscholar.org/paper/4dab512d77b9db9cffab3ec5c9ab9ce215bad8d2",
+            "venue": "",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3237019",
+                    "name": "D. Bhattacharjya"
+                },
+                {
+                    "authorId": "1762215",
+                    "name": "D. Subramanian"
+                },
+                {
+                    "authorId": "1796265659",
+                    "name": "Tian Gao"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a0b892a1c73853d456aa3bc8f700751b6f1df6af",
+            "title": "Proximal Graphical Event Models",
+            "url": "https://www.semanticscholar.org/paper/a0b892a1c73853d456aa3bc8f700751b6f1df6af",
+            "venue": "NeurIPS",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2752454",
+                    "name": "M. Pacer"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f2d10710d15e48b8c8b84073fbab93a92ff02793",
+            "title": "Mind as Theory Engine: Causation, Explanation and Time",
+            "url": "https://www.semanticscholar.org/paper/f2d10710d15e48b8c8b84073fbab93a92ff02793",
+            "venue": "",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "50641180",
+                    "name": "Fabio Stella"
+                },
+                {
+                    "authorId": "2406477",
+                    "name": "Daniele Codecasa"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "bd2afbef667369f52f2c57ec8e9f85470be85521",
+            "title": "Conditional Log-Likelihood for Continuous Time Bayesian Network Classifiers",
+            "url": "https://www.semanticscholar.org/paper/bd2afbef667369f52f2c57ec8e9f85470be85521",
+            "venue": "",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2752454",
+                    "name": "M. Pacer"
+                },
+                {
+                    "authorId": "1799860",
+                    "name": "T. Griffiths"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "b3e69a7c5f91bd25de802a0f406a4a8a26ad02b3",
+            "title": "Elements of a rational framework for continuous-time causal induction",
+            "url": "https://www.semanticscholar.org/paper/b3e69a7c5f91bd25de802a0f406a4a8a26ad02b3",
+            "venue": "CogSci",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1403952178",
+                    "name": "T. El-Hay"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "734ab001b099da16276a4bf1dbf283e56f8a5a14",
+            "title": "Reasoning about structured stochastic systems in continuous-time (\u05e2\u05dd \u05ea\u05e7\u05e6\u05d9\u05e8 \u05d1\u05e2\u05d1\u05e8\u05d9\u05ea \u05d5\u05e9\u05e2\u05e8 \u05e0\u05d5\u05e1\u05e3: \u05d4\u05e1\u05e7\u05d4 \u05d4\u05e1\u05ea\u05d1\u05e8\u05d5\u05ea\u05d9\u05ea \u05d1\u05de\u05e2\u05e8\u05db\u05d5\u05ea \u05d3\u05d9\u05e0\u05de\u05d9\u05d5\u05ea \u05de\u05d5\u05e8\u05db\u05d1\u05d5\u05ea \u05d1\u05d6\u05de\u05df-\u05e8\u05e6\u05d9\u05e3.; \u05e9\u05e2\u05e8 \u05e0\u05d5\u05e1\u05e3 \u05d1\u05e2\u05d1\u05e8\u05d9\u05ea: \u05d4\u05e1\u05e7\u05d4 \u05d4\u05e1\u05ea\u05d1\u05e8\u05d5\u05ea\u05d9\u05ea \u05d1\u05de\u05e2\u05e8\u05db\u05d5\u05ea \u05d3\u05d9\u05e0\u05de\u05d9\u05d5\u05ea \u05de\u05d5\u05e8\u05db\u05d1\u05d5\u05ea \u05d1\u05d6\u05de\u05df-\u05e8\u05e6\u05d9\u05e3.)",
+            "url": "https://www.semanticscholar.org/paper/734ab001b099da16276a4bf1dbf283e56f8a5a14",
+            "venue": "",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2755594",
+                    "name": "A. Simma"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "a6adaa7751256f1be2b4c2264f3eb23d6ef93cd8",
+            "title": "Modeling Events in Time using Cascades of Poisson Processes",
+            "url": "https://www.semanticscholar.org/paper/a6adaa7751256f1be2b4c2264f3eb23d6ef93cd8",
+            "venue": "",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2755594",
+                    "name": "A. Simma"
+                },
+                {
+                    "authorId": "1770007",
+                    "name": "M. Goldszmidt"
+                },
+                {
+                    "authorId": "1698422",
+                    "name": "J. MacCormick"
+                },
+                {
+                    "authorId": "144758007",
+                    "name": "P. Barham"
+                },
+                {
+                    "authorId": "144247681",
+                    "name": "Richard Black"
+                },
+                {
+                    "authorId": "36224817",
+                    "name": "R. Isaacs"
+                },
+                {
+                    "authorId": "1679929",
+                    "name": "R. Mortier"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e6e545305ced1597e80a67e04a02b0a00da418ea",
+            "title": "Using machine learning to discover service and host dependencies in networked systems",
+            "url": "https://www.semanticscholar.org/paper/e6e545305ced1597e80a67e04a02b0a00da418ea",
+            "venue": "",
+            "year": 2008
+        }
+    ],
+    "corpusId": 3034743,
+    "doi": null,
+    "fieldsOfStudy": [
+        "Computer Science",
+        "Mathematics"
+    ],
+    "influentialCitationCount": 3,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 29,
+    "numCiting": 19,
+    "paperId": "c231bc47bd74568de169c19942bd9fad427b9fb9",
+    "references": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144758007",
+                    "name": "P. Barham"
+                },
+                {
+                    "authorId": "144247681",
+                    "name": "Richard Black"
+                },
+                {
+                    "authorId": "1770007",
+                    "name": "M. Goldszmidt"
+                },
+                {
+                    "authorId": "36224817",
+                    "name": "R. Isaacs"
+                },
+                {
+                    "authorId": "1698422",
+                    "name": "J. MacCormick"
+                },
+                {
+                    "authorId": "1679929",
+                    "name": "R. Mortier"
+                },
+                {
+                    "authorId": "2755594",
+                    "name": "A. Simma"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "4dab512d77b9db9cffab3ec5c9ab9ce215bad8d2",
+            "title": "Constellation: automated discovery of service and host dependencies in networked systems",
+            "url": "https://www.semanticscholar.org/paper/4dab512d77b9db9cffab3ec5c9ab9ce215bad8d2",
+            "venue": "",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2292948",
+                    "name": "P. Bahl"
+                },
+                {
+                    "authorId": "39403445",
+                    "name": "Ranveer Chandra"
+                },
+                {
+                    "authorId": "34820574",
+                    "name": "A. Greenberg"
+                },
+                {
+                    "authorId": "1741860",
+                    "name": "Srikanth Kandula"
+                },
+                {
+                    "authorId": "6103581",
+                    "name": "D. Maltz"
+                },
+                {
+                    "authorId": "2108843609",
+                    "name": "Ming Zhang"
+                }
+            ],
+            "doi": "10.1145/1282380.1282383",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a27290d9cd538517d2bb8193f1c38bb08ee006c8",
+            "title": "Towards highly reliable enterprise network services via inference of multi-level dependencies",
+            "url": "https://www.semanticscholar.org/paper/a27290d9cd538517d2bb8193f1c38bb08ee006c8",
+            "venue": "SIGCOMM '07",
+            "year": 2007
+        },
+        {
+            "arxivId": "1206.5269",
+            "authors": [
+                {
+                    "authorId": "1760519",
+                    "name": "J. Listgarten"
+                },
+                {
+                    "authorId": "48099028",
+                    "name": "D. Heckerman"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "162733f1f7f2af787c87e635144dcae3f38e2c14",
+            "title": "Determining the Number of Non-Spurious Arcs in a Learned DAG Model: Investigation of a Bayesian and a Frequentist Approach",
+            "url": "https://www.semanticscholar.org/paper/162733f1f7f2af787c87e635144dcae3f38e2c14",
+            "venue": "UAI",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1733999",
+                    "name": "L. Wasserman"
+                }
+            ],
+            "doi": "10.1007/978-0-387-21736-9",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "ca78cb7c1d841d6bde6cd54a6b50ff9157b0cd63",
+            "title": "All of Statistics",
+            "url": "https://www.semanticscholar.org/paper/ca78cb7c1d841d6bde6cd54a6b50ff9157b0cd63",
+            "venue": "",
+            "year": 2004
+        },
+        {
+            "arxivId": "1212.2498",
+            "authors": [
+                {
+                    "authorId": "2687250",
+                    "name": "Uri Nodelman"
+                },
+                {
+                    "authorId": "3564227",
+                    "name": "C. Shelton"
+                },
+                {
+                    "authorId": "1736370",
+                    "name": "D. Koller"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "9c874cfd63d0aab6a47d126dc75ef2dd26344b02",
+            "title": "Learning Continuous Time Bayesian Networks",
+            "url": "https://www.semanticscholar.org/paper/9c874cfd63d0aab6a47d126dc75ef2dd26344b02",
+            "venue": "UAI",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1717327",
+                    "name": "John D. Storey"
+                }
+            ],
+            "doi": "10.1111/1467-9868.00346",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "821c6660965ab4925d49aebffb40fd831b23a3f6",
+            "title": "A direct approach to false discovery rates",
+            "url": "https://www.semanticscholar.org/paper/821c6660965ab4925d49aebffb40fd831b23a3f6",
+            "venue": "",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "50785579",
+                    "name": "N. Friedman"
+                },
+                {
+                    "authorId": "144527211",
+                    "name": "D. Geiger"
+                },
+                {
+                    "authorId": "1770007",
+                    "name": "M. Goldszmidt"
+                }
+            ],
+            "doi": "10.1023/A:1007465528199",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c76ac0a39577760d4aaf6fce98327543ec64a560",
+            "title": "Bayesian Network Classifiers",
+            "url": "https://www.semanticscholar.org/paper/c76ac0a39577760d4aaf6fce98327543ec64a560",
+            "venue": "Machine Learning",
+            "year": 1997
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "48099028",
+                    "name": "D. Heckerman"
+                },
+                {
+                    "authorId": "1778725",
+                    "name": "J. Breese"
+                }
+            ],
+            "doi": "10.1109/3468.541341",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "c801a87e4f48dbe8d988cad384ebeaf24710b3a3",
+            "title": "Causal independence for probability assessment and inference using Bayesian networks",
+            "url": "https://www.semanticscholar.org/paper/c801a87e4f48dbe8d988cad384ebeaf24710b3a3",
+            "venue": "IEEE Trans. Syst. Man Cybern. Part A",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144522912",
+                    "name": "R. Durrett"
+                }
+            ],
+            "doi": "10.2307/2532227",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "aaaae6628c9c33e165e5cd5538b27d9275c24347",
+            "title": "Probability: Theory and Examples",
+            "url": "https://www.semanticscholar.org/paper/aaaae6628c9c33e165e5cd5538b27d9275c24347",
+            "venue": "",
+            "year": 1993
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "46558286",
+                    "name": "S. K. Andersen"
+                }
+            ],
+            "doi": "10.1016/0004-3702(91)90084-W",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "18aa8a0502e717c114312a3ba63dbb76fbcab47c",
+            "title": "Probabilistic reasoning in intelligent systems: Networks of plausible inference",
+            "url": "https://www.semanticscholar.org/paper/18aa8a0502e717c114312a3ba63dbb76fbcab47c",
+            "venue": "",
+            "year": 1991
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "153085314",
+                    "name": "S. Rajaram"
+                },
+                {
+                    "authorId": "1686971",
+                    "name": "T. Graepel"
+                },
+                {
+                    "authorId": "3234984",
+                    "name": "R. Herbrich"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "3dab12dea584d51eb24a37a058cf1ae5f058887d",
+            "title": "Poisson-Networks: A Model for Structured Poisson Processes",
+            "url": "https://www.semanticscholar.org/paper/3dab12dea584d51eb24a37a058cf1ae5f058887d",
+            "venue": "AISTATS",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2285885800",
+                    "name": "Shyamsundar Rajaram"
+                },
+                {
+                    "authorId": "1686971",
+                    "name": "T. Graepel"
+                },
+                {
+                    "authorId": "3234984",
+                    "name": "R. Herbrich"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d1eb70e465bb941b33d5452bba959b0512498398",
+            "title": "Poisson-Networks: A Model for Structured Poisson Processes.",
+            "url": "https://www.semanticscholar.org/paper/d1eb70e465bb941b33d5452bba959b0512498398",
+            "venue": "",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2056417995",
+                    "name": "Kevin P. Murphy"
+                },
+                {
+                    "authorId": "145107462",
+                    "name": "Stuart J. Russell"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5e86e17d83c97dafa3413d1d0dae219bd527ed61",
+            "title": "Dynamic bayesian networks: representation, inference and learning",
+            "url": "https://www.semanticscholar.org/paper/5e86e17d83c97dafa3413d1d0dae219bd527ed61",
+            "venue": "",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1808156",
+                    "name": "Y. Benjamini"
+                },
+                {
+                    "authorId": "48775815",
+                    "name": "Y. Hochberg"
+                }
+            ],
+            "doi": "10.1111/J.2517-6161.1995.TB02031.X",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "fcef2258a963f3d3984a486185ddc4349c43aa35",
+            "title": "Controlling the false discovery rate: a practical and powerful approach to multiple testing",
+            "url": "https://www.semanticscholar.org/paper/fcef2258a963f3d3984a486185ddc4349c43aa35",
+            "venue": "",
+            "year": 1995
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "18478271",
+                    "name": "B. Lindsay"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f5da6507c5a424e52fd6ab79d2dd72a44a947bde",
+            "title": "Mixture models : theory, geometry, and applications",
+            "url": "https://www.semanticscholar.org/paper/f5da6507c5a424e52fd6ab79d2dd72a44a947bde",
+            "venue": "",
+            "year": 1995
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Mathematics",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "CT-NOR: Representing and Reasoning About Events in Continuous Time",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/c231bc47bd74568de169c19942bd9fad427b9fb9",
+    "venue": "Conference on Uncertainty in Artificial Intelligence",
+    "year": 2008
+}

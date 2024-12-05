@@ -1,0 +1,1523 @@
+{
+    "abstract": "In this paper, we study the effects of several Monte Carlo Tree Search (MCTS) modifications for video game testing. Although MCTS modifications are highly studied in game playing, their impacts on finding bugs are blank. We focused on bug finding in our previous study where we introduced synthetic and human-like test goals and we used these test goals in Sarsa and MCTS agents to find bugs. In this study, we extend the MCTS agent with several modifications for game testing purposes. Furthermore, we present a novel tree reuse strategy. We experiment with these modifications by testing them on three testbed games, four levels each, that contain 45 bugs in total. We use the General Video Game Artificial Intelligence (GVG-AI) framework to create the testbed games and collect 427 human tester trajectories using the GVG-AI framework. We analyze the proposed modifications in three parts: we evaluate their effects on bug finding performances of agents, we measure their success under two different computational budgets, and we assess their effects on human-likeness of the human-like agent. Our results show that MCTS modifications improve the bug finding performance of the agents.",
+    "arxivId": "2003.07813",
+    "authors": [
+        {
+            "authorId": "1417347019",
+            "name": "Sinan Ariyurek",
+            "url": "https://www.semanticscholar.org/author/1417347019"
+        },
+        {
+            "authorId": "3172867",
+            "name": "Aysu Betin Can",
+            "url": "https://www.semanticscholar.org/author/3172867"
+        },
+        {
+            "authorId": "1649903407",
+            "name": "Elif S\u00fcrer",
+            "url": "https://www.semanticscholar.org/author/1649903407"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": "2407.18994",
+            "authors": [
+                {
+                    "authorId": "3002611",
+                    "name": "O. Sankur"
+                },
+                {
+                    "authorId": "2313642728",
+                    "name": "Thierry J'eron"
+                },
+                {
+                    "authorId": "2288929316",
+                    "name": "Nicolas Markey"
+                },
+                {
+                    "authorId": "2313642009",
+                    "name": "David Mentr'e"
+                },
+                {
+                    "authorId": "1785398557",
+                    "name": "Reiya Noguchi"
+                }
+            ],
+            "doi": "10.48550/arXiv.2407.18994",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "0b33a727bfcfadd3b9bc2c6d4d06ecd6fa7ec208",
+            "title": "Online Test Synthesis From Requirements: Enhancing Reinforcement Learning with Game Theory",
+            "url": "https://www.semanticscholar.org/paper/0b33a727bfcfadd3b9bc2c6d4d06ecd6fa7ec208",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": "2405.11347",
+            "authors": [
+                {
+                    "authorId": "2302333259",
+                    "name": "Samira Shirzadeh-hajimahmood"
+                },
+                {
+                    "authorId": "2285082731",
+                    "name": "I. Prasetya"
+                },
+                {
+                    "authorId": "1707738",
+                    "name": "M. Dastani"
+                },
+                {
+                    "authorId": "79774420",
+                    "name": "F. Dignum"
+                }
+            ],
+            "doi": "10.48550/arXiv.2405.11347",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "33cd66630912e2fa4159d83a1645350cf0e2ebc8",
+            "title": "Cooperative Multi-agent Approach for Automated Computer Game Testing",
+            "url": "https://www.semanticscholar.org/paper/33cd66630912e2fa4159d83a1645350cf0e2ebc8",
+            "venue": "EMAS",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2282551460",
+                    "name": "Isis Roca"
+                },
+                {
+                    "authorId": "2132439755",
+                    "name": "\u00d3scar Pastor"
+                },
+                {
+                    "authorId": "144927584",
+                    "name": "Carlos Cetina"
+                },
+                {
+                    "authorId": "2501967",
+                    "name": "Lorena Arcega"
+                }
+            ],
+            "doi": "10.1016/j.infsof.2024.107412",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "1f2aca627b5d822e64d6bceacbab1c54cbd0373e",
+            "title": "Co-evolving scenarios and simulated players to locate bugs that arise from the interaction of software models of video games",
+            "url": "https://www.semanticscholar.org/paper/1f2aca627b5d822e64d6bceacbab1c54cbd0373e",
+            "venue": "Inf. Softw. Technol.",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1395096197",
+                    "name": "Rodrigo Casamayor"
+                },
+                {
+                    "authorId": "144927584",
+                    "name": "Carlos Cetina"
+                },
+                {
+                    "authorId": "2248482761",
+                    "name": "\u00d3scar Pastor"
+                },
+                {
+                    "authorId": "144105026",
+                    "name": "Francisca P\u00e9rez"
+                }
+            ],
+            "doi": "10.1109/TSE.2023.3329730",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "237447d4aaca9b3ec7d1e44c26b5f54d3b9ce72c",
+            "title": "Studying the Influence and Distribution of the Human Effort in a Hybrid Fitness Function for Search-Based Model-Driven Engineering",
+            "url": "https://www.semanticscholar.org/paper/237447d4aaca9b3ec7d1e44c26b5f54d3b9ce72c",
+            "venue": "IEEE Transactions on Software Engineering",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2214183193",
+                    "name": "Yikai Sun"
+                },
+                {
+                    "authorId": "2187029756",
+                    "name": "Ming Gao"
+                }
+            ],
+            "doi": "10.1117/12.2686190",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "9dddb10539d982616a9a17f84d611b94ad6849c0",
+            "title": "Overview of Amazon chess\u2019 game playing algorithms",
+            "url": "https://www.semanticscholar.org/paper/9dddb10539d982616a9a17f84d611b94ad6849c0",
+            "venue": "International Conference on Applied Mathematics, Modelling and Intelligent Computing",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2195982496",
+                    "name": "Prof. Sumit S Shevtekar"
+                },
+                {
+                    "authorId": "2195982503",
+                    "name": "Mugdha Malpe"
+                },
+                {
+                    "authorId": "2196014549",
+                    "name": "Mohammed Bhaila"
+                }
+            ],
+            "doi": "10.32628/cseit1228644",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "1fc759689ce7986726b7d09eb93bb90a881acf14",
+            "title": "Analysis of Game Tree Search Algorithms Using Minimax Algorithm and Alpha-Beta Pruning",
+            "url": "https://www.semanticscholar.org/paper/1fc759689ce7986726b7d09eb93bb90a881acf14",
+            "venue": "International Journal of Scientific Research in Computer Science, Engineering and Information Technology",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1395096197",
+                    "name": "Rodrigo Casamayor"
+                },
+                {
+                    "authorId": "2501967",
+                    "name": "Lorena Arcega"
+                },
+                {
+                    "authorId": "144105026",
+                    "name": "Francisca P\u00e9rez"
+                },
+                {
+                    "authorId": "144927584",
+                    "name": "Carlos Cetina"
+                }
+            ],
+            "doi": "10.1145/3550355.3552440",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "796ea677a219bba43a63be4e816bc617bdaf7af5",
+            "title": "Bug localization in game software engineering: evolving simulations to locate bugs in software models of video games",
+            "url": "https://www.semanticscholar.org/paper/796ea677a219bba43a63be4e816bc617bdaf7af5",
+            "venue": "MoDELS",
+            "year": 2022
+        },
+        {
+            "arxivId": "2207.08379",
+            "authors": [
+                {
+                    "authorId": "2158130076",
+                    "name": "Guoqing Liu"
+                },
+                {
+                    "authorId": "2149926952",
+                    "name": "Mengzhang Cai"
+                },
+                {
+                    "authorId": "2004786514",
+                    "name": "Li Zhao"
+                },
+                {
+                    "authorId": "143826491",
+                    "name": "Tao Qin"
+                },
+                {
+                    "authorId": "2176777756",
+                    "name": "Adrian Brown"
+                },
+                {
+                    "authorId": "2176775659",
+                    "name": "Jimmy Bischoff"
+                },
+                {
+                    "authorId": "2110264337",
+                    "name": "Tie-Yan Liu"
+                }
+            ],
+            "doi": "10.1109/CoG51982.2022.9893630",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "27cf94cf9d94319ddf4932e9f369fe62f71afa9c",
+            "title": "Inspector: Pixel-Based Automated Game Testing via Exploration, Detection, and Investigation",
+            "url": "https://www.semanticscholar.org/paper/27cf94cf9d94319ddf4932e9f369fe62f71afa9c",
+            "venue": "2022 IEEE Conference on Games (CoG)",
+            "year": 2022
+        },
+        {
+            "arxivId": "2204.02558",
+            "authors": [
+                {
+                    "authorId": "2151271582",
+                    "name": "Youpeng Zhao"
+                },
+                {
+                    "authorId": "7818567",
+                    "name": "Jian Zhao"
+                },
+                {
+                    "authorId": "2109907241",
+                    "name": "Xu Hu"
+                },
+                {
+                    "authorId": "38272296",
+                    "name": "Wen-gang Zhou"
+                },
+                {
+                    "authorId": "2144406784",
+                    "name": "Houqiang Li"
+                }
+            ],
+            "doi": "10.1109/CoG51982.2022.9893710",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ed04974e0ba9556291d9645221d4905fb0e32838",
+            "title": "DouZero+: Improving DouDizhu AI by Opponent Modeling and Coach-guided Learning",
+            "url": "https://www.semanticscholar.org/paper/ed04974e0ba9556291d9645221d4905fb0e32838",
+            "venue": "2022 IEEE Conference on Games (CoG)",
+            "year": 2022
+        },
+        {
+            "arxivId": "2202.12777",
+            "authors": [
+                {
+                    "authorId": "3404912",
+                    "name": "Cristiano Politowski"
+                },
+                {
+                    "authorId": "1718050",
+                    "name": "Yann-Ga\u00ebl Gu\u00e9h\u00e9neuc"
+                },
+                {
+                    "authorId": "145400424",
+                    "name": "F\u00e1bio Petrillo"
+                }
+            ],
+            "doi": "10.1145/3524494.3527627",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "1f9fbd9313f9ffd225fa28c9a1a62a40483db76a",
+            "title": "Towards Automated Video Game Testing: Still a Long Way to Go",
+            "url": "https://www.semanticscholar.org/paper/1f9fbd9313f9ffd225fa28c9a1a62a40483db76a",
+            "venue": "2022 IEEE/ACM 6th International Workshop on Games and Software Engineering (GAS)",
+            "year": 2022
+        },
+        {
+            "arxivId": "2107.12061",
+            "authors": [
+                {
+                    "authorId": "40960182",
+                    "name": "Shaghayegh Roohi"
+                },
+                {
+                    "authorId": "3027681",
+                    "name": "C. Guckelsberger"
+                },
+                {
+                    "authorId": "1917441330",
+                    "name": "Asko Relas"
+                },
+                {
+                    "authorId": "2868254",
+                    "name": "Henri Heiskanen"
+                },
+                {
+                    "authorId": "2240961",
+                    "name": "Jari Takatalo"
+                },
+                {
+                    "authorId": "35224558",
+                    "name": "Perttu H\u00e4m\u00e4l\u00e4inen"
+                }
+            ],
+            "doi": "10.1145/3474658",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "fae8e7d0aed5843143488d2df872d9b6f98fbd38",
+            "title": "Predicting Game Difficulty and Engagement Using AI Players",
+            "url": "https://www.semanticscholar.org/paper/fae8e7d0aed5843143488d2df872d9b6f98fbd38",
+            "venue": "Proc. ACM Hum. Comput. Interact.",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2022487078",
+                    "name": "Aghyad Albaghajati"
+                },
+                {
+                    "authorId": "145137772",
+                    "name": "Moataz A. Ahmed"
+                }
+            ],
+            "doi": "10.1109/TG.2020.3032796",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "262c36d5e2506a8efe9778b83c0677749a512499",
+            "title": "Video Game Automated Testing Approaches: An Assessment Framework",
+            "url": "https://www.semanticscholar.org/paper/262c36d5e2506a8efe9778b83c0677749a512499",
+            "venue": "IEEE Transactions on Games",
+            "year": 2020
+        },
+        {
+            "arxivId": "2008.12937",
+            "authors": [
+                {
+                    "authorId": "40960182",
+                    "name": "Shaghayegh Roohi"
+                },
+                {
+                    "authorId": "1917441330",
+                    "name": "Asko Relas"
+                },
+                {
+                    "authorId": "2240961",
+                    "name": "Jari Takatalo"
+                },
+                {
+                    "authorId": "2868254",
+                    "name": "Henri Heiskanen"
+                },
+                {
+                    "authorId": "35224558",
+                    "name": "Perttu H\u00e4m\u00e4l\u00e4inen"
+                }
+            ],
+            "doi": "10.1145/3410404.3414235",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7f9b7c3890b18f40cfc1f4bda48149bcbe3b69dc",
+            "title": "Predicting Game Difficulty and Churn Without Players",
+            "url": "https://www.semanticscholar.org/paper/7f9b7c3890b18f40cfc1f4bda48149bcbe3b69dc",
+            "venue": "CHI PLAY",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2146851807",
+                    "name": "S. Agarwal"
+                },
+                {
+                    "authorId": "144486330",
+                    "name": "C. Herrmann"
+                },
+                {
+                    "authorId": "145331459",
+                    "name": "G\u00fcnter Wallner"
+                },
+                {
+                    "authorId": "28732441",
+                    "name": "Fabian Beck"
+                }
+            ],
+            "doi": "10.1109/CoG47356.2020.9231915",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "c9ce12578a770cf3f72a4d6ff6843579e140f978",
+            "title": "Visualizing AI Playtesting Data of 2D Side-scrolling Games",
+            "url": "https://www.semanticscholar.org/paper/c9ce12578a770cf3f72a4d6ff6843579e140f978",
+            "venue": "2020 IEEE Conference on Games (CoG)",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "41f79e2b410e7e278ea4e5058f2d52b2b20aebd3",
+            "title": "Directed DPOR for the verification of asynchronous distributed systems",
+            "url": "https://www.semanticscholar.org/paper/41f79e2b410e7e278ea4e5058f2d52b2b20aebd3",
+            "venue": "",
+            "year": null
+        }
+    ],
+    "corpusId": 212737175,
+    "doi": "10.1109/CoG47356.2020.9231670",
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": true,
+    "isPublisherLicensed": true,
+    "is_open_access": true,
+    "is_publisher_licensed": true,
+    "numCitedBy": 15,
+    "numCiting": 33,
+    "paperId": "182ebb0f3a53273ea625c31e36061e055642d3fe",
+    "references": [
+        {
+            "arxivId": "2402.04938",
+            "authors": [
+                {
+                    "authorId": "2086080300",
+                    "name": "Jennifer Hern\u00e1ndez B\u00e9cares"
+                },
+                {
+                    "authorId": "2914359",
+                    "name": "Luis Costero Valero"
+                },
+                {
+                    "authorId": "1403835109",
+                    "name": "P. P. G\u00f3mez-Mart\u00edn"
+                }
+            ],
+            "doi": "10.1016/j.entcom.2016.08.002",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "e563e9d5f2ce6b373d9c9e49d476b8fccdb1aa2d",
+            "title": "An approach to automated videogame beta testing",
+            "url": "https://www.semanticscholar.org/paper/e563e9d5f2ce6b373d9c9e49d476b8fccdb1aa2d",
+            "venue": "Entertain. Comput.",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1380705734",
+                    "name": "Jean Seong Bjorn Choe"
+                },
+                {
+                    "authorId": "1762896",
+                    "name": "Jong-Kook Kim"
+                }
+            ],
+            "doi": "10.1109/CIG.2019.8848034",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "825a5cdded1dfcebb575947d4aba1216719447b3",
+            "title": "Enhancing Monte Carlo Tree Search for Playing Hearthstone",
+            "url": "https://www.semanticscholar.org/paper/825a5cdded1dfcebb575947d4aba1216719447b3",
+            "venue": "2019 IEEE Conference on Games (CoG)",
+            "year": 2019
+        },
+        {
+            "arxivId": "1906.00317",
+            "authors": [
+                {
+                    "authorId": "1417347019",
+                    "name": "Sinan Ariyurek"
+                },
+                {
+                    "authorId": "1405645535",
+                    "name": "Aysu Betin-Can"
+                },
+                {
+                    "authorId": "3299076",
+                    "name": "Elif Surer"
+                }
+            ],
+            "doi": "10.1109/TG.2019.2947597",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "ab0099bc5008c003064c1a1ff748298658defbbc",
+            "title": "Automated Video Game Testing Using Synthetic and Humanlike Agents",
+            "url": "https://www.semanticscholar.org/paper/ab0099bc5008c003064c1a1ff748298658defbbc",
+            "venue": "IEEE Transactions on Games",
+            "year": 2019
+        },
+        {
+            "arxivId": "1812.05164",
+            "authors": [
+                {
+                    "authorId": "31667689",
+                    "name": "Ronnie E. S. Santos"
+                },
+                {
+                    "authorId": "2429686",
+                    "name": "C. V. C. Magalh\u00e3es"
+                },
+                {
+                    "authorId": "1739277",
+                    "name": "Luiz Fernando Capretz"
+                },
+                {
+                    "authorId": "2069861156",
+                    "name": "Jorge S. Correia Neto"
+                },
+                {
+                    "authorId": "145000578",
+                    "name": "F. Silva"
+                },
+                {
+                    "authorId": "84639323",
+                    "name": "Abdelrahman Saher"
+                }
+            ],
+            "doi": "10.1145/3239235.3268923",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5886cf92f36cc05826aa7e8e792b826671471f08",
+            "title": "Computer games are serious business and so is their quality: particularities of software testing in game development from the perspective of practitioners",
+            "url": "https://www.semanticscholar.org/paper/5886cf92f36cc05826aa7e8e792b826671471f08",
+            "venue": "ESEM",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144503239",
+                    "name": "Tiago Machado"
+                },
+                {
+                    "authorId": "123133454",
+                    "name": "Dan Gopstein"
+                },
+                {
+                    "authorId": "3431050",
+                    "name": "Andy Nealen"
+                },
+                {
+                    "authorId": "71575036",
+                    "name": "O. Nov"
+                },
+                {
+                    "authorId": "1810053",
+                    "name": "J. Togelius"
+                }
+            ],
+            "doi": "10.1109/CEC.2018.8477829",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "dd44809400f0953b270d9df978aa989adfb459b3",
+            "title": "AI-Assisted Game Debugging with Cicero",
+            "url": "https://www.semanticscholar.org/paper/dd44809400f0953b270d9df978aa989adfb459b3",
+            "venue": "2018 IEEE Congress on Evolutionary Computation (CEC)",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3363788",
+                    "name": "Chenjun Xiao"
+                },
+                {
+                    "authorId": "3288319",
+                    "name": "Jincheng Mei"
+                },
+                {
+                    "authorId": "144054003",
+                    "name": "Martin M\u00fcller"
+                }
+            ],
+            "doi": "10.1609/aaai.v32i1.11531",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "2d7fb18fa63f718866055ab494e1b0707b0bd56a",
+            "title": "Memory-Augmented Monte Carlo Tree Search",
+            "url": "https://www.semanticscholar.org/paper/2d7fb18fa63f718866055ab494e1b0707b0bd56a",
+            "venue": "AAAI",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "35451413",
+                    "name": "Johannes Pfau"
+                },
+                {
+                    "authorId": "23992159",
+                    "name": "Jan David Smeddinck"
+                },
+                {
+                    "authorId": "1803071",
+                    "name": "R. Malaka"
+                }
+            ],
+            "doi": "10.1145/3130859.3131439",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "591f0fce133f4a0b2f01170d7cd4cd70f09bf989",
+            "title": "Automated Game Testing with ICARUS: Intelligent Completion of Adventure Riddles via Unsupervised Solving",
+            "url": "https://www.semanticscholar.org/paper/591f0fce133f4a0b2f01170d7cd4cd70f09bf989",
+            "venue": "CHI PLAY",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145891457",
+                    "name": "Andre F. Santos"
+                },
+                {
+                    "authorId": "145255180",
+                    "name": "P. A. Santos"
+                },
+                {
+                    "authorId": "145125979",
+                    "name": "Francisco S. Melo"
+                }
+            ],
+            "doi": "10.1109/CIG.2017.8080446",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "3c20e560d70bc9952cc6aec8c4a29773dd334574",
+            "title": "Monte Carlo tree search experiments in hearthstone",
+            "url": "https://www.semanticscholar.org/paper/3c20e560d70bc9952cc6aec8c4a29773dd334574",
+            "venue": "2017 IEEE Conference on Computational Intelligence and Games (CIG)",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144473215",
+                    "name": "E. Powley"
+                },
+                {
+                    "authorId": "1714467",
+                    "name": "P. Cowling"
+                },
+                {
+                    "authorId": "33424773",
+                    "name": "D. Whitehouse"
+                }
+            ],
+            "doi": "10.1609/aiide.v13i1.12932",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "b69b9b6f8e98696181ddb19f06531f33067eb6c8",
+            "title": "Memory Bounded Monte Carlo Tree Search",
+            "url": "https://www.semanticscholar.org/paper/b69b9b6f8e98696181ddb19f06531f33067eb6c8",
+            "venue": "AIIDE",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "122194150",
+                    "name": "Erc\u00fcment Ilhan"
+                },
+                {
+                    "authorId": "1399138421",
+                    "name": "A. Etaner-Uyar"
+                }
+            ],
+            "doi": "10.1109/CIG.2017.8080453",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "5b372e7465b053f70b52996f8ad7affd59a57a78",
+            "title": "Monte Carlo tree search with temporal-difference learning for general video game playing",
+            "url": "https://www.semanticscholar.org/paper/5b372e7465b053f70b52996f8ad7affd59a57a78",
+            "venue": "2017 IEEE Conference on Computational Intelligence and Games (CIG)",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145968470",
+                    "name": "Steven D. James"
+                },
+                {
+                    "authorId": "1765407",
+                    "name": "G. Konidaris"
+                },
+                {
+                    "authorId": "2831294",
+                    "name": "Benjamin Rosman"
+                }
+            ],
+            "doi": "10.1609/aaai.v31i1.11028",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "71aace67448e61ac01471a995dae7744e878e388",
+            "title": "An Analysis of Monte Carlo Tree Search",
+            "url": "https://www.semanticscholar.org/paper/71aace67448e61ac01471a995dae7744e878e388",
+            "venue": "AAAI",
+            "year": 2017
+        },
+        {
+            "arxivId": "2407.03049",
+            "authors": [
+                {
+                    "authorId": "9542109",
+                    "name": "Dennis J. N. J. Soemers"
+                },
+                {
+                    "authorId": "1387098922",
+                    "name": "C. F. Sironi"
+                },
+                {
+                    "authorId": "39831842",
+                    "name": "T. Schuster"
+                },
+                {
+                    "authorId": "1997644",
+                    "name": "M. Winands"
+                }
+            ],
+            "doi": "10.1109/CIG.2016.7860448",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "fc59bd76c4cf3fd8158cf1c5bb50bb6657f99c9b",
+            "title": "Enhancements for real-time Monte-Carlo Tree Search in General Video Game Playing",
+            "url": "https://www.semanticscholar.org/paper/fc59bd76c4cf3fd8158cf1c5bb50bb6657f99c9b",
+            "venue": "2016 IEEE Conference on Computational Intelligence and Games (CIG)",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2717017",
+                    "name": "Diego Perez Liebana"
+                },
+                {
+                    "authorId": "2032434",
+                    "name": "Spyridon Samothrakis"
+                },
+                {
+                    "authorId": "1810053",
+                    "name": "J. Togelius"
+                },
+                {
+                    "authorId": "1725157",
+                    "name": "T. Schaul"
+                },
+                {
+                    "authorId": "145815031",
+                    "name": "S. Lucas"
+                },
+                {
+                    "authorId": "2117043",
+                    "name": "Adrien Cou\u00ebtoux"
+                },
+                {
+                    "authorId": "2108467626",
+                    "name": "Jerry Lee"
+                },
+                {
+                    "authorId": "2113822055",
+                    "name": "Chong-U Lim"
+                },
+                {
+                    "authorId": "145124727",
+                    "name": "Tommy Thompson"
+                }
+            ],
+            "doi": "10.1109/TCIAIG.2015.2402393",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e77f15c59deafb411bba62df4b06e9b95cfc6252",
+            "title": "The 2014 General Video Game Playing Competition",
+            "url": "https://www.semanticscholar.org/paper/e77f15c59deafb411bba62df4b06e9b95cfc6252",
+            "venue": "IEEE Transactions on Computational Intelligence and AI in Games",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2252090",
+                    "name": "M. \u015awiechowski"
+                },
+                {
+                    "authorId": "1681735",
+                    "name": "J. Ma\u0144dziuk"
+                },
+                {
+                    "authorId": "144848119",
+                    "name": "Y. Ong"
+                }
+            ],
+            "doi": "10.1109/TCIAIG.2015.2391232",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "e3a90afa5d63e356e8a56edd71af7ae89d4afdf4",
+            "title": "Specialization of a UCT-Based General Game Playing Program to Single-Player Games",
+            "url": "https://www.semanticscholar.org/paper/e3a90afa5d63e356e8a56edd71af7ae89d4afdf4",
+            "venue": "IEEE Transactions on Computational Intelligence and AI in Games",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143982337",
+                    "name": "M. Nelson"
+                }
+            ],
+            "doi": "10.1109/CIG.2016.7860443",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7871a0164d38bb94d3b28cfe33470ea9fe04c2be",
+            "title": "Investigating vanilla MCTS scaling on the GVG-AI game corpus",
+            "url": "https://www.semanticscholar.org/paper/7871a0164d38bb94d3b28cfe33470ea9fe04c2be",
+            "venue": "2016 IEEE Conference on Computational Intelligence and Games (CIG)",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2502026",
+                    "name": "Hendrik Baier"
+                },
+                {
+                    "authorId": "1997644",
+                    "name": "M. Winands"
+                }
+            ],
+            "doi": "10.1109/TCIAIG.2015.2443123",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "79a71632c745fbd61f967cb913eb9359044e2346",
+            "title": "Time Management for Monte Carlo Tree Search",
+            "url": "https://www.semanticscholar.org/paper/79a71632c745fbd61f967cb913eb9359044e2346",
+            "venue": "IEEE Transactions on Computational Intelligence and AI in Games",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143840345",
+                    "name": "A. Khalifa"
+                },
+                {
+                    "authorId": "2232368",
+                    "name": "Aaron Isaksen"
+                },
+                {
+                    "authorId": "1810053",
+                    "name": "J. Togelius"
+                },
+                {
+                    "authorId": "3431050",
+                    "name": "Andy Nealen"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "943d7ad34592af2f17c7299035739c27f9998bde",
+            "title": "Modifying MCTS for Human-Like General Video Game Playing",
+            "url": "https://www.semanticscholar.org/paper/943d7ad34592af2f17c7299035739c27f9998bde",
+            "venue": "IJCAI",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145824029",
+                    "name": "David Silver"
+                },
+                {
+                    "authorId": "1885349",
+                    "name": "Aja Huang"
+                },
+                {
+                    "authorId": "2772217",
+                    "name": "Chris J. Maddison"
+                },
+                {
+                    "authorId": "35099444",
+                    "name": "A. Guez"
+                },
+                {
+                    "authorId": "2175946",
+                    "name": "L. Sifre"
+                },
+                {
+                    "authorId": "47568983",
+                    "name": "George van den Driessche"
+                },
+                {
+                    "authorId": "4337102",
+                    "name": "Julian Schrittwieser"
+                },
+                {
+                    "authorId": "2460849",
+                    "name": "Ioannis Antonoglou"
+                },
+                {
+                    "authorId": "2749418",
+                    "name": "Vedavyas Panneershelvam"
+                },
+                {
+                    "authorId": "1975889",
+                    "name": "Marc Lanctot"
+                },
+                {
+                    "authorId": "48373216",
+                    "name": "S. Dieleman"
+                },
+                {
+                    "authorId": "2401609",
+                    "name": "Dominik Grewe"
+                },
+                {
+                    "authorId": "4111313",
+                    "name": "John Nham"
+                },
+                {
+                    "authorId": "2583391",
+                    "name": "Nal Kalchbrenner"
+                },
+                {
+                    "authorId": "1701686",
+                    "name": "I. Sutskever"
+                },
+                {
+                    "authorId": "2542999",
+                    "name": "T. Lillicrap"
+                },
+                {
+                    "authorId": "40662181",
+                    "name": "M. Leach"
+                },
+                {
+                    "authorId": "2645384",
+                    "name": "K. Kavukcuoglu"
+                },
+                {
+                    "authorId": "1686971",
+                    "name": "T. Graepel"
+                },
+                {
+                    "authorId": "48987704",
+                    "name": "D. Hassabis"
+                }
+            ],
+            "doi": "10.1038/nature16961",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "846aedd869a00c09b40f1f1f35673cb22bc87490",
+            "title": "Mastering the game of Go with deep neural networks and tree search",
+            "url": "https://www.semanticscholar.org/paper/846aedd869a00c09b40f1f1f35673cb22bc87490",
+            "venue": "Nature",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2717017",
+                    "name": "Diego Perez Liebana"
+                },
+                {
+                    "authorId": "1714662",
+                    "name": "Sanaz Mostaghim"
+                },
+                {
+                    "authorId": "2032434",
+                    "name": "Spyridon Samothrakis"
+                },
+                {
+                    "authorId": "145815031",
+                    "name": "S. Lucas"
+                }
+            ],
+            "doi": "10.1109/TCIAIG.2014.2345842",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "6c7bb6563bfc5ab0b9cf89b3ca7bb6d6384aeb61",
+            "title": "Multiobjective Monte Carlo Tree Search for Real-Time Games",
+            "url": "https://www.semanticscholar.org/paper/6c7bb6563bfc5ab0b9cf89b3ca7bb6d6384aeb61",
+            "venue": "IEEE Transactions on Computational Intelligence and AI in Games",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "81270158",
+                    "name": "F. Frydenberg"
+                },
+                {
+                    "authorId": "2052518197",
+                    "name": "Kasper R. Andersen"
+                },
+                {
+                    "authorId": "1745664",
+                    "name": "S. Risi"
+                },
+                {
+                    "authorId": "1810053",
+                    "name": "J. Togelius"
+                }
+            ],
+            "doi": "10.1109/CIG.2015.7317937",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "0ffcebf33bc8c6de63d09f4466daf9ca062f65cd",
+            "title": "Investigating MCTS modifications in general video game playing",
+            "url": "https://www.semanticscholar.org/paper/0ffcebf33bc8c6de63d09f4466daf9ca062f65cd",
+            "venue": "2015 IEEE Conference on Computational Intelligence and Games (CIG)",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "38903338",
+                    "name": "Sidra Iftikhar"
+                },
+                {
+                    "authorId": "1783660",
+                    "name": "Muhammad Zohaib Z. Iqbal"
+                },
+                {
+                    "authorId": "153229218",
+                    "name": "Muhammad Uzair Khan"
+                },
+                {
+                    "authorId": "2003556789",
+                    "name": "Wardah Mahmood"
+                }
+            ],
+            "doi": "10.1109/MODELS.2015.7338274",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "cd85911853e04d3f7e102fdace23483e6fb9f6d7",
+            "title": "An automated model based testing approach for platform games",
+            "url": "https://www.semanticscholar.org/paper/cd85911853e04d3f7e102fdace23483e6fb9f6d7",
+            "venue": "2015 ACM/IEEE 18th International Conference on Model Driven Engineering Languages and Systems (MODELS)",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144473215",
+                    "name": "E. Powley"
+                },
+                {
+                    "authorId": "1714467",
+                    "name": "P. Cowling"
+                },
+                {
+                    "authorId": "33424773",
+                    "name": "D. Whitehouse"
+                }
+            ],
+            "doi": "10.1016/j.artint.2014.08.002",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "15ad98f4b0b0339a57d79af726ad7b7a4d983f40",
+            "title": "Information capture and reuse strategies in Monte Carlo Tree Search, with applications to games of hidden information",
+            "url": "https://www.semanticscholar.org/paper/15ad98f4b0b0339a57d79af726ad7b7a4d983f40",
+            "venue": "Artif. Intell.",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2717017",
+                    "name": "Diego Perez Liebana"
+                },
+                {
+                    "authorId": "2032434",
+                    "name": "Spyridon Samothrakis"
+                },
+                {
+                    "authorId": "145815031",
+                    "name": "S. Lucas"
+                }
+            ],
+            "doi": "10.1109/CIG.2014.6932868",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "cb6b82b7a8cfa2b809f15cd4fbf9617e7e7978f8",
+            "title": "Knowledge-based fast evolutionary MCTS for general video game playing",
+            "url": "https://www.semanticscholar.org/paper/cb6b82b7a8cfa2b809f15cd4fbf9617e7e7978f8",
+            "venue": "2014 IEEE Conference on Computational Intelligence and Games",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1725157",
+                    "name": "T. Schaul"
+                }
+            ],
+            "doi": "10.1109/TCIAIG.2014.2352795",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "dd3875b12c7149a33ad5d842b1d8af15f54ddefc",
+            "title": "An Extensible Description Language for Video Games",
+            "url": "https://www.semanticscholar.org/paper/dd3875b12c7149a33ad5d842b1d8af15f54ddefc",
+            "venue": "IEEE Transactions on Computational Intelligence and AI in Games",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1886166",
+                    "name": "E. Jacobsen"
+                },
+                {
+                    "authorId": "3439774",
+                    "name": "R. Greve"
+                },
+                {
+                    "authorId": "1810053",
+                    "name": "J. Togelius"
+                }
+            ],
+            "doi": "10.1145/2576768.2598392",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "f98716a2a94e64d118ae17ddf1283c0a379fe5ec",
+            "title": "Monte Mario: platforming with MCTS",
+            "url": "https://www.semanticscholar.org/paper/f98716a2a94e64d118ae17ddf1283c0a379fe5ec",
+            "venue": "GECCO",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2615667",
+                    "name": "Tom Pepels"
+                },
+                {
+                    "authorId": "1997644",
+                    "name": "M. Winands"
+                },
+                {
+                    "authorId": "1975889",
+                    "name": "Marc Lanctot"
+                }
+            ],
+            "doi": "10.1109/TCIAIG.2013.2291577",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "0a94c596c3e140eca55fed0d0599e4176f5620ba",
+            "title": "Real-Time Monte Carlo Tree Search in Ms Pac-Man",
+            "url": "https://www.semanticscholar.org/paper/0a94c596c3e140eca55fed0d0599e4176f5620ba",
+            "venue": "IEEE Transactions on Computational Intelligence and AI in Games",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "152755582",
+                    "name": "M. Ostrowski"
+                },
+                {
+                    "authorId": "29381505",
+                    "name": "Samir Aroudj"
+                }
+            ],
+            "doi": "10.7603/S40601-013-0010-4",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "576c38fad6721ce50731f3a46711d3ddaf48529e",
+            "title": "Automated Regression Testing within Video Game Development",
+            "url": "https://www.semanticscholar.org/paper/576c38fad6721ce50731f3a46711d3ddaf48529e",
+            "venue": "",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2988655",
+                    "name": "Mandy J. W. Tak"
+                },
+                {
+                    "authorId": "1997644",
+                    "name": "M. Winands"
+                },
+                {
+                    "authorId": "1722156",
+                    "name": "Y. Bj\u00f6rnsson"
+                }
+            ],
+            "doi": "10.1109/TCIAIG.2012.2200252",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "641e94f311adf940412887b6b525ebf22bef711f",
+            "title": "N-Grams and the Last-Good-Reply Policy Applied in General Game Playing",
+            "url": "https://www.semanticscholar.org/paper/641e94f311adf940412887b6b525ebf22bef711f",
+            "venue": "IEEE Transactions on Computational Intelligence and AI in Games",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145317122",
+                    "name": "C. Browne"
+                },
+                {
+                    "authorId": "144473215",
+                    "name": "E. Powley"
+                },
+                {
+                    "authorId": "33424773",
+                    "name": "D. Whitehouse"
+                },
+                {
+                    "authorId": "145815031",
+                    "name": "S. Lucas"
+                },
+                {
+                    "authorId": "1714467",
+                    "name": "P. Cowling"
+                },
+                {
+                    "authorId": "3095131",
+                    "name": "Philipp Rohlfshagen"
+                },
+                {
+                    "authorId": "31893339",
+                    "name": "Stephen Tavener"
+                },
+                {
+                    "authorId": "2717017",
+                    "name": "Diego Perez Liebana"
+                },
+                {
+                    "authorId": "2032434",
+                    "name": "Spyridon Samothrakis"
+                },
+                {
+                    "authorId": "1687610",
+                    "name": "S. Colton"
+                }
+            ],
+            "doi": "10.1109/TCIAIG.2012.2186810",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "c37f1baac3c8ba30250084f067167ac3837cf6fd",
+            "title": "A Survey of Monte Carlo Tree Search Methods",
+            "url": "https://www.semanticscholar.org/paper/c37f1baac3c8ba30250084f067167ac3837cf6fd",
+            "venue": "IEEE Transactions on Computational Intelligence and AI in Games",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "46861232",
+                    "name": "Chang-Sik Cho"
+                },
+                {
+                    "authorId": "2109435230",
+                    "name": "Dong-Chun Lee"
+                },
+                {
+                    "authorId": "38491342",
+                    "name": "Kang-Min Sohn"
+                },
+                {
+                    "authorId": "2115581926",
+                    "name": "Changjoon Park"
+                },
+                {
+                    "authorId": "2111625752",
+                    "name": "Ji-Hoon Kang"
+                }
+            ],
+            "doi": "10.1109/CYBERC.2010.54",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "b6f8e95b054a3a9c8a37932cf0dbdd50a94285db",
+            "title": "Scenario-Based Approach for Blackbox Load Testing of Online Game Servers",
+            "url": "https://www.semanticscholar.org/paper/b6f8e95b054a3a9c8a37932cf0dbdd50a94285db",
+            "venue": "2010 International Conference on Cyber-Enabled Distributed Computing and Knowledge Discovery",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145824029",
+                    "name": "David Silver"
+                },
+                {
+                    "authorId": "1699108",
+                    "name": "G. Tesauro"
+                }
+            ],
+            "doi": "10.1145/1553374.1553495",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "1886b7cb26105a8fcb3f2eb3cf03ee85ed09de58",
+            "title": "Monte-Carlo simulation balancing",
+            "url": "https://www.semanticscholar.org/paper/1886b7cb26105a8fcb3f2eb3cf03ee85ed09de58",
+            "venue": "ICML '09",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2080163291",
+                    "name": "Benjamin E. Childs"
+                },
+                {
+                    "authorId": "21502500",
+                    "name": "James H. Brodeur"
+                },
+                {
+                    "authorId": "34908205",
+                    "name": "Levente Kocsis"
+                }
+            ],
+            "doi": "10.1109/CIG.2008.5035667",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "e7443565e965aae469d993e2fad6d0b202266213",
+            "title": "Transpositions and move groups in Monte Carlo tree search",
+            "url": "https://www.semanticscholar.org/paper/e7443565e965aae469d993e2fad6d0b202266213",
+            "venue": "2008 IEEE Symposium On Computational Intelligence and Games",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2688964",
+                    "name": "Maarten P. D. Schadd"
+                },
+                {
+                    "authorId": "1997644",
+                    "name": "M. Winands"
+                },
+                {
+                    "authorId": "150123238",
+                    "name": "H. Jaap Van Den Herik"
+                },
+                {
+                    "authorId": "2059549547",
+                    "name": "Guillaume M"
+                },
+                {
+                    "authorId": "2229020235",
+                    "name": "J-B Chaslot"
+                },
+                {
+                    "authorId": "145495343",
+                    "name": "J. Uiterwijk"
+                }
+            ],
+            "doi": "10.1007/978-3-540-87608-3_1",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "889d1aeddf73ac769290872e208d28c21d05f79b",
+            "title": "Single-Player Monte-Carlo Tree Search",
+            "url": "https://www.semanticscholar.org/paper/889d1aeddf73ac769290872e208d28c21d05f79b",
+            "venue": "Computers and Games",
+            "year": 2008
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Enhancing the Monte Carlo Tree Search Algorithm for Video Game Testing",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/182ebb0f3a53273ea625c31e36061e055642d3fe",
+    "venue": "2020 IEEE Conference on Games (CoG)",
+    "year": 2020
+}

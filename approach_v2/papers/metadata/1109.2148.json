@@ -1,0 +1,4353 @@
+{
+    "abstract": "Logical hidden Markov models (LOHMMs) upgrade traditional hidden Markov models to deal with sequences of structured symbols in the form of logical atoms, rather than flat characters. \n \nThis note formally introduces LOHMMs and presents solutions to the three central inference problems for LOHMMs: evaluation, most likely hidden state sequence and parameter estimation. The resulting representation and algorithms are experimentally evaluated on problems from the domain of bioinformatics.",
+    "arxivId": "1109.2148",
+    "authors": [
+        {
+            "authorId": "1740042",
+            "name": "L. D. Raedt",
+            "url": "https://www.semanticscholar.org/author/1740042"
+        },
+        {
+            "authorId": "1746871",
+            "name": "K. Kersting",
+            "url": "https://www.semanticscholar.org/author/1746871"
+        },
+        {
+            "authorId": "2785022",
+            "name": "T. Raiko",
+            "url": "https://www.semanticscholar.org/author/2785022"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2202013232",
+                    "name": "Gao Mo"
+                }
+            ],
+            "doi": "10.1145/3582768.3582783",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "1cb365996acb6985aadd81da7c91ab3b8b1dff6b",
+            "title": "Random Division: An Effective Method for Chinese Text Classification",
+            "url": "https://www.semanticscholar.org/paper/1cb365996acb6985aadd81da7c91ab3b8b1dff6b",
+            "venue": "NLPIR",
+            "year": 2022
+        },
+        {
+            "arxivId": "2202.05403",
+            "authors": [
+                {
+                    "authorId": "51133706",
+                    "name": "Karan Samel"
+                },
+                {
+                    "authorId": "3362974",
+                    "name": "Zelin Zhao"
+                },
+                {
+                    "authorId": "2976012",
+                    "name": "Binghong Chen"
+                },
+                {
+                    "authorId": "31023698",
+                    "name": "Shuang Li"
+                },
+                {
+                    "authorId": "1762215",
+                    "name": "D. Subramanian"
+                },
+                {
+                    "authorId": "145955800",
+                    "name": "Irfan Essa"
+                },
+                {
+                    "authorId": "1779453",
+                    "name": "Le Song"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "8e3975da4285d99dc767b0e41ac323bd1a404db0",
+            "title": "Learning Temporal Rules from Noisy Timeseries Data",
+            "url": "https://www.semanticscholar.org/paper/8e3975da4285d99dc767b0e41ac323bd1a404db0",
+            "venue": "ArXiv",
+            "year": 2022
+        },
+        {
+            "arxivId": "2112.15319",
+            "authors": [
+                {
+                    "authorId": "2148906676",
+                    "name": "Zheng Zhang"
+                },
+                {
+                    "authorId": "41194309",
+                    "name": "L. Yilmaz"
+                },
+                {
+                    "authorId": "2156641548",
+                    "name": "Bo Liu"
+                }
+            ],
+            "doi": "10.1109/TNNLS.2023.3246980",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "4ecaf54f2cd0170e58f448b6a7c39c12d300a702",
+            "title": "A Critical Review of Inductive Logic Programming Techniques for Explainable AI",
+            "url": "https://www.semanticscholar.org/paper/4ecaf54f2cd0170e58f448b6a7c39c12d300a702",
+            "venue": "IEEE Transactions on Neural Networks and Learning Systems",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1392359906",
+                    "name": "G. Blanchette"
+                },
+                {
+                    "authorId": "33914176",
+                    "name": "A. Robins"
+                },
+                {
+                    "authorId": "3101963",
+                    "name": "W. Labuschagne"
+                }
+            ],
+            "doi": "10.1093/LOGCOM/EXAB054",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "5a351a593bba04bd25e7976b8c2292f30745afb8",
+            "title": "Modelling supra-classical logic in a Boltzmann neural network: I representation",
+            "url": "https://www.semanticscholar.org/paper/5a351a593bba04bd25e7976b8c2292f30745afb8",
+            "venue": "J. Log. Comput.",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "31023698",
+                    "name": "Shuang Li"
+                },
+                {
+                    "authorId": "2153516978",
+                    "name": "Lu Wang"
+                },
+                {
+                    "authorId": "2145052027",
+                    "name": "Ruizhi Zhang"
+                },
+                {
+                    "authorId": "2072561851",
+                    "name": "Xiaofu Chang"
+                },
+                {
+                    "authorId": "1998927695",
+                    "name": "Xuqin Liu"
+                },
+                {
+                    "authorId": "145646522",
+                    "name": "Yao Xie"
+                },
+                {
+                    "authorId": "145475951",
+                    "name": "Yuan Qi"
+                },
+                {
+                    "authorId": "1779453",
+                    "name": "Le Song"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "709eaa95f9467c0f59062eaf6d6e3e1c5131d00e",
+            "title": "Temporal Logic Point Processes",
+            "url": "https://www.semanticscholar.org/paper/709eaa95f9467c0f59062eaf6d6e3e1c5131d00e",
+            "venue": "ICML",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1389995484",
+                    "name": "Carlos Abreu Ferreira"
+                },
+                {
+                    "authorId": "143931014",
+                    "name": "Jo\u00e3o Gama"
+                },
+                {
+                    "authorId": "1389995477",
+                    "name": "V\u00edtor Santos Costa"
+                }
+            ],
+            "doi": "10.1007/s13748-019-00188-w",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "5c84e829788b8e31dcc14bd9ba76158b0e95f688",
+            "title": "Contrasting logical sequences in multi-relational learning",
+            "url": "https://www.semanticscholar.org/paper/5c84e829788b8e31dcc14bd9ba76158b0e95f688",
+            "venue": "Progress in Artificial Intelligence",
+            "year": 2019
+        },
+        {
+            "arxivId": "1804.10237",
+            "authors": [
+                {
+                    "authorId": "2315847",
+                    "name": "Arun Nampally"
+                },
+                {
+                    "authorId": "2265990377",
+                    "name": "Timothy Zhang"
+                },
+                {
+                    "authorId": "144325968",
+                    "name": "C. Ramakrishnan"
+                }
+            ],
+            "doi": "10.1017/S1471068418000273",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e25d9917b8c4722d72cf8d9d0332d51b1d02a792",
+            "title": "Constraint-Based Inference in Probabilistic Logic Programs",
+            "url": "https://www.semanticscholar.org/paper/e25d9917b8c4722d72cf8d9d0332d51b1d02a792",
+            "venue": "Theory and Practice of Logic Programming",
+            "year": 2018
+        },
+        {
+            "arxivId": "1804.06748",
+            "authors": [
+                {
+                    "authorId": "2577327",
+                    "name": "S. L\u00fcdtke"
+                },
+                {
+                    "authorId": "3433070",
+                    "name": "Max Schr\u00f6der"
+                },
+                {
+                    "authorId": "144714296",
+                    "name": "Frank Kr\u00fcger"
+                },
+                {
+                    "authorId": "144349956",
+                    "name": "Sebastian Bader"
+                },
+                {
+                    "authorId": "1736967",
+                    "name": "T. Kirste"
+                }
+            ],
+            "doi": "10.1613/jair.1.11261",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "de56eaf1eeec3be2f5feadd4aa6fc8f8b2c2d974",
+            "title": "State-Space Abstractions for Probabilistic Inference: A Systematic Review",
+            "url": "https://www.semanticscholar.org/paper/de56eaf1eeec3be2f5feadd4aa6fc8f8b2c2d974",
+            "venue": "J. Artif. Intell. Res.",
+            "year": 2018
+        },
+        {
+            "arxivId": "1711.04574",
+            "authors": [
+                {
+                    "authorId": "2115604214",
+                    "name": "Richard Evans"
+                },
+                {
+                    "authorId": "1864353",
+                    "name": "Edward Grefenstette"
+                }
+            ],
+            "doi": "10.24963/ijcai.2018/792",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "4df7bbe3ca7806f39a490c99f17867a0ac299bc3",
+            "title": "Learning Explanatory Rules from Noisy Data",
+            "url": "https://www.semanticscholar.org/paper/4df7bbe3ca7806f39a490c99f17867a0ac299bc3",
+            "venue": "J. Artif. Intell. Res.",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2066022961",
+                    "name": "Peng Jiao"
+                },
+                {
+                    "authorId": "2113474359",
+                    "name": "Kai Xu"
+                },
+                {
+                    "authorId": "9350406",
+                    "name": "Shi-guang Yue"
+                },
+                {
+                    "authorId": "50828647",
+                    "name": "Xiangyu Wei"
+                },
+                {
+                    "authorId": "41191188",
+                    "name": "Lin Sun"
+                }
+            ],
+            "doi": "10.1155/2017/4580206",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "4f1ea22083042c1ac404e075b947a5346a20cb30",
+            "title": "A Decentralized Partially Observable Markov Decision Model with Action Duration for Goal Recognition in Real Time Strategy Games",
+            "url": "https://www.semanticscholar.org/paper/4f1ea22083042c1ac404e075b947a5346a20cb30",
+            "venue": "",
+            "year": 2017
+        },
+        {
+            "arxivId": "1705.02562",
+            "authors": [
+                {
+                    "authorId": "144672070",
+                    "name": "Naveen Nair"
+                },
+                {
+                    "authorId": "145773546",
+                    "name": "Ajay Nagesh"
+                },
+                {
+                    "authorId": "145799547",
+                    "name": "Ganesh Ramakrishnan"
+                }
+            ],
+            "doi": "10.4225/03/58B60C41254DC",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "6a5682aeb0796ffed943a08a0d8ce509654eca82",
+            "title": "Learning Discriminative Relational Features for Sequence Labeling",
+            "url": "https://www.semanticscholar.org/paper/6a5682aeb0796ffed943a08a0d8ce509654eca82",
+            "venue": "ArXiv",
+            "year": 2017
+        },
+        {
+            "arxivId": "1702.06379",
+            "authors": [
+                {
+                    "authorId": "2425072",
+                    "name": "E. Alevizos"
+                },
+                {
+                    "authorId": "2371110",
+                    "name": "Anastasios Skarlatidis"
+                },
+                {
+                    "authorId": "1707851",
+                    "name": "A. Artikis"
+                },
+                {
+                    "authorId": "4738873",
+                    "name": "G. Paliouras"
+                }
+            ],
+            "doi": "10.1145/3117809",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d90dff67d7ef078430d0426a73edc347a87d0211",
+            "title": "Probabilistic Complex Event Recognition",
+            "url": "https://www.semanticscholar.org/paper/d90dff67d7ef078430d0426a73edc347a87d0211",
+            "venue": "ACM Comput. Surv.",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2863165",
+                    "name": "D. Nitti"
+                },
+                {
+                    "authorId": "2901379",
+                    "name": "T. Laet"
+                },
+                {
+                    "authorId": "1740042",
+                    "name": "L. D. Raedt"
+                }
+            ],
+            "doi": "10.1007/s10994-016-5558-8",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "0c08728e5451d049c608073b49baf8093d93fd87",
+            "title": "Probabilistic logic programming for hybrid relational domains",
+            "url": "https://www.semanticscholar.org/paper/0c08728e5451d049c608073b49baf8093d93fd87",
+            "venue": "Machine Learning",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1740042",
+                    "name": "L. D. Raedt"
+                },
+                {
+                    "authorId": "1746871",
+                    "name": "K. Kersting"
+                },
+                {
+                    "authorId": "145986014",
+                    "name": "Sriraam Natarajan"
+                },
+                {
+                    "authorId": "143715817",
+                    "name": "D. Poole"
+                }
+            ],
+            "doi": "10.1007/978-3-031-01574-8",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "06996e180cab25c3644387bd93fb6bad6cb76556",
+            "title": "Statistical Relational Artificial Intelligence: Logic, Probability, and Computation",
+            "url": "https://www.semanticscholar.org/paper/06996e180cab25c3644387bd93fb6bad6cb76556",
+            "venue": "Statistical Relational Artificial Intelligence",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144512098",
+                    "name": "C. Ferreira"
+                },
+                {
+                    "authorId": "143931014",
+                    "name": "Jo\u00e3o Gama"
+                },
+                {
+                    "authorId": "1706989",
+                    "name": "V. S. Costa"
+                }
+            ],
+            "doi": "10.1007/s13748-015-0065-x",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "6e2f95bdd25019a32bc723b27dff2b6886688913",
+            "title": "Exploring multi-relational temporal databases with a propositional sequence miner",
+            "url": "https://www.semanticscholar.org/paper/6e2f95bdd25019a32bc723b27dff2b6886688913",
+            "venue": "Progress in Artificial Intelligence",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "9350406",
+                    "name": "Shi-guang Yue"
+                },
+                {
+                    "authorId": "2066022961",
+                    "name": "Peng Jiao"
+                },
+                {
+                    "authorId": "2668652",
+                    "name": "Yabing Zha"
+                },
+                {
+                    "authorId": "39660976",
+                    "name": "Quanjun Yin"
+                }
+            ],
+            "doi": "10.1155/2015/975951",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "5faa7976820d38a53ebcb9e309ed7231e63fa90b",
+            "title": "A Logical Hierarchical Hidden Semi-Markov Model for Team Intention Recognition",
+            "url": "https://www.semanticscholar.org/paper/5faa7976820d38a53ebcb9e309ed7231e63fa90b",
+            "venue": "",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "9350406",
+                    "name": "Shi-guang Yue"
+                },
+                {
+                    "authorId": "2113474359",
+                    "name": "Kai Xu"
+                },
+                {
+                    "authorId": "40548435",
+                    "name": "Long Qin"
+                },
+                {
+                    "authorId": "39660976",
+                    "name": "Quanjun Yin"
+                }
+            ],
+            "doi": "10.1109/ICMA.2015.7237458",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "516c987e5aed61a56aeada086f22f6019d91fa55",
+            "title": "Filtering states with partial observations for the Logical hidden Markov model",
+            "url": "https://www.semanticscholar.org/paper/516c987e5aed61a56aeada086f22f6019d91fa55",
+            "venue": "2015 IEEE International Conference on Mechatronics and Automation (ICMA)",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3118420",
+                    "name": "Katerina Marazopoulou"
+                },
+                {
+                    "authorId": "1733462",
+                    "name": "Marc E. Maier"
+                },
+                {
+                    "authorId": "144774129",
+                    "name": "David D. Jensen"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b159500986380cc32f65e2652aa9676906d8d9b2",
+            "title": "Learning the Structure of Causal Models with Relational and Temporal Dependence",
+            "url": "https://www.semanticscholar.org/paper/b159500986380cc32f65e2652aa9676906d8d9b2",
+            "venue": "UAI",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1740042",
+                    "name": "L. D. Raedt"
+                },
+                {
+                    "authorId": "3294328",
+                    "name": "Angelika Kimmig"
+                }
+            ],
+            "doi": "10.1007/s10994-015-5494-z",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "688759d0e64a33091fa916d88f845fb9c9d94626",
+            "title": "Probabilistic (logic) programming concepts",
+            "url": "https://www.semanticscholar.org/paper/688759d0e64a33091fa916d88f845fb9c9d94626",
+            "venue": "Machine Learning",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "46664110",
+                    "name": "Joohyung Lee"
+                },
+                {
+                    "authorId": "5791079",
+                    "name": "Yi Wang"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7f7780713d34d1dff6754e42d35c5fb566ea216f",
+            "title": "A Probabilistic Extension of the Stable Model Semantics",
+            "url": "https://www.semanticscholar.org/paper/7f7780713d34d1dff6754e42d35c5fb566ea216f",
+            "venue": "AAAI Spring Symposia",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2875686",
+                    "name": "Ekaterina Komendantskaya"
+                }
+            ],
+            "doi": "10.1142/9781783265091_0020",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "f321c3615221f5bb10d076ae0456592f367a4ed7",
+            "title": "Machine Learning Coalgebraic Proofs",
+            "url": "https://www.semanticscholar.org/paper/f321c3615221f5bb10d076ae0456592f367a4ed7",
+            "venue": "ILP",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2062871249",
+                    "name": "A. Piel"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "9a77d325d102002c909a5883fc17ba55854fc978",
+            "title": "Reconnaissance de comportements complexes par traitement en ligne de flux d'\u00e9v\u00e9nements. (Online event flow processing for complex behaviour recognition)",
+            "url": "https://www.semanticscholar.org/paper/9a77d325d102002c909a5883fc17ba55854fc978",
+            "venue": "",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2371110",
+                    "name": "Anastasios Skarlatidis"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b2767dec1d25e116cd8d759a245915ea5a8aa336",
+            "title": "Event recognition under uncertainty and incomplete data",
+            "url": "https://www.semanticscholar.org/paper/b2767dec1d25e116cd8d759a245915ea5a8aa336",
+            "venue": "",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "9350406",
+                    "name": "Shi-guang Yue"
+                },
+                {
+                    "authorId": "2668652",
+                    "name": "Yabing Zha"
+                },
+                {
+                    "authorId": "39660976",
+                    "name": "Quanjun Yin"
+                },
+                {
+                    "authorId": "40548435",
+                    "name": "Long Qin"
+                }
+            ],
+            "doi": "10.5220/0005036707010708",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "bea174db0f66f90c60e1086d07501268fbabaab3",
+            "title": "Multi-agent intention recognition using logical hidden semi-Markov models",
+            "url": "https://www.semanticscholar.org/paper/bea174db0f66f90c60e1086d07501268fbabaab3",
+            "venue": "2014 4th International Conference On Simulation And Modeling Methodologies, Technologies And Applications (SIMULTECH)",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2320186",
+                    "name": "Marina-Anca Cidot\u00e3"
+                },
+                {
+                    "authorId": "2600240",
+                    "name": "M. Dumitrescu"
+                }
+            ],
+            "doi": "10.3233/AIC-130589",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "5580a2c164040413a28707237dd45154cdd23835",
+            "title": "A Multinomial Hidden Markov Model and its training by a combined iterative procedure",
+            "url": "https://www.semanticscholar.org/paper/5580a2c164040413a28707237dd45154cdd23835",
+            "venue": "AI Commun.",
+            "year": 2014
+        },
+        {
+            "arxivId": "1312.4328",
+            "authors": [
+                {
+                    "authorId": "1740042",
+                    "name": "L. D. Raedt"
+                },
+                {
+                    "authorId": "3294328",
+                    "name": "Angelika Kimmig"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "7269c22cf21d02921166533908dd6572da3bda17",
+            "title": "Probabilistic Programming Concepts",
+            "url": "https://www.semanticscholar.org/paper/7269c22cf21d02921166533908dd6572da3bda17",
+            "venue": "ArXiv",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1380012984",
+                    "name": "YaMing Zha"
+                },
+                {
+                    "authorId": "9350406",
+                    "name": "Shi-guang Yue"
+                },
+                {
+                    "authorId": "123100682",
+                    "name": "Quan-jun Yin"
+                },
+                {
+                    "authorId": "2110734541",
+                    "name": "Xiao-cheng Liu"
+                }
+            ],
+            "doi": "10.1109/ICCWAMTIP.2013.6716604",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "31f1908eb8e1efa03f49deb2ddde6781a1b3b995",
+            "title": "Activity recognition using logical hidden semi-Markov models",
+            "url": "https://www.semanticscholar.org/paper/31f1908eb8e1efa03f49deb2ddde6781a1b3b995",
+            "venue": "2013 10th International Computer Conference on Wavelet Active Media Technology and Information Processing (ICCWAMTIP)",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2863165",
+                    "name": "D. Nitti"
+                },
+                {
+                    "authorId": "2901379",
+                    "name": "T. Laet"
+                },
+                {
+                    "authorId": "1740042",
+                    "name": "L. D. Raedt"
+                }
+            ],
+            "doi": "10.1109/IROS.2013.6696747",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "84ad1fbebae503b6c5215d9f128dc6863bc10449",
+            "title": "A particle filter for hybrid relational domains",
+            "url": "https://www.semanticscholar.org/paper/84ad1fbebae503b6c5215d9f128dc6863bc10449",
+            "venue": "2013 IEEE/RSJ International Conference on Intelligent Robots and Systems",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2097351398",
+                    "name": "Pedro Chahuara"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "519ec77569aadc295e103f6f86eee0124a3ef9c6",
+            "title": "Contr\u00f4le intelligent de la domotique \u00e0 partir d'informations temporelles multisources impr\u00e9cises et incertaines",
+            "url": "https://www.semanticscholar.org/paper/519ec77569aadc295e103f6f86eee0124a3ef9c6",
+            "venue": "",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "97663660",
+                    "name": "Pedro Chahuara Quispe"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "478448548ddaf8889346733f0ef58a2489364b48",
+            "title": "Contr\u00f4le intelligent de la domotique \u00e0 partir d'informations temporelles multi sources impr\u00e9cises et incertaines",
+            "url": "https://www.semanticscholar.org/paper/478448548ddaf8889346733f0ef58a2489364b48",
+            "venue": "",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2053590755",
+                    "name": "Hua Mao"
+                },
+                {
+                    "authorId": "2057536",
+                    "name": "M. Jaeger"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b0b477e527cf94c1b45865190c2a474ad8ff102b",
+            "title": "Learning and Model-Checking Networks of I/O Automata",
+            "url": "https://www.semanticscholar.org/paper/b0b477e527cf94c1b45865190c2a474ad8ff102b",
+            "venue": "ACML",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1707851",
+                    "name": "A. Artikis"
+                },
+                {
+                    "authorId": "2371110",
+                    "name": "Anastasios Skarlatidis"
+                },
+                {
+                    "authorId": "1730318",
+                    "name": "Fran\u00e7ois Portet"
+                },
+                {
+                    "authorId": "4738873",
+                    "name": "G. Paliouras"
+                }
+            ],
+            "doi": "10.1017/S0269888912000264",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "cb0fbfba5799ee93c18fe73edc0ceae65616bf5f",
+            "title": "Logic-based event recognition",
+            "url": "https://www.semanticscholar.org/paper/cb0fbfba5799ee93c18fe73edc0ceae65616bf5f",
+            "venue": "The Knowledge Engineering Review",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144672070",
+                    "name": "Naveen Nair"
+                },
+                {
+                    "authorId": "145773546",
+                    "name": "Ajay Nagesh"
+                },
+                {
+                    "authorId": "145799547",
+                    "name": "Ganesh Ramakrishnan"
+                }
+            ],
+            "doi": "10.1007/978-3-642-38812-5_14",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "633e96ad4aee710b49337a80bb9c781cfe318966",
+            "title": "Probing the Space of Optimal Markov Logic Networks for Sequence Labeling",
+            "url": "https://www.semanticscholar.org/paper/633e96ad4aee710b49337a80bb9c781cfe318966",
+            "venue": "ILP",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2863165",
+                    "name": "D. Nitti"
+                },
+                {
+                    "authorId": "2901379",
+                    "name": "T. Laet"
+                },
+                {
+                    "authorId": "3108058",
+                    "name": "M. Hoffmann"
+                },
+                {
+                    "authorId": "73525183",
+                    "name": "Ingo Thon"
+                },
+                {
+                    "authorId": "1749506",
+                    "name": "Guy Van den Broeck"
+                },
+                {
+                    "authorId": "1740042",
+                    "name": "L. D. Raedt"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d373a8e0a72164c739958e89eb468f6f80aa7243",
+            "title": "A Particle Filter for Probabilistic Dynamic Relational Domains",
+            "url": "https://www.semanticscholar.org/paper/d373a8e0a72164c739958e89eb468f6f80aa7243",
+            "venue": "StarAI@UAI",
+            "year": 2012
+        },
+        {
+            "arxivId": "1207.3270",
+            "authors": [
+                {
+                    "authorId": "2371110",
+                    "name": "Anastasios Skarlatidis"
+                },
+                {
+                    "authorId": "4738873",
+                    "name": "G. Paliouras"
+                },
+                {
+                    "authorId": "1707851",
+                    "name": "A. Artikis"
+                },
+                {
+                    "authorId": "1680125",
+                    "name": "G. Vouros"
+                }
+            ],
+            "doi": "10.1145/2699916",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "58db21ac6f6057254616c40707d6e6485889ad5b",
+            "title": "Probabilistic Event Calculus for Event Recognition",
+            "url": "https://www.semanticscholar.org/paper/58db21ac6f6057254616c40707d6e6485889ad5b",
+            "venue": "ACM Trans. Comput. Log.",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "7629367",
+                    "name": "Jaesik Choi"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "6157e179840e39bbeb595f9e16c14cbd4bb00308",
+            "title": "Lifted Inference for Relational Hybrid Models",
+            "url": "https://www.semanticscholar.org/paper/6157e179840e39bbeb595f9e16c14cbd4bb00308",
+            "venue": "",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2320186",
+                    "name": "Marina-Anca Cidot\u00e3"
+                },
+                {
+                    "authorId": "2600240",
+                    "name": "M. Dumitrescu"
+                }
+            ],
+            "doi": "10.1109/SACI.2012.6250008",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "f814a5bbc3eca3e17f9b1c80616b0e7cd02bd7ed",
+            "title": "A multinomial - Hidden Markov model for communication systems influenced by external factors",
+            "url": "https://www.semanticscholar.org/paper/f814a5bbc3eca3e17f9b1c80616b0e7cd02bd7ed",
+            "venue": "2012 7th IEEE International Symposium on Applied Computational Intelligence and Informatics (SACI)",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144365475",
+                    "name": "R. Thakur"
+                },
+                {
+                    "authorId": "49837736",
+                    "name": "Suresh Jain"
+                },
+                {
+                    "authorId": "2077393706",
+                    "name": "N. Chaudhari"
+                },
+                {
+                    "authorId": "47078847",
+                    "name": "Rahul Singhai"
+                }
+            ],
+            "doi": "10.1109/InfRKM.2012.6204988",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "a094b1cffed4508cc3cf4073956177e6c4c1f045",
+            "title": "Information extraction from semi-structured and un-structured documents using probabilistic context free grammar inference",
+            "url": "https://www.semanticscholar.org/paper/a094b1cffed4508cc3cf4073956177e6c4c1f045",
+            "venue": "2012 International Conference on Information Retrieval & Knowledge Management",
+            "year": 2012
+        },
+        {
+            "arxivId": "1401.4593",
+            "authors": [
+                {
+                    "authorId": "1743087",
+                    "name": "A. Sadilek"
+                },
+                {
+                    "authorId": "1690271",
+                    "name": "Henry A. Kautz"
+                }
+            ],
+            "doi": "10.1613/jair.3421",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "70366a7e871fbe3ab15aaed1cc38d9dc4c9738e9",
+            "title": "Location-Based Reasoning about Complex Multi-Agent Behavior",
+            "url": "https://www.semanticscholar.org/paper/70366a7e871fbe3ab15aaed1cc38d9dc4c9738e9",
+            "venue": "J. Artif. Intell. Res.",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145147566",
+                    "name": "S. Muggleton"
+                },
+                {
+                    "authorId": "1740042",
+                    "name": "L. D. Raedt"
+                },
+                {
+                    "authorId": "143715817",
+                    "name": "D. Poole"
+                },
+                {
+                    "authorId": "1725040",
+                    "name": "I. Bratko"
+                },
+                {
+                    "authorId": "47840704",
+                    "name": "Peter A. Flach"
+                },
+                {
+                    "authorId": "1728869",
+                    "name": "Katsumi Inoue"
+                },
+                {
+                    "authorId": "143780768",
+                    "name": "A. Srinivasan"
+                }
+            ],
+            "doi": "10.1007/s10994-011-5259-2",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "02ef85c374fd47b347279689e1ddda9340bf016a",
+            "title": "ILP turns 20",
+            "url": "https://www.semanticscholar.org/paper/02ef85c374fd47b347279689e1ddda9340bf016a",
+            "venue": "Machine Learning",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2299685",
+                    "name": "A. McGovern"
+                },
+                {
+                    "authorId": "30751341",
+                    "name": "D. Gagne"
+                },
+                {
+                    "authorId": "1901158",
+                    "name": "Nathaniel Troutman"
+                },
+                {
+                    "authorId": "2150172379",
+                    "name": "Rodger A. Brown"
+                },
+                {
+                    "authorId": "2112800",
+                    "name": "J. Basara"
+                },
+                {
+                    "authorId": "2111929791",
+                    "name": "John K. Williams"
+                }
+            ],
+            "doi": "10.1002/sam.10128",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "cd8c698810dd6b5f84739fe59c7f74673f2b2b47",
+            "title": "Using spatiotemporal relational random forests to improve our understanding of severe weather processes",
+            "url": "https://www.semanticscholar.org/paper/cd8c698810dd6b5f84739fe59c7f74673f2b2b47",
+            "venue": "Stat. Anal. Data Min.",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1718594",
+                    "name": "Nicola Di Mauro"
+                },
+                {
+                    "authorId": "1745663",
+                    "name": "T. Basile"
+                },
+                {
+                    "authorId": "1725650",
+                    "name": "S. Ferilli"
+                },
+                {
+                    "authorId": "1700821",
+                    "name": "F. Esposito"
+                }
+            ],
+            "doi": "10.1007/978-3-642-21916-0_27",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "fb6811ac7c374004d67b09bb64bc5121c0163198",
+            "title": "Optimizing Probabilistic Models for Relational Sequence Learning",
+            "url": "https://www.semanticscholar.org/paper/fb6811ac7c374004d67b09bb64bc5121c0163198",
+            "venue": "ISMIS",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2548384",
+                    "name": "Hannaneh Hajishirzi"
+                },
+                {
+                    "authorId": "143801711",
+                    "name": "E. Mueller"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "fc2e1894ecea77e4ff02782c40e9a20965b8f5c8",
+            "title": "Symbolic Probabilistic Reasoning for Narratives",
+            "url": "https://www.semanticscholar.org/paper/fc2e1894ecea77e4ff02782c40e9a20965b8f5c8",
+            "venue": "AAAI Spring Symposium: Logical Formalizations of Commonsense Reasoning",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1736443",
+                    "name": "R. Haenni"
+                },
+                {
+                    "authorId": "1951589",
+                    "name": "J. Romeijn"
+                },
+                {
+                    "authorId": "2267992755",
+                    "name": "Gregory Wheeler"
+                },
+                {
+                    "authorId": "2267995580",
+                    "name": "Jon Williamson"
+                }
+            ],
+            "doi": "10.1007/978-94-007-0008-6",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f32aa2363a3bd424cfd17c817f8e4c3c5ce4d0a2",
+            "title": "Probabilistic Logics and Probabilistic Networks",
+            "url": "https://www.semanticscholar.org/paper/f32aa2363a3bd424cfd17c817f8e4c3c5ce4d0a2",
+            "venue": "",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1707851",
+                    "name": "A. Artikis"
+                },
+                {
+                    "authorId": "4738873",
+                    "name": "G. Paliouras"
+                },
+                {
+                    "authorId": "1730318",
+                    "name": "Fran\u00e7ois Portet"
+                },
+                {
+                    "authorId": "2371110",
+                    "name": "Anastasios Skarlatidis"
+                }
+            ],
+            "doi": "10.1145/1827418.1827471",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "24677d20c1d1b42e86544e1a1e70146edd513035",
+            "title": "Logic-based representation, reasoning and machine learning for event recognition",
+            "url": "https://www.semanticscholar.org/paper/24677d20c1d1b42e86544e1a1e70146edd513035",
+            "venue": "DEBS '10",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1743087",
+                    "name": "A. Sadilek"
+                },
+                {
+                    "authorId": "1690271",
+                    "name": "Henry A. Kautz"
+                }
+            ],
+            "doi": "10.1609/aaai.v24i1.7739",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "5a01b25b182fa7387878e65c7c0c62a605334e0d",
+            "title": "Recognizing Multi-Agent Activities from GPS Data",
+            "url": "https://www.semanticscholar.org/paper/5a01b25b182fa7387878e65c7c0c62a605334e0d",
+            "venue": "AAAI",
+            "year": 2010
+        },
+        {
+            "arxivId": "1006.5188",
+            "authors": [
+                {
+                    "authorId": "1718594",
+                    "name": "Nicola Di Mauro"
+                },
+                {
+                    "authorId": "1745663",
+                    "name": "T. Basile"
+                },
+                {
+                    "authorId": "1725650",
+                    "name": "S. Ferilli"
+                },
+                {
+                    "authorId": "1700821",
+                    "name": "F. Esposito"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "414dd9249f1486ab1ceea3229a0bd26d261a83ae",
+            "title": "Feature Construction for Relational Sequence Learning",
+            "url": "https://www.semanticscholar.org/paper/414dd9249f1486ab1ceea3229a0bd26d261a83ae",
+            "venue": "ArXiv",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3131370",
+                    "name": "Stijn Goedertier"
+                },
+                {
+                    "authorId": "145147309",
+                    "name": "David Martens"
+                },
+                {
+                    "authorId": "1790055",
+                    "name": "J. Vanthienen"
+                },
+                {
+                    "authorId": "1720683",
+                    "name": "B. Baesens"
+                }
+            ],
+            "doi": "10.5555/1577069.1577113",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "ba2621bf3811e80d74ef55439bafc1fbb48fd143",
+            "title": "Robust Process Discovery with Artificial Negative Events",
+            "url": "https://www.semanticscholar.org/paper/ba2621bf3811e80d74ef55439bafc1fbb48fd143",
+            "venue": "J. Mach. Learn. Res.",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145841336",
+                    "name": "Alan Fern"
+                }
+            ],
+            "doi": "10.1111/j.1467-8640.2009.00346.x",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "3c0ff6d6fc6404866b66113d171aa6e3903a3d5b",
+            "title": "A PENALTY\u2010LOGIC SIMPLE\u2010TRANSITION MODEL FOR STRUCTURED SEQUENCES",
+            "url": "https://www.semanticscholar.org/paper/3c0ff6d6fc6404866b66113d171aa6e3903a3d5b",
+            "venue": "Comput. Intell.",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2077393706",
+                    "name": "N. Chaudhari"
+                },
+                {
+                    "authorId": "2144797492",
+                    "name": "Xiangrui Wang"
+                }
+            ],
+            "doi": "10.1109/TFUZZ.2009.2020155",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "ab04ca071f199fb38ba414c3942fe9e79e540819",
+            "title": "Language Structure Using Fuzzy Similarity",
+            "url": "https://www.semanticscholar.org/paper/ab04ca071f199fb38ba414c3942fe9e79e540819",
+            "venue": "IEEE Transactions on Fuzzy Systems",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2118847",
+                    "name": "Grazia Bombini"
+                },
+                {
+                    "authorId": "1718594",
+                    "name": "Nicola Di Mauro"
+                },
+                {
+                    "authorId": "1725650",
+                    "name": "S. Ferilli"
+                },
+                {
+                    "authorId": "1700821",
+                    "name": "F. Esposito"
+                }
+            ],
+            "doi": "10.1007/978-3-642-04125-9_39",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ef4257e91fd9c1a480786b0d0ebf7d38fee1a5b2",
+            "title": "Relational Sequence Clustering for Aggregating Similar Agents",
+            "url": "https://www.semanticscholar.org/paper/ef4257e91fd9c1a480786b0d0ebf7d38fee1a5b2",
+            "venue": "ISMIS",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3277704",
+                    "name": "Andreas Karwath"
+                },
+                {
+                    "authorId": "1746871",
+                    "name": "K. Kersting"
+                },
+                {
+                    "authorId": "3208878",
+                    "name": "Niels Landwehr"
+                }
+            ],
+            "doi": "10.1109/ICDM.2008.127",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ded19607f0b46732beb30c945bef17d6df73106c",
+            "title": "Boosting Relational Sequence Alignments",
+            "url": "https://www.semanticscholar.org/paper/ded19607f0b46732beb30c945bef17d6df73106c",
+            "venue": "2008 Eighth IEEE International Conference on Data Mining",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2110904481",
+                    "name": "Taisuke Sato"
+                }
+            ],
+            "doi": "10.1007/s10844-008-0062-7",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a68df7596ecd4eac2b3bcd92e16bca2e07ab5fa8",
+            "title": "A glimpse of symbolic-statistical modeling by PRISM",
+            "url": "https://www.semanticscholar.org/paper/a68df7596ecd4eac2b3bcd92e16bca2e07ab5fa8",
+            "venue": "Journal of Intelligent Information Systems",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3131370",
+                    "name": "Stijn Goedertier"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "42071dc9a2c1fa03d42d108e4808c371f2521dfb",
+            "title": "Declarative Techniques for Modeling and Mining Business Processes",
+            "url": "https://www.semanticscholar.org/paper/42071dc9a2c1fa03d42d108e4808c371f2521dfb",
+            "venue": "",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145986014",
+                    "name": "Sriraam Natarajan"
+                },
+                {
+                    "authorId": "145365341",
+                    "name": "H. Bui"
+                },
+                {
+                    "authorId": "1729906",
+                    "name": "Prasad Tadepalli"
+                },
+                {
+                    "authorId": "1746871",
+                    "name": "K. Kersting"
+                },
+                {
+                    "authorId": "37535697",
+                    "name": "Weng-Keen Wong"
+                }
+            ],
+            "doi": "10.1007/978-3-540-85928-4_17",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "2d6297ef37f363e318de5cb4592fdb53bfe515de",
+            "title": "Logical Hierarchical Hidden Markov Models for Modeling User Activities",
+            "url": "https://www.semanticscholar.org/paper/2d6297ef37f363e318de5cb4592fdb53bfe515de",
+            "venue": "ILP",
+            "year": 2008
+        },
+        {
+            "arxivId": "1206.3264",
+            "authors": [
+                {
+                    "authorId": "2548384",
+                    "name": "Hannaneh Hajishirzi"
+                },
+                {
+                    "authorId": "145957401",
+                    "name": "Eyal Amir"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2c2ee2131615cd9e73fe9de7ba17c8118b8a9e72",
+            "title": "Sampling First Order Logical Particles",
+            "url": "https://www.semanticscholar.org/paper/2c2ee2131615cd9e73fe9de7ba17c8118b8a9e72",
+            "venue": "UAI",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145365341",
+                    "name": "H. Bui"
+                },
+                {
+                    "authorId": "1745192",
+                    "name": "F. Cesari"
+                },
+                {
+                    "authorId": "1740944",
+                    "name": "Daniel Elenius"
+                },
+                {
+                    "authorId": "32278841",
+                    "name": "David N. Morley"
+                },
+                {
+                    "authorId": "145986014",
+                    "name": "Sriraam Natarajan"
+                },
+                {
+                    "authorId": "2939605",
+                    "name": "Shahin Saadati"
+                },
+                {
+                    "authorId": "40950555",
+                    "name": "Eric Yeh"
+                },
+                {
+                    "authorId": "1402807089",
+                    "name": "N. Yorke-Smith"
+                }
+            ],
+            "doi": "10.1145/1402744.1402762",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d352507d82a5aaa87e1e162f052ad02653b9c721",
+            "title": "A context-aware personal desktop assistant",
+            "url": "https://www.semanticscholar.org/paper/d352507d82a5aaa87e1e162f052ad02653b9c721",
+            "venue": "AAMAS",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145986014",
+                    "name": "Sriraam Natarajan"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "e8aa7e50b0acc26e63a61c2ee9b6a6e7ea392b50",
+            "title": "Effective decision-theoretic assistance through relational hierarchical models",
+            "url": "https://www.semanticscholar.org/paper/e8aa7e50b0acc26e63a61c2ee9b6a6e7ea392b50",
+            "venue": "",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3208878",
+                    "name": "Niels Landwehr"
+                },
+                {
+                    "authorId": "3048853",
+                    "name": "Bernd Gutmann"
+                },
+                {
+                    "authorId": "73525183",
+                    "name": "Ingo Thon"
+                },
+                {
+                    "authorId": "3041721",
+                    "name": "Matthai Philipose"
+                },
+                {
+                    "authorId": "1740042",
+                    "name": "L. D. Raedt"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "6b5b3cf23c659fa6ed120947bb5f48f0c9dafe1f",
+            "title": "Relational transformation-based tagging for human activity recognition",
+            "url": "https://www.semanticscholar.org/paper/6b5b3cf23c659fa6ed120947bb5f48f0c9dafe1f",
+            "venue": "",
+            "year": 2007
+        },
+        {
+            "arxivId": "1110.2211",
+            "authors": [
+                {
+                    "authorId": "1709512",
+                    "name": "L. Kaelbling"
+                },
+                {
+                    "authorId": "3202401",
+                    "name": "H. Pasula"
+                },
+                {
+                    "authorId": "1982950",
+                    "name": "Luke Zettlemoyer"
+                }
+            ],
+            "doi": "10.1613/jair.2113",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "e88ee4fada3147f925a8c1cbfa8b335b3db4f8e7",
+            "title": "Learning Symbolic Models of Stochastic Domains",
+            "url": "https://www.semanticscholar.org/paper/e88ee4fada3147f925a8c1cbfa8b335b3db4f8e7",
+            "venue": "J. Artif. Intell. Res.",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3277704",
+                    "name": "Andreas Karwath"
+                },
+                {
+                    "authorId": "1746871",
+                    "name": "K. Kersting"
+                }
+            ],
+            "doi": "10.1007/978-3-540-73847-3_29",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "ae8e4ea4b4d1510832abbf96b413988ba34ebde4",
+            "title": "Relational Sequence Alignments and Logos",
+            "url": "https://www.semanticscholar.org/paper/ae8e4ea4b4d1510832abbf96b413988ba34ebde4",
+            "venue": "ILP",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2108229535",
+                    "name": "Jianzhong Chen"
+                },
+                {
+                    "authorId": "2856374",
+                    "name": "L. Kelley"
+                },
+                {
+                    "authorId": "145147566",
+                    "name": "S. Muggleton"
+                },
+                {
+                    "authorId": "145410834",
+                    "name": "M. Sternberg"
+                }
+            ],
+            "doi": "10.1007/978-3-540-73847-3_17",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "a0ec1578d8d729b366af46ec10f93102b005d4ce",
+            "title": "Multi-class Prediction Using Stochastic Logic Programs",
+            "url": "https://www.semanticscholar.org/paper/a0ec1578d8d729b366af46ec10f93102b005d4ce",
+            "venue": "ILP",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3208878",
+                    "name": "Niels Landwehr"
+                },
+                {
+                    "authorId": "1740042",
+                    "name": "L. D. Raedt"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "302ff34fc881b1d6c162941c7404b4300c94d596",
+            "title": "r-grams: Relational Grams",
+            "url": "https://www.semanticscholar.org/paper/302ff34fc881b1d6c162941c7404b4300c94d596",
+            "venue": "IJCAI",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1746871",
+                    "name": "K. Kersting"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "1a9fa046babd0630ca1d292d038b59c108cd71b1",
+            "title": "An inductive logic programming approach to statistical relational learning",
+            "url": "https://www.semanticscholar.org/paper/1a9fa046babd0630ca1d292d038b59c108cd71b1",
+            "venue": "AI Commun.",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145096481",
+                    "name": "A. Ilin"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "a4320dfd8392099138cadb0750934577692d6936",
+            "title": "Advanced source separation methods with applications to spatio-temporal datasets",
+            "url": "https://www.semanticscholar.org/paper/a4320dfd8392099138cadb0750934577692d6936",
+            "venue": "",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3048853",
+                    "name": "Bernd Gutmann"
+                },
+                {
+                    "authorId": "1746871",
+                    "name": "K. Kersting"
+                }
+            ],
+            "doi": "10.1007/11871842_20",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "a57c59f5cb2cebccb457b523a77f4288932ab55f",
+            "title": "TildeCRF: Conditional Random Fields for Logical Sequences",
+            "url": "https://www.semanticscholar.org/paper/a57c59f5cb2cebccb457b523a77f4288932ab55f",
+            "venue": "ECML",
+            "year": 2006
+        },
+        {
+            "arxivId": "1207.1353",
+            "authors": [
+                {
+                    "authorId": "1746871",
+                    "name": "K. Kersting"
+                },
+                {
+                    "authorId": "2785022",
+                    "name": "T. Raiko"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "result"
+            ],
+            "isInfluential": false,
+            "paperId": "497d13dfb40fc231712d81d5137483096dd4b0df",
+            "title": "\"Say EM\" for Selecting Probabilistic Models for Logical Sequences",
+            "url": "https://www.semanticscholar.org/paper/497d13dfb40fc231712d81d5137483096dd4b0df",
+            "venue": "UAI",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1740042",
+                    "name": "L. D. Raedt"
+                },
+                {
+                    "authorId": "1746871",
+                    "name": "K. Kersting"
+                }
+            ],
+            "doi": "10.1007/978-3-540-78652-8_1",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "00709ed019f7ddc5cd84740099066cd20e61625d",
+            "title": "Probabilistic Inductive Logic Programming",
+            "url": "https://www.semanticscholar.org/paper/00709ed019f7ddc5cd84740099066cd20e61625d",
+            "venue": "Probabilistic Inductive Logic Programming",
+            "year": 2004
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1746871",
+                    "name": "K. Kersting"
+                },
+                {
+                    "authorId": "1693945",
+                    "name": "Thomas G\u00e4rtner"
+                }
+            ],
+            "doi": "10.1007/978-3-540-30115-8_21",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "ad3a2740a3b957d4334610eae2dbc0db3c026366",
+            "title": "Fisher Kernels for Logical Sequences",
+            "url": "https://www.semanticscholar.org/paper/ad3a2740a3b957d4334610eae2dbc0db3c026366",
+            "venue": "ECML",
+            "year": 2004
+        },
+        {
+            "arxivId": "1212.2519",
+            "authors": [
+                {
+                    "authorId": "1706989",
+                    "name": "V. S. Costa"
+                },
+                {
+                    "authorId": "144334798",
+                    "name": "David Page"
+                },
+                {
+                    "authorId": "1744430",
+                    "name": "J. Cussens"
+                }
+            ],
+            "doi": "10.1007/978-3-540-78652-8_6",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "9fdc3e265fe4f33021dd0cd618539a25fa6557a3",
+            "title": "CLP(BN): Constraint Logic Programming for Probabilistic Knowledge",
+            "url": "https://www.semanticscholar.org/paper/9fdc3e265fe4f33021dd0cd618539a25fa6557a3",
+            "venue": "Probabilistic Inductive Logic Programming",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2080291388",
+                    "name": "Aram Kim"
+                },
+                {
+                    "authorId": "51183870",
+                    "name": "Junhyoung Oh"
+                },
+                {
+                    "authorId": "147147140",
+                    "name": "Ji-Woong Ryu"
+                },
+                {
+                    "authorId": "2144682709",
+                    "name": "J. Lee"
+                },
+                {
+                    "authorId": "1646657671",
+                    "name": "Kook-huei Kwon"
+                },
+                {
+                    "authorId": "2145201784",
+                    "name": "K. Lee"
+                }
+            ],
+            "doi": "10.22667/JOWUA.2019.12.31.046",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "ee1296369e2694116489f479d5dc89e426a7f977",
+            "title": "SoK: A Systematic Review of Insider Threat Detection",
+            "url": "https://www.semanticscholar.org/paper/ee1296369e2694116489f479d5dc89e426a7f977",
+            "venue": "J. Wirel. Mob. Networks Ubiquitous Comput. Dependable Appl.",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1392359906",
+                    "name": "G. Blanchette"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "9d1284c4d7eb563f3a11f1fc91d8e121cfe0838b",
+            "title": "The Boltzmann Machine: a Connectionist Model for Supra-Classical Logic",
+            "url": "https://www.semanticscholar.org/paper/9d1284c4d7eb563f3a11f1fc91d8e121cfe0838b",
+            "venue": "",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3118420",
+                    "name": "Katerina Marazopoulou"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8a56a945dd3ef6a62426272cf8917ceb17b52dd5",
+            "title": "Temporal and Relational Models for Causality: Representation and Learning",
+            "url": "https://www.semanticscholar.org/paper/8a56a945dd3ef6a62426272cf8917ceb17b52dd5",
+            "venue": "",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "73463713",
+                    "name": "Probabilistic Networks"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d48dad5d40971da4c2890c0cbeddca6e651b667f",
+            "title": "IMPORTANT NOTE: You are advised to consult the publisher's version (publisher's PDF) if you wish to cite from it. Please check the document version below.",
+            "url": "https://www.semanticscholar.org/paper/d48dad5d40971da4c2890c0cbeddca6e651b667f",
+            "venue": "",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3064543",
+                    "name": "Rim Helaoui"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "817b85aa2c360526410d7e2d09598f4520640ae3",
+            "title": "On Leveraging Statistical and Relational Information for the Representation and Recognition of Complex Human Activities",
+            "url": "https://www.semanticscholar.org/paper/817b85aa2c360526410d7e2d09598f4520640ae3",
+            "venue": "",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1729373",
+                    "name": "Pedro Chahuara"
+                },
+                {
+                    "authorId": "144508021",
+                    "name": "A. Fleury"
+                },
+                {
+                    "authorId": "1730318",
+                    "name": "Fran\u00e7ois Portet"
+                },
+                {
+                    "authorId": "1728746",
+                    "name": "Michel Vacher"
+                }
+            ],
+            "doi": "10.3233/AIS-160386",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "55083ce9490d3ceda408a5059dcb9a7febafcf02",
+            "title": "On-line human activity recognition from audio and home automation sensors: Comparison of sequential and non-sequential models in realistic Smart Homes",
+            "url": "https://www.semanticscholar.org/paper/55083ce9490d3ceda408a5059dcb9a7febafcf02",
+            "venue": "J. Ambient Intell. Smart Environ.",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144365475",
+                    "name": "R. Thakur"
+                }
+            ],
+            "doi": "10.17762/ijritcc2321-8169.1504109",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "0d3a2a1c4702ce9d826ea690e85b53b70ca66a6f",
+            "title": "Segmentation of Document Using Discriminative Context-free Grammar Inference and Alignment Similarities",
+            "url": "https://www.semanticscholar.org/paper/0d3a2a1c4702ce9d826ea690e85b53b70ca66a6f",
+            "venue": "",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2371110",
+                    "name": "Anastasios Skarlatidis"
+                },
+                {
+                    "authorId": "4738873",
+                    "name": "G. Paliouras"
+                },
+                {
+                    "authorId": "1707851",
+                    "name": "A. Artikis"
+                },
+                {
+                    "authorId": "1680125",
+                    "name": "G. Vouros"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7768659168c407007cc3a563ba469717d5b6eab3",
+            "title": "General Terms: Complex Event Processing, Event Calculus, Markov Logic Networks Additional Key Words and Phrases: Events, probabilistic inference, machine learning, uncertainty",
+            "url": "https://www.semanticscholar.org/paper/7768659168c407007cc3a563ba469717d5b6eab3",
+            "venue": "",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2304661741",
+                    "name": "Karl Pichotta"
+                },
+                {
+                    "authorId": "1797655",
+                    "name": "R. Mooney"
+                }
+            ],
+            "doi": "10.3115/v1/E14-1024",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "9595dfe4b59ef411f3621a16c0e08a4f9a211568",
+            "title": "Statistical Script Learning with Multi-Argument Events",
+            "url": "https://www.semanticscholar.org/paper/9595dfe4b59ef411f3621a16c0e08a4f9a211568",
+            "venue": "EACL",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144365475",
+                    "name": "R. Thakur"
+                },
+                {
+                    "authorId": "49837736",
+                    "name": "Suresh Jain"
+                },
+                {
+                    "authorId": "2077393706",
+                    "name": "N. Chaudhari"
+                }
+            ],
+            "doi": "10.7763/IJFCC.2013.V2.223",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "cb7251256425362158b3852dd435fc1a12433180",
+            "title": "User Behavior Analysis Using Alignment Based Grammatical Inference from Web Server Access Log",
+            "url": "https://www.semanticscholar.org/paper/cb7251256425362158b3852dd435fc1a12433180",
+            "venue": "",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145773546",
+                    "name": "Ajay Nagesh"
+                },
+                {
+                    "authorId": "144672070",
+                    "name": "Naveen Nair"
+                },
+                {
+                    "authorId": "145799547",
+                    "name": "Ganesh Ramakrishnan"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "0a749da579026c1b9e26c194dfd16dff9ded57b8",
+            "title": "Comparison between Explicit Learning and Implicit Modeling of Relational Features in Structured Output Spaces",
+            "url": "https://www.semanticscholar.org/paper/0a749da579026c1b9e26c194dfd16dff9ded57b8",
+            "venue": "ILP",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3020758",
+                    "name": "M. Islam"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "edd2faf8774c121c610078f4ae557bfc5d1ea202",
+            "title": "Inference and Learning in Probabilistic Logic Programs with Continuous Random Variables",
+            "url": "https://www.semanticscholar.org/paper/edd2faf8774c121c610078f4ae557bfc5d1ea202",
+            "venue": "",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144672070",
+                    "name": "Naveen Nair"
+                },
+                {
+                    "authorId": "2909575",
+                    "name": "Amrita Saha"
+                },
+                {
+                    "authorId": "145799547",
+                    "name": "Ganesh Ramakrishnan"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "88f8049c9f948919944c13213a86771bbfc88506",
+            "title": "Challenges in Learning Optimum Models for Complex First Order Activity Recognition Settings",
+            "url": "https://www.semanticscholar.org/paper/88f8049c9f948919944c13213a86771bbfc88506",
+            "venue": "",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1743087",
+                    "name": "A. Sadilek"
+                },
+                {
+                    "authorId": "1690271",
+                    "name": "Henry A. Kautz"
+                }
+            ],
+            "doi": "10.1007/978-0-85729-625-2_2",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "70181840bdaca094edcd407199e1a74da71dd81a",
+            "title": "Modeling Success, Failure, and Intent of Multi-Agent Activities Under Severe Noise",
+            "url": "https://www.semanticscholar.org/paper/70181840bdaca094edcd407199e1a74da71dd81a",
+            "venue": "Mobile Context Awareness",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1720975",
+                    "name": "Jonas Vlasselaer"
+                },
+                {
+                    "authorId": "1718583",
+                    "name": "Wannes Meert"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "80b5343be0c777e0975cd7bb4123e5f65dca0b4b",
+            "title": "Statistical Relational Learning for Prognostics",
+            "url": "https://www.semanticscholar.org/paper/80b5343be0c777e0975cd7bb4123e5f65dca0b4b",
+            "venue": "",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145147566",
+                    "name": "S. Muggleton"
+                },
+                {
+                    "authorId": "1740042",
+                    "name": "L. D. Raedt"
+                },
+                {
+                    "authorId": "143715817",
+                    "name": "D. Poole"
+                },
+                {
+                    "authorId": "1725040",
+                    "name": "I. Bratko"
+                },
+                {
+                    "authorId": "144474086",
+                    "name": "P. Flach"
+                },
+                {
+                    "authorId": "47104120",
+                    "name": "Katsumi Inoue"
+                },
+                {
+                    "authorId": "143780768",
+                    "name": "A. Srinivasan"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "64b868cdbd04a81997f4368082f99eef89d359db",
+            "title": "ILP turns 20 - Biography and future challenges",
+            "url": "https://www.semanticscholar.org/paper/64b868cdbd04a81997f4368082f99eef89d359db",
+            "venue": "Mach. Learn.",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "32273167",
+                    "name": "Sergios Petridis"
+                },
+                {
+                    "authorId": "2397702",
+                    "name": "S. Perantonis"
+                }
+            ],
+            "doi": "10.1007/978-1-4419-1452-1_12",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "fe223a6d8411ef6f7dbf796a7defe799b0d2a633",
+            "title": "Semantics Extraction From Multimedia Data: An Ontology-Based Machine Learning Approach",
+            "url": "https://www.semanticscholar.org/paper/fe223a6d8411ef6f7dbf796a7defe799b0d2a633",
+            "venue": "",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145147566",
+                    "name": "S. Muggleton"
+                },
+                {
+                    "authorId": "1740042",
+                    "name": "L. D. Raedt"
+                },
+                {
+                    "authorId": "143715817",
+                    "name": "D. Poole"
+                },
+                {
+                    "authorId": "1725040",
+                    "name": "I. Bratko"
+                },
+                {
+                    "authorId": "144474086",
+                    "name": "P. Flach"
+                },
+                {
+                    "authorId": "47104120",
+                    "name": "Katsumi Inoue"
+                },
+                {
+                    "authorId": "143780768",
+                    "name": "A. Srinivasan"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "3939193a70ca3a77905033789c9ee75620585b5d",
+            "title": "Biography and future challenges",
+            "url": "https://www.semanticscholar.org/paper/3939193a70ca3a77905033789c9ee75620585b5d",
+            "venue": "",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "66667793",
+                    "name": "A. Doctoral"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "a098d5ee973704118b3cb14328eb0d1d7dd89cd7",
+            "title": "Learning and Reasoning",
+            "url": "https://www.semanticscholar.org/paper/a098d5ee973704118b3cb14328eb0d1d7dd89cd7",
+            "venue": "",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1704423",
+                    "name": "M. Biba"
+                },
+                {
+                    "authorId": "1725650",
+                    "name": "S. Ferilli"
+                },
+                {
+                    "authorId": "1700821",
+                    "name": "F. Esposito"
+                }
+            ],
+            "doi": "10.1007/978-1-4419-6800-5_4",
+            "intent": [
+                "result"
+            ],
+            "isInfluential": false,
+            "paperId": "213f7f4993b2d858a62cfde0ca2dac8b02d47af7",
+            "title": "Protein Fold Recognition Using Markov Logic Networks",
+            "url": "https://www.semanticscholar.org/paper/213f7f4993b2d858a62cfde0ca2dac8b02d47af7",
+            "venue": "Mathematical Approaches to Polymer Sequence Analysis and Related Problems",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144299726",
+                    "name": "Thomas G. Dietterich"
+                },
+                {
+                    "authorId": "1953940",
+                    "name": "Xinlong Bao"
+                },
+                {
+                    "authorId": "2102258821",
+                    "name": "Victoria Keiser"
+                },
+                {
+                    "authorId": "1951322",
+                    "name": "Jianqiang Shen"
+                }
+            ],
+            "doi": "10.1007/978-1-4419-0140-8_11",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ecac8611bb9953d6818a5b88f07fc4930d5fa194",
+            "title": "Machine Learning Methods for High Level Cyber Situation Awareness",
+            "url": "https://www.semanticscholar.org/paper/ecac8611bb9953d6818a5b88f07fc4930d5fa194",
+            "venue": "Cyber Situational Awareness",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2299685",
+                    "name": "A. McGovern"
+                },
+                {
+                    "authorId": "3077845",
+                    "name": "Timothy A. Supinie"
+                },
+                {
+                    "authorId": "30751341",
+                    "name": "D. Gagne"
+                },
+                {
+                    "authorId": "1901158",
+                    "name": "Nathaniel Troutman"
+                },
+                {
+                    "authorId": "153247101",
+                    "name": "Matthew W. Collier"
+                },
+                {
+                    "authorId": "2150172379",
+                    "name": "Rodger A. Brown"
+                },
+                {
+                    "authorId": "2112800",
+                    "name": "J. Basara"
+                },
+                {
+                    "authorId": "2287206032",
+                    "name": "A. J. K. Williams"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "00f06ca087fc590ac193563aa094086e9c5a07e0",
+            "title": "UNDERSTANDING SEVERE WEATHER PROCESSES THROUGH SPATIOTEMPORAL RELATIONAL RANDOM FORESTS",
+            "url": "https://www.semanticscholar.org/paper/00f06ca087fc590ac193563aa094086e9c5a07e0",
+            "venue": "",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "38892031",
+                    "name": "D. Smith"
+                },
+                {
+                    "authorId": "1824434",
+                    "name": "Kenneth C. Arnold"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "d2a9f44020d77753b180236783b9c83f6d96ff27",
+            "title": "Learning Hierarchical Plans by Reading Simple English Narratives",
+            "url": "https://www.semanticscholar.org/paper/d2a9f44020d77753b180236783b9c83f6d96ff27",
+            "venue": "",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144299726",
+                    "name": "Thomas G. Dietterich"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "eacf4712961919af717dea4444b3bb788a9ecad6",
+            "title": "Title: Activity Recognition in Desktop Environments",
+            "url": "https://www.semanticscholar.org/paper/eacf4712961919af717dea4444b3bb788a9ecad6",
+            "venue": "",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145365341",
+                    "name": "H. Bui"
+                },
+                {
+                    "authorId": "1745192",
+                    "name": "F. Cesari"
+                },
+                {
+                    "authorId": "1740944",
+                    "name": "Daniel Elenius"
+                },
+                {
+                    "authorId": "32278841",
+                    "name": "David N. Morley"
+                },
+                {
+                    "authorId": "143927103",
+                    "name": "S. Natarajan"
+                },
+                {
+                    "authorId": "2939605",
+                    "name": "Shahin Saadati"
+                },
+                {
+                    "authorId": "40950555",
+                    "name": "Eric Yeh"
+                },
+                {
+                    "authorId": "1402807089",
+                    "name": "N. Yorke-Smith"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "02a31cca657d248881f01fa35e964bd5f11d7efc",
+            "title": "A Context-Aware Personal Desktop Assistant (Demo Paper)",
+            "url": "https://www.semanticscholar.org/paper/02a31cca657d248881f01fa35e964bd5f11d7efc",
+            "venue": "",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1746871",
+                    "name": "K. Kersting"
+                },
+                {
+                    "authorId": "1740042",
+                    "name": "L. D. Raedt"
+                },
+                {
+                    "authorId": "3048853",
+                    "name": "Bernd Gutmann"
+                },
+                {
+                    "authorId": "3277704",
+                    "name": "Andreas Karwath"
+                },
+                {
+                    "authorId": "3208878",
+                    "name": "Niels Landwehr"
+                }
+            ],
+            "doi": "10.1007/978-3-540-78652-8_2",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "2e503b74e5d50df6c706fdbd93026f3b8f72b236",
+            "title": "Relational Sequence Learning",
+            "url": "https://www.semanticscholar.org/paper/2e503b74e5d50df6c706fdbd93026f3b8f72b236",
+            "venue": "Probabilistic Inductive Logic Programming",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2108229535",
+                    "name": "Jianzhong Chen"
+                },
+                {
+                    "authorId": "2856374",
+                    "name": "L. Kelley"
+                },
+                {
+                    "authorId": "145147566",
+                    "name": "S. Muggleton"
+                },
+                {
+                    "authorId": "145410834",
+                    "name": "M. Sternberg"
+                }
+            ],
+            "doi": "10.1007/978-3-540-78652-8_9",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "a008767f4adf719213eddb5339e6a89eb2305d48",
+            "title": "Protein Fold Discovery Using Stochastic Logic Programs",
+            "url": "https://www.semanticscholar.org/paper/a008767f4adf719213eddb5339e6a89eb2305d48",
+            "venue": "Probabilistic Inductive Logic Programming",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "32838935",
+                    "name": "Joel Bruno Santos da Costa"
+                },
+                {
+                    "authorId": "2587662",
+                    "name": "J. Bernardes"
+                },
+                {
+                    "authorId": "1706989",
+                    "name": "V. S. Costa"
+                },
+                {
+                    "authorId": "2069403924",
+                    "name": "Gerson"
+                },
+                {
+                    "authorId": "2105048255",
+                    "name": "Zaverucha"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "51608bf323f18148e248f8e9ffbb66c319b99ca9",
+            "title": "Remote Homology Detection Through Discriminative Statistical Relational Learning",
+            "url": "https://www.semanticscholar.org/paper/51608bf323f18148e248f8e9ffbb66c319b99ca9",
+            "venue": "",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1700821",
+                    "name": "F. Esposito"
+                },
+                {
+                    "authorId": "1718594",
+                    "name": "Nicola Di Mauro"
+                },
+                {
+                    "authorId": "1745663",
+                    "name": "T. Basile"
+                },
+                {
+                    "authorId": "1725650",
+                    "name": "S. Ferilli"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "494d72282a65a486f4f16e47b56417ea6a93976b",
+            "title": "Multi-Dimensional Relational Sequence Mining",
+            "url": "https://www.semanticscholar.org/paper/494d72282a65a486f4f16e47b56417ea6a93976b",
+            "venue": "Fundam. Informaticae",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2110904481",
+                    "name": "Taisuke Sato"
+                },
+                {
+                    "authorId": "1764638",
+                    "name": "Yoshitaka Kameya"
+                }
+            ],
+            "doi": "10.1007/978-3-540-78652-8_5",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "56ff809f6d69444d51286e68d2caadad74da2d99",
+            "title": "New Advances in Logic-Based Probabilistic Modeling by PRISM",
+            "url": "https://www.semanticscholar.org/paper/56ff809f6d69444d51286e68d2caadad74da2d99",
+            "venue": "Probabilistic Inductive Logic Programming",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3208878",
+                    "name": "Niels Landwehr"
+                },
+                {
+                    "authorId": "3048853",
+                    "name": "Bernd Gutmann"
+                },
+                {
+                    "authorId": "73525183",
+                    "name": "Ingo Thon"
+                },
+                {
+                    "authorId": "1740042",
+                    "name": "L. D. Raedt"
+                },
+                {
+                    "authorId": "3041721",
+                    "name": "Matthai Philipose"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "d19d10f426033dbc77d2ffbd329aedaa5f6e05f4",
+            "title": "Relational Transformation-based Tagging for Activity Recognition",
+            "url": "https://www.semanticscholar.org/paper/d19d10f426033dbc77d2ffbd329aedaa5f6e05f4",
+            "venue": "Fundam. Informaticae",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1718594",
+                    "name": "Nicola Di Mauro"
+                },
+                {
+                    "authorId": "1745663",
+                    "name": "T. Basile"
+                },
+                {
+                    "authorId": "2118847",
+                    "name": "Grazia Bombini"
+                },
+                {
+                    "authorId": "1725650",
+                    "name": "S. Ferilli"
+                },
+                {
+                    "authorId": "1700821",
+                    "name": "F. Esposito"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7e1259da99420409e14f304d8cfb25f392a48e9b",
+            "title": "Eliciting Multi-Dimensional Relational Patterns",
+            "url": "https://www.semanticscholar.org/paper/7e1259da99420409e14f304d8cfb25f392a48e9b",
+            "venue": "",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3208878",
+                    "name": "Niels Landwehr"
+                },
+                {
+                    "authorId": "1962611",
+                    "name": "Taneli Mielik\u00e4inen"
+                }
+            ],
+            "doi": "10.1007/978-3-540-78652-8_10",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c53132a68274d7434266a9f4e8153b6c0996dfb7",
+            "title": "Probabilistic Logic Learning from Haplotype Data",
+            "url": "https://www.semanticscholar.org/paper/c53132a68274d7434266a9f4e8153b6c0996dfb7",
+            "venue": "Probabilistic Inductive Logic Programming",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1703769",
+                    "name": "J. Karhunen"
+                },
+                {
+                    "authorId": "145766200",
+                    "name": "Antti Honkela"
+                },
+                {
+                    "authorId": "2785022",
+                    "name": "T. Raiko"
+                },
+                {
+                    "authorId": "3263983",
+                    "name": "M. Harva"
+                },
+                {
+                    "authorId": "145096481",
+                    "name": "A. Ilin"
+                },
+                {
+                    "authorId": "3188310",
+                    "name": "Matti Tornio"
+                },
+                {
+                    "authorId": "2132516",
+                    "name": "Harri Valpola"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "ba45c4592cfb39617a62bf74eb30acbd8f9a1e8c",
+            "title": "Chapter 2 Bayesian learning of latent variable models",
+            "url": "https://www.semanticscholar.org/paper/ba45c4592cfb39617a62bf74eb30acbd8f9a1e8c",
+            "venue": "",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1703769",
+                    "name": "J. Karhunen"
+                },
+                {
+                    "authorId": "145766200",
+                    "name": "Antti Honkela"
+                },
+                {
+                    "authorId": "2785022",
+                    "name": "T. Raiko"
+                },
+                {
+                    "authorId": "3263983",
+                    "name": "M. Harva"
+                },
+                {
+                    "authorId": "145096481",
+                    "name": "A. Ilin"
+                },
+                {
+                    "authorId": "3188310",
+                    "name": "Matti Tornio"
+                },
+                {
+                    "authorId": "2132516",
+                    "name": "Harri Valpola"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "61ec4f56ab90783b1e951fc13d3145d5f9b96645",
+            "title": "Bayesian learning of latent variable models",
+            "url": "https://www.semanticscholar.org/paper/61ec4f56ab90783b1e951fc13d3145d5f9b96645",
+            "venue": "",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "73525183",
+                    "name": "Ingo Thon"
+                },
+                {
+                    "authorId": "1746871",
+                    "name": "K. Kersting"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "f415a54229296d751d9c5d0fdbf82e657bf5631b",
+            "title": "Distributed Relational State Representations for Complex Stochastic Processes (Extended Abstract)",
+            "url": "https://www.semanticscholar.org/paper/f415a54229296d751d9c5d0fdbf82e657bf5631b",
+            "venue": "",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1982950",
+                    "name": "Luke Zettlemoyer"
+                },
+                {
+                    "authorId": "3202401",
+                    "name": "H. Pasula"
+                },
+                {
+                    "authorId": "1709512",
+                    "name": "L. Kaelbling"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "97b07738e259fe3982f8ea85817a8c57374d3313",
+            "title": "Logical Particle Filtering",
+            "url": "https://www.semanticscholar.org/paper/97b07738e259fe3982f8ea85817a8c57374d3313",
+            "venue": "Probabilistic, Logical and Relational Learning - A Further Synthesis",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1404636148",
+                    "name": "D. Meyer-Delius"
+                },
+                {
+                    "authorId": "1795065",
+                    "name": "Christian Plagemann"
+                },
+                {
+                    "authorId": "1797053",
+                    "name": "Georg von Wichert"
+                },
+                {
+                    "authorId": "1801103",
+                    "name": "W. Feiten"
+                },
+                {
+                    "authorId": "2440665",
+                    "name": "G. Lawitzky"
+                },
+                {
+                    "authorId": "2106871731",
+                    "name": "Wolfram Burgard"
+                }
+            ],
+            "doi": "10.1007/978-3-540-78246-9_32",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "9927bde90da8d79334424ded5d6e0ff2c45c1782",
+            "title": "A Probabilistic Relational Model for Characterizing Situations in Dynamic Multi-Agent Systems",
+            "url": "https://www.semanticscholar.org/paper/9927bde90da8d79334424ded5d6e0ff2c45c1782",
+            "venue": "GfKl",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9829e0cddeb373491cd30c1e8cb278e9fc2f53f7",
+            "title": "L EARNING T EMPORAL R ULES FROM N OISY T IME - SERIES D ATA",
+            "url": "https://www.semanticscholar.org/paper/9829e0cddeb373491cd30c1e8cb278e9fc2f53f7",
+            "venue": "",
+            "year": null
+        }
+    ],
+    "corpusId": 1278614,
+    "doi": "10.1613/jair.1675",
+    "fieldsOfStudy": [
+        "Computer Science",
+        "Mathematics"
+    ],
+    "influentialCitationCount": 7,
+    "isOpenAccess": true,
+    "isPublisherLicensed": true,
+    "is_open_access": true,
+    "is_publisher_licensed": true,
+    "numCitedBy": 109,
+    "numCiting": 65,
+    "paperId": "c1080539bcddd3b785dfe5db5f582855594b7b38",
+    "references": [
+        {
+            "arxivId": "1207.1353",
+            "authors": [
+                {
+                    "authorId": "1746871",
+                    "name": "K. Kersting"
+                },
+                {
+                    "authorId": "2785022",
+                    "name": "T. Raiko"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "497d13dfb40fc231712d81d5137483096dd4b0df",
+            "title": "\"Say EM\" for Selecting Probabilistic Models for Logical Sequences",
+            "url": "https://www.semanticscholar.org/paper/497d13dfb40fc231712d81d5137483096dd4b0df",
+            "venue": "UAI",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2251289",
+                    "name": "Mikko Koivisto"
+                },
+                {
+                    "authorId": "2031291",
+                    "name": "Teemu Kivioja"
+                },
+                {
+                    "authorId": "1712654",
+                    "name": "H. Mannila"
+                },
+                {
+                    "authorId": "1769833",
+                    "name": "P. Rastas"
+                },
+                {
+                    "authorId": "1722211",
+                    "name": "E. Ukkonen"
+                }
+            ],
+            "doi": "10.1007/978-3-540-30215-5_4",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "bb21d2b0965c432de14d00fb6bdd83734c7e2230",
+            "title": "Hidden Markov Modelling Techniques for Haplotype Analysis",
+            "url": "https://www.semanticscholar.org/paper/bb21d2b0965c432de14d00fb6bdd83734c7e2230",
+            "venue": "ALT",
+            "year": 2004
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1740042",
+                    "name": "L. D. Raedt"
+                },
+                {
+                    "authorId": "1746871",
+                    "name": "K. Kersting"
+                }
+            ],
+            "doi": "10.1007/978-3-540-78652-8_1",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "00709ed019f7ddc5cd84740099066cd20e61625d",
+            "title": "Probabilistic Inductive Logic Programming",
+            "url": "https://www.semanticscholar.org/paper/00709ed019f7ddc5cd84740099066cd20e61625d",
+            "venue": "Probabilistic Inductive Logic Programming",
+            "year": 2004
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2054998630",
+                    "name": "Kyoung-Jae Won"
+                },
+                {
+                    "authorId": "1398417301",
+                    "name": "A. Pr\u00fcgel-Bennett"
+                },
+                {
+                    "authorId": "144197258",
+                    "name": "A. Krogh"
+                }
+            ],
+            "doi": "10.1007/978-3-540-30132-5_13",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "006005f5e034b5dd4226c223d1f1a6a057d0b117",
+            "title": "The Block Hidden Markov Model for Biological Sequence Analysis",
+            "url": "https://www.semanticscholar.org/paper/006005f5e034b5dd4226c223d1f1a6a057d0b117",
+            "venue": "KES",
+            "year": 2004
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3518802",
+                    "name": "J. Chandonia"
+                },
+                {
+                    "authorId": "2879975",
+                    "name": "G. Hon"
+                },
+                {
+                    "authorId": "2055876895",
+                    "name": "Nigel S. Walker"
+                },
+                {
+                    "authorId": "19470661",
+                    "name": "L. Conte"
+                },
+                {
+                    "authorId": "145013593",
+                    "name": "P. Koehl"
+                },
+                {
+                    "authorId": "145162720",
+                    "name": "M. Levitt"
+                },
+                {
+                    "authorId": "3329398",
+                    "name": "S. Brenner"
+                }
+            ],
+            "doi": "10.1093/NAR/GKH034",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7f80a4e284462194b7be1f3a51370048f1f0a83a",
+            "title": "The ASTRAL Compendium in 2004",
+            "url": "https://www.semanticscholar.org/paper/7f80a4e284462194b7be1f3a51370048f1f0a83a",
+            "venue": "Nucleic Acids Res.",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144074891",
+                    "name": "Sumit K. Sanghai"
+                },
+                {
+                    "authorId": "1740213",
+                    "name": "Pedro M. Domingos"
+                },
+                {
+                    "authorId": "1780531",
+                    "name": "Daniel S. Weld"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7907f8aff65a78143b58fb3922ece5f276aac418",
+            "title": "Dynamic Probabilistic Relational Models",
+            "url": "https://www.semanticscholar.org/paper/7907f8aff65a78143b58fb3922ece5f276aac418",
+            "venue": "IJCAI",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1705051",
+                    "name": "Y. Sakakibara"
+                }
+            ],
+            "doi": "10.1093/BIOINFORMATICS/BTG1032",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "0b111e5afd5c8f2b72926532974aa9de8989bf32",
+            "title": "Pair hidden Markov models on tree structures",
+            "url": "https://www.semanticscholar.org/paper/0b111e5afd5c8f2b72926532974aa9de8989bf32",
+            "venue": "ISMB",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1740042",
+                    "name": "L. D. Raedt"
+                },
+                {
+                    "authorId": "1746871",
+                    "name": "K. Kersting"
+                }
+            ],
+            "doi": "10.1145/959242.959247",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c2a69bdc003fac58d6254cb49155734bcd6eb118",
+            "title": "Probabilistic logic learning",
+            "url": "https://www.semanticscholar.org/paper/c2a69bdc003fac58d6254cb49155734bcd6eb118",
+            "venue": "SKDD",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1746871",
+                    "name": "K. Kersting"
+                },
+                {
+                    "authorId": "2785022",
+                    "name": "T. Raiko"
+                },
+                {
+                    "authorId": "145471896",
+                    "name": "Stefan Kramer"
+                },
+                {
+                    "authorId": "1740042",
+                    "name": "L. D. Raedt"
+                }
+            ],
+            "doi": "10.1142/9789812776303_0019",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "241ffa9f5b27dee8c19c14a9e152aa9e25a53339",
+            "title": "Towards Discovering Structural Signatures of Protein Folds Based on Logical Hidden Markov Models",
+            "url": "https://www.semanticscholar.org/paper/241ffa9f5b27dee8c19c14a9e152aa9e25a53339",
+            "venue": "Pacific Symposium on Biocomputing",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2251289",
+                    "name": "Mikko Koivisto"
+                },
+                {
+                    "authorId": "2548112",
+                    "name": "M. Perola"
+                },
+                {
+                    "authorId": "2268064",
+                    "name": "T. Varilo"
+                },
+                {
+                    "authorId": "2394078",
+                    "name": "W. Hennah"
+                },
+                {
+                    "authorId": "144796733",
+                    "name": "J. Ekelund"
+                },
+                {
+                    "authorId": "2807305",
+                    "name": "M. Lukk"
+                },
+                {
+                    "authorId": "49527383",
+                    "name": "L. Peltonen"
+                },
+                {
+                    "authorId": "1722211",
+                    "name": "E. Ukkonen"
+                },
+                {
+                    "authorId": "1712654",
+                    "name": "H. Mannila"
+                }
+            ],
+            "doi": "10.1142/9789812776303_0047",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "8fa235ce2ba9b659f797405928eb5142cd65500d",
+            "title": "An MDL Method for Finding Haplotype Blocks and for Estimating the Strength of Haplotype Block Boundaries",
+            "url": "https://www.semanticscholar.org/paper/8fa235ce2ba9b659f797405928eb5142cd65500d",
+            "venue": "Pacific Symposium on Biocomputing",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "20519220",
+                    "name": "Corin R. Anderson"
+                },
+                {
+                    "authorId": "1740213",
+                    "name": "Pedro M. Domingos"
+                },
+                {
+                    "authorId": "1780531",
+                    "name": "Daniel S. Weld"
+                }
+            ],
+            "doi": "10.1145/775047.775068",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9e8d1c6f3afdd31ecdcb559a5a4f0d50978efe85",
+            "title": "Relational Markov models and their application to adaptive web navigation",
+            "url": "https://www.semanticscholar.org/paper/9e8d1c6f3afdd31ecdcb559a5a4f0d50978efe85",
+            "venue": "KDD",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1688235",
+                    "name": "P. Frasconi"
+                },
+                {
+                    "authorId": "2540925",
+                    "name": "G. Soda"
+                },
+                {
+                    "authorId": "3255005",
+                    "name": "A. Vullo"
+                }
+            ],
+            "doi": "10.1023/A:1013681528748",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "8276ca615db0d6e38214524a544dd36ce9154086",
+            "title": "Hidden Markov Models for Text Categorization in Multi-Page Documents",
+            "url": "https://www.semanticscholar.org/paper/8276ca615db0d6e38214524a544dd36ce9154086",
+            "venue": "Journal of Intelligent Information Systems",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1746871",
+                    "name": "K. Kersting"
+                },
+                {
+                    "authorId": "1740042",
+                    "name": "L. D. Raedt"
+                }
+            ],
+            "doi": "10.1007/3-540-44797-0_10",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "cbcc245b22a31f3a344e2240cab641d34ccb80ae",
+            "title": "Towards Combining Inductive Logic Programming with Bayesian Networks",
+            "url": "https://www.semanticscholar.org/paper/cbcc245b22a31f3a344e2240cab641d34ccb80ae",
+            "venue": "ILP",
+            "year": 2001
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1746871",
+                    "name": "K. Kersting"
+                },
+                {
+                    "authorId": "1740042",
+                    "name": "L. D. Raedt"
+                }
+            ],
+            "doi": "10.1007/3-540-44797-0_9",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "657635fae8a3fcdcdf8467c5a83e603d597e38c2",
+            "title": "Adaptive Bayesian Logic Programs",
+            "url": "https://www.semanticscholar.org/paper/657635fae8a3fcdcdf8467c5a83e603d597e38c2",
+            "venue": "ILP",
+            "year": 2001
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3114771",
+                    "name": "N. Jacobs"
+                },
+                {
+                    "authorId": "1755851",
+                    "name": "H. Blockeel"
+                }
+            ],
+            "doi": "10.1007/3-540-44566-8_4",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "b0139c90d963835de58241f0907eb5dc722eb703",
+            "title": "The Learning Shell: Automated Macro Construction",
+            "url": "https://www.semanticscholar.org/paper/b0139c90d963835de58241f0907eb5dc722eb703",
+            "venue": "User Modeling",
+            "year": 2001
+        },
+        {
+            "arxivId": "1106.1797",
+            "authors": [
+                {
+                    "authorId": "2110904481",
+                    "name": "Taisuke Sato"
+                },
+                {
+                    "authorId": "1764638",
+                    "name": "Yoshitaka Kameya"
+                }
+            ],
+            "doi": "10.1613/jair.912",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "e33e1bd066c9c62040327c6969a890b9a49b23c0",
+            "title": "Parameter Learning of Logic Programs for Symbolic-Statistical Modeling",
+            "url": "https://www.semanticscholar.org/paper/e33e1bd066c9c62040327c6969a890b9a49b23c0",
+            "venue": "J. Artif. Intell. Res.",
+            "year": 2001
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144522283",
+                    "name": "T. Horv\u00e1th"
+                },
+                {
+                    "authorId": "145057418",
+                    "name": "S. Wrobel"
+                },
+                {
+                    "authorId": "2864023",
+                    "name": "U. Bohnebeck"
+                }
+            ],
+            "doi": "10.1023/A:1007668716498",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "a15354a21aae0580b2f0255b703e0da2b5a54137",
+            "title": "Relational Instance-Based Learning with Lists and Terms",
+            "url": "https://www.semanticscholar.org/paper/a15354a21aae0580b2f0255b703e0da2b5a54137",
+            "venue": "Machine Learning",
+            "year": 2001
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1690533",
+                    "name": "M. Turcotte"
+                },
+                {
+                    "authorId": "145147566",
+                    "name": "S. Muggleton"
+                },
+                {
+                    "authorId": "145410834",
+                    "name": "M. Sternberg"
+                }
+            ],
+            "doi": "10.1023/A:1007672817406",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "b52f8c0345fd8bdaaee1ea16bbaafc1e6d5ec562",
+            "title": "The Effect of Relational Background Knowledge on Learning of Protein Three-Dimensional Fold Signatures",
+            "url": "https://www.semanticscholar.org/paper/b52f8c0345fd8bdaaee1ea16bbaafc1e6d5ec562",
+            "venue": "Machine Learning",
+            "year": 2001
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2708017",
+                    "name": "J. Bresnan"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2368b027207c387216a015e07fea5b1050053f56",
+            "title": "Lexical-Functional Syntax",
+            "url": "https://www.semanticscholar.org/paper/2368b027207c387216a015e07fea5b1050053f56",
+            "venue": "",
+            "year": 2000
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2289489",
+                    "name": "Benjamin Korvemaker"
+                },
+                {
+                    "authorId": "143686063",
+                    "name": "R. Greiner"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "bf66961613a154c2e99d269ef401ffa79a10b77c",
+            "title": "Predicting UNIX Command Lines: Adjusting to User Patterns",
+            "url": "https://www.semanticscholar.org/paper/bf66961613a154c2e99d269ef401ffa79a10b77c",
+            "venue": "AAAI/IAAI",
+            "year": 2000
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2285463915",
+                    "name": "Nir Friedman"
+                },
+                {
+                    "authorId": "1746034",
+                    "name": "L. Getoor"
+                },
+                {
+                    "authorId": "2285578720",
+                    "name": "Daphne Koller"
+                },
+                {
+                    "authorId": "2285570170",
+                    "name": "Avi Pfeffer"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "611dac316bf03112c778cf7365d08e4a9d171876",
+            "title": "Learning Probabilistic Relational Models",
+            "url": "https://www.semanticscholar.org/paper/611dac316bf03112c778cf7365d08e4a9d171876",
+            "venue": "IJCAI",
+            "year": 1999
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "35551590",
+                    "name": "Steven P. Abney"
+                },
+                {
+                    "authorId": "145689002",
+                    "name": "David A. McAllester"
+                },
+                {
+                    "authorId": "145366908",
+                    "name": "Fernando C Pereira"
+                }
+            ],
+            "doi": "10.3115/1034678.1034759",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "5968067c696653fec60325633fb676f9134bd1db",
+            "title": "Relating Probabilistic Grammars and Automata",
+            "url": "https://www.semanticscholar.org/paper/5968067c696653fec60325633fb676f9134bd1db",
+            "venue": "ACL",
+            "year": 1999
+        },
+        {
+            "arxivId": "cs/9905010",
+            "authors": [
+                {
+                    "authorId": "3289329",
+                    "name": "S. Riezler"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2eb339f81b73c6905904227f08f71af1412f9086",
+            "title": "Statistical Inference and Probabilistic Modelling for Constraint-Based NLP",
+            "url": "https://www.semanticscholar.org/paper/2eb339f81b73c6905904227f08f71af1412f9086",
+            "venue": "ArXiv",
+            "year": 1999
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "8126949",
+                    "name": "T. Hubbard"
+                },
+                {
+                    "authorId": "2865389",
+                    "name": "A. Murzin"
+                },
+                {
+                    "authorId": "3329398",
+                    "name": "S. Brenner"
+                },
+                {
+                    "authorId": "2216149",
+                    "name": "C. Chothia"
+                }
+            ],
+            "doi": "10.1093/nar/25.1.236",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0d6b4182d465f70e359e30372e550121a0fc94b0",
+            "title": "SCOP: a structural classification of proteins database",
+            "url": "https://www.semanticscholar.org/paper/0d6b4182d465f70e359e30372e550121a0fc94b0",
+            "venue": "Nucleic Acids Res.",
+            "year": 1998
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2864023",
+                    "name": "U. Bohnebeck"
+                },
+                {
+                    "authorId": "144522283",
+                    "name": "T. Horv\u00e1th"
+                },
+                {
+                    "authorId": "145057418",
+                    "name": "S. Wrobel"
+                }
+            ],
+            "doi": "10.1007/BFb0027311",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "787cd1b9e130290244448a5e8fe3346af444c9a0",
+            "title": "Term Comparisons in First-Order Similarity Measures",
+            "url": "https://www.semanticscholar.org/paper/787cd1b9e130290244448a5e8fe3346af444c9a0",
+            "venue": "ILP",
+            "year": 1998
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1798578",
+                    "name": "Rafael C. Carrasco"
+                },
+                {
+                    "authorId": "1788910",
+                    "name": "J. Oncina"
+                },
+                {
+                    "authorId": "1403626284",
+                    "name": "J. Calera-Rubio"
+                }
+            ],
+            "doi": "10.1023/A:1010836331703",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "12e3c5c2a55acc0f37576bbb6eefbdbfc8261139",
+            "title": "Stochastic Inference of Regular Tree Languages",
+            "url": "https://www.semanticscholar.org/paper/12e3c5c2a55acc0f37576bbb6eefbdbfc8261139",
+            "venue": "Machine Learning",
+            "year": 1998
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1684722",
+                    "name": "Shai Fine"
+                },
+                {
+                    "authorId": "1740765",
+                    "name": "Y. Singer"
+                },
+                {
+                    "authorId": "1777660",
+                    "name": "Naftali Tishby"
+                }
+            ],
+            "doi": "10.1023/A:1007469218079",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "fa0f137fb007d169d368873484633ef7c45de003",
+            "title": "The Hierarchical Hidden Markov Model: Analysis and Applications",
+            "url": "https://www.semanticscholar.org/paper/fa0f137fb007d169d368873484633ef7c45de003",
+            "venue": "Machine Learning",
+            "year": 1998
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144187514",
+                    "name": "R. Durbin"
+                },
+                {
+                    "authorId": "1708077",
+                    "name": "S. Eddy"
+                },
+                {
+                    "authorId": "144197258",
+                    "name": "A. Krogh"
+                },
+                {
+                    "authorId": "145666307",
+                    "name": "G. Mitchison"
+                }
+            ],
+            "doi": "10.1017/CBO9780511790492",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d30cf4154da4dc8c8073c2f59cc35b1e7d453a65",
+            "title": "Biological Sequence Analysis: Probabilistic Models of Proteins and Nucleic Acids",
+            "url": "https://www.semanticscholar.org/paper/d30cf4154da4dc8c8073c2f59cc35b1e7d453a65",
+            "venue": "",
+            "year": 1998
+        },
+        {
+            "arxivId": "1302.1550",
+            "authors": [
+                {
+                    "authorId": "2057536",
+                    "name": "M. Jaeger"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "61c36ef03e853ba30a0026ae3f64cac96a6fb272",
+            "title": "Relational Bayesian Networks",
+            "url": "https://www.semanticscholar.org/paper/61c36ef03e853ba30a0026ae3f64cac96a6fb272",
+            "venue": "UAI",
+            "year": 1997
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "46546904",
+                    "name": "B. Fristedt"
+                },
+                {
+                    "authorId": "145715878",
+                    "name": "L. Gray"
+                }
+            ],
+            "doi": "10.2307/2670021",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "9f522a2e0c2156b05dc082fe23ecf70ddef49b54",
+            "title": "A modern approach to probability theory",
+            "url": "https://www.semanticscholar.org/paper/9f522a2e0c2156b05dc082fe23ecf70ddef49b54",
+            "venue": "",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1690163",
+                    "name": "G. McLachlan"
+                },
+                {
+                    "authorId": "143870001",
+                    "name": "T. Krishnan"
+                }
+            ],
+            "doi": "10.2307/2534032",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "7d50991b693fc23edda316fb1487f114f6cc6706",
+            "title": "The EM algorithm and extensions",
+            "url": "https://www.semanticscholar.org/paper/7d50991b693fc23edda316fb1487f114f6cc6706",
+            "venue": "",
+            "year": 1996
+        },
+        {
+            "arxivId": "cmp-lg/9610003",
+            "authors": [
+                {
+                    "authorId": "35551590",
+                    "name": "Steven P. Abney"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "61dffff2116f3543e71d536a18308fa4fc5e53c3",
+            "title": "Stochastic Attribute-Value Grammars",
+            "url": "https://www.semanticscholar.org/paper/61dffff2116f3543e71d536a18308fa4fc5e53c3",
+            "venue": "CL",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144376691",
+                    "name": "D. Kulp"
+                },
+                {
+                    "authorId": "1733689",
+                    "name": "D. Haussler"
+                },
+                {
+                    "authorId": "2091963",
+                    "name": "M. G. Reese"
+                },
+                {
+                    "authorId": "2010432",
+                    "name": "F. Eeckman"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8d68b92eed31134ccddd6673f5b0c5dcc68d114a",
+            "title": "A Generalized Hidden Markov Model for the Recognition of Human Genes in DNA",
+            "url": "https://www.semanticscholar.org/paper/8d68b92eed31134ccddd6673f5b0c5dcc68d114a",
+            "venue": "ISMB",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1764306",
+                    "name": "G. Barton"
+                }
+            ],
+            "doi": "10.1016/0968-0004(94)90060-4",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d567c607829491886fa739e687950a7ebaa5185c",
+            "title": "Scop: structural classification of proteins.",
+            "url": "https://www.semanticscholar.org/paper/d567c607829491886fa739e687950a7ebaa5185c",
+            "venue": "Trends in biochemical sciences",
+            "year": 1994
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1705051",
+                    "name": "Y. Sakakibara"
+                },
+                {
+                    "authorId": "2111287043",
+                    "name": "Michael Brown"
+                },
+                {
+                    "authorId": "144364614",
+                    "name": "R. Hughey"
+                },
+                {
+                    "authorId": "1863326",
+                    "name": "I. Mian"
+                },
+                {
+                    "authorId": "5233893",
+                    "name": "Kimmen Sj\u00f6lander"
+                },
+                {
+                    "authorId": "38849275",
+                    "name": "R. Underwood"
+                },
+                {
+                    "authorId": "1733689",
+                    "name": "D. Haussler"
+                }
+            ],
+            "doi": "10.1093/NAR/22.23.5112",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "1435c68bef30424e9f5e657abc3948a3ef2cf903",
+            "title": "Stochastic context-free grammars for tRNA modeling.",
+            "url": "https://www.semanticscholar.org/paper/1435c68bef30424e9f5e657abc3948a3ef2cf903",
+            "venue": "Nucleic acids research",
+            "year": 1994
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1708077",
+                    "name": "S. Eddy"
+                },
+                {
+                    "authorId": "144187514",
+                    "name": "R. Durbin"
+                }
+            ],
+            "doi": "10.1093/NAR/22.11.2079",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "f1852e23a96bb49800543d686d97f64df07d5d2b",
+            "title": "RNA sequence analysis using covariance models.",
+            "url": "https://www.semanticscholar.org/paper/f1852e23a96bb49800543d686d97f64df07d5d2b",
+            "venue": "Nucleic acids research",
+            "year": 1994
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145147566",
+                    "name": "S. Muggleton"
+                },
+                {
+                    "authorId": "1740042",
+                    "name": "L. D. Raedt"
+                }
+            ],
+            "doi": "10.1016/0743-1066(94)90035-3",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "f47f99a16f60d649f7d3c1c6a26c6eff68e2e3da",
+            "title": "Inductive Logic Programming: Theory and Methods",
+            "url": "https://www.semanticscholar.org/paper/f47f99a16f60d649f7d3c1c6a26c6eff68e2e3da",
+            "venue": "J. Log. Program.",
+            "year": 1994
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1705051",
+                    "name": "Y. Sakakibara"
+                }
+            ],
+            "doi": "10.1016/0890-5401(92)90003-X",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "744bd83dcfa9891a8a160a200014fcb5e6c69f82",
+            "title": "Efficient Learning of Context-Free Grammars from Positive Structural Examples",
+            "url": "https://www.semanticscholar.org/paper/744bd83dcfa9891a8a160a200014fcb5e6c69f82",
+            "venue": "Inf. Comput.",
+            "year": 1992
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144343609",
+                    "name": "S. Greenberg"
+                }
+            ],
+            "doi": "10.11575/PRISM/30806",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "11e5d4d0104835266301e31344dd183c50edc652",
+            "title": "USING UNIX: COLLECTED TRACES OF 168 USERS",
+            "url": "https://www.semanticscholar.org/paper/11e5d4d0104835266301e31344dd183c50edc652",
+            "venue": "",
+            "year": 1988
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "35229948",
+                    "name": "Slava M. Katz"
+                }
+            ],
+            "doi": "10.1109/TASSP.1987.1165125",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "b0130277677e5b915d5cd86b3afafd77fd08eb2e",
+            "title": "Estimation of probabilities from sparse data for the language model component of a speech recognizer",
+            "url": "https://www.semanticscholar.org/paper/b0130277677e5b915d5cd86b3afafd77fd08eb2e",
+            "venue": "IEEE Trans. Acoust. Speech Signal Process.",
+            "year": 1987
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144153201",
+                    "name": "J. Baker"
+                }
+            ],
+            "doi": "10.1121/1.2017061",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "6c79a9bb8f885050cad70b4c69e016b186ffa538",
+            "title": "Trainable grammars for speech recognition",
+            "url": "https://www.semanticscholar.org/paper/6c79a9bb8f885050cad70b4c69e016b186ffa538",
+            "venue": "",
+            "year": 1979
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "28347374",
+                    "name": "L. Levy"
+                },
+                {
+                    "authorId": "1714374",
+                    "name": "A. Joshi"
+                }
+            ],
+            "doi": "10.1016/S0019-9958(78)90849-5",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "4659e558eb62fccfb4793db48e7733e519a59878",
+            "title": "Skeletal Structural Descriptions",
+            "url": "https://www.semanticscholar.org/paper/4659e558eb62fccfb4793db48e7733e519a59878",
+            "venue": "Inf. Control.",
+            "year": 1978
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "153331212",
+                    "name": "R. Levine"
+                },
+                {
+                    "authorId": "1831176",
+                    "name": "Walt Detmar Meurers"
+                }
+            ],
+            "doi": "10.1016/B0-08-044854-2/02040-X",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e0aa13cb23789be5c4bfb59f8d64fdef9f9a75fa",
+            "title": "Head-Driven Phrase Structure Grammar",
+            "url": "https://www.semanticscholar.org/paper/e0aa13cb23789be5c4bfb59f8d64fdef9f9a75fa",
+            "venue": "",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2262391856",
+                    "name": "Vladimir Solmon"
+                }
+            ],
+            "doi": "10.1016/0885-2308(90)90022-x",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "c655420146f87152f86d3ddaccd155cea256ad5f",
+            "title": "The estimation of stochastic context-free grammars using the Inside-Outside algorithm",
+            "url": "https://www.semanticscholar.org/paper/c655420146f87152f86d3ddaccd155cea256ad5f",
+            "venue": "",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145177220",
+                    "name": "Mark Johnson"
+                }
+            ],
+            "doi": "10.1007/978-3-540-45167-9_49",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d5ec3f6671454ffc2042cc9cb287401c3b86a7cf",
+            "title": "Learning and Parsing Stochastic Unification-Based Grammars",
+            "url": "https://www.semanticscholar.org/paper/d5ec3f6671454ffc2042cc9cb287401c3b86a7cf",
+            "venue": "COLT",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143673956",
+                    "name": "T. Lane"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "48878a6fae4ae129ac3057a83989f64c8057382a",
+            "title": "Hidden Markov Models for Human/Computer Interface Modeling",
+            "url": "https://www.semanticscholar.org/paper/48878a6fae4ae129ac3057a83989f64c8057382a",
+            "venue": "",
+            "year": 1999
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1800527",
+                    "name": "Brian D. Davison"
+                },
+                {
+                    "authorId": "3025731",
+                    "name": "H. Hirsh"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "c6ea3256a793f56548917f28a6b01ab5639d260f",
+            "title": "Predicting Sequences of User Actions",
+            "url": "https://www.semanticscholar.org/paper/c6ea3256a793f56548917f28a6b01ab5639d260f",
+            "venue": "",
+            "year": 1998
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "17446277",
+                    "name": "J. Goodman"
+                }
+            ],
+            "doi": "10.1007/978-94-015-9470-7_4",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "acc52706468cc9944a9a71a8c16be96df79c5be0",
+            "title": "Probabilistic Feature Grammars",
+            "url": "https://www.semanticscholar.org/paper/acc52706468cc9944a9a71a8c16be96df79c5be0",
+            "venue": "IWPT",
+            "year": 1997
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145147566",
+                    "name": "S. Muggleton"
+                }
+            ],
+            "doi": "10.7551/mitpress/7432.003.0013",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "454742f723d5bdeb023d4a65ede020e881d68ae4",
+            "title": "Stochastic Logic Programs",
+            "url": "https://www.semanticscholar.org/paper/454742f723d5bdeb023d4a65ede020e881d68ae4",
+            "venue": "",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1744700",
+                    "name": "Zoubin Ghahramani"
+                },
+                {
+                    "authorId": "1694621",
+                    "name": "Michael I. Jordan"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "ff7e79c8b0c3ad135699120068c6e2561d2b1dac",
+            "title": "MASSACHUSETTS INSTITUTE OF TECHNOLOGY ARTIFICIAL INTELLIGENCE LABORATORY and CENTER FOR BIOLOGICAL AND COMPUTATIONAL LEARNING DEPARTMENT OF BRAIN AND COGNITIVE SCIENCES",
+            "url": "https://www.semanticscholar.org/paper/ff7e79c8b0c3ad135699120068c6e2561d2b1dac",
+            "venue": "",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2065321832",
+                    "name": "L. Ngo"
+                },
+                {
+                    "authorId": "1681109",
+                    "name": "P. Haddawy"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "8a59ce04b6a0d923cd60dc1c16b6b7d99a60bffb",
+            "title": "Answering Queries from Context-Sensitive Probabilistic Knowledge Bases (cid:3)",
+            "url": "https://www.semanticscholar.org/paper/8a59ce04b6a0d923cd60dc1c16b6b7d99a60bffb",
+            "venue": "",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "40347820",
+                    "name": "Jean-Pierre Koenig"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "3cee61e41731adb3356233aed2a9b33c2280683b",
+            "title": "Book Reviews: Head-driven Phrase Structure Grammar and German in Head-driven Phrase-structure Grammar",
+            "url": "https://www.semanticscholar.org/paper/3cee61e41731adb3356233aed2a9b33c2280683b",
+            "venue": "CL",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "49497622",
+                    "name": "K. Lari"
+                },
+                {
+                    "authorId": "145259603",
+                    "name": "S. Young"
+                }
+            ],
+            "doi": "10.1016/0885-2308(91)90009-F",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "9ba08e0a53bfdcbe0b70a4761c3e2b62f150fc74",
+            "title": "Applications of stochastic context-free grammars using the Inside-Outside algorithm",
+            "url": "https://www.semanticscholar.org/paper/9ba08e0a53bfdcbe0b70a4761c3e2b62f150fc74",
+            "venue": "",
+            "year": 1990
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1712517",
+                    "name": "L. Rabiner"
+                },
+                {
+                    "authorId": "143604406",
+                    "name": "B. Juang"
+                }
+            ],
+            "doi": "10.1109/MASSP.1986.1165342",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "385622a5862c989653a648ac8abc59ae3fe785f7",
+            "title": "An introduction to hidden Markov models",
+            "url": "https://www.semanticscholar.org/paper/385622a5862c989653a648ac8abc59ae3fe785f7",
+            "venue": "IEEE ASSP Magazine",
+            "year": 1986
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1706504",
+                    "name": "J. Hopcroft"
+                },
+                {
+                    "authorId": "1742391",
+                    "name": "J. Ullman"
+                }
+            ],
+            "doi": "10.1016/0096-0551(80)90011-9",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "41a88a490d7ba9e383ecb16c4290083413a08258",
+            "title": "Introduction to Automata Theory, Languages and Computation",
+            "url": "https://www.semanticscholar.org/paper/41a88a490d7ba9e383ecb16c4290083413a08258",
+            "venue": "",
+            "year": 1979
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "39361090",
+                    "name": "L. Baum"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "539036ab9e8f038c8a948596e77cc0dfcfa91fb3",
+            "title": "An inequality and associated maximization technique in statistical estimation of probabilistic functions of a Markov process",
+            "url": "https://www.semanticscholar.org/paper/539036ab9e8f038c8a948596e77cc0dfcfa91fb3",
+            "venue": "",
+            "year": 1972
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Mathematics",
+            "source": "external"
+        },
+        {
+            "category": "Biology",
+            "source": "s2-fos-model"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Logical Hidden Markov Models",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/c1080539bcddd3b785dfe5db5f582855594b7b38",
+    "venue": "Journal of Artificial Intelligence Research",
+    "year": 2011
+}

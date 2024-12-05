@@ -1,0 +1,689 @@
+{
+    "abstract": "Many constraint satisfaction problems involve synthesizing subgraphs that satisfy certain reachability constraints. This paper presents programs in Picat for four problems selected from the recent LP/CP programming competitions. The programs demonstrate the modeling capabilities of the Picat language and the solving efficiency of the cutting-edge SAT solvers empowered with effective encodings.",
+    "arxivId": "2109.08293",
+    "authors": [
+        {
+            "authorId": "40593363",
+            "name": "Neng-Fa Zhou",
+            "url": "https://www.semanticscholar.org/author/40593363"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": "2209.00917",
+            "authors": [
+                {
+                    "authorId": "2390451",
+                    "name": "Gilles Audemard"
+                },
+                {
+                    "authorId": "1723408",
+                    "name": "Christophe Lecoutre"
+                },
+                {
+                    "authorId": "1911811",
+                    "name": "Emmanuel Lonca"
+                }
+            ],
+            "doi": "10.48550/arXiv.2209.00917",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "eb261ec59acd298b979f8f128a1a6624fcb44a04",
+            "title": "Proceedings of the 2022 XCSP3 Competition",
+            "url": "https://www.semanticscholar.org/paper/eb261ec59acd298b979f8f128a1a6624fcb44a04",
+            "venue": "ArXiv",
+            "year": 2022
+        },
+        {
+            "arxivId": "2201.10816",
+            "authors": [
+                {
+                    "authorId": "2151178843",
+                    "name": "Philipp Korner"
+                },
+                {
+                    "authorId": "1729481",
+                    "name": "M. Leuschel"
+                },
+                {
+                    "authorId": "153411936",
+                    "name": "Jo\u00e3o Barbosa"
+                },
+                {
+                    "authorId": "1706989",
+                    "name": "V. S. Costa"
+                },
+                {
+                    "authorId": "2044594",
+                    "name": "V. Dahl"
+                },
+                {
+                    "authorId": "1717483",
+                    "name": "M. Hermenegildo"
+                },
+                {
+                    "authorId": "145623770",
+                    "name": "J. Morales"
+                },
+                {
+                    "authorId": "1741900",
+                    "name": "J. Wielemaker"
+                },
+                {
+                    "authorId": "144833204",
+                    "name": "Daniel Diaz"
+                },
+                {
+                    "authorId": "145423411",
+                    "name": "Salvador Abreu"
+                },
+                {
+                    "authorId": "46611901",
+                    "name": "Giovanni Ciatto"
+                }
+            ],
+            "doi": "10.1017/s1471068422000102",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "ade08e17bae6dce4659dbb3212fd65edd1e686d3",
+            "title": "Fifty Years of Prolog and Beyond",
+            "url": "https://www.semanticscholar.org/paper/ade08e17bae6dce4659dbb3212fd65edd1e686d3",
+            "venue": "Theory Pract. Log. Program.",
+            "year": 2022
+        }
+    ],
+    "corpusId": 237563274,
+    "doi": "10.4204/EPTCS.345.30",
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": true,
+    "isPublisherLicensed": true,
+    "is_open_access": true,
+    "is_publisher_licensed": true,
+    "numCitedBy": 2,
+    "numCiting": 29,
+    "paperId": "65f3ffc78a01989e0d111db30fd94e8668223c56",
+    "references": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "40593363",
+                    "name": "Neng-Fa Zhou"
+                }
+            ],
+            "doi": "10.1007/978-3-030-58475-7_34",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "96c27e1edc2abba4664e747095f4954750a35d1e",
+            "title": "In Pursuit of an Efficient SAT Encoding for the Hamiltonian Cycle Problem",
+            "url": "https://www.semanticscholar.org/paper/96c27e1edc2abba4664e747095f4954750a35d1e",
+            "venue": "CP",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "40593363",
+                    "name": "Neng-Fa Zhou"
+                },
+                {
+                    "authorId": "2099900",
+                    "name": "H\u00e5kan Kjellerstrand"
+                }
+            ],
+            "doi": "10.1007/978-3-319-66158-2_43",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "02628c8dff7907f68a6c9ab6b8b58000bc25b265",
+            "title": "Optimizing SAT Encodings for Arithmetic Constraints",
+            "url": "https://www.semanticscholar.org/paper/02628c8dff7907f68a6c9ab6b8b58000bc25b265",
+            "venue": "CP",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "40593363",
+                    "name": "Neng-Fa Zhou"
+                },
+                {
+                    "authorId": "2408062",
+                    "name": "J. Fruhman"
+                }
+            ],
+            "doi": "10.1007/978-3-319-51676-9_2",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "92b1d01d2bb29ef325cdf58a9e54f6a4ea0184fd",
+            "title": "Canonicalizing High-Level Constructs in Picat",
+            "url": "https://www.semanticscholar.org/paper/92b1d01d2bb29ef325cdf58a9e54f6a4ea0184fd",
+            "venue": "PADL",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "40593363",
+                    "name": "Neng-Fa Zhou"
+                },
+                {
+                    "authorId": "2099900",
+                    "name": "H\u00e5kan Kjellerstrand"
+                },
+                {
+                    "authorId": "2408062",
+                    "name": "J. Fruhman"
+                }
+            ],
+            "doi": "10.1007/978-3-319-25883-6",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "fb36522adac8d016ca828a8a7351fb0f27496e87",
+            "title": "Constraint Solving and Planning with Picat",
+            "url": "https://www.semanticscholar.org/paper/fb36522adac8d016ca828a8a7351fb0f27496e87",
+            "venue": "SpringerBriefs in Intelligent Systems",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2449650",
+                    "name": "J. Bomanson"
+                },
+                {
+                    "authorId": "2495237",
+                    "name": "M. Gebser"
+                },
+                {
+                    "authorId": "1866533",
+                    "name": "T. Janhunen"
+                },
+                {
+                    "authorId": "37952584",
+                    "name": "B. Kaufmann"
+                },
+                {
+                    "authorId": "1809337",
+                    "name": "Torsten Schaub"
+                }
+            ],
+            "doi": "10.3233/FI-2016-1398",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "6645cf3a41d75241f3a9e4ac7ec5c459cf9c1cd8",
+            "title": "Answer Set Programming Modulo Acyclicity",
+            "url": "https://www.semanticscholar.org/paper/6645cf3a41d75241f3a9e4ac7ec5c459cf9c1cd8",
+            "venue": "Fundam. Informaticae",
+            "year": 2015
+        },
+        {
+            "arxivId": "1504.00977",
+            "authors": [
+                {
+                    "authorId": "3083746",
+                    "name": "Sergii Dymchenko"
+                },
+                {
+                    "authorId": "2052428",
+                    "name": "M. Mykhailova"
+                }
+            ],
+            "doi": "10.1007/978-3-319-19686-2_4",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "8dcc0572a3e926275db4ec0f4fec91ac4766df14",
+            "title": "Declaratively Solving Google Code Jam Problems with Picat",
+            "url": "https://www.semanticscholar.org/paper/8dcc0572a3e926275db4ec0f4fec91ac4766df14",
+            "venue": "PADL",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "31229602",
+                    "name": "Mirko Stojadinovic"
+                },
+                {
+                    "authorId": "3004149",
+                    "name": "Filip Mari\u0107"
+                }
+            ],
+            "doi": "10.1007/s10601-014-9165-7",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a342aa4449a5dfd1141ac1c98b7ad071c081db99",
+            "title": "meSAT: multiple encodings of CSP to SAT",
+            "url": "https://www.semanticscholar.org/paper/a342aa4449a5dfd1141ac1c98b7ad071c081db99",
+            "venue": "Constraints",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1681333",
+                    "name": "G. Brewka"
+                },
+                {
+                    "authorId": "72431510",
+                    "name": "Thomas Eiter"
+                },
+                {
+                    "authorId": "38119663",
+                    "name": "M. Truszczynski"
+                }
+            ],
+            "doi": "10.1145/2043174.2043195",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "8e95c5ea7ba5055f03be49c0849de8d4593d43e2",
+            "title": "Answer set programming at a glance",
+            "url": "https://www.semanticscholar.org/paper/8e95c5ea7ba5055f03be49c0849de8d4593d43e2",
+            "venue": "Commun. ACM",
+            "year": 2011
+        },
+        {
+            "arxivId": "1401.4613",
+            "authors": [
+                {
+                    "authorId": "1923360",
+                    "name": "J. Petke"
+                },
+                {
+                    "authorId": "144922783",
+                    "name": "P. Jeavons"
+                }
+            ],
+            "doi": "10.1613/jair.3531",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0aae525310d4b32f5e4a0de6531350ac8a4b1a30",
+            "title": "Local Consistency and SAT-Solvers",
+            "url": "https://www.semanticscholar.org/paper/0aae525310d4b32f5e4a0de6531350ac8a4b1a30",
+            "venue": "CP",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1888350",
+                    "name": "M. Velev"
+                },
+                {
+                    "authorId": "143945747",
+                    "name": "Ping Gao"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ca4f01177d982be5b76641cefb3563d728051d7f",
+            "title": "Efficient SAT Techniques for Absolute Encoding of Permutation Problems: Application to Hamiltonian Cycles",
+            "url": "https://www.semanticscholar.org/paper/ca4f01177d982be5b76641cefb3563d728051d7f",
+            "venue": "SARA",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144682958",
+                    "name": "S. Malik"
+                },
+                {
+                    "authorId": "1978393184",
+                    "name": "Lintao Zhang"
+                }
+            ],
+            "doi": "10.1145/1536616.1536637",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e5f17a31e60dc67f84f905041b1f49b54317f21e",
+            "title": "Boolean satisfiability from theoretical hardness to practical success",
+            "url": "https://www.semanticscholar.org/paper/e5f17a31e60dc67f84f905041b1f49b54317f21e",
+            "venue": "Commun. ACM",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "50535473",
+                    "name": "Jinbo Huang"
+                }
+            ],
+            "doi": "10.1007/978-3-540-85958-1_10",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b81f46fe27ed2a41c96ea85b12044cc26e3f4888",
+            "title": "Universal Booleanization of Constraint Models",
+            "url": "https://www.semanticscholar.org/paper/b81f46fe27ed2a41c96ea85b12044cc26e3f4888",
+            "venue": "CP",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3185535",
+                    "name": "N. Nethercote"
+                },
+                {
+                    "authorId": "1682747",
+                    "name": "Peter James Stuckey"
+                },
+                {
+                    "authorId": "3122326",
+                    "name": "Ralph Becket"
+                },
+                {
+                    "authorId": "46525444",
+                    "name": "S. Brand"
+                },
+                {
+                    "authorId": "1747521",
+                    "name": "Gregory J. Duck"
+                },
+                {
+                    "authorId": "38448160",
+                    "name": "Guido Tack"
+                }
+            ],
+            "doi": "10.1007/978-3-540-74970-7_38",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "01957c9c91ea40a8ad5ab5a12d694a85c53a956e",
+            "title": "MiniZinc: Towards a Standard CP Modelling Language",
+            "url": "https://www.semanticscholar.org/paper/01957c9c91ea40a8ad5ab5a12d694a85c53a956e",
+            "venue": "CP",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "24234126",
+                    "name": "Alexander Hertel"
+                },
+                {
+                    "authorId": "32135806",
+                    "name": "Philipp Hertel"
+                },
+                {
+                    "authorId": "7186177",
+                    "name": "A. Urquhart"
+                }
+            ],
+            "doi": "10.1007/978-3-540-72788-0_18",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "deaa5469525b27ef54b326cc44395151c226a527",
+            "title": "Formalizing Dangerous SAT Encodings",
+            "url": "https://www.semanticscholar.org/paper/deaa5469525b27ef54b326cc44395151c226a527",
+            "venue": "SAT",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3023847",
+                    "name": "L. Bordeaux"
+                },
+                {
+                    "authorId": "1728524",
+                    "name": "Y. Hamadi"
+                },
+                {
+                    "authorId": "1978393184",
+                    "name": "Lintao Zhang"
+                }
+            ],
+            "doi": "10.1145/1177352.1177354",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a367ee5aaaed7748c06ec8b25ee0cd0ad510e319",
+            "title": "Propositional Satisfiability and Constraint Programming: A comparative survey",
+            "url": "https://www.semanticscholar.org/paper/a367ee5aaaed7748c06ec8b25ee0cd0ad510e319",
+            "venue": "CSUR",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1876179",
+                    "name": "Nicolas Beldiceanu"
+                },
+                {
+                    "authorId": "145488217",
+                    "name": "M. Carlsson"
+                },
+                {
+                    "authorId": "1796487",
+                    "name": "Jean-Xavier Rampon"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c769add6710f18abf365bfc4cff3126f18253be3",
+            "title": "Global Constraint Catalog",
+            "url": "https://www.semanticscholar.org/paper/c769add6710f18abf365bfc4cff3126f18253be3",
+            "venue": "",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1717349",
+                    "name": "D. Knuth"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "43355917bdfeecc08c64acfcbc2ea7ddbd1a806b",
+            "title": "The Art of Computer Programming, Volume 4, Fascicle 2: Generating All Tuples and Permutations (Art of Computer Programming)",
+            "url": "https://www.semanticscholar.org/paper/43355917bdfeecc08c64acfcbc2ea7ddbd1a806b",
+            "venue": "",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1709865",
+                    "name": "S. Prestwich"
+                }
+            ],
+            "doi": "10.1016/S0166-218X(02)00410-9",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8029b084f56815dc86b91a6292a5e06d624834ff",
+            "title": "SAT problems with chains of dependent variables",
+            "url": "https://www.semanticscholar.org/paper/8029b084f56815dc86b91a6292a5e06d624834ff",
+            "venue": "Discret. Appl. Math.",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1787993",
+                    "name": "R. Fourer"
+                },
+                {
+                    "authorId": "33225083",
+                    "name": "D. Gay"
+                }
+            ],
+            "doi": "10.1287/ijoc.14.4.322.2825",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "31899d4a0a8bf551428b294eeaf07f6174c13f6b",
+            "title": "Extending an Algebraic Modeling Language to Support Constraint Programming",
+            "url": "https://www.semanticscholar.org/paper/31899d4a0a8bf551428b294eeaf07f6174c13f6b",
+            "venue": "INFORMS J. Comput.",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "8388443",
+                    "name": "Pascal Van Hentenryck"
+                }
+            ],
+            "doi": "10.1287/ijoc.14.4.345.2826",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "efe3167c711bbe5ef653c0a8e9f23efd9db6dd84",
+            "title": "Constraint and Integer Programming in OPL",
+            "url": "https://www.semanticscholar.org/paper/efe3167c711bbe5ef653c0a8e9f23efd9db6dd84",
+            "venue": "INFORMS J. Comput.",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1733716",
+                    "name": "T. Walsh"
+                }
+            ],
+            "doi": "10.1007/3-540-45349-0_32",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "bbc6db905bf019e2b020b822b16ba3508afd5d89",
+            "title": "SAT v CSP",
+            "url": "https://www.semanticscholar.org/paper/bbc6db905bf019e2b020b822b16ba3508afd5d89",
+            "venue": "CP",
+            "year": 2000
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2469389",
+                    "name": "Marijn J. H. Heule"
+                }
+            ],
+            "doi": "10.1007/978-3-030-80223-3_15",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "34969ea0791aa4364d6827210c26757dabf77fca",
+            "title": "Chinese Remainder Encoding for Hamiltonian Cycles",
+            "url": "https://www.semanticscholar.org/paper/34969ea0791aa4364d6827210c26757dabf77fca",
+            "venue": "SAT",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1691446",
+                    "name": "Mehmet Dincbas"
+                },
+                {
+                    "authorId": "8388443",
+                    "name": "Pascal Van Hentenryck"
+                },
+                {
+                    "authorId": "2279402778",
+                    "name": "H. Simonis"
+                },
+                {
+                    "authorId": "35245336",
+                    "name": "A. Aggoun"
+                },
+                {
+                    "authorId": "48795466",
+                    "name": "T. Graf"
+                },
+                {
+                    "authorId": "47934786",
+                    "name": "F. Berthier"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "0182eb799ef671dc25f8bfac0adaa0696fdf341b",
+            "title": "The Constraint Logic Programming Language CHIP",
+            "url": "https://www.semanticscholar.org/paper/0182eb799ef671dc25f8bfac0adaa0696fdf341b",
+            "venue": "FGCS",
+            "year": 1988
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1743085",
+                    "name": "S. Woltran"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "07e458f085a1596c17a8a608fa5f72a843b69290",
+            "title": "Under Consideration for Publication in Theory and Practice of Logic Programming a Common View on Strong, Uniform, and Other Notions of Equivalence in Answer-set Programming *",
+            "url": "https://www.semanticscholar.org/paper/07e458f085a1596c17a8a608fa5f72a843b69290",
+            "venue": "",
+            "year": null
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Modeling and Solving Graph Synthesis Problems Using SAT-Encoded Reachability Constraints in Picat",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/65f3ffc78a01989e0d111db30fd94e8668223c56",
+    "venue": "ICLP Technical Communications",
+    "year": 2021
+}

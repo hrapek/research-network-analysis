@@ -1,0 +1,1620 @@
+{
+    "abstract": "The paper introduces DiSProD, an online planner developed for\n\nenvironments with probabilistic transitions in continuous state and\n\naction spaces. DiSProD builds a symbolic graph that captures the\n\ndistribution of future trajectories, conditioned on a given policy,\n\nusing independence assumptions and approximate propagation of\n\ndistributions. The symbolic graph provides a differentiable\n\nrepresentation of the policy's value, enabling efficient gradient-based\n\noptimization for long-horizon search. The propagation of approximate\n\ndistributions can be seen as an aggregation of many trajectories, making\n\nit well-suited for dealing with sparse rewards and stochastic\n\nenvironments. An extensive experimental evaluation compares DiSProD to\n\nstate-of-the-art planners in discrete-time planning and real-time\n\ncontrol of robotic systems. The proposed method improves over existing\n\nplanners in handling stochastic environments, sensitivity to search\n\ndepth, sparsity of rewards, and large action spaces. Additional\n\nreal-world experiments demonstrate that DiSProD can control ground\n\nvehicles and surface vessels to successfully navigate around obstacles.",
+    "arxivId": "2302.01491",
+    "authors": [
+        {
+            "authorId": "2204465075",
+            "name": "Palash Chatterjee",
+            "url": "https://www.semanticscholar.org/author/2204465075"
+        },
+        {
+            "authorId": "2204466358",
+            "name": "Ashutosh Chapagain",
+            "url": "https://www.semanticscholar.org/author/2204466358"
+        },
+        {
+            "authorId": "2139128397",
+            "name": "Weizhe (Wesley) Chen",
+            "url": "https://www.semanticscholar.org/author/2139128397"
+        },
+        {
+            "authorId": "1746048",
+            "name": "R. Khardon",
+            "url": "https://www.semanticscholar.org/author/1746048"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "9538926",
+                    "name": "Ayal Taitler"
+                },
+                {
+                    "authorId": "2295368716",
+                    "name": "Ron Alford"
+                },
+                {
+                    "authorId": "2420985",
+                    "name": "Joan Espasa"
+                },
+                {
+                    "authorId": "2295370763",
+                    "name": "Gregor Behnke"
+                },
+                {
+                    "authorId": "2295368664",
+                    "name": "Daniel Fi\u0161er"
+                },
+                {
+                    "authorId": "52225987",
+                    "name": "Michael Gimelfarb"
+                },
+                {
+                    "authorId": "2285326555",
+                    "name": "Florian Pommerening"
+                },
+                {
+                    "authorId": "2280333074",
+                    "name": "Scott Sanner"
+                },
+                {
+                    "authorId": "2295370159",
+                    "name": "Enrico Scala"
+                },
+                {
+                    "authorId": "2295368082",
+                    "name": "Dominik Schreiber"
+                },
+                {
+                    "authorId": "2295368723",
+                    "name": "Javier Segovia\u2010Aguas"
+                },
+                {
+                    "authorId": "2357436",
+                    "name": "Jendrik Seipp"
+                }
+            ],
+            "doi": "10.1002/aaai.12169",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "6d2e543b1283915d04c474eed00762f915239fbd",
+            "title": "The 2023 International Planning Competition",
+            "url": "https://www.semanticscholar.org/paper/6d2e543b1283915d04c474eed00762f915239fbd",
+            "venue": "AI Mag.",
+            "year": 2024
+        }
+    ],
+    "corpusId": 256598342,
+    "doi": "10.48550/arXiv.2302.01491",
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": true,
+    "isPublisherLicensed": true,
+    "is_open_access": true,
+    "is_publisher_licensed": true,
+    "numCitedBy": 1,
+    "numCiting": 59,
+    "paperId": "95eeac74fd0e3269531fd36dbfd0d6f94562aa34",
+    "references": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2267981299",
+                    "name": "A. T. D. Almeida"
+                },
+                {
+                    "authorId": "2286458658",
+                    "name": "Urbano Nunes"
+                }
+            ],
+            "doi": "10.1109/iros47612.2022.9981344",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "dda867de88aff74f70fb9b2de0387297183afea5",
+            "title": "IEEE/RSJ International Conference on Intelligent Robots and Systems",
+            "url": "https://www.semanticscholar.org/paper/dda867de88aff74f70fb9b2de0387297183afea5",
+            "venue": "2022 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+            "year": 2022
+        },
+        {
+            "arxivId": "2203.16599",
+            "authors": [
+                {
+                    "authorId": "2702026",
+                    "name": "Ihab S. Mohamed"
+                },
+                {
+                    "authorId": "30495688",
+                    "name": "Kai-Li Yin"
+                },
+                {
+                    "authorId": "1777505",
+                    "name": "Lantao Liu"
+                }
+            ],
+            "doi": "10.48550/arXiv.2203.16599",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "4aec9f43e907c69025120a5e9abf74cff3918e40",
+            "title": "Autonomous Navigation of AGVs in Unknown Cluttered Environments: Log-MPPI Control Strategy",
+            "url": "https://www.semanticscholar.org/paper/4aec9f43e907c69025120a5e9abf74cff3918e40",
+            "venue": "IEEE Robotics and Automation Letters",
+            "year": 2022
+        },
+        {
+            "arxivId": "2103.12890",
+            "authors": [
+                {
+                    "authorId": "134282513",
+                    "name": "Lucas Barcelos"
+                },
+                {
+                    "authorId": "2052569995",
+                    "name": "Alexander Lambert"
+                },
+                {
+                    "authorId": "2109467725",
+                    "name": "Rafael Oliveira"
+                },
+                {
+                    "authorId": "2166311610",
+                    "name": "Paulo Borges"
+                },
+                {
+                    "authorId": "3288815",
+                    "name": "Byron Boots"
+                },
+                {
+                    "authorId": "145726167",
+                    "name": "F. Ramos"
+                }
+            ],
+            "doi": "10.15607/RSS.2021.XVII.068",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2b381fc367ad5a950959f1eb937b10358380c462",
+            "title": "Dual Online Stein Variational Inference for Control and Dynamics",
+            "url": "https://www.semanticscholar.org/paper/2b381fc367ad5a950959f1eb937b10358380c462",
+            "venue": "Robotics: Science and Systems",
+            "year": 2021
+        },
+        {
+            "arxivId": "2101.12115",
+            "authors": [
+                {
+                    "authorId": "73775967",
+                    "name": "Fabio Amadio"
+                },
+                {
+                    "authorId": "1626088617",
+                    "name": "Alberto Dalla Libera"
+                },
+                {
+                    "authorId": "1765561",
+                    "name": "R. Antonello"
+                },
+                {
+                    "authorId": "2965906",
+                    "name": "D. Nikovski"
+                },
+                {
+                    "authorId": "1687569",
+                    "name": "R. Carli"
+                },
+                {
+                    "authorId": "2777349",
+                    "name": "Diego Romeres"
+                }
+            ],
+            "doi": "10.1109/TRO.2022.3184837",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "3daa787f1aaccece4ce50092a480a9bee312ae81",
+            "title": "Model-Based Policy Search Using Monte Carlo Gradient Estimation With Real Systems Application",
+            "url": "https://www.semanticscholar.org/paper/3daa787f1aaccece4ce50092a480a9bee312ae81",
+            "venue": "IEEE Transactions on Robotics",
+            "year": 2021
+        },
+        {
+            "arxivId": "2011.07641",
+            "authors": [
+                {
+                    "authorId": "2052569995",
+                    "name": "Alexander Lambert"
+                },
+                {
+                    "authorId": "150900899",
+                    "name": "Adam Fishman"
+                },
+                {
+                    "authorId": "145197953",
+                    "name": "D. Fox"
+                },
+                {
+                    "authorId": "3288815",
+                    "name": "Byron Boots"
+                },
+                {
+                    "authorId": "145726167",
+                    "name": "F. Ramos"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2c2e7a07387614a1a3eb90009bce31be747b934f",
+            "title": "Stein Variational Model Predictive Control",
+            "url": "https://www.semanticscholar.org/paper/2c2e7a07387614a1a3eb90009bce31be747b934f",
+            "venue": "CoRL",
+            "year": 2020
+        },
+        {
+            "arxivId": "2010.01083",
+            "authors": [
+                {
+                    "authorId": "1834058",
+                    "name": "Caelan Reed Garrett"
+                },
+                {
+                    "authorId": "1810686",
+                    "name": "Rohan Chitnis"
+                },
+                {
+                    "authorId": "2486032",
+                    "name": "Rachel Holladay"
+                },
+                {
+                    "authorId": "2115287257",
+                    "name": "Beomjoon Kim"
+                },
+                {
+                    "authorId": "39047272",
+                    "name": "Tom Silver"
+                },
+                {
+                    "authorId": "1709512",
+                    "name": "L. Kaelbling"
+                },
+                {
+                    "authorId": "1388700951",
+                    "name": "Tomas Lozano-Perez"
+                }
+            ],
+            "doi": "10.1146/ANNUREV-CONTROL-091420-084139",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8be4f7216f2124603b4477d61f5ddb577a640fe5",
+            "title": "Integrated Task and Motion Planning",
+            "url": "https://www.semanticscholar.org/paper/8be4f7216f2124603b4477d61f5ddb577a640fe5",
+            "venue": "Annu. Rev. Control. Robotics Auton. Syst.",
+            "year": 2020
+        },
+        {
+            "arxivId": "2009.14509",
+            "authors": [
+                {
+                    "authorId": "27016008",
+                    "name": "Qiaoyun Wu"
+                },
+                {
+                    "authorId": "11793973",
+                    "name": "Xiaoxi Gong"
+                },
+                {
+                    "authorId": "145264199",
+                    "name": "Kai Xu"
+                },
+                {
+                    "authorId": "1699159",
+                    "name": "Dinesh Manocha"
+                },
+                {
+                    "authorId": "2117142473",
+                    "name": "Jingxuan Dong"
+                },
+                {
+                    "authorId": "40470625",
+                    "name": "Jun Wang"
+                }
+            ],
+            "doi": "10.1109/LRA.2020.3036597",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "04b3383d489e7124b7e20a1bc781cb0094a57ba6",
+            "title": "Towards Target-Driven Visual Navigation in Indoor Scenes via Generative Imitation Learning",
+            "url": "https://www.semanticscholar.org/paper/04b3383d489e7124b7e20a1bc781cb0094a57ba6",
+            "venue": "IEEE Robotics and Automation Letters",
+            "year": 2020
+        },
+        {
+            "arxivId": "2006.08684",
+            "authors": [
+                {
+                    "authorId": "12646136",
+                    "name": "Sebastian Curi"
+                },
+                {
+                    "authorId": "2064772",
+                    "name": "Felix Berkenkamp"
+                },
+                {
+                    "authorId": "153243248",
+                    "name": "A. Krause"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "3a07e0157a0c8b6321496b01c299319cadd5ec15",
+            "title": "Efficient Model-Based Reinforcement Learning through Optimistic Policy Search and Planning",
+            "url": "https://www.semanticscholar.org/paper/3a07e0157a0c8b6321496b01c299319cadd5ec15",
+            "venue": "NeurIPS",
+            "year": 2020
+        },
+        {
+            "arxivId": "1912.01603",
+            "authors": [
+                {
+                    "authorId": "35006479",
+                    "name": "Danijar Hafner"
+                },
+                {
+                    "authorId": "2542999",
+                    "name": "T. Lillicrap"
+                },
+                {
+                    "authorId": "2503659",
+                    "name": "Jimmy Ba"
+                },
+                {
+                    "authorId": "144739074",
+                    "name": "Mohammad Norouzi"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "0cc956565c7d249d4197eeb1dbab6523c648b2c9",
+            "title": "Dream to Control: Learning Behaviors by Latent Imagination",
+            "url": "https://www.semanticscholar.org/paper/0cc956565c7d249d4197eeb1dbab6523c648b2c9",
+            "venue": "ICLR",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "8858887",
+                    "name": "T. P. Bueno"
+                },
+                {
+                    "authorId": "143844870",
+                    "name": "L. N. Barros"
+                },
+                {
+                    "authorId": "3358691",
+                    "name": "D. Mau\u00e1"
+                },
+                {
+                    "authorId": "1732536",
+                    "name": "S. Sanner"
+                }
+            ],
+            "doi": "10.1609/AAAI.V33I01.33017530",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "b89675a7f749e21e41114477978c4f6682731b44",
+            "title": "Deep Reactive Policies for Planning in Stochastic Nonlinear Domains",
+            "url": "https://www.semanticscholar.org/paper/b89675a7f749e21e41114477978c4f6682731b44",
+            "venue": "AAAI",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144557883",
+                    "name": "Hao Cui"
+                },
+                {
+                    "authorId": "144763731",
+                    "name": "Thomas Keller"
+                },
+                {
+                    "authorId": "1746048",
+                    "name": "R. Khardon"
+                }
+            ],
+            "doi": "10.1609/icaps.v29i1.3467",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "4783a013e942e737309db30b717a0145e27be567",
+            "title": "Stochastic Planning with Lifted Symbolic Trajectory Optimization",
+            "url": "https://www.semanticscholar.org/paper/4783a013e942e737309db30b717a0145e27be567",
+            "venue": "ICAPS",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2748992",
+                    "name": "Ga Wu"
+                },
+                {
+                    "authorId": "47774766",
+                    "name": "B. Say"
+                },
+                {
+                    "authorId": "1732536",
+                    "name": "S. Sanner"
+                }
+            ],
+            "doi": "10.1613/jair.1.11829",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "45ef947bc9ef6bf82a3d20960ee22f412798d827",
+            "title": "Scalable Planning with Deep Neural Network Learned Transition Models",
+            "url": "https://www.semanticscholar.org/paper/45ef947bc9ef6bf82a3d20960ee22f412798d827",
+            "venue": "J. Artif. Intell. Res.",
+            "year": 2019
+        },
+        {
+            "arxivId": "1902.08967",
+            "authors": [
+                {
+                    "authorId": "40234261",
+                    "name": "Nolan Wagener"
+                },
+                {
+                    "authorId": "1978613",
+                    "name": "Ching-An Cheng"
+                },
+                {
+                    "authorId": "145908790",
+                    "name": "Jacob Sacks"
+                },
+                {
+                    "authorId": "3288815",
+                    "name": "Byron Boots"
+                }
+            ],
+            "doi": "10.15607/RSS.2019.XV.033",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "9f214d654ea8009f104e681e3e338988caf0f67b",
+            "title": "An Online Learning Approach to Model Predictive Control",
+            "url": "https://www.semanticscholar.org/paper/9f214d654ea8009f104e681e3e338988caf0f67b",
+            "venue": "Robotics: Science and Systems",
+            "year": 2019
+        },
+        {
+            "arxivId": "1902.01240",
+            "authors": [
+                {
+                    "authorId": "51135177",
+                    "name": "Paavo Parmas"
+                },
+                {
+                    "authorId": "3472959",
+                    "name": "C. Rasmussen"
+                },
+                {
+                    "authorId": "145197867",
+                    "name": "Jan Peters"
+                },
+                {
+                    "authorId": "1714997",
+                    "name": "K. Doya"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "1df5d8dbc02ff5d8489a2c1d4514eeef56188b39",
+            "title": "PIPPS: Flexible Model-Based Policy Search Robust to the Curse of Chaos",
+            "url": "https://www.semanticscholar.org/paper/1df5d8dbc02ff5d8489a2c1d4514eeef56188b39",
+            "venue": "ICML",
+            "year": 2019
+        },
+        {
+            "arxivId": "1806.00805",
+            "authors": [
+                {
+                    "authorId": "1405256560",
+                    "name": "William Vega-Brown"
+                },
+                {
+                    "authorId": "143724999",
+                    "name": "N. Roy"
+                }
+            ],
+            "doi": "10.24963/ijcai.2018/674",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d1c0443124a8e86ea8a90f99517dc044e7a62c06",
+            "title": "Admissible Abstractions for Near-optimal Task and Motion Planning",
+            "url": "https://www.semanticscholar.org/paper/d1c0443124a8e86ea8a90f99517dc044e7a62c06",
+            "venue": "IJCAI",
+            "year": 2018
+        },
+        {
+            "arxivId": "1805.12114",
+            "authors": [
+                {
+                    "authorId": "46224156",
+                    "name": "Kurtland Chua"
+                },
+                {
+                    "authorId": "35159852",
+                    "name": "R. Calandra"
+                },
+                {
+                    "authorId": "49686609",
+                    "name": "R. McAllister"
+                },
+                {
+                    "authorId": "1736651",
+                    "name": "S. Levine"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "56136aa0b2c347cbcf3d50821f310c4253155026",
+            "title": "Deep Reinforcement Learning in a Handful of Trials using Probabilistic Dynamics Models",
+            "url": "https://www.semanticscholar.org/paper/56136aa0b2c347cbcf3d50821f310c4253155026",
+            "venue": "NeurIPS",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "40547932",
+                    "name": "F. Borrelli"
+                },
+                {
+                    "authorId": "1759256",
+                    "name": "A. Bemporad"
+                },
+                {
+                    "authorId": "144746954",
+                    "name": "M. Morari"
+                }
+            ],
+            "doi": "10.1017/9781139061759",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "54514b1bcb18402dc8e72902f097343576c0a89d",
+            "title": "Predictive Control for Linear and Hybrid Systems",
+            "url": "https://www.semanticscholar.org/paper/54514b1bcb18402dc8e72902f097343576c0a89d",
+            "venue": "",
+            "year": 2017
+        },
+        {
+            "arxivId": "1706.06491",
+            "authors": [
+                {
+                    "authorId": "3050771",
+                    "name": "Sanket Kamthe"
+                },
+                {
+                    "authorId": "2261881",
+                    "name": "M. Deisenroth"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "09cd5d3634d84d528d16c4bcc89c6fd5b883c7cc",
+            "title": "Data-Efficient Reinforcement Learning with Probabilistic Model Predictive Control",
+            "url": "https://www.semanticscholar.org/paper/09cd5d3634d84d528d16c4bcc89c6fd5b883c7cc",
+            "venue": "AISTATS",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2284321",
+                    "name": "Grady Williams"
+                },
+                {
+                    "authorId": "40234261",
+                    "name": "Nolan Wagener"
+                },
+                {
+                    "authorId": "3414745",
+                    "name": "Brian Goldfain"
+                },
+                {
+                    "authorId": "2066716078",
+                    "name": "P. Drews"
+                },
+                {
+                    "authorId": "144177248",
+                    "name": "James M. Rehg"
+                },
+                {
+                    "authorId": "3288815",
+                    "name": "Byron Boots"
+                },
+                {
+                    "authorId": "1751063",
+                    "name": "Evangelos A. Theodorou"
+                }
+            ],
+            "doi": "10.1109/ICRA.2017.7989202",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "869f4fc59d74a96098ed46935cb6fd1a537c38ce",
+            "title": "Information theoretic MPC for model-based reinforcement learning",
+            "url": "https://www.semanticscholar.org/paper/869f4fc59d74a96098ed46935cb6fd1a537c38ce",
+            "venue": "2017 IEEE International Conference on Robotics and Automation (ICRA)",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2384353",
+                    "name": "Aswin Raghavan"
+                },
+                {
+                    "authorId": "1732536",
+                    "name": "S. Sanner"
+                },
+                {
+                    "authorId": "1746048",
+                    "name": "R. Khardon"
+                },
+                {
+                    "authorId": "1729906",
+                    "name": "Prasad Tadepalli"
+                },
+                {
+                    "authorId": "145841336",
+                    "name": "Alan Fern"
+                }
+            ],
+            "doi": "10.1609/aaai.v31i1.11056",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "683f71271184bce4d3b2bd403cc0d61819b5a4e8",
+            "title": "Hindsight Optimization for Hybrid State and Action MDPs",
+            "url": "https://www.semanticscholar.org/paper/683f71271184bce4d3b2bd403cc0d61819b5a4e8",
+            "venue": "AAAI",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [],
+            "doi": "10.1109/icra33291.2017",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "e0aba478ab135e3b72b38dc9dd3e4608b213ba53",
+            "title": "The 2017 IEEE International Conference on Robotics and Automation (ICRA)",
+            "url": "https://www.semanticscholar.org/paper/e0aba478ab135e3b72b38dc9dd3e4608b213ba53",
+            "venue": "",
+            "year": 2017
+        },
+        {
+            "arxivId": "1606.01540",
+            "authors": [
+                {
+                    "authorId": "2065151121",
+                    "name": "Greg Brockman"
+                },
+                {
+                    "authorId": "34415167",
+                    "name": "Vicki Cheung"
+                },
+                {
+                    "authorId": "152877508",
+                    "name": "Ludwig Pettersson"
+                },
+                {
+                    "authorId": "2113526509",
+                    "name": "Jonas Schneider"
+                },
+                {
+                    "authorId": "47971768",
+                    "name": "John Schulman"
+                },
+                {
+                    "authorId": "2109541439",
+                    "name": "Jie Tang"
+                },
+                {
+                    "authorId": "2563432",
+                    "name": "Wojciech Zaremba"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "2b10281297ee001a9f3f4ea1aa9bea6b638c27df",
+            "title": "OpenAI Gym",
+            "url": "https://www.semanticscholar.org/paper/2b10281297ee001a9f3f4ea1aa9bea6b638c27df",
+            "venue": "ArXiv",
+            "year": 2016
+        },
+        {
+            "arxivId": "1605.07127",
+            "authors": [
+                {
+                    "authorId": "3407086",
+                    "name": "Stefan Depeweg"
+                },
+                {
+                    "authorId": "1388574431",
+                    "name": "Jos\u00e9 Miguel Hern\u00e1ndez-Lobato"
+                },
+                {
+                    "authorId": "1388372395",
+                    "name": "F. Doshi-Velez"
+                },
+                {
+                    "authorId": "1699265",
+                    "name": "S. Udluft"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2af9eaae9191ee522cb97dc57615a071e5403d26",
+            "title": "Learning and Policy Search in Stochastic Dynamical Systems with Bayesian Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/2af9eaae9191ee522cb97dc57615a071e5403d26",
+            "venue": "ICLR",
+            "year": 2016
+        },
+        {
+            "arxivId": "1602.02867",
+            "authors": [
+                {
+                    "authorId": "3025260",
+                    "name": "Aviv Tamar"
+                },
+                {
+                    "authorId": "1736651",
+                    "name": "S. Levine"
+                },
+                {
+                    "authorId": "1689992",
+                    "name": "P. Abbeel"
+                },
+                {
+                    "authorId": "31613801",
+                    "name": "Yi Wu"
+                },
+                {
+                    "authorId": "8234443",
+                    "name": "G. Thomas"
+                }
+            ],
+            "doi": "10.24963/ijcai.2017/700",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "84680b30a20775e5d319419a7f3f2a93e57c2a61",
+            "title": "Value Iteration Networks",
+            "url": "https://www.semanticscholar.org/paper/84680b30a20775e5d319419a7f3f2a93e57c2a61",
+            "venue": "NIPS",
+            "year": 2016
+        },
+        {
+            "arxivId": "1512.01629",
+            "authors": [
+                {
+                    "authorId": "1819830",
+                    "name": "Yinlam Chow"
+                },
+                {
+                    "authorId": "1678622",
+                    "name": "M. Ghavamzadeh"
+                },
+                {
+                    "authorId": "2542753",
+                    "name": "Lucas Janson"
+                },
+                {
+                    "authorId": "1696085",
+                    "name": "M. Pavone"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "759bbd8dd50cb4790cad7a3bccbdfcbfee5e3e89",
+            "title": "Risk-Constrained Reinforcement Learning with Percentile Risk Criteria",
+            "url": "https://www.semanticscholar.org/paper/759bbd8dd50cb4790cad7a3bccbdfcbfee5e3e89",
+            "venue": "J. Mach. Learn. Res.",
+            "year": 2015
+        },
+        {
+            "arxivId": "1510.09142",
+            "authors": [
+                {
+                    "authorId": "2801204",
+                    "name": "N. Heess"
+                },
+                {
+                    "authorId": "89504302",
+                    "name": "Greg Wayne"
+                },
+                {
+                    "authorId": "145824029",
+                    "name": "David Silver"
+                },
+                {
+                    "authorId": "2542999",
+                    "name": "T. Lillicrap"
+                },
+                {
+                    "authorId": "1968210",
+                    "name": "Tom Erez"
+                },
+                {
+                    "authorId": "2109481",
+                    "name": "Yuval Tassa"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "6640f4e4beae786f301928d82a9f8eb037aa6935",
+            "title": "Learning Continuous Control Policies by Stochastic Value Gradients",
+            "url": "https://www.semanticscholar.org/paper/6640f4e4beae786f301928d82a9f8eb037aa6935",
+            "venue": "NIPS",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1966934",
+                    "name": "Ian Lenz"
+                },
+                {
+                    "authorId": "2678110",
+                    "name": "Ross A. Knepper"
+                },
+                {
+                    "authorId": "1681995",
+                    "name": "Ashutosh Saxena"
+                }
+            ],
+            "doi": "10.15607/RSS.2015.XI.012",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "e89d656a39fc3b08af47ebb9a583e182a596dabe",
+            "title": "DeepMPC: Learning Deep Latent Features for Model Predictive Control",
+            "url": "https://www.semanticscholar.org/paper/e89d656a39fc3b08af47ebb9a583e182a596dabe",
+            "venue": "Robotics: Science and Systems",
+            "year": 2015
+        },
+        {
+            "arxivId": "1502.02860",
+            "authors": [
+                {
+                    "authorId": "2261881",
+                    "name": "M. Deisenroth"
+                },
+                {
+                    "authorId": "145197953",
+                    "name": "D. Fox"
+                },
+                {
+                    "authorId": "3472959",
+                    "name": "C. Rasmussen"
+                }
+            ],
+            "doi": "10.1109/TPAMI.2013.218",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "718577588f38727ff28cf5321a5772a6fcdc1865",
+            "title": "Gaussian Processes for Data-Efficient Learning in Robotics and Control",
+            "url": "https://www.semanticscholar.org/paper/718577588f38727ff28cf5321a5772a6fcdc1865",
+            "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+            "year": 2015
+        },
+        {
+            "arxivId": "1412.6980",
+            "authors": [
+                {
+                    "authorId": "1726807",
+                    "name": "Diederik P. Kingma"
+                },
+                {
+                    "authorId": "2503659",
+                    "name": "Jimmy Ba"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "a6cb366736791bcccc5c8639de5a8f9636bf87e8",
+            "title": "Adam: A Method for Stochastic Optimization",
+            "url": "https://www.semanticscholar.org/paper/a6cb366736791bcccc5c8639de5a8f9636bf87e8",
+            "venue": "ICLR",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2109481",
+                    "name": "Yuval Tassa"
+                },
+                {
+                    "authorId": "1731468",
+                    "name": "N. Mansard"
+                },
+                {
+                    "authorId": "2285120621",
+                    "name": "Emanuel Todorov"
+                }
+            ],
+            "doi": "10.1109/ICRA.2014.6907001",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "6a28056e9670c4d7681045777e9e02c76f318c54",
+            "title": "Control-limited differential dynamic programming",
+            "url": "https://www.semanticscholar.org/paper/6a28056e9670c4d7681045777e9e02c76f318c54",
+            "venue": "2014 IEEE International Conference on Robotics and Automation (ICRA)",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "120393937",
+                    "name": "Ali-akbar Agha-mohammadi"
+                },
+                {
+                    "authorId": "143693749",
+                    "name": "S. Chakravorty"
+                },
+                {
+                    "authorId": "1678972",
+                    "name": "N. Amato"
+                }
+            ],
+            "doi": "10.1177/0278364913501564",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d0c29b07ffa9664aaa10f030c74f6409ea6b79cc",
+            "title": "FIRM: Sampling-based feedback motion-planning under motion uncertainty and imperfect measurements",
+            "url": "https://www.semanticscholar.org/paper/d0c29b07ffa9664aaa10f030c74f6409ea6b79cc",
+            "venue": "Int. J. Robotics Res.",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2137246468",
+                    "name": "Servicio Geol\u00f3gico Colombiano Sgc"
+                }
+            ],
+            "doi": "10.1111/jdi.12179",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "70850393a5efea8b407f2ba5cdf4eabe88827143",
+            "title": "Volume 4",
+            "url": "https://www.semanticscholar.org/paper/70850393a5efea8b407f2ba5cdf4eabe88827143",
+            "venue": "Journal of Diabetes Investigation",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1709512",
+                    "name": "L. Kaelbling"
+                },
+                {
+                    "authorId": "1388700951",
+                    "name": "Tomas Lozano-Perez"
+                }
+            ],
+            "doi": "10.1177/0278364913484072",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "448dc7666ea457dc1de66b1384c06ba7f3e4650f",
+            "title": "Integrated task and motion planning in belief space",
+            "url": "https://www.semanticscholar.org/paper/448dc7666ea457dc1de66b1384c06ba7f3e4650f",
+            "venue": "Int. J. Robotics Res.",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144763731",
+                    "name": "Thomas Keller"
+                },
+                {
+                    "authorId": "3208076",
+                    "name": "M. Helmert"
+                }
+            ],
+            "doi": "10.1609/icaps.v23i1.13557",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "2bd4d15b2a318ea80120c7c6d5f8545f65528c97",
+            "title": "Trial-Based Heuristic Tree Search for Finite Horizon MDPs",
+            "url": "https://www.semanticscholar.org/paper/2bd4d15b2a318ea80120c7c6d5f8545f65528c97",
+            "venue": "ICAPS",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2109481",
+                    "name": "Yuval Tassa"
+                },
+                {
+                    "authorId": "1968210",
+                    "name": "Tom Erez"
+                },
+                {
+                    "authorId": "144832491",
+                    "name": "E. Todorov"
+                }
+            ],
+            "doi": "10.1109/IROS.2012.6386025",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "71b552b2e058d5a6a760ba203f10f13be759edd3",
+            "title": "Synthesis and stabilization of complex behaviors through online trajectory optimization",
+            "url": "https://www.semanticscholar.org/paper/71b552b2e058d5a6a760ba203f10f13be759edd3",
+            "venue": "2012 IEEE/RSJ International Conference on Intelligent Robots and Systems",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "47448404",
+                    "name": "Zahra Zamani"
+                },
+                {
+                    "authorId": "1732536",
+                    "name": "S. Sanner"
+                },
+                {
+                    "authorId": "144834916",
+                    "name": "Cheng Fang"
+                }
+            ],
+            "doi": "10.1609/aaai.v26i1.8372",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "94aadc8ef99c2526882222a174292e5d57edaf9b",
+            "title": "Symbolic Dynamic Programming for Continuous State and Action MDPs",
+            "url": "https://www.semanticscholar.org/paper/94aadc8ef99c2526882222a174292e5d57edaf9b",
+            "venue": "AAAI",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3104472",
+                    "name": "Marin Kobilarov"
+                }
+            ],
+            "doi": "10.1177/0278364912444543",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "2f9b3a906b163f7c224a57d1ad86c51dd46eb948",
+            "title": "Cross-entropy motion planning",
+            "url": "https://www.semanticscholar.org/paper/2f9b3a906b163f7c224a57d1ad86c51dd46eb948",
+            "venue": "Int. J. Robotics Res.",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "6247481",
+                    "name": "A. Kolobov"
+                },
+                {
+                    "authorId": "2065774063",
+                    "name": "P. Dai"
+                },
+                {
+                    "authorId": "2674444",
+                    "name": "Mausam"
+                },
+                {
+                    "authorId": "1780531",
+                    "name": "Daniel S. Weld"
+                }
+            ],
+            "doi": "10.1609/icaps.v22i1.13523",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e302425e0bd29ae2fa17145a728149cf1d69209b",
+            "title": "Reverse Iterative Deepening for Finite-Horizon MDPs with Large Branching Factors",
+            "url": "https://www.semanticscholar.org/paper/e302425e0bd29ae2fa17145a728149cf1d69209b",
+            "venue": "ICAPS",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2261881",
+                    "name": "M. Deisenroth"
+                },
+                {
+                    "authorId": "3472959",
+                    "name": "C. Rasmussen"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "60b7d47758a71978e74edff6dd8dea4d9c791d7a",
+            "title": "PILCO: A Model-Based and Data-Efficient Approach to Policy Search",
+            "url": "https://www.semanticscholar.org/paper/60b7d47758a71978e74edff6dd8dea4d9c791d7a",
+            "venue": "ICML",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2595627",
+                    "name": "H. Kurniawati"
+                },
+                {
+                    "authorId": "2834579",
+                    "name": "Yanzhu Du"
+                },
+                {
+                    "authorId": "145463096",
+                    "name": "David Hsu"
+                },
+                {
+                    "authorId": "1740222",
+                    "name": "Wee Sun Lee"
+                }
+            ],
+            "doi": "10.1177/0278364910386986",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0ac69deffe8248fd3833acc09dd68126e25617b8",
+            "title": "Motion planning under uncertainty for robotic tasks with long time horizons",
+            "url": "https://www.semanticscholar.org/paper/0ac69deffe8248fd3833acc09dd68126e25617b8",
+            "venue": "Int. J. Robotics Res.",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1683060",
+                    "name": "S. LaValle"
+                }
+            ],
+            "doi": "10.1017/CBO9780511546877",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "6704ead9baeff735cb33c203df4458c525eb9cf9",
+            "title": "Planning algorithms",
+            "url": "https://www.semanticscholar.org/paper/6704ead9baeff735cb33c203df4458c525eb9cf9",
+            "venue": "",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "47681372",
+                    "name": "Lihong Li"
+                },
+                {
+                    "authorId": "144885169",
+                    "name": "M. Littman"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "54ce0802cbd8573b7a6c6e214cda3fad65469a2c",
+            "title": "Lazy Approximation for Solving Continuous Finite-Horizon MDPs",
+            "url": "https://www.semanticscholar.org/paper/54ce0802cbd8573b7a6c6e214cda3fad65469a2c",
+            "venue": "AAAI",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1703235",
+                    "name": "A. Cohn"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "98c1849abff68d609137f8fbdec0a66be236d0e2",
+            "title": "Proceedings of the 20th national conference on Artificial intelligence - Volume 1",
+            "url": "https://www.semanticscholar.org/paper/98c1849abff68d609137f8fbdec0a66be236d0e2",
+            "venue": "AAAI 2005",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2248834664",
+                    "name": "Christopher K. I. Williams"
+                },
+                {
+                    "authorId": "2247411478",
+                    "name": "Carl E. Rasmussen"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "4d98ce60f4f8ed822503b8d13b0605f8c5d74ca7",
+            "title": "Gaussian Processes for Regression",
+            "url": "https://www.semanticscholar.org/paper/4d98ce60f4f8ed822503b8d13b0605f8c5d74ca7",
+            "venue": "NIPS",
+            "year": 1995
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "117392312",
+                    "name": "J. Murray"
+                }
+            ],
+            "doi": "10.1016/0531-5565(88)90068-X",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "efe7cdb863760a23b7216529b8439253c56f9560",
+            "title": "Volume 23",
+            "url": "https://www.semanticscholar.org/paper/efe7cdb863760a23b7216529b8439253c56f9560",
+            "venue": "Experimental Gerontology",
+            "year": 1988
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2112889",
+                    "name": "L. Dubins"
+                }
+            ],
+            "doi": "10.2307/2372560",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "4953c6769a9925cbadc1c07762dc3b3c27b9e24c",
+            "title": "On Curves of Minimal Length with a Constraint on Average Curvature, and with Prescribed Initial and Terminal Positions and Tangents",
+            "url": "https://www.semanticscholar.org/paper/4953c6769a9925cbadc1c07762dc3b3c27b9e24c",
+            "venue": "",
+            "year": 1957
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1422501461",
+                    "name": "Estrella Serrano-Guerrero"
+                },
+                {
+                    "authorId": "2311604568",
+                    "name": "Miguel Ruiz-Veguilla"
+                },
+                {
+                    "authorId": "2311591889",
+                    "name": "Agust\u00edn Mart\u00edn-Rodr\u00edguez"
+                },
+                {
+                    "authorId": "1389962070",
+                    "name": "J. F. Rodr\u00edguez-Testal"
+                }
+            ],
+            "doi": "10.1093/acprof:oso/9780195152418.003.0001",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "b8175cd5e060ac8ed61796ad198463a862096ed1",
+            "title": "What Is This?",
+            "url": "https://www.semanticscholar.org/paper/b8175cd5e060ac8ed61796ad198463a862096ed1",
+            "venue": "PsycTESTS Dataset",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144557883",
+                    "name": "Hao Cui"
+                },
+                {
+                    "authorId": "2808565",
+                    "name": "Radu Marinescu"
+                },
+                {
+                    "authorId": "1746048",
+                    "name": "R. Khardon"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "582c87cfac4e912b4674e2318208ece609c0720f",
+            "title": "From Stochastic Planning to Marginal MAP",
+            "url": "https://www.semanticscholar.org/paper/582c87cfac4e912b4674e2318208ece609c0720f",
+            "venue": "NeurIPS",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2595993",
+                    "name": "Horia Mania"
+                },
+                {
+                    "authorId": "40895205",
+                    "name": "Aurelia Guy"
+                },
+                {
+                    "authorId": "9229182",
+                    "name": "B. Recht"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "758ba118d7f161fe019d81c4f64a9069c342aa74",
+            "title": "Simple random search of static linear policies is competitive for reinforcement learning",
+            "url": "https://www.semanticscholar.org/paper/758ba118d7f161fe019d81c4f64a9069c342aa74",
+            "venue": "NeurIPS",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "49686609",
+                    "name": "R. McAllister"
+                },
+                {
+                    "authorId": "3472959",
+                    "name": "C. Rasmussen"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "127d856c8b74d3e54a2f7da7b11b784014832ed9",
+            "title": "Improving PILCO with Bayesian Neural Network Dynamics Models",
+            "url": "https://www.semanticscholar.org/paper/127d856c8b74d3e54a2f7da7b11b784014832ed9",
+            "venue": "",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "21792966",
+                    "name": "F. Os\u00f3rio"
+                },
+                {
+                    "authorId": "145007186",
+                    "name": "D. Wolf"
+                },
+                {
+                    "authorId": "5816949",
+                    "name": "K. Branco"
+                },
+                {
+                    "authorId": "71672224",
+                    "name": "Valdir Grassi Junior"
+                },
+                {
+                    "authorId": "153187170",
+                    "name": "Marcelo Becker"
+                },
+                {
+                    "authorId": "2142579926",
+                    "name": "Roseli A. F. Romero"
+                }
+            ],
+            "doi": "10.1007/978-3-662-48134-9",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "edd7e81d6d05417ad60151daa212a1c1db2751d6",
+            "title": "Robotics",
+            "url": "https://www.semanticscholar.org/paper/edd7e81d6d05417ad60151daa212a1c1db2751d6",
+            "venue": "Communications in Computer and Information Science",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1727574",
+                    "name": "C. Laugier"
+                },
+                {
+                    "authorId": "14433147",
+                    "name": "Agostino Martinelli"
+                },
+                {
+                    "authorId": "1689803",
+                    "name": "C\u00e9dric Pradalier"
+                },
+                {
+                    "authorId": "1720483",
+                    "name": "R. Siegwart"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "835bfefd0767ac3e6048bbc7eff6eb6ae3776579",
+            "title": "The International Journal of Robotics Research (IJRR) - Special issue on ``Field and Service Robotics ''",
+            "url": "https://www.semanticscholar.org/paper/835bfefd0767ac3e6048bbc7eff6eb6ae3776579",
+            "venue": "",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [],
+            "doi": "10.1023/A:1019927417454",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "4cbfe6f5da163e11aee5a1c249ea9828b3e6bc3a",
+            "title": "Volume 26",
+            "url": "https://www.semanticscholar.org/paper/4cbfe6f5da163e11aee5a1c249ea9828b3e6bc3a",
+            "venue": "",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2325186050",
+                    "name": "King-Sun Fu"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "a539c14e5f243cf2a9188bb440204562ec6f3b16",
+            "title": "Discriminant Adaptive Nearest Neighbor Classification",
+            "url": "https://www.semanticscholar.org/paper/a539c14e5f243cf2a9188bb440204562ec6f3b16",
+            "venue": "",
+            "year": 1994
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "DiSProD: Differentiable Symbolic Propagation of Distributions for Planning",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/95eeac74fd0e3269531fd36dbfd0d6f94562aa34",
+    "venue": "International Joint Conference on Artificial Intelligence",
+    "year": 2023
+}

@@ -1,0 +1,805 @@
+{
+    "abstract": "Bayesian optimization has recently attracted the attention of the automatic machine learning community for its excellent results in hyperparameter tuning. BO is characterized by the sample efficiency with which it can optimize expensive black-box functions. The efficiency is achieved in a similar fashion to the learning to learn methods: surrogate models (typically in the form of Gaussian processes) learn the target function and perform intelligent sampling. This surrogate model can be applied even in the presence of noise; however, as with most regression methods, it is very sensitive to outlier data. This can result in erroneous predictions and, in the case of BO, biased and inefficient exploration. In this work, we present a GP model that is robust to outliers which uses a Student-t likelihood to segregate outliers and robustly conduct Bayesian optimization. We present numerical results evaluating the proposed method in both artificial functions and real problems.",
+    "arxivId": "1707.05729",
+    "authors": [
+        {
+            "authorId": "1405499515",
+            "name": "Ruben Martinez-Cantin",
+            "url": "https://www.semanticscholar.org/author/1405499515"
+        },
+        {
+            "authorId": "145849642",
+            "name": "M. McCourt",
+            "url": "https://www.semanticscholar.org/author/145849642"
+        },
+        {
+            "authorId": "20850134",
+            "name": "K. Tee",
+            "url": "https://www.semanticscholar.org/author/20850134"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": "2410.24222",
+            "authors": [
+                {
+                    "authorId": "2264465163",
+                    "name": "S. Ament"
+                },
+                {
+                    "authorId": "2328413976",
+                    "name": "Elizabeth Santorella"
+                },
+                {
+                    "authorId": "2263542396",
+                    "name": "David Eriksson"
+                },
+                {
+                    "authorId": "2328414760",
+                    "name": "Ben Letham"
+                },
+                {
+                    "authorId": "2065597122",
+                    "name": "M. Balandat"
+                },
+                {
+                    "authorId": "3071703",
+                    "name": "E. Bakshy"
+                }
+            ],
+            "doi": "10.48550/arXiv.2410.24222",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "f39baa55227c52433d61df8f7d0468a9e0dd88f3",
+            "title": "Robust Gaussian Processes via Relevance Pursuit",
+            "url": "https://www.semanticscholar.org/paper/f39baa55227c52433d61df8f7d0468a9e0dd88f3",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": "2206.03301",
+            "authors": [
+                {
+                    "authorId": "2108028621",
+                    "name": "Xilu Wang"
+                },
+                {
+                    "authorId": "2157835870",
+                    "name": "Yaochu Jin"
+                },
+                {
+                    "authorId": "1780662217",
+                    "name": "Sebastian Schmitt"
+                },
+                {
+                    "authorId": "2729491",
+                    "name": "M. Olhofer"
+                }
+            ],
+            "doi": "10.1145/3582078",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "36a36764f14521b9c43949f7b4a5fb341eacdb51",
+            "title": "Recent Advances in Bayesian Optimization",
+            "url": "https://www.semanticscholar.org/paper/36a36764f14521b9c43949f7b4a5fb341eacdb51",
+            "venue": "ACM Comput. Surv.",
+            "year": 2022
+        },
+        {
+            "arxivId": "2104.10318",
+            "authors": [
+                {
+                    "authorId": "2150697",
+                    "name": "Kazuki Shibata"
+                },
+                {
+                    "authorId": "70222126",
+                    "name": "Tatsuya Miyano"
+                },
+                {
+                    "authorId": "144733609",
+                    "name": "Tomohiko Jimbo"
+                },
+                {
+                    "authorId": "3248224",
+                    "name": "Takamitsu Matsubara"
+                }
+            ],
+            "doi": "10.1016/j.robot.2020.103527",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "76e391ec2ea78aeaabeb97d01a1ecf46d333d96d",
+            "title": "Robust shape estimation with false-positive contact detection",
+            "url": "https://www.semanticscholar.org/paper/76e391ec2ea78aeaabeb97d01a1ecf46d333d96d",
+            "venue": "Robotics Auton. Syst.",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "32609077",
+                    "name": "Erik Bodin"
+                },
+                {
+                    "authorId": "1405861605",
+                    "name": "Markus Kaiser"
+                },
+                {
+                    "authorId": "36679513",
+                    "name": "Ieva Kazlauskaite"
+                },
+                {
+                    "authorId": "2024189708",
+                    "name": "Zhenwen Dai"
+                },
+                {
+                    "authorId": "2036351",
+                    "name": "Neill D. F. Campbell"
+                },
+                {
+                    "authorId": "2484138",
+                    "name": "C. Ek"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "b9947b885c38dcfceb50a47c2fb6976bafd13aa7",
+            "title": "Modulating Surrogates for Bayesian Optimization",
+            "url": "https://www.semanticscholar.org/paper/b9947b885c38dcfceb50a47c2fb6976bafd13aa7",
+            "venue": "ICML",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145979683",
+                    "name": "Hiroshi Takahashi"
+                },
+                {
+                    "authorId": "2664600",
+                    "name": "Tomoharu Iwata"
+                },
+                {
+                    "authorId": "144901814",
+                    "name": "Yuki Yamanaka"
+                },
+                {
+                    "authorId": "145837912",
+                    "name": "Masanori Yamada"
+                },
+                {
+                    "authorId": "1490938127",
+                    "name": "Satoshi Yagi"
+                }
+            ],
+            "doi": "10.24963/ijcai.2018/374",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c3031a054928669d0bb643d2864cc30f33587c00",
+            "title": "Student-t Variational Autoencoder for Robust Density Estimation",
+            "url": "https://www.semanticscholar.org/paper/c3031a054928669d0bb643d2864cc30f33587c00",
+            "venue": "IJCAI",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "117074363",
+                    "name": "Ryan-Rhys Griffiths"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "db5bd133c661dffd9b9ef98b89f9f9cefb717d7a",
+            "title": "Constrained Bayesian Optimization for Automatic Chemical Design",
+            "url": "https://www.semanticscholar.org/paper/db5bd133c661dffd9b9ef98b89f9f9cefb717d7a",
+            "venue": "",
+            "year": 2017
+        }
+    ],
+    "corpusId": 5947359,
+    "doi": null,
+    "fieldsOfStudy": [
+        "Mathematics",
+        "Computer Science"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 6,
+    "numCiting": 24,
+    "paperId": "0cd63703e81af98ca9ad056a4dd7eef93e57e6df",
+    "references": [
+        {
+            "arxivId": "2402.07021",
+            "authors": [
+                {
+                    "authorId": "1405499515",
+                    "name": "Ruben Martinez-Cantin"
+                }
+            ],
+            "doi": "10.1109/ICRA.2017.7989380",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e44ebecd8f3acad6176390e290788e35a51f26cd",
+            "title": "Bayesian optimization with adaptive kernels for robot control",
+            "url": "https://www.semanticscholar.org/paper/e44ebecd8f3acad6176390e290788e35a51f26cd",
+            "venue": "2017 IEEE International Conference on Robotics and Automation (ICRA)",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2060551",
+                    "name": "Jost Tobias Springenberg"
+                },
+                {
+                    "authorId": "145227684",
+                    "name": "Aaron Klein"
+                },
+                {
+                    "authorId": "2154062",
+                    "name": "S. Falkner"
+                },
+                {
+                    "authorId": "144661829",
+                    "name": "F. Hutter"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "30423f985355d74295546f1d14ed2ddd33cdef99",
+            "title": "Bayesian Optimization with Robust Bayesian Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/30423f985355d74295546f1d14ed2ddd33cdef99",
+            "venue": "NIPS",
+            "year": 2016
+        },
+        {
+            "arxivId": "1605.07079",
+            "authors": [
+                {
+                    "authorId": "145227684",
+                    "name": "Aaron Klein"
+                },
+                {
+                    "authorId": "2154062",
+                    "name": "S. Falkner"
+                },
+                {
+                    "authorId": "21812743",
+                    "name": "Simon Bartels"
+                },
+                {
+                    "authorId": "2517795",
+                    "name": "Philipp Hennig"
+                },
+                {
+                    "authorId": "144661829",
+                    "name": "F. Hutter"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "cf4e443c4268a3b6face07a30599529e6f47410c",
+            "title": "Fast Bayesian Optimization of Machine Learning Hyperparameters on Large Datasets",
+            "url": "https://www.semanticscholar.org/paper/cf4e443c4268a3b6face07a30599529e6f47410c",
+            "venue": "AISTATS",
+            "year": 2016
+        },
+        {
+            "arxivId": "1603.02038",
+            "authors": [
+                {
+                    "authorId": "2072034701",
+                    "name": "Jos\u00e9 Nogueira"
+                },
+                {
+                    "authorId": "1405499515",
+                    "name": "Ruben Martinez-Cantin"
+                },
+                {
+                    "authorId": "145036494",
+                    "name": "Alexandre Bernardino"
+                },
+                {
+                    "authorId": "49998610",
+                    "name": "L. Jamone"
+                }
+            ],
+            "doi": "10.1109/IROS.2016.7759310",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5af4094f236f12c06c9ec514dd17fbe5de7400b6",
+            "title": "Unscented Bayesian optimization for safe robot grasping",
+            "url": "https://www.semanticscholar.org/paper/5af4094f236f12c06c9ec514dd17fbe5de7400b6",
+            "venue": "2016 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3199765",
+                    "name": "G. Fasshauer"
+                },
+                {
+                    "authorId": "145849642",
+                    "name": "M. McCourt"
+                }
+            ],
+            "doi": "10.1142/9335",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f17230c2ddf801353a867946dedb52a7f28ed906",
+            "title": "Kernel-based Approximation Methods using MATLAB",
+            "url": "https://www.semanticscholar.org/paper/f17230c2ddf801353a867946dedb52a7f28ed906",
+            "venue": "Interdisciplinary Mathematical Sciences",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "35159852",
+                    "name": "R. Calandra"
+                },
+                {
+                    "authorId": "3092395",
+                    "name": "A. Seyfarth"
+                },
+                {
+                    "authorId": "145197867",
+                    "name": "Jan Peters"
+                },
+                {
+                    "authorId": "2261881",
+                    "name": "M. Deisenroth"
+                }
+            ],
+            "doi": "10.1007/s10472-015-9463-9",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "e2471b05fd995ac764782f7213009e04e15afb72",
+            "title": "Bayesian optimization for learning gaits under uncertainty",
+            "url": "https://www.semanticscholar.org/paper/e2471b05fd995ac764782f7213009e04e15afb72",
+            "venue": "Annals of Mathematics and Artificial Intelligence",
+            "year": 2015
+        },
+        {
+            "arxivId": "1405.7430",
+            "authors": [
+                {
+                    "authorId": "1405499515",
+                    "name": "Ruben Martinez-Cantin"
+                }
+            ],
+            "doi": "10.5555/2627435.2750364",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "d18ee34eefa5973a4bff1d1f62e4ef48d63bf3ea",
+            "title": "BayesOpt: a Bayesian optimization library for nonlinear optimization, experimental design and bandits",
+            "url": "https://www.semanticscholar.org/paper/d18ee34eefa5973a4bff1d1f62e4ef48d63bf3ea",
+            "venue": "J. Mach. Learn. Res.",
+            "year": 2014
+        },
+        {
+            "arxivId": "1402.4306",
+            "authors": [
+                {
+                    "authorId": "2244796",
+                    "name": "Amar Shah"
+                },
+                {
+                    "authorId": "145771261",
+                    "name": "A. Wilson"
+                },
+                {
+                    "authorId": "1744700",
+                    "name": "Zoubin Ghahramani"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "ab6bcd19b7b411ddc3f247215b57e5db3ae67bbc",
+            "title": "Student-t Processes as Alternatives to Gaussian Processes",
+            "url": "https://www.semanticscholar.org/paper/ab6bcd19b7b411ddc3f247215b57e5db3ae67bbc",
+            "venue": "AISTATS",
+            "year": 2014
+        },
+        {
+            "arxivId": "1206.2944",
+            "authors": [
+                {
+                    "authorId": "144108062",
+                    "name": "Jasper Snoek"
+                },
+                {
+                    "authorId": "1777528",
+                    "name": "H. Larochelle"
+                },
+                {
+                    "authorId": "1722180",
+                    "name": "Ryan P. Adams"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "2e2089ae76fe914706e6fa90081a79c8fe01611e",
+            "title": "Practical Bayesian Optimization of Machine Learning Algorithms",
+            "url": "https://www.semanticscholar.org/paper/2e2089ae76fe914706e6fa90081a79c8fe01611e",
+            "venue": "NIPS",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "32837403",
+                    "name": "J. Bergstra"
+                },
+                {
+                    "authorId": "2103302",
+                    "name": "R. Bardenet"
+                },
+                {
+                    "authorId": "1751762",
+                    "name": "Yoshua Bengio"
+                },
+                {
+                    "authorId": "143674326",
+                    "name": "B. K\u00e9gl"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "03911c85305d42aa2eeb02be82ef6fb7da644dd0",
+            "title": "Algorithms for Hyper-Parameter Optimization",
+            "url": "https://www.semanticscholar.org/paper/03911c85305d42aa2eeb02be82ef6fb7da644dd0",
+            "venue": "NIPS",
+            "year": 2011
+        },
+        {
+            "arxivId": "1112.1217",
+            "authors": [
+                {
+                    "authorId": "2517795",
+                    "name": "Philipp Hennig"
+                },
+                {
+                    "authorId": "1814533",
+                    "name": "Christian J. Schuler"
+                }
+            ],
+            "doi": "10.5555/2503308.2343701",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "510ebe952f10eb5401f65fe5e31aee5bfa72322d",
+            "title": "Entropy Search for Information-Efficient Global Optimization",
+            "url": "https://www.semanticscholar.org/paper/510ebe952f10eb5401f65fe5e31aee5bfa72322d",
+            "venue": "J. Mach. Learn. Res.",
+            "year": 2011
+        },
+        {
+            "arxivId": "1106.4431",
+            "authors": [
+                {
+                    "authorId": "2206678",
+                    "name": "Pasi Jyl\u00e4nki"
+                },
+                {
+                    "authorId": "1890840",
+                    "name": "J. Vanhatalo"
+                },
+                {
+                    "authorId": "3104170",
+                    "name": "Aki Vehtari"
+                }
+            ],
+            "doi": "10.5555/1953048.2078209",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "8710600836b874668286e8daceb35cf5cbcea3f1",
+            "title": "Robust Gaussian Process Regression with a Student-t Likelihood",
+            "url": "https://www.semanticscholar.org/paper/8710600836b874668286e8daceb35cf5cbcea3f1",
+            "venue": "J. Mach. Learn. Res.",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144661829",
+                    "name": "F. Hutter"
+                },
+                {
+                    "authorId": "2470869",
+                    "name": "H. Hoos"
+                },
+                {
+                    "authorId": "1388404060",
+                    "name": "Kevin Leyton-Brown"
+                }
+            ],
+            "doi": "10.1007/978-3-642-25566-3_40",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "728744423ff0fb7e327664ed4e6352a95bb6c893",
+            "title": "Sequential Model-Based Optimization for General Algorithm Configuration",
+            "url": "https://www.semanticscholar.org/paper/728744423ff0fb7e327664ed4e6352a95bb6c893",
+            "venue": "LION",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2887861",
+                    "name": "J. Kruschke"
+                }
+            ],
+            "doi": "10.1002/wcs.72",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "4e2f43dab69d690dc86422949e410ebf37f522d4",
+            "title": "Bayesian data analysis.",
+            "url": "https://www.semanticscholar.org/paper/4e2f43dab69d690dc86422949e410ebf37f522d4",
+            "venue": "Wiley interdisciplinary reviews. Cognitive science",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1890840",
+                    "name": "J. Vanhatalo"
+                },
+                {
+                    "authorId": "2206678",
+                    "name": "Pasi Jyl\u00e4nki"
+                },
+                {
+                    "authorId": "3104170",
+                    "name": "Aki Vehtari"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "8532d2f502dff1dc85f8e6b08c18285709f03b23",
+            "title": "Gaussian process regression with Student-t likelihood",
+            "url": "https://www.semanticscholar.org/paper/8532d2f502dff1dc85f8e6b08c18285709f03b23",
+            "venue": "NIPS",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2832248",
+                    "name": "Alexander I. J. Forrester"
+                },
+                {
+                    "authorId": "3174724",
+                    "name": "A. S\u00f3bester"
+                },
+                {
+                    "authorId": "2100381",
+                    "name": "A. Keane"
+                }
+            ],
+            "doi": "10.1098/rspa.2007.1900",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "38e67b4c590652148679f596f253bc26f8ae1478",
+            "title": "Multi-fidelity optimization via surrogate modelling",
+            "url": "https://www.semanticscholar.org/paper/38e67b4c590652148679f596f253bc26f8ae1478",
+            "venue": "Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144180357",
+                    "name": "E. Brochu"
+                },
+                {
+                    "authorId": "1737568",
+                    "name": "Nando de Freitas"
+                },
+                {
+                    "authorId": "2259991448",
+                    "name": "A. Ghosh"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "859d4b4b03cadff589164d71f97214a1c7b7b9b6",
+            "title": "Active Preference Learning with Discrete Choice Data",
+            "url": "https://www.semanticscholar.org/paper/859d4b4b03cadff589164d71f97214a1c7b7b9b6",
+            "venue": "NIPS",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1405499515",
+                    "name": "Ruben Martinez-Cantin"
+                },
+                {
+                    "authorId": "1737568",
+                    "name": "Nando de Freitas"
+                },
+                {
+                    "authorId": "1701800",
+                    "name": "A. Doucet"
+                },
+                {
+                    "authorId": "145186838",
+                    "name": "J. A. Castellanos"
+                }
+            ],
+            "doi": "10.15607/RSS.2007.III.041",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "45aa6a67ce508ccbe74b74f5d60acb626727e914",
+            "title": "Active Policy Learning for Robot Planning and Exploration under Uncertainty",
+            "url": "https://www.semanticscholar.org/paper/45aa6a67ce508ccbe74b74f5d60acb626727e914",
+            "venue": "Robotics: Science and Systems",
+            "year": 2007
+        },
+        {
+            "arxivId": "physics/9701026",
+            "authors": [
+                {
+                    "authorId": "1764325",
+                    "name": "Radford M. Neal"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c6981626c2d28e25af11bd04f9af759c474e00a5",
+            "title": "Monte Carlo Implementation of Gaussian Process Models for Bayesian Regression and Classification",
+            "url": "https://www.semanticscholar.org/paper/c6981626c2d28e25af11bd04f9af759c474e00a5",
+            "venue": "",
+            "year": 1997
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1406409112",
+                    "name": "A. O\u2019Hagan"
+                }
+            ],
+            "doi": "10.1111/J.2517-6161.1979.TB01090.X",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "9bcacebd3bd5ad41508591ec8925de5bb7d7c788",
+            "title": "On Outlier Rejection Phenomena in Bayes Inference",
+            "url": "https://www.semanticscholar.org/paper/9bcacebd3bd5ad41508591ec8925de5bb7d7c788",
+            "venue": "",
+            "year": 1979
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1887808",
+                    "name": "Kirthevasan Kandasamy"
+                },
+                {
+                    "authorId": "1843941",
+                    "name": "Gautam Dasarathy"
+                },
+                {
+                    "authorId": "143930995",
+                    "name": "Junier B. Oliva"
+                },
+                {
+                    "authorId": "1753432",
+                    "name": "J. Schneider"
+                },
+                {
+                    "authorId": "1719347",
+                    "name": "B. P\u00f3czos"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "12806c5028d7f3dfea82d332f27f40c5af831bcf",
+            "title": "Gaussian Process Bandit Optimisation with Multi-fidelity Evaluations",
+            "url": "https://www.semanticscholar.org/paper/12806c5028d7f3dfea82d332f27f40c5af831bcf",
+            "venue": "NIPS",
+            "year": 2016
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Mathematics",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        },
+        {
+            "category": "Mathematics",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Robust Bayesian Optimization with Student-t Likelihood",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/0cd63703e81af98ca9ad056a4dd7eef93e57e6df",
+    "venue": "arXiv.org",
+    "year": 2017
+}

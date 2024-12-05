@@ -1,0 +1,1357 @@
+{
+    "abstract": "Text-guided molecule generation is a task where molecules are generated to match specific textual descriptions. Recently, most existing SMILES-based molecule generation methods rely on an autoregressive architecture. In this work, we propose the Text-Guided Molecule Generation with Diffusion Language Model (TGM-DLM), a novel approach that leverages diffusion models to address the limitations of autoregressive methods. TGM-DLM updates token embeddings within the SMILES string collectively and iteratively, using a two-phase diffusion generation process. The first phase optimizes embeddings from random noise, guided by the text description, while the second phase corrects invalid SMILES strings to form valid molecular representations. We demonstrate that TGM-DLM outperforms MolT5-Base, an autoregressive model, without the need for additional data resources. Our findings underscore the remarkable effectiveness of TGM-DLM in generating coherent and precise molecules with specific properties, opening new avenues in drug discovery and related scientific domains. Code will be released at: https://github.com/Deno-V/tgm-dlm.",
+    "arxivId": "2402.13040",
+    "authors": [
+        {
+            "authorId": "2284762870",
+            "name": "Haisong Gong",
+            "url": "https://www.semanticscholar.org/author/2284762870"
+        },
+        {
+            "authorId": "48873756",
+            "name": "Q. Liu",
+            "url": "https://www.semanticscholar.org/author/48873756"
+        },
+        {
+            "authorId": "50425438",
+            "name": "Shu Wu",
+            "url": "https://www.semanticscholar.org/author/50425438"
+        },
+        {
+            "authorId": "2258184369",
+            "name": "Liang Wang",
+            "url": "https://www.semanticscholar.org/author/2258184369"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2116522191",
+                    "name": "Chen Li"
+                },
+                {
+                    "authorId": "2243475320",
+                    "name": "Yoshihiro Yamanishi"
+                }
+            ],
+            "doi": "10.1016/j.artint.2024.104239",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "a8d8cca562ec89a02cdb6b1fc619892ff24632f2",
+            "title": "AI-driven transcriptome profile-guided hit molecule generation",
+            "url": "https://www.semanticscholar.org/paper/a8d8cca562ec89a02cdb6b1fc619892ff24632f2",
+            "venue": "Artificial Intelligence",
+            "year": 2025
+        },
+        {
+            "arxivId": "2410.20182",
+            "authors": [
+                {
+                    "authorId": "2328003716",
+                    "name": "Yifan Deng"
+                },
+                {
+                    "authorId": "3460349",
+                    "name": "Spencer S. Ericksen"
+                },
+                {
+                    "authorId": "2041407",
+                    "name": "A. Gitter"
+                }
+            ],
+            "doi": "10.48550/arXiv.2410.20182",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "7b0f907d5bd7a07991edb99f2359b5db354c9c20",
+            "title": "Chemical Language Model Linker: blending text and molecules with modular adapters",
+            "url": "https://www.semanticscholar.org/paper/7b0f907d5bd7a07991edb99f2359b5db354c9c20",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": "2410.13597",
+            "authors": [
+                {
+                    "authorId": "2326446844",
+                    "name": "Yida Xiong"
+                },
+                {
+                    "authorId": "2261355876",
+                    "name": "Kun Li"
+                },
+                {
+                    "authorId": "2257369855",
+                    "name": "Weiwei Liu"
+                },
+                {
+                    "authorId": "2248803714",
+                    "name": "Jia Wu"
+                },
+                {
+                    "authorId": "2248204457",
+                    "name": "Bo Du"
+                },
+                {
+                    "authorId": "2296438593",
+                    "name": "Shirui Pan"
+                },
+                {
+                    "authorId": "2248467517",
+                    "name": "Wenbin Hu"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "5cb98a5eed7bfa6590dc8fc0a79dd5cd369dd12b",
+            "title": "Text-Guided Multi-Property Molecular Optimization with a Diffusion Language Model",
+            "url": "https://www.semanticscholar.org/paper/5cb98a5eed7bfa6590dc8fc0a79dd5cd369dd12b",
+            "venue": "",
+            "year": 2024
+        },
+        {
+            "arxivId": "2408.09896",
+            "authors": [
+                {
+                    "authorId": "2316588132",
+                    "name": "Yuran Xiang"
+                },
+                {
+                    "authorId": "2146233407",
+                    "name": "Haiteng Zhao"
+                },
+                {
+                    "authorId": "2316588754",
+                    "name": "Chang Ma"
+                },
+                {
+                    "authorId": "2286960421",
+                    "name": "Zhi-Hong Deng"
+                }
+            ],
+            "doi": "10.48550/arXiv.2408.09896",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e66ffb3379e4084c276073704a4b410c196487fc",
+            "title": "Instruction-Based Molecular Graph Generation with Unified Text-Graph Diffusion Model",
+            "url": "https://www.semanticscholar.org/paper/e66ffb3379e4084c276073704a4b410c196487fc",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": "2405.17829",
+            "authors": [
+                {
+                    "authorId": "2259644910",
+                    "name": "Jinho Chang"
+                },
+                {
+                    "authorId": "2254155658",
+                    "name": "Jong Chul Ye"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "13a5ef0c015df3250a53dc07f8076fa00f6ddcc9",
+            "title": "LDMol: Text-to-Molecule Diffusion Model with Structurally Informative Latent Space",
+            "url": "https://www.semanticscholar.org/paper/13a5ef0c015df3250a53dc07f8076fa00f6ddcc9",
+            "venue": "",
+            "year": 2024
+        },
+        {
+            "arxivId": "2403.01528",
+            "authors": [
+                {
+                    "authorId": "2171652249",
+                    "name": "Qizhi Pei"
+                },
+                {
+                    "authorId": "47767791",
+                    "name": "Lijun Wu"
+                },
+                {
+                    "authorId": "1944690382",
+                    "name": "Kaiyuan Gao"
+                },
+                {
+                    "authorId": "151068900",
+                    "name": "Jinhua Zhu"
+                },
+                {
+                    "authorId": "2290062348",
+                    "name": "Yue Wang"
+                },
+                {
+                    "authorId": "2290024261",
+                    "name": "Zun Wang"
+                },
+                {
+                    "authorId": "2267250090",
+                    "name": "Tao Qin"
+                },
+                {
+                    "authorId": "2257028545",
+                    "name": "Rui Yan"
+                }
+            ],
+            "doi": "10.48550/arXiv.2403.01528",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c90318dd9ce7a1b0a45d71ceeb555cee3896a618",
+            "title": "Leveraging Biomolecule and Natural Language through Multi-Modal Learning: A Survey",
+            "url": "https://www.semanticscholar.org/paper/c90318dd9ce7a1b0a45d71ceeb555cee3896a618",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2315500028",
+                    "name": "Nguyen Doan Hieu Nguyen"
+                },
+                {
+                    "authorId": "2298324850",
+                    "name": "Nhat Truong Pham"
+                },
+                {
+                    "authorId": "2315308375",
+                    "name": "Duong Tran"
+                },
+                {
+                    "authorId": "49557292",
+                    "name": "Balachandran Manavalan"
+                }
+            ],
+            "doi": "10.18653/v1/2024.langmol-1.15",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "9a91b24aaaf85ad2189b33f2a73d006696720bbf",
+            "title": "Lang2Mol-Diff: A Diffusion-Based Generative Model for Language-to-Molecule Translation Leveraging SELFIES Representation",
+            "url": "https://www.semanticscholar.org/paper/9a91b24aaaf85ad2189b33f2a73d006696720bbf",
+            "venue": "LANGMOL",
+            "year": 2024
+        }
+    ],
+    "corpusId": 267759970,
+    "doi": "10.48550/arXiv.2402.13040",
+    "fieldsOfStudy": [
+        "Computer Science",
+        "Biology"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 7,
+    "numCiting": 37,
+    "paperId": "4cf3bcd849baa318252e3340eceab465111390e5",
+    "references": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "13900069",
+                    "name": "Nathan C Frey"
+                },
+                {
+                    "authorId": "2244255804",
+                    "name": "Ryan Soklaski"
+                },
+                {
+                    "authorId": "2244261179",
+                    "name": "Simon Axelrod"
+                },
+                {
+                    "authorId": "2331418",
+                    "name": "S. Samsi"
+                },
+                {
+                    "authorId": "2244249252",
+                    "name": "Rafael G\u00b4omez-Bombarelli"
+                },
+                {
+                    "authorId": "13027820",
+                    "name": "Connor W. Coley"
+                },
+                {
+                    "authorId": "74882299",
+                    "name": "V. Gadepally"
+                }
+            ],
+            "doi": "10.1038/s42256-023-00740-3",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "bf93fe733932fd25780ef84911b8a507bec1c372",
+            "title": "Neural scaling of deep chemical models",
+            "url": "https://www.semanticscholar.org/paper/bf93fe733932fd25780ef84911b8a507bec1c372",
+            "venue": "Nature Machine Intelligence",
+            "year": 2023
+        },
+        {
+            "arxivId": "2309.15123",
+            "authors": [
+                {
+                    "authorId": "2109123910",
+                    "name": "Dingshuo Chen"
+                },
+                {
+                    "authorId": "2653121",
+                    "name": "Yanqiao Zhu"
+                },
+                {
+                    "authorId": "47540245",
+                    "name": "Jieyu Zhang"
+                },
+                {
+                    "authorId": "93584228",
+                    "name": "Yuanqi Du"
+                },
+                {
+                    "authorId": "2247629250",
+                    "name": "Zhixun Li"
+                },
+                {
+                    "authorId": "48873756",
+                    "name": "Q. Liu"
+                },
+                {
+                    "authorId": "50425438",
+                    "name": "Shu Wu"
+                },
+                {
+                    "authorId": "1693997",
+                    "name": "Liang Wang"
+                }
+            ],
+            "doi": "10.48550/arXiv.2309.15123",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d3e6702c319cbd5314f0adea6e408562cb104e77",
+            "title": "Uncovering Neural Scaling Laws in Molecular Representation Learning",
+            "url": "https://www.semanticscholar.org/paper/d3e6702c319cbd5314f0adea6e408562cb104e77",
+            "venue": "NeurIPS",
+            "year": 2023
+        },
+        {
+            "arxivId": "2303.12712",
+            "authors": [
+                {
+                    "authorId": "121645690",
+                    "name": "S\u00e9bastien Bubeck"
+                },
+                {
+                    "authorId": "143754359",
+                    "name": "Varun Chandrasekaran"
+                },
+                {
+                    "authorId": "2315830",
+                    "name": "Ronen Eldan"
+                },
+                {
+                    "authorId": "120962807",
+                    "name": "J. Gehrke"
+                },
+                {
+                    "authorId": "2064595436",
+                    "name": "Eric Horvitz"
+                },
+                {
+                    "authorId": "1783184",
+                    "name": "Ece Kamar"
+                },
+                {
+                    "authorId": "2212084492",
+                    "name": "Peter Lee"
+                },
+                {
+                    "authorId": "2109308930",
+                    "name": "Y. Lee"
+                },
+                {
+                    "authorId": "152244300",
+                    "name": "Yuan-Fang Li"
+                },
+                {
+                    "authorId": "23451726",
+                    "name": "Scott M. Lundberg"
+                },
+                {
+                    "authorId": "40900039",
+                    "name": "Harsha Nori"
+                },
+                {
+                    "authorId": "2247662718",
+                    "name": "Hamid Palangi"
+                },
+                {
+                    "authorId": "78846919",
+                    "name": "Marco Tulio Ribeiro"
+                },
+                {
+                    "authorId": "144884116",
+                    "name": "Yi Zhang"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8dbd57469bb32e6d57f23f5e765bf1c9ac8e080c",
+            "title": "Sparks of Artificial General Intelligence: Early experiments with GPT-4",
+            "url": "https://www.semanticscholar.org/paper/8dbd57469bb32e6d57f23f5e765bf1c9ac8e080c",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": "2212.10789",
+            "authors": [
+                {
+                    "authorId": "1563693999",
+                    "name": "Shengchao Liu"
+                },
+                {
+                    "authorId": "2066304514",
+                    "name": "Weili Nie"
+                },
+                {
+                    "authorId": "50097250",
+                    "name": "Chengpeng Wang"
+                },
+                {
+                    "authorId": "2121696601",
+                    "name": "Jiarui Lu"
+                },
+                {
+                    "authorId": "88820329",
+                    "name": "Zhuoran Qiao"
+                },
+                {
+                    "authorId": "2146021664",
+                    "name": "Ling Liu"
+                },
+                {
+                    "authorId": "2115855484",
+                    "name": "Jian Tang"
+                },
+                {
+                    "authorId": "2723309",
+                    "name": "Chaowei Xiao"
+                },
+                {
+                    "authorId": "2047844",
+                    "name": "Anima Anandkumar"
+                }
+            ],
+            "doi": "10.48550/arXiv.2212.10789",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "958bb3831589246fe5b6b58cf99e3b65c58d027f",
+            "title": "Multi-modal Molecule Structure-text Model for Text-based Retrieval and Editing",
+            "url": "https://www.semanticscholar.org/paper/958bb3831589246fe5b6b58cf99e3b65c58d027f",
+            "venue": "Nat. Mac. Intell.",
+            "year": 2022
+        },
+        {
+            "arxivId": "2211.15029",
+            "authors": [
+                {
+                    "authorId": "2166121084",
+                    "name": "Zhengfu He"
+                },
+                {
+                    "authorId": "153345698",
+                    "name": "Tianxiang Sun"
+                },
+                {
+                    "authorId": "2119044211",
+                    "name": "Kuan Wang"
+                },
+                {
+                    "authorId": "1790227",
+                    "name": "Xuanjing Huang"
+                },
+                {
+                    "authorId": "1767521",
+                    "name": "Xipeng Qiu"
+                }
+            ],
+            "doi": "10.48550/arXiv.2211.15029",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "a979742220a88b1d32e1fbe72c41e8ba3007053c",
+            "title": "DiffusionBERT: Improving Generative Masked Language Models with Diffusion Models",
+            "url": "https://www.semanticscholar.org/paper/a979742220a88b1d32e1fbe72c41e8ba3007053c",
+            "venue": "ACL",
+            "year": 2022
+        },
+        {
+            "arxivId": "2208.09481",
+            "authors": [
+                {
+                    "authorId": "47591654",
+                    "name": "Patrick Reiser"
+                },
+                {
+                    "authorId": "2182292011",
+                    "name": "Marlen Neubert"
+                },
+                {
+                    "authorId": "2078585414",
+                    "name": "Andr'e Eberhard"
+                },
+                {
+                    "authorId": "12366131",
+                    "name": "Luca Torresi"
+                },
+                {
+                    "authorId": "2182539868",
+                    "name": "Chen Zhou"
+                },
+                {
+                    "authorId": "2182291817",
+                    "name": "Chen Shao"
+                },
+                {
+                    "authorId": "2182292035",
+                    "name": "Houssam Metni"
+                },
+                {
+                    "authorId": "2182291940",
+                    "name": "Clint van Hoesel"
+                },
+                {
+                    "authorId": "151452741",
+                    "name": "Henrik Schopmans"
+                },
+                {
+                    "authorId": "38829132",
+                    "name": "T. Sommer"
+                },
+                {
+                    "authorId": "35323511",
+                    "name": "Pascal Friederich"
+                }
+            ],
+            "doi": "10.1038/s43246-022-00315-6",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "81fee2fd4bc007fda9a1b1d81e4de66ded867215",
+            "title": "Graph neural networks for materials science and chemistry",
+            "url": "https://www.semanticscholar.org/paper/81fee2fd4bc007fda9a1b1d81e4de66ded867215",
+            "venue": "Communications Materials",
+            "year": 2022
+        },
+        {
+            "arxivId": "2205.14217",
+            "authors": [
+                {
+                    "authorId": "32551341",
+                    "name": "Xiang Lisa Li"
+                },
+                {
+                    "authorId": "50343904",
+                    "name": "John Thickstun"
+                },
+                {
+                    "authorId": "2708454",
+                    "name": "Ishaan Gulrajani"
+                },
+                {
+                    "authorId": "145419642",
+                    "name": "Percy Liang"
+                },
+                {
+                    "authorId": "2117567142",
+                    "name": "Tatsunori Hashimoto"
+                }
+            ],
+            "doi": "10.48550/arXiv.2205.14217",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "1386b8a11929cf02da291c56aca353e33bbc22ed",
+            "title": "Diffusion-LM Improves Controllable Text Generation",
+            "url": "https://www.semanticscholar.org/paper/1386b8a11929cf02da291c56aca353e33bbc22ed",
+            "venue": "NeurIPS",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1633538428",
+                    "name": "Zheni Zeng"
+                },
+                {
+                    "authorId": "1390925224",
+                    "name": "Yuan Yao"
+                },
+                {
+                    "authorId": "2141313179",
+                    "name": "Zhiyuan Liu"
+                },
+                {
+                    "authorId": "1753344",
+                    "name": "Maosong Sun"
+                }
+            ],
+            "doi": "10.1038/s41467-022-28494-3",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "6958612fea7f220757b4165b8e12d4b62b4baa80",
+            "title": "A deep-learning system bridging molecule structure and biomedical text with comprehension comparable to human professionals",
+            "url": "https://www.semanticscholar.org/paper/6958612fea7f220757b4165b8e12d4b62b4baa80",
+            "venue": "Nature Communications",
+            "year": 2022
+        },
+        {
+            "arxivId": "2112.10752",
+            "authors": [
+                {
+                    "authorId": "1660819540",
+                    "name": "Robin Rombach"
+                },
+                {
+                    "authorId": "119843260",
+                    "name": "A. Blattmann"
+                },
+                {
+                    "authorId": "2053482699",
+                    "name": "Dominik Lorenz"
+                },
+                {
+                    "authorId": "35175531",
+                    "name": "Patrick Esser"
+                },
+                {
+                    "authorId": "1796707",
+                    "name": "B. Ommer"
+                }
+            ],
+            "doi": "10.1109/CVPR52688.2022.01042",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c10075b3746a9f3dd5811970e93c8ca3ad39b39d",
+            "title": "High-Resolution Image Synthesis with Latent Diffusion Models",
+            "url": "https://www.semanticscholar.org/paper/c10075b3746a9f3dd5811970e93c8ca3ad39b39d",
+            "venue": "2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [],
+            "doi": "10.1088/2632-2153/ac3ffb",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "3f9f7f690e003176316d0ee56fbcbfed4b6b0948",
+            "title": "Chemformer: a pre-trained transformer for computational chemistry",
+            "url": "https://www.semanticscholar.org/paper/3f9f7f690e003176316d0ee56fbcbfed4b6b0948",
+            "venue": "Mach. Learn. Sci. Technol.",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1982425",
+                    "name": "L. Floridi"
+                },
+                {
+                    "authorId": "2037605322",
+                    "name": "Massimo Chiriatti"
+                }
+            ],
+            "doi": "10.1007/s11023-020-09548-1",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "b103e87c7727134927d3ffb06934a95c10c02fc0",
+            "title": "GPT-3: Its Nature, Scope, Limits, and Consequences",
+            "url": "https://www.semanticscholar.org/paper/b103e87c7727134927d3ffb06934a95c10c02fc0",
+            "venue": "Minds and Machines",
+            "year": 2020
+        },
+        {
+            "arxivId": "2009.09761",
+            "authors": [
+                {
+                    "authorId": "33470361",
+                    "name": "Zhifeng Kong"
+                },
+                {
+                    "authorId": "2056440915",
+                    "name": "Wei Ping"
+                },
+                {
+                    "authorId": "34060310",
+                    "name": "Jiaji Huang"
+                },
+                {
+                    "authorId": "2074107557",
+                    "name": "Kexin Zhao"
+                },
+                {
+                    "authorId": "2301680",
+                    "name": "Bryan Catanzaro"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "34bf13e58c7226d615afead0c0f679432502940e",
+            "title": "DiffWave: A Versatile Diffusion Model for Audio Synthesis",
+            "url": "https://www.semanticscholar.org/paper/34bf13e58c7226d615afead0c0f679432502940e",
+            "venue": "ICLR",
+            "year": 2020
+        },
+        {
+            "arxivId": "2006.11239",
+            "authors": [
+                {
+                    "authorId": "2126278",
+                    "name": "Jonathan Ho"
+                },
+                {
+                    "authorId": "1623995772",
+                    "name": "Ajay Jain"
+                },
+                {
+                    "authorId": "1689992",
+                    "name": "P. Abbeel"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "5c126ae3421f05768d8edd97ecd44b1364e2c99a",
+            "title": "Denoising Diffusion Probabilistic Models",
+            "url": "https://www.semanticscholar.org/paper/5c126ae3421f05768d8edd97ecd44b1364e2c99a",
+            "venue": "NeurIPS",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3674456",
+                    "name": "F. Grisoni"
+                },
+                {
+                    "authorId": "153502009",
+                    "name": "Michael Moret"
+                },
+                {
+                    "authorId": "113503174",
+                    "name": "Robin Lingwood"
+                },
+                {
+                    "authorId": "144522872",
+                    "name": "G. Schneider"
+                }
+            ],
+            "doi": "10.1021/acs.jcim.9b00943",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "23b1fc11c54e5b0a72437b970962b0352b44c9a8",
+            "title": "Bidirectional Molecule Generation with Recurrent Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/23b1fc11c54e5b0a72437b970962b0352b44c9a8",
+            "venue": "J. Chem. Inf. Model.",
+            "year": 2020
+        },
+        {
+            "arxivId": "1910.13461",
+            "authors": [
+                {
+                    "authorId": "35084211",
+                    "name": "M. Lewis"
+                },
+                {
+                    "authorId": "11323179",
+                    "name": "Yinhan Liu"
+                },
+                {
+                    "authorId": "39589154",
+                    "name": "Naman Goyal"
+                },
+                {
+                    "authorId": "2320509",
+                    "name": "Marjan Ghazvininejad"
+                },
+                {
+                    "authorId": "113947684",
+                    "name": "Abdel-rahman Mohamed"
+                },
+                {
+                    "authorId": "39455775",
+                    "name": "Omer Levy"
+                },
+                {
+                    "authorId": "1759422",
+                    "name": "Veselin Stoyanov"
+                },
+                {
+                    "authorId": "1982950",
+                    "name": "Luke Zettlemoyer"
+                }
+            ],
+            "doi": "10.18653/v1/2020.acl-main.703",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "395de0bd3837fdf4b4b5e5f04835bcc69c279481",
+            "title": "BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension",
+            "url": "https://www.semanticscholar.org/paper/395de0bd3837fdf4b4b5e5f04835bcc69c279481",
+            "venue": "ACL",
+            "year": 2019
+        },
+        {
+            "arxivId": "1910.10683",
+            "authors": [
+                {
+                    "authorId": "2402716",
+                    "name": "Colin Raffel"
+                },
+                {
+                    "authorId": "1846258",
+                    "name": "Noam M. Shazeer"
+                },
+                {
+                    "authorId": "145625142",
+                    "name": "Adam Roberts"
+                },
+                {
+                    "authorId": "3844009",
+                    "name": "Katherine Lee"
+                },
+                {
+                    "authorId": "46617804",
+                    "name": "Sharan Narang"
+                },
+                {
+                    "authorId": "1380243217",
+                    "name": "Michael Matena"
+                },
+                {
+                    "authorId": "2389316",
+                    "name": "Yanqi Zhou"
+                },
+                {
+                    "authorId": "2157338362",
+                    "name": "Wei Li"
+                },
+                {
+                    "authorId": "35025299",
+                    "name": "Peter J. Liu"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "6c4b76232bb72897685d19b3d264c6ee3005bc2b",
+            "title": "Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer",
+            "url": "https://www.semanticscholar.org/paper/6c4b76232bb72897685d19b3d264c6ee3005bc2b",
+            "venue": "J. Mach. Learn. Res.",
+            "year": 2019
+        },
+        {
+            "arxivId": "1806.02473",
+            "authors": [
+                {
+                    "authorId": "145829303",
+                    "name": "Jiaxuan You"
+                },
+                {
+                    "authorId": "2156641189",
+                    "name": "Bowen Liu"
+                },
+                {
+                    "authorId": "83539859",
+                    "name": "Rex Ying"
+                },
+                {
+                    "authorId": "1806271",
+                    "name": "V. Pande"
+                },
+                {
+                    "authorId": "1702139",
+                    "name": "J. Leskovec"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d9f836a2062864e4808e12224e2286a353498202",
+            "title": "Graph Convolutional Policy Network for Goal-Directed Molecular Graph Generation",
+            "url": "https://www.semanticscholar.org/paper/d9f836a2062864e4808e12224e2286a353498202",
+            "venue": "NeurIPS",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3451383",
+                    "name": "Marwin H. S. Segler"
+                },
+                {
+                    "authorId": "50417767",
+                    "name": "T. Kogej"
+                },
+                {
+                    "authorId": "2231021",
+                    "name": "C. Tyrchan"
+                },
+                {
+                    "authorId": "2628485",
+                    "name": "M. Waller"
+                }
+            ],
+            "doi": "10.1021/acscentsci.7b00512",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "1cb789ab8925bda02758bcb69eb0ed1547b5f4b9",
+            "title": "Generating Focused Molecule Libraries for Drug Discovery with Recurrent Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/1cb789ab8925bda02758bcb69eb0ed1547b5f4b9",
+            "venue": "ACS central science",
+            "year": 2017
+        },
+        {
+            "arxivId": "1706.03762",
+            "authors": [
+                {
+                    "authorId": "40348417",
+                    "name": "Ashish Vaswani"
+                },
+                {
+                    "authorId": "1846258",
+                    "name": "Noam M. Shazeer"
+                },
+                {
+                    "authorId": "3877127",
+                    "name": "Niki Parmar"
+                },
+                {
+                    "authorId": "39328010",
+                    "name": "Jakob Uszkoreit"
+                },
+                {
+                    "authorId": "145024664",
+                    "name": "Llion Jones"
+                },
+                {
+                    "authorId": "19177000",
+                    "name": "Aidan N. Gomez"
+                },
+                {
+                    "authorId": "40527594",
+                    "name": "Lukasz Kaiser"
+                },
+                {
+                    "authorId": "3443442",
+                    "name": "Illia Polosukhin"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "204e3073870fae3d05bcbc2f6a8e263d9b72e776",
+            "title": "Attention is All you Need",
+            "url": "https://www.semanticscholar.org/paper/204e3073870fae3d05bcbc2f6a8e263d9b72e776",
+            "venue": "NIPS",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "4718515",
+                    "name": "Joseph H. Montoya"
+                },
+                {
+                    "authorId": "8474736",
+                    "name": "K. Persson"
+                }
+            ],
+            "doi": "10.1038/s41524-017-0017-z",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7da72c8e985e5f6abdcdbfa4fa4548d9bdfa6b03",
+            "title": "A high-throughput framework for determining adsorption energies on solid surfaces",
+            "url": "https://www.semanticscholar.org/paper/7da72c8e985e5f6abdcdbfa4fa4548d9bdfa6b03",
+            "venue": "npj Computational Materials",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "13730992",
+                    "name": "H. Yao"
+                },
+                {
+                    "authorId": "46269770",
+                    "name": "L. Ye"
+                },
+                {
+                    "authorId": "2144612926",
+                    "name": "Hao Zhang"
+                },
+                {
+                    "authorId": "14097424",
+                    "name": "Sunsun Li"
+                },
+                {
+                    "authorId": "83483204",
+                    "name": "Shaoqing Zhang"
+                },
+                {
+                    "authorId": "145829105",
+                    "name": "Jianhui Hou"
+                }
+            ],
+            "doi": "10.1021/acs.chemrev.6b00176",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "fe2965158711e0d67877da4b0fa233314743faf3",
+            "title": "Molecular Design of Benzodithiophene-Based Organic Photovoltaic Materials.",
+            "url": "https://www.semanticscholar.org/paper/fe2965158711e0d67877da4b0fa233314743faf3",
+            "venue": "Chemical reviews",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "39230153",
+                    "name": "T. Sterling"
+                },
+                {
+                    "authorId": "2146167",
+                    "name": "J. Irwin"
+                }
+            ],
+            "doi": "10.1021/acs.jcim.5b00559",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "5972c3d8507359a6cff6ef17c4af206ec76b32bb",
+            "title": "ZINC 15 \u2013 Ligand Discovery for Everyone",
+            "url": "https://www.semanticscholar.org/paper/5972c3d8507359a6cff6ef17c4af206ec76b32bb",
+            "venue": "J. Chem. Inf. Model.",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2765849",
+                    "name": "Leonardo L G Ferreira"
+                },
+                {
+                    "authorId": "38956816",
+                    "name": "Ricardo N Dos Santos"
+                },
+                {
+                    "authorId": "145673451",
+                    "name": "G. Oliva"
+                },
+                {
+                    "authorId": "2376636",
+                    "name": "A. Andricopulo"
+                }
+            ],
+            "doi": "10.3390/molecules200713384",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "fb180bea71bf830773e6c47764fb457d3a79cf14",
+            "title": "Molecular Docking and Structure-Based Drug Design Strategies",
+            "url": "https://www.semanticscholar.org/paper/fb180bea71bf830773e6c47764fb457d3a79cf14",
+            "venue": "Molecules",
+            "year": 2015
+        },
+        {
+            "arxivId": "1412.6980",
+            "authors": [
+                {
+                    "authorId": "1726807",
+                    "name": "Diederik P. Kingma"
+                },
+                {
+                    "authorId": "2503659",
+                    "name": "Jimmy Ba"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "a6cb366736791bcccc5c8639de5a8f9636bf87e8",
+            "title": "Adam: A Method for Stochastic Optimization",
+            "url": "https://www.semanticscholar.org/paper/a6cb366736791bcccc5c8639de5a8f9636bf87e8",
+            "venue": "ICLR",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2097866775",
+                    "name": "Philip Gage"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "1aa9c0045f1fe8c79cce03c7c14ef4b4643a21f8",
+            "title": "A new algorithm for data compression",
+            "url": "https://www.semanticscholar.org/paper/1aa9c0045f1fe8c79cce03c7c14ef4b4643a21f8",
+            "venue": "",
+            "year": 1994
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2339223",
+                    "name": "D. Weininger"
+                },
+                {
+                    "authorId": "48382173",
+                    "name": "A. Weininger"
+                },
+                {
+                    "authorId": "2150786",
+                    "name": "J. Weininger"
+                }
+            ],
+            "doi": "10.1021/ci00062a008",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "4c31108e78265b0101a02cc215b89944e94583c0",
+            "title": "SMILES. 2. Algorithm for generation of unique SMILES notation",
+            "url": "https://www.semanticscholar.org/paper/4c31108e78265b0101a02cc215b89944e94583c0",
+            "venue": "J. Chem. Inf. Comput. Sci.",
+            "year": 1989
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2339223",
+                    "name": "D. Weininger"
+                }
+            ],
+            "doi": "10.1021/ci00057a005",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "3f7983818b76a5f1b5daf9b605877ed401c8e73c",
+            "title": "SMILES, a chemical language and information system. 1. Introduction to methodology and encoding rules",
+            "url": "https://www.semanticscholar.org/paper/3f7983818b76a5f1b5daf9b605877ed401c8e73c",
+            "venue": "J. Chem. Inf. Comput. Sci.",
+            "year": 1988
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "48870109",
+                    "name": "Carl N. Edwards"
+                },
+                {
+                    "authorId": "143869012",
+                    "name": "Chengxiang Zhai"
+                },
+                {
+                    "authorId": "2113323573",
+                    "name": "Heng Ji"
+                }
+            ],
+            "doi": "10.18653/v1/2021.emnlp-main.47",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "57651d65078818821234d13544ac1f29858dcd67",
+            "title": "Text2Mol: Cross-Modal Molecule Retrieval with Natural Language Queries",
+            "url": "https://www.semanticscholar.org/paper/57651d65078818821234d13544ac1f29858dcd67",
+            "venue": "EMNLP",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "65928943",
+                    "name": "Emiel Hoogeboom"
+                },
+                {
+                    "authorId": "39227113",
+                    "name": "Didrik Nielsen"
+                },
+                {
+                    "authorId": "144818264",
+                    "name": "P. Jaini"
+                },
+                {
+                    "authorId": "51131843",
+                    "name": "Patrick Forr'e"
+                },
+                {
+                    "authorId": "1678311",
+                    "name": "M. Welling"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "4d2a05140dd9bafaf035a846e7bda05f956304d2",
+            "title": "Argmax Flows and Multinomial Diffusion: Towards Non-Autoregressive Language Models",
+            "url": "https://www.semanticscholar.org/paper/4d2a05140dd9bafaf035a846e7bda05f956304d2",
+            "venue": "ArXiv",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "40482831",
+                    "name": "Prashansa Agrawal"
+                }
+            ],
+            "doi": "10.4172/2329-6887.1000E173",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "4e3cf1f761b8749afbac46ab949ed30896d3f44a",
+            "title": "Artificial Intelligence in Drug Discovery and Development",
+            "url": "https://www.semanticscholar.org/paper/4e3cf1f761b8749afbac46ab949ed30896d3f44a",
+            "venue": "",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2791430",
+                    "name": "H. Dai"
+                },
+                {
+                    "authorId": "48391641",
+                    "name": "Yingtao Tian"
+                },
+                {
+                    "authorId": "144445933",
+                    "name": "Bo Dai"
+                },
+                {
+                    "authorId": "1721948",
+                    "name": "S. Skiena"
+                },
+                {
+                    "authorId": "1779453",
+                    "name": "Le Song"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "583a2e12576ff99f3f4d3f2248420618b0f64489",
+            "title": "Syntax-Directed Variational Autoencoder for Molecule Generation",
+            "url": "https://www.semanticscholar.org/paper/583a2e12576ff99f3f4d3f2248420618b0f64489",
+            "venue": "",
+            "year": 2017
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Biology",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        },
+        {
+            "category": "Chemistry",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Text-Guided Molecule Generation with Diffusion Language Model",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/4cf3bcd849baa318252e3340eceab465111390e5",
+    "venue": "AAAI Conference on Artificial Intelligence",
+    "year": 2024
+}

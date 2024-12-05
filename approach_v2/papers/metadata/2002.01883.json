@@ -1,0 +1,1555 @@
+{
+    "abstract": "A core operation in reinforcement learning (RL) is finding an action that is optimal with respect to a learned state-action value function. This operation is often challenging when the learned value function takes continuous actions as input. We introduce deep RBF value functions: state-action value functions learned using a deep neural network with a radial-basis function (RBF) output layer. We show that the optimal action with respect to a deep RBF value function can be easily approximated up to any desired accuracy. Moreover, deep RBF value functions can represent any true value function up to any desired accuracy owing to their support for universal function approximation. By learning a deep RBF value function, we extend the standard DQN algorithm to continuous control, and demonstrate that the resultant agent, RBF-DQN, outperforms standard baselines on a set of continuous-action RL problems.",
+    "arxivId": "2002.01883",
+    "authors": [
+        {
+            "authorId": "7981071",
+            "name": "Kavosh Asadi",
+            "url": "https://www.semanticscholar.org/author/7981071"
+        },
+        {
+            "authorId": "145726861",
+            "name": "Ronald E. Parr",
+            "url": "https://www.semanticscholar.org/author/145726861"
+        },
+        {
+            "authorId": "1765407",
+            "name": "G. Konidaris",
+            "url": "https://www.semanticscholar.org/author/1765407"
+        },
+        {
+            "authorId": "144885169",
+            "name": "M. Littman",
+            "url": "https://www.semanticscholar.org/author/144885169"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": "2311.16148",
+            "authors": [
+                {
+                    "authorId": "2268495256",
+                    "name": "Basavasagar Patil"
+                },
+                {
+                    "authorId": "1382657362",
+                    "name": "Xavier Alameda-Pineda"
+                },
+                {
+                    "authorId": "9252114",
+                    "name": "Chris Reinke"
+                }
+            ],
+            "doi": "10.48550/arXiv.2311.16148",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7b8b6b242f7efd1b7998ab96561b8e1130b26624",
+            "title": "Univariate Radial Basis Function Layers: Brain-inspired Deep Neural Layers for Low-Dimensional Inputs",
+            "url": "https://www.semanticscholar.org/paper/7b8b6b242f7efd1b7998ab96561b8e1130b26624",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": "2206.03211",
+            "authors": [
+                {
+                    "authorId": "2168461101",
+                    "name": "Anand Ballou"
+                },
+                {
+                    "authorId": "9252114",
+                    "name": "Chris Reinke"
+                },
+                {
+                    "authorId": "1382657362",
+                    "name": "Xavier Alameda-Pineda"
+                }
+            ],
+            "doi": "10.1007/s10489-023-04691-5",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "13f286847a32129f1a91d2efc2bc27a35aeaec91",
+            "title": "Variational meta reinforcement learning for social robotics",
+            "url": "https://www.semanticscholar.org/paper/13f286847a32129f1a91d2efc2bc27a35aeaec91",
+            "venue": "Applied Intelligence",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ab5aaf1ec47408e1974d7e55e6c17c61cfc0ba75",
+            "title": "Deliverable D6.5: Final Neural Network Architectures",
+            "url": "https://www.semanticscholar.org/paper/ab5aaf1ec47408e1974d7e55e6c17c61cfc0ba75",
+            "venue": "",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "41019362",
+                    "name": "Beau Coker"
+                },
+                {
+                    "authorId": "144188281",
+                    "name": "M. Pradier"
+                },
+                {
+                    "authorId": "1388372395",
+                    "name": "F. Doshi-Velez"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "1915a32255174c1d5892d855458c6296d103801a",
+            "title": "PoRB-Nets: Poisson Process Radial Basis Function Networks",
+            "url": "https://www.semanticscholar.org/paper/1915a32255174c1d5892d855458c6296d103801a",
+            "venue": "UAI",
+            "year": 2020
+        }
+    ],
+    "corpusId": 211031995,
+    "doi": null,
+    "fieldsOfStudy": [
+        "Computer Science",
+        "Mathematics"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 4,
+    "numCiting": 46,
+    "paperId": "147dbe5c62474002c5e24b80362e117be3f581c6",
+    "references": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2989692",
+                    "name": "Tor Lattimore"
+                },
+                {
+                    "authorId": "40868287",
+                    "name": "Csaba Szepesvari"
+                }
+            ],
+            "doi": "10.1017/9781108571401",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "57ffba5ea5e602b5365752e19a6f85a716db1d8b",
+            "title": "Bandit Algorithms",
+            "url": "https://www.semanticscholar.org/paper/57ffba5ea5e602b5365752e19a6f85a716db1d8b",
+            "venue": "",
+            "year": 2020
+        },
+        {
+            "arxivId": "1909.12397",
+            "authors": [
+                {
+                    "authorId": "2060597867",
+                    "name": "M. Ryu"
+                },
+                {
+                    "authorId": "1819830",
+                    "name": "Yinlam Chow"
+                },
+                {
+                    "authorId": "2115697579",
+                    "name": "Ross Anderson"
+                },
+                {
+                    "authorId": "144707259",
+                    "name": "Christian Tjandraatmadja"
+                },
+                {
+                    "authorId": "145646162",
+                    "name": "Craig Boutilier"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "385057ad5c678b5cd413835b64a813e930c77a4c",
+            "title": "CAQL: Continuous Action Q-Learning",
+            "url": "https://www.semanticscholar.org/paper/385057ad5c678b5cd413835b64a813e930c77a4c",
+            "venue": "ICLR",
+            "year": 2019
+        },
+        {
+            "arxivId": "1911.11679",
+            "authors": [
+                {
+                    "authorId": "51208779",
+                    "name": "Guillaume Matheron"
+                },
+                {
+                    "authorId": "144249526",
+                    "name": "Nicolas Perrin"
+                },
+                {
+                    "authorId": "97009622",
+                    "name": "Olivier Sigaud"
+                }
+            ],
+            "doi": "10.1007/978-3-030-61616-8_25",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "84eb3a26622d359650bfd467055482f3a953db33",
+            "title": "The problem with DDPG: understanding failures in deterministic environments with sparse rewards",
+            "url": "https://www.semanticscholar.org/paper/84eb3a26622d359650bfd467055482f3a953db33",
+            "venue": "ICANN",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "120670362",
+                    "name": "Chong Li"
+                }
+            ],
+            "doi": "10.1201/9781351006620-5",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "03bd5c331c6074c96592e1a0261ed0c7ac914ae4",
+            "title": "Model-Free Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/03bd5c331c6074c96592e1a0261ed0c7ac914ae4",
+            "venue": "Reinforcement Learning for Cyber-Physical Systems",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2114789734",
+                    "name": "Zhao Song"
+                },
+                {
+                    "authorId": "145726861",
+                    "name": "Ronald E. Parr"
+                },
+                {
+                    "authorId": "145006560",
+                    "name": "L. Carin"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7382a0c5d3325bdfed94a3ae661d0c527387a3ee",
+            "title": "Revisiting the Softmax Bellman Operator: New Benefits and New Perspective",
+            "url": "https://www.semanticscholar.org/paper/7382a0c5d3325bdfed94a3ae661d0c527387a3ee",
+            "venue": "ICML",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2580584",
+                    "name": "Sungsu Lim"
+                },
+                {
+                    "authorId": "144849465",
+                    "name": "A. Joseph"
+                },
+                {
+                    "authorId": "2056343396",
+                    "name": "Lei Le"
+                },
+                {
+                    "authorId": "7303313",
+                    "name": "Yangchen Pan"
+                },
+                {
+                    "authorId": "144542337",
+                    "name": "Martha White"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "048074c8e01164ab53e4dbb4529e01f4c2d53cfa",
+            "title": "Actor-Expert: A Framework for using Action-Value Methods in Continuous Action Spaces",
+            "url": "https://www.semanticscholar.org/paper/048074c8e01164ab53e4dbb4529e01f4c2d53cfa",
+            "venue": "ArXiv",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2580584",
+                    "name": "Sungsu Lim"
+                }
+            ],
+            "doi": "10.7939/R3-QGDP-3872",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "ea68ea513461d329d59e8718a8919729de769273",
+            "title": "Actor-Expert: A Framework for using Q-learning in Continuous Action Spaces",
+            "url": "https://www.semanticscholar.org/paper/ea68ea513461d329d59e8718a8919729de769273",
+            "venue": "",
+            "year": 2018
+        },
+        {
+            "arxivId": "1805.09801",
+            "authors": [
+                {
+                    "authorId": "2351434",
+                    "name": "Zhongwen Xu"
+                },
+                {
+                    "authorId": "7634925",
+                    "name": "H. V. Hasselt"
+                },
+                {
+                    "authorId": "145824029",
+                    "name": "David Silver"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "2a49a71c9d40051a03c4445fe49025bc75d9eeb6",
+            "title": "Meta-Gradient Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/2a49a71c9d40051a03c4445fe49025bc75d9eeb6",
+            "venue": "NeurIPS",
+            "year": 2018
+        },
+        {
+            "arxivId": "1804.07193",
+            "authors": [
+                {
+                    "authorId": "7981071",
+                    "name": "Kavosh Asadi"
+                },
+                {
+                    "authorId": "31498163",
+                    "name": "Dipendra Kumar Misra"
+                },
+                {
+                    "authorId": "144885169",
+                    "name": "M. Littman"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c4f529934b6f22aa38e014e295a9737daa6e7db5",
+            "title": "Lipschitz Continuity in Model-based Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/c4f529934b6f22aa38e014e295a9737daa6e7db5",
+            "venue": "ICML",
+            "year": 2018
+        },
+        {
+            "arxivId": "1802.09477",
+            "authors": [
+                {
+                    "authorId": "14637819",
+                    "name": "Scott Fujimoto"
+                },
+                {
+                    "authorId": "47662867",
+                    "name": "H. V. Hoof"
+                },
+                {
+                    "authorId": "2462512",
+                    "name": "D. Meger"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "4debb99c0c63bfaa97dd433bc2828e4dac81c48b",
+            "title": "Addressing Function Approximation Error in Actor-Critic Methods",
+            "url": "https://www.semanticscholar.org/paper/4debb99c0c63bfaa97dd433bc2828e4dac81c48b",
+            "venue": "ICML",
+            "year": 2018
+        },
+        {
+            "arxivId": "1710.02298",
+            "authors": [
+                {
+                    "authorId": "39357484",
+                    "name": "Matteo Hessel"
+                },
+                {
+                    "authorId": "3321484",
+                    "name": "Joseph Modayil"
+                },
+                {
+                    "authorId": "7634925",
+                    "name": "H. V. Hasselt"
+                },
+                {
+                    "authorId": "1725157",
+                    "name": "T. Schaul"
+                },
+                {
+                    "authorId": "2273072",
+                    "name": "Georg Ostrovski"
+                },
+                {
+                    "authorId": "2605877",
+                    "name": "Will Dabney"
+                },
+                {
+                    "authorId": "48257711",
+                    "name": "Dan Horgan"
+                },
+                {
+                    "authorId": "1808897",
+                    "name": "Bilal Piot"
+                },
+                {
+                    "authorId": "37666967",
+                    "name": "M. G. Azar"
+                },
+                {
+                    "authorId": "145824029",
+                    "name": "David Silver"
+                }
+            ],
+            "doi": "10.1609/aaai.v32i1.11796",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0ab3f7ecbdc5a33565a234215604a6ca9d155a33",
+            "title": "Rainbow: Combining Improvements in Deep Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/0ab3f7ecbdc5a33565a234215604a6ca9d155a33",
+            "venue": "AAAI",
+            "year": 2017
+        },
+        {
+            "arxivId": "1709.06560",
+            "authors": [
+                {
+                    "authorId": "40068904",
+                    "name": "Peter Henderson"
+                },
+                {
+                    "authorId": "18014232",
+                    "name": "Riashat Islam"
+                },
+                {
+                    "authorId": "143902541",
+                    "name": "Philip Bachman"
+                },
+                {
+                    "authorId": "145134886",
+                    "name": "Joelle Pineau"
+                },
+                {
+                    "authorId": "144368601",
+                    "name": "Doina Precup"
+                },
+                {
+                    "authorId": "2462512",
+                    "name": "D. Meger"
+                }
+            ],
+            "doi": "10.1609/aaai.v32i1.11694",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "33690ff21ef1efb576410e656f2e60c89d0307d6",
+            "title": "Deep Reinforcement Learning that Matters",
+            "url": "https://www.semanticscholar.org/paper/33690ff21ef1efb576410e656f2e60c89d0307d6",
+            "venue": "AAAI",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "7981071",
+                    "name": "Kavosh Asadi"
+                },
+                {
+                    "authorId": "144885169",
+                    "name": "M. Littman"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0ca51467d034828689a723b6faeccbbbcada5485",
+            "title": "An Alternative Softmax Operator for Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/0ca51467d034828689a723b6faeccbbbcada5485",
+            "venue": "ICML",
+            "year": 2016
+        },
+        {
+            "arxivId": "1609.07152",
+            "authors": [
+                {
+                    "authorId": "1773498",
+                    "name": "Brandon Amos"
+                },
+                {
+                    "authorId": "2112281287",
+                    "name": "Lei Xu"
+                },
+                {
+                    "authorId": "145116464",
+                    "name": "J. Z. Kolter"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background",
+                "result"
+            ],
+            "isInfluential": true,
+            "paperId": "ee9aae0190c3ff177e7d1c9cdc977ce7d971bcc1",
+            "title": "Input Convex Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/ee9aae0190c3ff177e7d1c9cdc977ce7d971bcc1",
+            "venue": "ICML",
+            "year": 2016
+        },
+        {
+            "arxivId": "1606.01540",
+            "authors": [
+                {
+                    "authorId": "2065151121",
+                    "name": "Greg Brockman"
+                },
+                {
+                    "authorId": "34415167",
+                    "name": "Vicki Cheung"
+                },
+                {
+                    "authorId": "152877508",
+                    "name": "Ludwig Pettersson"
+                },
+                {
+                    "authorId": "2113526509",
+                    "name": "Jonas Schneider"
+                },
+                {
+                    "authorId": "47971768",
+                    "name": "John Schulman"
+                },
+                {
+                    "authorId": "2109541439",
+                    "name": "Jie Tang"
+                },
+                {
+                    "authorId": "2563432",
+                    "name": "Wojciech Zaremba"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2b10281297ee001a9f3f4ea1aa9bea6b638c27df",
+            "title": "OpenAI Gym",
+            "url": "https://www.semanticscholar.org/paper/2b10281297ee001a9f3f4ea1aa9bea6b638c27df",
+            "venue": "ArXiv",
+            "year": 2016
+        },
+        {
+            "arxivId": "1605.08695",
+            "authors": [
+                {
+                    "authorId": "2057642721",
+                    "name": "Mart\u00edn Abadi"
+                },
+                {
+                    "authorId": "144758007",
+                    "name": "P. Barham"
+                },
+                {
+                    "authorId": "2108406634",
+                    "name": "Jianmin Chen"
+                },
+                {
+                    "authorId": "2545358",
+                    "name": "Z. Chen"
+                },
+                {
+                    "authorId": "36347083",
+                    "name": "Andy Davis"
+                },
+                {
+                    "authorId": "49959210",
+                    "name": "J. Dean"
+                },
+                {
+                    "authorId": "145139947",
+                    "name": "M. Devin"
+                },
+                {
+                    "authorId": "1780892",
+                    "name": "Sanjay Ghemawat"
+                },
+                {
+                    "authorId": "2060655766",
+                    "name": "G. Irving"
+                },
+                {
+                    "authorId": "2090818",
+                    "name": "M. Isard"
+                },
+                {
+                    "authorId": "1942300",
+                    "name": "M. Kudlur"
+                },
+                {
+                    "authorId": "3369421",
+                    "name": "J. Levenberg"
+                },
+                {
+                    "authorId": "3089272",
+                    "name": "R. Monga"
+                },
+                {
+                    "authorId": "144375552",
+                    "name": "Sherry Moore"
+                },
+                {
+                    "authorId": "20154699",
+                    "name": "D. Murray"
+                },
+                {
+                    "authorId": "32163737",
+                    "name": "Benoit Steiner"
+                },
+                {
+                    "authorId": "2080690",
+                    "name": "P. Tucker"
+                },
+                {
+                    "authorId": "2053781980",
+                    "name": "Vijay Vasudevan"
+                },
+                {
+                    "authorId": "47941411",
+                    "name": "Pete Warden"
+                },
+                {
+                    "authorId": "35078078",
+                    "name": "M. Wicke"
+                },
+                {
+                    "authorId": "2117163698",
+                    "name": "Yuan Yu"
+                },
+                {
+                    "authorId": "2108113547",
+                    "name": "Xiaoqiang Zhang"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "4954fa180728932959997a4768411ff9136aac81",
+            "title": "TensorFlow: A system for large-scale machine learning",
+            "url": "https://www.semanticscholar.org/paper/4954fa180728932959997a4768411ff9136aac81",
+            "venue": "OSDI",
+            "year": 2016
+        },
+        {
+            "arxivId": "1603.00748",
+            "authors": [
+                {
+                    "authorId": "2046135",
+                    "name": "S. Gu"
+                },
+                {
+                    "authorId": "2542999",
+                    "name": "T. Lillicrap"
+                },
+                {
+                    "authorId": "1701686",
+                    "name": "I. Sutskever"
+                },
+                {
+                    "authorId": "1736651",
+                    "name": "S. Levine"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "result"
+            ],
+            "isInfluential": true,
+            "paperId": "d358d41c69450b171327ebd99462b6afef687269",
+            "title": "Continuous Deep Q-Learning with Model-based Acceleration",
+            "url": "https://www.semanticscholar.org/paper/d358d41c69450b171327ebd99462b6afef687269",
+            "venue": "ICML",
+            "year": 2016
+        },
+        {
+            "arxivId": "1602.04621",
+            "authors": [
+                {
+                    "authorId": "2561924",
+                    "name": "Ian Osband"
+                },
+                {
+                    "authorId": "1723876",
+                    "name": "C. Blundell"
+                },
+                {
+                    "authorId": "1863250",
+                    "name": "A. Pritzel"
+                },
+                {
+                    "authorId": "1731282",
+                    "name": "Benjamin Van Roy"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "4b63e34276aa98d5345efa7fe09bb06d8a9d8f52",
+            "title": "Deep Exploration via Bootstrapped DQN",
+            "url": "https://www.semanticscholar.org/paper/4b63e34276aa98d5345efa7fe09bb06d8a9d8f52",
+            "venue": "NIPS",
+            "year": 2016
+        },
+        {
+            "arxivId": "1509.02971",
+            "authors": [
+                {
+                    "authorId": "2542999",
+                    "name": "T. Lillicrap"
+                },
+                {
+                    "authorId": "2323922",
+                    "name": "Jonathan J. Hunt"
+                },
+                {
+                    "authorId": "1863250",
+                    "name": "A. Pritzel"
+                },
+                {
+                    "authorId": "2801204",
+                    "name": "N. Heess"
+                },
+                {
+                    "authorId": "1968210",
+                    "name": "Tom Erez"
+                },
+                {
+                    "authorId": "2109481",
+                    "name": "Yuval Tassa"
+                },
+                {
+                    "authorId": "145824029",
+                    "name": "David Silver"
+                },
+                {
+                    "authorId": "1688276",
+                    "name": "Daan Wierstra"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "024006d4c2a89f7acacc6e4438d156525b60a98f",
+            "title": "Continuous control with deep reinforcement learning",
+            "url": "https://www.semanticscholar.org/paper/024006d4c2a89f7acacc6e4438d156525b60a98f",
+            "venue": "ICLR",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3255983",
+                    "name": "Volodymyr Mnih"
+                },
+                {
+                    "authorId": "2645384",
+                    "name": "K. Kavukcuoglu"
+                },
+                {
+                    "authorId": "145824029",
+                    "name": "David Silver"
+                },
+                {
+                    "authorId": "2228824",
+                    "name": "Andrei A. Rusu"
+                },
+                {
+                    "authorId": "144056327",
+                    "name": "J. Veness"
+                },
+                {
+                    "authorId": "1792298",
+                    "name": "Marc G. Bellemare"
+                },
+                {
+                    "authorId": "1753223",
+                    "name": "Alex Graves"
+                },
+                {
+                    "authorId": "3137672",
+                    "name": "Martin A. Riedmiller"
+                },
+                {
+                    "authorId": "145600108",
+                    "name": "A. Fidjeland"
+                },
+                {
+                    "authorId": "2273072",
+                    "name": "Georg Ostrovski"
+                },
+                {
+                    "authorId": "48348688",
+                    "name": "Stig Petersen"
+                },
+                {
+                    "authorId": "50388928",
+                    "name": "Charlie Beattie"
+                },
+                {
+                    "authorId": "49813280",
+                    "name": "Amir Sadik"
+                },
+                {
+                    "authorId": "2460849",
+                    "name": "Ioannis Antonoglou"
+                },
+                {
+                    "authorId": "143776287",
+                    "name": "Helen King"
+                },
+                {
+                    "authorId": "2106164",
+                    "name": "D. Kumaran"
+                },
+                {
+                    "authorId": "1688276",
+                    "name": "Daan Wierstra"
+                },
+                {
+                    "authorId": "34313265",
+                    "name": "S. Legg"
+                },
+                {
+                    "authorId": "48987704",
+                    "name": "D. Hassabis"
+                }
+            ],
+            "doi": "10.1038/nature14236",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "340f48901f72278f6bf78a04ee5b01df208cc508",
+            "title": "Human-level control through deep reinforcement learning",
+            "url": "https://www.semanticscholar.org/paper/340f48901f72278f6bf78a04ee5b01df208cc508",
+            "venue": "Nature",
+            "year": 2015
+        },
+        {
+            "arxivId": "1412.6980",
+            "authors": [
+                {
+                    "authorId": "1726807",
+                    "name": "Diederik P. Kingma"
+                },
+                {
+                    "authorId": "2503659",
+                    "name": "Jimmy Ba"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "a6cb366736791bcccc5c8639de5a8f9636bf87e8",
+            "title": "Adam: A Method for Stochastic Optimization",
+            "url": "https://www.semanticscholar.org/paper/a6cb366736791bcccc5c8639de5a8f9636bf87e8",
+            "venue": "ICLR",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145824029",
+                    "name": "David Silver"
+                },
+                {
+                    "authorId": "3276293",
+                    "name": "Guy Lever"
+                },
+                {
+                    "authorId": "2801204",
+                    "name": "N. Heess"
+                },
+                {
+                    "authorId": "1804488",
+                    "name": "T. Degris"
+                },
+                {
+                    "authorId": "1688276",
+                    "name": "Daan Wierstra"
+                },
+                {
+                    "authorId": "3137672",
+                    "name": "Martin A. Riedmiller"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "687d0e59d5c35f022ce4638b3e3a6142068efc94",
+            "title": "Deterministic Policy Gradient Algorithms",
+            "url": "https://www.semanticscholar.org/paper/687d0e59d5c35f022ce4638b3e3a6142068efc94",
+            "venue": "ICML",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1765407",
+                    "name": "G. Konidaris"
+                },
+                {
+                    "authorId": "1795401",
+                    "name": "Sarah Osentoski"
+                },
+                {
+                    "authorId": "143640165",
+                    "name": "P. Thomas"
+                }
+            ],
+            "doi": "10.1609/aaai.v25i1.7903",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "c29b7798b6839b84b87b4910f6263ee5a89f9279",
+            "title": "Value Function Approximation in Reinforcement Learning Using the Fourier Basis",
+            "url": "https://www.semanticscholar.org/paper/c29b7798b6839b84b87b4910f6263ee5a89f9279",
+            "venue": "AAAI",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1990806",
+                    "name": "Alexander L. Strehl"
+                },
+                {
+                    "authorId": "47681372",
+                    "name": "Lihong Li"
+                },
+                {
+                    "authorId": "2271288182",
+                    "name": "Eric Wiewiora"
+                },
+                {
+                    "authorId": "144162125",
+                    "name": "J. Langford"
+                },
+                {
+                    "authorId": "144885169",
+                    "name": "M. Littman"
+                }
+            ],
+            "doi": "10.1145/1143844.1143955",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "187f3f984e6f375178f41827ab90c4e748773fa7",
+            "title": "PAC model-free reinforcement learning",
+            "url": "https://www.semanticscholar.org/paper/187f3f984e6f375178f41827ab90c4e748773fa7",
+            "venue": "ICML",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1742809",
+                    "name": "William T. B. Uther"
+                }
+            ],
+            "doi": "10.1007/978-1-4899-7687-1_512",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c6e311a9640b47b9264e13de867ab6cc34d195db",
+            "title": "Markov Decision Processes",
+            "url": "https://www.semanticscholar.org/paper/c6e311a9640b47b9264e13de867ab6cc34d195db",
+            "venue": "Encyclopedia of Machine Learning and Data Mining",
+            "year": 2004
+        },
+        {
+            "arxivId": "2106.01946",
+            "authors": [
+                {
+                    "authorId": "1843103",
+                    "name": "Stephen P. Boyd"
+                },
+                {
+                    "authorId": "2014414",
+                    "name": "L. Vandenberghe"
+                }
+            ],
+            "doi": "10.1017/CBO9780511804441.001",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0b14178e7d79ac426d0a39700e1ac8b2c6f2e752",
+            "title": "Convex Optimization",
+            "url": "https://www.semanticscholar.org/paper/0b14178e7d79ac426d0a39700e1ac8b2c6f2e752",
+            "venue": "IEEE Transactions on Automatic Control",
+            "year": 2004
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143684647",
+                    "name": "B. Hammer"
+                },
+                {
+                    "authorId": "2370051",
+                    "name": "Kai Gersmann"
+                }
+            ],
+            "doi": "10.1023/A:1022936519097",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "736883d0805efabe259fb065a994303f1e7ba41f",
+            "title": "A Note on the Universal Approximation Capability of Support Vector Machines",
+            "url": "https://www.semanticscholar.org/paper/736883d0805efabe259fb065a994303f1e7ba41f",
+            "venue": "Neural Processing Letters",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1745169",
+                    "name": "P. Bartlett"
+                },
+                {
+                    "authorId": "2266267",
+                    "name": "S. Mendelson"
+                }
+            ],
+            "doi": "10.1007/3-540-44581-1_15",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "009f35c0e453f2435efd8d8ef8086b76b294967a",
+            "title": "Rademacher and Gaussian Complexities: Risk Bounds and Structural Results",
+            "url": "https://www.semanticscholar.org/paper/009f35c0e453f2435efd8d8ef8086b76b294967a",
+            "venue": "J. Mach. Learn. Res.",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144695232",
+                    "name": "S. Kakade"
+                },
+                {
+                    "authorId": "144162125",
+                    "name": "J. Langford"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "523b4ce1c2a1336962444abc1dec215756c2f3e6",
+            "title": "Approximately Optimal Approximate Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/523b4ce1c2a1336962444abc1dec215756c2f3e6",
+            "venue": "ICML",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1741996",
+                    "name": "N. Karayiannis"
+                }
+            ],
+            "doi": "10.1109/72.761725",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "08132e1584c775e30465e018676b8d6224f6d236",
+            "title": "Reformulated radial basis neural networks trained by gradient descent",
+            "url": "https://www.semanticscholar.org/paper/08132e1584c775e30465e018676b8d6224f6d236",
+            "venue": "IEEE Trans. Neural Networks",
+            "year": 1999
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1839967",
+                    "name": "G. Bugmann"
+                }
+            ],
+            "doi": "10.1016/S0925-2312(98)00027-7",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2fda1ac25568817545b21b4276b02d219632b95a",
+            "title": "Normalized Gaussian Radial Basis Function networks",
+            "url": "https://www.semanticscholar.org/paper/2fda1ac25568817545b21b4276b02d219632b95a",
+            "venue": "Neurocomputing",
+            "year": 1998
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1804676",
+                    "name": "B. Kr\u00f6se"
+                }
+            ],
+            "doi": "10.1016/0921-8890(95)00026-C",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "59b50a775542e87f078db35b868ac10ab43d4c75",
+            "title": "Learning from delayed rewards",
+            "url": "https://www.semanticscholar.org/paper/59b50a775542e87f078db35b868ac10ab43d4c75",
+            "venue": "Robotics Auton. Syst.",
+            "year": 1995
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "37814588",
+                    "name": "M. Puterman"
+                }
+            ],
+            "doi": "10.2307/2291177",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a9cd8efe9184dddb1bedbbec3a356c4dfb22fe63",
+            "title": "Markov Decision Processes: Discrete Stochastic Dynamic Programming",
+            "url": "https://www.semanticscholar.org/paper/a9cd8efe9184dddb1bedbbec3a356c4dfb22fe63",
+            "venue": "",
+            "year": 1994
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1959250",
+                    "name": "M. Bena\u00efm"
+                }
+            ],
+            "doi": "10.1162/neco.1994.6.2.319",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "eb6183ec7c996c476146e7d4bd73da4a8876ed8c",
+            "title": "On Functional Approximation with Normalized Gaussian Units",
+            "url": "https://www.semanticscholar.org/paper/eb6183ec7c996c476146e7d4bd73da4a8876ed8c",
+            "venue": "Neural Computation",
+            "year": 1994
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2228513322",
+                    "name": "III. Baird"
+                },
+                {
+                    "authorId": "2229017721",
+                    "name": "Klopf Leemon C."
+                }
+            ],
+            "doi": "10.21236/ada280844",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "fc1a6753de779a5871ee5481e455fa5e00404f1d",
+            "title": "Reinforcement Learning With High-Dimensional, Continuous Actions",
+            "url": "https://www.semanticscholar.org/paper/fc1a6753de779a5871ee5481e455fa5e00404f1d",
+            "venue": "",
+            "year": 1993
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1686308",
+                    "name": "F. Aurenhammer"
+                }
+            ],
+            "doi": "10.1145/116873.116880",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5b5332e79aefa3b913d42a434b8ddb09b31b5b2e",
+            "title": "Voronoi diagrams\u2014a survey of a fundamental geometric data structure",
+            "url": "https://www.semanticscholar.org/paper/5b5332e79aefa3b913d42a434b8ddb09b31b5b2e",
+            "venue": "CSUR",
+            "year": 1991
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1764952",
+                    "name": "K. Hornik"
+                },
+                {
+                    "authorId": "2964655",
+                    "name": "M. Stinchcombe"
+                },
+                {
+                    "authorId": "2149702798",
+                    "name": "H. White"
+                }
+            ],
+            "doi": "10.1016/0893-6080(89)90020-8",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "f22f6972e66bdd2e769fa64b0df0a13063c0c101",
+            "title": "Multilayer feedforward networks are universal approximators",
+            "url": "https://www.semanticscholar.org/paper/f22f6972e66bdd2e769fa64b0df0a13063c0c101",
+            "venue": "Neural Networks",
+            "year": 1989
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145016534",
+                    "name": "J. Moody"
+                },
+                {
+                    "authorId": "2319258",
+                    "name": "C. Darken"
+                }
+            ],
+            "doi": "10.1162/neco.1989.1.2.281",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "1e7c4f513f24c3b82a1138b9f22ed87ed00cbe76",
+            "title": "Fast Learning in Networks of Locally-Tuned Processing Units",
+            "url": "https://www.semanticscholar.org/paper/1e7c4f513f24c3b82a1138b9f22ed87ed00cbe76",
+            "venue": "Neural Computation",
+            "year": 1989
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1699645",
+                    "name": "R. Sutton"
+                }
+            ],
+            "doi": "10.1023/A:1022633531479",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a91635f8d0e7fb804efd1c38d9c24ee952ba7076",
+            "title": "Learning to predict by the methods of temporal differences",
+            "url": "https://www.semanticscholar.org/paper/a91635f8d0e7fb804efd1c38d9c24ee952ba7076",
+            "venue": "Machine Learning",
+            "year": 1988
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145768864",
+                    "name": "D. Broomhead"
+                },
+                {
+                    "authorId": "144159852",
+                    "name": "D. Lowe"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d5558a34dfd1dbb572895664d38fca04029a99cb",
+            "title": "Radial Basis Functions, Multi-Variable Functional Interpolation and Adaptive Networks",
+            "url": "https://www.semanticscholar.org/paper/d5558a34dfd1dbb572895664d38fca04029a99cb",
+            "venue": "",
+            "year": 1988
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144873562",
+                    "name": "R. Bellman"
+                }
+            ],
+            "doi": "10.1073/PNAS.38.8.716",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "dc9047917d1ceb3805d954c73899ddd2d40dd5eb",
+            "title": "On the Theory of Dynamic Programming.",
+            "url": "https://www.semanticscholar.org/paper/dc9047917d1ceb3805d954c73899ddd2d40dd5eb",
+            "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+            "year": 1952
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2113979381",
+                    "name": "Xing Hao"
+                },
+                {
+                    "authorId": "8273966",
+                    "name": "Guigang Zhang"
+                },
+                {
+                    "authorId": "2118869556",
+                    "name": "Shang Ma"
+                }
+            ],
+            "doi": "10.1142/S1793351X16500045",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "4f8d648c52edf74e41b0996128aa536e13cc7e82",
+            "title": "Deep Learning",
+            "url": "https://www.semanticscholar.org/paper/4f8d648c52edf74e41b0996128aa536e13cc7e82",
+            "venue": "Int. J. Semantic Comput.",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2257178939",
+                    "name": "Richard S. Sutton"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "7ca8ac34767d6e6cb389eeebcdabc4225b39edfe",
+            "title": "Advances in Neural Information Processing Systems pp MIT Press Generalization in Reinforcement Learning Successful Examples Using Sparse Coarse Coding",
+            "url": "https://www.semanticscholar.org/paper/7ca8ac34767d6e6cb389eeebcdabc4225b39edfe",
+            "venue": "",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144695232",
+                    "name": "S. Kakade"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a9e5a40b0ff5c40d2db7b73490922e115576adb5",
+            "title": "On the sample complexity of reinforcement learning.",
+            "url": "https://www.semanticscholar.org/paper/a9e5a40b0ff5c40d2db7b73490922e115576adb5",
+            "venue": "",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3466704",
+                    "name": "Gavin Adrian Rummery"
+                },
+                {
+                    "authorId": "145387873",
+                    "name": "M. Niranjan"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "7a09464f26e18a25a948baaa736270bfb84b5e12",
+            "title": "On-line Q-learning using connectionist systems",
+            "url": "https://www.semanticscholar.org/paper/7a09464f26e18a25a948baaa736270bfb84b5e12",
+            "venue": "",
+            "year": 1994
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2294095",
+                    "name": "M. Powell"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c71ca26b183025b9f39f940f5e730f2c9a64e414",
+            "title": "Radial basis functions for multivariable interpolation: a review",
+            "url": "https://www.semanticscholar.org/paper/c71ca26b183025b9f39f940f5e730f2c9a64e414",
+            "venue": "",
+            "year": 1987
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Mathematics",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Deep RBF Value Functions for Continuous Control",
+    "topics": [
+        {
+            "topic": "Bellman equation",
+            "topicId": "65628",
+            "url": "https://www.semanticscholar.org/topic/65628"
+        },
+        {
+            "topic": "Radial basis function",
+            "topicId": "18635",
+            "url": "https://www.semanticscholar.org/topic/18635"
+        },
+        {
+            "topic": "Reinforcement learning",
+            "topicId": "2557",
+            "url": "https://www.semanticscholar.org/topic/2557"
+        },
+        {
+            "topic": "Deep learning",
+            "topicId": "2762",
+            "url": "https://www.semanticscholar.org/topic/2762"
+        },
+        {
+            "topic": "Utm theorem",
+            "topicId": "730569",
+            "url": "https://www.semanticscholar.org/topic/730569"
+        },
+        {
+            "topic": "Artificial neural network",
+            "topicId": "6213",
+            "url": "https://www.semanticscholar.org/topic/6213"
+        },
+        {
+            "topic": "Approximation algorithm",
+            "topicId": "87",
+            "url": "https://www.semanticscholar.org/topic/87"
+        },
+        {
+            "topic": "Resultant",
+            "topicId": "2616",
+            "url": "https://www.semanticscholar.org/topic/2616"
+        },
+        {
+            "topic": "Radial (radio)",
+            "topicId": "16338",
+            "url": "https://www.semanticscholar.org/topic/16338"
+        }
+    ],
+    "url": "https://www.semanticscholar.org/paper/147dbe5c62474002c5e24b80362e117be3f581c6",
+    "venue": "arXiv.org",
+    "year": 2020
+}

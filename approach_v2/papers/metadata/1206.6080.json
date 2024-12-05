@@ -1,0 +1,953 @@
+{
+    "abstract": "Multi-fidelity methods combine inexpensive low-fidelity simulations with costly but high-fidelity simulations to produce an accurate model of a system of interest at minimal cost. They have proven useful in modeling physical systems and have been applied to engineering problems such as wing-design optimization. During human-in-the-loop experimentation, it has become increasingly common to use online platforms, like Mechanical Turk, to run low-fidelity experiments to gather human performance data in an efficient manner. One concern with these experiments is that the results obtained from the online environment generalize poorly to the actual domain of interest. To address this limitation, we extend traditional multi-fidelity approaches to allow us to combine fewer data points from high-fidelity human-in-the-loop experiments with plentiful but less accurate data from low-fidelity experiments to produce accurate models of how humans interact. We present both model-based and model-free methods, and summarize the predictive performance of each method under different conditions.",
+    "arxivId": "1408.2053",
+    "authors": [
+        {
+            "authorId": "34314107",
+            "name": "E. Schlicht",
+            "url": "https://www.semanticscholar.org/author/34314107"
+        },
+        {
+            "authorId": "2141191",
+            "name": "Ritchie Lee",
+            "url": "https://www.semanticscholar.org/author/2141191"
+        },
+        {
+            "authorId": "1696678",
+            "name": "D. Wolpert",
+            "url": "https://www.semanticscholar.org/author/1696678"
+        },
+        {
+            "authorId": "2275756",
+            "name": "Mykel J. Kochenderfer",
+            "url": "https://www.semanticscholar.org/author/2275756"
+        },
+        {
+            "authorId": "143613254",
+            "name": "Brendan D. Tracey",
+            "url": "https://www.semanticscholar.org/author/143613254"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": "1701.08588",
+            "authors": [
+                {
+                    "authorId": "34314107",
+                    "name": "E. Schlicht"
+                },
+                {
+                    "authorId": "49451603",
+                    "name": "Nichole L. Morris"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "result"
+            ],
+            "isInfluential": true,
+            "paperId": "ec43e970d04b4c291daeb7e745c9f713883026ab",
+            "title": "Estimating the risk associated with transportation technology using multifidelity simulation",
+            "url": "https://www.semanticscholar.org/paper/ec43e970d04b4c291daeb7e745c9f713883026ab",
+            "venue": "ICML 2017",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "72900465",
+                    "name": "M. Cutler"
+                },
+                {
+                    "authorId": "144926179",
+                    "name": "Thomas J. Walsh"
+                },
+                {
+                    "authorId": "1713935",
+                    "name": "J. How"
+                }
+            ],
+            "doi": "10.1109/TRO.2015.2419431",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "17237d9d360d93f8ad80efd4d9a78e0a16d268a4",
+            "title": "Real-World Reinforcement Learning via Multifidelity Simulators",
+            "url": "https://www.semanticscholar.org/paper/17237d9d360d93f8ad80efd4d9a78e0a16d268a4",
+            "venue": "IEEE Transactions on Robotics",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "72900465",
+                    "name": "M. Cutler"
+                },
+                {
+                    "authorId": "144926179",
+                    "name": "Thomas J. Walsh"
+                },
+                {
+                    "authorId": "1713935",
+                    "name": "J. How"
+                }
+            ],
+            "doi": "10.1109/ICRA.2014.6907423",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "aa2787a4dd6fdc14f7ca36d80ec469cb2435c44a",
+            "title": "Reinforcement learning with multi-fidelity simulators",
+            "url": "https://www.semanticscholar.org/paper/aa2787a4dd6fdc14f7ca36d80ec469cb2435c44a",
+            "venue": "2014 IEEE International Conference on Robotics and Automation (ICRA)",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145808596",
+                    "name": "R. Amjadi"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "07f4ea5ed2b0f7cda2c4fd5da684c7a2d634095c",
+            "title": "Summer Program on Transportation Statistics August 14-18",
+            "url": "https://www.semanticscholar.org/paper/07f4ea5ed2b0f7cda2c4fd5da684c7a2d634095c",
+            "venue": "",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "72900465",
+                    "name": "M. Cutler"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "d3ab4cbe6888ef7e986c999eab13c18994829e4e",
+            "title": "Reinforcement learning for robots through efficient simulator sampling",
+            "url": "https://www.semanticscholar.org/paper/d3ab4cbe6888ef7e986c999eab13c18994829e4e",
+            "venue": "",
+            "year": 2015
+        }
+    ],
+    "corpusId": 8205791,
+    "doi": null,
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 5,
+    "numCiting": 29,
+    "paperId": "5cd9c8a9170b968411f9888539fa18ffd64e89c2",
+    "references": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1835039",
+                    "name": "E. Vul"
+                },
+                {
+                    "authorId": "144002017",
+                    "name": "Noah D. Goodman"
+                },
+                {
+                    "authorId": "1799860",
+                    "name": "T. Griffiths"
+                },
+                {
+                    "authorId": "1763295",
+                    "name": "J. Tenenbaum"
+                }
+            ],
+            "doi": "10.1111/cogs.12101",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "37bc28e563aa8b1ac8774e8edf81fb4d0e9c9860",
+            "title": "One and Done? Optimal Decisions From Very Few Samples",
+            "url": "https://www.semanticscholar.org/paper/37bc28e563aa8b1ac8774e8edf81fb4d0e9c9860",
+            "venue": "Cogn. Sci.",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2237643892",
+                    "name": "James R. Wright"
+                },
+                {
+                    "authorId": "1388404060",
+                    "name": "Kevin Leyton-Brown"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "962aa74dafb723cdb5ee7838ff22ddc4b14d4545",
+            "title": "Behavioral game theoretic models: a Bayesian framework for parameter analysis",
+            "url": "https://www.semanticscholar.org/paper/962aa74dafb723cdb5ee7838ff22ddc4b14d4545",
+            "venue": "AAMAS",
+            "year": 2012
+        },
+        {
+            "arxivId": "1103.5169",
+            "authors": [
+                {
+                    "authorId": "2141191",
+                    "name": "Ritchie Lee"
+                },
+                {
+                    "authorId": "1696678",
+                    "name": "D. Wolpert"
+                }
+            ],
+            "doi": "10.2139/ssrn.1796382",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "159d499fec5ee45c755a1eee029a331b34822de1",
+            "title": "Game Theoretic Modeling of Pilot Behavior During Mid-Air Encounters",
+            "url": "https://www.semanticscholar.org/paper/159d499fec5ee45c755a1eee029a331b34822de1",
+            "venue": "ArXiv",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "5116081",
+                    "name": "Manuela Sellitto"
+                },
+                {
+                    "authorId": "3341935",
+                    "name": "E. Ciaramelli"
+                },
+                {
+                    "authorId": "2697421",
+                    "name": "G. di Pellegrino"
+                }
+            ],
+            "doi": "10.1523/JNEUROSCI.2516-10.2010",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "4dbab99e82a828b6203bf248a74f8e99cfb5fa7b",
+            "title": "Myopic Discounting of Future Rewards after Medial Orbitofrontal Damage in Humans",
+            "url": "https://www.semanticscholar.org/paper/4dbab99e82a828b6203bf248a74f8e99cfb5fa7b",
+            "venue": "The Journal of Neuroscience",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "34903901",
+                    "name": "Chris Amato"
+                },
+                {
+                    "authorId": "35176432",
+                    "name": "D. Bernstein"
+                },
+                {
+                    "authorId": "1707550",
+                    "name": "S. Zilberstein"
+                }
+            ],
+            "doi": "10.1007/s10458-009-9103-z",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d68da81b491670dd907b851b1f5b0cd33caffcce",
+            "title": "Optimizing fixed-size stochastic controllers for POMDPs and decentralized POMDPs",
+            "url": "https://www.semanticscholar.org/paper/d68da81b491670dd907b851b1f5b0cd33caffcce",
+            "venue": "Autonomous Agents and Multi-Agent Systems",
+            "year": 2010
+        },
+        {
+            "arxivId": "1011.2602",
+            "authors": [
+                {
+                    "authorId": "1929279",
+                    "name": "Z. Botev"
+                },
+                {
+                    "authorId": "3208609",
+                    "name": "J. Grotowski"
+                },
+                {
+                    "authorId": "2072335043",
+                    "name": "D. Kroese"
+                }
+            ],
+            "doi": "10.1214/10-AOS799",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "b5b608cff333bce1efcfcd300acb9633804d4278",
+            "title": "Kernel density estimation via diffusion",
+            "url": "https://www.semanticscholar.org/paper/b5b608cff333bce1efcfcd300acb9633804d4278",
+            "venue": "",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2485699",
+                    "name": "Yi-feng Zeng"
+                },
+                {
+                    "authorId": "1712086",
+                    "name": "Yanping Xiang"
+                }
+            ],
+            "doi": "10.1109/WI-IAT.2010.82",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9ba6e4b660a93a9455b97632ee99cd685ebce170",
+            "title": "Time-Critical Decision Making in Interactive Dynamic Influence Diagram",
+            "url": "https://www.semanticscholar.org/paper/9ba6e4b660a93a9455b97632ee99cd685ebce170",
+            "venue": "IAT",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2237643892",
+                    "name": "James R. Wright"
+                },
+                {
+                    "authorId": "1388404060",
+                    "name": "Kevin Leyton-Brown"
+                }
+            ],
+            "doi": "10.1609/aaai.v24i1.7644",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "c3965268b206ec8e7207ce8a74da19530e977460",
+            "title": "Beyond Equilibrium: Predicting Human Behavior in Normal-Form Games",
+            "url": "https://www.semanticscholar.org/paper/c3965268b206ec8e7207ce8a74da19530e977460",
+            "venue": "AAAI",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2661625",
+                    "name": "Gabriele Paolacci"
+                },
+                {
+                    "authorId": "48719411",
+                    "name": "Jesse J. Chandler"
+                },
+                {
+                    "authorId": "2942126",
+                    "name": "Panagiotis G. Ipeirotis"
+                }
+            ],
+            "doi": "10.1017/s1930297500002205",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "6916a7308452083997ae6105f91a6f49c7ea192d",
+            "title": "Running Experiments on Amazon Mechanical Turk",
+            "url": "https://www.semanticscholar.org/paper/6916a7308452083997ae6105f91a6f49c7ea192d",
+            "venue": "Judgment and Decision Making",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1835039",
+                    "name": "E. Vul"
+                },
+                {
+                    "authorId": "2536223",
+                    "name": "Michael C. Frank"
+                },
+                {
+                    "authorId": "2864005",
+                    "name": "G. Alvarez"
+                },
+                {
+                    "authorId": "1763295",
+                    "name": "J. Tenenbaum"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "7aa88eb6b0d118ca54955c1daf131285285d0b8f",
+            "title": "Explaining human multiple object tracking as resource-constrained approximate inference in a dynamic probabilistic model",
+            "url": "https://www.semanticscholar.org/paper/7aa88eb6b0d118ca54955c1daf131285285d0b8f",
+            "venue": "NIPS",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "21161348",
+                    "name": "Chris L. Baker"
+                },
+                {
+                    "authorId": "2276622",
+                    "name": "R. Saxe"
+                },
+                {
+                    "authorId": "1763295",
+                    "name": "J. Tenenbaum"
+                }
+            ],
+            "doi": "10.1016/j.cognition.2009.07.005",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "7dd51cef9bd43d495a12d10b7d0846f9bd60d9fa",
+            "title": "Action understanding as inverse planning",
+            "url": "https://www.semanticscholar.org/paper/7dd51cef9bd43d495a12d10b7d0846f9bd60d9fa",
+            "venue": "Cognition",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145234497",
+                    "name": "A. Kittur"
+                },
+                {
+                    "authorId": "2226805",
+                    "name": "Ed H. Chi"
+                },
+                {
+                    "authorId": "3994427",
+                    "name": "B. Suh"
+                }
+            ],
+            "doi": "10.1145/1357054.1357127",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "2de9b67cabf99432a4d4a7b278a98afdb42c3d6d",
+            "title": "Crowdsourcing user studies with Mechanical Turk",
+            "url": "https://www.semanticscholar.org/paper/2de9b67cabf99432a4d4a7b278a98afdb42c3d6d",
+            "venue": "CHI",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "34314107",
+                    "name": "E. Schlicht"
+                },
+                {
+                    "authorId": "1770700",
+                    "name": "P. Schrater"
+                }
+            ],
+            "doi": "10.1007/s00221-007-0970-8",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "66d3925166e2d6b2b752f4d33e7a9eaaea7c332d",
+            "title": "Effects of visual uncertainty on grasping movements",
+            "url": "https://www.semanticscholar.org/paper/66d3925166e2d6b2b752f4d33e7a9eaaea7c332d",
+            "venue": "Experimental Brain Research",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "35083631",
+                    "name": "T. Robinson"
+                },
+                {
+                    "authorId": "143606925",
+                    "name": "K. Willcox"
+                },
+                {
+                    "authorId": "2333668",
+                    "name": "M. Eldred"
+                },
+                {
+                    "authorId": "1829779",
+                    "name": "R. Haimes"
+                }
+            ],
+            "doi": "10.2514/6.2006-7114",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "34181a93bdf317fc02e4629d6a2c626808e63c95",
+            "title": "Multifidelity Optimization for Variable-Complexity Design",
+            "url": "https://www.semanticscholar.org/paper/34181a93bdf317fc02e4629d6a2c626808e63c95",
+            "venue": "",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1687438",
+                    "name": "Prashant Doshi"
+                },
+                {
+                    "authorId": "1774398",
+                    "name": "P. Gmytrasiewicz"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ddeb92344a1559307cbc9f4cf3bbee4c4093a6f5",
+            "title": "On the Difficulty of Achieving Equilibrium in Interactive POMDPs",
+            "url": "https://www.semanticscholar.org/paper/ddeb92344a1559307cbc9f4cf3bbee4c4093a6f5",
+            "venue": "AI&M",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "8590006",
+                    "name": "E. Graf"
+                },
+                {
+                    "authorId": "3201160",
+                    "name": "P. A. Warren"
+                },
+                {
+                    "authorId": "1889515",
+                    "name": "L. Maloney"
+                }
+            ],
+            "doi": "10.1016/j.visres.2005.08.007",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "3a6ebbcc52c6bac136be1ae01fcddb70d06db822",
+            "title": "Explicit estimation of visual uncertainty in human motion processing",
+            "url": "https://www.semanticscholar.org/paper/3a6ebbcc52c6bac136be1ae01fcddb70d06db822",
+            "venue": "Vision Research",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1687438",
+                    "name": "Prashant Doshi"
+                },
+                {
+                    "authorId": "1774398",
+                    "name": "P. Gmytrasiewicz"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "824e7371a6c6a9d81ef4b83b4a2ab9ef8ff69cef",
+            "title": "A Particle Filtering Based Approach to Approximating Interactive POMDPs",
+            "url": "https://www.semanticscholar.org/paper/824e7371a6c6a9d81ef4b83b4a2ab9ef8ff69cef",
+            "venue": "AAAI",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2211151",
+                    "name": "Colin Camerer"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "02954dd24ddd69650ad9db634ed945c27a892a76",
+            "title": "Behavioral Game Theory: Experiments in Strategic Interaction",
+            "url": "https://www.semanticscholar.org/paper/02954dd24ddd69650ad9db634ed945c27a892a76",
+            "venue": "",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144538257",
+                    "name": "Y. Weiss"
+                },
+                {
+                    "authorId": "1689350",
+                    "name": "Eero P. Simoncelli"
+                },
+                {
+                    "authorId": "145358192",
+                    "name": "E. Adelson"
+                }
+            ],
+            "doi": "10.1038/nn0602-858",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "4eda0e4608d35b62fb34a162d1de238caaed8faa",
+            "title": "Motion illusions as optimal percepts",
+            "url": "https://www.semanticscholar.org/paper/4eda0e4608d35b62fb34a162d1de238caaed8faa",
+            "venue": "Nature Neuroscience",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1736370",
+                    "name": "D. Koller"
+                },
+                {
+                    "authorId": "3226208",
+                    "name": "Brian Milch"
+                }
+            ],
+            "doi": "10.1016/S0899-8256(02)00544-4",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b31be41841d83b6e818355aa60a22befac099e0a",
+            "title": "Multi-Agent Influence Diagrams for Representing and Solving Games",
+            "url": "https://www.semanticscholar.org/paper/b31be41841d83b6e818355aa60a22befac099e0a",
+            "venue": "IJCAI",
+            "year": 2001
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1405225161",
+                    "name": "Miguel A. Costa-Gomes"
+                },
+                {
+                    "authorId": "2238639228",
+                    "name": "Vincent P Crawford"
+                },
+                {
+                    "authorId": "2377425",
+                    "name": "Bruno Broseta"
+                }
+            ],
+            "doi": "10.2139/ssrn.145793",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "59b6376b049b95bfe7bb0da4f0c174758fe9186c",
+            "title": "Cognition and Behavior in Normal-Form Games: An Experimental Study",
+            "url": "https://www.semanticscholar.org/paper/59b6376b049b95bfe7bb0da4f0c174758fe9186c",
+            "venue": "",
+            "year": 1998
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144604753",
+                    "name": "C. Harris"
+                },
+                {
+                    "authorId": "1960857",
+                    "name": "D. Wolpert"
+                }
+            ],
+            "doi": "10.1038/29528",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "1001d6d0bc061fbbd6ef8a88de1da98ca91c563d",
+            "title": "Signal-dependent noise determines motor planning",
+            "url": "https://www.semanticscholar.org/paper/1001d6d0bc061fbbd6ef8a88de1da98ca91c563d",
+            "venue": "Nature",
+            "year": 1998
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144885169",
+                    "name": "M. Littman"
+                }
+            ],
+            "doi": "10.1016/b978-1-55860-335-6.50027-1",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7fbf55baccbc5fdc7ded1ba18330605909aef5e5",
+            "title": "Markov Games as a Framework for Multi-Agent Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/7fbf55baccbc5fdc7ded1ba18330605909aef5e5",
+            "venue": "ICML",
+            "year": 1994
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2259532335",
+                    "name": "H. Simon"
+                }
+            ],
+            "doi": "10.1037/H0042769",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "23a94ce42fe0d50f5c993f34d4c9602f8aeac507",
+            "title": "Rational choice and the structure of the environment.",
+            "url": "https://www.semanticscholar.org/paper/23a94ce42fe0d50f5c993f34d4c9602f8aeac507",
+            "venue": "Psychological review",
+            "year": 1956
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2263021560",
+                    "name": "Ndrew C Aplin"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "3dd8c0abc953b605d61105e1aaf15f15f9aa7b72",
+            "title": "Search and Satisficing By A",
+            "url": "https://www.semanticscholar.org/paper/3dd8c0abc953b605d61105e1aaf15f15f9aa7b72",
+            "venue": "",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "70091800",
+                    "name": "B. Aponso"
+                },
+                {
+                    "authorId": "33036316",
+                    "name": "Steven D. Beard"
+                },
+                {
+                    "authorId": "145650040",
+                    "name": "Jeffery A. Schroeder"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "653f9031c3d7db8ac2ab58695cea9dd89d129386",
+            "title": "The NASA Ames Vertical Motion Simulator - A Facility Engineered for Realism",
+            "url": "https://www.semanticscholar.org/paper/653f9031c3d7db8ac2ab58695cea9dd89d129386",
+            "venue": "",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "34699434",
+                    "name": "A. Ng"
+                },
+                {
+                    "authorId": "145107462",
+                    "name": "Stuart J. Russell"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "b05b67aca720d0bc39bc9afad02a19f522c7a1bc",
+            "title": "Pharmacokinetics of a novel formulation of ivermectin after administration to goats",
+            "url": "https://www.semanticscholar.org/paper/b05b67aca720d0bc39bc9afad02a19f522c7a1bc",
+            "venue": "ICML",
+            "year": 2000
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1707550",
+                    "name": "S. Zilberstein"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ba9839f93796a4e1326bb42df585e9fec4c203aa",
+            "title": "Models of Bounded Rationality",
+            "url": "https://www.semanticscholar.org/paper/ba9839f93796a4e1326bb42df585e9fec4c203aa",
+            "venue": "",
+            "year": 1995
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "34713651",
+                    "name": "R. Myerson"
+                }
+            ],
+            "doi": "10.5860/choice.29-2753",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "abefbc10a46043bd64339efb576231ffc9f8c8d5",
+            "title": "Game theory - Analysis of Conflict",
+            "url": "https://www.semanticscholar.org/paper/abefbc10a46043bd64339efb576231ffc9f8c8d5",
+            "venue": "",
+            "year": 1991
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        },
+        {
+            "category": "Engineering",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Predicting the behavior of interacting humans by fusing data from multiple sources",
+    "topics": [
+        {
+            "topic": "Interaction",
+            "topicId": "72",
+            "url": "https://www.semanticscholar.org/topic/72"
+        },
+        {
+            "topic": "Experiment",
+            "topicId": "378",
+            "url": "https://www.semanticscholar.org/topic/378"
+        },
+        {
+            "topic": "Amazon Mechanical Turk",
+            "topicId": "84",
+            "url": "https://www.semanticscholar.org/topic/84"
+        },
+        {
+            "topic": "Simulation",
+            "topicId": "194",
+            "url": "https://www.semanticscholar.org/topic/194"
+        },
+        {
+            "topic": "Algorithm",
+            "topicId": "305",
+            "url": "https://www.semanticscholar.org/topic/305"
+        },
+        {
+            "topic": "Computer performance",
+            "topicId": "122225",
+            "url": "https://www.semanticscholar.org/topic/122225"
+        },
+        {
+            "topic": "Human reliability",
+            "topicId": "193661",
+            "url": "https://www.semanticscholar.org/topic/193661"
+        },
+        {
+            "topic": "Data point",
+            "topicId": "20681",
+            "url": "https://www.semanticscholar.org/topic/20681"
+        },
+        {
+            "topic": "Mathematical optimization",
+            "topicId": "89",
+            "url": "https://www.semanticscholar.org/topic/89"
+        },
+        {
+            "topic": "Sparse matrix",
+            "topicId": "126",
+            "url": "https://www.semanticscholar.org/topic/126"
+        },
+        {
+            "topic": "The Turk",
+            "topicId": "788117",
+            "url": "https://www.semanticscholar.org/topic/788117"
+        },
+        {
+            "topic": "Optimization problem",
+            "topicId": "12682",
+            "url": "https://www.semanticscholar.org/topic/12682"
+        }
+    ],
+    "url": "https://www.semanticscholar.org/paper/5cd9c8a9170b968411f9888539fa18ffd64e89c2",
+    "venue": "Conference on Uncertainty in Artificial Intelligence",
+    "year": 2012
+}

@@ -1,0 +1,660 @@
+{
+    "abstract": "Attention has been a crucial component in the success of image diffusion models, however, their quadratic computational complexity limits the sizes of images we can process within reasonable time and memory constraints. This paper investigates the importance of dense attention in generative image models, which often contain redundant features, making them suitable for sparser attention mechanisms. We propose a novel training-free method ToDo that relies on token downsampling of key and value tokens to accelerate Stable Diffusion inference by up to 2x for common sizes and up to 4.5x or more for high resolutions like 2048 \u00d7 2048. We demonstrate that our approach outperforms previous methods in balancing efficient throughput and fidelity.",
+    "arxivId": "2402.13573",
+    "authors": [
+        {
+            "authorId": "2285307507",
+            "name": "Ethan Smith",
+            "url": "https://www.semanticscholar.org/author/2285307507"
+        },
+        {
+            "authorId": "2284863384",
+            "name": "Nayan Saxena",
+            "url": "https://www.semanticscholar.org/author/2284863384"
+        },
+        {
+            "authorId": "2284876332",
+            "name": "Aninda Saha",
+            "url": "https://www.semanticscholar.org/author/2284876332"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": "2406.18583",
+            "authors": [
+                {
+                    "authorId": "2300371391",
+                    "name": "Le Zhuo"
+                },
+                {
+                    "authorId": "2300371542",
+                    "name": "Ruoyi Du"
+                },
+                {
+                    "authorId": "2238398546",
+                    "name": "Han Xiao"
+                },
+                {
+                    "authorId": "2292177851",
+                    "name": "Yangguang Li"
+                },
+                {
+                    "authorId": "2308683426",
+                    "name": "Dongyang Liu"
+                },
+                {
+                    "authorId": "2300852396",
+                    "name": "Rongjie Huang"
+                },
+                {
+                    "authorId": "2308556703",
+                    "name": "Wenze Liu"
+                },
+                {
+                    "authorId": "2258678648",
+                    "name": "Lirui Zhao"
+                },
+                {
+                    "authorId": "2281797833",
+                    "name": "Fu-Yun Wang"
+                },
+                {
+                    "authorId": "2308715345",
+                    "name": "Zhanyu Ma"
+                },
+                {
+                    "authorId": "2300428221",
+                    "name": "Xu Luo"
+                },
+                {
+                    "authorId": "2258561621",
+                    "name": "Zehan Wang"
+                },
+                {
+                    "authorId": "2258882773",
+                    "name": "Kaipeng Zhang"
+                },
+                {
+                    "authorId": "2237590429",
+                    "name": "Xiangyang Zhu"
+                },
+                {
+                    "authorId": "2274864015",
+                    "name": "Si Liu"
+                },
+                {
+                    "authorId": "2283845000",
+                    "name": "Xiangyu Yue"
+                },
+                {
+                    "authorId": "2275025892",
+                    "name": "Dingning Liu"
+                },
+                {
+                    "authorId": "2254269925",
+                    "name": "Wanli Ouyang"
+                },
+                {
+                    "authorId": "2243875466",
+                    "name": "Ziwei Liu"
+                },
+                {
+                    "authorId": "2059129841",
+                    "name": "Y. Qiao"
+                },
+                {
+                    "authorId": "2277807166",
+                    "name": "Hongsheng Li"
+                },
+                {
+                    "authorId": "2279706151",
+                    "name": "Peng Gao"
+                }
+            ],
+            "doi": "10.48550/arXiv.2406.18583",
+            "intent": [
+                "result",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "615590460db7ac1fed59f6ff6c3fcae434cc6b9a",
+            "title": "Lumina-Next: Making Lumina-T2X Stronger and Faster with Next-DiT",
+            "url": "https://www.semanticscholar.org/paper/615590460db7ac1fed59f6ff6c3fcae434cc6b9a",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": "2405.02730",
+            "authors": [
+                {
+                    "authorId": "2268731598",
+                    "name": "Yuchuan Tian"
+                },
+                {
+                    "authorId": "2273928979",
+                    "name": "Zhijun Tu"
+                },
+                {
+                    "authorId": "2118023932",
+                    "name": "Hanting Chen"
+                },
+                {
+                    "authorId": "2300137312",
+                    "name": "Jie Hu"
+                },
+                {
+                    "authorId": "2268800137",
+                    "name": "Chao Xu"
+                },
+                {
+                    "authorId": "2272317557",
+                    "name": "Yunhe Wang"
+                }
+            ],
+            "doi": "10.48550/arXiv.2405.02730",
+            "intent": [
+                "result",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f3806d0b3565047476985b4bac5ef3a7a5b46a29",
+            "title": "U-DiTs: Downsample Tokens in U-Shaped Diffusion Transformers",
+            "url": "https://www.semanticscholar.org/paper/f3806d0b3565047476985b4bac5ef3a7a5b46a29",
+            "venue": "ArXiv",
+            "year": 2024
+        }
+    ],
+    "corpusId": 267770290,
+    "doi": "10.48550/arXiv.2402.13573",
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 2,
+    "numCiting": 17,
+    "paperId": "2f6a59955c26297afbc8354a2c261ad44c1c934b",
+    "references": [
+        {
+            "arxivId": "2310.04378",
+            "authors": [
+                {
+                    "authorId": "2159647250",
+                    "name": "Simian Luo"
+                },
+                {
+                    "authorId": "2258526914",
+                    "name": "Yiqin Tan"
+                },
+                {
+                    "authorId": "2257149093",
+                    "name": "Longbo Huang"
+                },
+                {
+                    "authorId": "2257362129",
+                    "name": "Jian Li"
+                },
+                {
+                    "authorId": "2263491263",
+                    "name": "Hang Zhao"
+                }
+            ],
+            "doi": "10.48550/arXiv.2310.04378",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "8b7cce220c3b19f9b2d4a6c531907ed3b592b55e",
+            "title": "Latent Consistency Models: Synthesizing High-Resolution Images with Few-Step Inference",
+            "url": "https://www.semanticscholar.org/paper/8b7cce220c3b19f9b2d4a6c531907ed3b592b55e",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": "2303.17604",
+            "authors": [
+                {
+                    "authorId": "93728539",
+                    "name": "Daniel Bolya"
+                },
+                {
+                    "authorId": "50196944",
+                    "name": "Judy Hoffman"
+                }
+            ],
+            "doi": "10.1109/CVPRW59228.2023.00484",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "6518091d7f2af10629b836df8c7a53ce4104c4fb",
+            "title": "Token Merging for Fast Stable Diffusion",
+            "url": "https://www.semanticscholar.org/paper/6518091d7f2af10629b836df8c7a53ce4104c4fb",
+            "venue": "2023 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)",
+            "year": 2023
+        },
+        {
+            "arxivId": "2302.01107",
+            "authors": [
+                {
+                    "authorId": "3194022",
+                    "name": "Bohan Zhuang"
+                },
+                {
+                    "authorId": "49270464",
+                    "name": "Jing Liu"
+                },
+                {
+                    "authorId": "1840579673",
+                    "name": "Zizheng Pan"
+                },
+                {
+                    "authorId": "11270586",
+                    "name": "Haoyu He"
+                },
+                {
+                    "authorId": "2178388899",
+                    "name": "Yuetian Weng"
+                },
+                {
+                    "authorId": "12459603",
+                    "name": "Chunhua Shen"
+                }
+            ],
+            "doi": "10.48550/arXiv.2302.01107",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "fe5a72e0a4aeb5ea5058d9e4531858be5548dfe0",
+            "title": "A Survey on Efficient Training of Transformers",
+            "url": "https://www.semanticscholar.org/paper/fe5a72e0a4aeb5ea5058d9e4531858be5548dfe0",
+            "venue": "IJCAI",
+            "year": 2023
+        },
+        {
+            "arxivId": "2210.09461",
+            "authors": [
+                {
+                    "authorId": "93728539",
+                    "name": "Daniel Bolya"
+                },
+                {
+                    "authorId": "2084646762",
+                    "name": "Cheng-Yang Fu"
+                },
+                {
+                    "authorId": "4527324",
+                    "name": "Xiaoliang Dai"
+                },
+                {
+                    "authorId": "2918780",
+                    "name": "Peizhao Zhang"
+                },
+                {
+                    "authorId": "2322150",
+                    "name": "Christoph Feichtenhofer"
+                },
+                {
+                    "authorId": "50196944",
+                    "name": "Judy Hoffman"
+                }
+            ],
+            "doi": "10.48550/arXiv.2210.09461",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "1dff6b1b35e2d45d4db57c8b4e4395486c3e365f",
+            "title": "Token Merging: Your ViT But Faster",
+            "url": "https://www.semanticscholar.org/paper/1dff6b1b35e2d45d4db57c8b4e4395486c3e365f",
+            "venue": "ICLR",
+            "year": 2022
+        },
+        {
+            "arxivId": "2205.14135",
+            "authors": [
+                {
+                    "authorId": "24593911",
+                    "name": "Tri Dao"
+                },
+                {
+                    "authorId": "49577833",
+                    "name": "Daniel Y. Fu"
+                },
+                {
+                    "authorId": "2490652",
+                    "name": "Stefano Ermon"
+                },
+                {
+                    "authorId": "1755572",
+                    "name": "A. Rudra"
+                },
+                {
+                    "authorId": "2061444681",
+                    "name": "Christopher R'e"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "87c5b281fa43e6f27191b20a8dd694eda1126336",
+            "title": "FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness",
+            "url": "https://www.semanticscholar.org/paper/87c5b281fa43e6f27191b20a8dd694eda1126336",
+            "venue": "NeurIPS",
+            "year": 2022
+        },
+        {
+            "arxivId": "2112.10752",
+            "authors": [
+                {
+                    "authorId": "1660819540",
+                    "name": "Robin Rombach"
+                },
+                {
+                    "authorId": "119843260",
+                    "name": "A. Blattmann"
+                },
+                {
+                    "authorId": "2053482699",
+                    "name": "Dominik Lorenz"
+                },
+                {
+                    "authorId": "35175531",
+                    "name": "Patrick Esser"
+                },
+                {
+                    "authorId": "1796707",
+                    "name": "B. Ommer"
+                }
+            ],
+            "doi": "10.1109/CVPR52688.2022.01042",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "c10075b3746a9f3dd5811970e93c8ca3ad39b39d",
+            "title": "High-Resolution Image Synthesis with Latent Diffusion Models",
+            "url": "https://www.semanticscholar.org/paper/c10075b3746a9f3dd5811970e93c8ca3ad39b39d",
+            "venue": "2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2021
+        },
+        {
+            "arxivId": "2107.00641",
+            "authors": [
+                {
+                    "authorId": "120157163",
+                    "name": "Jianwei Yang"
+                },
+                {
+                    "authorId": "2109737569",
+                    "name": "Chunyuan Li"
+                },
+                {
+                    "authorId": "9325940",
+                    "name": "Pengchuan Zhang"
+                },
+                {
+                    "authorId": "3386593",
+                    "name": "Xiyang Dai"
+                },
+                {
+                    "authorId": "2054421528",
+                    "name": "Bin Xiao"
+                },
+                {
+                    "authorId": "145347147",
+                    "name": "Lu Yuan"
+                },
+                {
+                    "authorId": "48441311",
+                    "name": "Jianfeng Gao"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "48418b285a92376a38daafa664a2dd07d42e3fe3",
+            "title": "Focal Self-attention for Local-Global Interactions in Vision Transformers",
+            "url": "https://www.semanticscholar.org/paper/48418b285a92376a38daafa664a2dd07d42e3fe3",
+            "venue": "ArXiv",
+            "year": 2021
+        },
+        {
+            "arxivId": "2101.01169",
+            "authors": [
+                {
+                    "authorId": "152973423",
+                    "name": "Salman Hameed Khan"
+                },
+                {
+                    "authorId": "40894826",
+                    "name": "Muzammal Naseer"
+                },
+                {
+                    "authorId": "145684318",
+                    "name": "Munawar Hayat"
+                },
+                {
+                    "authorId": "3323621",
+                    "name": "Syed Waqas Zamir"
+                },
+                {
+                    "authorId": "2358803",
+                    "name": "F. Khan"
+                },
+                {
+                    "authorId": "145103012",
+                    "name": "M. Shah"
+                }
+            ],
+            "doi": "10.1145/3505244",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "3a906b77fa218adc171fecb28bb81c24c14dcc7b",
+            "title": "Transformers in Vision: A Survey",
+            "url": "https://www.semanticscholar.org/paper/3a906b77fa218adc171fecb28bb81c24c14dcc7b",
+            "venue": "ACM Comput. Surv.",
+            "year": 2021
+        },
+        {
+            "arxivId": "2010.02502",
+            "authors": [
+                {
+                    "authorId": "51453887",
+                    "name": "Jiaming Song"
+                },
+                {
+                    "authorId": "2057110631",
+                    "name": "Chenlin Meng"
+                },
+                {
+                    "authorId": "2066211828",
+                    "name": "Stefano Ermon"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "014576b866078524286802b1d0e18628520aa886",
+            "title": "Denoising Diffusion Implicit Models",
+            "url": "https://www.semanticscholar.org/paper/014576b866078524286802b1d0e18628520aa886",
+            "venue": "ICLR",
+            "year": 2020
+        },
+        {
+            "arxivId": "2006.16236",
+            "authors": [
+                {
+                    "authorId": "3493855",
+                    "name": "Angelos Katharopoulos"
+                },
+                {
+                    "authorId": "2992087",
+                    "name": "Apoorv Vyas"
+                },
+                {
+                    "authorId": "143958923",
+                    "name": "Nikolaos Pappas"
+                },
+                {
+                    "authorId": "116272138",
+                    "name": "Franccois Fleuret"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "6f68e1bb253925d8431588555d3010419f322e04",
+            "title": "Transformers are RNNs: Fast Autoregressive Transformers with Linear Attention",
+            "url": "https://www.semanticscholar.org/paper/6f68e1bb253925d8431588555d3010419f322e04",
+            "venue": "ICML",
+            "year": 2020
+        },
+        {
+            "arxivId": "2006.13858",
+            "authors": [
+                {
+                    "authorId": "1490774539",
+                    "name": "Dengsheng Chen"
+                },
+                {
+                    "authorId": "145264199",
+                    "name": "Kai Xu"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "ec28b4c3ef3d10c2636d73dee707c9711bf874c4",
+            "title": "AReLU: Attention-based Rectified Linear Unit",
+            "url": "https://www.semanticscholar.org/paper/ec28b4c3ef3d10c2636d73dee707c9711bf874c4",
+            "venue": "ArXiv",
+            "year": 2020
+        },
+        {
+            "arxivId": "1907.05600",
+            "authors": [
+                {
+                    "authorId": "115504645",
+                    "name": "Yang Song"
+                },
+                {
+                    "authorId": "2490652",
+                    "name": "Stefano Ermon"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "965359b3008ab50dd04e171551220ec0e7f83aba",
+            "title": "Generative Modeling by Estimating Gradients of the Data Distribution",
+            "url": "https://www.semanticscholar.org/paper/965359b3008ab50dd04e171551220ec0e7f83aba",
+            "venue": "NeurIPS",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "35850707",
+                    "name": "W. Burger"
+                },
+                {
+                    "authorId": "12811570",
+                    "name": "M. Burge"
+                }
+            ],
+            "doi": "10.1007/978-1-4471-6684-9",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f8463d16062dd7b79a6be4c62b2c0804996d8667",
+            "title": "Digital Image Processing",
+            "url": "https://www.semanticscholar.org/paper/f8463d16062dd7b79a6be4c62b2c0804996d8667",
+            "venue": "Texts in Computer Science",
+            "year": 2016
+        },
+        {
+            "arxivId": "1505.04597",
+            "authors": [
+                {
+                    "authorId": "1737326",
+                    "name": "O. Ronneberger"
+                },
+                {
+                    "authorId": "152702479",
+                    "name": "P. Fischer"
+                },
+                {
+                    "authorId": "1710872",
+                    "name": "T. Brox"
+                }
+            ],
+            "doi": "10.1007/978-3-319-24574-4_28",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "6364fdaa0a0eccd823a779fcdd489173f938e91a",
+            "title": "U-Net: Convolutional Networks for Biomedical Image Segmentation",
+            "url": "https://www.semanticscholar.org/paper/6364fdaa0a0eccd823a779fcdd489173f938e91a",
+            "venue": "MICCAI",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "38701851",
+                    "name": "I. Bankman"
+                }
+            ],
+            "doi": "10.1016/B978-0-12-373904-9.X0001-4",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "1b21bdf7ad6c5d33b7592d5f70f0b8942d0a7e21",
+            "title": "Handbook of medical image processing and analysis",
+            "url": "https://www.semanticscholar.org/paper/1b21bdf7ad6c5d33b7592d5f70f0b8942d0a7e21",
+            "venue": "",
+            "year": 2009
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "ToDo: Token Downsampling for Efficient Generation of High-Resolution Images",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/2f6a59955c26297afbc8354a2c261ad44c1c934b",
+    "venue": "International Joint Conference on Artificial Intelligence",
+    "year": 2024
+}

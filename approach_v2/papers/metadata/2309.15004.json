@@ -1,0 +1,906 @@
+{
+    "abstract": "The use of question-based activities (QBAs) is wide-spread in education, traditionally forming an integral part of the learning and assessment process. In this paper, we design and evaluate an automated question generation tool for formative and summative assessment in schools. We present an expert survey of one hundred and four teachers, demonstrating the need for automated generation of QBAs, as a tool that can significantly reduce the workload of teachers and facilitate personalized learning experiences. Leveraging the recent advancements in generative AI, we then present a modular framework employing transformer based language models for automatic generation of multiple-choice questions (MCQs) from textual content. The presented solution, with distinct modules for question generation, correct answer prediction, and distractor formulation, enables us to evaluate different language models and generation techniques. Finally, we perform an extensive quantitative and qualitative evaluation, demonstrating trade-offs in the use of different techniques and models.",
+    "arxivId": "2309.15004",
+    "authors": [
+        {
+            "authorId": "19181085",
+            "name": "Ayan Kumar Bhowmick",
+            "url": "https://www.semanticscholar.org/author/19181085"
+        },
+        {
+            "authorId": "1800522",
+            "name": "A. Jagmohan",
+            "url": "https://www.semanticscholar.org/author/1800522"
+        },
+        {
+            "authorId": "2247697202",
+            "name": "Aditya Vempaty",
+            "url": "https://www.semanticscholar.org/author/2247697202"
+        },
+        {
+            "authorId": "102805802",
+            "name": "Prasenjit Dey",
+            "url": "https://www.semanticscholar.org/author/102805802"
+        },
+        {
+            "authorId": "70545663",
+            "name": "L. Hall",
+            "url": "https://www.semanticscholar.org/author/70545663"
+        },
+        {
+            "authorId": "50491468",
+            "name": "J. Hartman",
+            "url": "https://www.semanticscholar.org/author/50491468"
+        },
+        {
+            "authorId": "2247701385",
+            "name": "Ravi Kokku",
+            "url": "https://www.semanticscholar.org/author/2247701385"
+        },
+        {
+            "authorId": "2247696298",
+            "name": "Hema Maheshwari",
+            "url": "https://www.semanticscholar.org/author/2247696298"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": "2405.20529",
+            "authors": [
+                {
+                    "authorId": "2291183038",
+                    "name": "Steven Moore"
+                },
+                {
+                    "authorId": "2304322121",
+                    "name": "Eamon Costello"
+                },
+                {
+                    "authorId": "2149222301",
+                    "name": "H. A. Nguyen"
+                },
+                {
+                    "authorId": "2291284404",
+                    "name": "John C. Stamper"
+                }
+            ],
+            "doi": "10.48550/arXiv.2405.20529",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "eb2c93d7529c4fc63aced330ea56bac8770266fc",
+            "title": "An Automatic Question Usability Evaluation Toolkit",
+            "url": "https://www.semanticscholar.org/paper/eb2c93d7529c4fc63aced330ea56bac8770266fc",
+            "venue": "AIED",
+            "year": 2024
+        }
+    ],
+    "corpusId": 262824938,
+    "doi": "10.48550/arXiv.2309.15004",
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": true,
+    "isPublisherLicensed": true,
+    "is_open_access": true,
+    "is_publisher_licensed": true,
+    "numCitedBy": 1,
+    "numCiting": 24,
+    "paperId": "0a505b9f5cca7c61df28db3b462dd568c97e9c63",
+    "references": [
+        {
+            "arxivId": "2303.11717",
+            "authors": [
+                {
+                    "authorId": "31044159",
+                    "name": "Chaoning Zhang"
+                },
+                {
+                    "authorId": "48934876",
+                    "name": "Chenshuang Zhang"
+                },
+                {
+                    "authorId": "2211960167",
+                    "name": "Sheng Zheng"
+                },
+                {
+                    "authorId": "2209185953",
+                    "name": "Yu Qiao"
+                },
+                {
+                    "authorId": "2128662588",
+                    "name": "Chenghao Li"
+                },
+                {
+                    "authorId": "50495602",
+                    "name": "Mengchun Zhang"
+                },
+                {
+                    "authorId": "1642047032",
+                    "name": "Sumit Kumar Dam"
+                },
+                {
+                    "authorId": "2053849768",
+                    "name": "Chu Myaet Thwal"
+                },
+                {
+                    "authorId": "49935726",
+                    "name": "Ye Lin Tun"
+                },
+                {
+                    "authorId": "2212370613",
+                    "name": "Le Luang Huy"
+                },
+                {
+                    "authorId": "2212043758",
+                    "name": "Donguk kim"
+                },
+                {
+                    "authorId": "40547898",
+                    "name": "S. Bae"
+                },
+                {
+                    "authorId": "2188647130",
+                    "name": "Lik-Hang Lee"
+                },
+                {
+                    "authorId": "2152283122",
+                    "name": "Yang Yang"
+                },
+                {
+                    "authorId": "1724393",
+                    "name": "Heng Tao Shen"
+                },
+                {
+                    "authorId": "145017151",
+                    "name": "In-So Kweon"
+                },
+                {
+                    "authorId": "2159807650",
+                    "name": "Choong-Seon Hong"
+                }
+            ],
+            "doi": "10.48550/arXiv.2303.11717",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "1b492746ee3a304a13950cad1a59861b9ee44645",
+            "title": "A Complete Survey on Generative AI (AIGC): Is ChatGPT from GPT-4 to GPT-5 All You Need?",
+            "url": "https://www.semanticscholar.org/paper/1b492746ee3a304a13950cad1a59861b9ee44645",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2037061366",
+                    "name": "Anabel Bethencourt-Aguilar"
+                },
+                {
+                    "authorId": "1405505340",
+                    "name": "Dagoberto Castellanos-Nieves"
+                },
+                {
+                    "authorId": "2194018853",
+                    "name": "J. Sosa-Alonso"
+                },
+                {
+                    "authorId": "2090769067",
+                    "name": "Manuel Area-Moreira"
+                }
+            ],
+            "doi": "10.7821/naer.2023.1.1231",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0bcf06a1df7bbedd44bc2b02c6d8c6c5b558dbc3",
+            "title": "Use of Generative Adversarial Networks (GANs) in Educational Technology Research",
+            "url": "https://www.semanticscholar.org/paper/0bcf06a1df7bbedd44bc2b02c6d8c6c5b558dbc3",
+            "venue": "Journal of New Approaches in Educational Research",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2094291242",
+                    "name": "Judith Stanja"
+                },
+                {
+                    "authorId": "2133450085",
+                    "name": "Wolfgang Gritz"
+                },
+                {
+                    "authorId": "1974715",
+                    "name": "Johannes Krugel"
+                },
+                {
+                    "authorId": "2288008",
+                    "name": "Anett Hoppe"
+                },
+                {
+                    "authorId": "2192135330",
+                    "name": "Sarah Dannemann"
+                }
+            ],
+            "doi": "10.1111/bjet.13288",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "768403710ec37fe612257384b19bf8f1c7bcce72",
+            "title": "Formative assessment strategies for students' conceptions - The potential of learning analytics",
+            "url": "https://www.semanticscholar.org/paper/768403710ec37fe612257384b19bf8f1c7bcce72",
+            "venue": "Br. J. Educ. Technol.",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145405433",
+                    "name": "S. Ahmad"
+                },
+                {
+                    "authorId": "2260222",
+                    "name": "M. K. Rahmat"
+                },
+                {
+                    "authorId": "1699461748",
+                    "name": "M. Mubarik"
+                },
+                {
+                    "authorId": "2110012076",
+                    "name": "Muhammad Mansoor Alam"
+                },
+                {
+                    "authorId": "41135375",
+                    "name": "S. Hyder"
+                }
+            ],
+            "doi": "10.3390/su132212902",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "01b18ec5e8e7aaae4621e09d6b8ebb22f41816f6",
+            "title": "Artificial Intelligence and Its Role in Education",
+            "url": "https://www.semanticscholar.org/paper/01b18ec5e8e7aaae4621e09d6b8ebb22f41816f6",
+            "venue": "Sustainability",
+            "year": 2021
+        },
+        {
+            "arxivId": "2109.08133",
+            "authors": [
+                {
+                    "authorId": "46664096",
+                    "name": "Jinhyuk Lee"
+                },
+                {
+                    "authorId": "2127066887",
+                    "name": "Alexander Wettig"
+                },
+                {
+                    "authorId": "50536468",
+                    "name": "Danqi Chen"
+                }
+            ],
+            "doi": "10.18653/v1/2021.emnlp-main.297",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "3912c7224da9b0a999d57a0df33c44a24c6f751b",
+            "title": "Phrase Retrieval Learns Passage Retrieval, Too",
+            "url": "https://www.semanticscholar.org/paper/3912c7224da9b0a999d57a0df33c44a24c6f751b",
+            "venue": "EMNLP",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1982425",
+                    "name": "L. Floridi"
+                },
+                {
+                    "authorId": "2037605322",
+                    "name": "Massimo Chiriatti"
+                }
+            ],
+            "doi": "10.1007/s11023-020-09548-1",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b103e87c7727134927d3ffb06934a95c10c02fc0",
+            "title": "GPT-3: Its Nature, Scope, Limits, and Consequences",
+            "url": "https://www.semanticscholar.org/paper/b103e87c7727134927d3ffb06934a95c10c02fc0",
+            "venue": "Minds and Machines",
+            "year": 2020
+        },
+        {
+            "arxivId": "1909.05017",
+            "authors": [
+                {
+                    "authorId": "35446765",
+                    "name": "Kettip Kriangchaivech"
+                },
+                {
+                    "authorId": "3393552",
+                    "name": "A. Wangperawong"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "1a0c3ef020b598d3ff46006ca1fe6a6e7db98747",
+            "title": "Question Generation by Transformers",
+            "url": "https://www.semanticscholar.org/paper/1a0c3ef020b598d3ff46006ca1fe6a6e7db98747",
+            "venue": "ArXiv",
+            "year": 2019
+        },
+        {
+            "arxivId": "1909.00512",
+            "authors": [
+                {
+                    "authorId": "10324691",
+                    "name": "Kawin Ethayarajh"
+                }
+            ],
+            "doi": "10.18653/v1/D19-1006",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "9d7902e834d5d1d35179962c7a5b9d16623b0d39",
+            "title": "How Contextual are Contextualized Word Representations? Comparing the Geometry of BERT, ELMo, and GPT-2 Embeddings",
+            "url": "https://www.semanticscholar.org/paper/9d7902e834d5d1d35179962c7a5b9d16623b0d39",
+            "venue": "EMNLP",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "15652489",
+                    "name": "T. Kwiatkowski"
+                },
+                {
+                    "authorId": "52578817",
+                    "name": "J. Palomaki"
+                },
+                {
+                    "authorId": "90784578",
+                    "name": "Olivia Redfield"
+                },
+                {
+                    "authorId": "123052390",
+                    "name": "Michael Collins"
+                },
+                {
+                    "authorId": "144729897",
+                    "name": "Ankur P. Parikh"
+                },
+                {
+                    "authorId": "114577307",
+                    "name": "Chris Alberti"
+                },
+                {
+                    "authorId": "153215783",
+                    "name": "D. Epstein"
+                },
+                {
+                    "authorId": "3443442",
+                    "name": "Illia Polosukhin"
+                },
+                {
+                    "authorId": "39172707",
+                    "name": "Jacob Devlin"
+                },
+                {
+                    "authorId": "2544107",
+                    "name": "Kenton Lee"
+                },
+                {
+                    "authorId": "3259253",
+                    "name": "Kristina Toutanova"
+                },
+                {
+                    "authorId": "145024664",
+                    "name": "Llion Jones"
+                },
+                {
+                    "authorId": "2554321",
+                    "name": "Matthew Kelcey"
+                },
+                {
+                    "authorId": "1744179",
+                    "name": "Ming-Wei Chang"
+                },
+                {
+                    "authorId": "2555924",
+                    "name": "Andrew M. Dai"
+                },
+                {
+                    "authorId": "39328010",
+                    "name": "Jakob Uszkoreit"
+                },
+                {
+                    "authorId": "2827616",
+                    "name": "Quoc V. Le"
+                },
+                {
+                    "authorId": "1754497",
+                    "name": "Slav Petrov"
+                }
+            ],
+            "doi": "10.1162/tacl_a_00276",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "17dbd7b72029181327732e4d11b52a08ed4630d0",
+            "title": "Natural Questions: A Benchmark for Question Answering Research",
+            "url": "https://www.semanticscholar.org/paper/17dbd7b72029181327732e4d11b52a08ed4630d0",
+            "venue": "TACL",
+            "year": 2019
+        },
+        {
+            "arxivId": "1907.11692",
+            "authors": [
+                {
+                    "authorId": "11323179",
+                    "name": "Yinhan Liu"
+                },
+                {
+                    "authorId": "40511414",
+                    "name": "Myle Ott"
+                },
+                {
+                    "authorId": "39589154",
+                    "name": "Naman Goyal"
+                },
+                {
+                    "authorId": "3048577",
+                    "name": "Jingfei Du"
+                },
+                {
+                    "authorId": "144863691",
+                    "name": "Mandar Joshi"
+                },
+                {
+                    "authorId": "50536468",
+                    "name": "Danqi Chen"
+                },
+                {
+                    "authorId": "39455775",
+                    "name": "Omer Levy"
+                },
+                {
+                    "authorId": "35084211",
+                    "name": "M. Lewis"
+                },
+                {
+                    "authorId": "1982950",
+                    "name": "Luke Zettlemoyer"
+                },
+                {
+                    "authorId": "1759422",
+                    "name": "Veselin Stoyanov"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "077f8329a7b6fa3b7c877a57b81eb6c18b5f87de",
+            "title": "RoBERTa: A Robustly Optimized BERT Pretraining Approach",
+            "url": "https://www.semanticscholar.org/paper/077f8329a7b6fa3b7c877a57b81eb6c18b5f87de",
+            "venue": "ArXiv",
+            "year": 2019
+        },
+        {
+            "arxivId": "1808.07036",
+            "authors": [
+                {
+                    "authorId": "2890423",
+                    "name": "Eunsol Choi"
+                },
+                {
+                    "authorId": "144533687",
+                    "name": "He He"
+                },
+                {
+                    "authorId": "2136562",
+                    "name": "Mohit Iyyer"
+                },
+                {
+                    "authorId": "2064210",
+                    "name": "Mark Yatskar"
+                },
+                {
+                    "authorId": "144105277",
+                    "name": "Wen-tau Yih"
+                },
+                {
+                    "authorId": "1699545",
+                    "name": "Yejin Choi"
+                },
+                {
+                    "authorId": "145419642",
+                    "name": "Percy Liang"
+                },
+                {
+                    "authorId": "1982950",
+                    "name": "Luke Zettlemoyer"
+                }
+            ],
+            "doi": "10.18653/v1/D18-1241",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "39e734da43eb8c72e9549b42e96760545036f8e5",
+            "title": "QuAC: Question Answering in Context",
+            "url": "https://www.semanticscholar.org/paper/39e734da43eb8c72e9549b42e96760545036f8e5",
+            "venue": "EMNLP",
+            "year": 2018
+        },
+        {
+            "arxivId": "1808.09419",
+            "authors": [
+                {
+                    "authorId": "1779225",
+                    "name": "Manaal Faruqui"
+                },
+                {
+                    "authorId": "143790066",
+                    "name": "Dipanjan Das"
+                }
+            ],
+            "doi": "10.18653/v1/D18-1091",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "18d62040534012818abb90e37eade5dab6dca716",
+            "title": "Identifying Well-formed Natural Language Questions",
+            "url": "https://www.semanticscholar.org/paper/18d62040534012818abb90e37eade5dab6dca716",
+            "venue": "EMNLP",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145246866",
+                    "name": "Chen Liang"
+                },
+                {
+                    "authorId": "48520620",
+                    "name": "X. Yang"
+                },
+                {
+                    "authorId": "2061499518",
+                    "name": "Neisarg Dave"
+                },
+                {
+                    "authorId": "4120182",
+                    "name": "D. Wham"
+                },
+                {
+                    "authorId": "3074430",
+                    "name": "B. Pursel"
+                },
+                {
+                    "authorId": "145157784",
+                    "name": "C. Lee Giles"
+                }
+            ],
+            "doi": "10.18653/v1/W18-0533",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "632450585c7243c095ca9828ae68ac7c31b45019",
+            "title": "Distractor Generation for Multiple Choice Questions Using Learning to Rank",
+            "url": "https://www.semanticscholar.org/paper/632450585c7243c095ca9828ae68ac7c31b45019",
+            "venue": "BEA@NAACL-HLT",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "71927153",
+                    "name": "Eddia Solas"
+                },
+                {
+                    "authorId": "2077426058",
+                    "name": "F. S. Sutton"
+                }
+            ],
+            "doi": "10.46303/RESSAT.03.01.1",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "765687325b3d6678d6de6c866372a2d0ebbc2266",
+            "title": "Incorporating Digital Technology in the General Education Classroom",
+            "url": "https://www.semanticscholar.org/paper/765687325b3d6678d6de6c866372a2d0ebbc2266",
+            "venue": "",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3344220",
+                    "name": "Natalie Schluter"
+                }
+            ],
+            "doi": "10.18653/V1/E17-2007",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0dc964d025422fb0905b2065a5d09fd59b9e6e77",
+            "title": "The limits of automatic summarisation according to ROUGE",
+            "url": "https://www.semanticscholar.org/paper/0dc964d025422fb0905b2065a5d09fd59b9e6e77",
+            "venue": "EACL",
+            "year": 2017
+        },
+        {
+            "arxivId": "1511.06434",
+            "authors": [
+                {
+                    "authorId": "38909097",
+                    "name": "Alec Radford"
+                },
+                {
+                    "authorId": "2096458",
+                    "name": "Luke Metz"
+                },
+                {
+                    "authorId": "2127604",
+                    "name": "Soumith Chintala"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8388f1be26329fa45e5807e968a641ce170ea078",
+            "title": "Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks",
+            "url": "https://www.semanticscholar.org/paper/8388f1be26329fa45e5807e968a641ce170ea078",
+            "venue": "ICLR",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3228082",
+                    "name": "Shane Griffith"
+                },
+                {
+                    "authorId": "145362925",
+                    "name": "K. Subramanian"
+                },
+                {
+                    "authorId": "36881095",
+                    "name": "Jonathan Scholz"
+                },
+                {
+                    "authorId": "1787816",
+                    "name": "C. Isbell"
+                },
+                {
+                    "authorId": "1682788",
+                    "name": "A. Thomaz"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "a7c31b6203949bd8ee6db0ebd4e075b980e9569f",
+            "title": "Policy Shaping: Integrating Human Feedback with Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/a7c31b6203949bd8ee6db0ebd4e075b980e9569f",
+            "venue": "NIPS",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "69914214",
+                    "name": "J. Salda\u00f1a"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "583c3a3460bd5c98068cfc46236414b1bb89ef5e",
+            "title": "The Coding Manual for Qualitative Researchers",
+            "url": "https://www.semanticscholar.org/paper/583c3a3460bd5c98068cfc46236414b1bb89ef5e",
+            "venue": "",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "69972765",
+                    "name": "M. Miles"
+                },
+                {
+                    "authorId": "144012903",
+                    "name": "A. Huberman"
+                },
+                {
+                    "authorId": "69914214",
+                    "name": "J. Salda\u00f1a"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "acd585110e90586588ae595c807f2b91efaef6a7",
+            "title": "Qualitative Data Analysis: A Methods Sourcebook",
+            "url": "https://www.semanticscholar.org/paper/acd585110e90586588ae595c807f2b91efaef6a7",
+            "venue": "",
+            "year": 1994
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2090504399",
+                    "name": "Khushnuma Grover"
+                },
+                {
+                    "authorId": "2090292050",
+                    "name": "K. Kaur"
+                },
+                {
+                    "authorId": "20748210",
+                    "name": "Kartikeya Tiwari"
+                },
+                {
+                    "authorId": "2120531508",
+                    "name": "Rupali"
+                },
+                {
+                    "authorId": "35757295",
+                    "name": "Parteek Kumar"
+                }
+            ],
+            "doi": "10.1007/978-981-16-0401-0_18",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "79c5ca6a5fc5c20930779a79641727ac0d58a029",
+            "title": "Deep Learning Based Question Generation Using T5 Transformer",
+            "url": "https://www.semanticscholar.org/paper/79c5ca6a5fc5c20930779a79641727ac0d58a029",
+            "venue": "",
+            "year": 2021
+        },
+        {
+            "arxivId": "1810.04805",
+            "authors": [
+                {
+                    "authorId": "39172707",
+                    "name": "Jacob Devlin"
+                },
+                {
+                    "authorId": "1744179",
+                    "name": "Ming-Wei Chang"
+                },
+                {
+                    "authorId": "2544107",
+                    "name": "Kenton Lee"
+                },
+                {
+                    "authorId": "3259253",
+                    "name": "Kristina Toutanova"
+                }
+            ],
+            "doi": "10.18653/v1/N19-1423",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "df2b0e26d0599ce3e70df8a9da02e51594e0e992",
+            "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+            "url": "https://www.semanticscholar.org/paper/df2b0e26d0599ce3e70df8a9da02e51594e0e992",
+            "venue": "NAACL",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "38909097",
+                    "name": "Alec Radford"
+                },
+                {
+                    "authorId": "144958935",
+                    "name": "Karthik Narasimhan"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "cd18800a0fe0b668a1cc19f2ec95b5003d0a5035",
+            "title": "Improving Language Understanding by Generative Pre-Training",
+            "url": "https://www.semanticscholar.org/paper/cd18800a0fe0b668a1cc19f2ec95b5003d0a5035",
+            "venue": "",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2110909951",
+                    "name": "Stanley F. Chen"
+                },
+                {
+                    "authorId": "1745366",
+                    "name": "Doug Beeferman"
+                },
+                {
+                    "authorId": "88507334",
+                    "name": "Roni Rosenfeld"
+                }
+            ],
+            "doi": "10.1184/R1/6605324.V1",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "469c4f553ddf7b5195530d4cf10adbbcc9b18df8",
+            "title": "Evaluation Metrics For Language Models",
+            "url": "https://www.semanticscholar.org/paper/469c4f553ddf7b5195530d4cf10adbbcc9b18df8",
+            "venue": "",
+            "year": 1998
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        },
+        {
+            "category": "Education",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Automating question generation from educational text",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/0a505b9f5cca7c61df28db3b462dd568c97e9c63",
+    "venue": "SGAI Conferences",
+    "year": 2023
+}

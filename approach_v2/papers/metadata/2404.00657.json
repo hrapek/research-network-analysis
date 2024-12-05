@@ -1,0 +1,782 @@
+{
+    "abstract": "Retrieval augmented generation (RAG) for technical documents creates challenges as embeddings do not often capture domain information. We review prior art for important factors affecting RAG and perform experiments to highlight best practices and potential challenges to build RAG systems for technical documents.",
+    "arxivId": "2404.00657",
+    "authors": [
+        {
+            "authorId": "3336244",
+            "name": "Sumit Soman",
+            "url": "https://www.semanticscholar.org/author/3336244"
+        },
+        {
+            "authorId": "2284351918",
+            "name": "Sujoy Roychowdhury",
+            "url": "https://www.semanticscholar.org/author/2284351918"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": "2408.17008",
+            "authors": [
+                {
+                    "authorId": "2284351918",
+                    "name": "Sujoy Roychowdhury"
+                },
+                {
+                    "authorId": "3336244",
+                    "name": "Sumit Soman"
+                },
+                {
+                    "authorId": "2318973731",
+                    "name": "HG Ranjani"
+                },
+                {
+                    "authorId": "2319090696",
+                    "name": "Avantika Sharma"
+                },
+                {
+                    "authorId": "2307071525",
+                    "name": "Neeraj Gunda"
+                },
+                {
+                    "authorId": "2307071756",
+                    "name": "Sai Krishna Bala"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0a7082247480e5fd24f0a4359603f8e1fae8706c",
+            "title": "Evaluation of Table Representations to Answer Questions from Tables in Documents : A Case Study using 3GPP Specifications",
+            "url": "https://www.semanticscholar.org/paper/0a7082247480e5fd24f0a4359603f8e1fae8706c",
+            "venue": "",
+            "year": 2024
+        },
+        {
+            "arxivId": "2407.12873",
+            "authors": [
+                {
+                    "authorId": "2284351918",
+                    "name": "Sujoy Roychowdhury"
+                },
+                {
+                    "authorId": "3336244",
+                    "name": "Sumit Soman"
+                },
+                {
+                    "authorId": "145229246",
+                    "name": "H. G. Ranjani"
+                },
+                {
+                    "authorId": "2307071525",
+                    "name": "Neeraj Gunda"
+                },
+                {
+                    "authorId": "2307072193",
+                    "name": "Vansh Chhabra"
+                },
+                {
+                    "authorId": "2307071756",
+                    "name": "Sai Krishna Bala"
+                }
+            ],
+            "doi": "10.48550/arXiv.2407.12873",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "58549ff432aa1c176eec8a2c81e75af676cb4b10",
+            "title": "Evaluation of RAG Metrics for Question Answering in the Telecom Domain",
+            "url": "https://www.semanticscholar.org/paper/58549ff432aa1c176eec8a2c81e75af676cb4b10",
+            "venue": "ArXiv",
+            "year": 2024
+        }
+    ],
+    "corpusId": 268820166,
+    "doi": "10.48550/arXiv.2404.00657",
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 2,
+    "numCiting": 11,
+    "paperId": "68bd565e94ea98e43a82c99cc31b5823bdd2bf10",
+    "references": [
+        {
+            "arxivId": "2312.10904",
+            "authors": [
+                {
+                    "authorId": "2266381638",
+                    "name": "Sabrina Toro"
+                },
+                {
+                    "authorId": "145011015",
+                    "name": "A. V. Anagnostopoulos"
+                },
+                {
+                    "authorId": "2275148170",
+                    "name": "Sue Bello"
+                },
+                {
+                    "authorId": "2275197596",
+                    "name": "Kai Blumberg"
+                },
+                {
+                    "authorId": "2154587410",
+                    "name": "Rhiannon Cameron"
+                },
+                {
+                    "authorId": "47658708",
+                    "name": "Leigh Carmody"
+                },
+                {
+                    "authorId": "2275197569",
+                    "name": "Alexander D. Diehl"
+                },
+                {
+                    "authorId": "34820117",
+                    "name": "Damion M. Dooley"
+                },
+                {
+                    "authorId": "2203581189",
+                    "name": "William Duncan"
+                },
+                {
+                    "authorId": "36059755",
+                    "name": "P. Fey"
+                },
+                {
+                    "authorId": "2275202161",
+                    "name": "Pascale Gaudet"
+                },
+                {
+                    "authorId": "2252771173",
+                    "name": "Nomi L. Harris"
+                },
+                {
+                    "authorId": "2111638",
+                    "name": "marcin p. joachimiak"
+                },
+                {
+                    "authorId": "2275195127",
+                    "name": "Leila Kiani"
+                },
+                {
+                    "authorId": "35522587",
+                    "name": "Tiago Lubiana"
+                },
+                {
+                    "authorId": "1399643910",
+                    "name": "M. Munoz-Torres"
+                },
+                {
+                    "authorId": "2241482835",
+                    "name": "Shawn T. O'Neil"
+                },
+                {
+                    "authorId": "1403853027",
+                    "name": "David Osumi-Sutherland"
+                },
+                {
+                    "authorId": "2275197400",
+                    "name": "Aleix Puig"
+                },
+                {
+                    "authorId": "2275203052",
+                    "name": "Justin P Reese"
+                },
+                {
+                    "authorId": "3297166",
+                    "name": "L. Reiser"
+                },
+                {
+                    "authorId": "2275201051",
+                    "name": "Sofia M. C. Robb"
+                },
+                {
+                    "authorId": "2275195895",
+                    "name": "Troy Ruemping"
+                },
+                {
+                    "authorId": "145515276",
+                    "name": "James Seager"
+                },
+                {
+                    "authorId": "2275197547",
+                    "name": "Eric Sid"
+                },
+                {
+                    "authorId": "2266379845",
+                    "name": "Ray Stefancsik"
+                },
+                {
+                    "authorId": "2276006194",
+                    "name": "Magalie Weber"
+                },
+                {
+                    "authorId": "2275201108",
+                    "name": "Valerie Wood"
+                },
+                {
+                    "authorId": "2237677943",
+                    "name": "M. Haendel"
+                },
+                {
+                    "authorId": "2239499194",
+                    "name": "Christopher J. Mungall"
+                }
+            ],
+            "doi": "10.1186/s13326-024-00320-3",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "862ed55c8a7d4ef1b23091995d42aae91d906a1b",
+            "title": "Dynamic Retrieval Augmented Generation of Ontologies using Artificial Intelligence (DRAGON-AI)",
+            "url": "https://www.semanticscholar.org/paper/862ed55c8a7d4ef1b23091995d42aae91d906a1b",
+            "venue": "J. Biomed. Semant.",
+            "year": 2023
+        },
+        {
+            "arxivId": "2310.12150",
+            "authors": [
+                {
+                    "authorId": "2108262500",
+                    "name": "Hung-Ting Chen"
+                },
+                {
+                    "authorId": "2159829626",
+                    "name": "Fangyuan Xu"
+                },
+                {
+                    "authorId": "2259924223",
+                    "name": "Shane Arora"
+                },
+                {
+                    "authorId": "2257003422",
+                    "name": "Eunsol Choi"
+                }
+            ],
+            "doi": "10.48550/arXiv.2310.12150",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ea61232aa8932f79d6151a025496dc806e4603d6",
+            "title": "Understanding Retrieval Augmentation for Long-Form Question Answering",
+            "url": "https://www.semanticscholar.org/paper/ea61232aa8932f79d6151a025496dc806e4603d6",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": "2309.15217",
+            "authors": [
+                {
+                    "authorId": "2214583051",
+                    "name": "ES Shahul"
+                },
+                {
+                    "authorId": "2248138289",
+                    "name": "Jithin James"
+                },
+                {
+                    "authorId": "2258950306",
+                    "name": "Luis Espinosa Anke"
+                },
+                {
+                    "authorId": "2265382",
+                    "name": "Steven Schockaert"
+                }
+            ],
+            "doi": "10.48550/arXiv.2309.15217",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f5e9e5bbe22f0263be1f1ce88c66978a2b927772",
+            "title": "RAGAs: Automated Evaluation of Retrieval Augmented Generation",
+            "url": "https://www.semanticscholar.org/paper/f5e9e5bbe22f0263be1f1ce88c66978a2b927772",
+            "venue": "EACL",
+            "year": 2023
+        },
+        {
+            "arxivId": "2309.01431",
+            "authors": [
+                {
+                    "authorId": "2115448879",
+                    "name": "Jiawei Chen"
+                },
+                {
+                    "authorId": "2116455765",
+                    "name": "Hongyu Lin"
+                },
+                {
+                    "authorId": "2118233348",
+                    "name": "Xianpei Han"
+                },
+                {
+                    "authorId": "2110832778",
+                    "name": "Le Sun"
+                }
+            ],
+            "doi": "10.48550/arXiv.2309.01431",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "28e2ecb4183ebc0eec504b12dddc677f8aef8745",
+            "title": "Benchmarking Large Language Models in Retrieval-Augmented Generation",
+            "url": "https://www.semanticscholar.org/paper/28e2ecb4183ebc0eec504b12dddc677f8aef8745",
+            "venue": "AAAI",
+            "year": 2023
+        },
+        {
+            "arxivId": "2307.09288",
+            "authors": [
+                {
+                    "authorId": "2113243762",
+                    "name": "Hugo Touvron"
+                },
+                {
+                    "authorId": "143792623",
+                    "name": "Louis Martin"
+                },
+                {
+                    "authorId": "2059203763",
+                    "name": "Kevin R. Stone"
+                },
+                {
+                    "authorId": "2214809450",
+                    "name": "Peter Albert"
+                },
+                {
+                    "authorId": "2634674",
+                    "name": "Amjad Almahairi"
+                },
+                {
+                    "authorId": "2223764353",
+                    "name": "Yasmine Babaei"
+                },
+                {
+                    "authorId": "2223756247",
+                    "name": "Nikolay Bashlykov"
+                },
+                {
+                    "authorId": "47505161",
+                    "name": "Soumya Batra"
+                },
+                {
+                    "authorId": "51229603",
+                    "name": "Prajjwal Bhargava"
+                },
+                {
+                    "authorId": "2116473",
+                    "name": "Shruti Bhosale"
+                },
+                {
+                    "authorId": "2023469",
+                    "name": "D. Bikel"
+                },
+                {
+                    "authorId": "2040305955",
+                    "name": "Lukas Blecher"
+                },
+                {
+                    "authorId": "66286536",
+                    "name": "Cristian Cant\u00f3n Ferrer"
+                },
+                {
+                    "authorId": "2108267192",
+                    "name": "Moya Chen"
+                },
+                {
+                    "authorId": "7153363",
+                    "name": "Guillem Cucurull"
+                },
+                {
+                    "authorId": "71039937",
+                    "name": "David Esiobu"
+                },
+                {
+                    "authorId": "2166312768",
+                    "name": "Jude Fernandes"
+                },
+                {
+                    "authorId": "2223974989",
+                    "name": "Jeremy Fu"
+                },
+                {
+                    "authorId": "2223742000",
+                    "name": "Wenyin Fu"
+                },
+                {
+                    "authorId": "2223748737",
+                    "name": "Brian Fuller"
+                },
+                {
+                    "authorId": "2107063269",
+                    "name": "Cynthia Gao"
+                },
+                {
+                    "authorId": "28554843",
+                    "name": "Vedanuj Goswami"
+                },
+                {
+                    "authorId": "39589154",
+                    "name": "Naman Goyal"
+                },
+                {
+                    "authorId": "4305645",
+                    "name": "A. Hartshorn"
+                },
+                {
+                    "authorId": "2195458",
+                    "name": "Saghar Hosseini"
+                },
+                {
+                    "authorId": "2132302721",
+                    "name": "Rui Hou"
+                },
+                {
+                    "authorId": "2065277797",
+                    "name": "Hakan Inan"
+                },
+                {
+                    "authorId": "2059886128",
+                    "name": "Marcin Kardas"
+                },
+                {
+                    "authorId": "2190957318",
+                    "name": "Viktor Kerkez"
+                },
+                {
+                    "authorId": "2072010",
+                    "name": "Madian Khabsa"
+                },
+                {
+                    "authorId": "2207049",
+                    "name": "Isabel M. Kloumann"
+                },
+                {
+                    "authorId": "2135297476",
+                    "name": "A. Korenev"
+                },
+                {
+                    "authorId": "2146367061",
+                    "name": "Punit Singh Koura"
+                },
+                {
+                    "authorId": "114952298",
+                    "name": "Marie-Anne Lachaux"
+                },
+                {
+                    "authorId": "46183616",
+                    "name": "Thibaut Lavril"
+                },
+                {
+                    "authorId": "2223749565",
+                    "name": "Jenya Lee"
+                },
+                {
+                    "authorId": "2145259939",
+                    "name": "Diana Liskovich"
+                },
+                {
+                    "authorId": "1768032",
+                    "name": "Yinghai Lu"
+                },
+                {
+                    "authorId": "3375249",
+                    "name": "Yuning Mao"
+                },
+                {
+                    "authorId": "1490887583",
+                    "name": "Xavier Martinet"
+                },
+                {
+                    "authorId": "39980906",
+                    "name": "Todor Mihaylov"
+                },
+                {
+                    "authorId": "3047561",
+                    "name": "Pushkar Mishra"
+                },
+                {
+                    "authorId": "2322981055",
+                    "name": "Igor Molybog"
+                },
+                {
+                    "authorId": "40383658",
+                    "name": "Yixin Nie"
+                },
+                {
+                    "authorId": "38579672",
+                    "name": "Andrew Poulton"
+                },
+                {
+                    "authorId": "39906022",
+                    "name": "Jeremy Reizenstein"
+                },
+                {
+                    "authorId": "150282885",
+                    "name": "Rashi Rungta"
+                },
+                {
+                    "authorId": "1859294",
+                    "name": "Kalyan Saladi"
+                },
+                {
+                    "authorId": "14279694",
+                    "name": "Alan Schelten"
+                },
+                {
+                    "authorId": "2214818043",
+                    "name": "Ruan Silva"
+                },
+                {
+                    "authorId": "51324296",
+                    "name": "Eric Michael Smith"
+                },
+                {
+                    "authorId": "2066074360",
+                    "name": "R. Subramanian"
+                },
+                {
+                    "authorId": "2112782199",
+                    "name": "Xia Tan"
+                },
+                {
+                    "authorId": "71292072",
+                    "name": "Binh Tang"
+                },
+                {
+                    "authorId": "2110697298",
+                    "name": "Ross Taylor"
+                },
+                {
+                    "authorId": "2110032535",
+                    "name": "Adina Williams"
+                },
+                {
+                    "authorId": "2223770369",
+                    "name": "Jian Xiang Kuan"
+                },
+                {
+                    "authorId": "2214843767",
+                    "name": "Puxin Xu"
+                },
+                {
+                    "authorId": "14701107",
+                    "name": "Zhengxu Yan"
+                },
+                {
+                    "authorId": "121929334",
+                    "name": "Iliyan Zarov"
+                },
+                {
+                    "authorId": "2108473229",
+                    "name": "Yuchen Zhang"
+                },
+                {
+                    "authorId": "144270981",
+                    "name": "Angela Fan"
+                },
+                {
+                    "authorId": "2272979",
+                    "name": "Melanie Kambadur"
+                },
+                {
+                    "authorId": "46617804",
+                    "name": "Sharan Narang"
+                },
+                {
+                    "authorId": "2166043087",
+                    "name": "Aurelien Rodriguez"
+                },
+                {
+                    "authorId": "1962768",
+                    "name": "Robert Stojnic"
+                },
+                {
+                    "authorId": "2068070",
+                    "name": "Sergey Edunov"
+                },
+                {
+                    "authorId": "2073456043",
+                    "name": "Thomas Scialom"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "104b0bb1da562d53cbda87aec79ef6a2827d191a",
+            "title": "Llama 2: Open Foundation and Fine-Tuned Chat Models",
+            "url": "https://www.semanticscholar.org/paper/104b0bb1da562d53cbda87aec79ef6a2827d191a",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": "2305.13102",
+            "authors": [
+                {
+                    "authorId": "3336244",
+                    "name": "Sumit Soman"
+                },
+                {
+                    "authorId": "1410704775",
+                    "name": "G. RanjaniH"
+                }
+            ],
+            "doi": "10.1145/3639856.3639892",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "506f571f4c3ef3c5c52761cd6b99400acd22ebd6",
+            "title": "Observations on LLMs for Telecom Domain: Capabilities and Limitations",
+            "url": "https://www.semanticscholar.org/paper/506f571f4c3ef3c5c52761cd6b99400acd22ebd6",
+            "venue": "AIMLSystems",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "2d14884fc362e2e18321372aae44f8575e4bd4b8",
+            "title": "IEEE Standard for Information Technology--Telecommunications and Information Exchange between Systems - Local and Metropolitan Area Networks--Specific Requirements - Part 11: Wireless LAN Medium Access Control (MAC) and Physical Layer (PHY) Specifications - Redline",
+            "url": "https://www.semanticscholar.org/paper/2d14884fc362e2e18321372aae44f8575e4bd4b8",
+            "venue": "IEEE Std 802.11-2020 (Revision of IEEE Std 802.11-2016) - Redline",
+            "year": 2021
+        },
+        {
+            "arxivId": "2004.09297",
+            "authors": [
+                {
+                    "authorId": "50982078",
+                    "name": "Kaitao Song"
+                },
+                {
+                    "authorId": "2112780268",
+                    "name": "Xu Tan"
+                },
+                {
+                    "authorId": "143826491",
+                    "name": "Tao Qin"
+                },
+                {
+                    "authorId": "2152960206",
+                    "name": "Jianfeng Lu"
+                },
+                {
+                    "authorId": "2110264337",
+                    "name": "Tie-Yan Liu"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "270f3bea8ca801870a6cc56b4d36f7f2019c9ed0",
+            "title": "MPNet: Masked and Permuted Pre-training for Language Understanding",
+            "url": "https://www.semanticscholar.org/paper/270f3bea8ca801870a6cc56b4d36f7f2019c9ed0",
+            "venue": "NeurIPS",
+            "year": 2020
+        },
+        {
+            "arxivId": "1908.10084",
+            "authors": [
+                {
+                    "authorId": "2959414",
+                    "name": "Nils Reimers"
+                },
+                {
+                    "authorId": "1730400",
+                    "name": "Iryna Gurevych"
+                }
+            ],
+            "doi": "10.18653/v1/D19-1410",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "93d63ec754f29fa22572615320afe0521f7ec66d",
+            "title": "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks",
+            "url": "https://www.semanticscholar.org/paper/93d63ec754f29fa22572615320afe0521f7ec66d",
+            "venue": "EMNLP",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1754285124",
+                    "name": "Benfeng Xu"
+                },
+                {
+                    "authorId": "2187561833",
+                    "name": "Chunxu Zhao"
+                },
+                {
+                    "authorId": "144266815",
+                    "name": "Wenbin Jiang"
+                },
+                {
+                    "authorId": "145463313",
+                    "name": "Pengfei Zhu"
+                },
+                {
+                    "authorId": "2052804457",
+                    "name": "Songtai Dai"
+                },
+                {
+                    "authorId": "2054086618",
+                    "name": "Chao Pang"
+                },
+                {
+                    "authorId": null,
+                    "name": "Zhuo Sun"
+                },
+                {
+                    "authorId": "104463827",
+                    "name": "Shuohuan Wang"
+                },
+                {
+                    "authorId": "2117103617",
+                    "name": "Yu Sun"
+                }
+            ],
+            "doi": "10.18653/v1/2023.repl4nlp-1.5",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5770e77ff6350c7bb3b20a3a678c0e47b22ccf8e",
+            "title": "Retrieval-Augmented Domain Adaptation of Language Models",
+            "url": "https://www.semanticscholar.org/paper/5770e77ff6350c7bb3b20a3a678c0e47b22ccf8e",
+            "venue": "REPL4NLP",
+            "year": 2023
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Observations on Building RAG Systems for Technical Documents",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/68bd565e94ea98e43a82c99cc31b5823bdd2bf10",
+    "venue": "Tiny Papers @ ICLR",
+    "year": 2024
+}

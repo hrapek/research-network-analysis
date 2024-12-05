@@ -1,0 +1,3374 @@
+{
+    "abstract": "Graphical models are usually learned without regard to the cost of doing inference with them. As a result, even if a good model is learned, it may perform poorly at prediction, because it requires approximate inference. We propose an alternative: learning models with a score function that directly penalizes the cost of inference. Specifically, we learn arithmetic circuits with a penalty on the number of edges in the circuit (in which the cost of inference is linear). Our algorithm is equivalent to learning a Bayesian network with context-specific independence by greedily splitting conditional distributions, at each step scoring the candidates by compiling the resulting network into an arithmetic circuit, and using its size as the penalty. We show how this can be done efficiently, without compiling a circuit from scratch for each candidate. Experiments on several real-world domains show that our algorithm is able to learn tractable models with very large treewidth, and yields more accurate predictions than a standard context-specific Bayesian network learner, in far less time.",
+    "arxivId": "1206.3271",
+    "authors": [
+        {
+            "authorId": "3021654",
+            "name": "Daniel Lowd",
+            "url": "https://www.semanticscholar.org/author/3021654"
+        },
+        {
+            "authorId": "1740213",
+            "name": "Pedro M. Domingos",
+            "url": "https://www.semanticscholar.org/author/1740213"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": "2408.07545",
+            "authors": [
+                {
+                    "authorId": "2316050729",
+                    "name": "Harsh Poonia"
+                },
+                {
+                    "authorId": "1387999893",
+                    "name": "Moritz Willig"
+                },
+                {
+                    "authorId": "2116678781",
+                    "name": "Zhongjie Yu"
+                },
+                {
+                    "authorId": "35745805",
+                    "name": "M. Zecevic"
+                },
+                {
+                    "authorId": "2300120976",
+                    "name": "Kristian Kersting"
+                },
+                {
+                    "authorId": "39552485",
+                    "name": "D. Dhami"
+                }
+            ],
+            "doi": "10.48550/arXiv.2408.07545",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "4029cbebfbc2f76b342fbb28157ee97578857bf8",
+            "title": "\u03c7SPN: Characteristic Interventional Sum-Product Networks for Causal Inference in Hybrid Domains",
+            "url": "https://www.semanticscholar.org/paper/4029cbebfbc2f76b342fbb28157ee97578857bf8",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "34935264",
+                    "name": "Chiradeep Roy"
+                },
+                {
+                    "authorId": "50165674",
+                    "name": "Mahsan Nourani"
+                },
+                {
+                    "authorId": "1978722157",
+                    "name": "Shivvrat Arya"
+                },
+                {
+                    "authorId": "2257362496",
+                    "name": "Mahesh Shanbhag"
+                },
+                {
+                    "authorId": "34108618",
+                    "name": "Tahrima Rahman"
+                },
+                {
+                    "authorId": "2257361936",
+                    "name": "Eric D. Ragan"
+                },
+                {
+                    "authorId": "2273098",
+                    "name": "Nicholas Ruozzi"
+                },
+                {
+                    "authorId": "143754991",
+                    "name": "Vibhav Gogate"
+                }
+            ],
+            "doi": "10.1145/3626961",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "70c57e32dcdbcd6a67e09bc57a4c9b0560d36289",
+            "title": "Explainable Activity Recognition in Videos using Deep Learning and Tractable Probabilistic Models",
+            "url": "https://www.semanticscholar.org/paper/70c57e32dcdbcd6a67e09bc57a4c9b0560d36289",
+            "venue": "ACM Trans. Interact. Intell. Syst.",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "41067082",
+                    "name": "Riting Xia"
+                },
+                {
+                    "authorId": "2152821253",
+                    "name": "Yan Zhang"
+                },
+                {
+                    "authorId": "49543455",
+                    "name": "Xueyan Liu"
+                },
+                {
+                    "authorId": "2119659557",
+                    "name": "Bo Yang"
+                }
+            ],
+            "doi": "10.1016/j.neunet.2023.05.010",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "4b5fa162f1c3f1dd0e03cfc92661e6531ba4f1a8",
+            "title": "A survey of sum-product networks structural learning",
+            "url": "https://www.semanticscholar.org/paper/4b5fa162f1c3f1dd0e03cfc92661e6531ba4f1a8",
+            "venue": "Neural Networks",
+            "year": 2023
+        },
+        {
+            "arxivId": "2302.12130",
+            "authors": [
+                {
+                    "authorId": "46285538",
+                    "name": "Yang Yang"
+                },
+                {
+                    "authorId": "2008152720",
+                    "name": "G. Gala"
+                },
+                {
+                    "authorId": "1809285",
+                    "name": "Robert Peharz"
+                }
+            ],
+            "doi": "10.48550/arXiv.2302.12130",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9a0151114fe5ecfbcce03fc17f8e2304955ac72d",
+            "title": "Bayesian Structure Scores for Probabilistic Circuits",
+            "url": "https://www.semanticscholar.org/paper/9a0151114fe5ecfbcce03fc17f8e2304955ac72d",
+            "venue": "AISTATS",
+            "year": 2023
+        },
+        {
+            "arxivId": "2212.00296",
+            "authors": [
+                {
+                    "authorId": "48272707",
+                    "name": "Nan Jiang"
+                },
+                {
+                    "authorId": "2112578818",
+                    "name": "Yi Gu"
+                },
+                {
+                    "authorId": "2937530",
+                    "name": "Yexiang Xue"
+                }
+            ],
+            "doi": "10.1609/aaai.v37i4.25516",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "cdab17892cf24857d14f340a718ac82019318470",
+            "title": "Learning Markov Random Fields for Combinatorial Structures via Sampling through Lov\u00e1sz Local Lemma",
+            "url": "https://www.semanticscholar.org/paper/cdab17892cf24857d14f340a718ac82019318470",
+            "venue": "AAAI",
+            "year": 2022
+        },
+        {
+            "arxivId": "2202.02891",
+            "authors": [
+                {
+                    "authorId": "1700031",
+                    "name": "Adnan Darwiche"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "e0adae77a40f9003ae75dc7d1699397a3854f095",
+            "title": "Causal Inference Using Tractable Circuits",
+            "url": "https://www.semanticscholar.org/paper/e0adae77a40f9003ae75dc7d1699397a3854f095",
+            "venue": "ArXiv",
+            "year": 2022
+        },
+        {
+            "arxivId": "2202.02942",
+            "authors": [
+                {
+                    "authorId": "1700031",
+                    "name": "Adnan Darwiche"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2f9d38739e321c2331781451ef251831f1021f41",
+            "title": "Tractable Boolean and Arithmetic Circuits",
+            "url": "https://www.semanticscholar.org/paper/2f9d38739e321c2331781451ef251831f1021f41",
+            "venue": "ArXiv",
+            "year": 2022
+        },
+        {
+            "arxivId": "2112.00914",
+            "authors": [
+                {
+                    "authorId": "145117953",
+                    "name": "Andy Shih"
+                },
+                {
+                    "authorId": "1779671",
+                    "name": "Dorsa Sadigh"
+                },
+                {
+                    "authorId": "2490652",
+                    "name": "Stefano Ermon"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "63bdfd7cbb8b8d3b1a859c74c982a10eb871317d",
+            "title": "HyperSPNs: Compact and Expressive Probabilistic Circuits",
+            "url": "https://www.semanticscholar.org/paper/63bdfd7cbb8b8d3b1a859c74c982a10eb871317d",
+            "venue": "NeurIPS",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "34935264",
+                    "name": "Chiradeep Roy"
+                },
+                {
+                    "authorId": "50165674",
+                    "name": "Mahsan Nourani"
+                },
+                {
+                    "authorId": "146500182",
+                    "name": "Donald R. Honeycutt"
+                },
+                {
+                    "authorId": "31971221",
+                    "name": "Jeremy E. Block"
+                },
+                {
+                    "authorId": "34108618",
+                    "name": "Tahrima Rahman"
+                },
+                {
+                    "authorId": "1777991",
+                    "name": "E. Ragan"
+                },
+                {
+                    "authorId": "2273098",
+                    "name": "Nicholas Ruozzi"
+                },
+                {
+                    "authorId": "143754991",
+                    "name": "Vibhav Gogate"
+                }
+            ],
+            "doi": "10.1002/ail2.59",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "15b2c18cd7244e05160d4f5a4eacc66882d9ca24",
+            "title": "Explainable Activity Recognition in Videos: Lessons Learned",
+            "url": "https://www.semanticscholar.org/paper/15b2c18cd7244e05160d4f5a4eacc66882d9ca24",
+            "venue": "Applied AI Letters",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1823968060",
+                    "name": "Meihua Dang"
+                },
+                {
+                    "authorId": "14341992",
+                    "name": "Antonio Vergari"
+                },
+                {
+                    "authorId": "2137911657",
+                    "name": "Guy Van den Broeck"
+                }
+            ],
+            "doi": "10.1016/j.ijar.2021.09.012",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "542343784e0ea41b6a8d5765e16aec3f75ddc398",
+            "title": "Strudel: A fast and accurate learner of structured-decomposable probabilistic circuits",
+            "url": "https://www.semanticscholar.org/paper/542343784e0ea41b6a8d5765e16aec3f75ddc398",
+            "venue": "Int. J. Approx. Reason.",
+            "year": 2021
+        },
+        {
+            "arxivId": "2110.13014",
+            "authors": [
+                {
+                    "authorId": "1390000981",
+                    "name": "Alexis de Colnet"
+                },
+                {
+                    "authorId": "1891521",
+                    "name": "S. Mengel"
+                }
+            ],
+            "doi": "10.24963/kr.2021/20",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9a88270812348d70b5247bb0c4dddec527ac6c3f",
+            "title": "A Compilation of Succinctness Results for Arithmetic Circuits",
+            "url": "https://www.semanticscholar.org/paper/9a88270812348d70b5247bb0c4dddec527ac6c3f",
+            "venue": "KR",
+            "year": 2021
+        },
+        {
+            "arxivId": "2107.12130",
+            "authors": [
+                {
+                    "authorId": "34662081",
+                    "name": "Alessandro Antonucci"
+                },
+                {
+                    "authorId": "38204724",
+                    "name": "Alessandro Facchini"
+                },
+                {
+                    "authorId": "150190279",
+                    "name": "Lilith Mattei"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7e06de11c65381f7e9b60e538ae3111b27f89ab3",
+            "title": "Structural Learning of Probabilistic Sentential Decision Diagrams under Partial Closed-World Assumption",
+            "url": "https://www.semanticscholar.org/paper/7e06de11c65381f7e9b60e538ae3111b27f89ab3",
+            "venue": "ArXiv",
+            "year": 2021
+        },
+        {
+            "arxivId": "2105.09108",
+            "authors": [
+                {
+                    "authorId": "2109253269",
+                    "name": "Benjie Wang"
+                },
+                {
+                    "authorId": "39439114",
+                    "name": "Clare Lyle"
+                },
+                {
+                    "authorId": "49444240",
+                    "name": "M. Kwiatkowska"
+                }
+            ],
+            "doi": "10.24963/ijcai.2021/585",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "4ac03f9f11cb058c4aab67fd033810d29310f724",
+            "title": "Provable Guarantees on the Robustness of Decision Rules to Causal Interventions",
+            "url": "https://www.semanticscholar.org/paper/4ac03f9f11cb058c4aab67fd033810d29310f724",
+            "venue": "IJCAI",
+            "year": 2021
+        },
+        {
+            "arxivId": "2102.10562",
+            "authors": [
+                {
+                    "authorId": "2135914554",
+                    "name": "Wenzhe Li"
+                },
+                {
+                    "authorId": "2047081394",
+                    "name": "Zhe Zeng"
+                },
+                {
+                    "authorId": "14341992",
+                    "name": "Antonio Vergari"
+                },
+                {
+                    "authorId": "1749506",
+                    "name": "Guy Van den Broeck"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "675a31f21e606f4593a59bad6ab0a31b6dec331d",
+            "title": "Tractable Computation of Expected Kernels by Circuits",
+            "url": "https://www.semanticscholar.org/paper/675a31f21e606f4593a59bad6ab0a31b6dec331d",
+            "venue": "UAI",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2089703178",
+                    "name": "A. V. Siriak"
+                },
+                {
+                    "authorId": "1714890040",
+                    "name": "V. Turchyna"
+                }
+            ],
+            "doi": "10.15421/322015",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "e158627c5e0d30850a7e8033b2dd3b24ec3bb21b",
+            "title": "ZERO-KNOWLEDGE PROOF OF KNOWLEDGE OF MULTIVARIATE POLYNOMIAL\u2019S ZERO",
+            "url": "https://www.semanticscholar.org/paper/e158627c5e0d30850a7e8033b2dd3b24ec3bb21b",
+            "venue": "Problems of applied mathematics and mathematic modeling",
+            "year": 2021
+        },
+        {
+            "arxivId": "2011.09020",
+            "authors": [
+                {
+                    "authorId": "2109685286",
+                    "name": "Ziniu Wu"
+                },
+                {
+                    "authorId": "2150059510",
+                    "name": "Rong Zhu"
+                },
+                {
+                    "authorId": "1769930",
+                    "name": "A. Pfadler"
+                },
+                {
+                    "authorId": "1878783812",
+                    "name": "Yuxing Han"
+                },
+                {
+                    "authorId": "112875106",
+                    "name": "Jiangneng Li"
+                },
+                {
+                    "authorId": "2003626",
+                    "name": "Zhengping Qian"
+                },
+                {
+                    "authorId": "145167563",
+                    "name": "K. Zeng"
+                },
+                {
+                    "authorId": "1709595",
+                    "name": "Jingren Zhou"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "324873d7ce2379220c252d13de9446c58dd54a64",
+            "title": "FSPN: A New Class of Probabilistic Graphical Model",
+            "url": "https://www.semanticscholar.org/paper/324873d7ce2379220c252d13de9446c58dd54a64",
+            "venue": "ArXiv",
+            "year": 2020
+        },
+        {
+            "arxivId": "2007.09331",
+            "authors": [
+                {
+                    "authorId": "1823968060",
+                    "name": "Meihua Dang"
+                },
+                {
+                    "authorId": "14341992",
+                    "name": "Antonio Vergari"
+                },
+                {
+                    "authorId": "1749506",
+                    "name": "Guy Van den Broeck"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "672c16e25a3cccc8a0496d00feb40df43bcd5b65",
+            "title": "Strudel: Learning Structured-Decomposable Probabilistic Circuits",
+            "url": "https://www.semanticscholar.org/paper/672c16e25a3cccc8a0496d00feb40df43bcd5b65",
+            "venue": "PGM",
+            "year": 2020
+        },
+        {
+            "arxivId": "2006.08480",
+            "authors": [
+                {
+                    "authorId": "144893617",
+                    "name": "Vaishak Belle"
+                }
+            ],
+            "doi": "10.1007/978-3-030-58449-8_1",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "eb9f7d4cbee332223895e1b2a0065a4d30bdb899",
+            "title": "Symbolic Logic meets Machine Learning: A Brief Survey in Infinite Domains",
+            "url": "https://www.semanticscholar.org/paper/eb9f7d4cbee332223895e1b2a0065a4d30bdb899",
+            "venue": "SUM",
+            "year": 2020
+        },
+        {
+            "arxivId": "2004.01167",
+            "authors": [
+                {
+                    "authorId": "2104268290",
+                    "name": "Raquel S'anchez-Cauce"
+                },
+                {
+                    "authorId": "1607100489",
+                    "name": "I. Par'is"
+                },
+                {
+                    "authorId": "1769463",
+                    "name": "F. D\u00edez"
+                }
+            ],
+            "doi": "10.1109/TPAMI.2021.3061898",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "f2c2cd6c3ab4d831cba081daecdc19d382ff12cf",
+            "title": "Sum-Product Networks: A Survey",
+            "url": "https://www.semanticscholar.org/paper/f2c2cd6c3ab4d831cba081daecdc19d382ff12cf",
+            "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2010503",
+                    "name": "Jhonatan de S. Oliveira"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9bc661bcd57f3e12b9d027b8583c4f16915b226b",
+            "title": "On the Development of Deep Convolutional Sum-Product Networks",
+            "url": "https://www.semanticscholar.org/paper/9bc661bcd57f3e12b9d027b8583c4f16915b226b",
+            "venue": "",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "50701361",
+                    "name": "Marco Benjumeda"
+                },
+                {
+                    "authorId": "1687365",
+                    "name": "C. Bielza"
+                },
+                {
+                    "authorId": "144999310",
+                    "name": "P. Larra\u00f1aga"
+                }
+            ],
+            "doi": "10.1016/J.ARTINT.2018.11.007",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "eca95f1c8d7b9c0c8c2544b87f9fa40ec558388a",
+            "title": "Learning tractable Bayesian networks in the space of elimination orders",
+            "url": "https://www.semanticscholar.org/paper/eca95f1c8d7b9c0c8c2544b87f9fa40ec558388a",
+            "venue": "Artif. Intell.",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "34108618",
+                    "name": "Tahrima Rahman"
+                },
+                {
+                    "authorId": "2108914605",
+                    "name": "Shasha Jin"
+                },
+                {
+                    "authorId": "143754991",
+                    "name": "Vibhav Gogate"
+                }
+            ],
+            "doi": "10.24963/ijcai.2019/797",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d03dec59c65506c0fab9fdc1cfbe8ccf8e2e38f7",
+            "title": "Cutset Bayesian Networks: A New Representation for Learning Rao-Blackwellised Graphical Models",
+            "url": "https://www.semanticscholar.org/paper/d03dec59c65506c0fab9fdc1cfbe8ccf8e2e38f7",
+            "venue": "IJCAI",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "7634628",
+                    "name": "Laura Isabel Galindez Olascoaga"
+                },
+                {
+                    "authorId": "1718583",
+                    "name": "Wannes Meert"
+                },
+                {
+                    "authorId": "3277060",
+                    "name": "M. Verhelst"
+                },
+                {
+                    "authorId": "1749506",
+                    "name": "Guy Van den Broeck"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2c59f41d82b35f8f6b84b621a7feb01c3a614df3",
+            "title": "Towards Hardware-Aware Tractable Learning of Probabilistic Models",
+            "url": "https://www.semanticscholar.org/paper/2c59f41d82b35f8f6b84b621a7feb01c3a614df3",
+            "venue": "NeurIPS",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "34108618",
+                    "name": "Tahrima Rahman"
+                },
+                {
+                    "authorId": "2108914605",
+                    "name": "Shasha Jin"
+                },
+                {
+                    "authorId": "143754991",
+                    "name": "Vibhav Gogate"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "de563c5620a007a7765bc6ab1343eec28ea00688",
+            "title": "Look Ma, No Latent Variables: Accurate Cutset Networks via Compilation",
+            "url": "https://www.semanticscholar.org/paper/de563c5620a007a7765bc6ab1343eec28ea00688",
+            "venue": "ICML",
+            "year": 2019
+        },
+        {
+            "arxivId": "1902.10798",
+            "authors": [
+                {
+                    "authorId": "2141192339",
+                    "name": "Yitao Liang"
+                },
+                {
+                    "authorId": "1749506",
+                    "name": "Guy Van den Broeck"
+                }
+            ],
+            "doi": "10.1609/AAAI.V33I01.33014277",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "bd7e8864bc9de2076c03d39546e06a339a573444",
+            "title": "Learning Logistic Circuits",
+            "url": "https://www.semanticscholar.org/paper/bd7e8864bc9de2076c03d39546e06a339a573444",
+            "venue": "AAAI",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1736351",
+                    "name": "Mauro Scanagatta"
+                },
+                {
+                    "authorId": "1680295",
+                    "name": "Giorgio Corani"
+                },
+                {
+                    "authorId": null,
+                    "name": "Cassio Polpo de Campos"
+                },
+                {
+                    "authorId": "1825163",
+                    "name": "Marco Zaffalon"
+                }
+            ],
+            "doi": "10.1007/s10994-018-5701-9",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0439fa38d2b69fa104072658dfd290ed3f1ae7e3",
+            "title": "Approximate structure learning for large Bayesian networks",
+            "url": "https://www.semanticscholar.org/paper/0439fa38d2b69fa104072658dfd290ed3f1ae7e3",
+            "venue": "Machine Learning",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "14341992",
+                    "name": "Antonio Vergari"
+                },
+                {
+                    "authorId": "1809285",
+                    "name": "Robert Peharz"
+                },
+                {
+                    "authorId": "1718594",
+                    "name": "Nicola Di Mauro"
+                },
+                {
+                    "authorId": "143666792",
+                    "name": "Alejandro Molina"
+                },
+                {
+                    "authorId": "1746871",
+                    "name": "K. Kersting"
+                },
+                {
+                    "authorId": "1700821",
+                    "name": "F. Esposito"
+                }
+            ],
+            "doi": "10.1609/aaai.v32i1.11734",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8cc41acb45929a53a72f176651285cbc890e234f",
+            "title": "Sum-Product Autoencoding: Encoding and Decoding Representations Using Sum-Product Networks",
+            "url": "https://www.semanticscholar.org/paper/8cc41acb45929a53a72f176651285cbc890e234f",
+            "venue": "AAAI",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "9268480",
+                    "name": "C. Butz"
+                },
+                {
+                    "authorId": "2010503",
+                    "name": "Jhonatan de S. Oliveira"
+                },
+                {
+                    "authorId": "145435942",
+                    "name": "A. E. D. Santos"
+                }
+            ],
+            "doi": "10.1109/SSCI.2017.8280810",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e743821ea9d94472ad88d43fc169717a3af28365",
+            "title": "On learning the structure of sum-product networks",
+            "url": "https://www.semanticscholar.org/paper/e743821ea9d94472ad88d43fc169717a3af28365",
+            "venue": "2017 IEEE Symposium Series on Computational Intelligence (SSCI)",
+            "year": 2017
+        },
+        {
+            "arxivId": "1710.03297",
+            "authors": [
+                {
+                    "authorId": "143666792",
+                    "name": "Alejandro Molina"
+                },
+                {
+                    "authorId": "14341992",
+                    "name": "Antonio Vergari"
+                },
+                {
+                    "authorId": "1718594",
+                    "name": "Nicola Di Mauro"
+                },
+                {
+                    "authorId": "145986014",
+                    "name": "Sriraam Natarajan"
+                },
+                {
+                    "authorId": "1700821",
+                    "name": "F. Esposito"
+                },
+                {
+                    "authorId": "1746871",
+                    "name": "K. Kersting"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "88baab4dde6770aedce7bf4b574808700147bc60",
+            "title": "Sum-Product Networks for Hybrid Domains",
+            "url": "https://www.semanticscholar.org/paper/88baab4dde6770aedce7bf4b574808700147bc60",
+            "venue": "ArXiv",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144538949",
+                    "name": "H. Chan"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "72b18cd20157fc886188955f39fba8f42525ab5a",
+            "title": "Incorporating Uncertain Evidence Into Arithmetic Circuits Representing Probability Distributions",
+            "url": "https://www.semanticscholar.org/paper/72b18cd20157fc886188955f39fba8f42525ab5a",
+            "venue": "AMBN",
+            "year": 2017
+        },
+        {
+            "arxivId": "1708.06438",
+            "authors": [
+                {
+                    "authorId": "3393375",
+                    "name": "Mattia Desana"
+                },
+                {
+                    "authorId": "1679944",
+                    "name": "C. Schn\u00f6rr"
+                }
+            ],
+            "doi": "10.1007/s10994-019-05813-2",
+            "intent": [],
+            "isInfluential": true,
+            "paperId": "7c5c8b2c2c5396fd21ebfc14ac117714a35b2e9f",
+            "title": "Sum\u2013product graphical models",
+            "url": "https://www.semanticscholar.org/paper/7c5c8b2c2c5396fd21ebfc14ac117714a35b2e9f",
+            "venue": "Machine Learning",
+            "year": 2017
+        },
+        {
+            "arxivId": "1708.04846",
+            "authors": [
+                {
+                    "authorId": "1972751",
+                    "name": "Jun-Feng Mei"
+                },
+                {
+                    "authorId": "50262192",
+                    "name": "Yong Jiang"
+                },
+                {
+                    "authorId": "40341553",
+                    "name": "Kewei Tu"
+                }
+            ],
+            "doi": "10.1609/aaai.v32i1.11550",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "decdf49bd3cd0ef3186b640db46234d5f6bb973e",
+            "title": "Maximum A Posteriori Inference in Sum-Product Networks",
+            "url": "https://www.semanticscholar.org/paper/decdf49bd3cd0ef3186b640db46234d5f6bb973e",
+            "venue": "AAAI",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2397352",
+                    "name": "Yitao Liang"
+                },
+                {
+                    "authorId": "144292894",
+                    "name": "Jessa Bekker"
+                },
+                {
+                    "authorId": "1749506",
+                    "name": "Guy Van den Broeck"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "dfa2aa9eb6523817ae0915a9b82ebfb9457ace1f",
+            "title": "Learning the Structure of Probabilistic Sentential Decision Diagrams",
+            "url": "https://www.semanticscholar.org/paper/dfa2aa9eb6523817ae0915a9b82ebfb9457ace1f",
+            "venue": "UAI",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2002359",
+                    "name": "Sarah E. Chasins"
+                },
+                {
+                    "authorId": "2623548",
+                    "name": "P. Phothilimthana"
+                }
+            ],
+            "doi": "10.1007/978-3-319-63387-9_14",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2f139e8b5ad633c7b03780d35d96bc52b16c56a3",
+            "title": "Data-Driven Synthesis of Full Probabilistic Programs",
+            "url": "https://www.semanticscholar.org/paper/2f139e8b5ad633c7b03780d35d96bc52b16c56a3",
+            "venue": "CAV",
+            "year": 2017
+        },
+        {
+            "arxivId": "1708.06846",
+            "authors": [
+                {
+                    "authorId": "143680053",
+                    "name": "Arthur Choi"
+                },
+                {
+                    "authorId": "1700031",
+                    "name": "Adnan Darwiche"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "1fc42aedf7f21f05f83162e1b661594a64be77fa",
+            "title": "On Relaxing Determinism in Arithmetic Circuits",
+            "url": "https://www.semanticscholar.org/paper/1fc42aedf7f21f05f83162e1b661594a64be77fa",
+            "venue": "ICML",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "40405890",
+                    "name": "R. Gens"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "172b7b5d0ba433b53d52b6d2e9ce497786ee8631",
+            "title": "Learning Robust Tractable Models for Vision",
+            "url": "https://www.semanticscholar.org/paper/172b7b5d0ba433b53d52b6d2e9ce497786ee8631",
+            "venue": "",
+            "year": 2017
+        },
+        {
+            "arxivId": "1701.08546",
+            "authors": [
+                {
+                    "authorId": "145920230",
+                    "name": "Marc Sol\u00e9"
+                },
+                {
+                    "authorId": "1393629404",
+                    "name": "V. Munt\u00e9s-Mulero"
+                },
+                {
+                    "authorId": "1800929",
+                    "name": "Annie Ibrahim Rana"
+                },
+                {
+                    "authorId": "14011576",
+                    "name": "G. Estrada"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0b658d7b70a1445c12f03f1006762300bba4d956",
+            "title": "Survey on Models and Techniques for Root-Cause Analysis",
+            "url": "https://www.semanticscholar.org/paper/0b658d7b70a1445c12f03f1006762300bba4d956",
+            "venue": "ArXiv",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "7634628",
+                    "name": "Laura Isabel Galindez Olascoaga"
+                },
+                {
+                    "authorId": "1718583",
+                    "name": "Wannes Meert"
+                },
+                {
+                    "authorId": "145072634",
+                    "name": "H. Bruyninckx"
+                },
+                {
+                    "authorId": "3277060",
+                    "name": "M. Verhelst"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "eeda7901e0f3831157e97ce711b3ebdc2a96e4ba",
+            "title": "Extending Naive Bayes with Precision-tunable Feature Variables for Resource-efficient Sensor Fusion",
+            "url": "https://www.semanticscholar.org/paper/eeda7901e0f3831157e97ce711b3ebdc2a96e4ba",
+            "venue": "AI-IoT@ECAI",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "89420246",
+                    "name": "E. Amrani"
+                },
+                {
+                    "authorId": "30174167",
+                    "name": "A. Drori"
+                },
+                {
+                    "authorId": "2761599",
+                    "name": "Shahar Kvatinsky"
+                }
+            ],
+            "doi": "10.1109/VLSI-SoC.2016.7753564",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "00bba56de53ad70f0b81c7bcdfc5ca0b762e7b88",
+            "title": "Logic design with unipolar memristors",
+            "url": "https://www.semanticscholar.org/paper/00bba56de53ad70f0b81c7bcdfc5ca0b762e7b88",
+            "venue": "2016 IFIP/IEEE International Conference on Very Large Scale Integration (VLSI-SoC)",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "34108618",
+                    "name": "Tahrima Rahman"
+                },
+                {
+                    "authorId": "143754991",
+                    "name": "Vibhav Gogate"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "865b645412f9164167db5358b09cb9bb0eeff3dd",
+            "title": "Merging Strategies for Sum-Product Networks: From Trees to Graphs",
+            "url": "https://www.semanticscholar.org/paper/865b645412f9164167db5358b09cb9bb0eeff3dd",
+            "venue": "UAI",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2920384",
+                    "name": "Mazen Melibari"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "3507b71be3223f0ffc52584daa8e424cc4bd4c03",
+            "title": "Directly Learning Tractable Models for Sequential Inference and DecisionMaking",
+            "url": "https://www.semanticscholar.org/paper/3507b71be3223f0ffc52584daa8e424cc4bd4c03",
+            "venue": "",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2920384",
+                    "name": "Mazen Melibari"
+                },
+                {
+                    "authorId": "1807041",
+                    "name": "P. Poupart"
+                },
+                {
+                    "authorId": "1687438",
+                    "name": "Prashant Doshi"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "b3ef0f9c4af28d24cf9ccda3641e5359943dfe58",
+            "title": "Sum-Product-Max Networks for Tractable Decision Making: (Extended Abstract)",
+            "url": "https://www.semanticscholar.org/paper/b3ef0f9c4af28d24cf9ccda3641e5359943dfe58",
+            "venue": "AAMAS",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3393375",
+                    "name": "Mattia Desana"
+                },
+                {
+                    "authorId": "1679944",
+                    "name": "C. Schn\u00f6rr"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "72036686180b46d2592051374fc94fa0518a6c7d",
+            "title": "Learning Arbitrary Sum-Product Network Leaves with Expectation-Maximization",
+            "url": "https://www.semanticscholar.org/paper/72036686180b46d2592051374fc94fa0518a6c7d",
+            "venue": "",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2844347",
+                    "name": "Pedram Rooshenas"
+                },
+                {
+                    "authorId": "3021654",
+                    "name": "Daniel Lowd"
+                }
+            ],
+            "doi": "10.1609/aaai.v30i1.9963",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "db3face7224359756db355adda7fbd750f671366",
+            "title": "Discriminative Structure Learning of Arithmetic Circuits",
+            "url": "https://www.semanticscholar.org/paper/db3face7224359756db355adda7fbd750f671366",
+            "venue": "AISTATS",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143680053",
+                    "name": "Arthur Choi"
+                },
+                {
+                    "authorId": "3362066",
+                    "name": "N. Tavabi"
+                },
+                {
+                    "authorId": "1700031",
+                    "name": "Adnan Darwiche"
+                }
+            ],
+            "doi": "10.1609/aaai.v30i1.10427",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "28a4f88271ff8e0d008230676ac3ab9dac265871",
+            "title": "Structured Features in Naive Bayes Classification",
+            "url": "https://www.semanticscholar.org/paper/28a4f88271ff8e0d008230676ac3ab9dac265871",
+            "venue": "AAAI",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "34108618",
+                    "name": "Tahrima Rahman"
+                },
+                {
+                    "authorId": "143754991",
+                    "name": "Vibhav Gogate"
+                }
+            ],
+            "doi": "10.1609/aaai.v30i1.10428",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "350c5946763252d71d8b2cbef41055e9afb07c24",
+            "title": "Learning Ensembles of Cutset Networks",
+            "url": "https://www.semanticscholar.org/paper/350c5946763252d71d8b2cbef41055e9afb07c24",
+            "venue": "AAAI",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143721853",
+                    "name": "M. Mahajan"
+                },
+                {
+                    "authorId": "2481332",
+                    "name": "Nitin Saurabh"
+                },
+                {
+                    "authorId": "1775017",
+                    "name": "S\u00e9bastien Tavenas"
+                }
+            ],
+            "doi": "10.1016/j.ipl.2015.08.004",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "e660b29613464898c0dbc9f3d63de50e24485b55",
+            "title": "VNP=VP in the multilinear world",
+            "url": "https://www.semanticscholar.org/paper/e660b29613464898c0dbc9f3d63de50e24485b55",
+            "venue": "Inf. Process. Lett.",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "50701361",
+                    "name": "Marco Benjumeda"
+                },
+                {
+                    "authorId": "144999310",
+                    "name": "P. Larra\u00f1aga"
+                },
+                {
+                    "authorId": "1687365",
+                    "name": "C. Bielza"
+                }
+            ],
+            "doi": "10.1007/s13748-015-0070-0",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "debf56dface4bac0462fc41896612f39eb968a03",
+            "title": "Learning Bayesian networks with low inference complexity",
+            "url": "https://www.semanticscholar.org/paper/debf56dface4bac0462fc41896612f39eb968a03",
+            "venue": "Progress in Artificial Intelligence",
+            "year": 2016
+        },
+        {
+            "arxivId": "1601.06180",
+            "authors": [
+                {
+                    "authorId": "1809285",
+                    "name": "Robert Peharz"
+                },
+                {
+                    "authorId": "2929739",
+                    "name": "Robert Gens"
+                },
+                {
+                    "authorId": "1691836",
+                    "name": "F. Pernkopf"
+                },
+                {
+                    "authorId": "1740213",
+                    "name": "Pedro M. Domingos"
+                }
+            ],
+            "doi": "10.1109/TPAMI.2016.2618381",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "c4f37fa1258f6e45d690265f7e8590e0aa17273e",
+            "title": "On the Latent Variable Interpretation in Sum-Product Networks",
+            "url": "https://www.semanticscholar.org/paper/c4f37fa1258f6e45d690265f7e8590e0aa17273e",
+            "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+            "year": 2016
+        },
+        {
+            "arxivId": "1511.04412",
+            "authors": [
+                {
+                    "authorId": "2920384",
+                    "name": "Mazen Melibari"
+                },
+                {
+                    "authorId": "1807041",
+                    "name": "P. Poupart"
+                },
+                {
+                    "authorId": "1687438",
+                    "name": "Prashant Doshi"
+                },
+                {
+                    "authorId": "3327874",
+                    "name": "George Trimponias"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "eee73dd69fc472340859439cb778bc45d60d497a",
+            "title": "Dynamic Sum Product Networks for Tractable Inference on Sequence Data",
+            "url": "https://www.semanticscholar.org/paper/eee73dd69fc472340859439cb778bc45d60d497a",
+            "venue": "Probabilistic Graphical Models",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1735240",
+                    "name": "Jan Van Haaren"
+                },
+                {
+                    "authorId": "1749506",
+                    "name": "Guy Van den Broeck"
+                },
+                {
+                    "authorId": "1718583",
+                    "name": "Wannes Meert"
+                },
+                {
+                    "authorId": "152658362",
+                    "name": "Jesse Davis"
+                }
+            ],
+            "doi": "10.1007/s10994-015-5532-x",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "62bda5bb7d64234badebfd0eaf208e72d2c074c6",
+            "title": "Lifted generative learning of Markov logic networks",
+            "url": "https://www.semanticscholar.org/paper/62bda5bb7d64234badebfd0eaf208e72d2c074c6",
+            "venue": "Machine Learning",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1718594",
+                    "name": "Nicola Di Mauro"
+                },
+                {
+                    "authorId": "14341992",
+                    "name": "Antonio Vergari"
+                },
+                {
+                    "authorId": "1745663",
+                    "name": "T. Basile"
+                }
+            ],
+            "doi": "10.1007/978-3-319-25252-0_13",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "30ba1e45d9ffb5c869a27e08cdb06285a7b52fe9",
+            "title": "Learning Bayesian Random Cutset Forests",
+            "url": "https://www.semanticscholar.org/paper/30ba1e45d9ffb5c869a27e08cdb06285a7b52fe9",
+            "venue": "ISMIS",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1718594",
+                    "name": "Nicola Di Mauro"
+                },
+                {
+                    "authorId": "14341992",
+                    "name": "Antonio Vergari"
+                },
+                {
+                    "authorId": "1700821",
+                    "name": "F. Esposito"
+                }
+            ],
+            "doi": "10.1007/978-3-319-24309-2_17",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "fe4a76565e4ca8224107c9a160917e57768522fc",
+            "title": "Learning Accurate Cutset Networks by Exploiting Decomposability",
+            "url": "https://www.semanticscholar.org/paper/fe4a76565e4ca8224107c9a160917e57768522fc",
+            "venue": "AI*IA",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "35274675",
+                    "name": "Aaron W. Dennis"
+                },
+                {
+                    "authorId": "1777419",
+                    "name": "D. Ventura"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f399629cdc5f559c643acfbbf99073d211aaec87",
+            "title": "Greedy Structure Search for Sum-Product Networks",
+            "url": "https://www.semanticscholar.org/paper/f399629cdc5f559c643acfbbf99073d211aaec87",
+            "venue": "IJCAI",
+            "year": 2015
+        },
+        {
+            "arxivId": "1507.06554",
+            "authors": [
+                {
+                    "authorId": "2832063",
+                    "name": "B. Bogaerts"
+                },
+                {
+                    "authorId": "1749506",
+                    "name": "Guy Van den Broeck"
+                }
+            ],
+            "doi": "10.1017/S1471068415000162",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c876337b523f3a70222dcf60f7d26d9e60513a5d",
+            "title": "Knowledge compilation of logic programs using approximation fixpoint theory",
+            "url": "https://www.semanticscholar.org/paper/c876337b523f3a70222dcf60f7d26d9e60513a5d",
+            "venue": "Theory and Practice of Logic Programming",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "34894873",
+                    "name": "A. Nori"
+                },
+                {
+                    "authorId": "1955694",
+                    "name": "Sherjil Ozair"
+                },
+                {
+                    "authorId": "1685546",
+                    "name": "S. Rajamani"
+                },
+                {
+                    "authorId": "2541122",
+                    "name": "Deepak Vijaykeerthy"
+                }
+            ],
+            "doi": "10.1145/2737924.2737982",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "1dcea82f8aa23335d17e7f2d9f95f108d2cffbf4",
+            "title": "Efficient synthesis of probabilistic programs",
+            "url": "https://www.semanticscholar.org/paper/1dcea82f8aa23335d17e7f2d9f95f108d2cffbf4",
+            "venue": "PLDI",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "69571973",
+                    "name": "Marco Alberto Benjumeda Barquita"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "0b560c842609bbfe0e739606be969bf4a237183b",
+            "title": "Learning Bayesian networks from data by the incremental compilation of new network polynomials",
+            "url": "https://www.semanticscholar.org/paper/0b560c842609bbfe0e739606be969bf4a237183b",
+            "venue": "",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3046228",
+                    "name": "Aniruddh Nath"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "5ae87f543649690b8190ea6d9bdeb3754852eeee",
+            "title": "Learning and Exploiting Relational Structure for Efficient Inference",
+            "url": "https://www.semanticscholar.org/paper/5ae87f543649690b8190ea6d9bdeb3754852eeee",
+            "venue": "",
+            "year": 2015
+        },
+        {
+            "arxivId": "1504.00110",
+            "authors": [
+                {
+                    "authorId": "3021654",
+                    "name": "Daniel Lowd"
+                },
+                {
+                    "authorId": "2844347",
+                    "name": "Pedram Rooshenas"
+                }
+            ],
+            "doi": "10.5555/2789272.2912077",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "41810ab6128bef11fbd93acc227f9b835c387539",
+            "title": "The Libra toolkit for probabilistic models",
+            "url": "https://www.semanticscholar.org/paper/41810ab6128bef11fbd93acc227f9b835c387539",
+            "venue": "J. Mach. Learn. Res.",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3046228",
+                    "name": "Aniruddh Nath"
+                },
+                {
+                    "authorId": "1740213",
+                    "name": "Pedro M. Domingos"
+                }
+            ],
+            "doi": "10.1609/aaai.v29i1.9538",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "48f446986243a0973a5801398da063da3623326c",
+            "title": "Learning Relational Sum-Product Networks",
+            "url": "https://www.semanticscholar.org/paper/48f446986243a0973a5801398da063da3623326c",
+            "venue": "AAAI",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2844347",
+                    "name": "Pedram Rooshenas"
+                },
+                {
+                    "authorId": "3021654",
+                    "name": "Daniel Lowd"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8b1b05bae0091987b06ae8e595122a325dd4a783",
+            "title": "Learning Sum-Product Networks with Direct and Indirect Variable Interactions",
+            "url": "https://www.semanticscholar.org/paper/8b1b05bae0091987b06ae8e595122a325dd4a783",
+            "venue": "ICML",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1735240",
+                    "name": "Jan Van Haaren"
+                },
+                {
+                    "authorId": "1749506",
+                    "name": "Guy Van den Broeck"
+                },
+                {
+                    "authorId": "1718583",
+                    "name": "Wannes Meert"
+                },
+                {
+                    "authorId": "144815446",
+                    "name": "Jesse Davis"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "e82fae5f2de3c92553d1ce880a60fd8d2cc8d664",
+            "title": "Tractable learning of liftable Markov logic networks",
+            "url": "https://www.semanticscholar.org/paper/e82fae5f2de3c92553d1ce880a60fd8d2cc8d664",
+            "venue": "ICML 2014",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3249563",
+                    "name": "D. Kisa"
+                },
+                {
+                    "authorId": "1749506",
+                    "name": "Guy Van den Broeck"
+                },
+                {
+                    "authorId": "143680053",
+                    "name": "Arthur Choi"
+                },
+                {
+                    "authorId": "1700031",
+                    "name": "Adnan Darwiche"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "e5a58060915da4cf59b077c539a1e9b9f37ef43b",
+            "title": "Probabilistic Sentential Decision Diagrams",
+            "url": "https://www.semanticscholar.org/paper/e5a58060915da4cf59b077c539a1e9b9f37ef43b",
+            "venue": "KR",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1809285",
+                    "name": "Robert Peharz"
+                },
+                {
+                    "authorId": "2467009",
+                    "name": "G. Kapeller"
+                },
+                {
+                    "authorId": "2459773",
+                    "name": "Pejman Mowlaee Begzade Mahale"
+                },
+                {
+                    "authorId": "1691836",
+                    "name": "F. Pernkopf"
+                }
+            ],
+            "doi": "10.1109/ICASSP.2014.6854292",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "1eeeec8da26498101ed6b5c348a0585690f17ebd",
+            "title": "Modeling speech with sum-product networks: Application to bandwidth extension",
+            "url": "https://www.semanticscholar.org/paper/1eeeec8da26498101ed6b5c348a0585690f17ebd",
+            "venue": "2014 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1809285",
+                    "name": "Robert Peharz"
+                },
+                {
+                    "authorId": "1770820",
+                    "name": "B. Geiger"
+                },
+                {
+                    "authorId": "1691836",
+                    "name": "F. Pernkopf"
+                }
+            ],
+            "doi": "10.1007/978-3-642-40991-2_39",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "5cd34abb1e96e0c11f427364e40b1e87d6fc62c2",
+            "title": "Greedy Part-Wise Learning of Sum-Product Networks",
+            "url": "https://www.semanticscholar.org/paper/5cd34abb1e96e0c11f427364e40b1e87d6fc62c2",
+            "venue": "ECML/PKDD",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2929739",
+                    "name": "Robert Gens"
+                },
+                {
+                    "authorId": "1740213",
+                    "name": "Pedro M. Domingos"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "aa57ec2eef24f10d7e11a8a39a69d4e0a6cf095e",
+            "title": "Learning the Structure of Sum-Product Networks",
+            "url": "https://www.semanticscholar.org/paper/aa57ec2eef24f10d7e11a8a39a69d4e0a6cf095e",
+            "venue": "ICML",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3021654",
+                    "name": "Daniel Lowd"
+                },
+                {
+                    "authorId": "2844347",
+                    "name": "Pedram Rooshenas"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "90cce954a2420c01acc70e6028348989faccecf5",
+            "title": "Learning Markov Networks With Arithmetic Circuits",
+            "url": "https://www.semanticscholar.org/paper/90cce954a2420c01acc70e6028348989faccecf5",
+            "venue": "AISTATS",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145045101",
+                    "name": "U. Gupta"
+                },
+                {
+                    "authorId": "40615554",
+                    "name": "S. Srinivasan"
+                },
+                {
+                    "authorId": "2109948492",
+                    "name": "Sanjeev Sharma"
+                },
+                {
+                    "authorId": "143686063",
+                    "name": "R. Greiner"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "326298556abb265f195b2add1c6ab3d8aab6b62c",
+            "title": "Learning Markov Networks with Bounded Inference Complexity",
+            "url": "https://www.semanticscholar.org/paper/326298556abb265f195b2add1c6ab3d8aab6b62c",
+            "venue": "",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2067854159",
+                    "name": "Xu Miao"
+                },
+                {
+                    "authorId": "143615848",
+                    "name": "Rajesh P. N. Rao"
+                }
+            ],
+            "doi": "10.1007/s11263-011-0423-5",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "6ab1369c2ef9b721fcd7693cdb3b0f0558b96208",
+            "title": "Fast Structured Prediction Using Large Margin Sigmoid Belief Networks",
+            "url": "https://www.semanticscholar.org/paper/6ab1369c2ef9b721fcd7693cdb3b0f0558b96208",
+            "venue": "International Journal of Computer Vision",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145071799",
+                    "name": "Theodoros Rekatsinas"
+                },
+                {
+                    "authorId": "144520191",
+                    "name": "A. Deshpande"
+                },
+                {
+                    "authorId": "1746034",
+                    "name": "L. Getoor"
+                }
+            ],
+            "doi": "10.1145/2213836.2213879",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "735113cc134ba8f1b088257a19cd72c7074a4158",
+            "title": "Local structure and determinism in probabilistic databases",
+            "url": "https://www.semanticscholar.org/paper/735113cc134ba8f1b088257a19cd72c7074a4158",
+            "venue": "SIGMOD Conference",
+            "year": 2012
+        },
+        {
+            "arxivId": "1202.3732",
+            "authors": [
+                {
+                    "authorId": "1759772",
+                    "name": "Hoifung Poon"
+                },
+                {
+                    "authorId": "1740213",
+                    "name": "Pedro M. Domingos"
+                }
+            ],
+            "doi": "10.1109/ICCVW.2011.6130310",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d1b21442aa4a6af708d64082d61f6e63e1d4cdf1",
+            "title": "Sum-product networks: A new deep architecture",
+            "url": "https://www.semanticscholar.org/paper/d1b21442aa4a6af708d64082d61f6e63e1d4cdf1",
+            "venue": "2011 IEEE International Conference on Computer Vision Workshops (ICCV Workshops)",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143754991",
+                    "name": "Vibhav Gogate"
+                },
+                {
+                    "authorId": "153037716",
+                    "name": "W. Webb"
+                },
+                {
+                    "authorId": "1740213",
+                    "name": "Pedro M. Domingos"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "ba1204ee3de3364d810ceae473931341d97c72bc",
+            "title": "Learning Efficient Markov Networks",
+            "url": "https://www.semanticscholar.org/paper/ba1204ee3de3364d810ceae473931341d97c72bc",
+            "venue": "NIPS",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3021654",
+                    "name": "Daniel Lowd"
+                },
+                {
+                    "authorId": "1740213",
+                    "name": "Pedro M. Domingos"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "4f082f06d94c31359418fbd361d7bf8a973b36da",
+            "title": "Approximate Inference by Compilation to Arithmetic Circuits",
+            "url": "https://www.semanticscholar.org/paper/4f082f06d94c31359418fbd361d7bf8a973b36da",
+            "venue": "NIPS",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144815446",
+                    "name": "Jesse Davis"
+                },
+                {
+                    "authorId": "1740213",
+                    "name": "Pedro M. Domingos"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "06e506a71a6dc8b41a92f079795835b45632d052",
+            "title": "Bottom-Up Learning of Markov Network Structure",
+            "url": "https://www.semanticscholar.org/paper/06e506a71a6dc8b41a92f079795835b45632d052",
+            "venue": "ICML",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1759772",
+                    "name": "Hoifung Poon"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c5b0ed136d0b0fc175a2c3abde6d144bcf997229",
+            "title": "Markov Logic in Natural Language Processing: Theory, Algorithms, and Applications",
+            "url": "https://www.semanticscholar.org/paper/c5b0ed136d0b0fc175a2c3abde6d144bcf997229",
+            "venue": "NAACL",
+            "year": 2010
+        },
+        {
+            "arxivId": "1004.4960",
+            "authors": [
+                {
+                    "authorId": "1710207",
+                    "name": "P. Koiran"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "745fc0810e68f6705b21bd1c98090b8c955e11cf",
+            "title": "Shallow circuits with high-powered inputs",
+            "url": "https://www.semanticscholar.org/paper/745fc0810e68f6705b21bd1c98090b8c955e11cf",
+            "venue": "ICS",
+            "year": 2010
+        },
+        {
+            "arxivId": "1003.4781",
+            "authors": [
+                {
+                    "authorId": "2067854159",
+                    "name": "Xu Miao"
+                },
+                {
+                    "authorId": "143615848",
+                    "name": "Rajesh P. N. Rao"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "6b0f337e34f3e0f30b7039246096d8633a2109ad",
+            "title": "Large Margin Boltzmann Machines and Large Margin Sigmoid Belief Networks",
+            "url": "https://www.semanticscholar.org/paper/6b0f337e34f3e0f30b7039246096d8633a2109ad",
+            "venue": "ArXiv",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144590225",
+                    "name": "D. Roth"
+                },
+                {
+                    "authorId": "2276075",
+                    "name": "Rajhans Samdani"
+                }
+            ],
+            "doi": "10.1007/s10994-009-5130-x",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "a7473ee35725c38d58b49439bbbeecb6decdcb2e",
+            "title": "Learning multi-linear representations of distributions for\u00a0efficient inference",
+            "url": "https://www.semanticscholar.org/paper/a7473ee35725c38d58b49439bbbeecb6decdcb2e",
+            "venue": "Machine Learning",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1805894",
+                    "name": "Dafna Shahaf"
+                },
+                {
+                    "authorId": "1730156",
+                    "name": "Carlos Guestrin"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "e0003eec541dcaf197cb88cba81a3300ffa21648",
+            "title": "Learning Thin Junction Trees via Graph Cuts",
+            "url": "https://www.semanticscholar.org/paper/e0003eec541dcaf197cb88cba81a3300ffa21648",
+            "venue": "AISTATS",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2026975",
+                    "name": "E. Benkhelifa"
+                },
+                {
+                    "authorId": "3859511",
+                    "name": "A. Pipe"
+                },
+                {
+                    "authorId": "145587431",
+                    "name": "M. Nibouche"
+                },
+                {
+                    "authorId": "2823965",
+                    "name": "G. Dragffy"
+                }
+            ],
+            "doi": "10.1007/978-3-540-74626-3_17",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "e5b1177ee631ef356b6d774a25f5cd3587791381",
+            "title": "Steps Forward to Evolve Bio-inspired Embryonic Cell-Based Electronic Systems",
+            "url": "https://www.semanticscholar.org/paper/e5b1177ee631ef356b6d774a25f5cd3587791381",
+            "venue": "ICES",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2038526820",
+                    "name": "Hailiang Dong"
+                },
+                {
+                    "authorId": "12378994",
+                    "name": "James L Amato"
+                },
+                {
+                    "authorId": "143754991",
+                    "name": "Vibhav Gogate"
+                },
+                {
+                    "authorId": "2273098",
+                    "name": "Nicholas Ruozzi"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b21948f2f9b38d21973803a04f1500b86914f769",
+            "title": "A New Modeling Framework for Continuous, Sequential Domains",
+            "url": "https://www.semanticscholar.org/paper/b21948f2f9b38d21973803a04f1500b86914f769",
+            "venue": "AISTATS",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "32138862",
+                    "name": "Julissa Giuliana Villanueva Llerena"
+                }
+            ],
+            "doi": "10.11606/t.45.2023.tde-25092023-112802",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "175d2a7c51f1ffc0e0a8f115d8e96a750627ed92",
+            "title": "Qualitative global sensitivity analysis for probabilistic circuits",
+            "url": "https://www.semanticscholar.org/paper/175d2a7c51f1ffc0e0a8f115d8e96a750627ed92",
+            "venue": "",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2108914605",
+                    "name": "Shasha Jin"
+                },
+                {
+                    "authorId": "2187172474",
+                    "name": "Vasundhara Komaragiri"
+                },
+                {
+                    "authorId": "34108618",
+                    "name": "Tahrima Rahman"
+                },
+                {
+                    "authorId": "143754991",
+                    "name": "Vibhav Gogate"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "cf51398246f69224608e4d4cc67495cc3deedbd2",
+            "title": "Learning Tractable Probabilistic Models from Inconsistent Local Estimates",
+            "url": "https://www.semanticscholar.org/paper/cf51398246f69224608e4d4cc67495cc3deedbd2",
+            "venue": "NeurIPS",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "7634628",
+                    "name": "Laura Isabel Galindez Olascoaga"
+                },
+                {
+                    "authorId": "1718583",
+                    "name": "Wannes Meert"
+                },
+                {
+                    "authorId": "2065805434",
+                    "name": "Marian Verhelst"
+                }
+            ],
+            "doi": "10.1007/978-3-030-74042-9_5",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "0567ce56d409f84938ea9bb3a20c1c4226b3f0f6",
+            "title": "Hardware-Aware Probabilistic Circuits",
+            "url": "https://www.semanticscholar.org/paper/0567ce56d409f84938ea9bb3a20c1c4226b3f0f6",
+            "venue": "",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2122899462",
+                    "name": "Jonathan Feldstein"
+                },
+                {
+                    "authorId": "144893617",
+                    "name": "Vaishak Belle"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b27ffc336463d9c323e2274974c8d3311e8a0ef4",
+            "title": "Lifted reasoning meets weighted model integration",
+            "url": "https://www.semanticscholar.org/paper/b27ffc336463d9c323e2274974c8d3311e8a0ef4",
+            "venue": "UAI",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "31166181",
+                    "name": "Nandini Ramanan"
+                },
+                {
+                    "authorId": "50378124",
+                    "name": "M. Das"
+                },
+                {
+                    "authorId": "1746871",
+                    "name": "K. Kersting"
+                },
+                {
+                    "authorId": "145986014",
+                    "name": "Sriraam Natarajan"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "a798716079efdca5765269b6caca715cc3e92de1",
+            "title": "Discriminative Non-Parametric Learning of Arithmetic Circuits",
+            "url": "https://www.semanticscholar.org/paper/a798716079efdca5765269b6caca715cc3e92de1",
+            "venue": "PGM",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "50581319",
+                    "name": "Yizuo Chen"
+                },
+                {
+                    "authorId": "143680053",
+                    "name": "Arthur Choi"
+                },
+                {
+                    "authorId": "1700031",
+                    "name": "Adnan Darwiche"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "32d30aed9df5af3a2df5edb0cf2a40acce463f5d",
+            "title": "Supervised Learning with Background Knowledge",
+            "url": "https://www.semanticscholar.org/paper/32d30aed9df5af3a2df5edb0cf2a40acce463f5d",
+            "venue": "PGM",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "150190279",
+                    "name": "Lilith Mattei"
+                },
+                {
+                    "authorId": "39083552",
+                    "name": "D\u00e9cio Lauro Soares"
+                },
+                {
+                    "authorId": "34662081",
+                    "name": "Alessandro Antonucci"
+                },
+                {
+                    "authorId": "3358691",
+                    "name": "D. Mau\u00e1"
+                },
+                {
+                    "authorId": "38204724",
+                    "name": "Alessandro Facchini"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "ed03c429b6009e90785e87012fb2e78603aebbfc",
+            "title": "Exploring the Space of Probabilistic Sentential Decision Diagrams",
+            "url": "https://www.semanticscholar.org/paper/ed03c429b6009e90785e87012fb2e78603aebbfc",
+            "venue": "",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "34935264",
+                    "name": "Chiradeep Roy"
+                },
+                {
+                    "authorId": "1475340605",
+                    "name": "Mahesh Shanbhag"
+                },
+                {
+                    "authorId": "50165674",
+                    "name": "Mahsan Nourani"
+                },
+                {
+                    "authorId": "34108618",
+                    "name": "Tahrima Rahman"
+                },
+                {
+                    "authorId": "18123696",
+                    "name": "Samia Kabir"
+                },
+                {
+                    "authorId": "143754991",
+                    "name": "Vibhav Gogate"
+                },
+                {
+                    "authorId": "2273098",
+                    "name": "Nicholas Ruozzi"
+                },
+                {
+                    "authorId": "1777991",
+                    "name": "E. Ragan"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "49f9ce554c738aa125766b1e036f35d33bb61727",
+            "title": "Explainable Activity Recognition in Videos",
+            "url": "https://www.semanticscholar.org/paper/49f9ce554c738aa125766b1e036f35d33bb61727",
+            "venue": "IUI Workshops",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2054622689",
+                    "name": "Sun"
+                },
+                {
+                    "authorId": "2103192676",
+                    "name": "Rbow"
+                },
+                {
+                    "authorId": "94876619",
+                    "name": "Rain."
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5f55566b0d6ef5a1e60c2b7e762ffb5b4b274dc1",
+            "title": "Towards Compact Interpretable Models : Shrinking of Learned Probabilistic Sentential Decision Diagrams",
+            "url": "https://www.semanticscholar.org/paper/5f55566b0d6ef5a1e60c2b7e762ffb5b4b274dc1",
+            "venue": "",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2117688661",
+                    "name": "Yujia Shen"
+                },
+                {
+                    "authorId": "143680053",
+                    "name": "Arthur Choi"
+                },
+                {
+                    "authorId": "1700031",
+                    "name": "Adnan Darwiche"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "result"
+            ],
+            "isInfluential": false,
+            "paperId": "1ec5715763fe08e8deca704af6d6bab026765217",
+            "title": "A Tractable Probabilistic Model for Subset Selection",
+            "url": "https://www.semanticscholar.org/paper/1ec5715763fe08e8deca704af6d6bab026765217",
+            "venue": "UAI",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2397352",
+                    "name": "Yitao Liang"
+                },
+                {
+                    "authorId": "1749506",
+                    "name": "Guy Van den Broeck"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a2aeacb86bb62f334fc0e311a27086e26236cb7d",
+            "title": "Towards Compact Interpretable Models: Shrinking of Learned Probabilistic Sentential Decision Diagrams",
+            "url": "https://www.semanticscholar.org/paper/a2aeacb86bb62f334fc0e311a27086e26236cb7d",
+            "venue": "IJCAI 2017",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2310448736",
+                    "name": "Rupak Majumdar"
+                },
+                {
+                    "authorId": "1799286",
+                    "name": "Viktor Kun\u010dak"
+                }
+            ],
+            "doi": "10.1007/978-3-319-63387-9",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "9a0984ef2af07d04b891f39830d8692459b6799c",
+            "title": "Computer Aided Verification",
+            "url": "https://www.semanticscholar.org/paper/9a0984ef2af07d04b891f39830d8692459b6799c",
+            "venue": "Lecture Notes in Computer Science",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2117688661",
+                    "name": "Yujia Shen"
+                },
+                {
+                    "authorId": "143680053",
+                    "name": "Arthur Choi"
+                },
+                {
+                    "authorId": "1700031",
+                    "name": "Adnan Darwiche"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "0e00ac7fef3a898b285b0fb15b09ff48717f2b68",
+            "title": "Tractable Operations for Arithmetic Circuits of Probabilistic Models",
+            "url": "https://www.semanticscholar.org/paper/0e00ac7fef3a898b285b0fb15b09ff48717f2b68",
+            "venue": "NIPS",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "35274675",
+                    "name": "Aaron W. Dennis"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "68b317dd35740ccd42cbb73a8a0bc33951ba06e7",
+            "title": "Algorithms for Learning the Structure of Monotone and Nonmonotone Sum-Product Networks",
+            "url": "https://www.semanticscholar.org/paper/68b317dd35740ccd42cbb73a8a0bc33951ba06e7",
+            "venue": "",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2844347",
+                    "name": "Pedram Rooshenas"
+                },
+                {
+                    "authorId": "1399464585",
+                    "name": "Pedram"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "48c3cb0e17f48a5bb75fd7419365023a49c87584",
+            "title": "User Manual for Libra 1.1.2d",
+            "url": "https://www.semanticscholar.org/paper/48c3cb0e17f48a5bb75fd7419365023a49c87584",
+            "venue": "",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "69571973",
+                    "name": "Marco Alberto Benjumeda Barquita"
+                },
+                {
+                    "authorId": "52062561",
+                    "name": "P. M\u00fagica"
+                },
+                {
+                    "authorId": "52066251",
+                    "name": "M. Lozoya"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "db10db1faa75bca154f442d9fe26a942fb92af11",
+            "title": "Learning low inference complexity Bayesian networks",
+            "url": "https://www.semanticscholar.org/paper/db10db1faa75bca154f442d9fe26a942fb92af11",
+            "venue": "",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1809285",
+                    "name": "Robert Peharz"
+                },
+                {
+                    "authorId": "3302876",
+                    "name": "Sebastian Tschiatschek"
+                },
+                {
+                    "authorId": "1691836",
+                    "name": "F. Pernkopf"
+                },
+                {
+                    "authorId": "1740213",
+                    "name": "Pedro M. Domingos"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ea1af17f1ed13e163856827634bd363a36d01af0",
+            "title": "On Theoretical Properties of Sum-Product Networks",
+            "url": "https://www.semanticscholar.org/paper/ea1af17f1ed13e163856827634bd363a36d01af0",
+            "venue": "AISTATS",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1809285",
+                    "name": "Robert Peharz"
+                },
+                {
+                    "authorId": "2929739",
+                    "name": "Robert Gens"
+                },
+                {
+                    "authorId": "1740213",
+                    "name": "Pedro M. Domingos"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "6c466e4f2e2dddba9d51c24702f30f50a33d0735",
+            "title": "Learning Selective Sum-Product Networks",
+            "url": "https://www.semanticscholar.org/paper/6c466e4f2e2dddba9d51c24702f30f50a33d0735",
+            "venue": "",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3021654",
+                    "name": "Daniel Lowd"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "dc17dc543f73584d3f1d2adefbbd5fc713176825",
+            "title": "User Manual for Libra 1 . 0 . 1",
+            "url": "https://www.semanticscholar.org/paper/dc17dc543f73584d3f1d2adefbbd5fc713176825",
+            "venue": "",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3046228",
+                    "name": "Aniruddh Nath"
+                },
+                {
+                    "authorId": "1740213",
+                    "name": "Pedro M. Domingos"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "1e9f08eb9248e8c469430cc762179dcef4ae38ae",
+            "title": "Learning Tractable Statistical Relational Models",
+            "url": "https://www.semanticscholar.org/paper/1e9f08eb9248e8c469430cc762179dcef4ae38ae",
+            "venue": "StarAI@AAAI",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2844347",
+                    "name": "Pedram Rooshenas"
+                },
+                {
+                    "authorId": "3021654",
+                    "name": "Daniel Lowd"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7c4f0d180749f3a87ca3e37bab054af1fb79bf30",
+            "title": "Learning Tractable Graphical Models Using Mixture of Arithmetic Circuits",
+            "url": "https://www.semanticscholar.org/paper/7c4f0d180749f3a87ca3e37bab054af1fb79bf30",
+            "venue": "AAAI",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1730156",
+                    "name": "Carlos Guestrin"
+                },
+                {
+                    "authorId": "1798270",
+                    "name": "Joseph K. Bradley"
+                }
+            ],
+            "doi": "10.1184/r1/6720377.v1",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "66d4cdc25815a13bce525c2d4046de4104fcb412",
+            "title": "Learning Large-Scale Conditional Random Fields",
+            "url": "https://www.semanticscholar.org/paper/66d4cdc25815a13bce525c2d4046de4104fcb412",
+            "venue": "",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3021654",
+                    "name": "Daniel Lowd"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "e751cd2221df185417cb409409afd5122682fa92",
+            "title": "User Manual for Libra 0 . 5 . 0",
+            "url": "https://www.semanticscholar.org/paper/e751cd2221df185417cb409409afd5122682fa92",
+            "venue": "",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1730156",
+                    "name": "Carlos Guestrin"
+                },
+                {
+                    "authorId": "2523616",
+                    "name": "A. Chechetka"
+                }
+            ],
+            "doi": "10.1184/R1/6721238.V1",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "ab356e9560bff252904de8f6385ab0bfde8b8101",
+            "title": "Query-Specific Learning and Inference for Probabilistic Graphical Models",
+            "url": "https://www.semanticscholar.org/paper/ab356e9560bff252904de8f6385ab0bfde8b8101",
+            "venue": "",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "40549248",
+                    "name": "G. Bernstein"
+                },
+                {
+                    "authorId": "2054943038",
+                    "name": "M. Dixon"
+                },
+                {
+                    "authorId": "32051146",
+                    "name": "A. Levy"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "4eb89e5b5296e4fdc1041fbba1afe081577041f9",
+            "title": "Faster Real-Time Classification Using Compilation [ Final Report ]",
+            "url": "https://www.semanticscholar.org/paper/4eb89e5b5296e4fdc1041fbba1afe081577041f9",
+            "venue": "",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1722101",
+                    "name": "Justin Domke"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0c6d1f0ea492a9c58cdecbe1f846ccf8f95c19ed",
+            "title": "Tractable Learning and Inference in High-Treewidth Graphical Models",
+            "url": "https://www.semanticscholar.org/paper/0c6d1f0ea492a9c58cdecbe1f846ccf8f95c19ed",
+            "venue": "",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144130217",
+                    "name": "B. Tech"
+                },
+                {
+                    "authorId": "2073214865",
+                    "name": "Dan Roth"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "b66e55e40042dbdfb4a9819a975c16d3e9bfa925",
+            "title": "Learning Multi-linear Representations for Efficient Inference by Rajhans Samdani",
+            "url": "https://www.semanticscholar.org/paper/b66e55e40042dbdfb4a9819a975c16d3e9bfa925",
+            "venue": "",
+            "year": null
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "150190279",
+                    "name": "Lilith Mattei"
+                },
+                {
+                    "authorId": "34662081",
+                    "name": "Alessandro Antonucci"
+                },
+                {
+                    "authorId": "3358691",
+                    "name": "D. Mau\u00e1"
+                },
+                {
+                    "authorId": "38204724",
+                    "name": "Alessandro Facchini"
+                },
+                {
+                    "authorId": "32138862",
+                    "name": "Julissa Giuliana Villanueva Llerena"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "33909a44fa6d26883cac0e66e51822b91b501585",
+            "title": "International Journal of Approximate Reasoning",
+            "url": "https://www.semanticscholar.org/paper/33909a44fa6d26883cac0e66e51822b91b501585",
+            "venue": "",
+            "year": null
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "32138862",
+                    "name": "Julissa Giuliana Villanueva Llerena"
+                },
+                {
+                    "authorId": "3358691",
+                    "name": "D. Mau\u00e1"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "a9938ce242aed72bb272482bcf27cf842b87867c",
+            "title": "International Journal of Approximate Reasoning",
+            "url": "https://www.semanticscholar.org/paper/a9938ce242aed72bb272482bcf27cf842b87867c",
+            "venue": "",
+            "year": null
+        }
+    ],
+    "corpusId": 5745792,
+    "doi": null,
+    "fieldsOfStudy": [
+        "Computer Science",
+        "Mathematics"
+    ],
+    "influentialCitationCount": 7,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 110,
+    "numCiting": 22,
+    "paperId": "d2b7c1e04441be8714aecfd7a21c2806774d2099",
+    "references": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2523616",
+                    "name": "A. Chechetka"
+                },
+                {
+                    "authorId": "1730156",
+                    "name": "Carlos Guestrin"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "349fc422b88f00f00e54c60d871438fbf7400e5a",
+            "title": "Efficient Principled Learning of Thin Junction Trees",
+            "url": "https://www.semanticscholar.org/paper/349fc422b88f00f00e54c60d871438fbf7400e5a",
+            "venue": "NIPS",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2820860",
+                    "name": "R. Neapolitan"
+                }
+            ],
+            "doi": "10.1145/1327942.1327961",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d7cf0e940fe0d909c8c87450ee18f03450b2e208",
+            "title": "Learning Bayesian networks",
+            "url": "https://www.semanticscholar.org/paper/d7cf0e940fe0d909c8c87450ee18f03450b2e208",
+            "venue": "KDD '07",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2057536",
+                    "name": "M. Jaeger"
+                },
+                {
+                    "authorId": "7267342",
+                    "name": "J. Nielsen"
+                },
+                {
+                    "authorId": "1759936",
+                    "name": "T. Silander"
+                }
+            ],
+            "doi": "10.1016/j.ijar.2005.10.006",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "eb614dcc73bfc9d8cf5d690dd8dd932ed6520e03",
+            "title": "Learning probabilistic decision graphs",
+            "url": "https://www.semanticscholar.org/paper/eb614dcc73bfc9d8cf5d690dd8dd932ed6520e03",
+            "venue": "Int. J. Approx. Reason.",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3021654",
+                    "name": "Daniel Lowd"
+                },
+                {
+                    "authorId": "1740213",
+                    "name": "Pedro M. Domingos"
+                }
+            ],
+            "doi": "10.1145/1102351.1102418",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b2e5a7515d76675961462db97c70f4d2b592acd6",
+            "title": "Naive Bayes models for probability estimation",
+            "url": "https://www.semanticscholar.org/paper/b2e5a7515d76675961462db97c70f4d2b592acd6",
+            "venue": "ICML",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1740077",
+                    "name": "Geoff Hulten"
+                },
+                {
+                    "authorId": "1740213",
+                    "name": "Pedro M. Domingos"
+                }
+            ],
+            "doi": "10.1145/775047.775124",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "ef947b0e25257abe57e8e44c5cc2c5dc09cee22f",
+            "title": "Mining complex models from arbitrarily large databases in constant time",
+            "url": "https://www.semanticscholar.org/paper/ef947b0e25257abe57e8e44c5cc2c5dc09cee22f",
+            "venue": "KDD",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1726733",
+                    "name": "Ron Kohavi"
+                },
+                {
+                    "authorId": "1729374",
+                    "name": "C. Brodley"
+                },
+                {
+                    "authorId": "2289100",
+                    "name": "Brian Frasca"
+                },
+                {
+                    "authorId": "2586148",
+                    "name": "Llew Mason"
+                },
+                {
+                    "authorId": "49774164",
+                    "name": "Zijian Zheng"
+                }
+            ],
+            "doi": "10.1145/380995.381033",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "98abcb842709f2192b0d1020810ff0a0b5901b47",
+            "title": "KDD-Cup 2000 organizers' report: peeling the onion",
+            "url": "https://www.semanticscholar.org/paper/98abcb842709f2192b0d1020810ff0a0b5901b47",
+            "venue": "SKDD",
+            "year": 2000
+        },
+        {
+            "arxivId": "1301.3847",
+            "authors": [
+                {
+                    "authorId": "1700031",
+                    "name": "Adnan Darwiche"
+                }
+            ],
+            "doi": "10.1145/765568.765570",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "2da7c1872f2a18ae7187fe1b53ef62e727e3cf22",
+            "title": "A differential approach to inference in Bayesian networks",
+            "url": "https://www.semanticscholar.org/paper/2da7c1872f2a18ae7187fe1b53ef62e727e3cf22",
+            "venue": "JACM",
+            "year": 2000
+        },
+        {
+            "arxivId": "1302.1528",
+            "authors": [
+                {
+                    "authorId": "1724065",
+                    "name": "D. M. Chickering"
+                },
+                {
+                    "authorId": "48099028",
+                    "name": "D. Heckerman"
+                },
+                {
+                    "authorId": "50004012",
+                    "name": "Christopher Meek"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "9f7e689a465ac321ce607427d86dd17163c12bc4",
+            "title": "A Bayesian Approach to Learning Bayesian Networks with Local Structure",
+            "url": "https://www.semanticscholar.org/paper/9f7e689a465ac321ce607427d86dd17163c12bc4",
+            "venue": "UAI",
+            "year": 1997
+        },
+        {
+            "arxivId": "1302.3577",
+            "authors": [
+                {
+                    "authorId": "50785579",
+                    "name": "N. Friedman"
+                },
+                {
+                    "authorId": "1770007",
+                    "name": "M. Goldszmidt"
+                }
+            ],
+            "doi": "10.1007/978-94-011-5014-9_15",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "7c9e02656982419870ccc0b60d4c8b1a6e4b449d",
+            "title": "Learning Bayesian Networks with Local Structure",
+            "url": "https://www.semanticscholar.org/paper/7c9e02656982419870ccc0b60d4c8b1a6e4b449d",
+            "venue": "UAI",
+            "year": 1996
+        },
+        {
+            "arxivId": "1302.3562",
+            "authors": [
+                {
+                    "authorId": "145646162",
+                    "name": "Craig Boutilier"
+                },
+                {
+                    "authorId": "50785579",
+                    "name": "N. Friedman"
+                },
+                {
+                    "authorId": "1770007",
+                    "name": "M. Goldszmidt"
+                },
+                {
+                    "authorId": "1736370",
+                    "name": "D. Koller"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "5bdd9a3317b43966f97b5c70c55c46fd19335049",
+            "title": "Context-Specific Independence in Bayesian Networks",
+            "url": "https://www.semanticscholar.org/paper/5bdd9a3317b43966f97b5c70c55c46fd19335049",
+            "venue": "UAI",
+            "year": 1996
+        },
+        {
+            "arxivId": "1302.6815",
+            "authors": [
+                {
+                    "authorId": "48099028",
+                    "name": "D. Heckerman"
+                },
+                {
+                    "authorId": "144527211",
+                    "name": "D. Geiger"
+                },
+                {
+                    "authorId": "1724065",
+                    "name": "D. M. Chickering"
+                }
+            ],
+            "doi": "10.1007/BF00994016",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "206f12e0f963dff4dc4edc5c9cab985a5b9e5d71",
+            "title": "Learning Bayesian networks: The combination of knowledge and statistical data",
+            "url": "https://www.semanticscholar.org/paper/206f12e0f963dff4dc4edc5c9cab985a5b9e5d71",
+            "venue": "Machine Learning",
+            "year": 1994
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144590225",
+                    "name": "D. Roth"
+                }
+            ],
+            "doi": "10.1016/0004-3702(94)00092-1",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "937c3e93a15cc416af330f9fcbcf447f7ad77e1e",
+            "title": "On the Hardness of Approximate Reasoning",
+            "url": "https://www.semanticscholar.org/paper/937c3e93a15cc416af330f9fcbcf447f7ad77e1e",
+            "venue": "IJCAI",
+            "year": 1993
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1759366",
+                    "name": "S. Arnborg"
+                },
+                {
+                    "authorId": "1806664",
+                    "name": "D. Corneil"
+                },
+                {
+                    "authorId": "1753890",
+                    "name": "A. Proskurowski"
+                }
+            ],
+            "doi": "10.1137/0608024",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "656f4417b8651f472c6faa370823c307056ffa48",
+            "title": "Complexity of finding embeddings in a k -tree",
+            "url": "https://www.semanticscholar.org/paper/656f4417b8651f472c6faa370823c307056ffa48",
+            "venue": "",
+            "year": 1987
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1700031",
+                    "name": "Adnan Darwiche"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "5cb9bc0c4313ede68726648ff623f1006ecda001",
+            "title": "A Logical Approach to Factoring Belief Networks",
+            "url": "https://www.semanticscholar.org/paper/5cb9bc0c4313ede68726648ff623f1006ecda001",
+            "venue": "KR",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1706280",
+                    "name": "N. Srebro"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8310828ccec433f4c96a3dcc01bf7832de662d5a",
+            "title": "Maximum likelihood Markov networks : an algorithmic approach",
+            "url": "https://www.semanticscholar.org/paper/8310828ccec433f4c96a3dcc01bf7832de662d5a",
+            "venue": "",
+            "year": 2000
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2316129",
+                    "name": "M. Meil\u0103"
+                },
+                {
+                    "authorId": "1694621",
+                    "name": "Michael I. Jordan"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f5c6fb4aa053da7b394403f7f2d683e57de14bbd",
+            "title": "Learning with Mixtures of Trees",
+            "url": "https://www.semanticscholar.org/paper/f5c6fb4aa053da7b394403f7f2d683e57de14bbd",
+            "venue": "J. Mach. Learn. Res.",
+            "year": 2000
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145298005",
+                    "name": "Catherine Blake"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e068be31ded63600aea068eacd12931efd2a1029",
+            "title": "UCI Repository of machine learning databases",
+            "url": "https://www.semanticscholar.org/paper/e068be31ded63600aea068eacd12931efd2a1029",
+            "venue": "",
+            "year": 1998
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145392702",
+                    "name": "P. Green"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "3f1bb45d5d20c107daa9dbc489019cf22a3a6e6b",
+            "title": "Markov chain Monte Carlo in Practice",
+            "url": "https://www.semanticscholar.org/paper/3f1bb45d5d20c107daa9dbc489019cf22a3a6e6b",
+            "venue": "",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145430701",
+                    "name": "J. Pearl"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "1826df6f270cae70afacb5f6ae1d5175db903d5e",
+            "title": "Probabilistic reasoning in intelligent systems - networks of plausible inference",
+            "url": "https://www.semanticscholar.org/paper/1826df6f270cae70afacb5f6ae1d5175db903d5e",
+            "venue": "Morgan Kaufmann series in representation and reasoning",
+            "year": 1989
+        },
+        {
+            "arxivId": null,
+            "authors": [],
+            "doi": "10.1016/c2009-0-27609-4",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5bf6f01402e1648b7d1e6c9200ede6cb1af30123",
+            "title": "Probabilistic reasoning in intelligent systems",
+            "url": "https://www.semanticscholar.org/paper/5bf6f01402e1648b7d1e6c9200ede6cb1af30123",
+            "venue": "",
+            "year": 1988
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Mathematics",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        },
+        {
+            "category": "Mathematics",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Learning Arithmetic Circuits",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/d2b7c1e04441be8714aecfd7a21c2806774d2099",
+    "venue": "Conference on Uncertainty in Artificial Intelligence",
+    "year": 2008
+}

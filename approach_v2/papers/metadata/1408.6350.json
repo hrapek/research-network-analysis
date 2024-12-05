@@ -1,0 +1,1639 @@
+{
+    "abstract": "Social intelligence in natural and artificial systems is usually measured by the evaluation of associated traits or tasks that are deemed to represent some facets of social behaviour. The amalgamation of these traits is then used to configure the intuitive notion of social intelligence. Instead, in this paper we start from a parametrised definition of social intelligence as the expected performance in a set of environments with several agents, and we assess and derive tests from it. This definition makes several dependencies explicit: (1) the definition depends on the choice (and weight) of environments and agents, (2) the definition may include both competitive and cooperative behaviours depending on how agents and rewards are arranged into teams, (3) the definition mostly depends on the abilities of other agents, and (4) the actual difference between social intelligence and general intelligence (or other abilities) depends on these choices. As a result, we address the problem of converting this definition into a more precise one where some fundamental properties ensuring social behaviour (such as action and reward dependency and anticipation on competitive/cooperative behaviours) are met as well as some other more instrumental properties (such as secernment, boundedness, symmetry, validity, reliability, efficiency), which are convenient to convert the definition into a practical test. From the definition and the formalised properties, we take a look at several representative multi-agent environments, tests and games to see whether they meet these properties.",
+    "arxivId": "1408.6350",
+    "authors": [
+        {
+            "authorId": "1403897525",
+            "name": "Javier Insa-Cabrera",
+            "url": "https://www.semanticscholar.org/author/1403897525"
+        },
+        {
+            "authorId": "1398777358",
+            "name": "J. Hern\u00e1ndez-Orallo",
+            "url": "https://www.semanticscholar.org/author/1398777358"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": "2212.03184",
+            "authors": [
+                {
+                    "authorId": "144138377",
+                    "name": "D. Dobrev"
+                }
+            ],
+            "doi": "10.48550/arXiv.2212.03184",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d7bdb5e0bf8d26344b63ec0238c679de6035c6e1",
+            "title": "The AI Definition and a Program Which Satisfies this Definition",
+            "url": "https://www.semanticscholar.org/paper/d7bdb5e0bf8d26344b63ec0238c679de6035c6e1",
+            "venue": "ArXiv",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1398777358",
+                    "name": "J. Hern\u00e1ndez-Orallo"
+                }
+            ],
+            "doi": "10.1017/9781316594179",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "1c3c7dbf270efdab161a780d638be4631365e578",
+            "title": "The Measure of All Minds: Evaluating Natural and Artificial Intelligence",
+            "url": "https://www.semanticscholar.org/paper/1c3c7dbf270efdab161a780d638be4631365e578",
+            "venue": "",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2060631404",
+                    "name": "Yamakawa Hiroshi"
+                }
+            ],
+            "doi": "10.1007/978-3-319-21365-1",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "205eafdd989bf90109c2b912756372a60a7fd7af",
+            "title": "Artificial General Intelligence",
+            "url": "https://www.semanticscholar.org/paper/205eafdd989bf90109c2b912756372a60a7fd7af",
+            "venue": "Lecture Notes in Computer Science",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1403897525",
+                    "name": "Javier Insa-Cabrera"
+                },
+                {
+                    "authorId": "1398777358",
+                    "name": "J. Hern\u00e1ndez-Orallo"
+                }
+            ],
+            "doi": "10.1007/978-3-319-21365-1_11",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "078a2be4ecec7ae040876f7500e2b2cd5c042685",
+            "title": "Instrumental Properties of Social Testbeds",
+            "url": "https://www.semanticscholar.org/paper/078a2be4ecec7ae040876f7500e2b2cd5c042685",
+            "venue": "AGI",
+            "year": 2015
+        },
+        {
+            "arxivId": "1503.07587",
+            "authors": [
+                {
+                    "authorId": "1398777358",
+                    "name": "J. Hern\u00e1ndez-Orallo"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d6de24da0571b4889d632e926222261183508ce4",
+            "title": "Universal Psychometrics Tasks: difficulty, composition and decomposition",
+            "url": "https://www.semanticscholar.org/paper/d6de24da0571b4889d632e926222261183508ce4",
+            "venue": "ArXiv",
+            "year": 2015
+        },
+        {
+            "arxivId": "1412.8529",
+            "authors": [
+                {
+                    "authorId": "1398777358",
+                    "name": "J. Hern\u00e1ndez-Orallo"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "077cdaea162357eab8326206135fab9f2af13f25",
+            "title": "A note about the generalisation of the $C$-tests",
+            "url": "https://www.semanticscholar.org/paper/077cdaea162357eab8326206135fab9f2af13f25",
+            "venue": "ArXiv",
+            "year": 2014
+        },
+        {
+            "arxivId": "1408.6908",
+            "authors": [
+                {
+                    "authorId": "1398777358",
+                    "name": "J. Hern\u00e1ndez-Orallo"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "8f2d78fb9293eac038a6a431d23ca5a18df7bfb4",
+            "title": "AI Evaluation: past, present and future",
+            "url": "https://www.semanticscholar.org/paper/8f2d78fb9293eac038a6a431d23ca5a18df7bfb4",
+            "venue": "ArXiv",
+            "year": 2014
+        }
+    ],
+    "corpusId": 8271807,
+    "doi": null,
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 1,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 7,
+    "numCiting": 69,
+    "paperId": "5e446d1a3c1cf942a8f05d6edfe07168e9044d63",
+    "references": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1398777358",
+                    "name": "J. Hern\u00e1ndez-Orallo"
+                }
+            ],
+            "doi": "10.1007/s10458-014-9257-1",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "bef88d37cbf6727f6fa15393c0a5f27cd6be3d36",
+            "title": "On environment difficulty and discriminating power",
+            "url": "https://www.semanticscholar.org/paper/bef88d37cbf6727f6fa15393c0a5f27cd6be3d36",
+            "venue": "Autonomous Agents and Multi-Agent Systems",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1398777358",
+                    "name": "J. Hern\u00e1ndez-Orallo"
+                },
+                {
+                    "authorId": "1745871",
+                    "name": "D. Dowe"
+                },
+                {
+                    "authorId": "1403778175",
+                    "name": "M. Hern\u00e1ndez-Lloreda"
+                }
+            ],
+            "doi": "10.1016/j.cogsys.2013.06.001",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "51b04647c9b09d86cdd45f41844fa5b7587cbd00",
+            "title": "Universal psychometrics: Measuring cognitive abilities in the machine kingdom",
+            "url": "https://www.semanticscholar.org/paper/51b04647c9b09d86cdd45f41844fa5b7587cbd00",
+            "venue": "Cognitive Systems Research",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1745871",
+                    "name": "D. Dowe"
+                },
+                {
+                    "authorId": "1398777358",
+                    "name": "J. Hern\u00e1ndez-Orallo"
+                }
+            ],
+            "doi": "10.1177/1059712313500502",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f1d8035d102eaf92428d7444aa1aa7a50a27b93e",
+            "title": "How universal can an intelligence test be?",
+            "url": "https://www.semanticscholar.org/paper/f1d8035d102eaf92428d7444aa1aa7a50a27b93e",
+            "venue": "Adapt. Behav.",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "bb3ba81228e2f3927bc0370ae300dbd1b8a55414",
+            "title": "The arcade learning environment",
+            "url": "https://www.semanticscholar.org/paper/bb3ba81228e2f3927bc0370ae300dbd1b8a55414",
+            "venue": "",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2286785347",
+                    "name": "G. BellemareMarc"
+                },
+                {
+                    "authorId": "2286798043",
+                    "name": "NaddafYavar"
+                },
+                {
+                    "authorId": "2286781003",
+                    "name": "VenessJoel"
+                },
+                {
+                    "authorId": "2286776633",
+                    "name": "BowlingMichael"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "5f3b7d98ce1d818cbf17b7944ef3d40a824cf35b",
+            "title": "The arcade learning environment",
+            "url": "https://www.semanticscholar.org/paper/5f3b7d98ce1d818cbf17b7944ef3d40a824cf35b",
+            "venue": "",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1398777358",
+                    "name": "J. Hern\u00e1ndez-Orallo"
+                },
+                {
+                    "authorId": "1745871",
+                    "name": "D. Dowe"
+                }
+            ],
+            "doi": "10.1007/s11023-012-9299-6",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a86d900a20621d1b489e73c135760fea9a5823f8",
+            "title": "On Potential Cognitive Abilities in the Machine Kingdom",
+            "url": "https://www.semanticscholar.org/paper/a86d900a20621d1b489e73c135760fea9a5823f8",
+            "venue": "Minds and Machines",
+            "year": 2013
+        },
+        {
+            "arxivId": "1302.2056",
+            "authors": [
+                {
+                    "authorId": "1398777358",
+                    "name": "J. Hern\u00e1ndez-Orallo"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "759fb1823a3259c6b7301579aa56628b83d27341",
+            "title": "Complexity distribution of agent policies",
+            "url": "https://www.semanticscholar.org/paper/759fb1823a3259c6b7301579aa56628b83d27341",
+            "venue": "ArXiv",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1398777358",
+                    "name": "J. Hern\u00e1ndez-Orallo"
+                },
+                {
+                    "authorId": "1745871",
+                    "name": "D. Dowe"
+                }
+            ],
+            "doi": "10.1007/s11023-012-9299-6",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "de96f4d13b6f575652314464b5b3795db90108e9",
+            "title": "On Potential Cognitive Abilities in the Machine Kingdom",
+            "url": "https://www.semanticscholar.org/paper/de96f4d13b6f575652314464b5b3795db90108e9",
+            "venue": "Minds and Machines",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1403897525",
+                    "name": "Javier Insa-Cabrera"
+                },
+                {
+                    "authorId": "1403897616",
+                    "name": "Jose-Luis Benacloch-Ayuso"
+                },
+                {
+                    "authorId": "1398777358",
+                    "name": "J. Hern\u00e1ndez-Orallo"
+                }
+            ],
+            "doi": "10.1007/978-3-642-35506-6_14",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "442de10803d9b60dd0c1dd156d891e8e348bccfe",
+            "title": "On Measuring Social Intelligence: Experiments on Competition and Cooperation",
+            "url": "https://www.semanticscholar.org/paper/442de10803d9b60dd0c1dd156d891e8e348bccfe",
+            "venue": "AGI",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1398777358",
+                    "name": "J. Hern\u00e1ndez-Orallo"
+                },
+                {
+                    "authorId": "1403897525",
+                    "name": "Javier Insa-Cabrera"
+                },
+                {
+                    "authorId": "1745871",
+                    "name": "D. Dowe"
+                },
+                {
+                    "authorId": "39109261",
+                    "name": "B. Hibbard"
+                }
+            ],
+            "doi": "10.29007/9n7d",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "040707dc83f9b0b680ad6594cedd455e47bfb1b4",
+            "title": "Turing Tests with Turing Machines",
+            "url": "https://www.semanticscholar.org/paper/040707dc83f9b0b680ad6594cedd455e47bfb1b4",
+            "venue": "Turing-100",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "5558771",
+                    "name": "S. Shettleworth"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "685df1e563f564a04418291629d5c5e92cc0a730",
+            "title": "Fundamentals of Comparative Cognition",
+            "url": "https://www.semanticscholar.org/paper/685df1e563f564a04418291629d5c5e92cc0a730",
+            "venue": "",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1745871",
+                    "name": "D. Dowe"
+                },
+                {
+                    "authorId": "1398777358",
+                    "name": "J. Hern\u00e1ndez-Orallo"
+                }
+            ],
+            "doi": "10.1016/J.INTELL.2011.12.001",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0b174015283b9744f351795621d4b29c10df4aca",
+            "title": "IQ tests are not for machines, yet",
+            "url": "https://www.semanticscholar.org/paper/0b174015283b9744f351795621d4b29c10df4aca",
+            "venue": "",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1403897525",
+                    "name": "Javier Insa-Cabrera"
+                },
+                {
+                    "authorId": "1745871",
+                    "name": "D. Dowe"
+                },
+                {
+                    "authorId": "1398777358",
+                    "name": "J. Hern\u00e1ndez-Orallo"
+                }
+            ],
+            "doi": "10.1007/978-3-642-25274-7_1",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f659bf66b555ab47efe233fa05f9526834a553ad",
+            "title": "Evaluating a Reinforcement Learning Algorithm with a General Intelligence Test",
+            "url": "https://www.semanticscholar.org/paper/f659bf66b555ab47efe233fa05f9526834a553ad",
+            "venue": "CAEPIA",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "39109261",
+                    "name": "B. Hibbard"
+                }
+            ],
+            "doi": "10.1007/978-3-642-22887-2_34",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "3361aba22c8b7bea8578bce84afd681b55126a0d",
+            "title": "Measuring Agent Intelligence via Hierarchies of Environments",
+            "url": "https://www.semanticscholar.org/paper/3361aba22c8b7bea8578bce84afd681b55126a0d",
+            "venue": "AGI",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1745871",
+                    "name": "D. Dowe"
+                },
+                {
+                    "authorId": "1398777358",
+                    "name": "J. Hern\u00e1ndez-Orallo"
+                },
+                {
+                    "authorId": "40694456",
+                    "name": "P. K. Das"
+                }
+            ],
+            "doi": "10.1007/978-3-642-22887-2_21",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8ba0134885f907f5800ad26c891f605809fb00cc",
+            "title": "Compression and Intelligence: Social Environments and Communication",
+            "url": "https://www.semanticscholar.org/paper/8ba0134885f907f5800ad26c891f605809fb00cc",
+            "venue": "AGI",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1398777358",
+                    "name": "J. Hern\u00e1ndez-Orallo"
+                },
+                {
+                    "authorId": "1745871",
+                    "name": "D. Dowe"
+                },
+                {
+                    "authorId": "2230774178",
+                    "name": "Sergio Espa\u00f1a-Cubillo"
+                },
+                {
+                    "authorId": "2265544775",
+                    "name": "Victoria Hern\u00e1ndez-Lloreda"
+                },
+                {
+                    "authorId": "1403897525",
+                    "name": "Javier Insa-Cabrera"
+                }
+            ],
+            "doi": "10.1007/978-3-642-22887-2_9",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "1696b78422d4cbeca6cdf8f9c626e35a213a761a",
+            "title": "On More Realistic Environment Distributions for Defining, Evaluating and Developing Intelligence",
+            "url": "https://www.semanticscholar.org/paper/1696b78422d4cbeca6cdf8f9c626e35a213a761a",
+            "venue": "AGI",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1403897525",
+                    "name": "Javier Insa-Cabrera"
+                },
+                {
+                    "authorId": "1745871",
+                    "name": "D. Dowe"
+                },
+                {
+                    "authorId": "2230774178",
+                    "name": "Sergio Espa\u00f1a-Cubillo"
+                },
+                {
+                    "authorId": "1403778175",
+                    "name": "M. Hern\u00e1ndez-Lloreda"
+                },
+                {
+                    "authorId": "1398777358",
+                    "name": "J. Hern\u00e1ndez-Orallo"
+                }
+            ],
+            "doi": "10.1007/978-3-642-22887-2_13",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "6a5fb8e0586692ba683fe86e85377af370fc5050",
+            "title": "Comparing Humans and AI Agents",
+            "url": "https://www.semanticscholar.org/paper/6a5fb8e0586692ba683fe86e85377af370fc5050",
+            "venue": "AGI",
+            "year": 2011
+        },
+        {
+            "arxivId": "1102.1507",
+            "authors": [
+                {
+                    "authorId": "145291154",
+                    "name": "Paul L. Williams"
+                },
+                {
+                    "authorId": "1760775",
+                    "name": "R. Beer"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "bf95df77b1dde4416b7c59421a70f0688b161ec2",
+            "title": "Generalized Measures of Information Transfer",
+            "url": "https://www.semanticscholar.org/paper/bf95df77b1dde4416b7c59421a70f0688b161ec2",
+            "venue": "ArXiv",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1398777358",
+                    "name": "J. Hern\u00e1ndez-Orallo"
+                },
+                {
+                    "authorId": "1745871",
+                    "name": "D. Dowe"
+                }
+            ],
+            "doi": "10.1016/j.artint.2010.09.006",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "b7e9705edcc63654bc58b9dd620f2a5017f72e08",
+            "title": "Measuring universal intelligence: Towards an anytime intelligence test",
+            "url": "https://www.semanticscholar.org/paper/b7e9705edcc63654bc58b9dd620f2a5017f72e08",
+            "venue": "Artif. Intell.",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "47459445",
+                    "name": "E. Herrmann"
+                },
+                {
+                    "authorId": "1403778175",
+                    "name": "M. Hern\u00e1ndez-Lloreda"
+                },
+                {
+                    "authorId": "1945385",
+                    "name": "J. Call"
+                },
+                {
+                    "authorId": "2089166",
+                    "name": "Brian A. Hare"
+                },
+                {
+                    "authorId": "2534361",
+                    "name": "M. Tomasello"
+                }
+            ],
+            "doi": "10.1177/0956797609356511",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c4e3ea2e9ab46da3f4ee6a296d41022756ec0c3e",
+            "title": "The Structure of Individual Differences in the Cognitive Abilities of Children and Chimpanzees",
+            "url": "https://www.semanticscholar.org/paper/c4e3ea2e9ab46da3f4ee6a296d41022756ec0c3e",
+            "venue": "Psychological science",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144056327",
+                    "name": "J. Veness"
+                },
+                {
+                    "authorId": "34746380",
+                    "name": "K. S. Ng"
+                },
+                {
+                    "authorId": "144154444",
+                    "name": "Marcus Hutter"
+                },
+                {
+                    "authorId": "1742809",
+                    "name": "William T. B. Uther"
+                },
+                {
+                    "authorId": "145824029",
+                    "name": "David Silver"
+                }
+            ],
+            "doi": "10.1613/JAIR.3125",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "05f3b6736efa61909d871f8fe77bf2cea05e6917",
+            "title": "A Monte-Carlo AIXI Approximation",
+            "url": "https://www.semanticscholar.org/paper/05f3b6736efa61909d871f8fe77bf2cea05e6917",
+            "venue": "J. Artif. Intell. Res.",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1804314",
+                    "name": "I. Arel"
+                },
+                {
+                    "authorId": "112907736",
+                    "name": "Scott Livingston"
+                }
+            ],
+            "doi": "10.1109/MC.2009.67",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "687684749814cbe54672d3b53ea08df6c66382bb",
+            "title": "Beyond the Turing Test",
+            "url": "https://www.semanticscholar.org/paper/687684749814cbe54672d3b53ea08df6c66382bb",
+            "venue": "Computer",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2473552",
+                    "name": "Zhanna V. Zatuchna"
+                },
+                {
+                    "authorId": "35095340",
+                    "name": "A. Bagnall"
+                }
+            ],
+            "doi": "10.1177/1059712308099230",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0837518723a072d8398414fa79754127eddcae3a",
+            "title": "Learning Mazes with Aliasing States: An LCS Algorithm with Associative Perception",
+            "url": "https://www.semanticscholar.org/paper/0837518723a072d8398414fa79754127eddcae3a",
+            "venue": "Adapt. Behav.",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "39109261",
+                    "name": "B. Hibbard"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c6b7149d043cd8825e8cd1a1aaf3fedf09b84f6e",
+            "title": "Adversarial Sequence Prediction",
+            "url": "https://www.semanticscholar.org/paper/c6b7149d043cd8825e8cd1a1aaf3fedf09b84f6e",
+            "venue": "AGI",
+            "year": 2008
+        },
+        {
+            "arxivId": "0712.3329",
+            "authors": [
+                {
+                    "authorId": "34313265",
+                    "name": "S. Legg"
+                },
+                {
+                    "authorId": "144154444",
+                    "name": "Marcus Hutter"
+                }
+            ],
+            "doi": "10.1007/s11023-007-9079-x",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8e8ec502208f29ee9f78ded19226578e027ecd16",
+            "title": "Universal Intelligence: A Definition of Machine Intelligence",
+            "url": "https://www.semanticscholar.org/paper/8e8ec502208f29ee9f78ded19226578e027ecd16",
+            "venue": "Minds and Machines",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "92997860",
+                    "name": "D. Keil"
+                },
+                {
+                    "authorId": "27353259",
+                    "name": "Dina Q. Goldin"
+                }
+            ],
+            "doi": "10.1007/11678809_5",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b9e030c8cf18cd7dc9f2f25555467c7c068109e8",
+            "title": "Indirect Interaction in Environments for Multi-agent Systems",
+            "url": "https://www.semanticscholar.org/paper/b9e030c8cf18cd7dc9f2f25555467c7c068109e8",
+            "venue": "E4MAS",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2274623",
+                    "name": "K. Tuyls"
+                },
+                {
+                    "authorId": "144336828",
+                    "name": "A. Now\u00e9"
+                }
+            ],
+            "doi": "10.1002/9780470050118.ecse168",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ef33b0edda2ed1a451e8f40ca641cc73d1c7f7e3",
+            "title": "Introduction to game theory",
+            "url": "https://www.semanticscholar.org/paper/ef33b0edda2ed1a451e8f40ca641cc73d1c7f7e3",
+            "venue": "Wiley Encyclopedia of Computer Science and Engineering",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "34631399",
+                    "name": "E. H. \u00d8stergaard"
+                },
+                {
+                    "authorId": "1732493",
+                    "name": "G. Sukhatme"
+                },
+                {
+                    "authorId": "1742183",
+                    "name": "M. Matari\u0107"
+                }
+            ],
+            "doi": "10.1145/375735.375825",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "562a7e0e1b4c2aae7cfe6004c199ab08b5f1f0c0",
+            "title": "Emergent bucket brigading: a simple mechanisms for improving performance in multi-robot constrained-space foraging tasks",
+            "url": "https://www.semanticscholar.org/paper/562a7e0e1b4c2aae7cfe6004c199ab08b5f1f0c0",
+            "venue": "AGENTS '01",
+            "year": 2001
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1796536",
+                    "name": "Michael P. Wellman"
+                },
+                {
+                    "authorId": "1722857",
+                    "name": "Peter R. Wurman"
+                },
+                {
+                    "authorId": "2068767631",
+                    "name": "Kevin O'Malley"
+                },
+                {
+                    "authorId": "32288561",
+                    "name": "Roshan Bangera"
+                },
+                {
+                    "authorId": "2107905182",
+                    "name": "Shou-De Lin"
+                },
+                {
+                    "authorId": "34169881",
+                    "name": "Daniel M. Reeves"
+                },
+                {
+                    "authorId": "3045456",
+                    "name": "W. E. Walsh"
+                }
+            ],
+            "doi": "10.1109/4236.914647",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2a619b22ca5bc38981216d8d022ce834e9bede95",
+            "title": "Designing the Market Game for a Trading Agent Competition",
+            "url": "https://www.semanticscholar.org/paper/2a619b22ca5bc38981216d8d022ce834e9bede95",
+            "venue": "IEEE Internet Comput.",
+            "year": 2001
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1700215",
+                    "name": "J. Denzinger"
+                },
+                {
+                    "authorId": "3245141",
+                    "name": "M. Kordt"
+                }
+            ],
+            "doi": "10.1109/ICMAS.2000.858441",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2f93ff2bb910a6fe00da31409c82e16fd67f51d0",
+            "title": "Evolutionary online learning of cooperative behavior with situation-action pairs",
+            "url": "https://www.semanticscholar.org/paper/2f93ff2bb910a6fe00da31409c82e16fd67f51d0",
+            "venue": "Proceedings Fourth International Conference on MultiAgent Systems",
+            "year": 2000
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1692756",
+                    "name": "Byoung-Tak Zhang"
+                },
+                {
+                    "authorId": "2861731",
+                    "name": "Dong-Yeon Cho"
+                }
+            ],
+            "doi": "10.7551/mitpress/1110.003.0023",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "596869b7d88a19fb93848f95ab7a912c4e134e59",
+            "title": "Co-evolutionary fitness switching: learning complex collective behaviors using genetic programming",
+            "url": "https://www.semanticscholar.org/paper/596869b7d88a19fb93848f95ab7a912c4e134e59",
+            "venue": "",
+            "year": 1999
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "87467930",
+                    "name": "M. Mckinney"
+                },
+                {
+                    "authorId": "49046044",
+                    "name": "R. Schoch"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "306e83e26c0f9d5ef84dd88e88b436f1c91c5390",
+            "title": "Environmental Science: Systems and Solutions",
+            "url": "https://www.semanticscholar.org/paper/306e83e26c0f9d5ef84dd88e88b436f1c91c5390",
+            "venue": "",
+            "year": 1997
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "26645311",
+                    "name": "H. Kitano"
+                },
+                {
+                    "authorId": "144657032",
+                    "name": "M. Asada"
+                },
+                {
+                    "authorId": "1744602",
+                    "name": "Y. Kuniyoshi"
+                },
+                {
+                    "authorId": "35193947",
+                    "name": "I. Noda"
+                },
+                {
+                    "authorId": "35170332",
+                    "name": "Eiichi Osawa"
+                }
+            ],
+            "doi": "10.1145/267658.267738",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "55ab2b325da10b4d46b69a7673e32823a9706a32",
+            "title": "RoboCup: The Robot World Cup Initiative",
+            "url": "https://www.semanticscholar.org/paper/55ab2b325da10b4d46b69a7673e32823a9706a32",
+            "venue": "AGENTS '97",
+            "year": 1997
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2783939",
+                    "name": "D. Fudenberg"
+                },
+                {
+                    "authorId": "2244928288",
+                    "name": "J\u00f6rgen W. Weibull"
+                }
+            ],
+            "doi": "10.2307/3440739",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "8d8f92271f0ffccd3b161b243d0324f7e801c017",
+            "title": "Evolutionary Game Theory",
+            "url": "https://www.semanticscholar.org/paper/8d8f92271f0ffccd3b161b243d0324f7e801c017",
+            "venue": "",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145134535",
+                    "name": "S. Sen"
+                },
+                {
+                    "authorId": "8263568",
+                    "name": "Mahendra Sekaran"
+                },
+                {
+                    "authorId": "145562084",
+                    "name": "John Hale"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "add2e65674285d50a795c64aba915fe0c5ed3359",
+            "title": "Learning to Coordinate without Sharing Information",
+            "url": "https://www.semanticscholar.org/paper/add2e65674285d50a795c64aba915fe0c5ed3359",
+            "venue": "AAAI",
+            "year": 1994
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145044563",
+                    "name": "B. Pell"
+                }
+            ],
+            "doi": "10.1111/j.1467-8640.1996.tb00258.x",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2cc35f167ed11372180b6013efa305deb722448a",
+            "title": "A STRATEGIC METAGAME PLAYER FOR GENERAL CHESS\u2010LIKE GAMES",
+            "url": "https://www.semanticscholar.org/paper/2cc35f167ed11372180b6013efa305deb722448a",
+            "venue": "Comput. Intell.",
+            "year": 1994
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1682199",
+                    "name": "Y. O. Hamidoune"
+                }
+            ],
+            "doi": "10.1016/S0195-6698(87)80034-3",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "3dd4dedecd237f64def061d6258720091c8bfdc2",
+            "title": "On a Pursuit Game on Cayley Digraphs",
+            "url": "https://www.semanticscholar.org/paper/3dd4dedecd237f64def061d6258720091c8bfdc2",
+            "venue": "Eur. J. Comb.",
+            "year": 1987
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2323505284",
+                    "name": "Arthur Lerner"
+                }
+            ],
+            "doi": "10.1176/ajp.115.9.852",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0ce4d435e68fdb6ba3c99cd181b64b828711c69c",
+            "title": "The Measurement and Appraisal of Adult Intelligence",
+            "url": "https://www.semanticscholar.org/paper/0ce4d435e68fdb6ba3c99cd181b64b828711c69c",
+            "venue": "",
+            "year": 1959
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "75061874",
+                    "name": "P. Vernon"
+                }
+            ],
+            "doi": "10.1080/00224545.1933.9921556",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "efc3664c5a61a4ff772e0b1e7e16428a78bab3c3",
+            "title": "Some Characteristics of the Good Judge of Personality",
+            "url": "https://www.semanticscholar.org/paper/efc3664c5a61a4ff772e0b1e7e16428a78bab3c3",
+            "venue": "",
+            "year": 1933
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "73000554",
+                    "name": "F. Moss"
+                },
+                {
+                    "authorId": "71505138",
+                    "name": "T. Hunt"
+                }
+            ],
+            "doi": "10.1038/SCIENTIFICAMERICAN0827-108",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0b29aa6d487ea0f020503b379f9339e56d0cf027",
+            "title": "Are you socially intelligent",
+            "url": "https://www.semanticscholar.org/paper/0b29aa6d487ea0f020503b379f9339e56d0cf027",
+            "venue": "",
+            "year": 1927
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1403897525",
+                    "name": "Javier Insa-Cabrera"
+                },
+                {
+                    "authorId": "1398777358",
+                    "name": "J. Hern\u00e1ndez-Orallo"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "6240704421744a6f2f835daa85b13b528c7200e8",
+            "title": "Interaction settings for measuring ( social ) intelligence in multi-agent systems",
+            "url": "https://www.semanticscholar.org/paper/6240704421744a6f2f835daa85b13b528c7200e8",
+            "venue": "",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1398777358",
+                    "name": "J. Hern\u00e1ndez-Orallo"
+                },
+                {
+                    "authorId": "1403897525",
+                    "name": "Javier Insa-Cabrera"
+                },
+                {
+                    "authorId": "1745871",
+                    "name": "D. Dowe"
+                },
+                {
+                    "authorId": "39109261",
+                    "name": "B. Hibbard"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e7b6747644aab8402df146a46e47434d9dfc2392",
+            "title": "Turing machines and recursive Turing Tests",
+            "url": "https://www.semanticscholar.org/paper/e7b6747644aab8402df146a46e47434d9dfc2392",
+            "venue": "",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1745871",
+                    "name": "D. Dowe"
+                },
+                {
+                    "authorId": "1398777358",
+                    "name": "J. Hern\u00e1ndez-Orallo"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "88946a5ccd3f1b9cc57095e649cb356ede8bbb2a",
+            "title": "On interaction complexity , ( space-time ) resolution and intelligence",
+            "url": "https://www.semanticscholar.org/paper/88946a5ccd3f1b9cc57095e649cb356ede8bbb2a",
+            "venue": "",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1398777358",
+                    "name": "J. Hern\u00e1ndez-Orallo"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "f2da9d667bc4a405714d031adc9d601feb0194c8",
+            "title": "On the Computational Measurement of Intelligence Factors",
+            "url": "https://www.semanticscholar.org/paper/f2da9d667bc4a405714d031adc9d601feb0194c8",
+            "venue": "",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2364174",
+                    "name": "E. Wasserman"
+                },
+                {
+                    "authorId": "2694781",
+                    "name": "T. Zentall"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "13c6668c3c3d3a2b626c9c18ab95c54b9a5c54c6",
+            "title": "Comparative cognition : experimental explorations of animal intelligence",
+            "url": "https://www.semanticscholar.org/paper/13c6668c3c3d3a2b626c9c18ab95c54b9a5c54c6",
+            "venue": "",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "47459445",
+                    "name": "E. Herrmann"
+                },
+                {
+                    "authorId": "1945385",
+                    "name": "J. Call"
+                },
+                {
+                    "authorId": "1403778175",
+                    "name": "M. Hern\u00e1ndez-Lloreda"
+                },
+                {
+                    "authorId": "2089166",
+                    "name": "Brian A. Hare"
+                },
+                {
+                    "authorId": "2534361",
+                    "name": "M. Tomasello"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "027ddd0e241d35ae0e25f7ba83a1b2c98d039ccb",
+            "title": "Cognition : The Cultural Intelligence Hypothesis Humans Have Evolved Specialized Skills of Social",
+            "url": "https://www.semanticscholar.org/paper/027ddd0e241d35ae0e25f7ba83a1b2c98d039ccb",
+            "venue": "",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1701353",
+                    "name": "Y. Shoham"
+                },
+                {
+                    "authorId": "2066411743",
+                    "name": "Kevin Leyton-Brown"
+                }
+            ],
+            "doi": "10.1017/CBO9780511811654.004",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "1e0b9ff76e78eb97bb518b6193eb89783260ced5",
+            "title": "Multiagent Systems: Introduction to Noncooperative Game Theory: Games in Normal Form",
+            "url": "https://www.semanticscholar.org/paper/1e0b9ff76e78eb97bb518b6193eb89783260ced5",
+            "venue": "",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "36589297",
+                    "name": "M. Gallagher"
+                },
+                {
+                    "authorId": "2226887662",
+                    "name": "Amanda Ryan"
+                }
+            ],
+            "doi": "10.1109/CEC.2003.1299397",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "ce330019e1d1628344fac7d51cd8fceb8c092fe9",
+            "title": "Learning to play Pac-Man: an evolutionary, rule-based approach",
+            "url": "https://www.semanticscholar.org/paper/ce330019e1d1628344fac7d51cd8fceb8c092fe9",
+            "venue": "The 2003 Congress on Evolutionary Computation, 2003. CEC '03.",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144745483",
+                    "name": "Ming Tan"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b3fc56876ad1cdf35ad4af13b991bbb24d219bd9",
+            "title": "Multi Agent Reinforcement Learning Independent vs Cooperative Agents",
+            "url": "https://www.semanticscholar.org/paper/b3fc56876ad1cdf35ad4af13b991bbb24d219bd9",
+            "venue": "",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "39261667",
+                    "name": "Darse Billings"
+                }
+            ],
+            "doi": "10.3233/ICG-2000-23110",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "4bb929ab0d6c7a3cb0d39e2131115e63311510ad",
+            "title": "The First International RoShamBo Programming Competition",
+            "url": "https://www.semanticscholar.org/paper/4bb929ab0d6c7a3cb0d39e2131115e63311510ad",
+            "venue": "J. Int. Comput. Games Assoc.",
+            "year": 2000
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1700215",
+                    "name": "J. Denzinger"
+                },
+                {
+                    "authorId": "38615229",
+                    "name": "M. Fuchs"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "4d6a8622bc2b6f7d92025a74016bd71019b179af",
+            "title": "Experiments in learning prototypical situations for variants of the pursuit game",
+            "url": "https://www.semanticscholar.org/paper/4d6a8622bc2b6f7d92025a74016bd71019b179af",
+            "venue": "",
+            "year": 1999
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1745871",
+                    "name": "D. Dowe"
+                },
+                {
+                    "authorId": "145033113",
+                    "name": "A. H\u00e1jek"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "43965c9aebd0f2ef450069ccf3d41d818cd1583f",
+            "title": "A Non-Behavioural, Computational Extension to the Turing Test",
+            "url": "https://www.semanticscholar.org/paper/43965c9aebd0f2ef450069ccf3d41d818cd1583f",
+            "venue": "",
+            "year": 1998
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "5558771",
+                    "name": "S. Shettleworth"
+                }
+            ],
+            "doi": "10.5860/choice.47-5652",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7d64b49dc576af5adb916c24a2bd19f74f83d5dd",
+            "title": "Cognition, evolution, and behavior",
+            "url": "https://www.semanticscholar.org/paper/7d64b49dc576af5adb916c24a2bd19f74f83d5dd",
+            "venue": "",
+            "year": 1998
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2238176724",
+                    "name": "R. S. Sutton"
+                },
+                {
+                    "authorId": "1730590",
+                    "name": "A. Barto"
+                }
+            ],
+            "doi": "10.1109/TNN.1998.712192",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "97efafdb4a3942ab3efba53ded7413199f79c054",
+            "title": "Reinforcement Learning: An Introduction",
+            "url": "https://www.semanticscholar.org/paper/97efafdb4a3942ab3efba53ded7413199f79c054",
+            "venue": "IEEE Trans. Neural Networks",
+            "year": 1998
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2267735507",
+                    "name": "Robert J. Aumann"
+                }
+            ],
+            "doi": "10.1007/978-94-017-1656-7_6",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "d9d76c5f50168357346247260e9df7a4380b6bc0",
+            "title": "The Shapley Value",
+            "url": "https://www.semanticscholar.org/paper/d9d76c5f50168357346247260e9df7a4380b6bc0",
+            "venue": "",
+            "year": 1994
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "80314940",
+                    "name": "W. Poundstone"
+                },
+                {
+                    "authorId": "2245572039",
+                    "name": "John von Neumann"
+                }
+            ],
+            "doi": "10.4135/9781412972017.n201",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "e6434924749c5bc9cfba4bc4d051f7f55271c858",
+            "title": "Prisoner's Dilemma",
+            "url": "https://www.semanticscholar.org/paper/e6434924749c5bc9cfba4bc4d051f7f55271c858",
+            "venue": "",
+            "year": 1993
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "34713651",
+                    "name": "R. Myerson"
+                }
+            ],
+            "doi": "10.5860/choice.29-2753",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "abefbc10a46043bd64339efb576231ffc9f8c8d5",
+            "title": "Game theory - Analysis of Conflict",
+            "url": "https://www.semanticscholar.org/paper/abefbc10a46043bd64339efb576231ffc9f8c8d5",
+            "venue": "",
+            "year": 1991
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1678770",
+                    "name": "P. Frankl"
+                }
+            ],
+            "doi": "10.1007/BF02579201",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "cdeec1b77c5b6f4c2c30b39093717ece83cd18e9",
+            "title": "On a pursuit game on cayley graphs",
+            "url": "https://www.semanticscholar.org/paper/cdeec1b77c5b6f4c2c30b39093717ece83cd18e9",
+            "venue": "Comb.",
+            "year": 1987
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "123309478",
+                    "name": "M. Benda"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "c3250315567b52c3a300bde8e7183dadd720bf25",
+            "title": "On Optimal Cooperation of Knowledge Sources",
+            "url": "https://www.semanticscholar.org/paper/c3250315567b52c3a300bde8e7183dadd720bf25",
+            "venue": "",
+            "year": 1985
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "117965395",
+                    "name": "A. Elo"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "9f414c81159b5e8296a267d5ae95a5bf464061d1",
+            "title": "The rating of chessplayers, past and present",
+            "url": "https://www.semanticscholar.org/paper/9f414c81159b5e8296a267d5ae95a5bf464061d1",
+            "venue": "",
+            "year": 1978
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "5883542",
+                    "name": "E. Thorndike"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "241211e1305132600b847bc7b68dada1a9da878e",
+            "title": "Intelligence and its uses.",
+            "url": "https://www.semanticscholar.org/paper/241211e1305132600b847bc7b68dada1a9da878e",
+            "venue": "",
+            "year": 1920
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Definition and properties to assess multi-agent environments as social intelligence tests",
+    "topics": [
+        {
+            "topic": "Artificial intelligence",
+            "topicId": "8286",
+            "url": "https://www.semanticscholar.org/topic/8286"
+        },
+        {
+            "topic": "Multi-agent system",
+            "topicId": "3830",
+            "url": "https://www.semanticscholar.org/topic/3830"
+        }
+    ],
+    "url": "https://www.semanticscholar.org/paper/5e446d1a3c1cf942a8f05d6edfe07168e9044d63",
+    "venue": "arXiv.org",
+    "year": 2014
+}

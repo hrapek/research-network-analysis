@@ -1,0 +1,936 @@
+{
+    "abstract": "In this paper we present three different architectures for the evaluation of influence diagrams: HUGIN, Shafer-Shenoy (S-S), and Lazy Propagation (LP). HUGIN and LP are two new architectures introduced in this paper. The computational complexity using the three architectures are compared on the same structure, the Limited Memory Influence Diagram (LIMID), where only the requisite information for the computation of optimal policies is depicted. Because the requisite information is explicitly represented in the diagram, the evaluation procedure can take advantage of it. Previously, it has been shown that significant savings in computational time can be obtained by performing the calculation on the LIMID rather than on the traditional influence diagram. In this paper we show how the obtained savings is considerably increased when the computations are performed according to the LP scheme.",
+    "arxivId": "1301.2291",
+    "authors": [
+        {
+            "authorId": "144880939",
+            "name": "A. Madsen",
+            "url": "https://www.semanticscholar.org/author/144880939"
+        },
+        {
+            "authorId": "145822173",
+            "name": "D. Nilsson",
+            "url": "https://www.semanticscholar.org/author/145822173"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144880939",
+                    "name": "A. Madsen"
+                },
+                {
+                    "authorId": "9268480",
+                    "name": "C. Butz"
+                },
+                {
+                    "authorId": "2010503",
+                    "name": "Jhonatan de S. Oliveira"
+                },
+                {
+                    "authorId": "145435942",
+                    "name": "A. E. D. Santos"
+                }
+            ],
+            "doi": "10.1007/978-3-030-18305-9_6",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "cd8ff05256380cc5a349e6d85475e2cd5c829a2a",
+            "title": "Solving Influence Diagrams with Simple Propagation",
+            "url": "https://www.semanticscholar.org/paper/cd8ff05256380cc5a349e6d85475e2cd5c829a2a",
+            "venue": "Canadian Conference on AI",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2578106",
+                    "name": "B. Yet"
+                },
+                {
+                    "authorId": "145358005",
+                    "name": "M. Neil"
+                },
+                {
+                    "authorId": "1685349",
+                    "name": "N. Fenton"
+                },
+                {
+                    "authorId": "1868351",
+                    "name": "A. Constantinou"
+                },
+                {
+                    "authorId": "3445142",
+                    "name": "Eugene Dementiev"
+                }
+            ],
+            "doi": "10.1016/j.ijar.2018.01.006",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "05c5e13f00ad2127eb5ce632c76ce7593eeefc4b",
+            "title": "An improved method for solving Hybrid Influence Diagrams",
+            "url": "https://www.semanticscholar.org/paper/05c5e13f00ad2127eb5ce632c76ce7593eeefc4b",
+            "venue": "Int. J. Approx. Reason.",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3358691",
+                    "name": "D. Mau\u00e1"
+                }
+            ],
+            "doi": "10.1007/978-3-319-11433-0_21",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "69ac658a3d66035cebe5de9903b8d087fff1a423",
+            "title": "Equivalences between maximum a posteriori inference in Bayesian networks and maximum expected utility computation in influence diagrams",
+            "url": "https://www.semanticscholar.org/paper/69ac658a3d66035cebe5de9903b8d087fff1a423",
+            "venue": "Int. J. Approx. Reason.",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "49767146",
+                    "name": "E. J\u00f8rgensen"
+                },
+                {
+                    "authorId": "1982018",
+                    "name": "A. Kristensen"
+                },
+                {
+                    "authorId": "145822173",
+                    "name": "D. Nilsson"
+                }
+            ],
+            "doi": "10.1007/S10479-012-1220-4",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "13ede579728893a11ba87a2e7967cff4690f4ee6",
+            "title": "Markov Limid processes for representing and solving renewal problems",
+            "url": "https://www.semanticscholar.org/paper/13ede579728893a11ba87a2e7967cff4690f4ee6",
+            "venue": "Ann. Oper. Res.",
+            "year": 2014
+        },
+        {
+            "arxivId": "1309.6839",
+            "authors": [
+                {
+                    "authorId": "2827129",
+                    "name": "Arindam Khaled"
+                },
+                {
+                    "authorId": "39853177",
+                    "name": "Changhe Yuan"
+                },
+                {
+                    "authorId": "1697031",
+                    "name": "E. Hansen"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "08a5794b613c51a33037066c66e73f67716a7f87",
+            "title": "Solving Limited Memory Influence Diagrams Using Branch-and-Bound Search",
+            "url": "https://www.semanticscholar.org/paper/08a5794b613c51a33037066c66e73f67716a7f87",
+            "venue": "ISAIM",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2108036332",
+                    "name": "Y. Zhang"
+                }
+            ],
+            "doi": "10.4028/www.scientific.net/AMM.380-384.1354",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "8d27ad69cd9da0ac2fe4fc1abc32994a1bca7ac6",
+            "title": "Study on the Influence IDs Model of the Structure and the Behavior Choice",
+            "url": "https://www.semanticscholar.org/paper/8d27ad69cd9da0ac2fe4fc1abc32994a1bca7ac6",
+            "venue": "",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "35191477",
+                    "name": "F. V. Jensen"
+                },
+                {
+                    "authorId": "145830646",
+                    "name": "Thomas D. Nielsen"
+                }
+            ],
+            "doi": "10.1007/s10479-012-1263-6",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "4cd6ac31c343e644b9c1e880c22ff400fe8792de",
+            "title": "Probabilistic decision graphs for optimization under uncertainty",
+            "url": "https://www.semanticscholar.org/paper/4cd6ac31c343e644b9c1e880c22ff400fe8792de",
+            "venue": "Annals of Operations Research",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "49767146",
+                    "name": "E. J\u00f8rgensen"
+                },
+                {
+                    "authorId": "1982018",
+                    "name": "A. Kristensen"
+                },
+                {
+                    "authorId": "145822173",
+                    "name": "D. Nilsson"
+                }
+            ],
+            "doi": "10.1007/s10479-012-1220-4",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "604904003ca31e070f41133110f50c4b47691a7d",
+            "title": "Markov Limid processes for representing and solving renewal problems",
+            "url": "https://www.semanticscholar.org/paper/604904003ca31e070f41133110f50c4b47691a7d",
+            "venue": "Annals of Operations Research",
+            "year": 2012
+        },
+        {
+            "arxivId": "1210.4897",
+            "authors": [
+                {
+                    "authorId": "47362268",
+                    "name": "Qiang Liu"
+                },
+                {
+                    "authorId": "1740137",
+                    "name": "A. Ihler"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f78f5f2d9e360b98f9133dde0f27650eccc6ea55",
+            "title": "Belief Propagation for Structured Decision Making",
+            "url": "https://www.semanticscholar.org/paper/f78f5f2d9e360b98f9133dde0f27650eccc6ea55",
+            "venue": "UAI",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "35191477",
+                    "name": "F. V. Jensen"
+                },
+                {
+                    "authorId": "145830646",
+                    "name": "Thomas D. Nielsen"
+                }
+            ],
+            "doi": "10.1007/s10288-011-0159-7",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "8bb74b08923aa170bf886a7068e60c671c67186d",
+            "title": "Probabilistic decision graphs for optimization under uncertainty",
+            "url": "https://www.semanticscholar.org/paper/8bb74b08923aa170bf886a7068e60c671c67186d",
+            "venue": "4OR",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1748118",
+                    "name": "J. Bilmes"
+                }
+            ],
+            "doi": "10.1109/MSP.2010.938078",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "299991337a1e7f26cde98cb6b15e5350bf3d0817",
+            "title": "Dynamic Graphical Models",
+            "url": "https://www.semanticscholar.org/paper/299991337a1e7f26cde98cb6b15e5350bf3d0817",
+            "venue": "IEEE Signal Processing Magazine",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2775921",
+                    "name": "Uffe Kj\u00e6rulff"
+                },
+                {
+                    "authorId": "144880939",
+                    "name": "A. Madsen"
+                }
+            ],
+            "doi": "10.1007/978-1-4614-5104-4",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "927dd0d13c46e2daaa5b3107ade464da1163c22c",
+            "title": "Bayesian Networks and Influence Diagrams: A Guide to Construction and Analysis",
+            "url": "https://www.semanticscholar.org/paper/927dd0d13c46e2daaa5b3107ade464da1163c22c",
+            "venue": "Information Science and Statistics",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "151480440",
+                    "name": "Hongliang Yao"
+                },
+                {
+                    "authorId": "2144221894",
+                    "name": "Hao Wang"
+                },
+                {
+                    "authorId": "2108399174",
+                    "name": "You-sheng Zhang"
+                },
+                {
+                    "authorId": "46275971",
+                    "name": "Junzhao Li"
+                }
+            ],
+            "doi": "10.1109/ICNNB.2005.1614641",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "60c0dc9704803e4ebcb24f9dfefb29b6ed38fb71",
+            "title": "An Extensional Junction Tree Approximate Inference Algorithm for Dynamic Influence Diagrams",
+            "url": "https://www.semanticscholar.org/paper/60c0dc9704803e4ebcb24f9dfefb29b6ed38fb71",
+            "venue": "2005 International Conference on Neural Networks and Brain",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144880939",
+                    "name": "A. Madsen"
+                },
+                {
+                    "authorId": "120177012",
+                    "name": "Frank Jensen"
+                }
+            ],
+            "doi": "10.1016/j.ijar.2004.05.006",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d812ca985074a56f7ad1f7c23cdadfd27cd410a8",
+            "title": "Solving linear-quadratic conditional Gaussian influence diagrams",
+            "url": "https://www.semanticscholar.org/paper/d812ca985074a56f7ad1f7c23cdadfd27cd410a8",
+            "venue": "Int. J. Approx. Reason.",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "46398750",
+                    "name": "Y. Liu"
+                },
+                {
+                    "authorId": "2218353036",
+                    "name": "Y. Shen"
+                },
+                {
+                    "authorId": "50579923",
+                    "name": "Y.W. Chen"
+                },
+                {
+                    "authorId": "2204860593",
+                    "name": "F. Gao"
+                }
+            ],
+            "doi": "10.1109/IEMC.2004.1407479",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7703af754c2e5e92d85278a3048ec849922029e1",
+            "title": "The integrated process of project risk management based on influence diagrams",
+            "url": "https://www.semanticscholar.org/paper/7703af754c2e5e92d85278a3048ec849922029e1",
+            "venue": "2004 IEEE International Engineering Management Conference (IEEE Cat. No.04CH37574)",
+            "year": 2004
+        },
+        {
+            "arxivId": "1207.4177",
+            "authors": [
+                {
+                    "authorId": "35404439",
+                    "name": "Barry R. Cobb"
+                },
+                {
+                    "authorId": "1707788",
+                    "name": "Prakash P. Shenoy"
+                }
+            ],
+            "doi": "10.1016/j.ejor.2007.01.036",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "813d36cec36497c318581bed5bef392b9a72194b",
+            "title": "Decision making with hybrid influence diagrams using mixtures of truncated exponentials",
+            "url": "https://www.semanticscholar.org/paper/813d36cec36497c318581bed5bef392b9a72194b",
+            "venue": "Eur. J. Oper. Res.",
+            "year": 2004
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144880939",
+                    "name": "A. Madsen"
+                },
+                {
+                    "authorId": "120177012",
+                    "name": "Frank Jensen"
+                }
+            ],
+            "doi": "10.1007/978-3-540-45062-7_17",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "ff916b5d0eab6d2101dbad08629fa8e7523a8837",
+            "title": "Mixed Influence Diagrams",
+            "url": "https://www.semanticscholar.org/paper/ff916b5d0eab6d2101dbad08629fa8e7523a8837",
+            "venue": "ECSQARU",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "47362268",
+                    "name": "Qiang Liu"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "5f74d00d14ffc843ca1f87a7d04acb240ae70e46",
+            "title": "Reasoning and Decisions in Probabilistic Graphical Models - A Unified Framework",
+            "url": "https://www.semanticscholar.org/paper/5f74d00d14ffc843ca1f87a7d04acb240ae70e46",
+            "venue": "",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2524784",
+                    "name": "L. Mercep"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "249904f0d566c299835ab539fbb879977c87b326",
+            "title": "Context-Centric Design of Automotive Human-Machine Interfaces",
+            "url": "https://www.semanticscholar.org/paper/249904f0d566c299835ab539fbb879977c87b326",
+            "venue": "",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "89719812",
+                    "name": "Zhangyani"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "eeeb11a1493d2a173e97a92b68d27d1247089b6a",
+            "title": "Study on the Structure and Behavioral Choice of IDs Model",
+            "url": "https://www.semanticscholar.org/paper/eeeb11a1493d2a173e97a92b68d27d1247089b6a",
+            "venue": "",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1748118",
+                    "name": "J. Bilmes"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "c3c4be5e36554698ae0d86aff5df7ba88a627645",
+            "title": "An Overview of Dynamic Graphical Models",
+            "url": "https://www.semanticscholar.org/paper/c3c4be5e36554698ae0d86aff5df7ba88a627645",
+            "venue": "",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1748118",
+                    "name": "J. Bilmes"
+                },
+                {
+                    "authorId": "46933410",
+                    "name": "Hui-Ching Lin"
+                }
+            ],
+            "doi": "10.21437/Interspeech.2010-100",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "efded00877084d720c9331fc13448b8e7ac34d3c",
+            "title": "Online adaptive learning for speech recognition decoding",
+            "url": "https://www.semanticscholar.org/paper/efded00877084d720c9331fc13448b8e7ac34d3c",
+            "venue": "INTERSPEECH",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145822173",
+                    "name": "D. Nilsson"
+                },
+                {
+                    "authorId": "2172329",
+                    "name": "M. H\u00f6hle"
+                }
+            ],
+            "doi": "10.5282/UBM/EPUB.1790",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "4e3455619b2e172af26ceb40162f497cece8d28c",
+            "title": "Methods for evaluating Decision Problems with Limited Information",
+            "url": "https://www.semanticscholar.org/paper/4e3455619b2e172af26ceb40162f497cece8d28c",
+            "venue": "",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2775921",
+                    "name": "Uffe Kj\u00e6rulff"
+                },
+                {
+                    "authorId": "144880939",
+                    "name": "A. Madsen"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "3ef697a17a05930bdbb586cc12676e60bebb5bd1",
+            "title": "Probabilistic Networks - An Introduction to Bayesian Networks and Influence Diagrams",
+            "url": "https://www.semanticscholar.org/paper/3ef697a17a05930bdbb586cc12676e60bebb5bd1",
+            "venue": "",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2172329",
+                    "name": "M. H\u00f6hle"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "e66339df635c3ee8fac46c7a63b804c2cd4b7f1b",
+            "title": "Decision Support for Disease Management in Pig Production via Statistical Modelling",
+            "url": "https://www.semanticscholar.org/paper/e66339df635c3ee8fac46c7a63b804c2cd4b7f1b",
+            "venue": "",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "82692704",
+                    "name": "A. Randomized"
+                },
+                {
+                    "authorId": "2081775228",
+                    "name": "S Deterministic Strategies"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "b5bd66c2fa6f04330350997472b7fbb9ddf61bb6",
+            "title": "This Document Contains Proofs and Other Supplemen- Tal Information for the Uai 2012 Submission, \" Belief Propagation for Structured Decision Making \"",
+            "url": "https://www.semanticscholar.org/paper/b5bd66c2fa6f04330350997472b7fbb9ddf61bb6",
+            "venue": "",
+            "year": null
+        }
+    ],
+    "corpusId": 1639057,
+    "doi": null,
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 26,
+    "numCiting": 14,
+    "paperId": "27d1544b80f44f9efc4ca8c77925408d759c8b91",
+    "references": [
+        {
+            "arxivId": "1301.3881",
+            "authors": [
+                {
+                    "authorId": "145822173",
+                    "name": "D. Nilsson"
+                },
+                {
+                    "authorId": "2050895",
+                    "name": "S. Lauritzen"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "e2721d4740fd9d5914643226ab6fe7ba64100025",
+            "title": "Evaluating Influence Diagrams using LIMIDs",
+            "url": "https://www.semanticscholar.org/paper/e2721d4740fd9d5914643226ab6fe7ba64100025",
+            "venue": "UAI",
+            "year": 2000
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144880939",
+                    "name": "A. Madsen"
+                },
+                {
+                    "authorId": "35191477",
+                    "name": "F. V. Jensen"
+                }
+            ],
+            "doi": "10.1016/S0004-3702(99)00062-4",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "0b65ff0fbfb05d77e38b514bea5d0a7dafd62051",
+            "title": "LAZY Propagation: A Junction Tree Inference Algorithm Based on Lazy Evaluation",
+            "url": "https://www.semanticscholar.org/paper/0b65ff0fbfb05d77e38b514bea5d0a7dafd62051",
+            "venue": "Artif. Intell.",
+            "year": 1999
+        },
+        {
+            "arxivId": "1301.7394",
+            "authors": [
+                {
+                    "authorId": "2811005",
+                    "name": "Vasilica Lepar"
+                },
+                {
+                    "authorId": "1707788",
+                    "name": "Prakash P. Shenoy"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "891dc14157fddf03c2155d3cf597235758f48d57",
+            "title": "A Comparison of Lauritzen-Spiegelhalter, Hugin, and Shenoy-Shafer Architectures for Computing Marginals of Probability Distributions",
+            "url": "https://www.semanticscholar.org/paper/891dc14157fddf03c2155d3cf597235758f48d57",
+            "venue": "UAI",
+            "year": 1998
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1707788",
+                    "name": "Prakash P. Shenoy"
+                }
+            ],
+            "doi": "10.1016/S0888-613X(97)89135-9",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "46be16a191060f77baa794a52849a9a85e879475",
+            "title": "Binary join trees for computing marginals in the Shenoy-Shafer architecture",
+            "url": "https://www.semanticscholar.org/paper/46be16a191060f77baa794a52849a9a85e879475",
+            "venue": "Int. J. Approx. Reason.",
+            "year": 1997
+        },
+        {
+            "arxivId": "1302.6824",
+            "authors": [
+                {
+                    "authorId": "120177012",
+                    "name": "Frank Jensen"
+                },
+                {
+                    "authorId": "35191477",
+                    "name": "F. V. Jensen"
+                },
+                {
+                    "authorId": "2246494773",
+                    "name": "S\u00f8ren L. Dittmer"
+                }
+            ],
+            "doi": "10.1016/B978-1-55860-332-5.50051-1",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "1348b2d7138b564ee8bb4ba974bb45427695e86f",
+            "title": "From Influence Diagrams to junction Trees",
+            "url": "https://www.semanticscholar.org/paper/1348b2d7138b564ee8bb4ba974bb45427695e86f",
+            "venue": "UAI",
+            "year": 1994
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2267768400",
+                    "name": "Prakash P. Shenoy"
+                }
+            ],
+            "doi": "10.1287/opre.40.3.463",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b396da26c275f97dd0dd068ac53cc1f454c91bce",
+            "title": "Valuation-Based Systems for Bayesian Decision Analysis",
+            "url": "https://www.semanticscholar.org/paper/b396da26c275f97dd0dd068ac53cc1f454c91bce",
+            "venue": "Oper. Res.",
+            "year": 1992
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144845491",
+                    "name": "A. Dawid"
+                }
+            ],
+            "doi": "10.1007/BF01890546",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "b9abff70b0acf9c6bb74d85f3141d76bef2039a5",
+            "title": "Applications of a general propagation algorithm for probabilistic expert systems",
+            "url": "https://www.semanticscholar.org/paper/b9abff70b0acf9c6bb74d85f3141d76bef2039a5",
+            "venue": "",
+            "year": 1992
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1707788",
+                    "name": "Prakash P. Shenoy"
+                },
+                {
+                    "authorId": "145500409",
+                    "name": "G. Shafer"
+                }
+            ],
+            "doi": "10.1007/978-3-540-44792-4_20",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "13976cfe3be7e0873fa9814ac5c08cf27bfa91f1",
+            "title": "Axioms for probability and belief-function proagation",
+            "url": "https://www.semanticscholar.org/paper/13976cfe3be7e0873fa9814ac5c08cf27bfa91f1",
+            "venue": "UAI",
+            "year": 1990
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2932960",
+                    "name": "Ross D. Shachter"
+                }
+            ],
+            "doi": "10.1287/opre.34.6.871",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9e0daca0acc6ee3baf7573fe2e2b3cc94276e7f4",
+            "title": "Evaluating Influence Diagrams",
+            "url": "https://www.semanticscholar.org/paper/9e0daca0acc6ee3baf7573fe2e2b3cc94276e7f4",
+            "venue": "Oper. Res.",
+            "year": 1986
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2050895",
+                    "name": "S. Lauritzen"
+                },
+                {
+                    "authorId": "145822173",
+                    "name": "D. Nilsson"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "7a4fd7618a2b007f83610819c635035c923aef16",
+            "title": "LIMIDs of decision problems",
+            "url": "https://www.semanticscholar.org/paper/7a4fd7618a2b007f83610819c635035c923aef16",
+            "venue": "",
+            "year": 1999
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145500409",
+                    "name": "G. Shafer"
+                },
+                {
+                    "authorId": "1707788",
+                    "name": "Prakash P. Shenoy"
+                }
+            ],
+            "doi": "10.1007/BF01531015",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ac789d8e373cbb3260b2881d66fe00789adf291f",
+            "title": "Probability propagation",
+            "url": "https://www.semanticscholar.org/paper/ac789d8e373cbb3260b2881d66fe00789adf291f",
+            "venue": "Annals of Mathematics and Artificial Intelligence",
+            "year": 1990
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "68984513",
+                    "name": "Scott M. Olmsted"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "365d4a85981f5b9d1bd297baa6e9f5b139f304bb",
+            "title": "On representing and solving decision problems",
+            "url": "https://www.semanticscholar.org/paper/365d4a85981f5b9d1bd297baa6e9f5b139f304bb",
+            "venue": "",
+            "year": 1983
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Solving Influence Diagrams using HUGIN, Shafer-Shenoy and Lazy Propagation",
+    "topics": [
+        {
+            "topic": "Influence diagram",
+            "topicId": "38454",
+            "url": "https://www.semanticscholar.org/topic/38454"
+        },
+        {
+            "topic": "Hugin",
+            "topicId": "700236",
+            "url": "https://www.semanticscholar.org/topic/700236"
+        },
+        {
+            "topic": "Computation",
+            "topicId": "339",
+            "url": "https://www.semanticscholar.org/topic/339"
+        },
+        {
+            "topic": "Lazy evaluation",
+            "topicId": "19479",
+            "url": "https://www.semanticscholar.org/topic/19479"
+        },
+        {
+            "topic": "Time complexity",
+            "topicId": "3448",
+            "url": "https://www.semanticscholar.org/topic/3448"
+        },
+        {
+            "topic": "Software propagation",
+            "topicId": "2021211",
+            "url": "https://www.semanticscholar.org/topic/2021211"
+        }
+    ],
+    "url": "https://www.semanticscholar.org/paper/27d1544b80f44f9efc4ca8c77925408d759c8b91",
+    "venue": "Conference on Uncertainty in Artificial Intelligence",
+    "year": 2001
+}

@@ -1,0 +1,4285 @@
+{
+    "abstract": "Training machines to understand natural language and interact with humans is an elusive and essential task of artificial intelligence. A diversity of dialogue systems has been designed with the rapid development of deep learning techniques, especially the recent pre-trained language models (PrLMs). Among these studies, the fundamental yet challenging type of task is dialogue comprehension whose role is to teach the machines to read and comprehend the dialogue context before responding. In this paper, we review the previous methods from the technical perspective of dialogue modeling for the dialogue comprehension task. We summarize the characteristics and challenges of dialogue comprehension in contrast to plain-text reading comprehension. Then, we discuss three typical patterns of dialogue modeling. In addition, we categorize dialogue-related pre-training techniques which are employed to enhance PrLMs in dialogue scenarios. Finally, we highlight the technical advances in recent years and point out the lessons from the empirical analysis and the prospects towards a new frontier of researches.",
+    "arxivId": "2110.04984",
+    "authors": [
+        {
+            "authorId": "3322871",
+            "name": "Zhuosheng Zhang",
+            "url": "https://www.semanticscholar.org/author/3322871"
+        },
+        {
+            "authorId": "47941144",
+            "name": "Hai Zhao",
+            "url": "https://www.semanticscholar.org/author/47941144"
+        }
+    ],
+    "citationVelocity": 6,
+    "citations": [
+        {
+            "arxivId": "2406.16783",
+            "authors": [
+                {
+                    "authorId": "2041015203",
+                    "name": "Rishabh Maheshwary"
+                },
+                {
+                    "authorId": "143618944",
+                    "name": "Vikas Yadav"
+                },
+                {
+                    "authorId": "145108247",
+                    "name": "Hoang Nguyen"
+                },
+                {
+                    "authorId": "2308037359",
+                    "name": "Khyati Mahajan"
+                },
+                {
+                    "authorId": "100519532",
+                    "name": "Sathwik Tejaswi Madhusudhan"
+                }
+            ],
+            "doi": "10.48550/arXiv.2406.16783",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "9ee9d8ca43fe003e6fecc2af9829747ec6d00c2f",
+            "title": "M2Lingual: Enhancing Multilingual, Multi-Turn Instruction Alignment in Large Language Models",
+            "url": "https://www.semanticscholar.org/paper/9ee9d8ca43fe003e6fecc2af9829747ec6d00c2f",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": "2404.11124",
+            "authors": [
+                {
+                    "authorId": "2187206992",
+                    "name": "Frederic Kirstein"
+                },
+                {
+                    "authorId": "2056772135",
+                    "name": "Jan Philip Wahle"
+                },
+                {
+                    "authorId": "2261364222",
+                    "name": "Terry Ruas"
+                },
+                {
+                    "authorId": "2261364118",
+                    "name": "Bela Gipp"
+                }
+            ],
+            "doi": "10.48550/arXiv.2404.11124",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "3654fbaf46a580aeae9ea44609370cdac9bf0cab",
+            "title": "What's under the hood: Investigating Automatic Metrics on Meeting Summarization",
+            "url": "https://www.semanticscholar.org/paper/3654fbaf46a580aeae9ea44609370cdac9bf0cab",
+            "venue": "EMNLP",
+            "year": 2024
+        },
+        {
+            "arxivId": "2404.04728",
+            "authors": [
+                {
+                    "authorId": "66413584",
+                    "name": "Anubhav Jangra"
+                },
+                {
+                    "authorId": "1389526186",
+                    "name": "Jamshid Mozafari"
+                },
+                {
+                    "authorId": "2261673463",
+                    "name": "Adam Jatowt"
+                },
+                {
+                    "authorId": "2295928",
+                    "name": "S. Muresan"
+                }
+            ],
+            "doi": "10.48550/arXiv.2404.04728",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "a0e210b79e96ccb5384e90dc0f7809302d67858f",
+            "title": "Navigating the Landscape of Hint Generation Research: From the Past to the Future",
+            "url": "https://www.semanticscholar.org/paper/a0e210b79e96ccb5384e90dc0f7809302d67858f",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2310829716",
+                    "name": "Nan Lin"
+                },
+                {
+                    "authorId": "2310874455",
+                    "name": "Yixiang Lin"
+                },
+                {
+                    "authorId": "2310852503",
+                    "name": "Yihang Xu"
+                }
+            ],
+            "doi": "10.1109/AINIT61980.2024.10581755",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "40d0630b7a2fc7b9becab09f8e52ac55c608ae2a",
+            "title": "An Intelligent Psychological Emotion Management System based on Multi-turn Voice Dialogue",
+            "url": "https://www.semanticscholar.org/paper/40d0630b7a2fc7b9becab09f8e52ac55c608ae2a",
+            "venue": "2024 5th International Seminar on Artificial Intelligence, Networking and Information Technology (AINIT)",
+            "year": 2024
+        },
+        {
+            "arxivId": "2309.09666",
+            "authors": [
+                {
+                    "authorId": "2141114505",
+                    "name": "Xinbei Ma"
+                },
+                {
+                    "authorId": "2243297077",
+                    "name": "Yi Xu"
+                },
+                {
+                    "authorId": "47941144",
+                    "name": "Hai Zhao"
+                },
+                {
+                    "authorId": "3322871",
+                    "name": "Zhuosheng Zhang"
+                }
+            ],
+            "doi": "10.48550/arXiv.2309.09666",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "7d808bc1e1fb18ecaa0aa1cba25164d276b156aa",
+            "title": "Multi-turn Dialogue Comprehension from a Topic-aware Perspective",
+            "url": "https://www.semanticscholar.org/paper/7d808bc1e1fb18ecaa0aa1cba25164d276b156aa",
+            "venue": "Neurocomputing",
+            "year": 2023
+        },
+        {
+            "arxivId": "2301.05508",
+            "authors": [
+                {
+                    "authorId": "145579682",
+                    "name": "Gustavo Penha"
+                },
+                {
+                    "authorId": "2731925",
+                    "name": "C. Hauff"
+                }
+            ],
+            "doi": "10.48550/arXiv.2301.05508",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "7a4339bc2b07864fa4057c47712c2f0688ca7639",
+            "title": "Do the Findings of Document and Passage Retrieval Generalize to the Retrieval of Responses for Dialogues?",
+            "url": "https://www.semanticscholar.org/paper/7a4339bc2b07864fa4057c47712c2f0688ca7639",
+            "venue": "ECIR",
+            "year": 2023
+        },
+        {
+            "arxivId": "2212.12652",
+            "authors": [
+                {
+                    "authorId": "2203187",
+                    "name": "Borui Wang"
+                },
+                {
+                    "authorId": "2198279388",
+                    "name": "Chengcheng Feng"
+                },
+                {
+                    "authorId": "2148234893",
+                    "name": "Arjun Nair"
+                },
+                {
+                    "authorId": "2198275602",
+                    "name": "Madelyn Mao"
+                },
+                {
+                    "authorId": "2145753290",
+                    "name": "Jai Desai"
+                },
+                {
+                    "authorId": "1709797",
+                    "name": "Asli Celikyilmaz"
+                },
+                {
+                    "authorId": "2145539790",
+                    "name": "Haoran Li"
+                },
+                {
+                    "authorId": "2121361882",
+                    "name": "Yashar Mehdad"
+                },
+                {
+                    "authorId": "9215251",
+                    "name": "Dragomir R. Radev"
+                }
+            ],
+            "doi": "10.48550/arXiv.2212.12652",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0c003db762ad6edcdbabf178ae4e6776eb08a56e",
+            "title": "STRUDEL: Structured Dialogue Summarization for Dialogue Comprehension",
+            "url": "https://www.semanticscholar.org/paper/0c003db762ad6edcdbabf178ae4e6776eb08a56e",
+            "venue": "EMNLP",
+            "year": 2022
+        },
+        {
+            "arxivId": "2210.13845",
+            "authors": [
+                {
+                    "authorId": "2108142844",
+                    "name": "Yongkang Liu"
+                },
+                {
+                    "authorId": "144588144",
+                    "name": "Shi Feng"
+                },
+                {
+                    "authorId": "145816335",
+                    "name": "Wei Gao"
+                },
+                {
+                    "authorId": "2111226672",
+                    "name": "Daling Wang"
+                },
+                {
+                    "authorId": "2108463824",
+                    "name": "Yifei Zhang"
+                }
+            ],
+            "doi": "10.48550/arXiv.2210.13845",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "36b1bb9d1149586ae4e9a1867a179760051028e9",
+            "title": "DialogConv: A Lightweight Fully Convolutional Network for Multi-view Response Selection",
+            "url": "https://www.semanticscholar.org/paper/36b1bb9d1149586ae4e9a1867a179760051028e9",
+            "venue": "EMNLP",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2092233977",
+                    "name": "J. Bang"
+                },
+                {
+                    "authorId": "2112164562",
+                    "name": "Sunghee Ahn"
+                }
+            ],
+            "doi": "10.1109/PlatCon55845.2022.9932056",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "6ac443bbbcf76b130ac1e3da37d8e22ce207a54f",
+            "title": "UX Design and Evaluation on Conversational Bot Supporting Multi-Turn and Multi-Domain Dialogues",
+            "url": "https://www.semanticscholar.org/paper/6ac443bbbcf76b130ac1e3da37d8e22ce207a54f",
+            "venue": "2022 International Conference on Platform Technology and Service (PlatCon)",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2092233977",
+                    "name": "J. Bang"
+                },
+                {
+                    "authorId": "2112164562",
+                    "name": "Sunghee Ahn"
+                }
+            ],
+            "doi": "10.1109/PlatCon55845.2022.9932091",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "1076b9f815b4a632552bf759a53cde2bd413af1a",
+            "title": "UX Design and Evaluation on Conversational Bot Supporting Multi-Turn and Multi-Domain Dialogues",
+            "url": "https://www.semanticscholar.org/paper/1076b9f815b4a632552bf759a53cde2bd413af1a",
+            "venue": "2022 International Conference on Platform Technology and Service (PlatCon)",
+            "year": 2022
+        },
+        {
+            "arxivId": "2204.10558",
+            "authors": [
+                {
+                    "authorId": "145579682",
+                    "name": "Gustavo Penha"
+                },
+                {
+                    "authorId": "2731925",
+                    "name": "C. Hauff"
+                }
+            ],
+            "doi": "10.48550/arXiv.2204.10558",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "3958f45617192ccfb56a4459fbb913823168591e",
+            "title": "Sparse and Dense Approaches for the Full-rank Retrieval of Responses for Dialogues",
+            "url": "https://www.semanticscholar.org/paper/3958f45617192ccfb56a4459fbb913823168591e",
+            "venue": "ArXiv",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2143669056",
+                    "name": "Junxiao Shen"
+                },
+                {
+                    "authorId": "2119659590",
+                    "name": "Boyin Yang"
+                },
+                {
+                    "authorId": "31818759",
+                    "name": "John J. Dudley"
+                },
+                {
+                    "authorId": "1683133",
+                    "name": "P. Kristensson"
+                }
+            ],
+            "doi": "10.1145/3490099.3511145",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "605fab8b02b985a3e06f97935bbc420c7b634777",
+            "title": "KWickChat: A Multi-Turn Dialogue System for AAC Using Context-Aware Sentence Generation by Bag-of-Keywords",
+            "url": "https://www.semanticscholar.org/paper/605fab8b02b985a3e06f97935bbc420c7b634777",
+            "venue": "IUI",
+            "year": 2022
+        },
+        {
+            "arxivId": "2203.11587",
+            "authors": [
+                {
+                    "authorId": "2128102960",
+                    "name": "Zhihao Wang"
+                },
+                {
+                    "authorId": "2159557462",
+                    "name": "Tangjian Duan"
+                },
+                {
+                    "authorId": "2117422663",
+                    "name": "Zihao Wang"
+                },
+                {
+                    "authorId": "1830455541",
+                    "name": "Minghui Yang"
+                },
+                {
+                    "authorId": "1515550185",
+                    "name": "Zujie Wen"
+                },
+                {
+                    "authorId": "2107963331",
+                    "name": "Yongliang Wang"
+                }
+            ],
+            "doi": "10.48550/arXiv.2203.11587",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "22f627886a1dde214aba0977c31d4d761fb00755",
+            "title": "Utterance Rewriting with Contrastive Learning in Multi-turn Dialogue",
+            "url": "https://www.semanticscholar.org/paper/22f627886a1dde214aba0977c31d4d761fb00755",
+            "venue": "ArXiv",
+            "year": 2022
+        },
+        {
+            "arxivId": "2109.04066",
+            "authors": [
+                {
+                    "authorId": "2141114505",
+                    "name": "Xinbei Ma"
+                },
+                {
+                    "authorId": "3322871",
+                    "name": "Zhuosheng Zhang"
+                },
+                {
+                    "authorId": "153716230",
+                    "name": "Hai Zhao"
+                }
+            ],
+            "doi": "10.1109/TASLP.2023.3284516",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "81b58944372ea10436ff7252b115e21e893d11c6",
+            "title": "Enhanced Speaker-Aware Multi-Party Multi-Turn Dialogue Comprehension",
+            "url": "https://www.semanticscholar.org/paper/81b58944372ea10436ff7252b115e21e893d11c6",
+            "venue": "IEEE/ACM Transactions on Audio, Speech, and Language Processing",
+            "year": 2021
+        },
+        {
+            "arxivId": "2106.00420",
+            "authors": [
+                {
+                    "authorId": "2110290078",
+                    "name": "Yi Xu"
+                },
+                {
+                    "authorId": "153716230",
+                    "name": "Hai Zhao"
+                }
+            ],
+            "doi": "10.18653/v1/2021.findings-acl.235",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9cc73eb0431b13af7d031c9eea14d8c626b59e59",
+            "title": "Dialogue-oriented Pre-training",
+            "url": "https://www.semanticscholar.org/paper/9cc73eb0431b13af7d031c9eea14d8c626b59e59",
+            "venue": "FINDINGS",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3028818",
+                    "name": "Jia-Chen Gu"
+                },
+                {
+                    "authorId": "2282501727",
+                    "name": "Zhuosheng Zhang"
+                },
+                {
+                    "authorId": "2072392338",
+                    "name": "Zhen-Hua Ling"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "546f07df36e03293b3ba0996c692af1d1bb4bc10",
+            "title": "Learning WHO Saying WHAT to WHOM in Multi-Party Conversations",
+            "url": "https://www.semanticscholar.org/paper/546f07df36e03293b3ba0996c692af1d1bb4bc10",
+            "venue": "IJCNLP",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2187504043",
+                    "name": "Minjun Zhu"
+                },
+                {
+                    "authorId": "2142839441",
+                    "name": "Yixuan Weng"
+                },
+                {
+                    "authorId": "2156072001",
+                    "name": "Bin Li"
+                },
+                {
+                    "authorId": "1954845",
+                    "name": "Shizhu He"
+                },
+                {
+                    "authorId": "2200096",
+                    "name": "Kang Liu"
+                },
+                {
+                    "authorId": "11447228",
+                    "name": "Jun Zhao"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f167113ad1e9e54c5ea23aeb6464c15eaa5cdb66",
+            "title": "Knowledge Transfer with Visual Prompt in multi-modal Dialogue Understanding and Generation",
+            "url": "https://www.semanticscholar.org/paper/f167113ad1e9e54c5ea23aeb6464c15eaa5cdb66",
+            "venue": "TU",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1388156275",
+                    "name": "Iulia Turc"
+                },
+                {
+                    "authorId": "2262085555",
+                    "name": "Ming-Wei Chang"
+                },
+                {
+                    "authorId": "2262196473",
+                    "name": "Kenton Lee"
+                },
+                {
+                    "authorId": "2285577272",
+                    "name": "Yizhe Zhang"
+                },
+                {
+                    "authorId": "2286980984",
+                    "name": "Siqi Sun"
+                },
+                {
+                    "authorId": "2253458981",
+                    "name": "Michel Galley"
+                },
+                {
+                    "authorId": "2288145354",
+                    "name": "Yen-Chun Chen"
+                },
+                {
+                    "authorId": "3322871",
+                    "name": "Zhuosheng Zhang"
+                },
+                {
+                    "authorId": "2288242366",
+                    "name": "Hai Zhao. 2021"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "26c4b8d9af4fd847119e88cf0c13e541d2e266eb",
+            "title": "Speaker Clustering in Textual Dialogue with Utterance Correlation and Cross-corpus Dialogue Act Supervision",
+            "url": "https://www.semanticscholar.org/paper/26c4b8d9af4fd847119e88cf0c13e541d2e266eb",
+            "venue": "",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2220002513",
+                    "name": "Mingjie Shen"
+                },
+                {
+                    "authorId": "2249759923",
+                    "name": "Brian A. Yuan"
+                },
+                {
+                    "authorId": "2184778890",
+                    "name": "A. Pillai"
+                },
+                {
+                    "authorId": "2292167238",
+                    "name": "Xinyu Zhang"
+                },
+                {
+                    "authorId": "2250908907",
+                    "name": "James C. Davis"
+                },
+                {
+                    "authorId": "2275943",
+                    "name": "Aravind Machiry"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "63587867674a5de2800720e93c3919747fde671a",
+            "title": "Usage and Effectiveness of Static Analysis in Open-Source Embedded Software: CodeQL Finds Hundreds of Defects",
+            "url": "https://www.semanticscholar.org/paper/63587867674a5de2800720e93c3919747fde671a",
+            "venue": "",
+            "year": null
+        }
+    ],
+    "corpusId": 232110776,
+    "doi": null,
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 19,
+    "numCiting": 119,
+    "paperId": "281b4a7e7fb057d8266ec0610888905c46fd715d",
+    "references": [
+        {
+            "arxivId": "2108.12599",
+            "authors": [
+                {
+                    "authorId": "3322871",
+                    "name": "Zhuosheng Zhang"
+                },
+                {
+                    "authorId": "2042897657",
+                    "name": "Siru Ouyang"
+                },
+                {
+                    "authorId": "153716230",
+                    "name": "Hai Zhao"
+                },
+                {
+                    "authorId": "1802277",
+                    "name": "M. Utiyama"
+                },
+                {
+                    "authorId": "1698363",
+                    "name": "E. Sumita"
+                }
+            ],
+            "doi": "10.18653/v1/2021.emnlp-main.299",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "52c5c9575ebd990ed34867708dd42aa8ba9d561f",
+            "title": "Smoothing Dialogue States for Open Conversational Machine Reading",
+            "url": "https://www.semanticscholar.org/paper/52c5c9575ebd990ed34867708dd42aa8ba9d561f",
+            "venue": "EMNLP",
+            "year": 2021
+        },
+        {
+            "arxivId": "2106.04571",
+            "authors": [
+                {
+                    "authorId": "3444092",
+                    "name": "Lianhui Qin"
+                },
+                {
+                    "authorId": "2121241705",
+                    "name": "Aditya Gupta"
+                },
+                {
+                    "authorId": "33145619",
+                    "name": "Shyam Upadhyay"
+                },
+                {
+                    "authorId": "2265599",
+                    "name": "Luheng He"
+                },
+                {
+                    "authorId": "1699545",
+                    "name": "Yejin Choi"
+                },
+                {
+                    "authorId": "1779225",
+                    "name": "Manaal Faruqui"
+                }
+            ],
+            "doi": "10.18653/v1/2021.acl-long.549",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "62953ca1252c9febe07c7007a10911726f37792d",
+            "title": "TIMEDIAL: Temporal Commonsense Reasoning in Dialog",
+            "url": "https://www.semanticscholar.org/paper/62953ca1252c9febe07c7007a10911726f37792d",
+            "venue": "ACL",
+            "year": 2021
+        },
+        {
+            "arxivId": "2105.10956",
+            "authors": [
+                {
+                    "authorId": "3322871",
+                    "name": "Zhuosheng Zhang"
+                },
+                {
+                    "authorId": "153716230",
+                    "name": "Hai Zhao"
+                }
+            ],
+            "doi": "10.18653/v1/2021.acl-long.399",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "a03844a1cb957feae7ded3a327cd3a445e2175ad",
+            "title": "Structural Pre-training for Dialogue Comprehension",
+            "url": "https://www.semanticscholar.org/paper/a03844a1cb957feae7ded3a327cd3a445e2175ad",
+            "venue": "ACL",
+            "year": 2021
+        },
+        {
+            "arxivId": "2104.12377",
+            "authors": [
+                {
+                    "authorId": "2108991844",
+                    "name": "Jiaqi Li"
+                },
+                {
+                    "authorId": "145111960",
+                    "name": "Ming Liu"
+                },
+                {
+                    "authorId": "1638002457",
+                    "name": "Zihao Zheng"
+                },
+                {
+                    "authorId": "2153525636",
+                    "name": "Heng Zhang"
+                },
+                {
+                    "authorId": "152277111",
+                    "name": "Bing Qin"
+                },
+                {
+                    "authorId": "37596605",
+                    "name": "Min-Yen Kan"
+                },
+                {
+                    "authorId": "40282288",
+                    "name": "Ting Liu"
+                }
+            ],
+            "doi": "10.1109/IJCNN52387.2021.9533364",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8e2fcc8926b2a257c27dda20c714a9c641d165be",
+            "title": "DADgraph: A Discourse-aware Dialogue Graph Neural Network for Multiparty Dialogue Machine Reading Comprehension",
+            "url": "https://www.semanticscholar.org/paper/8e2fcc8926b2a257c27dda20c714a9c641d165be",
+            "venue": "2021 International Joint Conference on Neural Networks (IJCNN)",
+            "year": 2021
+        },
+        {
+            "arxivId": "2104.08400",
+            "authors": [
+                {
+                    "authorId": "47739850",
+                    "name": "Jiaao Chen"
+                },
+                {
+                    "authorId": "2022168",
+                    "name": "Diyi Yang"
+                }
+            ],
+            "doi": "10.18653/V1/2021.NAACL-MAIN.109",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "be9679047ff70d6147dbdb42521f62c5660f6f75",
+            "title": "Structure-Aware Abstractive Conversation Summarization via Discourse and Action Graphs",
+            "url": "https://www.semanticscholar.org/paper/be9679047ff70d6147dbdb42521f62c5660f6f75",
+            "venue": "NAACL",
+            "year": 2021
+        },
+        {
+            "arxivId": "2104.07567",
+            "authors": [
+                {
+                    "authorId": "35752280",
+                    "name": "Kurt Shuster"
+                },
+                {
+                    "authorId": "1753626755",
+                    "name": "Spencer Poff"
+                },
+                {
+                    "authorId": "2108267192",
+                    "name": "Moya Chen"
+                },
+                {
+                    "authorId": "1743722",
+                    "name": "Douwe Kiela"
+                },
+                {
+                    "authorId": "145183709",
+                    "name": "J. Weston"
+                }
+            ],
+            "doi": "10.18653/v1/2021.findings-emnlp.320",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "a2a7033a5a859e3a6e6f0a83018326400b4c5faa",
+            "title": "Retrieval Augmentation Reduces Hallucination in Conversation",
+            "url": "https://www.semanticscholar.org/paper/a2a7033a5a859e3a6e6f0a83018326400b4c5faa",
+            "venue": "EMNLP",
+            "year": 2021
+        },
+        {
+            "arxivId": "2103.03095",
+            "authors": [
+                {
+                    "authorId": null,
+                    "name": "Libo Qin"
+                },
+                {
+                    "authorId": "2057038673",
+                    "name": "Tianbao Xie"
+                },
+                {
+                    "authorId": "2256319",
+                    "name": "Wanxiang Che"
+                },
+                {
+                    "authorId": "40282288",
+                    "name": "Ting Liu"
+                }
+            ],
+            "doi": "10.24963/ijcai.2021/622",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "014d4ccf128b1ea741498cfa6ca5e1e5cdd2284c",
+            "title": "A Survey on Spoken Language Understanding: Recent Advances and New Frontiers",
+            "url": "https://www.semanticscholar.org/paper/014d4ccf128b1ea741498cfa6ca5e1e5cdd2284c",
+            "venue": "IJCAI",
+            "year": 2021
+        },
+        {
+            "arxivId": "2102.05474",
+            "authors": [
+                {
+                    "authorId": "3322871",
+                    "name": "Zhuosheng Zhang"
+                },
+                {
+                    "authorId": "2117978401",
+                    "name": "Junlong Li"
+                },
+                {
+                    "authorId": "47941144",
+                    "name": "Hai Zhao"
+                }
+            ],
+            "doi": "10.1109/TASLP.2021.3058616",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "639eb8f1c663e18930ae2a55abe7bfd1d836ec16",
+            "title": "Multi-Turn Dialogue Reading Comprehension With Pivot Turns and Knowledge",
+            "url": "https://www.semanticscholar.org/paper/639eb8f1c663e18930ae2a55abe7bfd1d836ec16",
+            "venue": "IEEE/ACM Transactions on Audio, Speech, and Language Processing",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "40195882",
+                    "name": "Mauajama Firdaus"
+                },
+                {
+                    "authorId": "2065919263",
+                    "name": "Nidhi Thakur"
+                },
+                {
+                    "authorId": "1734904",
+                    "name": "Asif Ekbal"
+                }
+            ],
+            "doi": "10.1145/3430752",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7c318e124b2e1f541b9cdd686c22708b9b00ba52",
+            "title": "Aspect-Aware Response Generation for Multimodal Dialogue System",
+            "url": "https://www.semanticscholar.org/paper/7c318e124b2e1f541b9cdd686c22708b9b00ba52",
+            "venue": "ACM Trans. Intell. Syst. Technol.",
+            "year": 2021
+        },
+        {
+            "arxivId": "2012.14827",
+            "authors": [
+                {
+                    "authorId": "2042897657",
+                    "name": "Siru Ouyang"
+                },
+                {
+                    "authorId": "3322871",
+                    "name": "Zhuosheng Zhang"
+                },
+                {
+                    "authorId": "47941144",
+                    "name": "Hai Zhao"
+                }
+            ],
+            "doi": "10.18653/v1/2021.findings-acl.279",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "114be5db62209a0d0682279f5a054a316f56697e",
+            "title": "Dialogue Graph Modeling for Conversational Machine Reading",
+            "url": "https://www.semanticscholar.org/paper/114be5db62209a0d0682279f5a054a316f56697e",
+            "venue": "FINDINGS",
+            "year": 2020
+        },
+        {
+            "arxivId": "2012.14756",
+            "authors": [
+                {
+                    "authorId": "50087162",
+                    "name": "Yixuan Su"
+                },
+                {
+                    "authorId": "46689291",
+                    "name": "Deng Cai"
+                },
+                {
+                    "authorId": "50656875",
+                    "name": "Qingyu Zhou"
+                },
+                {
+                    "authorId": "47778853",
+                    "name": "Zibo Lin"
+                },
+                {
+                    "authorId": "152134464",
+                    "name": "Simon Baker"
+                },
+                {
+                    "authorId": "2154235",
+                    "name": "Yunbo Cao"
+                },
+                {
+                    "authorId": "34720053",
+                    "name": "Shuming Shi"
+                },
+                {
+                    "authorId": "50638196",
+                    "name": "Nigel Collier"
+                },
+                {
+                    "authorId": "2152546690",
+                    "name": "Yan Wang"
+                }
+            ],
+            "doi": "10.18653/v1/2021.acl-long.137",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "80f75ff5251f50fd0185f46cce22b4173063dee3",
+            "title": "Dialogue Response Selection with Hierarchical Curriculum Learning",
+            "url": "https://www.semanticscholar.org/paper/80f75ff5251f50fd0185f46cce22b4173063dee3",
+            "venue": "ACL",
+            "year": 2020
+        },
+        {
+            "arxivId": "2012.11099",
+            "authors": [
+                {
+                    "authorId": "2108142844",
+                    "name": "Yongkang Liu"
+                },
+                {
+                    "authorId": "2087586948",
+                    "name": "Shi Feng"
+                },
+                {
+                    "authorId": "2111226672",
+                    "name": "Daling Wang"
+                },
+                {
+                    "authorId": "7750270",
+                    "name": "Kaisong Song"
+                },
+                {
+                    "authorId": "150103793",
+                    "name": "Feiliang Ren"
+                },
+                {
+                    "authorId": "2108463824",
+                    "name": "Yifei Zhang"
+                }
+            ],
+            "doi": "10.1609/aaai.v35i15.17585",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "9698cff93ec15e4c92b1fccb2332673ef4074899",
+            "title": "A Graph Reasoning Network for Multi-turn Response Selection via Customized Pre-training",
+            "url": "https://www.semanticscholar.org/paper/9698cff93ec15e4c92b1fccb2332673ef4074899",
+            "venue": "AAAI",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "51056442",
+                    "name": "Xiachong Feng"
+                },
+                {
+                    "authorId": "2674998",
+                    "name": "Xiaocheng Feng"
+                },
+                {
+                    "authorId": "152277111",
+                    "name": "Bing Qin"
+                },
+                {
+                    "authorId": "2075336379",
+                    "name": "Xinwei Geng"
+                },
+                {
+                    "authorId": "40282288",
+                    "name": "Ting Liu"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "fe525450432739cecd0639bc3d5115e2edc4511b",
+            "title": "Dialogue Discourse-Aware Graph Convolutional Networks for Abstractive Meeting Summarization",
+            "url": "https://www.semanticscholar.org/paper/fe525450432739cecd0639bc3d5115e2edc4511b",
+            "venue": "ArXiv",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2116348128",
+                    "name": "Chuang Liu"
+                },
+                {
+                    "authorId": "2694222",
+                    "name": "Deyi Xiong"
+                },
+                {
+                    "authorId": "2046822849",
+                    "name": "Yuxiang Jia"
+                },
+                {
+                    "authorId": "144539290",
+                    "name": "Hongying Zan"
+                },
+                {
+                    "authorId": "3913592",
+                    "name": "Changjian Hu"
+                }
+            ],
+            "doi": "10.1109/IALP51396.2020.9310487",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "c9982f631ffba3c5201dd920bb523b47f2565351",
+            "title": "HisBERT for Conversational Reading Comprehension",
+            "url": "https://www.semanticscholar.org/paper/c9982f631ffba3c5201dd920bb523b47f2565351",
+            "venue": "2020 International Conference on Asian Language Processing (IALP)",
+            "year": 2020
+        },
+        {
+            "arxivId": "2012.01775",
+            "authors": [
+                {
+                    "authorId": "2118712301",
+                    "name": "X. Gu"
+                },
+                {
+                    "authorId": "31760501",
+                    "name": "Kang Min Yoo"
+                },
+                {
+                    "authorId": "2577039",
+                    "name": "Jung-Woo Ha"
+                }
+            ],
+            "doi": "10.1609/aaai.v35i14.17527",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "138622fff5cd7c6023a8b874958a0a0c857f9d41",
+            "title": "DialogBERT: Discourse-Aware Response Generation via Learning to Recover and Rank Utterances",
+            "url": "https://www.semanticscholar.org/paper/138622fff5cd7c6023a8b874958a0a0c857f9d41",
+            "venue": "AAAI",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2150168776",
+                    "name": "Jian Liu"
+                },
+                {
+                    "authorId": "1381062467",
+                    "name": "Dianbo Sui"
+                },
+                {
+                    "authorId": "77397868",
+                    "name": "Kang Liu"
+                },
+                {
+                    "authorId": "1390572170",
+                    "name": "Jun Zhao"
+                }
+            ],
+            "doi": "10.18653/V1/2020.COLING-MAIN.219",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "6e873216478ce768fc5ae954ca07a70df0932476",
+            "title": "Graph-Based Knowledge Integration for Question Answering over Dialogue",
+            "url": "https://www.semanticscholar.org/paper/6e873216478ce768fc5ae954ca07a70df0932476",
+            "venue": "COLING",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1785252",
+                    "name": "Abhishek Sharma"
+                },
+                {
+                    "authorId": "2075459",
+                    "name": "Danish Contractor"
+                },
+                {
+                    "authorId": "145369847",
+                    "name": "Harshit Kumar"
+                },
+                {
+                    "authorId": "1703799",
+                    "name": "Sachindra Joshi"
+                }
+            ],
+            "doi": "10.18653/v1/2020.emnlp-main.589",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "5739669863ebaf1c743df0b2446ab1e1917433bc",
+            "title": "Neural Conversational QA: Learning to Reason vs Exploiting Patterns",
+            "url": "https://www.semanticscholar.org/paper/5739669863ebaf1c743df0b2446ab1e1917433bc",
+            "venue": "EMNLP",
+            "year": 2020
+        },
+        {
+            "arxivId": "2010.01838",
+            "authors": [
+                {
+                    "authorId": "1921742",
+                    "name": "Yifan Gao"
+                },
+                {
+                    "authorId": "30340989",
+                    "name": "Chien-Sheng Wu"
+                },
+                {
+                    "authorId": "2109057340",
+                    "name": "Jingjing Li"
+                },
+                {
+                    "authorId": "2708940",
+                    "name": "Shafiq R. Joty"
+                },
+                {
+                    "authorId": "1741126",
+                    "name": "S. Hoi"
+                },
+                {
+                    "authorId": "2228109",
+                    "name": "Caiming Xiong"
+                },
+                {
+                    "authorId": "145310663",
+                    "name": "Irwin King"
+                },
+                {
+                    "authorId": "145609003",
+                    "name": "M. Lyu"
+                }
+            ],
+            "doi": "10.18653/v1/2020.emnlp-main.191",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "4571feb26d903053661efd2f2f144e010902f458",
+            "title": "Discern: Discourse-Aware Entailment Reasoning Network for Conversational Machine Reading",
+            "url": "https://www.semanticscholar.org/paper/4571feb26d903053661efd2f2f144e010902f458",
+            "venue": "EMNLP",
+            "year": 2020
+        },
+        {
+            "arxivId": "2009.12539",
+            "authors": [
+                {
+                    "authorId": "2110290078",
+                    "name": "Yi Xu"
+                },
+                {
+                    "authorId": "47941144",
+                    "name": "Hai Zhao"
+                },
+                {
+                    "authorId": "3322871",
+                    "name": "Zhuosheng Zhang"
+                }
+            ],
+            "doi": "10.1609/aaai.v35i16.17668",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "40b1ea56c49751366b05f90f91f98d9d4a12e290",
+            "title": "Topic-Aware Multi-turn Dialogue Modeling",
+            "url": "https://www.semanticscholar.org/paper/40b1ea56c49751366b05f90f91f98d9d4a12e290",
+            "venue": "AAAI",
+            "year": 2020
+        },
+        {
+            "arxivId": "2009.11684",
+            "authors": [
+                {
+                    "authorId": "2144382531",
+                    "name": "Feng-Lin Li"
+                },
+                {
+                    "authorId": "123655156",
+                    "name": "Hehong Chen"
+                },
+                {
+                    "authorId": "2115723816",
+                    "name": "Guohai Xu"
+                },
+                {
+                    "authorId": "2054332633",
+                    "name": "Tian Qiu"
+                },
+                {
+                    "authorId": "144642000",
+                    "name": "Feng Ji"
+                },
+                {
+                    "authorId": "2116921824",
+                    "name": "Ji Zhang"
+                },
+                {
+                    "authorId": "2765043",
+                    "name": "Haiqing Chen"
+                }
+            ],
+            "doi": "10.1145/3340531.3412685",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "4ebb7d98c9ee557175be5c240d2a8d9324818520",
+            "title": "AliMeKG: Domain Knowledge Graph Construction and Application in E-commerce",
+            "url": "https://www.semanticscholar.org/paper/4ebb7d98c9ee557175be5c240d2a8d9324818520",
+            "venue": "CIKM",
+            "year": 2020
+        },
+        {
+            "arxivId": "2009.06265",
+            "authors": [
+                {
+                    "authorId": "31834306",
+                    "name": "Ruijian Xu"
+                },
+                {
+                    "authorId": "8801869",
+                    "name": "Chongyang Tao"
+                },
+                {
+                    "authorId": "71790825",
+                    "name": "Daxin Jiang"
+                },
+                {
+                    "authorId": "2878414",
+                    "name": "Xueliang Zhao"
+                },
+                {
+                    "authorId": "144060462",
+                    "name": "Dongyan Zhao"
+                },
+                {
+                    "authorId": "144539156",
+                    "name": "Rui Yan"
+                }
+            ],
+            "doi": "10.1609/aaai.v35i16.17666",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "83649fe41651f12c4ced49e8eead447664b422ec",
+            "title": "Learning an Effective Context-Response Matching Model with Self-Supervised Tasks for Retrieval-based Dialogues",
+            "url": "https://www.semanticscholar.org/paper/83649fe41651f12c4ced49e8eead447664b422ec",
+            "venue": "AAAI",
+            "year": 2020
+        },
+        {
+            "arxivId": "2009.06504",
+            "authors": [
+                {
+                    "authorId": "2116179625",
+                    "name": "Longxiang Liu"
+                },
+                {
+                    "authorId": "3322871",
+                    "name": "Zhuosheng Zhang"
+                },
+                {
+                    "authorId": "47941144",
+                    "name": "Hai Zhao"
+                },
+                {
+                    "authorId": "2144243659",
+                    "name": "Xi Zhou"
+                },
+                {
+                    "authorId": "2118828391",
+                    "name": "Xiang Zhou"
+                }
+            ],
+            "doi": "10.1609/aaai.v35i15.17582",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "8f088ede342f2aaaf6de553f4eb741f1585c60c3",
+            "title": "Filling the Gap of Utterance-aware and Speaker-aware Representation for Multi-turn Dialogue",
+            "url": "https://www.semanticscholar.org/paper/8f088ede342f2aaaf6de553f4eb741f1585c60c3",
+            "venue": "AAAI",
+            "year": 2020
+        },
+        {
+            "arxivId": "2009.04703",
+            "authors": [
+                {
+                    "authorId": "89016637",
+                    "name": "Taesun Whang"
+                },
+                {
+                    "authorId": "51021762",
+                    "name": "Dongyub Lee"
+                },
+                {
+                    "authorId": "120580213",
+                    "name": "Dongsuk Oh"
+                },
+                {
+                    "authorId": "2807382",
+                    "name": "Chanhee Lee"
+                },
+                {
+                    "authorId": "41130573",
+                    "name": "Kijong Han"
+                },
+                {
+                    "authorId": "90414572",
+                    "name": "Donghun Lee"
+                },
+                {
+                    "authorId": "2058689",
+                    "name": "Saebyeok Lee"
+                }
+            ],
+            "doi": "10.1609/aaai.v35i16.17653",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "20d30b57444fc7c236638a89cfc72e58d0d9f322",
+            "title": "Do Response Selection Models Really Know What's Next? Utterance Manipulation Strategies for Multi-turn Response Selection",
+            "url": "https://www.semanticscholar.org/paper/20d30b57444fc7c236638a89cfc72e58d0d9f322",
+            "venue": "AAAI",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "46276940",
+                    "name": "Junlong Li"
+                },
+                {
+                    "authorId": "3322871",
+                    "name": "Zhuosheng Zhang"
+                },
+                {
+                    "authorId": "47941144",
+                    "name": "Hai Zhao"
+                },
+                {
+                    "authorId": "2144243659",
+                    "name": "Xi Zhou"
+                },
+                {
+                    "authorId": "2118828391",
+                    "name": "Xiang Zhou"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "1cad933afc55f1a562e27ebd4f65c5d0f5a6c26a",
+            "title": "Task-specific Objectives of Pre-trained Language Models for Dialogue Adaptation",
+            "url": "https://www.semanticscholar.org/paper/1cad933afc55f1a562e27ebd4f65c5d0f5a6c26a",
+            "venue": "ArXiv",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": null,
+                    "name": "Junyu Lu"
+                },
+                {
+                    "authorId": "1571377401",
+                    "name": "Xiancong Ren"
+                },
+                {
+                    "authorId": "2041980",
+                    "name": "Yazhou Ren"
+                },
+                {
+                    "authorId": "1491241424",
+                    "name": "Ao Liu"
+                },
+                {
+                    "authorId": "1683510",
+                    "name": "Zenglin Xu"
+                }
+            ],
+            "doi": "10.1145/3397271.3401255",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "35f5642de6e9e7af159cde723c3fc43d9b348ee0",
+            "title": "Improving Contextual Language Models for Response Retrieval in Multi-Turn Conversation",
+            "url": "https://www.semanticscholar.org/paper/35f5642de6e9e7af159cde723c3fc43d9b348ee0",
+            "venue": "SIGIR",
+            "year": 2020
+        },
+        {
+            "arxivId": "2006.06402",
+            "authors": [
+                {
+                    "authorId": "49169076",
+                    "name": "Libo Qin"
+                },
+                {
+                    "authorId": "1576502392",
+                    "name": "Minheng Ni"
+                },
+                {
+                    "authorId": "2265265449",
+                    "name": "Yue Zhang"
+                },
+                {
+                    "authorId": "2262459819",
+                    "name": "Wanxiang Che"
+                }
+            ],
+            "doi": "10.24963/ijcai.2020/533",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "24e972ed9da2c24d8a331a50f1ae4ae155cfd4ef",
+            "title": "CoSDA-ML: Multi-Lingual Code-Switching Data Augmentation for Zero-Shot Cross-Lingual NLP",
+            "url": "https://www.semanticscholar.org/paper/24e972ed9da2c24d8a331a50f1ae4ae155cfd4ef",
+            "venue": "IJCAI",
+            "year": 2020
+        },
+        {
+            "arxivId": "2005.12484",
+            "authors": [
+                {
+                    "authorId": "1921742",
+                    "name": "Yifan Gao"
+                },
+                {
+                    "authorId": "30340989",
+                    "name": "Chien-Sheng Wu"
+                },
+                {
+                    "authorId": "2708940",
+                    "name": "Shafiq R. Joty"
+                },
+                {
+                    "authorId": "2228109",
+                    "name": "Caiming Xiong"
+                },
+                {
+                    "authorId": "2166511",
+                    "name": "R. Socher"
+                },
+                {
+                    "authorId": "145310663",
+                    "name": "Irwin King"
+                },
+                {
+                    "authorId": "145609003",
+                    "name": "M. Lyu"
+                },
+                {
+                    "authorId": "1741126",
+                    "name": "S. Hoi"
+                }
+            ],
+            "doi": "10.18653/v1/2020.acl-main.88",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "5f410910c3cf8b1affd189f0e1664997f13d39e1",
+            "title": "Explicit Memory Tracker with Coarse-to-Fine Reasoning for Conversational Machine Reading",
+            "url": "https://www.semanticscholar.org/paper/5f410910c3cf8b1affd189f0e1664997f13d39e1",
+            "venue": "ACL",
+            "year": 2020
+        },
+        {
+            "arxivId": "2005.06249",
+            "authors": [
+                {
+                    "authorId": "3322871",
+                    "name": "Zhuosheng Zhang"
+                },
+                {
+                    "authorId": "47941144",
+                    "name": "Hai Zhao"
+                },
+                {
+                    "authorId": "108085542",
+                    "name": "Rui Wang"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "aa9c6d43b36a55b34c2e9207355d355fd94691af",
+            "title": "Machine Reading Comprehension: The Role of Contextualized Language Models and Beyond",
+            "url": "https://www.semanticscholar.org/paper/aa9c6d43b36a55b34c2e9207355d355fd94691af",
+            "venue": "ArXiv",
+            "year": 2020
+        },
+        {
+            "arxivId": "2004.13637",
+            "authors": [
+                {
+                    "authorId": "144745718",
+                    "name": "Stephen Roller"
+                },
+                {
+                    "authorId": "31461304",
+                    "name": "Emily Dinan"
+                },
+                {
+                    "authorId": "39589154",
+                    "name": "Naman Goyal"
+                },
+                {
+                    "authorId": "3092435",
+                    "name": "Da Ju"
+                },
+                {
+                    "authorId": "2066769956",
+                    "name": "Mary Williamson"
+                },
+                {
+                    "authorId": "11323179",
+                    "name": "Yinhan Liu"
+                },
+                {
+                    "authorId": "2155954521",
+                    "name": "Jing Xu"
+                },
+                {
+                    "authorId": "40511414",
+                    "name": "Myle Ott"
+                },
+                {
+                    "authorId": "35752280",
+                    "name": "Kurt Shuster"
+                },
+                {
+                    "authorId": "51324296",
+                    "name": "Eric Michael Smith"
+                },
+                {
+                    "authorId": "2656573",
+                    "name": "Y-Lan Boureau"
+                },
+                {
+                    "authorId": "145183709",
+                    "name": "J. Weston"
+                }
+            ],
+            "doi": "10.18653/v1/2021.eacl-main.24",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9b539d413393047b28bb7be9b195f142aaf7a80e",
+            "title": "Recipes for Building an Open-Domain Chatbot",
+            "url": "https://www.semanticscholar.org/paper/9b539d413393047b28bb7be9b195f142aaf7a80e",
+            "venue": "EACL",
+            "year": 2020
+        },
+        {
+            "arxivId": "2004.10964",
+            "authors": [
+                {
+                    "authorId": "40895369",
+                    "name": "Suchin Gururangan"
+                },
+                {
+                    "authorId": "3451494",
+                    "name": "Ana Marasovi\u0107"
+                },
+                {
+                    "authorId": "2705113",
+                    "name": "Swabha Swayamdipta"
+                },
+                {
+                    "authorId": "46258841",
+                    "name": "Kyle Lo"
+                },
+                {
+                    "authorId": "46181066",
+                    "name": "Iz Beltagy"
+                },
+                {
+                    "authorId": "145612610",
+                    "name": "Doug Downey"
+                },
+                {
+                    "authorId": "144365875",
+                    "name": "Noah A. Smith"
+                }
+            ],
+            "doi": "10.18653/v1/2020.acl-main.740",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "e816f788767eec6a8ef0ea9eddd0e902435d4271",
+            "title": "Don\u2019t Stop Pretraining: Adapt Language Models to Domains and Tasks",
+            "url": "https://www.semanticscholar.org/paper/e816f788767eec6a8ef0ea9eddd0e902435d4271",
+            "venue": "ACL",
+            "year": 2020
+        },
+        {
+            "arxivId": "2004.11019",
+            "authors": [
+                {
+                    "authorId": null,
+                    "name": "Libo Qin"
+                },
+                {
+                    "authorId": "33506639",
+                    "name": "Xiao Xu"
+                },
+                {
+                    "authorId": "2256319",
+                    "name": "Wanxiang Che"
+                },
+                {
+                    "authorId": "1591125925",
+                    "name": "Yue Zhang"
+                },
+                {
+                    "authorId": "40282288",
+                    "name": "Ting Liu"
+                }
+            ],
+            "doi": "10.18653/v1/2020.acl-main.565",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "1b0ee21f61d6ac3ca4fe6b06799b967fe6bca2ae",
+            "title": "Dynamic Fusion Network for Multi-Domain End-to-end Task-Oriented Dialog",
+            "url": "https://www.semanticscholar.org/paper/1b0ee21f61d6ac3ca4fe6b06799b967fe6bca2ae",
+            "venue": "ACL",
+            "year": 2020
+        },
+        {
+            "arxivId": "2004.06871",
+            "authors": [
+                {
+                    "authorId": "30340989",
+                    "name": "Chien-Sheng Wu"
+                },
+                {
+                    "authorId": "1741126",
+                    "name": "S. Hoi"
+                },
+                {
+                    "authorId": "2166511",
+                    "name": "R. Socher"
+                },
+                {
+                    "authorId": "2228109",
+                    "name": "Caiming Xiong"
+                }
+            ],
+            "doi": "10.18653/v1/2020.emnlp-main.66",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "5b015296730273921889e54a0a31e3b173017026",
+            "title": "TOD-BERT: Pre-trained Natural Language Understanding for Task-Oriented Dialogue",
+            "url": "https://www.semanticscholar.org/paper/5b015296730273921889e54a0a31e3b173017026",
+            "venue": "EMNLP",
+            "year": 2020
+        },
+        {
+            "arxivId": "2004.05080",
+            "authors": [
+                {
+                    "authorId": "2108991844",
+                    "name": "Jiaqi Li"
+                },
+                {
+                    "authorId": "2112748107",
+                    "name": "Ming Liu"
+                },
+                {
+                    "authorId": "37596605",
+                    "name": "Min-Yen Kan"
+                },
+                {
+                    "authorId": "1638002457",
+                    "name": "Zihao Zheng"
+                },
+                {
+                    "authorId": "2108727290",
+                    "name": "Zekun Wang"
+                },
+                {
+                    "authorId": "39165620",
+                    "name": "Wenqiang Lei"
+                },
+                {
+                    "authorId": "40282288",
+                    "name": "Ting Liu"
+                },
+                {
+                    "authorId": "152277111",
+                    "name": "Bing Qin"
+                }
+            ],
+            "doi": "10.18653/V1/2020.COLING-MAIN.238",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "326edf179e3331f48710e3e655ab31ecec381bda",
+            "title": "Molweni: A Challenge Multiparty Dialogues-based Machine Reading Comprehension Dataset with Discourse Structure",
+            "url": "https://www.semanticscholar.org/paper/326edf179e3331f48710e3e655ab31ecec381bda",
+            "venue": "COLING",
+            "year": 2020
+        },
+        {
+            "arxivId": "2004.04906",
+            "authors": [
+                {
+                    "authorId": "2067091563",
+                    "name": "Vladimir Karpukhin"
+                },
+                {
+                    "authorId": "9185192",
+                    "name": "Barlas O\u011fuz"
+                },
+                {
+                    "authorId": "48872685",
+                    "name": "Sewon Min"
+                },
+                {
+                    "authorId": "145222654",
+                    "name": "Patrick Lewis"
+                },
+                {
+                    "authorId": "51183248",
+                    "name": "Ledell Yu Wu"
+                },
+                {
+                    "authorId": "2068070",
+                    "name": "Sergey Edunov"
+                },
+                {
+                    "authorId": "50536468",
+                    "name": "Danqi Chen"
+                },
+                {
+                    "authorId": "144105277",
+                    "name": "Wen-tau Yih"
+                }
+            ],
+            "doi": "10.18653/v1/2020.emnlp-main.550",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "b26f2037f769d5ffc5f7bdcec2de8da28ec14bee",
+            "title": "Dense Passage Retrieval for Open-Domain Question Answering",
+            "url": "https://www.semanticscholar.org/paper/b26f2037f769d5ffc5f7bdcec2de8da28ec14bee",
+            "venue": "EMNLP",
+            "year": 2020
+        },
+        {
+            "arxivId": "2004.04494",
+            "authors": [
+                {
+                    "authorId": "152496687",
+                    "name": "Leyang Cui"
+                },
+                {
+                    "authorId": "49176273",
+                    "name": "Yu Wu"
+                },
+                {
+                    "authorId": "2107983441",
+                    "name": "Shujie Liu"
+                },
+                {
+                    "authorId": "1591125925",
+                    "name": "Yue Zhang"
+                },
+                {
+                    "authorId": "92660691",
+                    "name": "Ming Zhou"
+                }
+            ],
+            "doi": "10.18653/v1/2020.acl-main.130",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "07ded4cf00095d91e8689a0a52d9e20eb64aca0b",
+            "title": "MuTual: A Dataset for Multi-Turn Dialogue Reasoning",
+            "url": "https://www.semanticscholar.org/paper/07ded4cf00095d91e8689a0a52d9e20eb64aca0b",
+            "venue": "ACL",
+            "year": 2020
+        },
+        {
+            "arxivId": "2004.03561",
+            "authors": [
+                {
+                    "authorId": "13334616",
+                    "name": "Changmao Li"
+                },
+                {
+                    "authorId": "4724587",
+                    "name": "Jinho D. Choi"
+                }
+            ],
+            "doi": "10.18653/v1/2020.acl-main.505",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "5dd520b6c92aae3fd76df5bb61014e50fab93817",
+            "title": "Transformers to Learn Hierarchical Contexts in Multiparty Dialogue for Span-based Question Answering",
+            "url": "https://www.semanticscholar.org/paper/5dd520b6c92aae3fd76df5bb61014e50fab93817",
+            "venue": "ACL",
+            "year": 2020
+        },
+        {
+            "arxivId": "2004.03588",
+            "authors": [
+                {
+                    "authorId": "3028818",
+                    "name": "Jia-Chen Gu"
+                },
+                {
+                    "authorId": "6574899",
+                    "name": "Tianda Li"
+                },
+                {
+                    "authorId": "2115900552",
+                    "name": "Quan Liu"
+                },
+                {
+                    "authorId": "1854999",
+                    "name": "Xiao-Dan Zhu"
+                },
+                {
+                    "authorId": "1749989",
+                    "name": "Zhenhua Ling"
+                },
+                {
+                    "authorId": "2072599058",
+                    "name": "Zhiming Su"
+                },
+                {
+                    "authorId": "144572674",
+                    "name": "Si Wei"
+                }
+            ],
+            "doi": "10.1145/3340531.3412330",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "e6a8a243aba31adc038ae513f6ceafcff4c3636c",
+            "title": "Speaker-Aware BERT for Multi-Turn Response Selection in Retrieval-Based Chatbots",
+            "url": "https://www.semanticscholar.org/paper/e6a8a243aba31adc038ae513f6ceafcff4c3636c",
+            "venue": "CIKM",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "47778853",
+                    "name": "Zibo Lin"
+                },
+                {
+                    "authorId": "46689291",
+                    "name": "Deng Cai"
+                },
+                {
+                    "authorId": "40566130",
+                    "name": "Yan Wang"
+                },
+                {
+                    "authorId": "3028405",
+                    "name": "Xiaojiang Liu"
+                },
+                {
+                    "authorId": "16215052",
+                    "name": "Haitao Zheng"
+                },
+                {
+                    "authorId": "34720053",
+                    "name": "Shuming Shi"
+                }
+            ],
+            "doi": "10.18653/v1/2020.emnlp-main.741",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d54853a460d7fc1113267fcd6247564fae5cb875",
+            "title": "The World Is Not Binary: Learning to Rank with Grayscale Data for Dialogue Response Selection",
+            "url": "https://www.semanticscholar.org/paper/d54853a460d7fc1113267fcd6247564fae5cb875",
+            "venue": "EMNLP",
+            "year": 2020
+        },
+        {
+            "arxivId": "2004.01972",
+            "authors": [
+                {
+                    "authorId": "2109871151",
+                    "name": "Yufan Zhao"
+                },
+                {
+                    "authorId": "46747953",
+                    "name": "Can Xu"
+                },
+                {
+                    "authorId": "145717888",
+                    "name": "Wei Wu"
+                }
+            ],
+            "doi": "10.18653/v1/2020.emnlp-main.279",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7049707591d3bbf79e8826bb29e7dc00389b3365",
+            "title": "Learning a Simple and Effective Model for Multi-turn Response Generation with Auxiliary Tasks",
+            "url": "https://www.semanticscholar.org/paper/7049707591d3bbf79e8826bb29e7dc00389b3365",
+            "venue": "EMNLP",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2146384872",
+                    "name": "Kai Liu"
+                },
+                {
+                    "authorId": "2120099874",
+                    "name": "Xin Liu"
+                },
+                {
+                    "authorId": "2125632263",
+                    "name": "An Yang"
+                },
+                {
+                    "authorId": "46700619",
+                    "name": "Jing Liu"
+                },
+                {
+                    "authorId": "34739384",
+                    "name": "Jinsong Su"
+                },
+                {
+                    "authorId": "48831399",
+                    "name": "Sujian Li"
+                },
+                {
+                    "authorId": "40430110",
+                    "name": "Qiaoqiao She"
+                }
+            ],
+            "doi": "10.1609/AAAI.V34I05.6357",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "81c3176545213cc318fed74ef4c7eb88ad80ad97",
+            "title": "A Robust Adversarial Training Approach to Machine Reading Comprehension",
+            "url": "https://www.semanticscholar.org/paper/81c3176545213cc318fed74ef4c7eb88ad80ad97",
+            "venue": "AAAI",
+            "year": 2020
+        },
+        {
+            "arxivId": "2003.04992",
+            "authors": [
+                {
+                    "authorId": "2052564414",
+                    "name": "H. Wan"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ad88c2e5da6c911a4a0ac44d1058c82253d07aef",
+            "title": "Multi-task Learning with Multi-head Attention for Multi-choice Reading Comprehension",
+            "url": "https://www.semanticscholar.org/paper/ad88c2e5da6c911a4a0ac44d1058c82253d07aef",
+            "venue": "ArXiv",
+            "year": 2020
+        },
+        {
+            "arxivId": "2104.10810",
+            "authors": [
+                {
+                    "authorId": "1491516643",
+                    "name": "Munazza Zaib"
+                },
+                {
+                    "authorId": "1713128",
+                    "name": "Quan Z. Sheng"
+                },
+                {
+                    "authorId": "32794831",
+                    "name": "W. Zhang"
+                }
+            ],
+            "doi": "10.1145/3373017.3373028",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f9b91c369f4cae2486c23cd052ad7495a5ad2983",
+            "title": "A Short Survey of Pre-trained Language Models for Conversational AI-A New Age in NLP",
+            "url": "https://www.semanticscholar.org/paper/f9b91c369f4cae2486c23cd052ad7495a5ad2983",
+            "venue": "ACSW",
+            "year": 2020
+        },
+        {
+            "arxivId": "2001.09694",
+            "authors": [
+                {
+                    "authorId": "3322871",
+                    "name": "Zhuosheng Zhang"
+                },
+                {
+                    "authorId": "2110873724",
+                    "name": "Junjie Yang"
+                },
+                {
+                    "authorId": "47941144",
+                    "name": "Hai Zhao"
+                }
+            ],
+            "doi": "10.1609/aaai.v35i16.17705",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "8d00049c345b9c8cc76ea2ea2565f8bb69f6b683",
+            "title": "Retrospective Reader for Machine Reading Comprehension",
+            "url": "https://www.semanticscholar.org/paper/8d00049c345b9c8cc76ea2ea2565f8bb69f6b683",
+            "venue": "AAAI",
+            "year": 2020
+        },
+        {
+            "arxivId": "2001.00056",
+            "authors": [
+                {
+                    "authorId": "49660197",
+                    "name": "Pawan Kumar"
+                },
+                {
+                    "authorId": "51065095",
+                    "name": "Dhanajit Brahma"
+                },
+                {
+                    "authorId": "2376013",
+                    "name": "H. Karnick"
+                },
+                {
+                    "authorId": "145593549",
+                    "name": "Piyush Rai"
+                }
+            ],
+            "doi": "10.1609/AAAI.V34I05.6323",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "909fadb136bae7e925df7004fdb9595b60e7fb70",
+            "title": "Deep Attentive Ranking Networks for Learning to Order Sentences",
+            "url": "https://www.semanticscholar.org/paper/909fadb136bae7e925df7004fdb9595b60e7fb70",
+            "venue": "AAAI",
+            "year": 2019
+        },
+        {
+            "arxivId": "1911.06940",
+            "authors": [
+                {
+                    "authorId": "3028818",
+                    "name": "Jia-Chen Gu"
+                },
+                {
+                    "authorId": "1749989",
+                    "name": "Zhenhua Ling"
+                },
+                {
+                    "authorId": "145014498",
+                    "name": "QUAN LIU"
+                }
+            ],
+            "doi": "10.1109/TASLP.2019.2955290",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "005aad5663a4c502e62cd4bc56948b910cb60992",
+            "title": "Utterance-to-Utterance Interactive Matching Network for Multi-Turn Response Selection in Retrieval-Based Chatbots",
+            "url": "https://www.semanticscholar.org/paper/005aad5663a4c502e62cd4bc56948b910cb60992",
+            "venue": "IEEE/ACM Transactions on Audio, Speech, and Language Processing",
+            "year": 2019
+        },
+        {
+            "arxivId": "1911.00536",
+            "authors": [
+                {
+                    "authorId": "3272356",
+                    "name": "Yizhe Zhang"
+                },
+                {
+                    "authorId": "2109508754",
+                    "name": "Siqi Sun"
+                },
+                {
+                    "authorId": "1947267",
+                    "name": "Michel Galley"
+                },
+                {
+                    "authorId": "2378902",
+                    "name": "Yen-Chun Chen"
+                },
+                {
+                    "authorId": "3125776",
+                    "name": "Chris Brockett"
+                },
+                {
+                    "authorId": "71886367",
+                    "name": "Xiang Gao"
+                },
+                {
+                    "authorId": "1800422",
+                    "name": "Jianfeng Gao"
+                },
+                {
+                    "authorId": "46700348",
+                    "name": "Jingjing Liu"
+                },
+                {
+                    "authorId": "83415753",
+                    "name": "W. Dolan"
+                }
+            ],
+            "doi": "10.18653/V1/2020.ACL-DEMOS.30",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "388e2fcdcefbe0834e153ab2a0be127092f9674d",
+            "title": "DIALOGPT : Large-Scale Generative Pre-training for Conversational Response Generation",
+            "url": "https://www.semanticscholar.org/paper/388e2fcdcefbe0834e153ab2a0be127092f9674d",
+            "venue": "ACL",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "153585587",
+                    "name": "Chunyuan Yuan"
+                },
+                {
+                    "authorId": "40122283",
+                    "name": "W. Zhou"
+                },
+                {
+                    "authorId": "49141009",
+                    "name": "Mingming Li"
+                },
+                {
+                    "authorId": "28128416",
+                    "name": "Shangwen Lv"
+                },
+                {
+                    "authorId": "151499378",
+                    "name": "Fuqing Zhu"
+                },
+                {
+                    "authorId": "47179764",
+                    "name": "Jizhong Han"
+                },
+                {
+                    "authorId": "40845069",
+                    "name": "Songlin Hu"
+                }
+            ],
+            "doi": "10.18653/v1/D19-1011",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "52b2d6bbca4170d57ad10670db78bf8766f844f7",
+            "title": "Multi-hop Selector Network for Multi-turn Response Selection in Retrieval-based Chatbots",
+            "url": "https://www.semanticscholar.org/paper/52b2d6bbca4170d57ad10670db78bf8766f844f7",
+            "venue": "EMNLP",
+            "year": 2019
+        },
+        {
+            "arxivId": "1910.10683",
+            "authors": [
+                {
+                    "authorId": "2402716",
+                    "name": "Colin Raffel"
+                },
+                {
+                    "authorId": "1846258",
+                    "name": "Noam M. Shazeer"
+                },
+                {
+                    "authorId": "145625142",
+                    "name": "Adam Roberts"
+                },
+                {
+                    "authorId": "3844009",
+                    "name": "Katherine Lee"
+                },
+                {
+                    "authorId": "46617804",
+                    "name": "Sharan Narang"
+                },
+                {
+                    "authorId": "1380243217",
+                    "name": "Michael Matena"
+                },
+                {
+                    "authorId": "2389316",
+                    "name": "Yanqi Zhou"
+                },
+                {
+                    "authorId": "2157338362",
+                    "name": "Wei Li"
+                },
+                {
+                    "authorId": "35025299",
+                    "name": "Peter J. Liu"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "6c4b76232bb72897685d19b3d264c6ee3005bc2b",
+            "title": "Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer",
+            "url": "https://www.semanticscholar.org/paper/6c4b76232bb72897685d19b3d264c6ee3005bc2b",
+            "venue": "J. Mach. Learn. Res.",
+            "year": 2019
+        },
+        {
+            "arxivId": "1909.11942",
+            "authors": [
+                {
+                    "authorId": "2362534",
+                    "name": "Zhenzhong Lan"
+                },
+                {
+                    "authorId": "46221498",
+                    "name": "Mingda Chen"
+                },
+                {
+                    "authorId": "7685850",
+                    "name": "Sebastian Goodman"
+                },
+                {
+                    "authorId": "1700980",
+                    "name": "Kevin Gimpel"
+                },
+                {
+                    "authorId": "48267618",
+                    "name": "Piyush Sharma"
+                },
+                {
+                    "authorId": "1737285",
+                    "name": "Radu Soricut"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7a064df1aeada7e69e5173f7d4c8606f4470365b",
+            "title": "ALBERT: A Lite BERT for Self-supervised Learning of Language Representations",
+            "url": "https://www.semanticscholar.org/paper/7a064df1aeada7e69e5173f7d4c8606f4470365b",
+            "venue": "ICLR",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "9285188",
+                    "name": "Zhengzhe Yang"
+                },
+                {
+                    "authorId": "4724587",
+                    "name": "Jinho D. Choi"
+                }
+            ],
+            "doi": "10.18653/v1/W19-5923",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c2fa95fd90665aeef031fe3cc1b5f5572e4fe16c",
+            "title": "FriendsQA: Open-Domain Question Answering on TV Show Transcripts",
+            "url": "https://www.semanticscholar.org/paper/c2fa95fd90665aeef031fe3cc1b5f5572e4fe16c",
+            "venue": "SIGdial",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "89016637",
+                    "name": "Taesun Whang"
+                },
+                {
+                    "authorId": "51021762",
+                    "name": "Dongyub Lee"
+                },
+                {
+                    "authorId": "2807382",
+                    "name": "Chanhee Lee"
+                },
+                {
+                    "authorId": "150180153",
+                    "name": "Kisu Yang"
+                },
+                {
+                    "authorId": "120580213",
+                    "name": "Dongsuk Oh"
+                },
+                {
+                    "authorId": "31312182",
+                    "name": "Heuiseok Lim"
+                }
+            ],
+            "doi": "10.21437/interspeech.2020-2153",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "5c456e1cbc2756f790023e26632aa44427385b9d",
+            "title": "An Effective Domain Adaptive Post-Training Method for BERT in Response Selection",
+            "url": "https://www.semanticscholar.org/paper/5c456e1cbc2756f790023e26632aa44427385b9d",
+            "venue": "INTERSPEECH",
+            "year": 2019
+        },
+        {
+            "arxivId": "1908.05915",
+            "authors": [
+                {
+                    "authorId": "19752252",
+                    "name": "Carolin (Haas) Lawrence"
+                },
+                {
+                    "authorId": "2105201",
+                    "name": "Bhushan Kotnis"
+                },
+                {
+                    "authorId": "2780262",
+                    "name": "Mathias Niepert"
+                }
+            ],
+            "doi": "10.18653/v1/D19-1001",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "b069ca0fdd55e8935489982b3ab611ec5c309ccb",
+            "title": "Attending to Future Tokens for Bidirectional Sequence Generation",
+            "url": "https://www.semanticscholar.org/paper/b069ca0fdd55e8935489982b3ab611ec5c309ccb",
+            "venue": "EMNLP",
+            "year": 2019
+        },
+        {
+            "arxivId": "1907.11692",
+            "authors": [
+                {
+                    "authorId": "11323179",
+                    "name": "Yinhan Liu"
+                },
+                {
+                    "authorId": "40511414",
+                    "name": "Myle Ott"
+                },
+                {
+                    "authorId": "39589154",
+                    "name": "Naman Goyal"
+                },
+                {
+                    "authorId": "3048577",
+                    "name": "Jingfei Du"
+                },
+                {
+                    "authorId": "144863691",
+                    "name": "Mandar Joshi"
+                },
+                {
+                    "authorId": "50536468",
+                    "name": "Danqi Chen"
+                },
+                {
+                    "authorId": "39455775",
+                    "name": "Omer Levy"
+                },
+                {
+                    "authorId": "35084211",
+                    "name": "M. Lewis"
+                },
+                {
+                    "authorId": "1982950",
+                    "name": "Luke Zettlemoyer"
+                },
+                {
+                    "authorId": "1759422",
+                    "name": "Veselin Stoyanov"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "077f8329a7b6fa3b7c877a57b81eb6c18b5f87de",
+            "title": "RoBERTa: A Robustly Optimized BERT Pretraining Approach",
+            "url": "https://www.semanticscholar.org/paper/077f8329a7b6fa3b7c877a57b81eb6c18b5f87de",
+            "venue": "ArXiv",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "8801869",
+                    "name": "Chongyang Tao"
+                },
+                {
+                    "authorId": "145717888",
+                    "name": "Wei Wu"
+                },
+                {
+                    "authorId": "46747953",
+                    "name": "Can Xu"
+                },
+                {
+                    "authorId": "7849217",
+                    "name": "Wenpeng Hu"
+                },
+                {
+                    "authorId": "144060462",
+                    "name": "Dongyan Zhao"
+                },
+                {
+                    "authorId": "144539156",
+                    "name": "Rui Yan"
+                }
+            ],
+            "doi": "10.18653/v1/P19-1001",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "b69538f0a948206d46780272e5767b4ab57f40a0",
+            "title": "One Time of Interaction May Not Be Enough: Go Deep with an Interaction-over-Interaction Network for Response Selection in Dialogues",
+            "url": "https://www.semanticscholar.org/paper/b69538f0a948206d46780272e5767b4ab57f40a0",
+            "venue": "ACL",
+            "year": 2019
+        },
+        {
+            "arxivId": "1906.08237",
+            "authors": [
+                {
+                    "authorId": "2109512754",
+                    "name": "Zhilin Yang"
+                },
+                {
+                    "authorId": "3422912",
+                    "name": "Zihang Dai"
+                },
+                {
+                    "authorId": "35729970",
+                    "name": "Yiming Yang"
+                },
+                {
+                    "authorId": "143712374",
+                    "name": "J. Carbonell"
+                },
+                {
+                    "authorId": "145124475",
+                    "name": "R. Salakhutdinov"
+                },
+                {
+                    "authorId": "2827616",
+                    "name": "Quoc V. Le"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "e0c6abdbdecf04ffac65c440da77fb9d66bb474c",
+            "title": "XLNet: Generalized Autoregressive Pretraining for Language Understanding",
+            "url": "https://www.semanticscholar.org/paper/e0c6abdbdecf04ffac65c440da77fb9d66bb474c",
+            "venue": "NeurIPS",
+            "year": 2019
+        },
+        {
+            "arxivId": "1906.05807",
+            "authors": [
+                {
+                    "authorId": "4418074",
+                    "name": "Minjoon Seo"
+                },
+                {
+                    "authorId": "46664096",
+                    "name": "Jinhyuk Lee"
+                },
+                {
+                    "authorId": "15652489",
+                    "name": "T. Kwiatkowski"
+                },
+                {
+                    "authorId": "144729897",
+                    "name": "Ankur P. Parikh"
+                },
+                {
+                    "authorId": "143787583",
+                    "name": "Ali Farhadi"
+                },
+                {
+                    "authorId": "2548384",
+                    "name": "Hannaneh Hajishirzi"
+                }
+            ],
+            "doi": "10.18653/v1/P19-1436",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "b29db655a18e7417e1188ba392a06b6314f0cb87",
+            "title": "Real-Time Open-Domain Question Answering with Dense-Sparse Phrase Index",
+            "url": "https://www.semanticscholar.org/paper/b29db655a18e7417e1188ba392a06b6314f0cb87",
+            "venue": "ACL",
+            "year": 2019
+        },
+        {
+            "arxivId": "1906.05373",
+            "authors": [
+                {
+                    "authorId": "3428769",
+                    "name": "Victor Zhong"
+                },
+                {
+                    "authorId": "1982950",
+                    "name": "Luke Zettlemoyer"
+                }
+            ],
+            "doi": "10.18653/v1/P19-1223",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7a38f72c03a3a55ae0387dd8b526a5e16f01d426",
+            "title": "E3: Entailment-driven Extracting and Editing for Conversational Machine Reading",
+            "url": "https://www.semanticscholar.org/paper/7a38f72c03a3a55ae0387dd8b526a5e16f01d426",
+            "venue": "ACL",
+            "year": 2019
+        },
+        {
+            "arxivId": "1905.05412",
+            "authors": [
+                {
+                    "authorId": "51051670",
+                    "name": "Chen Qu"
+                },
+                {
+                    "authorId": "49576068",
+                    "name": "Liu Yang"
+                },
+                {
+                    "authorId": "2642333",
+                    "name": "Minghui Qiu"
+                },
+                {
+                    "authorId": "144456145",
+                    "name": "W. Bruce Croft"
+                },
+                {
+                    "authorId": "1739818",
+                    "name": "Yongfeng Zhang"
+                },
+                {
+                    "authorId": "2136562",
+                    "name": "Mohit Iyyer"
+                }
+            ],
+            "doi": "10.1145/3331184.3331341",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "8495c1722e1f5107733c842839c2d298b9116921",
+            "title": "BERT with History Answer Embedding for Conversational Question Answering",
+            "url": "https://www.semanticscholar.org/paper/8495c1722e1f5107733c842839c2d298b9116921",
+            "venue": "SIGIR",
+            "year": 2019
+        },
+        {
+            "arxivId": "1905.05709",
+            "authors": [
+                {
+                    "authorId": "1730108",
+                    "name": "Minlie Huang"
+                },
+                {
+                    "authorId": "145213540",
+                    "name": "Xiaoyan Zhu"
+                },
+                {
+                    "authorId": "1800422",
+                    "name": "Jianfeng Gao"
+                }
+            ],
+            "doi": "10.1145/3383123",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "89e65078d37d076627818d9dba2c8ca9bf8f66bc",
+            "title": "Challenges in Building Intelligent Open-domain Dialog Systems",
+            "url": "https://www.semanticscholar.org/paper/89e65078d37d076627818d9dba2c8ca9bf8f66bc",
+            "venue": "ACM Trans. Inf. Syst.",
+            "year": 2019
+        },
+        {
+            "arxivId": "1905.02450",
+            "authors": [
+                {
+                    "authorId": "50982078",
+                    "name": "Kaitao Song"
+                },
+                {
+                    "authorId": "48391466",
+                    "name": "Xu Tan"
+                },
+                {
+                    "authorId": "143826491",
+                    "name": "Tao Qin"
+                },
+                {
+                    "authorId": "145313246",
+                    "name": "Jianfeng Lu"
+                },
+                {
+                    "authorId": "2110264337",
+                    "name": "Tie-Yan Liu"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "145b8b5d99a2beba6029418ca043585b90138d12",
+            "title": "MASS: Masked Sequence to Sequence Pre-training for Language Generation",
+            "url": "https://www.semanticscholar.org/paper/145b8b5d99a2beba6029418ca043585b90138d12",
+            "venue": "ICML",
+            "year": 2019
+        },
+        {
+            "arxivId": "1905.01992",
+            "authors": [
+                {
+                    "authorId": "1696821",
+                    "name": "O. Olabiyi"
+                },
+                {
+                    "authorId": "46240557",
+                    "name": "Anish Khazane"
+                },
+                {
+                    "authorId": "46191259",
+                    "name": "A. Salimov"
+                },
+                {
+                    "authorId": "102554062",
+                    "name": "Erik T. Mueller"
+                }
+            ],
+            "doi": "10.18653/v1/W19-2301",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "6e173c90553ea9e77c105069f4aa18ed85b736c3",
+            "title": "An Adversarial Learning Framework For A Persona-Based Multi-Turn Dialogue Model",
+            "url": "https://www.semanticscholar.org/paper/6e173c90553ea9e77c105069f4aa18ed85b736c3",
+            "venue": "Proceedings of the Workshop on Methods for Optimizing and Evaluating Neural Language Generation",
+            "year": 2019
+        },
+        {
+            "arxivId": "1905.01969",
+            "authors": [
+                {
+                    "authorId": "2795882",
+                    "name": "Samuel Humeau"
+                },
+                {
+                    "authorId": "35752280",
+                    "name": "Kurt Shuster"
+                },
+                {
+                    "authorId": "114952298",
+                    "name": "Marie-Anne Lachaux"
+                },
+                {
+                    "authorId": "145183709",
+                    "name": "J. Weston"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "301e13f3df8f9dfb79ea782da3693e2942392279",
+            "title": "Poly-encoders: Architectures and Pre-training Strategies for Fast and Accurate Multi-sentence Scoring",
+            "url": "https://www.semanticscholar.org/paper/301e13f3df8f9dfb79ea782da3693e2942392279",
+            "venue": "ICLR",
+            "year": 2019
+        },
+        {
+            "arxivId": "1904.05342",
+            "authors": [
+                {
+                    "authorId": "49454094",
+                    "name": "Kexin Huang"
+                },
+                {
+                    "authorId": "2124555",
+                    "name": "Jaan Altosaar"
+                },
+                {
+                    "authorId": "2615814",
+                    "name": "R. Ranganath"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b3c2c9f53ab130f3eb76eaaab3afa481c5a405eb",
+            "title": "ClinicalBERT: Modeling Clinical Notes and Predicting Hospital Readmission",
+            "url": "https://www.semanticscholar.org/paper/b3c2c9f53ab130f3eb76eaaab3afa481c5a405eb",
+            "venue": "ArXiv",
+            "year": 2019
+        },
+        {
+            "arxivId": "1903.10676",
+            "authors": [
+                {
+                    "authorId": "46181066",
+                    "name": "Iz Beltagy"
+                },
+                {
+                    "authorId": "46258841",
+                    "name": "Kyle Lo"
+                },
+                {
+                    "authorId": "2527954",
+                    "name": "Arman Cohan"
+                }
+            ],
+            "doi": "10.18653/v1/D19-1371",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "156d217b0a911af97fa1b5a71dc909ccef7a8028",
+            "title": "SciBERT: A Pretrained Language Model for Scientific Text",
+            "url": "https://www.semanticscholar.org/paper/156d217b0a911af97fa1b5a71dc909ccef7a8028",
+            "venue": "EMNLP",
+            "year": 2019
+        },
+        {
+            "arxivId": "1902.00164",
+            "authors": [
+                {
+                    "authorId": "49871029",
+                    "name": "Kai Sun"
+                },
+                {
+                    "authorId": "41190054",
+                    "name": "Dian Yu"
+                },
+                {
+                    "authorId": "1720246",
+                    "name": "Jianshu Chen"
+                },
+                {
+                    "authorId": "144580027",
+                    "name": "Dong Yu"
+                },
+                {
+                    "authorId": "1699545",
+                    "name": "Yejin Choi"
+                },
+                {
+                    "authorId": "1748501",
+                    "name": "Claire Cardie"
+                }
+            ],
+            "doi": "10.1162/tacl_a_00264",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "6ff68b34a5f78bdd14437fe5a79aebbc42c26467",
+            "title": "DREAM: A Challenge Data Set and Models for Dialogue-Based Reading Comprehension",
+            "url": "https://www.semanticscholar.org/paper/6ff68b34a5f78bdd14437fe5a79aebbc42c26467",
+            "venue": "TACL",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "8801869",
+                    "name": "Chongyang Tao"
+                },
+                {
+                    "authorId": "145717888",
+                    "name": "Wei Wu"
+                },
+                {
+                    "authorId": "46747953",
+                    "name": "Can Xu"
+                },
+                {
+                    "authorId": "7849217",
+                    "name": "Wenpeng Hu"
+                },
+                {
+                    "authorId": "144060462",
+                    "name": "Dongyan Zhao"
+                },
+                {
+                    "authorId": "144539156",
+                    "name": "Rui Yan"
+                }
+            ],
+            "doi": "10.1145/3289600.3290985",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "1556fcd90e60218066505b0d3cd842788b8cb929",
+            "title": "Multi-Representation Fusion Network for Multi-Turn Response Selection in Retrieval-Based Chatbots",
+            "url": "https://www.semanticscholar.org/paper/1556fcd90e60218066505b0d3cd842788b8cb929",
+            "venue": "WSDM",
+            "year": 2019
+        },
+        {
+            "arxivId": "1901.08746",
+            "authors": [
+                {
+                    "authorId": "46664096",
+                    "name": "Jinhyuk Lee"
+                },
+                {
+                    "authorId": "51433082",
+                    "name": "Wonjin Yoon"
+                },
+                {
+                    "authorId": "2829848",
+                    "name": "Sungdong Kim"
+                },
+                {
+                    "authorId": "2145183568",
+                    "name": "Donghyeon Kim"
+                },
+                {
+                    "authorId": "2144247125",
+                    "name": "Sunkyu Kim"
+                },
+                {
+                    "authorId": "51435068",
+                    "name": "Chan Ho So"
+                },
+                {
+                    "authorId": "144323862",
+                    "name": "Jaewoo Kang"
+                }
+            ],
+            "doi": "10.1093/bioinformatics/btz682",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "1e43c7084bdcb6b3102afaf301cce10faead2702",
+            "title": "BioBERT: a pre-trained biomedical language representation model for biomedical text mining",
+            "url": "https://www.semanticscholar.org/paper/1e43c7084bdcb6b3102afaf301cce10faead2702",
+            "venue": "Bioinform.",
+            "year": 2019
+        },
+        {
+            "arxivId": "1811.00671",
+            "authors": [
+                {
+                    "authorId": "2129663",
+                    "name": "S. Welleck"
+                },
+                {
+                    "authorId": "145183709",
+                    "name": "J. Weston"
+                },
+                {
+                    "authorId": "3149531",
+                    "name": "Arthur Szlam"
+                },
+                {
+                    "authorId": "1979489",
+                    "name": "Kyunghyun Cho"
+                }
+            ],
+            "doi": "10.18653/v1/P19-1363",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "1dc04035b9926c46ded436e5762f3924ab29516e",
+            "title": "Dialogue Natural Language Inference",
+            "url": "https://www.semanticscholar.org/paper/1dc04035b9926c46ded436e5762f3924ab29516e",
+            "venue": "ACL",
+            "year": 2018
+        },
+        {
+            "arxivId": "1809.05296",
+            "authors": [
+                {
+                    "authorId": "46689291",
+                    "name": "Deng Cai"
+                },
+                {
+                    "authorId": "40566130",
+                    "name": "Yan Wang"
+                },
+                {
+                    "authorId": "51178911",
+                    "name": "Victoria Bi"
+                },
+                {
+                    "authorId": "2909321",
+                    "name": "Zhaopeng Tu"
+                },
+                {
+                    "authorId": "3028405",
+                    "name": "Xiaojiang Liu"
+                },
+                {
+                    "authorId": "144594306",
+                    "name": "Wai Lam"
+                },
+                {
+                    "authorId": "34720053",
+                    "name": "Shuming Shi"
+                }
+            ],
+            "doi": "10.18653/v1/N19-1124",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "6d096fee5ed148fb60955c0bb074ba7c15c8e676",
+            "title": "Skeleton-to-Response: Dialogue Generation Guided by Retrieval Memory",
+            "url": "https://www.semanticscholar.org/paper/6d096fee5ed148fb60955c0bb074ba7c15c8e676",
+            "venue": "NAACL",
+            "year": 2018
+        },
+        {
+            "arxivId": "1809.01494",
+            "authors": [
+                {
+                    "authorId": "2073055",
+                    "name": "Marzieh Saeidi"
+                },
+                {
+                    "authorId": "153408953",
+                    "name": "Max Bartolo"
+                },
+                {
+                    "authorId": "145222654",
+                    "name": "Patrick Lewis"
+                },
+                {
+                    "authorId": "34650964",
+                    "name": "Sameer Singh"
+                },
+                {
+                    "authorId": "2620211",
+                    "name": "Tim Rockt\u00e4schel"
+                },
+                {
+                    "authorId": "2052256450",
+                    "name": "Mike Sheldon"
+                },
+                {
+                    "authorId": "1684865",
+                    "name": "Guillaume Bouchard"
+                },
+                {
+                    "authorId": "48662861",
+                    "name": "Sebastian Riedel"
+                }
+            ],
+            "doi": "10.18653/v1/D18-1233",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "cd832f7081ab7b83240140c4e5e58b4fb1f8e0e6",
+            "title": "Interpretation of Natural Language Rules in Conversational Machine Reading",
+            "url": "https://www.semanticscholar.org/paper/cd832f7081ab7b83240140c4e5e58b4fb1f8e0e6",
+            "venue": "EMNLP",
+            "year": 2018
+        },
+        {
+            "arxivId": "1808.07042",
+            "authors": [
+                {
+                    "authorId": "145732771",
+                    "name": "Siva Reddy"
+                },
+                {
+                    "authorId": "50536468",
+                    "name": "Danqi Chen"
+                },
+                {
+                    "authorId": "144783904",
+                    "name": "Christopher D. Manning"
+                }
+            ],
+            "doi": "10.1162/tacl_a_00266",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "990a7b4eceedb6e053e6386269481bdfc42a1094",
+            "title": "CoQA: A Conversational Question Answering Challenge",
+            "url": "https://www.semanticscholar.org/paper/990a7b4eceedb6e053e6386269481bdfc42a1094",
+            "venue": "TACL",
+            "year": 2018
+        },
+        {
+            "arxivId": "1808.07036",
+            "authors": [
+                {
+                    "authorId": "2890423",
+                    "name": "Eunsol Choi"
+                },
+                {
+                    "authorId": "144533687",
+                    "name": "He He"
+                },
+                {
+                    "authorId": "2136562",
+                    "name": "Mohit Iyyer"
+                },
+                {
+                    "authorId": "2064210",
+                    "name": "Mark Yatskar"
+                },
+                {
+                    "authorId": "144105277",
+                    "name": "Wen-tau Yih"
+                },
+                {
+                    "authorId": "1699545",
+                    "name": "Yejin Choi"
+                },
+                {
+                    "authorId": "145419642",
+                    "name": "Percy Liang"
+                },
+                {
+                    "authorId": "1982950",
+                    "name": "Luke Zettlemoyer"
+                }
+            ],
+            "doi": "10.18653/v1/D18-1241",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "39e734da43eb8c72e9549b42e96760545036f8e5",
+            "title": "QuAC: Question Answering in Context",
+            "url": "https://www.semanticscholar.org/paper/39e734da43eb8c72e9549b42e96760545036f8e5",
+            "venue": "EMNLP",
+            "year": 2018
+        },
+        {
+            "arxivId": "1808.04776",
+            "authors": [
+                {
+                    "authorId": "145183709",
+                    "name": "J. Weston"
+                },
+                {
+                    "authorId": "31461304",
+                    "name": "Emily Dinan"
+                },
+                {
+                    "authorId": "143622869",
+                    "name": "Alexander H. Miller"
+                }
+            ],
+            "doi": "10.18653/v1/W18-5713",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "e941e9a078a1fdbaba1d72af19a0b9800c6625d8",
+            "title": "Retrieve and Refine: Improved Sequence Generation Models For Dialogue",
+            "url": "https://www.semanticscholar.org/paper/e941e9a078a1fdbaba1d72af19a0b9800c6625d8",
+            "venue": "SCAI@EMNLP",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2318230424",
+                    "name": "Octavian Iordache"
+                }
+            ],
+            "doi": "10.1002/9781119183631.part2",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "3c0059824db37740c2acad1d3d746d31e2a8a692",
+            "title": "Technologies",
+            "url": "https://www.semanticscholar.org/paper/3c0059824db37740c2acad1d3d746d31e2a8a692",
+            "venue": "Studies in Systems, Decision and Control",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "34442817",
+                    "name": "Xiangyang Zhou"
+                },
+                {
+                    "authorId": "2114024966",
+                    "name": "Lu Li"
+                },
+                {
+                    "authorId": "9532787",
+                    "name": "Daxiang Dong"
+                },
+                {
+                    "authorId": "2153629538",
+                    "name": "Yi Liu"
+                },
+                {
+                    "authorId": "47558464",
+                    "name": "Ying Chen"
+                },
+                {
+                    "authorId": "2542603",
+                    "name": "Wayne Xin Zhao"
+                },
+                {
+                    "authorId": "3046102",
+                    "name": "Dianhai Yu"
+                },
+                {
+                    "authorId": "40354707",
+                    "name": "Hua Wu"
+                }
+            ],
+            "doi": "10.18653/v1/P18-1103",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c91b4b3a20a7637ecbb7e0179ac3108f3cf11880",
+            "title": "Multi-Turn Response Selection for Chatbots with Deep Attention Matching Network",
+            "url": "https://www.semanticscholar.org/paper/c91b4b3a20a7637ecbb7e0179ac3108f3cf11880",
+            "venue": "ACL",
+            "year": 2018
+        },
+        {
+            "arxivId": "1806.09102",
+            "authors": [
+                {
+                    "authorId": "3322871",
+                    "name": "Zhuosheng Zhang"
+                },
+                {
+                    "authorId": "46172737",
+                    "name": "Jiangtong Li"
+                },
+                {
+                    "authorId": "2055691681",
+                    "name": "Peng Fei Zhu"
+                },
+                {
+                    "authorId": "36225434",
+                    "name": "Zhao Hai"
+                },
+                {
+                    "authorId": "150112803",
+                    "name": "Gongshen Liu"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "977ad9f0ee96707b8b7de76afcd4df40a9c7a69e",
+            "title": "Modeling Multi-turn Conversation with Deep Utterance Aggregation",
+            "url": "https://www.semanticscholar.org/paper/977ad9f0ee96707b8b7de76afcd4df40a9c7a69e",
+            "venue": "COLING",
+            "year": 2018
+        },
+        {
+            "arxivId": "1806.07042",
+            "authors": [
+                {
+                    "authorId": "2142240763",
+                    "name": "Yu Wu"
+                },
+                {
+                    "authorId": "49807919",
+                    "name": "Furu Wei"
+                },
+                {
+                    "authorId": "3110003",
+                    "name": "Shaohan Huang"
+                },
+                {
+                    "authorId": "1707275",
+                    "name": "Zhoujun Li"
+                },
+                {
+                    "authorId": "92660691",
+                    "name": "Ming Zhou"
+                }
+            ],
+            "doi": "10.1609/aaai.v33i01.33017281",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "1a5cc4e66d50a21289799373876334385456b9fa",
+            "title": "Response Generation by Context-aware Prototype Editing",
+            "url": "https://www.semanticscholar.org/paper/1a5cc4e66d50a21289799373876334385456b9fa",
+            "venue": "AAAI",
+            "year": 2018
+        },
+        {
+            "arxivId": "1802.05365",
+            "authors": [
+                {
+                    "authorId": "39139825",
+                    "name": "Matthew E. Peters"
+                },
+                {
+                    "authorId": "50043859",
+                    "name": "Mark Neumann"
+                },
+                {
+                    "authorId": "2136562",
+                    "name": "Mohit Iyyer"
+                },
+                {
+                    "authorId": "40642935",
+                    "name": "Matt Gardner"
+                },
+                {
+                    "authorId": "143997772",
+                    "name": "Christopher Clark"
+                },
+                {
+                    "authorId": "2544107",
+                    "name": "Kenton Lee"
+                },
+                {
+                    "authorId": "1982950",
+                    "name": "Luke Zettlemoyer"
+                }
+            ],
+            "doi": "10.18653/v1/N18-1202",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "3febb2bed8865945e7fddc99efd791887bb7e14f",
+            "title": "Deep Contextualized Word Representations",
+            "url": "https://www.semanticscholar.org/paper/3febb2bed8865945e7fddc99efd791887bb7e14f",
+            "venue": "NAACL",
+            "year": 2018
+        },
+        {
+            "arxivId": "1802.08379",
+            "authors": [
+                {
+                    "authorId": "2145396794",
+                    "name": "Shengli Chen"
+                },
+                {
+                    "authorId": "23608432",
+                    "name": "Chao-Chun Hsu"
+                },
+                {
+                    "authorId": "1390445701",
+                    "name": "Chuan-Chun Kuo"
+                },
+                {
+                    "authorId": "144188081",
+                    "name": "Ting-Hao 'Kenneth' Huang"
+                },
+                {
+                    "authorId": "1746959",
+                    "name": "Lun-Wei Ku"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "ba4c923b43360325cba984549aa3c3224863d1f6",
+            "title": "EmotionLines: An Emotion Corpus of Multi-Party Conversations",
+            "url": "https://www.semanticscholar.org/paper/ba4c923b43360325cba984549aa3c3224863d1f6",
+            "venue": "LREC",
+            "year": 2018
+        },
+        {
+            "arxivId": "1801.07243",
+            "authors": [
+                {
+                    "authorId": "35097114",
+                    "name": "Saizheng Zhang"
+                },
+                {
+                    "authorId": "31461304",
+                    "name": "Emily Dinan"
+                },
+                {
+                    "authorId": "39219656",
+                    "name": "Jack Urbanek"
+                },
+                {
+                    "authorId": "3149531",
+                    "name": "Arthur Szlam"
+                },
+                {
+                    "authorId": "1743722",
+                    "name": "Douwe Kiela"
+                },
+                {
+                    "authorId": "145183709",
+                    "name": "J. Weston"
+                }
+            ],
+            "doi": "10.18653/v1/P18-1205",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "6c7046195f64cccac1ed3275d88d77655534b5a4",
+            "title": "Personalizing Dialogue Agents: I have a dog, do you have pets too?",
+            "url": "https://www.semanticscholar.org/paper/6c7046195f64cccac1ed3275d88d77655534b5a4",
+            "venue": "ACL",
+            "year": 2018
+        },
+        {
+            "arxivId": "1710.03957",
+            "authors": [
+                {
+                    "authorId": "3305402",
+                    "name": "Yanran Li"
+                },
+                {
+                    "authorId": "2087042666",
+                    "name": "Hui Su"
+                },
+                {
+                    "authorId": "2562211",
+                    "name": "Xiaoyu Shen"
+                },
+                {
+                    "authorId": "50135338",
+                    "name": "Wenjie Li"
+                },
+                {
+                    "authorId": "2314396",
+                    "name": "Ziqiang Cao"
+                },
+                {
+                    "authorId": "2944201",
+                    "name": "Shuzi Niu"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "3108f96f80d129036f53684344f4058257b37c4b",
+            "title": "DailyDialog: A Manually Labelled Multi-turn Dialogue Dataset",
+            "url": "https://www.semanticscholar.org/paper/3108f96f80d129036f53684344f4058257b37c4b",
+            "venue": "IJCNLP",
+            "year": 2017
+        },
+        {
+            "arxivId": "1709.07858",
+            "authors": [
+                {
+                    "authorId": "2634217",
+                    "name": "Arash Eshghi"
+                },
+                {
+                    "authorId": "24879056",
+                    "name": "Igor Shalyminov"
+                },
+                {
+                    "authorId": "1782798",
+                    "name": "Oliver Lemon"
+                }
+            ],
+            "doi": "10.18653/v1/D17-1236",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "5b05e94804243071088d961e548819ca714f6b18",
+            "title": "Bootstrapping incremental dialogue systems from minimal data: the generalisation power of dialogue grammars",
+            "url": "https://www.semanticscholar.org/paper/5b05e94804243071088d961e548819ca714f6b18",
+            "venue": "EMNLP",
+            "year": 2017
+        },
+        {
+            "arxivId": "1612.01627",
+            "authors": [
+                {
+                    "authorId": "49176273",
+                    "name": "Yu Wu"
+                },
+                {
+                    "authorId": "50224935",
+                    "name": "Wei Yu Wu"
+                },
+                {
+                    "authorId": "92660691",
+                    "name": "Ming Zhou"
+                },
+                {
+                    "authorId": "1707275",
+                    "name": "Zhoujun Li"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "a6eec00f10346ce27d4f69f9e38f5665fffe8056",
+            "title": "Sequential Match Network: A New Architecture for Multi-turn Response Selection in Retrieval-based Chatbots",
+            "url": "https://www.semanticscholar.org/paper/a6eec00f10346ce27d4f69f9e38f5665fffe8056",
+            "venue": "ArXiv",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "34442817",
+                    "name": "Xiangyang Zhou"
+                },
+                {
+                    "authorId": "9532787",
+                    "name": "Daxiang Dong"
+                },
+                {
+                    "authorId": "40354707",
+                    "name": "Hua Wu"
+                },
+                {
+                    "authorId": "7420210",
+                    "name": "Shiqi Zhao"
+                },
+                {
+                    "authorId": "3046102",
+                    "name": "Dianhai Yu"
+                },
+                {
+                    "authorId": "50007795",
+                    "name": "Hao Tian"
+                },
+                {
+                    "authorId": "26966619",
+                    "name": "Xuan Liu"
+                },
+                {
+                    "authorId": "144539156",
+                    "name": "Rui Yan"
+                }
+            ],
+            "doi": "10.18653/v1/D16-1036",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "2e0bed618d023cad81eae218e69afce8bef8e4d6",
+            "title": "Multi-view Response Selection for Human-Computer Conversation",
+            "url": "https://www.semanticscholar.org/paper/2e0bed618d023cad81eae218e69afce8bef8e4d6",
+            "venue": "EMNLP",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2055863231",
+                    "name": "Rui Yan"
+                },
+                {
+                    "authorId": "8281265",
+                    "name": "Yiping Song"
+                },
+                {
+                    "authorId": "40354707",
+                    "name": "Hua Wu"
+                }
+            ],
+            "doi": "10.1145/2911451.2911542",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7477d88b225909ef645941a0142eed75dc3b2e56",
+            "title": "Learning to Respond with Deep Neural Networks for Retrieval-Based Human-Computer Conversation System",
+            "url": "https://www.semanticscholar.org/paper/7477d88b225909ef645941a0142eed75dc3b2e56",
+            "venue": "SIGIR",
+            "year": 2016
+        },
+        {
+            "arxivId": "1606.05250",
+            "authors": [
+                {
+                    "authorId": "2706258",
+                    "name": "Pranav Rajpurkar"
+                },
+                {
+                    "authorId": "2151810148",
+                    "name": "Jian Zhang"
+                },
+                {
+                    "authorId": "2787620",
+                    "name": "Konstantin Lopyrev"
+                },
+                {
+                    "authorId": "145419642",
+                    "name": "Percy Liang"
+                }
+            ],
+            "doi": "10.18653/v1/D16-1264",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "05dd7254b632376973f3a1b4d39485da17814df5",
+            "title": "SQuAD: 100,000+ Questions for Machine Comprehension of Text",
+            "url": "https://www.semanticscholar.org/paper/05dd7254b632376973f3a1b4d39485da17814df5",
+            "venue": "EMNLP",
+            "year": 2016
+        },
+        {
+            "arxivId": "1604.04378",
+            "authors": [
+                {
+                    "authorId": "2019211",
+                    "name": "Shengxian Wan"
+                },
+                {
+                    "authorId": "37510256",
+                    "name": "Yanyan Lan"
+                },
+                {
+                    "authorId": "39474114",
+                    "name": "Jun Xu"
+                },
+                {
+                    "authorId": "1777025",
+                    "name": "J. Guo"
+                },
+                {
+                    "authorId": "48537499",
+                    "name": "Liang Pang"
+                },
+                {
+                    "authorId": "1717004",
+                    "name": "Xueqi Cheng"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "a5d3dfa6394340fd027425aef9e7384789925726",
+            "title": "Match-SRNN: Modeling the Recursive Matching Structure with Spatial RNN",
+            "url": "https://www.semanticscholar.org/paper/a5d3dfa6394340fd027425aef9e7384789925726",
+            "venue": "IJCAI",
+            "year": 2016
+        },
+        {
+            "arxivId": "1512.08849",
+            "authors": [
+                {
+                    "authorId": "2992833",
+                    "name": "Shuohang Wang"
+                },
+                {
+                    "authorId": "144924150",
+                    "name": "Jing Jiang"
+                }
+            ],
+            "doi": "10.18653/v1/N16-1170",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "596c882de006e4bb4a93f1fa08a5dd467bee060a",
+            "title": "Learning Natural Language Inference with LSTM",
+            "url": "https://www.semanticscholar.org/paper/596c882de006e4bb4a93f1fa08a5dd467bee060a",
+            "venue": "NAACL",
+            "year": 2015
+        },
+        {
+            "arxivId": "1510.03753",
+            "authors": [
+                {
+                    "authorId": "2100019",
+                    "name": "Rudolf Kadlec"
+                },
+                {
+                    "authorId": "8649018",
+                    "name": "Martin Schmid"
+                },
+                {
+                    "authorId": "1773749",
+                    "name": "Jan Kleindienst"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "b48ed494e4c6a1d73b499ae9e8d734c86746646c",
+            "title": "Improved Deep Learning Baselines for Ubuntu Corpus Dialogs",
+            "url": "https://www.semanticscholar.org/paper/b48ed494e4c6a1d73b499ae9e8d734c86746646c",
+            "venue": "ArXiv",
+            "year": 2015
+        },
+        {
+            "arxivId": "1508.07909",
+            "authors": [
+                {
+                    "authorId": "2082372",
+                    "name": "Rico Sennrich"
+                },
+                {
+                    "authorId": "2259100",
+                    "name": "B. Haddow"
+                },
+                {
+                    "authorId": "2539211",
+                    "name": "Alexandra Birch"
+                }
+            ],
+            "doi": "10.18653/v1/P16-1162",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "1518039b5001f1836565215eb047526b3ac7f462",
+            "title": "Neural Machine Translation of Rare Words with Subword Units",
+            "url": "https://www.semanticscholar.org/paper/1518039b5001f1836565215eb047526b3ac7f462",
+            "venue": "ACL",
+            "year": 2015
+        },
+        {
+            "arxivId": "1507.04808",
+            "authors": [
+                {
+                    "authorId": "35224828",
+                    "name": "Iulian Serban"
+                },
+                {
+                    "authorId": "2041695",
+                    "name": "Alessandro Sordoni"
+                },
+                {
+                    "authorId": "1751762",
+                    "name": "Yoshua Bengio"
+                },
+                {
+                    "authorId": "1760871",
+                    "name": "Aaron C. Courville"
+                },
+                {
+                    "authorId": "145134886",
+                    "name": "Joelle Pineau"
+                }
+            ],
+            "doi": "10.1609/aaai.v30i1.9883",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "17f5c7411eeeeedf25b0db99a9130aa353aee4ba",
+            "title": "Building End-To-End Dialogue Systems Using Generative Hierarchical Neural Network Models",
+            "url": "https://www.semanticscholar.org/paper/17f5c7411eeeeedf25b0db99a9130aa353aee4ba",
+            "venue": "AAAI",
+            "year": 2015
+        },
+        {
+            "arxivId": "1506.08909",
+            "authors": [
+                {
+                    "authorId": "2054294",
+                    "name": "Ryan Lowe"
+                },
+                {
+                    "authorId": "3236233",
+                    "name": "Nissan Pow"
+                },
+                {
+                    "authorId": "35224828",
+                    "name": "Iulian Serban"
+                },
+                {
+                    "authorId": "145134886",
+                    "name": "Joelle Pineau"
+                }
+            ],
+            "doi": "10.18653/v1/w15-4640",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "916441619914101258c71669b5ccc36424b54a6c",
+            "title": "The Ubuntu Dialogue Corpus: A Large Dataset for Research in Unstructured Multi-Turn Dialogue Systems",
+            "url": "https://www.semanticscholar.org/paper/916441619914101258c71669b5ccc36424b54a6c",
+            "venue": "SIGDIAL Conference",
+            "year": 2015
+        },
+        {
+            "arxivId": "1503.02427",
+            "authors": [
+                {
+                    "authorId": "2067908",
+                    "name": "Mingxuan Wang"
+                },
+                {
+                    "authorId": "11955007",
+                    "name": "Zhengdong Lu"
+                },
+                {
+                    "authorId": "49404233",
+                    "name": "Hang Li"
+                },
+                {
+                    "authorId": "1688015",
+                    "name": "Qun Liu"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "37ee3ad4ce95e49f9b7d84328ce0652d9e54c071",
+            "title": "Syntax-based Deep Matching of Short Texts",
+            "url": "https://www.semanticscholar.org/paper/37ee3ad4ce95e49f9b7d84328ce0652d9e54c071",
+            "venue": "IJCAI",
+            "year": 2015
+        },
+        {
+            "arxivId": "1409.0473",
+            "authors": [
+                {
+                    "authorId": "3335364",
+                    "name": "Dzmitry Bahdanau"
+                },
+                {
+                    "authorId": "1979489",
+                    "name": "Kyunghyun Cho"
+                },
+                {
+                    "authorId": "1751762",
+                    "name": "Yoshua Bengio"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "fa72afa9b2cbc8f0d7b05d52548906610ffbb9c5",
+            "title": "Neural Machine Translation by Jointly Learning to Align and Translate",
+            "url": "https://www.semanticscholar.org/paper/fa72afa9b2cbc8f0d7b05d52548906610ffbb9c5",
+            "venue": "ICLR",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "153440022",
+                    "name": "I. Goodfellow"
+                },
+                {
+                    "authorId": "1403025868",
+                    "name": "Jean Pouget-Abadie"
+                },
+                {
+                    "authorId": "153583218",
+                    "name": "Mehdi Mirza"
+                },
+                {
+                    "authorId": "2113742925",
+                    "name": "Bing Xu"
+                },
+                {
+                    "authorId": "1393680089",
+                    "name": "David Warde-Farley"
+                },
+                {
+                    "authorId": "1955694",
+                    "name": "Sherjil Ozair"
+                },
+                {
+                    "authorId": "1760871",
+                    "name": "Aaron C. Courville"
+                },
+                {
+                    "authorId": "1751762",
+                    "name": "Yoshua Bengio"
+                }
+            ],
+            "doi": "10.1145/3422622",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "13bc4e683075bdd6a3f0155241c276a772d4aa06",
+            "title": "Generative adversarial networks",
+            "url": "https://www.semanticscholar.org/paper/13bc4e683075bdd6a3f0155241c276a772d4aa06",
+            "venue": "Commun. ACM",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "48612449",
+                    "name": "I. S. Dunn"
+                }
+            ],
+            "doi": "10.1002/9780470551455.CH10",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "56010a55d49ac1f42355538f494427fd22402be1",
+            "title": "Exploring the Limits",
+            "url": "https://www.semanticscholar.org/paper/56010a55d49ac1f42355538f494427fd22402be1",
+            "venue": "",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1741101",
+                    "name": "Oren Etzioni"
+                },
+                {
+                    "authorId": "2339397",
+                    "name": "Michele Banko"
+                },
+                {
+                    "authorId": "1725561",
+                    "name": "Michael J. Cafarella"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f9cbf54dd6b1adc699328b555c4bc03b42ce5851",
+            "title": "Machine Reading",
+            "url": "https://www.semanticscholar.org/paper/f9cbf54dd6b1adc699328b555c4bc03b42ce5851",
+            "venue": "AAAI",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143998726",
+                    "name": "G. Leech"
+                }
+            ],
+            "doi": "10.1093/OXFORDHB/9780199276349.013.0007",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "49d50f6538e455edcb2eb488b069517934699139",
+            "title": "Pragmatics and dialogue.",
+            "url": "https://www.semanticscholar.org/paper/49d50f6538e455edcb2eb488b069517934699139",
+            "venue": "",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1947267",
+                    "name": "Michel Galley"
+                },
+                {
+                    "authorId": "145590324",
+                    "name": "K. McKeown"
+                },
+                {
+                    "authorId": "1398481836",
+                    "name": "E. Fosler-Lussier"
+                },
+                {
+                    "authorId": "40544823",
+                    "name": "Hongyan Jing"
+                }
+            ],
+            "doi": "10.3115/1075096.1075167",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "118a331364f30592d12eafe9af8a8c84b59b961c",
+            "title": "Discourse Segmentation of Multi-Party Conversation",
+            "url": "https://www.semanticscholar.org/paper/118a331364f30592d12eafe9af8a8c84b59b961c",
+            "venue": "ACL",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3323275",
+                    "name": "K. Papineni"
+                },
+                {
+                    "authorId": "46924970",
+                    "name": "Salim Roukos"
+                },
+                {
+                    "authorId": "144582029",
+                    "name": "T. Ward"
+                },
+                {
+                    "authorId": "2587983",
+                    "name": "Wei-Jing Zhu"
+                }
+            ],
+            "doi": "10.3115/1073083.1073135",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d7da009f457917aa381619facfa5ffae9329a6e9",
+            "title": "Bleu: a Method for Automatic Evaluation of Machine Translation",
+            "url": "https://www.semanticscholar.org/paper/d7da009f457917aa381619facfa5ffae9329a6e9",
+            "venue": "ACL",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "116805133",
+                    "name": "V\u00e9ronique Verhagen"
+                },
+                {
+                    "authorId": "3068825",
+                    "name": "J. Schilperoord"
+                }
+            ],
+            "doi": "10.1177/000134559903900301",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "ba6e3b28090d935205ed0e1d398206906b5b8905",
+            "title": "Linguistics",
+            "url": "https://www.semanticscholar.org/paper/ba6e3b28090d935205ed0e1d398206906b5b8905",
+            "venue": "",
+            "year": 1999
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3308557",
+                    "name": "Sepp Hochreiter"
+                },
+                {
+                    "authorId": "145341374",
+                    "name": "J. Schmidhuber"
+                }
+            ],
+            "doi": "10.1162/neco.1997.9.8.1735",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "2e9d221c206e9503ceb452302d68d10e293f2a10",
+            "title": "Long Short-Term Memory",
+            "url": "https://www.semanticscholar.org/paper/2e9d221c206e9503ceb452302d68d10e293f2a10",
+            "venue": "Neural Computation",
+            "year": 1997
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2248834664",
+                    "name": "Christopher K. I. Williams"
+                },
+                {
+                    "authorId": "2247411478",
+                    "name": "Carl E. Rasmussen"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "4d98ce60f4f8ed822503b8d13b0605f8c5d74ca7",
+            "title": "Gaussian Processes for Regression",
+            "url": "https://www.semanticscholar.org/paper/4d98ce60f4f8ed822503b8d13b0605f8c5d74ca7",
+            "venue": "NIPS",
+            "year": 1995
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2215426",
+                    "name": "J. Weizenbaum"
+                }
+            ],
+            "doi": "10.1145/365153.365168",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "a798bca71c8833e49ad9bac22da4b5c3503f1e6a",
+            "title": "ELIZA\u2014a computer program for the study of natural language communication between man and machine",
+            "url": "https://www.semanticscholar.org/paper/a798bca71c8833e49ad9bac22da4b5c3503f1e6a",
+            "venue": "CACM",
+            "year": 1966
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2262347",
+                    "name": "A. Turing"
+                }
+            ],
+            "doi": "10.1093/MIND/LIX.236.433",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "2d5673caa9e6af3a7b82a43f19ee920992db07ad",
+            "title": "Computing Machinery and Intelligence",
+            "url": "https://www.semanticscholar.org/paper/2d5673caa9e6af3a7b82a43f19ee920992db07ad",
+            "venue": "The Philosophy of Artificial Intelligence",
+            "year": 1950
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2114024966",
+                    "name": "Lu Li"
+                },
+                {
+                    "authorId": "2829009",
+                    "name": "Chenliang Li"
+                },
+                {
+                    "authorId": "145628086",
+                    "name": "Donghong Ji"
+                }
+            ],
+            "doi": "10.1016/j.ipm.2020.102415",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "12ff12ee7a5e02911fd113d50204c09739fcb40b",
+            "title": "Deep context modeling for multi-turn response selection in dialogue systems",
+            "url": "https://www.semanticscholar.org/paper/12ff12ee7a5e02911fd113d50204c09739fcb40b",
+            "venue": "Inf. Process. Manag.",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2005850517",
+                    "name": "A. Chizhik"
+                },
+                {
+                    "authorId": "2005846464",
+                    "name": "Yulia Zherebtsova"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "6f7b4d83eea1385cbb6193e1d8212904d247cbca",
+            "title": "Challenges of Building an Intelligent Chatbot",
+            "url": "https://www.semanticscholar.org/paper/6f7b4d83eea1385cbb6193e1d8212904d247cbca",
+            "venue": "IMS",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2042646882",
+                    "name": "Yifan Fan"
+                },
+                {
+                    "authorId": "38722178",
+                    "name": "Xudong Luo"
+                },
+                {
+                    "authorId": "2113316741",
+                    "name": "Pingping Lin"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "1fc56e26576068f4d6b64aa3d86ead89ef30b816",
+            "title": "A Survey of Response Generation of Dialogue Systems",
+            "url": "https://www.semanticscholar.org/paper/1fc56e26576068f4d6b64aa3d86ead89ef30b816",
+            "venue": "",
+            "year": 2020
+        },
+        {
+            "arxivId": "1810.04805",
+            "authors": [
+                {
+                    "authorId": "39172707",
+                    "name": "Jacob Devlin"
+                },
+                {
+                    "authorId": "1744179",
+                    "name": "Ming-Wei Chang"
+                },
+                {
+                    "authorId": "2544107",
+                    "name": "Kenton Lee"
+                },
+                {
+                    "authorId": "3259253",
+                    "name": "Kristina Toutanova"
+                }
+            ],
+            "doi": "10.18653/v1/N19-1423",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "df2b0e26d0599ce3e70df8a9da02e51594e0e992",
+            "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+            "url": "https://www.semanticscholar.org/paper/df2b0e26d0599ce3e70df8a9da02e51594e0e992",
+            "venue": "NAACL",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2146046988",
+                    "name": "Hsin-Yuan Huang"
+                },
+                {
+                    "authorId": "2890423",
+                    "name": "Eunsol Choi"
+                },
+                {
+                    "authorId": "144105277",
+                    "name": "Wen-tau Yih"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "520fcc38b93ece751869636cadc9ca9bf068b024",
+            "title": "CONVERSATIONAL MACHINE COMPREHENSION",
+            "url": "https://www.semanticscholar.org/paper/520fcc38b93ece751869636cadc9ca9bf068b024",
+            "venue": "",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [],
+            "doi": "10.1145/3289600",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f7f3adbf8f9eb9e4e04445ab9af2c3d191506340",
+            "title": "Proceedings of the Twelfth ACM International Conference on Web Search and Data Mining",
+            "url": "https://www.semanticscholar.org/paper/f7f3adbf8f9eb9e4e04445ab9af2c3d191506340",
+            "venue": "WSDM",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "38909097",
+                    "name": "Alec Radford"
+                },
+                {
+                    "authorId": "144958935",
+                    "name": "Karthik Narasimhan"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "cd18800a0fe0b668a1cc19f2ec95b5003d0a5035",
+            "title": "Improving Language Understanding by Generative Pre-Training",
+            "url": "https://www.semanticscholar.org/paper/cd18800a0fe0b668a1cc19f2ec95b5003d0a5035",
+            "venue": "",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145606490",
+                    "name": "Ewan Klein"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "72324e26cddab0792986dc8357e2459afec7ae5e",
+            "title": "Proceedings of the 38th Annual Meeting of the Association for Computational Linguistics",
+            "url": "https://www.semanticscholar.org/paper/72324e26cddab0792986dc8357e2459afec7ae5e",
+            "venue": "ACL 2000",
+            "year": 2000
+        },
+        {
+            "arxivId": null,
+            "authors": [],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "13167f9cd8c7906ca808b01d28dca6dd951da8a5",
+            "title": "of the Association for Computational Linguistics",
+            "url": "https://www.semanticscholar.org/paper/13167f9cd8c7906ca808b01d28dca6dd951da8a5",
+            "venue": "",
+            "year": null
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        },
+        {
+            "category": "Linguistics",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Advances in Multi-turn Dialogue Comprehension: A Survey",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/281b4a7e7fb057d8266ec0610888905c46fd715d",
+    "venue": "arXiv.org",
+    "year": 2021
+}

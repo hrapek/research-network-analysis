@@ -1,0 +1,545 @@
+{
+    "abstract": "Linear position interpolation helps pre-trained models using rotary position embeddings (RoPE) to extrapolate to longer sequence lengths. We propose using linear position interpolation to extend the extrapolation range of models using Attention with Linear Biases (ALiBi). We find position interpolation significantly improves extrapolation capability on upstream language modelling and downstream summarization and retrieval tasks.",
+    "arxivId": "2310.13017",
+    "authors": [
+        {
+            "authorId": "2243335766",
+            "name": "Faisal Al-Khateeb",
+            "url": "https://www.semanticscholar.org/author/2243335766"
+        },
+        {
+            "authorId": "1564139903",
+            "name": "Nolan Dey",
+            "url": "https://www.semanticscholar.org/author/1564139903"
+        },
+        {
+            "authorId": "2243228174",
+            "name": "Daria Soboleva",
+            "url": "https://www.semanticscholar.org/author/2243228174"
+        },
+        {
+            "authorId": "3130228",
+            "name": "Joel Hestness",
+            "url": "https://www.semanticscholar.org/author/3130228"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": "2406.02080",
+            "authors": [
+                {
+                    "authorId": "2304566495",
+                    "name": "Shida Wang"
+                }
+            ],
+            "doi": "10.48550/arXiv.2406.02080",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "c5a0246bf3c977dce06d7c77d292c4ee6295dc05",
+            "title": "LongSSM: On the Length Extension of State-space Models in Language Modelling",
+            "url": "https://www.semanticscholar.org/paper/c5a0246bf3c977dce06d7c77d292c4ee6295dc05",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": "2404.06910",
+            "authors": [
+                {
+                    "authorId": "2178316365",
+                    "name": "Thomas Merth"
+                },
+                {
+                    "authorId": "2275124052",
+                    "name": "Qichen Fu"
+                },
+                {
+                    "authorId": "2284683934",
+                    "name": "Mohammad Rastegari"
+                },
+                {
+                    "authorId": "40465379",
+                    "name": "Mahyar Najibi"
+                }
+            ],
+            "doi": "10.48550/arXiv.2404.06910",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "9c45b4af25e192733d42a8d384e41002786d0d32",
+            "title": "Superposition Prompting: Improving and Accelerating Retrieval-Augmented Generation",
+            "url": "https://www.semanticscholar.org/paper/9c45b4af25e192733d42a8d384e41002786d0d32",
+            "venue": "ICML",
+            "year": 2024
+        },
+        {
+            "arxivId": "2404.01856",
+            "authors": [
+                {
+                    "authorId": "2266239041",
+                    "name": "Risto Luukkonen"
+                },
+                {
+                    "authorId": "2294573656",
+                    "name": "Jonathan Burdge"
+                },
+                {
+                    "authorId": "2294569544",
+                    "name": "Elaine Zosa"
+                },
+                {
+                    "authorId": "51230976",
+                    "name": "Aarne Talman"
+                },
+                {
+                    "authorId": "3389116",
+                    "name": "Ville Komulainen"
+                },
+                {
+                    "authorId": "2294568512",
+                    "name": "Vaino Hatanpaa"
+                },
+                {
+                    "authorId": "2294574328",
+                    "name": "Peter Sarlin"
+                },
+                {
+                    "authorId": "1708916",
+                    "name": "S. Pyysalo"
+                }
+            ],
+            "doi": "10.48550/arXiv.2404.01856",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "ab8d436e1792907294cb7707c94b3eb66ec0da17",
+            "title": "Poro 34B and the Blessing of Multilinguality",
+            "url": "https://www.semanticscholar.org/paper/ab8d436e1792907294cb7707c94b3eb66ec0da17",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2066173302",
+                    "name": "Prashanth Chandran"
+                },
+                {
+                    "authorId": "2325970891",
+                    "name": "Agon Serifi"
+                },
+                {
+                    "authorId": "2320245340",
+                    "name": "Markus Gross"
+                },
+                {
+                    "authorId": "2325968332",
+                    "name": "Moritz B\u00e4cher"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "e4b931a4b4eeeef89a41cbab937eef203c308f5b",
+            "title": "Spline-based Transformers",
+            "url": "https://www.semanticscholar.org/paper/e4b931a4b4eeeef89a41cbab937eef203c308f5b",
+            "venue": "",
+            "year": null
+        }
+    ],
+    "corpusId": 264405982,
+    "doi": "10.48550/arXiv.2310.13017",
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 4,
+    "numCiting": 12,
+    "paperId": "5d8fec20573bc89ec72151277974919c85d8bdfd",
+    "references": [
+        {
+            "arxivId": "2309.11568",
+            "authors": [
+                {
+                    "authorId": "1564139903",
+                    "name": "Nolan Dey"
+                },
+                {
+                    "authorId": "2243228174",
+                    "name": "Daria Soboleva"
+                },
+                {
+                    "authorId": "2243335766",
+                    "name": "Faisal Al-Khateeb"
+                },
+                {
+                    "authorId": "2243383177",
+                    "name": "Bowen Yang"
+                },
+                {
+                    "authorId": "2213728244",
+                    "name": "Ribhu Pathria"
+                },
+                {
+                    "authorId": "2213732240",
+                    "name": "Hemant Khachane"
+                },
+                {
+                    "authorId": "2243337041",
+                    "name": "Shaheer Muhammad"
+                },
+                {
+                    "authorId": "2311991181",
+                    "name": "Zhiming Chen"
+                },
+                {
+                    "authorId": "2243336038",
+                    "name": "Robert Myers"
+                },
+                {
+                    "authorId": "2243336766",
+                    "name": "Jacob Robert Steeves"
+                },
+                {
+                    "authorId": "2243228182",
+                    "name": "Natalia Vassilieva"
+                },
+                {
+                    "authorId": "2243336770",
+                    "name": "Marvin Tom"
+                },
+                {
+                    "authorId": "3130228",
+                    "name": "Joel Hestness"
+                }
+            ],
+            "doi": "10.48550/arXiv.2309.11568",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "44b7adbd196e69c8771734aa8c9af5fd69c04370",
+            "title": "BTLM-3B-8K: 7B Parameter Performance in a 3B Parameter Model",
+            "url": "https://www.semanticscholar.org/paper/44b7adbd196e69c8771734aa8c9af5fd69c04370",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": "2306.15595",
+            "authors": [
+                {
+                    "authorId": "2107977873",
+                    "name": "Shouyuan Chen"
+                },
+                {
+                    "authorId": "2125872141",
+                    "name": "Sherman Wong"
+                },
+                {
+                    "authorId": "49330599",
+                    "name": "Liangjian Chen"
+                },
+                {
+                    "authorId": "1932187449",
+                    "name": "Yuandong Tian"
+                }
+            ],
+            "doi": "10.48550/arXiv.2306.15595",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "f5afaccfe90268485a9961c5771ec5e71e9b806c",
+            "title": "Extending Context Window of Large Language Models via Positional Interpolation",
+            "url": "https://www.semanticscholar.org/paper/f5afaccfe90268485a9961c5771ec5e71e9b806c",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": "2108.12409",
+            "authors": [
+                {
+                    "authorId": "40170001",
+                    "name": "Ofir Press"
+                },
+                {
+                    "authorId": "144365875",
+                    "name": "Noah A. Smith"
+                },
+                {
+                    "authorId": "35084211",
+                    "name": "M. Lewis"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9ca329408813d209b1dcb36936f7f9cba82506bd",
+            "title": "Train Short, Test Long: Attention with Linear Biases Enables Input Length Extrapolation",
+            "url": "https://www.semanticscholar.org/paper/9ca329408813d209b1dcb36936f7f9cba82506bd",
+            "venue": "ICLR",
+            "year": 2021
+        },
+        {
+            "arxivId": "2104.09864",
+            "authors": [
+                {
+                    "authorId": "51111230",
+                    "name": "Jianlin Su"
+                },
+                {
+                    "authorId": "2140045110",
+                    "name": "Yu Lu"
+                },
+                {
+                    "authorId": "1382633722",
+                    "name": "Shengfeng Pan"
+                },
+                {
+                    "authorId": "2079396269",
+                    "name": "Bo Wen"
+                },
+                {
+                    "authorId": "1807486863",
+                    "name": "Yunfeng Liu"
+                }
+            ],
+            "doi": "10.1016/j.neucom.2023.127063",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "66c10bf1f11bc1b2d92204d8f8391d087f6de1c4",
+            "title": "RoFormer: Enhanced Transformer with Rotary Position Embedding",
+            "url": "https://www.semanticscholar.org/paper/66c10bf1f11bc1b2d92204d8f8391d087f6de1c4",
+            "venue": "Neurocomputing",
+            "year": 2021
+        },
+        {
+            "arxivId": "2104.02112",
+            "authors": [
+                {
+                    "authorId": "2111132245",
+                    "name": "L. Huang"
+                },
+                {
+                    "authorId": "6333082",
+                    "name": "Shuyang Cao"
+                },
+                {
+                    "authorId": "147697560",
+                    "name": "Nikolaus Nova Parulian"
+                },
+                {
+                    "authorId": "2113323573",
+                    "name": "Heng Ji"
+                },
+                {
+                    "authorId": "2153516659",
+                    "name": "Lu Wang"
+                }
+            ],
+            "doi": "10.18653/V1/2021.NAACL-MAIN.112",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "9dc624d7258d1a56117ca720aea953ce46b66b21",
+            "title": "Efficient Attentions for Long Document Summarization",
+            "url": "https://www.semanticscholar.org/paper/9dc624d7258d1a56117ca720aea953ce46b66b21",
+            "venue": "NAACL",
+            "year": 2021
+        },
+        {
+            "arxivId": "2104.05938",
+            "authors": [
+                {
+                    "authorId": "1606040932",
+                    "name": "Ming Zhong"
+                },
+                {
+                    "authorId": "144508458",
+                    "name": "Da Yin"
+                },
+                {
+                    "authorId": "48881008",
+                    "name": "Tao Yu"
+                },
+                {
+                    "authorId": "2056402211",
+                    "name": "A. Zaidi"
+                },
+                {
+                    "authorId": "2074120594",
+                    "name": "Mutethia Mutuma"
+                },
+                {
+                    "authorId": "144598922",
+                    "name": "Rahul Jha"
+                },
+                {
+                    "authorId": "2072795428",
+                    "name": "A. Awadallah"
+                },
+                {
+                    "authorId": "1709797",
+                    "name": "Asli Celikyilmaz"
+                },
+                {
+                    "authorId": "39798499",
+                    "name": "Yang Liu"
+                },
+                {
+                    "authorId": "1767521",
+                    "name": "Xipeng Qiu"
+                },
+                {
+                    "authorId": "9215251",
+                    "name": "Dragomir R. Radev"
+                }
+            ],
+            "doi": "10.18653/V1/2021.NAACL-MAIN.472",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "aa28873534c24e4a8c5deb7bff723cd5fc69a6f0",
+            "title": "QMSum: A New Benchmark for Query-based Multi-domain Meeting Summarization",
+            "url": "https://www.semanticscholar.org/paper/aa28873534c24e4a8c5deb7bff723cd5fc69a6f0",
+            "venue": "NAACL",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "46616544",
+                    "name": "Jordan Hoffmann"
+                },
+                {
+                    "authorId": "148016269",
+                    "name": "Sebastian Borgeaud"
+                },
+                {
+                    "authorId": "1697879",
+                    "name": "A. Mensch"
+                },
+                {
+                    "authorId": "118801223",
+                    "name": "Elena Buchatskaya"
+                },
+                {
+                    "authorId": "2072572294",
+                    "name": "Trevor Cai"
+                },
+                {
+                    "authorId": "2143538252",
+                    "name": "Eliza Rutherford"
+                },
+                {
+                    "authorId": "40550616",
+                    "name": "Diego de Las Casas"
+                },
+                {
+                    "authorId": "2234342",
+                    "name": "Lisa Anne Hendricks"
+                },
+                {
+                    "authorId": "1851564",
+                    "name": "Johannes Welbl"
+                },
+                {
+                    "authorId": "31993415",
+                    "name": "Aidan Clark"
+                },
+                {
+                    "authorId": "2146532222",
+                    "name": "Tom Hennigan"
+                },
+                {
+                    "authorId": "51210148",
+                    "name": "Eric Noland"
+                },
+                {
+                    "authorId": "2143434227",
+                    "name": "Katie Millican"
+                },
+                {
+                    "authorId": "47568983",
+                    "name": "George van den Driessche"
+                },
+                {
+                    "authorId": "2143374656",
+                    "name": "Bogdan Damoc"
+                },
+                {
+                    "authorId": "40895205",
+                    "name": "Aurelia Guy"
+                },
+                {
+                    "authorId": "2217144",
+                    "name": "Simon Osindero"
+                },
+                {
+                    "authorId": "34838386",
+                    "name": "K. Simonyan"
+                },
+                {
+                    "authorId": "152585800",
+                    "name": "Erich Elsen"
+                },
+                {
+                    "authorId": "1689108",
+                    "name": "O. Vinyals"
+                },
+                {
+                    "authorId": "34269227",
+                    "name": "Jack W. Rae"
+                },
+                {
+                    "authorId": "2175946",
+                    "name": "L. Sifre"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "result"
+            ],
+            "isInfluential": false,
+            "paperId": "bb0656031cb17adf6bac5fd0fe8d53dd9c291508",
+            "title": "An empirical analysis of compute-optimal large language model training",
+            "url": "https://www.semanticscholar.org/paper/bb0656031cb17adf6bac5fd0fe8d53dd9c291508",
+            "venue": "NeurIPS",
+            "year": 2022
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        },
+        {
+            "category": "Linguistics",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Position Interpolation Improves ALiBi Extrapolation",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/5d8fec20573bc89ec72151277974919c85d8bdfd",
+    "venue": "arXiv.org",
+    "year": 2023
+}

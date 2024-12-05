@@ -1,0 +1,1832 @@
+{
+    "abstract": "We investigate learning heuristics for domain-specific planning. Prior work framed learning a heuristic as an ordinary regression problem. However, in a greedy best-first search, the ordering of states induced by a heuristic is more indicative of the resulting planner's performance than mean squared error. Thus, we instead frame learning a heuristic as a learning to rank problem which we solve using a RankSVM formulation. Additionally, we introduce new methods for computing features that capture temporal interactions in an approximate plan. Our experiments on recent International Planning Competition problems show that the RankSVM learned heuristics outperform both the original heuristics and heuristics learned through ordinary regression.",
+    "arxivId": "1608.01302",
+    "authors": [
+        {
+            "authorId": "1834058",
+            "name": "Caelan Reed Garrett",
+            "url": "https://www.semanticscholar.org/author/1834058"
+        },
+        {
+            "authorId": "1709512",
+            "name": "L. Kaelbling",
+            "url": "https://www.semanticscholar.org/author/1709512"
+        },
+        {
+            "authorId": "1388700951",
+            "name": "Tomas Lozano-Perez",
+            "url": "https://www.semanticscholar.org/author/1388700951"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": "2410.24080",
+            "authors": [
+                {
+                    "authorId": "2275308640",
+                    "name": "Dillon Z. Chen"
+                },
+                {
+                    "authorId": "2212781782",
+                    "name": "Sylvie Thi'ebaux"
+                }
+            ],
+            "doi": "10.48550/arXiv.2410.24080",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "534f3043efeae014bc6571928919228ed36023b3",
+            "title": "Graph Learning for Numeric Planning",
+            "url": "https://www.semanticscholar.org/paper/534f3043efeae014bc6571928919228ed36023b3",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": "2410.07923",
+            "authors": [
+                {
+                    "authorId": "2275308640",
+                    "name": "Dillon Z. Chen"
+                },
+                {
+                    "authorId": "3044122",
+                    "name": "Rostislav Horc\u00edk"
+                },
+                {
+                    "authorId": "2304121352",
+                    "name": "Gustav S\u00edr"
+                }
+            ],
+            "doi": "10.48550/arXiv.2410.07923",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c64d8738b7900a5b546aa261a9bc950d9aac2523",
+            "title": "Deep Learning for Generalised Planning with Background Knowledge",
+            "url": "https://www.semanticscholar.org/paper/c64d8738b7900a5b546aa261a9bc950d9aac2523",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2313416126",
+                    "name": "Mingyu Hao"
+                },
+                {
+                    "authorId": "2322082",
+                    "name": "Felipe W. Trevizan"
+                },
+                {
+                    "authorId": "2281759864",
+                    "name": "Sylvie Thi\u00e9baux"
+                },
+                {
+                    "authorId": "51911923",
+                    "name": "Patrick Ferber"
+                },
+                {
+                    "authorId": "2249444602",
+                    "name": "J. Hoffmann"
+                }
+            ],
+            "doi": "10.24963/ijcai.2024/743",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "ebf5c26a148cf09d5b283793622e64b57e42f36c",
+            "title": "Guiding GBFS through Learned Pairwise Rankings",
+            "url": "https://www.semanticscholar.org/paper/ebf5c26a148cf09d5b283793622e64b57e42f36c",
+            "venue": "IJCAI",
+            "year": 2024
+        },
+        {
+            "arxivId": "2404.05235",
+            "authors": [
+                {
+                    "authorId": "2275308640",
+                    "name": "Dillon Z. Chen"
+                },
+                {
+                    "authorId": "2212781782",
+                    "name": "Sylvie Thi'ebaux"
+                }
+            ],
+            "doi": "10.1609/socs.v17i1.31559",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "86f82ed9edd527e48c4668745dbe099580336d88",
+            "title": "Novelty Heuristics, Multi-Queue Search, and Portfolios for Numeric Planning",
+            "url": "https://www.semanticscholar.org/paper/86f82ed9edd527e48c4668745dbe099580336d88",
+            "venue": "SOCS",
+            "year": 2024
+        },
+        {
+            "arxivId": "2403.16508",
+            "authors": [
+                {
+                    "authorId": "2275308640",
+                    "name": "Dillon Z. Chen"
+                },
+                {
+                    "authorId": "2293324813",
+                    "name": "Felipe Trevizan"
+                },
+                {
+                    "authorId": "2212781782",
+                    "name": "Sylvie Thi'ebaux"
+                }
+            ],
+            "doi": "10.1609/icaps.v34i1.31462",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "b34d1bdd975e1cf7ed308cad3fd533839191b925",
+            "title": "Return to Tradition: Learning Reliable Heuristics with Classical Machine Learning",
+            "url": "https://www.semanticscholar.org/paper/b34d1bdd975e1cf7ed308cad3fd533839191b925",
+            "venue": "ICAPS",
+            "year": 2024
+        },
+        {
+            "arxivId": "2310.19463",
+            "authors": [
+                {
+                    "authorId": "10703551",
+                    "name": "Leah A. Chrestien"
+                },
+                {
+                    "authorId": "2264421594",
+                    "name": "Tom'as Pevn'y"
+                },
+                {
+                    "authorId": "2252292240",
+                    "name": "Stefan Edelkamp"
+                },
+                {
+                    "authorId": "3154394",
+                    "name": "Anton\u00edn Komenda"
+                }
+            ],
+            "doi": "10.48550/arXiv.2310.19463",
+            "intent": [
+                "result",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "758305d53c3c956df6671c7b5fc4f8ff3131983e",
+            "title": "Optimize Planning Heuristics to Rank, not to Estimate Cost-to-Goal",
+            "url": "https://www.semanticscholar.org/paper/758305d53c3c956df6671c7b5fc4f8ff3131983e",
+            "venue": "NeurIPS",
+            "year": 2023
+        },
+        {
+            "arxivId": "2308.11905",
+            "authors": [
+                {
+                    "authorId": "2202538862",
+                    "name": "Carlos N'unez-Molina"
+                },
+                {
+                    "authorId": "2335584",
+                    "name": "Masataro Asai"
+                },
+                {
+                    "authorId": "2253588348",
+                    "name": "Pablo Mesejo"
+                },
+                {
+                    "authorId": "2202544763",
+                    "name": "Juan Fern'andez-Olivares"
+                }
+            ],
+            "doi": "10.24963/ijcai.2024/747",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "26179fbae83d6a8c825356d8e58728e8ab671fb4",
+            "title": "On Using Admissible Bounds for Learning Forward Search Heuristics",
+            "url": "https://www.semanticscholar.org/paper/26179fbae83d6a8c825356d8e58728e8ab671fb4",
+            "venue": "IJCAI",
+            "year": 2023
+        },
+        {
+            "arxivId": "2306.04019",
+            "authors": [
+                {
+                    "authorId": "2146403091",
+                    "name": "Yu Liu"
+                },
+                {
+                    "authorId": "39266424",
+                    "name": "Ryo Kuroiwa"
+                },
+                {
+                    "authorId": "35198410",
+                    "name": "A. Fukunaga"
+                }
+            ],
+            "doi": "10.48550/arXiv.2306.04019",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "cc40686d9fc14fc18fd5659ce6df6b29c330c916",
+            "title": "Learning Search-Space Specific Heuristics Using Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/cc40686d9fc14fc18fd5659ce6df6b29c330c916",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": "2305.09840",
+            "authors": [
+                {
+                    "authorId": "2217678560",
+                    "name": "Stephen Wissow"
+                },
+                {
+                    "authorId": "2335584",
+                    "name": "Masataro Asai"
+                }
+            ],
+            "doi": "10.48550/arXiv.2305.09840",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ed8ac82c872a476eab5a2f41c2a3d59b1e1d76b2",
+            "title": "Scale-Adaptive Balancing of Exploration and Exploitation in Classical Planning",
+            "url": "https://www.semanticscholar.org/paper/ed8ac82c872a476eab5a2f41c2a3d59b1e1d76b2",
+            "venue": "ECAI",
+            "year": 2023
+        },
+        {
+            "arxivId": "2212.03978",
+            "authors": [
+                {
+                    "authorId": "2123416069",
+                    "name": "Michal P\u00e1ndy"
+                },
+                {
+                    "authorId": "2121531556",
+                    "name": "Weikang Qiu"
+                },
+                {
+                    "authorId": "1630330616",
+                    "name": "Gabriele Corso"
+                },
+                {
+                    "authorId": "1742197495",
+                    "name": "Petar Velivckovi'c"
+                },
+                {
+                    "authorId": "83539859",
+                    "name": "Rex Ying"
+                },
+                {
+                    "authorId": "1702139",
+                    "name": "J. Leskovec"
+                },
+                {
+                    "authorId": "2075355155",
+                    "name": "Pietro Lio'"
+                }
+            ],
+            "doi": "10.48550/arXiv.2212.03978",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ba62f4dd92ab79375e75bdb47c54f935d097b380",
+            "title": "Learning Graph Search Heuristics",
+            "url": "https://www.semanticscholar.org/paper/ba62f4dd92ab79375e75bdb47c54f935d097b380",
+            "venue": "LoG",
+            "year": 2022
+        },
+        {
+            "arxivId": "2211.13316",
+            "authors": [
+                {
+                    "authorId": "2042706132",
+                    "name": "R. Bettker"
+                },
+                {
+                    "authorId": "5154159",
+                    "name": "P. Minini"
+                },
+                {
+                    "authorId": "144875364",
+                    "name": "A. Pereira"
+                },
+                {
+                    "authorId": "145643887",
+                    "name": "M. Ritt"
+                }
+            ],
+            "doi": "10.1613/jair.1.15742",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "865c837275d1b5ae9de277321e5e1e48e5f45555",
+            "title": "Understanding Sample Generation Strategies for Learning Heuristic Functions in Classical Planning",
+            "url": "https://www.semanticscholar.org/paper/865c837275d1b5ae9de277321e5e1e48e5f45555",
+            "venue": "J. Artif. Intell. Res.",
+            "year": 2022
+        },
+        {
+            "arxivId": "2211.11089",
+            "authors": [
+                {
+                    "authorId": "2191605074",
+                    "name": "Ilyes Toumi"
+                },
+                {
+                    "authorId": "3264433",
+                    "name": "A. Orthey"
+                },
+                {
+                    "authorId": "51449268",
+                    "name": "Alexander von Rohr"
+                },
+                {
+                    "authorId": "2452570",
+                    "name": "Ngo Anh Vien"
+                }
+            ],
+            "doi": "10.48550/arXiv.2211.11089",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f3f572e581bf876304262eb5e0587daf24447f6f",
+            "title": "Multi-Arm Bin-Picking in Real-Time: A Combined Task and Motion Planning Approach",
+            "url": "https://www.semanticscholar.org/paper/f3f572e581bf876304262eb5e0587daf24447f6f",
+            "venue": "ArXiv",
+            "year": 2022
+        },
+        {
+            "arxivId": "2203.04120",
+            "authors": [
+                {
+                    "authorId": "34897453",
+                    "name": "Niklas Funk"
+                },
+                {
+                    "authorId": "2111618870",
+                    "name": "Svenja Menzenbach"
+                },
+                {
+                    "authorId": "1989757",
+                    "name": "G. Chalvatzaki"
+                },
+                {
+                    "authorId": "145197867",
+                    "name": "Jan Peters"
+                }
+            ],
+            "doi": "10.1109/IROS47612.2022.9981784",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "f6551ba0927422a52caa61e30fa8851fb2046d73",
+            "title": "Graph-based Reinforcement Learning meets Mixed Integer Programs: An application to 3D robot assembly discovery",
+            "url": "https://www.semanticscholar.org/paper/f6551ba0927422a52caa61e30fa8851fb2046d73",
+            "venue": "2022 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "30837327",
+                    "name": "Danny Driess"
+                },
+                {
+                    "authorId": "2150258",
+                    "name": "Jung-Su Ha"
+                },
+                {
+                    "authorId": "144918851",
+                    "name": "Marc Toussaint"
+                }
+            ],
+            "doi": "10.1177/02783649211056967",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "690d4abcf1cfd2e8b79324dd0f773763b3efb249",
+            "title": "Learning to solve sequential physical reasoning problems from a scene image",
+            "url": "https://www.semanticscholar.org/paper/690d4abcf1cfd2e8b79324dd0f773763b3efb249",
+            "venue": "Int. J. Robotics Res.",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "90441219",
+                    "name": "Michaela Urbanovsk\u00e1"
+                },
+                {
+                    "authorId": "3154394",
+                    "name": "Anton\u00edn Komenda"
+                }
+            ],
+            "doi": "10.1007/s10115-021-01619-8",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b8081e72222dbefcafa5066c56e8daf3a9ad526f",
+            "title": "Neural networks for model-free and scale-free automated planning",
+            "url": "https://www.semanticscholar.org/paper/b8081e72222dbefcafa5066c56e8daf3a9ad526f",
+            "venue": "Knowledge and Information Systems",
+            "year": 2021
+        },
+        {
+            "arxivId": "2109.14830",
+            "authors": [
+                {
+                    "authorId": "34257663",
+                    "name": "Clement Gehring"
+                },
+                {
+                    "authorId": "2335584",
+                    "name": "Masataro Asai"
+                },
+                {
+                    "authorId": "1810686",
+                    "name": "Rohan Chitnis"
+                },
+                {
+                    "authorId": "39047272",
+                    "name": "Tom Silver"
+                },
+                {
+                    "authorId": "1709512",
+                    "name": "L. Kaelbling"
+                },
+                {
+                    "authorId": "1821852",
+                    "name": "Shirin Sohrabi"
+                },
+                {
+                    "authorId": "144801999",
+                    "name": "Michael Katz"
+                }
+            ],
+            "doi": "10.1609/icaps.v32i1.19846",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "21b7b7833de612c174f626dc01800849f7671a34",
+            "title": "Reinforcement Learning for Classical Planning: Viewing Heuristics as Dense Reward Generators",
+            "url": "https://www.semanticscholar.org/paper/21b7b7833de612c174f626dc01800849f7671a34",
+            "venue": "ICAPS",
+            "year": 2021
+        },
+        {
+            "arxivId": "2203.04605",
+            "authors": [
+                {
+                    "authorId": "2115287257",
+                    "name": "Beomjoon Kim"
+                },
+                {
+                    "authorId": "138148055",
+                    "name": "Luke Shimanuki"
+                },
+                {
+                    "authorId": "1709512",
+                    "name": "L. Kaelbling"
+                },
+                {
+                    "authorId": "1388700951",
+                    "name": "Tomas Lozano-Perez"
+                }
+            ],
+            "doi": "10.1177/02783649211038280",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f6e86d9bd51b302e44c4ee633508911abcaee029",
+            "title": "Representation, learning, and planning algorithms for geometric task and motion planning",
+            "url": "https://www.semanticscholar.org/paper/f6e86d9bd51b302e44c4ee633508911abcaee029",
+            "venue": "Int. J. Robotics Res.",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "30837327",
+                    "name": "Danny Driess"
+                },
+                {
+                    "authorId": "2150258",
+                    "name": "Jung-Su Ha"
+                },
+                {
+                    "authorId": "1726802",
+                    "name": "Russ Tedrake"
+                },
+                {
+                    "authorId": "144918851",
+                    "name": "Marc Toussaint"
+                }
+            ],
+            "doi": "10.1109/ICRA48506.2021.9560934",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "b0829f5c4ae98bcc00e54e1b50400f0523215204",
+            "title": "Learning Geometric Reasoning and Control for Long-Horizon Tasks from Visual Input",
+            "url": "https://www.semanticscholar.org/paper/b0829f5c4ae98bcc00e54e1b50400f0523215204",
+            "venue": "2021 IEEE International Conference on Robotics and Automation (ICRA)",
+            "year": 2021
+        },
+        {
+            "arxivId": "2107.02603",
+            "authors": [
+                {
+                    "authorId": "138689850",
+                    "name": "Ricardo Luna Gutierrez"
+                },
+                {
+                    "authorId": "1696726",
+                    "name": "M. Leonetti"
+                }
+            ],
+            "doi": "10.1609/icaps.v31i1.16003",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "f402e1d43bb06b966709b52574151e25271ffe68",
+            "title": "Meta Reinforcement Learning for Heuristic Planing",
+            "url": "https://www.semanticscholar.org/paper/f402e1d43bb06b966709b52574151e25271ffe68",
+            "venue": "ICAPS",
+            "year": 2021
+        },
+        {
+            "arxivId": "2011.09854",
+            "authors": [
+                {
+                    "authorId": "52435355",
+                    "name": "Sirui Xie"
+                },
+                {
+                    "authorId": "144516508",
+                    "name": "Feng Gao"
+                },
+                {
+                    "authorId": "145380991",
+                    "name": "Song-Chun Zhu"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "5cc1c5dae4e8ad3092a7d0e3dcd95d8609b7f962",
+            "title": "Generalized Inverse Planning: Learning Lifted non-Markovian Utility for Generalizable Task Representation",
+            "url": "https://www.semanticscholar.org/paper/5cc1c5dae4e8ad3092a7d0e3dcd95d8609b7f962",
+            "venue": "ArXiv",
+            "year": 2020
+        },
+        {
+            "arxivId": "2010.01083",
+            "authors": [
+                {
+                    "authorId": "1834058",
+                    "name": "Caelan Reed Garrett"
+                },
+                {
+                    "authorId": "1810686",
+                    "name": "Rohan Chitnis"
+                },
+                {
+                    "authorId": "2486032",
+                    "name": "Rachel Holladay"
+                },
+                {
+                    "authorId": "2115287257",
+                    "name": "Beomjoon Kim"
+                },
+                {
+                    "authorId": "39047272",
+                    "name": "Tom Silver"
+                },
+                {
+                    "authorId": "1709512",
+                    "name": "L. Kaelbling"
+                },
+                {
+                    "authorId": "1388700951",
+                    "name": "Tomas Lozano-Perez"
+                }
+            ],
+            "doi": "10.1146/ANNUREV-CONTROL-091420-084139",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8be4f7216f2124603b4477d61f5ddb577a640fe5",
+            "title": "Integrated Task and Motion Planning",
+            "url": "https://www.semanticscholar.org/paper/8be4f7216f2124603b4477d61f5ddb577a640fe5",
+            "venue": "Annu. Rev. Control. Robotics Auton. Syst.",
+            "year": 2020
+        },
+        {
+            "arxivId": "2006.05398",
+            "authors": [
+                {
+                    "authorId": "30837327",
+                    "name": "Danny Driess"
+                },
+                {
+                    "authorId": "2150258",
+                    "name": "Jung-Su Ha"
+                },
+                {
+                    "authorId": "144918851",
+                    "name": "Marc Toussaint"
+                }
+            ],
+            "doi": "10.15607/rss.2020.xvi.003",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "3ddc24f653541dac0ba08b7dc2633dd3396e5a1a",
+            "title": "Deep Visual Reasoning: Learning to Predict Action Sequences for Task and Motion Planning from an Initial Scene Image",
+            "url": "https://www.semanticscholar.org/paper/3ddc24f653541dac0ba08b7dc2633dd3396e5a1a",
+            "venue": "Robotics: Science and Systems",
+            "year": 2020
+        },
+        {
+            "arxivId": "2005.02305",
+            "authors": [
+                {
+                    "authorId": "1388063626",
+                    "name": "Or Rivlin"
+                },
+                {
+                    "authorId": "1918412",
+                    "name": "Tamir Hazan"
+                },
+                {
+                    "authorId": "1944465",
+                    "name": "E. Karpas"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e5b942906281d4c13244d9528271335781af829d",
+            "title": "Generalized Planning With Deep Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/e5b942906281d4c13244d9528271335781af829d",
+            "venue": "ArXiv",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "30837327",
+                    "name": "Danny Driess"
+                },
+                {
+                    "authorId": "32408015",
+                    "name": "Ozgur S. Oguz"
+                },
+                {
+                    "authorId": "2150258",
+                    "name": "Jung-Su Ha"
+                },
+                {
+                    "authorId": "144918851",
+                    "name": "Marc Toussaint"
+                }
+            ],
+            "doi": "10.1109/ICRA40945.2020.9197291",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d430adb44f50b7c86d93eee26eb5a26e95404ba0",
+            "title": "Deep Visual Heuristics: Learning Feasibility of Mixed-Integer Programs for Manipulation Planning",
+            "url": "https://www.semanticscholar.org/paper/d430adb44f50b7c86d93eee26eb5a26e95404ba0",
+            "venue": "2020 IEEE International Conference on Robotics and Automation (ICRA)",
+            "year": 2020
+        },
+        {
+            "arxivId": "1911.12200",
+            "authors": [
+                {
+                    "authorId": "22258898",
+                    "name": "Pawel Gomoluch"
+                },
+                {
+                    "authorId": "2085721",
+                    "name": "Dalal Alrajeh"
+                },
+                {
+                    "authorId": "145277911",
+                    "name": "A. Russo"
+                },
+                {
+                    "authorId": "1680267",
+                    "name": "A. Bucchiarone"
+                }
+            ],
+            "doi": "10.1609/icaps.v30i1.6748",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "a5a757260edadb6cf35aa9a3b706fb8b9638df2c",
+            "title": "Learning Neural Search Policies for Classical Planning",
+            "url": "https://www.semanticscholar.org/paper/a5a757260edadb6cf35aa9a3b706fb8b9638df2c",
+            "venue": "ICAPS",
+            "year": 2019
+        },
+        {
+            "arxivId": "1911.13101",
+            "authors": [
+                {
+                    "authorId": "2117227785",
+                    "name": "William Shen"
+                },
+                {
+                    "authorId": "2322082",
+                    "name": "Felipe W. Trevizan"
+                },
+                {
+                    "authorId": "2067122081",
+                    "name": "Sylvie Thi'ebaux"
+                }
+            ],
+            "doi": "10.1609/icaps.v30i1.6754",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "e26f5517a6ff40529b297af26b771f46a3a1dee6",
+            "title": "Learning Domain-Independent Planning Heuristics with Hypergraph Networks",
+            "url": "https://www.semanticscholar.org/paper/e26f5517a6ff40529b297af26b771f46a3a1dee6",
+            "venue": "ICAPS",
+            "year": 2019
+        },
+        {
+            "arxivId": "1810.09923",
+            "authors": [
+                {
+                    "authorId": "22258898",
+                    "name": "Pawel Gomoluch"
+                },
+                {
+                    "authorId": "2085721",
+                    "name": "Dalal Alrajeh"
+                },
+                {
+                    "authorId": "145277911",
+                    "name": "A. Russo"
+                }
+            ],
+            "doi": "10.1609/icaps.v29i1.3531",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d6818137f57b30b48eb1a3006e0ab4e851030a00",
+            "title": "Learning Classical Planning Strategies with Policy Gradient",
+            "url": "https://www.semanticscholar.org/paper/d6818137f57b30b48eb1a3006e0ab4e851030a00",
+            "venue": "ICAPS",
+            "year": 2018
+        },
+        {
+            "arxivId": "1711.06391",
+            "authors": [
+                {
+                    "authorId": "2487768",
+                    "name": "Sanjiban Choudhury"
+                },
+                {
+                    "authorId": "22275235",
+                    "name": "M. Bhardwaj"
+                },
+                {
+                    "authorId": "3248107",
+                    "name": "Sankalp Arora"
+                },
+                {
+                    "authorId": "2189118",
+                    "name": "Ashish Kapoor"
+                },
+                {
+                    "authorId": "144172811",
+                    "name": "G. Ranade"
+                },
+                {
+                    "authorId": "32634992",
+                    "name": "S. Scherer"
+                },
+                {
+                    "authorId": "1780951",
+                    "name": "Debadeepta Dey"
+                }
+            ],
+            "doi": "10.1177/0278364918781001",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "3ca5070f832ce5201f6e41ec54b3e072eb7c118a",
+            "title": "Data-driven planning via imitation learning",
+            "url": "https://www.semanticscholar.org/paper/3ca5070f832ce5201f6e41ec54b3e072eb7c118a",
+            "venue": "Int. J. Robotics Res.",
+            "year": 2017
+        },
+        {
+            "arxivId": "1707.06895",
+            "authors": [
+                {
+                    "authorId": "22258898",
+                    "name": "Pawel Gomoluch"
+                },
+                {
+                    "authorId": "2085721",
+                    "name": "Dalal Alrajeh"
+                },
+                {
+                    "authorId": "145277911",
+                    "name": "A. Russo"
+                },
+                {
+                    "authorId": "1680267",
+                    "name": "A. Bucchiarone"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "168fdac9df79f505a7a156daef85a75d82fc0c74",
+            "title": "Towards learning domain-independent planning heuristics",
+            "url": "https://www.semanticscholar.org/paper/168fdac9df79f505a7a156daef85a75d82fc0c74",
+            "venue": "ArXiv",
+            "year": 2017
+        },
+        {
+            "arxivId": "1707.03034",
+            "authors": [
+                {
+                    "authorId": "22275235",
+                    "name": "M. Bhardwaj"
+                },
+                {
+                    "authorId": "2487768",
+                    "name": "Sanjiban Choudhury"
+                },
+                {
+                    "authorId": "32634992",
+                    "name": "S. Scherer"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "0cc03e046ee97db862f84d0e2d4662bd92c36825",
+            "title": "Learning Heuristic Search via Imitation",
+            "url": "https://www.semanticscholar.org/paper/0cc03e046ee97db862f84d0e2d4662bd92c36825",
+            "venue": "CoRL",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2126914861",
+                    "name": "Carlos N\u00fa\u00f1ez-Molina"
+                },
+                {
+                    "authorId": "2335584",
+                    "name": "Masataro Asai"
+                }
+            ],
+            "doi": "10.48550/arXiv.2308.11905",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "3c6feae06fc0a6ecbdd68c9a6a664cf2dd82b025",
+            "title": "Utilizing Admissible Bounds for Heuristic Learning",
+            "url": "https://www.semanticscholar.org/paper/3c6feae06fc0a6ecbdd68c9a6a664cf2dd82b025",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2146675188",
+                    "name": "Catherine Zeng"
+                },
+                {
+                    "authorId": "39047272",
+                    "name": "Tom Silver"
+                },
+                {
+                    "authorId": "2286396250",
+                    "name": "T. H. E. Dison"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "3d6ae7ada6368cd14b61ba89c64705ac7ede1f7a",
+            "title": "Learning Search Guidance from Failures with Eliminable Edge Sets",
+            "url": "https://www.semanticscholar.org/paper/3d6ae7ada6368cd14b61ba89c64705ac7ede1f7a",
+            "venue": "",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "0c6f86f5102ba3bb923e707968afe32030cc8124",
+            "title": "Learning Instance-Speci\ufb01c and Search-Space Speci\ufb01c Distance-to-Goal Heuristics Using Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/0c6f86f5102ba3bb923e707968afe32030cc8124",
+            "venue": "",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2288931153",
+                    "name": "Michaela Urbanovsk\u00b4a"
+                },
+                {
+                    "authorId": "2288945818",
+                    "name": "Jan B\u00b4\u0131m"
+                },
+                {
+                    "authorId": "10703551",
+                    "name": "Leah A. Chrestien"
+                },
+                {
+                    "authorId": "3154394",
+                    "name": "Anton\u00edn Komenda"
+                },
+                {
+                    "authorId": "2288929755",
+                    "name": "Tom\u00b4a\u02c7s Pevn\u00b4y"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a686a649510e347e00d83e9fc4ce6d2442df7a84",
+            "title": "Model-free Automated Planning Using Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/a686a649510e347e00d83e9fc4ce6d2442df7a84",
+            "venue": "",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "90441219",
+                    "name": "Michaela Urbanovsk\u00e1"
+                },
+                {
+                    "authorId": "153440022",
+                    "name": "I. Goodfellow"
+                },
+                {
+                    "authorId": "1865800402",
+                    "name": "Y. Bengio"
+                },
+                {
+                    "authorId": "1760871",
+                    "name": "Aaron C. Courville"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f70ef2da650e890b7baf44424ffe22077fd518f3",
+            "title": "Learning Classical Planning Transition Functions by Deep Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/f70ef2da650e890b7baf44424ffe22077fd518f3",
+            "venue": "",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2115287257",
+                    "name": "Beomjoon Kim"
+                },
+                {
+                    "authorId": "138148055",
+                    "name": "Luke Shimanuki"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7094b1f86944517d0b03cf466be63ddf5780c59d",
+            "title": "Learning value functions with relational state representations for guiding task-and-motion planning",
+            "url": "https://www.semanticscholar.org/paper/7094b1f86944517d0b03cf466be63ddf5780c59d",
+            "venue": "CoRL",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2487768",
+                    "name": "Sanjiban Choudhury"
+                }
+            ],
+            "doi": "10.1184/r1/6714593.v1",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "1eb41f1581438457d05b0f9d2c1b2d76f1b913e1",
+            "title": "Adaptive Motion Planning",
+            "url": "https://www.semanticscholar.org/paper/1eb41f1581438457d05b0f9d2c1b2d76f1b913e1",
+            "venue": "",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2313416126",
+                    "name": "Mingyu Hao"
+                },
+                {
+                    "authorId": "2293324813",
+                    "name": "Felipe Trevizan"
+                },
+                {
+                    "authorId": "2289033566",
+                    "name": "Sylvie Thi\u00b4ebaux"
+                },
+                {
+                    "authorId": "2314658016",
+                    "name": "Patrick Ferber"
+                },
+                {
+                    "authorId": "2314571798",
+                    "name": "J\u00a8org Hoffmann"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "1d96c681c0e9a2316dd906d1b4f8098f8c8e69a4",
+            "title": "Learned Pairwise Rankings for Greedy Best-First Search",
+            "url": "https://www.semanticscholar.org/paper/1d96c681c0e9a2316dd906d1b4f8098f8c8e69a4",
+            "venue": "",
+            "year": null
+        }
+    ],
+    "corpusId": 16066540,
+    "doi": null,
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 1,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 38,
+    "numCiting": 32,
+    "paperId": "e60c0e8e003ff8b6eca1274fda2bf90f7e85ab4e",
+    "references": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2365104",
+                    "name": "C. Wilt"
+                },
+                {
+                    "authorId": "1757895",
+                    "name": "Wheeler Ruml"
+                }
+            ],
+            "doi": "10.1609/socs.v3i1.18250",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "8a02a48fb64952aebdf7d363bb2d1aeb9e97494f",
+            "title": "When Does Weighted A* Fail?",
+            "url": "https://www.semanticscholar.org/paper/8a02a48fb64952aebdf7d363bb2d1aeb9e97494f",
+            "venue": "SOCS",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1703667",
+                    "name": "M. Vallati"
+                },
+                {
+                    "authorId": "2467098",
+                    "name": "L. Chrpa"
+                },
+                {
+                    "authorId": "2186376",
+                    "name": "M. Grzes"
+                },
+                {
+                    "authorId": "145228019",
+                    "name": "T. McCluskey"
+                },
+                {
+                    "authorId": "144200581",
+                    "name": "M. Roberts"
+                },
+                {
+                    "authorId": "1732536",
+                    "name": "S. Sanner"
+                }
+            ],
+            "doi": "10.1609/aimag.v36i3.2571",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "2d5483331aee78ce19afdb27236eb2f51ec11bcf",
+            "title": "The 2014 International Planning Competition: Progress and Trends",
+            "url": "https://www.semanticscholar.org/paper/2d5483331aee78ce19afdb27236eb2f51ec11bcf",
+            "venue": "AI Mag.",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2365104",
+                    "name": "C. Wilt"
+                },
+                {
+                    "authorId": "1757895",
+                    "name": "Wheeler Ruml"
+                }
+            ],
+            "doi": "10.1609/socs.v6i1.18352",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "fa24de6316b30911d173d2f2d928e47736dbf23f",
+            "title": "Building a Heuristic for Greedy Search",
+            "url": "https://www.semanticscholar.org/paper/fa24de6316b30911d173d2f2d928e47736dbf23f",
+            "venue": "SOCS",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3016526",
+                    "name": "Shahab Jabbari Arfaee"
+                },
+                {
+                    "authorId": "2621728",
+                    "name": "Sandra Zilles"
+                },
+                {
+                    "authorId": "1796214",
+                    "name": "R. Holte"
+                }
+            ],
+            "doi": "10.1016/j.artint.2011.08.001",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "abda4a27b5a6df702c1a18308e509af1c94d4fee",
+            "title": "Learning heuristic functions for large state spaces",
+            "url": "https://www.semanticscholar.org/paper/abda4a27b5a6df702c1a18308e509af1c94d4fee",
+            "venue": "Artif. Intell.",
+            "year": 2011
+        },
+        {
+            "arxivId": "1106.0675",
+            "authors": [
+                {
+                    "authorId": "144915519",
+                    "name": "J. Hoffmann"
+                },
+                {
+                    "authorId": "145304209",
+                    "name": "Bernhard Nebel"
+                }
+            ],
+            "doi": "10.1613/jair.855",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7c1f7b4b57b36fcec7199d60added8cc223a7a30",
+            "title": "The FF Planning System: Fast Plan Generation Through Heuristic Search",
+            "url": "https://www.semanticscholar.org/paper/7c1f7b4b57b36fcec7199d60added8cc223a7a30",
+            "venue": "J. Artif. Intell. Res.",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [],
+            "doi": "10.1609/icaps.v21i1.13469",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "80398a0fb80f6ff484a74d5937ee0ac905c10c00",
+            "title": "Where Ignoring Delete Lists Works, Part II: Causal Graphs",
+            "url": "https://www.semanticscholar.org/paper/80398a0fb80f6ff484a74d5937ee0ac905c10c00",
+            "venue": "ICAPS",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2110803564",
+                    "name": "Yuehua Xu"
+                },
+                {
+                    "authorId": "145841336",
+                    "name": "Alan Fern"
+                },
+                {
+                    "authorId": "1809846",
+                    "name": "S. Yoon"
+                }
+            ],
+            "doi": "10.1609/icaps.v20i1.13416",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "85dab8566c2246bcbe068473180db9a9af391f96",
+            "title": "Iterative Learning of Weighted Rule Sets for Greedy Search",
+            "url": "https://www.semanticscholar.org/paper/85dab8566c2246bcbe068473180db9a9af391f96",
+            "venue": "ICAPS",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3346298",
+                    "name": "Hootan Nakhost"
+                },
+                {
+                    "authorId": "144054003",
+                    "name": "Martin M\u00fcller"
+                }
+            ],
+            "doi": "10.7939/R3FM9H",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7269df27ed94e75b5025cfc7a6069efc47dc34d6",
+            "title": "Action Elimination and Plan Neighborhood Graph Search: Two Algorithms for Plan Improvement",
+            "url": "https://www.semanticscholar.org/paper/7269df27ed94e75b5025cfc7a6069efc47dc34d6",
+            "venue": "ICAPS",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2110803564",
+                    "name": "Yuehua Xu"
+                },
+                {
+                    "authorId": "145841336",
+                    "name": "Alan Fern"
+                },
+                {
+                    "authorId": "1809846",
+                    "name": "S. Yoon"
+                }
+            ],
+            "doi": "10.5555/1577069.1755837",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "db6ef189927d3e515e40c4ff76cd3630c94a1cd4",
+            "title": "Learning Linear Ranking Functions for Beam Search with Application to Planning",
+            "url": "https://www.semanticscholar.org/paper/db6ef189927d3e515e40c4ff76cd3630c94a1cd4",
+            "venue": "J. Mach. Learn. Res.",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2065224236",
+                    "name": "Davis E. King"
+                }
+            ],
+            "doi": "10.5555/1577069.1755843",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "2ea6a93199c9227fa0c1c7de13725f918c9be3a4",
+            "title": "Dlib-ml: A Machine Learning Toolkit",
+            "url": "https://www.semanticscholar.org/paper/2ea6a93199c9227fa0c1c7de13725f918c9be3a4",
+            "venue": "J. Mach. Learn. Res.",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1778663",
+                    "name": "Vojtech Franc"
+                },
+                {
+                    "authorId": "3029782",
+                    "name": "S. Sonnenburg"
+                }
+            ],
+            "doi": "10.5555/1577069.1755859",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "3567d6bdf5dfb96b4374336e1c525dc4831a36ba",
+            "title": "Optimized Cutting Plane Algorithm for Large-Scale Risk Minimization",
+            "url": "https://www.semanticscholar.org/paper/3567d6bdf5dfb96b4374336e1c525dc4831a36ba",
+            "venue": "J. Mach. Learn. Res.",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144310960",
+                    "name": "Silvia Richter"
+                },
+                {
+                    "authorId": "3208076",
+                    "name": "M. Helmert"
+                }
+            ],
+            "doi": "10.1609/icaps.v19i1.13345",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "9d45beae97661b417d5640fc3a08fc00e3bf1389",
+            "title": "Preferred Operators and Deferred Evaluation in Satisficing Planning",
+            "url": "https://www.semanticscholar.org/paper/9d45beae97661b417d5640fc3a08fc00e3bf1389",
+            "venue": "ICAPS",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3208076",
+                    "name": "M. Helmert"
+                },
+                {
+                    "authorId": "1806598",
+                    "name": "Hector Geffner"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "e272943b7ed7d4053572f0b55200999d9f024eac",
+            "title": "Unifying the Causal Graph and Additive Heuristics",
+            "url": "https://www.semanticscholar.org/paper/e272943b7ed7d4053572f0b55200999d9f024eac",
+            "venue": "ICAPS",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1809846",
+                    "name": "S. Yoon"
+                },
+                {
+                    "authorId": "145841336",
+                    "name": "Alan Fern"
+                },
+                {
+                    "authorId": "1718146",
+                    "name": "R. Givan"
+                }
+            ],
+            "doi": "10.5555/1390681.1390705",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "e0174fde43bb180201b08ce30cf4ec018453b908",
+            "title": "Learning Control Knowledge for Forward Search Planning",
+            "url": "https://www.semanticscholar.org/paper/e0174fde43bb180201b08ce30cf4ec018453b908",
+            "venue": "J. Mach. Learn. Res.",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2110803564",
+                    "name": "Yuehua Xu"
+                },
+                {
+                    "authorId": "145841336",
+                    "name": "Alan Fern"
+                },
+                {
+                    "authorId": "1809846",
+                    "name": "S. Yoon"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "3a067c6c22b3df7482e15bf50a2aa7d1bdea3b6f",
+            "title": "Discriminative Learning of Beam-Search Heuristics for Planning",
+            "url": "https://www.semanticscholar.org/paper/3a067c6c22b3df7482e15bf50a2aa7d1bdea3b6f",
+            "venue": "IJCAI",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1680188",
+                    "name": "T. Joachims"
+                }
+            ],
+            "doi": "10.1145/1150402.1150429",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "427b168f490b56716f22b129ac93aba5425ea08f",
+            "title": "Training linear SVMs in linear time",
+            "url": "https://www.semanticscholar.org/paper/427b168f490b56716f22b129ac93aba5425ea08f",
+            "venue": "KDD '06",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1397398770",
+                    "name": "Tina Eliassi-Rad"
+                },
+                {
+                    "authorId": "1412391493",
+                    "name": "L. Ungar"
+                },
+                {
+                    "authorId": "144557047",
+                    "name": "M. Craven"
+                },
+                {
+                    "authorId": "1736832",
+                    "name": "D. Gunopulos"
+                }
+            ],
+            "doi": "10.1145/1150402",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "8b15ee94510a770db25c566c8d72734040fcc6b7",
+            "title": "Proceedings of the 12th ACM SIGKDD international conference on Knowledge discovery and data mining",
+            "url": "https://www.semanticscholar.org/paper/8b15ee94510a770db25c566c8d72734040fcc6b7",
+            "venue": "KDD 2006",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1809846",
+                    "name": "S. Yoon"
+                },
+                {
+                    "authorId": "145841336",
+                    "name": "Alan Fern"
+                },
+                {
+                    "authorId": "1718146",
+                    "name": "R. Givan"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "5e4417f0a780fd40a8d08222c8a14305bf4b8d0c",
+            "title": "Learning Heuristic Functions from Relaxed Plans",
+            "url": "https://www.semanticscholar.org/paper/5e4417f0a780fd40a8d08222c8a14305bf4b8d0c",
+            "venue": "ICAPS",
+            "year": 2006
+        },
+        {
+            "arxivId": "1109.6051",
+            "authors": [
+                {
+                    "authorId": "3208076",
+                    "name": "M. Helmert"
+                }
+            ],
+            "doi": "10.1613/jair.1705",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "535b3d2d052c4c6d8a7e72e5e7b575aa39bb8b0f",
+            "title": "The Fast Downward Planning System",
+            "url": "https://www.semanticscholar.org/paper/535b3d2d052c4c6d8a7e72e5e7b575aa39bb8b0f",
+            "venue": "J. Artif. Intell. Res.",
+            "year": 2006
+        },
+        {
+            "arxivId": "1109.5713",
+            "authors": [
+                {
+                    "authorId": "2125738470",
+                    "name": "J\u00f6rg Hoffmann"
+                }
+            ],
+            "doi": "10.1613/jair.1747",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "93acb15d431e09c69073620768d457c9a40a109b",
+            "title": "Where 'Ignoring Delete Lists' Works: Local Search Topology in Planning Benchmarks",
+            "url": "https://www.semanticscholar.org/paper/93acb15d431e09c69073620768d457c9a40a109b",
+            "venue": "J. Artif. Intell. Res.",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1680188",
+                    "name": "T. Joachims"
+                }
+            ],
+            "doi": "10.1145/775047.775067",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "cfd4259d305a00f13d5f08841230389f61322422",
+            "title": "Optimizing search engines using clickthrough data",
+            "url": "https://www.semanticscholar.org/paper/cfd4259d305a00f13d5f08841230389f61322422",
+            "venue": "KDD",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "32183271",
+                    "name": "A. E. Hoerl"
+                },
+                {
+                    "authorId": "94158926",
+                    "name": "R. Kennard"
+                }
+            ],
+            "doi": "10.1080/00401706.2000.10485983",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "1473110f6c33b483251ade10b79416d3efee2da4",
+            "title": "Ridge Regression: Biased Estimation for Nonorthogonal Problems",
+            "url": "https://www.semanticscholar.org/paper/1473110f6c33b483251ade10b79416d3efee2da4",
+            "venue": "Technometrics",
+            "year": 2000
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144507365",
+                    "name": "Christer B\u00e4ckstr\u00f6m"
+                },
+                {
+                    "authorId": "145304209",
+                    "name": "Bernhard Nebel"
+                }
+            ],
+            "doi": "10.1111/j.1467-8640.1995.tb00052.x",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "36f69a01f692ace8b2bf1841cccf144daec9e73a",
+            "title": "COMPLEXITY RESULTS FOR SAS+ PLANNING",
+            "url": "https://www.semanticscholar.org/paper/36f69a01f692ace8b2bf1841cccf144daec9e73a",
+            "venue": "Comput. Intell.",
+            "year": 1995
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145181688",
+                    "name": "J. Fox"
+                }
+            ],
+            "doi": "10.1017/S0269888900000618",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "38ee01975db11bb1b54e8b5e726d5c08615202e5",
+            "title": "The Knowledge Engineering Review",
+            "url": "https://www.semanticscholar.org/paper/38ee01975db11bb1b54e8b5e726d5c08615202e5",
+            "venue": "The Knowledge Engineering Review",
+            "year": 1984
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1748956",
+                    "name": "R. Fikes"
+                },
+                {
+                    "authorId": "144497046",
+                    "name": "N. Nilsson"
+                }
+            ],
+            "doi": "10.1016/0004-3702(71)90010-5",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c547e1f79e6039d05c5ae433a36612d7f8e4d3f5",
+            "title": "STRIPS: A New Approach to the Application of Theorem Proving to Problem Solving",
+            "url": "https://www.semanticscholar.org/paper/c547e1f79e6039d05c5ae433a36612d7f8e4d3f5",
+            "venue": "IJCAI",
+            "year": 1971
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1697177",
+                    "name": "Bart Verheij"
+                },
+                {
+                    "authorId": "32239759",
+                    "name": "M. Wiering"
+                }
+            ],
+            "doi": "10.1007/978-3-319-76892-2",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "de4b9bc12ddb6b9f6090c032ef5c6290bd64ef36",
+            "title": "Artificial Intelligence",
+            "url": "https://www.semanticscholar.org/paper/de4b9bc12ddb6b9f6090c032ef5c6290bd64ef36",
+            "venue": "Communications in Computer and Information Science",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143901279",
+                    "name": "F. Fern\u00e1ndez"
+                }
+            ],
+            "doi": "10.4018/978-1-4666-9709-6.les4",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "ad1e08ba3b618f200c0a6a5012979c53fa6bbe20",
+            "title": "Planning and Learning",
+            "url": "https://www.semanticscholar.org/paper/ad1e08ba3b618f200c0a6a5012979c53fa6bbe20",
+            "venue": "",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1728891",
+                    "name": "Sergio Jim\u00e9nez Celorrio"
+                },
+                {
+                    "authorId": "1954135",
+                    "name": "A. Botea"
+                },
+                {
+                    "authorId": "1944465",
+                    "name": "E. Karpas"
+                },
+                {
+                    "authorId": "35407423",
+                    "name": "Ronald P. A. Petrick"
+                },
+                {
+                    "authorId": "40657646",
+                    "name": "J. Virseda"
+                },
+                {
+                    "authorId": "2674274",
+                    "name": "Vidal Alc\u00e1zar"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d2fbb73836dc5369eba0ea10d35ca71ec6a4ba28",
+            "title": "Learning heuristic functions for cost-based planning",
+            "url": "https://www.semanticscholar.org/paper/d2fbb73836dc5369eba0ea10d35ca71ec6a4ba28",
+            "venue": "",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3208076",
+                    "name": "M. Helmert"
+                },
+                {
+                    "authorId": "3079516",
+                    "name": "Gabriele R\u00f6ger"
+                },
+                {
+                    "authorId": "2357436",
+                    "name": "Jendrik Seipp"
+                },
+                {
+                    "authorId": "144915519",
+                    "name": "J. Hoffmann"
+                },
+                {
+                    "authorId": "2074388",
+                    "name": "E. Keyder"
+                },
+                {
+                    "authorId": "38538688",
+                    "name": "Matthias Westphal"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "9bf95417407aca72b2550f812682b53e05df29d8",
+            "title": "Fast Downward Stone Soup",
+            "url": "https://www.semanticscholar.org/paper/9bf95417407aca72b2550f812682b53e05df29d8",
+            "venue": "",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "ca8d526f954e41947c7c7fef2f7013631c85e489",
+            "title": "DOI: 10.1017/S000000000000000 Printed in the United Kingdom A Review of Machine Learning for Automated Planning",
+            "url": "https://www.semanticscholar.org/paper/ca8d526f954e41947c7c7fef2f7013631c85e489",
+            "venue": "",
+            "year": null
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Learning to Rank for Synthesizing Planning Heuristics",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/e60c0e8e003ff8b6eca1274fda2bf90f7e85ab4e",
+    "venue": "International Joint Conference on Artificial Intelligence",
+    "year": 2016
+}

@@ -1,0 +1,822 @@
+{
+    "abstract": "In imperfect information games, the evaluation of a game state not only depends on the observable world but also relies on hidden parts of the environment. As accessing the obstructed information trivialises state evaluations, one approach to tackle such problems is to estimate the value of the imperfect state as a combination of all states in the information set, i.e., all possible states that are consistent with the current imperfect information. In this work, the goal is to learn a function that maps from the imperfect game information state to its expected value. However, constructing a perfect training set, i.e. an enumeration of the whole information set for numerous imperfect states, is often infeasible. To compute the expected values for an imperfect information game like \\textit{Reconnaissance Blind Chess}, one would need to evaluate thousands of chess positions just to obtain the training target for a single state. Still, the expected value of a state can already be approximated with appropriate accuracy from a much smaller set of evaluations. Thus, in this paper, we empirically investigate how a budget of perfect information game evaluations should be distributed among training samples to maximise the return. Our results show that sampling a small number of states, in our experiments roughly 3, for a larger number of separate positions is preferable over repeatedly sampling a smaller quantity of states. Thus, we find that in our case, the quantity of different samples seems to be more important than higher target quality.",
+    "arxivId": "2407.05876",
+    "authors": [
+        {
+            "authorId": "2269050449",
+            "name": "Timo Bertram",
+            "url": "https://www.semanticscholar.org/author/2269050449"
+        },
+        {
+            "authorId": "2269049873",
+            "name": "Johannes F\u00fcrnkranz",
+            "url": "https://www.semanticscholar.org/author/2269049873"
+        },
+        {
+            "authorId": "2269133464",
+            "name": "Martin M\u00fcller",
+            "url": "https://www.semanticscholar.org/author/2269133464"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [],
+    "corpusId": 271050697,
+    "doi": "10.48550/arXiv.2407.05876",
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 0,
+    "numCiting": 23,
+    "paperId": "895b8d28c5bc8d9e0b16083b35fe0aeb906bdefc",
+    "references": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2269050449",
+                    "name": "Timo Bertram"
+                },
+                {
+                    "authorId": "2269049873",
+                    "name": "Johannes F\u00fcrnkranz"
+                },
+                {
+                    "authorId": "2269133464",
+                    "name": "Martin M\u00fcller"
+                }
+            ],
+            "doi": "10.1109/CoG57401.2023.10333170",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8913ffa37cba0a4c6000a333f11e4e9b31f745d6",
+            "title": "Weighting Information Sets with Siamese Neural Networks in Reconnaissance Blind Chess",
+            "url": "https://www.semanticscholar.org/paper/8913ffa37cba0a4c6000a333f11e4e9b31f745d6",
+            "venue": "2023 IEEE Conference on Games (CoG)",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2215812879",
+                    "name": "Jannis Bl\u00fcml"
+                },
+                {
+                    "authorId": "2059788514",
+                    "name": "Johannes Czech"
+                },
+                {
+                    "authorId": "2113406566",
+                    "name": "K. Kersting"
+                }
+            ],
+            "doi": "10.3389/frai.2023.1014561",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "68901cb06e71f3b9cbe23927c6bc12e1840a1aa6",
+            "title": "AlphaZe\u2217\u2217: AlphaZero-like baselines for imperfect information games are surprisingly strong",
+            "url": "https://www.semanticscholar.org/paper/68901cb06e71f3b9cbe23927c6bc12e1840a1aa6",
+            "venue": "Frontiers in Artificial Intelligence",
+            "year": 2023
+        },
+        {
+            "arxivId": "2208.02029",
+            "authors": [
+                {
+                    "authorId": "103628147",
+                    "name": "T. Bertram"
+                },
+                {
+                    "authorId": "1747752",
+                    "name": "Johannes F\u00fcrnkranz"
+                },
+                {
+                    "authorId": "2116237915",
+                    "name": "Martin M\u00fcller"
+                }
+            ],
+            "doi": "10.1109/CoG51982.2022.9893588",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b301ce1259e4202385d3e1e8845614d2bd6f3bf9",
+            "title": "Supervised and Reinforcement Learning from Observations in Reconnaissance Blind Chess",
+            "url": "https://www.semanticscholar.org/paper/b301ce1259e4202385d3e1e8845614d2bd6f3bf9",
+            "venue": "2022 IEEE Conference on Games (CoG)",
+            "year": 2022
+        },
+        {
+            "arxivId": "2007.13544",
+            "authors": [
+                {
+                    "authorId": "2685623",
+                    "name": "Noam Brown"
+                },
+                {
+                    "authorId": "152918929",
+                    "name": "A. Bakhtin"
+                },
+                {
+                    "authorId": "1977806",
+                    "name": "Adam Lerer"
+                },
+                {
+                    "authorId": "22194612",
+                    "name": "Qucheng Gong"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "df2b23787a58b10962951d4f663809eb20a828ea",
+            "title": "Combining Deep Reinforcement Learning and Search for Imperfect-Information Games",
+            "url": "https://www.semanticscholar.org/paper/df2b23787a58b10962951d4f663809eb20a828ea",
+            "venue": "NeurIPS",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145824029",
+                    "name": "David Silver"
+                },
+                {
+                    "authorId": "2067208983",
+                    "name": "T. Hubert"
+                },
+                {
+                    "authorId": "4337102",
+                    "name": "Julian Schrittwieser"
+                },
+                {
+                    "authorId": "2460849",
+                    "name": "Ioannis Antonoglou"
+                },
+                {
+                    "authorId": "40227832",
+                    "name": "Matthew Lai"
+                },
+                {
+                    "authorId": "35099444",
+                    "name": "A. Guez"
+                },
+                {
+                    "authorId": "1975889",
+                    "name": "Marc Lanctot"
+                },
+                {
+                    "authorId": "2175946",
+                    "name": "L. Sifre"
+                },
+                {
+                    "authorId": "2106164",
+                    "name": "D. Kumaran"
+                },
+                {
+                    "authorId": "1686971",
+                    "name": "T. Graepel"
+                },
+                {
+                    "authorId": "2542999",
+                    "name": "T. Lillicrap"
+                },
+                {
+                    "authorId": "34838386",
+                    "name": "K. Simonyan"
+                },
+                {
+                    "authorId": "48987704",
+                    "name": "D. Hassabis"
+                }
+            ],
+            "doi": "10.1126/science.aar6404",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f9717d29840f4d8f1cc19d1b1e80c5d12ec40608",
+            "title": "A general reinforcement learning algorithm that masters chess, shogi, and Go through self-play",
+            "url": "https://www.semanticscholar.org/paper/f9717d29840f4d8f1cc19d1b1e80c5d12ec40608",
+            "venue": "Science",
+            "year": 2018
+        },
+        {
+            "arxivId": "1811.03119",
+            "authors": [
+                {
+                    "authorId": "40293098",
+                    "name": "Jared Markowitz"
+                },
+                {
+                    "authorId": "31261905",
+                    "name": "Ryan W. Gardner"
+                },
+                {
+                    "authorId": "2742856",
+                    "name": "Ashley J. Llorens"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d947bbb0427559e8197156c9174e85c7184b47bc",
+            "title": "On the Complexity of Reconnaissance Blind Chess",
+            "url": "https://www.semanticscholar.org/paper/d947bbb0427559e8197156c9174e85c7184b47bc",
+            "venue": "ArXiv",
+            "year": 2018
+        },
+        {
+            "arxivId": "1712.04577",
+            "authors": [
+                {
+                    "authorId": "3083159",
+                    "name": "A. Khetan"
+                },
+                {
+                    "authorId": "32219137",
+                    "name": "Zachary Chase Lipton"
+                },
+                {
+                    "authorId": "2047844",
+                    "name": "Anima Anandkumar"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a4a8e91995ae8c8b203dd857bdc0915facddeebe",
+            "title": "Learning From Noisy Singly-labeled Data",
+            "url": "https://www.semanticscholar.org/paper/a4a8e91995ae8c8b203dd857bdc0915facddeebe",
+            "venue": "ICLR",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1785387",
+                    "name": "Timothy Furtak"
+                },
+                {
+                    "authorId": "1799228",
+                    "name": "M. Buro"
+                }
+            ],
+            "doi": "10.1109/CIG.2013.6633646",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "43b9b9a0bf666cb0363881d65f5db4cf004d3e61",
+            "title": "Recursive Monte Carlo search for imperfect information games",
+            "url": "https://www.semanticscholar.org/paper/43b9b9a0bf666cb0363881d65f5db4cf004d3e61",
+            "venue": "2013 IEEE Conference on Computational Inteligence in Games (CIG)",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2064558872",
+                    "name": "David Cohn"
+                }
+            ],
+            "doi": "10.1007/978-0-387-30164-8_6",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "be921e6d9b3824c4bad331415445a8a8a6829d9c",
+            "title": "Active learning",
+            "url": "https://www.semanticscholar.org/paper/be921e6d9b3824c4bad331415445a8a8a6829d9c",
+            "venue": "Veterinary Record",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2355953",
+                    "name": "A. Guadamuz"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "36217e312c8d0aaa8307740c42b0c9db41e42673",
+            "title": "The Player of Games",
+            "url": "https://www.semanticscholar.org/paper/36217e312c8d0aaa8307740c42b0c9db41e42673",
+            "venue": "",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145317122",
+                    "name": "C. Browne"
+                },
+                {
+                    "authorId": "144473215",
+                    "name": "E. Powley"
+                },
+                {
+                    "authorId": "33424773",
+                    "name": "D. Whitehouse"
+                },
+                {
+                    "authorId": "145815031",
+                    "name": "S. Lucas"
+                },
+                {
+                    "authorId": "1714467",
+                    "name": "P. Cowling"
+                },
+                {
+                    "authorId": "3095131",
+                    "name": "Philipp Rohlfshagen"
+                },
+                {
+                    "authorId": "31893339",
+                    "name": "Stephen Tavener"
+                },
+                {
+                    "authorId": "2717017",
+                    "name": "Diego Perez Liebana"
+                },
+                {
+                    "authorId": "2032434",
+                    "name": "Spyridon Samothrakis"
+                },
+                {
+                    "authorId": "1687610",
+                    "name": "S. Colton"
+                }
+            ],
+            "doi": "10.1109/TCIAIG.2012.2186810",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c37f1baac3c8ba30250084f067167ac3837cf6fd",
+            "title": "A Survey of Monte Carlo Tree Search Methods",
+            "url": "https://www.semanticscholar.org/paper/c37f1baac3c8ba30250084f067167ac3837cf6fd",
+            "venue": "IEEE Transactions on Computational Intelligence and AI in Games",
+            "year": 2012
+        },
+        {
+            "arxivId": "1110.3564",
+            "authors": [
+                {
+                    "authorId": "1743286",
+                    "name": "David R Karger"
+                },
+                {
+                    "authorId": "34184418",
+                    "name": "Sewoong Oh"
+                },
+                {
+                    "authorId": "145081804",
+                    "name": "Devavrat Shah"
+                }
+            ],
+            "doi": "10.1287/OPRE.2013.1235",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ede8c5a37a78f004d7fa8df443b22098f0579f0b",
+            "title": "Budget-Optimal Task Allocation for Reliable Crowdsourcing Systems",
+            "url": "https://www.semanticscholar.org/paper/ede8c5a37a78f004d7fa8df443b22098f0579f0b",
+            "venue": "Oper. Res.",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "33424773",
+                    "name": "D. Whitehouse"
+                },
+                {
+                    "authorId": "144473215",
+                    "name": "E. Powley"
+                },
+                {
+                    "authorId": "1714467",
+                    "name": "P. Cowling"
+                }
+            ],
+            "doi": "10.1109/CIG.2011.6031993",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "67e1f4795c461a5467d6009b1efdaa36aad03a40",
+            "title": "Determinization and information set Monte Carlo Tree Search for the card game Dou Di Zhu",
+            "url": "https://www.semanticscholar.org/paper/67e1f4795c461a5467d6009b1efdaa36aad03a40",
+            "venue": "2011 IEEE Conference on Computational Intelligence and Games (CIG'11)",
+            "year": 2011
+        },
+        {
+            "arxivId": "1106.0669",
+            "authors": [
+                {
+                    "authorId": "2255387030",
+                    "name": "Matthew L. Ginsberg"
+                }
+            ],
+            "doi": "10.1613/jair.820",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "25a13a75418aa3322fc4037a7866e009015afbd2",
+            "title": "GIB: Imperfect Information in a Computationally Challenging Game",
+            "url": "https://www.semanticscholar.org/paper/25a13a75418aa3322fc4037a7866e009015afbd2",
+            "venue": "J. Artif. Intell. Res.",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "47824021",
+                    "name": "J. Long"
+                },
+                {
+                    "authorId": "15914175",
+                    "name": "Nathan R Sturtevant"
+                },
+                {
+                    "authorId": "1799228",
+                    "name": "M. Buro"
+                },
+                {
+                    "authorId": "1785387",
+                    "name": "Timothy Furtak"
+                }
+            ],
+            "doi": "10.1609/aaai.v24i1.7562",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "011e2c79575721764c127e210c9d8105a6305e70",
+            "title": "Understanding the Success of Perfect Information Monte Carlo Sampling in Game Tree Search",
+            "url": "https://www.semanticscholar.org/paper/011e2c79575721764c127e210c9d8105a6305e70",
+            "venue": "AAAI",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144621026",
+                    "name": "R. Snow"
+                },
+                {
+                    "authorId": "1401020033",
+                    "name": "Brendan T. O'Connor"
+                },
+                {
+                    "authorId": "1746807",
+                    "name": "Dan Jurafsky"
+                },
+                {
+                    "authorId": "34699434",
+                    "name": "A. Ng"
+                }
+            ],
+            "doi": "10.3115/1613715.1613751",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0165568bcc1a819c18564567f2ec15d859be2519",
+            "title": "Cheap and Fast \u2013 But is it Good? Evaluating Non-Expert Annotations for Natural Language Tasks",
+            "url": "https://www.semanticscholar.org/paper/0165568bcc1a819c18564567f2ec15d859be2519",
+            "venue": "EMNLP",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2278313975",
+                    "name": "Victor S. Sheng"
+                },
+                {
+                    "authorId": "1752722",
+                    "name": "F. Provost"
+                },
+                {
+                    "authorId": "2942126",
+                    "name": "Panagiotis G. Ipeirotis"
+                }
+            ],
+            "doi": "10.1145/1401890.1401965",
+            "intent": [
+                "background",
+                "result"
+            ],
+            "isInfluential": false,
+            "paperId": "a3f853572e12b51c4c227590168c95b7cd0ca666",
+            "title": "Get another label? improving data quality and data mining using multiple, noisy labelers",
+            "url": "https://www.semanticscholar.org/paper/a3f853572e12b51c4c227590168c95b7cd0ca666",
+            "venue": "KDD",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "8195063",
+                    "name": "Martin A. Zinkevich"
+                },
+                {
+                    "authorId": "1681530",
+                    "name": "Michael Bradley Johanson"
+                },
+                {
+                    "authorId": "1687780",
+                    "name": "Michael Bowling"
+                },
+                {
+                    "authorId": "3248202",
+                    "name": "Carmelo Piccione"
+                }
+            ],
+            "doi": "10.7939/R3Q23R282",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "db20a76a702be3ad4e7cebf7eeb7f1898827cebd",
+            "title": "Regret Minimization in Games with Incomplete Information",
+            "url": "https://www.semanticscholar.org/paper/db20a76a702be3ad4e7cebf7eeb7f1898827cebd",
+            "venue": "NIPS",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "96749119",
+                    "name": "Gino Perrotta"
+                },
+                {
+                    "authorId": "31261905",
+                    "name": "Ryan W. Gardner"
+                },
+                {
+                    "authorId": "2034185353",
+                    "name": "Corey Lowman"
+                },
+                {
+                    "authorId": "2051709393",
+                    "name": "Mohammad Taufeeque"
+                },
+                {
+                    "authorId": "2181223400",
+                    "name": "Nitish Tongia"
+                },
+                {
+                    "authorId": "3027736",
+                    "name": "Shivaram Kalyanakrishnan"
+                },
+                {
+                    "authorId": "2055187918",
+                    "name": "Gregory Clark"
+                },
+                {
+                    "authorId": "2181349426",
+                    "name": "Kevin A. Wang"
+                },
+                {
+                    "authorId": "150990943",
+                    "name": "Eitan Rothberg"
+                },
+                {
+                    "authorId": "2181221834",
+                    "name": "Brady P. Garrison"
+                },
+                {
+                    "authorId": "34787658",
+                    "name": "P. Dasgupta"
+                },
+                {
+                    "authorId": "2133222610",
+                    "name": "Callum Canavan"
+                },
+                {
+                    "authorId": "2181223129",
+                    "name": "Lucas McCabe"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a1340a7a507e4a4960f3a1e781966dde7f3adba7",
+            "title": "The Second NeurIPS Tournament of Reconnaissance Blind Chess",
+            "url": "https://www.semanticscholar.org/paper/a1340a7a507e4a4960f3a1e781966dde7f3adba7",
+            "venue": "NeurIPS",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2269142772",
+                    "name": "Ryan W. Gardner"
+                },
+                {
+                    "authorId": "96749119",
+                    "name": "Gino Perrotta"
+                },
+                {
+                    "authorId": "2269430094",
+                    "name": "Anvay Shah"
+                },
+                {
+                    "authorId": "3027736",
+                    "name": "Shivaram Kalyanakrishnan"
+                },
+                {
+                    "authorId": "2181349426",
+                    "name": "Kevin A. Wang"
+                },
+                {
+                    "authorId": "2055187918",
+                    "name": "Gregory Clark"
+                },
+                {
+                    "authorId": "2269050449",
+                    "name": "Timo Bertram"
+                },
+                {
+                    "authorId": "2269049873",
+                    "name": "Johannes F\u00fcrnkranz"
+                },
+                {
+                    "authorId": "2269133464",
+                    "name": "Martin M\u00fcller"
+                },
+                {
+                    "authorId": "2181221834",
+                    "name": "Brady P. Garrison"
+                },
+                {
+                    "authorId": "2269050313",
+                    "name": "Prithviraj Dasgupta"
+                },
+                {
+                    "authorId": "2269050405",
+                    "name": "Saeid Rezaei"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0050e1c2005479bdad9ce5c21d555b05b7027914",
+            "title": "The Machine Reconnaissance Blind Chess Tournament of NeurIPS 2022",
+            "url": "https://www.semanticscholar.org/paper/0050e1c2005479bdad9ce5c21d555b05b7027914",
+            "venue": "NeurIPS",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "31261905",
+                    "name": "Ryan W. Gardner"
+                },
+                {
+                    "authorId": "2034185353",
+                    "name": "Corey Lowman"
+                },
+                {
+                    "authorId": "2053296094",
+                    "name": "Casey L. Richardson"
+                },
+                {
+                    "authorId": "2742856",
+                    "name": "Ashley J. Llorens"
+                },
+                {
+                    "authorId": "40293098",
+                    "name": "Jared Markowitz"
+                },
+                {
+                    "authorId": "2524322",
+                    "name": "Nathan G. Drenkow"
+                },
+                {
+                    "authorId": "152499235",
+                    "name": "A. Newman"
+                },
+                {
+                    "authorId": "2055187918",
+                    "name": "Gregory Clark"
+                },
+                {
+                    "authorId": "96749119",
+                    "name": "Gino Perrotta"
+                },
+                {
+                    "authorId": "2076901539",
+                    "name": "Robert Perrotta"
+                },
+                {
+                    "authorId": "1834653",
+                    "name": "T. Highley"
+                },
+                {
+                    "authorId": "2001119739",
+                    "name": "V. Shcherbina"
+                },
+                {
+                    "authorId": "2034187887",
+                    "name": "William Bernadoni"
+                },
+                {
+                    "authorId": "2054400130",
+                    "name": "Mark Jordan"
+                },
+                {
+                    "authorId": "144349594",
+                    "name": "A. Asenov"
+                },
+                {
+                    "authorId": "2315504",
+                    "name": "R. Hadsell"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ffe04c2c69170a565ff35ec0005b45b4b1ac5475",
+            "title": "The First International Competition in Machine Reconnaissance Blind Chess",
+            "url": "https://www.semanticscholar.org/paper/ffe04c2c69170a565ff35ec0005b45b4b1ac5475",
+            "venue": "NeurIPS",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2286483907",
+                    "name": "Lee Erman"
+                }
+            ],
+            "doi": "10.1145/1045236.1045240",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "4860d2b5d44139d85b296b4cc782fa78addbc86f",
+            "title": "Chess",
+            "url": "https://www.semanticscholar.org/paper/4860d2b5d44139d85b296b4cc782fa78addbc86f",
+            "venue": "SGAR",
+            "year": 1975
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Efficiently Training Neural Networks for Imperfect Information Games by Sampling Information Sets",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/895b8d28c5bc8d9e0b16083b35fe0aeb906bdefc",
+    "venue": "Deutsche Jahrestagung f\u00fcr K\u00fcnstliche Intelligenz",
+    "year": 2024
+}

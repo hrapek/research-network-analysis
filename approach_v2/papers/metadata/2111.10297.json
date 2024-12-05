@@ -1,0 +1,833 @@
+{
+    "abstract": "Learning a Markov Decision Process (MDP) from a fixed batch of trajectories is a non-trivial task whose outcome's quality depends on both the amount and the diversity of the sampled regions of the state-action space. Yet, many MDPs are endowed with invariant reward and transition functions with respect to some transformations of the current state and action. Being able to detect and exploit these structures could benefit not only the learning of the MDP but also the computation of its subsequent optimal control policy. In this work we propose a paradigm, based on Density Estimation methods, that aims to detect the presence of some already supposed transformations of the state-action space for which the MDP dynamics is invariant. We tested the proposed approach in a discrete toroidal grid environment and in two notorious environments of OpenAI's Gym Learning Suite. The results demonstrate that the model distributional shift is reduced when the dataset is augmented with the data obtained by using the detected symmetries, allowing for a more thorough and data-efficient learning of the transition functions.",
+    "arxivId": "2111.10297",
+    "authors": [
+        {
+            "authorId": "77741750",
+            "name": "Giorgio Angelotti",
+            "url": "https://www.semanticscholar.org/author/77741750"
+        },
+        {
+            "authorId": "2387103",
+            "name": "Nicolas Drougard",
+            "url": "https://www.semanticscholar.org/author/2387103"
+        },
+        {
+            "authorId": "2033916",
+            "name": "Caroline Ponzoni Carvalho Chanel",
+            "url": "https://www.semanticscholar.org/author/2033916"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": "2407.13364",
+            "authors": [
+                {
+                    "authorId": "120592807",
+                    "name": "Ric De Santi"
+                },
+                {
+                    "authorId": "2311116429",
+                    "name": "Federico Arangath Joseph"
+                },
+                {
+                    "authorId": "2311117272",
+                    "name": "Noah Liniger"
+                },
+                {
+                    "authorId": "51004138",
+                    "name": "Mirco Mutti"
+                },
+                {
+                    "authorId": "2311403384",
+                    "name": "Andreas Krause"
+                }
+            ],
+            "doi": "10.48550/arXiv.2407.13364",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "fb2bce3ecbdbdfb9b0589a010f899562ac31af51",
+            "title": "Geometric Active Exploration in Markov Decision Processes: the Benefit of Abstraction",
+            "url": "https://www.semanticscholar.org/paper/fb2bce3ecbdbdfb9b0589a010f899562ac31af51",
+            "venue": "ICML",
+            "year": 2024
+        },
+        {
+            "arxivId": "2407.11077",
+            "authors": [
+                {
+                    "authorId": "2110489103",
+                    "name": "Yifei Li"
+                },
+                {
+                    "authorId": "2939347",
+                    "name": "E. Kampen"
+                }
+            ],
+            "doi": "10.48550/arXiv.2407.11077",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "f6c8fdfac11b5779a408d0e4a12f95eb2942da7b",
+            "title": "Deep reinforcement learning with symmetric data augmentation applied for aircraft lateral attitude tracking control",
+            "url": "https://www.semanticscholar.org/paper/f6c8fdfac11b5779a408d0e4a12f95eb2942da7b",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": "2112.09943",
+            "authors": [
+                {
+                    "authorId": "77741750",
+                    "name": "Giorgio Angelotti"
+                },
+                {
+                    "authorId": "2387103",
+                    "name": "Nicolas Drougard"
+                },
+                {
+                    "authorId": "2033916",
+                    "name": "Caroline Ponzoni Carvalho Chanel"
+                }
+            ],
+            "doi": "10.5220/0011633400003393",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "a7be78c29428801c2274c560348f376f436c06d1",
+            "title": "Data Augmentation Through Expert-Guided Symmetry Detection to Improve Performance in Offline Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/a7be78c29428801c2274c560348f376f436c06d1",
+            "venue": "ICAART",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "77741750",
+                    "name": "Giorgio Angelotti"
+                },
+                {
+                    "authorId": "2387103",
+                    "name": "Nicolas Drougard"
+                },
+                {
+                    "authorId": "2033916",
+                    "name": "Caroline Ponzoni Carvalho Chanel"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "4ba749070fecbe8006235f005f5f2f8b6a039dd1",
+            "title": "Exploiting Expert-guided Symmetry Detection in Of\ufb02ine Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/4ba749070fecbe8006235f005f5f2f8b6a039dd1",
+            "venue": "",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "77741750",
+                    "name": "Giorgio Angelotti"
+                },
+                {
+                    "authorId": "2387103",
+                    "name": "Nicolas Drougard"
+                },
+                {
+                    "authorId": "2033916",
+                    "name": "Caroline Ponzoni Carvalho Chanel"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "bf295c9853931fa7366d707f16c8f0c12aa163e0",
+            "title": "Exploiting Expert-guided Symmetry Detection in Markov Decision Processes",
+            "url": "https://www.semanticscholar.org/paper/bf295c9853931fa7366d707f16c8f0c12aa163e0",
+            "venue": "ArXiv",
+            "year": 2021
+        }
+    ],
+    "corpusId": 244463130,
+    "doi": "10.5220/0010783400003116",
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 5,
+    "numCiting": 27,
+    "paperId": "572c97b175c1c2d59fa66a94aca15958275835c1",
+    "references": [
+        {
+            "arxivId": "2006.16908",
+            "authors": [
+                {
+                    "authorId": "3468383",
+                    "name": "Elise van der Pol"
+                },
+                {
+                    "authorId": "3471551",
+                    "name": "Daniel E. Worrall"
+                },
+                {
+                    "authorId": "47662867",
+                    "name": "H. V. Hoof"
+                },
+                {
+                    "authorId": "1799949",
+                    "name": "F. Oliehoek"
+                },
+                {
+                    "authorId": "1678311",
+                    "name": "M. Welling"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2338e0568bbd56cfe025dcdb891fad0631a1ed7c",
+            "title": "MDP Homomorphic Networks: Group Symmetries in Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/2338e0568bbd56cfe025dcdb891fad0631a1ed7c",
+            "venue": "NeurIPS",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "152422014",
+                    "name": "David Abel"
+                },
+                {
+                    "authorId": "1768775881",
+                    "name": "Nathan Umbanhowar"
+                },
+                {
+                    "authorId": "38562041",
+                    "name": "Khimya Khetarpal"
+                },
+                {
+                    "authorId": "34544888",
+                    "name": "Dilip Arumugam"
+                },
+                {
+                    "authorId": "144368601",
+                    "name": "Doina Precup"
+                },
+                {
+                    "authorId": "144885169",
+                    "name": "M. Littman"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "7a9d14cf9f22e624cc9f850881a0a924de56a7a9",
+            "title": "Value Preserving State-Action Abstractions",
+            "url": "https://www.semanticscholar.org/paper/7a9d14cf9f22e624cc9f850881a0a924de56a7a9",
+            "venue": "AISTATS",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "66895761",
+                    "name": "I. Kobyzev"
+                },
+                {
+                    "authorId": "144827387",
+                    "name": "S. Prince"
+                },
+                {
+                    "authorId": "2575536",
+                    "name": "Marcus A. Brubaker"
+                }
+            ],
+            "doi": "10.1109/TPAMI.2020.2992934",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "cc22c4e54c0dd381a2ff22881d4fb570cf3761e8",
+            "title": "Normalizing Flows: An Introduction and Review of Current Methods",
+            "url": "https://www.semanticscholar.org/paper/cc22c4e54c0dd381a2ff22881d4fb570cf3761e8",
+            "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+            "year": 2020
+        },
+        {
+            "arxivId": "2005.01643",
+            "authors": [
+                {
+                    "authorId": "1736651",
+                    "name": "S. Levine"
+                },
+                {
+                    "authorId": "1488785534",
+                    "name": "Aviral Kumar"
+                },
+                {
+                    "authorId": "145499435",
+                    "name": "G. Tucker"
+                },
+                {
+                    "authorId": "2550764",
+                    "name": "Justin Fu"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "5e7bc93622416f14e6948a500278bfbe58cd3890",
+            "title": "Offline Reinforcement Learning: Tutorial, Review, and Perspectives on Open Problems",
+            "url": "https://www.semanticscholar.org/paper/5e7bc93622416f14e6948a500278bfbe58cd3890",
+            "venue": "ArXiv",
+            "year": 2020
+        },
+        {
+            "arxivId": "2002.11963",
+            "authors": [
+                {
+                    "authorId": "3468383",
+                    "name": "Elise van der Pol"
+                },
+                {
+                    "authorId": "41016725",
+                    "name": "Thomas Kipf"
+                },
+                {
+                    "authorId": "1799949",
+                    "name": "F. Oliehoek"
+                },
+                {
+                    "authorId": "1678311",
+                    "name": "M. Welling"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7d2c7517a59669108588b98de1876f54ca23f6b2",
+            "title": "Plannable Approximations to MDP Homomorphisms: Equivariance under Actions",
+            "url": "https://www.semanticscholar.org/paper/7d2c7517a59669108588b98de1876f54ca23f6b2",
+            "venue": "AAMAS",
+            "year": 2020
+        },
+        {
+            "arxivId": "1911.09291",
+            "authors": [
+                {
+                    "authorId": "39163115",
+                    "name": "P. S. Castro"
+                }
+            ],
+            "doi": "10.1609/AAAI.V34I06.6564",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "3a427c79721676a473a57c0ba112c904d9cefb7c",
+            "title": "Scalable methods for computing state similarity in deterministic Markov Decision Processes",
+            "url": "https://www.semanticscholar.org/paper/3a427c79721676a473a57c0ba112c904d9cefb7c",
+            "venue": "AAAI",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "150064574",
+                    "name": "Connor Shorten"
+                },
+                {
+                    "authorId": "1725285",
+                    "name": "T. Khoshgoftaar"
+                }
+            ],
+            "doi": "10.1186/s40537-019-0197-0",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "3813b88a4ec3c63919df47e9694b577f4691f7e5",
+            "title": "A survey on Image Data Augmentation for Deep Learning",
+            "url": "https://www.semanticscholar.org/paper/3813b88a4ec3c63919df47e9694b577f4691f7e5",
+            "venue": "Journal of Big Data",
+            "year": 2019
+        },
+        {
+            "arxivId": "1810.01367",
+            "authors": [
+                {
+                    "authorId": "7649077",
+                    "name": "Will Grathwohl"
+                },
+                {
+                    "authorId": "51466615",
+                    "name": "Ricky T. Q. Chen"
+                },
+                {
+                    "authorId": "51012893",
+                    "name": "J. Bettencourt"
+                },
+                {
+                    "authorId": "1701686",
+                    "name": "I. Sutskever"
+                },
+                {
+                    "authorId": "1704657",
+                    "name": "D. Duvenaud"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8afa6dd9f9ac46462a1fb70a757c4ae1cd45bbf6",
+            "title": "FFJORD: Free-form Continuous Dynamics for Scalable Reversible Generative Models",
+            "url": "https://www.semanticscholar.org/paper/8afa6dd9f9ac46462a1fb70a757c4ae1cd45bbf6",
+            "venue": "ICLR",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144137911",
+                    "name": "Travis Mandel"
+                },
+                {
+                    "authorId": "38057113",
+                    "name": "Yun-En Liu"
+                },
+                {
+                    "authorId": "2563117",
+                    "name": "E. Brunskill"
+                },
+                {
+                    "authorId": "1986848",
+                    "name": "Zoran Popovic"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "52bbddb319e27439d78bbe4dfcb702e813d72496",
+            "title": "Efficient Bayesian Clustering for Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/52bbddb319e27439d78bbe4dfcb702e813d72496",
+            "venue": "IJCAI",
+            "year": 2016
+        },
+        {
+            "arxivId": "1606.01540",
+            "authors": [
+                {
+                    "authorId": "2065151121",
+                    "name": "Greg Brockman"
+                },
+                {
+                    "authorId": "34415167",
+                    "name": "Vicki Cheung"
+                },
+                {
+                    "authorId": "152877508",
+                    "name": "Ludwig Pettersson"
+                },
+                {
+                    "authorId": "2113526509",
+                    "name": "Jonas Schneider"
+                },
+                {
+                    "authorId": "47971768",
+                    "name": "John Schulman"
+                },
+                {
+                    "authorId": "2109541439",
+                    "name": "Jie Tang"
+                },
+                {
+                    "authorId": "2563432",
+                    "name": "Wojciech Zaremba"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "2b10281297ee001a9f3f4ea1aa9bea6b638c27df",
+            "title": "OpenAI Gym",
+            "url": "https://www.semanticscholar.org/paper/2b10281297ee001a9f3f4ea1aa9bea6b638c27df",
+            "venue": "ArXiv",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3451759",
+                    "name": "S. Ruan"
+                },
+                {
+                    "authorId": "1819858",
+                    "name": "Gheorghe Comanici"
+                },
+                {
+                    "authorId": "1784317",
+                    "name": "P. Panangaden"
+                },
+                {
+                    "authorId": "144368601",
+                    "name": "Doina Precup"
+                }
+            ],
+            "doi": "10.1609/aaai.v29i1.9747",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "8f36e61c074172b99cd5fdf58d038b502daf2a39",
+            "title": "Representation Discovery for MDPs Using Bisimulation Metrics",
+            "url": "https://www.semanticscholar.org/paper/8f36e61c074172b99cd5fdf58d038b502daf2a39",
+            "venue": "AAAI",
+            "year": 2015
+        },
+        {
+            "arxivId": "1410.8516",
+            "authors": [
+                {
+                    "authorId": "46573521",
+                    "name": "Laurent Dinh"
+                },
+                {
+                    "authorId": "145055042",
+                    "name": "David Krueger"
+                },
+                {
+                    "authorId": "1751762",
+                    "name": "Yoshua Bengio"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "dc8301b67f98accbb331190dd7bd987952a692af",
+            "title": "NICE: Non-linear Independent Components Estimation",
+            "url": "https://www.semanticscholar.org/paper/dc8301b67f98accbb331190dd7bd987952a692af",
+            "venue": "ICLR",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "6247481",
+                    "name": "A. Kolobov"
+                }
+            ],
+            "doi": "10.2200/s00426ed1v01y201206aim017",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "165bb688bd07d8cf22f4f65a7996c7fbc5a020d4",
+            "title": "Planning with Markov Decision Processes: An AI Perspective",
+            "url": "https://www.semanticscholar.org/paper/165bb688bd07d8cf22f4f65a7996c7fbc5a020d4",
+            "venue": "",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2110315975",
+                    "name": "Jonathan Taylor"
+                },
+                {
+                    "authorId": "144368601",
+                    "name": "Doina Precup"
+                },
+                {
+                    "authorId": "1784317",
+                    "name": "P. Panangaden"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "935f58066e63518f4e519ea44119772bc5b4ce1b",
+            "title": "Bounding Performance Loss in Approximate MDP Homomorphisms",
+            "url": "https://www.semanticscholar.org/paper/935f58066e63518f4e519ea44119772bc5b4ce1b",
+            "venue": "NIPS",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3005102",
+                    "name": "Shravan M. Narayanamurthy"
+                },
+                {
+                    "authorId": "1723632",
+                    "name": "Balaraman Ravindran"
+                }
+            ],
+            "doi": "10.1145/1390156.1390243",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "03f2d1db7b7da30ae249545f6912e9bce5a05030",
+            "title": "On the hardness of finding symmetries in Markov decision processes",
+            "url": "https://www.semanticscholar.org/paper/03f2d1db7b7da30ae249545f6912e9bce5a05030",
+            "venue": "ICML '08",
+            "year": 2008
+        },
+        {
+            "arxivId": "1207.4114",
+            "authors": [
+                {
+                    "authorId": "1757489",
+                    "name": "N. Ferns"
+                },
+                {
+                    "authorId": "1784317",
+                    "name": "P. Panangaden"
+                },
+                {
+                    "authorId": "144368601",
+                    "name": "Doina Precup"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "2c85356cd182c16e0a2e5c4a97112efbc1132cdf",
+            "title": "Metrics for Finite Markov Decision Processes",
+            "url": "https://www.semanticscholar.org/paper/2c85356cd182c16e0a2e5c4a97112efbc1132cdf",
+            "venue": "AAAI",
+            "year": 2004
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1718146",
+                    "name": "R. Givan"
+                },
+                {
+                    "authorId": "1680510",
+                    "name": "T. Dean"
+                },
+                {
+                    "authorId": "47158391",
+                    "name": "M. Greig"
+                }
+            ],
+            "doi": "10.1016/S0004-3702(02)00376-4",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2020aca3838a0e8a723761e74899b183d6b56f30",
+            "title": "Equivalence notions and model minimization in Markov decision processes",
+            "url": "https://www.semanticscholar.org/paper/2020aca3838a0e8a723761e74899b183d6b56f30",
+            "venue": "Artif. Intell.",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1723632",
+                    "name": "Balaraman Ravindran"
+                },
+                {
+                    "authorId": "1730590",
+                    "name": "A. Barto"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "02707d4ffb6f5965a2270f89d6767e9e9b8abf9d",
+            "title": "Symmetries and Model Minimization in Markov Decision Processes",
+            "url": "https://www.semanticscholar.org/paper/02707d4ffb6f5965a2270f89d6767e9e9b8abf9d",
+            "venue": "",
+            "year": 2001
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1680510",
+                    "name": "T. Dean"
+                },
+                {
+                    "authorId": "1718146",
+                    "name": "R. Givan"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "86f899ad953659ab6c267ae658c038fcaf1faca2",
+            "title": "Model Minimization in Markov Decision Processes",
+            "url": "https://www.semanticscholar.org/paper/86f899ad953659ab6c267ae658c038fcaf1faca2",
+            "venue": "AAAI/IAAI",
+            "year": 1997
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "48509923",
+                    "name": "D. Gross"
+                }
+            ],
+            "doi": "10.1073/PNAS.93.25.14256",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "6bb14ba6ee7970d6face04f01e84d6140e5c8d47",
+            "title": "The role of symmetry in fundamental physics.",
+            "url": "https://www.semanticscholar.org/paper/6bb14ba6ee7970d6face04f01e84d6140e5c8d47",
+            "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "47681372",
+                    "name": "Lihong Li"
+                },
+                {
+                    "authorId": "144926179",
+                    "name": "Thomas J. Walsh"
+                },
+                {
+                    "authorId": "144885169",
+                    "name": "M. Littman"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ca9a2d326b9de48c095a6cb5912e1990d2c5ab46",
+            "title": "Towards a Unified Theory of State Abstraction for MDPs",
+            "url": "https://www.semanticscholar.org/paper/ca9a2d326b9de48c095a6cb5912e1990d2c5ab46",
+            "venue": "AI&M",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2286286604",
+                    "name": "Richard S. Sutton"
+                }
+            ],
+            "doi": "10.1016/b978-1-55860-141-3.50030-4",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "bc6014884d291555d92b8dbef4635a1a9e192962",
+            "title": "Integrated Architectures for Learning, Planning, and Reacting Based on Approximating Dynamic Programming",
+            "url": "https://www.semanticscholar.org/paper/bc6014884d291555d92b8dbef4635a1a9e192962",
+            "venue": "ML",
+            "year": 1990
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1723632",
+                    "name": "Balaraman Ravindran"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "133583b9c4634702ab2579205ee3eb78714b7feb",
+            "title": "Approximate Homomorphisms : A framework for non-exact minimization in Markov Decision Processes",
+            "url": "https://www.semanticscholar.org/paper/133583b9c4634702ab2579205ee3eb78714b7feb",
+            "venue": "",
+            "year": null
+        },
+        {
+            "arxivId": null,
+            "authors": [],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7fd8d846b5ef026285c370474b75befb872bb4db",
+            "title": "PROCESSES *",
+            "url": "https://www.semanticscholar.org/paper/7fd8d846b5ef026285c370474b75befb872bb4db",
+            "venue": "",
+            "year": null
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Expert-Guided Symmetry Detection in Markov Decision Processes",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/572c97b175c1c2d59fa66a94aca15958275835c1",
+    "venue": "International Conference on Agents and Artificial Intelligence",
+    "year": 2021
+}

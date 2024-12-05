@@ -1,0 +1,1344 @@
+{
+    "abstract": "Bound propagation is an important Artificial Intelligence technique used in Constraint Programming tools to deal with numerical constraints. It is typically embedded within a search procedure (\"branch and prune\") and used at every node of the search tree to narrow down the search space, so it is critical that it be fast. The procedure invokes constraint propagators until a common fixpoint is reached, but the known algorithms for this have a pseudo-polynomial worst-case time complexity: they are fast indeed when the variables have a small numerical range, but they have the well-known problem of being prohibitively slow when these ranges are large. An important question is therefore whether strongly-polynomial algorithms exist that compute the common bound consistent fixpoint of a set of constraints. This paper answers this question. In particular we show that this fixpoint computation is in fact NP-complete, even when restricted to binary linear constraints.",
+    "arxivId": "1401.3887",
+    "authors": [
+        {
+            "authorId": "3023847",
+            "name": "L. Bordeaux",
+            "url": "https://www.semanticscholar.org/author/3023847"
+        },
+        {
+            "authorId": "2637168",
+            "name": "G. Katsirelos",
+            "url": "https://www.semanticscholar.org/author/2637168"
+        },
+        {
+            "authorId": "2701535",
+            "name": "Nina Narodytska",
+            "url": "https://www.semanticscholar.org/author/2701535"
+        },
+        {
+            "authorId": "9083969",
+            "name": "Moshe Y. Vardi",
+            "url": "https://www.semanticscholar.org/author/9083969"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "35844502",
+                    "name": "Frederic Matter"
+                },
+                {
+                    "authorId": "2599498",
+                    "name": "M. Pfetsch"
+                }
+            ],
+            "doi": "10.1287/ijoo.2022.0079",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "980e77ddd6e5df099cb2ac2bd325cb3105d00356",
+            "title": "Presolving for Mixed-Integer Semidefinite Optimization",
+            "url": "https://www.semanticscholar.org/paper/980e77ddd6e5df099cb2ac2bd325cb3105d00356",
+            "venue": "INFORMS J. Optim.",
+            "year": 2022
+        },
+        {
+            "arxivId": "2106.07573",
+            "authors": [
+                {
+                    "authorId": "1945659208",
+                    "name": "Boro Sofranac"
+                },
+                {
+                    "authorId": "2082044",
+                    "name": "Ambros M. Gleixner"
+                },
+                {
+                    "authorId": "145729210",
+                    "name": "S. Pokutta"
+                }
+            ],
+            "doi": "10.1007/s10601-022-09338-9",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "6ea46aabccb483f81439e571fe2ffbac0fb810fa",
+            "title": "An algorithm-independent measure of progress for linear constraint propagation",
+            "url": "https://www.semanticscholar.org/paper/6ea46aabccb483f81439e571fe2ffbac0fb810fa",
+            "venue": "Constraints",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1761959",
+                    "name": "R. Claris\u00f3"
+                },
+                {
+                    "authorId": "145360209",
+                    "name": "Carlos A. Gonz\u00e1lez"
+                },
+                {
+                    "authorId": "1705375",
+                    "name": "Jordi Cabot"
+                }
+            ],
+            "doi": "10.1109/TSE.2017.2777830",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b40586c6019c1cf79eca4ac3a8cfde2381dbfc9c",
+            "title": "Smart Bound Selection for the Verification of UML/OCL Class Diagrams",
+            "url": "https://www.semanticscholar.org/paper/b40586c6019c1cf79eca4ac3a8cfde2381dbfc9c",
+            "venue": "IEEE Transactions on Software Engineering",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "71566961",
+                    "name": "Takuya Tamori"
+                },
+                {
+                    "authorId": "49206185",
+                    "name": "Kei Kimura"
+                }
+            ],
+            "doi": "10.1007/978-3-030-10564-8_17",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "0bea032345ba4858dd5c109863d551ec2b75b6b8",
+            "title": "A Fast Algorithm for Unbounded Monotone Integer Linear Systems with Two Variables per Inequality via Graph Decomposition",
+            "url": "https://www.semanticscholar.org/paper/0bea032345ba4858dd5c109863d551ec2b75b6b8",
+            "venue": "WALCOM",
+            "year": 2019
+        },
+        {
+            "arxivId": "1706.08601",
+            "authors": [
+                {
+                    "authorId": "8664163",
+                    "name": "Yash Puranik"
+                },
+                {
+                    "authorId": "1700275",
+                    "name": "N. Sahinidis"
+                }
+            ],
+            "doi": "10.1007/s10601-016-9267-5",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "cc0461b68e45bc7208c71d5736a16bb14aa33a1d",
+            "title": "Domain reduction techniques for global NLP and MINLP optimization",
+            "url": "https://www.semanticscholar.org/paper/cc0461b68e45bc7208c71d5736a16bb14aa33a1d",
+            "venue": "Constraints",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1767337",
+                    "name": "G. Gange"
+                },
+                {
+                    "authorId": "145449324",
+                    "name": "J. Navas"
+                },
+                {
+                    "authorId": "3149077",
+                    "name": "P. Schachte"
+                },
+                {
+                    "authorId": "50664162",
+                    "name": "H. S\u00f8ndergaard"
+                },
+                {
+                    "authorId": "1682747",
+                    "name": "Peter James Stuckey"
+                }
+            ],
+            "doi": "10.1007/978-3-662-49122-5_4",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "fa9b527e46eadba5890e2719c4dccb2bc1044f45",
+            "title": "An Abstract Domain of Uninterpreted Functions",
+            "url": "https://www.semanticscholar.org/paper/fa9b527e46eadba5890e2719c4dccb2bc1044f45",
+            "venue": "VMCAI",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1761959",
+                    "name": "R. Claris\u00f3"
+                },
+                {
+                    "authorId": "145360209",
+                    "name": "Carlos A. Gonz\u00e1lez"
+                },
+                {
+                    "authorId": "1705375",
+                    "name": "Jordi Cabot"
+                }
+            ],
+            "doi": "10.1007/978-3-319-22969-0_8",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "a69706df288b9e7b8a6a417ecc19af8e58c008f0",
+            "title": "Towards Domain Refinement for UML/OCL Bounded Verification",
+            "url": "https://www.semanticscholar.org/paper/a69706df288b9e7b8a6a417ecc19af8e58c008f0",
+            "venue": "SEFM",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2357470",
+                    "name": "Anastasia Paparrizou"
+                }
+            ],
+            "doi": "10.1007/s10601-015-9216-8",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d5901115b2257ebc48a38b7383da7cd234496997",
+            "title": "Efficient algorithms for strong local consistencies and adaptive techniques in constraint satisfaction problems",
+            "url": "https://www.semanticscholar.org/paper/d5901115b2257ebc48a38b7383da7cd234496997",
+            "venue": "Constraints",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2360931",
+                    "name": "C. Bessiere"
+                },
+                {
+                    "authorId": "2357470",
+                    "name": "Anastasia Paparrizou"
+                },
+                {
+                    "authorId": "71712718",
+                    "name": "Kostas Stergiou"
+                }
+            ],
+            "doi": "10.1609/aaai.v29i1.9756",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "3120c91ed2475ea5ed0082ad16219fa42a265b10",
+            "title": "Strong Bounds Consistencies and Their Application to Linear Constraints",
+            "url": "https://www.semanticscholar.org/paper/3120c91ed2475ea5ed0082ad16219fa42a265b10",
+            "venue": "AAAI",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1761959",
+                    "name": "R. Claris\u00f3"
+                }
+            ],
+            "doi": "10.7238/IN3WPS.V0I0.2490",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "e9b2db221f96329981645ce9489ed35ef08b283c",
+            "title": "Bounded Verification of Software Models: Challenges and Opportunities",
+            "url": "https://www.semanticscholar.org/paper/e9b2db221f96329981645ce9489ed35ef08b283c",
+            "venue": "",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145985070",
+                    "name": "Pierre Roy"
+                },
+                {
+                    "authorId": "1986454",
+                    "name": "F. Pachet"
+                }
+            ],
+            "doi": "10.1609/aaai.v27i1.8661",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a8c313da11624028447823918e4dd8d78821566b",
+            "title": "Enforcing Meter in Finite-Length Markov Sequences",
+            "url": "https://www.semanticscholar.org/paper/a8c313da11624028447823918e4dd8d78821566b",
+            "venue": "AAAI",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1403842621",
+                    "name": "Mauricio Toro-Berm\u00fadez"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c0976a85fc7941dd57058e6834313f271ab27e09",
+            "title": "Structured interactive scores : from a structural description of a multimedia scenario to a real-time capable implementation with formal semantics",
+            "url": "https://www.semanticscholar.org/paper/c0976a85fc7941dd57058e6834313f271ab27e09",
+            "venue": "",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2216063945",
+                    "name": "Jorke M. de Vlas"
+                }
+            ],
+            "doi": "10.4230/LIPIcs.CP.2024.35",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "50ab8a9408ec0f2e2c5e11c04a743e6759440082",
+            "title": "On the Complexity of Integer Programming with Fixed-Coefficient Scaling (Short Paper)",
+            "url": "https://www.semanticscholar.org/paper/50ab8a9408ec0f2e2c5e11c04a743e6759440082",
+            "venue": "CP",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1786561",
+                    "name": "P. Fillottrani"
+                },
+                {
+                    "authorId": "2238221315",
+                    "name": "C. M. Keet"
+                },
+                {
+                    "authorId": "2288694237",
+                    "name": "David Toman"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "700978618a94c8665c64c07c66dc0d9989553cbe",
+            "title": "Polynomial encoding of ORM conceptual models in CFDI",
+            "url": "https://www.semanticscholar.org/paper/700978618a94c8665c64c07c66dc0d9989553cbe",
+            "venue": "Description Logics",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "153775466",
+                    "name": "Robert Claris\u00f3 Viladrosa"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "121178c0fc7d85f612d671b94836ab3be72ff51a",
+            "title": "Bounded Verification of Software Models",
+            "url": "https://www.semanticscholar.org/paper/121178c0fc7d85f612d671b94836ab3be72ff51a",
+            "venue": "",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143653660",
+                    "name": "Mauricio Toro"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "90e09093b9f8595b1c1c4ec15077f41bec2eb78d",
+            "title": "Structured Interactive Scores: From a simple description of an interactive scenario to a real-time capable implementation with formal semantics",
+            "url": "https://www.semanticscholar.org/paper/90e09093b9f8595b1c1c4ec15077f41bec2eb78d",
+            "venue": "",
+            "year": 2012
+        }
+    ],
+    "corpusId": 5625921,
+    "doi": "10.1613/jair.3248",
+    "fieldsOfStudy": [
+        "Computer Science",
+        "Mathematics"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": true,
+    "isPublisherLicensed": true,
+    "is_open_access": true,
+    "is_publisher_licensed": true,
+    "numCitedBy": 16,
+    "numCiting": 42,
+    "paperId": "e72b99134a8ce8165b8350e050149d6c5de50cf5",
+    "references": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144050583",
+                    "name": "P. Belotti"
+                },
+                {
+                    "authorId": "2255133",
+                    "name": "Sonia Cafieri"
+                },
+                {
+                    "authorId": "38510381",
+                    "name": "Jon Lee"
+                },
+                {
+                    "authorId": "3044529",
+                    "name": "Leo Liberti"
+                }
+            ],
+            "doi": "10.1007/978-3-642-17458-2_7",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "3ce3a900d6d5f5cba845c8c30d20acb7c607feed",
+            "title": "Feasibility-Based Bounds Tightening via Fixed Points",
+            "url": "https://www.semanticscholar.org/paper/3ce3a900d6d5f5cba845c8c30d20acb7c607feed",
+            "venue": "COCOA",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "93347719",
+                    "name": "M. Leconte"
+                },
+                {
+                    "authorId": "2301085",
+                    "name": "B. Berstel"
+                }
+            ],
+            "doi": "10.1002/9780470612309.CH21",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "3ef52bbaf01cc57a923fb760e03681370cd0ff23",
+            "title": "Extending a CP Solver with Congruences as Domains for Program Verification",
+            "url": "https://www.semanticscholar.org/paper/3ef52bbaf01cc57a923fb760e03681370cd0ff23",
+            "venue": "",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1765764",
+                    "name": "M. Bezem"
+                },
+                {
+                    "authorId": "1799613",
+                    "name": "R. Nieuwenhuis"
+                },
+                {
+                    "authorId": "1403157666",
+                    "name": "Enric Rodr\u00edguez-carbonell"
+                }
+            ],
+            "doi": "10.1007/978-3-540-89439-1_4",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "b9ed6654d8bac1173221daf996082a50dd1fb844",
+            "title": "The Max-Atom Problem and Its Relevance",
+            "url": "https://www.semanticscholar.org/paper/b9ed6654d8bac1173221daf996082a50dd1fb844",
+            "venue": "LPAR",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3023847",
+                    "name": "L. Bordeaux"
+                },
+                {
+                    "authorId": "1728524",
+                    "name": "Y. Hamadi"
+                },
+                {
+                    "authorId": "9083969",
+                    "name": "Moshe Y. Vardi"
+                }
+            ],
+            "doi": "10.1007/978-3-540-74970-7_56",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "b549fbaeefc2fb9364db3202568d01d4127108e1",
+            "title": "An Analysis of Slow Convergence in Interval Propagation",
+            "url": "https://www.semanticscholar.org/paper/b549fbaeefc2fb9364db3202568d01d4127108e1",
+            "venue": "CP",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2091228",
+                    "name": "Irit Katriel"
+                },
+                {
+                    "authorId": "1687333",
+                    "name": "Meinolf Sellmann"
+                },
+                {
+                    "authorId": "1735099",
+                    "name": "E. Upfal"
+                },
+                {
+                    "authorId": "8388443",
+                    "name": "Pascal Van Hentenryck"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "0a32080a33987862b03faedd208835d87e09dd76",
+            "title": "Propagating Knapsack Constraints in Sublinear Time",
+            "url": "https://www.semanticscholar.org/paper/0a32080a33987862b03faedd208835d87e09dd76",
+            "venue": "AAAI",
+            "year": 2007
+        },
+        {
+            "arxivId": "cs/0607016",
+            "authors": [
+                {
+                    "authorId": "1748061",
+                    "name": "K. Apt"
+                },
+                {
+                    "authorId": "1747348",
+                    "name": "P. Zoeteweij"
+                }
+            ],
+            "doi": "10.1007/s10601-007-9017-9",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "ea3facd6a1ec52b64e12f4075bcf8e690091fcc4",
+            "title": "An Analysis of Arithmetic Constraints on Integer Intervals",
+            "url": "https://www.semanticscholar.org/paper/ea3facd6a1ec52b64e12f4075bcf8e690091fcc4",
+            "venue": "Constraints",
+            "year": 2006
+        },
+        {
+            "arxivId": "cs/0412021",
+            "authors": [
+                {
+                    "authorId": "2725406",
+                    "name": "Chiu Wo Choi"
+                },
+                {
+                    "authorId": "144034036",
+                    "name": "Warwick Harvey"
+                },
+                {
+                    "authorId": "1520031258",
+                    "name": "Jimmy Ho-man Lee"
+                },
+                {
+                    "authorId": "1682747",
+                    "name": "Peter James Stuckey"
+                }
+            ],
+            "doi": "10.1007/11941439_9",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "884950d82323de359585a786a9c9e98f7be94636",
+            "title": "Finite Domain Bounds Consistency Revisited",
+            "url": "https://www.semanticscholar.org/paper/884950d82323de359585a786a9c9e98f7be94636",
+            "venue": "Australian Conference on Artificial Intelligence",
+            "year": 2004
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144034036",
+                    "name": "Warwick Harvey"
+                },
+                {
+                    "authorId": "1682747",
+                    "name": "Peter James Stuckey"
+                }
+            ],
+            "doi": "10.1023/A:1022323717928",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "bef6a8ef641c17978c0540fc710dc34b47b4ea7d",
+            "title": "Improving Linear Constraint Propagation by Changing Constraint Representation",
+            "url": "https://www.semanticscholar.org/paper/bef6a8ef641c17978c0540fc710dc34b47b4ea7d",
+            "venue": "Constraints",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1834417",
+                    "name": "M. Trick"
+                }
+            ],
+            "doi": "10.1023/A:1021801522545",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "574ce2d0368a8f97f932dea7d238e8651e908427",
+            "title": "A Dynamic Programming Approach for Consistency and Propagation for Knapsack Constraints",
+            "url": "https://www.semanticscholar.org/paper/574ce2d0368a8f97f932dea7d238e8651e908427",
+            "venue": "Ann. Oper. Res.",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2323823",
+                    "name": "Yahia Lebbah"
+                },
+                {
+                    "authorId": "2505107",
+                    "name": "Olivier Lhomme"
+                }
+            ],
+            "doi": "10.1016/S0004-3702(02)00194-7",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a0090f513c4fb7d0a67ebfb480be6566ee818f8e",
+            "title": "Accelerating filtering techniques for numeric CSPs",
+            "url": "https://www.semanticscholar.org/paper/a0090f513c4fb7d0a67ebfb480be6566ee818f8e",
+            "venue": "Artif. Intell.",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "6510899",
+                    "name": "Christian Schulte"
+                },
+                {
+                    "authorId": "1682747",
+                    "name": "Peter James Stuckey"
+                }
+            ],
+            "doi": "10.1145/773184.773197",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "3a86aa4a6570ec9f219ad3d0379f2002de34153d",
+            "title": "When do bounds and domain propagation lead to the same search space",
+            "url": "https://www.semanticscholar.org/paper/3a86aa4a6570ec9f219ad3d0379f2002de34153d",
+            "venue": "PPDP '01",
+            "year": 2001
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1388380660",
+                    "name": "R. Bar-Yehuda"
+                },
+                {
+                    "authorId": "1719900",
+                    "name": "Dror Rawitz"
+                }
+            ],
+            "doi": "10.1007/s004530010075",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7026f2ab0b8cdbcf9d6076f3b96a020f6211d121",
+            "title": "Efficient Algorithms for Integer Programs with Two Variables per Constraint1",
+            "url": "https://www.semanticscholar.org/paper/7026f2ab0b8cdbcf9d6076f3b96a020f6211d121",
+            "venue": "Algorithmica",
+            "year": 2001
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1591129121",
+                    "name": "Yuanlin Zhang"
+                },
+                {
+                    "authorId": "1713932",
+                    "name": "R. Yap"
+                }
+            ],
+            "doi": "10.1007/3-540-45349-0_34",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "aa3ff243f910f4334d12b35163763fcad135216c",
+            "title": "Arc Consistency on n-ary Monotonic and Linear Constraints",
+            "url": "https://www.semanticscholar.org/paper/aa3ff243f910f4334d12b35163763fcad135216c",
+            "venue": "CP",
+            "year": 2000
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1388380660",
+                    "name": "R. Bar-Yehuda"
+                },
+                {
+                    "authorId": "1719900",
+                    "name": "Dror Rawitz"
+                }
+            ],
+            "doi": "10.1007/3-540-48481-7_11",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "4b76090a9d055afd6dda4237718d925b30b15248",
+            "title": "Efficient Algorithms for Integer Programs with Two Variables per Constraint",
+            "url": "https://www.semanticscholar.org/paper/4b76090a9d055afd6dda4237718d925b30b15248",
+            "venue": "ESA",
+            "year": 1999
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1765827",
+                    "name": "M. Jurdzinski"
+                }
+            ],
+            "doi": "10.1016/S0020-0190(98)00150-1",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "05cadde093a2b9ea2947e1d0af8ba9f628f1f84f",
+            "title": "Deciding the Winner in Parity Games is in UP \\cap co-Up",
+            "url": "https://www.semanticscholar.org/paper/05cadde093a2b9ea2947e1d0af8ba9f628f1f84f",
+            "venue": "Inf. Process. Lett.",
+            "year": 1998
+        },
+        {
+            "arxivId": "cs/9811024",
+            "authors": [
+                {
+                    "authorId": "1748061",
+                    "name": "K. Apt"
+                }
+            ],
+            "doi": "10.1016/S0304-3975(99)00032-8",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9d55366f849a01688d1f96d2fd40e4a15b7ea80c",
+            "title": "The Essence of Constraint Propagation",
+            "url": "https://www.semanticscholar.org/paper/9d55366f849a01688d1f96d2fd40e4a15b7ea80c",
+            "venue": "Theor. Comput. Sci.",
+            "year": 1998
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "34911188",
+                    "name": "S. Smale"
+                }
+            ],
+            "doi": "10.1007/BF03025291",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "1a0a3dc88916e4b1bc7f852d9b120c5dc3df3ad9",
+            "title": "Mathematical problems for the next century",
+            "url": "https://www.semanticscholar.org/paper/1a0a3dc88916e4b1bc7f852d9b120c5dc3df3ad9",
+            "venue": "",
+            "year": 1998
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1682514",
+                    "name": "F. Benhamou"
+                }
+            ],
+            "doi": "10.1007/3-540-61735-3_4",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a79da806890d5d186497f650dddfb97e142b00fc",
+            "title": "Heterogeneous Constraint Solving",
+            "url": "https://www.semanticscholar.org/paper/a79da806890d5d186497f650dddfb97e142b00fc",
+            "venue": "ALP",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144922783",
+                    "name": "P. Jeavons"
+                },
+                {
+                    "authorId": "2120497",
+                    "name": "Martin C. Cooper"
+                }
+            ],
+            "doi": "10.1016/0004-3702(95)00107-7",
+            "intent": [
+                "result",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "9e0f40946dde6f15dbbe88ee883a01b2e6e4d01c",
+            "title": "Tractable Constraints on Ordered Domains",
+            "url": "https://www.semanticscholar.org/paper/9e0f40946dde6f15dbbe88ee883a01b2e6e4d01c",
+            "venue": "Artif. Intell.",
+            "year": 1995
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1717379",
+                    "name": "D. Hochbaum"
+                },
+                {
+                    "authorId": "1751440",
+                    "name": "J. Naor"
+                }
+            ],
+            "doi": "10.1137/S0097539793251876",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "c14fe915d03eff7c4c9447639ef12f798628e7f5",
+            "title": "Simple and Fast Algorithms for Linear and Integer Programs With Two Variables per Inequality",
+            "url": "https://www.semanticscholar.org/paper/c14fe915d03eff7c4c9447639ef12f798628e7f5",
+            "venue": "SIAM J. Comput.",
+            "year": 1994
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1691703",
+                    "name": "J. Jaffar"
+                },
+                {
+                    "authorId": "46512381",
+                    "name": "Michael J. Maher"
+                },
+                {
+                    "authorId": "1682747",
+                    "name": "Peter James Stuckey"
+                },
+                {
+                    "authorId": "1713932",
+                    "name": "R. Yap"
+                }
+            ],
+            "doi": "10.1007/3-540-58601-6_92",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5ab3f4d54df8bcb5068d1c997735fdcfbf67ba4b",
+            "title": "Beyond Finite Domains",
+            "url": "https://www.semanticscholar.org/paper/5ab3f4d54df8bcb5068d1c997735fdcfbf67ba4b",
+            "venue": "PPCP",
+            "year": 1994
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2505107",
+                    "name": "Olivier Lhomme"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "82271c6a1a784f99e1922583b24b8f4cb7a75e19",
+            "title": "Consistency Techniques for Numeric CSPs",
+            "url": "https://www.semanticscholar.org/paper/82271c6a1a784f99e1922583b24b8f4cb7a75e19",
+            "venue": "IJCAI",
+            "year": 1993
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145459273",
+                    "name": "E. Emerson"
+                },
+                {
+                    "authorId": "2878366",
+                    "name": "C. Jutla"
+                },
+                {
+                    "authorId": "1794041",
+                    "name": "A. Sistla"
+                }
+            ],
+            "doi": "10.1007/3-540-56922-7_32",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "31b61af65bca50f74e94bc8ebab97ef82ef8b765",
+            "title": "On Model-Checking for Fragments of \u00b5-Calculus",
+            "url": "https://www.semanticscholar.org/paper/31b61af65bca50f74e94bc8ebab97ef82ef8b765",
+            "venue": "CAV",
+            "year": 1993
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2930307",
+                    "name": "E. Hyv\u00f6nen"
+                }
+            ],
+            "doi": "10.1016/0004-3702(92)90005-I",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "e9c7d8fbed3a94b64ab68db79f869c9596a39990",
+            "title": "Constraint Reasoning Based on Interval Arithmetic: The Tolerance Propagation Approach",
+            "url": "https://www.semanticscholar.org/paper/e9c7d8fbed3a94b64ab68db79f869c9596a39990",
+            "venue": "Artif. Intell.",
+            "year": 1992
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144378473",
+                    "name": "J. Matou\u0161ek"
+                },
+                {
+                    "authorId": "1704273",
+                    "name": "M. Sharir"
+                },
+                {
+                    "authorId": "1717081",
+                    "name": "E. Welzl"
+                }
+            ],
+            "doi": "10.1007/BF01940877",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "0e72d3a6e8f5fd7c7a7149b725491b32411b64f6",
+            "title": "A subexponential bound for linear programming",
+            "url": "https://www.semanticscholar.org/paper/0e72d3a6e8f5fd7c7a7149b725491b32411b64f6",
+            "venue": "SCG '92",
+            "year": 1992
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1783217",
+                    "name": "A. Sch\u00e4ffer"
+                },
+                {
+                    "authorId": "1748179",
+                    "name": "M. Yannakakis"
+                }
+            ],
+            "doi": "10.1137/0220004",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "3be5c11282e645343e780322ec2c2b626ee5a4fe",
+            "title": "Simple Local Search Problems That are Hard to Solve",
+            "url": "https://www.semanticscholar.org/paper/3be5c11282e645343e780322ec2c2b626ee5a4fe",
+            "venue": "SIAM J. Comput.",
+            "year": 1991
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144883814",
+                    "name": "E. Davis"
+                }
+            ],
+            "doi": "10.1016/0004-3702(87)90091-9",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "80c490b3fa89c4144a0781d084dec2a0545eabd6",
+            "title": "Constraint Propagation with Interval Labels",
+            "url": "https://www.semanticscholar.org/paper/80c490b3fa89c4144a0781d084dec2a0545eabd6",
+            "venue": "Artif. Intell.",
+            "year": 1987
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1716574",
+                    "name": "J. Lagarias"
+                }
+            ],
+            "doi": "10.1137/0214016",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "57d1cbb6501866a3dfeb1a34b29e1a12d528db39",
+            "title": "The computational complexity of simultaneous Diophantine approximation problems",
+            "url": "https://www.semanticscholar.org/paper/57d1cbb6501866a3dfeb1a34b29e1a12d528db39",
+            "venue": "23rd Annual Symposium on Foundations of Computer Science (sfcs 1982)",
+            "year": 1982
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2124719",
+                    "name": "Bengt Aspvall"
+                },
+                {
+                    "authorId": "1802924",
+                    "name": "Y. Shiloach"
+                }
+            ],
+            "doi": "10.1137/0209063",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "808af05b79c9dfb0d6ce2b5cfe68bd22f0b2438c",
+            "title": "A polynomial time algorithm for solving systems of linear inequalities with two variables per inequality",
+            "url": "https://www.semanticscholar.org/paper/808af05b79c9dfb0d6ce2b5cfe68bd22f0b2438c",
+            "venue": "20th Annual Symposium on Foundations of Computer Science (sfcs 1979)",
+            "year": 1979
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2986272",
+                    "name": "Kenneth L. Manders"
+                },
+                {
+                    "authorId": "1787024",
+                    "name": "L. Adleman"
+                }
+            ],
+            "doi": "10.1016/0022-0000(78)90044-2",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "7b781d33424ae431b09d687e3946a4eff8727a49",
+            "title": "NP-Complete Decision Problems for Binary Quadratics",
+            "url": "https://www.semanticscholar.org/paper/7b781d33424ae431b09d687e3946a4eff8727a49",
+            "venue": "J. Comput. Syst. Sci.",
+            "year": 1978
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2394287",
+                    "name": "J. Lauri\u00e8re"
+                }
+            ],
+            "doi": "10.1016/0004-3702(78)90029-2",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f20d3a3f209052176b18b9db6ddbf4aa71d9a701",
+            "title": "A Language and a Program for Stating and Solving Combinatorial Problems",
+            "url": "https://www.semanticscholar.org/paper/f20d3a3f209052176b18b9db6ddbf4aa71d9a701",
+            "venue": "Artif. Intell.",
+            "year": 1978
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144922783",
+                    "name": "P. Jeavons"
+                },
+                {
+                    "authorId": "1923360",
+                    "name": "J. Petke"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "e579749444374201e5b4e24425909a2ddd7c08a6",
+            "title": "Tractable Benchmarks For Constraint Programming",
+            "url": "https://www.semanticscholar.org/paper/e579749444374201e5b4e24425909a2ddd7c08a6",
+            "venue": "",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1705649",
+                    "name": "Albert Atserias"
+                },
+                {
+                    "authorId": "1731356",
+                    "name": "Elitza N. Maneva"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "bdada2040b65ec5e6998f4a63b845875e2b71eda",
+            "title": "Mean-Payoff Games and the Max-Atom Problem",
+            "url": "https://www.semanticscholar.org/paper/bdada2040b65ec5e6998f4a63b845875e2b71eda",
+            "venue": "",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2360931",
+                    "name": "C. Bessiere"
+                }
+            ],
+            "doi": "10.1016/S1574-6526(06)80007-6",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "bb718a79384dcc193a1c050cf841153ae1f44e41",
+            "title": "Constraint Propagation",
+            "url": "https://www.semanticscholar.org/paper/bb718a79384dcc193a1c050cf841153ae1f44e41",
+            "venue": "Handbook of Constraint Programming",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1682514",
+                    "name": "F. Benhamou"
+                },
+                {
+                    "authorId": "1759415",
+                    "name": "Laurent Granvilliers"
+                }
+            ],
+            "doi": "10.1016/S1574-6526(06)80020-9",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "9776fa8252f2c0bd36fcea42aa45474bb609ec80",
+            "title": "Continuous and Interval Constraints",
+            "url": "https://www.semanticscholar.org/paper/9776fa8252f2c0bd36fcea42aa45474bb609ec80",
+            "venue": "Handbook of Constraint Programming",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "7841540",
+                    "name": "W. V. Hoeve"
+                },
+                {
+                    "authorId": "2091228",
+                    "name": "Irit Katriel"
+                }
+            ],
+            "doi": "10.1016/S1574-6526(06)80010-6",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "0131b2ec6b85ecabd4ed5b179a237717cc5597ac",
+            "title": "Global Constraints",
+            "url": "https://www.semanticscholar.org/paper/0131b2ec6b85ecabd4ed5b179a237717cc5597ac",
+            "venue": "Handbook of Constraint Programming",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144833426",
+                    "name": "F. Rossi"
+                },
+                {
+                    "authorId": "1994523",
+                    "name": "P. V. Beek"
+                },
+                {
+                    "authorId": "1733716",
+                    "name": "T. Walsh"
+                }
+            ],
+            "doi": "10.1016/s1574-6526(06)x8001-x",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "341e501790209f178ded2bd6b8729add7ec8bb02",
+            "title": "Handbook of Constraint Programming",
+            "url": "https://www.semanticscholar.org/paper/341e501790209f178ded2bd6b8729add7ec8bb02",
+            "venue": "Handbook of Constraint Programming",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2289077444",
+                    "name": "H. Nader"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "6766f0b0cffdf62e227a4d50ff2659a30c76f432",
+            "title": "I Computational Complexity",
+            "url": "https://www.semanticscholar.org/paper/6766f0b0cffdf62e227a4d50ff2659a30c76f432",
+            "venue": "",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "4fd601e881da45fd1c3f9551a8f63e1b1b2df9cd",
+            "title": "Bounds Consistency Techniques For Long Linear Constraints",
+            "url": "https://www.semanticscholar.org/paper/4fd601e881da45fd1c3f9551a8f63e1b1b2df9cd",
+            "venue": "",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2505107",
+                    "name": "Olivier Lhomme"
+                },
+                {
+                    "authorId": "34962645",
+                    "name": "A. Gotlieb"
+                },
+                {
+                    "authorId": "2514473",
+                    "name": "M. Rueher"
+                },
+                {
+                    "authorId": "1761827",
+                    "name": "P. Taillibert"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "9d5422ea2d3a0a25367059e050f5553b223be103",
+            "title": "Boosting the Interval Narrowing Algorithm",
+            "url": "https://www.semanticscholar.org/paper/9d5422ea2d3a0a25367059e050f5553b223be103",
+            "venue": "JICSLP",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "103033816",
+                    "name": "L. G. H. Cijan"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "4a997e2e9f8a66b932993ca39d903737fa00393a",
+            "title": "A polynomial algorithm in linear programming",
+            "url": "https://www.semanticscholar.org/paper/4a997e2e9f8a66b932993ca39d903737fa00393a",
+            "venue": "",
+            "year": 1979
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Mathematics",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        },
+        {
+            "category": "Mathematics",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "The Complexity of Integer Bound Propagation",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/e72b99134a8ce8165b8350e050149d6c5de50cf5",
+    "venue": "Journal of Artificial Intelligence Research",
+    "year": 2011
+}

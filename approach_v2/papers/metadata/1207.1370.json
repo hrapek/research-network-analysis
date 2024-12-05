@@ -1,0 +1,991 @@
+{
+    "abstract": "We consider the problem of deleting edges from a Bayesian network for the purpose of simplifying models in probabilistic inference. In particular, we propose a new method for deleting network edges, which is based on the evidence at hand. We provide some interesting bounds on the KL-divergence between original and approximate networks, which highlight the impact of given evidence on the quality of approximation and shed some light on good and bad candidates for edge deletion. We finally demonstrate empirically the promise of the proposed edge deletion technique as a basis for approximate inference.",
+    "arxivId": "1207.1370",
+    "authors": [
+        {
+            "authorId": "1700031",
+            "name": "Adnan Darwiche",
+            "url": "https://www.semanticscholar.org/author/1700031"
+        },
+        {
+            "authorId": "144538949",
+            "name": "H. Chan",
+            "url": "https://www.semanticscholar.org/author/144538949"
+        },
+        {
+            "authorId": "143680053",
+            "name": "Arthur Choi",
+            "url": "https://www.semanticscholar.org/author/143680053"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": "2407.04667",
+            "authors": [
+                {
+                    "authorId": "3221834",
+                    "name": "Manuele Leonelli"
+                },
+                {
+                    "authorId": "2270644454",
+                    "name": "Jim Q. Smith"
+                },
+                {
+                    "authorId": "2114332169",
+                    "name": "Sophia K. Wright"
+                }
+            ],
+            "doi": "10.48550/arXiv.2407.04667",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "1c955a2080e6a5a33ac81fe126ec7e3ceb426364",
+            "title": "The diameter of a stochastic matrix: A new measure for sensitivity analysis in Bayesian networks",
+            "url": "https://www.semanticscholar.org/paper/1c955a2080e6a5a33ac81fe126ec7e3ceb426364",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": "2306.00335",
+            "authors": [
+                {
+                    "authorId": "67296137",
+                    "name": "Shivani Bathla"
+                },
+                {
+                    "authorId": "144789375",
+                    "name": "V. Vasudevan"
+                }
+            ],
+            "doi": "10.48550/arXiv.2306.00335",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "ffbe50603c25a6d96c9cb8d7aeb9f4bafe5243aa",
+            "title": "Approximate inference of marginals using the IBIA framework",
+            "url": "https://www.semanticscholar.org/paper/ffbe50603c25a6d96c9cb8d7aeb9f4bafe5243aa",
+            "venue": "NeurIPS",
+            "year": 2023
+        },
+        {
+            "arxivId": "2304.06366",
+            "authors": [
+                {
+                    "authorId": "67296137",
+                    "name": "Shivani Bathla"
+                },
+                {
+                    "authorId": "144789375",
+                    "name": "V. Vasudevan"
+                }
+            ],
+            "doi": "10.48550/arXiv.2304.06366",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "cd68083d1c3f37e85cdcbaa104c86d92edc43d2f",
+            "title": "IBIA: An Incremental Build-Infer-Approximate Framework for Approximate Inference of Partition Function",
+            "url": "https://www.semanticscholar.org/paper/cd68083d1c3f37e85cdcbaa104c86d92edc43d2f",
+            "venue": "Trans. Mach. Learn. Res.",
+            "year": 2023
+        },
+        {
+            "arxivId": "2202.12003",
+            "authors": [
+                {
+                    "authorId": "67296137",
+                    "name": "Shivani Bathla"
+                },
+                {
+                    "authorId": "144789375",
+                    "name": "V. Vasudevan"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "5beae5474295d6da3d6c011a219f9d4b94f92c93",
+            "title": "IBIA: Bayesian Inference via Incremental Build-Infer-Approximate operations on Clique Trees",
+            "url": "https://www.semanticscholar.org/paper/5beae5474295d6da3d6c011a219f9d4b94f92c93",
+            "venue": "ArXiv",
+            "year": 2022
+        },
+        {
+            "arxivId": "2112.04583",
+            "authors": [
+                {
+                    "authorId": "31464952",
+                    "name": "Loong Kuan Lee"
+                },
+                {
+                    "authorId": "2374206",
+                    "name": "N. Piatkowski"
+                },
+                {
+                    "authorId": "153827036",
+                    "name": "Franccois Petitjean"
+                },
+                {
+                    "authorId": "1726660",
+                    "name": "Geoffrey I. Webb"
+                }
+            ],
+            "doi": "10.1609/aaai.v37i10.26443",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "9a03e29b3558f4d82e6f3216258c9469ed05d150",
+            "title": "Computing Divergences between Discrete Decomposable Models",
+            "url": "https://www.semanticscholar.org/paper/9a03e29b3558f4d82e6f3216258c9469ed05d150",
+            "venue": "AAAI",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1732961",
+                    "name": "S. Moral"
+                },
+                {
+                    "authorId": "143947196",
+                    "name": "A. Cano"
+                },
+                {
+                    "authorId": "1399084240",
+                    "name": "Manuel G\u00f3mez-Olmedo"
+                }
+            ],
+            "doi": "10.3390/e23091122",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "98ae8a303050efbbbedba32a130f9528d06bd62d",
+            "title": "Computation of Kullback\u2013Leibler Divergence in Bayesian Networks",
+            "url": "https://www.semanticscholar.org/paper/98ae8a303050efbbbedba32a130f9528d06bd62d",
+            "venue": "Entropy",
+            "year": 2021
+        },
+        {
+            "arxivId": "2005.06350",
+            "authors": [
+                {
+                    "authorId": "152997225",
+                    "name": "Isaac Matthews"
+                },
+                {
+                    "authorId": "48532838",
+                    "name": "John C. Mace"
+                },
+                {
+                    "authorId": "47567935",
+                    "name": "S. Soudjani"
+                },
+                {
+                    "authorId": "9072212",
+                    "name": "A. Moorsel"
+                }
+            ],
+            "doi": "10.1109/TrustCom50675.2020.00030",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "7d2713e9fe582c2378b7ebf9b3a012baa125fbd6",
+            "title": "Cyclic Bayesian Attack Graphs: A Systematic Computational Approach",
+            "url": "https://www.semanticscholar.org/paper/7d2713e9fe582c2378b7ebf9b3a012baa125fbd6",
+            "venue": "2020 IEEE 19th International Conference on Trust, Security and Privacy in Computing and Communications (TrustCom)",
+            "year": 2020
+        },
+        {
+            "arxivId": "1805.12565",
+            "authors": [
+                {
+                    "authorId": "47009206",
+                    "name": "Tal Friedman"
+                },
+                {
+                    "authorId": "1749506",
+                    "name": "Guy Van den Broeck"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "e7230f8081ce155294b24ab5b15a425a00077373",
+            "title": "Approximate Knowledge Compilation by Online Collapsed Importance Sampling",
+            "url": "https://www.semanticscholar.org/paper/e7230f8081ce155294b24ab5b15a425a00077373",
+            "venue": "NeurIPS",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2470518",
+                    "name": "Cristina Cornelio"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "8d2aab5f6eca51a883c6b345fa38f7567d6409e0",
+            "title": "Preference reasoning and aggregation over combinatorial domains in uncertain and multi-agent scenarios",
+            "url": "https://www.semanticscholar.org/paper/8d2aab5f6eca51a883c6b345fa38f7567d6409e0",
+            "venue": "",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1740752",
+                    "name": "Parot Ratnapinda"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "36cb54ebf5bf40d306173ab484c5f33cddb4facd",
+            "title": "THEORETICAL AND PRACTICAL ASPECTS OF DECISION SUPPORT SYSTEMS BASED ON THE PRINCIPLES OF QUERY-BASED DIAGNOSTICS",
+            "url": "https://www.semanticscholar.org/paper/36cb54ebf5bf40d306173ab484c5f33cddb4facd",
+            "venue": "",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145358005",
+                    "name": "M. Neil"
+                },
+                {
+                    "authorId": "2109183286",
+                    "name": "Xiaoli Chen"
+                },
+                {
+                    "authorId": "1685349",
+                    "name": "N. Fenton"
+                }
+            ],
+            "doi": "10.1109/TKDE.2011.87",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "547797ac8ef962d7520e28aa6bfc1686d86a67f4",
+            "title": "Optimizing the Calculation of Conditional Probability Tables in Hybrid Bayesian Networks Using Binary Factorization",
+            "url": "https://www.semanticscholar.org/paper/547797ac8ef962d7520e28aa6bfc1686d86a67f4",
+            "venue": "IEEE Transactions on Knowledge and Data Engineering",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143680053",
+                    "name": "Arthur Choi"
+                },
+                {
+                    "authorId": "1700031",
+                    "name": "Adnan Darwiche"
+                }
+            ],
+            "doi": "10.1007/978-3-642-25655-4_16",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "8378be5a4f3fd2cc83103b18c25a20a867359d10",
+            "title": "Relax, Compensate and Then Recover",
+            "url": "https://www.semanticscholar.org/paper/8378be5a4f3fd2cc83103b18c25a20a867359d10",
+            "venue": "JSAI-isAI Workshops",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2872698",
+                    "name": "Tingjian Ge"
+                },
+                {
+                    "authorId": "2031287",
+                    "name": "S. Zdonik"
+                }
+            ],
+            "doi": "10.14778/1920841.1920963",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "dc28b1de02f4e1ff19b61405fc7625fccd90c9a5",
+            "title": "A*-tree",
+            "url": "https://www.semanticscholar.org/paper/dc28b1de02f4e1ff19b61405fc7625fccd90c9a5",
+            "venue": "Proc. VLDB Endow.",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2523616",
+                    "name": "A. Chechetka"
+                },
+                {
+                    "authorId": "1730156",
+                    "name": "Carlos Guestrin"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "b37dfff1a1e1dc62ebe1da4e4af030f21655d191",
+            "title": "Focused Belief Propagation for Query-Specific Inference",
+            "url": "https://www.semanticscholar.org/paper/b37dfff1a1e1dc62ebe1da4e4af030f21655d191",
+            "venue": "AISTATS",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144538949",
+                    "name": "H. Chan"
+                }
+            ],
+            "doi": "10.1109/SoCPaR.2009.110",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "a5d844cfdc2501916f5a6e036e568550b8598abd",
+            "title": "Sensitivity Analysis of Bayesian Networks and Its Application for Service Engineering",
+            "url": "https://www.semanticscholar.org/paper/a5d844cfdc2501916f5a6e036e568550b8598abd",
+            "venue": "2009 International Conference of Soft Computing and Pattern Recognition",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2328718",
+                    "name": "Ydo Wexler"
+                },
+                {
+                    "authorId": "50004012",
+                    "name": "Christopher Meek"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "c7fd912fe68159c1ec2491dc9438624706ac3877",
+            "title": "MAS: a multiplicative approximation scheme for probabilistic inference",
+            "url": "https://www.semanticscholar.org/paper/c7fd912fe68159c1ec2491dc9438624706ac3877",
+            "venue": "NIPS",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1700031",
+                    "name": "Adnan Darwiche"
+                }
+            ],
+            "doi": "10.21236/ada484629",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "96ecd685d605c5c968e09477bfde7cefe94cf2f0",
+            "title": "Probabilistic Sensitivity Analysis for Situation Awareness",
+            "url": "https://www.semanticscholar.org/paper/96ecd685d605c5c968e09477bfde7cefe94cf2f0",
+            "venue": "",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2523616",
+                    "name": "A. Chechetka"
+                },
+                {
+                    "authorId": "1730156",
+                    "name": "Carlos Guestrin"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "349fc422b88f00f00e54c60d871438fbf7400e5a",
+            "title": "Efficient Principled Learning of Thin Junction Trees",
+            "url": "https://www.semanticscholar.org/paper/349fc422b88f00f00e54c60d871438fbf7400e5a",
+            "venue": "NIPS",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143680053",
+                    "name": "Arthur Choi"
+                },
+                {
+                    "authorId": "1700031",
+                    "name": "Adnan Darwiche"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "7d9ebbae912ff5247492e2d0791e584cb89d16a0",
+            "title": "An Edge Deletion Semantics for Belief Propagation and its Practical Impact on Approximation Quality",
+            "url": "https://www.semanticscholar.org/paper/7d9ebbae912ff5247492e2d0791e584cb89d16a0",
+            "venue": "AAAI",
+            "year": 2006
+        },
+        {
+            "arxivId": "1206.6817",
+            "authors": [
+                {
+                    "authorId": "143680053",
+                    "name": "Arthur Choi"
+                },
+                {
+                    "authorId": "1700031",
+                    "name": "Adnan Darwiche"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "632fdd16e214dd3e64eea7dd3243776b76d75158",
+            "title": "A Variational Approach for Approximating Bayesian Networks by Edge Deletion",
+            "url": "https://www.semanticscholar.org/paper/632fdd16e214dd3e64eea7dd3243776b76d75158",
+            "venue": "UAI",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2047081394",
+                    "name": "Zhe Zeng"
+                },
+                {
+                    "authorId": "2047325",
+                    "name": "Paolo Morettin"
+                },
+                {
+                    "authorId": "1389041714",
+                    "name": "Fanqi Yan"
+                },
+                {
+                    "authorId": "14341992",
+                    "name": "Antonio Vergari"
+                },
+                {
+                    "authorId": "1749506",
+                    "name": "Guy Van den Broeck"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "3a0e01530070106448ed84ee4738bf4f005236db",
+            "title": "Probabilistic Inference with Algebraic Constraints: Theoretical Limits and Practical Approximations",
+            "url": "https://www.semanticscholar.org/paper/3a0e01530070106448ed84ee4738bf4f005236db",
+            "venue": "NeurIPS",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1740752",
+                    "name": "Parot Ratnapinda"
+                },
+                {
+                    "authorId": "1716478",
+                    "name": "Marek J Druzdzel"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7586cfc7d1d62576c07d531840211f5e532875f9",
+            "title": "An Empirical Evaluation of Costs and Benefits of Simplifying Bayesian Networks by Removing Weak Arcs",
+            "url": "https://www.semanticscholar.org/paper/7586cfc7d1d62576c07d531840211f5e532875f9",
+            "venue": "FLAIRS",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2575670",
+                    "name": "Owen Carmichael"
+                },
+                {
+                    "authorId": "1862952",
+                    "name": "C. Schwarz"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f4aa5835b3247b3c61eafb45ed956a5c8e66b133",
+            "title": "Longitudinal tissue segmentation methods for the aging brain",
+            "url": "https://www.semanticscholar.org/paper/f4aa5835b3247b3c61eafb45ed956a5c8e66b133",
+            "venue": "",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1730156",
+                    "name": "Carlos Guestrin"
+                },
+                {
+                    "authorId": "2523616",
+                    "name": "A. Chechetka"
+                }
+            ],
+            "doi": "10.1184/R1/6721238.V1",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "ab356e9560bff252904de8f6385ab0bfde8b8101",
+            "title": "Query-Specific Learning and Inference for Probabilistic Graphical Models",
+            "url": "https://www.semanticscholar.org/paper/ab356e9560bff252904de8f6385ab0bfde8b8101",
+            "venue": "",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1685832",
+                    "name": "S. Renooij"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "ce8ad6b2a8712f0aa80006cb63d0eaf8dfcb946d",
+            "title": "Bayesian Network Sensitivity to Arc-Removal",
+            "url": "https://www.semanticscholar.org/paper/ce8ad6b2a8712f0aa80006cb63d0eaf8dfcb946d",
+            "venue": "",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2053758755",
+                    "name": "A. May"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "82c3739ce76a4c83ef04b979a89561a52577ff0d",
+            "title": "Proposal Algorithms for Answering Queries with Graphical Models",
+            "url": "https://www.semanticscholar.org/paper/82c3739ce76a4c83ef04b979a89561a52577ff0d",
+            "venue": "",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143680053",
+                    "name": "Arthur Choi"
+                },
+                {
+                    "authorId": "1700031",
+                    "name": "Adnan Darwiche"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2053c3b5242350d1c914964034eea24298087e87",
+            "title": "An Edge Deletion Semantics for Belief Propagation",
+            "url": "https://www.semanticscholar.org/paper/2053c3b5242350d1c914964034eea24298087e87",
+            "venue": "",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2872698",
+                    "name": "Tingjian Ge"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d1a2e77491b79ec3a297218a74957aa3b6e7366d",
+            "title": "Query Processing on Uncertain Data",
+            "url": "https://www.semanticscholar.org/paper/d1a2e77491b79ec3a297218a74957aa3b6e7366d",
+            "venue": "",
+            "year": 2009
+        }
+    ],
+    "corpusId": 5935513,
+    "doi": null,
+    "fieldsOfStudy": [
+        "Computer Science",
+        "Mathematics"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 28,
+    "numCiting": 19,
+    "paperId": "21e31f178a2d2be287e786065d07c13ce0a831b8",
+    "references": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1752732",
+                    "name": "T. Cover"
+                },
+                {
+                    "authorId": "2115282352",
+                    "name": "Joy A. Thomas"
+                }
+            ],
+            "doi": "10.1002/047174882X",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "7dbdb4209626fd92d2436a058663206216036e68",
+            "title": "Elements of Information Theory",
+            "url": "https://www.semanticscholar.org/paper/7dbdb4209626fd92d2436a058663206216036e68",
+            "venue": "",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1937845",
+                    "name": "M. Paskin"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "0c83bce4032bd325ce49fd946ddff3431583c6a8",
+            "title": "Thin Junction Tree Filters for Simultaneous Localization and Mapping",
+            "url": "https://www.semanticscholar.org/paper/0c83bce4032bd325ce49fd946ddff3431583c6a8",
+            "venue": "IJCAI",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1700031",
+                    "name": "Adnan Darwiche"
+                }
+            ],
+            "doi": "10.1016/S0004-3702(00)00069-2",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e4a9da1f8f48b3cd8c7b7648c897df1b2766ffe7",
+            "title": "Recursive conditioning",
+            "url": "https://www.semanticscholar.org/paper/e4a9da1f8f48b3cd8c7b7648c897df1b2766ffe7",
+            "venue": "Artif. Intell.",
+            "year": 2001
+        },
+        {
+            "arxivId": "1301.6725",
+            "authors": [
+                {
+                    "authorId": "2056417995",
+                    "name": "Kevin P. Murphy"
+                },
+                {
+                    "authorId": "30400079",
+                    "name": "Yair Weiss"
+                },
+                {
+                    "authorId": "1694621",
+                    "name": "Michael I. Jordan"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "19908640236767427ebf0524dc3a4bb09d65145e",
+            "title": "Loopy Belief Propagation for Approximate Inference: An Empirical Study",
+            "url": "https://www.semanticscholar.org/paper/19908640236767427ebf0524dc3a4bb09d65145e",
+            "venue": "UAI",
+            "year": 1999
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144917531",
+                    "name": "R. Engelen"
+                }
+            ],
+            "doi": "10.1109/34.608295",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "244abc878f31196474c315f823aeb108064af367",
+            "title": "Approximating Bayesian belief networks by arc removal",
+            "url": "https://www.semanticscholar.org/paper/244abc878f31196474c315f823aeb108064af367",
+            "venue": "IEEE Trans. Pattern Anal. Mach. Intell.",
+            "year": 1997
+        },
+        {
+            "arxivId": "1302.3572",
+            "authors": [
+                {
+                    "authorId": "1751239",
+                    "name": "R. Dechter"
+                }
+            ],
+            "doi": "10.1007/978-94-011-5014-9_4",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "f14c0c0da852fd14ff208ad5d82dbece3444d311",
+            "title": "Bucket elimination: A unifying framework for probabilistic inference",
+            "url": "https://www.semanticscholar.org/paper/f14c0c0da852fd14ff208ad5d82dbece3444d311",
+            "venue": "UAI",
+            "year": 1996
+        },
+        {
+            "arxivId": "cs/9612101",
+            "authors": [
+                {
+                    "authorId": "3587277",
+                    "name": "N. Zhang"
+                },
+                {
+                    "authorId": "143715817",
+                    "name": "D. Poole"
+                }
+            ],
+            "doi": "10.1613/jair.305",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "52303d670d7f4f475134cf626d83fb0e46cce235",
+            "title": "Exploiting Causal Independence in Bayesian Network Inference",
+            "url": "https://www.semanticscholar.org/paper/52303d670d7f4f475134cf626d83fb0e46cce235",
+            "venue": "J. Artif. Intell. Res.",
+            "year": 1996
+        },
+        {
+            "arxivId": "1302.6825",
+            "authors": [
+                {
+                    "authorId": "2775921",
+                    "name": "Uffe Kj\u00e6rulff"
+                }
+            ],
+            "doi": "10.1016/B978-1-55860-332-5.50052-3",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "e3ba4d6fdc472ed9716bd7fc0cbad9884659cc26",
+            "title": "Reduction of Computational Complexity in Bayesian Networks Through Removal of Weak Dependences",
+            "url": "https://www.semanticscholar.org/paper/e3ba4d6fdc472ed9716bd7fc0cbad9884659cc26",
+            "venue": "UAI",
+            "year": 1994
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2288666357",
+                    "name": "Stig Kj\u00e6r Andersen"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "70ef29e6f0ce082bb8a47fd85b9bfb7cc0f20c93",
+            "title": "Book review : Judea Pearl, Probabilistic reasoning in intelligent systems : networks of plausible inference",
+            "url": "https://www.semanticscholar.org/paper/70ef29e6f0ce082bb8a47fd85b9bfb7cc0f20c93",
+            "venue": "",
+            "year": 1993
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "46558286",
+                    "name": "S. K. Andersen"
+                }
+            ],
+            "doi": "10.1016/0004-3702(91)90084-W",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "18aa8a0502e717c114312a3ba63dbb76fbcab47c",
+            "title": "Probabilistic reasoning in intelligent systems: Networks of plausible inference",
+            "url": "https://www.semanticscholar.org/paper/18aa8a0502e717c114312a3ba63dbb76fbcab47c",
+            "venue": "",
+            "year": 1991
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2050895",
+                    "name": "S. Lauritzen"
+                },
+                {
+                    "authorId": "48616434",
+                    "name": "D. Spiegelhalter"
+                }
+            ],
+            "doi": "10.1111/J.2517-6161.1988.TB01721.X",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0a3767909649cf31d32e087693d93171af28ebe0",
+            "title": "Local computations with probabilities on graphical structures and their application to expert systems",
+            "url": "https://www.semanticscholar.org/paper/0a3767909649cf31d32e087693d93171af28ebe0",
+            "venue": "",
+            "year": 1990
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3198578",
+                    "name": "J. Yedidia"
+                },
+                {
+                    "authorId": "1768236",
+                    "name": "W. Freeman"
+                },
+                {
+                    "authorId": "30400079",
+                    "name": "Yair Weiss"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b2799fd1254689eec52f86daf3668a5aac3ea943",
+            "title": "Generalized Belief Propagation",
+            "url": "https://www.semanticscholar.org/paper/b2799fd1254689eec52f86daf3668a5aac3ea943",
+            "venue": "NIPS",
+            "year": 2000
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2286043266",
+                    "name": "CyclesBrendan J. Frey"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b8871254256b95f52fe6a2c0edeee0fa706c1117",
+            "title": "A Revolution : Belief Propagation inGraphs With",
+            "url": "https://www.semanticscholar.org/paper/b8871254256b95f52fe6a2c0edeee0fa706c1117",
+            "venue": "",
+            "year": 1998
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2315295235",
+                    "name": "Muhammad Rayees"
+                },
+                {
+                    "authorId": "2315303313",
+                    "name": "Usman Ahmad"
+                },
+                {
+                    "authorId": "2315303230",
+                    "name": "Afzal"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7807218eba0e71259f8cdb7861c0466d0d490366",
+            "title": "Artificial Intelligence In",
+            "url": "https://www.semanticscholar.org/paper/7807218eba0e71259f8cdb7861c0466d0d490366",
+            "venue": "",
+            "year": null
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Mathematics",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        },
+        {
+            "category": "Mathematics",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "On Bayesian Network Approximation by Edge Deletion",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/21e31f178a2d2be287e786065d07c13ce0a831b8",
+    "venue": "Conference on Uncertainty in Artificial Intelligence",
+    "year": 2005
+}

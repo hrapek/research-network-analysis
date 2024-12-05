@@ -1,0 +1,2901 @@
+{
+    "abstract": "Multi-head-self-attention (MHSA)-equipped models have achieved notable performance in computer vision. Their computational complexity is proportional to quadratic numbers of pixels in input feature maps, resulting in slow processing, especially when dealing with high-resolution images. New types of token-mixer are proposed as an alternative to MHSA to circumvent this problem: an FFT-based token-mixer involves global operations similar to MHSA but with lower computational complexity. However, despite its attractive properties, the FFT-based token-mixer has not been carefully examined in terms of its compatibility with the rapidly evolving MetaFormer architecture. Here, we propose a novel token-mixer called Dynamic Filter and novel image recognition models, DFFormer and CDFFormer, to close the gaps above. The results of image classification and downstream tasks, analysis, and visualization show that our models are helpful. Notably, their throughput and memory efficiency when dealing with high-resolution image recognition is remarkable. Our results indicate that Dynamic Filter is one of the token-mixer options that should be seriously considered. The code is available at https://github.com/okojoalg/dfformer",
+    "arxivId": "2303.03932",
+    "authors": [
+        {
+            "authorId": "2122961034",
+            "name": "Yuki Tatsunami",
+            "url": "https://www.semanticscholar.org/author/2122961034"
+        },
+        {
+            "authorId": "1381928106",
+            "name": "M. Taki",
+            "url": "https://www.semanticscholar.org/author/1381928106"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": "2411.19297",
+            "authors": [
+                {
+                    "authorId": "2793835",
+                    "name": "S. Ly"
+                },
+                {
+                    "authorId": "2333323049",
+                    "name": "Hien V. Nguyen"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": true,
+            "paperId": "e9562bd4e4f20f5004ebc8af0e01e1c9860b690f",
+            "title": "Enhancing Parameter-Efficient Fine-Tuning of Vision Transformers through Frequency-Based Adaptation",
+            "url": "https://www.semanticscholar.org/paper/e9562bd4e4f20f5004ebc8af0e01e1c9860b690f",
+            "venue": "",
+            "year": 2024
+        },
+        {
+            "arxivId": "2411.18409",
+            "authors": [
+                {
+                    "authorId": "2311720570",
+                    "name": "Pengfei Lyu"
+                },
+                {
+                    "authorId": "9305845",
+                    "name": "Xiaosheng Yu"
+                },
+                {
+                    "authorId": "2238041387",
+                    "name": "Chengdong Wu"
+                },
+                {
+                    "authorId": "2264332959",
+                    "name": "Jagath C. Rajapakse"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": true,
+            "paperId": "b4a84b5fecb348058bc24d846e8bebfb92991b14",
+            "title": "Deep Fourier-embedded Network for Bi-modal Salient Object Detection",
+            "url": "https://www.semanticscholar.org/paper/b4a84b5fecb348058bc24d846e8bebfb92991b14",
+            "venue": "",
+            "year": 2024
+        },
+        {
+            "arxivId": "2411.03728",
+            "authors": [
+                {
+                    "authorId": "2311720570",
+                    "name": "Pengfei Lyu"
+                },
+                {
+                    "authorId": "31121293",
+                    "name": "P. Yeung"
+                },
+                {
+                    "authorId": "2329558956",
+                    "name": "Xiufei Cheng"
+                },
+                {
+                    "authorId": "9305845",
+                    "name": "Xiaosheng Yu"
+                },
+                {
+                    "authorId": "2238041387",
+                    "name": "Chengdong Wu"
+                },
+                {
+                    "authorId": "2264332959",
+                    "name": "Jagath C. Rajapakse"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "489a625a42d806fceb672f8853ec163d348611e1",
+            "title": "Efficient Fourier Filtering Network with Contrastive Learning for UAV-based Unaligned Bi-modal Salient Object Detection",
+            "url": "https://www.semanticscholar.org/paper/489a625a42d806fceb672f8853ec163d348611e1",
+            "venue": "",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2292544811",
+                    "name": "Xingzhu Liang"
+                },
+                {
+                    "authorId": "2323907238",
+                    "name": "Yunzhuang Xiao"
+                },
+                {
+                    "authorId": "2269425794",
+                    "name": "Yu-e Lin"
+                },
+                {
+                    "authorId": "2243564800",
+                    "name": "Xinyun Yan"
+                }
+            ],
+            "doi": "10.1007/s13042-024-02394-y",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "6083efc75a7e113c7e59055f502ffd9c67446581",
+            "title": "SiamATA: an asymmetric target-aware and frequency domain task-aware Siamese network for visual tracking",
+            "url": "https://www.semanticscholar.org/paper/6083efc75a7e113c7e59055f502ffd9c67446581",
+            "venue": "International Journal of Machine Learning and Cybernetics",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2190266852",
+                    "name": "Xingru Huang"
+                },
+                {
+                    "authorId": "2264284832",
+                    "name": "Jian Huang"
+                },
+                {
+                    "authorId": "2294777886",
+                    "name": "Kai Zhao"
+                },
+                {
+                    "authorId": "2263883073",
+                    "name": "Tianyun Zhang"
+                },
+                {
+                    "authorId": "2264495450",
+                    "name": "Zhi Li"
+                },
+                {
+                    "authorId": "2294524682",
+                    "name": "Changpeng Yue"
+                },
+                {
+                    "authorId": "2264463141",
+                    "name": "Wenhao Chen"
+                },
+                {
+                    "authorId": "2294596592",
+                    "name": "Ruihao Wang"
+                },
+                {
+                    "authorId": "2294673698",
+                    "name": "Xuanbin Chen"
+                },
+                {
+                    "authorId": "2287588501",
+                    "name": "Qianni Zhang"
+                },
+                {
+                    "authorId": "2181927317",
+                    "name": "Ying Fu"
+                },
+                {
+                    "authorId": "2283336380",
+                    "name": "Yangyundou Wang"
+                },
+                {
+                    "authorId": "2264275091",
+                    "name": "Yihao Guo"
+                }
+            ],
+            "doi": "10.1109/TMI.2024.3383466",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2ea6871812866abed97758e00979254c80dad530",
+            "title": "SASAN: Spectrum-Axial Spatial Approach Networks for Medical Image Segmentation",
+            "url": "https://www.semanticscholar.org/paper/2ea6871812866abed97758e00979254c80dad530",
+            "venue": "IEEE Transactions on Medical Imaging",
+            "year": 2024
+        },
+        {
+            "arxivId": "2402.18302",
+            "authors": [
+                {
+                    "authorId": "2162733606",
+                    "name": "Jiacheng Lin"
+                },
+                {
+                    "authorId": "2288042887",
+                    "name": "Jiajun Chen"
+                },
+                {
+                    "authorId": "91549683",
+                    "name": "Kunyu Peng"
+                },
+                {
+                    "authorId": "2158197241",
+                    "name": "Xuan He"
+                },
+                {
+                    "authorId": "2281901856",
+                    "name": "Zhiyong Li"
+                },
+                {
+                    "authorId": "2243334228",
+                    "name": "Rainer Stiefelhagen"
+                },
+                {
+                    "authorId": "8689702",
+                    "name": "Kailun Yang"
+                }
+            ],
+            "doi": "10.1109/TITS.2024.3437645",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7632afdacf72f6ce8bf40403afe031492eccea8a",
+            "title": "EchoTrack: Auditory Referring Multi-Object Tracking for Autonomous Driving",
+            "url": "https://www.semanticscholar.org/paper/7632afdacf72f6ce8bf40403afe031492eccea8a",
+            "venue": "IEEE Transactions on Intelligent Transportation Systems",
+            "year": 2024
+        }
+    ],
+    "corpusId": 257378535,
+    "doi": "10.48550/arXiv.2303.03932",
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 3,
+    "isOpenAccess": true,
+    "isPublisherLicensed": true,
+    "is_open_access": true,
+    "is_publisher_licensed": true,
+    "numCitedBy": 6,
+    "numCiting": 75,
+    "paperId": "54b330de40291611da2188c2ebce1ab2c0725348",
+    "references": [
+        {
+            "arxivId": "2309.11523",
+            "authors": [
+                {
+                    "authorId": "2218598523",
+                    "name": "Qihang Fan"
+                },
+                {
+                    "authorId": "32885778",
+                    "name": "Huaibo Huang"
+                },
+                {
+                    "authorId": "2244559750",
+                    "name": "Mingrui Chen"
+                },
+                {
+                    "authorId": "2243404770",
+                    "name": "Hongmin Liu"
+                },
+                {
+                    "authorId": "2243338248",
+                    "name": "Ran He"
+                }
+            ],
+            "doi": "10.1109/CVPR52733.2024.00539",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "59708496c88f173276a40d779a1f83bcfe2e7842",
+            "title": "RMT: Retentive Networks Meet Vision Transformers",
+            "url": "https://www.semanticscholar.org/paper/59708496c88f173276a40d779a1f83bcfe2e7842",
+            "venue": "2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2023
+        },
+        {
+            "arxivId": "2212.08013",
+            "authors": [
+                {
+                    "authorId": "39611591",
+                    "name": "Lucas Beyer"
+                },
+                {
+                    "authorId": "7991830",
+                    "name": "Pavel Izmailov"
+                },
+                {
+                    "authorId": "144629422",
+                    "name": "Alexander Kolesnikov"
+                },
+                {
+                    "authorId": "2062862676",
+                    "name": "Mathilde Caron"
+                },
+                {
+                    "authorId": "40464924",
+                    "name": "Simon Kornblith"
+                },
+                {
+                    "authorId": "2743563",
+                    "name": "Xiaohua Zhai"
+                },
+                {
+                    "authorId": "46352821",
+                    "name": "Matthias Minderer"
+                },
+                {
+                    "authorId": "143902495",
+                    "name": "M. Tschannen"
+                },
+                {
+                    "authorId": "2922782",
+                    "name": "Ibrahim M. Alabdulmohsin"
+                },
+                {
+                    "authorId": "1696719",
+                    "name": "Filip Pavetic"
+                }
+            ],
+            "doi": "10.1109/CVPR52729.2023.01393",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "925fe4b2225e534888a2c78c9f6539a8e4e58d59",
+            "title": "FlexiViT: One Model for All Patch Sizes",
+            "url": "https://www.semanticscholar.org/paper/925fe4b2225e534888a2c78c9f6539a8e4e58d59",
+            "venue": "2023 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2022
+        },
+        {
+            "arxivId": "2210.13452",
+            "authors": [
+                {
+                    "authorId": "23476952",
+                    "name": "Weihao Yu"
+                },
+                {
+                    "authorId": "39927579",
+                    "name": "Chenyang Si"
+                },
+                {
+                    "authorId": "2153245275",
+                    "name": "Pan Zhou"
+                },
+                {
+                    "authorId": "2109495772",
+                    "name": "Mi Luo"
+                },
+                {
+                    "authorId": "1864078340",
+                    "name": "Yichen Zhou"
+                },
+                {
+                    "authorId": "33221685",
+                    "name": "Jiashi Feng"
+                },
+                {
+                    "authorId": "143653681",
+                    "name": "Shuicheng Yan"
+                },
+                {
+                    "authorId": "48631088",
+                    "name": "Xinchao Wang"
+                }
+            ],
+            "doi": "10.1109/TPAMI.2023.3329173",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "fc4cbc7a75f5a3bbca59db5513231555f078fe78",
+            "title": "MetaFormer Baselines for Vision",
+            "url": "https://www.semanticscholar.org/paper/fc4cbc7a75f5a3bbca59db5513231555f078fe78",
+            "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+            "year": 2022
+        },
+        {
+            "arxivId": "2209.12816",
+            "authors": [
+                {
+                    "authorId": "2120333403",
+                    "name": "Nurullah Sevim"
+                },
+                {
+                    "authorId": "2187087670",
+                    "name": "Ege Ozan \u00d6zyedek"
+                },
+                {
+                    "authorId": "107973475",
+                    "name": "Furkan \u015eahinu\u00e7"
+                },
+                {
+                    "authorId": "144640777",
+                    "name": "Aykut Ko\u00e7"
+                }
+            ],
+            "doi": "10.48550/arXiv.2209.12816",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "e0d9d80dd0ef1a9996feac61d3315f44ec31aca3",
+            "title": "Fast-FNet: Accelerating Transformer Encoder Models via Efficient Fourier Layers",
+            "url": "https://www.semanticscholar.org/paper/e0d9d80dd0ef1a9996feac61d3315f44ec31aca3",
+            "venue": "ArXiv",
+            "year": 2022
+        },
+        {
+            "arxivId": "2207.03620",
+            "authors": [
+                {
+                    "authorId": "47130544",
+                    "name": "Shiwei Liu"
+                },
+                {
+                    "authorId": "2034263179",
+                    "name": "Tianlong Chen"
+                },
+                {
+                    "authorId": "2116298570",
+                    "name": "Xiaohan Chen"
+                },
+                {
+                    "authorId": null,
+                    "name": "Xuxi Chen"
+                },
+                {
+                    "authorId": "2056427852",
+                    "name": "Q. Xiao"
+                },
+                {
+                    "authorId": "46791907",
+                    "name": "Boqian Wu"
+                },
+                {
+                    "authorId": "1691997",
+                    "name": "Mykola Pechenizkiy"
+                },
+                {
+                    "authorId": "2571038",
+                    "name": "D. Mocanu"
+                },
+                {
+                    "authorId": "2969311",
+                    "name": "Zhangyang Wang"
+                }
+            ],
+            "doi": "10.48550/arXiv.2207.03620",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d1869155960e4b1b882b39171dbecd25a7eda3cd",
+            "title": "More ConvNets in the 2020s: Scaling up Kernels Beyond 51x51 using Sparsity",
+            "url": "https://www.semanticscholar.org/paper/d1869155960e4b1b882b39171dbecd25a7eda3cd",
+            "venue": "ICLR",
+            "year": 2022
+        },
+        {
+            "arxivId": "2206.09959",
+            "authors": [
+                {
+                    "authorId": "31374559",
+                    "name": "Ali Hatamizadeh"
+                },
+                {
+                    "authorId": "1989015",
+                    "name": "Hongxu Yin"
+                },
+                {
+                    "authorId": "1690538",
+                    "name": "J. Kautz"
+                },
+                {
+                    "authorId": "2824500",
+                    "name": "Pavlo Molchanov"
+                }
+            ],
+            "doi": "10.48550/arXiv.2206.09959",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "86609b3567c1f039aecd87cc87ef8b8a995215bc",
+            "title": "Global Context Vision Transformers",
+            "url": "https://www.semanticscholar.org/paper/86609b3567c1f039aecd87cc87ef8b8a995215bc",
+            "venue": "ICML",
+            "year": 2022
+        },
+        {
+            "arxivId": "2206.00272",
+            "authors": [
+                {
+                    "authorId": "3826388",
+                    "name": "Kai Han"
+                },
+                {
+                    "authorId": "2108702980",
+                    "name": "Yunhe Wang"
+                },
+                {
+                    "authorId": "2148899357",
+                    "name": "Jianyuan Guo"
+                },
+                {
+                    "authorId": "103603255",
+                    "name": "Yehui Tang"
+                },
+                {
+                    "authorId": "145344139",
+                    "name": "E. Wu"
+                }
+            ],
+            "doi": "10.48550/arXiv.2206.00272",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "270195c8ecc14b98a206461282b88f8fae798932",
+            "title": "Vision GNN: An Image is Worth Graph of Nodes",
+            "url": "https://www.semanticscholar.org/paper/270195c8ecc14b98a206461282b88f8fae798932",
+            "venue": "NeurIPS",
+            "year": 2022
+        },
+        {
+            "arxivId": "2205.01972",
+            "authors": [
+                {
+                    "authorId": "2122961034",
+                    "name": "Yuki Tatsunami"
+                },
+                {
+                    "authorId": "1381928106",
+                    "name": "M. Taki"
+                }
+            ],
+            "doi": "10.48550/arXiv.2205.01972",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "44aa16ed0f3e22c82b10fcc9d23459ecfb7fcdb3",
+            "title": "Sequencer: Deep LSTM for Image Classification",
+            "url": "https://www.semanticscholar.org/paper/44aa16ed0f3e22c82b10fcc9d23459ecfb7fcdb3",
+            "venue": "NeurIPS",
+            "year": 2022
+        },
+        {
+            "arxivId": "2202.06709",
+            "authors": [
+                {
+                    "authorId": "150248298",
+                    "name": "Namuk Park"
+                },
+                {
+                    "authorId": "2917665",
+                    "name": "Songkuk Kim"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "430bab3890e1e52c4c1f74900b0e408e47a1cb8f",
+            "title": "How Do Vision Transformers Work?",
+            "url": "https://www.semanticscholar.org/paper/430bab3890e1e52c4c1f74900b0e408e47a1cb8f",
+            "venue": "ICLR",
+            "year": 2022
+        },
+        {
+            "arxivId": "2201.12083",
+            "authors": [
+                {
+                    "authorId": "47197117",
+                    "name": "Ziyu Wang"
+                },
+                {
+                    "authorId": "119897463",
+                    "name": "Wenhao Jiang"
+                },
+                {
+                    "authorId": "2118321150",
+                    "name": "Yiming Zhu"
+                },
+                {
+                    "authorId": "2152192881",
+                    "name": "Li Yuan"
+                },
+                {
+                    "authorId": "2255687",
+                    "name": "Yibing Song"
+                },
+                {
+                    "authorId": "1654091065",
+                    "name": "Wei Liu"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "48e84128b0f288f544176138805a97fbe592a1dd",
+            "title": "DynaMixer: A Vision MLP Architecture with Dynamic Mixing",
+            "url": "https://www.semanticscholar.org/paper/48e84128b0f288f544176138805a97fbe592a1dd",
+            "venue": "ICML",
+            "year": 2022
+        },
+        {
+            "arxivId": "2201.03545",
+            "authors": [
+                {
+                    "authorId": "2109168016",
+                    "name": "Zhuang Liu"
+                },
+                {
+                    "authorId": "2053590350",
+                    "name": "Hanzi Mao"
+                },
+                {
+                    "authorId": "95426599",
+                    "name": "Chaozheng Wu"
+                },
+                {
+                    "authorId": "2322150",
+                    "name": "Christoph Feichtenhofer"
+                },
+                {
+                    "authorId": "1753210",
+                    "name": "Trevor Darrell"
+                },
+                {
+                    "authorId": "1817030",
+                    "name": "Saining Xie"
+                }
+            ],
+            "doi": "10.1109/CVPR52688.2022.01167",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "177e957f5cd93229c9794ea652c646d2557b4a69",
+            "title": "A ConvNet for the 2020s",
+            "url": "https://www.semanticscholar.org/paper/177e957f5cd93229c9794ea652c646d2557b4a69",
+            "venue": "2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2022
+        },
+        {
+            "arxivId": "2112.01526",
+            "authors": [
+                {
+                    "authorId": "3128506",
+                    "name": "Yanghao Li"
+                },
+                {
+                    "authorId": "9194382",
+                    "name": "Chaoxia Wu"
+                },
+                {
+                    "authorId": "146884473",
+                    "name": "Haoqi Fan"
+                },
+                {
+                    "authorId": "11379939",
+                    "name": "K. Mangalam"
+                },
+                {
+                    "authorId": "2142452652",
+                    "name": "Bo Xiong"
+                },
+                {
+                    "authorId": "153652147",
+                    "name": "J. Malik"
+                },
+                {
+                    "authorId": "2322150",
+                    "name": "Christoph Feichtenhofer"
+                }
+            ],
+            "doi": "10.1109/CVPR52688.2022.00476",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "9137efc758f80dd22bb56f82cca5c94f78a5db3e",
+            "title": "MViTv2: Improved Multiscale Vision Transformers for Classification and Detection",
+            "url": "https://www.semanticscholar.org/paper/9137efc758f80dd22bb56f82cca5c94f78a5db3e",
+            "venue": "2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2021
+        },
+        {
+            "arxivId": "2111.13587",
+            "authors": [
+                {
+                    "authorId": "26332431",
+                    "name": "John Guibas"
+                },
+                {
+                    "authorId": "33002157",
+                    "name": "M. Mardani"
+                },
+                {
+                    "authorId": "1390750243",
+                    "name": "Zong-Yi Li"
+                },
+                {
+                    "authorId": "29955511",
+                    "name": "Andrew Tao"
+                },
+                {
+                    "authorId": "47627049",
+                    "name": "Anima Anandkumar"
+                },
+                {
+                    "authorId": "2301680",
+                    "name": "Bryan Catanzaro"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "427fe0e6e2e2d6f927c62e80c75706e02c2a747f",
+            "title": "Adaptive Fourier Neural Operators: Efficient Token Mixers for Transformers",
+            "url": "https://www.semanticscholar.org/paper/427fe0e6e2e2d6f927c62e80c75706e02c2a747f",
+            "venue": "ArXiv",
+            "year": 2021
+        },
+        {
+            "arxivId": "2111.11418",
+            "authors": [
+                {
+                    "authorId": "23476952",
+                    "name": "Weihao Yu"
+                },
+                {
+                    "authorId": "2109495772",
+                    "name": "Mi Luo"
+                },
+                {
+                    "authorId": "2109890021",
+                    "name": "Pan Zhou"
+                },
+                {
+                    "authorId": "39927579",
+                    "name": "Chenyang Si"
+                },
+                {
+                    "authorId": "46432827",
+                    "name": "Yichen Zhou"
+                },
+                {
+                    "authorId": "48631088",
+                    "name": "Xinchao Wang"
+                },
+                {
+                    "authorId": "1698982",
+                    "name": "Jiashi Feng"
+                },
+                {
+                    "authorId": "143653681",
+                    "name": "Shuicheng Yan"
+                }
+            ],
+            "doi": "10.1109/CVPR52688.2022.01055",
+            "intent": [],
+            "isInfluential": true,
+            "paperId": "57150ca7d793d6f784cf82da1c349edf7beb6bc2",
+            "title": "MetaFormer is Actually What You Need for Vision",
+            "url": "https://www.semanticscholar.org/paper/57150ca7d793d6f784cf82da1c349edf7beb6bc2",
+            "venue": "2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2021
+        },
+        {
+            "arxivId": "2110.09783",
+            "authors": [
+                {
+                    "authorId": "2107995739",
+                    "name": "Yimin Wei"
+                },
+                {
+                    "authorId": "2143856589",
+                    "name": "Hao Liu"
+                },
+                {
+                    "authorId": "49901923",
+                    "name": "Tingting Xie"
+                },
+                {
+                    "authorId": "143969578",
+                    "name": "Qiuhong Ke"
+                },
+                {
+                    "authorId": "2985328",
+                    "name": "Yulan Guo"
+                }
+            ],
+            "doi": "10.1109/WACV51458.2022.00073",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d3ba1586e80cb719752698cd6a3fcc07a1f263f3",
+            "title": "Spatial-Temporal Transformer for 3D Point Cloud Sequences",
+            "url": "https://www.semanticscholar.org/paper/d3ba1586e80cb719752698cd6a3fcc07a1f263f3",
+            "venue": "2022 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)",
+            "year": 2021
+        },
+        {
+            "arxivId": "2110.09456",
+            "authors": [
+                {
+                    "authorId": "88728159",
+                    "name": "Sam Shleifer"
+                },
+                {
+                    "authorId": "145183709",
+                    "name": "J. Weston"
+                },
+                {
+                    "authorId": "40511414",
+                    "name": "Myle Ott"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "2582a04918f6fe62dc142f2fca9ca0bb0b1d7895",
+            "title": "NormFormer: Improved Transformer Pretraining with Extra Normalization",
+            "url": "https://www.semanticscholar.org/paper/2582a04918f6fe62dc142f2fca9ca0bb0b1d7895",
+            "venue": "ArXiv",
+            "year": 2021
+        },
+        {
+            "arxivId": "2110.00476",
+            "authors": [
+                {
+                    "authorId": "2113839396",
+                    "name": "Ross Wightman"
+                },
+                {
+                    "authorId": "2113243762",
+                    "name": "Hugo Touvron"
+                },
+                {
+                    "authorId": "2065248680",
+                    "name": "Herv'e J'egou"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f454f6b5f2ca9749ddf442eb5134612ef7f758c1",
+            "title": "ResNet strikes back: An improved training procedure in timm",
+            "url": "https://www.semanticscholar.org/paper/f454f6b5f2ca9749ddf442eb5134612ef7f758c1",
+            "venue": "ArXiv",
+            "year": 2021
+        },
+        {
+            "arxivId": "2109.08668",
+            "authors": [
+                {
+                    "authorId": "48165870",
+                    "name": "David R. So"
+                },
+                {
+                    "authorId": "2127389609",
+                    "name": "Wojciech Ma'nke"
+                },
+                {
+                    "authorId": "2391802",
+                    "name": "Hanxiao Liu"
+                },
+                {
+                    "authorId": "3422912",
+                    "name": "Zihang Dai"
+                },
+                {
+                    "authorId": "1846258",
+                    "name": "Noam M. Shazeer"
+                },
+                {
+                    "authorId": "2827616",
+                    "name": "Quoc V. Le"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "4a8964ea0de47010fb458021b68fa3ef5c4b77b2",
+            "title": "Primer: Searching for Efficient Transformers for Language Modeling",
+            "url": "https://www.semanticscholar.org/paper/4a8964ea0de47010fb458021b68fa3ef5c4b77b2",
+            "venue": "NeurIPS",
+            "year": 2021
+        },
+        {
+            "arxivId": "2107.00652",
+            "authors": [
+                {
+                    "authorId": "5620602",
+                    "name": "Xiaoyi Dong"
+                },
+                {
+                    "authorId": "9324504",
+                    "name": "Jianmin Bao"
+                },
+                {
+                    "authorId": "49025801",
+                    "name": "Dongdong Chen"
+                },
+                {
+                    "authorId": "47528018",
+                    "name": "Weiming Zhang"
+                },
+                {
+                    "authorId": "1708598",
+                    "name": "Nenghai Yu"
+                },
+                {
+                    "authorId": "145347147",
+                    "name": "Lu Yuan"
+                },
+                {
+                    "authorId": "47514557",
+                    "name": "Dong Chen"
+                },
+                {
+                    "authorId": "2261753424",
+                    "name": "B. Guo"
+                }
+            ],
+            "doi": "10.1109/CVPR52688.2022.01181",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "800cfb3d23115cdcd4d114234b65bbdf2080f798",
+            "title": "CSWin Transformer: A General Vision Transformer Backbone with Cross-Shaped Windows",
+            "url": "https://www.semanticscholar.org/paper/800cfb3d23115cdcd4d114234b65bbdf2080f798",
+            "venue": "2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2021
+        },
+        {
+            "arxivId": "2107.00645",
+            "authors": [
+                {
+                    "authorId": "39358728",
+                    "name": "Yongming Rao"
+                },
+                {
+                    "authorId": "2118223312",
+                    "name": "Wenliang Zhao"
+                },
+                {
+                    "authorId": "2118932732",
+                    "name": "Zheng Zhu"
+                },
+                {
+                    "authorId": "1697700",
+                    "name": "Jiwen Lu"
+                },
+                {
+                    "authorId": "49640256",
+                    "name": "Jie Zhou"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "9b6af0e358e76d22f209c75b1702c3e6ea7815b1",
+            "title": "Global Filter Networks for Image Classification",
+            "url": "https://www.semanticscholar.org/paper/9b6af0e358e76d22f209c75b1702c3e6ea7815b1",
+            "venue": "NeurIPS",
+            "year": 2021
+        },
+        {
+            "arxivId": "2106.04803",
+            "authors": [
+                {
+                    "authorId": "3422912",
+                    "name": "Zihang Dai"
+                },
+                {
+                    "authorId": "2391802",
+                    "name": "Hanxiao Liu"
+                },
+                {
+                    "authorId": "2827616",
+                    "name": "Quoc V. Le"
+                },
+                {
+                    "authorId": "120805419",
+                    "name": "Mingxing Tan"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "9f4b69762ffb1ba42b573fd4ced996f3153e21c0",
+            "title": "CoAtNet: Marrying Convolution and Attention for All Data Sizes",
+            "url": "https://www.semanticscholar.org/paper/9f4b69762ffb1ba42b573fd4ced996f3153e21c0",
+            "venue": "NeurIPS",
+            "year": 2021
+        },
+        {
+            "arxivId": "2106.03714",
+            "authors": [
+                {
+                    "authorId": "18119920",
+                    "name": "Daquan Zhou"
+                },
+                {
+                    "authorId": "145356288",
+                    "name": "Yujun Shi"
+                },
+                {
+                    "authorId": "2064621368",
+                    "name": "Bingyi Kang"
+                },
+                {
+                    "authorId": "23476952",
+                    "name": "Weihao Yu"
+                },
+                {
+                    "authorId": "97234041",
+                    "name": "Zihang Jiang"
+                },
+                {
+                    "authorId": "2118204528",
+                    "name": "Yuan Li"
+                },
+                {
+                    "authorId": "2103483",
+                    "name": "Xiaojie Jin"
+                },
+                {
+                    "authorId": "3298532",
+                    "name": "Qibin Hou"
+                },
+                {
+                    "authorId": "1698982",
+                    "name": "Jiashi Feng"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8602fd5b0ac73bb422f238b265479f363c0ffe61",
+            "title": "Refiner: Refining Self-attention for Vision Transformers",
+            "url": "https://www.semanticscholar.org/paper/8602fd5b0ac73bb422f238b265479f363c0ffe61",
+            "venue": "ArXiv",
+            "year": 2021
+        },
+        {
+            "arxivId": "2106.02689",
+            "authors": [
+                {
+                    "authorId": "48239920",
+                    "name": "Chun-Fu Chen"
+                },
+                {
+                    "authorId": "1819152",
+                    "name": "Rameswar Panda"
+                },
+                {
+                    "authorId": "33421444",
+                    "name": "Quanfu Fan"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "2e8149dafb864ec3675087c99bf5572fcf4eb170",
+            "title": "RegionViT: Regional-to-Local Attention for Vision Transformers",
+            "url": "https://www.semanticscholar.org/paper/2e8149dafb864ec3675087c99bf5572fcf4eb170",
+            "venue": "ICLR",
+            "year": 2021
+        },
+        {
+            "arxivId": "2105.07197",
+            "authors": [
+                {
+                    "authorId": "52089303",
+                    "name": "Shikhar Tuli"
+                },
+                {
+                    "authorId": "46745316",
+                    "name": "Ishita Dasgupta"
+                },
+                {
+                    "authorId": "145557445",
+                    "name": "Erin Grant"
+                },
+                {
+                    "authorId": "1799860",
+                    "name": "T. Griffiths"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c7650fe09c2b34e43646e785e09aefe290247e52",
+            "title": "Are Convolutional Neural Networks or Transformers more like human vision?",
+            "url": "https://www.semanticscholar.org/paper/c7650fe09c2b34e43646e785e09aefe290247e52",
+            "venue": "CogSci",
+            "year": 2021
+        },
+        {
+            "arxivId": "2105.03824",
+            "authors": [
+                {
+                    "authorId": "1405626394",
+                    "name": "J. Lee-Thorp"
+                },
+                {
+                    "authorId": "1643737606",
+                    "name": "J. Ainslie"
+                },
+                {
+                    "authorId": "2085636189",
+                    "name": "Ilya Eckstein"
+                },
+                {
+                    "authorId": "1722671",
+                    "name": "Santiago Onta\u00f1\u00f3n"
+                }
+            ],
+            "doi": "10.18653/v1/2022.naacl-main.319",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "1f133158a8973fb33fea188f20517cd7e69bfe7f",
+            "title": "FNet: Mixing Tokens with Fourier Transforms",
+            "url": "https://www.semanticscholar.org/paper/1f133158a8973fb33fea188f20517cd7e69bfe7f",
+            "venue": "NAACL",
+            "year": 2021
+        },
+        {
+            "arxivId": "2105.01601",
+            "authors": [
+                {
+                    "authorId": "3121264",
+                    "name": "I. Tolstikhin"
+                },
+                {
+                    "authorId": "2815290",
+                    "name": "N. Houlsby"
+                },
+                {
+                    "authorId": "144629422",
+                    "name": "Alexander Kolesnikov"
+                },
+                {
+                    "authorId": "39611591",
+                    "name": "Lucas Beyer"
+                },
+                {
+                    "authorId": "2743563",
+                    "name": "Xiaohua Zhai"
+                },
+                {
+                    "authorId": "2465270",
+                    "name": "Thomas Unterthiner"
+                },
+                {
+                    "authorId": "1470947219",
+                    "name": "Jessica Yung"
+                },
+                {
+                    "authorId": "51027911",
+                    "name": "Daniel Keysers"
+                },
+                {
+                    "authorId": "39328010",
+                    "name": "Jakob Uszkoreit"
+                },
+                {
+                    "authorId": "34302129",
+                    "name": "Mario Lucic"
+                },
+                {
+                    "authorId": "2841331",
+                    "name": "Alexey Dosovitskiy"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "67571d29190faea9fbd104acd16274f8c4edf254",
+            "title": "MLP-Mixer: An all-MLP Architecture for Vision",
+            "url": "https://www.semanticscholar.org/paper/67571d29190faea9fbd104acd16274f8c4edf254",
+            "venue": "NeurIPS",
+            "year": 2021
+        },
+        {
+            "arxivId": "2104.13840",
+            "authors": [
+                {
+                    "authorId": "27628828",
+                    "name": "Xiangxiang Chu"
+                },
+                {
+                    "authorId": "2069520672",
+                    "name": "Zhi Tian"
+                },
+                {
+                    "authorId": "2108035065",
+                    "name": "Yuqing Wang"
+                },
+                {
+                    "authorId": null,
+                    "name": "Bo Zhang"
+                },
+                {
+                    "authorId": "1558541225",
+                    "name": "Haibing Ren"
+                },
+                {
+                    "authorId": "49141839",
+                    "name": "Xiaolin Wei"
+                },
+                {
+                    "authorId": "2065044626",
+                    "name": "Huaxia Xia"
+                },
+                {
+                    "authorId": "12459603",
+                    "name": "Chunhua Shen"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "6709d5583f658f589ae6a2184805933aceb18849",
+            "title": "Twins: Revisiting the Design of Spatial Attention in Vision Transformers",
+            "url": "https://www.semanticscholar.org/paper/6709d5583f658f589ae6a2184805933aceb18849",
+            "venue": "NeurIPS",
+            "year": 2021
+        },
+        {
+            "arxivId": "2103.17239",
+            "authors": [
+                {
+                    "authorId": "2113243762",
+                    "name": "Hugo Touvron"
+                },
+                {
+                    "authorId": "51021910",
+                    "name": "M. Cord"
+                },
+                {
+                    "authorId": "3469062",
+                    "name": "Alexandre Sablayrolles"
+                },
+                {
+                    "authorId": "2282478",
+                    "name": "Gabriel Synnaeve"
+                },
+                {
+                    "authorId": "2065248680",
+                    "name": "Herv'e J'egou"
+                }
+            ],
+            "doi": "10.1109/ICCV48922.2021.00010",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "b364cdb02d18b9d9a3c097f5ea446f7e9ab10325",
+            "title": "Going deeper with Image Transformers",
+            "url": "https://www.semanticscholar.org/paper/b364cdb02d18b9d9a3c097f5ea446f7e9ab10325",
+            "venue": "2021 IEEE/CVF International Conference on Computer Vision (ICCV)",
+            "year": 2021
+        },
+        {
+            "arxivId": "2103.15358",
+            "authors": [
+                {
+                    "authorId": "9325940",
+                    "name": "Pengchuan Zhang"
+                },
+                {
+                    "authorId": "3386593",
+                    "name": "Xiyang Dai"
+                },
+                {
+                    "authorId": "120157163",
+                    "name": "Jianwei Yang"
+                },
+                {
+                    "authorId": "2054421528",
+                    "name": "Bin Xiao"
+                },
+                {
+                    "authorId": "145347147",
+                    "name": "Lu Yuan"
+                },
+                {
+                    "authorId": "2152828578",
+                    "name": "Lei Zhang"
+                },
+                {
+                    "authorId": "48441311",
+                    "name": "Jianfeng Gao"
+                }
+            ],
+            "doi": "10.1109/ICCV48922.2021.00299",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "3cbe314cc5407a6c3249815b5173f22ea15173c2",
+            "title": "Multi-Scale Vision Longformer: A New Vision Transformer for High-Resolution Image Encoding",
+            "url": "https://www.semanticscholar.org/paper/3cbe314cc5407a6c3249815b5173f22ea15173c2",
+            "venue": "2021 IEEE/CVF International Conference on Computer Vision (ICCV)",
+            "year": 2021
+        },
+        {
+            "arxivId": "2102.12122",
+            "authors": [
+                {
+                    "authorId": "71074736",
+                    "name": "Wenhai Wang"
+                },
+                {
+                    "authorId": "41020000",
+                    "name": "Enze Xie"
+                },
+                {
+                    "authorId": null,
+                    "name": "Xiang Li"
+                },
+                {
+                    "authorId": "23999143",
+                    "name": "Deng-Ping Fan"
+                },
+                {
+                    "authorId": "50982078",
+                    "name": "Kaitao Song"
+                },
+                {
+                    "authorId": "152335674",
+                    "name": "Ding Liang"
+                },
+                {
+                    "authorId": "144720255",
+                    "name": "Tong Lu"
+                },
+                {
+                    "authorId": "144389940",
+                    "name": "P. Luo"
+                },
+                {
+                    "authorId": "144082425",
+                    "name": "Ling Shao"
+                }
+            ],
+            "doi": "10.1109/ICCV48922.2021.00061",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "3e398bad2d8636491a1034cc938a5e024c7aa881",
+            "title": "Pyramid Vision Transformer: A Versatile Backbone for Dense Prediction without Convolutions",
+            "url": "https://www.semanticscholar.org/paper/3e398bad2d8636491a1034cc938a5e024c7aa881",
+            "venue": "2021 IEEE/CVF International Conference on Computer Vision (ICCV)",
+            "year": 2021
+        },
+        {
+            "arxivId": "2102.05095",
+            "authors": [
+                {
+                    "authorId": "3313330",
+                    "name": "Gedas Bertasius"
+                },
+                {
+                    "authorId": "46506697",
+                    "name": "Heng Wang"
+                },
+                {
+                    "authorId": "1732879",
+                    "name": "L. Torresani"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "fa08b41ccdfc5d8771adfbc34c176fa237d4646c",
+            "title": "Is Space-Time Attention All You Need for Video Understanding?",
+            "url": "https://www.semanticscholar.org/paper/fa08b41ccdfc5d8771adfbc34c176fa237d4646c",
+            "venue": "ICML",
+            "year": 2021
+        },
+        {
+            "arxivId": "2102.00719",
+            "authors": [
+                {
+                    "authorId": "2007503764",
+                    "name": "Daniel Neimark"
+                },
+                {
+                    "authorId": "1413003076",
+                    "name": "Omri Bar"
+                },
+                {
+                    "authorId": "2005012484",
+                    "name": "Maya Zohar"
+                },
+                {
+                    "authorId": "2007489276",
+                    "name": "Dotan Asselmann"
+                }
+            ],
+            "doi": "10.1109/ICCVW54120.2021.00355",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "94b69cf199fa0b6c842e17fe5d6174a9d161c3df",
+            "title": "Video Transformer Network",
+            "url": "https://www.semanticscholar.org/paper/94b69cf199fa0b6c842e17fe5d6174a9d161c3df",
+            "venue": "2021 IEEE/CVF International Conference on Computer Vision Workshops (ICCVW)",
+            "year": 2021
+        },
+        {
+            "arxivId": "2101.11986",
+            "authors": [
+                {
+                    "authorId": "2087091296",
+                    "name": "Li Yuan"
+                },
+                {
+                    "authorId": "2144861793",
+                    "name": "Yunpeng Chen"
+                },
+                {
+                    "authorId": null,
+                    "name": "Tao Wang"
+                },
+                {
+                    "authorId": "23476952",
+                    "name": "Weihao Yu"
+                },
+                {
+                    "authorId": "145356288",
+                    "name": "Yujun Shi"
+                },
+                {
+                    "authorId": "40983412",
+                    "name": "Francis E. H. Tay"
+                },
+                {
+                    "authorId": "33221685",
+                    "name": "Jiashi Feng"
+                },
+                {
+                    "authorId": "143653681",
+                    "name": "Shuicheng Yan"
+                }
+            ],
+            "doi": "10.1109/ICCV48922.2021.00060",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "dbe077f8521ecbe0a1477d6148c726d4f053d9c9",
+            "title": "Tokens-to-Token ViT: Training Vision Transformers from Scratch on ImageNet",
+            "url": "https://www.semanticscholar.org/paper/dbe077f8521ecbe0a1477d6148c726d4f053d9c9",
+            "venue": "2021 IEEE/CVF International Conference on Computer Vision (ICCV)",
+            "year": 2021
+        },
+        {
+            "arxivId": "2012.12877",
+            "authors": [
+                {
+                    "authorId": "2113243762",
+                    "name": "Hugo Touvron"
+                },
+                {
+                    "authorId": "51021910",
+                    "name": "M. Cord"
+                },
+                {
+                    "authorId": "3271933",
+                    "name": "Matthijs Douze"
+                },
+                {
+                    "authorId": "1403239967",
+                    "name": "Francisco Massa"
+                },
+                {
+                    "authorId": "3469062",
+                    "name": "Alexandre Sablayrolles"
+                },
+                {
+                    "authorId": "2065248680",
+                    "name": "Herv'e J'egou"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "ad7ddcc14984caae308c397f1a589aae75d4ab71",
+            "title": "Training data-efficient image transformers & distillation through attention",
+            "url": "https://www.semanticscholar.org/paper/ad7ddcc14984caae308c397f1a589aae75d4ab71",
+            "venue": "ICML",
+            "year": 2020
+        },
+        {
+            "arxivId": "2012.09688",
+            "authors": [
+                {
+                    "authorId": "2088775481",
+                    "name": "Meng-Hao Guo"
+                },
+                {
+                    "authorId": "67011150",
+                    "name": "Junxiong Cai"
+                },
+                {
+                    "authorId": "79305819",
+                    "name": "Zheng-Ning Liu"
+                },
+                {
+                    "authorId": "31471368",
+                    "name": "Tai-Jiang Mu"
+                },
+                {
+                    "authorId": "2404014",
+                    "name": "Ralph Robert Martin"
+                },
+                {
+                    "authorId": "145140922",
+                    "name": "Shimin Hu"
+                }
+            ],
+            "doi": "10.1007/s41095-021-0229-5",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ff50b46b4e1cc0fd9beb832fc3468785b635a824",
+            "title": "PCT: Point cloud transformer",
+            "url": "https://www.semanticscholar.org/paper/ff50b46b4e1cc0fd9beb832fc3468785b635a824",
+            "venue": "Computational Visual Media",
+            "year": 2020
+        },
+        {
+            "arxivId": "2011.00931",
+            "authors": [
+                {
+                    "authorId": "2060173685",
+                    "name": "Nico Engel"
+                },
+                {
+                    "authorId": "1882784",
+                    "name": "Vasileios Belagiannis"
+                },
+                {
+                    "authorId": "1684594",
+                    "name": "K. Dietmayer"
+                }
+            ],
+            "doi": "10.1109/ACCESS.2021.3116304",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e1d082562981a9f51649c60663aa484ee623dbb0",
+            "title": "Point Transformer",
+            "url": "https://www.semanticscholar.org/paper/e1d082562981a9f51649c60663aa484ee623dbb0",
+            "venue": "IEEE Access",
+            "year": 2020
+        },
+        {
+            "arxivId": "2010.15327",
+            "authors": [
+                {
+                    "authorId": "2117824274",
+                    "name": "Thao Nguyen"
+                },
+                {
+                    "authorId": "40297238",
+                    "name": "M. Raghu"
+                },
+                {
+                    "authorId": "40464924",
+                    "name": "Simon Kornblith"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "d21806115a79c960298cfca45a49b24682cac71a",
+            "title": "Do Wide and Deep Networks Learn the Same Things? Uncovering How Neural Network Representations Vary with Width and Depth",
+            "url": "https://www.semanticscholar.org/paper/d21806115a79c960298cfca45a49b24682cac71a",
+            "venue": "ICLR",
+            "year": 2020
+        },
+        {
+            "arxivId": "2010.11929",
+            "authors": [
+                {
+                    "authorId": "2841331",
+                    "name": "Alexey Dosovitskiy"
+                },
+                {
+                    "authorId": "39611591",
+                    "name": "Lucas Beyer"
+                },
+                {
+                    "authorId": "144629422",
+                    "name": "Alexander Kolesnikov"
+                },
+                {
+                    "authorId": "3319373",
+                    "name": "Dirk Weissenborn"
+                },
+                {
+                    "authorId": "2743563",
+                    "name": "Xiaohua Zhai"
+                },
+                {
+                    "authorId": "2465270",
+                    "name": "Thomas Unterthiner"
+                },
+                {
+                    "authorId": "2274215058",
+                    "name": "Mostafa Dehghani"
+                },
+                {
+                    "authorId": "46352821",
+                    "name": "Matthias Minderer"
+                },
+                {
+                    "authorId": "2280399",
+                    "name": "G. Heigold"
+                },
+                {
+                    "authorId": "1802148",
+                    "name": "S. Gelly"
+                },
+                {
+                    "authorId": "39328010",
+                    "name": "Jakob Uszkoreit"
+                },
+                {
+                    "authorId": "2815290",
+                    "name": "N. Houlsby"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "268d347e8a55b5eb82fb5e7d2f800e33c75ab18a",
+            "title": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale",
+            "url": "https://www.semanticscholar.org/paper/268d347e8a55b5eb82fb5e7d2f800e33c75ab18a",
+            "venue": "ICLR",
+            "year": 2020
+        },
+        {
+            "arxivId": "2005.12872",
+            "authors": [
+                {
+                    "authorId": "3422899",
+                    "name": "Nicolas Carion"
+                },
+                {
+                    "authorId": "1403239967",
+                    "name": "Francisco Massa"
+                },
+                {
+                    "authorId": "2282478",
+                    "name": "Gabriel Synnaeve"
+                },
+                {
+                    "authorId": "1746841",
+                    "name": "Nicolas Usunier"
+                },
+                {
+                    "authorId": "144843400",
+                    "name": "Alexander Kirillov"
+                },
+                {
+                    "authorId": "2134433",
+                    "name": "Sergey Zagoruyko"
+                }
+            ],
+            "doi": "10.1007/978-3-030-58452-8_13",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "962dc29fdc3fbdc5930a10aba114050b82fe5a3e",
+            "title": "End-to-End Object Detection with Transformers",
+            "url": "https://www.semanticscholar.org/paper/962dc29fdc3fbdc5930a10aba114050b82fe5a3e",
+            "venue": "ECCV",
+            "year": 2020
+        },
+        {
+            "arxivId": "2005.00743",
+            "authors": [
+                {
+                    "authorId": "144447820",
+                    "name": "Yi Tay"
+                },
+                {
+                    "authorId": "11774695",
+                    "name": "Dara Bahri"
+                },
+                {
+                    "authorId": "1680617",
+                    "name": "Donald Metzler"
+                },
+                {
+                    "authorId": "50270386",
+                    "name": "Da-Cheng Juan"
+                },
+                {
+                    "authorId": "48634137",
+                    "name": "Zhe Zhao"
+                },
+                {
+                    "authorId": "72117196",
+                    "name": "Che Zheng"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "e3794413679237f7a9a2f7e03eb7ea2ccac0ae93",
+            "title": "Synthesizer: Rethinking Self-Attention for Transformer Models",
+            "url": "https://www.semanticscholar.org/paper/e3794413679237f7a9a2f7e03eb7ea2ccac0ae93",
+            "venue": "ICML",
+            "year": 2020
+        },
+        {
+            "arxivId": "2003.13678",
+            "authors": [
+                {
+                    "authorId": "30407997",
+                    "name": "Ilija Radosavovic"
+                },
+                {
+                    "authorId": "26610238",
+                    "name": "Raj Prateek Kosaraju"
+                },
+                {
+                    "authorId": "2983898",
+                    "name": "Ross B. Girshick"
+                },
+                {
+                    "authorId": "39353098",
+                    "name": "Kaiming He"
+                },
+                {
+                    "authorId": "3127283",
+                    "name": "Piotr Doll\u00e1r"
+                }
+            ],
+            "doi": "10.1109/cvpr42600.2020.01044",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "2709167f1c3a03fa5b970a665ea48ed243aab582",
+            "title": "Designing Network Design Spaces",
+            "url": "https://www.semanticscholar.org/paper/2709167f1c3a03fa5b970a665ea48ed243aab582",
+            "venue": "2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2020
+        },
+        {
+            "arxivId": "1912.03458",
+            "authors": [
+                {
+                    "authorId": "2109306087",
+                    "name": "Yinpeng Chen"
+                },
+                {
+                    "authorId": "3386593",
+                    "name": "Xiyang Dai"
+                },
+                {
+                    "authorId": "2152968847",
+                    "name": "Mengchen Liu"
+                },
+                {
+                    "authorId": "49025801",
+                    "name": "Dongdong Chen"
+                },
+                {
+                    "authorId": "145347147",
+                    "name": "Lu Yuan"
+                },
+                {
+                    "authorId": "2145253136",
+                    "name": "Zicheng Liu"
+                }
+            ],
+            "doi": "10.1109/CVPR42600.2020.01104",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "fb7972f30812c7dd056d7943c3e3f00af022d607",
+            "title": "Dynamic Convolution: Attention Over Convolution Kernels",
+            "url": "https://www.semanticscholar.org/paper/fb7972f30812c7dd056d7943c3e3f00af022d607",
+            "venue": "2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2019
+        },
+        {
+            "arxivId": "1912.01703",
+            "authors": [
+                {
+                    "authorId": "3407277",
+                    "name": "Adam Paszke"
+                },
+                {
+                    "authorId": "39793298",
+                    "name": "Sam Gross"
+                },
+                {
+                    "authorId": "1403239967",
+                    "name": "Francisco Massa"
+                },
+                {
+                    "authorId": "1977806",
+                    "name": "Adam Lerer"
+                },
+                {
+                    "authorId": "2065251344",
+                    "name": "James Bradbury"
+                },
+                {
+                    "authorId": "114250963",
+                    "name": "Gregory Chanan"
+                },
+                {
+                    "authorId": "2059271276",
+                    "name": "Trevor Killeen"
+                },
+                {
+                    "authorId": "3370429",
+                    "name": "Zeming Lin"
+                },
+                {
+                    "authorId": "3365851",
+                    "name": "N. Gimelshein"
+                },
+                {
+                    "authorId": "3029482",
+                    "name": "L. Antiga"
+                },
+                {
+                    "authorId": "3050846",
+                    "name": "Alban Desmaison"
+                },
+                {
+                    "authorId": "1473151134",
+                    "name": "Andreas K\u00f6pf"
+                },
+                {
+                    "authorId": "2052812305",
+                    "name": "E. Yang"
+                },
+                {
+                    "authorId": "2375710",
+                    "name": "Zach DeVito"
+                },
+                {
+                    "authorId": "10707709",
+                    "name": "Martin Raison"
+                },
+                {
+                    "authorId": "41203992",
+                    "name": "Alykhan Tejani"
+                },
+                {
+                    "authorId": "22236100",
+                    "name": "Sasank Chilamkurthy"
+                },
+                {
+                    "authorId": "32163737",
+                    "name": "Benoit Steiner"
+                },
+                {
+                    "authorId": "152599430",
+                    "name": "Lu Fang"
+                },
+                {
+                    "authorId": "2113829116",
+                    "name": "Junjie Bai"
+                },
+                {
+                    "authorId": "2127604",
+                    "name": "Soumith Chintala"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "3c8a456509e6c0805354bd40a35e3f2dbf8069b1",
+            "title": "PyTorch: An Imperative Style, High-Performance Deep Learning Library",
+            "url": "https://www.semanticscholar.org/paper/3c8a456509e6c0805354bd40a35e3f2dbf8069b1",
+            "venue": "NeurIPS",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "153883360",
+                    "name": "Katherine L. Hermann"
+                },
+                {
+                    "authorId": "2117180415",
+                    "name": "Ting Chen"
+                },
+                {
+                    "authorId": "40464924",
+                    "name": "Simon Kornblith"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "a15591db63cc736f36770806dfc5a0f199eefe87",
+            "title": "The Origins and Prevalence of Texture Bias in Convolutional Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/a15591db63cc736f36770806dfc5a0f199eefe87",
+            "venue": "NeurIPS",
+            "year": 2019
+        },
+        {
+            "arxivId": "1909.13719",
+            "authors": [
+                {
+                    "authorId": "8132903",
+                    "name": "E. D. Cubuk"
+                },
+                {
+                    "authorId": "2368067",
+                    "name": "Barret Zoph"
+                },
+                {
+                    "authorId": "1789737",
+                    "name": "Jonathon Shlens"
+                },
+                {
+                    "authorId": "2827616",
+                    "name": "Quoc V. Le"
+                }
+            ],
+            "doi": "10.1109/CVPRW50498.2020.00359",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "87f6a7c014ce206ac5b57299c07e10667d194b39",
+            "title": "Randaugment: Practical automated data augmentation with a reduced search space",
+            "url": "https://www.semanticscholar.org/paper/87f6a7c014ce206ac5b57299c07e10667d194b39",
+            "venue": "2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)",
+            "year": 2019
+        },
+        {
+            "arxivId": "1906.07155",
+            "authors": [
+                {
+                    "authorId": "152568027",
+                    "name": "Kai Chen"
+                },
+                {
+                    "authorId": "2110238778",
+                    "name": "Jiaqi Wang"
+                },
+                {
+                    "authorId": "49968574",
+                    "name": "Jiangmiao Pang"
+                },
+                {
+                    "authorId": "50206929",
+                    "name": "Yuhang Cao"
+                },
+                {
+                    "authorId": "2112718966",
+                    "name": "Yu Xiong"
+                },
+                {
+                    "authorId": "2108536754",
+                    "name": "Xiaoxiao Li"
+                },
+                {
+                    "authorId": "2115306116",
+                    "name": "Shuyang Sun"
+                },
+                {
+                    "authorId": "66165285",
+                    "name": "Wansen Feng"
+                },
+                {
+                    "authorId": "2117940996",
+                    "name": "Ziwei Liu"
+                },
+                {
+                    "authorId": "1690418794",
+                    "name": "Jiarui Xu"
+                },
+                {
+                    "authorId": "143644345",
+                    "name": "Zheng Zhang"
+                },
+                {
+                    "authorId": "48573140",
+                    "name": "Dazhi Cheng"
+                },
+                {
+                    "authorId": "47894545",
+                    "name": "Chenchen Zhu"
+                },
+                {
+                    "authorId": "46806979",
+                    "name": "Tianheng Cheng"
+                },
+                {
+                    "authorId": "123227784",
+                    "name": "Qijie Zhao"
+                },
+                {
+                    "authorId": "40940627",
+                    "name": "Buyu Li"
+                },
+                {
+                    "authorId": "145574672",
+                    "name": "Xin Lu"
+                },
+                {
+                    "authorId": "2070269717",
+                    "name": "Rui Zhu"
+                },
+                {
+                    "authorId": "2119299240",
+                    "name": "Yue Wu"
+                },
+                {
+                    "authorId": "25096379",
+                    "name": "Kangcheng Liu"
+                },
+                {
+                    "authorId": "3304536",
+                    "name": "Jifeng Dai"
+                },
+                {
+                    "authorId": "1688516",
+                    "name": "Jingdong Wang"
+                },
+                {
+                    "authorId": "1788070",
+                    "name": "Jianping Shi"
+                },
+                {
+                    "authorId": "3001348",
+                    "name": "Wanli Ouyang"
+                },
+                {
+                    "authorId": "1717179",
+                    "name": "Chen Change Loy"
+                },
+                {
+                    "authorId": "1807606",
+                    "name": "Dahua Lin"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c2c083df88e88223e1a411e61040b94c233b1b63",
+            "title": "MMDetection: Open MMLab Detection Toolbox and Benchmark",
+            "url": "https://www.semanticscholar.org/paper/c2c083df88e88223e1a411e61040b94c233b1b63",
+            "venue": "ArXiv",
+            "year": 2019
+        },
+        {
+            "arxivId": "1905.04899",
+            "authors": [
+                {
+                    "authorId": "2151587",
+                    "name": "Sangdoo Yun"
+                },
+                {
+                    "authorId": "2086576",
+                    "name": "Dongyoon Han"
+                },
+                {
+                    "authorId": "2390510",
+                    "name": "Seong Joon Oh"
+                },
+                {
+                    "authorId": "2647582",
+                    "name": "Sanghyuk Chun"
+                },
+                {
+                    "authorId": "3338475",
+                    "name": "Junsuk Choe"
+                },
+                {
+                    "authorId": "2347316",
+                    "name": "Y. Yoo"
+                }
+            ],
+            "doi": "10.1109/ICCV.2019.00612",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "ed17929e66da7f8fbc3666bf5eb613d302ddde0c",
+            "title": "CutMix: Regularization Strategy to Train Strong Classifiers With Localizable Features",
+            "url": "https://www.semanticscholar.org/paper/ed17929e66da7f8fbc3666bf5eb613d302ddde0c",
+            "venue": "2019 IEEE/CVF International Conference on Computer Vision (ICCV)",
+            "year": 2019
+        },
+        {
+            "arxivId": "1904.04971",
+            "authors": [
+                {
+                    "authorId": "145951921",
+                    "name": "Brandon Yang"
+                },
+                {
+                    "authorId": "2065121524",
+                    "name": "Gabriel Bender"
+                },
+                {
+                    "authorId": "2827616",
+                    "name": "Quoc V. Le"
+                },
+                {
+                    "authorId": "2020608",
+                    "name": "Jiquan Ngiam"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "3e70bbe6c4cd98d66599db709e32b748f184a2d4",
+            "title": "CondConv: Conditionally Parameterized Convolutions for Efficient Inference",
+            "url": "https://www.semanticscholar.org/paper/3e70bbe6c4cd98d66599db709e32b748f184a2d4",
+            "venue": "NeurIPS",
+            "year": 2019
+        },
+        {
+            "arxivId": "1901.02446",
+            "authors": [
+                {
+                    "authorId": "144843400",
+                    "name": "Alexander Kirillov"
+                },
+                {
+                    "authorId": "2983898",
+                    "name": "Ross B. Girshick"
+                },
+                {
+                    "authorId": "39353098",
+                    "name": "Kaiming He"
+                },
+                {
+                    "authorId": "3127283",
+                    "name": "Piotr Doll\u00e1r"
+                }
+            ],
+            "doi": "10.1109/CVPR.2019.00656",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "a84906dbd4d6640f918d0b6ed2a7313dda0d55f1",
+            "title": "Panoptic Feature Pyramid Networks",
+            "url": "https://www.semanticscholar.org/paper/a84906dbd4d6640f918d0b6ed2a7313dda0d55f1",
+            "venue": "2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145944407",
+                    "name": "Nicholas Baker"
+                },
+                {
+                    "authorId": "2115863079",
+                    "name": "Hongjing Lu"
+                },
+                {
+                    "authorId": "47745962",
+                    "name": "Gennady Erlikhman"
+                },
+                {
+                    "authorId": "2868430",
+                    "name": "P. Kellman"
+                }
+            ],
+            "doi": "10.1371/journal.pcbi.1006613",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "23cfb692c55ab178a818d4a86d5d417981358086",
+            "title": "Deep convolutional networks do not classify based on global object shape",
+            "url": "https://www.semanticscholar.org/paper/23cfb692c55ab178a818d4a86d5d417981358086",
+            "venue": "PLoS Comput. Biol.",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1678656",
+                    "name": "I. Loshchilov"
+                },
+                {
+                    "authorId": "144661829",
+                    "name": "F. Hutter"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "d07284a6811f1b2745d91bdb06b040b57f226882",
+            "title": "Decoupled Weight Decay Regularization",
+            "url": "https://www.semanticscholar.org/paper/d07284a6811f1b2745d91bdb06b040b57f226882",
+            "venue": "ICLR",
+            "year": 2017
+        },
+        {
+            "arxivId": "1710.09412",
+            "authors": [
+                {
+                    "authorId": "2108880169",
+                    "name": "Hongyi Zhang"
+                },
+                {
+                    "authorId": "5723508",
+                    "name": "Moustapha Ciss\u00e9"
+                },
+                {
+                    "authorId": "2921469",
+                    "name": "Yann Dauphin"
+                },
+                {
+                    "authorId": "1401804750",
+                    "name": "David Lopez-Paz"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "4feef0fd284feb1233399b400eb897f59ec92755",
+            "title": "mixup: Beyond Empirical Risk Minimization",
+            "url": "https://www.semanticscholar.org/paper/4feef0fd284feb1233399b400eb897f59ec92755",
+            "venue": "ICLR",
+            "year": 2017
+        },
+        {
+            "arxivId": "1708.04896",
+            "authors": [
+                {
+                    "authorId": "2069512103",
+                    "name": "Zhun Zhong"
+                },
+                {
+                    "authorId": "144802394",
+                    "name": "Liang Zheng"
+                },
+                {
+                    "authorId": "3374337",
+                    "name": "Guoliang Kang"
+                },
+                {
+                    "authorId": "8086812",
+                    "name": "Shaozi Li"
+                },
+                {
+                    "authorId": "7179962",
+                    "name": "Yi Yang"
+                }
+            ],
+            "doi": "10.1609/AAAI.V34I07.7000",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "2788a2461ed0067e2f7aaa63c449a24a237ec341",
+            "title": "Random Erasing Data Augmentation",
+            "url": "https://www.semanticscholar.org/paper/2788a2461ed0067e2f7aaa63c449a24a237ec341",
+            "venue": "AAAI",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "33493200",
+                    "name": "Tsung-Yi Lin"
+                },
+                {
+                    "authorId": "47316088",
+                    "name": "Priya Goyal"
+                },
+                {
+                    "authorId": "2983898",
+                    "name": "Ross B. Girshick"
+                },
+                {
+                    "authorId": "39353098",
+                    "name": "Kaiming He"
+                },
+                {
+                    "authorId": "3127283",
+                    "name": "Piotr Doll\u00e1r"
+                }
+            ],
+            "doi": "10.1109/ICCV.2017.324",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "79cfb51a51fc093f66aac8e858afe2e14d4a1f20",
+            "title": "Focal Loss for Dense Object Detection",
+            "url": "https://www.semanticscholar.org/paper/79cfb51a51fc093f66aac8e858afe2e14d4a1f20",
+            "venue": "2017 IEEE International Conference on Computer Vision (ICCV)",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145291669",
+                    "name": "Bolei Zhou"
+                },
+                {
+                    "authorId": "47940821",
+                    "name": "Hang Zhao"
+                },
+                {
+                    "authorId": "143872936",
+                    "name": "Xavier Puig"
+                },
+                {
+                    "authorId": "37895334",
+                    "name": "S. Fidler"
+                },
+                {
+                    "authorId": "2063937685",
+                    "name": "Adela Barriuso"
+                },
+                {
+                    "authorId": "143805211",
+                    "name": "A. Torralba"
+                }
+            ],
+            "doi": "10.1109/CVPR.2017.544",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "2a5667702b0f1ff77dde8fb3e2e10d4e05e8de9d",
+            "title": "Scene Parsing through ADE20K Dataset",
+            "url": "https://www.semanticscholar.org/paper/2a5667702b0f1ff77dde8fb3e2e10d4e05e8de9d",
+            "venue": "2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2017
+        },
+        {
+            "arxivId": "1706.03762",
+            "authors": [
+                {
+                    "authorId": "40348417",
+                    "name": "Ashish Vaswani"
+                },
+                {
+                    "authorId": "1846258",
+                    "name": "Noam M. Shazeer"
+                },
+                {
+                    "authorId": "3877127",
+                    "name": "Niki Parmar"
+                },
+                {
+                    "authorId": "39328010",
+                    "name": "Jakob Uszkoreit"
+                },
+                {
+                    "authorId": "145024664",
+                    "name": "Llion Jones"
+                },
+                {
+                    "authorId": "19177000",
+                    "name": "Aidan N. Gomez"
+                },
+                {
+                    "authorId": "40527594",
+                    "name": "Lukasz Kaiser"
+                },
+                {
+                    "authorId": "3443442",
+                    "name": "Illia Polosukhin"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "204e3073870fae3d05bcbc2f6a8e263d9b72e776",
+            "title": "Attention is All you Need",
+            "url": "https://www.semanticscholar.org/paper/204e3073870fae3d05bcbc2f6a8e263d9b72e776",
+            "venue": "NIPS",
+            "year": 2017
+        },
+        {
+            "arxivId": "1611.05431",
+            "authors": [
+                {
+                    "authorId": "1817030",
+                    "name": "Saining Xie"
+                },
+                {
+                    "authorId": "2983898",
+                    "name": "Ross B. Girshick"
+                },
+                {
+                    "authorId": "3127283",
+                    "name": "Piotr Doll\u00e1r"
+                },
+                {
+                    "authorId": "144035504",
+                    "name": "Z. Tu"
+                },
+                {
+                    "authorId": "39353098",
+                    "name": "Kaiming He"
+                }
+            ],
+            "doi": "10.1109/CVPR.2017.634",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f6e0856b4a9199fa968ac00da612a9407b5cb85c",
+            "title": "Aggregated Residual Transformations for Deep Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/f6e0856b4a9199fa968ac00da612a9407b5cb85c",
+            "venue": "2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2016
+        },
+        {
+            "arxivId": "1607.06450",
+            "authors": [
+                {
+                    "authorId": "2503659",
+                    "name": "Jimmy Ba"
+                },
+                {
+                    "authorId": "51131802",
+                    "name": "J. Kiros"
+                },
+                {
+                    "authorId": "1695689",
+                    "name": "Geoffrey E. Hinton"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "97fb4e3d45bb098e27e0071448b6152217bd35a5",
+            "title": "Layer Normalization",
+            "url": "https://www.semanticscholar.org/paper/97fb4e3d45bb098e27e0071448b6152217bd35a5",
+            "venue": "ArXiv",
+            "year": 2016
+        },
+        {
+            "arxivId": "1606.08415",
+            "authors": [
+                {
+                    "authorId": "3422872",
+                    "name": "Dan Hendrycks"
+                },
+                {
+                    "authorId": "1700980",
+                    "name": "Kevin Gimpel"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "de5e7320729f5d3cbb6709eb6329ec41ace8c95d",
+            "title": "Gaussian Error Linear Units (GELUs)",
+            "url": "https://www.semanticscholar.org/paper/de5e7320729f5d3cbb6709eb6329ec41ace8c95d",
+            "venue": "",
+            "year": 2016
+        },
+        {
+            "arxivId": "1605.09673",
+            "authors": [
+                {
+                    "authorId": "1641711590",
+                    "name": "Xu Jia"
+                },
+                {
+                    "authorId": "3384995",
+                    "name": "Bert De Brabandere"
+                },
+                {
+                    "authorId": "1704728",
+                    "name": "T. Tuytelaars"
+                },
+                {
+                    "authorId": "1681236",
+                    "name": "L. Gool"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "aba48504f4f9563eafa44e0cfb22e1345d767c80",
+            "title": "Dynamic Filter Networks",
+            "url": "https://www.semanticscholar.org/paper/aba48504f4f9563eafa44e0cfb22e1345d767c80",
+            "venue": "NIPS",
+            "year": 2016
+        },
+        {
+            "arxivId": "1603.09382",
+            "authors": [
+                {
+                    "authorId": "143983679",
+                    "name": "Gao Huang"
+                },
+                {
+                    "authorId": "2117103358",
+                    "name": "Yu Sun"
+                },
+                {
+                    "authorId": "2109168016",
+                    "name": "Zhuang Liu"
+                },
+                {
+                    "authorId": "3371029",
+                    "name": "Daniel Sedra"
+                },
+                {
+                    "authorId": "7446832",
+                    "name": "Kilian Q. Weinberger"
+                }
+            ],
+            "doi": "10.1007/978-3-319-46493-0_39",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "51db1f3c8dfc7d4077da39c96bb90a6358128111",
+            "title": "Deep Networks with Stochastic Depth",
+            "url": "https://www.semanticscholar.org/paper/51db1f3c8dfc7d4077da39c96bb90a6358128111",
+            "venue": "ECCV",
+            "year": 2016
+        },
+        {
+            "arxivId": "1512.03385",
+            "authors": [
+                {
+                    "authorId": "39353098",
+                    "name": "Kaiming He"
+                },
+                {
+                    "authorId": "1771551",
+                    "name": "X. Zhang"
+                },
+                {
+                    "authorId": "3080683",
+                    "name": "Shaoqing Ren"
+                },
+                {
+                    "authorId": null,
+                    "name": "Jian Sun"
+                }
+            ],
+            "doi": "10.1109/cvpr.2016.90",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "2c03df8b48bf3fa39054345bafabfeff15bfd11d",
+            "title": "Deep Residual Learning for Image Recognition",
+            "url": "https://www.semanticscholar.org/paper/2c03df8b48bf3fa39054345bafabfeff15bfd11d",
+            "venue": "2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2015
+        },
+        {
+            "arxivId": "1512.00567",
+            "authors": [
+                {
+                    "authorId": "2574060",
+                    "name": "Christian Szegedy"
+                },
+                {
+                    "authorId": "2657155",
+                    "name": "Vincent Vanhoucke"
+                },
+                {
+                    "authorId": "2054165706",
+                    "name": "Sergey Ioffe"
+                },
+                {
+                    "authorId": "1789737",
+                    "name": "Jonathon Shlens"
+                },
+                {
+                    "authorId": "3282833",
+                    "name": "Z. Wojna"
+                }
+            ],
+            "doi": "10.1109/CVPR.2016.308",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "23ffaa0fe06eae05817f527a47ac3291077f9e58",
+            "title": "Rethinking the Inception Architecture for Computer Vision",
+            "url": "https://www.semanticscholar.org/paper/23ffaa0fe06eae05817f527a47ac3291077f9e58",
+            "venue": "2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2015
+        },
+        {
+            "arxivId": "1405.0312",
+            "authors": [
+                {
+                    "authorId": "33493200",
+                    "name": "Tsung-Yi Lin"
+                },
+                {
+                    "authorId": "145854440",
+                    "name": "M. Maire"
+                },
+                {
+                    "authorId": "50172592",
+                    "name": "Serge J. Belongie"
+                },
+                {
+                    "authorId": "48966748",
+                    "name": "James Hays"
+                },
+                {
+                    "authorId": "1690922",
+                    "name": "P. Perona"
+                },
+                {
+                    "authorId": "1770537",
+                    "name": "Deva Ramanan"
+                },
+                {
+                    "authorId": "3127283",
+                    "name": "Piotr Doll\u00e1r"
+                },
+                {
+                    "authorId": "1699161",
+                    "name": "C. L. Zitnick"
+                }
+            ],
+            "doi": "10.1007/978-3-319-10602-1_48",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "71b7178df5d2b112d07e45038cb5637208659ff7",
+            "title": "Microsoft COCO: Common Objects in Context",
+            "url": "https://www.semanticscholar.org/paper/71b7178df5d2b112d07e45038cb5637208659ff7",
+            "venue": "ECCV",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2064160",
+                    "name": "A. Krizhevsky"
+                },
+                {
+                    "authorId": "1701686",
+                    "name": "I. Sutskever"
+                },
+                {
+                    "authorId": "1695689",
+                    "name": "Geoffrey E. Hinton"
+                }
+            ],
+            "doi": "10.1145/3065386",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "abd1c342495432171beb7ca8fd9551ef13cbd0ff",
+            "title": "ImageNet classification with deep convolutional neural networks",
+            "url": "https://www.semanticscholar.org/paper/abd1c342495432171beb7ca8fd9551ef13cbd0ff",
+            "venue": "Commun. ACM",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2073603971",
+                    "name": "Vinod Nair"
+                },
+                {
+                    "authorId": "1695689",
+                    "name": "Geoffrey E. Hinton"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "a538b05ebb01a40323997629e171c91aa28b8e2f",
+            "title": "Rectified Linear Units Improve Restricted Boltzmann Machines",
+            "url": "https://www.semanticscholar.org/paper/a538b05ebb01a40323997629e171c91aa28b8e2f",
+            "venue": "ICML",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1825772447",
+                    "name": "Xuan-Thuy Vo"
+                },
+                {
+                    "authorId": "9714757",
+                    "name": "Duy-Linh Nguyen"
+                },
+                {
+                    "authorId": "2176891299",
+                    "name": "Adri Priadana"
+                },
+                {
+                    "authorId": "2237999594",
+                    "name": "Kanghyun Jo"
+                }
+            ],
+            "doi": "10.1007/978-981-99-4914-4_4",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "281e39bb17653cf6009a281ab3d16c6701669972",
+            "title": "Dynamic Circular Convolution for Image Classification",
+            "url": "https://www.semanticscholar.org/paper/281e39bb17653cf6009a281ab3d16c6701669972",
+            "venue": "IW-FCV",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "39358728",
+                    "name": "Yongming Rao"
+                },
+                {
+                    "authorId": "2118223312",
+                    "name": "Wenliang Zhao"
+                },
+                {
+                    "authorId": "48128428",
+                    "name": "Jie Zhou"
+                },
+                {
+                    "authorId": "1697700",
+                    "name": "Jiwen Lu"
+                }
+            ],
+            "doi": "10.1007/978-3-031-19803-8_4",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "d025c050d45f15d5fb51c6b3f61f13f5dc4bff60",
+            "title": "AMixer: Adaptive Weight Mixing for Self-attention Free Vision Transformers",
+            "url": "https://www.semanticscholar.org/paper/d025c050d45f15d5fb51c6b3f61f13f5dc4bff60",
+            "venue": "ECCV",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "63f1f2dad0a2e84d37a97258008c5609195487f0",
+            "title": "Scaling Up Your Kernels to 31x31: Revisiting Large Kernel Design in CNNs",
+            "url": "https://www.semanticscholar.org/paper/63f1f2dad0a2e84d37a97258008c5609195487f0",
+            "venue": "",
+            "year": 2022
+        },
+        {
+            "arxivId": "2103.14030",
+            "authors": [
+                {
+                    "authorId": "2109371439",
+                    "name": "Ze Liu"
+                },
+                {
+                    "authorId": "51091819",
+                    "name": "Yutong Lin"
+                },
+                {
+                    "authorId": "2112823372",
+                    "name": "Yue Cao"
+                },
+                {
+                    "authorId": "1823518756",
+                    "name": "Han Hu"
+                },
+                {
+                    "authorId": "2107995927",
+                    "name": "Yixuan Wei"
+                },
+                {
+                    "authorId": "2148904543",
+                    "name": "Zheng Zhang"
+                },
+                {
+                    "authorId": "145676588",
+                    "name": "Stephen Lin"
+                },
+                {
+                    "authorId": "2261753424",
+                    "name": "B. Guo"
+                }
+            ],
+            "doi": "10.1109/ICCV48922.2021.00986",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c8b25fab5608c3e033d34b4483ec47e68ba109b7",
+            "title": "Swin Transformer: Hierarchical Vision Transformer using Shifted Windows",
+            "url": "https://www.semanticscholar.org/paper/c8b25fab5608c3e033d34b4483ec47e68ba109b7",
+            "venue": "2021 IEEE/CVF International Conference on Computer Vision (ICCV)",
+            "year": 2021
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "FFT-based Dynamic Token Mixer for Vision",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/54b330de40291611da2188c2ebce1ab2c0725348",
+    "venue": "AAAI Conference on Artificial Intelligence",
+    "year": 2023
+}

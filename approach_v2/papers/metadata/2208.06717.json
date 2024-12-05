@@ -1,0 +1,787 @@
+{
+    "abstract": "A longstanding challenge surrounding deep learning algorithms is unpacking and understanding how they make their decisions. Explainable Artificial Intelligence (XAI) offers methods to provide explanations of internal functions of algorithms and reasons behind their decisions in ways that are interpretable and understandable to human users. . Numerous XAI approaches have been developed thus far, and a comparative analysis of these strategies seems necessary to discern their relevance to clinical prediction models. To this end, we first implemented two prediction models for short- and long-term outcomes of traumatic brain injury (TBI) utilizing structured tabular as well as time-series physiologic data, respectively. Six different interpretation techniques were used to describe both prediction models at the local and global levels. We then performed a critical analysis of merits and drawbacks of each strategy, highlighting the implications for researchers who are interested in applying these methodologies. The implemented methods were compared to one another in terms of several XAI characteristics such as understandability, fidelity, and stability. Our findings show that SHAP is the most stable with the highest fidelity but falls short of understandability. Anchors, on the other hand, is the most understandable approach, but it is only applicable to tabular data and not time series data.",
+    "arxivId": "2208.06717",
+    "authors": [
+        {
+            "authorId": "133637503",
+            "name": "Amin Nayebi",
+            "url": "https://www.semanticscholar.org/author/133637503"
+        },
+        {
+            "authorId": "2121914227",
+            "name": "Sindhu Tipirneni",
+            "url": "https://www.semanticscholar.org/author/2121914227"
+        },
+        {
+            "authorId": "4371386",
+            "name": "B. Foreman",
+            "url": "https://www.semanticscholar.org/author/4371386"
+        },
+        {
+            "authorId": "144417522",
+            "name": "Chandan K. Reddy",
+            "url": "https://www.semanticscholar.org/author/144417522"
+        },
+        {
+            "authorId": "4965840",
+            "name": "V. Subbian",
+            "url": "https://www.semanticscholar.org/author/4965840"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "118180241",
+                    "name": "F. D. C. Silva"
+                },
+                {
+                    "authorId": "9353385",
+                    "name": "Rodrigo M. Feitosa"
+                },
+                {
+                    "authorId": "2193838071",
+                    "name": "Luiz A. Batista"
+                },
+                {
+                    "authorId": "144829997",
+                    "name": "A. M. Santana"
+                }
+            ],
+            "doi": "10.5753/sbie.2024.244433",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "1399b5eb4ede25910173d971e91b433edc92d7cc",
+            "title": "An\u00e1lise comparativa de m\u00e9todos de explicabilidade da Intelig\u00eancia Artificial no cen\u00e1rio educacional: um estudo de caso sobre evas\u00e3o",
+            "url": "https://www.semanticscholar.org/paper/1399b5eb4ede25910173d971e91b433edc92d7cc",
+            "venue": "Anais do XXXV Simp\u00f3sio Brasileiro de Inform\u00e1tica na Educa\u00e7\u00e3o (SBIE 2024)",
+            "year": 2024
+        },
+        {
+            "arxivId": "2211.06507",
+            "authors": [
+                {
+                    "authorId": "133637503",
+                    "name": "Amin Nayebi"
+                },
+                {
+                    "authorId": "2121914227",
+                    "name": "Sindhu Tipirneni"
+                },
+                {
+                    "authorId": "144417522",
+                    "name": "Chandan K. Reddy"
+                },
+                {
+                    "authorId": "4371386",
+                    "name": "B. Foreman"
+                },
+                {
+                    "authorId": "4965840",
+                    "name": "V. Subbian"
+                }
+            ],
+            "doi": "10.48550/arXiv.2211.06507",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "51cd861e87e1611c44e5d61c283d3b2e1281a7ea",
+            "title": "WindowSHAP: An Efficient Framework for Explaining Time-series Classifiers based on Shapley Values",
+            "url": "https://www.semanticscholar.org/paper/51cd861e87e1611c44e5d61c283d3b2e1281a7ea",
+            "venue": "J. Biomed. Informatics",
+            "year": 2022
+        }
+    ],
+    "corpusId": 251564262,
+    "doi": "10.48550/arXiv.2208.06717",
+    "fieldsOfStudy": [
+        "Medicine",
+        "Computer Science"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": true,
+    "isPublisherLicensed": true,
+    "is_open_access": true,
+    "is_publisher_licensed": true,
+    "numCitedBy": 2,
+    "numCiting": 24,
+    "paperId": "2fff5c72fea93420204776adb4e7206c96c396be",
+    "references": [
+        {
+            "arxivId": "2011.11631",
+            "authors": [
+                {
+                    "authorId": "2058059560",
+                    "name": "Tsung-Yu Hsieh"
+                },
+                {
+                    "authorId": "2893721",
+                    "name": "Suhang Wang"
+                },
+                {
+                    "authorId": "1474741004",
+                    "name": "Yiwei Sun"
+                },
+                {
+                    "authorId": "145513516",
+                    "name": "Vasant G Honavar"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "1fef3d26b37149b5095d8b415f1830faebbe5675",
+            "title": "Explainable Multivariate Time Series Classification: A Deep Neural Network Which Learns To Attend To Important Variables As Well As Informative Time Intervals",
+            "url": "https://www.semanticscholar.org/paper/1fef3d26b37149b5095d8b415f1830faebbe5675",
+            "venue": "ArXiv",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2108079176",
+                    "name": "Xianli Zhang"
+                },
+                {
+                    "authorId": "39835284",
+                    "name": "B. Qian"
+                },
+                {
+                    "authorId": "46387279",
+                    "name": "Shilei Cao"
+                },
+                {
+                    "authorId": "2154901370",
+                    "name": "Yang Li"
+                },
+                {
+                    "authorId": "2145252809",
+                    "name": "Hang Chen"
+                },
+                {
+                    "authorId": "1890905492",
+                    "name": "Yefeng Zheng"
+                },
+                {
+                    "authorId": "143763341",
+                    "name": "I. Davidson"
+                }
+            ],
+            "doi": "10.1145/3394486.3403087",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c7a3232714c3a7105446bc1ee24be1ad6dd315c1",
+            "title": "INPREM: An Interpretable and Trustworthy Predictive Model for Healthcare",
+            "url": "https://www.semanticscholar.org/paper/c7a3232714c3a7105446bc1ee24be1ad6dd315c1",
+            "venue": "KDD",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "27032213",
+                    "name": "Colin G. Walsh"
+                },
+                {
+                    "authorId": "145813698",
+                    "name": "B. Chaudhry"
+                },
+                {
+                    "authorId": "13904066",
+                    "name": "Prerna Dua"
+                },
+                {
+                    "authorId": "13141317",
+                    "name": "K. Goodman"
+                },
+                {
+                    "authorId": "144503802",
+                    "name": "B. Kaplan"
+                },
+                {
+                    "authorId": "1711213",
+                    "name": "Ramakanth Kavuluru"
+                },
+                {
+                    "authorId": "2955720",
+                    "name": "A. Solomonides"
+                },
+                {
+                    "authorId": "4965840",
+                    "name": "V. Subbian"
+                }
+            ],
+            "doi": "10.1093/jamiaopen/ooz054",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e8fff111d5c698312884585bf19982b5301c8000",
+            "title": "Stigma, biomarkers, and algorithmic bias: recommendations for precision behavioral health with artificial intelligence",
+            "url": "https://www.semanticscholar.org/paper/e8fff111d5c698312884585bf19982b5301c8000",
+            "venue": "JAMIA open",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "33791144",
+                    "name": "D. V. Carvalho"
+                },
+                {
+                    "authorId": "35153466",
+                    "name": "E. M. Pereira"
+                },
+                {
+                    "authorId": "3698192",
+                    "name": "Jaime S. Cardoso"
+                }
+            ],
+            "doi": "10.3390/ELECTRONICS8080832",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "46c266b3d1274dacd7fce27ee8cb4d587f087a58",
+            "title": "Machine Learning Interpretability: A Survey on Methods and Metrics",
+            "url": "https://www.semanticscholar.org/paper/46c266b3d1274dacd7fce27ee8cb4d587f087a58",
+            "venue": "Electronics",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "9139705",
+                    "name": "Amina Adadi"
+                },
+                {
+                    "authorId": "50487490",
+                    "name": "M. Berrada"
+                }
+            ],
+            "doi": "10.1109/ACCESS.2018.2870052",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "21dff47a4142445f83016da0819ffe6dd2947f66",
+            "title": "Peeking Inside the Black-Box: A Survey on Explainable Artificial Intelligence (XAI)",
+            "url": "https://www.semanticscholar.org/paper/21dff47a4142445f83016da0819ffe6dd2947f66",
+            "venue": "IEEE Access",
+            "year": 2018
+        },
+        {
+            "arxivId": "1806.07538",
+            "authors": [
+                {
+                    "authorId": "1390096054",
+                    "name": "David Alvarez-Melis"
+                },
+                {
+                    "authorId": "35132120",
+                    "name": "T. Jaakkola"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "0cf102da6dd4276115c63cbb6797f24ed450fea1",
+            "title": "Towards Robust Interpretability with Self-Explaining Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/0cf102da6dd4276115c63cbb6797f24ed450fea1",
+            "venue": "NeurIPS",
+            "year": 2018
+        },
+        {
+            "arxivId": "1806.00069",
+            "authors": [
+                {
+                    "authorId": "145019478",
+                    "name": "Leilani H. Gilpin"
+                },
+                {
+                    "authorId": "144159726",
+                    "name": "David Bau"
+                },
+                {
+                    "authorId": "144002190",
+                    "name": "Ben Z. Yuan"
+                },
+                {
+                    "authorId": "50397921",
+                    "name": "Ayesha Bajwa"
+                },
+                {
+                    "authorId": "144417360",
+                    "name": "Michael A. Specter"
+                },
+                {
+                    "authorId": "1735243",
+                    "name": "Lalana Kagal"
+                }
+            ],
+            "doi": "10.1109/DSAA.2018.00018",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d7701e78e0bfc92b03a89582e80cfb751ac03f26",
+            "title": "Explaining Explanations: An Overview of Interpretability of Machine Learning",
+            "url": "https://www.semanticscholar.org/paper/d7701e78e0bfc92b03a89582e80cfb751ac03f26",
+            "venue": "2018 IEEE 5th International Conference on Data Science and Advanced Analytics (DSAA)",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "78846919",
+                    "name": "Marco Tulio Ribeiro"
+                },
+                {
+                    "authorId": "34650964",
+                    "name": "Sameer Singh"
+                },
+                {
+                    "authorId": "1730156",
+                    "name": "Carlos Guestrin"
+                }
+            ],
+            "doi": "10.1609/aaai.v32i1.11491",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "1d8f4f76ac6534627ef8a1c24b9937d8ab2a5c5f",
+            "title": "Anchors: High-Precision Model-Agnostic Explanations",
+            "url": "https://www.semanticscholar.org/paper/1d8f4f76ac6534627ef8a1c24b9937d8ab2a5c5f",
+            "venue": "AAAI",
+            "year": 2018
+        },
+        {
+            "arxivId": "1803.04765",
+            "authors": [
+                {
+                    "authorId": "1967156",
+                    "name": "Nicolas Papernot"
+                },
+                {
+                    "authorId": "144061974",
+                    "name": "P. Mcdaniel"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "2b50026b7b1054ef8e3643fcd7ef89d7b278a068",
+            "title": "Deep k-Nearest Neighbors: Towards Confident, Interpretable and Robust Deep Learning",
+            "url": "https://www.semanticscholar.org/paper/2b50026b7b1054ef8e3643fcd7ef89d7b278a068",
+            "venue": "ArXiv",
+            "year": 2018
+        },
+        {
+            "arxivId": "1711.00399",
+            "authors": [
+                {
+                    "authorId": "12806133",
+                    "name": "Sandra Wachter"
+                },
+                {
+                    "authorId": "3127701",
+                    "name": "B. Mittelstadt"
+                },
+                {
+                    "authorId": "2052380526",
+                    "name": "Chris Russell"
+                }
+            ],
+            "doi": "10.2139/ssrn.3063289",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "4f309712e705210df5695240a5d5fb53ea1f8641",
+            "title": "Counterfactual Explanations Without Opening the Black Box: Automated Decisions and the GDPR",
+            "url": "https://www.semanticscholar.org/paper/4f309712e705210df5695240a5d5fb53ea1f8641",
+            "venue": "ArXiv",
+            "year": 2017
+        },
+        {
+            "arxivId": "1708.08296",
+            "authors": [
+                {
+                    "authorId": "1699054",
+                    "name": "W. Samek"
+                },
+                {
+                    "authorId": "1745395",
+                    "name": "T. Wiegand"
+                },
+                {
+                    "authorId": "145034054",
+                    "name": "K. M\u00fcller"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "58e0ca33ae3068fee7005f339bf6c444fc17d55f",
+            "title": "Explainable Artificial Intelligence: Understanding, Visualizing and Interpreting Deep Learning Models",
+            "url": "https://www.semanticscholar.org/paper/58e0ca33ae3068fee7005f339bf6c444fc17d55f",
+            "venue": "ArXiv",
+            "year": 2017
+        },
+        {
+            "arxivId": "1705.07874",
+            "authors": [
+                {
+                    "authorId": "23451726",
+                    "name": "Scott M. Lundberg"
+                },
+                {
+                    "authorId": "2180463",
+                    "name": "Su-In Lee"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "442e10a3c6640ded9408622005e3c2a8906ce4c2",
+            "title": "A Unified Approach to Interpreting Model Predictions",
+            "url": "https://www.semanticscholar.org/paper/442e10a3c6640ded9408622005e3c2a8906ce4c2",
+            "venue": "NIPS",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2115490195",
+                    "name": "Christopher A Taylor"
+                },
+                {
+                    "authorId": "28005960",
+                    "name": "Jeneita M. Bell"
+                },
+                {
+                    "authorId": "4687101",
+                    "name": "M. Breiding"
+                },
+                {
+                    "authorId": "4594481",
+                    "name": "Likang Xu"
+                }
+            ],
+            "doi": "10.15585/mmwr.ss6609a1",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "adda0e40b086d2cde64ae705f34b50082e27f444",
+            "title": "Traumatic Brain Injury\u2013Related Emergency Department Visits, Hospitalizations, and Deaths \u2014 United States, 2007 and 2013",
+            "url": "https://www.semanticscholar.org/paper/adda0e40b086d2cde64ae705f34b50082e27f444",
+            "venue": "Morbidity and mortality weekly report. Surveillance summaries",
+            "year": 2017
+        },
+        {
+            "arxivId": "1702.08608",
+            "authors": [
+                {
+                    "authorId": "1388372395",
+                    "name": "F. Doshi-Velez"
+                },
+                {
+                    "authorId": "3351164",
+                    "name": "Been Kim"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5c39e37022661f81f79e481240ed9b175dec6513",
+            "title": "Towards A Rigorous Science of Interpretable Machine Learning",
+            "url": "https://www.semanticscholar.org/paper/5c39e37022661f81f79e481240ed9b175dec6513",
+            "venue": "",
+            "year": 2017
+        },
+        {
+            "arxivId": "1702.01226",
+            "authors": [
+                {
+                    "authorId": "48641970",
+                    "name": "Shixia Liu"
+                },
+                {
+                    "authorId": "2108045320",
+                    "name": "Xiting Wang"
+                },
+                {
+                    "authorId": "145823303",
+                    "name": "Mengchen Liu"
+                },
+                {
+                    "authorId": "145254043",
+                    "name": "Jun Zhu"
+                }
+            ],
+            "doi": "10.1016/J.VISINF.2017.01.006",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9bd71d6b87d9e5b8394dc6bc8bc2fca7b7deb083",
+            "title": "Towards better analysis of machine learning models: A visual analytics perspective",
+            "url": "https://www.semanticscholar.org/paper/9bd71d6b87d9e5b8394dc6bc8bc2fca7b7deb083",
+            "venue": "Vis. Informatics",
+            "year": 2017
+        },
+        {
+            "arxivId": "1608.05745",
+            "authors": [
+                {
+                    "authorId": "3242613",
+                    "name": "E. Choi"
+                },
+                {
+                    "authorId": "2342604",
+                    "name": "M. T. Bahadori"
+                },
+                {
+                    "authorId": "1738536",
+                    "name": "Jimeng Sun"
+                },
+                {
+                    "authorId": "3959063",
+                    "name": "Joshua A. Kulas"
+                },
+                {
+                    "authorId": "20079790",
+                    "name": "A. Schuetz"
+                },
+                {
+                    "authorId": "49523072",
+                    "name": "W. Stewart"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "e8e9125704edbcf73999f2f452fe4a701163d6b6",
+            "title": "RETAIN: An Interpretable Predictive Model for Healthcare using Reverse Time Attention Mechanism",
+            "url": "https://www.semanticscholar.org/paper/e8e9125704edbcf73999f2f452fe4a701163d6b6",
+            "venue": "NIPS",
+            "year": 2016
+        },
+        {
+            "arxivId": "1602.04938",
+            "authors": [
+                {
+                    "authorId": "78846919",
+                    "name": "Marco Tulio Ribeiro"
+                },
+                {
+                    "authorId": "34650964",
+                    "name": "Sameer Singh"
+                },
+                {
+                    "authorId": "1730156",
+                    "name": "Carlos Guestrin"
+                }
+            ],
+            "doi": "10.1145/2939672.2939778",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c0883f5930a232a9c1ad601c978caede29155979",
+            "title": "\u201cWhy Should I Trust You?\u201d: Explaining the Predictions of Any Classifier",
+            "url": "https://www.semanticscholar.org/paper/c0883f5930a232a9c1ad601c978caede29155979",
+            "venue": "NAACL",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2619415",
+                    "name": "J. Yue"
+                },
+                {
+                    "authorId": "48758759",
+                    "name": "M. Vassar"
+                },
+                {
+                    "authorId": "1962843",
+                    "name": "Hester F. Lingsma"
+                },
+                {
+                    "authorId": "3126715",
+                    "name": "Shelly R. Cooper"
+                },
+                {
+                    "authorId": "3210975",
+                    "name": "D. Okonkwo"
+                },
+                {
+                    "authorId": "2571370",
+                    "name": "A. Valadka"
+                },
+                {
+                    "authorId": "2281292",
+                    "name": "W. Gordon"
+                },
+                {
+                    "authorId": "145934411",
+                    "name": "A. Maas"
+                },
+                {
+                    "authorId": "3326940",
+                    "name": "P. Mukherjee"
+                },
+                {
+                    "authorId": "1996661",
+                    "name": "E. Yuh"
+                },
+                {
+                    "authorId": "2597199",
+                    "name": "A. Puccio"
+                },
+                {
+                    "authorId": "145331233",
+                    "name": "David M Schnyer"
+                },
+                {
+                    "authorId": "3052763",
+                    "name": "G. Manley"
+                }
+            ],
+            "doi": "10.1089/neu.2013.2970",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "01321e1d37084413e0b04bf39a4a92c0c93a3e96",
+            "title": "Transforming research and clinical knowledge in traumatic brain injury pilot: multicenter implementation of the common data elements for traumatic brain injury.",
+            "url": "https://www.semanticscholar.org/paper/01321e1d37084413e0b04bf39a4a92c0c93a3e96",
+            "venue": "Journal of neurotrauma",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3153325",
+                    "name": "M. Lent"
+                },
+                {
+                    "authorId": "2053187711",
+                    "name": "William Fisher"
+                },
+                {
+                    "authorId": "2073340858",
+                    "name": "Michael Mancuso"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d1c91fdf066b9195a25626e903ce55765dde0387",
+            "title": "An Explainable Artificial Intelligence System for Small-unit Tactical Behavior",
+            "url": "https://www.semanticscholar.org/paper/d1c91fdf066b9195a25626e903ce55765dde0387",
+            "venue": "AAAI",
+            "year": 2004
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3056361",
+                    "name": "J. Friedman"
+                }
+            ],
+            "doi": "10.1214/AOS/1013203451",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "1679beddda3a183714d380e944fe6bf586c083cd",
+            "title": "Greedy function approximation: A gradient boosting machine.",
+            "url": "https://www.semanticscholar.org/paper/1679beddda3a183714d380e944fe6bf586c083cd",
+            "venue": "",
+            "year": 2001
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "39733155",
+                    "name": "J. Jeyakumar"
+                },
+                {
+                    "authorId": "40202217",
+                    "name": "Joseph Noor"
+                },
+                {
+                    "authorId": "2031448014",
+                    "name": "Yu-Hsi Cheng"
+                },
+                {
+                    "authorId": "2111899429",
+                    "name": "Luis Garcia"
+                },
+                {
+                    "authorId": "1702254",
+                    "name": "M. Srivastava"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "3f9474022c113b087cb0ccb65ddea05672e22745",
+            "title": "How Can I Explain This to You? An Empirical Study of Deep Neural Network Explanation Methods",
+            "url": "https://www.semanticscholar.org/paper/3f9474022c113b087cb0ccb65ddea05672e22745",
+            "venue": "NeurIPS",
+            "year": 2020
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Medicine",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Medicine",
+            "source": "s2-fos-model"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "An Empirical Comparison of Explainable Artificial Intelligence Methods for Clinical Data: A Case Study on Traumatic Brain Injury",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/2fff5c72fea93420204776adb4e7206c96c396be",
+    "venue": "American Medical Informatics Association Annual Symposium",
+    "year": 2022
+}

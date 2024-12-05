@@ -1,0 +1,1578 @@
+{
+    "abstract": "Autoregressive generative models can estimate complex continuous data distributions, like trajectory rollouts in an RL environment, image intensities, and audio. Most state-of-the-art models discretize continuous data into several bins and use categorical distributions over the bins to approximate the continuous data distribution. The advantage is that the categorical distribution can easily express multiple modes and are straightforward to optimize. However, such approximation cannot express sharp changes in density without using significantly more bins, making it parameter inefficient. We propose an efficient, expressive, multimodal parameterization called Adaptive Categorical Discretization (AdaCat). AdaCat discretizes each dimension of an autoregressive model adaptively, which allows the model to allocate density to fine intervals of interest, improving parameter efficiency. AdaCat generalizes both categoricals and quantile-based regression. AdaCat is a simple add-on to any discretization-based distribution estimator. In experiments, AdaCat improves density estimation for real-world tabular data, images, audio, and trajectories, and improves planning in model-based offline RL.",
+    "arxivId": "2208.02246",
+    "authors": [
+        {
+            "authorId": "8194287",
+            "name": "Qiyang Li",
+            "url": "https://www.semanticscholar.org/author/8194287"
+        },
+        {
+            "authorId": "1623995772",
+            "name": "Ajay Jain",
+            "url": "https://www.semanticscholar.org/author/1623995772"
+        },
+        {
+            "authorId": "1689992",
+            "name": "P. Abbeel",
+            "url": "https://www.semanticscholar.org/author/1689992"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": "2410.02548",
+            "authors": [
+                {
+                    "authorId": "2153075849",
+                    "name": "Chen Xu"
+                },
+                {
+                    "authorId": "2257834732",
+                    "name": "Xiuyuan Cheng"
+                },
+                {
+                    "authorId": "2107763074",
+                    "name": "Yao Xie"
+                }
+            ],
+            "doi": "10.48550/arXiv.2410.02548",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "369b01f13c6eadf7dc778e639c0da71d518e774d",
+            "title": "Local Flow Matching Generative Models",
+            "url": "https://www.semanticscholar.org/paper/369b01f13c6eadf7dc778e639c0da71d518e774d",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": "2211.07447",
+            "authors": [
+                {
+                    "authorId": "2190750251",
+                    "name": "Adam Khakhar"
+                },
+                {
+                    "authorId": "47619311",
+                    "name": "Jacob Buckman"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "8905778ae2d3e7eeec2418e38e1855ca4ab73eac",
+            "title": "Neural Regression For Scale-Varying Targets",
+            "url": "https://www.semanticscholar.org/paper/8905778ae2d3e7eeec2418e38e1855ca4ab73eac",
+            "venue": "",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2190750251",
+                    "name": "Adam Khakhar"
+                },
+                {
+                    "authorId": "47619311",
+                    "name": "Jacob Buckman"
+                }
+            ],
+            "doi": "10.48550/arXiv.2211.07447",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8a116bc77734c516b59bfb7ea93523c15344123d",
+            "title": "Deep Autoregressive Regression",
+            "url": "https://www.semanticscholar.org/paper/8a116bc77734c516b59bfb7ea93523c15344123d",
+            "venue": "ArXiv",
+            "year": 2022
+        }
+    ],
+    "corpusId": 249070292,
+    "doi": "10.48550/arXiv.2208.02246",
+    "fieldsOfStudy": [
+        "Computer Science",
+        "Mathematics"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": true,
+    "isPublisherLicensed": true,
+    "is_open_access": true,
+    "is_publisher_licensed": true,
+    "numCitedBy": 3,
+    "numCiting": 57,
+    "paperId": "06a1a152af5764583e08c1e9f538a620267b3891",
+    "references": [
+        {
+            "arxivId": "2107.00630",
+            "authors": [
+                {
+                    "authorId": "2117266525",
+                    "name": "Diederik P. Kingma"
+                },
+                {
+                    "authorId": "2117261512",
+                    "name": "Tim Salimans"
+                },
+                {
+                    "authorId": "2117259766",
+                    "name": "Ben Poole"
+                },
+                {
+                    "authorId": "2112615253",
+                    "name": "Jonathan Ho"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "94bcd712aed610b8eaeccc57136d65ec988356f2",
+            "title": "Variational Diffusion Models",
+            "url": "https://www.semanticscholar.org/paper/94bcd712aed610b8eaeccc57136d65ec988356f2",
+            "venue": "ArXiv",
+            "year": 2021
+        },
+        {
+            "arxivId": "2106.04741",
+            "authors": [
+                {
+                    "authorId": "32994625",
+                    "name": "D. Gilboa"
+                },
+                {
+                    "authorId": "3314041",
+                    "name": "Ari Pakman"
+                },
+                {
+                    "authorId": "2832747",
+                    "name": "Thibault Vatter"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "fa85f58587f53bd1d3ef0ca500f580f3c39cc4d4",
+            "title": "Marginalizable Density Models",
+            "url": "https://www.semanticscholar.org/paper/fa85f58587f53bd1d3ef0ca500f580f3c39cc4d4",
+            "venue": "ArXiv",
+            "year": 2021
+        },
+        {
+            "arxivId": "2106.02039",
+            "authors": [
+                {
+                    "authorId": "35163402",
+                    "name": "Michael Janner"
+                },
+                {
+                    "authorId": "8194287",
+                    "name": "Qiyang Li"
+                },
+                {
+                    "authorId": "1736651",
+                    "name": "S. Levine"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f864d4d2267abba15eb43db54f58286aef78292b",
+            "title": "Offline Reinforcement Learning as One Big Sequence Modeling Problem",
+            "url": "https://www.semanticscholar.org/paper/f864d4d2267abba15eb43db54f58286aef78292b",
+            "venue": "NeurIPS",
+            "year": 2021
+        },
+        {
+            "arxivId": "2011.14141",
+            "authors": [
+                {
+                    "authorId": "145355558",
+                    "name": "S. Bhat"
+                },
+                {
+                    "authorId": "2092067",
+                    "name": "Ibraheem Alhashim"
+                },
+                {
+                    "authorId": "1798011",
+                    "name": "Peter Wonka"
+                }
+            ],
+            "doi": "10.1109/CVPR46437.2021.00400",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "9717f7d873859ca0080caf944f7a2d9b456be121",
+            "title": "AdaBins: Depth Estimation Using Adaptive Bins",
+            "url": "https://www.semanticscholar.org/paper/9717f7d873859ca0080caf944f7a2d9b456be121",
+            "venue": "2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2020
+        },
+        {
+            "arxivId": "2009.09761",
+            "authors": [
+                {
+                    "authorId": "33470361",
+                    "name": "Zhifeng Kong"
+                },
+                {
+                    "authorId": "2056440915",
+                    "name": "Wei Ping"
+                },
+                {
+                    "authorId": "34060310",
+                    "name": "Jiaji Huang"
+                },
+                {
+                    "authorId": "2074107557",
+                    "name": "Kexin Zhao"
+                },
+                {
+                    "authorId": "2301680",
+                    "name": "Bryan Catanzaro"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "34bf13e58c7226d615afead0c0f679432502940e",
+            "title": "DiffWave: A Versatile Diffusion Model for Audio Synthesis",
+            "url": "https://www.semanticscholar.org/paper/34bf13e58c7226d615afead0c0f679432502940e",
+            "venue": "ICLR",
+            "year": 2020
+        },
+        {
+            "arxivId": "2009.00713",
+            "authors": [
+                {
+                    "authorId": "34507928",
+                    "name": "Nanxin Chen"
+                },
+                {
+                    "authorId": "2153632494",
+                    "name": "Yu Zhang"
+                },
+                {
+                    "authorId": "1691713",
+                    "name": "H. Zen"
+                },
+                {
+                    "authorId": "39571582",
+                    "name": "Ron J. Weiss"
+                },
+                {
+                    "authorId": "144739074",
+                    "name": "Mohammad Norouzi"
+                },
+                {
+                    "authorId": "144333684",
+                    "name": "William Chan"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "685af6d2bcdff7170574643b2c5ab4fbcc36f597",
+            "title": "WaveGrad: Estimating Gradients for Waveform Generation",
+            "url": "https://www.semanticscholar.org/paper/685af6d2bcdff7170574643b2c5ab4fbcc36f597",
+            "venue": "ICLR",
+            "year": 2020
+        },
+        {
+            "arxivId": "2007.11091",
+            "authors": [
+                {
+                    "authorId": "81419386",
+                    "name": "Seyed Kamyar Seyed Ghasemipour"
+                },
+                {
+                    "authorId": "50319359",
+                    "name": "D. Schuurmans"
+                },
+                {
+                    "authorId": "2046135",
+                    "name": "S. Gu"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "fa7f88f77de02ae9389e514a1cd13083a624ec78",
+            "title": "EMaQ: Expected-Max Q-Learning Operator for Simple Yet Effective Offline and Online RL",
+            "url": "https://www.semanticscholar.org/paper/fa7f88f77de02ae9389e514a1cd13083a624ec78",
+            "venue": "ICML",
+            "year": 2020
+        },
+        {
+            "arxivId": "2006.12486",
+            "authors": [
+                {
+                    "authorId": "1623995772",
+                    "name": "Ajay Jain"
+                },
+                {
+                    "authorId": "1689992",
+                    "name": "P. Abbeel"
+                },
+                {
+                    "authorId": "38236002",
+                    "name": "Deepak Pathak"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e8ef25aad3ca7a36c586a8ed374dc0b5577b128e",
+            "title": "Locally Masked Convolution for Autoregressive Models",
+            "url": "https://www.semanticscholar.org/paper/e8ef25aad3ca7a36c586a8ed374dc0b5577b128e",
+            "venue": "UAI",
+            "year": 2020
+        },
+        {
+            "arxivId": "2006.11239",
+            "authors": [
+                {
+                    "authorId": "2126278",
+                    "name": "Jonathan Ho"
+                },
+                {
+                    "authorId": "1623995772",
+                    "name": "Ajay Jain"
+                },
+                {
+                    "authorId": "1689992",
+                    "name": "P. Abbeel"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5c126ae3421f05768d8edd97ecd44b1364e2c99a",
+            "title": "Denoising Diffusion Probabilistic Models",
+            "url": "https://www.semanticscholar.org/paper/5c126ae3421f05768d8edd97ecd44b1364e2c99a",
+            "venue": "NeurIPS",
+            "year": 2020
+        },
+        {
+            "arxivId": "2006.10739",
+            "authors": [
+                {
+                    "authorId": "7638730",
+                    "name": "Matthew Tancik"
+                },
+                {
+                    "authorId": "2179732",
+                    "name": "Pratul P. Srinivasan"
+                },
+                {
+                    "authorId": "2577533",
+                    "name": "B. Mildenhall"
+                },
+                {
+                    "authorId": "1405260934",
+                    "name": "Sara Fridovich-Keil"
+                },
+                {
+                    "authorId": "1752583931",
+                    "name": "N. Raghavan"
+                },
+                {
+                    "authorId": "34886103",
+                    "name": "Utkarsh Singhal"
+                },
+                {
+                    "authorId": "1752236",
+                    "name": "R. Ramamoorthi"
+                },
+                {
+                    "authorId": "50329510",
+                    "name": "J. Barron"
+                },
+                {
+                    "authorId": "47383180",
+                    "name": "Ren Ng"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "a0dc3135c40e150f0271002a96b7c9680b6cac40",
+            "title": "Fourier Features Let Networks Learn High Frequency Functions in Low Dimensional Domains",
+            "url": "https://www.semanticscholar.org/paper/a0dc3135c40e150f0271002a96b7c9680b6cac40",
+            "venue": "NeurIPS",
+            "year": 2020
+        },
+        {
+            "arxivId": "2004.07219",
+            "authors": [
+                {
+                    "authorId": "2550764",
+                    "name": "Justin Fu"
+                },
+                {
+                    "authorId": "1488785534",
+                    "name": "Aviral Kumar"
+                },
+                {
+                    "authorId": "7624658",
+                    "name": "Ofir Nachum"
+                },
+                {
+                    "authorId": "145499435",
+                    "name": "G. Tucker"
+                },
+                {
+                    "authorId": "1736651",
+                    "name": "S. Levine"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "a326d9f2d2d351001fece788165dbcbb524da2e4",
+            "title": "D4RL: Datasets for Deep Data-Driven Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/a326d9f2d2d351001fece788165dbcbb524da2e4",
+            "venue": "ArXiv",
+            "year": 2020
+        },
+        {
+            "arxivId": "2001.11235",
+            "authors": [
+                {
+                    "authorId": "65928943",
+                    "name": "Emiel Hoogeboom"
+                },
+                {
+                    "authorId": "2056266",
+                    "name": "Taco Cohen"
+                },
+                {
+                    "authorId": "1849327",
+                    "name": "Jakub M. Tomczak"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "dac897c7627f4602629f54aff21dc289ac1ace55",
+            "title": "Learning Discrete Distributions by Dequantization",
+            "url": "https://www.semanticscholar.org/paper/dac897c7627f4602629f54aff21dc289ac1ace55",
+            "venue": "ArXiv",
+            "year": 2020
+        },
+        {
+            "arxivId": "2001.02728",
+            "authors": [
+                {
+                    "authorId": "3148665",
+                    "name": "S. Bigdeli"
+                },
+                {
+                    "authorId": "2113477312",
+                    "name": "Geng Lin"
+                },
+                {
+                    "authorId": "21529935",
+                    "name": "Tiziano Portenier"
+                },
+                {
+                    "authorId": "2065190277",
+                    "name": "L. A. Dunbar"
+                },
+                {
+                    "authorId": "1796846",
+                    "name": "Matthias Zwicker"
+                }
+            ],
+            "doi": "10.1109/TNNLS.2023.3308191",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "2636d670bf7526d8fc84566fd40df66f5d9e7b29",
+            "title": "Learning Generative Models using Denoising Density Estimators",
+            "url": "https://www.semanticscholar.org/paper/2636d670bf7526d8fc84566fd40df66f5d9e7b29",
+            "venue": "IEEE transactions on neural networks and learning systems",
+            "year": 2020
+        },
+        {
+            "arxivId": "1910.06711",
+            "authors": [
+                {
+                    "authorId": "2110802467",
+                    "name": "Kundan Kumar"
+                },
+                {
+                    "authorId": "39458024",
+                    "name": "Rithesh Kumar"
+                },
+                {
+                    "authorId": "102540625",
+                    "name": "T. Boissi\u00e8re"
+                },
+                {
+                    "authorId": "120180969",
+                    "name": "L. Gestin"
+                },
+                {
+                    "authorId": "1380272287",
+                    "name": "Wei Zhen Teoh"
+                },
+                {
+                    "authorId": "143778281",
+                    "name": "Jose M. R. Sotelo"
+                },
+                {
+                    "authorId": "2346028",
+                    "name": "A. D. Br\u00e9bisson"
+                },
+                {
+                    "authorId": "1751762",
+                    "name": "Yoshua Bengio"
+                },
+                {
+                    "authorId": "1760871",
+                    "name": "Aaron C. Courville"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "37e52ff4714c7a08900b518127e438a195b84611",
+            "title": "MelGAN: Generative Adversarial Networks for Conditional Waveform Synthesis",
+            "url": "https://www.semanticscholar.org/paper/37e52ff4714c7a08900b518127e438a195b84611",
+            "venue": "NeurIPS",
+            "year": 2019
+        },
+        {
+            "arxivId": "1907.05600",
+            "authors": [
+                {
+                    "authorId": "115504645",
+                    "name": "Yang Song"
+                },
+                {
+                    "authorId": "2490652",
+                    "name": "Stefano Ermon"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "965359b3008ab50dd04e171551220ec0e7f83aba",
+            "title": "Generative Modeling by Estimating Gradients of the Data Distribution",
+            "url": "https://www.semanticscholar.org/paper/965359b3008ab50dd04e171551220ec0e7f83aba",
+            "venue": "NeurIPS",
+            "year": 2019
+        },
+        {
+            "arxivId": "1906.04032",
+            "authors": [
+                {
+                    "authorId": "49089615",
+                    "name": "Conor Durkan"
+                },
+                {
+                    "authorId": "52107090",
+                    "name": "Artur Bekasov"
+                },
+                {
+                    "authorId": "145797336",
+                    "name": "Iain Murray"
+                },
+                {
+                    "authorId": "3065681",
+                    "name": "G. Papamakarios"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "1eeb265595e250cf66751ef9032524386d7a9b32",
+            "title": "Neural Spline Flows",
+            "url": "https://www.semanticscholar.org/paper/1eeb265595e250cf66751ef9032524386d7a9b32",
+            "venue": "NeurIPS",
+            "year": 2019
+        },
+        {
+            "arxivId": "1904.04676",
+            "authors": [
+                {
+                    "authorId": "41019080",
+                    "name": "Nicola De Cao"
+                },
+                {
+                    "authorId": "144889265",
+                    "name": "Ivan Titov"
+                },
+                {
+                    "authorId": "2782694",
+                    "name": "Wilker Aziz"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7376cacab42ec37742ed7c918961e3920fd20d2a",
+            "title": "Block Neural Autoregressive Flow",
+            "url": "https://www.semanticscholar.org/paper/7376cacab42ec37742ed7c918961e3920fd20d2a",
+            "venue": "UAI",
+            "year": 2019
+        },
+        {
+            "arxivId": "1902.00275",
+            "authors": [
+                {
+                    "authorId": "2126278",
+                    "name": "Jonathan Ho"
+                },
+                {
+                    "authorId": "41192764",
+                    "name": "Xi Chen"
+                },
+                {
+                    "authorId": "41207614",
+                    "name": "A. Srinivas"
+                },
+                {
+                    "authorId": "144581158",
+                    "name": "Yan Duan"
+                },
+                {
+                    "authorId": "1689992",
+                    "name": "P. Abbeel"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c8b25a128f4bfd0c79de82c174dd403b2ef6eeb1",
+            "title": "Flow++: Improving Flow-Based Generative Models with Variational Dequantization and Architecture Design",
+            "url": "https://www.semanticscholar.org/paper/c8b25a128f4bfd0c79de82c174dd403b2ef6eeb1",
+            "venue": "ICML",
+            "year": 2019
+        },
+        {
+            "arxivId": "1901.10500",
+            "authors": [
+                {
+                    "authorId": "11501567",
+                    "name": "Yunhao Tang"
+                },
+                {
+                    "authorId": "1703744",
+                    "name": "Shipra Agrawal"
+                }
+            ],
+            "doi": "10.1609/AAAI.V34I04.6059",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "54e0f2c7ddc0a92d4f7f1076141088bca65675d7",
+            "title": "Discretizing Continuous Action Space for On-Policy Optimization",
+            "url": "https://www.semanticscholar.org/paper/54e0f2c7ddc0a92d4f7f1076141088bca65675d7",
+            "venue": "AAAI",
+            "year": 2019
+        },
+        {
+            "arxivId": "1810.01367",
+            "authors": [
+                {
+                    "authorId": "7649077",
+                    "name": "Will Grathwohl"
+                },
+                {
+                    "authorId": "51466615",
+                    "name": "Ricky T. Q. Chen"
+                },
+                {
+                    "authorId": "51012893",
+                    "name": "J. Bettencourt"
+                },
+                {
+                    "authorId": "1701686",
+                    "name": "I. Sutskever"
+                },
+                {
+                    "authorId": "1704657",
+                    "name": "D. Duvenaud"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "8afa6dd9f9ac46462a1fb70a757c4ae1cd45bbf6",
+            "title": "FFJORD: Free-form Continuous Dynamics for Scalable Reversible Generative Models",
+            "url": "https://www.semanticscholar.org/paper/8afa6dd9f9ac46462a1fb70a757c4ae1cd45bbf6",
+            "venue": "ICLR",
+            "year": 2018
+        },
+        {
+            "arxivId": "1804.00779",
+            "authors": [
+                {
+                    "authorId": "2144639252",
+                    "name": "Chin-Wei Huang"
+                },
+                {
+                    "authorId": "145055042",
+                    "name": "David Krueger"
+                },
+                {
+                    "authorId": "8651990",
+                    "name": "Alexandre Lacoste"
+                },
+                {
+                    "authorId": "1760871",
+                    "name": "Aaron C. Courville"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f07d6814c33cd3384354a29d1d413b10540b10b3",
+            "title": "Neural Autoregressive Flows",
+            "url": "https://www.semanticscholar.org/paper/f07d6814c33cd3384354a29d1d413b10540b10b3",
+            "venue": "ICML",
+            "year": 2018
+        },
+        {
+            "arxivId": "1801.09819",
+            "authors": [
+                {
+                    "authorId": "143930995",
+                    "name": "Junier B. Oliva"
+                },
+                {
+                    "authorId": "89890133",
+                    "name": "Kumar Avinava Dubey"
+                },
+                {
+                    "authorId": "1771307",
+                    "name": "M. Zaheer"
+                },
+                {
+                    "authorId": "1719347",
+                    "name": "B. P\u00f3czos"
+                },
+                {
+                    "authorId": "145124475",
+                    "name": "R. Salakhutdinov"
+                },
+                {
+                    "authorId": "143977260",
+                    "name": "E. Xing"
+                },
+                {
+                    "authorId": "1753432",
+                    "name": "J. Schneider"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "06dfe0207cc4625c115ea1dc55145cde1c7034c0",
+            "title": "Transformation Autoregressive Networks",
+            "url": "https://www.semanticscholar.org/paper/06dfe0207cc4625c115ea1dc55145cde1c7034c0",
+            "venue": "ICML",
+            "year": 2018
+        },
+        {
+            "arxivId": "1711.10433",
+            "authors": [
+                {
+                    "authorId": "3422336",
+                    "name": "A\u00e4ron van den Oord"
+                },
+                {
+                    "authorId": "2144417088",
+                    "name": "Yazhe Li"
+                },
+                {
+                    "authorId": "2256699276",
+                    "name": "Igor Babuschkin"
+                },
+                {
+                    "authorId": "34838386",
+                    "name": "K. Simonyan"
+                },
+                {
+                    "authorId": "1689108",
+                    "name": "O. Vinyals"
+                },
+                {
+                    "authorId": "2645384",
+                    "name": "K. Kavukcuoglu"
+                },
+                {
+                    "authorId": "47568983",
+                    "name": "George van den Driessche"
+                },
+                {
+                    "authorId": "49860549",
+                    "name": "Edward Lockhart"
+                },
+                {
+                    "authorId": "38712164",
+                    "name": "Luis C. Cobo"
+                },
+                {
+                    "authorId": "3205302",
+                    "name": "Florian Stimberg"
+                },
+                {
+                    "authorId": "2670752",
+                    "name": "Norman Casagrande"
+                },
+                {
+                    "authorId": "2401609",
+                    "name": "Dominik Grewe"
+                },
+                {
+                    "authorId": "30155667",
+                    "name": "Seb Noury"
+                },
+                {
+                    "authorId": "48373216",
+                    "name": "S. Dieleman"
+                },
+                {
+                    "authorId": "152585800",
+                    "name": "Erich Elsen"
+                },
+                {
+                    "authorId": "2583391",
+                    "name": "Nal Kalchbrenner"
+                },
+                {
+                    "authorId": "1691713",
+                    "name": "H. Zen"
+                },
+                {
+                    "authorId": "1753223",
+                    "name": "Alex Graves"
+                },
+                {
+                    "authorId": "143776287",
+                    "name": "Helen King"
+                },
+                {
+                    "authorId": "2066221078",
+                    "name": "T. Walters"
+                },
+                {
+                    "authorId": "143813532",
+                    "name": "Dan Belov"
+                },
+                {
+                    "authorId": "48987704",
+                    "name": "D. Hassabis"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f6cbf83e1ce3b099d656d2346b261d5ef7f2b62e",
+            "title": "Parallel WaveNet: Fast High-Fidelity Speech Synthesis",
+            "url": "https://www.semanticscholar.org/paper/f6cbf83e1ce3b099d656d2346b261d5ef7f2b62e",
+            "venue": "ICML",
+            "year": 2017
+        },
+        {
+            "arxivId": "1706.03762",
+            "authors": [
+                {
+                    "authorId": "40348417",
+                    "name": "Ashish Vaswani"
+                },
+                {
+                    "authorId": "1846258",
+                    "name": "Noam M. Shazeer"
+                },
+                {
+                    "authorId": "3877127",
+                    "name": "Niki Parmar"
+                },
+                {
+                    "authorId": "39328010",
+                    "name": "Jakob Uszkoreit"
+                },
+                {
+                    "authorId": "145024664",
+                    "name": "Llion Jones"
+                },
+                {
+                    "authorId": "19177000",
+                    "name": "Aidan N. Gomez"
+                },
+                {
+                    "authorId": "40527594",
+                    "name": "Lukasz Kaiser"
+                },
+                {
+                    "authorId": "3443442",
+                    "name": "Illia Polosukhin"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "204e3073870fae3d05bcbc2f6a8e263d9b72e776",
+            "title": "Attention is All you Need",
+            "url": "https://www.semanticscholar.org/paper/204e3073870fae3d05bcbc2f6a8e263d9b72e776",
+            "venue": "NIPS",
+            "year": 2017
+        },
+        {
+            "arxivId": "1705.07057",
+            "authors": [
+                {
+                    "authorId": "3065681",
+                    "name": "G. Papamakarios"
+                },
+                {
+                    "authorId": "145797336",
+                    "name": "Iain Murray"
+                },
+                {
+                    "authorId": "2728190",
+                    "name": "Theo Pavlakou"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "585bf7bea8fa5267738bc465611d6f197e0f87dd",
+            "title": "Masked Autoregressive Flow for Density Estimation",
+            "url": "https://www.semanticscholar.org/paper/585bf7bea8fa5267738bc465611d6f197e0f87dd",
+            "venue": "NIPS",
+            "year": 2017
+        },
+        {
+            "arxivId": "1703.10135",
+            "authors": [
+                {
+                    "authorId": "2115828379",
+                    "name": "Yuxuan Wang"
+                },
+                {
+                    "authorId": "1380248814",
+                    "name": "R. Skerry-Ryan"
+                },
+                {
+                    "authorId": "39741369",
+                    "name": "Daisy Stanton"
+                },
+                {
+                    "authorId": "48607963",
+                    "name": "Yonghui Wu"
+                },
+                {
+                    "authorId": "39571582",
+                    "name": "Ron J. Weiss"
+                },
+                {
+                    "authorId": "3111912",
+                    "name": "N. Jaitly"
+                },
+                {
+                    "authorId": "2109479107",
+                    "name": "Zongheng Yang"
+                },
+                {
+                    "authorId": "152130121",
+                    "name": "Y. Xiao"
+                },
+                {
+                    "authorId": "2545358",
+                    "name": "Z. Chen"
+                },
+                {
+                    "authorId": "1751569",
+                    "name": "Samy Bengio"
+                },
+                {
+                    "authorId": "2827616",
+                    "name": "Quoc V. Le"
+                },
+                {
+                    "authorId": "2259013",
+                    "name": "Yannis Agiomyrgiannakis"
+                },
+                {
+                    "authorId": "144318214",
+                    "name": "R. Clark"
+                },
+                {
+                    "authorId": "2278009",
+                    "name": "R. Saurous"
+                }
+            ],
+            "doi": "10.21437/Interspeech.2017-1452",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "a072c2a400f62f720b68dc54a662fb1ae115bf06",
+            "title": "Tacotron: Towards End-to-End Speech Synthesis",
+            "url": "https://www.semanticscholar.org/paper/a072c2a400f62f720b68dc54a662fb1ae115bf06",
+            "venue": "INTERSPEECH",
+            "year": 2017
+        },
+        {
+            "arxivId": "1611.09482",
+            "authors": [
+                {
+                    "authorId": "40470211",
+                    "name": "T. Paine"
+                },
+                {
+                    "authorId": "1911177",
+                    "name": "Pooya Khorrami"
+                },
+                {
+                    "authorId": "3307026",
+                    "name": "Shiyu Chang"
+                },
+                {
+                    "authorId": "37873860",
+                    "name": "Yang Zhang"
+                },
+                {
+                    "authorId": "3377142",
+                    "name": "Prajit Ramachandran"
+                },
+                {
+                    "authorId": "1744418",
+                    "name": "Mark Hasegawa-Johnson"
+                },
+                {
+                    "authorId": "153652752",
+                    "name": "Thomas S. Huang"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "df9aa3438af7a0938cf1829f4c2f20b3f9bd05f5",
+            "title": "Fast Wavenet Generation Algorithm",
+            "url": "https://www.semanticscholar.org/paper/df9aa3438af7a0938cf1829f4c2f20b3f9bd05f5",
+            "venue": "ArXiv",
+            "year": 2016
+        },
+        {
+            "arxivId": "1609.03499",
+            "authors": [
+                {
+                    "authorId": "3422336",
+                    "name": "A\u00e4ron van den Oord"
+                },
+                {
+                    "authorId": "48373216",
+                    "name": "S. Dieleman"
+                },
+                {
+                    "authorId": "1691713",
+                    "name": "H. Zen"
+                },
+                {
+                    "authorId": "34838386",
+                    "name": "K. Simonyan"
+                },
+                {
+                    "authorId": "1689108",
+                    "name": "O. Vinyals"
+                },
+                {
+                    "authorId": "1753223",
+                    "name": "Alex Graves"
+                },
+                {
+                    "authorId": "2583391",
+                    "name": "Nal Kalchbrenner"
+                },
+                {
+                    "authorId": "33666044",
+                    "name": "A. Senior"
+                },
+                {
+                    "authorId": "2645384",
+                    "name": "K. Kavukcuoglu"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "df0402517a7338ae28bc54acaac400de6b456a46",
+            "title": "WaveNet: A Generative Model for Raw Audio",
+            "url": "https://www.semanticscholar.org/paper/df0402517a7338ae28bc54acaac400de6b456a46",
+            "venue": "SSW",
+            "year": 2016
+        },
+        {
+            "arxivId": "1605.08803",
+            "authors": [
+                {
+                    "authorId": "46573521",
+                    "name": "Laurent Dinh"
+                },
+                {
+                    "authorId": "1407546424",
+                    "name": "Jascha Narain Sohl-Dickstein"
+                },
+                {
+                    "authorId": "1751569",
+                    "name": "Samy Bengio"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "09879f7956dddc2a9328f5c1472feeb8402bcbcf",
+            "title": "Density estimation using Real NVP",
+            "url": "https://www.semanticscholar.org/paper/09879f7956dddc2a9328f5c1472feeb8402bcbcf",
+            "venue": "ICLR",
+            "year": 2016
+        },
+        {
+            "arxivId": "1605.02226",
+            "authors": [
+                {
+                    "authorId": "2825051",
+                    "name": "Benigno Uria"
+                },
+                {
+                    "authorId": "40638665",
+                    "name": "Marc-Alexandre C\u00f4t\u00e9"
+                },
+                {
+                    "authorId": "144717963",
+                    "name": "Karol Gregor"
+                },
+                {
+                    "authorId": "145797336",
+                    "name": "Iain Murray"
+                },
+                {
+                    "authorId": "1777528",
+                    "name": "H. Larochelle"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "3cccc93064dae265eeb7bc76d02cdc67c942f0a5",
+            "title": "Neural Autoregressive Distribution Estimation",
+            "url": "https://www.semanticscholar.org/paper/3cccc93064dae265eeb7bc76d02cdc67c942f0a5",
+            "venue": "J. Mach. Learn. Res.",
+            "year": 2016
+        },
+        {
+            "arxivId": "1601.06759",
+            "authors": [
+                {
+                    "authorId": "3422336",
+                    "name": "A\u00e4ron van den Oord"
+                },
+                {
+                    "authorId": "2583391",
+                    "name": "Nal Kalchbrenner"
+                },
+                {
+                    "authorId": "2645384",
+                    "name": "K. Kavukcuoglu"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "41f1d50c85d3180476c4c7b3eea121278b0d8474",
+            "title": "Pixel Recurrent Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/41f1d50c85d3180476c4c7b3eea121278b0d8474",
+            "venue": "ICML",
+            "year": 2016
+        },
+        {
+            "arxivId": "1511.01844",
+            "authors": [
+                {
+                    "authorId": "2073063",
+                    "name": "Lucas Theis"
+                },
+                {
+                    "authorId": "3422336",
+                    "name": "A\u00e4ron van den Oord"
+                },
+                {
+                    "authorId": "1731199",
+                    "name": "M. Bethge"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "39e0c341351f8f4a39ac890b96217c7f4bde5369",
+            "title": "A note on the evaluation of generative models",
+            "url": "https://www.semanticscholar.org/paper/39e0c341351f8f4a39ac890b96217c7f4bde5369",
+            "venue": "ICLR",
+            "year": 2015
+        },
+        {
+            "arxivId": "1505.05770",
+            "authors": [
+                {
+                    "authorId": "1748523",
+                    "name": "Danilo Jimenez Rezende"
+                },
+                {
+                    "authorId": "14594344",
+                    "name": "S. Mohamed"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "0f899b92b7fb03b609fee887e4b6f3b633eaf30d",
+            "title": "Variational Inference with Normalizing Flows",
+            "url": "https://www.semanticscholar.org/paper/0f899b92b7fb03b609fee887e4b6f3b633eaf30d",
+            "venue": "ICML",
+            "year": 2015
+        },
+        {
+            "arxivId": "1502.03509",
+            "authors": [
+                {
+                    "authorId": "39844381",
+                    "name": "M. Germain"
+                },
+                {
+                    "authorId": "144717963",
+                    "name": "Karol Gregor"
+                },
+                {
+                    "authorId": "145797336",
+                    "name": "Iain Murray"
+                },
+                {
+                    "authorId": "1777528",
+                    "name": "H. Larochelle"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "90f72fbbe5f0a29e627db28999e01a30a9655bc6",
+            "title": "MADE: Masked Autoencoder for Distribution Estimation",
+            "url": "https://www.semanticscholar.org/paper/90f72fbbe5f0a29e627db28999e01a30a9655bc6",
+            "venue": "ICML",
+            "year": 2015
+        },
+        {
+            "arxivId": "1412.6980",
+            "authors": [
+                {
+                    "authorId": "1726807",
+                    "name": "Diederik P. Kingma"
+                },
+                {
+                    "authorId": "2503659",
+                    "name": "Jimmy Ba"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "a6cb366736791bcccc5c8639de5a8f9636bf87e8",
+            "title": "Adam: A Method for Stochastic Optimization",
+            "url": "https://www.semanticscholar.org/paper/a6cb366736791bcccc5c8639de5a8f9636bf87e8",
+            "venue": "ICLR",
+            "year": 2014
+        },
+        {
+            "arxivId": "1310.1757",
+            "authors": [
+                {
+                    "authorId": "2825051",
+                    "name": "Benigno Uria"
+                },
+                {
+                    "authorId": "145797336",
+                    "name": "Iain Murray"
+                },
+                {
+                    "authorId": "1777528",
+                    "name": "H. Larochelle"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "705fd4febe2fff810d2f72f48dcda20826eca77a",
+            "title": "A Deep and Tractable Density Estimator",
+            "url": "https://www.semanticscholar.org/paper/705fd4febe2fff810d2f72f48dcda20826eca77a",
+            "venue": "ICML",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145467703",
+                    "name": "Pascal Vincent"
+                }
+            ],
+            "doi": "10.1162/NECO_a_00142",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "872bae24c109f7c30e052ac218b17a8b028d08a0",
+            "title": "A Connection Between Score Matching and Denoising Autoencoders",
+            "url": "https://www.semanticscholar.org/paper/872bae24c109f7c30e052ac218b17a8b028d08a0",
+            "venue": "Neural Computation",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "9223616",
+                    "name": "R. Kubichek"
+                }
+            ],
+            "doi": "10.1109/PACRIM.1993.407206",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "24a15720ef1f6e931e0f95cb8bf4888107d0488b",
+            "title": "Mel-cepstral distance measure for objective speech quality assessment",
+            "url": "https://www.semanticscholar.org/paper/24a15720ef1f6e931e0f95cb8bf4888107d0488b",
+            "venue": "Proceedings of IEEE Pacific Rim Conference on Communications Computers and Signal Processing",
+            "year": 1993
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "34748552",
+                    "name": "Chee-Seng Chow"
+                },
+                {
+                    "authorId": "144224173",
+                    "name": "J. Tsitsiklis"
+                }
+            ],
+            "doi": "10.1109/9.133184",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "a321926b30f0f0c38ff2d52a0e5b5ff91a752138",
+            "title": "An optimal one-way multigrid algorithm for discrete-time stochastic control",
+            "url": "https://www.semanticscholar.org/paper/a321926b30f0f0c38ff2d52a0e5b5ff91a752138",
+            "venue": "",
+            "year": 1991
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2722591",
+                    "name": "D. Jevans"
+                },
+                {
+                    "authorId": "1799703",
+                    "name": "B. Wyvill"
+                }
+            ],
+            "doi": "10.11575/PRISM/31213",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "6bae0174c68f60750863f6eadaea63b0daec9bc5",
+            "title": "ADAPTIVE VOXEL SUBDIVISION FOR RAY TRACING",
+            "url": "https://www.semanticscholar.org/paper/6bae0174c68f60750863f6eadaea63b0daec9bc5",
+            "venue": "",
+            "year": 1988
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "35009598",
+                    "name": "T. Liszka"
+                },
+                {
+                    "authorId": "3240621",
+                    "name": "J. Orkisz"
+                }
+            ],
+            "doi": "10.1016/0045-7949(80)90149-2",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "4b536243c0e4eaf741cf3c214ec9f42010705d61",
+            "title": "The finite difference method at arbitrary irregular grids and its application in applied mechanics",
+            "url": "https://www.semanticscholar.org/paper/4b536243c0e4eaf741cf3c214ec9f42010705d61",
+            "venue": "",
+            "year": 1980
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "38909097",
+                    "name": "Alec Radford"
+                },
+                {
+                    "authorId": "144958935",
+                    "name": "Karthik Narasimhan"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "cd18800a0fe0b668a1cc19f2ec95b5003d0a5035",
+            "title": "Improving Language Understanding by Generative Pre-Training",
+            "url": "https://www.semanticscholar.org/paper/cd18800a0fe0b668a1cc19f2ec95b5003d0a5035",
+            "venue": "",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "7649077",
+                    "name": "Will Grathwohl"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "1ed1b8fa1a57b860701071300dc6a9c441db6866",
+            "title": "Scalable Reversible Generative Models with Free-form Continuous Dynamics",
+            "url": "https://www.semanticscholar.org/paper/1ed1b8fa1a57b860701071300dc6a9c441db6866",
+            "venue": "",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1777528",
+                    "name": "H. Larochelle"
+                },
+                {
+                    "authorId": "145797336",
+                    "name": "Iain Murray"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "b893e7053c9c7e266a23fb13a42261a88f650210",
+            "title": "The Neural Autoregressive Distribution Estimator",
+            "url": "https://www.semanticscholar.org/paper/b893e7053c9c7e266a23fb13a42261a88f650210",
+            "venue": "AISTATS",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2057272295",
+                    "name": "Frederic Morin"
+                },
+                {
+                    "authorId": "1751762",
+                    "name": "Yoshua Bengio"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "c19fbefdeead6a4154a22a9c8551a18b1530033a",
+            "title": "Hierarchical Probabilistic Neural Network Language Model",
+            "url": "https://www.semanticscholar.org/paper/c19fbefdeead6a4154a22a9c8551a18b1530033a",
+            "venue": "AISTATS",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1696384",
+                    "name": "S. Srihari"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d4ca18249446328c86d9da295a21c679aea1ed77",
+            "title": "Mixture Density Networks",
+            "url": "https://www.semanticscholar.org/paper/d4ca18249446328c86d9da295a21c679aea1ed77",
+            "venue": "",
+            "year": 1994
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Mathematics",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "AdaCat: Adaptive Categorical Discretization for Autoregressive Models",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/06a1a152af5764583e08c1e9f538a620267b3891",
+    "venue": "Conference on Uncertainty in Artificial Intelligence",
+    "year": 2022
+}

@@ -1,0 +1,955 @@
+{
+    "abstract": "Lifted inference algorithms commonly exploit symmetries in a probabilistic graphical model (PGM) for efficient inference. However, existing algorithms for Boolean-valued domains can identify only those pairs of states as symmetric, in which the number of ones and zeros match exactly (count symmetries). Moreover, algorithms for lifted inference in multi-valued domains also compute a multi-valued extension of count symmetries only. These algorithms miss many symmetries in a domain. In this paper, we present first algorithms to compute non-count symmetries in both Boolean-valued and multi-valued domains. Our methods can also find symmetries between multi-valued variables that have different domain cardinalities. The key insight in the algorithms is that they change the unit of symmetry computation from a variable to a variable-value (VV) pair. Our experiments find that exploiting these symmetries in MCMC can obtain substantial computational gains over existing algorithms.",
+    "arxivId": "1707.08879",
+    "authors": [
+        {
+            "authorId": "2064199975",
+            "name": "Ankit Anand",
+            "url": "https://www.semanticscholar.org/author/2064199975"
+        },
+        {
+            "authorId": "3411127",
+            "name": "Ritesh Noothigattu",
+            "url": "https://www.semanticscholar.org/author/3411127"
+        },
+        {
+            "authorId": "35108153",
+            "name": "Parag Singla",
+            "url": "https://www.semanticscholar.org/author/35108153"
+        },
+        {
+            "authorId": "2674444",
+            "name": "Mausam",
+            "url": "https://www.semanticscholar.org/author/2674444"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": "1807.00643",
+            "authors": [
+                {
+                    "authorId": "34569878",
+                    "name": "Gagan Madan"
+                },
+                {
+                    "authorId": "2064199975",
+                    "name": "Ankit Anand"
+                },
+                {
+                    "authorId": "2674444",
+                    "name": "Mausam"
+                },
+                {
+                    "authorId": "35108153",
+                    "name": "Parag Singla"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "460f6e715bc62104e640016b280d06263dd37ee0",
+            "title": "Block-Value Symmetries in Probabilistic Graphical Models",
+            "url": "https://www.semanticscholar.org/paper/460f6e715bc62104e640016b280d06263dd37ee0",
+            "venue": "UAI",
+            "year": 2018
+        },
+        {
+            "arxivId": "1707.07763",
+            "authors": [
+                {
+                    "authorId": "2470890",
+                    "name": "Seyed Mehran Kazemi"
+                },
+                {
+                    "authorId": "3294328",
+                    "name": "Angelika Kimmig"
+                },
+                {
+                    "authorId": "1749506",
+                    "name": "Guy Van den Broeck"
+                },
+                {
+                    "authorId": "143715817",
+                    "name": "D. Poole"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7ef5577b7efdd16e8265cb226dc72346c654cdfb",
+            "title": "Domain Recursion for Lifted Inference with Existential Quantifiers",
+            "url": "https://www.semanticscholar.org/paper/7ef5577b7efdd16e8265cb226dc72346c654cdfb",
+            "venue": "ArXiv",
+            "year": 2017
+        },
+        {
+            "arxivId": "1707.07165",
+            "authors": [
+                {
+                    "authorId": "30279076",
+                    "name": "Haroun Habeeb"
+                },
+                {
+                    "authorId": "2064199975",
+                    "name": "Ankit Anand"
+                },
+                {
+                    "authorId": "2674444",
+                    "name": "Mausam"
+                },
+                {
+                    "authorId": "35108153",
+                    "name": "Parag Singla"
+                }
+            ],
+            "doi": "10.24963/ijcai.2017/641",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "4c1c3e4ff081bf6bbd09ef99b4fbc4e49368989f",
+            "title": "Coarse-to-Fine Lifted MAP Inference in Computer Vision",
+            "url": "https://www.semanticscholar.org/paper/4c1c3e4ff081bf6bbd09ef99b4fbc4e49368989f",
+            "venue": "IJCAI",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1749506",
+                    "name": "Guy Van den Broeck"
+                },
+                {
+                    "authorId": "144823759",
+                    "name": "Dan Suciu"
+                }
+            ],
+            "doi": "10.1561/1900000052",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "e9868194e9f266ee357498a7caa608b8a35f4635",
+            "title": "Query Processing on Probabilistic Data: A Survey",
+            "url": "https://www.semanticscholar.org/paper/e9868194e9f266ee357498a7caa608b8a35f4635",
+            "venue": "Found. Trends Databases",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "19189182",
+                    "name": "Mohammad Maminur Islam"
+                },
+                {
+                    "authorId": "2220570",
+                    "name": "D. Venugopal"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "db2f3a1ade0f13f9028b034862dad2c7373ec6ed",
+            "title": "Learning Embeddings for Approximate Lifted Inference in MLNs",
+            "url": "https://www.semanticscholar.org/paper/db2f3a1ade0f13f9028b034862dad2c7373ec6ed",
+            "venue": "",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2470890",
+                    "name": "Seyed Mehran Kazemi"
+                }
+            ],
+            "doi": "10.14288/1.0375812",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0a4b7fff218ddbdd4ea952f26313c837df8f8e44",
+            "title": "Representing and learning relations and properties under uncertainty",
+            "url": "https://www.semanticscholar.org/paper/0a4b7fff218ddbdd4ea952f26313c837df8f8e44",
+            "venue": "",
+            "year": 2018
+        }
+    ],
+    "corpusId": 28340817,
+    "doi": null,
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 6,
+    "numCiting": 31,
+    "paperId": "670a4e84b585131af1227abcc877f014ff28c0e8",
+    "references": [
+        {
+            "arxivId": "1606.09594",
+            "authors": [
+                {
+                    "authorId": "2064199975",
+                    "name": "Ankit Anand"
+                },
+                {
+                    "authorId": "1954250",
+                    "name": "Aditya Grover"
+                },
+                {
+                    "authorId": "2674444",
+                    "name": "Mausam"
+                },
+                {
+                    "authorId": "35108153",
+                    "name": "Parag Singla"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ada44668aab119fc4c917f613d1dc9d34091adc9",
+            "title": "Contextual Symmetries in Probabilistic Graphical Models",
+            "url": "https://www.semanticscholar.org/paper/ada44668aab119fc4c917f613d1dc9d34091adc9",
+            "venue": "IJCAI",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "7779119",
+                    "name": "T. Kopp"
+                },
+                {
+                    "authorId": "35108153",
+                    "name": "Parag Singla"
+                },
+                {
+                    "authorId": "1690271",
+                    "name": "Henry A. Kautz"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "02feaec18a0ef0dcc81bf51d57f51939ce132a75",
+            "title": "Lifted Symmetry Detection and Breaking for MAP Inference",
+            "url": "https://www.semanticscholar.org/paper/02feaec18a0ef0dcc81bf51d57f51939ce132a75",
+            "venue": "NIPS",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2198526",
+                    "name": "Happy Mittal"
+                },
+                {
+                    "authorId": "38774604",
+                    "name": "Prasoon Goyal"
+                },
+                {
+                    "authorId": "143754991",
+                    "name": "Vibhav Gogate"
+                },
+                {
+                    "authorId": "35108153",
+                    "name": "Parag Singla"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "fefb7dd0ef077e7dd9b44d5d4682cd39f009ad2c",
+            "title": "New Rules for Domain Independent Lifted MAP Inference",
+            "url": "https://www.semanticscholar.org/paper/fefb7dd0ef077e7dd9b44d5d4682cd39f009ad2c",
+            "venue": "NIPS",
+            "year": 2014
+        },
+        {
+            "arxivId": "1412.0315",
+            "authors": [
+                {
+                    "authorId": "1749506",
+                    "name": "Guy Van den Broeck"
+                },
+                {
+                    "authorId": "2780262",
+                    "name": "Mathias Niepert"
+                }
+            ],
+            "doi": "10.1609/aaai.v29i1.9678",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0738370a32ef1867fa23be23df8dfa166ca1cec4",
+            "title": "Lifted Probabilistic Inference for Asymmetric Graphical Models",
+            "url": "https://www.semanticscholar.org/paper/0738370a32ef1867fa23be23df8dfa166ca1cec4",
+            "venue": "AAAI",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "35108153",
+                    "name": "Parag Singla"
+                },
+                {
+                    "authorId": "3046228",
+                    "name": "Aniruddh Nath"
+                },
+                {
+                    "authorId": "1740213",
+                    "name": "Pedro M. Domingos"
+                }
+            ],
+            "doi": "10.1609/aaai.v28i1.9068",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0756ae05ed9ce7d22561d7f47fe57505546a29fc",
+            "title": "Approximate Lifting Techniques for Belief Propagation",
+            "url": "https://www.semanticscholar.org/paper/0756ae05ed9ce7d22561d7f47fe57505546a29fc",
+            "venue": "AAAI",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3281912",
+                    "name": "Somdeb Sarkhel"
+                },
+                {
+                    "authorId": "2220570",
+                    "name": "D. Venugopal"
+                },
+                {
+                    "authorId": "35108153",
+                    "name": "Parag Singla"
+                },
+                {
+                    "authorId": "143754991",
+                    "name": "Vibhav Gogate"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "cf18655f5ffbb9c245d33761cb641cec05435754",
+            "title": "Lifted MAP Inference for Markov Logic Networks",
+            "url": "https://www.semanticscholar.org/paper/cf18655f5ffbb9c245d33761cb641cec05435754",
+            "venue": "AISTATS",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2538104",
+                    "name": "Martin Mladenov"
+                },
+                {
+                    "authorId": "1746871",
+                    "name": "K. Kersting"
+                },
+                {
+                    "authorId": "1786843",
+                    "name": "A. Globerson"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "afae4bc3ce511123e6ae409858d704526f6e930d",
+            "title": "Efficient Lifting of MAP LP Relaxations Using k-Locality",
+            "url": "https://www.semanticscholar.org/paper/afae4bc3ce511123e6ae409858d704526f6e930d",
+            "venue": "AISTATS",
+            "year": 2014
+        },
+        {
+            "arxivId": "1311.6591",
+            "authors": [
+                {
+                    "authorId": "1749506",
+                    "name": "Guy Van den Broeck"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "02eec885665621e9b369bd568f96e0216e038d37",
+            "title": "On the Complexity and Approximation of Binary Evidence in Lifted Inference",
+            "url": "https://www.semanticscholar.org/paper/02eec885665621e9b369bd568f96e0216e038d37",
+            "venue": "StarAI@AAAI",
+            "year": 2013
+        },
+        {
+            "arxivId": "1304.4379",
+            "authors": [
+                {
+                    "authorId": "3138118",
+                    "name": "Jan N\u00f6\u00dfner"
+                },
+                {
+                    "authorId": "2780262",
+                    "name": "Mathias Niepert"
+                },
+                {
+                    "authorId": "1698459",
+                    "name": "H. Stuckenschmidt"
+                }
+            ],
+            "doi": "10.1609/aaai.v27i1.8579",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "adae16fa6e2e77fc53913172b1be3444097397af",
+            "title": "RockIt: Exploiting Parallelism and Symmetry for MAP Inference in Statistical Relational Models",
+            "url": "https://www.semanticscholar.org/paper/adae16fa6e2e77fc53913172b1be3444097397af",
+            "venue": "AAAI",
+            "year": 2013
+        },
+        {
+            "arxivId": "1304.2694",
+            "authors": [
+                {
+                    "authorId": "2780262",
+                    "name": "Mathias Niepert"
+                }
+            ],
+            "doi": "10.1609/aaai.v27i1.8621",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "70ebf9dac6516763670262bb399b5714081ec431",
+            "title": "Symmetry-Aware Marginal Density Estimation",
+            "url": "https://www.semanticscholar.org/paper/70ebf9dac6516763670262bb399b5714081ec431",
+            "venue": "AAAI",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2220570",
+                    "name": "D. Venugopal"
+                },
+                {
+                    "authorId": "143754991",
+                    "name": "Vibhav Gogate"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "cb6bd6ce539eace09e205786eaf38a9608911c50",
+            "title": "On Lifting the Gibbs Sampling Algorithm",
+            "url": "https://www.semanticscholar.org/paper/cb6bd6ce539eace09e205786eaf38a9608911c50",
+            "venue": "StarAI@UAI",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143754991",
+                    "name": "Vibhav Gogate"
+                },
+                {
+                    "authorId": "1879594",
+                    "name": "Abhay Jha"
+                },
+                {
+                    "authorId": "2220570",
+                    "name": "D. Venugopal"
+                }
+            ],
+            "doi": "10.1609/aaai.v26i1.8400",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "72b433293d0c84fd0345bb096a7d812d24632792",
+            "title": "Advances in Lifted Importance Sampling",
+            "url": "https://www.semanticscholar.org/paper/72b433293d0c84fd0345bb096a7d812d24632792",
+            "venue": "AAAI",
+            "year": 2012
+        },
+        {
+            "arxivId": "1309.6822",
+            "authors": [
+                {
+                    "authorId": "145365341",
+                    "name": "H. Bui"
+                },
+                {
+                    "authorId": "1770643",
+                    "name": "Tuyen N. Huynh"
+                },
+                {
+                    "authorId": "48662861",
+                    "name": "Sebastian Riedel"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "45f1821937c6454d28406f1c799e20709edc8acf",
+            "title": "Automorphism Groups of Graphical Models and Lifted Variational Inference",
+            "url": "https://www.semanticscholar.org/paper/45f1821937c6454d28406f1c799e20709edc8acf",
+            "venue": "UAI",
+            "year": 2012
+        },
+        {
+            "arxivId": "1206.5396",
+            "authors": [
+                {
+                    "authorId": "2780262",
+                    "name": "Mathias Niepert"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "6caa4df9970c262f47384e28aaa2ba43cd07966c",
+            "title": "Markov Chains on Orbits of Permutation Groups",
+            "url": "https://www.semanticscholar.org/paper/6caa4df9970c262f47384e28aaa2ba43cd07966c",
+            "venue": "UAI",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2538104",
+                    "name": "Martin Mladenov"
+                },
+                {
+                    "authorId": "8238249",
+                    "name": "B. Ahmadi"
+                },
+                {
+                    "authorId": "1746871",
+                    "name": "K. Kersting"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c7fe212233d3e0721d13d62a2fc8db8ef97fe4b9",
+            "title": "Lifted Linear Programming",
+            "url": "https://www.semanticscholar.org/paper/c7fe212233d3e0721d13d62a2fc8db8ef97fe4b9",
+            "venue": "AISTATS",
+            "year": 2012
+        },
+        {
+            "arxivId": "1107.4966",
+            "authors": [
+                {
+                    "authorId": "2153814",
+                    "name": "Lilyana Mihalkova"
+                },
+                {
+                    "authorId": "1746034",
+                    "name": "L. Getoor"
+                }
+            ],
+            "doi": "10.1007/s10994-014-5443-2",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e570e3bcc4100968e0613ac2bab57d61820e872d",
+            "title": "Lifted graphical models: a survey",
+            "url": "https://www.semanticscholar.org/paper/e570e3bcc4100968e0613ac2bab57d61820e872d",
+            "venue": "Machine Learning",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1736370",
+                    "name": "D. Koller"
+                },
+                {
+                    "authorId": "50785579",
+                    "name": "N. Friedman"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "36eb6fea39ce06e2807f074fa3d5e79ed0f2bcef",
+            "title": "Probabilistic Graphical Models - Principles and Techniques",
+            "url": "https://www.semanticscholar.org/paper/36eb6fea39ce06e2807f074fa3d5e79ed0f2bcef",
+            "venue": "",
+            "year": 2009
+        },
+        {
+            "arxivId": "1205.2637",
+            "authors": [
+                {
+                    "authorId": "1746871",
+                    "name": "K. Kersting"
+                },
+                {
+                    "authorId": "8238249",
+                    "name": "B. Ahmadi"
+                },
+                {
+                    "authorId": "145986014",
+                    "name": "Sriraam Natarajan"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f4ac0ddfb1c6dd4cefc6a629697193da17f3433b",
+            "title": "Counting Belief Propagation",
+            "url": "https://www.semanticscholar.org/paper/f4ac0ddfb1c6dd4cefc6a629697193da17f3433b",
+            "venue": "UAI",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "35108153",
+                    "name": "Parag Singla"
+                },
+                {
+                    "authorId": "1740213",
+                    "name": "Pedro M. Domingos"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d14460144b6d7a1b35e9087d8db20b939124b4c5",
+            "title": "Lifted First-Order Belief Propagation",
+            "url": "https://www.semanticscholar.org/paper/d14460144b6d7a1b35e9087d8db20b939124b4c5",
+            "venue": "AAAI",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2618968",
+                    "name": "Paul T. Darga"
+                },
+                {
+                    "authorId": "1679181",
+                    "name": "K. Sakallah"
+                },
+                {
+                    "authorId": "1698712",
+                    "name": "I. Markov"
+                }
+            ],
+            "doi": "10.1145/1391469.1391509",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "8b15ff30a52914e654f735d94601beface19fbc9",
+            "title": "Faster symmetry discovery using sparsity of symmetries",
+            "url": "https://www.semanticscholar.org/paper/8b15ff30a52914e654f735d94601beface19fbc9",
+            "venue": "2008 45th ACM/IEEE Design Automation Conference",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "8801071",
+                    "name": "D. Cohen"
+                },
+                {
+                    "authorId": "144922783",
+                    "name": "P. Jeavons"
+                },
+                {
+                    "authorId": "143910965",
+                    "name": "Christopher Jefferson"
+                },
+                {
+                    "authorId": "1893988",
+                    "name": "K. Petrie"
+                },
+                {
+                    "authorId": "2219962114",
+                    "name": "Barbara M. Smith"
+                }
+            ],
+            "doi": "10.1007/s10601-006-8059-8",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7ef62724b07c1df199d9f6ac7630d2da49e2accd",
+            "title": "Symmetry Definitions for Constraint Satisfaction Problems",
+            "url": "https://www.semanticscholar.org/paper/7ef62724b07c1df199d9f6ac7630d2da49e2accd",
+            "venue": "Constraints",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2413558",
+                    "name": "Rodrigo de Salvo Braz"
+                },
+                {
+                    "authorId": "145957401",
+                    "name": "Eyal Amir"
+                },
+                {
+                    "authorId": "144590225",
+                    "name": "D. Roth"
+                }
+            ],
+            "doi": "10.7551/mitpress/7432.003.0017",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "dae7f7b4819c13a0adf23afc29eb0870ec8e2e16",
+            "title": "Lifted First-Order Probabilistic Inference",
+            "url": "https://www.semanticscholar.org/paper/dae7f7b4819c13a0adf23afc29eb0870ec8e2e16",
+            "venue": "IJCAI",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143715817",
+                    "name": "D. Poole"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "3d4606a66c81cf3a5fa647d80c5895e2301db4a9",
+            "title": "First-order probabilistic inference",
+            "url": "https://www.semanticscholar.org/paper/3d4606a66c81cf3a5fa647d80c5895e2301db4a9",
+            "venue": "IJCAI",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143978672",
+                    "name": "I. Pak"
+                }
+            ],
+            "doi": "10.1109/SFCS.2000.892135",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "d7743f21810037951eef6850e737be5a68e2b529",
+            "title": "The product replacement algorithm is polynomial",
+            "url": "https://www.semanticscholar.org/paper/d7743f21810037951eef6850e737be5a68e2b529",
+            "venue": "Proceedings 41st Annual Symposium on Foundations of Computer Science",
+            "year": 2000
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "46890564",
+                    "name": "J. Crawford"
+                },
+                {
+                    "authorId": "1706174",
+                    "name": "M. Ginsberg"
+                },
+                {
+                    "authorId": "1781295",
+                    "name": "E. Luks"
+                },
+                {
+                    "authorId": "14610544",
+                    "name": "Amitabha Roy"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f85d0dd1943c875aaf9dfd401afd17db3002c9d9",
+            "title": "Symmetry-Breaking Predicates for Search Problems",
+            "url": "https://www.semanticscholar.org/paper/f85d0dd1943c875aaf9dfd401afd17db3002c9d9",
+            "venue": "KR",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7792e34efb36cf1dbeef581f2bf7cc4c08a9c02c",
+            "title": "Proceedings of the Twenty-Second International Joint Conference on Artificial Intelligence Lifted Probabilistic Inference by First-Order Knowledge Compilation",
+            "url": "https://www.semanticscholar.org/paper/7792e34efb36cf1dbeef581f2bf7cc4c08a9c02c",
+            "venue": "",
+            "year": null
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        },
+        {
+            "category": "Mathematics",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Non-Count Symmetries in Boolean & Multi-Valued Prob. Graphical Models",
+    "topics": [
+        {
+            "topic": "Graphical model",
+            "topicId": "16839",
+            "url": "https://www.semanticscholar.org/topic/16839"
+        },
+        {
+            "topic": "Potts model",
+            "topicId": "161709",
+            "url": "https://www.semanticscholar.org/topic/161709"
+        },
+        {
+            "topic": "Algorithm",
+            "topicId": "305",
+            "url": "https://www.semanticscholar.org/topic/305"
+        },
+        {
+            "topic": "Markov chain Monte Carlo",
+            "topicId": "27997",
+            "url": "https://www.semanticscholar.org/topic/27997"
+        },
+        {
+            "topic": "Computation",
+            "topicId": "339",
+            "url": "https://www.semanticscholar.org/topic/339"
+        },
+        {
+            "topic": "Computer vision",
+            "topicId": "5332",
+            "url": "https://www.semanticscholar.org/topic/5332"
+        },
+        {
+            "topic": "Verification and validation",
+            "topicId": "880",
+            "url": "https://www.semanticscholar.org/topic/880"
+        },
+        {
+            "topic": "Cryptographic Service Provider",
+            "topicId": "1679308",
+            "url": "https://www.semanticscholar.org/topic/1679308"
+        },
+        {
+            "topic": "Cardinality (data modeling)",
+            "topicId": "24871",
+            "url": "https://www.semanticscholar.org/topic/24871"
+        },
+        {
+            "topic": "Constraint satisfaction",
+            "topicId": "34074",
+            "url": "https://www.semanticscholar.org/topic/34074"
+        },
+        {
+            "topic": "Graph automorphism",
+            "topicId": "919",
+            "url": "https://www.semanticscholar.org/topic/919"
+        },
+        {
+            "topic": "Metropolis",
+            "topicId": "71879",
+            "url": "https://www.semanticscholar.org/topic/71879"
+        },
+        {
+            "topic": "Symmetry in quantum mechanics",
+            "topicId": "2162043",
+            "url": "https://www.semanticscholar.org/topic/2162043"
+        },
+        {
+            "topic": "Experiment",
+            "topicId": "378",
+            "url": "https://www.semanticscholar.org/topic/378"
+        },
+        {
+            "topic": "Metropolis\u2013Hastings algorithm",
+            "topicId": "126277",
+            "url": "https://www.semanticscholar.org/topic/126277"
+        },
+        {
+            "topic": "Mathematical optimization",
+            "topicId": "89",
+            "url": "https://www.semanticscholar.org/topic/89"
+        },
+        {
+            "topic": "Approximation algorithm",
+            "topicId": "87",
+            "url": "https://www.semanticscholar.org/topic/87"
+        },
+        {
+            "topic": "Theory",
+            "topicId": "909",
+            "url": "https://www.semanticscholar.org/topic/909"
+        },
+        {
+            "topic": "Bloomberg Terminal",
+            "topicId": "791848",
+            "url": "https://www.semanticscholar.org/topic/791848"
+        },
+        {
+            "topic": "Molecular orbital",
+            "topicId": "176784",
+            "url": "https://www.semanticscholar.org/topic/176784"
+        }
+    ],
+    "url": "https://www.semanticscholar.org/paper/670a4e84b585131af1227abcc877f014ff28c0e8",
+    "venue": "International Conference on Artificial Intelligence and Statistics",
+    "year": 2017
+}

@@ -1,0 +1,2409 @@
+{
+    "abstract": "This paper endeavors to augment the robustness of offline reinforcement learning (RL) in scenarios laden with heavy-tailed rewards, a prevalent circumstance in real-world applications. We propose two algorithmic frameworks, ROAM and ROOM, for robust off-policy evaluation and offline policy optimization (OPO), respectively. Central to our frameworks is the strategic incorporation of the median-of-means method with offline RL, enabling straightforward uncertainty estimation for the value function estimator. This not only adheres to the principle of pessimism in OPO but also adeptly manages heavy-tailed rewards. Theoretical results and extensive experiments demonstrate that our two frameworks outperform existing methods on the logged dataset exhibits heavy-tailed reward distributions. The implementation of the proposal is available at https://github.com/Mamba413/ROOM.",
+    "arxivId": "2310.18715",
+    "authors": [
+        {
+            "authorId": "2146273525",
+            "name": "Jin Zhu",
+            "url": "https://www.semanticscholar.org/author/2146273525"
+        },
+        {
+            "authorId": "1491449962",
+            "name": "Runzhe Wan",
+            "url": "https://www.semanticscholar.org/author/1491449962"
+        },
+        {
+            "authorId": "2262446599",
+            "name": "Zhengling Qi",
+            "url": "https://www.semanticscholar.org/author/2262446599"
+        },
+        {
+            "authorId": "1999430015",
+            "name": "S. Luo",
+            "url": "https://www.semanticscholar.org/author/1999430015"
+        },
+        {
+            "authorId": "6086301",
+            "name": "C. Shi",
+            "url": "https://www.semanticscholar.org/author/6086301"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [],
+    "corpusId": 264590241,
+    "doi": null,
+    "fieldsOfStudy": [
+        "Computer Science",
+        "Mathematics"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 0,
+    "numCiting": 90,
+    "paperId": "179addc882c4c977215a0125651119e8cefa4ccc",
+    "references": [
+        {
+            "arxivId": "2310.06268",
+            "authors": [
+                {
+                    "authorId": "2257129740",
+                    "name": "Wenzhuo Zhou"
+                }
+            ],
+            "doi": "10.48550/arXiv.2310.06268",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "89211bbf7616ba8a33e4004dfcbf8cd827f0c2b7",
+            "title": "Bi-Level Offline Policy Optimization with Limited Exploration",
+            "url": "https://www.semanticscholar.org/paper/89211bbf7616ba8a33e4004dfcbf8cd827f0c2b7",
+            "venue": "NeurIPS",
+            "year": 2023
+        },
+        {
+            "arxivId": "2305.18388",
+            "authors": [
+                {
+                    "authorId": "144845456",
+                    "name": "Mark Rowland"
+                },
+                {
+                    "authorId": "11501567",
+                    "name": "Yunhao Tang"
+                },
+                {
+                    "authorId": "39439114",
+                    "name": "Clare Lyle"
+                },
+                {
+                    "authorId": "1708654",
+                    "name": "R. Munos"
+                },
+                {
+                    "authorId": "1792298",
+                    "name": "Marc G. Bellemare"
+                },
+                {
+                    "authorId": "2605877",
+                    "name": "Will Dabney"
+                }
+            ],
+            "doi": "10.48550/arXiv.2305.18388",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "95b4a81247c5d44fb020a600ead6e1ec2d7fe5bb",
+            "title": "The Statistical Benefits of Quantile Temporal-Difference Learning for Value Estimation",
+            "url": "https://www.semanticscholar.org/paper/95b4a81247c5d44fb020a600ead6e1ec2d7fe5bb",
+            "venue": "ICML",
+            "year": 2023
+        },
+        {
+            "arxivId": "2303.15810",
+            "authors": [
+                {
+                    "authorId": "49507262",
+                    "name": "Haoran Xu"
+                },
+                {
+                    "authorId": "2188128317",
+                    "name": "Li Jiang"
+                },
+                {
+                    "authorId": "2136086524",
+                    "name": "Jianxiong Li"
+                },
+                {
+                    "authorId": "150358650",
+                    "name": "Zhuoran Yang"
+                },
+                {
+                    "authorId": "50218397",
+                    "name": "Zhaoran Wang"
+                },
+                {
+                    "authorId": "2176183533",
+                    "name": "Victor Chan"
+                },
+                {
+                    "authorId": "2242851906",
+                    "name": "Xianyuan Zhan"
+                }
+            ],
+            "doi": "10.48550/arXiv.2303.15810",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "18d82f2a4aa1e2c1c4b447876c95b8f7e717e1a1",
+            "title": "Offline RL with No OOD Actions: In-Sample Learning via Implicit Value Regularization",
+            "url": "https://www.semanticscholar.org/paper/18d82f2a4aa1e2c1c4b447876c95b8f7e717e1a1",
+            "venue": "ICLR",
+            "year": 2023
+        },
+        {
+            "arxivId": "2301.02220",
+            "authors": [
+                {
+                    "authorId": "6086301",
+                    "name": "C. Shi"
+                },
+                {
+                    "authorId": "3146500",
+                    "name": "Zhengling Qi"
+                },
+                {
+                    "authorId": "2026139463",
+                    "name": "Jianing Wang"
+                },
+                {
+                    "authorId": "152210352",
+                    "name": "Fan Zhou"
+                }
+            ],
+            "doi": "10.48550/arXiv.2301.02220",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ffacd7cdf3ed40dcfe24aa6cb5b9a72898301a70",
+            "title": "Value Enhancement of Reinforcement Learning via Efficient and Robust Trust Region Optimization",
+            "url": "https://www.semanticscholar.org/paper/ffacd7cdf3ed40dcfe24aa6cb5b9a72898301a70",
+            "venue": "Journal of the American Statistical Association",
+            "year": 2023
+        },
+        {
+            "arxivId": "2212.14466",
+            "authors": [
+                {
+                    "authorId": "2199013111",
+                    "name": "Yang Xu"
+                },
+                {
+                    "authorId": "6086301",
+                    "name": "C. Shi"
+                },
+                {
+                    "authorId": "1999430015",
+                    "name": "S. Luo"
+                },
+                {
+                    "authorId": "49680600",
+                    "name": "Lan Wang"
+                },
+                {
+                    "authorId": "145401368",
+                    "name": "R. Song"
+                }
+            ],
+            "doi": "10.48550/arXiv.2212.14466",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a3b97014a099af0c7aad44415a62d244e0125471",
+            "title": "Quantile Off-Policy Evaluation via Deep Conditional Generative Learning",
+            "url": "https://www.semanticscholar.org/paper/a3b97014a099af0c7aad44415a62d244e0125471",
+            "venue": "ArXiv",
+            "year": 2022
+        },
+        {
+            "arxivId": "2212.06355",
+            "authors": [
+                {
+                    "authorId": "51228100",
+                    "name": "Masatoshi Uehara"
+                },
+                {
+                    "authorId": "6086301",
+                    "name": "C. Shi"
+                },
+                {
+                    "authorId": "3174388",
+                    "name": "Nathan Kallus"
+                }
+            ],
+            "doi": "10.48550/arXiv.2212.06355",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f5097fa4dcad07c315ef029dc93bf2b1b659acbc",
+            "title": "A Review of Off-Policy Evaluation in Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/f5097fa4dcad07c315ef029dc93bf2b1b659acbc",
+            "venue": "ArXiv",
+            "year": 2022
+        },
+        {
+            "arxivId": "2210.14420",
+            "authors": [
+                {
+                    "authorId": "2119237913",
+                    "name": "Yunzhe Zhou"
+                },
+                {
+                    "authorId": "3146500",
+                    "name": "Zhengling Qi"
+                },
+                {
+                    "authorId": "6086301",
+                    "name": "C. Shi"
+                },
+                {
+                    "authorId": "47681365",
+                    "name": "Lexin Li"
+                }
+            ],
+            "doi": "10.48550/arXiv.2210.14420",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c3be0dd9fed6d2638963a3e019303565ef82e2d7",
+            "title": "Optimizing Pessimism in Dynamic Treatment Regimes: A Bayesian Learning Approach",
+            "url": "https://www.semanticscholar.org/paper/c3be0dd9fed6d2638963a3e019303565ef82e2d7",
+            "venue": "AISTATS",
+            "year": 2022
+        },
+        {
+            "arxivId": "2210.06692",
+            "authors": [
+                {
+                    "authorId": "10683161",
+                    "name": "Kaiyang Guo"
+                },
+                {
+                    "authorId": "49713700",
+                    "name": "Yunfeng Shao"
+                },
+                {
+                    "authorId": "2061441",
+                    "name": "Yanhui Geng"
+                }
+            ],
+            "doi": "10.48550/arXiv.2210.06692",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c97943178542a6191087f317b0d51448d666ee2b",
+            "title": "Model-Based Offline Reinforcement Learning with Pessimism-Modulated Dynamics Belief",
+            "url": "https://www.semanticscholar.org/paper/c97943178542a6191087f317b0d51448d666ee2b",
+            "venue": "NeurIPS",
+            "year": 2022
+        },
+        {
+            "arxivId": "2209.08666",
+            "authors": [
+                {
+                    "authorId": "89704452",
+                    "name": "Zuyue Fu"
+                },
+                {
+                    "authorId": "3146500",
+                    "name": "Zhengling Qi"
+                },
+                {
+                    "authorId": "50218397",
+                    "name": "Zhaoran Wang"
+                },
+                {
+                    "authorId": "150358650",
+                    "name": "Zhuoran Yang"
+                },
+                {
+                    "authorId": "2315325718",
+                    "name": "Yanxun Xu"
+                },
+                {
+                    "authorId": "2169186251",
+                    "name": "Michael R. Kosorok"
+                }
+            ],
+            "doi": "10.48550/arXiv.2209.08666",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f3b7e51ad90264ae4bf2af985682db887da815b4",
+            "title": "Offline Reinforcement Learning with Instrumental Variables in Confounded Markov Decision Processes",
+            "url": "https://www.semanticscholar.org/paper/f3b7e51ad90264ae4bf2af985682db887da815b4",
+            "venue": "ArXiv",
+            "year": 2022
+        },
+        {
+            "arxivId": "2206.04745",
+            "authors": [
+                {
+                    "authorId": "2008151131",
+                    "name": "Jiafei Lyu"
+                },
+                {
+                    "authorId": "2125106047",
+                    "name": "Xiaoteng Ma"
+                },
+                {
+                    "authorId": "2116523082",
+                    "name": "Xiu Li"
+                },
+                {
+                    "authorId": "2265693",
+                    "name": "Zongqing Lu"
+                }
+            ],
+            "doi": "10.48550/arXiv.2206.04745",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7e045a7fe78a6c0de5511980f292c42d1055f396",
+            "title": "Mildly Conservative Q-Learning for Offline Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/7e045a7fe78a6c0de5511980f292c42d1055f396",
+            "venue": "NeurIPS",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2163891",
+                    "name": "Vineet Goyal"
+                },
+                {
+                    "authorId": "1417807513",
+                    "name": "Julien Grand-Cl\u00e9ment"
+                }
+            ],
+            "doi": "10.1287/moor.2022.1259",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "62bd7f55938d2fb97324edb1a87d19358a7ee1d6",
+            "title": "Robust Markov Decision Processes: Beyond Rectangularity",
+            "url": "https://www.semanticscholar.org/paper/62bd7f55938d2fb97324edb1a87d19358a7ee1d6",
+            "venue": "Math. Oper. Res.",
+            "year": 2022
+        },
+        {
+            "arxivId": "2203.01387",
+            "authors": [
+                {
+                    "authorId": "2315128740",
+                    "name": "Rafael Figueiredo Prudencio"
+                },
+                {
+                    "authorId": "31720494",
+                    "name": "M. Maximo"
+                },
+                {
+                    "authorId": "2210164",
+                    "name": "E. Colombini"
+                }
+            ],
+            "doi": "10.1109/TNNLS.2023.3250269",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "61e7a3d5606043594a8ce377870479f77a6b58c2",
+            "title": "A Survey on Offline Reinforcement Learning: Taxonomy, Review, and Open Problems",
+            "url": "https://www.semanticscholar.org/paper/61e7a3d5606043594a8ce377870479f77a6b58c2",
+            "venue": "IEEE Transactions on Neural Networks and Learning Systems",
+            "year": 2022
+        },
+        {
+            "arxivId": "2202.04634",
+            "authors": [
+                {
+                    "authorId": "1858443952",
+                    "name": "Wenhao Zhan"
+                },
+                {
+                    "authorId": "2028353389",
+                    "name": "Baihe Huang"
+                },
+                {
+                    "authorId": "2054861521",
+                    "name": "Audrey Huang"
+                },
+                {
+                    "authorId": "48272707",
+                    "name": "Nan Jiang"
+                },
+                {
+                    "authorId": "2108327687",
+                    "name": "Jason D. Lee"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "46b7cbb5687bfdcfb2085a2ee70356d52f5d4994",
+            "title": "Offline Reinforcement Learning with Realizability and Single-policy Concentrability",
+            "url": "https://www.semanticscholar.org/paper/46b7cbb5687bfdcfb2085a2ee70356d52f5d4994",
+            "venue": "COLT",
+            "year": 2022
+        },
+        {
+            "arxivId": "2110.13876",
+            "authors": [
+                {
+                    "authorId": "2064919742",
+                    "name": "Han Zhong"
+                },
+                {
+                    "authorId": "1630366448",
+                    "name": "Jiayi Huang"
+                },
+                {
+                    "authorId": "2155556894",
+                    "name": "Lin F. Yang"
+                },
+                {
+                    "authorId": "24952249",
+                    "name": "Liwei Wang"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "42caac602e8dba3fdeb6bcbed000ec0bd7b3ce34",
+            "title": "Breaking the Moments Condition Barrier: No-Regret Algorithm for Bandits with Super Heavy-Tailed Payoffs",
+            "url": "https://www.semanticscholar.org/paper/42caac602e8dba3fdeb6bcbed000ec0bd7b3ce34",
+            "venue": "NeurIPS",
+            "year": 2021
+        },
+        {
+            "arxivId": "2110.06169",
+            "authors": [
+                {
+                    "authorId": "2000906",
+                    "name": "Ilya Kostrikov"
+                },
+                {
+                    "authorId": "3422774",
+                    "name": "Ashvin Nair"
+                },
+                {
+                    "authorId": "1736651",
+                    "name": "S. Levine"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "348a855fe01f3f4273bf0ecf851ca688686dbfcc",
+            "title": "Offline Reinforcement Learning with Implicit Q-Learning",
+            "url": "https://www.semanticscholar.org/paper/348a855fe01f3f4273bf0ecf851ca688686dbfcc",
+            "venue": "ICLR",
+            "year": 2021
+        },
+        {
+            "arxivId": "2109.04640",
+            "authors": [
+                {
+                    "authorId": "2110272295",
+                    "name": "Jiayi Wang"
+                },
+                {
+                    "authorId": "3146500",
+                    "name": "Zhengling Qi"
+                },
+                {
+                    "authorId": "144717679",
+                    "name": "Raymond K. W. Wong"
+                }
+            ],
+            "doi": "10.1214/23-aos2302",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "03e19dbf435d39d729d8e6d44cb36e422f66b2be",
+            "title": "Projected State-action Balancing Weights for Offline Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/03e19dbf435d39d729d8e6d44cb36e422f66b2be",
+            "venue": "The Annals of Statistics",
+            "year": 2021
+        },
+        {
+            "arxivId": "2107.06226",
+            "authors": [
+                {
+                    "authorId": "51228100",
+                    "name": "Masatoshi Uehara"
+                },
+                {
+                    "authorId": "144426657",
+                    "name": "Wen Sun"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "4ff8454c524163bbc5d25f6c8984b1c31ad057e4",
+            "title": "Pessimistic Model-based Offline Reinforcement Learning under Partial Coverage",
+            "url": "https://www.semanticscholar.org/paper/4ff8454c524163bbc5d25f6c8984b1c31ad057e4",
+            "venue": "ICLR",
+            "year": 2021
+        },
+        {
+            "arxivId": "2106.11960",
+            "authors": [
+                {
+                    "authorId": "51270420",
+                    "name": "Yifei Min"
+                },
+                {
+                    "authorId": "2118915359",
+                    "name": "Tianhao Wang"
+                },
+                {
+                    "authorId": "2116323342",
+                    "name": "Dongruo Zhou"
+                },
+                {
+                    "authorId": "9937103",
+                    "name": "Quanquan Gu"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5a1427ff8f30d4fa0d03e6a30fe1d4bb6c344574",
+            "title": "Variance-Aware Off-Policy Evaluation with Linear Function Approximation",
+            "url": "https://www.semanticscholar.org/paper/5a1427ff8f30d4fa0d03e6a30fe1d4bb6c344574",
+            "venue": "NeurIPS",
+            "year": 2021
+        },
+        {
+            "arxivId": "2106.08909",
+            "authors": [
+                {
+                    "authorId": "35402876",
+                    "name": "David Brandfonbrener"
+                },
+                {
+                    "authorId": "3376546",
+                    "name": "William F. Whitney"
+                },
+                {
+                    "authorId": "2615814",
+                    "name": "R. Ranganath"
+                },
+                {
+                    "authorId": "1589786778",
+                    "name": "Joan Bruna"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a3b82f4fc10caf6243afbd77c9c990ce03ae36d1",
+            "title": "Offline RL Without Off-Policy Evaluation",
+            "url": "https://www.semanticscholar.org/paper/a3b82f4fc10caf6243afbd77c9c990ce03ae36d1",
+            "venue": "NeurIPS",
+            "year": 2021
+        },
+        {
+            "arxivId": "2106.06926",
+            "authors": [
+                {
+                    "authorId": "51437774",
+                    "name": "Tengyang Xie"
+                },
+                {
+                    "authorId": "2109943279",
+                    "name": "Ching-An Cheng"
+                },
+                {
+                    "authorId": "48272707",
+                    "name": "Nan Jiang"
+                },
+                {
+                    "authorId": "3040175",
+                    "name": "Paul Mineiro"
+                },
+                {
+                    "authorId": "40333747",
+                    "name": "Alekh Agarwal"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "e2ad21dae85950ab3631f65a0f142924c99fb9c4",
+            "title": "Bellman-consistent Pessimism for Offline Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/e2ad21dae85950ab3631f65a0f142924c99fb9c4",
+            "venue": "NeurIPS",
+            "year": 2021
+        },
+        {
+            "arxivId": "2106.06860",
+            "authors": [
+                {
+                    "authorId": "14637819",
+                    "name": "Scott Fujimoto"
+                },
+                {
+                    "authorId": "2046135",
+                    "name": "S. Gu"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c879b25308026d6538e52b27bcf4fd3cb60855f3",
+            "title": "A Minimalist Approach to Offline Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/c879b25308026d6538e52b27bcf4fd3cb60855f3",
+            "venue": "NeurIPS",
+            "year": 2021
+        },
+        {
+            "arxivId": "2105.04646",
+            "authors": [
+                {
+                    "authorId": "6086301",
+                    "name": "C. Shi"
+                },
+                {
+                    "authorId": "1491449962",
+                    "name": "Runzhe Wan"
+                },
+                {
+                    "authorId": "26331346",
+                    "name": "V. Chernozhukov"
+                },
+                {
+                    "authorId": "145401368",
+                    "name": "R. Song"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "3b152cd6c33a0d2565a91a7caf9e94126ff84465",
+            "title": "Deeply-Debiased Off-Policy Interval Estimation",
+            "url": "https://www.semanticscholar.org/paper/3b152cd6c33a0d2565a91a7caf9e94126ff84465",
+            "venue": "ICML",
+            "year": 2021
+        },
+        {
+            "arxivId": "2103.08050",
+            "authors": [
+                {
+                    "authorId": "2000906",
+                    "name": "Ilya Kostrikov"
+                },
+                {
+                    "authorId": "2704494",
+                    "name": "Jonathan Tompson"
+                },
+                {
+                    "authorId": "2276554",
+                    "name": "R. Fergus"
+                },
+                {
+                    "authorId": "7624658",
+                    "name": "Ofir Nachum"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "362cc80481b288874af0428107ab31e955dcf09f",
+            "title": "Offline Reinforcement Learning with Fisher Divergence Critic Regularization",
+            "url": "https://www.semanticscholar.org/paper/362cc80481b288874af0428107ab31e955dcf09f",
+            "venue": "ICML",
+            "year": 2021
+        },
+        {
+            "arxivId": "2103.04947",
+            "authors": [
+                {
+                    "authorId": "3437308",
+                    "name": "Ruosong Wang"
+                },
+                {
+                    "authorId": "2013680445",
+                    "name": "Yifan Wu"
+                },
+                {
+                    "authorId": "145124475",
+                    "name": "R. Salakhutdinov"
+                },
+                {
+                    "authorId": "144695232",
+                    "name": "S. Kakade"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "13c9475c3d99cbe020be90abb426157648aa9007",
+            "title": "Instabilities of Offline RL with Pre-Trained Neural Representation",
+            "url": "https://www.semanticscholar.org/paper/13c9475c3d99cbe020be90abb426157648aa9007",
+            "venue": "ICML",
+            "year": 2021
+        },
+        {
+            "arxivId": "2102.12769",
+            "authors": [
+                {
+                    "authorId": "13165193",
+                    "name": "Vincent Zhuang"
+                },
+                {
+                    "authorId": "3285568",
+                    "name": "Yanan Sui"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c54d32c13298ee10abf6edb2ac8f18018519c8ce",
+            "title": "No-Regret Reinforcement Learning with Heavy-Tailed Rewards",
+            "url": "https://www.semanticscholar.org/paper/c54d32c13298ee10abf6edb2ac8f18018519c8ce",
+            "venue": "AISTATS",
+            "year": 2021
+        },
+        {
+            "arxivId": "2102.08363",
+            "authors": [
+                {
+                    "authorId": "10909315",
+                    "name": "Tianhe Yu"
+                },
+                {
+                    "authorId": "1488785534",
+                    "name": "Aviral Kumar"
+                },
+                {
+                    "authorId": "102801230",
+                    "name": "Rafael Rafailov"
+                },
+                {
+                    "authorId": "19275599",
+                    "name": "A. Rajeswaran"
+                },
+                {
+                    "authorId": "1736651",
+                    "name": "S. Levine"
+                },
+                {
+                    "authorId": "46881670",
+                    "name": "Chelsea Finn"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "245682e8b3fa76f4a3e2991b5497577af95cbb3f",
+            "title": "COMBO: Conservative Offline Model-Based Policy Optimization",
+            "url": "https://www.semanticscholar.org/paper/245682e8b3fa76f4a3e2991b5497577af95cbb3f",
+            "venue": "NeurIPS",
+            "year": 2021
+        },
+        {
+            "arxivId": "2102.05800",
+            "authors": [
+                {
+                    "authorId": "9117593",
+                    "name": "Xuezhou Zhang"
+                },
+                {
+                    "authorId": "2109265721",
+                    "name": "Yiding Chen"
+                },
+                {
+                    "authorId": "1832364",
+                    "name": "Xiaojin Zhu"
+                },
+                {
+                    "authorId": "144426657",
+                    "name": "Wen Sun"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5d15bb4a206c8292473be4f2d0f380d0a2d42531",
+            "title": "Robust Policy Gradient against Strong Data Corruption",
+            "url": "https://www.semanticscholar.org/paper/5d15bb4a206c8292473be4f2d0f380d0a2d42531",
+            "venue": "ICML",
+            "year": 2021
+        },
+        {
+            "arxivId": "2102.03607",
+            "authors": [
+                {
+                    "authorId": "30889699",
+                    "name": "Botao Hao"
+                },
+                {
+                    "authorId": "121811969",
+                    "name": "X. Ji"
+                },
+                {
+                    "authorId": "2088205356",
+                    "name": "Yaqi Duan"
+                },
+                {
+                    "authorId": "2115606440",
+                    "name": "Hao Lu"
+                },
+                {
+                    "authorId": "40868287",
+                    "name": "Csaba Szepesvari"
+                },
+                {
+                    "authorId": "50468734",
+                    "name": "Mengdi Wang"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "083cf99de6a3201263107bde936a5e3cb1ff5d1d",
+            "title": "Bootstrapping Fitted Q-Evaluation for Off-Policy Inference",
+            "url": "https://www.semanticscholar.org/paper/083cf99de6a3201263107bde936a5e3cb1ff5d1d",
+            "venue": "ICML",
+            "year": 2021
+        },
+        {
+            "arxivId": "2102.01748",
+            "authors": [
+                {
+                    "authorId": "2053888252",
+                    "name": "Ming Yin"
+                },
+                {
+                    "authorId": "1491626939",
+                    "name": "Yu Bai"
+                },
+                {
+                    "authorId": "2040617",
+                    "name": "Yu-Xiang Wang"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0f492be75b051168d96450ad3b7d21bb23ab0883",
+            "title": "Near-Optimal Offline Reinforcement Learning via Double Variance Reduction",
+            "url": "https://www.semanticscholar.org/paper/0f492be75b051168d96450ad3b7d21bb23ab0883",
+            "venue": "NeurIPS",
+            "year": 2021
+        },
+        {
+            "arxivId": "2012.15085",
+            "authors": [
+                {
+                    "authorId": "2110838904",
+                    "name": "Ying Jin"
+                },
+                {
+                    "authorId": "150358650",
+                    "name": "Zhuoran Yang"
+                },
+                {
+                    "authorId": "50218397",
+                    "name": "Zhaoran Wang"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "9f8a70e9188a913317e97ba1874c8f763fd13c04",
+            "title": "Is Pessimism Provably Efficient for Offline RL?",
+            "url": "https://www.semanticscholar.org/paper/9f8a70e9188a913317e97ba1874c8f763fd13c04",
+            "venue": "ICML",
+            "year": 2020
+        },
+        {
+            "arxivId": "2010.11652",
+            "authors": [
+                {
+                    "authorId": "144445937",
+                    "name": "Bo Dai"
+                },
+                {
+                    "authorId": "7624658",
+                    "name": "Ofir Nachum"
+                },
+                {
+                    "authorId": "1819830",
+                    "name": "Yinlam Chow"
+                },
+                {
+                    "authorId": "47681372",
+                    "name": "Lihong Li"
+                },
+                {
+                    "authorId": "40868287",
+                    "name": "Csaba Szepesvari"
+                },
+                {
+                    "authorId": "50319359",
+                    "name": "D. Schuurmans"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "43bf994c1dbe5f54996e06cac3cf95f107efaf19",
+            "title": "CoinDICE: Off-Policy Confidence Interval Estimation",
+            "url": "https://www.semanticscholar.org/paper/43bf994c1dbe5f54996e06cac3cf95f107efaf19",
+            "venue": "NeurIPS",
+            "year": 2020
+        },
+        {
+            "arxivId": "2007.11771",
+            "authors": [
+                {
+                    "authorId": "145101577",
+                    "name": "Peng Liao"
+                },
+                {
+                    "authorId": "3146500",
+                    "name": "Zhengling Qi"
+                },
+                {
+                    "authorId": "1491449962",
+                    "name": "Runzhe Wan"
+                },
+                {
+                    "authorId": "2035680",
+                    "name": "P. Klasnja"
+                },
+                {
+                    "authorId": "144180010",
+                    "name": "S. Murphy"
+                }
+            ],
+            "doi": "10.1214/22-aos2231",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "82da3373cdf63393c004cf8b87e5af86398bccd3",
+            "title": "BATCH POLICY LEARNING IN AVERAGE REWARD MARKOV DECISION PROCESSES.",
+            "url": "https://www.semanticscholar.org/paper/82da3373cdf63393c004cf8b87e5af86398bccd3",
+            "venue": "Annals of statistics",
+            "year": 2020
+        },
+        {
+            "arxivId": "2006.15121",
+            "authors": [
+                {
+                    "authorId": "144125313",
+                    "name": "Weibin Mo"
+                },
+                {
+                    "authorId": "3146500",
+                    "name": "Zhengling Qi"
+                },
+                {
+                    "authorId": "46399637",
+                    "name": "Yufeng Liu"
+                }
+            ],
+            "doi": "10.1080/01621459.2020.1796359",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "4179b3565cbe72f7d8a460d2a8d2c85cc88dc708",
+            "title": "Learning Optimal Distributionally Robust Individualized Treatment Rules",
+            "url": "https://www.semanticscholar.org/paper/4179b3565cbe72f7d8a460d2a8d2c85cc88dc708",
+            "venue": "Journal of the American Statistical Association",
+            "year": 2020
+        },
+        {
+            "arxivId": "2006.04779",
+            "authors": [
+                {
+                    "authorId": "1488785534",
+                    "name": "Aviral Kumar"
+                },
+                {
+                    "authorId": "35499972",
+                    "name": "Aurick Zhou"
+                },
+                {
+                    "authorId": "145499435",
+                    "name": "G. Tucker"
+                },
+                {
+                    "authorId": "1736651",
+                    "name": "S. Levine"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "28db20a81eec74a50204686c3cf796c42a020d2e",
+            "title": "Conservative Q-Learning for Offline Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/28db20a81eec74a50204686c3cf796c42a020d2e",
+            "venue": "NeurIPS",
+            "year": 2020
+        },
+        {
+            "arxivId": "2005.01643",
+            "authors": [
+                {
+                    "authorId": "1736651",
+                    "name": "S. Levine"
+                },
+                {
+                    "authorId": "1488785534",
+                    "name": "Aviral Kumar"
+                },
+                {
+                    "authorId": "145499435",
+                    "name": "G. Tucker"
+                },
+                {
+                    "authorId": "2550764",
+                    "name": "Justin Fu"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5e7bc93622416f14e6948a500278bfbe58cd3890",
+            "title": "Offline Reinforcement Learning: Tutorial, Review, and Perspectives on Open Problems",
+            "url": "https://www.semanticscholar.org/paper/5e7bc93622416f14e6948a500278bfbe58cd3890",
+            "venue": "ArXiv",
+            "year": 2020
+        },
+        {
+            "arxivId": "2004.07219",
+            "authors": [
+                {
+                    "authorId": "2550764",
+                    "name": "Justin Fu"
+                },
+                {
+                    "authorId": "1488785534",
+                    "name": "Aviral Kumar"
+                },
+                {
+                    "authorId": "7624658",
+                    "name": "Ofir Nachum"
+                },
+                {
+                    "authorId": "145499435",
+                    "name": "G. Tucker"
+                },
+                {
+                    "authorId": "1736651",
+                    "name": "S. Levine"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "a326d9f2d2d351001fece788165dbcbb524da2e4",
+            "title": "D4RL: Datasets for Deep Data-Driven Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/a326d9f2d2d351001fece788165dbcbb524da2e4",
+            "venue": "ArXiv",
+            "year": 2020
+        },
+        {
+            "arxivId": "2002.09516",
+            "authors": [
+                {
+                    "authorId": "2088205356",
+                    "name": "Yaqi Duan"
+                },
+                {
+                    "authorId": "145731462",
+                    "name": "Mengdi Wang"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "8664713793dbb1f6f935c617dd34be93d5b096ed",
+            "title": "Minimax-Optimal Off-Policy Evaluation with Linear Function Approximation",
+            "url": "https://www.semanticscholar.org/paper/8664713793dbb1f6f935c617dd34be93d5b096ed",
+            "venue": "ICML",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "48272707",
+                    "name": "Nan Jiang"
+                },
+                {
+                    "authorId": "151624938",
+                    "name": "Jiawei Huang"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "245cb5a1cae06b8376b0338e3e095b84b8ab2f55",
+            "title": "Minimax Value Interval for Off-Policy Evaluation and Policy Optimization",
+            "url": "https://www.semanticscholar.org/paper/245cb5a1cae06b8376b0338e3e095b84b8ab2f55",
+            "venue": "NeurIPS",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2145953830",
+                    "name": "Yangchun Zhang"
+                },
+                {
+                    "authorId": "2217847971",
+                    "name": "Pengfei Liu"
+                }
+            ],
+            "doi": "10.1080/03610926.2019.1710204",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "9a8389eb1cfdbfccd98ecdfd212fcb48c687771f",
+            "title": "Median-of-means approach for repeated measures data",
+            "url": "https://www.semanticscholar.org/paper/9a8389eb1cfdbfccd98ecdfd212fcb48c687771f",
+            "venue": "",
+            "year": 2020
+        },
+        {
+            "arxivId": "1912.13088",
+            "authors": [
+                {
+                    "authorId": "145101577",
+                    "name": "Peng Liao"
+                },
+                {
+                    "authorId": "2035680",
+                    "name": "P. Klasnja"
+                },
+                {
+                    "authorId": "144180010",
+                    "name": "S. Murphy"
+                }
+            ],
+            "doi": "10.1080/01621459.2020.1807993",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "4f29f21b9711a83376be3072ac3af42d1943eba9",
+            "title": "Off-Policy Estimation of Long-Term Average Outcomes With Applications to Mobile Health",
+            "url": "https://www.semanticscholar.org/paper/4f29f21b9711a83376be3072ac3af42d1943eba9",
+            "venue": "Journal of the American Statistical Association",
+            "year": 2019
+        },
+        {
+            "arxivId": "1911.08689",
+            "authors": [
+                {
+                    "authorId": "2558458",
+                    "name": "Thodoris Lykouris"
+                },
+                {
+                    "authorId": "3385674",
+                    "name": "Max Simchowitz"
+                },
+                {
+                    "authorId": "2158559",
+                    "name": "Aleksandrs Slivkins"
+                },
+                {
+                    "authorId": "144426657",
+                    "name": "Wen Sun"
+                }
+            ],
+            "doi": "10.1287/moor.2021.0202",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "dd49929128afbe9a72fc41442988e592b0da566d",
+            "title": "Corruption Robust Exploration in Episodic Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/dd49929128afbe9a72fc41442988e592b0da566d",
+            "venue": "COLT",
+            "year": 2019
+        },
+        {
+            "arxivId": "1911.06854",
+            "authors": [
+                {
+                    "authorId": "88658266",
+                    "name": "Cameron Voloshin"
+                },
+                {
+                    "authorId": "145000658",
+                    "name": "Hoang Minh Le"
+                },
+                {
+                    "authorId": "48272707",
+                    "name": "Nan Jiang"
+                },
+                {
+                    "authorId": "1740159",
+                    "name": "Yisong Yue"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "923dcad6708bc40d01350eaa6ad1886f45430cf8",
+            "title": "Empirical Study of Off-Policy Policy Evaluation for Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/923dcad6708bc40d01350eaa6ad1886f45430cf8",
+            "venue": "NeurIPS Datasets and Benchmarks",
+            "year": 2019
+        },
+        {
+            "arxivId": "1910.12809",
+            "authors": [
+                {
+                    "authorId": "51228100",
+                    "name": "Masatoshi Uehara"
+                },
+                {
+                    "authorId": "151624938",
+                    "name": "Jiawei Huang"
+                },
+                {
+                    "authorId": "48272707",
+                    "name": "Nan Jiang"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7b5773650b4e52568d4e9e4c6384e9034d40fd66",
+            "title": "Minimax Weight and Q-Function Learning for Off-Policy Evaluation",
+            "url": "https://www.semanticscholar.org/paper/7b5773650b4e52568d4e9e4c6384e9034d40fd66",
+            "venue": "ICML",
+            "year": 2019
+        },
+        {
+            "arxivId": "1910.07186",
+            "authors": [
+                {
+                    "authorId": "1855780",
+                    "name": "Ziyang Tang"
+                },
+                {
+                    "authorId": "22758695",
+                    "name": "Yihao Feng"
+                },
+                {
+                    "authorId": "47681372",
+                    "name": "Lihong Li"
+                },
+                {
+                    "authorId": "24982365",
+                    "name": "Dengyong Zhou"
+                },
+                {
+                    "authorId": "47362268",
+                    "name": "Qiang Liu"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "c2c5d4650beb72a0e00a4c384064f4ab2ddef1dc",
+            "title": "Doubly Robust Bias Reduction in Infinite Horizon Off-Policy Estimation",
+            "url": "https://www.semanticscholar.org/paper/c2c5d4650beb72a0e00a4c384064f4ab2ddef1dc",
+            "venue": "ICLR",
+            "year": 2019
+        },
+        {
+            "arxivId": "1911.11361",
+            "authors": [
+                {
+                    "authorId": "2013680445",
+                    "name": "Yifan Wu"
+                },
+                {
+                    "authorId": "145499435",
+                    "name": "G. Tucker"
+                },
+                {
+                    "authorId": "7624658",
+                    "name": "Ofir Nachum"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9be492858863c8c7c24be1ecb75724de5086bd8e",
+            "title": "Behavior Regularized Offline Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/9be492858863c8c7c24be1ecb75724de5086bd8e",
+            "venue": "ArXiv",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2479521",
+                    "name": "Abhimanyu Dubey"
+                },
+                {
+                    "authorId": "2238803594",
+                    "name": "Alex Pentland"
+                }
+            ],
+            "doi": "10.24963/ijcai.2019/792",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9b522550dae26d3a3b380bd30b3a7e1d25f72cf8",
+            "title": "Thompson Sampling on Symmetric Alpha-Stable Bandits",
+            "url": "https://www.semanticscholar.org/paper/9b522550dae26d3a3b380bd30b3a7e1d25f72cf8",
+            "venue": "IJCAI",
+            "year": 2019
+        },
+        {
+            "arxivId": "1906.04280",
+            "authors": [
+                {
+                    "authorId": "1755694",
+                    "name": "G. Lugosi"
+                },
+                {
+                    "authorId": "2266267",
+                    "name": "S. Mendelson"
+                }
+            ],
+            "doi": "10.1007/S10208-019-09427-X",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "95d4f21a498487f92fcb34d4040d39876a179105",
+            "title": "Mean Estimation and Regression Under Heavy-Tailed Distributions: A Survey",
+            "url": "https://www.semanticscholar.org/paper/95d4f21a498487f92fcb34d4040d39876a179105",
+            "venue": "Found. Comput. Math.",
+            "year": 2019
+        },
+        {
+            "arxivId": "1906.03393",
+            "authors": [
+                {
+                    "authorId": "51437774",
+                    "name": "Tengyang Xie"
+                },
+                {
+                    "authorId": "50032176",
+                    "name": "Yifei Ma"
+                },
+                {
+                    "authorId": "2040617",
+                    "name": "Yu-Xiang Wang"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "ecbe3ce8ba487cb98fb71650b2e399a26c726204",
+            "title": "Towards Optimal Off-Policy Evaluation for Reinforcement Learning with Marginalized Importance Sampling",
+            "url": "https://www.semanticscholar.org/paper/ecbe3ce8ba487cb98fb71650b2e399a26c726204",
+            "venue": "NeurIPS",
+            "year": 2019
+        },
+        {
+            "arxivId": "1906.00949",
+            "authors": [
+                {
+                    "authorId": "1488785534",
+                    "name": "Aviral Kumar"
+                },
+                {
+                    "authorId": "2550764",
+                    "name": "Justin Fu"
+                },
+                {
+                    "authorId": "145499435",
+                    "name": "G. Tucker"
+                },
+                {
+                    "authorId": "1736651",
+                    "name": "S. Levine"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "82b4b03a4659d6e04bd7cbf51d6e08fde1348dbd",
+            "title": "Stabilizing Off-Policy Q-Learning via Bootstrapping Error Reduction",
+            "url": "https://www.semanticscholar.org/paper/82b4b03a4659d6e04bd7cbf51d6e08fde1348dbd",
+            "venue": "NeurIPS",
+            "year": 2019
+        },
+        {
+            "arxivId": "1906.04733",
+            "authors": [
+                {
+                    "authorId": "7624658",
+                    "name": "Ofir Nachum"
+                },
+                {
+                    "authorId": "1819830",
+                    "name": "Yinlam Chow"
+                },
+                {
+                    "authorId": "144445933",
+                    "name": "Bo Dai"
+                },
+                {
+                    "authorId": "47681372",
+                    "name": "Lihong Li"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "875280d96b2f138902061ae6409249ee4ded0da3",
+            "title": "DualDICE: Behavior-Agnostic Estimation of Discounted Stationary Distribution Corrections",
+            "url": "https://www.semanticscholar.org/paper/875280d96b2f138902061ae6409249ee4ded0da3",
+            "venue": "NeurIPS",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "15825779",
+                    "name": "Shiyin Lu"
+                },
+                {
+                    "authorId": "50248619",
+                    "name": "G. Wang"
+                },
+                {
+                    "authorId": "2113664061",
+                    "name": "Yao Hu"
+                },
+                {
+                    "authorId": "2108876951",
+                    "name": "Lijun Zhang"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "716f9688ccacb082becb33738aa15d423f5a65a8",
+            "title": "Optimal Algorithms for Lipschitz Bandits with Heavy-tailed Rewards",
+            "url": "https://www.semanticscholar.org/paper/716f9688ccacb082becb33738aa15d423f5a65a8",
+            "venue": "ICML",
+            "year": 2019
+        },
+        {
+            "arxivId": "1903.08738",
+            "authors": [
+                {
+                    "authorId": "145000658",
+                    "name": "Hoang Minh Le"
+                },
+                {
+                    "authorId": "88658266",
+                    "name": "Cameron Voloshin"
+                },
+                {
+                    "authorId": "1740159",
+                    "name": "Yisong Yue"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "3203be64597368d356b3ebca54a15699a3714e24",
+            "title": "Batch Policy Learning under Constraints",
+            "url": "https://www.semanticscholar.org/paper/3203be64597368d356b3ebca54a15699a3714e24",
+            "venue": "ICML",
+            "year": 2019
+        },
+        {
+            "arxivId": "1901.00137",
+            "authors": [
+                {
+                    "authorId": "150358650",
+                    "name": "Zhuoran Yang"
+                },
+                {
+                    "authorId": "2984647",
+                    "name": "Yuchen Xie"
+                },
+                {
+                    "authorId": "3113442",
+                    "name": "Zhaoran Wang"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "6dae703128d9caff2623eb8dfe2526dc6ad7aff5",
+            "title": "A Theoretical Analysis of Deep Q-Learning",
+            "url": "https://www.semanticscholar.org/paper/6dae703128d9caff2623eb8dfe2526dc6ad7aff5",
+            "venue": "L4DC",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2117944720",
+                    "name": "Qing Wang"
+                },
+                {
+                    "authorId": "3081531",
+                    "name": "Jiechao Xiong"
+                },
+                {
+                    "authorId": "1390738614",
+                    "name": "Lei Han"
+                },
+                {
+                    "authorId": "2075416111",
+                    "name": "Peng Sun"
+                },
+                {
+                    "authorId": "2118959751",
+                    "name": "Han Liu"
+                },
+                {
+                    "authorId": "2146324552",
+                    "name": "Tong Zhang"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "caeb088b19b0829551ef4bf3da8b1a5c98bf8e73",
+            "title": "Exponentially Weighted Imitation Learning for Batched Historical Data",
+            "url": "https://www.semanticscholar.org/paper/caeb088b19b0829551ef4bf3da8b1a5c98bf8e73",
+            "venue": "NeurIPS",
+            "year": 2018
+        },
+        {
+            "arxivId": "1810.12429",
+            "authors": [
+                {
+                    "authorId": "47362268",
+                    "name": "Qiang Liu"
+                },
+                {
+                    "authorId": "47681372",
+                    "name": "Lihong Li"
+                },
+                {
+                    "authorId": "1855780",
+                    "name": "Ziyang Tang"
+                },
+                {
+                    "authorId": "24982365",
+                    "name": "Dengyong Zhou"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "e81ea45d8bec329fdb11fd84990852f620895d6f",
+            "title": "Breaking the Curse of Horizon: Infinite-Horizon Off-Policy Estimation",
+            "url": "https://www.semanticscholar.org/paper/e81ea45d8bec329fdb11fd84990852f620895d6f",
+            "venue": "NeurIPS",
+            "year": 2018
+        },
+        {
+            "arxivId": "1810.10895",
+            "authors": [
+                {
+                    "authorId": "153778552",
+                    "name": "Han Shao"
+                },
+                {
+                    "authorId": "1805134",
+                    "name": "Xiaotian Yu"
+                },
+                {
+                    "authorId": "145310663",
+                    "name": "Irwin King"
+                },
+                {
+                    "authorId": "1785083",
+                    "name": "Michael R. Lyu"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "92ca008eec4ac1883a29a033e256552718d9f99d",
+            "title": "Almost Optimal Algorithms for Linear Stochastic Bandits with Heavy-Tailed Payoffs",
+            "url": "https://www.semanticscholar.org/paper/92ca008eec4ac1883a29a033e256552718d9f99d",
+            "venue": "NeurIPS",
+            "year": 2018
+        },
+        {
+            "arxivId": "1806.01347",
+            "authors": [
+                {
+                    "authorId": "34719248",
+                    "name": "Josiah P. Hanna"
+                },
+                {
+                    "authorId": "2791038",
+                    "name": "S. Niekum"
+                },
+                {
+                    "authorId": "144848112",
+                    "name": "P. Stone"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "dbba10eb7fb37626ea554cf7f64ef514ddd642be",
+            "title": "Importance Sampling Policy Evaluation with an Estimated Behavior Policy",
+            "url": "https://www.semanticscholar.org/paper/dbba10eb7fb37626ea554cf7f64ef514ddd642be",
+            "venue": "ICML",
+            "year": 2018
+        },
+        {
+            "arxivId": "1802.03493",
+            "authors": [
+                {
+                    "authorId": "1682124",
+                    "name": "Mehrdad Farajtabar"
+                },
+                {
+                    "authorId": "1819830",
+                    "name": "Yinlam Chow"
+                },
+                {
+                    "authorId": "1678622",
+                    "name": "M. Ghavamzadeh"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "d7b32bf240bb3b2f2a98d87ea21b669226e0f9d8",
+            "title": "More Robust Doubly Robust Off-policy Evaluation",
+            "url": "https://www.semanticscholar.org/paper/d7b32bf240bb3b2f2a98d87ea21b669226e0f9d8",
+            "venue": "ICML",
+            "year": 2018
+        },
+        {
+            "arxivId": "1707.06347",
+            "authors": [
+                {
+                    "authorId": "47971768",
+                    "name": "John Schulman"
+                },
+                {
+                    "authorId": "143909660",
+                    "name": "Filip Wolski"
+                },
+                {
+                    "authorId": "6515819",
+                    "name": "Prafulla Dhariwal"
+                },
+                {
+                    "authorId": "38909097",
+                    "name": "Alec Radford"
+                },
+                {
+                    "authorId": "2067138712",
+                    "name": "Oleg Klimov"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "dce6f9d4017b1785979e7520fd0834ef8cf02f4b",
+            "title": "Proximal Policy Optimization Algorithms",
+            "url": "https://www.semanticscholar.org/paper/dce6f9d4017b1785979e7520fd0834ef8cf02f4b",
+            "venue": "ArXiv",
+            "year": 2017
+        },
+        {
+            "arxivId": "1611.03531",
+            "authors": [
+                {
+                    "authorId": "39957639",
+                    "name": "Daniel J. Luckett"
+                },
+                {
+                    "authorId": "32734155",
+                    "name": "Eric B. Laber"
+                },
+                {
+                    "authorId": "12801136",
+                    "name": "A. Kahkoska"
+                },
+                {
+                    "authorId": "3122146",
+                    "name": "D. Maahs"
+                },
+                {
+                    "authorId": "1396651936",
+                    "name": "E. Mayer\u2010Davis"
+                },
+                {
+                    "authorId": "2560724",
+                    "name": "M. Kosorok"
+                }
+            ],
+            "doi": "10.1080/01621459.2018.1537919",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "3f0b4d879cb448b7e8870b68b944f749a8cb438d",
+            "title": "Estimating Dynamic Treatment Regimes in Mobile Health Using V-Learning",
+            "url": "https://www.semanticscholar.org/paper/3f0b4d879cb448b7e8870b68b944f749a8cb438d",
+            "venue": "Journal of the American Statistical Association",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1712535",
+                    "name": "Shie Mannor"
+                },
+                {
+                    "authorId": "3021244",
+                    "name": "O. Mebel"
+                },
+                {
+                    "authorId": "143719795",
+                    "name": "Huan Xu"
+                }
+            ],
+            "doi": "10.1287/moor.2016.0786",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "237cb5c50015eadb6b3eccc1bd04dc43796ad587",
+            "title": "Robust MDPs with k-Rectangular Uncertainty",
+            "url": "https://www.semanticscholar.org/paper/237cb5c50015eadb6b3eccc1bd04dc43796ad587",
+            "venue": "Math. Oper. Res.",
+            "year": 2016
+        },
+        {
+            "arxivId": "1604.00923",
+            "authors": [
+                {
+                    "authorId": "143640165",
+                    "name": "P. Thomas"
+                },
+                {
+                    "authorId": "2563117",
+                    "name": "E. Brunskill"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "ec8a2f6cfe72309f5f1608d22ec28778d3ee976a",
+            "title": "Data-Efficient Off-Policy Policy Evaluation for Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/ec8a2f6cfe72309f5f1608d22ec28778d3ee976a",
+            "venue": "ICML",
+            "year": 2016
+        },
+        {
+            "arxivId": "1511.03722",
+            "authors": [
+                {
+                    "authorId": "48272707",
+                    "name": "Nan Jiang"
+                },
+                {
+                    "authorId": "47681372",
+                    "name": "Lihong Li"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "2fdb536da39a014c598ea67b0db88431fcd852a8",
+            "title": "Doubly Robust Off-policy Value Evaluation for Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/2fdb536da39a014c598ea67b0db88431fcd852a8",
+            "venue": "ICML",
+            "year": 2015
+        },
+        {
+            "arxivId": "1509.05845",
+            "authors": [
+                {
+                    "authorId": "2477489",
+                    "name": "L. Devroye"
+                },
+                {
+                    "authorId": "2202029",
+                    "name": "M. Lerasle"
+                },
+                {
+                    "authorId": "1755694",
+                    "name": "G. Lugosi"
+                },
+                {
+                    "authorId": "145548325",
+                    "name": "R. Oliveira"
+                }
+            ],
+            "doi": "10.1214/16-AOS1440",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f700bbc2a3fb25e14edcf6d76abde2633e8e9aae",
+            "title": "Sub-Gaussian mean estimators",
+            "url": "https://www.semanticscholar.org/paper/f700bbc2a3fb25e14edcf6d76abde2633e8e9aae",
+            "venue": "",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143640165",
+                    "name": "P. Thomas"
+                },
+                {
+                    "authorId": "1709005",
+                    "name": "Georgios Theocharous"
+                },
+                {
+                    "authorId": "1678622",
+                    "name": "M. Ghavamzadeh"
+                }
+            ],
+            "doi": "10.1609/aaai.v29i1.9541",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a8bbcf5ea723b1f9b7d2257dd6fd492cd280f0af",
+            "title": "High-Confidence Off-Policy Evaluation",
+            "url": "https://www.semanticscholar.org/paper/a8bbcf5ea723b1f9b7d2257dd6fd492cd280f0af",
+            "venue": "AAAI",
+            "year": 2015
+        },
+        {
+            "arxivId": "1308.1334",
+            "authors": [
+                {
+                    "authorId": "1810925",
+                    "name": "Stanislav Minsker"
+                }
+            ],
+            "doi": "10.3150/14-BEJ645",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "adb542bb749073d80af52f2038ad6980e3874337",
+            "title": "Geometric median and robust estimation in Banach spaces",
+            "url": "https://www.semanticscholar.org/paper/adb542bb749073d80af52f2038ad6980e3874337",
+            "venue": "",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "7425260",
+                    "name": "W. Wiesemann"
+                },
+                {
+                    "authorId": "2500534",
+                    "name": "D. Kuhn"
+                },
+                {
+                    "authorId": "1722652",
+                    "name": "B. Rustem"
+                }
+            ],
+            "doi": "10.1287/MOOR.1120.0566",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9eae0c6ca4a52fc5e6b6f9eb111ab6fdbecdf9a6",
+            "title": "Robust Markov Decision Processes",
+            "url": "https://www.semanticscholar.org/paper/9eae0c6ca4a52fc5e6b6f9eb111ab6fdbecdf9a6",
+            "venue": "Math. Oper. Res.",
+            "year": 2013
+        },
+        {
+            "arxivId": "1209.1727",
+            "authors": [
+                {
+                    "authorId": "1815542",
+                    "name": "S\u00e9bastien Bubeck"
+                },
+                {
+                    "authorId": "1388387856",
+                    "name": "N. Cesa-Bianchi"
+                },
+                {
+                    "authorId": "1755694",
+                    "name": "G. Lugosi"
+                }
+            ],
+            "doi": "10.1109/TIT.2013.2277869",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "87c6fbbc660fa509acf31a02875f2837a2d24d91",
+            "title": "Bandits With Heavy Tail",
+            "url": "https://www.semanticscholar.org/paper/87c6fbbc660fa509acf31a02875f2837a2d24d91",
+            "venue": "IEEE Transactions on Information Theory",
+            "year": 2012
+        },
+        {
+            "arxivId": "1201.0490",
+            "authors": [
+                {
+                    "authorId": "2570016",
+                    "name": "Fabian Pedregosa"
+                },
+                {
+                    "authorId": "3025780",
+                    "name": "G. Varoquaux"
+                },
+                {
+                    "authorId": "1797840",
+                    "name": "Alexandre Gramfort"
+                },
+                {
+                    "authorId": "52200573",
+                    "name": "V. Michel"
+                },
+                {
+                    "authorId": "8493461",
+                    "name": "B. Thirion"
+                },
+                {
+                    "authorId": "2958756",
+                    "name": "O. Grisel"
+                },
+                {
+                    "authorId": "27257992",
+                    "name": "Mathieu Blondel"
+                },
+                {
+                    "authorId": "1881041",
+                    "name": "Gilles Louppe"
+                },
+                {
+                    "authorId": "2780213",
+                    "name": "P. Prettenhofer"
+                },
+                {
+                    "authorId": "2067827437",
+                    "name": "Ron Weiss"
+                },
+                {
+                    "authorId": "39571582",
+                    "name": "Ron J. Weiss"
+                },
+                {
+                    "authorId": "2081469",
+                    "name": "J. Vanderplas"
+                },
+                {
+                    "authorId": "144720379",
+                    "name": "Alexandre Passos"
+                },
+                {
+                    "authorId": "3084321",
+                    "name": "D. Cournapeau"
+                },
+                {
+                    "authorId": "2423884",
+                    "name": "M. Brucher"
+                },
+                {
+                    "authorId": "35243423",
+                    "name": "M. Perrot"
+                },
+                {
+                    "authorId": "1710398",
+                    "name": "E. Duchesnay"
+                }
+            ],
+            "doi": "10.5555/1953048.2078195",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "168f28ac3c8c7ea63bf7ed25f2288e8b67e2fe74",
+            "title": "Scikit-learn: Machine Learning in Python",
+            "url": "https://www.semanticscholar.org/paper/168f28ac3c8c7ea63bf7ed25f2288e8b67e2fe74",
+            "venue": "J. Mach. Learn. Res.",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1708654",
+                    "name": "R. Munos"
+                },
+                {
+                    "authorId": "40868287",
+                    "name": "Csaba Szepesvari"
+                }
+            ],
+            "doi": "10.5555/1390681.1390708",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "6b69c970d01e93bbeb73b4ed360a759fbfb4befc",
+            "title": "Finite-Time Bounds for Fitted Value Iteration",
+            "url": "https://www.semanticscholar.org/paper/6b69c970d01e93bbeb73b4ed360a759fbfb4befc",
+            "venue": "J. Mach. Learn. Res.",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1751167",
+                    "name": "D. Ernst"
+                },
+                {
+                    "authorId": "50206577",
+                    "name": "P. Geurts"
+                },
+                {
+                    "authorId": "1695713",
+                    "name": "L. Wehenkel"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "41356b8998dd7ddf89429445320d82a269e3ab14",
+            "title": "Tree-Based Batch Mode Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/41356b8998dd7ddf89429445320d82a269e3ab14",
+            "venue": "J. Mach. Learn. Res.",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1784072",
+                    "name": "M. Lagoudakis"
+                },
+                {
+                    "authorId": "145726861",
+                    "name": "Ronald E. Parr"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b750a17921d32936425e05f8b00b96569e2fc5a6",
+            "title": "Least-Squares Policy Iteration",
+            "url": "https://www.semanticscholar.org/paper/b750a17921d32936425e05f8b00b96569e2fc5a6",
+            "venue": "J. Mach. Learn. Res.",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144368601",
+                    "name": "Doina Precup"
+                },
+                {
+                    "authorId": "1699645",
+                    "name": "R. Sutton"
+                },
+                {
+                    "authorId": "1699868",
+                    "name": "Satinder Singh"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "78020db7e3d968f6e6cc26d18e31e5b668ca7fee",
+            "title": "Eligibility Traces for Off-Policy Policy Evaluation",
+            "url": "https://www.semanticscholar.org/paper/78020db7e3d968f6e6cc26d18e31e5b668ca7fee",
+            "venue": "ICML",
+            "year": 2000
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2118637906",
+                    "name": "Yuwei Fu"
+                },
+                {
+                    "authorId": "92148538",
+                    "name": "Di Wu"
+                },
+                {
+                    "authorId": "2500923",
+                    "name": "B. Boulet"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "fc605086b12a4964a52c49a812aef54bfa83aaba",
+            "title": "A Closer Look at Offline RL Agents",
+            "url": "https://www.semanticscholar.org/paper/fc605086b12a4964a52c49a812aef54bfa83aaba",
+            "venue": "NeurIPS",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "104647796",
+                    "name": "Juan C. Perdomo"
+                },
+                {
+                    "authorId": "37019006",
+                    "name": "A. Krishnamurthy"
+                },
+                {
+                    "authorId": "1745169",
+                    "name": "P. Bartlett"
+                },
+                {
+                    "authorId": "144695232",
+                    "name": "S. Kakade"
+                }
+            ],
+            "doi": "10.48550/arXiv.2203.04236",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "725c97aec0511f287b1777db6f704f75cb524072",
+            "title": "A Sharp Characterization of Linear Estimators for Offline Policy Evaluation",
+            "url": "https://www.semanticscholar.org/paper/725c97aec0511f287b1777db6f704f75cb524072",
+            "venue": "ArXiv",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1819261",
+                    "name": "Steven J. Bradtke"
+                },
+                {
+                    "authorId": "1730590",
+                    "name": "A. Barto"
+                }
+            ],
+            "doi": "10.1007/BF00114723",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "41e1b9de83a9e2f53bcb3f27e18d349fd63b40fa",
+            "title": "Linear Least-Squares algorithms for temporal difference learning",
+            "url": "https://www.semanticscholar.org/paper/41e1b9de83a9e2f53bcb3f27e18d349fd63b40fa",
+            "venue": "Machine Learning",
+            "year": 2004
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2279302875",
+                    "name": "Bo Dai"
+                },
+                {
+                    "authorId": "7624658",
+                    "name": "Ofir Nachum"
+                },
+                {
+                    "authorId": "1819830",
+                    "name": "Yinlam Chow"
+                },
+                {
+                    "authorId": "2279306259",
+                    "name": "Lihong Li"
+                },
+                {
+                    "authorId": "2275096257",
+                    "name": "Csaba Szepesv\u00e1ri"
+                },
+                {
+                    "authorId": "50319359",
+                    "name": "D. Schuurmans"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "269a084d4caf984ba0c6e07e057a52710bf32750",
+            "title": "CoinDICE: Off-Policy Con\ufb01dence Interval Estimation",
+            "url": "https://www.semanticscholar.org/paper/269a084d4caf984ba0c6e07e057a52710bf32750",
+            "venue": "",
+            "year": null
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2118637906",
+                    "name": "Yuwei Fu"
+                },
+                {
+                    "authorId": "2262086443",
+                    "name": "Di Wu"
+                },
+                {
+                    "authorId": "2261959539",
+                    "name": "Benoit Boulet"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "476433f07b95d3e095a1c31ccf6be8d3f9e10ead",
+            "title": "A Closer Look at Of\ufb02ine RL Agents",
+            "url": "https://www.semanticscholar.org/paper/476433f07b95d3e095a1c31ccf6be8d3f9e10ead",
+            "venue": "",
+            "year": null
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Mathematics",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Robust Offline Reinforcement Learning with Heavy-Tailed Rewards",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/179addc882c4c977215a0125651119e8cefa4ccc",
+    "venue": "International Conference on Artificial Intelligence and Statistics",
+    "year": 2023
+}

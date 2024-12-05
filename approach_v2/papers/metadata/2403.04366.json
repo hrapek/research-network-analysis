@@ -1,0 +1,1515 @@
+{
+    "abstract": "Court View Generation (CVG) is a challenging task in the field of Legal Artificial Intelligence (LegalAI), which aims to generate court views based on the plaintiff claims and the fact descriptions. While Pretrained Language Models (PLMs) have showcased their prowess in natural language generation, their application to the complex, knowledge-intensive domain of CVG often reveals inherent limitations. In this paper, we present a novel approach, named Knowledge Injection and Guidance (KIG), designed to bolster CVG using PLMs. To efficiently incorporate domain knowledge during the training stage, we introduce a knowledge-injected prompt encoder for prompt tuning, thereby reducing computational overhead. Moreover, to further enhance the model\u2019s ability to utilize domain knowledge, we employ a generating navigator, which dynamically guides the text generation process in the inference stage without altering the model\u2019s architecture, making it readily transferable. Comprehensive experiments on real-world data demonstrate the effectiveness of our approach compared to several established baselines, especially in the responsivity of claims, where it outperforms the best baseline by 11.87%.",
+    "arxivId": "2403.04366",
+    "authors": [
+        {
+            "authorId": "2290365073",
+            "name": "Ang Li",
+            "url": "https://www.semanticscholar.org/author/2290365073"
+        },
+        {
+            "authorId": "2164710806",
+            "name": "Yiquan Wu",
+            "url": "https://www.semanticscholar.org/author/2164710806"
+        },
+        {
+            "authorId": "2198035543",
+            "name": "Yifei Liu",
+            "url": "https://www.semanticscholar.org/author/2198035543"
+        },
+        {
+            "authorId": "2258681273",
+            "name": "Fei Wu",
+            "url": "https://www.semanticscholar.org/author/2258681273"
+        },
+        {
+            "authorId": "2290186049",
+            "name": "Ming Cai",
+            "url": "https://www.semanticscholar.org/author/2290186049"
+        },
+        {
+            "authorId": "2238006726",
+            "name": "Kun Kuang",
+            "url": "https://www.semanticscholar.org/author/2238006726"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [],
+    "corpusId": 268264363,
+    "doi": "10.48550/arXiv.2403.04366",
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 0,
+    "numCiting": 41,
+    "paperId": "f40853cd389df06c959b8e06ad9db60569b37707",
+    "references": [
+        {
+            "arxivId": "2310.09241",
+            "authors": [
+                {
+                    "authorId": "2164710806",
+                    "name": "Yiquan Wu"
+                },
+                {
+                    "authorId": "2258678617",
+                    "name": "Siying Zhou"
+                },
+                {
+                    "authorId": "2198035543",
+                    "name": "Yifei Liu"
+                },
+                {
+                    "authorId": "1776903",
+                    "name": "Weiming Lu"
+                },
+                {
+                    "authorId": "2238387483",
+                    "name": "Xiaozhong Liu"
+                },
+                {
+                    "authorId": "2258602563",
+                    "name": "Yating Zhang"
+                },
+                {
+                    "authorId": "2060934",
+                    "name": "Changlong Sun"
+                },
+                {
+                    "authorId": "2258681273",
+                    "name": "Fei Wu"
+                },
+                {
+                    "authorId": "33870528",
+                    "name": "Kun Kuang"
+                }
+            ],
+            "doi": "10.48550/arXiv.2310.09241",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "a80546c9847710af1ba8d5f8dca9386e7a520d0a",
+            "title": "Precedent-Enhanced Legal Judgment Prediction with LLM and Domain-Model Collaboration",
+            "url": "https://www.semanticscholar.org/paper/a80546c9847710af1ba8d5f8dca9386e7a520d0a",
+            "venue": "EMNLP",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2198035543",
+                    "name": "Yifei Liu"
+                },
+                {
+                    "authorId": "2164710806",
+                    "name": "Yiquan Wu"
+                },
+                {
+                    "authorId": "51146612",
+                    "name": "Yating Zhang"
+                },
+                {
+                    "authorId": "2060934",
+                    "name": "Changlong Sun"
+                },
+                {
+                    "authorId": "1776903",
+                    "name": "Weiming Lu"
+                },
+                {
+                    "authorId": "93192602",
+                    "name": "Fei Wu"
+                },
+                {
+                    "authorId": "2315590980",
+                    "name": "Kun Kuang"
+                }
+            ],
+            "doi": "10.1145/3539618.3591731",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "1364e3c277e5833299f73b618c021b38510207cd",
+            "title": "ML-LJP: Multi-Law Aware Legal Judgment Prediction",
+            "url": "https://www.semanticscholar.org/paper/1364e3c277e5833299f73b618c021b38510207cd",
+            "venue": "SIGIR",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2205512625",
+                    "name": "Jimin Xu"
+                },
+                {
+                    "authorId": "2154452962",
+                    "name": "Nuanxin Hong"
+                },
+                {
+                    "authorId": "2149236591",
+                    "name": "Zhening Xu"
+                },
+                {
+                    "authorId": "2157802713",
+                    "name": "Zhou Zhao"
+                },
+                {
+                    "authorId": "2115423484",
+                    "name": "Chao Wu"
+                },
+                {
+                    "authorId": "2284665957",
+                    "name": "Kun Kuang"
+                },
+                {
+                    "authorId": "2110089704",
+                    "name": "Jiaping Wang"
+                },
+                {
+                    "authorId": "2205083592",
+                    "name": "Mingjie Zhu"
+                },
+                {
+                    "authorId": "1709595",
+                    "name": "Jingren Zhou"
+                },
+                {
+                    "authorId": "2163102029",
+                    "name": "Kui Ren"
+                },
+                {
+                    "authorId": "2292646672",
+                    "name": "Xiaohu Yang"
+                },
+                {
+                    "authorId": "2205527084",
+                    "name": "Cewu Lu"
+                },
+                {
+                    "authorId": "2143384661",
+                    "name": "Jian Pei"
+                },
+                {
+                    "authorId": "2205692309",
+                    "name": "Harry Shum"
+                }
+            ],
+            "doi": "10.1016/j.eng.2022.12.008",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a66702b7c180f5b2907134f3926b4cdbe20c3743",
+            "title": "Data-Driven Learning for Data Rights, Data Pricing, and Privacy Computing",
+            "url": "https://www.semanticscholar.org/paper/a66702b7c180f5b2907134f3926b4cdbe20c3743",
+            "venue": "Engineering",
+            "year": 2023
+        },
+        {
+            "arxivId": "2212.01326",
+            "authors": [
+                {
+                    "authorId": "2155387945",
+                    "name": "Fang Yu"
+                },
+                {
+                    "authorId": "2193382593",
+                    "name": "Lee Quartey"
+                },
+                {
+                    "authorId": "145837551",
+                    "name": "Frank Schilder"
+                }
+            ],
+            "doi": "10.48550/arXiv.2212.01326",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "cc43306e22dbfd5bc35251ab8c8ba37e4fc2a1b3",
+            "title": "Legal Prompting: Teaching a Language Model to Think Like a Lawyer",
+            "url": "https://www.semanticscholar.org/paper/cc43306e22dbfd5bc35251ab8c8ba37e4fc2a1b3",
+            "venue": "ArXiv",
+            "year": 2022
+        },
+        {
+            "arxivId": "2210.09551",
+            "authors": [
+                {
+                    "authorId": "2119078848",
+                    "name": "Hanqing Zhang"
+                },
+                {
+                    "authorId": "2151679983",
+                    "name": "Dawei Song"
+                }
+            ],
+            "doi": "10.48550/arXiv.2210.09551",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f7122057d86f4f9f2d28565d5e2709a8b7cc6fdb",
+            "title": "DisCup: Discriminator Cooperative Unlikelihood Prompt-tuning for Controllable Text Generation",
+            "url": "https://www.semanticscholar.org/paper/f7122057d86f4f9f2d28565d5e2709a8b7cc6fdb",
+            "venue": "EMNLP",
+            "year": 2022
+        },
+        {
+            "arxivId": "2111.02643",
+            "authors": [
+                {
+                    "authorId": "2118712301",
+                    "name": "X. Gu"
+                },
+                {
+                    "authorId": "31760501",
+                    "name": "Kang Min Yoo"
+                },
+                {
+                    "authorId": "3226948",
+                    "name": "Sang-Woo Lee"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "e64e194f64ccccb037ee6f6f5a38ca0c6bb26262",
+            "title": "Response Generation with Context-Aware Prompt Learning",
+            "url": "https://www.semanticscholar.org/paper/e64e194f64ccccb037ee6f6f5a38ca0c6bb26262",
+            "venue": "ArXiv",
+            "year": 2021
+        },
+        {
+            "arxivId": "2110.07602",
+            "authors": [
+                {
+                    "authorId": "2111312892",
+                    "name": "Xiao Liu"
+                },
+                {
+                    "authorId": "2065056119",
+                    "name": "Kaixuan Ji"
+                },
+                {
+                    "authorId": "1998914086",
+                    "name": "Yicheng Fu"
+                },
+                {
+                    "authorId": "66395694",
+                    "name": "Zhengxiao Du"
+                },
+                {
+                    "authorId": "2109512754",
+                    "name": "Zhilin Yang"
+                },
+                {
+                    "authorId": "2109541439",
+                    "name": "Jie Tang"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "f3a332ff1b73acda482e5d83696b2c701f487819",
+            "title": "P-Tuning v2: Prompt Tuning Can Be Comparable to Fine-tuning Universally Across Scales and Tasks",
+            "url": "https://www.semanticscholar.org/paper/f3a332ff1b73acda482e5d83696b2c701f487819",
+            "venue": "ArXiv",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2118940856",
+                    "name": "Linan Yue"
+                },
+                {
+                    "authorId": "2144832230",
+                    "name": "Qi Liu"
+                },
+                {
+                    "authorId": "6594353",
+                    "name": "Binbin Jin"
+                },
+                {
+                    "authorId": "2112252643",
+                    "name": "Han Wu"
+                },
+                {
+                    "authorId": "71332119",
+                    "name": "Kai Zhang"
+                },
+                {
+                    "authorId": "2118754405",
+                    "name": "Yanqing An"
+                },
+                {
+                    "authorId": "1491233507",
+                    "name": "Mingyue Cheng"
+                },
+                {
+                    "authorId": "39250075",
+                    "name": "Biao Yin"
+                },
+                {
+                    "authorId": "2152704784",
+                    "name": "Dayong Wu"
+                }
+            ],
+            "doi": "10.1145/3404835.3462826",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "64edf01a60a8977ae50597bae44902e6c04efd02",
+            "title": "NeurJudge: A Circumstance-aware Neural Framework for Legal Judgment Prediction",
+            "url": "https://www.semanticscholar.org/paper/64edf01a60a8977ae50597bae44902e6c04efd02",
+            "venue": "SIGIR",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2118940856",
+                    "name": "Linan Yue"
+                },
+                {
+                    "authorId": "2144832230",
+                    "name": "Qi Liu"
+                },
+                {
+                    "authorId": "2112252643",
+                    "name": "Han Wu"
+                },
+                {
+                    "authorId": "2118754405",
+                    "name": "Yanqing An"
+                },
+                {
+                    "authorId": "2152723148",
+                    "name": "Li Wang"
+                },
+                {
+                    "authorId": "2107584675",
+                    "name": "Senchao Yuan"
+                },
+                {
+                    "authorId": "2152704784",
+                    "name": "Dayong Wu"
+                }
+            ],
+            "doi": "10.1145/3404835.3462984",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "74afcb76d80a565da18d7d5555def6b26178d068",
+            "title": "Circumstances enhanced Criminal Court View Generation",
+            "url": "https://www.semanticscholar.org/paper/74afcb76d80a565da18d7d5555def6b26178d068",
+            "venue": "SIGIR",
+            "year": 2021
+        },
+        {
+            "arxivId": "2105.03887",
+            "authors": [
+                {
+                    "authorId": "51131083",
+                    "name": "Chaojun Xiao"
+                },
+                {
+                    "authorId": "2109908079",
+                    "name": "Xueyu Hu"
+                },
+                {
+                    "authorId": "49293587",
+                    "name": "Zhiyuan Liu"
+                },
+                {
+                    "authorId": "2652217",
+                    "name": "Cunchao Tu"
+                },
+                {
+                    "authorId": "1753344",
+                    "name": "Maosong Sun"
+                }
+            ],
+            "doi": "10.1016/j.aiopen.2021.06.003",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "1e3e65e7773b7869d9bd7f5394b54199e48195e6",
+            "title": "Lawformer: A Pre-trained Language Model for Chinese Legal Long Documents",
+            "url": "https://www.semanticscholar.org/paper/1e3e65e7773b7869d9bd7f5394b54199e48195e6",
+            "venue": "AI Open",
+            "year": 2021
+        },
+        {
+            "arxivId": "2104.07650",
+            "authors": [
+                {
+                    "authorId": "2143735911",
+                    "name": "Xiang Chen"
+                },
+                {
+                    "authorId": "2608639",
+                    "name": "Ningyu Zhang"
+                },
+                {
+                    "authorId": "2153010067",
+                    "name": "Ningyu Zhang"
+                },
+                {
+                    "authorId": "2110972563",
+                    "name": "Xin Xie"
+                },
+                {
+                    "authorId": "152931849",
+                    "name": "Shumin Deng"
+                },
+                {
+                    "authorId": "4841460",
+                    "name": "Yunzhi Yao"
+                },
+                {
+                    "authorId": "2111727840",
+                    "name": "Chuanqi Tan"
+                },
+                {
+                    "authorId": "2087380523",
+                    "name": "Fei Huang"
+                },
+                {
+                    "authorId": "2059080424",
+                    "name": "Luo Si"
+                },
+                {
+                    "authorId": "49178307",
+                    "name": "Huajun Chen"
+                }
+            ],
+            "doi": "10.1145/3485447.3511998",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "1a2e90dff605dad7dbefeed121e6d295c7a77d62",
+            "title": "KnowPrompt: Knowledge-aware Prompt-tuning with Synergistic Optimization for Relation Extraction",
+            "url": "https://www.semanticscholar.org/paper/1a2e90dff605dad7dbefeed121e6d295c7a77d62",
+            "venue": "WWW",
+            "year": 2021
+        },
+        {
+            "arxivId": "2104.05218",
+            "authors": [
+                {
+                    "authorId": "1410652795",
+                    "name": "Kevin Yang"
+                },
+                {
+                    "authorId": "38666915",
+                    "name": "D. Klein"
+                }
+            ],
+            "doi": "10.18653/v1/2021.naacl-main.276",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "b6c4a96e09b9f11e7c70e7f1fbe3f3971b92762d",
+            "title": "FUDGE: Controlled Text Generation With Future Discriminators",
+            "url": "https://www.semanticscholar.org/paper/b6c4a96e09b9f11e7c70e7f1fbe3f3971b92762d",
+            "venue": "NAACL",
+            "year": 2021
+        },
+        {
+            "arxivId": "2103.10685",
+            "authors": [
+                {
+                    "authorId": "46927790",
+                    "name": "Xu Zou"
+                },
+                {
+                    "authorId": "2075292864",
+                    "name": "Da Yin"
+                },
+                {
+                    "authorId": "51211976",
+                    "name": "Qingyang Zhong"
+                },
+                {
+                    "authorId": "38385080",
+                    "name": "Hongxia Yang"
+                },
+                {
+                    "authorId": "2109512754",
+                    "name": "Zhilin Yang"
+                },
+                {
+                    "authorId": "2109541439",
+                    "name": "Jie Tang"
+                }
+            ],
+            "doi": "10.1145/3447548.3467418",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "e2af3fc33a80b86beed4d38f6247a8ca6f883e25",
+            "title": "Controllable Generation from Pre-trained Language Models via Inverse Prompting",
+            "url": "https://www.semanticscholar.org/paper/e2af3fc33a80b86beed4d38f6247a8ca6f883e25",
+            "venue": "KDD",
+            "year": 2021
+        },
+        {
+            "arxivId": "2103.10385",
+            "authors": [
+                {
+                    "authorId": "2111312892",
+                    "name": "Xiao Liu"
+                },
+                {
+                    "authorId": "2111090780",
+                    "name": "Yanan Zheng"
+                },
+                {
+                    "authorId": "66395694",
+                    "name": "Zhengxiao Du"
+                },
+                {
+                    "authorId": "2055623340",
+                    "name": "Ming Ding"
+                },
+                {
+                    "authorId": "5606742",
+                    "name": "Yujie Qian"
+                },
+                {
+                    "authorId": "2109512754",
+                    "name": "Zhilin Yang"
+                },
+                {
+                    "authorId": "2109541439",
+                    "name": "Jie Tang"
+                }
+            ],
+            "doi": "10.1016/j.aiopen.2023.08.012",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "bc37c6bdb8f39929a58b30464f72d6aa46cddc17",
+            "title": "GPT Understands, Too",
+            "url": "https://www.semanticscholar.org/paper/bc37c6bdb8f39929a58b30464f72d6aa46cddc17",
+            "venue": "AI Open",
+            "year": 2021
+        },
+        {
+            "arxivId": "2102.07350",
+            "authors": [
+                {
+                    "authorId": "2049583158",
+                    "name": "Laria Reynolds"
+                },
+                {
+                    "authorId": "2049410219",
+                    "name": "Kyle McDonell"
+                }
+            ],
+            "doi": "10.1145/3411763.3451760",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ac3cdb50606f7770eef8e4cd951840a4f71287a0",
+            "title": "Prompt Programming for Large Language Models: Beyond the Few-Shot Paradigm",
+            "url": "https://www.semanticscholar.org/paper/ac3cdb50606f7770eef8e4cd951840a4f71287a0",
+            "venue": "CHI Extended Abstracts",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2164710806",
+                    "name": "Yiquan Wu"
+                },
+                {
+                    "authorId": "33870528",
+                    "name": "Kun Kuang"
+                },
+                {
+                    "authorId": "51146612",
+                    "name": "Yating Zhang"
+                },
+                {
+                    "authorId": "1713802",
+                    "name": "Xiaozhong Liu"
+                },
+                {
+                    "authorId": "2060934",
+                    "name": "Changlong Sun"
+                },
+                {
+                    "authorId": "145974111",
+                    "name": "Jun Xiao"
+                },
+                {
+                    "authorId": "2125211",
+                    "name": "Yueting Zhuang"
+                },
+                {
+                    "authorId": "2059080424",
+                    "name": "Luo Si"
+                },
+                {
+                    "authorId": "144894849",
+                    "name": "Fei Wu"
+                }
+            ],
+            "doi": "10.18653/v1/2020.emnlp-main.56",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "8790d0c95f5d12b6fd3f62043515cd1479e57e92",
+            "title": "De-biased Court\u2019s View Generation with Causality",
+            "url": "https://www.semanticscholar.org/paper/8790d0c95f5d12b6fd3f62043515cd1479e57e92",
+            "venue": "EMNLP",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "40975153",
+                    "name": "Yunqiu Shao"
+                },
+                {
+                    "authorId": "3340223",
+                    "name": "Jiaxin Mao"
+                },
+                {
+                    "authorId": "1783406",
+                    "name": "Yiqun Liu"
+                },
+                {
+                    "authorId": "2903964",
+                    "name": "Weizhi Ma"
+                },
+                {
+                    "authorId": "2286450765",
+                    "name": "Ken Satoh"
+                },
+                {
+                    "authorId": "38898636",
+                    "name": "Min Zhang"
+                },
+                {
+                    "authorId": "8093158",
+                    "name": "Shaoping Ma"
+                }
+            ],
+            "doi": "10.24963/ijcai.2020/484",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "4b0088dcef346770c376e3771fcea54877e57eb7",
+            "title": "BERT-PLI: Modeling Paragraph-Level Interactions for Legal Case Retrieval",
+            "url": "https://www.semanticscholar.org/paper/4b0088dcef346770c376e3771fcea54877e57eb7",
+            "venue": "IJCAI",
+            "year": 2020
+        },
+        {
+            "arxivId": "2004.12158",
+            "authors": [
+                {
+                    "authorId": "51125639",
+                    "name": "Haoxiang Zhong"
+                },
+                {
+                    "authorId": "51131083",
+                    "name": "Chaojun Xiao"
+                },
+                {
+                    "authorId": "2652217",
+                    "name": "Cunchao Tu"
+                },
+                {
+                    "authorId": "145086110",
+                    "name": "T. Zhang"
+                },
+                {
+                    "authorId": "49293587",
+                    "name": "Zhiyuan Liu"
+                },
+                {
+                    "authorId": "1753344",
+                    "name": "Maosong Sun"
+                }
+            ],
+            "doi": "10.18653/v1/2020.acl-main.466",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "9b529fe170823f95509585d5aa39fa01a43558fd",
+            "title": "How Does NLP Benefit Legal System: A Summary of Legal Artificial Intelligence",
+            "url": "https://www.semanticscholar.org/paper/9b529fe170823f95509585d5aa39fa01a43558fd",
+            "venue": "ACL",
+            "year": 2020
+        },
+        {
+            "arxivId": "2004.02557",
+            "authors": [
+                {
+                    "authorId": "1399889216",
+                    "name": "Nuo Xu"
+                },
+                {
+                    "authorId": "2152206172",
+                    "name": "Pinghui Wang"
+                },
+                {
+                    "authorId": "2118172159",
+                    "name": "Long Chen"
+                },
+                {
+                    "authorId": "145656336",
+                    "name": "Li Pan"
+                },
+                {
+                    "authorId": "2118776459",
+                    "name": "Xiaoyan Wang"
+                },
+                {
+                    "authorId": "153199045",
+                    "name": "Junzhou Zhao"
+                }
+            ],
+            "doi": "10.18653/v1/2020.acl-main.280",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "77349a8b2b2466cd01d9ca14bf3ee7680fb46930",
+            "title": "Distinguish Confusing Law Articles for Legal Judgment Prediction",
+            "url": "https://www.semanticscholar.org/paper/77349a8b2b2466cd01d9ca14bf3ee7680fb46930",
+            "venue": "ACL",
+            "year": 2020
+        },
+        {
+            "arxivId": "1911.12543",
+            "authors": [
+                {
+                    "authorId": "2669515",
+                    "name": "Zhengbao Jiang"
+                },
+                {
+                    "authorId": "40027632",
+                    "name": "Frank F. Xu"
+                },
+                {
+                    "authorId": "50007145",
+                    "name": "J. Araki"
+                },
+                {
+                    "authorId": "1700325",
+                    "name": "Graham Neubig"
+                }
+            ],
+            "doi": "10.1162/tacl_a_00324",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a75649771901a4881b44c0ceafa469fcc6e6f968",
+            "title": "How Can We Know What Language Models Know?",
+            "url": "https://www.semanticscholar.org/paper/a75649771901a4881b44c0ceafa469fcc6e6f968",
+            "venue": "Transactions of the Association for Computational Linguistics",
+            "year": 2019
+        },
+        {
+            "arxivId": "1911.12011",
+            "authors": [
+                {
+                    "authorId": "51125639",
+                    "name": "Haoxiang Zhong"
+                },
+                {
+                    "authorId": "51131083",
+                    "name": "Chaojun Xiao"
+                },
+                {
+                    "authorId": "2652217",
+                    "name": "Cunchao Tu"
+                },
+                {
+                    "authorId": "145086110",
+                    "name": "T. Zhang"
+                },
+                {
+                    "authorId": "49293587",
+                    "name": "Zhiyuan Liu"
+                },
+                {
+                    "authorId": "1753344",
+                    "name": "Maosong Sun"
+                }
+            ],
+            "doi": "10.1609/AAAI.V34I05.6519",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "703b96f65fb349fe2a2deb896ae07e6eb552b391",
+            "title": "JEC-QA: A Legal-Domain Question Answering Dataset",
+            "url": "https://www.semanticscholar.org/paper/703b96f65fb349fe2a2deb896ae07e6eb552b391",
+            "venue": "AAAI",
+            "year": 2019
+        },
+        {
+            "arxivId": "1911.00536",
+            "authors": [
+                {
+                    "authorId": "3272356",
+                    "name": "Yizhe Zhang"
+                },
+                {
+                    "authorId": "2109508754",
+                    "name": "Siqi Sun"
+                },
+                {
+                    "authorId": "1947267",
+                    "name": "Michel Galley"
+                },
+                {
+                    "authorId": "2378902",
+                    "name": "Yen-Chun Chen"
+                },
+                {
+                    "authorId": "3125776",
+                    "name": "Chris Brockett"
+                },
+                {
+                    "authorId": "71886367",
+                    "name": "Xiang Gao"
+                },
+                {
+                    "authorId": "1800422",
+                    "name": "Jianfeng Gao"
+                },
+                {
+                    "authorId": "46700348",
+                    "name": "Jingjing Liu"
+                },
+                {
+                    "authorId": "83415753",
+                    "name": "W. Dolan"
+                }
+            ],
+            "doi": "10.18653/V1/2020.ACL-DEMOS.30",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "388e2fcdcefbe0834e153ab2a0be127092f9674d",
+            "title": "DIALOGPT : Large-Scale Generative Pre-training for Conversational Response Generation",
+            "url": "https://www.semanticscholar.org/paper/388e2fcdcefbe0834e153ab2a0be127092f9674d",
+            "venue": "ACL",
+            "year": 2019
+        },
+        {
+            "arxivId": "1910.13461",
+            "authors": [
+                {
+                    "authorId": "35084211",
+                    "name": "M. Lewis"
+                },
+                {
+                    "authorId": "11323179",
+                    "name": "Yinhan Liu"
+                },
+                {
+                    "authorId": "39589154",
+                    "name": "Naman Goyal"
+                },
+                {
+                    "authorId": "2320509",
+                    "name": "Marjan Ghazvininejad"
+                },
+                {
+                    "authorId": "113947684",
+                    "name": "Abdel-rahman Mohamed"
+                },
+                {
+                    "authorId": "39455775",
+                    "name": "Omer Levy"
+                },
+                {
+                    "authorId": "1759422",
+                    "name": "Veselin Stoyanov"
+                },
+                {
+                    "authorId": "1982950",
+                    "name": "Luke Zettlemoyer"
+                }
+            ],
+            "doi": "10.18653/v1/2020.acl-main.703",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "395de0bd3837fdf4b4b5e5f04835bcc69c279481",
+            "title": "BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension",
+            "url": "https://www.semanticscholar.org/paper/395de0bd3837fdf4b4b5e5f04835bcc69c279481",
+            "venue": "ACL",
+            "year": 2019
+        },
+        {
+            "arxivId": "1910.10683",
+            "authors": [
+                {
+                    "authorId": "2402716",
+                    "name": "Colin Raffel"
+                },
+                {
+                    "authorId": "1846258",
+                    "name": "Noam M. Shazeer"
+                },
+                {
+                    "authorId": "145625142",
+                    "name": "Adam Roberts"
+                },
+                {
+                    "authorId": "3844009",
+                    "name": "Katherine Lee"
+                },
+                {
+                    "authorId": "46617804",
+                    "name": "Sharan Narang"
+                },
+                {
+                    "authorId": "1380243217",
+                    "name": "Michael Matena"
+                },
+                {
+                    "authorId": "2389316",
+                    "name": "Yanqi Zhou"
+                },
+                {
+                    "authorId": "2157338362",
+                    "name": "Wei Li"
+                },
+                {
+                    "authorId": "35025299",
+                    "name": "Peter J. Liu"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "6c4b76232bb72897685d19b3d264c6ee3005bc2b",
+            "title": "Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer",
+            "url": "https://www.semanticscholar.org/paper/6c4b76232bb72897685d19b3d264c6ee3005bc2b",
+            "venue": "J. Mach. Learn. Res.",
+            "year": 2019
+        },
+        {
+            "arxivId": "1909.08593",
+            "authors": [
+                {
+                    "authorId": "2052152920",
+                    "name": "Daniel M. Ziegler"
+                },
+                {
+                    "authorId": "1387983862",
+                    "name": "Nisan Stiennon"
+                },
+                {
+                    "authorId": "49387725",
+                    "name": "Jeff Wu"
+                },
+                {
+                    "authorId": "31035595",
+                    "name": "Tom B. Brown"
+                },
+                {
+                    "authorId": "38909097",
+                    "name": "Alec Radford"
+                },
+                {
+                    "authorId": "2698777",
+                    "name": "Dario Amodei"
+                },
+                {
+                    "authorId": "145370786",
+                    "name": "Paul Christiano"
+                },
+                {
+                    "authorId": "2060655766",
+                    "name": "G. Irving"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7a15950dc71079285a4eaf195de5aadd87c41b40",
+            "title": "Fine-Tuning Language Models from Human Preferences",
+            "url": "https://www.semanticscholar.org/paper/7a15950dc71079285a4eaf195de5aadd87c41b40",
+            "venue": "ArXiv",
+            "year": 2019
+        },
+        {
+            "arxivId": "1909.05858",
+            "authors": [
+                {
+                    "authorId": "2844898",
+                    "name": "N. Keskar"
+                },
+                {
+                    "authorId": "143775536",
+                    "name": "Bryan McCann"
+                },
+                {
+                    "authorId": "1697944",
+                    "name": "L. Varshney"
+                },
+                {
+                    "authorId": "2228109",
+                    "name": "Caiming Xiong"
+                },
+                {
+                    "authorId": "2166511",
+                    "name": "R. Socher"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "75acc731bdd2b626edc74672a30da3bc51010ae8",
+            "title": "CTRL: A Conditional Transformer Language Model for Controllable Generation",
+            "url": "https://www.semanticscholar.org/paper/75acc731bdd2b626edc74672a30da3bc51010ae8",
+            "venue": "ArXiv",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2108237336",
+                    "name": "Pengfei Wang"
+                },
+                {
+                    "authorId": "2118167276",
+                    "name": "Yu Fan"
+                },
+                {
+                    "authorId": "2944201",
+                    "name": "Shuzi Niu"
+                },
+                {
+                    "authorId": "1971985",
+                    "name": "Ze Yang"
+                },
+                {
+                    "authorId": "1739818",
+                    "name": "Yongfeng Zhang"
+                },
+                {
+                    "authorId": "1777025",
+                    "name": "J. Guo"
+                }
+            ],
+            "doi": "10.1145/3331184.3331223",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "68539db7d3d406b8bf7b9b3fbeac06e0401a8abe",
+            "title": "Hierarchical Matching Network for Crime Classification",
+            "url": "https://www.semanticscholar.org/paper/68539db7d3d406b8bf7b9b3fbeac06e0401a8abe",
+            "venue": "SIGIR",
+            "year": 2019
+        },
+        {
+            "arxivId": "1906.02059",
+            "authors": [
+                {
+                    "authorId": "10783142",
+                    "name": "Ilias Chalkidis"
+                },
+                {
+                    "authorId": "1752430",
+                    "name": "Ion Androutsopoulos"
+                },
+                {
+                    "authorId": "3238627",
+                    "name": "Nikolaos Aletras"
+                }
+            ],
+            "doi": "10.18653/v1/P19-1424",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "aca16f64ddbf187f8944118c8f72777c3d682521",
+            "title": "Neural Legal Judgment Prediction in English",
+            "url": "https://www.semanticscholar.org/paper/aca16f64ddbf187f8944118c8f72777c3d682521",
+            "venue": "ACL",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2108237336",
+                    "name": "Pengfei Wang"
+                },
+                {
+                    "authorId": "1971985",
+                    "name": "Ze Yang"
+                },
+                {
+                    "authorId": "2944201",
+                    "name": "Shuzi Niu"
+                },
+                {
+                    "authorId": "1739818",
+                    "name": "Yongfeng Zhang"
+                },
+                {
+                    "authorId": "1452981772",
+                    "name": "Lei Zhang"
+                },
+                {
+                    "authorId": "2190861",
+                    "name": "Shaozhang Niu"
+                }
+            ],
+            "doi": "10.1145/3209978.3210057",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "a06c4a8a954d3dd593311df7b3dc0c3a5ab02997",
+            "title": "Modeling Dynamic Pairwise Attention for Crime Classification over Legal Articles",
+            "url": "https://www.semanticscholar.org/paper/a06c4a8a954d3dd593311df7b3dc0c3a5ab02997",
+            "venue": "SIGIR",
+            "year": 2018
+        },
+        {
+            "arxivId": "1707.09168",
+            "authors": [
+                {
+                    "authorId": "2242463",
+                    "name": "Bingfeng Luo"
+                },
+                {
+                    "authorId": "1717629",
+                    "name": "Yansong Feng"
+                },
+                {
+                    "authorId": "2110484477",
+                    "name": "Jianbo Xu"
+                },
+                {
+                    "authorId": "2156004365",
+                    "name": "Xiang Zhang"
+                },
+                {
+                    "authorId": "144060462",
+                    "name": "Dongyan Zhao"
+                }
+            ],
+            "doi": "10.18653/v1/D17-1289",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "dd589899bc03fe2fba72502f5a34b14674a9180b",
+            "title": "Learning to Predict Charges for Criminal Cases with Legal Basis",
+            "url": "https://www.semanticscholar.org/paper/dd589899bc03fe2fba72502f5a34b14674a9180b",
+            "venue": "EMNLP",
+            "year": 2017
+        },
+        {
+            "arxivId": "1706.03762",
+            "authors": [
+                {
+                    "authorId": "40348417",
+                    "name": "Ashish Vaswani"
+                },
+                {
+                    "authorId": "1846258",
+                    "name": "Noam M. Shazeer"
+                },
+                {
+                    "authorId": "3877127",
+                    "name": "Niki Parmar"
+                },
+                {
+                    "authorId": "39328010",
+                    "name": "Jakob Uszkoreit"
+                },
+                {
+                    "authorId": "145024664",
+                    "name": "Llion Jones"
+                },
+                {
+                    "authorId": "19177000",
+                    "name": "Aidan N. Gomez"
+                },
+                {
+                    "authorId": "40527594",
+                    "name": "Lukasz Kaiser"
+                },
+                {
+                    "authorId": "3443442",
+                    "name": "Illia Polosukhin"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "204e3073870fae3d05bcbc2f6a8e263d9b72e776",
+            "title": "Attention is All you Need",
+            "url": "https://www.semanticscholar.org/paper/204e3073870fae3d05bcbc2f6a8e263d9b72e776",
+            "venue": "NIPS",
+            "year": 2017
+        },
+        {
+            "arxivId": "1704.04368",
+            "authors": [
+                {
+                    "authorId": "13070498",
+                    "name": "A. See"
+                },
+                {
+                    "authorId": "35025299",
+                    "name": "Peter J. Liu"
+                },
+                {
+                    "authorId": "144783904",
+                    "name": "Christopher D. Manning"
+                }
+            ],
+            "doi": "10.18653/v1/P17-1099",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "668db48c6a79826456341680ee1175dfc4cced71",
+            "title": "Get To The Point: Summarization with Pointer-Generator Networks",
+            "url": "https://www.semanticscholar.org/paper/668db48c6a79826456341680ee1175dfc4cced71",
+            "venue": "ACL",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144129720",
+                    "name": "Xiao Wang"
+                },
+                {
+                    "authorId": "143738684",
+                    "name": "Peng Cui"
+                },
+                {
+                    "authorId": "145266065",
+                    "name": "Jing Wang"
+                },
+                {
+                    "authorId": "145525190",
+                    "name": "J. Pei"
+                },
+                {
+                    "authorId": "145583986",
+                    "name": "Wenwu Zhu"
+                },
+                {
+                    "authorId": "1689674",
+                    "name": "Shiqiang Yang"
+                }
+            ],
+            "doi": "10.1609/aaai.v31i1.10488",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "d3e0d596efd9d19b93d357565a68dfa925dce2bb",
+            "title": "Community Preserving Network Embedding",
+            "url": "https://www.semanticscholar.org/paper/d3e0d596efd9d19b93d357565a68dfa925dce2bb",
+            "venue": "AAAI",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1781574",
+                    "name": "Chin-Yew Lin"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "60b05f32c32519a809f21642ef1eb3eaf3848008",
+            "title": "ROUGE: A Package for Automatic Evaluation of Summaries",
+            "url": "https://www.semanticscholar.org/paper/60b05f32c32519a809f21642ef1eb3eaf3848008",
+            "venue": "ACL 2004",
+            "year": 2004
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3323275",
+                    "name": "K. Papineni"
+                },
+                {
+                    "authorId": "46924970",
+                    "name": "Salim Roukos"
+                },
+                {
+                    "authorId": "144582029",
+                    "name": "T. Ward"
+                },
+                {
+                    "authorId": "2587983",
+                    "name": "Wei-Jing Zhu"
+                }
+            ],
+            "doi": "10.3115/1073083.1073135",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d7da009f457917aa381619facfa5ffae9329a6e9",
+            "title": "Bleu: a Method for Automatic Evaluation of Machine Translation",
+            "url": "https://www.semanticscholar.org/paper/d7da009f457917aa381619facfa5ffae9329a6e9",
+            "venue": "ACL",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2115319175",
+                    "name": "Yi Feng"
+                },
+                {
+                    "authorId": "2523792",
+                    "name": "Chuanyi Li"
+                },
+                {
+                    "authorId": "2067064292",
+                    "name": "Vincent Ng"
+                }
+            ],
+            "doi": "10.18653/v1/2022.acl-long.48",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "2dde3faf34d751d37ee4d91c36f977b529e1c937",
+            "title": "Legal Judgment Prediction via Event Extraction with Constraints",
+            "url": "https://www.semanticscholar.org/paper/2dde3faf34d751d37ee4d91c36f977b529e1c937",
+            "venue": "ACL",
+            "year": 2022
+        },
+        {
+            "arxivId": "2101.00190",
+            "authors": [
+                {
+                    "authorId": "32551341",
+                    "name": "Xiang Lisa Li"
+                },
+                {
+                    "authorId": "145419642",
+                    "name": "Percy Liang"
+                }
+            ],
+            "doi": "10.18653/v1/2021.acl-long.353",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "53d8b356551a2361020a948f64454a6d599af69f",
+            "title": "Prefix-Tuning: Optimizing Continuous Prompts for Generation",
+            "url": "https://www.semanticscholar.org/paper/53d8b356551a2361020a948f64454a6d599af69f",
+            "venue": "ACL",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "51125639",
+                    "name": "Haoxiang Zhong"
+                },
+                {
+                    "authorId": "46673183",
+                    "name": "Zhipeng Guo"
+                },
+                {
+                    "authorId": "2652217",
+                    "name": "Cunchao Tu"
+                },
+                {
+                    "authorId": "51131083",
+                    "name": "Chaojun Xiao"
+                },
+                {
+                    "authorId": "49293587",
+                    "name": "Zhiyuan Liu"
+                },
+                {
+                    "authorId": "1753344",
+                    "name": "Maosong Sun"
+                }
+            ],
+            "doi": "10.18653/v1/D18-1390",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "c39e54d62140121395230f6f872f56400ea0929f",
+            "title": "Legal Judgment Prediction via Topological Learning",
+            "url": "https://www.semanticscholar.org/paper/c39e54d62140121395230f6f872f56400ea0929f",
+            "venue": "EMNLP",
+            "year": 2018
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        },
+        {
+            "category": "Law",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Enhancing Court View Generation with Knowledge Injection and Guidance",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/f40853cd389df06c959b8e06ad9db60569b37707",
+    "venue": "International Conference on Language Resources and Evaluation",
+    "year": 2024
+}

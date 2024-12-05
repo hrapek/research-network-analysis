@@ -1,0 +1,894 @@
+{
+    "abstract": "Monte-Carlo Tree Search (MCTS) is one of the most-widely used methods for planning, and has powered many recent advances in artificial intelligence. In MCTS, one typically performs computations (i.e., simulations) to collect statistics about the possible future consequences of actions, and then chooses accordingly. Many popular MCTS methods such as UCT and its variants decide which computations to perform by trading-off exploration and exploitation. In this work, we take a more direct approach, and explicitly quantify the value of a computation based on its expected impact on the quality of the action eventually chosen. Our approach goes beyond the \"myopic\" limitations of existing computation-value-based methods in two senses: (I) we are able to account for the impact of non-immediate (ie, future) computations (II) on non-immediate actions. We show that policies that greedily optimize computation values are optimal under certain assumptions and obtain results that are competitive with the state-of-the-art.",
+    "arxivId": "2002.04335",
+    "authors": [
+        {
+            "authorId": "1413718981",
+            "name": "Eren Sezener",
+            "url": "https://www.semanticscholar.org/author/1413718981"
+        },
+        {
+            "authorId": "1790646",
+            "name": "P. Dayan",
+            "url": "https://www.semanticscholar.org/author/1790646"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2241415892",
+                    "name": "Fatmaalzahraa A. Aboalasaad"
+                },
+                {
+                    "authorId": "2327341686",
+                    "name": "Leonie Lambertz"
+                },
+                {
+                    "authorId": "2074097734",
+                    "name": "Chiara Mastrogiuseppe"
+                },
+                {
+                    "authorId": "2260784735",
+                    "name": "Rub\u00e9n Moreno-Bote"
+                }
+            ],
+            "doi": "10.1101/2024.10.19.619044",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "48fea49334371befba314223dd5c4a75606a41d9",
+            "title": "Prioritization of decisions by importance and difficulty in human planning",
+            "url": "https://www.semanticscholar.org/paper/48fea49334371befba314223dd5c4a75606a41d9",
+            "venue": "bioRxiv",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2143355104",
+                    "name": "Yiru Zhao"
+                },
+                {
+                    "authorId": "2108131482",
+                    "name": "Xiaoke Wang"
+                },
+                {
+                    "authorId": "2111488803",
+                    "name": "Lei Zhao"
+                },
+                {
+                    "authorId": "2342612",
+                    "name": "Yueqiang Cheng"
+                },
+                {
+                    "authorId": "2087123929",
+                    "name": "Heng Yin"
+                }
+            ],
+            "doi": "10.1145/3564625.3564660",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2a676f583a7ad4a88f9d919478e5b16a34e9619d",
+            "title": "Alphuzz: Monte Carlo Search on Seed-Mutation Tree for Coverage-Guided Fuzzing",
+            "url": "https://www.semanticscholar.org/paper/2a676f583a7ad4a88f9d919478e5b16a34e9619d",
+            "venue": "ACSAC",
+            "year": 2022
+        },
+        {
+            "arxivId": "2104.06339",
+            "authors": [
+                {
+                    "authorId": "1401845875",
+                    "name": "R. Moreno-Bote"
+                },
+                {
+                    "authorId": "2074097734",
+                    "name": "Chiara Mastrogiuseppe"
+                }
+            ],
+            "doi": "10.1038/s41598-022-13862-2",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "47a50b3de258bede6db4c843512ce7b7f4b03f6e",
+            "title": "Deep imagination is a close to optimal policy for planning in large decision trees under limited resources",
+            "url": "https://www.semanticscholar.org/paper/47a50b3de258bede6db4c843512ce7b7f4b03f6e",
+            "venue": "Scientific Reports",
+            "year": 2021
+        },
+        {
+            "arxivId": "2102.00521",
+            "authors": [
+                {
+                    "authorId": "2047545222",
+                    "name": "Saksham Consul"
+                },
+                {
+                    "authorId": "2047549746",
+                    "name": "Lovis Heindrich"
+                },
+                {
+                    "authorId": "1871518872",
+                    "name": "Jugoslav Stojcheski"
+                },
+                {
+                    "authorId": "3202750",
+                    "name": "Falk Lieder"
+                }
+            ],
+            "doi": "10.1007/s42113-022-00128-3",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "4f50162108dd298f2db47818f752de768a6ef4cb",
+            "title": "Improving Human Decision-making by Discovering Efficient Strategies for Hierarchical Planning",
+            "url": "https://www.semanticscholar.org/paper/4f50162108dd298f2db47818f752de768a6ef4cb",
+            "venue": "Computational Brain & Behavior",
+            "year": 2021
+        },
+        {
+            "arxivId": "1912.01188",
+            "authors": [
+                {
+                    "authorId": "2070275468",
+                    "name": "Kevin Lu"
+                },
+                {
+                    "authorId": "2080746",
+                    "name": "Igor Mordatch"
+                },
+                {
+                    "authorId": "1689992",
+                    "name": "P. Abbeel"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "1690d6db86ed751bf7fb29fb768d1418ba579abc",
+            "title": "Adaptive Online Planning for Continual Lifelong Learning",
+            "url": "https://www.semanticscholar.org/paper/1690d6db86ed751bf7fb29fb768d1418ba579abc",
+            "venue": "ArXiv",
+            "year": 2019
+        }
+    ],
+    "corpusId": 211076119,
+    "doi": null,
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 5,
+    "numCiting": 25,
+    "paperId": "30b558b29a40fe9862dad95758925bbceb8e3227",
+    "references": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3305601",
+                    "name": "Can Eren Sezener"
+                },
+                {
+                    "authorId": "145587089",
+                    "name": "A. Dezfouli"
+                },
+                {
+                    "authorId": "2979826",
+                    "name": "M. Keramati"
+                }
+            ],
+            "doi": "10.1371/journal.pcbi.1006827",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c6153a3af8978e9c4e19177c488d81daa6de0746",
+            "title": "Optimizing the depth and the direction of prospective planning using information values",
+            "url": "https://www.semanticscholar.org/paper/c6153a3af8978e9c4e19177c488d81daa6de0746",
+            "venue": "PLoS Comput. Biol.",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2151279",
+                    "name": "M. Mattar"
+                },
+                {
+                    "authorId": "1784997",
+                    "name": "N. Daw"
+                }
+            ],
+            "doi": "10.1038/s41593-018-0232-z",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "453cdd8430f33d6b48ea56b145c937612c09179f",
+            "title": "Prioritized memory access explains planning and hippocampal replay",
+            "url": "https://www.semanticscholar.org/paper/453cdd8430f33d6b48ea56b145c937612c09179f",
+            "venue": "Nature Neuroscience",
+            "year": 2017
+        },
+        {
+            "arxivId": "1703.04389",
+            "authors": [
+                {
+                    "authorId": "2115903447",
+                    "name": "Jian Wu"
+                },
+                {
+                    "authorId": "31925701",
+                    "name": "Matthias Poloczek"
+                },
+                {
+                    "authorId": "145771261",
+                    "name": "A. Wilson"
+                },
+                {
+                    "authorId": "1922747",
+                    "name": "P. Frazier"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5331166e7872c3b82f8ef385922c1a084a0cdfdd",
+            "title": "Bayesian Optimization with Gradients",
+            "url": "https://www.semanticscholar.org/paper/5331166e7872c3b82f8ef385922c1a084a0cdfdd",
+            "venue": "NIPS",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145824029",
+                    "name": "David Silver"
+                },
+                {
+                    "authorId": "1885349",
+                    "name": "Aja Huang"
+                },
+                {
+                    "authorId": "2772217",
+                    "name": "Chris J. Maddison"
+                },
+                {
+                    "authorId": "35099444",
+                    "name": "A. Guez"
+                },
+                {
+                    "authorId": "2175946",
+                    "name": "L. Sifre"
+                },
+                {
+                    "authorId": "47568983",
+                    "name": "George van den Driessche"
+                },
+                {
+                    "authorId": "4337102",
+                    "name": "Julian Schrittwieser"
+                },
+                {
+                    "authorId": "2460849",
+                    "name": "Ioannis Antonoglou"
+                },
+                {
+                    "authorId": "2749418",
+                    "name": "Vedavyas Panneershelvam"
+                },
+                {
+                    "authorId": "1975889",
+                    "name": "Marc Lanctot"
+                },
+                {
+                    "authorId": "48373216",
+                    "name": "S. Dieleman"
+                },
+                {
+                    "authorId": "2401609",
+                    "name": "Dominik Grewe"
+                },
+                {
+                    "authorId": "4111313",
+                    "name": "John Nham"
+                },
+                {
+                    "authorId": "2583391",
+                    "name": "Nal Kalchbrenner"
+                },
+                {
+                    "authorId": "1701686",
+                    "name": "I. Sutskever"
+                },
+                {
+                    "authorId": "2542999",
+                    "name": "T. Lillicrap"
+                },
+                {
+                    "authorId": "40662181",
+                    "name": "M. Leach"
+                },
+                {
+                    "authorId": "2645384",
+                    "name": "K. Kavukcuoglu"
+                },
+                {
+                    "authorId": "1686971",
+                    "name": "T. Graepel"
+                },
+                {
+                    "authorId": "48987704",
+                    "name": "D. Hassabis"
+                }
+            ],
+            "doi": "10.1038/nature16961",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "846aedd869a00c09b40f1f1f35673cb22bc87490",
+            "title": "Mastering the game of Go with deep neural networks and tree search",
+            "url": "https://www.semanticscholar.org/paper/846aedd869a00c09b40f1f1f35673cb22bc87490",
+            "venue": "Nature",
+            "year": 2016
+        },
+        {
+            "arxivId": "1505.00399",
+            "authors": [
+                {
+                    "authorId": "39986707",
+                    "name": "C. H. Lin"
+                },
+                {
+                    "authorId": "6247481",
+                    "name": "A. Kolobov"
+                },
+                {
+                    "authorId": "1783184",
+                    "name": "Ece Kamar"
+                },
+                {
+                    "authorId": "145479841",
+                    "name": "E. Horvitz"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "41151f9ff8640f11c4b8a237cd61b1b93c66e57f",
+            "title": "Metareasoning for Planning Under Uncertainty",
+            "url": "https://www.semanticscholar.org/paper/41151f9ff8640f11c4b8a237cd61b1b93c66e57f",
+            "venue": "IJCAI",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3202750",
+                    "name": "Falk Lieder"
+                },
+                {
+                    "authorId": "2576233",
+                    "name": "Dillon Plunkett"
+                },
+                {
+                    "authorId": "2158860",
+                    "name": "Jessica B. Hamrick"
+                },
+                {
+                    "authorId": "145107462",
+                    "name": "Stuart J. Russell"
+                },
+                {
+                    "authorId": "1966066",
+                    "name": "N. Hay"
+                },
+                {
+                    "authorId": "1799860",
+                    "name": "T. Griffiths"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "010b7be03da61cc629e342c651c99bb32ebbcbeb",
+            "title": "Algorithm selection by rational metareasoning as a model of human strategy selection",
+            "url": "https://www.semanticscholar.org/paper/010b7be03da61cc629e342c651c99bb32ebbcbeb",
+            "venue": "NIPS",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "39934673",
+                    "name": "Aijun Bai"
+                },
+                {
+                    "authorId": "144864333",
+                    "name": "Feng Wu"
+                },
+                {
+                    "authorId": "49697607",
+                    "name": "Xiaoping Chen"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "69eb6f156968a26a84efde74735e347fe140f66b",
+            "title": "Bayesian Mixture Modelling and Inference based Thompson Sampling in Monte-Carlo Tree Search",
+            "url": "https://www.semanticscholar.org/paper/69eb6f156968a26a84efde74735e347fe140f66b",
+            "venue": "NIPS",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "35099444",
+                    "name": "A. Guez"
+                },
+                {
+                    "authorId": "145824029",
+                    "name": "David Silver"
+                },
+                {
+                    "authorId": "1790646",
+                    "name": "P. Dayan"
+                }
+            ],
+            "doi": "10.1613/jair.4117",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "e90e804013cc833f6ae4527e018fbea70805b5d7",
+            "title": "Scalable and Efficient Bayes-Adaptive Reinforcement Learning Based on Monte-Carlo Tree Search",
+            "url": "https://www.semanticscholar.org/paper/e90e804013cc833f6ae4527e018fbea70805b5d7",
+            "venue": "J. Artif. Intell. Res.",
+            "year": 2013
+        },
+        {
+            "arxivId": "1408.2048",
+            "authors": [
+                {
+                    "authorId": "1966066",
+                    "name": "N. Hay"
+                },
+                {
+                    "authorId": "145107462",
+                    "name": "Stuart J. Russell"
+                },
+                {
+                    "authorId": "2461853",
+                    "name": "David Tolpin"
+                },
+                {
+                    "authorId": "1719613",
+                    "name": "S. E. Shimony"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "d2a400950fffd007648587d773981d677e608f9f",
+            "title": "Selecting Computations: Theory and Applications",
+            "url": "https://www.semanticscholar.org/paper/d2a400950fffd007648587d773981d677e608f9f",
+            "venue": "UAI",
+            "year": 2012
+        },
+        {
+            "arxivId": "1207.5536",
+            "authors": [
+                {
+                    "authorId": "2461853",
+                    "name": "David Tolpin"
+                },
+                {
+                    "authorId": "1719613",
+                    "name": "S. E. Shimony"
+                }
+            ],
+            "doi": "10.1609/aaai.v26i1.8126",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "0d5f8b8a2956aca4ac3f8b8ed5088a4d089da687",
+            "title": "MCTS Based on Simple Regret",
+            "url": "https://www.semanticscholar.org/paper/0d5f8b8a2956aca4ac3f8b8ed5088a4d089da687",
+            "venue": "AAAI",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145617808",
+                    "name": "D. Barber"
+                }
+            ],
+            "doi": "10.1017/CBO9780511804779.017",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "92ace17730c2173e642934d64f96d359697b7a93",
+            "title": "Bayesian reasoning and machine learning",
+            "url": "https://www.semanticscholar.org/paper/92ace17730c2173e642934d64f96d359697b7a93",
+            "venue": "",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2979826",
+                    "name": "M. Keramati"
+                },
+                {
+                    "authorId": "145587089",
+                    "name": "A. Dezfouli"
+                },
+                {
+                    "authorId": "1883990",
+                    "name": "Payam Piray"
+                }
+            ],
+            "doi": "10.1371/journal.pcbi.1002055",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c268b5d0ba92192597b82c7166eaf40d0a2f40c5",
+            "title": "Speed/Accuracy Trade-Off between the Habitual and the Goal-Directed Processes",
+            "url": "https://www.semanticscholar.org/paper/c268b5d0ba92192597b82c7166eaf40d0a2f40c5",
+            "venue": "PLoS Comput. Biol.",
+            "year": 2011
+        },
+        {
+            "arxivId": "1203.3519",
+            "authors": [
+                {
+                    "authorId": "1699108",
+                    "name": "G. Tesauro"
+                },
+                {
+                    "authorId": "2246548952",
+                    "name": "V. T. Rajan"
+                },
+                {
+                    "authorId": "2229222",
+                    "name": "Richard B. Segal"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "a37f480cf340b6cd2c2fda4db31e7cc89bcddc8d",
+            "title": "Bayesian Inference in Monte-Carlo Tree Search",
+            "url": "https://www.semanticscholar.org/paper/a37f480cf340b6cd2c2fda4db31e7cc89bcddc8d",
+            "venue": "UAI",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "39458460",
+                    "name": "Andrew M. Ross"
+                }
+            ],
+            "doi": "10.1007/S11009-008-9097-Z",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c847e2a58f19c6da5ac906678e89eeef31d06e69",
+            "title": "Computing Bounds on the Expected Maximum of Correlated Normal Variables",
+            "url": "https://www.semanticscholar.org/paper/c847e2a58f19c6da5ac906678e89eeef31d06e69",
+            "venue": "",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1922747",
+                    "name": "P. Frazier"
+                },
+                {
+                    "authorId": "1852241",
+                    "name": "Warrren B Powell"
+                },
+                {
+                    "authorId": "3123037",
+                    "name": "Savas Dayanik"
+                }
+            ],
+            "doi": "10.1287/ijoc.1080.0314",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "f5c4e0f4ee025c9f804ac8ca8ac444f48cc4efae",
+            "title": "The Knowledge-Gradient Policy for Correlated Normal Beliefs",
+            "url": "https://www.semanticscholar.org/paper/f5c4e0f4ee025c9f804ac8ca8ac444f48cc4efae",
+            "venue": "INFORMS J. Comput.",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "34908205",
+                    "name": "Levente Kocsis"
+                },
+                {
+                    "authorId": "40868287",
+                    "name": "Csaba Szepesvari"
+                }
+            ],
+            "doi": "10.1007/11871842_29",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "e635d81a617d1239232a9c9a11a196c53dab8240",
+            "title": "Bandit Based Monte-Carlo Planning",
+            "url": "https://www.semanticscholar.org/paper/e635d81a617d1239232a9c9a11a196c53dab8240",
+            "venue": "ECML",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2520096",
+                    "name": "R\u00e9mi Coulom"
+                }
+            ],
+            "doi": "10.1007/978-3-540-75538-8_7",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "02cc6a5944d57d2353a55639c7b77336b94f29b6",
+            "title": "Efficient Selectivity and Backup Operators in Monte-Carlo Tree Search",
+            "url": "https://www.semanticscholar.org/paper/02cc6a5944d57d2353a55639c7b77336b94f29b6",
+            "venue": "Computers and Games",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1734627",
+                    "name": "Omid Madani"
+                },
+                {
+                    "authorId": "1690162",
+                    "name": "D. Lizotte"
+                },
+                {
+                    "authorId": "143686063",
+                    "name": "R. Greiner"
+                }
+            ],
+            "doi": "10.1007/978-3-540-27819-1_46",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8e19148538fdbc4e70a9fb39ee920a3cc7a6868d",
+            "title": "The Budgeted Multi-armed Bandit Problem",
+            "url": "https://www.semanticscholar.org/paper/8e19148538fdbc4e70a9fb39ee920a3cc7a6868d",
+            "venue": "COLT",
+            "year": 2004
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144543541",
+                    "name": "P. Auer"
+                },
+                {
+                    "authorId": "1388387856",
+                    "name": "N. Cesa-Bianchi"
+                },
+                {
+                    "authorId": "152702481",
+                    "name": "P. Fischer"
+                }
+            ],
+            "doi": "10.1023/A:1013689704352",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "1e1d35136b1bf3b13ef6b53f6039f39d9ee820e3",
+            "title": "Finite-time Analysis of the Multiarmed Bandit Problem",
+            "url": "https://www.semanticscholar.org/paper/1e1d35136b1bf3b13ef6b53f6039f39d9ee820e3",
+            "venue": "Machine Learning",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145107462",
+                    "name": "Stuart J. Russell"
+                },
+                {
+                    "authorId": "2358562",
+                    "name": "Eric Wefald"
+                }
+            ],
+            "doi": "10.7551/MITPRESS/2474.001.0001",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "d232520d03e3b9e3b878b2aae8140e3975c44206",
+            "title": "Do the right thing: studies in limited rationality",
+            "url": "https://www.semanticscholar.org/paper/d232520d03e3b9e3b878b2aae8140e3975c44206",
+            "venue": "",
+            "year": 1991
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1701876",
+                    "name": "P. Maes"
+                }
+            ],
+            "doi": "10.1080/09540098908915643",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "5182f637bd029d28d03c08f3afbfce949f56fcfa",
+            "title": "How to Do the Right Thing",
+            "url": "https://www.semanticscholar.org/paper/5182f637bd029d28d03c08f3afbfce949f56fcfa",
+            "venue": "",
+            "year": 1989
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2276931561",
+                    "name": "T.L Lai"
+                },
+                {
+                    "authorId": "2270529886",
+                    "name": "Herbert Robbins"
+                }
+            ],
+            "doi": "10.1073/PNAS.73.2.286",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "c9262456587097a8f9e456aa4e1b0ec4f5999fa3",
+            "title": "Maximally dependent random variables.",
+            "url": "https://www.semanticscholar.org/paper/c9262456587097a8f9e456aa4e1b0ec4f5999fa3",
+            "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+            "year": 1976
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "27581584",
+                    "name": "R. Howard"
+                }
+            ],
+            "doi": "10.1109/TSSC.1966.300074",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a7b3c2a88ca459d50010a33db8c2f113f1323e0c",
+            "title": "Information Value Theory",
+            "url": "https://www.semanticscholar.org/paper/a7b3c2a88ca459d50010a33db8c2f113f1323e0c",
+            "venue": "IEEE Trans. Syst. Sci. Cybern.",
+            "year": 1966
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1891237",
+                    "name": "I. Ryzhov"
+                },
+                {
+                    "authorId": "2297322230",
+                    "name": "Warren B. Powell"
+                },
+                {
+                    "authorId": "1922747",
+                    "name": "P. Frazier"
+                }
+            ],
+            "doi": "10.1287/opre.1110.0999",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "13ac988d0e374a41af83883c7a3496beb8b49ffc",
+            "title": "The Knowledge Gradient Algorithm for a General Class of Online Learning Problems",
+            "url": "https://www.semanticscholar.org/paper/13ac988d0e374a41af83883c7a3496beb8b49ffc",
+            "venue": "Oper. Res.",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1966066",
+                    "name": "N. Hay"
+                },
+                {
+                    "authorId": "145107462",
+                    "name": "Stuart J. Russell"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "746ea3ccb21554e25768e190c0e7622343c288f9",
+            "title": "Metareasoning for Monte Carlo Tree Search",
+            "url": "https://www.semanticscholar.org/paper/746ea3ccb21554e25768e190c0e7622343c288f9",
+            "venue": "",
+            "year": 2011
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Static and Dynamic Values of Computation in MCTS",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/30b558b29a40fe9862dad95758925bbceb8e3227",
+    "venue": "Conference on Uncertainty in Artificial Intelligence",
+    "year": 2020
+}

@@ -1,0 +1,853 @@
+{
+    "abstract": "Tangled Program Graph (TPG) is a reinforcement learning technique based on genetic programming concepts. On state-of-the-art learning environments, TPGs have been shown to offer comparable competence with Deep Neural Networks (DNNs), for a fraction of their computational and storage cost. This lightness of TPGs, both for training and inference, makes them an interesting model to implement Artificial Intelligences (AIs) on embedded systems with limited computational and storage resources. In this paper, we introduce the Gegelati library for TPGs. Besides introducing the general concepts and features of the library, two main contributions are detailed in the paper: 1/ The parallelization of the deterministic training process of TPGs, for supporting heterogeneous Multiprocessor Systems-on-Chipss (MPSoCss). 2/ The support for customizable instruction sets and data types within the genetically evolved programs of the TPG model. The scalability of the parallel training process is demonstrated through experiments on architectures ranging from a high-end 24-core processor to a low-power heterogeneous MPSoCs. The impact of customizable instructions on the outcome of a training process is demonstrated on a state-of-the-art reinforcement learning environment.",
+    "arxivId": "2012.08296",
+    "authors": [
+        {
+            "authorId": "3310769",
+            "name": "K. Desnos",
+            "url": "https://www.semanticscholar.org/author/3310769"
+        },
+        {
+            "authorId": "66552332",
+            "name": "Nicolas Sourbier",
+            "url": "https://www.semanticscholar.org/author/66552332"
+        },
+        {
+            "authorId": "2037461651",
+            "name": "Pierre-Yves Raumer",
+            "url": "https://www.semanticscholar.org/author/2037461651"
+        },
+        {
+            "authorId": "2037487870",
+            "name": "Olivier Gesny",
+            "url": "https://www.semanticscholar.org/author/2037487870"
+        },
+        {
+            "authorId": "2063012",
+            "name": "M. Pelcat",
+            "url": "https://www.semanticscholar.org/author/2063012"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": "2411.05586",
+            "authors": [
+                {
+                    "authorId": "1656709709",
+                    "name": "Hubert Szolc"
+                },
+                {
+                    "authorId": "2273187820",
+                    "name": "Karol Desnos"
+                },
+                {
+                    "authorId": "2276659754",
+                    "name": "Tomasz Kryjak"
+                }
+            ],
+            "doi": "10.23919/SPA61993.2024.10715635",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "1ea7e8149dac8660fb21b1aeaa6e571632cd5f08",
+            "title": "Tangled Program Graphs as an alternative to DRL-based control algorithms for UAVs",
+            "url": "https://www.semanticscholar.org/paper/1ea7e8149dac8660fb21b1aeaa6e571632cd5f08",
+            "venue": "2024 Signal Processing: Algorithms, Architectures, Arrangements, and Applications (SPA)",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2115488782",
+                    "name": "Robert J. Smith"
+                },
+                {
+                    "authorId": "1796941",
+                    "name": "M. Heywood"
+                }
+            ],
+            "doi": "10.1109/TAI.2023.3279057",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "99d57bf407c677723782f49116d0be4cc05f444f",
+            "title": "Interpreting Tangled Program Graphs Under Partially Observable Dota 2 Invoker Tasks",
+            "url": "https://www.semanticscholar.org/paper/99d57bf407c677723782f49116d0be4cc05f444f",
+            "venue": "IEEE Transactions on Artificial Intelligence",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2267521356",
+                    "name": "Malcolm I. Heywood"
+                }
+            ],
+            "doi": "10.1007/s10710-023-09473-z",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "13e75466881d28b97692d17ca7c50fc3ab99e603",
+            "title": "W. B. Langdon \u201cJaws 30\u201d",
+            "url": "https://www.semanticscholar.org/paper/13e75466881d28b97692d17ca7c50fc3ab99e603",
+            "venue": "Genetic Programming and Evolvable Machines",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2256086613",
+                    "name": "Alice Chillet"
+                },
+                {
+                    "authorId": "2256081682",
+                    "name": "Baptiste Boyer"
+                },
+                {
+                    "authorId": "2255899684",
+                    "name": "Robin Gerzaguet"
+                },
+                {
+                    "authorId": "3310769",
+                    "name": "K. Desnos"
+                },
+                {
+                    "authorId": "2264214211",
+                    "name": "Matthieu Gautier"
+                }
+            ],
+            "doi": "10.1109/PIMRC56721.2023.10294020",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "2dbd3f484cbc71b4d17d76204b6ed4aabeb4b66f",
+            "title": "Tangled Program Graph for Radio-Frequency Fingerprint Identification",
+            "url": "https://www.semanticscholar.org/paper/2dbd3f484cbc71b4d17d76204b6ed4aabeb4b66f",
+            "venue": "2023 IEEE 34th Annual International Symposium on Personal, Indoor and Mobile Radio Communications (PIMRC)",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144789032",
+                    "name": "Yi Mei"
+                },
+                {
+                    "authorId": "2115813273",
+                    "name": "Qi Chen"
+                },
+                {
+                    "authorId": "144320047",
+                    "name": "Andrew Lensen"
+                },
+                {
+                    "authorId": "144395433",
+                    "name": "Bing Xue"
+                },
+                {
+                    "authorId": "145269712",
+                    "name": "Mengjie Zhang"
+                }
+            ],
+            "doi": "10.1109/TEVC.2022.3225509",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d31df8b4069678e2f32790670e2f4702f596f347",
+            "title": "Explainable Artificial Intelligence by Genetic Programming: A Survey",
+            "url": "https://www.semanticscholar.org/paper/d31df8b4069678e2f32790670e2f4702f596f347",
+            "venue": "IEEE Transactions on Evolutionary Computation",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3310769",
+                    "name": "K. Desnos"
+                },
+                {
+                    "authorId": "2180208007",
+                    "name": "Thomas Bourgoin"
+                },
+                {
+                    "authorId": "2787760",
+                    "name": "Micka\u00ebl Dardaillon"
+                },
+                {
+                    "authorId": "66552332",
+                    "name": "Nicolas Sourbier"
+                },
+                {
+                    "authorId": "2037487870",
+                    "name": "Olivier Gesny"
+                },
+                {
+                    "authorId": "2063012",
+                    "name": "M. Pelcat"
+                }
+            ],
+            "doi": "10.1109/SiPS55645.2022.9919237",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "81dcb9bbf9e790900800da4f56b3d8366668e48e",
+            "title": "Ultra-Fast Machine Learning Inference through C Code Generation for Tangled Program Graphs",
+            "url": "https://www.semanticscholar.org/paper/81dcb9bbf9e790900800da4f56b3d8366668e48e",
+            "venue": "2022 IEEE Workshop on Signal Processing Systems (SiPS)",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "66552332",
+                    "name": "Nicolas Sourbier"
+                },
+                {
+                    "authorId": "2106223",
+                    "name": "J. Bonnot"
+                },
+                {
+                    "authorId": "2393146",
+                    "name": "Fr\u00e9d\u00e9ric Majorczyk"
+                },
+                {
+                    "authorId": "2037487870",
+                    "name": "Olivier Gesny"
+                },
+                {
+                    "authorId": "1678805",
+                    "name": "Thomas Guyet"
+                },
+                {
+                    "authorId": "2176869018",
+                    "name": "Maxime Pelcat"
+                }
+            ],
+            "doi": "10.1145/3520304.3529008",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "2ba841932849d0210949b63cb7e2817047ae3b8a",
+            "title": "Imbalanced classification with tpg genetic programming: impact of problem imbalance and selection mechanisms",
+            "url": "https://www.semanticscholar.org/paper/2ba841932849d0210949b63cb7e2817047ae3b8a",
+            "venue": "GECCO Companion",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "66552332",
+                    "name": "Nicolas Sourbier"
+                },
+                {
+                    "authorId": "3310769",
+                    "name": "K. Desnos"
+                },
+                {
+                    "authorId": "1678805",
+                    "name": "Thomas Guyet"
+                },
+                {
+                    "authorId": "2393146",
+                    "name": "Fr\u00e9d\u00e9ric Majorczyk"
+                },
+                {
+                    "authorId": "2037487870",
+                    "name": "Olivier Gesny"
+                },
+                {
+                    "authorId": "2063012",
+                    "name": "M. Pelcat"
+                }
+            ],
+            "doi": "10.1007/s11265-021-01728-1",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "44090582298c42bba5c0f420a1c9876235aa3b03",
+            "title": "SECURE-GEGELATI Always-On Intrusion Detection through GEGELATI Lightweight Tangled Program Graphs",
+            "url": "https://www.semanticscholar.org/paper/44090582298c42bba5c0f420a1c9876235aa3b03",
+            "venue": "Journal of Signal Processing Systems",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1780680011",
+                    "name": "Stephen Kelly"
+                },
+                {
+                    "authorId": "2115488782",
+                    "name": "Robert J. Smith"
+                },
+                {
+                    "authorId": "1796941",
+                    "name": "M. Heywood"
+                },
+                {
+                    "authorId": "2507766",
+                    "name": "W. Banzhaf"
+                }
+            ],
+            "doi": "10.1145/3468857",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a21f83815ee83e6141cff505e7d15b0b97b8699b",
+            "title": "Emergent Tangled Program Graphs in Partially Observable Recursive Forecasting and ViZDoom Navigation Tasks",
+            "url": "https://www.semanticscholar.org/paper/a21f83815ee83e6141cff505e7d15b0b97b8699b",
+            "venue": "ACM Trans. Evol. Learn. Optim.",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2114199310",
+                    "name": "Alexandru Ianta"
+                },
+                {
+                    "authorId": "2114203628",
+                    "name": "Ryan Amaral"
+                },
+                {
+                    "authorId": "2114199448",
+                    "name": "Caleidgh Bayer"
+                },
+                {
+                    "authorId": "2115488782",
+                    "name": "Robert J. Smith"
+                },
+                {
+                    "authorId": "1796941",
+                    "name": "M. Heywood"
+                }
+            ],
+            "doi": "10.1145/3449639.3459348",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "36c82bee25eab67f5ae71677a70737e3cf64b7db",
+            "title": "On the impact of tangled program graph marking schemes under the atari reinforcement learning benchmark",
+            "url": "https://www.semanticscholar.org/paper/36c82bee25eab67f5ae71677a70737e3cf64b7db",
+            "venue": "GECCO",
+            "year": 2021
+        },
+        {
+            "arxivId": "2106.12659",
+            "authors": [
+                {
+                    "authorId": "1780680011",
+                    "name": "Stephen Kelly"
+                },
+                {
+                    "authorId": "2114885082",
+                    "name": "Tatiana Voegerl"
+                },
+                {
+                    "authorId": "2507766",
+                    "name": "W. Banzhaf"
+                },
+                {
+                    "authorId": "2092891",
+                    "name": "C. Gondro"
+                }
+            ],
+            "doi": "10.1007/s10710-021-09418-4",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "0a33275c3ede1928f40859de400f0f83b97a89e3",
+            "title": "Evolving hierarchical memory-prediction machines in multi-task reinforcement learning",
+            "url": "https://www.semanticscholar.org/paper/0a33275c3ede1928f40859de400f0f83b97a89e3",
+            "venue": "Genetic Programming and Evolvable Machines",
+            "year": 2021
+        }
+    ],
+    "corpusId": 229180731,
+    "doi": "10.1145/3441110.3441575",
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": true,
+    "isPublisherLicensed": true,
+    "is_open_access": true,
+    "is_publisher_licensed": true,
+    "numCitedBy": 11,
+    "numCiting": 15,
+    "paperId": "fc00f85e8e41efbffd730d8a810784d0c6d14c2c",
+    "references": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1780680011",
+                    "name": "Stephen Kelly"
+                },
+                {
+                    "authorId": "1780674129",
+                    "name": "Jacob Newsted"
+                },
+                {
+                    "authorId": "2507766",
+                    "name": "W. Banzhaf"
+                },
+                {
+                    "authorId": "2092891",
+                    "name": "C. Gondro"
+                }
+            ],
+            "doi": "10.1145/3377930.3390216",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5c8ae6eff4062cd7e2f2cbb03935e9f5b8d88b03",
+            "title": "A modular memory framework for time series prediction",
+            "url": "https://www.semanticscholar.org/paper/5c8ae6eff4062cd7e2f2cbb03935e9f5b8d88b03",
+            "venue": "GECCO",
+            "year": 2020
+        },
+        {
+            "arxivId": "2005.14165",
+            "authors": [
+                {
+                    "authorId": "31035595",
+                    "name": "Tom B. Brown"
+                },
+                {
+                    "authorId": "2056658938",
+                    "name": "Benjamin Mann"
+                },
+                {
+                    "authorId": "39849748",
+                    "name": "Nick Ryder"
+                },
+                {
+                    "authorId": "2065894334",
+                    "name": "Melanie Subbiah"
+                },
+                {
+                    "authorId": "152724169",
+                    "name": "J. Kaplan"
+                },
+                {
+                    "authorId": "6515819",
+                    "name": "Prafulla Dhariwal"
+                },
+                {
+                    "authorId": "2072676",
+                    "name": "Arvind Neelakantan"
+                },
+                {
+                    "authorId": "67311962",
+                    "name": "Pranav Shyam"
+                },
+                {
+                    "authorId": "144864359",
+                    "name": "Girish Sastry"
+                },
+                {
+                    "authorId": "119609682",
+                    "name": "Amanda Askell"
+                },
+                {
+                    "authorId": "144517868",
+                    "name": "Sandhini Agarwal"
+                },
+                {
+                    "authorId": "1404060687",
+                    "name": "Ariel Herbert-Voss"
+                },
+                {
+                    "authorId": "2064404342",
+                    "name": "Gretchen Krueger"
+                },
+                {
+                    "authorId": "103143311",
+                    "name": "T. Henighan"
+                },
+                {
+                    "authorId": "48422824",
+                    "name": "R. Child"
+                },
+                {
+                    "authorId": "1992922591",
+                    "name": "A. Ramesh"
+                },
+                {
+                    "authorId": "2052152920",
+                    "name": "Daniel M. Ziegler"
+                },
+                {
+                    "authorId": "49387725",
+                    "name": "Jeff Wu"
+                },
+                {
+                    "authorId": "2059411355",
+                    "name": "Clemens Winter"
+                },
+                {
+                    "authorId": "144239765",
+                    "name": "Christopher Hesse"
+                },
+                {
+                    "authorId": "2108828435",
+                    "name": "Mark Chen"
+                },
+                {
+                    "authorId": "2064673055",
+                    "name": "Eric Sigler"
+                },
+                {
+                    "authorId": "1380985420",
+                    "name": "Ma-teusz Litwin"
+                },
+                {
+                    "authorId": "145565184",
+                    "name": "Scott Gray"
+                },
+                {
+                    "authorId": "1490681878",
+                    "name": "B. Chess"
+                },
+                {
+                    "authorId": "2115193883",
+                    "name": "Jack Clark"
+                },
+                {
+                    "authorId": "133740015",
+                    "name": "Christopher Berner"
+                },
+                {
+                    "authorId": "52238703",
+                    "name": "Sam McCandlish"
+                },
+                {
+                    "authorId": "38909097",
+                    "name": "Alec Radford"
+                },
+                {
+                    "authorId": "1701686",
+                    "name": "I. Sutskever"
+                },
+                {
+                    "authorId": "2698777",
+                    "name": "Dario Amodei"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "90abbc2cf38462b954ae1b772fac9532e2ccd8b0",
+            "title": "Language Models are Few-Shot Learners",
+            "url": "https://www.semanticscholar.org/paper/90abbc2cf38462b954ae1b772fac9532e2ccd8b0",
+            "venue": "NeurIPS",
+            "year": 2020
+        },
+        {
+            "arxivId": "2003.03384",
+            "authors": [
+                {
+                    "authorId": "2892780",
+                    "name": "Esteban Real"
+                },
+                {
+                    "authorId": "145246869",
+                    "name": "Chen Liang"
+                },
+                {
+                    "authorId": "48165870",
+                    "name": "David R. So"
+                },
+                {
+                    "authorId": "2827616",
+                    "name": "Quoc V. Le"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "6bf623e772d5634e33a035a3586dbab41e29c78b",
+            "title": "AutoML-Zero: Evolving Machine Learning Algorithms From Scratch",
+            "url": "https://www.semanticscholar.org/paper/6bf623e772d5634e33a035a3586dbab41e29c78b",
+            "venue": "ICML",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1780680011",
+                    "name": "Stephen Kelly"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "99be567c4c0e3b48c7e38161a94239939abc9b1a",
+            "title": "Scaling Genetic Programming to Challenging Reinforcement Tasks through Emergent Modularity",
+            "url": "https://www.semanticscholar.org/paper/99be567c4c0e3b48c7e38161a94239939abc9b1a",
+            "venue": "",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1780680011",
+                    "name": "Stephen Kelly"
+                },
+                {
+                    "authorId": "1796941",
+                    "name": "M. Heywood"
+                }
+            ],
+            "doi": "10.1007/978-3-319-55696-3_5",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "a2bee8d24b62bf288760ae3fbe2870f26706f7b5",
+            "title": "Emergent Tangled Graph Representations for Atari Game Playing Agents",
+            "url": "https://www.semanticscholar.org/paper/a2bee8d24b62bf288760ae3fbe2870f26706f7b5",
+            "venue": "EuroGP",
+            "year": 2017
+        },
+        {
+            "arxivId": "1605.07678",
+            "authors": [
+                {
+                    "authorId": "2067767",
+                    "name": "A. Canziani"
+                },
+                {
+                    "authorId": "3407277",
+                    "name": "Adam Paszke"
+                },
+                {
+                    "authorId": "2889774",
+                    "name": "E. Culurciello"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9a786d1ecf77dfba3459a83cd3fa0f1781bbcba4",
+            "title": "An Analysis of Deep Neural Network Models for Practical Applications",
+            "url": "https://www.semanticscholar.org/paper/9a786d1ecf77dfba3459a83cd3fa0f1781bbcba4",
+            "venue": "ArXiv",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2064160",
+                    "name": "A. Krizhevsky"
+                },
+                {
+                    "authorId": "1701686",
+                    "name": "I. Sutskever"
+                },
+                {
+                    "authorId": "1695689",
+                    "name": "Geoffrey E. Hinton"
+                }
+            ],
+            "doi": "10.1145/3065386",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "abd1c342495432171beb7ca8fd9551ef13cbd0ff",
+            "title": "ImageNet classification with deep convolutional neural networks",
+            "url": "https://www.semanticscholar.org/paper/abd1c342495432171beb7ca8fd9551ef13cbd0ff",
+            "venue": "Commun. ACM",
+            "year": 2012
+        },
+        {
+            "arxivId": "1207.4708",
+            "authors": [
+                {
+                    "authorId": "1792298",
+                    "name": "Marc G. Bellemare"
+                },
+                {
+                    "authorId": "2294249",
+                    "name": "Yavar Naddaf"
+                },
+                {
+                    "authorId": "144056327",
+                    "name": "J. Veness"
+                },
+                {
+                    "authorId": "1687780",
+                    "name": "Michael Bowling"
+                }
+            ],
+            "doi": "10.1613/jair.3912",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "f82e4ff4f003581330338aaae71f60316e58dd26",
+            "title": "The Arcade Learning Environment: An Evaluation Platform for General Agents",
+            "url": "https://www.semanticscholar.org/paper/f82e4ff4f003581330338aaae71f60316e58dd26",
+            "venue": "J. Artif. Intell. Res.",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2064419700",
+                    "name": "Daniel L. Atkins"
+                },
+                {
+                    "authorId": "2173139",
+                    "name": "K. Neshatian"
+                },
+                {
+                    "authorId": "145269712",
+                    "name": "Mengjie Zhang"
+                }
+            ],
+            "doi": "10.1109/CEC.2011.5949624",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "4501879d6f3ea6e0c774ba5b631152c48b16a880",
+            "title": "A domain independent Genetic Programming approach to automatic feature extraction for image classification",
+            "url": "https://www.semanticscholar.org/paper/4501879d6f3ea6e0c774ba5b631152c48b16a880",
+            "venue": "2011 IEEE Congress of Evolutionary Computation (CEC)",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1780680011",
+                    "name": "Stephen Kelly"
+                },
+                {
+                    "authorId": "46677293",
+                    "name": "W. Banzhaf"
+                }
+            ],
+            "doi": "10.1007/978-3-030-39958-0_6",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "2523a111d7ad02603fae18bcfa65e08fb5a812f6",
+            "title": "Temporal Memory Sharing in Visual Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/2523a111d7ad02603fae18bcfa65e08fb5a812f6",
+            "venue": "GPTP",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1735300",
+                    "name": "S. Haykin"
+                },
+                {
+                    "authorId": "1713858",
+                    "name": "B. Kosko"
+                }
+            ],
+            "doi": "10.1109/9780470544976.CH9",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f42b865e20e61a954239f421b42007236e671f19",
+            "title": "GradientBased Learning Applied to Document Recognition",
+            "url": "https://www.semanticscholar.org/paper/f42b865e20e61a954239f421b42007236e671f19",
+            "venue": "",
+            "year": 2001
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1688882",
+                    "name": "Yann LeCun"
+                },
+                {
+                    "authorId": "52184096",
+                    "name": "L. Bottou"
+                },
+                {
+                    "authorId": "1751762",
+                    "name": "Yoshua Bengio"
+                },
+                {
+                    "authorId": "1721248",
+                    "name": "P. Haffner"
+                }
+            ],
+            "doi": "10.1109/5.726791",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "162d958ff885f1462aeda91cd72582323fd6a1f4",
+            "title": "Gradient-based learning applied to document recognition",
+            "url": "https://www.semanticscholar.org/paper/162d958ff885f1462aeda91cd72582323fd6a1f4",
+            "venue": "Proc. IEEE",
+            "year": 1998
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        },
+        {
+            "category": "Engineering",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Gegelati: Lightweight Artificial Intelligence through Generic and Evolvable Tangled Program Graphs",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/fc00f85e8e41efbffd730d8a810784d0c6d14c2c",
+    "venue": "Design & Architectures for Signal & Image Processing",
+    "year": 2020
+}

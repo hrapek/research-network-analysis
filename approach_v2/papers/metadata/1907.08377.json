@@ -1,0 +1,764 @@
+{
+    "abstract": "We introduce DaiMoN, a decentralized artificial intelligence model network, which incentivizes peer collaboration in improving the accuracy of machine learning models for a given classification problem. It is an autonomous network where peers may submit models with improved accuracy and other peers may verify the accuracy improvement. The system maintains an append-only decentralized ledger to keep the log of critical information, including who has trained the model and improved its accuracy, when it has been improved, by how much it has improved, and where to find the newly updated model. DaiMoN rewards these contributing peers with cryptographic tokens. A main feature of DaiMoN is that it allows peers to verify the accuracy improvement of submitted models without knowing the test labels. This is an essential component in order to mitigate intentional model overfitting by model-improving peers. To enable this model accuracy evaluation with hidden test labels, DaiMoN uses a novel learnable Distance Embedding for Labels (DEL) function proposed in this paper. Specific to each test dataset, DEL scrambles the test label vector by embedding it in a low-dimension space while approximately preserving the distance between the dataset's test label vector and a label vector inferred by the classifier. It therefore allows proof-of-improvement (PoI) by peers without providing them access to true test labels. We provide analysis and empirical evidence that under DEL, peers can accurately assess model accuracy. We also argue that it is hard to invert the embedding function and thus, DEL is resilient against attacks aiming to recover test labels in order to cheat. Our prototype implementation of DaiMoN is available at https://github.com/steerapi/daimon.",
+    "arxivId": "1907.08377",
+    "authors": [
+        {
+            "authorId": "3242151",
+            "name": "Surat Teerapittayanon",
+            "url": "https://www.semanticscholar.org/author/3242151"
+        },
+        {
+            "authorId": "144153718",
+            "name": "H. T. Kung",
+            "url": "https://www.semanticscholar.org/author/144153718"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": "2402.02885",
+            "authors": [
+                {
+                    "authorId": "148297607",
+                    "name": "Vid Ker\u0161i\u010d"
+                },
+                {
+                    "authorId": "3354571",
+                    "name": "Muhamed Turkanovi\u0107"
+                }
+            ],
+            "doi": "10.48550/arXiv.2402.02885",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "f44a3268b8c4c9db2378d909c8a46c8a066266a1",
+            "title": "A Review on Building Blocks of Decentralized Artificial Intelligence",
+            "url": "https://www.semanticscholar.org/paper/f44a3268b8c4c9db2378d909c8a46c8a066266a1",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "48267756",
+                    "name": "Pratima Sharma"
+                },
+                {
+                    "authorId": "34432300",
+                    "name": "Rajni Jindal"
+                },
+                {
+                    "authorId": "1802418",
+                    "name": "D. B. Malaya"
+                }
+            ],
+            "doi": "10.1007/s11277-021-09176-7",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7653695ef884949572f57a613de589bc5e32126a",
+            "title": "A Review of Blockchain-Based Applications and Challenges",
+            "url": "https://www.semanticscholar.org/paper/7653695ef884949572f57a613de589bc5e32126a",
+            "venue": "Wireless Personal Communications",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "123550130",
+                    "name": "Egger L. Mielberg"
+                }
+            ],
+            "doi": "10.31219/osf.io/5ag8d",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d611b9ea540507b9558f9c32b7162ec078d4900c",
+            "title": "ArLLecta: A Decentralized Sense-To-Sense Network",
+            "url": "https://www.semanticscholar.org/paper/d611b9ea540507b9558f9c32b7162ec078d4900c",
+            "venue": "",
+            "year": 2020
+        }
+    ],
+    "corpusId": 195875938,
+    "doi": "10.1109/Blockchain.2019.00026",
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 1,
+    "isOpenAccess": true,
+    "isPublisherLicensed": true,
+    "is_open_access": true,
+    "is_publisher_licensed": true,
+    "numCitedBy": 3,
+    "numCiting": 29,
+    "paperId": "d2c6bdae3781a9efb01fe32468fcc240851c0ead",
+    "references": [
+        {
+            "arxivId": "1708.07747",
+            "authors": [
+                {
+                    "authorId": "145642373",
+                    "name": "Han Xiao"
+                },
+                {
+                    "authorId": "4565995",
+                    "name": "Kashif Rasul"
+                },
+                {
+                    "authorId": "2742129",
+                    "name": "Roland Vollgraf"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "f9c602cc436a9ea2f9e7db48c77d924e09ce3c32",
+            "title": "Fashion-MNIST: a Novel Image Dataset for Benchmarking Machine Learning Algorithms",
+            "url": "https://www.semanticscholar.org/paper/f9c602cc436a9ea2f9e7db48c77d924e09ce3c32",
+            "venue": "ArXiv",
+            "year": 2017
+        },
+        {
+            "arxivId": "1609.02094",
+            "authors": [
+                {
+                    "authorId": "1741455",
+                    "name": "Kasper Green Larsen"
+                },
+                {
+                    "authorId": "49344061",
+                    "name": "Jelani Nelson"
+                }
+            ],
+            "doi": "10.1109/FOCS.2017.64",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "0ad1a70a28a3248cf8df212e9389ddbf228b86d8",
+            "title": "Optimality of the Johnson-Lindenstrauss Lemma",
+            "url": "https://www.semanticscholar.org/paper/0ad1a70a28a3248cf8df212e9389ddbf228b86d8",
+            "venue": "2017 IEEE 58th Annual Symposium on Foundations of Computer Science (FOCS)",
+            "year": 2016
+        },
+        {
+            "arxivId": "1512.03385",
+            "authors": [
+                {
+                    "authorId": "39353098",
+                    "name": "Kaiming He"
+                },
+                {
+                    "authorId": "1771551",
+                    "name": "X. Zhang"
+                },
+                {
+                    "authorId": "3080683",
+                    "name": "Shaoqing Ren"
+                },
+                {
+                    "authorId": null,
+                    "name": "Jian Sun"
+                }
+            ],
+            "doi": "10.1109/cvpr.2016.90",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2c03df8b48bf3fa39054345bafabfeff15bfd11d",
+            "title": "Deep Residual Learning for Image Recognition",
+            "url": "https://www.semanticscholar.org/paper/2c03df8b48bf3fa39054345bafabfeff15bfd11d",
+            "venue": "2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2015
+        },
+        {
+            "arxivId": "1412.6980",
+            "authors": [
+                {
+                    "authorId": "1726807",
+                    "name": "Diederik P. Kingma"
+                },
+                {
+                    "authorId": "2503659",
+                    "name": "Jimmy Ba"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "a6cb366736791bcccc5c8639de5a8f9636bf87e8",
+            "title": "Adam: A Method for Stochastic Optimization",
+            "url": "https://www.semanticscholar.org/paper/a6cb366736791bcccc5c8639de5a8f9636bf87e8",
+            "venue": "ICLR",
+            "year": 2014
+        },
+        {
+            "arxivId": "1409.4842",
+            "authors": [
+                {
+                    "authorId": "2574060",
+                    "name": "Christian Szegedy"
+                },
+                {
+                    "authorId": "2157222093",
+                    "name": "Wei Liu"
+                },
+                {
+                    "authorId": "39978391",
+                    "name": "Yangqing Jia"
+                },
+                {
+                    "authorId": "3142556",
+                    "name": "P. Sermanet"
+                },
+                {
+                    "authorId": "144828948",
+                    "name": "Scott E. Reed"
+                },
+                {
+                    "authorId": "1838674",
+                    "name": "Dragomir Anguelov"
+                },
+                {
+                    "authorId": "1761978",
+                    "name": "D. Erhan"
+                },
+                {
+                    "authorId": "2657155",
+                    "name": "Vincent Vanhoucke"
+                },
+                {
+                    "authorId": "39863668",
+                    "name": "Andrew Rabinovich"
+                }
+            ],
+            "doi": "10.1109/CVPR.2015.7298594",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e15cf50aa89fee8535703b9f9512fca5bfc43327",
+            "title": "Going deeper with convolutions",
+            "url": "https://www.semanticscholar.org/paper/e15cf50aa89fee8535703b9f9512fca5bfc43327",
+            "venue": "2015 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2014
+        },
+        {
+            "arxivId": "1409.1556",
+            "authors": [
+                {
+                    "authorId": "34838386",
+                    "name": "K. Simonyan"
+                },
+                {
+                    "authorId": "1688869",
+                    "name": "Andrew Zisserman"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "eb42cf88027de515750f230b23b1a057dc782108",
+            "title": "Very Deep Convolutional Networks for Large-Scale Image Recognition",
+            "url": "https://www.semanticscholar.org/paper/eb42cf88027de515750f230b23b1a057dc782108",
+            "venue": "ICLR",
+            "year": 2014
+        },
+        {
+            "arxivId": "1407.3561",
+            "authors": [
+                {
+                    "authorId": "2528233",
+                    "name": "J. Benet"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "40ede9054b10ded75742f64ce738c2e5595b03bc",
+            "title": "IPFS - Content Addressed, Versioned, P2P File System",
+            "url": "https://www.semanticscholar.org/paper/40ede9054b10ded75742f64ce738c2e5595b03bc",
+            "venue": "ArXiv",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2074108291",
+                    "name": "Kang Zhao"
+                },
+                {
+                    "authorId": "46385957",
+                    "name": "Hongtao Lu"
+                },
+                {
+                    "authorId": "3288319",
+                    "name": "Jincheng Mei"
+                }
+            ],
+            "doi": "10.1609/aaai.v28i1.9133",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e34fcb0ce0f80d3bfd23de95a9d8f983e8d974db",
+            "title": "Locality Preserving Hashing",
+            "url": "https://www.semanticscholar.org/paper/e34fcb0ce0f80d3bfd23de95a9d8f983e8d974db",
+            "venue": "AAAI",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1388677326",
+                    "name": "Sariel Har-Peled"
+                },
+                {
+                    "authorId": "1688317",
+                    "name": "P. Indyk"
+                },
+                {
+                    "authorId": "84095744",
+                    "name": "R. Motwani"
+                }
+            ],
+            "doi": "10.4086/toc.2012.v008a014",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "7ae42cc4b475a2192707d0ada7b3c60c347b621e",
+            "title": "Approximate Nearest Neighbor: Towards Removing the Curse of Dimensionality",
+            "url": "https://www.semanticscholar.org/paper/7ae42cc4b475a2192707d0ada7b3c60c347b621e",
+            "venue": "Theory Comput.",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1745732",
+                    "name": "M. Charikar"
+                }
+            ],
+            "doi": "10.1145/509907.509965",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "42bb0ac384fb87933be67f63b98d90a45d2fe6e9",
+            "title": "Similarity estimation techniques from rounding algorithms",
+            "url": "https://www.semanticscholar.org/paper/42bb0ac384fb87933be67f63b98d90a45d2fe6e9",
+            "venue": "STOC '02",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1688317",
+                    "name": "P. Indyk"
+                },
+                {
+                    "authorId": "84095744",
+                    "name": "R. Motwani"
+                },
+                {
+                    "authorId": "145503401",
+                    "name": "P. Raghavan"
+                },
+                {
+                    "authorId": "1737804",
+                    "name": "S. Vempala"
+                }
+            ],
+            "doi": "10.1145/258533.258656",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "cda964bcf343437cf9f17d4306a5e653258ddde9",
+            "title": "Locality-preserving hashing in multidimensional spaces",
+            "url": "https://www.semanticscholar.org/paper/cda964bcf343437cf9f17d4306a5e653258ddde9",
+            "venue": "STOC '97",
+            "year": 1997
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2113911099",
+                    "name": "R. Rivest"
+                }
+            ],
+            "doi": "10.17487/RFC1320",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e9ce5ad132f753624a017dc036f45eff45839265",
+            "title": "The MD4 Message-Digest Algorithm",
+            "url": "https://www.semanticscholar.org/paper/e9ce5ad132f753624a017dc036f45eff45839265",
+            "venue": "RFC",
+            "year": 1990
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2681887",
+                    "name": "D. Rumelhart"
+                },
+                {
+                    "authorId": "1695689",
+                    "name": "Geoffrey E. Hinton"
+                },
+                {
+                    "authorId": "2116648700",
+                    "name": "Ronald J. Williams"
+                }
+            ],
+            "doi": "10.1016/B978-1-4832-1446-7.50035-2",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "319f22bd5abfd67ac15988aa5c7f705f018c3ccd",
+            "title": "Learning internal representations by error propagation",
+            "url": "https://www.semanticscholar.org/paper/319f22bd5abfd67ac15988aa5c7f705f018c3ccd",
+            "venue": "",
+            "year": 1986
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2229397973",
+                    "name": "AM A.J.ST"
+                },
+                {
+                    "authorId": "50196830",
+                    "name": "A. J. Stam"
+                }
+            ],
+            "doi": "10.2307/3213932",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "356b012a49f962a2b5d5a7036fd4d3edc80f6a3f",
+            "title": "Limit theorems for uniform distributions on spheres in high-dimensional euclidean spaces",
+            "url": "https://www.semanticscholar.org/paper/356b012a49f962a2b5d5a7036fd4d3edc80f6a3f",
+            "venue": "Journal of Applied Probability",
+            "year": 1982
+        },
+        {
+            "arxivId": "1810.04805",
+            "authors": [
+                {
+                    "authorId": "39172707",
+                    "name": "Jacob Devlin"
+                },
+                {
+                    "authorId": "1744179",
+                    "name": "Ming-Wei Chang"
+                },
+                {
+                    "authorId": "2544107",
+                    "name": "Kenton Lee"
+                },
+                {
+                    "authorId": "3259253",
+                    "name": "Kristina Toutanova"
+                }
+            ],
+            "doi": "10.18653/v1/N19-1423",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "df2b0e26d0599ce3e70df8a9da02e51594e0e992",
+            "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+            "url": "https://www.semanticscholar.org/paper/df2b0e26d0599ce3e70df8a9da02e51594e0e992",
+            "venue": "NAACL",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "73155842",
+                    "name": "Richard Craib"
+                },
+                {
+                    "authorId": "80969274",
+                    "name": "rey Bradway"
+                },
+                {
+                    "authorId": "2101375887",
+                    "name": "Xander Dunn"
+                },
+                {
+                    "authorId": "48358366",
+                    "name": "Joseph Krug"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "033d47ed6ea9aedb136057f19aead87bccb35eea",
+            "title": "Numeraire : A Cryptographic Token for Coordinating Machine Intelligence and Preventing Overfitting",
+            "url": "https://www.semanticscholar.org/paper/033d47ed6ea9aedb136057f19aead87bccb35eea",
+            "venue": "",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2114999087",
+                    "name": "Daniel Davis Wood"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "3c50bb6cc3f5417c3325a36ee190e24f0dc87257",
+            "title": "ETHEREUM: A SECURE DECENTRALISED GENERALISED TRANSACTION LEDGER",
+            "url": "https://www.semanticscholar.org/paper/3c50bb6cc3f5417c3325a36ee190e24f0dc87257",
+            "venue": "",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2265982940",
+                    "name": "Shawn Wilkinson"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "befab2043a3a88f8f368062d7f081ce705957d35",
+            "title": "Storj A Peer-to-Peer Cloud Storage Network",
+            "url": "https://www.semanticscholar.org/paper/befab2043a3a88f8f368062d7f081ce705957d35",
+            "venue": "",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1689881",
+                    "name": "G. Bertoni"
+                },
+                {
+                    "authorId": "145951399",
+                    "name": "J. Daemen"
+                },
+                {
+                    "authorId": "2128232",
+                    "name": "Micha\u00ebl Peeters"
+                },
+                {
+                    "authorId": "1724982",
+                    "name": "G. V. Assche"
+                }
+            ],
+            "doi": "10.1007/978-3-642-38348-9_19",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "86af62ff8f7f3957f6ce37e977509be3a6dec327",
+            "title": "Keccak",
+            "url": "https://www.semanticscholar.org/paper/86af62ff8f7f3957f6ce37e977509be3a6dec327",
+            "venue": "EUROCRYPT",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2118523765",
+                    "name": "S. Li"
+                }
+            ],
+            "doi": "10.3923/AJMS.2011.66.70",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "60c3e583b32a51f38b35073b0e1758d8a6ac81e2",
+            "title": "Concise Formulas for the Area and Volume of a Hyperspherical Cap",
+            "url": "https://www.semanticscholar.org/paper/60c3e583b32a51f38b35073b0e1758d8a6ac81e2",
+            "venue": "",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "38219008",
+                    "name": "Satoshi Nakamoto"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ecdd0f2d494ea181792ed0eb40900a5d2786f9c4",
+            "title": "Bitcoin : A Peer-to-Peer Electronic Cash System",
+            "url": "https://www.semanticscholar.org/paper/ecdd0f2d494ea181792ed0eb40900a5d2786f9c4",
+            "venue": "",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "50537578",
+                    "name": "W. Johnson"
+                },
+                {
+                    "authorId": "1878215",
+                    "name": "J. Lindenstrauss"
+                }
+            ],
+            "doi": "10.1090/conm/026/737400",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "1d0635cda34b8af995313848a0c42bac6efe79ec",
+            "title": "Extensions of Lipschitz mappings into Hilbert space",
+            "url": "https://www.semanticscholar.org/paper/1d0635cda34b8af995313848a0c42bac6efe79ec",
+            "venue": "",
+            "year": 1984
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145525230",
+                    "name": "T. Beardsley"
+                }
+            ],
+            "doi": "10.1038/311289b0",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f85a33470b57bc3f559e7ba8714c4e932625cf2f",
+            "title": "Model zoo",
+            "url": "https://www.semanticscholar.org/paper/f85a33470b57bc3f559e7ba8714c4e932625cf2f",
+            "venue": "Nature",
+            "year": 1984
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2285961974",
+                    "name": "W. W. PETERSONt"
+                },
+                {
+                    "authorId": "2250477945",
+                    "name": "D. T. BROWNt"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e75581d5d5118fba18c04032802a90f9134bad6c",
+            "title": "Cyclic Codes for Error Detection *",
+            "url": "https://www.semanticscholar.org/paper/e75581d5d5118fba18c04032802a90f9134bad6c",
+            "venue": "",
+            "year": null
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "DaiMoN: A Decentralized Artificial Intelligence Model Network",
+    "topics": [
+        {
+            "topic": "Artificial intelligence",
+            "topicId": "8286",
+            "url": "https://www.semanticscholar.org/topic/8286"
+        },
+        {
+            "topic": "Overfitting",
+            "topicId": "70499",
+            "url": "https://www.semanticscholar.org/topic/70499"
+        },
+        {
+            "topic": "Brute-force attack",
+            "topicId": "173154",
+            "url": "https://www.semanticscholar.org/topic/173154"
+        },
+        {
+            "topic": "Machine learning",
+            "topicId": "168",
+            "url": "https://www.semanticscholar.org/topic/168"
+        },
+        {
+            "topic": "Append",
+            "topicId": "608106",
+            "url": "https://www.semanticscholar.org/topic/608106"
+        },
+        {
+            "topic": "Reinforcement learning",
+            "topicId": "2557",
+            "url": "https://www.semanticscholar.org/topic/2557"
+        },
+        {
+            "topic": "Prototype",
+            "topicId": "8678",
+            "url": "https://www.semanticscholar.org/topic/8678"
+        },
+        {
+            "topic": "Autonomous robot",
+            "topicId": "1175",
+            "url": "https://www.semanticscholar.org/topic/1175"
+        },
+        {
+            "topic": "Cryptography",
+            "topicId": "6370",
+            "url": "https://www.semanticscholar.org/topic/6370"
+        }
+    ],
+    "url": "https://www.semanticscholar.org/paper/d2c6bdae3781a9efb01fe32468fcc240851c0ead",
+    "venue": "International Congress on Blockchain and Applications",
+    "year": 2019
+}

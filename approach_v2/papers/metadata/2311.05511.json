@@ -1,0 +1,1436 @@
+{
+    "abstract": "We introduce and study constrained Markov Decision Processes (cMDPs) with anytime constraints. An anytime constraint requires the agent to never violate its budget at any point in time, almost surely. Although Markovian policies are no longer sufficient, we show that there exist optimal deterministic policies augmented with cumulative costs. In fact, we present a fixed-parameter tractable reduction from anytime-constrained cMDPs to unconstrained MDPs. Our reduction yields planning and learning algorithms that are time and sample-efficient for tabular cMDPs so long as the precision of the costs is logarithmic in the size of the cMDP. However, we also show that computing non-trivial approximately optimal policies is NP-hard in general. To circumvent this bottleneck, we design provable approximation algorithms that efficiently compute or learn an arbitrarily accurate approximately feasible policy with optimal value so long as the maximum supported cost is bounded by a polynomial in the cMDP or the absolute budget. Given our hardness results, our approximation guarantees are the best possible under worst-case analysis.",
+    "arxivId": "2311.05511",
+    "authors": [
+        {
+            "authorId": "2264461559",
+            "name": "Jeremy McMahan",
+            "url": "https://www.semanticscholar.org/author/2264461559"
+        },
+        {
+            "authorId": "2263569405",
+            "name": "Xiaojin Zhu",
+            "url": "https://www.semanticscholar.org/author/2263569405"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": "2410.23637",
+            "authors": [
+                {
+                    "authorId": "2264461559",
+                    "name": "Jeremy McMahan"
+                },
+                {
+                    "authorId": "2263569405",
+                    "name": "Xiaojin Zhu"
+                }
+            ],
+            "doi": "10.48550/arXiv.2410.23637",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "e3710e96f186c74962584d55fe9a34810ff10e9f",
+            "title": "Anytime-Constrained Multi-Agent Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/e3710e96f186c74962584d55fe9a34810ff10e9f",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2308660242",
+                    "name": "Jianfeng Huang"
+                },
+                {
+                    "authorId": "2309689135",
+                    "name": "Guoqiang Lu"
+                },
+                {
+                    "authorId": "2309388976",
+                    "name": "Yi Li"
+                },
+                {
+                    "authorId": "2216997837",
+                    "name": "Jiajun Wu"
+                }
+            ],
+            "doi": "10.3390/math12132001",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "cd6d8e02d579a337ad8930f81e6fc2b2af76ac2d",
+            "title": "Q-Sorting: An Algorithm for Reinforcement Learning Problems with Multiple Cumulative Constraints",
+            "url": "https://www.semanticscholar.org/paper/cd6d8e02d579a337ad8930f81e6fc2b2af76ac2d",
+            "venue": "Mathematics",
+            "year": 2024
+        },
+        {
+            "arxivId": "2405.14183",
+            "authors": [
+                {
+                    "authorId": "2264461559",
+                    "name": "Jeremy McMahan"
+                }
+            ],
+            "doi": "10.48550/arXiv.2405.14183",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "bdea63dc347aff4d3acb86cab079e291e2c38584",
+            "title": "Deterministic Policies for Constrained Reinforcement Learning in Polynomial-Time",
+            "url": "https://www.semanticscholar.org/paper/bdea63dc347aff4d3acb86cab079e291e2c38584",
+            "venue": "ArXiv",
+            "year": 2024
+        }
+    ],
+    "corpusId": 265067346,
+    "doi": "10.48550/arXiv.2311.05511",
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 3,
+    "numCiting": 59,
+    "paperId": "08fa6464ecad38a0bae38a54446d768a141558cd",
+    "references": [
+        {
+            "arxivId": "2211.15034",
+            "authors": [
+                {
+                    "authorId": "90301155",
+                    "name": "Whiyoung Jung"
+                },
+                {
+                    "authorId": "66679769",
+                    "name": "Myungsik Cho"
+                },
+                {
+                    "authorId": "2116023403",
+                    "name": "Jongeui Park"
+                },
+                {
+                    "authorId": "102717715",
+                    "name": "Young-Jin Sung"
+                }
+            ],
+            "doi": "10.48550/arXiv.2211.15034",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "9fc755d76a2849d0944095f7479a49b39a5cd974",
+            "title": "Quantile Constrained Reinforcement Learning: A Reinforcement Learning Framework Constraining Outage Probability",
+            "url": "https://www.semanticscholar.org/paper/9fc755d76a2849d0944095f7479a49b39a5cd974",
+            "venue": "NeurIPS",
+            "year": 2022
+        },
+        {
+            "arxivId": "2205.10330",
+            "authors": [
+                {
+                    "authorId": "1381852002",
+                    "name": "Shangding Gu"
+                },
+                {
+                    "authorId": "2116706164",
+                    "name": "Longyu Yang"
+                },
+                {
+                    "authorId": "1390662136",
+                    "name": "Yali Du"
+                },
+                {
+                    "authorId": "143930563",
+                    "name": "Guang Chen"
+                },
+                {
+                    "authorId": "145638575",
+                    "name": "Florian Walter"
+                },
+                {
+                    "authorId": "48094081",
+                    "name": "Jun Wang"
+                },
+                {
+                    "authorId": "47796324",
+                    "name": "Yaodong Yang"
+                },
+                {
+                    "authorId": "2159266611",
+                    "name": "Alois Knoll"
+                }
+            ],
+            "doi": "10.48550/arXiv.2205.10330",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9c5f056c4e7986064722bb522e46e3546be8da51",
+            "title": "A Review of Safe Reinforcement Learning: Methods, Theory and Applications",
+            "url": "https://www.semanticscholar.org/paper/9c5f056c4e7986064722bb522e46e3546be8da51",
+            "venue": "ArXiv",
+            "year": 2022
+        },
+        {
+            "arxivId": "2202.07789",
+            "authors": [
+                {
+                    "authorId": "8234443",
+                    "name": "G. Thomas"
+                },
+                {
+                    "authorId": "1491625903",
+                    "name": "Yuping Luo"
+                },
+                {
+                    "authorId": "2114186424",
+                    "name": "Tengyu Ma"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d8da5d28807fe5f8af2e6942c67738bd9f12a1ec",
+            "title": "Safe Reinforcement Learning by Imagining the Near Future",
+            "url": "https://www.semanticscholar.org/paper/d8da5d28807fe5f8af2e6942c67738bd9f12a1ec",
+            "venue": "NeurIPS",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2109534511",
+                    "name": "Jingqi Li"
+                },
+                {
+                    "authorId": "1390046746",
+                    "name": "David Fridovich-Keil"
+                },
+                {
+                    "authorId": "1685407",
+                    "name": "S. Sojoudi"
+                },
+                {
+                    "authorId": "1693894",
+                    "name": "C. Tomlin"
+                }
+            ],
+            "doi": "10.1109/CDC45484.2021.9683088",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ea58da3e837e2109a8a054ab97ea64f9c0b910a3",
+            "title": "Augmented Lagrangian Method for Instantaneously Constrained Reinforcement Learning Problems",
+            "url": "https://www.semanticscholar.org/paper/ea58da3e837e2109a8a054ab97ea64f9c0b910a3",
+            "venue": "2021 60th IEEE Conference on Decision and Control (CDC)",
+            "year": 2021
+        },
+        {
+            "arxivId": "2112.05198",
+            "authors": [
+                {
+                    "authorId": "1685676386",
+                    "name": "Agustin Castellano"
+                },
+                {
+                    "authorId": "51303237",
+                    "name": "Hancheng Min"
+                },
+                {
+                    "authorId": "2082930",
+                    "name": "J. Bazerque"
+                },
+                {
+                    "authorId": "1706983",
+                    "name": "Enrique Mallada"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a35966edc5d98c9398392a5cfe74df8ec4c041c3",
+            "title": "Reinforcement Learning with Almost Sure Constraints",
+            "url": "https://www.semanticscholar.org/paper/a35966edc5d98c9398392a5cfe74df8ec4c041c3",
+            "venue": "L4DC",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "97958997",
+                    "name": "Daniel A. M. Moreira"
+                },
+                {
+                    "authorId": "1921789",
+                    "name": "K. V. Delgado"
+                },
+                {
+                    "authorId": "143844870",
+                    "name": "L. N. Barros"
+                },
+                {
+                    "authorId": "3358691",
+                    "name": "D. Mau\u00e1"
+                }
+            ],
+            "doi": "10.1016/j.ijar.2021.09.003",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "0364036ebd710462e8c786c1e6c4a7304b025677",
+            "title": "Efficient algorithms for Risk-Sensitive Markov Decision Processes with limited budget",
+            "url": "https://www.semanticscholar.org/paper/0364036ebd710462e8c786c1e6c4a7304b025677",
+            "venue": "Int. J. Approx. Reason.",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2110077190",
+                    "name": "Qisong Yang"
+                },
+                {
+                    "authorId": "51893920",
+                    "name": "T. D. Sim\u00e3o"
+                },
+                {
+                    "authorId": "1880385",
+                    "name": "Simon Tindemans"
+                },
+                {
+                    "authorId": "1723205",
+                    "name": "M. Spaan"
+                }
+            ],
+            "doi": "10.1609/aaai.v35i12.17272",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5b2370ebd3439ff60ea64a0c8db88fea2dd86a9c",
+            "title": "WCSAC: Worst-Case Soft Actor Critic for Safety-Constrained Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/5b2370ebd3439ff60ea64a0c8db88fea2dd86a9c",
+            "venue": "AAAI",
+            "year": 2021
+        },
+        {
+            "arxivId": "2104.11706",
+            "authors": [
+                {
+                    "authorId": "1644412555",
+                    "name": "M. Mowbray"
+                },
+                {
+                    "authorId": "51221068",
+                    "name": "Panagiotis Petsagkourakis"
+                },
+                {
+                    "authorId": "1401647281",
+                    "name": "E. A. Rio-Chanona"
+                },
+                {
+                    "authorId": "114782923",
+                    "name": "Robin Smith"
+                },
+                {
+                    "authorId": "5090322",
+                    "name": "Dongda Zhang"
+                }
+            ],
+            "doi": "10.1016/j.compchemeng.2021.107630",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "91e4b5dd61766d621eb65db384c288c19ca0864d",
+            "title": "Safe Chance Constrained Reinforcement Learning for Batch Process Control",
+            "url": "https://www.semanticscholar.org/paper/91e4b5dd61766d621eb65db384c288c19ca0864d",
+            "venue": "Comput. Chem. Eng.",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1490931604",
+                    "name": "Chao Fan"
+                },
+                {
+                    "authorId": "2155989316",
+                    "name": "Cheng Zhang"
+                },
+                {
+                    "authorId": "1681013",
+                    "name": "Alex Yahja"
+                },
+                {
+                    "authorId": "48813438",
+                    "name": "A. Mostafavi"
+                }
+            ],
+            "doi": "10.1016/j.ijinfomgt.2019.102049",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "04dfdf49d2e3cfce31b3544b8fe45c1d9533a82b",
+            "title": "Disaster City Digital Twin: A vision for integrating artificial and human intelligence for disaster management",
+            "url": "https://www.semanticscholar.org/paper/04dfdf49d2e3cfce31b3544b8fe45c1d9533a82b",
+            "venue": "Int. J. Inf. Manag.",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3411044",
+                    "name": "Hai-xia Peng"
+                },
+                {
+                    "authorId": "145947928",
+                    "name": "Xuemin Shen"
+                }
+            ],
+            "doi": "10.1109/JSAC.2020.3036962",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "3bdc34dfdb740615addf3477bdc7312e9ad783be",
+            "title": "Multi-Agent Reinforcement Learning Based Resource Management in MEC- and UAV-Assisted Vehicular Networks",
+            "url": "https://www.semanticscholar.org/paper/3bdc34dfdb740615addf3477bdc7312e9ad783be",
+            "venue": "IEEE Journal on Selected Areas in Communications",
+            "year": 2021
+        },
+        {
+            "arxivId": "2009.11348",
+            "authors": [
+                {
+                    "authorId": "1962787647",
+                    "name": "K. C. Kalagarla"
+                },
+                {
+                    "authorId": "49037170",
+                    "name": "Rahul Jain"
+                },
+                {
+                    "authorId": "1756311",
+                    "name": "P. Nuzzo"
+                }
+            ],
+            "doi": "10.1609/aaai.v35i9.16979",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "4b7af6632be8f790f68ed2d5f02914ee4c6ce681",
+            "title": "A Sample-Efficient Algorithm for Episodic Finite-Horizon MDP with Constraints",
+            "url": "https://www.semanticscholar.org/paper/4b7af6632be8f790f68ed2d5f02914ee4c6ce681",
+            "venue": "AAAI",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3072035",
+                    "name": "A. Coronato"
+                },
+                {
+                    "authorId": "34343572",
+                    "name": "Muddasar Naeem"
+                },
+                {
+                    "authorId": "144840023",
+                    "name": "G. Pietro"
+                },
+                {
+                    "authorId": "2770509",
+                    "name": "Giovanni Paragliola"
+                }
+            ],
+            "doi": "10.1016/J.ARTMED.2020.101964",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2bed17dc270c5c185278c262b2424295b6a21fce",
+            "title": "Reinforcement learning for intelligent healthcare applications: A survey",
+            "url": "https://www.semanticscholar.org/paper/2bed17dc270c5c185278c262b2424295b6a21fce",
+            "venue": "Artif. Intell. Medicine",
+            "year": 2020
+        },
+        {
+            "arxivId": "2008.13319",
+            "authors": [
+                {
+                    "authorId": null,
+                    "name": "Xiaoyu Chen"
+                },
+                {
+                    "authorId": "50779082",
+                    "name": "Jiachen Hu"
+                },
+                {
+                    "authorId": "47681372",
+                    "name": "Lihong Li"
+                },
+                {
+                    "authorId": "39060743",
+                    "name": "Liwei Wang"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "e4c30f8e2fc6577fc04efbe8f14a557869a19fd4",
+            "title": "Efficient Reinforcement Learning in Factored MDPs with Application to Constrained RL",
+            "url": "https://www.semanticscholar.org/paper/e4c30f8e2fc6577fc04efbe8f14a557869a19fd4",
+            "venue": "ICLR",
+            "year": 2020
+        },
+        {
+            "arxivId": "2007.13442",
+            "authors": [
+                {
+                    "authorId": "2067015662",
+                    "name": "Pierre M'enard"
+                },
+                {
+                    "authorId": "31109333",
+                    "name": "O. D. Domingues"
+                },
+                {
+                    "authorId": "143808510",
+                    "name": "Anders Jonsson"
+                },
+                {
+                    "authorId": "2578263",
+                    "name": "E. Kaufmann"
+                },
+                {
+                    "authorId": "73556237",
+                    "name": "Edouard Leurent"
+                },
+                {
+                    "authorId": "1806291",
+                    "name": "Michal Valko"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "576c7b003427d6906e3b58a0139b4d83301909fd",
+            "title": "Fast active learning for pure exploration in reinforcement learning",
+            "url": "https://www.semanticscholar.org/paper/576c7b003427d6906e3b58a0139b4d83301909fd",
+            "venue": "ICML",
+            "year": 2020
+        },
+        {
+            "arxivId": "2007.03574",
+            "authors": [
+                {
+                    "authorId": "32019380",
+                    "name": "Melrose Roderick"
+                },
+                {
+                    "authorId": "34602162",
+                    "name": "Vaishnavh Nagarajan"
+                },
+                {
+                    "authorId": "145116464",
+                    "name": "J. Z. Kolter"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "3fdb10b01d980840f3235b18a50f5bcdb8d51c50",
+            "title": "Provably Safe PAC-MDP Exploration Using Analogies",
+            "url": "https://www.semanticscholar.org/paper/3fdb10b01d980840f3235b18a50f5bcdb8d51c50",
+            "venue": "AISTATS",
+            "year": 2020
+        },
+        {
+            "arxivId": "2006.05051",
+            "authors": [
+                {
+                    "authorId": "11963742",
+                    "name": "Kiant\u00e9 Brantley"
+                },
+                {
+                    "authorId": "144652072",
+                    "name": "Miroslav Dud\u00edk"
+                },
+                {
+                    "authorId": "2558458",
+                    "name": "Thodoris Lykouris"
+                },
+                {
+                    "authorId": "138875199",
+                    "name": "Sobhan Miryoosefi"
+                },
+                {
+                    "authorId": "3385674",
+                    "name": "Max Simchowitz"
+                },
+                {
+                    "authorId": "2158559",
+                    "name": "Aleksandrs Slivkins"
+                },
+                {
+                    "authorId": "144426657",
+                    "name": "Wen Sun"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7ed50e8bd030093b78ab1a38567e2d426240b157",
+            "title": "Constrained episodic reinforcement learning in concave-convex and knapsack settings",
+            "url": "https://www.semanticscholar.org/paper/7ed50e8bd030093b78ab1a38567e2d426240b157",
+            "venue": "NeurIPS",
+            "year": 2020
+        },
+        {
+            "arxivId": "2004.00915",
+            "authors": [
+                {
+                    "authorId": "49625599",
+                    "name": "S. Gros"
+                },
+                {
+                    "authorId": "2760135",
+                    "name": "Mario Zanon"
+                },
+                {
+                    "authorId": "1759256",
+                    "name": "A. Bemporad"
+                }
+            ],
+            "doi": "10.1016/J.IFACOL.2020.12.2276",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "1b24a76dcdc99463c675c0b78a75ed14e6f3d185",
+            "title": "Safe Reinforcement Learning via Projection on a Safe Set: How to Achieve Optimality?",
+            "url": "https://www.semanticscholar.org/paper/1b24a76dcdc99463c675c0b78a75ed14e6f3d185",
+            "venue": "IFAC-PapersOnLine",
+            "year": 2020
+        },
+        {
+            "arxivId": "2003.02189",
+            "authors": [
+                {
+                    "authorId": "27098848",
+                    "name": "Yonathan Efroni"
+                },
+                {
+                    "authorId": "1712535",
+                    "name": "Shie Mannor"
+                },
+                {
+                    "authorId": "6234609",
+                    "name": "Matteo Pirotta"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "1fd2ee591eb8dda518a2e9e685098c764c440803",
+            "title": "Exploration-Exploitation in Constrained MDPs",
+            "url": "https://www.semanticscholar.org/paper/1fd2ee591eb8dda518a2e9e685098c764c440803",
+            "venue": "ArXiv",
+            "year": 2020
+        },
+        {
+            "arxivId": "2003.00534",
+            "authors": [
+                {
+                    "authorId": "1821365",
+                    "name": "Dongsheng Ding"
+                },
+                {
+                    "authorId": "2650261",
+                    "name": "Xiaohan Wei"
+                },
+                {
+                    "authorId": "150358650",
+                    "name": "Zhuoran Yang"
+                },
+                {
+                    "authorId": "3113442",
+                    "name": "Zhaoran Wang"
+                },
+                {
+                    "authorId": "2056795506",
+                    "name": "M. Jovanovi'c"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9d964e4688b0cbae0847d7c2d507c2320eed7657",
+            "title": "Provably Efficient Safe Exploration via Primal-Dual Policy Optimization",
+            "url": "https://www.semanticscholar.org/paper/9d964e4688b0cbae0847d7c2d507c2320eed7657",
+            "venue": "AISTATS",
+            "year": 2020
+        },
+        {
+            "arxivId": "1910.13393",
+            "authors": [
+                {
+                    "authorId": "2856943",
+                    "name": "Santiago Paternain"
+                },
+                {
+                    "authorId": "2120186",
+                    "name": "Luiz F. O. Chamon"
+                },
+                {
+                    "authorId": "1389989876",
+                    "name": "Miguel Calvo-Fullana"
+                },
+                {
+                    "authorId": "152551711",
+                    "name": "Alejandro Ribeiro"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c919ae4366f5cc4901b854cc259101ccc13e6f3f",
+            "title": "Constrained Reinforcement Learning Has Zero Duality Gap",
+            "url": "https://www.semanticscholar.org/paper/c919ae4366f5cc4901b854cc259101ccc13e6f3f",
+            "venue": "NeurIPS",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1843342",
+                    "name": "J. Fisac"
+                },
+                {
+                    "authorId": "1395031988",
+                    "name": "Neil F. Lugovoy"
+                },
+                {
+                    "authorId": "2107060624",
+                    "name": "Vicencc Rubies-Royo"
+                },
+                {
+                    "authorId": "2822732",
+                    "name": "Shromona Ghosh"
+                },
+                {
+                    "authorId": "1693894",
+                    "name": "C. Tomlin"
+                }
+            ],
+            "doi": "10.1109/ICRA.2019.8794107",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "331638e2105fd2ed70ec9e700255af1bc962f1be",
+            "title": "Bridging Hamilton-Jacobi Safety Analysis and Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/331638e2105fd2ed70ec9e700255af1bc962f1be",
+            "venue": "2019 International Conference on Robotics and Automation (ICRA)",
+            "year": 2019
+        },
+        {
+            "arxivId": "1812.00600",
+            "authors": [
+                {
+                    "authorId": "50841820",
+                    "name": "Abhinav Bhatia"
+                },
+                {
+                    "authorId": "1718824",
+                    "name": "Pradeep Varakantham"
+                },
+                {
+                    "authorId": "40305195",
+                    "name": "Akshat Kumar"
+                }
+            ],
+            "doi": "10.1609/icaps.v29i1.3528",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "46f92838e7cf80cdd165cea939b44014ca2fb0ee",
+            "title": "Resource Constrained Deep Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/46f92838e7cf80cdd165cea939b44014ca2fb0ee",
+            "venue": "ICAPS",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2770509",
+                    "name": "Giovanni Paragliola"
+                },
+                {
+                    "authorId": "3072035",
+                    "name": "A. Coronato"
+                },
+                {
+                    "authorId": "34343572",
+                    "name": "Muddasar Naeem"
+                },
+                {
+                    "authorId": "144840023",
+                    "name": "G. Pietro"
+                }
+            ],
+            "doi": "10.1109/SITIS.2018.00114",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "212a75482aac4b47a925545a6cd2bc75d047dfe0",
+            "title": "A Reinforcement Learning-Based Approach for the Risk Management of e-Health Environments: A Case Study",
+            "url": "https://www.semanticscholar.org/paper/212a75482aac4b47a925545a6cd2bc75d047dfe0",
+            "venue": "2018 14th International Conference on Signal-Image Technology & Internet-Based Systems (SITIS)",
+            "year": 2018
+        },
+        {
+            "arxivId": "1805.06591",
+            "authors": [
+                {
+                    "authorId": "1760102",
+                    "name": "Rongpeng Li"
+                },
+                {
+                    "authorId": "3067183",
+                    "name": "Zhifeng Zhao"
+                },
+                {
+                    "authorId": "2112428008",
+                    "name": "Qi Sun"
+                },
+                {
+                    "authorId": "47834549",
+                    "name": "C. I"
+                },
+                {
+                    "authorId": "9251967",
+                    "name": "Chenyang Yang"
+                },
+                {
+                    "authorId": "2135089146",
+                    "name": "Xianfu Chen"
+                },
+                {
+                    "authorId": "1758158",
+                    "name": "Minjian Zhao"
+                },
+                {
+                    "authorId": "46702909",
+                    "name": "Honggang Zhang"
+                }
+            ],
+            "doi": "10.1109/ACCESS.2018.2881964",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8fc4a692ee9615d78cff36f35139173e1410399e",
+            "title": "Deep Reinforcement Learning for Resource Management in Network Slicing",
+            "url": "https://www.semanticscholar.org/paper/8fc4a692ee9615d78cff36f35139173e1410399e",
+            "venue": "IEEE Access",
+            "year": 2018
+        },
+        {
+            "arxivId": "1705.10528",
+            "authors": [
+                {
+                    "authorId": "3381809",
+                    "name": "Joshua Achiam"
+                },
+                {
+                    "authorId": "145641013",
+                    "name": "David Held"
+                },
+                {
+                    "authorId": "3025260",
+                    "name": "Aviv Tamar"
+                },
+                {
+                    "authorId": "1689992",
+                    "name": "P. Abbeel"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7a4193d0b042643a8bb9ec262ed7f9d509bdb12e",
+            "title": "Constrained Policy Optimization",
+            "url": "https://www.semanticscholar.org/paper/7a4193d0b042643a8bb9ec262ed7f9d509bdb12e",
+            "venue": "ICML",
+            "year": 2017
+        },
+        {
+            "arxivId": "1704.03952",
+            "authors": [
+                {
+                    "authorId": "2054452374",
+                    "name": "Yurong You"
+                },
+                {
+                    "authorId": "4753513",
+                    "name": "Xinlei Pan"
+                },
+                {
+                    "authorId": "47196015",
+                    "name": "Ziyan Wang"
+                },
+                {
+                    "authorId": "1830034",
+                    "name": "Cewu Lu"
+                }
+            ],
+            "doi": "10.5244/C.31.11",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7541c956a13f50d8ffbef853539b466f6a77a80d",
+            "title": "Virtual to Real Reinforcement Learning for Autonomous Driving",
+            "url": "https://www.semanticscholar.org/paper/7541c956a13f50d8ffbef853539b466f6a77a80d",
+            "venue": "BMVC",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2512621",
+                    "name": "Hongzi Mao"
+                },
+                {
+                    "authorId": "79404966",
+                    "name": "Mohammad Alizadeh"
+                },
+                {
+                    "authorId": "1684547",
+                    "name": "Ishai Menache"
+                },
+                {
+                    "authorId": "1741860",
+                    "name": "Srikanth Kandula"
+                }
+            ],
+            "doi": "10.1145/3005745.3005750",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "1ab7aa767e1779c87d822325859e47fe2986e6b2",
+            "title": "Resource Management with Deep Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/1ab7aa767e1779c87d822325859e47fe2986e6b2",
+            "venue": "HotNets",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "36414429",
+                    "name": "Marcel Steinmetz"
+                },
+                {
+                    "authorId": "144915519",
+                    "name": "J. Hoffmann"
+                },
+                {
+                    "authorId": "1776632",
+                    "name": "O. Buffet"
+                }
+            ],
+            "doi": "10.1609/icaps.v26i1.13740",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "489c5ce3b7d44b7c69902a792f21337b8bc9e4e6",
+            "title": "Revisiting Goal Probability Analysis in Probabilistic Planning",
+            "url": "https://www.semanticscholar.org/paper/489c5ce3b7d44b7c69902a792f21337b8bc9e4e6",
+            "venue": "ICAPS",
+            "year": 2016
+        },
+        {
+            "arxivId": "1512.01629",
+            "authors": [
+                {
+                    "authorId": "1819830",
+                    "name": "Yinlam Chow"
+                },
+                {
+                    "authorId": "1678622",
+                    "name": "M. Ghavamzadeh"
+                },
+                {
+                    "authorId": "2542753",
+                    "name": "Lucas Janson"
+                },
+                {
+                    "authorId": "1696085",
+                    "name": "M. Pavone"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "759bbd8dd50cb4790cad7a3bccbdfcbfee5e3e89",
+            "title": "Risk-Constrained Reinforcement Learning with Percentile Risk Criteria",
+            "url": "https://www.semanticscholar.org/paper/759bbd8dd50cb4790cad7a3bccbdfcbfee5e3e89",
+            "venue": "J. Mach. Learn. Res.",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "50124086",
+                    "name": "M. Ono"
+                },
+                {
+                    "authorId": "1696085",
+                    "name": "M. Pavone"
+                },
+                {
+                    "authorId": "1791484",
+                    "name": "Y. Kuwata"
+                },
+                {
+                    "authorId": "122105408",
+                    "name": "B. Balaram"
+                }
+            ],
+            "doi": "10.1007/s10514-015-9467-7",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "1b1d53d49e9a24d1bc53726f09f7c5d7c368cc42",
+            "title": "Chance-constrained dynamic programming with application to risk-aware robotic space exploration",
+            "url": "https://www.semanticscholar.org/paper/1b1d53d49e9a24d1bc53726f09f7c5d7c368cc42",
+            "venue": "Autonomous Robots",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144108775",
+                    "name": "P. Hou"
+                },
+                {
+                    "authorId": "1805457",
+                    "name": "W. Yeoh"
+                },
+                {
+                    "authorId": "1718824",
+                    "name": "Pradeep Varakantham"
+                }
+            ],
+            "doi": "10.1609/icaps.v24i1.13615",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "4919db95b5c466c24bc2d479b3396e2b50eed57d",
+            "title": "Revisiting Risk-Sensitive MDPs: New Algorithms and Results",
+            "url": "https://www.semanticscholar.org/paper/4919db95b5c466c24bc2d479b3396e2b50eed57d",
+            "venue": "ICAPS",
+            "year": 2014
+        },
+        {
+            "arxivId": "1305.2545",
+            "authors": [
+                {
+                    "authorId": "1797240",
+                    "name": "Ashwinkumar Badanidiyuru"
+                },
+                {
+                    "authorId": "2633757",
+                    "name": "Robert D. Kleinberg"
+                },
+                {
+                    "authorId": "2158559",
+                    "name": "Aleksandrs Slivkins"
+                }
+            ],
+            "doi": "10.1109/FOCS.2013.30",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "5df142536d1b1e80930b5ad1f22db62d41d37e3a",
+            "title": "Bandits with Knapsacks",
+            "url": "https://www.semanticscholar.org/paper/5df142536d1b1e80930b5ad1f22db62d41d37e3a",
+            "venue": "2013 IEEE 54th Annual Symposium on Foundations of Computer Science",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143719795",
+                    "name": "Huan Xu"
+                },
+                {
+                    "authorId": "1712535",
+                    "name": "Shie Mannor"
+                }
+            ],
+            "doi": "10.5591/978-1-57735-516-8/IJCAI11-341",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "20f8e07dcc16e5e28752aaf28070c22967c7b9ae",
+            "title": "Probabilistic Goal Markov Decision Processes",
+            "url": "https://www.semanticscholar.org/paper/20f8e07dcc16e5e28752aaf28070c22967c7b9ae",
+            "venue": "IJCAI",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2136886",
+                    "name": "V. Borkar"
+                },
+                {
+                    "authorId": "33495368",
+                    "name": "R. Jain"
+                }
+            ],
+            "doi": "10.1109/TAC.2014.2309262",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "75880c441a495bd1b7ff7315ad780f4d8f581b38",
+            "title": "Risk-constrained Markov decision processes",
+            "url": "https://www.semanticscholar.org/paper/75880c441a495bd1b7ff7315ad780f4d8f581b38",
+            "venue": "49th IEEE Conference on Decision and Control (CDC)",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2136886",
+                    "name": "V. Borkar"
+                }
+            ],
+            "doi": "10.1016/j.sysconle.2004.08.007",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "3f08e2ce1e7440440aecab0d732433e40e5b28fd",
+            "title": "An actor-critic algorithm for constrained Markov decision processes",
+            "url": "https://www.semanticscholar.org/paper/3f08e2ce1e7440440aecab0d732433e40e5b28fd",
+            "venue": "Syst. Control. Lett.",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143665732",
+                    "name": "E. Altman"
+                }
+            ],
+            "doi": "10.1201/9781315140223",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "3cc2608fd77b9b65f5bd378e8797b2ab1b8acde7",
+            "title": "Constrained Markov Decision Processes",
+            "url": "https://www.semanticscholar.org/paper/3cc2608fd77b9b65f5bd378e8797b2ab1b8acde7",
+            "venue": "",
+            "year": 1999
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2107881808",
+                    "name": "Stella X. Yu"
+                },
+                {
+                    "authorId": "2153417",
+                    "name": "Yuanlie Lin"
+                },
+                {
+                    "authorId": "2630797",
+                    "name": "P. Yan"
+                }
+            ],
+            "doi": "10.1006/JMAA.1998.6015",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "76d2504eb7b2e82e514947049725d429fc81179c",
+            "title": "Optimization Models for the First Arrival Target Distribution Function in Discrete Time",
+            "url": "https://www.semanticscholar.org/paper/76d2504eb7b2e82e514947049725d429fc81179c",
+            "venue": "",
+            "year": 1998
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "37814588",
+                    "name": "M. Puterman"
+                }
+            ],
+            "doi": "10.2307/2291177",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "a9cd8efe9184dddb1bedbbec3a356c4dfb22fe63",
+            "title": "Markov Decision Processes: Discrete Stochastic Dynamic Programming",
+            "url": "https://www.semanticscholar.org/paper/a9cd8efe9184dddb1bedbbec3a356c4dfb22fe63",
+            "venue": "",
+            "year": 1994
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1786249",
+                    "name": "D. Bertsekas"
+                },
+                {
+                    "authorId": "144224173",
+                    "name": "J. Tsitsiklis"
+                }
+            ],
+            "doi": "10.1287/moor.16.3.580",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "770bf621b5232b17058fb90a71c8f82b5f7857f9",
+            "title": "An Analysis of Stochastic Shortest Path Problems",
+            "url": "https://www.semanticscholar.org/paper/770bf621b5232b17058fb90a71c8f82b5f7857f9",
+            "venue": "Math. Oper. Res.",
+            "year": 1991
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1829862",
+                    "name": "K. Ross"
+                },
+                {
+                    "authorId": "2425202",
+                    "name": "R. Varadarajan"
+                }
+            ],
+            "doi": "10.1287/opre.37.5.780",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9fd37d261eea40925c8d18a6041afa69daa8b44d",
+            "title": "Markov Decision Processes with Sample Path Constraints: The Communicating Case",
+            "url": "https://www.semanticscholar.org/paper/9fd37d261eea40925c8d18a6041afa69daa8b44d",
+            "venue": "Oper. Res.",
+            "year": 1989
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1789054",
+                    "name": "P. Kolesar"
+                }
+            ],
+            "doi": "10.1287/MNSC.16.6.B384",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "884d85cefbf0391c328a28863858ae0e95829f47",
+            "title": "A Markovian Model for Hospital Admission Scheduling",
+            "url": "https://www.semanticscholar.org/paper/884d85cefbf0391c328a28863858ae0e95829f47",
+            "venue": "",
+            "year": 1970
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1763802",
+                    "name": "A. Charnes"
+                },
+                {
+                    "authorId": "32233792",
+                    "name": "W. Cooper"
+                },
+                {
+                    "authorId": "67042481",
+                    "name": "G. H. Symonds"
+                }
+            ],
+            "doi": "10.1287/MNSC.4.3.235",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "03cba8bc0b4ff0b3ee8059b556b5f42d0902be5f",
+            "title": "Cost Horizons and Certainty Equivalents: An Approach to Stochastic Programming of Heating Oil",
+            "url": "https://www.semanticscholar.org/paper/03cba8bc0b4ff0b3ee8059b556b5f42d0902be5f",
+            "venue": "",
+            "year": 1958
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "35022780",
+                    "name": "Chunxue Wu"
+                },
+                {
+                    "authorId": "152356699",
+                    "name": "Bobo Ju"
+                },
+                {
+                    "authorId": "83331194",
+                    "name": "Y. Wu"
+                },
+                {
+                    "authorId": "2117690458",
+                    "name": "Xiao Lin"
+                },
+                {
+                    "authorId": "145826495",
+                    "name": "N. Xiong"
+                },
+                {
+                    "authorId": "7322490",
+                    "name": "Guangquan Xu"
+                },
+                {
+                    "authorId": "2115262622",
+                    "name": "Hongyan Li"
+                },
+                {
+                    "authorId": "2735528",
+                    "name": "Xuefeng Liang"
+                }
+            ],
+            "doi": "10.1109/ACCESS.2019.2933002",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "843975e71ce455bd5a84f136baadc8796ce65d78",
+            "title": "UAV Autonomous Target Search Based on Deep Reinforcement Learning in Complex Disaster Scene",
+            "url": "https://www.semanticscholar.org/paper/843975e71ce455bd5a84f136baadc8796ce65d78",
+            "venue": "IEEE Access",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145234267",
+                    "name": "Wang Chi Cheung"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "fab2b7d4c16160b91e097ae527668c590422a7fe",
+            "title": "Regret Minimization for Reinforcement Learning with Vectorial Feedback and Complex Objectives",
+            "url": "https://www.semanticscholar.org/paper/fab2b7d4c16160b91e097ae527668c590422a7fe",
+            "venue": "NeurIPS",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1701841",
+                    "name": "Stefan Szeider"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "178c66c0d80696a2b22d6c74ac0cc9f52630ccf1",
+            "title": "Parameterized Complexity",
+            "url": "https://www.semanticscholar.org/paper/178c66c0d80696a2b22d6c74ac0cc9f52630ccf1",
+            "venue": "",
+            "year": 1998
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Anytime-Constrained Reinforcement Learning",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/08fa6464ecad38a0bae38a54446d768a141558cd",
+    "venue": "International Conference on Artificial Intelligence and Statistics",
+    "year": 2023
+}

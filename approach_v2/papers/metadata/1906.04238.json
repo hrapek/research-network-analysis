@@ -1,0 +1,981 @@
+{
+    "abstract": "The Hearthstone AI framework and competition motivates the development of artificial intelligence agents that can play collectible card games. A special feature of those games is the high variety of cards, which can be chosen by the players to create their own decks. In contrast to simpler card games, the value of many cards is determined by their possible synergies. The vast amount of possible decks, the randomness of the game, as well as the restricted information during the player's turn offer quite a hard challenge for the development of game-playing agents. This short paper introduces the competition framework and goes into more detail on the problems and challenges that need to be faced during the development process.",
+    "arxivId": "1906.04238",
+    "authors": [
+        {
+            "authorId": "2647736",
+            "name": "Alexander Dockhorn",
+            "url": "https://www.semanticscholar.org/author/2647736"
+        },
+        {
+            "authorId": "1714662",
+            "name": "Sanaz Mostaghim",
+            "url": "https://www.semanticscholar.org/author/1714662"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": "2410.06299",
+            "authors": [
+                {
+                    "authorId": "144845501",
+                    "name": "R. Vieira"
+                },
+                {
+                    "authorId": "2258708097",
+                    "name": "A. R. Tavares"
+                },
+                {
+                    "authorId": "1687688",
+                    "name": "L. Chaimowicz"
+                }
+            ],
+            "doi": "10.48550/arXiv.2410.06299",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "dd09891bdb35a1b24ac10339b2c365ea0b67e26d",
+            "title": "A Taxonomy of Collectible Card Games from a Game-Playing AI Perspective",
+            "url": "https://www.semanticscholar.org/paper/dd09891bdb35a1b24ac10339b2c365ea0b67e26d",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": "2407.05879",
+            "authors": [
+                {
+                    "authorId": "2269050449",
+                    "name": "Timo Bertram"
+                },
+                {
+                    "authorId": "2269049873",
+                    "name": "Johannes F\u00fcrnkranz"
+                },
+                {
+                    "authorId": "2269133464",
+                    "name": "Martin M\u00fcller"
+                }
+            ],
+            "doi": "10.1109/CoG60054.2024.10645602",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8d940f85af12c8d47cf5a56ae22c43bdef498cc7",
+            "title": "Learning With Generalised Card Representations for \u201cMagic: The Gathering\u201d",
+            "url": "https://www.semanticscholar.org/paper/8d940f85af12c8d47cf5a56ae22c43bdef498cc7",
+            "venue": "2024 IEEE Conference on Games (CoG)",
+            "year": 2024
+        },
+        {
+            "arxivId": "2404.16689",
+            "authors": [
+                {
+                    "authorId": "2203156523",
+                    "name": "Radovan Halu\u0161ka"
+                },
+                {
+                    "authorId": "2298273862",
+                    "name": "Martin Schmid"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c804e9ca537647e5105d9fc2c5b4096cb4247bc4",
+            "title": "Learning to Beat ByteRL: Exploitability of Collectible Card Game Agents",
+            "url": "https://www.semanticscholar.org/paper/c804e9ca537647e5105d9fc2c5b4096cb4247bc4",
+            "venue": "",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2052550239",
+                    "name": "Celso Fran\u00e7a"
+                },
+                {
+                    "authorId": "2121298160",
+                    "name": "Zisen Zhou"
+                },
+                {
+                    "authorId": "2211901651",
+                    "name": "Carolina Fernanda da Silva"
+                },
+                {
+                    "authorId": "2211847028",
+                    "name": "Cibele Simoes de Oliveira Santos"
+                },
+                {
+                    "authorId": "2212083759",
+                    "name": "Lucas Braga Ferreira"
+                },
+                {
+                    "authorId": "2166436636",
+                    "name": "Lucas H. Pereira"
+                },
+                {
+                    "authorId": "2212094907",
+                    "name": "Marcos Pablo Souza de Almeida"
+                },
+                {
+                    "authorId": "2212251630",
+                    "name": "Marina Iolanda Oliveira"
+                },
+                {
+                    "authorId": "2331941439",
+                    "name": "Tha\u00eds Regina Dam\u00e1sio"
+                },
+                {
+                    "authorId": "2212246584",
+                    "name": "Vinicius Silva Pacheco"
+                },
+                {
+                    "authorId": "2074488337",
+                    "name": "Fabr\u00edcio G\u00f3es"
+                }
+            ],
+            "doi": "10.1109/TG.2023.3258149",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "fb0995412131b0d912a643d250b47a26fd2026ff",
+            "title": "CreativeStone: A Creativity Booster for Hearthstone Card Decks",
+            "url": "https://www.semanticscholar.org/paper/fb0995412131b0d912a643d250b47a26fd2026ff",
+            "venue": "IEEE Transactions on Games",
+            "year": 2024
+        },
+        {
+            "arxivId": "2307.01676",
+            "authors": [
+                {
+                    "authorId": "2162978704",
+                    "name": "Hyeonchang Jeon"
+                },
+                {
+                    "authorId": "80196578",
+                    "name": "In-Chang Baek"
+                },
+                {
+                    "authorId": "2637344",
+                    "name": "Cheong-mok Bae"
+                },
+                {
+                    "authorId": "2167980362",
+                    "name": "Taehwa Park"
+                },
+                {
+                    "authorId": "2221126538",
+                    "name": "Wonsang You"
+                },
+                {
+                    "authorId": "2185606291",
+                    "name": "Taegwan Ha"
+                },
+                {
+                    "authorId": "2187148747",
+                    "name": "Hoyoun Jung"
+                },
+                {
+                    "authorId": "2221126508",
+                    "name": "Jinha Noh"
+                },
+                {
+                    "authorId": "2221144294",
+                    "name": "Seungwon Oh"
+                },
+                {
+                    "authorId": "2155074209",
+                    "name": "Kyung-Joong Kim"
+                }
+            ],
+            "doi": "10.1109/TG.2023.3335399",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b0be82ff84e535b62a1bfb09094c60ac6695ec78",
+            "title": "RaidEnv: Exploring New Challenges in Automated Content Balancing for Boss Raid Games",
+            "url": "https://www.semanticscholar.org/paper/b0be82ff84e535b62a1bfb09094c60ac6695ec78",
+            "venue": "IEEE Transactions on Games",
+            "year": 2023
+        },
+        {
+            "arxivId": "2305.11814",
+            "authors": [
+                {
+                    "authorId": "37694209",
+                    "name": "Jakub Kowalski"
+                },
+                {
+                    "authorId": "79470947",
+                    "name": "Radoslaw Miernik"
+                }
+            ],
+            "doi": "10.1109/CoG57401.2023.10333181",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "551a4a4d231e24bacbd7a1285e8f44dd553e5b3f",
+            "title": "Summarizing Strategy Card Game AI Competition",
+            "url": "https://www.semanticscholar.org/paper/551a4a4d231e24bacbd7a1285e8f44dd553e5b3f",
+            "venue": "2023 IEEE Conference on Games (CoG)",
+            "year": 2023
+        },
+        {
+            "arxivId": "2305.08234",
+            "authors": [
+                {
+                    "authorId": "37694209",
+                    "name": "Jakub Kowalski"
+                },
+                {
+                    "authorId": "79470947",
+                    "name": "Radoslaw Miernik"
+                },
+                {
+                    "authorId": "2217267391",
+                    "name": "Katarzyna Polak"
+                },
+                {
+                    "authorId": "2217251190",
+                    "name": "Dominik Budzki"
+                },
+                {
+                    "authorId": "2217251186",
+                    "name": "Damian Kowalik"
+                }
+            ],
+            "doi": "10.1109/CoG60054.2024.10645674",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "2cd0f87d70a0b6afd79324f959c68f04ef6c0945",
+            "title": "Introducing Tales of Tribute AI Competition",
+            "url": "https://www.semanticscholar.org/paper/2cd0f87d70a0b6afd79324f959c68f04ef6c0945",
+            "venue": "2024 IEEE Conference on Games (CoG)",
+            "year": 2023
+        },
+        {
+            "arxivId": "2304.13269",
+            "authors": [
+                {
+                    "authorId": "95194596",
+                    "name": "Chengpeng Hu"
+                },
+                {
+                    "authorId": "2218880503",
+                    "name": "Yunlong Zhao"
+                },
+                {
+                    "authorId": "2117428189",
+                    "name": "Ziqi Wang"
+                },
+                {
+                    "authorId": "2215388154",
+                    "name": "Haocheng Du"
+                },
+                {
+                    "authorId": "1685638",
+                    "name": "Jialin Liu"
+                }
+            ],
+            "doi": "10.1109/tai.2024.3410935",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "6bd6c5a2bbeaa5fe028ad5ebc3fe203a06269f8d",
+            "title": "Games for Artificial Intelligence Research: A Review and Perspectives",
+            "url": "https://www.semanticscholar.org/paper/6bd6c5a2bbeaa5fe028ad5ebc3fe203a06269f8d",
+            "venue": "IEEE Transactions on Artificial Intelligence",
+            "year": 2023
+        },
+        {
+            "arxivId": "2303.05197",
+            "authors": [
+                {
+                    "authorId": "2090353480",
+                    "name": "Changnan Xiao"
+                },
+                {
+                    "authorId": "2211163739",
+                    "name": "Yongxin Zhang"
+                },
+                {
+                    "authorId": "2210937793",
+                    "name": "Xuefeng Huang"
+                },
+                {
+                    "authorId": "2211097311",
+                    "name": "Qinhan Huang"
+                },
+                {
+                    "authorId": "2210984906",
+                    "name": "Jie Chen"
+                },
+                {
+                    "authorId": "2210860009",
+                    "name": "Peng Sun"
+                }
+            ],
+            "doi": "10.1109/CoG57401.2023.10333220",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "735e84768b1fc91180fdb54ca78f215aca544f6d",
+            "title": "Mastering Strategy Card Game (Hearthstone) with Improved Techniques",
+            "url": "https://www.semanticscholar.org/paper/735e84768b1fc91180fdb54ca78f215aca544f6d",
+            "venue": "2023 IEEE Conference on Games (CoG)",
+            "year": 2023
+        },
+        {
+            "arxivId": "2203.09608",
+            "authors": [
+                {
+                    "authorId": "46592497",
+                    "name": "D. Kowalczyk"
+                },
+                {
+                    "authorId": "2112669113",
+                    "name": "J. Kowalski"
+                },
+                {
+                    "authorId": "2154780739",
+                    "name": "Hubert Obrzut"
+                },
+                {
+                    "authorId": "2043046052",
+                    "name": "Michael Maras"
+                },
+                {
+                    "authorId": "2154779883",
+                    "name": "Szymon Kosakowski"
+                },
+                {
+                    "authorId": "79470947",
+                    "name": "Radoslaw Miernik"
+                }
+            ],
+            "doi": "10.5220/0010840200003116",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a0071caee6865915bc01530dc3fb0a4c1c3281e9",
+            "title": "Developing a Successful Bomberman Agent",
+            "url": "https://www.semanticscholar.org/paper/a0071caee6865915bc01530dc3fb0a4c1c3281e9",
+            "venue": "ICAART",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2728778",
+                    "name": "Sim\u00e3o Reis"
+                },
+                {
+                    "authorId": "29951846",
+                    "name": "L. Reis"
+                },
+                {
+                    "authorId": "145008821",
+                    "name": "N. Lau"
+                }
+            ],
+            "doi": "10.1109/CoG52621.2021.9618985",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "0319e5d773149b01dec18a02c9aad0b0cff3ba7c",
+            "title": "VGC AI Competition - A New Model of Meta-Game Balance AI Competition",
+            "url": "https://www.semanticscholar.org/paper/0319e5d773149b01dec18a02c9aad0b0cff3ba7c",
+            "venue": "2021 IEEE Conference on Games (CoG)",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2073021394",
+                    "name": "Hao-Cheng Chia"
+                },
+                {
+                    "authorId": "1486411521",
+                    "name": "Tsung-Su Yeh"
+                },
+                {
+                    "authorId": "3716164",
+                    "name": "Tsung-Che Chiang"
+                }
+            ],
+            "doi": "10.1109/SSCI47803.2020.9308459",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "3b0357b4d84ccd149f345a6cb135f307642e39be",
+            "title": "Designing Card Game Strategies with Genetic Programming and Monte-Carlo Tree Search: A Case Study of Hearthstone",
+            "url": "https://www.semanticscholar.org/paper/3b0357b4d84ccd149f345a6cb135f307642e39be",
+            "venue": "2020 IEEE Symposium Series on Computational Intelligence (SSCI)",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2377477",
+                    "name": "Markus Eger"
+                },
+                {
+                    "authorId": "115868289",
+                    "name": "Pablo Sauma Chac\u00f3n"
+                }
+            ],
+            "doi": "10.1145/3402942.3402959",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "627ec11ef1251736f282f64ba0720c079a09d949",
+            "title": "Deck Archetype Prediction in Hearthstone",
+            "url": "https://www.semanticscholar.org/paper/627ec11ef1251736f282f64ba0720c079a09d949",
+            "venue": "FDG",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2647736",
+                    "name": "Alexander Dockhorn"
+                },
+                {
+                    "authorId": "1718723",
+                    "name": "R. Kruse"
+                }
+            ],
+            "doi": "10.2991/ijcis.d.200805.001",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8ceb1bdac44ce8f03833c90ee1831c77240a7bb6",
+            "title": "Predicting Cards Using a Fuzzy Multiset Clustering of Decks",
+            "url": "https://www.semanticscholar.org/paper/8ceb1bdac44ce8f03833c90ee1831c77240a7bb6",
+            "venue": "Int. J. Comput. Intell. Syst.",
+            "year": 2020
+        },
+        {
+            "arxivId": "2410.19681",
+            "authors": [
+                {
+                    "authorId": "1398684765",
+                    "name": "P. Garc\u00eda-S\u00e1nchez"
+                },
+                {
+                    "authorId": "1737365",
+                    "name": "A. Tonda"
+                },
+                {
+                    "authorId": "145596769",
+                    "name": "Antonio J. Fern\u00e1ndez"
+                },
+                {
+                    "authorId": "145083867",
+                    "name": "C. Cotta"
+                }
+            ],
+            "doi": "10.1016/j.knosys.2019.105032",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ae84deca99753300ede61a9225b14fd85bcfb1fd",
+            "title": "Optimizing Hearthstone agents using an evolutionary algorithm",
+            "url": "https://www.semanticscholar.org/paper/ae84deca99753300ede61a9225b14fd85bcfb1fd",
+            "venue": "Knowl. Based Syst.",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1380705734",
+                    "name": "Jean Seong Bjorn Choe"
+                },
+                {
+                    "authorId": "1762896",
+                    "name": "Jong-Kook Kim"
+                }
+            ],
+            "doi": "10.1109/CIG.2019.8848034",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "825a5cdded1dfcebb575947d4aba1216719447b3",
+            "title": "Enhancing Monte Carlo Tree Search for Playing Hearthstone",
+            "url": "https://www.semanticscholar.org/paper/825a5cdded1dfcebb575947d4aba1216719447b3",
+            "venue": "2019 IEEE Conference on Games (CoG)",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1395919268",
+                    "name": "Sumedh Pendurkar"
+                },
+                {
+                    "authorId": "2218282572",
+                    "name": "Chris Chow"
+                },
+                {
+                    "authorId": "2056596748",
+                    "name": "Luo Jie"
+                },
+                {
+                    "authorId": "2360602",
+                    "name": "Guni Sharon"
+                }
+            ],
+            "doi": "10.5555/3545946.3598887",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "65d0185437697581deb82d52932f2e5c044c2910",
+            "title": "Bilevel Entropy based Mechanism Design for Balancing Meta in Video Games",
+            "url": "https://www.semanticscholar.org/paper/65d0185437697581deb82d52932f2e5c044c2910",
+            "venue": "AAMAS",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2064948544",
+                    "name": "Eiji Sakurai"
+                },
+                {
+                    "authorId": "39806091",
+                    "name": "Koji Hasebe"
+                }
+            ],
+            "doi": "10.5220/0011783900003393",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f06e0160bfd9a878d30ad766ee241271241f9372",
+            "title": "Decision-Making in Hearthstone Based on Evolutionary Algorithm",
+            "url": "https://www.semanticscholar.org/paper/f06e0160bfd9a878d30ad766ee241271241f9372",
+            "venue": "ICAART",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2326950261",
+                    "name": "Alexander Elton-Pym"
+                },
+                {
+                    "authorId": "2363235",
+                    "name": "Kazjon Grace"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ac9369df89f5228d790c1b5df32645affe573609",
+            "title": "CardLab: A Simple Co-Creative Interface for Designing and Testing Cards in Hearthstone",
+            "url": "https://www.semanticscholar.org/paper/ac9369df89f5228d790c1b5df32645affe573609",
+            "venue": "ICCC",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2159391734",
+                    "name": "Namuunbadralt Zolboot"
+                },
+                {
+                    "authorId": "2137764524",
+                    "name": "Quinn Johnson"
+                },
+                {
+                    "authorId": "9542603",
+                    "name": "Dakun Shen"
+                },
+                {
+                    "authorId": "46672149",
+                    "name": "Alexander Redei"
+                }
+            ],
+            "doi": "10.29007/mn6n",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c53047cb8eb6d6b2e5a7dcdec82f63bd26f9084d",
+            "title": "Hearthstone Battleground: An AI Assistant with Monte Carlo Tree Search",
+            "url": "https://www.semanticscholar.org/paper/c53047cb8eb6d6b2e5a7dcdec82f63bd26f9084d",
+            "venue": "EPiC Series in Computing",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2647736",
+                    "name": "Alexander Dockhorn"
+                },
+                {
+                    "authorId": "2289128871",
+                    "name": "Rudolf Kruse"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "e1e6dcb01a42f7a7adf3b9eace2acf15700b4c1d",
+            "title": "FUZZY MODELING IN GAME AI",
+            "url": "https://www.semanticscholar.org/paper/e1e6dcb01a42f7a7adf3b9eace2acf15700b4c1d",
+            "venue": "",
+            "year": 2021
+        }
+    ],
+    "corpusId": 184486898,
+    "doi": null,
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 2,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 21,
+    "numCiting": 8,
+    "paperId": "0f841869a03a73c7d3376b1b1e9a1248741282d5",
+    "references": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2685623",
+                    "name": "Noam Brown"
+                },
+                {
+                    "authorId": "145714168",
+                    "name": "T. Sandholm"
+                }
+            ],
+            "doi": "10.1126/science.aao1733",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "eaabb78d0bc44ed132e4d077e9486c86a9e4cda9",
+            "title": "Superhuman AI for heads-up no-limit poker: Libratus beats top professionals",
+            "url": "https://www.semanticscholar.org/paper/eaabb78d0bc44ed132e4d077e9486c86a9e4cda9",
+            "venue": "Science",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2717017",
+                    "name": "Diego Perez Liebana"
+                },
+                {
+                    "authorId": "2032434",
+                    "name": "Spyridon Samothrakis"
+                },
+                {
+                    "authorId": "1810053",
+                    "name": "J. Togelius"
+                },
+                {
+                    "authorId": "1725157",
+                    "name": "T. Schaul"
+                },
+                {
+                    "authorId": "145815031",
+                    "name": "S. Lucas"
+                },
+                {
+                    "authorId": "2117043",
+                    "name": "Adrien Cou\u00ebtoux"
+                },
+                {
+                    "authorId": "2108467626",
+                    "name": "Jerry Lee"
+                },
+                {
+                    "authorId": "2113822055",
+                    "name": "Chong-U Lim"
+                },
+                {
+                    "authorId": "145124727",
+                    "name": "Tommy Thompson"
+                }
+            ],
+            "doi": "10.1109/TCIAIG.2015.2402393",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "e77f15c59deafb411bba62df4b06e9b95cfc6252",
+            "title": "The 2014 General Video Game Playing Competition",
+            "url": "https://www.semanticscholar.org/paper/e77f15c59deafb411bba62df4b06e9b95cfc6252",
+            "venue": "IEEE Transactions on Computational Intelligence and AI in Games",
+            "year": 2016
+        },
+        {
+            "arxivId": "1609.02316",
+            "authors": [
+                {
+                    "authorId": "35294192",
+                    "name": "P. R. Williams"
+                },
+                {
+                    "authorId": "2717017",
+                    "name": "Diego Perez Liebana"
+                },
+                {
+                    "authorId": "145815031",
+                    "name": "S. Lucas"
+                }
+            ],
+            "doi": "10.1109/CIG.2016.7860446",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9630707c02971decb693c4cd99928b28c22684ac",
+            "title": "Ms. Pac-Man Versus Ghost Team CIG 2016 competition",
+            "url": "https://www.semanticscholar.org/paper/9630707c02971decb693c4cd99928b28c22684ac",
+            "venue": "2016 IEEE Conference on Computational Intelligence and Games (CIG)",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145824029",
+                    "name": "David Silver"
+                },
+                {
+                    "authorId": "1885349",
+                    "name": "Aja Huang"
+                },
+                {
+                    "authorId": "2772217",
+                    "name": "Chris J. Maddison"
+                },
+                {
+                    "authorId": "35099444",
+                    "name": "A. Guez"
+                },
+                {
+                    "authorId": "2175946",
+                    "name": "L. Sifre"
+                },
+                {
+                    "authorId": "47568983",
+                    "name": "George van den Driessche"
+                },
+                {
+                    "authorId": "4337102",
+                    "name": "Julian Schrittwieser"
+                },
+                {
+                    "authorId": "2460849",
+                    "name": "Ioannis Antonoglou"
+                },
+                {
+                    "authorId": "2749418",
+                    "name": "Vedavyas Panneershelvam"
+                },
+                {
+                    "authorId": "1975889",
+                    "name": "Marc Lanctot"
+                },
+                {
+                    "authorId": "48373216",
+                    "name": "S. Dieleman"
+                },
+                {
+                    "authorId": "2401609",
+                    "name": "Dominik Grewe"
+                },
+                {
+                    "authorId": "4111313",
+                    "name": "John Nham"
+                },
+                {
+                    "authorId": "2583391",
+                    "name": "Nal Kalchbrenner"
+                },
+                {
+                    "authorId": "1701686",
+                    "name": "I. Sutskever"
+                },
+                {
+                    "authorId": "2542999",
+                    "name": "T. Lillicrap"
+                },
+                {
+                    "authorId": "40662181",
+                    "name": "M. Leach"
+                },
+                {
+                    "authorId": "2645384",
+                    "name": "K. Kavukcuoglu"
+                },
+                {
+                    "authorId": "1686971",
+                    "name": "T. Graepel"
+                },
+                {
+                    "authorId": "48987704",
+                    "name": "D. Hassabis"
+                }
+            ],
+            "doi": "10.1038/nature16961",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "846aedd869a00c09b40f1f1f35673cb22bc87490",
+            "title": "Mastering the game of Go with deep neural networks and tree search",
+            "url": "https://www.semanticscholar.org/paper/846aedd869a00c09b40f1f1f35673cb22bc87490",
+            "venue": "Nature",
+            "year": 2016
+        },
+        {
+            "arxivId": "1207.4708",
+            "authors": [
+                {
+                    "authorId": "1792298",
+                    "name": "Marc G. Bellemare"
+                },
+                {
+                    "authorId": "2294249",
+                    "name": "Yavar Naddaf"
+                },
+                {
+                    "authorId": "144056327",
+                    "name": "J. Veness"
+                },
+                {
+                    "authorId": "1687780",
+                    "name": "Michael Bowling"
+                }
+            ],
+            "doi": "10.1613/jair.3912",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f82e4ff4f003581330338aaae71f60316e58dd26",
+            "title": "The Arcade Learning Environment: An Evaluation Platform for General Agents",
+            "url": "https://www.semanticscholar.org/paper/f82e4ff4f003581330338aaae71f60316e58dd26",
+            "venue": "J. Artif. Intell. Res.",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143903370",
+                    "name": "Murray Campbell"
+                },
+                {
+                    "authorId": "32498609",
+                    "name": "A. J. Hoane"
+                },
+                {
+                    "authorId": "144844988",
+                    "name": "Feng-hsiung Hsu"
+                }
+            ],
+            "doi": "10.1016/S0004-3702(01)00129-1",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "3e4bc1aa55c752918ae99b1a125f6adef61afad2",
+            "title": "Deep Blue",
+            "url": "https://www.semanticscholar.org/paper/3e4bc1aa55c752918ae99b1a125f6adef61afad2",
+            "venue": "Artif. Intell.",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1722671",
+                    "name": "Santiago Onta\u00f1\u00f3n"
+                },
+                {
+                    "authorId": "2282478",
+                    "name": "Gabriel Synnaeve"
+                },
+                {
+                    "authorId": "38814203",
+                    "name": "Alberto Uriarte"
+                },
+                {
+                    "authorId": "2127603",
+                    "name": "Florian Richoux"
+                },
+                {
+                    "authorId": "153118271",
+                    "name": "David Churchill"
+                },
+                {
+                    "authorId": "1950379",
+                    "name": "M. Preuss"
+                }
+            ],
+            "doi": "10.1007/978-3-319-08234-9_17-1",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "771d14387157f86764cd4196b9a1afc57b494fd2",
+            "title": "RTS AI Problems and Techniques",
+            "url": "https://www.semanticscholar.org/paper/771d14387157f86764cd4196b9a1afc57b494fd2",
+            "venue": "Encyclopedia of Computer Graphics and Games",
+            "year": 2019
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Introducing the Hearthstone-AI Competition",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/0f841869a03a73c7d3376b1b1e9a1248741282d5",
+    "venue": "arXiv.org",
+    "year": 2019
+}

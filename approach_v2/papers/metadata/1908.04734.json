@@ -1,0 +1,4896 @@
+{
+    "abstract": "Can an arbitrarily intelligent reinforcement learning agent be kept under control by a human user? Or do agents with sufficient intelligence inevitably find ways to shortcut their reward signal? This question impacts how far reinforcement learning can be scaled, and whether alternative paradigms must be developed in order to build safe artificial general intelligence. In this paper, we use an intuitive yet precise graphical model called causal influence diagrams to formalize reward tampering problems. We also describe a number of modifications to the reinforcement learning objective that prevent incentives for reward tampering. We verify the solutions using recently developed graphical criteria for inferring agent incentives from causal influence diagrams. Along the way, we also compare corrigibility and self-preservation properties of the various solutions, and discuss how they can be combined into a single agent without reward tampering incentives.",
+    "arxivId": "1908.04734",
+    "authors": [
+        {
+            "authorId": "1868196",
+            "name": "Tom Everitt",
+            "url": "https://www.semanticscholar.org/author/1868196"
+        },
+        {
+            "authorId": "144154444",
+            "name": "Marcus Hutter",
+            "url": "https://www.semanticscholar.org/author/144154444"
+        }
+    ],
+    "citationVelocity": 17,
+    "citations": [
+        {
+            "arxivId": "2406.10162",
+            "authors": [
+                {
+                    "authorId": "1780754598",
+                    "name": "Carson E. Denison"
+                },
+                {
+                    "authorId": "32286534",
+                    "name": "M. MacDiarmid"
+                },
+                {
+                    "authorId": "2143198655",
+                    "name": "Fazl Barez"
+                },
+                {
+                    "authorId": "1704657",
+                    "name": "D. Duvenaud"
+                },
+                {
+                    "authorId": "49604482",
+                    "name": "Shauna Kravec"
+                },
+                {
+                    "authorId": "2306780371",
+                    "name": "Samuel Marks"
+                },
+                {
+                    "authorId": "2833768",
+                    "name": "Nicholas Schiefer"
+                },
+                {
+                    "authorId": "2306780171",
+                    "name": "Ryan Soklaski"
+                },
+                {
+                    "authorId": "88726969",
+                    "name": "Alex Tamkin"
+                },
+                {
+                    "authorId": "2053807409",
+                    "name": "Jared Kaplan"
+                },
+                {
+                    "authorId": "79384063",
+                    "name": "Buck Shlegeris"
+                },
+                {
+                    "authorId": "2261083170",
+                    "name": "Samuel R. Bowman"
+                },
+                {
+                    "authorId": "2261084752",
+                    "name": "Ethan Perez"
+                },
+                {
+                    "authorId": "146614650",
+                    "name": "Evan Hubinger"
+                }
+            ],
+            "doi": "10.48550/arXiv.2406.10162",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "8d5bc0b0ddca8740e4bec70231b7f0d12ded3d5d",
+            "title": "Sycophancy to Subterfuge: Investigating Reward-Tampering in Large Language Models",
+            "url": "https://www.semanticscholar.org/paper/8d5bc0b0ddca8740e4bec70231b7f0d12ded3d5d",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": "2406.09318",
+            "authors": [
+                {
+                    "authorId": "2306255085",
+                    "name": "Manuj Mishra"
+                },
+                {
+                    "authorId": "2105894098",
+                    "name": "James Fox"
+                },
+                {
+                    "authorId": "2306260577",
+                    "name": "Michael Wooldridge"
+                }
+            ],
+            "doi": "10.48550/arXiv.2406.09318",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "e167e4a280faef8f4c0fba966e68004240cfc5a3",
+            "title": "Characterising Interventions in Causal Games",
+            "url": "https://www.semanticscholar.org/paper/e167e4a280faef8f4c0fba966e68004240cfc5a3",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": "2405.01576",
+            "authors": [
+                {
+                    "authorId": "1580960481",
+                    "name": "Olli J\u00e4rviniemi"
+                },
+                {
+                    "authorId": "2299942538",
+                    "name": "Evan Hubinger"
+                }
+            ],
+            "doi": "10.48550/arXiv.2405.01576",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "3f1611a50f85f73525826f5be173c845d2e7522e",
+            "title": "Uncovering Deceptive Tendencies in Language Models: A Simulated Company AI Assistant",
+            "url": "https://www.semanticscholar.org/paper/3f1611a50f85f73525826f5be173c845d2e7522e",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": "2404.07503",
+            "authors": [
+                {
+                    "authorId": "7247867",
+                    "name": "Ruibo Liu"
+                },
+                {
+                    "authorId": "2254934700",
+                    "name": "Jerry Wei"
+                },
+                {
+                    "authorId": "144097210",
+                    "name": "Fangyu Liu"
+                },
+                {
+                    "authorId": "2290019998",
+                    "name": "Chenglei Si"
+                },
+                {
+                    "authorId": "2121290295",
+                    "name": "Yanzhe Zhang"
+                },
+                {
+                    "authorId": "2295988934",
+                    "name": "Jinmeng Rao"
+                },
+                {
+                    "authorId": "2275574241",
+                    "name": "Steven Zheng"
+                },
+                {
+                    "authorId": "2283933546",
+                    "name": "Daiyi Peng"
+                },
+                {
+                    "authorId": "2254124342",
+                    "name": "Diyi Yang"
+                },
+                {
+                    "authorId": "2263221363",
+                    "name": "Denny Zhou"
+                },
+                {
+                    "authorId": "2253757717",
+                    "name": "Andrew M. Dai"
+                }
+            ],
+            "doi": "10.48550/arXiv.2404.07503",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f9fc7b5ebd5fe30257abb03ad87d8138eeeb28d9",
+            "title": "Best Practices and Lessons Learned on Synthetic Data for Language Models",
+            "url": "https://www.semanticscholar.org/paper/f9fc7b5ebd5fe30257abb03ad87d8138eeeb28d9",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2292008965",
+                    "name": "Kaitao Chen"
+                },
+                {
+                    "authorId": "2115317157",
+                    "name": "Shiliang Sun"
+                },
+                {
+                    "authorId": "2265425608",
+                    "name": "Jing Zhao"
+                }
+            ],
+            "doi": "10.1609/aaai.v38i2.27873",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "bd185f06cc119ed7b1d2dc8e9cc16f2cba067901",
+            "title": "CaMIL: Causal Multiple Instance Learning for Whole Slide Image Classification",
+            "url": "https://www.semanticscholar.org/paper/bd185f06cc119ed7b1d2dc8e9cc16f2cba067901",
+            "venue": "AAAI",
+            "year": 2024
+        },
+        {
+            "arxivId": "2402.09734",
+            "authors": [
+                {
+                    "authorId": "2284616569",
+                    "name": "Paulo Garcia"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "83e8fc6bbac9ee6894f6c6dc04e836a593c7797b",
+            "title": "Agents Need Not Know Their Purpose",
+            "url": "https://www.semanticscholar.org/paper/83e8fc6bbac9ee6894f6c6dc04e836a593c7797b",
+            "venue": "",
+            "year": 2024
+        },
+        {
+            "arxivId": "2401.08967",
+            "authors": [
+                {
+                    "authorId": "2217617540",
+                    "name": "Trung Quoc Luong"
+                },
+                {
+                    "authorId": "2243361666",
+                    "name": "Xinbo Zhang"
+                },
+                {
+                    "authorId": "148027092",
+                    "name": "Zhanming Jie"
+                },
+                {
+                    "authorId": "2279883602",
+                    "name": "Peng Sun"
+                },
+                {
+                    "authorId": "1802016",
+                    "name": "Xiaoran Jin"
+                },
+                {
+                    "authorId": "2243893237",
+                    "name": "Hang Li"
+                }
+            ],
+            "doi": "10.48550/arXiv.2401.08967",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7ca300c16abbd38382dec5b7ea6809fee570be54",
+            "title": "ReFT: Reasoning with Reinforced Fine-Tuning",
+            "url": "https://www.semanticscholar.org/paper/7ca300c16abbd38382dec5b7ea6809fee570be54",
+            "venue": "ACL",
+            "year": 2024
+        },
+        {
+            "arxivId": "2401.03529",
+            "authors": [
+                {
+                    "authorId": "2320312621",
+                    "name": "Evan Ryan Gunter"
+                },
+                {
+                    "authorId": "103356487",
+                    "name": "Yevgeny Liokumovich"
+                },
+                {
+                    "authorId": "2578985",
+                    "name": "Victoria Krakovna"
+                }
+            ],
+            "doi": "10.48550/arXiv.2401.03529",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "a62e18921b954ae3a2343fe9a7aa5899847ef5fe",
+            "title": "Quantifying stability of non-power-seeking in artificial agents",
+            "url": "https://www.semanticscholar.org/paper/a62e18921b954ae3a2343fe9a7aa5899847ef5fe",
+            "venue": "ArXiv",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2276824348",
+                    "name": "Salman Shah"
+                },
+                {
+                    "authorId": "2276800634",
+                    "name": "Nianmin Yao"
+                }
+            ],
+            "doi": "10.1109/ICIST59754.2023.10367162",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b6e7434e7d08f02865c12654dd8da1440e8097c6",
+            "title": "Deep Reinforcement Learning for Unpredictability-Induced Rewards to Handle Spacecraft Landing",
+            "url": "https://www.semanticscholar.org/paper/b6e7434e7d08f02865c12654dd8da1440e8097c6",
+            "venue": "2023 13th International Conference on Information Science and Technology (ICIST)",
+            "year": 2023
+        },
+        {
+            "arxivId": "2312.03881",
+            "authors": [
+                {
+                    "authorId": "35573359",
+                    "name": "Ekdeep Singh Lubana"
+                },
+                {
+                    "authorId": "2265649562",
+                    "name": "Johann Brehmer"
+                },
+                {
+                    "authorId": "145703384",
+                    "name": "P. D. Haan"
+                },
+                {
+                    "authorId": "2265647070",
+                    "name": "Taco Cohen"
+                }
+            ],
+            "doi": "10.48550/arXiv.2312.03881",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d9d3dfce3bfa12fd3f3fb747b2252d57c83ab0f2",
+            "title": "FoMo Rewards: Can we cast foundation models as reward functions?",
+            "url": "https://www.semanticscholar.org/paper/d9d3dfce3bfa12fd3f3fb747b2252d57c83ab0f2",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": "2312.01350",
+            "authors": [
+                {
+                    "authorId": "1907671255",
+                    "name": "Francis Rhys Ward"
+                },
+                {
+                    "authorId": "1868196",
+                    "name": "Tom Everitt"
+                },
+                {
+                    "authorId": "2275239775",
+                    "name": "Francesco Belardinelli"
+                },
+                {
+                    "authorId": "49973505",
+                    "name": "Francesca Toni"
+                }
+            ],
+            "doi": "10.48550/arXiv.2312.01350",
+            "intent": [
+                "result",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "569d6641ff9b67c2bd399ea0519940a171a48829",
+            "title": "Honesty Is the Best Policy: Defining and Mitigating AI Deception",
+            "url": "https://www.semanticscholar.org/paper/569d6641ff9b67c2bd399ea0519940a171a48829",
+            "venue": "NeurIPS",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2238759724",
+                    "name": "Julian David Jonker"
+                }
+            ],
+            "doi": "10.1007/s10892-023-09449-2",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "5a6726a9f91947d84e14b32e341b401e1c10897d",
+            "title": "Automation, Alignment, and the Cooperative Interface",
+            "url": "https://www.semanticscholar.org/paper/5a6726a9f91947d84e14b32e341b401e1c10897d",
+            "venue": "The Journal of Ethics",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2129707701",
+                    "name": "Joan Isichei"
+                },
+                {
+                    "authorId": "2270468",
+                    "name": "S. Khorsandroo"
+                },
+                {
+                    "authorId": "2067694915",
+                    "name": "Salil S. Desai"
+                }
+            ],
+            "doi": "10.1016/j.bprint.2023.e00321",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d1a5126fe556ad9046c4f8e5cef46e1904bdee35",
+            "title": "Cybersecurity and privacy in smart bioprinting",
+            "url": "https://www.semanticscholar.org/paper/d1a5126fe556ad9046c4f8e5cef46e1904bdee35",
+            "venue": "Bioprinting",
+            "year": 2023
+        },
+        {
+            "arxivId": "2309.14003",
+            "authors": [
+                {
+                    "authorId": "27550002",
+                    "name": "Maximilian Igl"
+                },
+                {
+                    "authorId": "2105650487",
+                    "name": "Punit Shah"
+                },
+                {
+                    "authorId": "2164338894",
+                    "name": "Paul Mougin"
+                },
+                {
+                    "authorId": "145703220",
+                    "name": "S. Srinivasan"
+                },
+                {
+                    "authorId": "49857577",
+                    "name": "Tarun Gupta"
+                },
+                {
+                    "authorId": "37929982",
+                    "name": "B. White"
+                },
+                {
+                    "authorId": "3402736",
+                    "name": "K. Shiarlis"
+                },
+                {
+                    "authorId": "1766767",
+                    "name": "Shimon Whiteson"
+                }
+            ],
+            "doi": "10.1109/IROS55552.2023.10341451",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5aee9e223707d66cbbd3c46f4bec4a0c10439441",
+            "title": "Hierarchical Imitation Learning for Stochastic Environments",
+            "url": "https://www.semanticscholar.org/paper/5aee9e223707d66cbbd3c46f4bec4a0c10439441",
+            "venue": "2023 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "46178062",
+                    "name": "Nathaniel Sharadin"
+                }
+            ],
+            "doi": "10.1080/0020174x.2023.2261493",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "00e264b61e54e39d5819a4c903f2c515dfab3fae",
+            "title": "Predicting and preferring",
+            "url": "https://www.semanticscholar.org/paper/00e264b61e54e39d5819a4c903f2c515dfab3fae",
+            "venue": "Inquiry",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2243258157",
+                    "name": "Mathias K. Nilsen"
+                },
+                {
+                    "authorId": "69923638",
+                    "name": "T. Nygaard"
+                },
+                {
+                    "authorId": "3341968",
+                    "name": "K. Ellefsen"
+                }
+            ],
+            "doi": "10.1007/s10710-023-09456-0",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "9907b6596008845a832f441a16ab482a1622994b",
+            "title": "Reward tampering and evolutionary computation: a study of concrete AI-safety problems using evolutionary algorithms",
+            "url": "https://www.semanticscholar.org/paper/9907b6596008845a832f441a16ab482a1622994b",
+            "venue": "Genetic Programming and Evolvable Machines",
+            "year": 2023
+        },
+        {
+            "arxivId": "2309.04352",
+            "authors": [
+                {
+                    "authorId": "2186428145",
+                    "name": "Elfia Bezou-Vrakatseli"
+                },
+                {
+                    "authorId": "2239112350",
+                    "name": "Benedikt Br\u00fcckner"
+                },
+                {
+                    "authorId": "2238621751",
+                    "name": "Luke Thorburn"
+                }
+            ],
+            "doi": "10.48550/arXiv.2309.04352",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e621ad1a9517981cb1937f31ef5649646d1b59a7",
+            "title": "SHAPE: A Framework for Evaluating the Ethicality of Influence",
+            "url": "https://www.semanticscholar.org/paper/e621ad1a9517981cb1937f31ef5649646d1b59a7",
+            "venue": "EUMAS",
+            "year": 2023
+        },
+        {
+            "arxivId": "2308.15605",
+            "authors": [
+                {
+                    "authorId": "2197780120",
+                    "name": "Fabien Roger"
+                },
+                {
+                    "authorId": "2235839536",
+                    "name": "Ryan Greenblatt"
+                },
+                {
+                    "authorId": "2131005702",
+                    "name": "Max Nadeau"
+                },
+                {
+                    "authorId": "79384063",
+                    "name": "Buck Shlegeris"
+                },
+                {
+                    "authorId": "2164091765",
+                    "name": "Nate Thomas"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "6e71e407c6e628416b1eba4fcca441f45af47c28",
+            "title": "Benchmarks for Detecting Measurement Tampering",
+            "url": "https://www.semanticscholar.org/paper/6e71e407c6e628416b1eba4fcca441f45af47c28",
+            "venue": "",
+            "year": 2023
+        },
+        {
+            "arxivId": "2307.15217",
+            "authors": [
+                {
+                    "authorId": "2103487700",
+                    "name": "Stephen Casper"
+                },
+                {
+                    "authorId": "2212371252",
+                    "name": "Xander Davies"
+                },
+                {
+                    "authorId": "133797256",
+                    "name": "Claudia Shi"
+                },
+                {
+                    "authorId": "50708404",
+                    "name": "T. Gilbert"
+                },
+                {
+                    "authorId": "2070850274",
+                    "name": "J'er'emy Scheurer"
+                },
+                {
+                    "authorId": "2099715241",
+                    "name": "Javier Rando"
+                },
+                {
+                    "authorId": "50632861",
+                    "name": "Rachel Freedman"
+                },
+                {
+                    "authorId": "30023177",
+                    "name": "Tomasz Korbak"
+                },
+                {
+                    "authorId": "4829248",
+                    "name": "David Lindner"
+                },
+                {
+                    "authorId": "2056901578",
+                    "name": "Pedro Freire"
+                },
+                {
+                    "authorId": "2225941313",
+                    "name": "Tony Wang"
+                },
+                {
+                    "authorId": "2225941937",
+                    "name": "Samuel Marks"
+                },
+                {
+                    "authorId": "2127638028",
+                    "name": "Charbel-Rapha\u00ebl S\u00e9gerie"
+                },
+                {
+                    "authorId": "1380953573",
+                    "name": "Micah Carroll"
+                },
+                {
+                    "authorId": "100953200",
+                    "name": "Andi Peng"
+                },
+                {
+                    "authorId": "1986190750",
+                    "name": "Phillip J. K. Christoffersen"
+                },
+                {
+                    "authorId": "1397762344",
+                    "name": "Mehul Damani"
+                },
+                {
+                    "authorId": "1382117611",
+                    "name": "Stewart Slocum"
+                },
+                {
+                    "authorId": "2066185365",
+                    "name": "Usman Anwar"
+                },
+                {
+                    "authorId": "1413775966",
+                    "name": "Anand Siththaranjan"
+                },
+                {
+                    "authorId": "2131005702",
+                    "name": "Max Nadeau"
+                },
+                {
+                    "authorId": "2064378938",
+                    "name": "Eric J. Michaud"
+                },
+                {
+                    "authorId": "147132443",
+                    "name": "J. Pfau"
+                },
+                {
+                    "authorId": "52510051",
+                    "name": "Dmitrii Krasheninnikov"
+                },
+                {
+                    "authorId": "2226072519",
+                    "name": "Xin Chen"
+                },
+                {
+                    "authorId": "2106415649",
+                    "name": "L. Langosco"
+                },
+                {
+                    "authorId": "144625004",
+                    "name": "Peter Hase"
+                },
+                {
+                    "authorId": "8307674",
+                    "name": "Erdem Biyik"
+                },
+                {
+                    "authorId": "2745001",
+                    "name": "A. Dragan"
+                },
+                {
+                    "authorId": "145055042",
+                    "name": "David Krueger"
+                },
+                {
+                    "authorId": "1779671",
+                    "name": "Dorsa Sadigh"
+                },
+                {
+                    "authorId": "1397904824",
+                    "name": "Dylan Hadfield-Menell"
+                }
+            ],
+            "doi": "10.48550/arXiv.2307.15217",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "6eb46737bf0ef916a7f906ec6a8da82a45ffb623",
+            "title": "Open Problems and Fundamental Limitations of Reinforcement Learning from Human Feedback",
+            "url": "https://www.semanticscholar.org/paper/6eb46737bf0ef916a7f906ec6a8da82a45ffb623",
+            "venue": "Trans. Mach. Learn. Res.",
+            "year": 2023
+        },
+        {
+            "arxivId": "2308.02435",
+            "authors": [
+                {
+                    "authorId": "2862008",
+                    "name": "Sebastian Benthall"
+                },
+                {
+                    "authorId": "2229602919",
+                    "name": "David Shekman"
+                }
+            ],
+            "doi": "10.1145/3617694.3623230",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "3ebae73e04955117d2f2e4d18c388c8707b561a0",
+            "title": "Designing Fiduciary Artificial Intelligence",
+            "url": "https://www.semanticscholar.org/paper/3ebae73e04955117d2f2e4d18c388c8707b561a0",
+            "venue": "EAAMO",
+            "year": 2023
+        },
+        {
+            "arxivId": "2307.04923",
+            "authors": [
+                {
+                    "authorId": "11963742",
+                    "name": "Kiant\u00e9 Brantley"
+                },
+                {
+                    "authorId": "40960149",
+                    "name": "Zhichong Fang"
+                },
+                {
+                    "authorId": "2166476321",
+                    "name": "Sarah Dean"
+                },
+                {
+                    "authorId": "1680188",
+                    "name": "T. Joachims"
+                }
+            ],
+            "doi": "10.1145/3616855.3635819",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "15162e1285a7681d1ea109c2a4a2cfd69e1cfb0f",
+            "title": "Ranking with Long-Term Constraints",
+            "url": "https://www.semanticscholar.org/paper/15162e1285a7681d1ea109c2a4a2cfd69e1cfb0f",
+            "venue": "WSDM",
+            "year": 2023
+        },
+        {
+            "arxivId": "2307.05059",
+            "authors": [
+                {
+                    "authorId": "2105894098",
+                    "name": "James Fox"
+                },
+                {
+                    "authorId": "2181810768",
+                    "name": "Matt MacDermott"
+                },
+                {
+                    "authorId": "84379741",
+                    "name": "Lewis Hammond"
+                },
+                {
+                    "authorId": "2708907",
+                    "name": "Paul Harrenstein"
+                },
+                {
+                    "authorId": "144938187",
+                    "name": "A. Abate"
+                },
+                {
+                    "authorId": "2059979020",
+                    "name": "M. Wooldridge"
+                }
+            ],
+            "doi": "10.4204/EPTCS.379.17",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d909bd1223908645d82b550257f3c419c8205327",
+            "title": "On Imperfect Recall in Multi-Agent Influence Diagrams",
+            "url": "https://www.semanticscholar.org/paper/d909bd1223908645d82b550257f3c419c8205327",
+            "venue": "TARK",
+            "year": 2023
+        },
+        {
+            "arxivId": "2307.01452",
+            "authors": [
+                {
+                    "authorId": "2048552786",
+                    "name": "Zhi-Hong Deng"
+                },
+                {
+                    "authorId": "1746594",
+                    "name": "Jing Jiang"
+                },
+                {
+                    "authorId": "2062835",
+                    "name": "Guodong Long"
+                },
+                {
+                    "authorId": "145107889",
+                    "name": "Chen Zhang"
+                }
+            ],
+            "doi": "10.48550/arXiv.2307.01452",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d293a75f529d7b1abb161480a95122c9a3ed6376",
+            "title": "Causal Reinforcement Learning: A Survey",
+            "url": "https://www.semanticscholar.org/paper/d293a75f529d7b1abb161480a95122c9a3ed6376",
+            "venue": "Trans. Mach. Learn. Res.",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "50639091",
+                    "name": "Alexey Turchin"
+                },
+                {
+                    "authorId": "3758267",
+                    "name": "D. Denkenberger"
+                }
+            ],
+            "doi": "10.1016/j.futures.2023.103215",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "be74756b803e6fb45bfa284740a0db5db5250631",
+            "title": "Pleasure Addiction via Brain-Manipulating Technologies as a Possible Contributor to Civilizational Decline",
+            "url": "https://www.semanticscholar.org/paper/be74756b803e6fb45bfa284740a0db5db5250631",
+            "venue": "Futures",
+            "year": 2023
+        },
+        {
+            "arxivId": "2306.10695",
+            "authors": [
+                {
+                    "authorId": "2708830",
+                    "name": "Shenghua Wan"
+                },
+                {
+                    "authorId": "2220305846",
+                    "name": "Yucen Wang"
+                },
+                {
+                    "authorId": "2052795388",
+                    "name": "Minghao Shao"
+                },
+                {
+                    "authorId": "2220594837",
+                    "name": "Ruying Chen"
+                },
+                {
+                    "authorId": "1721819",
+                    "name": "De-chuan Zhan"
+                }
+            ],
+            "doi": "10.48550/arXiv.2306.10695",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "93480449b43a801c47f34fd89a312d58fa1c42a2",
+            "title": "SeMAIL: Eliminating Distractors in Visual Imitation via Separated Models",
+            "url": "https://www.semanticscholar.org/paper/93480449b43a801c47f34fd89a312d58fa1c42a2",
+            "venue": "ICML",
+            "year": 2023
+        },
+        {
+            "arxivId": "2305.19861",
+            "authors": [
+                {
+                    "authorId": "2057014575",
+                    "name": "Ryan Carey"
+                },
+                {
+                    "authorId": "2133453196",
+                    "name": "Tom Everitt"
+                }
+            ],
+            "doi": "10.48550/arXiv.2305.19861",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c458cec389a2ed3bbe5e35bc9a5b0a85ca073d15",
+            "title": "Human Control: Definitions and Algorithms",
+            "url": "https://www.semanticscholar.org/paper/c458cec389a2ed3bbe5e35bc9a5b0a85ca073d15",
+            "venue": "UAI",
+            "year": 2023
+        },
+        {
+            "arxivId": "2305.16960",
+            "authors": [
+                {
+                    "authorId": "7247867",
+                    "name": "Ruibo Liu"
+                },
+                {
+                    "authorId": "2297329510",
+                    "name": "Ruixin Yang"
+                },
+                {
+                    "authorId": "1727055797",
+                    "name": "Chenyan Jia"
+                },
+                {
+                    "authorId": "2262502489",
+                    "name": "Ge Zhang"
+                },
+                {
+                    "authorId": "2263221363",
+                    "name": "Denny Zhou"
+                },
+                {
+                    "authorId": "2253757717",
+                    "name": "Andrew M. Dai"
+                },
+                {
+                    "authorId": "2262514289",
+                    "name": "Diyi Yang"
+                },
+                {
+                    "authorId": "1918441",
+                    "name": "Soroush Vosoughi"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "13fd4277388cc2a9da75e8b772e5efcf6ebe2d32",
+            "title": "Training Socially Aligned Language Models on Simulated Social Interactions",
+            "url": "https://www.semanticscholar.org/paper/13fd4277388cc2a9da75e8b772e5efcf6ebe2d32",
+            "venue": "ICLR",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "34985835",
+                    "name": "Chris Winter"
+                },
+                {
+                    "authorId": "2212507997",
+                    "name": "Nicholas Hollman"
+                },
+                {
+                    "authorId": "2026420",
+                    "name": "David Manheim"
+                }
+            ],
+            "doi": "10.5406/21521123.60.2.06",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "a688139157568ffb7d83ad91c092bd80ece0c912",
+            "title": "Value Alignment for Advanced Artificial Judicial Intelligence",
+            "url": "https://www.semanticscholar.org/paper/a688139157568ffb7d83ad91c092bd80ece0c912",
+            "venue": "American Philosophical Quarterly",
+            "year": 2023
+        },
+        {
+            "arxivId": "2303.09387",
+            "authors": [
+                {
+                    "authorId": "1380953573",
+                    "name": "Micah Carroll"
+                },
+                {
+                    "authorId": "2154992032",
+                    "name": "Alan Chan"
+                },
+                {
+                    "authorId": "2007652935",
+                    "name": "Hal Ashton"
+                },
+                {
+                    "authorId": "145055042",
+                    "name": "David Krueger"
+                }
+            ],
+            "doi": "10.1145/3617694.3623226",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "0057921f8231ef36ac5bb95368e78bc0beb5521c",
+            "title": "Characterizing Manipulation from AI Systems",
+            "url": "https://www.semanticscholar.org/paper/0057921f8231ef36ac5bb95368e78bc0beb5521c",
+            "venue": "EAAMO",
+            "year": 2023
+        },
+        {
+            "arxivId": "2301.07416",
+            "authors": [
+                {
+                    "authorId": "51888190",
+                    "name": "M. K\u00f6lle"
+                },
+                {
+                    "authorId": "1698311779",
+                    "name": "Tim Matheis"
+                },
+                {
+                    "authorId": "2074355634",
+                    "name": "Philipp Altmann"
+                },
+                {
+                    "authorId": "41019046",
+                    "name": "Kyrill Schmid"
+                }
+            ],
+            "doi": "10.48550/arXiv.2301.07416",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "72fdfb106c47e27e0ccd42760dd67af720dc255f",
+            "title": "Learning to Participate through Trading of Reward Shares",
+            "url": "https://www.semanticscholar.org/paper/72fdfb106c47e27e0ccd42760dd67af720dc255f",
+            "venue": "ICAART",
+            "year": 2023
+        },
+        {
+            "arxivId": "2211.08714",
+            "authors": [
+                {
+                    "authorId": "46230016",
+                    "name": "Richard Yuanzhe Pang"
+                },
+                {
+                    "authorId": "2044959912",
+                    "name": "Vishakh Padmakumar"
+                },
+                {
+                    "authorId": "145450400",
+                    "name": "Thibault Sellam"
+                },
+                {
+                    "authorId": "144729897",
+                    "name": "Ankur P. Parikh"
+                },
+                {
+                    "authorId": "144533687",
+                    "name": "He He"
+                }
+            ],
+            "doi": "10.48550/arXiv.2211.08714",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d40df59a1df8048a671bce60260b817e109a33f8",
+            "title": "Reward Gaming in Conditional Text Generation",
+            "url": "https://www.semanticscholar.org/paper/d40df59a1df8048a671bce60260b817e109a33f8",
+            "venue": "ACL",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "35500306",
+                    "name": "Shaswot Shresthamali"
+                },
+                {
+                    "authorId": "1683736",
+                    "name": "Masaaki Kondo"
+                },
+                {
+                    "authorId": "145696894",
+                    "name": "Hiroshi Nakamura"
+                }
+            ],
+            "doi": "10.3390/jlpea12040053",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "b5f529111014d60db9aaf9d291e6334c4da5dece",
+            "title": "Multi-Objective Resource Scheduling for IoT Systems Using Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/b5f529111014d60db9aaf9d291e6334c4da5dece",
+            "venue": "Journal of Low Power Electronics and Applications",
+            "year": 2022
+        },
+        {
+            "arxivId": "2209.13085",
+            "authors": [
+                {
+                    "authorId": "147156275",
+                    "name": "Joar Skalse"
+                },
+                {
+                    "authorId": "2155647347",
+                    "name": "Nikolaus H. R. Howe"
+                },
+                {
+                    "authorId": "52510051",
+                    "name": "Dmitrii Krasheninnikov"
+                },
+                {
+                    "authorId": "145055042",
+                    "name": "David Krueger"
+                }
+            ],
+            "doi": "10.48550/arXiv.2209.13085",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "004357dd9bbf3012c8fe0ccada4da401bf85dfff",
+            "title": "Defining and Characterizing Reward Hacking",
+            "url": "https://www.semanticscholar.org/paper/004357dd9bbf3012c8fe0ccada4da401bf85dfff",
+            "venue": "ArXiv",
+            "year": 2022
+        },
+        {
+            "arxivId": "2209.00626",
+            "authors": [
+                {
+                    "authorId": "2047148926",
+                    "name": "Richard Ngo"
+                }
+            ],
+            "doi": "10.48550/arXiv.2209.00626",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "eef33138ee3fbef970c74697b46acf60462d690c",
+            "title": "The alignment problem from a deep learning perspective",
+            "url": "https://www.semanticscholar.org/paper/eef33138ee3fbef970c74697b46acf60462d690c",
+            "venue": "ICLR",
+            "year": 2022
+        },
+        {
+            "arxivId": "2208.08345",
+            "authors": [
+                {
+                    "authorId": "40947466",
+                    "name": "Zachary Kenton"
+                },
+                {
+                    "authorId": "2117776492",
+                    "name": "Ramana Kumar"
+                },
+                {
+                    "authorId": "33859827",
+                    "name": "Sebastian Farquhar"
+                },
+                {
+                    "authorId": "7762173",
+                    "name": "Jonathan G. Richens"
+                },
+                {
+                    "authorId": "2181810768",
+                    "name": "Matt MacDermott"
+                },
+                {
+                    "authorId": "1868196",
+                    "name": "Tom Everitt"
+                }
+            ],
+            "doi": "10.48550/arXiv.2208.08345",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0c1f1fe5497971479b33e31b236c11d44fbf7a98",
+            "title": "Discovering Agents",
+            "url": "https://www.semanticscholar.org/paper/0c1f1fe5497971479b33e31b236c11d44fbf7a98",
+            "venue": "Artif. Intell.",
+            "year": 2022
+        },
+        {
+            "arxivId": "2207.08040",
+            "authors": [
+                {
+                    "authorId": "2047149145",
+                    "name": "Thesath Nanayakkara"
+                }
+            ],
+            "doi": "10.48550/arXiv.2207.08040",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "1ced2d0a83f8bf9bb11388580bafe206b85fb91b",
+            "title": "Reinforcement Learning For Survival, A Clinically Motivated Method For Critically Ill Patients",
+            "url": "https://www.semanticscholar.org/paper/1ced2d0a83f8bf9bb11388580bafe206b85fb91b",
+            "venue": "ArXiv",
+            "year": 2022
+        },
+        {
+            "arxivId": "2204.12993",
+            "authors": [
+                {
+                    "authorId": "7762173",
+                    "name": "Jonathan G. Richens"
+                },
+                {
+                    "authorId": "82849187",
+                    "name": "R. Beard"
+                },
+                {
+                    "authorId": "2147439679",
+                    "name": "Daniel H. Thompson"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "5f20881359f6433ced3b586e293ff1131d24f6e6",
+            "title": "Counterfactual harm",
+            "url": "https://www.semanticscholar.org/paper/5f20881359f6433ced3b586e293ff1131d24f6e6",
+            "venue": "NeurIPS",
+            "year": 2022
+        },
+        {
+            "arxivId": "2204.10018",
+            "authors": [
+                {
+                    "authorId": "33859827",
+                    "name": "Sebastian Farquhar"
+                },
+                {
+                    "authorId": "2057014575",
+                    "name": "Ryan Carey"
+                },
+                {
+                    "authorId": "1868196",
+                    "name": "Tom Everitt"
+                }
+            ],
+            "doi": "10.48550/arXiv.2204.10018",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "6d624cb1e7126e3245d55c7208ef6f04141e5895",
+            "title": "Path-Specific Objectives for Safer Agent Incentives",
+            "url": "https://www.semanticscholar.org/paper/6d624cb1e7126e3245d55c7208ef6f04141e5895",
+            "venue": "AAAI",
+            "year": 2022
+        },
+        {
+            "arxivId": "2204.05909",
+            "authors": [
+                {
+                    "authorId": "116767165",
+                    "name": "Aniruddh Gopinath Puranic"
+                },
+                {
+                    "authorId": "1681722",
+                    "name": "Jyotirmoy V. Deshmukh"
+                },
+                {
+                    "authorId": "37586303",
+                    "name": "S. Nikolaidis"
+                }
+            ],
+            "doi": "10.1109/LRA.2022.3226072",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0cf5c5ebf1a8a644ac712d038cd52aca8e61ce06",
+            "title": "Learning Performance Graphs From Demonstrations via Task-Based Evaluations",
+            "url": "https://www.semanticscholar.org/paper/0cf5c5ebf1a8a644ac712d038cd52aca8e61ce06",
+            "venue": "IEEE Robotics and Automation Letters",
+            "year": 2022
+        },
+        {
+            "arxivId": "2203.10629",
+            "authors": [
+                {
+                    "authorId": "2159542013",
+                    "name": "Matthew Sparr"
+                }
+            ],
+            "doi": "10.48550/arXiv.2203.10629",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "bec65b17fd26e61972a160962f296121c586d43c",
+            "title": "Explicit User Manipulation in Reinforcement Learning Based Recommender Systems",
+            "url": "https://www.semanticscholar.org/paper/bec65b17fd26e61972a160962f296121c586d43c",
+            "venue": "ArXiv",
+            "year": 2022
+        },
+        {
+            "arxivId": "2202.11629",
+            "authors": [
+                {
+                    "authorId": "146400709",
+                    "name": "Chris van Merwijk"
+                },
+                {
+                    "authorId": "2057014575",
+                    "name": "Ryan Carey"
+                },
+                {
+                    "authorId": "1868196",
+                    "name": "Tom Everitt"
+                }
+            ],
+            "doi": "10.1609/aaai.v36i9.21242",
+            "intent": [
+                "result",
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "a43196ca18c750472479c4d9a4ffe09659e5e3cd",
+            "title": "A Complete Criterion for Value of Information in Soluble Influence Diagrams",
+            "url": "https://www.semanticscholar.org/paper/a43196ca18c750472479c4d9a4ffe09659e5e3cd",
+            "venue": "AAAI",
+            "year": 2022
+        },
+        {
+            "arxivId": "2201.08102",
+            "authors": [
+                {
+                    "authorId": "3183032",
+                    "name": "Matthew Rahtz"
+                },
+                {
+                    "authorId": "144711236",
+                    "name": "Vikrant Varma"
+                },
+                {
+                    "authorId": "2117776492",
+                    "name": "Ramana Kumar"
+                },
+                {
+                    "authorId": "40947466",
+                    "name": "Zachary Kenton"
+                },
+                {
+                    "authorId": "34313265",
+                    "name": "S. Legg"
+                },
+                {
+                    "authorId": "2990741",
+                    "name": "J. Leike"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f354ceedbd0e8ca94e9ff32845805cc92d5475d8",
+            "title": "Safe Deep RL in 3D Environments using Human Feedback",
+            "url": "https://www.semanticscholar.org/paper/f354ceedbd0e8ca94e9ff32845805cc92d5475d8",
+            "venue": "ArXiv",
+            "year": 2022
+        },
+        {
+            "arxivId": "2112.10190",
+            "authors": [
+                {
+                    "authorId": "144775419",
+                    "name": "K. Holtman"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b66be4e54d1cc2ac1210b30d00d46b9f13d17bcb",
+            "title": "Demanding and Designing Aligned Cognitive Architectures",
+            "url": "https://www.semanticscholar.org/paper/b66be4e54d1cc2ac1210b30d00d46b9f13d17bcb",
+            "venue": "ArXiv",
+            "year": 2021
+        },
+        {
+            "arxivId": "2111.11912",
+            "authors": [
+                {
+                    "authorId": "50460365",
+                    "name": "Federico Mason"
+                },
+                {
+                    "authorId": "48629851",
+                    "name": "Federico Chiariotti"
+                },
+                {
+                    "authorId": "1747186",
+                    "name": "A. Zanella"
+                }
+            ],
+            "doi": "10.1109/ICC45855.2022.9838277",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "678338b33ce2bc313f7afc15e4f251b869778809",
+            "title": "No Free Lunch: Balancing Learning and Exploitation at the Network Edge",
+            "url": "https://www.semanticscholar.org/paper/678338b33ce2bc313f7afc15e4f251b869778809",
+            "venue": "ICC 2022 - IEEE International Conference on Communications",
+            "year": 2021
+        },
+        {
+            "arxivId": "2109.04083",
+            "authors": [
+                {
+                    "authorId": "51880633",
+                    "name": "Atoosa Kasirzadeh"
+                },
+                {
+                    "authorId": "2179340608",
+                    "name": "Charles Evans"
+                }
+            ],
+            "doi": "10.1145/3600211.3604669",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "d31b107211eda7c40e228f47c544690616c5ed79",
+            "title": "User Tampering in Reinforcement Learning Recommender Systems",
+            "url": "https://www.semanticscholar.org/paper/d31b107211eda7c40e228f47c544690616c5ed79",
+            "venue": "AIES",
+            "year": 2021
+        },
+        {
+            "arxivId": "2107.08829",
+            "authors": [
+                {
+                    "authorId": "102801230",
+                    "name": "Rafael Rafailov"
+                },
+                {
+                    "authorId": "10909315",
+                    "name": "Tianhe Yu"
+                },
+                {
+                    "authorId": "19275599",
+                    "name": "A. Rajeswaran"
+                },
+                {
+                    "authorId": "46881670",
+                    "name": "Chelsea Finn"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "105f2a77af4934b315ec92e1f65451e6f53e9c01",
+            "title": "Visual Adversarial Imitation Learning using Variational Models",
+            "url": "https://www.semanticscholar.org/paper/105f2a77af4934b315ec92e1f65451e6f53e9c01",
+            "venue": "NeurIPS",
+            "year": 2021
+        },
+        {
+            "arxivId": "2106.05402",
+            "authors": [
+                {
+                    "authorId": "89922247",
+                    "name": "P. Chelarescu"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "e6b076b72bd68726dbe877f9f5b1f7dd8ca878f0",
+            "title": "Deception in Social Learning: A Multi-Agent Reinforcement Learning Perspective",
+            "url": "https://www.semanticscholar.org/paper/e6b076b72bd68726dbe877f9f5b1f7dd8ca878f0",
+            "venue": "ArXiv",
+            "year": 2021
+        },
+        {
+            "arxivId": "2103.14659",
+            "authors": [
+                {
+                    "authorId": "40947466",
+                    "name": "Zachary Kenton"
+                },
+                {
+                    "authorId": "1868196",
+                    "name": "Tom Everitt"
+                },
+                {
+                    "authorId": "51932191",
+                    "name": "Laura Weidinger"
+                },
+                {
+                    "authorId": "116589025",
+                    "name": "Iason Gabriel"
+                },
+                {
+                    "authorId": "148305440",
+                    "name": "Vladimir Mikulik"
+                },
+                {
+                    "authorId": "2060655766",
+                    "name": "G. Irving"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "49f905eb03958c7cfae52ac759ea8978b8b2a6ea",
+            "title": "Alignment of Language Agents",
+            "url": "https://www.semanticscholar.org/paper/49f905eb03958c7cfae52ac759ea8978b8b2a6ea",
+            "venue": "ArXiv",
+            "year": 2021
+        },
+        {
+            "arxivId": "2102.05008",
+            "authors": [
+                {
+                    "authorId": "84379741",
+                    "name": "Lewis Hammond"
+                },
+                {
+                    "authorId": "2105894098",
+                    "name": "James Fox"
+                },
+                {
+                    "authorId": "1868196",
+                    "name": "Tom Everitt"
+                },
+                {
+                    "authorId": "144938187",
+                    "name": "A. Abate"
+                },
+                {
+                    "authorId": "48106342",
+                    "name": "M. Wooldridge"
+                }
+            ],
+            "doi": "10.5555/3463952.3464023",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2cb982ae08873860727b46250cd63e0cb8e1a661",
+            "title": "Equilibrium Refinements for Multi-Agent Influence Diagrams: Theory and Practice",
+            "url": "https://www.semanticscholar.org/paper/2cb982ae08873860727b46250cd63e0cb8e1a661",
+            "venue": "AAMAS",
+            "year": 2021
+        },
+        {
+            "arxivId": "2102.01685",
+            "authors": [
+                {
+                    "authorId": "1868196",
+                    "name": "Tom Everitt"
+                },
+                {
+                    "authorId": "2057014575",
+                    "name": "Ryan Carey"
+                },
+                {
+                    "authorId": "2074405406",
+                    "name": "Eric Langlois"
+                },
+                {
+                    "authorId": "145981974",
+                    "name": "Pedro A. Ortega"
+                },
+                {
+                    "authorId": "34313265",
+                    "name": "S. Legg"
+                }
+            ],
+            "doi": "10.1609/aaai.v35i13.17368",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "67a5303464a764453a2435bec453bed1c5ac9c43",
+            "title": "Agent Incentives: A Causal Perspective",
+            "url": "https://www.semanticscholar.org/paper/67a5303464a764453a2435bec453bed1c5ac9c43",
+            "venue": "AAAI",
+            "year": 2021
+        },
+        {
+            "arxivId": "2102.00834",
+            "authors": [
+                {
+                    "authorId": "144775419",
+                    "name": "K. Holtman"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "79e824ce01cc22ae3a9bc6a14297ea0ac070b15a",
+            "title": "Counterfactual Planning in AGI Systems",
+            "url": "https://www.semanticscholar.org/paper/79e824ce01cc22ae3a9bc6a14297ea0ac070b15a",
+            "venue": "ArXiv",
+            "year": 2021
+        },
+        {
+            "arxivId": "2101.06060",
+            "authors": [
+                {
+                    "authorId": "116589025",
+                    "name": "Iason Gabriel"
+                },
+                {
+                    "authorId": "2046989086",
+                    "name": "Vafa Ghazavi"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f8c7f353fa87795a706567b8b681dbb5d05c98d2",
+            "title": "The Challenge of Value Alignment: from Fairer Algorithms to AI Safety",
+            "url": "https://www.semanticscholar.org/paper/f8c7f353fa87795a706567b8b681dbb5d05c98d2",
+            "venue": "ArXiv",
+            "year": 2021
+        },
+        {
+            "arxivId": "2011.08820",
+            "authors": [
+                {
+                    "authorId": "2117776492",
+                    "name": "Ramana Kumar"
+                },
+                {
+                    "authorId": "9960452",
+                    "name": "Jonathan Uesato"
+                },
+                {
+                    "authorId": "2047148926",
+                    "name": "Richard Ngo"
+                },
+                {
+                    "authorId": "1868196",
+                    "name": "Tom Everitt"
+                },
+                {
+                    "authorId": "2578985",
+                    "name": "Victoria Krakovna"
+                },
+                {
+                    "authorId": "34313265",
+                    "name": "S. Legg"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "5cde940de9cc7cac8595e790e397ca56b5316202",
+            "title": "REALab: An Embedded Perspective on Tampering",
+            "url": "https://www.semanticscholar.org/paper/5cde940de9cc7cac8595e790e397ca56b5316202",
+            "venue": "ArXiv",
+            "year": 2020
+        },
+        {
+            "arxivId": "2011.08827",
+            "authors": [
+                {
+                    "authorId": "9960452",
+                    "name": "Jonathan Uesato"
+                },
+                {
+                    "authorId": "2117776492",
+                    "name": "Ramana Kumar"
+                },
+                {
+                    "authorId": "2578985",
+                    "name": "Victoria Krakovna"
+                },
+                {
+                    "authorId": "1868196",
+                    "name": "Tom Everitt"
+                },
+                {
+                    "authorId": "2047148926",
+                    "name": "Richard Ngo"
+                },
+                {
+                    "authorId": "34313265",
+                    "name": "S. Legg"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "1f8763f2d33fc65e7236b82fe96258c99256b5e8",
+            "title": "Avoiding Tampering Incentives in Deep RL via Decoupled Approval",
+            "url": "https://www.semanticscholar.org/paper/1f8763f2d33fc65e7236b82fe96258c99256b5e8",
+            "venue": "ArXiv",
+            "year": 2020
+        },
+        {
+            "arxivId": "2009.09153",
+            "authors": [
+                {
+                    "authorId": "145055042",
+                    "name": "David Krueger"
+                },
+                {
+                    "authorId": "3422058",
+                    "name": "Tegan Maharaj"
+                },
+                {
+                    "authorId": "2990741",
+                    "name": "J. Leike"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "1f95b66969fc6c4c2efbd80439df7a3801baa1f8",
+            "title": "Hidden Incentives for Auto-Induced Distributional Shift",
+            "url": "https://www.semanticscholar.org/paper/1f95b66969fc6c4c2efbd80439df7a3801baa1f8",
+            "venue": "ArXiv",
+            "year": 2020
+        },
+        {
+            "arxivId": "2007.05411",
+            "authors": [
+                {
+                    "authorId": "144775419",
+                    "name": "K. Holtman"
+                }
+            ],
+            "doi": "10.1007/978-3-030-52152-3_21",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "2cd52d0843aff066538125770235d9d689ef4006",
+            "title": "Towards AGI Agent Safety by Iteratively Improving the Utility Function",
+            "url": "https://www.semanticscholar.org/paper/2cd52d0843aff066538125770235d9d689ef4006",
+            "venue": "AGI",
+            "year": 2020
+        },
+        {
+            "arxivId": "2006.06051",
+            "authors": [
+                {
+                    "authorId": "2109723412",
+                    "name": "Jiachen Yang"
+                },
+                {
+                    "authorId": "145476833",
+                    "name": "Ang Li"
+                },
+                {
+                    "authorId": "1682124",
+                    "name": "Mehrdad Farajtabar"
+                },
+                {
+                    "authorId": "1814162",
+                    "name": "P. Sunehag"
+                },
+                {
+                    "authorId": "37591038",
+                    "name": "Edward Hughes"
+                },
+                {
+                    "authorId": "145203884",
+                    "name": "H. Zha"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5dc6ed2b4d588f1e5f3296c465af35d7f6e2ddb3",
+            "title": "Learning to Incentivize Other Learning Agents",
+            "url": "https://www.semanticscholar.org/paper/5dc6ed2b4d588f1e5f3296c465af35d7f6e2ddb3",
+            "venue": "NeurIPS",
+            "year": 2020
+        },
+        {
+            "arxivId": "2001.07118",
+            "authors": [
+                {
+                    "authorId": "2057014575",
+                    "name": "Ryan Carey"
+                },
+                {
+                    "authorId": "144006195",
+                    "name": "Eric D. Langlois"
+                },
+                {
+                    "authorId": "1868196",
+                    "name": "Tom Everitt"
+                },
+                {
+                    "authorId": "34313265",
+                    "name": "S. Legg"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "37f68b658c933494c825f03b1e6b4add57696b8e",
+            "title": "The Incentives that Shape Behaviour",
+            "url": "https://www.semanticscholar.org/paper/37f68b658c933494c825f03b1e6b4add57696b8e",
+            "venue": "ArXiv",
+            "year": 2020
+        },
+        {
+            "arxivId": "1902.09980",
+            "authors": [
+                {
+                    "authorId": "1868196",
+                    "name": "Tom Everitt"
+                },
+                {
+                    "authorId": "145981974",
+                    "name": "Pedro A. Ortega"
+                },
+                {
+                    "authorId": "2057742794",
+                    "name": "Elizabeth Barnes"
+                },
+                {
+                    "authorId": "34313265",
+                    "name": "S. Legg"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "66bdea5922589e03d5bf6d26127cae654f7402c2",
+            "title": "Understanding Agent Incentives using Causal Influence Diagrams. Part I: Single Action Settings",
+            "url": "https://www.semanticscholar.org/paper/66bdea5922589e03d5bf6d26127cae654f7402c2",
+            "venue": "",
+            "year": 2019
+        },
+        {
+            "arxivId": "1809.01036",
+            "authors": [
+                {
+                    "authorId": "3438462",
+                    "name": "L. Hoang"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e351701ae314d5d923f40bb1b28edb08fde27692",
+            "title": "A Roadmap for Robust End-to-End Alignment",
+            "url": "https://www.semanticscholar.org/paper/e351701ae314d5d923f40bb1b28edb08fde27692",
+            "venue": "",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "7247867",
+                    "name": "Ruibo Liu"
+                },
+                {
+                    "authorId": "2297329510",
+                    "name": "Ruixin Yang"
+                },
+                {
+                    "authorId": "1727055797",
+                    "name": "Chenyan Jia"
+                },
+                {
+                    "authorId": "2143853895",
+                    "name": "Ge Zhang"
+                },
+                {
+                    "authorId": "65855107",
+                    "name": "Denny Zhou"
+                },
+                {
+                    "authorId": "2555924",
+                    "name": "Andrew M. Dai"
+                },
+                {
+                    "authorId": "2143919864",
+                    "name": "Diyi Yang"
+                },
+                {
+                    "authorId": "1918441",
+                    "name": "Soroush Vosoughi"
+                }
+            ],
+            "doi": "10.48550/arXiv.2305.16960",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7e8453fa32708b2690178c3a7a6618aba20928af",
+            "title": "Training Socially Aligned Language Models in Simulated Human Society",
+            "url": "https://www.semanticscholar.org/paper/7e8453fa32708b2690178c3a7a6618aba20928af",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2197780120",
+                    "name": "Fabien Roger"
+                },
+                {
+                    "authorId": "2235839536",
+                    "name": "Ryan Greenblatt"
+                },
+                {
+                    "authorId": "2257298066",
+                    "name": "Max Nadeau"
+                },
+                {
+                    "authorId": "79384063",
+                    "name": "Buck Shlegeris"
+                },
+                {
+                    "authorId": "2164091765",
+                    "name": "Nate Thomas"
+                }
+            ],
+            "doi": "10.48550/arXiv.2308.15605",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "975a92ed2aa2facb95c2401ebf64a71f7e5d4f0c",
+            "title": "Measurement Tampering Detection Benchmark",
+            "url": "https://www.semanticscholar.org/paper/975a92ed2aa2facb95c2401ebf64a71f7e5d4f0c",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1907671255",
+                    "name": "Francis Rhys Ward"
+                },
+                {
+                    "authorId": "49973505",
+                    "name": "Francesca Toni"
+                },
+                {
+                    "authorId": "3142000",
+                    "name": "F. Belardinelli"
+                }
+            ],
+            "doi": "10.5555/3545946.3599117",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "caf4217826ef22c4a9e7963ebe6e236a19083350",
+            "title": "Defining Deception in Structural Causal Games",
+            "url": "https://www.semanticscholar.org/paper/caf4217826ef22c4a9e7963ebe6e236a19083350",
+            "venue": "AAMAS",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "7762173",
+                    "name": "Jonathan G. Richens"
+                },
+                {
+                    "authorId": "82849187",
+                    "name": "R. Beard"
+                },
+                {
+                    "authorId": "2147439679",
+                    "name": "Daniel H. Thompson"
+                }
+            ],
+            "doi": "10.48550/arXiv.2204.12993",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e32eb52d152ee93fa57a894e748ccb6feacc820b",
+            "title": "First do no harm: counterfactual objective functions for safe & ethical AI",
+            "url": "https://www.semanticscholar.org/paper/e32eb52d152ee93fa57a894e748ccb6feacc820b",
+            "venue": "ArXiv",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1907671255",
+                    "name": "Francis Rhys Ward"
+                },
+                {
+                    "authorId": "49973505",
+                    "name": "Francesca Toni"
+                },
+                {
+                    "authorId": "3142000",
+                    "name": "F. Belardinelli"
+                }
+            ],
+            "doi": "10.5555/3535850.3536101",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "111c987e6364dc14f8c7b84827f00b1a13c32471",
+            "title": "On Agent Incentives to Manipulate Human Feedback in Multi-Agent Reward Learning Scenarios",
+            "url": "https://www.semanticscholar.org/paper/111c987e6364dc14f8c7b84827f00b1a13c32471",
+            "venue": "AAMAS",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1414641800",
+                    "name": "Yannick Metz"
+                },
+                {
+                    "authorId": "34865259",
+                    "name": "U. Schlegel"
+                },
+                {
+                    "authorId": "1401917601",
+                    "name": "Mennatallah El-Assady"
+                },
+                {
+                    "authorId": "3471557",
+                    "name": "Daniel Seebacher"
+                },
+                {
+                    "authorId": "2063099978",
+                    "name": "D. Keim"
+                }
+            ],
+            "doi": "10.2312/eurova.20221074",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0565764a2bcc8feebf9849ab99a1cb53b251e753",
+            "title": "A Comprehensive Workflow for Effective Imitation and Reinforcement Learning with Visual Analytics",
+            "url": "https://www.semanticscholar.org/paper/0565764a2bcc8feebf9849ab99a1cb53b251e753",
+            "venue": "EuroVA@EuroVis",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1907671255",
+                    "name": "Francis Rhys Ward"
+                },
+                {
+                    "authorId": "49973505",
+                    "name": "Francesca Toni"
+                },
+                {
+                    "authorId": "3142000",
+                    "name": "F. Belardinelli"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "8e80f9ae75a6915324a0aff53cd377ad60190ad0",
+            "title": "A causal perspective on AI deception in games",
+            "url": "https://www.semanticscholar.org/paper/8e80f9ae75a6915324a0aff53cd377ad60190ad0",
+            "venue": "AISafety@IJCAI",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "102801230",
+                    "name": "Rafael Rafailov"
+                },
+                {
+                    "authorId": "10909315",
+                    "name": "Tianhe Yu"
+                },
+                {
+                    "authorId": "19275599",
+                    "name": "A. Rajeswaran"
+                },
+                {
+                    "authorId": "46881670",
+                    "name": "Chelsea Finn"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0bc3c06d64f2710baaff43b9cc2c34fe889fbc6e",
+            "title": "V ARIATIONAL M ODEL -B ASED I MITATION L EARNING IN H IGH -D IMENSIONAL O BSERVATION S PACES",
+            "url": "https://www.semanticscholar.org/paper/0bc3c06d64f2710baaff43b9cc2c34fe889fbc6e",
+            "venue": "",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2054754929",
+                    "name": "K. Hatch"
+                },
+                {
+                    "authorId": "10909315",
+                    "name": "Tianhe Yu"
+                },
+                {
+                    "authorId": "102801230",
+                    "name": "Rafael Rafailov"
+                },
+                {
+                    "authorId": "46881670",
+                    "name": "Chelsea Finn"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "885fe1b79f1129a71a42625a59c11acab86f5a73",
+            "title": "Example-Based Of\ufb02ine Reinforcement Learning without Rewards",
+            "url": "https://www.semanticscholar.org/paper/885fe1b79f1129a71a42625a59c11acab86f5a73",
+            "venue": "",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2105894098",
+                    "name": "James Fox"
+                },
+                {
+                    "authorId": "1868196",
+                    "name": "Tom Everitt"
+                },
+                {
+                    "authorId": "2057014575",
+                    "name": "Ryan Carey"
+                },
+                {
+                    "authorId": "2074405406",
+                    "name": "Eric Langlois"
+                },
+                {
+                    "authorId": "144938187",
+                    "name": "A. Abate"
+                },
+                {
+                    "authorId": "2059979020",
+                    "name": "M. Wooldridge"
+                }
+            ],
+            "doi": "10.25080/majora-1b6fd038-008",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7ebaa98ffb099d2e6f1552eb549e8f59b344d534",
+            "title": "PyCID: A Python Library for Causal Influence Diagrams",
+            "url": "https://www.semanticscholar.org/paper/7ebaa98ffb099d2e6f1552eb549e8f59b344d534",
+            "venue": "SciPy",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1868196",
+                    "name": "Tom Everitt"
+                },
+                {
+                    "authorId": "144154444",
+                    "name": "Marcus Hutter"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "b7da135294eb5ae6828fddea373b1405ffd68968",
+            "title": "The Alignment Problem for Bayesian History-Based Reinforcement Learners\u2217",
+            "url": "https://www.semanticscholar.org/paper/b7da135294eb5ae6828fddea373b1405ffd68968",
+            "venue": "",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2310618087",
+                    "name": "Carson Denison"
+                },
+                {
+                    "authorId": "2310613954",
+                    "name": "\u2020. MonteMacDiarmidFazlBarez"
+                },
+                {
+                    "authorId": "1704657",
+                    "name": "D. Duvenaud"
+                },
+                {
+                    "authorId": "49604482",
+                    "name": "Shauna Kravec"
+                },
+                {
+                    "authorId": "2306780371",
+                    "name": "Samuel Marks"
+                },
+                {
+                    "authorId": "2833768",
+                    "name": "Nicholas Schiefer"
+                },
+                {
+                    "authorId": "2306780171",
+                    "name": "Ryan Soklaski"
+                },
+                {
+                    "authorId": "88726969",
+                    "name": "Alex Tamkin"
+                },
+                {
+                    "authorId": "2053807409",
+                    "name": "Jared Kaplan"
+                },
+                {
+                    "authorId": "2310613338",
+                    "name": "\u2021. BuckShlegeris"
+                },
+                {
+                    "authorId": "2261083170",
+                    "name": "Samuel R. Bowman"
+                },
+                {
+                    "authorId": "2261084752",
+                    "name": "Ethan Perez"
+                },
+                {
+                    "authorId": "146614650",
+                    "name": "Evan Hubinger"
+                },
+                {
+                    "authorId": "2310613957",
+                    "name": "Anthropic"
+                },
+                {
+                    "authorId": "2310613541",
+                    "name": "Redwood Research"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "17ae7a689c1868c5a64ee3baf5c72b42c401ff41",
+            "title": "S YCOPHANCY TO S UBTERFUGE : I NVESTIGATING R EWARD T AMPERING IN L ANGUAGE M ODELS",
+            "url": "https://www.semanticscholar.org/paper/17ae7a689c1868c5a64ee3baf5c72b42c401ff41",
+            "venue": "",
+            "year": null
+        },
+        {
+            "arxivId": null,
+            "authors": [],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "45cb6b329cef15d788b53e03dfb989a6bdde8ef8",
+            "title": "Measuring Goal-Directedness",
+            "url": "https://www.semanticscholar.org/paper/45cb6b329cef15d788b53e03dfb989a6bdde8ef8",
+            "venue": "",
+            "year": null
+        }
+    ],
+    "corpusId": 199552156,
+    "doi": null,
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 5,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 73,
+    "numCiting": 91,
+    "paperId": "6cc143037044cd3ef3a3f194ba0a1b2446854e26",
+    "references": [
+        {
+            "arxivId": "1906.09136",
+            "authors": [
+                {
+                    "authorId": "146121921",
+                    "name": "Arushi G. K. Majha"
+                },
+                {
+                    "authorId": "145954313",
+                    "name": "Sayan Sarkar"
+                },
+                {
+                    "authorId": "146567325",
+                    "name": "Davide Zagami"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ff4108a4621e8fa31d0096a27ee6924e44716007",
+            "title": "Categorizing Wireheading in Partially Embedded Agents",
+            "url": "https://www.semanticscholar.org/paper/ff4108a4621e8fa31d0096a27ee6924e44716007",
+            "venue": "AISafety@IJCAI",
+            "year": 2019
+        },
+        {
+            "arxivId": "1906.08663",
+            "authors": [
+                {
+                    "authorId": "1868196",
+                    "name": "Tom Everitt"
+                },
+                {
+                    "authorId": "2117776492",
+                    "name": "Ramana Kumar"
+                },
+                {
+                    "authorId": "2578985",
+                    "name": "Victoria Krakovna"
+                },
+                {
+                    "authorId": "34313265",
+                    "name": "S. Legg"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "47ff819690fa5ff64e46583be4fad8aa0ae083aa",
+            "title": "Modeling AGI Safety Frameworks with Causal Influence Diagrams",
+            "url": "https://www.semanticscholar.org/paper/47ff819690fa5ff64e46583be4fad8aa0ae083aa",
+            "venue": "AISafety@IJCAI",
+            "year": 2019
+        },
+        {
+            "arxivId": "1903.00374",
+            "authors": [
+                {
+                    "authorId": "40527594",
+                    "name": "Lukasz Kaiser"
+                },
+                {
+                    "authorId": "3365707",
+                    "name": "M. Babaeizadeh"
+                },
+                {
+                    "authorId": "29900205",
+                    "name": "Piotr Milos"
+                },
+                {
+                    "authorId": "41022287",
+                    "name": "B. Osinski"
+                },
+                {
+                    "authorId": "143775101",
+                    "name": "R. Campbell"
+                },
+                {
+                    "authorId": "30770224",
+                    "name": "K. Czechowski"
+                },
+                {
+                    "authorId": "1761978",
+                    "name": "D. Erhan"
+                },
+                {
+                    "authorId": "46881670",
+                    "name": "Chelsea Finn"
+                },
+                {
+                    "authorId": "49265654",
+                    "name": "Piotr Kozakowski"
+                },
+                {
+                    "authorId": "1736651",
+                    "name": "S. Levine"
+                },
+                {
+                    "authorId": "1579862074",
+                    "name": "Afroz Mohiuddin"
+                },
+                {
+                    "authorId": "35474601",
+                    "name": "Ryan Sepassi"
+                },
+                {
+                    "authorId": "145499435",
+                    "name": "G. Tucker"
+                },
+                {
+                    "authorId": "47407464",
+                    "name": "H. Michalewski"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "1fd4694e7c2d9c872a427d50e81b5475056de6bc",
+            "title": "Model-Based Reinforcement Learning for Atari",
+            "url": "https://www.semanticscholar.org/paper/1fd4694e7c2d9c872a427d50e81b5475056de6bc",
+            "venue": "ICLR",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1868196",
+                    "name": "Tom Everitt"
+                },
+                {
+                    "authorId": "145981974",
+                    "name": "Pedro A. Ortega"
+                },
+                {
+                    "authorId": "2057742794",
+                    "name": "Elizabeth Barnes"
+                },
+                {
+                    "authorId": "34313265",
+                    "name": "S. Legg"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c63ffb172fdacdddf5c8f84d4a1db00fb014bfbb",
+            "title": "Understanding Agent Incentives using Causal Influence Diagrams. Part I: Single Action Settings",
+            "url": "https://www.semanticscholar.org/paper/c63ffb172fdacdddf5c8f84d4a1db00fb014bfbb",
+            "venue": "ArXiv",
+            "year": 2019
+        },
+        {
+            "arxivId": "1812.00568",
+            "authors": [
+                {
+                    "authorId": "27535721",
+                    "name": "F. Ebert"
+                },
+                {
+                    "authorId": "46881670",
+                    "name": "Chelsea Finn"
+                },
+                {
+                    "authorId": "36076404",
+                    "name": "Sudeep Dasari"
+                },
+                {
+                    "authorId": "14484808",
+                    "name": "Annie Xie"
+                },
+                {
+                    "authorId": "49250083",
+                    "name": "Alex X. Lee"
+                },
+                {
+                    "authorId": "1736651",
+                    "name": "S. Levine"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "54cd5a5ddd286442fa94da7ec344a7e76b9a6ccd",
+            "title": "Visual Foresight: Model-Based Deep Reinforcement Learning for Vision-Based Robotic Control",
+            "url": "https://www.semanticscholar.org/paper/54cd5a5ddd286442fa94da7ec344a7e76b9a6ccd",
+            "venue": "ArXiv",
+            "year": 2018
+        },
+        {
+            "arxivId": "1811.07871",
+            "authors": [
+                {
+                    "authorId": "2990741",
+                    "name": "J. Leike"
+                },
+                {
+                    "authorId": "145055042",
+                    "name": "David Krueger"
+                },
+                {
+                    "authorId": "1868196",
+                    "name": "Tom Everitt"
+                },
+                {
+                    "authorId": "26890260",
+                    "name": "Miljan Martic"
+                },
+                {
+                    "authorId": "51965508",
+                    "name": "Vishal Maini"
+                },
+                {
+                    "authorId": "34313265",
+                    "name": "S. Legg"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c6f913e4baa7f2c85363c0625c87003ad3b3a14c",
+            "title": "Scalable agent alignment via reward modeling: a research direction",
+            "url": "https://www.semanticscholar.org/paper/c6f913e4baa7f2c85363c0625c87003ad3b3a14c",
+            "venue": "ArXiv",
+            "year": 2018
+        },
+        {
+            "arxivId": "1810.08575",
+            "authors": [
+                {
+                    "authorId": "145791315",
+                    "name": "P. Christiano"
+                },
+                {
+                    "authorId": "79384063",
+                    "name": "Buck Shlegeris"
+                },
+                {
+                    "authorId": "2330246606",
+                    "name": "Dario Amodei"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "0052b31f07eda7737b5e0e2bf3803c3a32f3f728",
+            "title": "Supervising strong learners by amplifying weak experts",
+            "url": "https://www.semanticscholar.org/paper/0052b31f07eda7737b5e0e2bf3803c3a32f3f728",
+            "venue": "ArXiv",
+            "year": 2018
+        },
+        {
+            "arxivId": "1811.06272",
+            "authors": [
+                {
+                    "authorId": "1981334",
+                    "name": "Lars Buesing"
+                },
+                {
+                    "authorId": "143947744",
+                    "name": "T. Weber"
+                },
+                {
+                    "authorId": "3185820",
+                    "name": "Yori Zwols"
+                },
+                {
+                    "authorId": "2026995",
+                    "name": "S. Racani\u00e8re"
+                },
+                {
+                    "authorId": "35099444",
+                    "name": "A. Guez"
+                },
+                {
+                    "authorId": "143783339",
+                    "name": "Jean-Baptiste Lespiau"
+                },
+                {
+                    "authorId": "2801204",
+                    "name": "N. Heess"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "745a134eca192982e8e0c16d6f36cfe24f9bdd08",
+            "title": "Woulda, Coulda, Shoulda: Counterfactually-Guided Policy Search",
+            "url": "https://www.semanticscholar.org/paper/745a134eca192982e8e0c16d6f36cfe24f9bdd08",
+            "venue": "ICLR",
+            "year": 2018
+        },
+        {
+            "arxivId": "1811.06407",
+            "authors": [
+                {
+                    "authorId": "3407143",
+                    "name": "Z. Guo"
+                },
+                {
+                    "authorId": "37666967",
+                    "name": "M. G. Azar"
+                },
+                {
+                    "authorId": "1808897",
+                    "name": "Bilal Piot"
+                },
+                {
+                    "authorId": "3429927",
+                    "name": "B. '. Pires"
+                },
+                {
+                    "authorId": "3408089",
+                    "name": "Tobias Pohlen"
+                },
+                {
+                    "authorId": "1708654",
+                    "name": "R. Munos"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f4a0006ca411f102833b5b73248d23fc51086180",
+            "title": "Neural Predictive Belief Representations",
+            "url": "https://www.semanticscholar.org/paper/f4a0006ca411f102833b5b73248d23fc51086180",
+            "venue": "ArXiv",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "52510082",
+                    "name": "R. Nozick"
+                }
+            ],
+            "doi": "10.2307/j.ctv19fvzzk.69",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "99d31ff9f1f86d3b4ecb77c3e75d2812f57e6308",
+            "title": "Anarchy, State, and Utopia",
+            "url": "https://www.semanticscholar.org/paper/99d31ff9f1f86d3b4ecb77c3e75d2812f57e6308",
+            "venue": "Princeton Readings in Political Thought",
+            "year": 2018
+        },
+        {
+            "arxivId": "1806.01186",
+            "authors": [
+                {
+                    "authorId": "2578985",
+                    "name": "Victoria Krakovna"
+                },
+                {
+                    "authorId": "1749270",
+                    "name": "Laurent Orseau"
+                },
+                {
+                    "authorId": "26890260",
+                    "name": "Miljan Martic"
+                },
+                {
+                    "authorId": "34313265",
+                    "name": "S. Legg"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0039dc54599ef609b3e7044f3b7cdfac354f79c2",
+            "title": "Penalizing Side Effects using Stepwise Relative Reachability",
+            "url": "https://www.semanticscholar.org/paper/0039dc54599ef609b3e7044f3b7cdfac354f79c2",
+            "venue": "AISafety@IJCAI",
+            "year": 2018
+        },
+        {
+            "arxivId": "1805.12114",
+            "authors": [
+                {
+                    "authorId": "46224156",
+                    "name": "Kurtland Chua"
+                },
+                {
+                    "authorId": "35159852",
+                    "name": "R. Calandra"
+                },
+                {
+                    "authorId": "49686609",
+                    "name": "R. McAllister"
+                },
+                {
+                    "authorId": "1736651",
+                    "name": "S. Levine"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "56136aa0b2c347cbcf3d50821f310c4253155026",
+            "title": "Deep Reinforcement Learning in a Handful of Trials using Probabilistic Dynamics Models",
+            "url": "https://www.semanticscholar.org/paper/56136aa0b2c347cbcf3d50821f310c4253155026",
+            "venue": "NeurIPS",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2277496729",
+                    "name": "John Bather"
+                }
+            ],
+            "doi": "10.1111/1468-0149.t01-1-00102",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "05bd2e5d170114db41d7194e9b52b1482a718f39",
+            "title": "Decision Theory",
+            "url": "https://www.semanticscholar.org/paper/05bd2e5d170114db41d7194e9b52b1482a718f39",
+            "venue": "Encyclopedia of Evolutionary Psychological Science",
+            "year": 2018
+        },
+        {
+            "arxivId": "1805.01109",
+            "authors": [
+                {
+                    "authorId": "1868196",
+                    "name": "Tom Everitt"
+                },
+                {
+                    "authorId": "1954561",
+                    "name": "G. Lea"
+                },
+                {
+                    "authorId": "144154444",
+                    "name": "Marcus Hutter"
+                }
+            ],
+            "doi": "10.24963/ijcai.2018/768",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "6b0b1ecca32809b1d5b70b978521a8c27bc98e25",
+            "title": "AGI Safety Literature Review",
+            "url": "https://www.semanticscholar.org/paper/6b0b1ecca32809b1d5b70b978521a8c27bc98e25",
+            "venue": "IJCAI",
+            "year": 2018
+        },
+        {
+            "arxivId": "1803.10122",
+            "authors": [
+                {
+                    "authorId": "39810222",
+                    "name": "David R Ha"
+                },
+                {
+                    "authorId": "145341374",
+                    "name": "J. Schmidhuber"
+                }
+            ],
+            "doi": "10.5281/zenodo.1207631",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "ff332c21562c87cab5891d495b7d0956f2d9228b",
+            "title": "World Models",
+            "url": "https://www.semanticscholar.org/paper/ff332c21562c87cab5891d495b7d0956f2d9228b",
+            "venue": "ArXiv",
+            "year": 2018
+        },
+        {
+            "arxivId": "1803.03453",
+            "authors": [
+                {
+                    "authorId": "39799304",
+                    "name": "J. Lehman"
+                },
+                {
+                    "authorId": "2552141",
+                    "name": "J. Clune"
+                },
+                {
+                    "authorId": "1707548",
+                    "name": "D. Misevic"
+                },
+                {
+                    "authorId": "145882965",
+                    "name": "C. Adami"
+                },
+                {
+                    "authorId": "2597208",
+                    "name": "L. Altenberg"
+                },
+                {
+                    "authorId": "2086111462",
+                    "name": "Julie Beaulieu"
+                },
+                {
+                    "authorId": "145074286",
+                    "name": "P. Bentley"
+                },
+                {
+                    "authorId": "2070814530",
+                    "name": "Samuel Bernard"
+                },
+                {
+                    "authorId": "1809282",
+                    "name": "G. Beslon"
+                },
+                {
+                    "authorId": "37251097",
+                    "name": "David M. Bryson"
+                },
+                {
+                    "authorId": "22259392",
+                    "name": "P. Chrabaszcz"
+                },
+                {
+                    "authorId": "2800259",
+                    "name": "Nick Cheney"
+                },
+                {
+                    "authorId": "1934171",
+                    "name": "Antoine Cully"
+                },
+                {
+                    "authorId": "1765955",
+                    "name": "S. Doncieux"
+                },
+                {
+                    "authorId": "2621816",
+                    "name": "F. Dyer"
+                },
+                {
+                    "authorId": "3341968",
+                    "name": "K. Ellefsen"
+                },
+                {
+                    "authorId": "145278906",
+                    "name": "R. Feldt"
+                },
+                {
+                    "authorId": "152511330",
+                    "name": "Stephan Fischer"
+                },
+                {
+                    "authorId": "30123380",
+                    "name": "S. Forrest"
+                },
+                {
+                    "authorId": "1697243",
+                    "name": "Antoine Fr\u00e9noy"
+                },
+                {
+                    "authorId": "1712120",
+                    "name": "Christian Gagn\u00e9"
+                },
+                {
+                    "authorId": "144346948",
+                    "name": "L. L. Goff"
+                },
+                {
+                    "authorId": "3327342",
+                    "name": "L. Grabowski"
+                },
+                {
+                    "authorId": "3024670",
+                    "name": "B. Hodjat"
+                },
+                {
+                    "authorId": "144661829",
+                    "name": "F. Hutter"
+                },
+                {
+                    "authorId": "143868232",
+                    "name": "L. Keller"
+                },
+                {
+                    "authorId": "35083108",
+                    "name": "C. Knibbe"
+                },
+                {
+                    "authorId": "1965168",
+                    "name": "Peter Krcah"
+                },
+                {
+                    "authorId": "2450431",
+                    "name": "R. Lenski"
+                },
+                {
+                    "authorId": "51022452",
+                    "name": "H. Lipson"
+                },
+                {
+                    "authorId": "2192847",
+                    "name": "R. Maccurdy"
+                },
+                {
+                    "authorId": "144661263",
+                    "name": "Carlos Maestre"
+                },
+                {
+                    "authorId": "1686788",
+                    "name": "R. Miikkulainen"
+                },
+                {
+                    "authorId": "49837180",
+                    "name": "Sara Mitri"
+                },
+                {
+                    "authorId": "1859405",
+                    "name": "David E. Moriarty"
+                },
+                {
+                    "authorId": "145312416",
+                    "name": "Jean-Baptiste Mouret"
+                },
+                {
+                    "authorId": "151414531",
+                    "name": "Anh Totti Nguyen"
+                },
+                {
+                    "authorId": "152559260",
+                    "name": "Charles Ofria"
+                },
+                {
+                    "authorId": "1747913",
+                    "name": "M. Parizeau"
+                },
+                {
+                    "authorId": "144641159",
+                    "name": "David P. Parsons"
+                },
+                {
+                    "authorId": "1779320",
+                    "name": "Robert T. Pennock"
+                },
+                {
+                    "authorId": "2344970",
+                    "name": "W. Punch"
+                },
+                {
+                    "authorId": "1793950",
+                    "name": "T. Ray"
+                },
+                {
+                    "authorId": "69881991",
+                    "name": "Marc Schoenauer"
+                },
+                {
+                    "authorId": "2050584511",
+                    "name": "E. Shulte"
+                },
+                {
+                    "authorId": "1391181439",
+                    "name": "Karl Sims"
+                },
+                {
+                    "authorId": "1846883",
+                    "name": "Kenneth O. Stanley"
+                },
+                {
+                    "authorId": "1697477",
+                    "name": "F. Taddei"
+                },
+                {
+                    "authorId": "144304371",
+                    "name": "Danesh Tarapore"
+                },
+                {
+                    "authorId": "38433480",
+                    "name": "S. Thibault"
+                },
+                {
+                    "authorId": "47211092",
+                    "name": "Westley Weimer"
+                },
+                {
+                    "authorId": "48364115",
+                    "name": "R. Watson"
+                },
+                {
+                    "authorId": "1406729774",
+                    "name": "Jason Yosinksi"
+                }
+            ],
+            "doi": "10.1162/artl_a_00319",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ba49751f2f119c4f87d52a79d7cd84c441702b51",
+            "title": "The Surprising Creativity of Digital Evolution: A Collection of Anecdotes from the Evolutionary Computation and Artificial Life Research Communities",
+            "url": "https://www.semanticscholar.org/paper/ba49751f2f119c4f87d52a79d7cd84c441702b51",
+            "venue": "Artificial Life",
+            "year": 2018
+        },
+        {
+            "arxivId": "1712.06365",
+            "authors": [
+                {
+                    "authorId": "2054678912",
+                    "name": "S. Armstrong"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "56ecec19926d70bc6616315a1bea738407486835",
+            "title": "'Indifference' methods for managing agent rewards",
+            "url": "https://www.semanticscholar.org/paper/56ecec19926d70bc6616315a1bea738407486835",
+            "venue": "ArXiv",
+            "year": 2017
+        },
+        {
+            "arxivId": "1712.05812",
+            "authors": [
+                {
+                    "authorId": "2054678912",
+                    "name": "S. Armstrong"
+                },
+                {
+                    "authorId": "2302393759",
+                    "name": "S\u00f6ren Mindermann"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "cdabff298e9467de9babf0baad04c19789cde44b",
+            "title": "Occam's razor is insufficient to infer the preferences of irrational agents",
+            "url": "https://www.semanticscholar.org/paper/cdabff298e9467de9babf0baad04c19789cde44b",
+            "venue": "NeurIPS",
+            "year": 2017
+        },
+        {
+            "arxivId": "1712.01815",
+            "authors": [
+                {
+                    "authorId": "145824029",
+                    "name": "David Silver"
+                },
+                {
+                    "authorId": "2067208983",
+                    "name": "T. Hubert"
+                },
+                {
+                    "authorId": "4337102",
+                    "name": "Julian Schrittwieser"
+                },
+                {
+                    "authorId": "2460849",
+                    "name": "Ioannis Antonoglou"
+                },
+                {
+                    "authorId": "40227832",
+                    "name": "Matthew Lai"
+                },
+                {
+                    "authorId": "35099444",
+                    "name": "A. Guez"
+                },
+                {
+                    "authorId": "1975889",
+                    "name": "Marc Lanctot"
+                },
+                {
+                    "authorId": "2175946",
+                    "name": "L. Sifre"
+                },
+                {
+                    "authorId": "2106164",
+                    "name": "D. Kumaran"
+                },
+                {
+                    "authorId": "1686971",
+                    "name": "T. Graepel"
+                },
+                {
+                    "authorId": "2542999",
+                    "name": "T. Lillicrap"
+                },
+                {
+                    "authorId": "34838386",
+                    "name": "K. Simonyan"
+                },
+                {
+                    "authorId": "48987704",
+                    "name": "D. Hassabis"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "38fb1902c6a2ab4f767d4532b28a92473ea737aa",
+            "title": "Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm",
+            "url": "https://www.semanticscholar.org/paper/38fb1902c6a2ab4f767d4532b28a92473ea737aa",
+            "venue": "ArXiv",
+            "year": 2017
+        },
+        {
+            "arxivId": "1711.09883",
+            "authors": [
+                {
+                    "authorId": "2990741",
+                    "name": "J. Leike"
+                },
+                {
+                    "authorId": "26890260",
+                    "name": "Miljan Martic"
+                },
+                {
+                    "authorId": "2578985",
+                    "name": "Victoria Krakovna"
+                },
+                {
+                    "authorId": "145981974",
+                    "name": "Pedro A. Ortega"
+                },
+                {
+                    "authorId": "1868196",
+                    "name": "Tom Everitt"
+                },
+                {
+                    "authorId": "8455031",
+                    "name": "Andrew Lefrancq"
+                },
+                {
+                    "authorId": "1749270",
+                    "name": "Laurent Orseau"
+                },
+                {
+                    "authorId": "34313265",
+                    "name": "S. Legg"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "d09bec5af4eef5038e48b26b6c14098f95997114",
+            "title": "AI Safety Gridworlds",
+            "url": "https://www.semanticscholar.org/paper/d09bec5af4eef5038e48b26b6c14098f95997114",
+            "venue": "ArXiv",
+            "year": 2017
+        },
+        {
+            "arxivId": "1711.05541",
+            "authors": [
+                {
+                    "authorId": "2054678912",
+                    "name": "S. Armstrong"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "4cbc5632026377476d55d8d851f4ba217b0b2615",
+            "title": "Good and safe uses of AI Oracles",
+            "url": "https://www.semanticscholar.org/paper/4cbc5632026377476d55d8d851f4ba217b0b2615",
+            "venue": "ArXiv",
+            "year": 2017
+        },
+        {
+            "arxivId": "1711.02827",
+            "authors": [
+                {
+                    "authorId": "1397904824",
+                    "name": "Dylan Hadfield-Menell"
+                },
+                {
+                    "authorId": "3458938",
+                    "name": "S. Milli"
+                },
+                {
+                    "authorId": "1689992",
+                    "name": "P. Abbeel"
+                },
+                {
+                    "authorId": "145107462",
+                    "name": "Stuart J. Russell"
+                },
+                {
+                    "authorId": "2745001",
+                    "name": "A. Dragan"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "59094d64844ee21e32560fb08db6d53cc3af0c51",
+            "title": "Inverse Reward Design",
+            "url": "https://www.semanticscholar.org/paper/59094d64844ee21e32560fb08db6d53cc3af0c51",
+            "venue": "NIPS",
+            "year": 2017
+        },
+        {
+            "arxivId": "1710.05060",
+            "authors": [
+                {
+                    "authorId": "2542795",
+                    "name": "Eliezer Yudkowsky"
+                },
+                {
+                    "authorId": "1719968",
+                    "name": "N. Soares"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "61c368138b0211323e8773174ac3132122da07ef",
+            "title": "Functional Decision Theory: A New Theory of Instrumental Rationality",
+            "url": "https://www.semanticscholar.org/paper/61c368138b0211323e8773174ac3132122da07ef",
+            "venue": "ArXiv",
+            "year": 2017
+        },
+        {
+            "arxivId": "1710.02298",
+            "authors": [
+                {
+                    "authorId": "39357484",
+                    "name": "Matteo Hessel"
+                },
+                {
+                    "authorId": "3321484",
+                    "name": "Joseph Modayil"
+                },
+                {
+                    "authorId": "7634925",
+                    "name": "H. V. Hasselt"
+                },
+                {
+                    "authorId": "1725157",
+                    "name": "T. Schaul"
+                },
+                {
+                    "authorId": "2273072",
+                    "name": "Georg Ostrovski"
+                },
+                {
+                    "authorId": "2605877",
+                    "name": "Will Dabney"
+                },
+                {
+                    "authorId": "48257711",
+                    "name": "Dan Horgan"
+                },
+                {
+                    "authorId": "1808897",
+                    "name": "Bilal Piot"
+                },
+                {
+                    "authorId": "37666967",
+                    "name": "M. G. Azar"
+                },
+                {
+                    "authorId": "145824029",
+                    "name": "David Silver"
+                }
+            ],
+            "doi": "10.1609/aaai.v32i1.11796",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0ab3f7ecbdc5a33565a234215604a6ca9d155a33",
+            "title": "Rainbow: Combining Improvements in Deep Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/0ab3f7ecbdc5a33565a234215604a6ca9d155a33",
+            "venue": "AAAI",
+            "year": 2017
+        },
+        {
+            "arxivId": "1709.06275",
+            "authors": [
+                {
+                    "authorId": "2057014575",
+                    "name": "Ryan Carey"
+                }
+            ],
+            "doi": "10.1145/3278721.3278750",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7ba22bc1cc37336a2a4e769c9798c47c8cad0b11",
+            "title": "Incorrigibility in the CIRL Framework",
+            "url": "https://www.semanticscholar.org/paper/7ba22bc1cc37336a2a4e769c9798c47c8cad0b11",
+            "venue": "AIES",
+            "year": 2017
+        },
+        {
+            "arxivId": "1707.08945",
+            "authors": [
+                {
+                    "authorId": "22229139",
+                    "name": "I. Evtimov"
+                },
+                {
+                    "authorId": "1825256",
+                    "name": "Kevin Eykholt"
+                },
+                {
+                    "authorId": "35064352",
+                    "name": "Earlence Fernandes"
+                },
+                {
+                    "authorId": "1769675",
+                    "name": "Tadayoshi Kohno"
+                },
+                {
+                    "authorId": "2165245296",
+                    "name": "Bo Li"
+                },
+                {
+                    "authorId": "49428285",
+                    "name": "Atul Prakash"
+                },
+                {
+                    "authorId": "145416145",
+                    "name": "Amir Rahmati"
+                },
+                {
+                    "authorId": "143711382",
+                    "name": "D. Song"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d295a620fc10a7a656dc693e1b1bf668d1508a8e",
+            "title": "Robust Physical-World Attacks on Deep Learning Models",
+            "url": "https://www.semanticscholar.org/paper/d295a620fc10a7a656dc693e1b1bf668d1508a8e",
+            "venue": "",
+            "year": 2017
+        },
+        {
+            "arxivId": "1707.06203",
+            "authors": [
+                {
+                    "authorId": "2026995",
+                    "name": "S. Racani\u00e8re"
+                },
+                {
+                    "authorId": "143947744",
+                    "name": "T. Weber"
+                },
+                {
+                    "authorId": "40634311",
+                    "name": "David P. Reichert"
+                },
+                {
+                    "authorId": "1981334",
+                    "name": "Lars Buesing"
+                },
+                {
+                    "authorId": "35099444",
+                    "name": "A. Guez"
+                },
+                {
+                    "authorId": "1748523",
+                    "name": "Danilo Jimenez Rezende"
+                },
+                {
+                    "authorId": "36045539",
+                    "name": "Adri\u00e0 Puigdom\u00e8nech Badia"
+                },
+                {
+                    "authorId": "1689108",
+                    "name": "O. Vinyals"
+                },
+                {
+                    "authorId": "2801204",
+                    "name": "N. Heess"
+                },
+                {
+                    "authorId": "47002813",
+                    "name": "Yujia Li"
+                },
+                {
+                    "authorId": "1996134",
+                    "name": "Razvan Pascanu"
+                },
+                {
+                    "authorId": "2019153",
+                    "name": "P. Battaglia"
+                },
+                {
+                    "authorId": "48987704",
+                    "name": "D. Hassabis"
+                },
+                {
+                    "authorId": "145824029",
+                    "name": "David Silver"
+                },
+                {
+                    "authorId": "1688276",
+                    "name": "Daan Wierstra"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "600bfe5f0597ebd84898f0c4270ddfb3750594f5",
+            "title": "Imagination-Augmented Agents for Deep Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/600bfe5f0597ebd84898f0c4270ddfb3750594f5",
+            "venue": "NIPS",
+            "year": 2017
+        },
+        {
+            "arxivId": "1707.06170",
+            "authors": [
+                {
+                    "authorId": "1996134",
+                    "name": "Razvan Pascanu"
+                },
+                {
+                    "authorId": "47002813",
+                    "name": "Yujia Li"
+                },
+                {
+                    "authorId": "1689108",
+                    "name": "O. Vinyals"
+                },
+                {
+                    "authorId": "2801204",
+                    "name": "N. Heess"
+                },
+                {
+                    "authorId": "1981334",
+                    "name": "Lars Buesing"
+                },
+                {
+                    "authorId": "2026995",
+                    "name": "S. Racani\u00e8re"
+                },
+                {
+                    "authorId": "40634311",
+                    "name": "David P. Reichert"
+                },
+                {
+                    "authorId": "143947744",
+                    "name": "T. Weber"
+                },
+                {
+                    "authorId": "1688276",
+                    "name": "Daan Wierstra"
+                },
+                {
+                    "authorId": "2019153",
+                    "name": "P. Battaglia"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "bd1d59433e3b7ae7207c24b4cd1838acea91425c",
+            "title": "Learning model-based planning from scratch",
+            "url": "https://www.semanticscholar.org/paper/bd1d59433e3b7ae7207c24b4cd1838acea91425c",
+            "venue": "ArXiv",
+            "year": 2017
+        },
+        {
+            "arxivId": "1707.05173",
+            "authors": [
+                {
+                    "authorId": "2058848938",
+                    "name": "W. Saunders"
+                },
+                {
+                    "authorId": "144864359",
+                    "name": "Girish Sastry"
+                },
+                {
+                    "authorId": "2214496",
+                    "name": "Andreas Stuhlm\u00fcller"
+                },
+                {
+                    "authorId": "47107786",
+                    "name": "Owain Evans"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "30ff82cebce6fdc2957043c4085a426414474d78",
+            "title": "Trial without Error: Towards Safe Reinforcement Learning via Human Intervention",
+            "url": "https://www.semanticscholar.org/paper/30ff82cebce6fdc2957043c4085a426414474d78",
+            "venue": "AAMAS",
+            "year": 2017
+        },
+        {
+            "arxivId": "1706.03741",
+            "authors": [
+                {
+                    "authorId": "145791315",
+                    "name": "P. Christiano"
+                },
+                {
+                    "authorId": "2990741",
+                    "name": "J. Leike"
+                },
+                {
+                    "authorId": "31035595",
+                    "name": "Tom B. Brown"
+                },
+                {
+                    "authorId": "26890260",
+                    "name": "Miljan Martic"
+                },
+                {
+                    "authorId": "34313265",
+                    "name": "S. Legg"
+                },
+                {
+                    "authorId": "2330246606",
+                    "name": "Dario Amodei"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "5bbb6f9a8204eb13070b6f033e61c84ef8ee68dd",
+            "title": "Deep Reinforcement Learning from Human Preferences",
+            "url": "https://www.semanticscholar.org/paper/5bbb6f9a8204eb13070b6f033e61c84ef8ee68dd",
+            "venue": "NIPS",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1749270",
+                    "name": "Laurent Orseau"
+                },
+                {
+                    "authorId": "2054678912",
+                    "name": "S. Armstrong"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "ac70bb2458f01a9e47fc1afe0dd478fb2feb8f50",
+            "title": "Safely Interruptible Agents",
+            "url": "https://www.semanticscholar.org/paper/ac70bb2458f01a9e47fc1afe0dd478fb2feb8f50",
+            "venue": "UAI",
+            "year": 2016
+        },
+        {
+            "arxivId": "1606.00652",
+            "authors": [
+                {
+                    "authorId": "2110111518",
+                    "name": "Jarryd Martin"
+                },
+                {
+                    "authorId": "1868196",
+                    "name": "Tom Everitt"
+                },
+                {
+                    "authorId": "144154444",
+                    "name": "Marcus Hutter"
+                }
+            ],
+            "doi": "10.1007/978-3-319-41649-6_3",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d9c6562a197222cf0e054cda6c943a1b990845b5",
+            "title": "Death and Suicide in Universal Artificial Intelligence",
+            "url": "https://www.semanticscholar.org/paper/d9c6562a197222cf0e054cda6c943a1b990845b5",
+            "venue": "AGI",
+            "year": 2016
+        },
+        {
+            "arxivId": "1606.03137",
+            "authors": [
+                {
+                    "authorId": "1397904824",
+                    "name": "Dylan Hadfield-Menell"
+                },
+                {
+                    "authorId": "145107462",
+                    "name": "Stuart J. Russell"
+                },
+                {
+                    "authorId": "1689992",
+                    "name": "P. Abbeel"
+                },
+                {
+                    "authorId": "2745001",
+                    "name": "A. Dragan"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "1e6abd43fcb157fde4d4ddc3ac8787ae45dbf777",
+            "title": "Cooperative Inverse Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/1e6abd43fcb157fde4d4ddc3ac8787ae45dbf777",
+            "venue": "NIPS",
+            "year": 2016
+        },
+        {
+            "arxivId": "1605.03661",
+            "authors": [
+                {
+                    "authorId": "144602383",
+                    "name": "Fredrik D. Johansson"
+                },
+                {
+                    "authorId": "2304764",
+                    "name": "Uri Shalit"
+                },
+                {
+                    "authorId": "1746662",
+                    "name": "D. Sontag"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "759b00cf35b397eab468935b5d90d04e9ed25549",
+            "title": "Learning Representations for Counterfactual Inference",
+            "url": "https://www.semanticscholar.org/paper/759b00cf35b397eab468935b5d90d04e9ed25549",
+            "venue": "ICML",
+            "year": 2016
+        },
+        {
+            "arxivId": "1605.03142",
+            "authors": [
+                {
+                    "authorId": "1868196",
+                    "name": "Tom Everitt"
+                },
+                {
+                    "authorId": "3393209",
+                    "name": "Daniel Filan"
+                },
+                {
+                    "authorId": "2842216",
+                    "name": "Mayank Daswani"
+                },
+                {
+                    "authorId": "144154444",
+                    "name": "Marcus Hutter"
+                }
+            ],
+            "doi": "10.1007/978-3-319-41649-6_1",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d72fd1af6d31ceb7a46b1cd70822549c05a83151",
+            "title": "Self-Modification of Policy and Utility Function in Rational Agents",
+            "url": "https://www.semanticscholar.org/paper/d72fd1af6d31ceb7a46b1cd70822549c05a83151",
+            "venue": "AGI",
+            "year": 2016
+        },
+        {
+            "arxivId": "1602.01783",
+            "authors": [
+                {
+                    "authorId": "3255983",
+                    "name": "Volodymyr Mnih"
+                },
+                {
+                    "authorId": "36045539",
+                    "name": "Adri\u00e0 Puigdom\u00e8nech Badia"
+                },
+                {
+                    "authorId": "153583218",
+                    "name": "Mehdi Mirza"
+                },
+                {
+                    "authorId": "1753223",
+                    "name": "Alex Graves"
+                },
+                {
+                    "authorId": "2542999",
+                    "name": "T. Lillicrap"
+                },
+                {
+                    "authorId": "3367786",
+                    "name": "Tim Harley"
+                },
+                {
+                    "authorId": "145824029",
+                    "name": "David Silver"
+                },
+                {
+                    "authorId": "2645384",
+                    "name": "K. Kavukcuoglu"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "69e76e16740ed69f4dc55361a3d319ac2f1293dd",
+            "title": "Asynchronous Methods for Deep Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/69e76e16740ed69f4dc55361a3d319ac2f1293dd",
+            "venue": "ICML",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145824029",
+                    "name": "David Silver"
+                },
+                {
+                    "authorId": "1885349",
+                    "name": "Aja Huang"
+                },
+                {
+                    "authorId": "2772217",
+                    "name": "Chris J. Maddison"
+                },
+                {
+                    "authorId": "35099444",
+                    "name": "A. Guez"
+                },
+                {
+                    "authorId": "2175946",
+                    "name": "L. Sifre"
+                },
+                {
+                    "authorId": "47568983",
+                    "name": "George van den Driessche"
+                },
+                {
+                    "authorId": "4337102",
+                    "name": "Julian Schrittwieser"
+                },
+                {
+                    "authorId": "2460849",
+                    "name": "Ioannis Antonoglou"
+                },
+                {
+                    "authorId": "2749418",
+                    "name": "Vedavyas Panneershelvam"
+                },
+                {
+                    "authorId": "1975889",
+                    "name": "Marc Lanctot"
+                },
+                {
+                    "authorId": "48373216",
+                    "name": "S. Dieleman"
+                },
+                {
+                    "authorId": "2401609",
+                    "name": "Dominik Grewe"
+                },
+                {
+                    "authorId": "4111313",
+                    "name": "John Nham"
+                },
+                {
+                    "authorId": "2583391",
+                    "name": "Nal Kalchbrenner"
+                },
+                {
+                    "authorId": "1701686",
+                    "name": "I. Sutskever"
+                },
+                {
+                    "authorId": "2542999",
+                    "name": "T. Lillicrap"
+                },
+                {
+                    "authorId": "40662181",
+                    "name": "M. Leach"
+                },
+                {
+                    "authorId": "2645384",
+                    "name": "K. Kavukcuoglu"
+                },
+                {
+                    "authorId": "1686971",
+                    "name": "T. Graepel"
+                },
+                {
+                    "authorId": "48987704",
+                    "name": "D. Hassabis"
+                }
+            ],
+            "doi": "10.1038/nature16961",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "846aedd869a00c09b40f1f1f35673cb22bc87490",
+            "title": "Mastering the game of Go with deep neural networks and tree search",
+            "url": "https://www.semanticscholar.org/paper/846aedd869a00c09b40f1f1f35673cb22bc87490",
+            "venue": "Nature",
+            "year": 2016
+        },
+        {
+            "arxivId": "1511.09249",
+            "authors": [
+                {
+                    "authorId": "145341374",
+                    "name": "J. Schmidhuber"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f0b9dc64f6df004d3f776031050317f0a7fb1bdc",
+            "title": "On Learning to Think: Algorithmic Information Theory for Novel Combinations of Reinforcement Learning Controllers and Recurrent Neural World Models",
+            "url": "https://www.semanticscholar.org/paper/f0b9dc64f6df004d3f776031050317f0a7fb1bdc",
+            "venue": "ArXiv",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3255983",
+                    "name": "Volodymyr Mnih"
+                },
+                {
+                    "authorId": "2645384",
+                    "name": "K. Kavukcuoglu"
+                },
+                {
+                    "authorId": "145824029",
+                    "name": "David Silver"
+                },
+                {
+                    "authorId": "2228824",
+                    "name": "Andrei A. Rusu"
+                },
+                {
+                    "authorId": "144056327",
+                    "name": "J. Veness"
+                },
+                {
+                    "authorId": "1792298",
+                    "name": "Marc G. Bellemare"
+                },
+                {
+                    "authorId": "1753223",
+                    "name": "Alex Graves"
+                },
+                {
+                    "authorId": "3137672",
+                    "name": "Martin A. Riedmiller"
+                },
+                {
+                    "authorId": "145600108",
+                    "name": "A. Fidjeland"
+                },
+                {
+                    "authorId": "2273072",
+                    "name": "Georg Ostrovski"
+                },
+                {
+                    "authorId": "48348688",
+                    "name": "Stig Petersen"
+                },
+                {
+                    "authorId": "50388928",
+                    "name": "Charlie Beattie"
+                },
+                {
+                    "authorId": "49813280",
+                    "name": "Amir Sadik"
+                },
+                {
+                    "authorId": "2460849",
+                    "name": "Ioannis Antonoglou"
+                },
+                {
+                    "authorId": "143776287",
+                    "name": "Helen King"
+                },
+                {
+                    "authorId": "2106164",
+                    "name": "D. Kumaran"
+                },
+                {
+                    "authorId": "1688276",
+                    "name": "Daan Wierstra"
+                },
+                {
+                    "authorId": "34313265",
+                    "name": "S. Legg"
+                },
+                {
+                    "authorId": "48987704",
+                    "name": "D. Hassabis"
+                }
+            ],
+            "doi": "10.1038/nature14236",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "340f48901f72278f6bf78a04ee5b01df208cc508",
+            "title": "Human-level control through deep reinforcement learning",
+            "url": "https://www.semanticscholar.org/paper/340f48901f72278f6bf78a04ee5b01df208cc508",
+            "venue": "Nature",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143838633",
+                    "name": "Arif Ahmed"
+                }
+            ],
+            "doi": "10.1017/cbo9781139107990",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "618369c3551e3a43fbf8b43da2eaf125b41a1694",
+            "title": "Evidence, Decision and Causality",
+            "url": "https://www.semanticscholar.org/paper/618369c3551e3a43fbf8b43da2eaf125b41a1694",
+            "venue": "",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1749270",
+                    "name": "Laurent Orseau"
+                }
+            ],
+            "doi": "10.1007/978-3-319-09274-4_11",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c287f55ff4445d9cfdeed1e5383566f64f300575",
+            "title": "Teleporting Universal Intelligent Agents",
+            "url": "https://www.semanticscholar.org/paper/c287f55ff4445d9cfdeed1e5383566f64f300575",
+            "venue": "AGI",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1749270",
+                    "name": "Laurent Orseau"
+                }
+            ],
+            "doi": "10.1007/978-3-319-09274-4_10",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c2c7987e0d549b50aa90210b9c017cc91ef795fb",
+            "title": "The Multi-slot Framework: A Formal Model for Multiple, Copiable AIs",
+            "url": "https://www.semanticscholar.org/paper/c2c7987e0d549b50aa90210b9c017cc91ef795fb",
+            "venue": "AGI",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "21312685",
+                    "name": "F. Taroni"
+                },
+                {
+                    "authorId": "2386697",
+                    "name": "A. Biedermann"
+                },
+                {
+                    "authorId": "48290788",
+                    "name": "S. Bozza"
+                },
+                {
+                    "authorId": "2377557",
+                    "name": "Paolo Garbolino"
+                },
+                {
+                    "authorId": "46578843",
+                    "name": "C. Aitken"
+                }
+            ],
+            "doi": "10.1002/9781118914762.CH1",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d66c5ac2658e335d44df86aad06b4113e4093e5f",
+            "title": "The logic of decision",
+            "url": "https://www.semanticscholar.org/paper/d66c5ac2658e335d44df86aad06b4113e4093e5f",
+            "venue": "",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2193691",
+                    "name": "N. Bostrom"
+                }
+            ],
+            "doi": "10.5860/choice.187536",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "05e30d16cf7fdcb23ba4523d40c2ebdc3eee88c8",
+            "title": "Superintelligence: Paths, Dangers, Strategies",
+            "url": "https://www.semanticscholar.org/paper/05e30d16cf7fdcb23ba4523d40c2ebdc3eee88c8",
+            "venue": "",
+            "year": 2014
+        },
+        {
+            "arxivId": "1111.3934",
+            "authors": [
+                {
+                    "authorId": "39109261",
+                    "name": "B. Hibbard"
+                }
+            ],
+            "doi": "10.2478/v10229-011-0013-5",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "6b2bf1efaa66c77677070f1c52701f0f7f2a3e15",
+            "title": "Model-based Utility Functions",
+            "url": "https://www.semanticscholar.org/paper/6b2bf1efaa66c77677070f1c52701f0f7f2a3e15",
+            "venue": "J. Artif. Gen. Intell.",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "40829712",
+                    "name": "Dan Dewey"
+                }
+            ],
+            "doi": "10.1007/978-3-642-22887-2_35",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f5ca00ff8650d04f36b2e228226032b0a5c478df",
+            "title": "Learning What to Value",
+            "url": "https://www.semanticscholar.org/paper/f5ca00ff8650d04f36b2e228226032b0a5c478df",
+            "venue": "AGI",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1749270",
+                    "name": "Laurent Orseau"
+                },
+                {
+                    "authorId": "11023955",
+                    "name": "Mark B. Ring"
+                }
+            ],
+            "doi": "10.1007/978-3-642-22887-2_1",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "35553d2ddcd983b1e16a4d78726c857ab4ad3d5f",
+            "title": "Self-Modification and Mortality in Artificial Agents",
+            "url": "https://www.semanticscholar.org/paper/35553d2ddcd983b1e16a4d78726c857ab4ad3d5f",
+            "venue": "AGI",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "11023955",
+                    "name": "Mark B. Ring"
+                },
+                {
+                    "authorId": "1749270",
+                    "name": "Laurent Orseau"
+                }
+            ],
+            "doi": "10.1007/978-3-642-22887-2_2",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d8a200f7e0ef5659d544b4f5306251deaf781d1b",
+            "title": "Delusion, Survival, and Intelligent Agents",
+            "url": "https://www.semanticscholar.org/paper/d8a200f7e0ef5659d544b4f5306251deaf781d1b",
+            "venue": "AGI",
+            "year": 2011
+        },
+        {
+            "arxivId": "1105.3821",
+            "authors": [
+                {
+                    "authorId": "39727043",
+                    "name": "Peter de Blanc"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "0bd23d6d555cb931e82e323dcb71045774b6f93e",
+            "title": "Ontological Crises in Artificial Agents' Value Systems",
+            "url": "https://www.semanticscholar.org/paper/0bd23d6d555cb931e82e323dcb71045774b6f93e",
+            "venue": "ArXiv",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144288136",
+                    "name": "W. B. Knox"
+                },
+                {
+                    "authorId": "144848112",
+                    "name": "P. Stone"
+                }
+            ],
+            "doi": "10.1145/1597735.1597738",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "256c3bd45ab7452bb51721eb25d3367bb654225e",
+            "title": "Interactively shaping agents via human reinforcement: the TAMER framework",
+            "url": "https://www.semanticscholar.org/paper/256c3bd45ab7452bb51721eb25d3367bb654225e",
+            "venue": "K-CAP '09",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "48866836",
+                    "name": "Judy E. Hall"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d8f7a79e0fdd497a3f02e55f86fe20be412f2c96",
+            "title": "The Book of Why",
+            "url": "https://www.semanticscholar.org/paper/d8f7a79e0fdd497a3f02e55f86fe20be412f2c96",
+            "venue": "",
+            "year": 2008
+        },
+        {
+            "arxivId": "1401.3426",
+            "authors": [
+                {
+                    "authorId": "1721094",
+                    "name": "Y. Gal"
+                },
+                {
+                    "authorId": "145668856",
+                    "name": "Avi Pfeffer"
+                }
+            ],
+            "doi": "10.1613/jair.2503",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "8e4e23559653c1137bb6828ecd2614b67d3fddf4",
+            "title": "Networks of Influence Diagrams: A Formalism for Representing Agents' Beliefs and Decision-Making Processes",
+            "url": "https://www.semanticscholar.org/paper/8e4e23559653c1137bb6828ecd2614b67d3fddf4",
+            "venue": "J. Artif. Intell. Res.",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1808760",
+                    "name": "S. Omohundro"
+                }
+            ],
+            "doi": "10.1201/9781351251389-3",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "a6582abc47397d96888108ea308c0168d94a230d",
+            "title": "The Basic AI Drives",
+            "url": "https://www.semanticscholar.org/paper/a6582abc47397d96888108ea308c0168d94a230d",
+            "venue": "AGI",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "27581584",
+                    "name": "R. Howard"
+                },
+                {
+                    "authorId": "1843259",
+                    "name": "J. Matheson"
+                }
+            ],
+            "doi": "10.1287/deca.1050.0020",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "cbefa1a15f53a0ee9196eeff113feeea8bfbcee6",
+            "title": "Influence Diagrams",
+            "url": "https://www.semanticscholar.org/paper/cbefa1a15f53a0ee9196eeff113feeea8bfbcee6",
+            "venue": "Decis. Anal.",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2235217",
+                    "name": "D. Rubin"
+                }
+            ],
+            "doi": "10.1198/016214504000001880",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b6827dbec33c0d55e087fee45babbf81c914ba3e",
+            "title": "Causal Inference Using Potential Outcomes",
+            "url": "https://www.semanticscholar.org/paper/b6827dbec33c0d55e087fee45babbf81c914ba3e",
+            "venue": "",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "48948439",
+                    "name": "J. Harsanyi"
+                }
+            ],
+            "doi": "10.1287/MNSC.1040.0270",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "87ca9af97281edd6fb3ecd20ecc9caf6df905d03",
+            "title": "Games with Incomplete Information Played by \"Bayesian\" Players, I-III: Part I. The Basic Model&",
+            "url": "https://www.semanticscholar.org/paper/87ca9af97281edd6fb3ecd20ecc9caf6df905d03",
+            "venue": "Manag. Sci.",
+            "year": 2004
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2252179403",
+                    "name": "Marcus Hutter"
+                }
+            ],
+            "doi": "10.1007/978-3-319-64816-3_2",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "30a64bdf778b8f561af9ae589e822c2c800920b1",
+            "title": "Universal artificial intelligence",
+            "url": "https://www.semanticscholar.org/paper/30a64bdf778b8f561af9ae589e822c2c800920b1",
+            "venue": "",
+            "year": 2004
+        },
+        {
+            "arxivId": "cs/0309048",
+            "authors": [
+                {
+                    "authorId": "145341374",
+                    "name": "J. Schmidhuber"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2e45fd58329558b0c9e73cbc1fb9f4f60dbb5ca7",
+            "title": "Goedel Machines: Self-Referential Universal Problem Solvers Making Provably Optimal Self-Improvements",
+            "url": "https://www.semanticscholar.org/paper/2e45fd58329558b0c9e73cbc1fb9f4f60dbb5ca7",
+            "venue": "ArXiv",
+            "year": 2003
+        },
+        {
+            "arxivId": "1106.1822",
+            "authors": [
+                {
+                    "authorId": "1730156",
+                    "name": "Carlos Guestrin"
+                },
+                {
+                    "authorId": "1736370",
+                    "name": "D. Koller"
+                },
+                {
+                    "authorId": "145726861",
+                    "name": "Ronald E. Parr"
+                },
+                {
+                    "authorId": "2262405",
+                    "name": "Shobha Venkataraman"
+                }
+            ],
+            "doi": "10.1613/jair.1000",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "2430b4748c4ffe8782ae4763d327ce48f3655639",
+            "title": "Efficient Solution Algorithms for Factored MDPs",
+            "url": "https://www.semanticscholar.org/paper/2430b4748c4ffe8782ae4763d327ce48f3655639",
+            "venue": "J. Artif. Intell. Res.",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2274623",
+                    "name": "K. Tuyls"
+                },
+                {
+                    "authorId": "144336828",
+                    "name": "A. Now\u00e9"
+                }
+            ],
+            "doi": "10.1002/9780470050118.ecse168",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "ef33b0edda2ed1a451e8f40ca641cc73d1c7f7e3",
+            "title": "Introduction to game theory",
+            "url": "https://www.semanticscholar.org/paper/ef33b0edda2ed1a451e8f40ca641cc73d1c7f7e3",
+            "venue": "Wiley Encyclopedia of Computer Science and Engineering",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1736370",
+                    "name": "D. Koller"
+                },
+                {
+                    "authorId": "3226208",
+                    "name": "Brian Milch"
+                }
+            ],
+            "doi": "10.1016/S0899-8256(02)00544-4",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "b31be41841d83b6e818355aa60a22befac099e0a",
+            "title": "Multi-Agent Influence Diagrams for Representing and Solving Games",
+            "url": "https://www.semanticscholar.org/paper/b31be41841d83b6e818355aa60a22befac099e0a",
+            "venue": "IJCAI",
+            "year": 2001
+        },
+        {
+            "arxivId": "1301.2300",
+            "authors": [
+                {
+                    "authorId": "145430701",
+                    "name": "J. Pearl"
+                }
+            ],
+            "doi": "10.1145/3501714.3501736",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d8574a62874312b81347438b1566cdb1c6d5abe5",
+            "title": "Direct and Indirect Effects",
+            "url": "https://www.semanticscholar.org/paper/d8574a62874312b81347438b1566cdb1c6d5abe5",
+            "venue": "UAI",
+            "year": 2001
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2274296969",
+                    "name": "Andrew Y. Ng"
+                },
+                {
+                    "authorId": "2274384301",
+                    "name": "Stuart Russell"
+                }
+            ],
+            "doi": "10.2460/AJVR.67.2.323",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "dd6960d576da0d769ca30de6eb6607a66806211f",
+            "title": "Algorithms for Inverse Reinforcement Learning",
+            "url": "https://www.semanticscholar.org/paper/dd6960d576da0d769ca30de6eb6607a66806211f",
+            "venue": "ICML 2000",
+            "year": 2000
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "32328080",
+                    "name": "James M. Joyce"
+                }
+            ],
+            "doi": "10.1215/00318108-110-2-296",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "1d32f7f1b89fda00962b8cf5649e25c37315e74b",
+            "title": "The Foundations of Causal Decision Theory",
+            "url": "https://www.semanticscholar.org/paper/1d32f7f1b89fda00962b8cf5649e25c37315e74b",
+            "venue": "",
+            "year": 1999
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1709512",
+                    "name": "L. Kaelbling"
+                },
+                {
+                    "authorId": "144885169",
+                    "name": "M. Littman"
+                },
+                {
+                    "authorId": "2453007",
+                    "name": "A. Cassandra"
+                }
+            ],
+            "doi": "10.1016/S0004-3702(98)00023-X",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "116d7798c1123cf7fad4176e98f58fd49de4f8f1",
+            "title": "Planning and Acting in Partially Observable Stochastic Domains",
+            "url": "https://www.semanticscholar.org/paper/116d7798c1123cf7fad4176e98f58fd49de4f8f1",
+            "venue": "Artif. Intell.",
+            "year": 1998
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2085276",
+                    "name": "Alexander Balke"
+                },
+                {
+                    "authorId": "145430701",
+                    "name": "J. Pearl"
+                }
+            ],
+            "doi": "10.1145/3501714.3501733",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "c697846fb5e4db1e27aae54a1279e407a1142e5c",
+            "title": "Probabilistic Evaluation of Counterfactual Queries",
+            "url": "https://www.semanticscholar.org/paper/c697846fb5e4db1e27aae54a1279e407a1142e5c",
+            "venue": "AAAI",
+            "year": 1994
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "73953079",
+                    "name": "R. Portenoy"
+                },
+                {
+                    "authorId": "6603561",
+                    "name": "J. O. Jarden"
+                },
+                {
+                    "authorId": "3279302",
+                    "name": "J. Sidtis"
+                },
+                {
+                    "authorId": "2489954",
+                    "name": "R. Lipton"
+                },
+                {
+                    "authorId": "2054055539",
+                    "name": "K. Foley"
+                },
+                {
+                    "authorId": "144209063",
+                    "name": "D. Rottenberg"
+                }
+            ],
+            "doi": "10.1016/0304-3959(86)90155-7",
+            "intent": [
+                "result"
+            ],
+            "isInfluential": false,
+            "paperId": "74f1c248decbeb92c2ae30635d2ca5437681e0af",
+            "title": "Compulsive thalamic self-stimulation: A case with metabolic, electrophysiologic and behavioral correlates",
+            "url": "https://www.semanticscholar.org/paper/74f1c248decbeb92c2ae30635d2ca5437681e0af",
+            "venue": "Pain",
+            "year": 1986
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "73373794",
+                    "name": "E. Eells"
+                }
+            ],
+            "doi": "10.1086/psaprocbienmeetp.1984.2.192504",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "36afd4ab85a91114d3bce174bd7c80ec57cfe3e2",
+            "title": "Causal Decision Theory",
+            "url": "https://www.semanticscholar.org/paper/36afd4ab85a91114d3bce174bd7c80ec57cfe3e2",
+            "venue": "PSA: Proceedings of the Biennial Meeting of the Philosophy of Science Association",
+            "year": 1984
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "89033271",
+                    "name": "Robert L. Shook"
+                }
+            ],
+            "doi": "10.56645/jmde.v14i31.507",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7acf09268c893a87226b8082e838e49bada038f9",
+            "title": "The Book of Why",
+            "url": "https://www.semanticscholar.org/paper/7acf09268c893a87226b8082e838e49bada038f9",
+            "venue": "Journal of MultiDisciplinary Evaluation",
+            "year": 1983
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2116423750",
+                    "name": "D. Lewis"
+                }
+            ],
+            "doi": "10.1080/00048408112340011",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "dda796e32737cf9d3e3ca7d854bdf3c9df283c6d",
+            "title": "Causal decision theory",
+            "url": "https://www.semanticscholar.org/paper/dda796e32737cf9d3e3ca7d854bdf3c9df283c6d",
+            "venue": "",
+            "year": 1981
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "13240205",
+                    "name": "James L Olds"
+                },
+                {
+                    "authorId": "145717066",
+                    "name": "P. Milner"
+                }
+            ],
+            "doi": "10.1037/H0058775",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "874ff0cb6e572381a520104ba73fac1e00595eb7",
+            "title": "Positive reinforcement produced by electrical stimulation of septal area and other regions of rat brain.",
+            "url": "https://www.semanticscholar.org/paper/874ff0cb6e572381a520104ba73fac1e00595eb7",
+            "venue": "Journal of comparative and physiological psychology",
+            "year": 1954
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1868196",
+                    "name": "Tom Everitt"
+                },
+                {
+                    "authorId": "144154444",
+                    "name": "Marcus Hutter"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "b7da135294eb5ae6828fddea373b1405ffd68968",
+            "title": "The Alignment Problem for Bayesian History-Based Reinforcement Learners\u2217",
+            "url": "https://www.semanticscholar.org/paper/b7da135294eb5ae6828fddea373b1405ffd68968",
+            "venue": "",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1868196",
+                    "name": "Tom Everitt"
+                }
+            ],
+            "doi": "10.25911/5D134A2F8A7D3",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "8b1e149ae23ea7839c9e3a2bd063c354ff7075d0",
+            "title": "Towards Safe Artificial General Intelligence",
+            "url": "https://www.semanticscholar.org/paper/8b1e149ae23ea7839c9e3a2bd063c354ff7075d0",
+            "venue": "",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2257284827",
+                    "name": "Nate Soares"
+                },
+                {
+                    "authorId": "1825635",
+                    "name": "Benja Fallenstein"
+                },
+                {
+                    "authorId": "2257265497",
+                    "name": "Stuart Armstrong"
+                },
+                {
+                    "authorId": "2542795",
+                    "name": "Eliezer Yudkowsky"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5be2ab6ca8675c9b5aa765cc6803f3b056eed233",
+            "title": "Corrigibility",
+            "url": "https://www.semanticscholar.org/paper/5be2ab6ca8675c9b5aa765cc6803f3b056eed233",
+            "venue": "AAAI Workshop: AI and Ethics",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2254026",
+                    "name": "Patrick LaVictoire"
+                },
+                {
+                    "authorId": "1825635",
+                    "name": "Benja Fallenstein"
+                },
+                {
+                    "authorId": "2542795",
+                    "name": "Eliezer Yudkowsky"
+                },
+                {
+                    "authorId": "2034274",
+                    "name": "M. B\u00e1r\u00e1sz"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "cd93af8a92ae504e8bf7227073fc8de4a3133580",
+            "title": "Program Equilibrium in the Prisoner \u2019 s Dilemma via L\u00f6b \u2019 s Theorem",
+            "url": "https://www.semanticscholar.org/paper/cd93af8a92ae504e8bf7227073fc8de4a3133580",
+            "venue": "",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2989692",
+                    "name": "Tor Lattimore"
+                },
+                {
+                    "authorId": "144154444",
+                    "name": "Marcus Hutter"
+                }
+            ],
+            "doi": "10.1016/J.TCS.2013.09.022",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "2a84a2239f29d1e72be2d381374f11b2a49afd32",
+            "title": "General time consistent discounting",
+            "url": "https://www.semanticscholar.org/paper/2a84a2239f29d1e72be2d381374f11b2a49afd32",
+            "venue": "Theor. Comput. Sci.",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2072252",
+                    "name": "D. Chalmers"
+                }
+            ],
+            "doi": "10.1002/9781118922590.CH16",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "3185fd49b5e7ef39ac25faba3429b8ede069364f",
+            "title": "The Singularity: a Philosophical Analysis",
+            "url": "https://www.semanticscholar.org/paper/3185fd49b5e7ef39ac25faba3429b8ede069364f",
+            "venue": "",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1701353",
+                    "name": "Y. Shoham"
+                },
+                {
+                    "authorId": "38076874",
+                    "name": "Rob Powers"
+                },
+                {
+                    "authorId": "3050250",
+                    "name": "Trond Grenager"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a69e33ce29c451655d917bf9387ed57e115fcfc7",
+            "title": "Multi-Agent Reinforcement Learning:a critical survey",
+            "url": "https://www.semanticscholar.org/paper/a69e33ce29c451655d917bf9387ed57e115fcfc7",
+            "venue": "",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145430701",
+                    "name": "J. Pearl"
+                }
+            ],
+            "doi": "10.2307/3182612",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "62064218665ad89f0cb2a44f5b19f7703d9c7e71",
+            "title": "Causality: Models, Reasoning and Inference",
+            "url": "https://www.semanticscholar.org/paper/62064218665ad89f0cb2a44f5b19f7703d9c7e71",
+            "venue": "",
+            "year": 2000
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2238176724",
+                    "name": "R. S. Sutton"
+                },
+                {
+                    "authorId": "1730590",
+                    "name": "A. Barto"
+                }
+            ],
+            "doi": "10.1109/TNN.1998.712192",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "97efafdb4a3942ab3efba53ded7413199f79c054",
+            "title": "Reinforcement Learning: An Introduction",
+            "url": "https://www.semanticscholar.org/paper/97efafdb4a3942ab3efba53ded7413199f79c054",
+            "venue": "IEEE Trans. Neural Networks",
+            "year": 1998
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145179124",
+                    "name": "I. Good"
+                }
+            ],
+            "doi": "10.1016/S0065-2458(08)60418-0",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "d7d9d643a378b6fd69fff63d113f4eae1983adc8",
+            "title": "Speculations Concerning the First Ultraintelligent Machine",
+            "url": "https://www.semanticscholar.org/paper/d7d9d643a378b6fd69fff63d113f4eae1983adc8",
+            "venue": "Adv. Comput.",
+            "year": 1965
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Reward Tampering Problems and Solutions in Reinforcement Learning: A Causal Influence Diagram Perspective",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/6cc143037044cd3ef3a3f194ba0a1b2446854e26",
+    "venue": "arXiv.org",
+    "year": 2019
+}

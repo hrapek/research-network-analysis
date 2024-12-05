@@ -1,0 +1,1470 @@
+{
+    "abstract": "This is the second of three planned papers describing ZAP, a satisfiability engine that substantially generalizes existing tools while retaining the performance characteristics of modern high performance solvers. The fundamental idea underlying ZAP is that many problems passed to such engines contain rich internal structure that is obscured by the Boolean representation used; our goal is to define a representation in which this structure is apparent and can easily be exploited to improve computational performance. This paper presents the theoretical basis for the ideas underlying ZAP, arguing that existing ideas in this area exploit a single, recurring structure in that multiple database axioms can be obtained by operating on a single axiom using a subgroup of the group of permutations on the literals in the problem. We argue that the group structure precisely captures the general structure at which earlier approaches hinted, and give numerous examples of its use. We go on to extend the Davis-Putnam-Logemann-Loveland inference procedure to this broader setting, and show that earlier computational improvements are either subsumed or left intact by the new method. The third paper in this series discusses ZAP's implementation and presents experimental performance results.",
+    "arxivId": "1109.2134",
+    "authors": [
+        {
+            "authorId": "32871852",
+            "name": "Heidi E. Dixon",
+            "url": "https://www.semanticscholar.org/author/32871852"
+        },
+        {
+            "authorId": "1706174",
+            "name": "M. Ginsberg",
+            "url": "https://www.semanticscholar.org/author/1706174"
+        },
+        {
+            "authorId": "1781295",
+            "name": "E. Luks",
+            "url": "https://www.semanticscholar.org/author/1781295"
+        },
+        {
+            "authorId": "1710622",
+            "name": "A. Parkes",
+            "url": "https://www.semanticscholar.org/author/1710622"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": "2012.07983",
+            "authors": [
+                {
+                    "authorId": "3393746",
+                    "name": "Anastasios Kyrillidis"
+                },
+                {
+                    "authorId": "9083969",
+                    "name": "Moshe Y. Vardi"
+                },
+                {
+                    "authorId": "89864923",
+                    "name": "Zhiwei Zhang"
+                }
+            ],
+            "doi": "10.1609/aaai.v35i5.16502",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "27bea15cfbfadf2c20795e0fa02dd6afd611c557",
+            "title": "On Continuous Local BDD-Based Search for Hybrid SAT Solving",
+            "url": "https://www.semanticscholar.org/paper/27bea15cfbfadf2c20795e0fa02dd6afd611c557",
+            "venue": "AAAI",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1430781268",
+                    "name": "Tevich Treethanyaphong"
+                },
+                {
+                    "authorId": "3250023",
+                    "name": "A. Surarerks"
+                }
+            ],
+            "doi": "10.1109/EECS.2018.00053",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "cf43d3d5db1078e6c34dc6cb2bd6cfcd15c3d785",
+            "title": "Dynamic Symmetry Breaking in SAT using Augmented Clauses with a Polynomial-Time Lexicographic Pruning",
+            "url": "https://www.semanticscholar.org/paper/cf43d3d5db1078e6c34dc6cb2bd6cfcd15c3d785",
+            "venue": "2018 2nd European Conference on Electrical Engineering and Computer Science (EECS)",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2893613",
+                    "name": "Marc Vinyals"
+                },
+                {
+                    "authorId": "1917932",
+                    "name": "J. Elffers"
+                },
+                {
+                    "authorId": "1403832671",
+                    "name": "Jes\u00fas Gir\u00e1ldez-Cru"
+                },
+                {
+                    "authorId": "24594038",
+                    "name": "S. Gocht"
+                },
+                {
+                    "authorId": "2670785",
+                    "name": "Jakob Nordstr\u00f6m"
+                }
+            ],
+            "doi": "10.1007/978-3-319-94144-8_18",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "2ad54f29760623a8bc77f0a64401929da361072d",
+            "title": "In Between Resolution and Cutting Planes: A Study of Proof Systems for Pseudo-Boolean SAT Solving",
+            "url": "https://www.semanticscholar.org/paper/2ad54f29760623a8bc77f0a64401929da361072d",
+            "venue": "SAT",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3012418",
+                    "name": "Du\u0161an Guller"
+                }
+            ],
+            "doi": "10.5220/0003061700310042",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "59bd786547fddae9595697189532e0b9f189c441",
+            "title": "A DPLL Procedure for the Propositional G\u00f6del Logic",
+            "url": "https://www.semanticscholar.org/paper/59bd786547fddae9595697189532e0b9f189c441",
+            "venue": "IJCCI",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "49454635",
+                    "name": "M. Iser"
+                },
+                {
+                    "authorId": "1809560",
+                    "name": "Norbert Manthey"
+                },
+                {
+                    "authorId": "2501782",
+                    "name": "C. Sinz"
+                }
+            ],
+            "doi": "10.1007/978-3-319-24318-4_19",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "25d07c3474f1fa670d4fe734852a2db2671e6e26",
+            "title": "Recognition of Nested Gates in CNF Formulas",
+            "url": "https://www.semanticscholar.org/paper/25d07c3474f1fa670d4fe734852a2db2671e6e26",
+            "venue": "SAT",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "34774914",
+                    "name": "B. C. Ribas"
+                },
+                {
+                    "authorId": "2694903",
+                    "name": "Rubens Massayuki Suguimoto"
+                },
+                {
+                    "authorId": "3314246",
+                    "name": "R. Monta\u00f1o"
+                },
+                {
+                    "authorId": "144055537",
+                    "name": "Fabiano Silva"
+                },
+                {
+                    "authorId": "144837222",
+                    "name": "M. Castilho"
+                }
+            ],
+            "doi": "10.1109/BRACIS.2013.41",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "1b08d873a42a5a5e4a401dcfdc49a977d9eb36e3",
+            "title": "PBFVMC: A New Pseudo-Boolean Formulation to Virtual-Machine Consolidation",
+            "url": "https://www.semanticscholar.org/paper/1b08d873a42a5a5e4a401dcfdc49a977d9eb36e3",
+            "venue": "2013 Brazilian Conference on Intelligent Systems",
+            "year": 2013
+        },
+        {
+            "arxivId": "1109.2142",
+            "authors": [
+                {
+                    "authorId": "32871852",
+                    "name": "Heidi E. Dixon"
+                },
+                {
+                    "authorId": "1706174",
+                    "name": "M. Ginsberg"
+                },
+                {
+                    "authorId": "2076322780",
+                    "name": "David K. Hofer"
+                },
+                {
+                    "authorId": "1781295",
+                    "name": "E. Luks"
+                },
+                {
+                    "authorId": "1710622",
+                    "name": "A. Parkes"
+                }
+            ],
+            "doi": "10.1613/jair.1656",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f42437c9fe1c3c14f65fd014bc0225d5603b1458",
+            "title": "Generalizing Boolean Satisfiability III: Implementation",
+            "url": "https://www.semanticscholar.org/paper/f42437c9fe1c3c14f65fd014bc0225d5603b1458",
+            "venue": "J. Artif. Intell. Res.",
+            "year": 2011
+        },
+        {
+            "arxivId": "1107.0040",
+            "authors": [
+                {
+                    "authorId": "32871852",
+                    "name": "Heidi E. Dixon"
+                },
+                {
+                    "authorId": "1706174",
+                    "name": "M. Ginsberg"
+                },
+                {
+                    "authorId": "1710622",
+                    "name": "A. Parkes"
+                }
+            ],
+            "doi": "10.1613/jair.1353",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "bfa948334238ff0e9f615f3a2690147f0f06440f",
+            "title": "Generalizing Boolean Satisfiability I: Background and Survey of Existing Work",
+            "url": "https://www.semanticscholar.org/paper/bfa948334238ff0e9f615f3a2690147f0f06440f",
+            "venue": "J. Artif. Intell. Res.",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "48229640",
+                    "name": "Ashish Sabharwal"
+                }
+            ],
+            "doi": "10.1007/s10601-008-9060-1",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "4c27b8e0cebfed05053ebb3a1833b5296fe7ad72",
+            "title": "SymChaff: exploiting symmetry in a structure-aware satisfiability solver",
+            "url": "https://www.semanticscholar.org/paper/4c27b8e0cebfed05053ebb3a1833b5296fe7ad72",
+            "venue": "Constraints",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3012418",
+                    "name": "Du\u0161an Guller"
+                }
+            ],
+            "doi": "10.1016/j.fss.2008.05.011",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f4a79992268edc7eaf80f420dede07bb0b40a127",
+            "title": "On the refutational completeness of signed binary resolution and hyperresolution",
+            "url": "https://www.semanticscholar.org/paper/f4a79992268edc7eaf80f420dede07bb0b40a127",
+            "venue": "Fuzzy Sets Syst.",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144829981",
+                    "name": "P. Lima"
+                },
+                {
+                    "authorId": "2149979067",
+                    "name": "M. M. Morveli-Espinoza"
+                },
+                {
+                    "authorId": "2054642447",
+                    "name": "G. Pereira"
+                },
+                {
+                    "authorId": "15651510",
+                    "name": "Talita O. Ferreira"
+                },
+                {
+                    "authorId": "2089536",
+                    "name": "F. Fran\u00e7a"
+                }
+            ],
+            "doi": "10.1142/S0218001408006673",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d988c8c9a3018d2ec0d5eec0c600f421d7e53340",
+            "title": "Logical Reasoning via Satisfiability Mapped into Energy Functions",
+            "url": "https://www.semanticscholar.org/paper/d988c8c9a3018d2ec0d5eec0c600f421d7e53340",
+            "venue": "Int. J. Pattern Recognit. Artif. Intell.",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3006038",
+                    "name": "Nathan Segerlind"
+                }
+            ],
+            "doi": "10.2178/bsl/1203350879",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "83b5c6a1625cb215ab6ec591d83125008ee344ee",
+            "title": "The Complexity of Propositional Proofs",
+            "url": "https://www.semanticscholar.org/paper/83b5c6a1625cb215ab6ec591d83125008ee344ee",
+            "venue": "Bull. Symb. Log.",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3023847",
+                    "name": "L. Bordeaux"
+                },
+                {
+                    "authorId": "1728524",
+                    "name": "Y. Hamadi"
+                },
+                {
+                    "authorId": "1978393184",
+                    "name": "Lintao Zhang"
+                }
+            ],
+            "doi": "10.1145/1177352.1177354",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "a367ee5aaaed7748c06ec8b25ee0cd0ad510e319",
+            "title": "Propositional Satisfiability and Constraint Programming: A comparative survey",
+            "url": "https://www.semanticscholar.org/paper/a367ee5aaaed7748c06ec8b25ee0cd0ad510e319",
+            "venue": "CSUR",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2713205",
+                    "name": "E. Giunchiglia"
+                },
+                {
+                    "authorId": "1746354",
+                    "name": "Yuliya Lierler"
+                },
+                {
+                    "authorId": "1735029",
+                    "name": "M. Maratea"
+                }
+            ],
+            "doi": "10.1007/s10817-006-9033-2",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "2f4c49bb3ee03726e869f8c1885d66e687819fd9",
+            "title": "Answer Set Programming Based on Propositional Satisfiability",
+            "url": "https://www.semanticscholar.org/paper/2f4c49bb3ee03726e869f8c1885d66e687819fd9",
+            "venue": "Journal of Automated Reasoning",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2713205",
+                    "name": "E. Giunchiglia"
+                },
+                {
+                    "authorId": "1735029",
+                    "name": "M. Maratea"
+                }
+            ],
+            "doi": "10.1007/11562931_6",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "363ff707fc02bd64c28870faab5667926ce199cd",
+            "title": "On the Relation Between Answer Set and SAT Procedures (or, Between cmodels and smodels)",
+            "url": "https://www.semanticscholar.org/paper/363ff707fc02bd64c28870faab5667926ce199cd",
+            "venue": "ICLP",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "48229640",
+                    "name": "Ashish Sabharwal"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "15f0cd112582de097a412e8b16a670bdb5f2f8dd",
+            "title": "SymChaff: A Structure-Aware Satisfiability Solver",
+            "url": "https://www.semanticscholar.org/paper/15f0cd112582de097a412e8b16a670bdb5f2f8dd",
+            "venue": "AAAI",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "32871852",
+                    "name": "Heidi E. Dixon"
+                },
+                {
+                    "authorId": "1706174",
+                    "name": "M. Ginsberg"
+                },
+                {
+                    "authorId": "2076322780",
+                    "name": "David K. Hofer"
+                },
+                {
+                    "authorId": "1781295",
+                    "name": "E. Luks"
+                },
+                {
+                    "authorId": "1710622",
+                    "name": "A. Parkes"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "04e4a924ebaed266f4f32fdeae7999664d248c44",
+            "title": "Implementing a Generalized Version of Resolution",
+            "url": "https://www.semanticscholar.org/paper/04e4a924ebaed266f4f32fdeae7999664d248c44",
+            "venue": "AAAI",
+            "year": 2004
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2713205",
+                    "name": "E. Giunchiglia"
+                },
+                {
+                    "authorId": "1746354",
+                    "name": "Yuliya Lierler"
+                },
+                {
+                    "authorId": "1735029",
+                    "name": "M. Maratea"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "dd4aac78ea7dca3ba85547001273aa4490eaada3",
+            "title": "SAT-Based Answer Set Programming",
+            "url": "https://www.semanticscholar.org/paper/dd4aac78ea7dca3ba85547001273aa4490eaada3",
+            "venue": "AAAI",
+            "year": 2004
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2126894228",
+                    "name": "Anastasios Kyrillidis"
+                },
+                {
+                    "authorId": "4260659",
+                    "name": "Anshumali Shrivastava"
+                },
+                {
+                    "authorId": "9083969",
+                    "name": "Moshe Y. Vardi"
+                },
+                {
+                    "authorId": "2116181688",
+                    "name": "Zhiwei Zhang"
+                }
+            ],
+            "doi": "10.1016/j.artint.2021.103559",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "5f05defee95ec832ffb56c60433d5899e7639ff8",
+            "title": "Solving hybrid Boolean constraints in continuous space via multilinear Fourier expansions",
+            "url": "https://www.semanticscholar.org/paper/5f05defee95ec832ffb56c60433d5899e7639ff8",
+            "venue": "Artif. Intell.",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "49454635",
+                    "name": "M. Iser"
+                }
+            ],
+            "doi": "10.5445/IR/1000118523",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9d8e55ac79999880d15b6a38109a68b2ad07f7dd",
+            "title": "Recognition and Exploitation of Gate Structure in SAT Solving",
+            "url": "https://www.semanticscholar.org/paper/9d8e55ac79999880d15b6a38109a68b2ad07f7dd",
+            "venue": "",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2242016701",
+                    "name": "Carla P. Gomes"
+                },
+                {
+                    "authorId": "1690271",
+                    "name": "Henry A. Kautz"
+                },
+                {
+                    "authorId": "48229640",
+                    "name": "Ashish Sabharwal"
+                },
+                {
+                    "authorId": "2271116452",
+                    "name": "Bart Selman"
+                }
+            ],
+            "doi": "10.1016/S1574-6526(07)03002-7",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "b23683f354d7ecf5c88095102f01c2ab0977e71c",
+            "title": "Chapter 2 Satisfiability Solvers",
+            "url": "https://www.semanticscholar.org/paper/b23683f354d7ecf5c88095102f01c2ab0977e71c",
+            "venue": "",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1726451",
+                    "name": "Ian P. Gent"
+                },
+                {
+                    "authorId": "1893988",
+                    "name": "K. Petrie"
+                },
+                {
+                    "authorId": "4347257",
+                    "name": "J. Puget"
+                }
+            ],
+            "doi": "10.1016/S1574-6526(06)80014-3",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c865586749d99fb16bf4f37c8f39a413ae40b9cd",
+            "title": "Symmetry in Constraint Programming",
+            "url": "https://www.semanticscholar.org/paper/c865586749d99fb16bf4f37c8f39a413ae40b9cd",
+            "venue": "Handbook of Constraint Programming",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144833426",
+                    "name": "F. Rossi"
+                },
+                {
+                    "authorId": "1994523",
+                    "name": "P. V. Beek"
+                },
+                {
+                    "authorId": "1733716",
+                    "name": "T. Walsh"
+                }
+            ],
+            "doi": "10.1016/s1574-6526(06)x8001-x",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "341e501790209f178ded2bd6b8729add7ec8bb02",
+            "title": "Handbook of Constraint Programming",
+            "url": "https://www.semanticscholar.org/paper/341e501790209f178ded2bd6b8729add7ec8bb02",
+            "venue": "Handbook of Constraint Programming",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "48229640",
+                    "name": "Ashish Sabharwal"
+                },
+                {
+                    "authorId": "1791374",
+                    "name": "P. Beame"
+                },
+                {
+                    "authorId": "1690271",
+                    "name": "Henry A. Kautz"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "d65d828689322d3b2237be48b1167e865ed68d9a",
+            "title": "Algorithmic applications of propositional proof complexity",
+            "url": "https://www.semanticscholar.org/paper/d65d828689322d3b2237be48b1167e865ed68d9a",
+            "venue": "",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "32871852",
+                    "name": "Heidi E. Dixon"
+                },
+                {
+                    "authorId": "1706174",
+                    "name": "M. Ginsberg"
+                },
+                {
+                    "authorId": "145288314",
+                    "name": "Christopher B. Wilson"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "15ee55bbb6396f9b5c2c6a088b7526c954d2f884",
+            "title": "Automating pseudo-boolean inference within a dpll framework",
+            "url": "https://www.semanticscholar.org/paper/15ee55bbb6396f9b5c2c6a088b7526c954d2f884",
+            "venue": "",
+            "year": 2004
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144659218",
+                    "name": "C. Gomes"
+                },
+                {
+                    "authorId": "1690271",
+                    "name": "Henry A. Kautz"
+                },
+                {
+                    "authorId": "48229640",
+                    "name": "Ashish Sabharwal"
+                },
+                {
+                    "authorId": "1744679",
+                    "name": "B. Selman"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "b041289687ae5eab2f376296ef60d79cf50b1d29",
+            "title": "Handbook of Knowledge Representation Edited Satisfiability Solvers",
+            "url": "https://www.semanticscholar.org/paper/b041289687ae5eab2f376296ef60d79cf50b1d29",
+            "venue": "",
+            "year": null
+        },
+        {
+            "arxivId": null,
+            "authors": [],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "79d9c8f57b9b4c2161be675ce25128c435f5ecc5",
+            "title": "DigitalCommons@UNO DigitalCommons@UNO",
+            "url": "https://www.semanticscholar.org/paper/79d9c8f57b9b4c2161be675ce25128c435f5ecc5",
+            "venue": "",
+            "year": null
+        }
+    ],
+    "corpusId": 1676792,
+    "doi": "10.1613/jair.1555",
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": true,
+    "isPublisherLicensed": true,
+    "is_open_access": true,
+    "is_publisher_licensed": true,
+    "numCitedBy": 27,
+    "numCiting": 39,
+    "paperId": "32e95df7a551c48cefd10b09cf00e8314bc828de",
+    "references": [
+        {
+            "arxivId": "1109.2142",
+            "authors": [
+                {
+                    "authorId": "32871852",
+                    "name": "Heidi E. Dixon"
+                },
+                {
+                    "authorId": "1706174",
+                    "name": "M. Ginsberg"
+                },
+                {
+                    "authorId": "2076322780",
+                    "name": "David K. Hofer"
+                },
+                {
+                    "authorId": "1781295",
+                    "name": "E. Luks"
+                },
+                {
+                    "authorId": "1710622",
+                    "name": "A. Parkes"
+                }
+            ],
+            "doi": "10.1613/jair.1656",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "f42437c9fe1c3c14f65fd014bc0225d5603b1458",
+            "title": "Generalizing Boolean Satisfiability III: Implementation",
+            "url": "https://www.semanticscholar.org/paper/f42437c9fe1c3c14f65fd014bc0225d5603b1458",
+            "venue": "J. Artif. Intell. Res.",
+            "year": 2011
+        },
+        {
+            "arxivId": "1107.0040",
+            "authors": [
+                {
+                    "authorId": "32871852",
+                    "name": "Heidi E. Dixon"
+                },
+                {
+                    "authorId": "1706174",
+                    "name": "M. Ginsberg"
+                },
+                {
+                    "authorId": "1710622",
+                    "name": "A. Parkes"
+                }
+            ],
+            "doi": "10.1613/jair.1353",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "bfa948334238ff0e9f615f3a2690147f0f06440f",
+            "title": "Generalizing Boolean Satisfiability I: Background and Survey of Existing Work",
+            "url": "https://www.semanticscholar.org/paper/bfa948334238ff0e9f615f3a2690147f0f06440f",
+            "venue": "J. Artif. Intell. Res.",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1755324",
+                    "name": "\u00c1. Seress"
+                }
+            ],
+            "doi": "10.1017/cbo9780511546549",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "20bc26029fa04674e8e1f53476c011bb546af921",
+            "title": "Permutation Group Algorithms",
+            "url": "https://www.semanticscholar.org/paper/20bc26029fa04674e8e1f53476c011bb546af921",
+            "venue": "",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1701841",
+                    "name": "Stefan Szeider"
+                }
+            ],
+            "doi": "10.1007/s00224-004-1192-0",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "a5d2358134c825ce04fae68ae90a9c8afe328ec0",
+            "title": "The Complexity of Resolution with Generalized Symmetry Rules",
+            "url": "https://www.semanticscholar.org/paper/a5d2358134c825ce04fae68ae90a9c8afe328ec0",
+            "venue": "Theory of Computing Systems",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2318023",
+                    "name": "Matthew W. Moskewicz"
+                },
+                {
+                    "authorId": "2081144864",
+                    "name": "Conor F. Madigan"
+                },
+                {
+                    "authorId": "2118976646",
+                    "name": "Ying Zhao"
+                },
+                {
+                    "authorId": "1978393184",
+                    "name": "Lintao Zhang"
+                },
+                {
+                    "authorId": "144682958",
+                    "name": "S. Malik"
+                }
+            ],
+            "doi": "10.1145/378239.379017",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "d208e1985fd2b4a5a19a5426daaed380760fb922",
+            "title": "Chaff: engineering an efficient SAT solver",
+            "url": "https://www.semanticscholar.org/paper/d208e1985fd2b4a5a19a5426daaed380760fb922",
+            "venue": "Proceedings of the 38th Design Automation Conference (IEEE Cat. No.01CH37232)",
+            "year": 2001
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "70244843",
+                    "name": "Chu Min Li"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d176b09e23a3f99e8f65da11124f8cdae31bb161",
+            "title": "Integrating Equivalency Reasoning into Davis-Putnam Procedure",
+            "url": "https://www.semanticscholar.org/paper/d176b09e23a3f99e8f65da11124f8cdae31bb161",
+            "venue": "AAAI/IAAI",
+            "year": 2000
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145489965",
+                    "name": "Peter Baumgartner"
+                },
+                {
+                    "authorId": "1746220",
+                    "name": "F. Massacci"
+                }
+            ],
+            "doi": "10.1007/3-540-44957-4_34",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "cee656291cae660d2fe1de553313cadf36baab94",
+            "title": "The Taming of the (X)OR",
+            "url": "https://www.semanticscholar.org/paper/cee656291cae660d2fe1de553313cadf36baab94",
+            "venue": "Computational Logic",
+            "year": 2000
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "32871852",
+                    "name": "Heidi E. Dixon"
+                },
+                {
+                    "authorId": "1706174",
+                    "name": "M. Ginsberg"
+                }
+            ],
+            "doi": "10.1017/S0269888900001041",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "f474edb8a6b22ec2a8804c48983dd1114e38e541",
+            "title": "Combining satisfiability techniques from AI and OR",
+            "url": "https://www.semanticscholar.org/paper/f474edb8a6b22ec2a8804c48983dd1114e38e541",
+            "venue": "The Knowledge Engineering Review",
+            "year": 2000
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2119077495",
+                    "name": "Hantao Zhang"
+                },
+                {
+                    "authorId": "1716735",
+                    "name": "M. Stickel"
+                }
+            ],
+            "doi": "10.1023/A:1006351428454",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "cb4781cfed95d2d3e9f5071b8da60d069bfc353e",
+            "title": "Implementing the Davis\u2013Putnam Method",
+            "url": "https://www.semanticscholar.org/paper/cb4781cfed95d2d3e9f5071b8da60d069bfc353e",
+            "venue": "Journal of Automated Reasoning",
+            "year": 2000
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1794932",
+                    "name": "L. Babai"
+                },
+                {
+                    "authorId": "1781295",
+                    "name": "E. Luks"
+                },
+                {
+                    "authorId": "1755324",
+                    "name": "\u00c1. Seress"
+                }
+            ],
+            "doi": "10.1137/S0097539794229417",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "6da55dfb3e7a164d7e704367a321db19650e258e",
+            "title": "Fast Management of Permutation Groups I",
+            "url": "https://www.semanticscholar.org/paper/6da55dfb3e7a164d7e704367a321db19650e258e",
+            "venue": "SIAM J. Comput.",
+            "year": 1997
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1801670",
+                    "name": "P. Pudl\u00e1k"
+                }
+            ],
+            "doi": "10.2307/2275583",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "71c95492a611a8217ddfc2ee2231b3753abdff41",
+            "title": "Lower bounds for resolution and cutting plane proofs and monotone computations",
+            "url": "https://www.semanticscholar.org/paper/71c95492a611a8217ddfc2ee2231b3753abdff41",
+            "venue": "Journal of Symbolic Logic",
+            "year": 1997
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1692160",
+                    "name": "R. Bayardo"
+                },
+                {
+                    "authorId": "2179471",
+                    "name": "R. Schrag"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "1e0a2c4cb05483ca48f98f2018e4aefe5a91c838",
+            "title": "Using CSP Look-Back Techniques to Solve Real-World SAT Instances",
+            "url": "https://www.semanticscholar.org/paper/1e0a2c4cb05483ca48f98f2018e4aefe5a91c838",
+            "venue": "AAAI/IAAI",
+            "year": 1997
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "46890564",
+                    "name": "J. Crawford"
+                },
+                {
+                    "authorId": "1706174",
+                    "name": "M. Ginsberg"
+                },
+                {
+                    "authorId": "1781295",
+                    "name": "E. Luks"
+                },
+                {
+                    "authorId": "14610544",
+                    "name": "Amitabha Roy"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f85d0dd1943c875aaf9dfd401afd17db3002c9d9",
+            "title": "Symmetry-Breaking Predicates for Search Problems",
+            "url": "https://www.semanticscholar.org/paper/f85d0dd1943c875aaf9dfd401afd17db3002c9d9",
+            "venue": "KR",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1692160",
+                    "name": "R. Bayardo"
+                },
+                {
+                    "authorId": "1710994",
+                    "name": "Daniel P. Miranker"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "465a5674e788cd09ad5cc20d7ce42b30fe2190de",
+            "title": "A Complexity Analysis of Space-Bounded Learning Algorithms for the Constraint Satisfaction Problem",
+            "url": "https://www.semanticscholar.org/paper/465a5674e788cd09ad5cc20d7ce42b30fe2190de",
+            "venue": "AAAI/IAAI, Vol. 1",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1781295",
+                    "name": "E. Luks"
+                }
+            ],
+            "doi": "10.1090/dimacs/011/11",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "5a2ac601b8d47475da93b4f4c1dfa882639b3419",
+            "title": "Permutation Groups and Polynomial-Time Computation",
+            "url": "https://www.semanticscholar.org/paper/5a2ac601b8d47475da93b4f4c1dfa882639b3419",
+            "venue": "Groups And Computation",
+            "year": 1996
+        },
+        {
+            "arxivId": "cs/9308101",
+            "authors": [
+                {
+                    "authorId": "2255387030",
+                    "name": "Matthew L. Ginsberg"
+                }
+            ],
+            "doi": "10.1613/jair.1",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8e997aed067360cc4bce0ee91ad9883bb3291568",
+            "title": "Dynamic Backtracking",
+            "url": "https://www.semanticscholar.org/paper/8e997aed067360cc4bce0ee91ad9883bb3291568",
+            "venue": "J. Artif. Intell. Res.",
+            "year": 1993
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "31305070",
+                    "name": "J. Hooker"
+                }
+            ],
+            "doi": "10.1007/BF02186368",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5e2a6feeb996b7b032c26ff48313575b7c762def",
+            "title": "Generalized resolution and cutting planes",
+            "url": "https://www.semanticscholar.org/paper/5e2a6feeb996b7b032c26ff48313575b7c762def",
+            "venue": "",
+            "year": 1988
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2082365914",
+                    "name": "A. McIver"
+                },
+                {
+                    "authorId": "32011274",
+                    "name": "P. M. Neumann"
+                }
+            ],
+            "doi": "10.1093/QMATH/38.4.473",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "5d28718b0ad7a42cb055eca4a972e5b6c90a8cc7",
+            "title": "ENUMERATING FINITE GROUPS",
+            "url": "https://www.semanticscholar.org/paper/5d28718b0ad7a42cb055eca4a972e5b6c90a8cc7",
+            "venue": "",
+            "year": 1987
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2063032649",
+                    "name": "W. J. Cook"
+                },
+                {
+                    "authorId": "3348571",
+                    "name": "Collette R. Coullard"
+                },
+                {
+                    "authorId": "1767680",
+                    "name": "Gy\u00f6rgy Tur\u00e1n"
+                }
+            ],
+            "doi": "10.1016/0166-218X(87)90039-4",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7c4bf3eb6433f20f74cab3fa83767b7831d073d3",
+            "title": "On the complexity of cutting-plane proofs",
+            "url": "https://www.semanticscholar.org/paper/7c4bf3eb6433f20f74cab3fa83767b7831d073d3",
+            "venue": "Discret. Appl. Math.",
+            "year": 1987
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145846954",
+                    "name": "B. Krishnamurthy"
+                }
+            ],
+            "doi": "10.1007/BF00265682",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "d66961dfc62b7dda0e65518dc78992571c652e0b",
+            "title": "Short proofs for tricky formulas",
+            "url": "https://www.semanticscholar.org/paper/d66961dfc62b7dda0e65518dc78992571c652e0b",
+            "venue": "Acta Informatica",
+            "year": 1985
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2875953",
+                    "name": "M. Jerrum"
+                }
+            ],
+            "doi": "10.1109/SFCS.1982.52",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "5daedeb3a18adc72447f0dce094bb04b82f08fad",
+            "title": "A compact representation for permutation groups",
+            "url": "https://www.semanticscholar.org/paper/5daedeb3a18adc72447f0dce094bb04b82f08fad",
+            "venue": "23rd Annual Symposium on Foundations of Computer Science (sfcs 1982)",
+            "year": 1982
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "39493519",
+                    "name": "M. Guignard"
+                },
+                {
+                    "authorId": "2350936",
+                    "name": "K. Spielberg"
+                }
+            ],
+            "doi": "10.1287/opre.29.1.49",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "131cb8f16d703ebf6612f5c56ee416d750477fe0",
+            "title": "Logical Reduction Methods in Zero-One Programming - Minimal Preferred Variables",
+            "url": "https://www.semanticscholar.org/paper/131cb8f16d703ebf6612f5c56ee416d750477fe0",
+            "venue": "Oper. Res.",
+            "year": 1981
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2318023",
+                    "name": "Matthew W. Moskewicz"
+                },
+                {
+                    "authorId": "2081144864",
+                    "name": "Conor F. Madigan"
+                },
+                {
+                    "authorId": "2118976646",
+                    "name": "Ying Zhao"
+                },
+                {
+                    "authorId": "1978393184",
+                    "name": "Lintao Zhang"
+                },
+                {
+                    "authorId": "144682958",
+                    "name": "S. Malik"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "7b912b3c5bf4609a6f326ed5afdf5f78fd90d0c2",
+            "title": "Cha : Engineering an e cient SAT solver",
+            "url": "https://www.semanticscholar.org/paper/7b912b3c5bf4609a6f326ed5afdf5f78fd90d0c2",
+            "venue": "DAC 2001",
+            "year": 2001
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "34983374",
+                    "name": "B. Bunday"
+                }
+            ],
+            "doi": "10.1016/s0898-1221(97)90061-4",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "520a7c66f55ff6681effc2e276cf9a92da87952f",
+            "title": "Logic-Based 0-1 Constraint Programming",
+            "url": "https://www.semanticscholar.org/paper/520a7c66f55ff6681effc2e276cf9a92da87952f",
+            "venue": "",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2202315626",
+                    "name": "John M. Wilson"
+                }
+            ],
+            "doi": "10.1057/jors.1996.181",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f1a3026f81c3cd070c71af77b24794cbd77f96a6",
+            "title": "Logic-Based 0-1 Constraint Programming",
+            "url": "https://www.semanticscholar.org/paper/f1a3026f81c3cd070c71af77b24794cbd77f96a6",
+            "venue": "",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144938179",
+                    "name": "P. Barth"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "3472ca60726039c3052f9fbe89a8afd9aaa46d9a",
+            "title": "A Davis-Putnam based enumeration algorithm for linear pseudo-Boolean optimization",
+            "url": "https://www.semanticscholar.org/paper/3472ca60726039c3052f9fbe89a8afd9aaa46d9a",
+            "venue": "",
+            "year": 1995
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2200969",
+                    "name": "L. Pyber"
+                }
+            ],
+            "doi": "10.2307/2946623<",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "05e3f4c547cc99f9ee8483c7e1c7a99141887875",
+            "title": "Enumerating finite groups of given order",
+            "url": "https://www.semanticscholar.org/paper/05e3f4c547cc99f9ee8483c7e1c7a99141887875",
+            "venue": "",
+            "year": 1993
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1794932",
+                    "name": "L. Babai"
+                }
+            ],
+            "doi": "10.1080/00927878608823393",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "e184bdb87a7d7fb0ff8ab3bae01b60b6135c117b",
+            "title": "On the length of subgroup chains in the symmetric group",
+            "url": "https://www.semanticscholar.org/paper/e184bdb87a7d7fb0ff8ab3bae01b60b6135c117b",
+            "venue": "",
+            "year": 1986
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145602378",
+                    "name": "Armin Haken"
+                }
+            ],
+            "doi": "10.1016/0304-3975(85)90144-6",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ffeefe1d68710ebaeb7cf3db92de919b8dcecb4e",
+            "title": "The Intractability of Resolution",
+            "url": "https://www.semanticscholar.org/paper/ffeefe1d68710ebaeb7cf3db92de919b8dcecb4e",
+            "venue": "Theor. Comput. Sci.",
+            "year": 1985
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "103130054",
+                    "name": "G. S. Tseitin"
+                }
+            ],
+            "doi": "10.1007/978-3-642-81955-1_28",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "674c0d017a03c9716d490517ad1a58c72f8d9c5d",
+            "title": "On the Complexity of Derivation in Propositional Calculus",
+            "url": "https://www.semanticscholar.org/paper/674c0d017a03c9716d490517ad1a58c72f8d9c5d",
+            "venue": "",
+            "year": 1983
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "119524476",
+                    "name": "George W. Polites"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "45648780a6b1cabcdb98554ceb81fed2195bcf66",
+            "title": "An introduction to the theory of groups",
+            "url": "https://www.semanticscholar.org/paper/45648780a6b1cabcdb98554ceb81fed2195bcf66",
+            "venue": "",
+            "year": 1968
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1750403",
+                    "name": "M. Harrison"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "3c9d921ac6599ee31cf36d52e4901897fd7166cb",
+            "title": "Introduction to switching and automata theory",
+            "url": "https://www.semanticscholar.org/paper/3c9d921ac6599ee31cf36d52e4901897fd7166cb",
+            "venue": "",
+            "year": 1965
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        },
+        {
+            "category": "Mathematics",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Generalizing Boolean Satisfiability II: Theory",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/32e95df7a551c48cefd10b09cf00e8314bc828de",
+    "venue": "Journal of Artificial Intelligence Research",
+    "year": 2004
+}

@@ -1,0 +1,702 @@
+{
+    "abstract": "The ways in which an agent's actions affect the world can often be modeled compactly using a set of relational probabilistic planning rules. This paper addresses the problem of learning such rule sets for multiple related tasks. We take a hierarchical Bayesian approach, in which the system learns a prior distribution over rule sets. We present a class of prior distributions parameterized by a rule set prototype that is stochastically modified to produce a task-specific rule set. We also describe a coordinate ascent algorithm that iteratively optimizes the task-specific rule sets and the prior distribution. Experiments using this algorithm show that transferring information from related tasks significantly reduces the amount of training data required to predict action effects in blocks-world domains.",
+    "arxivId": "1206.5249",
+    "authors": [
+        {
+            "authorId": "1857380",
+            "name": "A. Deshpande",
+            "url": "https://www.semanticscholar.org/author/1857380"
+        },
+        {
+            "authorId": "3226208",
+            "name": "Brian Milch",
+            "url": "https://www.semanticscholar.org/author/3226208"
+        },
+        {
+            "authorId": "1982950",
+            "name": "Luke Zettlemoyer",
+            "url": "https://www.semanticscholar.org/author/1982950"
+        },
+        {
+            "authorId": "1709512",
+            "name": "L. Kaelbling",
+            "url": "https://www.semanticscholar.org/author/1709512"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "25161802",
+                    "name": "Ankuj Arora"
+                },
+                {
+                    "authorId": "1796942",
+                    "name": "H. Fiorino"
+                },
+                {
+                    "authorId": "1777631",
+                    "name": "D. Pellier"
+                },
+                {
+                    "authorId": "1787600",
+                    "name": "Marc M\u00e9tivier"
+                },
+                {
+                    "authorId": "2583724",
+                    "name": "S. Pesty"
+                }
+            ],
+            "doi": "10.1017/S0269888918000188",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "03e5e22509386a03cda56146ec56510dcaaab269",
+            "title": "A review of learning planning action models",
+            "url": "https://www.semanticscholar.org/paper/03e5e22509386a03cda56146ec56510dcaaab269",
+            "venue": "The Knowledge Engineering Review",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "31710455",
+                    "name": "D. Mart\u00ednez"
+                },
+                {
+                    "authorId": "40910923",
+                    "name": "G. Aleny\u00e0"
+                },
+                {
+                    "authorId": "1735976",
+                    "name": "C. Torras"
+                },
+                {
+                    "authorId": "143681572",
+                    "name": "Tony Ribeiro"
+                },
+                {
+                    "authorId": "2150026074",
+                    "name": "Katsumi Inoue"
+                }
+            ],
+            "doi": "10.1609/icaps.v26i1.13746",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8b34a9b1d3165154cbc843ff5795543cac82b569",
+            "title": "Learning Relational Dynamics of Stochastic Domains for Planning",
+            "url": "https://www.semanticscholar.org/paper/8b34a9b1d3165154cbc843ff5795543cac82b569",
+            "venue": "ICAPS",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2029651",
+                    "name": "Hankui Zhuo"
+                },
+                {
+                    "authorId": "152290618",
+                    "name": "Qiang Yang"
+                }
+            ],
+            "doi": "10.1016/j.artint.2014.03.004",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "297ea90c4cd2d4dd5a4a26abce7eff686d211382",
+            "title": "Action-model acquisition for planning via transfer learning",
+            "url": "https://www.semanticscholar.org/paper/297ea90c4cd2d4dd5a4a26abce7eff686d211382",
+            "venue": "Artif. Intell.",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145160047",
+                    "name": "Zhao Xu"
+                },
+                {
+                    "authorId": "1746871",
+                    "name": "K. Kersting"
+                }
+            ],
+            "doi": "10.1109/ICDM.2011.108",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "1251860e30903098db0648ca313b6fa46a5e6910",
+            "title": "Multi-task Learning with Task Relations",
+            "url": "https://www.semanticscholar.org/paper/1251860e30903098db0648ca313b6fa46a5e6910",
+            "venue": "2011 IEEE 11th International Conference on Data Mining",
+            "year": 2011
+        },
+        {
+            "arxivId": "1202.3728",
+            "authors": [
+                {
+                    "authorId": "2548384",
+                    "name": "Hannaneh Hajishirzi"
+                },
+                {
+                    "authorId": "3118681",
+                    "name": "J. Hockenmaier"
+                },
+                {
+                    "authorId": "143801711",
+                    "name": "E. Mueller"
+                },
+                {
+                    "authorId": "145957401",
+                    "name": "Eyal Amir"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "32748d3e22fab6e63a8be38ca4b0ea2622324f21",
+            "title": "Reasoning about RoboCup Soccer Narratives",
+            "url": "https://www.semanticscholar.org/paper/32748d3e22fab6e63a8be38ca4b0ea2622324f21",
+            "venue": "UAI",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1901298",
+                    "name": "E. Cilia"
+                },
+                {
+                    "authorId": "3208878",
+                    "name": "Niels Landwehr"
+                },
+                {
+                    "authorId": "1702610",
+                    "name": "Andrea Passerini"
+                }
+            ],
+            "doi": "10.3233/FI-2011-604",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "913dccb90693a87843d374464feb026016c9768a",
+            "title": "Relational Feature Mining with Hierarchical Multitask kFOIL",
+            "url": "https://www.semanticscholar.org/paper/913dccb90693a87843d374464feb026016c9768a",
+            "venue": "Fundam. Informaticae",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1901298",
+                    "name": "E. Cilia"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c6c9c497d22268f218ca2487d12c756e1dae543f",
+            "title": "Statistical and Relational Learning for Understanding Enzyme Function",
+            "url": "https://www.semanticscholar.org/paper/c6c9c497d22268f218ca2487d12c756e1dae543f",
+            "venue": "",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3208878",
+                    "name": "Niels Landwehr"
+                },
+                {
+                    "authorId": "1702610",
+                    "name": "Andrea Passerini"
+                },
+                {
+                    "authorId": "1740042",
+                    "name": "L. D. Raedt"
+                },
+                {
+                    "authorId": "1688235",
+                    "name": "P. Frasconi"
+                }
+            ],
+            "doi": "10.1007/s10994-009-5163-1",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b73bb1627854bc887376863502b2856d99197ffe",
+            "title": "Fast learning of relational kernels",
+            "url": "https://www.semanticscholar.org/paper/b73bb1627854bc887376863502b2856d99197ffe",
+            "venue": "Machine Learning",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1770649",
+                    "name": "Gregor Leban"
+                },
+                {
+                    "authorId": "3057356",
+                    "name": "J. Zabkar"
+                },
+                {
+                    "authorId": "1725040",
+                    "name": "I. Bratko"
+                }
+            ],
+            "doi": "10.1007/978-3-540-85928-4_10",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "07b1cbb5f29563195384fcac646269a96d4b84a0",
+            "title": "An Experiment in Robot Discovery with ILP",
+            "url": "https://www.semanticscholar.org/paper/07b1cbb5f29563195384fcac646269a96d4b84a0",
+            "venue": "ILP",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "25161802",
+                    "name": "Ankuj Arora"
+                },
+                {
+                    "authorId": "1796942",
+                    "name": "H. Fiorino"
+                },
+                {
+                    "authorId": "1777631",
+                    "name": "D. Pellier"
+                },
+                {
+                    "authorId": "1787600",
+                    "name": "Marc M\u00e9tivier"
+                },
+                {
+                    "authorId": "2583724",
+                    "name": "S. Pesty"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "55267b8fd1b175b77fa7897e8f04a8cc0d75015f",
+            "title": "Printed in the United Kingdom A Review of Learning Planning Action Models",
+            "url": "https://www.semanticscholar.org/paper/55267b8fd1b175b77fa7897e8f04a8cc0d75015f",
+            "venue": "",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "31710455",
+                    "name": "D. Mart\u00ednez"
+                },
+                {
+                    "authorId": "40910923",
+                    "name": "G. Aleny\u00e0"
+                },
+                {
+                    "authorId": "143681572",
+                    "name": "Tony Ribeiro"
+                },
+                {
+                    "authorId": "1728869",
+                    "name": "Katsumi Inoue"
+                },
+                {
+                    "authorId": "1735976",
+                    "name": "C. Torras"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9f06375a01ffbdf1244e5217fdc8fb3d7b41cffb",
+            "title": "Relational Reinforcement Learning for Planning with Exogenous Effects",
+            "url": "https://www.semanticscholar.org/paper/9f06375a01ffbdf1244e5217fdc8fb3d7b41cffb",
+            "venue": "J. Mach. Learn. Res.",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2244169816",
+                    "name": "David Mart\u00ednez Mart\u00ednez"
+                }
+            ],
+            "doi": "10.5821/dissertation-2117-112777",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "86eb9a2038ed7226ab6b7671bc14a6fb9fb11560",
+            "title": "Learning relational models with human interaction for planning in robotics",
+            "url": "https://www.semanticscholar.org/paper/86eb9a2038ed7226ab6b7671bc14a6fb9fb11560",
+            "venue": "",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1901298",
+                    "name": "E. Cilia"
+                },
+                {
+                    "authorId": "2067024355",
+                    "name": "Neils Landwehr"
+                },
+                {
+                    "authorId": "1702610",
+                    "name": "Andrea Passerini"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "0924d48e5829307b78f0913489d8861c2fc399a0",
+            "title": "Mining Drug Resistance Relational Features with Hierarchical Multitask kFOIL",
+            "url": "https://www.semanticscholar.org/paper/0924d48e5829307b78f0913489d8861c2fc399a0",
+            "venue": "",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2153814",
+                    "name": "Lilyana Mihalkova"
+                },
+                {
+                    "authorId": "1797655",
+                    "name": "R. Mooney"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "0e2b751140567ed3fd8329cb5e5bf8e1776c58f8",
+            "title": "Transfer Learning by Mapping with Minimal Target Data",
+            "url": "https://www.semanticscholar.org/paper/0e2b751140567ed3fd8329cb5e5bf8e1776c58f8",
+            "venue": "",
+            "year": 2008
+        }
+    ],
+    "corpusId": 8141202,
+    "doi": "10.5555/3020488.3020499",
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 14,
+    "numCiting": 12,
+    "paperId": "8bfcd2285fe4fa50a868f753c8a6e8a4de1a5f39",
+    "references": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2151812271",
+                    "name": "Jian Zhang"
+                },
+                {
+                    "authorId": "1744700",
+                    "name": "Zoubin Ghahramani"
+                },
+                {
+                    "authorId": "35729970",
+                    "name": "Yiming Yang"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "12ccc43692cf774c66100e95ee2992afd7382ab5",
+            "title": "Learning Multiple Related Tasks using Latent Independent Component Analysis",
+            "url": "https://www.semanticscholar.org/paper/12ccc43692cf774c66100e95ee2992afd7382ab5",
+            "venue": "NIPS",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2114075909",
+                    "name": "Kai Yu"
+                },
+                {
+                    "authorId": "1700754",
+                    "name": "Volker Tresp"
+                },
+                {
+                    "authorId": "2071649",
+                    "name": "A. Schwaighofer"
+                }
+            ],
+            "doi": "10.1145/1102351.1102479",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "135687fa2e5573037748dcf44d1c3d6766809f57",
+            "title": "Learning Gaussian processes from multiple tasks",
+            "url": "https://www.semanticscholar.org/paper/135687fa2e5573037748dcf44d1c3d6766809f57",
+            "venue": "ICML",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1982950",
+                    "name": "Luke Zettlemoyer"
+                },
+                {
+                    "authorId": "3202401",
+                    "name": "H. Pasula"
+                },
+                {
+                    "authorId": "1709512",
+                    "name": "L. Kaelbling"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "76093fa7a0125fa313347ae0e212c8b5ded9e0d1",
+            "title": "Learning Planning Rules in Noisy Stochastic Worlds",
+            "url": "https://www.semanticscholar.org/paper/76093fa7a0125fa313347ae0e212c8b5ded9e0d1",
+            "venue": "AAAI",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3202401",
+                    "name": "H. Pasula"
+                },
+                {
+                    "authorId": "1982950",
+                    "name": "Luke Zettlemoyer"
+                },
+                {
+                    "authorId": "1709512",
+                    "name": "L. Kaelbling"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "21bc08803d66998f54c3ee53f3f8d5dca1882022",
+            "title": "Learning Probabilistic Relational Planning Rules",
+            "url": "https://www.semanticscholar.org/paper/21bc08803d66998f54c3ee53f3f8d5dca1882022",
+            "venue": "ICAPS",
+            "year": 2004
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1690967",
+                    "name": "Avrim Blum"
+                },
+                {
+                    "authorId": "144162125",
+                    "name": "J. Langford"
+                }
+            ],
+            "doi": "10.1007/10720246_25",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "65cc3077da736cc263509fbf76879ea9944b4920",
+            "title": "Probabilistic Planning in the Graphplan Framework",
+            "url": "https://www.semanticscholar.org/paper/65cc3077da736cc263509fbf76879ea9944b4920",
+            "venue": "ECP",
+            "year": 1999
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "47392513",
+                    "name": "Jonathan Baxter"
+                }
+            ],
+            "doi": "10.1023/A:1007327622663",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "1bd6e929ed8384ea2212d50ab3c103ec018cc9fd",
+            "title": "A Bayesian/Information Theoretic Model of Learning to Learn via Multiple Task Sampling",
+            "url": "https://www.semanticscholar.org/paper/1bd6e929ed8384ea2212d50ab3c103ec018cc9fd",
+            "venue": "Machine Learning",
+            "year": 1997
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "8551365",
+                    "name": "N. Kushmerick"
+                },
+                {
+                    "authorId": "38413017",
+                    "name": "S. Hanks"
+                },
+                {
+                    "authorId": "1780531",
+                    "name": "Daniel S. Weld"
+                }
+            ],
+            "doi": "10.1016/0004-3702(94)00087-H",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "0e3e28bb805af09024feff7c044b1c107040f45e",
+            "title": "An Algorithm for Probabilistic Planning",
+            "url": "https://www.semanticscholar.org/paper/0e3e28bb805af09024feff7c044b1c107040f45e",
+            "venue": "Artif. Intell.",
+            "year": 1995
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1840562",
+                    "name": "R. Kass"
+                },
+                {
+                    "authorId": "4173210",
+                    "name": "D. Steffey"
+                }
+            ],
+            "doi": "10.1080/01621459.1989.10478825",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "974bf001626115b669aa92f6851d02accd8b9f00",
+            "title": "Approximate Bayesian Inference in Conditionally Independent Hierarchical Models (Parametric Empirical Bayes Models)",
+            "url": "https://www.semanticscholar.org/paper/974bf001626115b669aa92f6851d02accd8b9f00",
+            "venue": "",
+            "year": 1989
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3382525",
+                    "name": "D. Lindley"
+                }
+            ],
+            "doi": "10.1002/J.2333-8504.1970.TB00411.X",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "36b53ae39e2aef79d9c05324585bfb3092d4c383",
+            "title": "THE ESTIMATION OF MANY PARAMETERS",
+            "url": "https://www.semanticscholar.org/paper/36b53ae39e2aef79d9c05324585bfb3092d4c383",
+            "venue": "",
+            "year": 1970
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1857380",
+                    "name": "A. Deshpande"
+                },
+                {
+                    "authorId": "2078548779",
+                    "name": "Ashwin Desh"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "dc9934c7f45bc7401582f06ceeda7191d532f600",
+            "title": "Learning Probabilistic Relational Dynamics for Multiple Tasks by Ashwin Deshpande",
+            "url": "https://www.semanticscholar.org/paper/dc9934c7f45bc7401582f06ceeda7191d532f600",
+            "venue": "",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "46302818",
+                    "name": "M. Rosenstein"
+                },
+                {
+                    "authorId": "2784802",
+                    "name": "Zvika Marx"
+                },
+                {
+                    "authorId": "144299726",
+                    "name": "Thomas G. Dietterich"
+                },
+                {
+                    "authorId": "1709512",
+                    "name": "L. Kaelbling"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "8fda6e49881600910edc220aaa1e2a8d209aef26",
+            "title": "Transfer Learning with an Ensemble of Background Tasks",
+            "url": "https://www.semanticscholar.org/paper/8fda6e49881600910edc220aaa1e2a8d209aef26",
+            "venue": "NIPS 2005",
+            "year": 2005
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Learning Probabilistic Relational Dynamics for Multiple Tasks",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/8bfcd2285fe4fa50a868f753c8a6e8a4de1a5f39",
+    "venue": "Conference on Uncertainty in Artificial Intelligence",
+    "year": 2007
+}

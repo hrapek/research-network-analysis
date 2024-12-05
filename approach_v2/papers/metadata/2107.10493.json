@@ -1,0 +1,957 @@
+{
+    "abstract": "Abstract reasoning, i.e., inferring complicated patterns from given observations, is a central building block of artificial general intelligence. While humans find the answer by either eliminating wrong candidates or first constructing the answer, prior deep neural network (DNN)-based methods focus on the former discriminative approach. This paper aims to design a framework for the latter approach and bridge the gap between artificial and human intelligence. To this end, we propose logic-guided generation (LoGe), a novel generative DNN framework that reduces abstract reasoning as an optimization problem in propositional logic. LoGe is composed of three steps: extract propositional variables from images, reason the answer variables with a logic layer, and reconstruct the answer image from the variables. We demonstrate that LoGe outperforms the black box DNN frameworks for generative abstract reasoning under the RAVEN benchmark, i.e., reconstructing answers based on capturing correct rules of various attributes from observations.",
+    "arxivId": "2107.10493",
+    "authors": [
+        {
+            "authorId": "2052088734",
+            "name": "Sihyun Yu",
+            "url": "https://www.semanticscholar.org/author/2052088734"
+        },
+        {
+            "authorId": "9962692",
+            "name": "Sangwoo Mo",
+            "url": "https://www.semanticscholar.org/author/9962692"
+        },
+        {
+            "authorId": "70560338",
+            "name": "Sungsoo Ahn",
+            "url": "https://www.semanticscholar.org/author/70560338"
+        },
+        {
+            "authorId": "143720148",
+            "name": "Jinwoo Shin",
+            "url": "https://www.semanticscholar.org/author/143720148"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": "2309.10532",
+            "authors": [
+                {
+                    "authorId": "2243255308",
+                    "name": "Yuan Yang"
+                },
+                {
+                    "authorId": "89274837",
+                    "name": "Deepayan Sanyal"
+                },
+                {
+                    "authorId": "32682119",
+                    "name": "James Ainooson"
+                },
+                {
+                    "authorId": "26305606",
+                    "name": "Joel Michelson"
+                },
+                {
+                    "authorId": "2243244781",
+                    "name": "Effat Farhana"
+                },
+                {
+                    "authorId": "2333314",
+                    "name": "M. Kunda"
+                }
+            ],
+            "doi": "10.48550/arXiv.2309.10532",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "9151ec8a80a92c5ce23a1660bd87ad2f2cbac515",
+            "title": "A Cognitively-Inspired Neural Architecture for Visual Abstract Reasoning Using Contrastive Perceptual and Conceptual Processing",
+            "url": "https://www.semanticscholar.org/paper/9151ec8a80a92c5ce23a1660bd87ad2f2cbac515",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": "2307.07734",
+            "authors": [
+                {
+                    "authorId": "2063909628",
+                    "name": "Fan Shi"
+                },
+                {
+                    "authorId": "2156072370",
+                    "name": "Bin Li"
+                },
+                {
+                    "authorId": "2212947154",
+                    "name": "Xiangyang Xue"
+                }
+            ],
+            "doi": "10.48550/arXiv.2307.07734",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "4d4eb2593400355e247ce22ac724426feb65266e",
+            "title": "Abstracting Concept-Changing Rules for Solving Raven's Progressive Matrix Problems",
+            "url": "https://www.semanticscholar.org/paper/4d4eb2593400355e247ce22ac724426feb65266e",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2186453457",
+                    "name": "Shukuo Zhao"
+                },
+                {
+                    "authorId": "2791132",
+                    "name": "Hongzhi You"
+                },
+                {
+                    "authorId": "144142354",
+                    "name": "Rui Zhang"
+                },
+                {
+                    "authorId": "1700241",
+                    "name": "Bailu Si"
+                },
+                {
+                    "authorId": "144056236",
+                    "name": "Zonglei Zhen"
+                },
+                {
+                    "authorId": "2066734",
+                    "name": "X. Wan"
+                },
+                {
+                    "authorId": "47858921",
+                    "name": "Da-Hui Wang"
+                }
+            ],
+            "doi": "10.1007/s12559-023-10154-3",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "16c98ad6881f6e22fcc67caab6c94af49b88529d",
+            "title": "An Interpretable Neuro-symbolic Model for Raven\u2019s Progressive Matrices Reasoning",
+            "url": "https://www.semanticscholar.org/paper/16c98ad6881f6e22fcc67caab6c94af49b88529d",
+            "venue": "Cognitive Computation",
+            "year": 2023
+        },
+        {
+            "arxivId": "2302.07137",
+            "authors": [
+                {
+                    "authorId": "2108828074",
+                    "name": "Yuan Yang"
+                },
+                {
+                    "authorId": "89274837",
+                    "name": "Deepayan Sanyal"
+                },
+                {
+                    "authorId": "26305606",
+                    "name": "Joel Michelson"
+                },
+                {
+                    "authorId": "32682119",
+                    "name": "James Ainooson"
+                },
+                {
+                    "authorId": "2333314",
+                    "name": "M. Kunda"
+                }
+            ],
+            "doi": "10.48550/arXiv.2302.07137",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "9122c793c43ef0792371de9cb7c043387df844c6",
+            "title": "Deep Non-Monotonic Reasoning for Visual Abstract Reasoning Tasks",
+            "url": "https://www.semanticscholar.org/paper/9122c793c43ef0792371de9cb7c043387df844c6",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2108826608",
+                    "name": "Yuan Yang"
+                },
+                {
+                    "authorId": "89274837",
+                    "name": "Deepayan Sanyal"
+                },
+                {
+                    "authorId": "26305606",
+                    "name": "Joel Michelson"
+                },
+                {
+                    "authorId": "32682119",
+                    "name": "James Ainooson"
+                },
+                {
+                    "authorId": "2333314",
+                    "name": "M. Kunda"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "acaf087d7e6e9fc0d1b01f29e464e24066ef5bd9",
+            "title": "A Conceptual Chronicle of Solving Raven's Progressive Matrices Computationally",
+            "url": "https://www.semanticscholar.org/paper/acaf087d7e6e9fc0d1b01f29e464e24066ef5bd9",
+            "venue": "AIC",
+            "year": 2022
+        }
+    ],
+    "corpusId": 236171337,
+    "doi": null,
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 5,
+    "numCiting": 26,
+    "paperId": "a3de4cae7417129f72a25768f91fa8b3c2d3687d",
+    "references": [
+        {
+            "arxivId": "2007.04212",
+            "authors": [
+                {
+                    "authorId": "3374063",
+                    "name": "Yuhuai Wu"
+                },
+                {
+                    "authorId": "88880715",
+                    "name": "Honghua Dong"
+                },
+                {
+                    "authorId": "1785346",
+                    "name": "R. Grosse"
+                },
+                {
+                    "authorId": "2503659",
+                    "name": "Jimmy Ba"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c3375b9b26c8f32e5c6a16443e80e9ec45055e0e",
+            "title": "The Scattering Compositional Learner: Discovering Objects, Attributes, Relationships in Analogical Reasoning",
+            "url": "https://www.semanticscholar.org/paper/c3375b9b26c8f32e5c6a16443e80e9ec45055e0e",
+            "venue": "ArXiv",
+            "year": 2020
+        },
+        {
+            "arxivId": "2006.11197",
+            "authors": [
+                {
+                    "authorId": "1390599104",
+                    "name": "Duo Wang"
+                },
+                {
+                    "authorId": "1708741",
+                    "name": "M. Jamnik"
+                },
+                {
+                    "authorId": "144269589",
+                    "name": "P. Lio\u2019"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "b366ad7c410409933256898065e3b9101f187f94",
+            "title": "Abstract Diagrammatic Reasoning with Multiplex Graph Networks",
+            "url": "https://www.semanticscholar.org/paper/b366ad7c410409933256898065e3b9101f187f94",
+            "venue": "ICLR",
+            "year": 2020
+        },
+        {
+            "arxivId": "2002.06838",
+            "authors": [
+                {
+                    "authorId": "2122826069",
+                    "name": "Sheng Hu"
+                },
+                {
+                    "authorId": "47009264",
+                    "name": "Yuqing Ma"
+                },
+                {
+                    "authorId": "6820648",
+                    "name": "Xianglong Liu"
+                },
+                {
+                    "authorId": "1492178649",
+                    "name": "Yanlu Wei"
+                },
+                {
+                    "authorId": "151475528",
+                    "name": "Shihao Bai"
+                }
+            ],
+            "doi": "10.1609/aaai.v35i2.16248",
+            "intent": [
+                "background",
+                "methodology",
+                "result"
+            ],
+            "isInfluential": true,
+            "paperId": "a3e9620223f8b00f8950a8d945142b80d401e950",
+            "title": "Stratified Rule-Aware Network for Abstract Visual Reasoning",
+            "url": "https://www.semanticscholar.org/paper/a3e9620223f8b00f8950a8d945142b80d401e950",
+            "venue": "AAAI",
+            "year": 2020
+        },
+        {
+            "arxivId": "1912.00569",
+            "authors": [
+                {
+                    "authorId": "84005711",
+                    "name": "Kecheng Zheng"
+                },
+                {
+                    "authorId": "143962510",
+                    "name": "Zhengjun Zha"
+                },
+                {
+                    "authorId": "2149192010",
+                    "name": "Wei Wei"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "result"
+            ],
+            "isInfluential": true,
+            "paperId": "e5404000e590555a47abd3b756b8e44d001d3f93",
+            "title": "Abstract Reasoning with Distracting Features",
+            "url": "https://www.semanticscholar.org/paper/e5404000e590555a47abd3b756b8e44d001d3f93",
+            "venue": "NeurIPS",
+            "year": 2019
+        },
+        {
+            "arxivId": "1912.00086",
+            "authors": [
+                {
+                    "authorId": null,
+                    "name": "Chi Zhang"
+                },
+                {
+                    "authorId": "26663607",
+                    "name": "Baoxiong Jia"
+                },
+                {
+                    "authorId": "144516508",
+                    "name": "Feng Gao"
+                },
+                {
+                    "authorId": "2672448",
+                    "name": "Yixin Zhu"
+                },
+                {
+                    "authorId": "2115863079",
+                    "name": "Hongjing Lu"
+                },
+                {
+                    "authorId": "145380991",
+                    "name": "Song-Chun Zhu"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology",
+                "result"
+            ],
+            "isInfluential": true,
+            "paperId": "0187141e52f6d5cd0cf812ced648960e8f610abe",
+            "title": "Learning Perceptual Inference by Contrasting",
+            "url": "https://www.semanticscholar.org/paper/0187141e52f6d5cd0cf812ced648960e8f610abe",
+            "venue": "NeurIPS",
+            "year": 2019
+        },
+        {
+            "arxivId": "1911.05990",
+            "authors": [
+                {
+                    "authorId": "2134322192",
+                    "name": "Lukas Hahne"
+                },
+                {
+                    "authorId": "73235537",
+                    "name": "Timo L\u00fcddecke"
+                },
+                {
+                    "authorId": "1714016",
+                    "name": "F. W\u00f6rg\u00f6tter"
+                },
+                {
+                    "authorId": "50110080",
+                    "name": "D. Kappel"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "5f15063b90b4358bff0b170586d3ab38a22d2f53",
+            "title": "Attention on Abstract Visual Reasoning",
+            "url": "https://www.semanticscholar.org/paper/5f15063b90b4358bff0b170586d3ab38a22d2f53",
+            "venue": "ArXiv",
+            "year": 2019
+        },
+        {
+            "arxivId": "1906.00446",
+            "authors": [
+                {
+                    "authorId": "143653164",
+                    "name": "Ali Razavi"
+                },
+                {
+                    "authorId": "3422336",
+                    "name": "A\u00e4ron van den Oord"
+                },
+                {
+                    "authorId": "1689108",
+                    "name": "O. Vinyals"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "6be216d93421bf19c1659e7721241ae73d483baf",
+            "title": "Generating Diverse High-Fidelity Images with VQ-VAE-2",
+            "url": "https://www.semanticscholar.org/paper/6be216d93421bf19c1659e7721241ae73d483baf",
+            "venue": "NeurIPS",
+            "year": 2019
+        },
+        {
+            "arxivId": "1905.12149",
+            "authors": [
+                {
+                    "authorId": "145980559",
+                    "name": "Po-Wei Wang"
+                },
+                {
+                    "authorId": "49698491",
+                    "name": "P. Donti"
+                },
+                {
+                    "authorId": "38105796",
+                    "name": "Bryan Wilder"
+                },
+                {
+                    "authorId": "117539586",
+                    "name": "Zico Kolter"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "d3850595d3ae7c73e9488054c9b437f75511b569",
+            "title": "SATNet: Bridging deep learning and logical reasoning using a differentiable satisfiability solver",
+            "url": "https://www.semanticscholar.org/paper/d3850595d3ae7c73e9488054c9b437f75511b569",
+            "venue": "ICML",
+            "year": 2019
+        },
+        {
+            "arxivId": "1903.02741",
+            "authors": [
+                {
+                    "authorId": null,
+                    "name": "Chi Zhang"
+                },
+                {
+                    "authorId": "144516508",
+                    "name": "Feng Gao"
+                },
+                {
+                    "authorId": "26663607",
+                    "name": "Baoxiong Jia"
+                },
+                {
+                    "authorId": "2672448",
+                    "name": "Yixin Zhu"
+                },
+                {
+                    "authorId": "145380991",
+                    "name": "Song-Chun Zhu"
+                }
+            ],
+            "doi": "10.1109/CVPR.2019.00546",
+            "intent": [
+                "background",
+                "methodology",
+                "result"
+            ],
+            "isInfluential": true,
+            "paperId": "d0bfd3cb732471a0843a39d2d047caf60a844466",
+            "title": "RAVEN: A Dataset for Relational and Analogical Visual REasoNing",
+            "url": "https://www.semanticscholar.org/paper/d0bfd3cb732471a0843a39d2d047caf60a844466",
+            "venue": "2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2019
+        },
+        {
+            "arxivId": "1812.06362",
+            "authors": [
+                {
+                    "authorId": "145980559",
+                    "name": "Po-Wei Wang"
+                },
+                {
+                    "authorId": "117539586",
+                    "name": "Zico Kolter"
+                }
+            ],
+            "doi": "10.1609/aaai.v33i01.33011641",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "91cb7c127fa3ace0611406b49c8d6cc468735d3b",
+            "title": "Low-rank semidefinite programming for the MAX2SAT problem",
+            "url": "https://www.semanticscholar.org/paper/91cb7c127fa3ace0611406b49c8d6cc468735d3b",
+            "venue": "AAAI",
+            "year": 2018
+        },
+        {
+            "arxivId": "1807.04225",
+            "authors": [
+                {
+                    "authorId": "35030998",
+                    "name": "Adam Santoro"
+                },
+                {
+                    "authorId": "145783676",
+                    "name": "Felix Hill"
+                },
+                {
+                    "authorId": "50181861",
+                    "name": "D. Barrett"
+                },
+                {
+                    "authorId": "4690624",
+                    "name": "Ari S. Morcos"
+                },
+                {
+                    "authorId": "2542999",
+                    "name": "T. Lillicrap"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "acc43abe319bca7652a91f7d4ca6187049fb82e4",
+            "title": "Measuring abstract reasoning in neural networks",
+            "url": "https://www.semanticscholar.org/paper/acc43abe319bca7652a91f7d4ca6187049fb82e4",
+            "venue": "ICML",
+            "year": 2018
+        },
+        {
+            "arxivId": "1711.00937",
+            "authors": [
+                {
+                    "authorId": "3422336",
+                    "name": "A\u00e4ron van den Oord"
+                },
+                {
+                    "authorId": "1689108",
+                    "name": "O. Vinyals"
+                },
+                {
+                    "authorId": "2645384",
+                    "name": "K. Kavukcuoglu"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f466157848d1a7772fb6d02cdac9a7a5e7ef982e",
+            "title": "Neural Discrete Representation Learning",
+            "url": "https://www.semanticscholar.org/paper/f466157848d1a7772fb6d02cdac9a7a5e7ef982e",
+            "venue": "NIPS",
+            "year": 2017
+        },
+        {
+            "arxivId": "1706.01427",
+            "authors": [
+                {
+                    "authorId": "35030998",
+                    "name": "Adam Santoro"
+                },
+                {
+                    "authorId": "143724694",
+                    "name": "David Raposo"
+                },
+                {
+                    "authorId": "50181861",
+                    "name": "D. Barrett"
+                },
+                {
+                    "authorId": "145478807",
+                    "name": "Mateusz Malinowski"
+                },
+                {
+                    "authorId": "1996134",
+                    "name": "Razvan Pascanu"
+                },
+                {
+                    "authorId": "2019153",
+                    "name": "P. Battaglia"
+                },
+                {
+                    "authorId": "2542999",
+                    "name": "T. Lillicrap"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "007112213ece771be72cbecfd59f048209facabd",
+            "title": "A simple neural network module for relational reasoning",
+            "url": "https://www.semanticscholar.org/paper/007112213ece771be72cbecfd59f048209facabd",
+            "venue": "NIPS",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145980559",
+                    "name": "Po-Wei Wang"
+                },
+                {
+                    "authorId": "1702500",
+                    "name": "Wei-Cheng Chang"
+                },
+                {
+                    "authorId": "145116464",
+                    "name": "J. Z. Kolter"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "1a0eff21a781df7ac5e3439988b0f23a0010644b",
+            "title": "The Mixing method: low-rank coordinate descent for semidefinite programming with diagonal constraints",
+            "url": "https://www.semanticscholar.org/paper/1a0eff21a781df7ac5e3439988b0f23a0010644b",
+            "venue": "",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "48548745",
+                    "name": "Nicolas Becker"
+                },
+                {
+                    "authorId": "47094714",
+                    "name": "F. Schmitz"
+                },
+                {
+                    "authorId": "119816877",
+                    "name": "A. Falk"
+                },
+                {
+                    "authorId": "70308552",
+                    "name": "J. Feldbr\u00fcgge"
+                },
+                {
+                    "authorId": "117810225",
+                    "name": "Daniel Recktenwald"
+                },
+                {
+                    "authorId": "144791275",
+                    "name": "O. Wilhelm"
+                },
+                {
+                    "authorId": "6552316",
+                    "name": "F. Preckel"
+                },
+                {
+                    "authorId": "1879737",
+                    "name": "F. Spinath"
+                }
+            ],
+            "doi": "10.3390/JINTELLIGENCE4010002",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d0a920de081cbdfb510a920f6d7d626066b4b651",
+            "title": "Preventing Response Elimination Strategies Improves the Convergent Validity of Figural Matrices",
+            "url": "https://www.semanticscholar.org/paper/d0a920de081cbdfb510a920f6d7d626066b4b651",
+            "venue": "",
+            "year": 2016
+        },
+        {
+            "arxivId": "1512.03385",
+            "authors": [
+                {
+                    "authorId": "39353098",
+                    "name": "Kaiming He"
+                },
+                {
+                    "authorId": "1771551",
+                    "name": "X. Zhang"
+                },
+                {
+                    "authorId": "3080683",
+                    "name": "Shaoqing Ren"
+                },
+                {
+                    "authorId": null,
+                    "name": "Jian Sun"
+                }
+            ],
+            "doi": "10.1109/cvpr.2016.90",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2c03df8b48bf3fa39054345bafabfeff15bfd11d",
+            "title": "Deep Residual Learning for Image Recognition",
+            "url": "https://www.semanticscholar.org/paper/2c03df8b48bf3fa39054345bafabfeff15bfd11d",
+            "venue": "2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2015
+        },
+        {
+            "arxivId": "1308.3432",
+            "authors": [
+                {
+                    "authorId": "1751762",
+                    "name": "Yoshua Bengio"
+                },
+                {
+                    "authorId": "2065623360",
+                    "name": "Nicholas L\u00e9onard"
+                },
+                {
+                    "authorId": "1760871",
+                    "name": "Aaron C. Courville"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "62c76ca0b2790c34e85ba1cce09d47be317c7235",
+            "title": "Estimating or Propagating Gradients Through Stochastic Neurons for Conditional Computation",
+            "url": "https://www.semanticscholar.org/paper/62c76ca0b2790c34e85ba1cce09d47be317c7235",
+            "venue": "ArXiv",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3427014",
+                    "name": "Ainsley Mitchum"
+                },
+                {
+                    "authorId": "7021958",
+                    "name": "Colleen M. Kelley"
+                }
+            ],
+            "doi": "10.1037/a0019182",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "b6dd866ce1c37a91a14ce4bb822d5a25d94e36e4",
+            "title": "Solve the problem first: constructive solution strategies can influence the accuracy of retrospective confidence judgments.",
+            "url": "https://www.semanticscholar.org/paper/b6dd866ce1c37a91a14ce4bb822d5a25d94e36e4",
+            "venue": "Journal of experimental psychology. Learning, memory, and cognition",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1734531",
+                    "name": "G. Pataki"
+                }
+            ],
+            "doi": "10.1287/moor.23.2.339",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "fd220b2e331ec732c76e8f14794c68eeb2e24532",
+            "title": "On the Rank of Extreme Matrices in Semidefinite Programs and the Multiplicity of Optimal Eigenvalues",
+            "url": "https://www.semanticscholar.org/paper/fd220b2e331ec732c76e8f14794c68eeb2e24532",
+            "venue": "Math. Oper. Res.",
+            "year": 1998
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3308557",
+                    "name": "Sepp Hochreiter"
+                },
+                {
+                    "authorId": "145341374",
+                    "name": "J. Schmidhuber"
+                }
+            ],
+            "doi": "10.1162/neco.1997.9.8.1735",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "2e9d221c206e9503ceb452302d68d10e293f2a10",
+            "title": "Long Short-Term Memory",
+            "url": "https://www.semanticscholar.org/paper/2e9d221c206e9503ceb452302d68d10e293f2a10",
+            "venue": "Neural Computation",
+            "year": 1997
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1694388",
+                    "name": "M. Goemans"
+                },
+                {
+                    "authorId": "30094424",
+                    "name": "David P. Williamson"
+                }
+            ],
+            "doi": "10.1145/227683.227684",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "2776d54485c112ceda70c4fee2ba6d85a331de0a",
+            "title": "Improved approximation algorithms for maximum cut and satisfiability problems using semidefinite programming",
+            "url": "https://www.semanticscholar.org/paper/2776d54485c112ceda70c4fee2ba6d85a331de0a",
+            "venue": "JACM",
+            "year": 1995
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1730380",
+                    "name": "A. Barvinok"
+                }
+            ],
+            "doi": "10.1007/BF02574037",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "86965ec73f5c86de1bc6e02646e2c0e120e05e0f",
+            "title": "Problems of distance geometry and convex properties of quadratic maps",
+            "url": "https://www.semanticscholar.org/paper/86965ec73f5c86de1bc6e02646e2c0e120e05e0f",
+            "venue": "Discret. Comput. Geom.",
+            "year": 1995
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1419690517",
+                    "name": "C. E. Bethell-Fox"
+                },
+                {
+                    "authorId": "4295710",
+                    "name": "D. Lohman"
+                },
+                {
+                    "authorId": "50257036",
+                    "name": "R. Snow"
+                }
+            ],
+            "doi": "10.1016/0160-2896(84)90009-6",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "591479ca4684e4659b4a6769d92f43ce2b4db6bb",
+            "title": "Adaptive reasoning: Componential and eye movement analysis of geometric analogy performance \u2606",
+            "url": "https://www.semanticscholar.org/paper/591479ca4684e4659b4a6769d92f43ce2b4db6bb",
+            "venue": "",
+            "year": 1984
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145761969",
+                    "name": "P. Carpenter"
+                },
+                {
+                    "authorId": "2065109",
+                    "name": "M. Just"
+                },
+                {
+                    "authorId": "2263056524",
+                    "name": "Peter Shell Carnegie"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "72a07410dbec0d67f45b4c6d5d49e38062b7da01",
+            "title": "From the SelectedWorks of Marcel Adam Just 1990 What one intelligence test measures : A theoretical account of the processing in the Raven Progressive Matrices Test",
+            "url": "https://www.semanticscholar.org/paper/72a07410dbec0d67f45b4c6d5d49e38062b7da01",
+            "venue": "",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2083975919",
+                    "name": "G. Abor Pataki"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "98afac959c1088cc4d65362bda223b68472931ee",
+            "title": "On the Rank of Extreme Matrices in Semideenite Programs and the Multiplicity of Optimal Eigenvalues",
+            "url": "https://www.semanticscholar.org/paper/98afac959c1088cc4d65362bda223b68472931ee",
+            "venue": "",
+            "year": 1997
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Abstract Reasoning via Logic-guided Generation",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/a3de4cae7417129f72a25768f91fa8b3c2d3687d",
+    "venue": "arXiv.org",
+    "year": 2021
+}

@@ -1,0 +1,802 @@
+{
+    "abstract": "In these notes we formally describe the functionality of Calculating Valid Domains from the BDD representing the solution space of valid configurations. The formalization is largely based on the CLab configuration framework.",
+    "arxivId": "0704.1394",
+    "authors": [
+        {
+            "authorId": "2745275",
+            "name": "T. Hadzic",
+            "url": "https://www.semanticscholar.org/author/2745275"
+        },
+        {
+            "authorId": "3319454",
+            "name": "R. M. Jensen",
+            "url": "https://www.semanticscholar.org/author/3319454"
+        },
+        {
+            "authorId": "30443435",
+            "name": "H. Andersen",
+            "url": "https://www.semanticscholar.org/author/30443435"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2108427122",
+                    "name": "Baijun Chen"
+                },
+                {
+                    "authorId": "2056030560",
+                    "name": "Tao Feng"
+                }
+            ],
+            "doi": "10.1109/DCABES.2018.00090",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "81e70abdc50fb4839c3ebce60c793dd12db819e1",
+            "title": "Top-k Query for Weighted Interactive Product Configuration",
+            "url": "https://www.semanticscholar.org/paper/81e70abdc50fb4839c3ebce60c793dd12db819e1",
+            "venue": "2018 17th International Symposium on Distributed Computing and Applications for Business Engineering and Science (DCABES)",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2211504",
+                    "name": "Christian Kroer"
+                },
+                {
+                    "authorId": "11127256",
+                    "name": "M. Svendsen"
+                },
+                {
+                    "authorId": "3319454",
+                    "name": "R. M. Jensen"
+                },
+                {
+                    "authorId": "2525870",
+                    "name": "J. Kiniry"
+                },
+                {
+                    "authorId": "3414599",
+                    "name": "Eilif Leknes"
+                }
+            ],
+            "doi": "10.1111/coin.12051",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "606bb80809a092b1ac5e95f216521c600fd50726",
+            "title": "Symbolic Configuration for Interactive Container Ship Stowage Planning",
+            "url": "https://www.semanticscholar.org/paper/606bb80809a092b1ac5e95f216521c600fd50726",
+            "venue": "Comput. Intell.",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "47338019",
+                    "name": "Nicolas Schmidt"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "a564f096f0dd5d53721dbd56a9f2ded059bd731c",
+            "title": "Compilation de pr\u00e9f\u00e9rences : application \u00e0 la configuration de produit",
+            "url": "https://www.semanticscholar.org/paper/a564f096f0dd5d53721dbd56a9f2ded059bd731c",
+            "venue": "",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1823956",
+                    "name": "L. Yu"
+                },
+                {
+                    "authorId": "2068454900",
+                    "name": "Feng Duan"
+                },
+                {
+                    "authorId": "2048947604",
+                    "name": "Yu Lei"
+                },
+                {
+                    "authorId": "70299218",
+                    "name": "R. Kacker"
+                },
+                {
+                    "authorId": "2239330255",
+                    "name": "D. R. Kuhn"
+                }
+            ],
+            "doi": "10.1109/HASE.2014.18",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "7a4133d0a10c60aed7d9e001d5698452e24cfc73",
+            "title": "Combinatorial Test Generation for Software Product Lines Using Minimum Invalid Tuples",
+            "url": "https://www.semanticscholar.org/paper/7a4133d0a10c60aed7d9e001d5698452e24cfc73",
+            "venue": "2014 IEEE 15th International Symposium on High-Assurance Systems Engineering",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2085014269",
+                    "name": "H. Fargier"
+                },
+                {
+                    "authorId": "1423937251",
+                    "name": "P. Marquis"
+                },
+                {
+                    "authorId": "47338019",
+                    "name": "Nicolas Schmidt"
+                }
+            ],
+            "doi": "10.3166/ria.28.571-592",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "579674cc58b155be2b53a66b4820dde84f988b3d",
+            "title": "Compacit\u00e9 pratique des diagrammes de d\u00e9cision valu\u00e9s. Normalisation, heuristiques et exp\u00e9rimentations",
+            "url": "https://www.semanticscholar.org/paper/579674cc58b155be2b53a66b4820dde84f988b3d",
+            "venue": "Rev. d'Intelligence Artif.",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3319454",
+                    "name": "R. M. Jensen"
+                },
+                {
+                    "authorId": "3414599",
+                    "name": "Eilif Leknes"
+                },
+                {
+                    "authorId": "2001133",
+                    "name": "Tom Bebbington"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "4dadf47e2aefb81830e20ddb067869ffa8bdca6c",
+            "title": "Fast Interactive Decision Support for Modifying Stowage Plans Using Binary Decision Diagrams",
+            "url": "https://www.semanticscholar.org/paper/4dadf47e2aefb81830e20ddb067869ffa8bdca6c",
+            "venue": "IMECS 2012",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "25009146",
+                    "name": "Marc\u00edlio Mendon\u00e7a"
+                },
+                {
+                    "authorId": "1723400",
+                    "name": "A. W\u0105sowski"
+                },
+                {
+                    "authorId": "1726889",
+                    "name": "K. Czarnecki"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "af7926923be14e9fc4ede76ed668d7d56392a470",
+            "title": "SAT-based analysis of feature models is easy",
+            "url": "https://www.semanticscholar.org/paper/af7926923be14e9fc4ede76ed668d7d56392a470",
+            "venue": "SPLC",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "25009146",
+                    "name": "Marc\u00edlio Mendon\u00e7a"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "c13e00910995db3f40d9223942584a5b532b6957",
+            "title": "Efficient Reasoning Techniques for Large Scale Feature Models",
+            "url": "https://www.semanticscholar.org/paper/c13e00910995db3f40d9223942584a5b532b6957",
+            "venue": "",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "40437496",
+                    "name": "Esben Rune Hansen"
+                },
+                {
+                    "authorId": "93489491",
+                    "name": "Peter Tiedemann"
+                }
+            ],
+            "doi": "10.1109/ICTAI.2008.131",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "12bc0e63ccd3e0798d4aba5424cdcdd9d5c5ab25",
+            "title": "Improving the Performance of Interactive Configuration with Regular String Constraints",
+            "url": "https://www.semanticscholar.org/paper/12bc0e63ccd3e0798d4aba5424cdcdd9d5c5ab25",
+            "venue": "2008 20th IEEE International Conference on Tools with Artificial Intelligence",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "40437496",
+                    "name": "Esben Rune Hansen"
+                }
+            ],
+            "doi": "10.1109/ICTAI.2008.132",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "6990b8ce4583a85881d59329fcd0bd3965558866",
+            "title": "Encoding CSPs with Zero-Suppressed Decision Diagrams",
+            "url": "https://www.semanticscholar.org/paper/6990b8ce4583a85881d59329fcd0bd3965558866",
+            "venue": "2008 20th IEEE International Conference on Tools with Artificial Intelligence",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "25009146",
+                    "name": "Marc\u00edlio Mendon\u00e7a"
+                },
+                {
+                    "authorId": "1723400",
+                    "name": "A. W\u0105sowski"
+                },
+                {
+                    "authorId": "1726889",
+                    "name": "K. Czarnecki"
+                },
+                {
+                    "authorId": "35002948",
+                    "name": "D. Cowan"
+                }
+            ],
+            "doi": "10.1145/1449913.1449918",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "1cc690ce5696c92cd7898cc00e64631686a78934",
+            "title": "Efficient compilation techniques for large scale feature models",
+            "url": "https://www.semanticscholar.org/paper/1cc690ce5696c92cd7898cc00e64631686a78934",
+            "venue": "GPCE '08",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "40437496",
+                    "name": "Esben Rune Hansen"
+                },
+                {
+                    "authorId": "93489491",
+                    "name": "Peter Tiedemann"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "42191190165a912636d09a3073797d74156b51c9",
+            "title": "Compressing Configuration Data for Memory Limited Devices",
+            "url": "https://www.semanticscholar.org/paper/42191190165a912636d09a3073797d74156b51c9",
+            "venue": "AAAI",
+            "year": 2007
+        },
+        {
+            "arxivId": "cs/0702170",
+            "authors": [
+                {
+                    "authorId": "93489491",
+                    "name": "Peter Tiedemann"
+                },
+                {
+                    "authorId": "30443435",
+                    "name": "H. Andersen"
+                },
+                {
+                    "authorId": "1801719",
+                    "name": "R. Pagh"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "a005c83193a5cdd06052e685a2cd716ef49a44b4",
+            "title": "Generic Global Constraints based on MDDs",
+            "url": "https://www.semanticscholar.org/paper/a005c83193a5cdd06052e685a2cd716ef49a44b4",
+            "venue": "ArXiv",
+            "year": 2007
+        },
+        {
+            "arxivId": "cs/0612068",
+            "authors": [
+                {
+                    "authorId": "40437496",
+                    "name": "Esben Rune Hansen"
+                },
+                {
+                    "authorId": "30443435",
+                    "name": "H. Andersen"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "2fafe619be2d5e165d1c0cecc0632ca636a4e578",
+            "title": "Interactive Configuration with Regular String Constraints",
+            "url": "https://www.semanticscholar.org/paper/2fafe619be2d5e165d1c0cecc0632ca636a4e578",
+            "venue": "AAAI",
+            "year": 2006
+        },
+        {
+            "arxivId": "cs/0611141",
+            "authors": [
+                {
+                    "authorId": "93489491",
+                    "name": "Peter Tiedemann"
+                },
+                {
+                    "authorId": "30443435",
+                    "name": "H. Andersen"
+                },
+                {
+                    "authorId": "1801719",
+                    "name": "R. Pagh"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "2c80890be695271593a49b3e362c1936d57194be",
+            "title": "A Generic Global Constraint based on MDDs",
+            "url": "https://www.semanticscholar.org/paper/2c80890be695271593a49b3e362c1936d57194be",
+            "venue": "ArXiv",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1760182",
+                    "name": "H. Fargier"
+                },
+                {
+                    "authorId": "2797015",
+                    "name": "J. Mengin"
+                },
+                {
+                    "authorId": "2055455680",
+                    "name": "Nicolas Schmidt"
+                }
+            ],
+            "doi": "10.4230/LIPIcs.CP.2022.23",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f1d519dce3a3225f47122e53765fd1ce12871474",
+            "title": "Nucleus-Satellites Systems of OMDDs for Reducing the Size of Compiled Forms",
+            "url": "https://www.semanticscholar.org/paper/f1d519dce3a3225f47122e53765fd1ce12871474",
+            "venue": "CP",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3133920",
+                    "name": "Arsalan Javeed"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8a75ea3704cb0ab22fec4d3b95c77e6548c881fb",
+            "title": "Gray-box combinatorial interaction testing",
+            "url": "https://www.semanticscholar.org/paper/8a75ea3704cb0ab22fec4d3b95c77e6548c881fb",
+            "venue": "",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2079224991",
+                    "name": "Alexandre Niveau"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "1e63e348b4cd29c0d2410510d877f828b3357866",
+            "title": "Compilation de connaissances pour la d\u00e9cision en ligne : application \u00e0 la conduite de syst\u00e8mes autonomes. (Knowledge compilation for online decision-making : application to the control of autonomous systems)",
+            "url": "https://www.semanticscholar.org/paper/1e63e348b4cd29c0d2410510d877f828b3357866",
+            "venue": "",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "40437496",
+                    "name": "Esben Rune Hansen"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d7666e3382666e2a99c7c2368b0ee442e0b8a77f",
+            "title": "Decision Support using Finite Automata and Decision Diagrams",
+            "url": "https://www.semanticscholar.org/paper/d7666e3382666e2a99c7c2368b0ee442e0b8a77f",
+            "venue": "",
+            "year": 2008
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2745275",
+                    "name": "T. Hadzic"
+                },
+                {
+                    "authorId": "31305070",
+                    "name": "J. Hooker"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "484aa044c0faafc7e4f733d015932fa5de90faff",
+            "title": "Postoptimality Analysis for Integer Programming Using Binary Decision Diagrams",
+            "url": "https://www.semanticscholar.org/paper/484aa044c0faafc7e4f733d015932fa5de90faff",
+            "venue": "",
+            "year": 2008
+        }
+    ],
+    "corpusId": 3265296,
+    "doi": null,
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 1,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 20,
+    "numCiting": 12,
+    "paperId": "e92e3129e6551d5917a5903577d7d63b57639218",
+    "references": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3319454",
+                    "name": "R. M. Jensen"
+                }
+            ],
+            "doi": "10.1007/978-3-540-30201-8_94",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "eddf6d23fd81ee9c592abb3e0298ea2f1a228ecc",
+            "title": "CLab: A C++ Library for Fast Backtrack-Free Interactive Product Configuration",
+            "url": "https://www.semanticscholar.org/paper/eddf6d23fd81ee9c592abb3e0298ea2f1a228ecc",
+            "venue": "CP",
+            "year": 2004
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1816314",
+                    "name": "J. Amilhastre"
+                },
+                {
+                    "authorId": "1760182",
+                    "name": "H. Fargier"
+                },
+                {
+                    "authorId": "1694497",
+                    "name": "P. Marquis"
+                }
+            ],
+            "doi": "10.1016/S0004-3702(01)00162-X",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "280c1dfe6040a386fad95055a41e47085dea6ee6",
+            "title": "Consistency restoration and explanations in dynamic CSPs Application to configuration",
+            "url": "https://www.semanticscholar.org/paper/280c1dfe6040a386fad95055a41e47085dea6ee6",
+            "venue": "Artif. Intell.",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144872811",
+                    "name": "E. Tsang"
+                }
+            ],
+            "doi": "10.1016/c2013-0-07627-x",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "df473e1cbce6bbd51e2a0ba88fdafd7b1270b54c",
+            "title": "Foundations of constraint satisfaction",
+            "url": "https://www.semanticscholar.org/paper/df473e1cbce6bbd51e2a0ba88fdafd7b1270b54c",
+            "venue": "Computation in cognitive science",
+            "year": 1993
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2745275",
+                    "name": "T. Hadzic"
+                },
+                {
+                    "authorId": "1847274",
+                    "name": "S. Subbarayan"
+                },
+                {
+                    "authorId": "3319454",
+                    "name": "R. M. Jensen"
+                },
+                {
+                    "authorId": "30443435",
+                    "name": "H. Andersen"
+                },
+                {
+                    "authorId": "2068629759",
+                    "name": "Jesper B. M\u00f8ller"
+                },
+                {
+                    "authorId": "1857342",
+                    "name": "H. Hulgaard"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "93b854eaed1773da7eabf9be6f69250e034fad35",
+            "title": "FAST BACKTRACK-FREE PRODUCT CONFIGURATION USING A PRECOMPILED SOLUTION SPACE REPRESENTATION",
+            "url": "https://www.semanticscholar.org/paper/93b854eaed1773da7eabf9be6f69250e034fad35",
+            "venue": "",
+            "year": 2004
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1847274",
+                    "name": "S. Subbarayan"
+                },
+                {
+                    "authorId": "3319454",
+                    "name": "R. M. Jensen"
+                },
+                {
+                    "authorId": "2745275",
+                    "name": "T. Hadzic"
+                },
+                {
+                    "authorId": "30443435",
+                    "name": "H. Andersen"
+                },
+                {
+                    "authorId": "1857342",
+                    "name": "H. Hulgaard"
+                },
+                {
+                    "authorId": "2068629759",
+                    "name": "Jesper B. M\u00f8ller"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "489447da75bb5012b40ba0259fd9a1786fac1dc6",
+            "title": "Comparing Two Implementations of a Complete and Backtrack-Free Interactive Configurator",
+            "url": "https://www.semanticscholar.org/paper/489447da75bb5012b40ba0259fd9a1786fac1dc6",
+            "venue": "",
+            "year": 2004
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2057639105",
+                    "name": "Jeppe Nejsum Madsen"
+                },
+                {
+                    "authorId": "152386681",
+                    "name": "M. Thesis"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "5fef8df48f87af2b256875d0c7dc114821961683",
+            "title": "Methods for Interactive Constraint Satisfaction",
+            "url": "https://www.semanticscholar.org/paper/5fef8df48f87af2b256875d0c7dc114821961683",
+            "venue": "",
+            "year": 2003
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2068629759",
+                    "name": "Jesper B. M\u00f8ller"
+                },
+                {
+                    "authorId": "2074613602",
+                    "name": "Henrik Reif"
+                },
+                {
+                    "authorId": "117379980",
+                    "name": "Andersen Henrik Hulgaard"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "0367d7f4f0075e5602257b379dd616718f3b45a0",
+            "title": "Product Configuration over the Internet",
+            "url": "https://www.semanticscholar.org/paper/0367d7f4f0075e5602257b379dd616718f3b45a0",
+            "venue": "",
+            "year": 2001
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "35339108",
+                    "name": "Prof. dr. christoph Meinel"
+                },
+                {
+                    "authorId": "35410727",
+                    "name": "D. T. Theobald"
+                }
+            ],
+            "doi": "10.1007/978-3-642-58940-9",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e21144c14200e4e94906bb63bb971ba694b25f0d",
+            "title": "Algorithms and Data Structures in VLSI Design",
+            "url": "https://www.semanticscholar.org/paper/e21144c14200e4e94906bb63bb971ba694b25f0d",
+            "venue": "Springer Berlin Heidelberg",
+            "year": 1998
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1751239",
+                    "name": "R. Dechter"
+                }
+            ],
+            "doi": "10.1007/3-540-59479-5",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "2bc1daaba330f4ea8a4f951d5dcd40c39bef5a8a",
+            "title": "Constraint Processing",
+            "url": "https://www.semanticscholar.org/paper/2bc1daaba330f4ea8a4f951d5dcd40c39bef5a8a",
+            "venue": "Lecture Notes in Computer Science",
+            "year": 1995
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "34673652",
+                    "name": "R. Bryant"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "38efda194ce8ca7166119ae403e43aef57f62f7c",
+            "title": "Graph-based Algorithm for Boolean Function Manipulation",
+            "url": "https://www.semanticscholar.org/paper/38efda194ce8ca7166119ae403e43aef57f62f7c",
+            "venue": "",
+            "year": 1989
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1681615",
+                    "name": "I. Wegener"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "53cfa279e8c20b3f58fc5323533408fc41ac0dbe",
+            "title": "Branching Programs and Binary Decision Diagrams",
+            "url": "https://www.semanticscholar.org/paper/53cfa279e8c20b3f58fc5323533408fc41ac0dbe",
+            "venue": "",
+            "year": 1987
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Calculating Valid Domains for BDD-Based Interactive Configuration",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/e92e3129e6551d5917a5903577d7d63b57639218",
+    "venue": "arXiv.org",
+    "year": 2007
+}

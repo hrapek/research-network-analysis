@@ -1,0 +1,668 @@
+{
+    "abstract": "Entity matching in Customer 360 is the task of determining if multiple records represent the same real world entity. Entities are typically people, organizations, locations, and events represented as attributed nodes in a graph, though they can also be represented as records in relational data. While probabilistic matching engines and artificial neural network models exist for this task, explaining entity matching has received less attention. In this demo, we present our Explainable Entity Matching (xEM) system and discuss the different AI/ML considerations that went into its implementation.",
+    "arxivId": "2212.00342",
+    "authors": [
+        {
+            "authorId": "2088077323",
+            "name": "Sukriti Jaitly",
+            "url": "https://www.semanticscholar.org/author/2088077323"
+        },
+        {
+            "authorId": "2192958696",
+            "name": "Deepa Mariam George",
+            "url": "https://www.semanticscholar.org/author/2192958696"
+        },
+        {
+            "authorId": "27526892",
+            "name": "Balaji Ganesan",
+            "url": "https://www.semanticscholar.org/author/27526892"
+        },
+        {
+            "authorId": "2193035545",
+            "name": "Muhammad Ameen",
+            "url": "https://www.semanticscholar.org/author/2193035545"
+        },
+        {
+            "authorId": "2193035487",
+            "name": "Srinivas Pusapati",
+            "url": "https://www.semanticscholar.org/author/2193035487"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [],
+    "corpusId": 254125610,
+    "doi": "10.1145/3570991.3571065",
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": true,
+    "isPublisherLicensed": true,
+    "is_open_access": true,
+    "is_publisher_licensed": true,
+    "numCitedBy": 0,
+    "numCiting": 19,
+    "paperId": "f474925aea22b01e4162f2ca49cd3bccf64e2afb",
+    "references": [
+        {
+            "arxivId": "2110.00516",
+            "authors": [
+                {
+                    "authorId": "83434956",
+                    "name": "Nils Barlaug"
+                }
+            ],
+            "doi": "10.1109/TKDE.2022.3200644",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "0be17541c14af963574aad07fde0ccc5e349c91d",
+            "title": "LEMON: Explainable Entity Matching",
+            "url": "https://www.semanticscholar.org/paper/0be17541c14af963574aad07fde0ccc5e349c91d",
+            "venue": "IEEE Transactions on Knowledge and Data Engineering",
+            "year": 2021
+        },
+        {
+            "arxivId": "2107.04771",
+            "authors": [
+                {
+                    "authorId": "2008225769",
+                    "name": "Jaspreet Singh Dhani"
+                },
+                {
+                    "authorId": "2118856926",
+                    "name": "Ruchika Bhatt"
+                },
+                {
+                    "authorId": "27526892",
+                    "name": "Balaji Ganesan"
+                },
+                {
+                    "authorId": "2118983992",
+                    "name": "Parikshet Sirohi"
+                },
+                {
+                    "authorId": "67173624",
+                    "name": "Vasudha Bhatnagar"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ac54c5def38ceecc41afd3ba25ffa618b3f62c7a",
+            "title": "Similar Cases Recommendation using Legal Knowledge Graphs",
+            "url": "https://www.semanticscholar.org/paper/ac54c5def38ceecc41afd3ba25ffa618b3f62c7a",
+            "venue": "ArXiv",
+            "year": 2021
+        },
+        {
+            "arxivId": "2106.12665",
+            "authors": [
+                {
+                    "authorId": "2120295059",
+                    "name": "Anjali Singh"
+                },
+                {
+                    "authorId": "1713772257",
+                    "name": "K. ShamanthRNayak"
+                },
+                {
+                    "authorId": "27526892",
+                    "name": "Balaji Ganesan"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "1102867bbe6c16592b90ab76871346647435920a",
+            "title": "Reimagining GNN Explanations with ideas from Tabular Data",
+            "url": "https://www.semanticscholar.org/paper/1102867bbe6c16592b90ab76871346647435920a",
+            "venue": "ArXiv",
+            "year": 2021
+        },
+        {
+            "arxivId": "2106.11864",
+            "authors": [
+                {
+                    "authorId": "2114429785",
+                    "name": "Bannihati Kumar Vanya"
+                },
+                {
+                    "authorId": "27526892",
+                    "name": "Balaji Ganesan"
+                },
+                {
+                    "authorId": "2114800291",
+                    "name": "Aniket Saxena"
+                },
+                {
+                    "authorId": "2118804097",
+                    "name": "Devbrat Sharma"
+                },
+                {
+                    "authorId": "2078528713",
+                    "name": "Arvind Agarwal"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "89f054ea7277f2bc4605f4907b9b8d40b2d8f0e3",
+            "title": "Towards Automated Evaluation of Explanations in Graph Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/89f054ea7277f2bc4605f4907b9b8d40b2d8f0e3",
+            "venue": "ArXiv",
+            "year": 2021
+        },
+        {
+            "arxivId": "2012.05516",
+            "authors": [
+                {
+                    "authorId": "27526892",
+                    "name": "Balaji Ganesan"
+                },
+                {
+                    "authorId": "1557607422",
+                    "name": "Hima Patel"
+                },
+                {
+                    "authorId": "145640180",
+                    "name": "S. Mehta"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "bb7b3ceab2951d81866728c1f0dd5b586af965f5",
+            "title": "Explainable Link Prediction for Privacy-Preserving Contact Tracing",
+            "url": "https://www.semanticscholar.org/paper/bb7b3ceab2951d81866728c1f0dd5b586af965f5",
+            "venue": "ArXiv",
+            "year": 2020
+        },
+        {
+            "arxivId": "2011.04573",
+            "authors": [
+                {
+                    "authorId": "153640788",
+                    "name": "Dongsheng Luo"
+                },
+                {
+                    "authorId": "145859270",
+                    "name": "Wei Cheng"
+                },
+                {
+                    "authorId": "2250320",
+                    "name": "Dongkuan Xu"
+                },
+                {
+                    "authorId": "3007026",
+                    "name": "Wenchao Yu"
+                },
+                {
+                    "authorId": "2991105",
+                    "name": "Bo Zong"
+                },
+                {
+                    "authorId": "2145225543",
+                    "name": "Haifeng Chen"
+                },
+                {
+                    "authorId": "2190288679",
+                    "name": "Xiang Zhang"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "d9f5ec342df97e060b527a8bc18ae4e97401f246",
+            "title": "Parameterized Explainer for Graph Neural Network",
+            "url": "https://www.semanticscholar.org/paper/d9f5ec342df97e060b527a8bc18ae4e97401f246",
+            "venue": "NeurIPS",
+            "year": 2020
+        },
+        {
+            "arxivId": "2010.05788",
+            "authors": [
+                {
+                    "authorId": "32590027",
+                    "name": "Minh N. Vu"
+                },
+                {
+                    "authorId": "1698253",
+                    "name": "M. Thai"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "a8ae2d8232db04d88cf622e5fabd11da3163aa8f",
+            "title": "PGM-Explainer: Probabilistic Graphical Model Explanations for Graph Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/a8ae2d8232db04d88cf622e5fabd11da3163aa8f",
+            "venue": "NeurIPS",
+            "year": 2020
+        },
+        {
+            "arxivId": "2010.00577",
+            "authors": [
+                {
+                    "authorId": "8804828",
+                    "name": "M. Schlichtkrull"
+                },
+                {
+                    "authorId": "41019080",
+                    "name": "Nicola De Cao"
+                },
+                {
+                    "authorId": "144889265",
+                    "name": "Ivan Titov"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "c30c0092bf4eb8a44faec3fc60cdd5006276bcdc",
+            "title": "Interpreting Graph Neural Networks for NLP With Differentiable Edge Masking",
+            "url": "https://www.semanticscholar.org/paper/c30c0092bf4eb8a44faec3fc60cdd5006276bcdc",
+            "venue": "ICLR",
+            "year": 2020
+        },
+        {
+            "arxivId": "2006.02587",
+            "authors": [
+                {
+                    "authorId": "1491238705",
+                    "name": "Haonan Yuan"
+                },
+                {
+                    "authorId": "1736632",
+                    "name": "Jiliang Tang"
+                },
+                {
+                    "authorId": "48539382",
+                    "name": "Xia Hu"
+                },
+                {
+                    "authorId": "1743600",
+                    "name": "Shuiwang Ji"
+                }
+            ],
+            "doi": "10.1145/3394486.3403085",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "75c8466a0c1c3b9fe595efc83671984ef95bd679",
+            "title": "XGNN: Towards Model-Level Explanations of Graph Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/75c8466a0c1c3b9fe595efc83671984ef95bd679",
+            "venue": "KDD",
+            "year": 2020
+        },
+        {
+            "arxivId": "2003.04732",
+            "authors": [
+                {
+                    "authorId": "27526892",
+                    "name": "Balaji Ganesan"
+                },
+                {
+                    "authorId": "2065075730",
+                    "name": "Gayatri Mishra"
+                },
+                {
+                    "authorId": "1557601752",
+                    "name": "Srinivas Parkala"
+                },
+                {
+                    "authorId": "2110280415",
+                    "name": "Neeraj R Singh"
+                },
+                {
+                    "authorId": "1557607422",
+                    "name": "Hima Patel"
+                },
+                {
+                    "authorId": "1557601597",
+                    "name": "Somashekar Naganna"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "8d4b9c83dcd6328b1a03605809c23a93fd2f9f3d",
+            "title": "Link Prediction using Graph Neural Networks for Master Data Management",
+            "url": "https://www.semanticscholar.org/paper/8d4b9c83dcd6328b1a03605809c23a93fd2f9f3d",
+            "venue": "ArXiv",
+            "year": 2020
+        },
+        {
+            "arxivId": "2002.10943",
+            "authors": [
+                {
+                    "authorId": "1505462102",
+                    "name": "Lingraj S. Vannur"
+                },
+                {
+                    "authorId": "1505464856",
+                    "name": "Lokesh Nagalapatti"
+                },
+                {
+                    "authorId": "27526892",
+                    "name": "Balaji Ganesan"
+                },
+                {
+                    "authorId": "1557607422",
+                    "name": "Hima Patel"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "00536c353686b5cb4af41d890a41bc0b71477963",
+            "title": "Data Augmentation for Personal Knowledge Graph Population",
+            "url": "https://www.semanticscholar.org/paper/00536c353686b5cb4af41d890a41bc0b71477963",
+            "venue": "ArXiv",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2053225294",
+                    "name": "Kun Qian"
+                },
+                {
+                    "authorId": "145378077",
+                    "name": "Lucian Popa"
+                },
+                {
+                    "authorId": "40655309",
+                    "name": "Prithviraj Sen"
+                }
+            ],
+            "doi": "10.14778/3352063.3352068",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d1faa567c6ff8656150766a57ce2125086252c52",
+            "title": "SystemER: A Human-in-the-loop System for Explainable Entity Resolution",
+            "url": "https://www.semanticscholar.org/paper/d1faa567c6ff8656150766a57ce2125086252c52",
+            "venue": "Proc. VLDB Endow.",
+            "year": 2019
+        },
+        {
+            "arxivId": "1906.04817",
+            "authors": [
+                {
+                    "authorId": "145829303",
+                    "name": "Jiaxuan You"
+                },
+                {
+                    "authorId": "83539859",
+                    "name": "Rex Ying"
+                },
+                {
+                    "authorId": "1702139",
+                    "name": "J. Leskovec"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "6b010e07618eb36abe6def23d94488b2c81ecbf7",
+            "title": "Position-aware Graph Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/6b010e07618eb36abe6def23d94488b2c81ecbf7",
+            "venue": "ICML",
+            "year": 2019
+        },
+        {
+            "arxivId": "1903.03894",
+            "authors": [
+                {
+                    "authorId": "83539859",
+                    "name": "Rex Ying"
+                },
+                {
+                    "authorId": "40974349",
+                    "name": "Dylan Bourgeois"
+                },
+                {
+                    "authorId": "145829303",
+                    "name": "Jiaxuan You"
+                },
+                {
+                    "authorId": "2095762",
+                    "name": "M. Zitnik"
+                },
+                {
+                    "authorId": "1702139",
+                    "name": "J. Leskovec"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "00358a3f17821476d93461192b9229fe7d92bb3f",
+            "title": "GNNExplainer: Generating Explanations for Graph Neural Networks",
+            "url": "https://www.semanticscholar.org/paper/00358a3f17821476d93461192b9229fe7d92bb3f",
+            "venue": "NeurIPS",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "40171292",
+                    "name": "Sidharth Mudgal"
+                },
+                {
+                    "authorId": "144824431",
+                    "name": "Han Li"
+                },
+                {
+                    "authorId": "145071799",
+                    "name": "Theodoros Rekatsinas"
+                },
+                {
+                    "authorId": "3030274",
+                    "name": "A. Doan"
+                },
+                {
+                    "authorId": "33733502",
+                    "name": "Youngchoon Park"
+                },
+                {
+                    "authorId": "144707068",
+                    "name": "Ganesh Krishnan"
+                },
+                {
+                    "authorId": "2349874",
+                    "name": "Rohit Deep"
+                },
+                {
+                    "authorId": "2064373270",
+                    "name": "Esteban Arcaute"
+                },
+                {
+                    "authorId": "145005772",
+                    "name": "V. Raghavendra"
+                }
+            ],
+            "doi": "10.1145/3183713.3196926",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "c0a29cb35c2965930566d6a407da043e18431eaa",
+            "title": "Deep Learning for Entity Matching: A Design Space Exploration",
+            "url": "https://www.semanticscholar.org/paper/c0a29cb35c2965930566d6a407da043e18431eaa",
+            "venue": "SIGMOD Conference",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "78846919",
+                    "name": "Marco Tulio Ribeiro"
+                },
+                {
+                    "authorId": "34650964",
+                    "name": "Sameer Singh"
+                },
+                {
+                    "authorId": "1730156",
+                    "name": "Carlos Guestrin"
+                }
+            ],
+            "doi": "10.1609/aaai.v32i1.11491",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "1d8f4f76ac6534627ef8a1c24b9937d8ab2a5c5f",
+            "title": "Anchors: High-Precision Model-Agnostic Explanations",
+            "url": "https://www.semanticscholar.org/paper/1d8f4f76ac6534627ef8a1c24b9937d8ab2a5c5f",
+            "venue": "AAAI",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "49762239",
+                    "name": "M. Oberhofer"
+                },
+                {
+                    "authorId": "70009328",
+                    "name": "Eberhard Hechler"
+                },
+                {
+                    "authorId": "52022010",
+                    "name": "I. Milman"
+                },
+                {
+                    "authorId": "40345809",
+                    "name": "Scott Schumacher"
+                },
+                {
+                    "authorId": "15320325",
+                    "name": "Daniel C. Wolfson"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "e0f9dda1458c125758b1c8717610f8126c310e92",
+            "title": "Beyond Big Data: Using Social MDM to Drive Deep Customer Insight",
+            "url": "https://www.semanticscholar.org/paper/e0f9dda1458c125758b1c8717610f8126c310e92",
+            "venue": "",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2114429785",
+                    "name": "Bannihati Kumar Vanya"
+                },
+                {
+                    "authorId": "27526892",
+                    "name": "Balaji Ganesan"
+                },
+                {
+                    "authorId": "2140464360",
+                    "name": "Muhammed Ameen"
+                },
+                {
+                    "authorId": "2118804097",
+                    "name": "Devbrat Sharma"
+                },
+                {
+                    "authorId": "2078528713",
+                    "name": "Arvind Agarwal"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "5f5f1d2de152aeb03fe0b0f67184ddcae0c89584",
+            "title": "Automated Evaluation of GNN Explanations with Neuro Symbolic Reasoning",
+            "url": "https://www.semanticscholar.org/paper/5f5f1d2de152aeb03fe0b0f67184ddcae0c89584",
+            "venue": "NeurIPS",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2074164052",
+                    "name": "Phillipp M\u00fcller"
+                },
+                {
+                    "authorId": "2099585332",
+                    "name": "Xiao Qin"
+                },
+                {
+                    "authorId": "27526892",
+                    "name": "Balaji Ganesan"
+                },
+                {
+                    "authorId": "32216985",
+                    "name": "Nasrullah Sheikh"
+                },
+                {
+                    "authorId": "1698945",
+                    "name": "B. Reinwald"
+                }
+            ],
+            "doi": "10.5441/002/edbt.2020.37",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "6f3b12d5b27ee27eaa9a18eff688370a120d9cef",
+            "title": "An Integrated Graph Neural Network for Supervised Non-obvious Relationship Detection in Knowledge Graphs",
+            "url": "https://www.semanticscholar.org/paper/6f3b12d5b27ee27eaa9a18eff688370a120d9cef",
+            "venue": "EDBT",
+            "year": 2020
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "xEM: Explainable Entity Matching in Customer 360",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/f474925aea22b01e4162f2ca49cd3bccf64e2afb",
+    "venue": "COMAD/CODS",
+    "year": 2022
+}

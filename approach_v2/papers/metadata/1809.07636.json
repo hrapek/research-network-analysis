@@ -1,0 +1,969 @@
+{
+    "abstract": "This paper summarizes the work of building the autonomous system including detection system and path tracking controller for a formula student autonomous racecar. A LIDAR-vision cooperating method of detecting traffic cone which is used as track mark is proposed. Detection algorithm of the racecar also implements a precise and high rate localization method which combines the GPS-INS data and LIDAR odometry. Besides, a track map including the location and color information of the cones is built simultaneously. Finally, the system and vehicle performance on a closed loop track is tested. This paper also briefly introduces the Formula Student Autonomous Competition (FSAC) in 2017.",
+    "arxivId": "1809.07636",
+    "authors": [
+        {
+            "authorId": "51439514",
+            "name": "Hanqing Tian",
+            "url": "https://www.semanticscholar.org/author/51439514"
+        },
+        {
+            "authorId": "143783863",
+            "name": "J. Ni",
+            "url": "https://www.semanticscholar.org/author/143783863"
+        },
+        {
+            "authorId": "2813457",
+            "name": "Jibin Hu",
+            "url": "https://www.semanticscholar.org/author/2813457"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2297966596",
+                    "name": "Mashook Mohammad Meshkat"
+                },
+                {
+                    "authorId": "2297866281",
+                    "name": "Shehab Mustafa"
+                },
+                {
+                    "authorId": "2297971131",
+                    "name": "Mrinmoy Das"
+                },
+                {
+                    "authorId": "2284087979",
+                    "name": "Tahmid Al Deen"
+                },
+                {
+                    "authorId": "2297971031",
+                    "name": "A.H.M. Abdur Rahim"
+                },
+                {
+                    "authorId": "2047518284",
+                    "name": "Md. Mehedi Hasan Shawon"
+                },
+                {
+                    "authorId": "1564417947",
+                    "name": "Tasfin Mahmud"
+                }
+            ],
+            "doi": "10.1109/iCACCESS61735.2024.10499558",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "30ff4e0ea9d11b9b0545910d87a17070d4c63dff",
+            "title": "Analysis and Demonstration of Vision Driven Lane Changing System of Self-Driving Car in CARLA Simulator",
+            "url": "https://www.semanticscholar.org/paper/30ff4e0ea9d11b9b0545910d87a17070d4c63dff",
+            "venue": "2024 International Conference on Advances in Computing, Communication, Electrical, and Smart Systems (iCACCESS)",
+            "year": 2024
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "9528495",
+                    "name": "Tantan Zhang"
+                },
+                {
+                    "authorId": "2278845021",
+                    "name": "Yueshuo Sun"
+                },
+                {
+                    "authorId": "2107940411",
+                    "name": "Yazhou Wang"
+                },
+                {
+                    "authorId": "2118424373",
+                    "name": "Bai Li"
+                },
+                {
+                    "authorId": "32847052",
+                    "name": "Yonglin Tian"
+                },
+                {
+                    "authorId": "2148956730",
+                    "name": "Fei-Yue Wang"
+                }
+            ],
+            "doi": "10.1109/TIV.2024.3351131",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "97fc8049efc33d65b7cfe989022635e3e7d645d0",
+            "title": "A Survey of Vehicle Dynamics Modeling Methods for Autonomous Racing: Theoretical Models, Physical/Virtual Platforms, and Perspectives",
+            "url": "https://www.semanticscholar.org/paper/97fc8049efc33d65b7cfe989022635e3e7d645d0",
+            "venue": "IEEE Transactions on Intelligent Vehicles",
+            "year": 2024
+        },
+        {
+            "arxivId": "2311.14276",
+            "authors": [
+                {
+                    "authorId": "2268319631",
+                    "name": "Alastair Bradford"
+                },
+                {
+                    "authorId": "2268319391",
+                    "name": "Grant van Breda"
+                },
+                {
+                    "authorId": "2268316878",
+                    "name": "Tobias Fischer"
+                }
+            ],
+            "doi": "10.48550/arXiv.2311.14276",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "bd56f86e8c17b993c100fe983bc63ea884628543",
+            "title": "Racing With ROS 2 A Navigation System for an Autonomous Formula Student Race Car",
+            "url": "https://www.semanticscholar.org/paper/bd56f86e8c17b993c100fe983bc63ea884628543",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": "2308.13088",
+            "authors": [
+                {
+                    "authorId": "2234025343",
+                    "name": "Aakaash Salvaji"
+                },
+                {
+                    "authorId": "2234025612",
+                    "name": "Harry Taylor"
+                },
+                {
+                    "authorId": "2152760508",
+                    "name": "David Valencia"
+                },
+                {
+                    "authorId": "47268959",
+                    "name": "Trevor Gee"
+                },
+                {
+                    "authorId": "2114002414",
+                    "name": "Henry Williams"
+                }
+            ],
+            "doi": "10.48550/arXiv.2308.13088",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "519b2e0ade4cf872889512a5ea4e45b57fa40901",
+            "title": "Racing Towards Reinforcement Learning based control of an Autonomous Formula SAE Car",
+            "url": "https://www.semanticscholar.org/paper/519b2e0ade4cf872889512a5ea4e45b57fa40901",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2222500101",
+                    "name": "Henil Gajjar"
+                },
+                {
+                    "authorId": "2222506451",
+                    "name": "Stavan Sanyal"
+                }
+            ],
+            "doi": "10.33564/ijeast.2023.v08i02.035",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "49035357ee6b0c72199e15eeb42d9e507ccbae31",
+            "title": "AN IN-DEPTH STUDY OF LANE DETECTION FOR AUTONOMOUS CARS USING COMPUTER VISION TECHNIQUES",
+            "url": "https://www.semanticscholar.org/paper/49035357ee6b0c72199e15eeb42d9e507ccbae31",
+            "venue": "International Journal of Engineering Applied Sciences and Technology",
+            "year": 2023
+        },
+        {
+            "arxivId": "2205.15979",
+            "authors": [
+                {
+                    "authorId": "144053976",
+                    "name": "Johannes Betz"
+                },
+                {
+                    "authorId": "40100725",
+                    "name": "Tobias Betz"
+                },
+                {
+                    "authorId": "146704593",
+                    "name": "F. Fent"
+                },
+                {
+                    "authorId": "1380396991",
+                    "name": "Maximilian Geisslinger"
+                },
+                {
+                    "authorId": "52221367",
+                    "name": "Alexander Heilmeier"
+                },
+                {
+                    "authorId": "147318116",
+                    "name": "Leonhard Hermansdorfer"
+                },
+                {
+                    "authorId": "143662934",
+                    "name": "T. Herrmann"
+                },
+                {
+                    "authorId": "104081148",
+                    "name": "Sebastian Huch"
+                },
+                {
+                    "authorId": "2008215840",
+                    "name": "Phillip Karle"
+                },
+                {
+                    "authorId": "2717687",
+                    "name": "M. Lienkamp"
+                },
+                {
+                    "authorId": "144672265",
+                    "name": "B. Lohmann"
+                },
+                {
+                    "authorId": "2064896360",
+                    "name": "Felix Nobis"
+                },
+                {
+                    "authorId": "2153713095",
+                    "name": "Levent Ogretmen"
+                },
+                {
+                    "authorId": "1573599216",
+                    "name": "Matthias Rowold"
+                },
+                {
+                    "authorId": "2150096541",
+                    "name": "Florian Sauerbeck"
+                },
+                {
+                    "authorId": "32303219",
+                    "name": "Tim Stahl"
+                },
+                {
+                    "authorId": "2066895308",
+                    "name": "Rainer Trauth"
+                },
+                {
+                    "authorId": "2167156261",
+                    "name": "Frederik Werner"
+                },
+                {
+                    "authorId": "115928719",
+                    "name": "A. Wischnewski"
+                }
+            ],
+            "doi": "10.1002/rob.22153",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "96251898862512c7f765f8bfa7b190ebf38b906e",
+            "title": "TUM autonomous motorsport: An autonomous racing software for the Indy Autonomous Challenge",
+            "url": "https://www.semanticscholar.org/paper/96251898862512c7f765f8bfa7b190ebf38b906e",
+            "venue": "J. Field Robotics",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "48292487",
+                    "name": "Ronghua Yang"
+                },
+                {
+                    "authorId": "2152907942",
+                    "name": "Jing Li"
+                },
+                {
+                    "authorId": "2862492",
+                    "name": "Xiaolin Meng"
+                },
+                {
+                    "authorId": "1803708",
+                    "name": "Yangsheng You"
+                }
+            ],
+            "doi": "10.3390/rs14061491",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7fb57d6fd42d821092957d79b6ce4a2e1e3d717b",
+            "title": "A Rigorous Feature Extraction Algorithm for Spherical Target Identification in Terrestrial Laser Scanning",
+            "url": "https://www.semanticscholar.org/paper/7fb57d6fd42d821092957d79b6ce4a2e1e3d717b",
+            "venue": "Remote. Sens.",
+            "year": 2022
+        },
+        {
+            "arxivId": "2202.07008",
+            "authors": [
+                {
+                    "authorId": "2065488516",
+                    "name": "Johannes Betz"
+                },
+                {
+                    "authorId": "1960610013",
+                    "name": "Hongrui Zheng"
+                },
+                {
+                    "authorId": "2373969",
+                    "name": "Alexander Liniger"
+                },
+                {
+                    "authorId": "3468386",
+                    "name": "Ugo Rosolia"
+                },
+                {
+                    "authorId": "2008215840",
+                    "name": "Phillip Karle"
+                },
+                {
+                    "authorId": "35289358",
+                    "name": "Madhur Behl"
+                },
+                {
+                    "authorId": "47313839",
+                    "name": "V. Krovi"
+                },
+                {
+                    "authorId": "1785009",
+                    "name": "Rahul Mangharam"
+                }
+            ],
+            "doi": "10.1109/ojits.2022.3181510",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "33a675d532a2384338ab978895cf962f0f3fb09f",
+            "title": "Autonomous Vehicles on the Edge: A Survey on Autonomous Vehicle Racing",
+            "url": "https://www.semanticscholar.org/paper/33a675d532a2384338ab978895cf962f0f3fb09f",
+            "venue": "IEEE Open Journal of Intelligent Transportation Systems",
+            "year": 2022
+        },
+        {
+            "arxivId": "2201.03246",
+            "authors": [
+                {
+                    "authorId": "2149408834",
+                    "name": "Izzeddin Teeti"
+                },
+                {
+                    "authorId": "153421208",
+                    "name": "Valentina Mu\u015fat"
+                },
+                {
+                    "authorId": "152973423",
+                    "name": "Salman Hameed Khan"
+                },
+                {
+                    "authorId": "2079383619",
+                    "name": "Alexander Rast"
+                },
+                {
+                    "authorId": "1754181",
+                    "name": "Fabio Cuzzolin"
+                },
+                {
+                    "authorId": "144463467",
+                    "name": "Andrew Bradley"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "7991c82ab95dca2c792f9f6ddd88ee9e29a34976",
+            "title": "Vision in adverse weather: Augmentation using CycleGANs with various object detectors for robust perception in autonomous racing",
+            "url": "https://www.semanticscholar.org/paper/7991c82ab95dca2c792f9f6ddd88ee9e29a34976",
+            "venue": "ArXiv",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1853293955",
+                    "name": "Wen-zheng Peng"
+                },
+                {
+                    "authorId": "3387301",
+                    "name": "Yinhui Ao"
+                },
+                {
+                    "authorId": "1856353084",
+                    "name": "Jing-hui He"
+                },
+                {
+                    "authorId": "2296268785",
+                    "name": "Peng-fei Wang"
+                }
+            ],
+            "doi": "10.1007/s10846-021-01329-x",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "df9940b9c5f238c3add83d9852b0259e3f101485",
+            "title": "Vehicle Odometry with Camera-Lidar-IMU Information Fusion and Factor-Graph Optimization",
+            "url": "https://www.semanticscholar.org/paper/df9940b9c5f238c3add83d9852b0259e3f101485",
+            "venue": "Journal of Intelligent & Robotic Systems",
+            "year": 2021
+        },
+        {
+            "arxivId": "2010.02828",
+            "authors": [
+                {
+                    "authorId": "1988238893",
+                    "name": "Sherif Nekkah"
+                },
+                {
+                    "authorId": "1988223998",
+                    "name": "Josua Janus"
+                },
+                {
+                    "authorId": "2065270270",
+                    "name": "Mario Boxheimer"
+                },
+                {
+                    "authorId": "119118615",
+                    "name": "Lars Ohnemus"
+                },
+                {
+                    "authorId": "2057858107",
+                    "name": "Stefan Hirsch"
+                },
+                {
+                    "authorId": "2084630830",
+                    "name": "Benjamin Schmidt"
+                },
+                {
+                    "authorId": "2116487454",
+                    "name": "Yuchen Liu"
+                },
+                {
+                    "authorId": "1581792153",
+                    "name": "David Borb'ely"
+                },
+                {
+                    "authorId": "2065691360",
+                    "name": "Florian Keck"
+                },
+                {
+                    "authorId": "2062921777",
+                    "name": "Katharina Bachmann"
+                },
+                {
+                    "authorId": "2066478513",
+                    "name": "Lukasz Bleszynski"
+                }
+            ],
+            "doi": "10.4271/12-05-01-0007",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "5e6bd0e6a79b6270d06935fa3ab8dc5bfda61a38",
+            "title": "The Autonomous Racing Software Stack of the KIT19d",
+            "url": "https://www.semanticscholar.org/paper/5e6bd0e6a79b6270d06935fa3ab8dc5bfda61a38",
+            "venue": "SAE International Journal of Connected and Automated Vehicles",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1935829207",
+                    "name": "Pascal Puchtler"
+                },
+                {
+                    "authorId": "1936717",
+                    "name": "R. Peinl"
+                }
+            ],
+            "doi": "10.1007/978-3-030-58285-2_29",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "3bbd9eaa4ef7f386d159e25a437a78ac7a116c5b",
+            "title": "Evaluation of Deep Learning Accelerators for Object Detection at the Edge",
+            "url": "https://www.semanticscholar.org/paper/3bbd9eaa4ef7f386d159e25a437a78ac7a116c5b",
+            "venue": "KI",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2023734704",
+                    "name": "Jacob Culley"
+                },
+                {
+                    "authorId": "2023736753",
+                    "name": "Sam Garlick"
+                },
+                {
+                    "authorId": "1395499499",
+                    "name": "Enric Gil Esteller"
+                },
+                {
+                    "authorId": "82938732",
+                    "name": "P. Georgiev"
+                },
+                {
+                    "authorId": "2023736653",
+                    "name": "I. Fursa"
+                },
+                {
+                    "authorId": "2026985351",
+                    "name": "Isaac Vander Sluis"
+                },
+                {
+                    "authorId": "2053179512",
+                    "name": "Peter Ball"
+                },
+                {
+                    "authorId": "144463467",
+                    "name": "Andrew Bradley"
+                }
+            ],
+            "doi": "10.1109/CSNDSP49049.2020.9249626",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "b58312bbf8745639c0b3eaf5a635e0d18c699b66",
+            "title": "System Design for a Driverless Autonomous Racing Vehicle",
+            "url": "https://www.semanticscholar.org/paper/b58312bbf8745639c0b3eaf5a635e0d18c699b66",
+            "venue": "2020 12th International Symposium on Communication Systems, Networks and Digital Signal Processing (CSNDSP)",
+            "year": 2020
+        },
+        {
+            "arxivId": "1909.00119",
+            "authors": [
+                {
+                    "authorId": "2118213445",
+                    "name": "Tairan Chen"
+                },
+                {
+                    "authorId": "48458251",
+                    "name": "Zirui Li"
+                },
+                {
+                    "authorId": "2118918721",
+                    "name": "Yiting He"
+                },
+                {
+                    "authorId": "72417657",
+                    "name": "Zewen Xu"
+                },
+                {
+                    "authorId": "2152533308",
+                    "name": "Zhe Yan"
+                },
+                {
+                    "authorId": "2051689365",
+                    "name": "Huiqian Li"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "add43cf12836fa70a2855fcf76136b374723c68e",
+            "title": "From perception to control: an autonomous driving system for a formula student driverless car",
+            "url": "https://www.semanticscholar.org/paper/add43cf12836fa70a2855fcf76136b374723c68e",
+            "venue": "ArXiv",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2121348698",
+                    "name": "Yasmine Sheila Antille"
+                },
+                {
+                    "authorId": "2121361072",
+                    "name": "Etienne Gubler"
+                },
+                {
+                    "authorId": "39384121",
+                    "name": "J. Gruber"
+                }
+            ],
+            "doi": "10.5220/0010543106610668",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "6e04debc7260808849b6fbe6307fe653f45b58f9",
+            "title": "Ground Speed Measuring System for Autonomous Vehicles",
+            "url": "https://www.semanticscholar.org/paper/6e04debc7260808849b6fbe6307fe653f45b58f9",
+            "venue": "ICINCO",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3438717",
+                    "name": "Shoaib Azam"
+                },
+                {
+                    "authorId": "2904550",
+                    "name": "Farzeen Munir"
+                },
+                {
+                    "authorId": "145745152",
+                    "name": "M. Jeon"
+                }
+            ],
+            "doi": "10.5220/0009392904560463",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7ad8ff9c1e44d7e1aa54e847a46e2d803b191bcf",
+            "title": "Dynamic Control System Design for Autonomous Car",
+            "url": "https://www.semanticscholar.org/paper/7ad8ff9c1e44d7e1aa54e847a46e2d803b191bcf",
+            "venue": "VEHITS",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2300108859",
+                    "name": "Ute Schmid"
+                },
+                {
+                    "authorId": "2331901839",
+                    "name": "Franziska Kl\u00fcgl"
+                },
+                {
+                    "authorId": "2300111185",
+                    "name": "Diedrich Wolter"
+                }
+            ],
+            "doi": "10.1007/978-3-030-58285-2",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "05ee2beba96df1b6b7f25c24365c84427c972732",
+            "title": "KI 2020: Advances in Artificial Intelligence: 43rd German Conference on AI, Bamberg, Germany, September 21\u201325, 2020, Proceedings",
+            "url": "https://www.semanticscholar.org/paper/05ee2beba96df1b6b7f25c24365c84427c972732",
+            "venue": "KI",
+            "year": 2020
+        }
+    ],
+    "corpusId": 52308831,
+    "doi": "10.1109/IVS.2018.8500471",
+    "fieldsOfStudy": [
+        "Engineering",
+        "Computer Science"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": true,
+    "isPublisherLicensed": true,
+    "is_open_access": true,
+    "is_publisher_licensed": true,
+    "numCitedBy": 17,
+    "numCiting": 8,
+    "paperId": "c799356d531666bd793b089d135a9ed14ec11feb",
+    "references": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "9039234",
+                    "name": "Mohammad Aldibaja"
+                },
+                {
+                    "authorId": "9048185",
+                    "name": "Noaki Suganuma"
+                },
+                {
+                    "authorId": "2614889",
+                    "name": "Keisuke Yoneda"
+                }
+            ],
+            "doi": "10.1109/MFI.2017.8170357",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "ff44e4ab293838bfd6aaca4f90bde18a3a05dcd7",
+            "title": "LIDAR-data accumulation strategy to generate high definition maps for autonomous vehicles",
+            "url": "https://www.semanticscholar.org/paper/ff44e4ab293838bfd6aaca4f90bde18a3a05dcd7",
+            "venue": "2017 IEEE International Conference on Multisensor Fusion and Integration for Intelligent Systems (MFI)",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143783863",
+                    "name": "J. Ni"
+                },
+                {
+                    "authorId": "2813457",
+                    "name": "Jibin Hu"
+                }
+            ],
+            "doi": "10.1109/IVS.2017.7995972",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "e5d6ebeca3e41e575674f6ec24b8b5a9506a884c",
+            "title": "Path following control for autonomous formula racecar: Autonomous formula student competition",
+            "url": "https://www.semanticscholar.org/paper/e5d6ebeca3e41e575674f6ec24b8b5a9506a884c",
+            "venue": "2017 IEEE Intelligent Vehicles Symposium (IV)",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2116921472",
+                    "name": "Ji Zhang"
+                },
+                {
+                    "authorId": "2118413567",
+                    "name": "Sanjiv Singh"
+                }
+            ],
+            "doi": "10.1007/s10514-016-9548-2",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "67e4d3933d35544023c32dcc06bf81206a35d16f",
+            "title": "Low-drift and real-time lidar odometry and mapping",
+            "url": "https://www.semanticscholar.org/paper/67e4d3933d35544023c32dcc06bf81206a35d16f",
+            "venue": "Auton. Robots",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2116921472",
+                    "name": "Ji Zhang"
+                },
+                {
+                    "authorId": "2118413567",
+                    "name": "Sanjiv Singh"
+                }
+            ],
+            "doi": "10.1109/ICRA.2015.7139486",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ac7215af97ed57f073dd3bb03188ac313e62e5fb",
+            "title": "Visual-lidar odometry and mapping: low-drift, robust, and fast",
+            "url": "https://www.semanticscholar.org/paper/ac7215af97ed57f073dd3bb03188ac313e62e5fb",
+            "venue": "2015 IEEE International Conference on Robotics and Automation (ICRA)",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "35146798",
+                    "name": "Sunglok Choi"
+                },
+                {
+                    "authorId": "2007648291",
+                    "name": "Jaehyun Park"
+                },
+                {
+                    "authorId": "36389583",
+                    "name": "Jaemin Byun"
+                },
+                {
+                    "authorId": "2607701",
+                    "name": "Wonpil Yu"
+                }
+            ],
+            "doi": "10.1109/ICCAS.2014.6987936",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "1fe6e2376d4c8e8c4c8657b9d716d8984ac59de9",
+            "title": "Robust ground plane detection from 3D point clouds",
+            "url": "https://www.semanticscholar.org/paper/1fe6e2376d4c8e8c4c8657b9d716d8984ac59de9",
+            "venue": "2014 14th International Conference on Control, Automation and Systems (ICCAS 2014)",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2116921472",
+                    "name": "Ji Zhang"
+                },
+                {
+                    "authorId": "2118413567",
+                    "name": "Sanjiv Singh"
+                }
+            ],
+            "doi": "10.15607/RSS.2014.X.007",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "4d0fc815dced9db3954ed21060e9894e1555ee3d",
+            "title": "LOAM: Lidar Odometry and Mapping in Real-time",
+            "url": "https://www.semanticscholar.org/paper/4d0fc815dced9db3954ed21060e9894e1555ee3d",
+            "venue": "Robotics: Science and Systems",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143645532",
+                    "name": "Michael Montemerlo"
+                },
+                {
+                    "authorId": "2001630",
+                    "name": "J. Becker"
+                },
+                {
+                    "authorId": "48868633",
+                    "name": "Suhrid Bhat"
+                },
+                {
+                    "authorId": "1779200",
+                    "name": "Hendrik Dahlkamp"
+                },
+                {
+                    "authorId": "2699820",
+                    "name": "D. Dolgov"
+                },
+                {
+                    "authorId": "10664203",
+                    "name": "S. Ettinger"
+                },
+                {
+                    "authorId": "1771066",
+                    "name": "D. H\u00e4hnel"
+                },
+                {
+                    "authorId": "152472238",
+                    "name": "T. Hild\u00e9n"
+                },
+                {
+                    "authorId": "123891348",
+                    "name": "G. Hoffmann"
+                },
+                {
+                    "authorId": "2473598",
+                    "name": "Burkhard Huhnke"
+                },
+                {
+                    "authorId": "2052310004",
+                    "name": "Doug Johnston"
+                },
+                {
+                    "authorId": "2249884519",
+                    "name": "Stefan Klumpp"
+                },
+                {
+                    "authorId": "2673676",
+                    "name": "D. Langer"
+                },
+                {
+                    "authorId": "3189137",
+                    "name": "A. Levandowski"
+                },
+                {
+                    "authorId": "145032357",
+                    "name": "Jesse Levinson"
+                },
+                {
+                    "authorId": "49328785",
+                    "name": "J. Marcil"
+                },
+                {
+                    "authorId": "46955134",
+                    "name": "David Orenstein"
+                },
+                {
+                    "authorId": "2450763",
+                    "name": "Johannes Paefgen"
+                },
+                {
+                    "authorId": "143856057",
+                    "name": "I. Penny"
+                },
+                {
+                    "authorId": "3218689",
+                    "name": "A. Petrovskaya"
+                },
+                {
+                    "authorId": "36993785",
+                    "name": "M. Pflueger"
+                },
+                {
+                    "authorId": "8503893",
+                    "name": "Ganymed Stanek"
+                },
+                {
+                    "authorId": "1768464",
+                    "name": "David Stavens"
+                },
+                {
+                    "authorId": "143635730",
+                    "name": "Anton Vogt"
+                },
+                {
+                    "authorId": "144867807",
+                    "name": "S. Thrun"
+                }
+            ],
+            "doi": "10.1002/rob.20258",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e83edee5fa7644258fb9e361b697b69fea37daed",
+            "title": "Junior: The Stanford entry in the Urban Challenge",
+            "url": "https://www.semanticscholar.org/paper/e83edee5fa7644258fb9e361b697b69fea37daed",
+            "venue": "J. Field Robotics",
+            "year": 2008
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Engineering",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Engineering",
+            "source": "s2-fos-model"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Autonomous Driving System Design for Formula Student Driverless Racecar",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/c799356d531666bd793b089d135a9ed14ec11feb",
+    "venue": "2018 IEEE Intelligent Vehicles Symposium (IV)",
+    "year": 2018
+}

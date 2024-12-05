@@ -1,0 +1,883 @@
+{
+    "abstract": "This paper investigates a paradigm for offering artificial intelligence as a service (AI-aaS) on software-defined infrastructures (SDIs). The increasing complexity of networking and computing infrastructures is already driving the introduction of automation in networking and cloud computing management systems. Here we consider how these automation mechanisms can be leveraged to offer AI-aaS. Use cases for AI-aaS are easily found in addressing smart applications in sectors such as transportation, manufacturing, energy, water, air quality, and emissions. We propose an architectural scheme based on SDIs where each AI-aaS application is comprised of a monitoring, analysis, policy, execution plus knowledge (MAPE-K) loop (MKL). Each application is composed as one or more specific service chains embedded in SDI, some of which will include a Machine Learning (ML) pipeline. Our model includes a new training plane and an AI-aaS plane to deal with the model-development and operational phases of AI applications. We also consider the role of an ML/MKL sandbox in ensuring coherency and consistency in the operation of multiple parallel MKL loops. We present experimental measurement results for three AI-aaS applications deployed on the SAVI testbed: 1. Compressing monitored data in SDI using autoencoders; 2. Traffic monitoring to allocate CPUs resources to VNFs; and 3. Highway segment classification in smart transportation.",
+    "arxivId": "1907.05505",
+    "authors": [
+        {
+            "authorId": "3091148",
+            "name": "S. Parsaeefard",
+            "url": "https://www.semanticscholar.org/author/3091148"
+        },
+        {
+            "authorId": "150136591",
+            "name": "Iman Tabrizian",
+            "url": "https://www.semanticscholar.org/author/150136591"
+        },
+        {
+            "authorId": "1394165498",
+            "name": "A. Leon-Garcia",
+            "url": "https://www.semanticscholar.org/author/1394165498"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1399276635",
+                    "name": "Hatem Ibn-Khedher"
+                },
+                {
+                    "authorId": "73776406",
+                    "name": "Mohammed Laroui"
+                },
+                {
+                    "authorId": "2275683308",
+                    "name": "Mohammed Alfaqawi"
+                },
+                {
+                    "authorId": "2275684805",
+                    "name": "Ahlam Magnouche"
+                },
+                {
+                    "authorId": "2199954",
+                    "name": "Hassine Moungla"
+                },
+                {
+                    "authorId": "2238301098",
+                    "name": "Hossam Afifi"
+                }
+            ],
+            "doi": "10.1002/ett.4918",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c9a3b2a412949c771c66b2b6de7ae3ed84c58a7e",
+            "title": "6G\u2010edge support of Internet of Autonomous Vehicles: A survey",
+            "url": "https://www.semanticscholar.org/paper/c9a3b2a412949c771c66b2b6de7ae3ed84c58a7e",
+            "venue": "Trans. Emerg. Telecommun. Technol.",
+            "year": 2023
+        },
+        {
+            "arxivId": "2110.12025",
+            "authors": [
+                {
+                    "authorId": "3091148",
+                    "name": "S. Parsaeefard"
+                },
+                {
+                    "authorId": "30988569",
+                    "name": "Pooyan Habibi"
+                },
+                {
+                    "authorId": "1394165498",
+                    "name": "A. Leon-Garcia"
+                }
+            ],
+            "doi": "10.1109/FNWF55208.2022.00123",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7ba5f6e1d804d79b770b8b510597a17c8c16a673",
+            "title": "Towards Interaction and Conflict Management in AI-assisted Operational Control Loops in 6G",
+            "url": "https://www.semanticscholar.org/paper/7ba5f6e1d804d79b770b8b510597a17c8c16a673",
+            "venue": "2022 IEEE Future Networks World Forum (FNWF)",
+            "year": 2021
+        },
+        {
+            "arxivId": "2107.05728",
+            "authors": [
+                {
+                    "authorId": "3091148",
+                    "name": "S. Parsaeefard"
+                },
+                {
+                    "authorId": "1394165498",
+                    "name": "A. Leon-Garcia"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "aae5845f426660089a62bb6f3524882b23ed3ab9",
+            "title": "Toward Efficient Transfer Learning in 6G",
+            "url": "https://www.semanticscholar.org/paper/aae5845f426660089a62bb6f3524882b23ed3ab9",
+            "venue": "ArXiv",
+            "year": 2021
+        },
+        {
+            "arxivId": "2001.09723",
+            "authors": [
+                {
+                    "authorId": "31960069",
+                    "name": "S. A. Javadi"
+                },
+                {
+                    "authorId": "73661304",
+                    "name": "Richard Cloete"
+                },
+                {
+                    "authorId": "40915668",
+                    "name": "Jennifer Cobbe"
+                },
+                {
+                    "authorId": "1739477817",
+                    "name": "M. S. Lee"
+                },
+                {
+                    "authorId": "144857568",
+                    "name": "Jatinder Singh"
+                }
+            ],
+            "doi": "10.1145/3375627.3375873",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "134c75deb3f5542d9f40c9f5290300812fbf4fde",
+            "title": "Monitoring Misuse for Accountable 'Artificial Intelligence as a Service'",
+            "url": "https://www.semanticscholar.org/paper/134c75deb3f5542d9f40c9f5290300812fbf4fde",
+            "venue": "AIES",
+            "year": 2020
+        }
+    ],
+    "corpusId": 196470747,
+    "doi": null,
+    "fieldsOfStudy": [
+        "Computer Science",
+        "Mathematics"
+    ],
+    "influentialCitationCount": 0,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 4,
+    "numCiting": 22,
+    "paperId": "831f99c94624556cb6823501cec00dd40adeb05d",
+    "references": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2150635915",
+                    "name": "Jun Xu"
+                },
+                {
+                    "authorId": "8584850",
+                    "name": "Kaishun Wu"
+                }
+            ],
+            "doi": "10.1109/MNET.2018.1800119",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "ae88896e6c370cf1824726924d0a80fd712fd372",
+            "title": "Living with Artificial Intelligence: A Paradigm Shift toward Future Network Traffic Control",
+            "url": "https://www.semanticscholar.org/paper/ae88896e6c370cf1824726924d0a80fd712fd372",
+            "venue": "IEEE Network",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1715494",
+                    "name": "R. Boutaba"
+                },
+                {
+                    "authorId": "10297273",
+                    "name": "M. A. Salahuddin"
+                },
+                {
+                    "authorId": "2367393",
+                    "name": "Noura Limam"
+                },
+                {
+                    "authorId": "144517577",
+                    "name": "Sara Ayoubi"
+                },
+                {
+                    "authorId": "2618286",
+                    "name": "Nashid Shahriar"
+                },
+                {
+                    "authorId": "2585060",
+                    "name": "Felipe Estrada Solano"
+                },
+                {
+                    "authorId": "2832428",
+                    "name": "O. Rend\u00f3n"
+                }
+            ],
+            "doi": "10.1186/s13174-018-0087-2",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "b2700142a375d6c347050c6d3ef7cf4d41b82a25",
+            "title": "A comprehensive survey on machine learning for networking: evolution, applications and research opportunities",
+            "url": "https://www.semanticscholar.org/paper/b2700142a375d6c347050c6d3ef7cf4d41b82a25",
+            "venue": "Journal of Internet Services and Applications",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2609762",
+                    "name": "Mahsa Derakhshani"
+                },
+                {
+                    "authorId": "3091148",
+                    "name": "S. Parsaeefard"
+                },
+                {
+                    "authorId": "71976372",
+                    "name": "T. Le-Ngoc"
+                },
+                {
+                    "authorId": "1394165498",
+                    "name": "A. Leon-Garcia"
+                }
+            ],
+            "doi": "10.1049/iet-net.2017.0004",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "9b7f290c356232733e3929ab7122da967392b49f",
+            "title": "Leveraging synergy of SDWN and multi-layer resource management for 5G networks",
+            "url": "https://www.semanticscholar.org/paper/9b7f290c356232733e3929ab7122da967392b49f",
+            "venue": "IET Networks",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2064178911",
+                    "name": "Denis Baylor"
+                },
+                {
+                    "authorId": "1798895",
+                    "name": "Eric Breck"
+                },
+                {
+                    "authorId": "2061550",
+                    "name": "Heng-Tze Cheng"
+                },
+                {
+                    "authorId": "22640071",
+                    "name": "Noah Fiedel"
+                },
+                {
+                    "authorId": "22420870",
+                    "name": "Chuan Yu Foo"
+                },
+                {
+                    "authorId": "50730596",
+                    "name": "Zakaria Haque"
+                },
+                {
+                    "authorId": "40269586",
+                    "name": "Salem Haykal"
+                },
+                {
+                    "authorId": "37413761",
+                    "name": "M. Ispir"
+                },
+                {
+                    "authorId": "20048351",
+                    "name": "Vihan Jain"
+                },
+                {
+                    "authorId": "40338695",
+                    "name": "L. Koc"
+                },
+                {
+                    "authorId": "1766347",
+                    "name": "C. Koo"
+                },
+                {
+                    "authorId": "40015409",
+                    "name": "Lukasz Lew"
+                },
+                {
+                    "authorId": "22684493",
+                    "name": "Clemens Mewald"
+                },
+                {
+                    "authorId": "2063982692",
+                    "name": "A. Modi"
+                },
+                {
+                    "authorId": "1763100",
+                    "name": "N. Polyzotis"
+                },
+                {
+                    "authorId": "18654369",
+                    "name": "Sukriti Ramesh"
+                },
+                {
+                    "authorId": "1473253195",
+                    "name": "Sudip Roy"
+                },
+                {
+                    "authorId": "3288247",
+                    "name": "Steven Euijong Whang"
+                },
+                {
+                    "authorId": "35078078",
+                    "name": "M. Wicke"
+                },
+                {
+                    "authorId": "2224123",
+                    "name": "Jarek Wilkiewicz"
+                },
+                {
+                    "authorId": "2150904662",
+                    "name": "Xin Zhang"
+                },
+                {
+                    "authorId": "8195063",
+                    "name": "Martin A. Zinkevich"
+                }
+            ],
+            "doi": "10.1145/3097983.3098021",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "d76228d085d1232b74ff443f249898b6dcc3306c",
+            "title": "TFX: A TensorFlow-Based Production-Scale Machine Learning Platform",
+            "url": "https://www.semanticscholar.org/paper/d76228d085d1232b74ff443f249898b6dcc3306c",
+            "venue": "KDD",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "30401303",
+                    "name": "Wei Jiang"
+                },
+                {
+                    "authorId": "21298311",
+                    "name": "Mathias Strufe"
+                },
+                {
+                    "authorId": "1752672",
+                    "name": "H. Schotten"
+                }
+            ],
+            "doi": "10.1109/EuCNC.2017.7980672",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "1c6d41f5cef643df10b0986483c5868acdab73ea",
+            "title": "Intelligent network management for 5G systems: The SELFNET approach",
+            "url": "https://www.semanticscholar.org/paper/1c6d41f5cef643df10b0986483c5868acdab73ea",
+            "venue": "2017 European Conference on Networks and Communications (EuCNC)",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2112280446",
+                    "name": "Lei Xu"
+                },
+                {
+                    "authorId": "3068079",
+                    "name": "H. Assem"
+                },
+                {
+                    "authorId": "2761526",
+                    "name": "I. B. Yahia"
+                },
+                {
+                    "authorId": "2658305",
+                    "name": "Teodora Sandra Buda"
+                },
+                {
+                    "authorId": "144163587",
+                    "name": "\u00c1ngel Mart\u00edn"
+                },
+                {
+                    "authorId": "3457579",
+                    "name": "D. Gallico"
+                },
+                {
+                    "authorId": "2088701",
+                    "name": "Matteo Biancani"
+                },
+                {
+                    "authorId": "146154802",
+                    "name": "A. Pastor"
+                },
+                {
+                    "authorId": "2877073",
+                    "name": "P. Aranda"
+                },
+                {
+                    "authorId": "1809941",
+                    "name": "M. Smirnov"
+                },
+                {
+                    "authorId": "2801129",
+                    "name": "D. Raz"
+                },
+                {
+                    "authorId": "143835479",
+                    "name": "Olga Uryupina"
+                },
+                {
+                    "authorId": "144214846",
+                    "name": "Alberto Mozo"
+                },
+                {
+                    "authorId": "32739106",
+                    "name": "B. Rubio"
+                },
+                {
+                    "authorId": "1811922",
+                    "name": "M. Corici"
+                },
+                {
+                    "authorId": "1397211192",
+                    "name": "Pat O'Sullivan"
+                },
+                {
+                    "authorId": "2053499730",
+                    "name": "R. Mullins"
+                }
+            ],
+            "doi": "10.1109/EuCNC.2016.7561056",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "7117f1e2ff7758b243b882beb6e5a5ef4a1e83d1",
+            "title": "CogNet: A network management architecture featuring cognitive capabilities",
+            "url": "https://www.semanticscholar.org/paper/7117f1e2ff7758b243b882beb6e5a5ef4a1e83d1",
+            "venue": "2016 European Conference on Networks and Communications (EuCNC)",
+            "year": 2016
+        },
+        {
+            "arxivId": "1606.06222",
+            "authors": [
+                {
+                    "authorId": "2057371918",
+                    "name": "Albert Mestres"
+                },
+                {
+                    "authorId": "1398658352",
+                    "name": "Alberto Rodr\u00edguez-Natal"
+                },
+                {
+                    "authorId": "134142993",
+                    "name": "Josep Carner"
+                },
+                {
+                    "authorId": "1398658366",
+                    "name": "P. Barlet-Ros"
+                },
+                {
+                    "authorId": "1741769",
+                    "name": "E. Alarc\u00f3n"
+                },
+                {
+                    "authorId": "145920230",
+                    "name": "Marc Sol\u00e9"
+                },
+                {
+                    "authorId": "2595271",
+                    "name": "Victor Munt\u00e9s"
+                },
+                {
+                    "authorId": "143956932",
+                    "name": "D. Meyer"
+                },
+                {
+                    "authorId": "3349611",
+                    "name": "Sharon Barkai"
+                },
+                {
+                    "authorId": "3422701",
+                    "name": "Mike J. Hibbett"
+                },
+                {
+                    "authorId": "14011576",
+                    "name": "G. Estrada"
+                },
+                {
+                    "authorId": "2065685016",
+                    "name": "Khaldun Maruf"
+                },
+                {
+                    "authorId": "2196855",
+                    "name": "Florin Coras"
+                },
+                {
+                    "authorId": "1772066",
+                    "name": "V. Ermagan"
+                },
+                {
+                    "authorId": "2257053298",
+                    "name": "Hugo Latapie"
+                },
+                {
+                    "authorId": "66033707",
+                    "name": "C. Cassar"
+                },
+                {
+                    "authorId": "145092265",
+                    "name": "John Evans"
+                },
+                {
+                    "authorId": "3056189",
+                    "name": "F. Maino"
+                },
+                {
+                    "authorId": "1754424",
+                    "name": "J. Walrand"
+                },
+                {
+                    "authorId": "1398658334",
+                    "name": "A. Cabellos-Aparicio"
+                }
+            ],
+            "doi": "10.1145/3138808.3138810",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f8e439c2ec02481303da70cd5187e224bcb770b9",
+            "title": "Knowledge-Defined Networking",
+            "url": "https://www.semanticscholar.org/paper/f8e439c2ec02481303da70cd5187e224bcb770b9",
+            "venue": "Comput. Commun. Rev.",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2103536",
+                    "name": "Joon-Myung Kang"
+                },
+                {
+                    "authorId": "1803268",
+                    "name": "Hadi Bannazadeh"
+                },
+                {
+                    "authorId": "2069226256",
+                    "name": "Hesam Rahimi"
+                },
+                {
+                    "authorId": "2115214355",
+                    "name": "Thomas Lin"
+                },
+                {
+                    "authorId": "72206823",
+                    "name": "MohammadSadegh Faraji"
+                },
+                {
+                    "authorId": "1394165498",
+                    "name": "A. Leon-Garcia"
+                }
+            ],
+            "doi": "10.1109/ICCW.2013.6649233",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "a3358723977473c3b906275a71b73b35730aad6e",
+            "title": "Software-defined infrastructure and the Future Central Office",
+            "url": "https://www.semanticscholar.org/paper/a3358723977473c3b906275a71b73b35730aad6e",
+            "venue": "2013 IEEE International Conference on Communications Workshops (ICC)",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2103536",
+                    "name": "Joon-Myung Kang"
+                },
+                {
+                    "authorId": "1803268",
+                    "name": "Hadi Bannazadeh"
+                },
+                {
+                    "authorId": "1394165498",
+                    "name": "A. Leon-Garcia"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "9a915f9b89489942718a59479250b6402d7dba3a",
+            "title": "SAVI testbed: Control and management of converged virtual ICT resources",
+            "url": "https://www.semanticscholar.org/paper/9a915f9b89489942718a59479250b6402d7dba3a",
+            "venue": "2013 IFIP/IEEE International Symposium on Integrated Network Management (IM 2013)",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2681887",
+                    "name": "D. Rumelhart"
+                },
+                {
+                    "authorId": "1695689",
+                    "name": "Geoffrey E. Hinton"
+                },
+                {
+                    "authorId": "2116648700",
+                    "name": "Ronald J. Williams"
+                }
+            ],
+            "doi": "10.1016/B978-1-4832-1446-7.50035-2",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "319f22bd5abfd67ac15988aa5c7f705f018c3ccd",
+            "title": "Learning internal representations by error propagation",
+            "url": "https://www.semanticscholar.org/paper/319f22bd5abfd67ac15988aa5c7f705f018c3ccd",
+            "venue": "",
+            "year": 1986
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2148799483",
+                    "name": "Mai H. Hassan"
+                },
+                {
+                    "authorId": "1716780",
+                    "name": "A. Tizghadam"
+                },
+                {
+                    "authorId": "1394165498",
+                    "name": "A. Leon-Garcia"
+                }
+            ],
+            "doi": "10.1016/J.PROCS.2019.04.117",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "15c404b3ad241b45a1f8f108dcf79b61f7bce115",
+            "title": "Spatio-temporal Anomaly Detection in Intelligent Transportation Systems",
+            "url": "https://www.semanticscholar.org/paper/15c404b3ad241b45a1f8f108dcf79b61f7bce115",
+            "venue": "ANT/EDI40",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "51451004",
+                    "name": "Line M. P. Larsen"
+                },
+                {
+                    "authorId": "2250972",
+                    "name": "Aleksandra Checko"
+                },
+                {
+                    "authorId": "40554619",
+                    "name": "H. Christiansen"
+                }
+            ],
+            "doi": "10.1109/COMST.2018.2868805",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "dbfac0736f2fdfbedb3c3b659beec985efac80bf",
+            "title": "A Survey of the Functional Splits Proposed for 5G Mobile Crosshaul Networks",
+            "url": "https://www.semanticscholar.org/paper/dbfac0736f2fdfbedb3c3b659beec985efac80bf",
+            "venue": "IEEE Communications Surveys & Tutorials",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2114031238",
+                    "name": "Song Luo"
+                },
+                {
+                    "authorId": "2114873192",
+                    "name": "Peng Zhao"
+                },
+                {
+                    "authorId": "2145333222",
+                    "name": "Haining Wang"
+                },
+                {
+                    "authorId": "2032435059",
+                    "name": "Bo Fu"
+                },
+                {
+                    "authorId": "2116521926",
+                    "name": "Chen Li"
+                },
+                {
+                    "authorId": "33550621",
+                    "name": "Qiong Sun"
+                },
+                {
+                    "authorId": "19204791",
+                    "name": "Chongfeng Xie"
+                },
+                {
+                    "authorId": "2117234262",
+                    "name": "Ying Cheng"
+                },
+                {
+                    "authorId": "33256937",
+                    "name": "X. Qi"
+                },
+                {
+                    "authorId": "2068929819",
+                    "name": "Tao Peng"
+                },
+                {
+                    "authorId": "2110256332",
+                    "name": "Francisco da Silva"
+                },
+                {
+                    "authorId": "1689966",
+                    "name": "J. Strassner"
+                },
+                {
+                    "authorId": null,
+                    "name": "Jun Wu"
+                },
+                {
+                    "authorId": "2143761941",
+                    "name": "Weiping Xu"
+                },
+                {
+                    "authorId": "2146643397",
+                    "name": "Liang Zhang"
+                },
+                {
+                    "authorId": "2066158404",
+                    "name": "Ning Zong"
+                },
+                {
+                    "authorId": "3286780",
+                    "name": "B. Niman"
+                },
+                {
+                    "authorId": "37349958",
+                    "name": "Luca Lamorte"
+                },
+                {
+                    "authorId": "2249385",
+                    "name": "Ridha Soua"
+                },
+                {
+                    "authorId": "144882945",
+                    "name": "Bruno Parreira"
+                },
+                {
+                    "authorId": "2144334481",
+                    "name": "Yue Wang"
+                },
+                {
+                    "authorId": "1743624",
+                    "name": "Adnan Aijaz"
+                },
+                {
+                    "authorId": "2293876",
+                    "name": "F. Feisullin"
+                },
+                {
+                    "authorId": "145219658",
+                    "name": "M. Blanchet"
+                },
+                {
+                    "authorId": "98274612",
+                    "name": "Eng Wei Koo"
+                },
+                {
+                    "authorId": "2108574482",
+                    "name": "Lifeng Wang"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "569f173dd5929a6dbb426acd9d38e78458a230a1",
+            "title": "Improved operator experience through Experiential Networked Intelligence",
+            "url": "https://www.semanticscholar.org/paper/569f173dd5929a6dbb426acd9d38e78458a230a1",
+            "venue": "",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1739725",
+                    "name": "\u00c9. Rutten"
+                },
+                {
+                    "authorId": "2734113",
+                    "name": "N. Marchand"
+                },
+                {
+                    "authorId": "2150909977",
+                    "name": "D. Simon"
+                }
+            ],
+            "doi": "10.1007/978-3-319-74183-3_12",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "cf8c9daef33f13d1411e6ca5465e5ac93400a161",
+            "title": "Feedback Control as MAPE-K Loop in Autonomic Computing",
+            "url": "https://www.semanticscholar.org/paper/cf8c9daef33f13d1411e6ca5465e5ac93400a161",
+            "venue": "Software Engineering for Self-Adaptive Systems",
+            "year": 2013
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Mathematics",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        },
+        {
+            "category": "Engineering",
+            "source": "s2-fos-model"
+        },
+        {
+            "category": "Environmental Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Artificial Intelligence as a Services (AI-aaS) on Software-Defined Infrastructure",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/831f99c94624556cb6823501cec00dd40adeb05d",
+    "venue": "arXiv.org",
+    "year": 2019
+}

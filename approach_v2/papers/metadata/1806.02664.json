@@ -1,0 +1,2325 @@
+{
+    "abstract": "In zero-shot learning (ZSL), a classifier is trained to recognize visual classes without any image samples. Instead, it is given semantic information about the class, like a textual description or a set of attributes. Learning from attributes could benefit from explicitly modeling structure of the attribute space. Unfortunately, learning of general structure from empirical samples is hard with typical dataset sizes. \nHere we describe LAGO, a probabilistic model designed to capture natural soft and-or relations across groups of attributes. We show how this model can be learned end-to-end with a deep attribute-detection model. The soft group structure can be learned from data jointly as part of the model, and can also readily incorporate prior knowledge about groups if available. The soft and-or structure succeeds to capture meaningful and predictive structures, improving the accuracy of zero-shot learning on two of three benchmarks. \nFinally, LAGO reveals a unified formulation over two ZSL approaches: DAP (Lampert et al., 2009) and ESZSL (Romera-Paredes & Torr, 2015). Interestingly, taking only one singleton group for each attribute, introduces a new soft-relaxation of DAP, that outperforms DAP by ~40.",
+    "arxivId": "1806.02664",
+    "authors": [
+        {
+            "authorId": "34815079",
+            "name": "Y. Atzmon",
+            "url": "https://www.semanticscholar.org/author/34815079"
+        },
+        {
+            "authorId": "1732280",
+            "name": "Gal Chechik",
+            "url": "https://www.semanticscholar.org/author/1732280"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": "2311.01064",
+            "authors": [
+                {
+                    "authorId": "2264914432",
+                    "name": "Zalan Fabian"
+                },
+                {
+                    "authorId": "89139426",
+                    "name": "Zhongqi Miao"
+                },
+                {
+                    "authorId": "2264692022",
+                    "name": "Chunyuan Li"
+                },
+                {
+                    "authorId": "2145784327",
+                    "name": "Yuanhan Zhang"
+                },
+                {
+                    "authorId": "2182013922",
+                    "name": "Ziwei Liu"
+                },
+                {
+                    "authorId": "2214061392",
+                    "name": "A. Hern'andez"
+                },
+                {
+                    "authorId": "1421953350",
+                    "name": "Andr\u00e9s Montes-Rojas"
+                },
+                {
+                    "authorId": "2264974730",
+                    "name": "Rafael S. Escucha"
+                },
+                {
+                    "authorId": "2264964866",
+                    "name": "Laura Siabatto"
+                },
+                {
+                    "authorId": "2264178016",
+                    "name": "Andr'es Link"
+                },
+                {
+                    "authorId": "2264974778",
+                    "name": "Pablo Arbel'aez"
+                },
+                {
+                    "authorId": "11266005",
+                    "name": "R. Dodhia"
+                },
+                {
+                    "authorId": "4258401",
+                    "name": "J. Ferres"
+                }
+            ],
+            "doi": "10.48550/arXiv.2311.01064",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "50ab088fb18c8a3565c5f8c523a2aed741ea51dc",
+            "title": "Multimodal Foundation Models for Zero-shot Animal Species Recognition in Camera Trap Images",
+            "url": "https://www.semanticscholar.org/paper/50ab088fb18c8a3565c5f8c523a2aed741ea51dc",
+            "venue": "ArXiv",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "4757656",
+                    "name": "Aditya K Panda"
+                },
+                {
+                    "authorId": "8371457",
+                    "name": "Bikash Santra"
+                },
+                {
+                    "authorId": "145478199",
+                    "name": "D. Mukherjee"
+                }
+            ],
+            "doi": "10.1109/TETCI.2022.3232816",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2f1a47ca8d35765063095393ea3a325ac156893b",
+            "title": "Isolating Features of Object and Its State for Compositional Zero-Shot Learning",
+            "url": "https://www.semanticscholar.org/paper/2f1a47ca8d35765063095393ea3a325ac156893b",
+            "venue": "IEEE Transactions on Emerging Topics in Computational Intelligence",
+            "year": 2023
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3057896",
+                    "name": "Guosen Xie"
+                },
+                {
+                    "authorId": "143644345",
+                    "name": "Zheng Zhang"
+                },
+                {
+                    "authorId": "2054473409",
+                    "name": "Huan Xiong"
+                },
+                {
+                    "authorId": "2067609498",
+                    "name": "Ling Shao"
+                },
+                {
+                    "authorId": "2155784282",
+                    "name": "Xuelong Li"
+                }
+            ],
+            "doi": "10.1109/TCSVT.2022.3208071",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d2e0ee7d804db782b637f4d23d7085431ddc6122",
+            "title": "Towards Zero-Shot Learning: A Brief Review and an Attention-Based Embedding Network",
+            "url": "https://www.semanticscholar.org/paper/d2e0ee7d804db782b637f4d23d7085431ddc6122",
+            "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+            "year": 2023
+        },
+        {
+            "arxivId": "2210.15182",
+            "authors": [
+                {
+                    "authorId": "1999945746",
+                    "name": "Ohad Amosy"
+                },
+                {
+                    "authorId": "2160537468",
+                    "name": "Tomer Volk"
+                },
+                {
+                    "authorId": "2217683961",
+                    "name": "Eilam Shapira"
+                },
+                {
+                    "authorId": "2031088828",
+                    "name": "Eyal Ben-David"
+                },
+                {
+                    "authorId": "2273679776",
+                    "name": "Roi Reichart"
+                },
+                {
+                    "authorId": "2065001062",
+                    "name": "Gal Chechik"
+                }
+            ],
+            "doi": "10.18653/v1/2024.findings-emnlp.8",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "893e79842994c36971109a458d2150ec13e148e0",
+            "title": "Text2Model: Text-based Model Induction for Zero-shot Image Classification",
+            "url": "https://www.semanticscholar.org/paper/893e79842994c36971109a458d2150ec13e148e0",
+            "venue": "EMNLP",
+            "year": 2022
+        },
+        {
+            "arxivId": "2204.01694",
+            "authors": [
+                {
+                    "authorId": "22021547",
+                    "name": "Niv Cohen"
+                },
+                {
+                    "authorId": "134639223",
+                    "name": "Rinon Gal"
+                },
+                {
+                    "authorId": "2656186",
+                    "name": "E. Meirom"
+                },
+                {
+                    "authorId": "1732280",
+                    "name": "Gal Chechik"
+                },
+                {
+                    "authorId": "34815079",
+                    "name": "Y. Atzmon"
+                }
+            ],
+            "doi": "10.48550/arXiv.2204.01694",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "0791a0441e1f672c43aecb2d6708fbc8725c8cad",
+            "title": "\"This is my unicorn, Fluffy\": Personalizing frozen vision-language representations",
+            "url": "https://www.semanticscholar.org/paper/0791a0441e1f672c43aecb2d6708fbc8725c8cad",
+            "venue": "ECCV",
+            "year": 2022
+        },
+        {
+            "arxivId": "2112.00410",
+            "authors": [
+                {
+                    "authorId": null,
+                    "name": "Zhe Liu"
+                },
+                {
+                    "authorId": "2117014567",
+                    "name": "Yun Li"
+                },
+                {
+                    "authorId": "145095579",
+                    "name": "L. Yao"
+                },
+                {
+                    "authorId": "35660011",
+                    "name": "Julian McAuley"
+                },
+                {
+                    "authorId": "2142743385",
+                    "name": "Sam Dixon"
+                }
+            ],
+            "doi": "10.1109/TNNLS.2022.3176282",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "1d0fad8e4ffc7a4285ee1dd70605827708a612fc",
+            "title": "Rethink, Revisit, Revise: A Spiral Reinforced Self-Revised Network for Zero-Shot Learning",
+            "url": "https://www.semanticscholar.org/paper/1d0fad8e4ffc7a4285ee1dd70605827708a612fc",
+            "venue": "IEEE Transactions on Neural Networks and Learning Systems",
+            "year": 2021
+        },
+        {
+            "arxivId": "2111.14182",
+            "authors": [
+                {
+                    "authorId": "2116609876",
+                    "name": "Yu Li"
+                },
+                {
+                    "authorId": "1443758938",
+                    "name": "Tzu-Yin Chao"
+                },
+                {
+                    "authorId": "2110522996",
+                    "name": "Ching-Chun Huang"
+                },
+                {
+                    "authorId": "2158177948",
+                    "name": "Pin-Yu Chen"
+                },
+                {
+                    "authorId": "37811787",
+                    "name": "Wei-Chen Chiu"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "1e8fbaa1332a985f05f68e536b89c2351c5621c9",
+            "title": "Make an Omelette with Breaking Eggs: Zero-Shot Learning for Novel Attribute Synthesis",
+            "url": "https://www.semanticscholar.org/paper/1e8fbaa1332a985f05f68e536b89c2351c5621c9",
+            "venue": "NeurIPS",
+            "year": 2021
+        },
+        {
+            "arxivId": "2105.13850",
+            "authors": [
+                {
+                    "authorId": "23710659",
+                    "name": "M. Kirchhof"
+                },
+                {
+                    "authorId": "49082680",
+                    "name": "Lena Schmid"
+                },
+                {
+                    "authorId": "51300566",
+                    "name": "Christopher Reining"
+                },
+                {
+                    "authorId": "1399232171",
+                    "name": "M. T. Hompel"
+                },
+                {
+                    "authorId": "2098672051",
+                    "name": "M. Pauly"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "53e97a606028129ed3a3f444923f0a839ae5c180",
+            "title": "pRSL: Interpretable Multi-label Stacking by Learning Probabilistic Rules",
+            "url": "https://www.semanticscholar.org/paper/53e97a606028129ed3a3f444923f0a839ae5c180",
+            "venue": "UAI",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "72584403",
+                    "name": "Yuanyuan Qing"
+                },
+                {
+                    "authorId": "5397221",
+                    "name": "Yijie Zeng"
+                },
+                {
+                    "authorId": "144299201",
+                    "name": "Qifan Cao"
+                },
+                {
+                    "authorId": "145678691",
+                    "name": "G. Huang"
+                }
+            ],
+            "doi": "10.1016/j.neunet.2021.02.015",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9597a4ae2e4f386252ecc6fca28adaea071c6d8b",
+            "title": "End-to-end novel visual categories learning via auxiliary self-supervision",
+            "url": "https://www.semanticscholar.org/paper/9597a4ae2e4f386252ecc6fca28adaea071c6d8b",
+            "venue": "Neural Networks",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2605815",
+                    "name": "Haofeng Zhang"
+                },
+                {
+                    "authorId": "2108679775",
+                    "name": "Yinduo Wang"
+                },
+                {
+                    "authorId": "144325904",
+                    "name": "Yang Long"
+                },
+                {
+                    "authorId": "1706028",
+                    "name": "Longzhi Yang"
+                },
+                {
+                    "authorId": "144082425",
+                    "name": "Ling Shao"
+                }
+            ],
+            "doi": "10.1016/j.neunet.2020.11.007",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "47e6d310da8665da4bd228da5213db301bdff5ec",
+            "title": "Modality independent adversarial network for generalized zero shot image classification",
+            "url": "https://www.semanticscholar.org/paper/47e6d310da8665da4bd228da5213db301bdff5ec",
+            "venue": "Neural Networks",
+            "year": 2020
+        },
+        {
+            "arxivId": "2010.03276",
+            "authors": [
+                {
+                    "authorId": "1405328226",
+                    "name": "Tzuf Paz-Argaman"
+                },
+                {
+                    "authorId": "34815079",
+                    "name": "Y. Atzmon"
+                },
+                {
+                    "authorId": "1732280",
+                    "name": "Gal Chechik"
+                },
+                {
+                    "authorId": "2799181",
+                    "name": "Reut Tsarfaty"
+                }
+            ],
+            "doi": "10.18653/v1/2020.findings-emnlp.50",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "6273172dea6c4d7f8dc2786b3bb1c8d46d34f0c7",
+            "title": "ZEST: Zero-shot Learning from Text Descriptions using Textual Similarity and Visual Summarization",
+            "url": "https://www.semanticscholar.org/paper/6273172dea6c4d7f8dc2786b3bb1c8d46d34f0c7",
+            "venue": "FINDINGS",
+            "year": 2020
+        },
+        {
+            "arxivId": "2009.06586",
+            "authors": [
+                {
+                    "authorId": "22579225",
+                    "name": "Yunhao Ge"
+                },
+                {
+                    "authorId": "1389570466",
+                    "name": "Sami Abu-El-Haija"
+                },
+                {
+                    "authorId": "72218794",
+                    "name": "Gan Xin"
+                },
+                {
+                    "authorId": "7326223",
+                    "name": "L. Itti"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "1bf443a6a98dd0cbc22be3b8e82da4b60093e41d",
+            "title": "Zero-shot Synthesis with Group-Supervised Learning",
+            "url": "https://www.semanticscholar.org/paper/1bf443a6a98dd0cbc22be3b8e82da4b60093e41d",
+            "venue": "ICLR",
+            "year": 2020
+        },
+        {
+            "arxivId": "2008.11185",
+            "authors": [
+                {
+                    "authorId": "2067103717",
+                    "name": "William Thong"
+                },
+                {
+                    "authorId": "145404204",
+                    "name": "Cees G. M. Snoek"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "3e53f94215998a91b1f8124914cb6cd15f2a03c9",
+            "title": "Bias-Awareness for Zero-Shot Learning the Seen and Unseen",
+            "url": "https://www.semanticscholar.org/paper/3e53f94215998a91b1f8124914cb6cd15f2a03c9",
+            "venue": "BMVC",
+            "year": 2020
+        },
+        {
+            "arxivId": "2006.14610",
+            "authors": [
+                {
+                    "authorId": "34815079",
+                    "name": "Y. Atzmon"
+                },
+                {
+                    "authorId": "32653170",
+                    "name": "Felix Kreuk"
+                },
+                {
+                    "authorId": "2304764",
+                    "name": "Uri Shalit"
+                },
+                {
+                    "authorId": "1732280",
+                    "name": "Gal Chechik"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "22182a9b07777bbe2403ef061225402e3940117e",
+            "title": "A causal view of compositional zero-shot recognition",
+            "url": "https://www.semanticscholar.org/paper/22182a9b07777bbe2403ef061225402e3940117e",
+            "venue": "NeurIPS",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2108679775",
+                    "name": "Yinduo Wang"
+                },
+                {
+                    "authorId": "2605815",
+                    "name": "Haofeng Zhang"
+                },
+                {
+                    "authorId": "2148904735",
+                    "name": "Zheng Zhang"
+                },
+                {
+                    "authorId": "144325904",
+                    "name": "Yang Long"
+                },
+                {
+                    "authorId": "144082425",
+                    "name": "Ling Shao"
+                }
+            ],
+            "doi": "10.1016/j.knosys.2020.105796",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "77b4bbf10d6fd58f9494a60413690b6767bb6cda",
+            "title": "Learning discriminative domain-invariant prototypes for generalized zero shot learning",
+            "url": "https://www.semanticscholar.org/paper/77b4bbf10d6fd58f9494a60413690b6767bb6cda",
+            "venue": "Knowl. Based Syst.",
+            "year": 2020
+        },
+        {
+            "arxivId": "2004.14143",
+            "authors": [
+                {
+                    "authorId": "2047665",
+                    "name": "Mahdi Rezaei"
+                },
+                {
+                    "authorId": "38653511",
+                    "name": "Mahsa Shahidi"
+                }
+            ],
+            "doi": "10.1016/j.ibmed.2020.100005",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "8b78ac54c4653dc82fd39bdaf19d226f993961aa",
+            "title": "Zero-shot learning and its applications from autonomous vehicles to COVID-19 diagnosis: A review",
+            "url": "https://www.semanticscholar.org/paper/8b78ac54c4653dc82fd39bdaf19d226f993961aa",
+            "venue": "Intelligence-Based Medicine",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1612410686",
+                    "name": "Dvir Samuel"
+                },
+                {
+                    "authorId": "34815079",
+                    "name": "Y. Atzmon"
+                },
+                {
+                    "authorId": "1732280",
+                    "name": "Gal Chechik"
+                }
+            ],
+            "doi": "10.1109/WACV48630.2021.00033",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "9c4283b51856699707144c334c6169be14fa3a11",
+            "title": "From generalized zero-shot learning to long-tail with class descriptors",
+            "url": "https://www.semanticscholar.org/paper/9c4283b51856699707144c334c6169be14fa3a11",
+            "venue": "2021 IEEE Winter Conference on Applications of Computer Vision (WACV)",
+            "year": 2020
+        },
+        {
+            "arxivId": "2004.02235",
+            "authors": [
+                {
+                    "authorId": "1612410686",
+                    "name": "Dvir Samuel"
+                },
+                {
+                    "authorId": "34815079",
+                    "name": "Y. Atzmon"
+                },
+                {
+                    "authorId": "1732280",
+                    "name": "Gal Chechik"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "099585892d4ec871a9cef371e8698c314e361dd6",
+            "title": "Long-tail learning with attributes",
+            "url": "https://www.semanticscholar.org/paper/099585892d4ec871a9cef371e8698c314e361dd6",
+            "venue": "ArXiv",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2605815",
+                    "name": "Haofeng Zhang"
+                },
+                {
+                    "authorId": "153833109",
+                    "name": "H. Mao"
+                },
+                {
+                    "authorId": "144325904",
+                    "name": "Yang Long"
+                },
+                {
+                    "authorId": "2345507",
+                    "name": "Wankou Yang"
+                },
+                {
+                    "authorId": "144082425",
+                    "name": "Ling Shao"
+                }
+            ],
+            "doi": "10.1109/TNNLS.2019.2955157",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "e52662a338771752c7614d649cf6f7e5f473a7cb",
+            "title": "A Probabilistic Zero-Shot Learning Method via Latent Nonnegative Prototype Synthesis of Unseen Classes",
+            "url": "https://www.semanticscholar.org/paper/e52662a338771752c7614d649cf6f7e5f473a7cb",
+            "venue": "IEEE Transactions on Neural Networks and Learning Systems",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2800977",
+                    "name": "Roman Visotsky"
+                },
+                {
+                    "authorId": "34815079",
+                    "name": "Y. Atzmon"
+                },
+                {
+                    "authorId": "1732280",
+                    "name": "Gal Chechik"
+                }
+            ],
+            "doi": "10.1007/978-3-030-27005-6_21",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "b3b820eba90b18b331ce4db48147e7c6f7d8c48a",
+            "title": "Learning with Per-Sample Side Information",
+            "url": "https://www.semanticscholar.org/paper/b3b820eba90b18b331ce4db48147e7c6f7d8c48a",
+            "venue": "AGI",
+            "year": 2019
+        },
+        {
+            "arxivId": "1906.03859",
+            "authors": [
+                {
+                    "authorId": "2800977",
+                    "name": "Roman Visotsky"
+                },
+                {
+                    "authorId": "34815079",
+                    "name": "Y. Atzmon"
+                },
+                {
+                    "authorId": "1732280",
+                    "name": "Gal Chechik"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a49623ec2dcfe71b0800fb0eb99897ae196a7d17",
+            "title": "Few-Shot Learning with Per-Sample Rich Supervision",
+            "url": "https://www.semanticscholar.org/paper/a49623ec2dcfe71b0800fb0eb99897ae196a7d17",
+            "venue": "ArXiv",
+            "year": 2019
+        },
+        {
+            "arxivId": "1906.11892",
+            "authors": [
+                {
+                    "authorId": "3313242",
+                    "name": "Boris N. Oreshkin"
+                },
+                {
+                    "authorId": "2599281",
+                    "name": "Negar Rostamzadeh"
+                },
+                {
+                    "authorId": "2708655",
+                    "name": "Pedro H. O. Pinheiro"
+                },
+                {
+                    "authorId": "1972076",
+                    "name": "C. Pal"
+                }
+            ],
+            "doi": "10.1109/CVPRW50498.2020.00466",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "653917ee385e3cbd1b27f5b26124b54078e6cfc2",
+            "title": "CLAREL: Classification via retrieval loss for zero-shot learning",
+            "url": "https://www.semanticscholar.org/paper/653917ee385e3cbd1b27f5b26124b54078e6cfc2",
+            "venue": "2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)",
+            "year": 2019
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "34815079",
+                    "name": "Y. Atzmon"
+                },
+                {
+                    "authorId": "1732280",
+                    "name": "Gal Chechik"
+                }
+            ],
+            "doi": "10.1109/CVPR.2019.01194",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "90bbacad4bf9084d7a76de019b99a4622c238e57",
+            "title": "Adaptive Confidence Smoothing for Generalized Zero-Shot Learning",
+            "url": "https://www.semanticscholar.org/paper/90bbacad4bf9084d7a76de019b99a4622c238e57",
+            "venue": "2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2018
+        },
+        {
+            "arxivId": "1812.09903",
+            "authors": [
+                {
+                    "authorId": "34815079",
+                    "name": "Y. Atzmon"
+                },
+                {
+                    "authorId": "1732280",
+                    "name": "Gal Chechik"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "aa4506296c098a7491beeaabaf7b7eddb129ad35",
+            "title": "Domain-Aware Generalized Zero-Shot Learning",
+            "url": "https://www.semanticscholar.org/paper/aa4506296c098a7491beeaabaf7b7eddb129ad35",
+            "venue": "ArXiv",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1999945746",
+                    "name": "Ohad Amosy"
+                },
+                {
+                    "authorId": "2160537468",
+                    "name": "Tomer Volk"
+                },
+                {
+                    "authorId": "2031088828",
+                    "name": "Eyal Ben-David"
+                },
+                {
+                    "authorId": "1762757",
+                    "name": "Roi Reichart"
+                },
+                {
+                    "authorId": "1732280",
+                    "name": "Gal Chechik"
+                }
+            ],
+            "doi": "10.48550/arXiv.2210.15182",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d756e73586714643d76497aeebd8960a31524d9e",
+            "title": "Text2Model: Model Induction for Zero-shot Generalization Using Task Descriptions",
+            "url": "https://www.semanticscholar.org/paper/d756e73586714643d76497aeebd8960a31524d9e",
+            "venue": "ArXiv",
+            "year": 2022
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "37825612",
+                    "name": "Harsh Agrawal"
+                },
+                {
+                    "authorId": "2656186",
+                    "name": "E. Meirom"
+                },
+                {
+                    "authorId": "34815079",
+                    "name": "Y. Atzmon"
+                },
+                {
+                    "authorId": "1712535",
+                    "name": "Shie Mannor"
+                },
+                {
+                    "authorId": "1732280",
+                    "name": "Gal Chechik"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e35b2e19af739e177915d9316ba06b5f0c7f1c33",
+            "title": "Known unknowns: Learning novel concepts using reasoning-by-elimination",
+            "url": "https://www.semanticscholar.org/paper/e35b2e19af739e177915d9316ba06b5f0c7f1c33",
+            "venue": "UAI",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "151474408",
+                    "name": "Zhenwen Liang"
+                },
+                {
+                    "authorId": "2928371",
+                    "name": "Xiangliang Zhang"
+                }
+            ],
+            "doi": "10.18653/v1/2021.findings-emnlp.400",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c8be1740bd2f7e2635db6c5ab774108183eb4659",
+            "title": "Data-Efficient Language Shaped Few-shot Image Classification",
+            "url": "https://www.semanticscholar.org/paper/c8be1740bd2f7e2635db6c5ab774108183eb4659",
+            "venue": "EMNLP",
+            "year": 2021
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2057358188",
+                    "name": "Pengzhen Du"
+                },
+                {
+                    "authorId": "2605815",
+                    "name": "Haofeng Zhang"
+                },
+                {
+                    "authorId": "145313246",
+                    "name": "Jianfeng Lu"
+                }
+            ],
+            "doi": "10.1109/ACCESS.2020.3022805",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "aaa9821e60d2647a2fc255f8224b9d3b0b76600c",
+            "title": "Learning Discriminative Projection With Visual Semantic Alignment for Generalized Zero Shot Learning",
+            "url": "https://www.semanticscholar.org/paper/aaa9821e60d2647a2fc255f8224b9d3b0b76600c",
+            "venue": "IEEE Access",
+            "year": 2020
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "47130347",
+                    "name": "Shichen Liu"
+                },
+                {
+                    "authorId": "35776445",
+                    "name": "Mingsheng Long"
+                },
+                {
+                    "authorId": "2144499343",
+                    "name": "Jianmin Wang"
+                },
+                {
+                    "authorId": "1694621",
+                    "name": "Michael I. Jordan"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "dc577b9c5a06bac43dd1e6fde59e3220f34de492",
+            "title": "Generalized Zero-Shot Learning with Deep Calibration Network",
+            "url": "https://www.semanticscholar.org/paper/dc577b9c5a06bac43dd1e6fde59e3220f34de492",
+            "venue": "NeurIPS",
+            "year": 2018
+        }
+    ],
+    "corpusId": 46977999,
+    "doi": null,
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 3,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 29,
+    "numCiting": 50,
+    "paperId": "11937c9f54723bea7a0c936993b42e091b494e7d",
+    "references": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1819076",
+                    "name": "Seyoung Park"
+                },
+                {
+                    "authorId": "2058824303",
+                    "name": "B. Nie"
+                },
+                {
+                    "authorId": "145380991",
+                    "name": "Song-Chun Zhu"
+                }
+            ],
+            "doi": "10.1109/TPAMI.2017.2731842",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "7f4577babc87511c9b2987d17f71a4efcc1cfe6b",
+            "title": "Attribute And-Or Grammar for Joint Parsing of Human Pose, Parts and Attributes",
+            "url": "https://www.semanticscholar.org/paper/7f4577babc87511c9b2987d17f71a4efcc1cfe6b",
+            "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+            "year": 2018
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "34811036",
+                    "name": "Yuchen Guo"
+                },
+                {
+                    "authorId": "38329336",
+                    "name": "Guiguang Ding"
+                },
+                {
+                    "authorId": "1783847",
+                    "name": "J. Han"
+                },
+                {
+                    "authorId": "144044848",
+                    "name": "Sheng Tang"
+                }
+            ],
+            "doi": "10.1609/aaai.v32i1.12251",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ba8e129724e86984d7f935353941cbc9b134e171",
+            "title": "Zero-Shot Learning With Attribute Selection",
+            "url": "https://www.semanticscholar.org/paper/ba8e129724e86984d7f935353941cbc9b134e171",
+            "venue": "AAAI",
+            "year": 2018
+        },
+        {
+            "arxivId": "1802.01279",
+            "authors": [
+                {
+                    "authorId": "2108970904",
+                    "name": "Hongguang Zhang"
+                },
+                {
+                    "authorId": "2155775",
+                    "name": "Piotr Koniusz"
+                }
+            ],
+            "doi": "10.1109/CVPR.2018.00800",
+            "intent": [
+                "result",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "04b559c0968751cc89980de3429c6bd10d6a1750",
+            "title": "Zero-Shot Kernel Learning",
+            "url": "https://www.semanticscholar.org/paper/04b559c0968751cc89980de3429c6bd10d6a1750",
+            "venue": "2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+            "year": 2018
+        },
+        {
+            "arxivId": "1712.03878",
+            "authors": [
+                {
+                    "authorId": "3036607",
+                    "name": "Gundeep Arora"
+                },
+                {
+                    "authorId": "153610266",
+                    "name": "V. Verma"
+                },
+                {
+                    "authorId": "30628805",
+                    "name": "Ashish Mishra"
+                },
+                {
+                    "authorId": "145593549",
+                    "name": "Piyush Rai"
+                }
+            ],
+            "doi": "10.1109/CVPR.2018.00450",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "90259de5c5884f87a77b1c0252fa0b144cf037a9",
+            "title": "Generalized Zero-Shot Learning via Synthesized Examples",
+            "url": "https://www.semanticscholar.org/paper/90259de5c5884f87a77b1c0252fa0b144cf037a9",
+            "venue": "2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+            "year": 2017
+        },
+        {
+            "arxivId": "1712.00981",
+            "authors": [
+                {
+                    "authorId": "3370667",
+                    "name": "Yongqin Xian"
+                },
+                {
+                    "authorId": "2055942389",
+                    "name": "Tobias Lorenz"
+                },
+                {
+                    "authorId": "48920094",
+                    "name": "B. Schiele"
+                },
+                {
+                    "authorId": "2893664",
+                    "name": "Zeynep Akata"
+                }
+            ],
+            "doi": "10.1109/CVPR.2018.00581",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "cb3f5defe2120076ebbcc89b9256bbfcb8b4d8a1",
+            "title": "Feature Generating Networks for Zero-Shot Learning",
+            "url": "https://www.semanticscholar.org/paper/cb3f5defe2120076ebbcc89b9256bbfcb8b4d8a1",
+            "venue": "2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+            "year": 2017
+        },
+        {
+            "arxivId": "1710.04837",
+            "authors": [
+                {
+                    "authorId": "35782003",
+                    "name": "Yanwei Fu"
+                },
+                {
+                    "authorId": "145406421",
+                    "name": "T. Xiang"
+                },
+                {
+                    "authorId": "1717861",
+                    "name": "Yu-Gang Jiang"
+                },
+                {
+                    "authorId": "145905953",
+                    "name": "X. Xue"
+                },
+                {
+                    "authorId": "144398147",
+                    "name": "L. Sigal"
+                },
+                {
+                    "authorId": "144784813",
+                    "name": "S. Gong"
+                }
+            ],
+            "doi": "10.1109/MSP.2017.2763441",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "8cc4a4bc7f9a989130d5ac129d24426a444fe161",
+            "title": "Recent Advances in Zero-Shot Recognition: Toward Data-Efficient Understanding of Visual Content",
+            "url": "https://www.semanticscholar.org/paper/8cc4a4bc7f9a989130d5ac129d24426a444fe161",
+            "venue": "IEEE Signal Processing Magazine",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3371529",
+                    "name": "Huajie Jiang"
+                },
+                {
+                    "authorId": "2108681349",
+                    "name": "Ruiping Wang"
+                },
+                {
+                    "authorId": "145455919",
+                    "name": "S. Shan"
+                },
+                {
+                    "authorId": "2143688067",
+                    "name": "Yi Yang"
+                },
+                {
+                    "authorId": "46772547",
+                    "name": "Xilin Chen"
+                }
+            ],
+            "doi": "10.1109/ICCV.2017.453",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9c43b59177cb5539ea649c188387fe374663bbb1",
+            "title": "Learning Discriminative Latent Attributes for Zero-Shot Classification",
+            "url": "https://www.semanticscholar.org/paper/9c43b59177cb5539ea649c188387fe374663bbb1",
+            "venue": "2017 IEEE International Conference on Computer Vision (ICCV)",
+            "year": 2017
+        },
+        {
+            "arxivId": "1709.00663",
+            "authors": [
+                {
+                    "authorId": "30628805",
+                    "name": "Ashish Mishra"
+                },
+                {
+                    "authorId": "144109388",
+                    "name": "M. K. Reddy"
+                },
+                {
+                    "authorId": "50853059",
+                    "name": "Anurag Mittal"
+                },
+                {
+                    "authorId": "1726726",
+                    "name": "H. Murthy"
+                }
+            ],
+            "doi": "10.1109/CVPRW.2018.00294",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c3124b0491d479e8a869c61f059ffa08dad49362",
+            "title": "A Generative Model for Zero Shot Learning Using Conditional Variational Autoencoders",
+            "url": "https://www.semanticscholar.org/paper/c3124b0491d479e8a869c61f059ffa08dad49362",
+            "venue": "2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2054892429",
+                    "name": "Meng Ye"
+                },
+                {
+                    "authorId": "1798719",
+                    "name": "Yuhong Guo"
+                }
+            ],
+            "doi": "10.1109/CVPR.2017.542",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ba244239a2700b13307a112d09c895cda2fc9af5",
+            "title": "Zero-Shot Classification with Discriminative Semantic Representation Learning",
+            "url": "https://www.semanticscholar.org/paper/ba244239a2700b13307a112d09c895cda2fc9af5",
+            "venue": "2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2017
+        },
+        {
+            "arxivId": "1707.00600",
+            "authors": [
+                {
+                    "authorId": "3370667",
+                    "name": "Yongqin Xian"
+                },
+                {
+                    "authorId": "1787591",
+                    "name": "Christoph H. Lampert"
+                },
+                {
+                    "authorId": "48920094",
+                    "name": "B. Schiele"
+                },
+                {
+                    "authorId": "2893664",
+                    "name": "Zeynep Akata"
+                }
+            ],
+            "doi": "10.1109/TPAMI.2018.2857768",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "ffe28f6bf0e9e6bbca6313319aa1a5409d283d9b",
+            "title": "Zero-Shot Learning\u2014A Comprehensive Evaluation of the Good, the Bad and the Ugly",
+            "url": "https://www.semanticscholar.org/paper/ffe28f6bf0e9e6bbca6313319aa1a5409d283d9b",
+            "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+            "year": 2017
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "47158869",
+                    "name": "Xing Xu"
+                },
+                {
+                    "authorId": "144618699",
+                    "name": "Fumin Shen"
+                },
+                {
+                    "authorId": "6897666",
+                    "name": "Yang Yang"
+                },
+                {
+                    "authorId": "2712862",
+                    "name": "Dongxiang Zhang"
+                },
+                {
+                    "authorId": "1724393",
+                    "name": "Heng Tao Shen"
+                },
+                {
+                    "authorId": "2346105",
+                    "name": "Jingkuan Song"
+                }
+            ],
+            "doi": "10.1109/CVPR.2017.217",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "11f4f72f99883cc225fb0cdedd457b612eb76359",
+            "title": "Matrix Tri-Factorization with Manifold Regularizations for Zero-Shot Learning",
+            "url": "https://www.semanticscholar.org/paper/11f4f72f99883cc225fb0cdedd457b612eb76359",
+            "venue": "2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2017
+        },
+        {
+            "arxivId": "1704.03039",
+            "authors": [
+                {
+                    "authorId": "31692099",
+                    "name": "Pedro Morgado"
+                },
+                {
+                    "authorId": "1699559",
+                    "name": "N. Vasconcelos"
+                }
+            ],
+            "doi": "10.1109/CVPR.2017.220",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "9c857df9d0f9def74410af2538f24c806114e35a",
+            "title": "Semantically Consistent Regularization for Zero-Shot Recognition",
+            "url": "https://www.semanticscholar.org/paper/9c857df9d0f9def74410af2538f24c806114e35a",
+            "venue": "2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2017
+        },
+        {
+            "arxivId": "1703.05908",
+            "authors": [
+                {
+                    "authorId": "145639633",
+                    "name": "Yao-Hung Hubert Tsai"
+                },
+                {
+                    "authorId": null,
+                    "name": "Liang-Kang Huang"
+                },
+                {
+                    "authorId": "145124475",
+                    "name": "R. Salakhutdinov"
+                }
+            ],
+            "doi": "10.1109/ICCV.2017.386",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "70bcc6766f055fc279bbb07af967c026ff8a2d9c",
+            "title": "Learning Robust Visual-Semantic Embeddings",
+            "url": "https://www.semanticscholar.org/paper/70bcc6766f055fc279bbb07af967c026ff8a2d9c",
+            "venue": "2017 IEEE International Conference on Computer Vision (ICCV)",
+            "year": 2017
+        },
+        {
+            "arxivId": "1703.05002",
+            "authors": [
+                {
+                    "authorId": "1573874337",
+                    "name": "Yanan Li"
+                },
+                {
+                    "authorId": "1721899",
+                    "name": "Donghui Wang"
+                },
+                {
+                    "authorId": "9918971",
+                    "name": "Huanhang Hu"
+                },
+                {
+                    "authorId": "3368782",
+                    "name": "Yuetan Lin"
+                },
+                {
+                    "authorId": "2125211",
+                    "name": "Yueting Zhuang"
+                }
+            ],
+            "doi": "10.1109/CVPR.2017.553",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "36bfe217afafd8bccce3e8d2bd23c4e4018a98bc",
+            "title": "Zero-Shot Recognition Using Dual Visual-Semantic Mapping Paths",
+            "url": "https://www.semanticscholar.org/paper/36bfe217afafd8bccce3e8d2bd23c4e4018a98bc",
+            "venue": "2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2017
+        },
+        {
+            "arxivId": "1703.04394",
+            "authors": [
+                {
+                    "authorId": "3370667",
+                    "name": "Yongqin Xian"
+                },
+                {
+                    "authorId": "48920094",
+                    "name": "B. Schiele"
+                },
+                {
+                    "authorId": "2893664",
+                    "name": "Zeynep Akata"
+                }
+            ],
+            "doi": "10.1109/CVPR.2017.328",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "89e88ab5b7ba7557573ad773a0a077484bee3759",
+            "title": "Zero-Shot Learning \u2014 The Good, the Bad and the Ugly",
+            "url": "https://www.semanticscholar.org/paper/89e88ab5b7ba7557573ad773a0a077484bee3759",
+            "venue": "2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2017
+        },
+        {
+            "arxivId": "1701.02870",
+            "authors": [
+                {
+                    "authorId": "8137017",
+                    "name": "Ramakrishna Vedantam"
+                },
+                {
+                    "authorId": "1751569",
+                    "name": "Samy Bengio"
+                },
+                {
+                    "authorId": "1702318",
+                    "name": "K. Murphy"
+                },
+                {
+                    "authorId": "153432684",
+                    "name": "Devi Parikh"
+                },
+                {
+                    "authorId": "1732280",
+                    "name": "Gal Chechik"
+                }
+            ],
+            "doi": "10.1109/CVPR.2017.120",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "e782437503f2a24fd1a836a434da395bf15c88c2",
+            "title": "Context-Aware Captions from Context-Agnostic Supervision",
+            "url": "https://www.semanticscholar.org/paper/e782437503f2a24fd1a836a434da395bf15c88c2",
+            "venue": "2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2017
+        },
+        {
+            "arxivId": "1611.05088",
+            "authors": [
+                {
+                    "authorId": "48459110",
+                    "name": "Li Zhang"
+                },
+                {
+                    "authorId": "145406421",
+                    "name": "T. Xiang"
+                },
+                {
+                    "authorId": "144784813",
+                    "name": "S. Gong"
+                }
+            ],
+            "doi": "10.1109/CVPR.2017.321",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c4f67bb310ef9b5dca6623d3aa890182d9e828e7",
+            "title": "Learning a Deep Embedding Model for Zero-Shot Learning",
+            "url": "https://www.semanticscholar.org/paper/c4f67bb310ef9b5dca6623d3aa890182d9e828e7",
+            "venue": "2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2016
+        },
+        {
+            "arxivId": "1603.00550",
+            "authors": [
+                {
+                    "authorId": "2059199",
+                    "name": "Soravit Changpinyo"
+                },
+                {
+                    "authorId": "38784892",
+                    "name": "Wei-Lun Chao"
+                },
+                {
+                    "authorId": "40206014",
+                    "name": "Boqing Gong"
+                },
+                {
+                    "authorId": "145757665",
+                    "name": "Fei Sha"
+                }
+            ],
+            "doi": "10.1109/CVPR.2016.575",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "846946cd21413211a4701f309c3927d67363cd30",
+            "title": "Synthesized Classifiers for Zero-Shot Learning",
+            "url": "https://www.semanticscholar.org/paper/846946cd21413211a4701f309c3927d67363cd30",
+            "venue": "2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2016
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1819076",
+                    "name": "Seyoung Park"
+                },
+                {
+                    "authorId": "145380991",
+                    "name": "Song-Chun Zhu"
+                }
+            ],
+            "doi": "10.1109/ICCV.2015.273",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "4a87887a27b46d218d8e552a52fb7ae5b6c1666c",
+            "title": "Attributed Grammars for Joint Estimation of Human Attributes, Part and Pose",
+            "url": "https://www.semanticscholar.org/paper/4a87887a27b46d218d8e552a52fb7ae5b6c1666c",
+            "venue": "2015 IEEE International Conference on Computer Vision (ICCV)",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1403031665",
+                    "name": "Bernardino Romera-Paredes"
+                },
+                {
+                    "authorId": "143635540",
+                    "name": "Philip H. S. Torr"
+                }
+            ],
+            "doi": "10.1007/978-3-319-50077-5_2",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "4b18303edf701e41a288da36f8f1ba129da67eb7",
+            "title": "An embarrassingly simple approach to zero-shot learning",
+            "url": "https://www.semanticscholar.org/paper/4b18303edf701e41a288da36f8f1ba129da67eb7",
+            "venue": "ICML",
+            "year": 2015
+        },
+        {
+            "arxivId": "1506.02142",
+            "authors": [
+                {
+                    "authorId": "2681954",
+                    "name": "Y. Gal"
+                },
+                {
+                    "authorId": "1744700",
+                    "name": "Zoubin Ghahramani"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f35de4f9b1a7c4d3fa96a0d2ab1bf8937671f6b6",
+            "title": "Dropout as a Bayesian Approximation: Representing Model Uncertainty in Deep Learning",
+            "url": "https://www.semanticscholar.org/paper/f35de4f9b1a7c4d3fa96a0d2ab1bf8937671f6b6",
+            "venue": "ICML",
+            "year": 2015
+        },
+        {
+            "arxivId": "1505.04406",
+            "authors": [
+                {
+                    "authorId": "2870504",
+                    "name": "Stephen H. Bach"
+                },
+                {
+                    "authorId": "2320523935",
+                    "name": "Matthias Broecheler"
+                },
+                {
+                    "authorId": "2320737626",
+                    "name": "Bert Huang"
+                },
+                {
+                    "authorId": "2320522249",
+                    "name": "Lise Getoor"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "550f7dba7757f22afd87786749509574609d6180",
+            "title": "Hinge-Loss Markov Random Fields and Probabilistic Soft Logic",
+            "url": "https://www.semanticscholar.org/paper/550f7dba7757f22afd87786749509574609d6180",
+            "venue": "J. Mach. Learn. Res.",
+            "year": 2015
+        },
+        {
+            "arxivId": "1503.08677",
+            "authors": [
+                {
+                    "authorId": "2893664",
+                    "name": "Zeynep Akata"
+                },
+                {
+                    "authorId": "1723883",
+                    "name": "Florent Perronnin"
+                },
+                {
+                    "authorId": "1753355",
+                    "name": "Za\u00efd Harchaoui"
+                },
+                {
+                    "authorId": "2462253",
+                    "name": "C. Schmid"
+                }
+            ],
+            "doi": "10.1109/TPAMI.2015.2487986",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "cb461276fad5710d8a7e2868867a9b01df040119",
+            "title": "Label-Embedding for Image Classification",
+            "url": "https://www.semanticscholar.org/paper/cb461276fad5710d8a7e2868867a9b01df040119",
+            "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+            "year": 2015
+        },
+        {
+            "arxivId": "1604.00326",
+            "authors": [
+                {
+                    "authorId": "1390024605",
+                    "name": "Ziad Al-Halah"
+                },
+                {
+                    "authorId": "1742325",
+                    "name": "R. Stiefelhagen"
+                }
+            ],
+            "doi": "10.1109/WACV.2015.116",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "2ec55c3fb5fa493ebfacc58115cf28f283a50a02",
+            "title": "How to Transfer? Zero-Shot Object Recognition via Hierarchical Transfer of Semantic Attributes",
+            "url": "https://www.semanticscholar.org/paper/2ec55c3fb5fa493ebfacc58115cf28f283a50a02",
+            "venue": "2015 IEEE Winter Conference on Applications of Computer Vision",
+            "year": 2015
+        },
+        {
+            "arxivId": "1412.6980",
+            "authors": [
+                {
+                    "authorId": "1726807",
+                    "name": "Diederik P. Kingma"
+                },
+                {
+                    "authorId": "2503659",
+                    "name": "Jimmy Ba"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "a6cb366736791bcccc5c8639de5a8f9636bf87e8",
+            "title": "Adam: A Method for Stochastic Optimization",
+            "url": "https://www.semanticscholar.org/paper/a6cb366736791bcccc5c8639de5a8f9636bf87e8",
+            "venue": "ICLR",
+            "year": 2014
+        },
+        {
+            "arxivId": "1409.8403",
+            "authors": [
+                {
+                    "authorId": "2893664",
+                    "name": "Zeynep Akata"
+                },
+                {
+                    "authorId": "144828948",
+                    "name": "Scott E. Reed"
+                },
+                {
+                    "authorId": "47215599",
+                    "name": "D. Walter"
+                },
+                {
+                    "authorId": "1697141",
+                    "name": "Honglak Lee"
+                },
+                {
+                    "authorId": "48920094",
+                    "name": "B. Schiele"
+                }
+            ],
+            "doi": "10.1109/CVPR.2015.7298911",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "caccc069e658ea397c9faf673e74c959c734ff53",
+            "title": "Evaluation of output embeddings for fine-grained image classification",
+            "url": "https://www.semanticscholar.org/paper/caccc069e658ea397c9faf673e74c959c734ff53",
+            "venue": "2015 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144348441",
+                    "name": "Dinesh Jayaraman"
+                },
+                {
+                    "authorId": "145757665",
+                    "name": "Fei Sha"
+                },
+                {
+                    "authorId": "1794409",
+                    "name": "K. Grauman"
+                }
+            ],
+            "doi": "10.1109/CVPR.2014.211",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "0fad544edfc2cd2a127436a2126bab7ad31ec333",
+            "title": "Decorrelating Semantic Visual Attributes by Resisting the Urge to Share",
+            "url": "https://www.semanticscholar.org/paper/0fad544edfc2cd2a127436a2126bab7ad31ec333",
+            "venue": "2014 IEEE Conference on Computer Vision and Pattern Recognition",
+            "year": 2014
+        },
+        {
+            "arxivId": "1312.6120",
+            "authors": [
+                {
+                    "authorId": "34927843",
+                    "name": "Andrew M. Saxe"
+                },
+                {
+                    "authorId": "1701656",
+                    "name": "James L. McClelland"
+                },
+                {
+                    "authorId": "25769960",
+                    "name": "S. Ganguli"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "99c970348b8f70ce23d6641e201904ea49266b6e",
+            "title": "Exact solutions to the nonlinear dynamics of learning in deep linear neural networks",
+            "url": "https://www.semanticscholar.org/paper/99c970348b8f70ce23d6641e201904ea49266b6e",
+            "venue": "ICLR",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2279670",
+                    "name": "Andrea Frome"
+                },
+                {
+                    "authorId": "32131713",
+                    "name": "G. Corrado"
+                },
+                {
+                    "authorId": "1789737",
+                    "name": "Jonathon Shlens"
+                },
+                {
+                    "authorId": "1751569",
+                    "name": "Samy Bengio"
+                },
+                {
+                    "authorId": "49959210",
+                    "name": "J. Dean"
+                },
+                {
+                    "authorId": "1706809",
+                    "name": "Marc'Aurelio Ranzato"
+                },
+                {
+                    "authorId": "2047446108",
+                    "name": "Tomas Mikolov"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "4aa4069693bee00d1b0759ca3df35e59284e9845",
+            "title": "DeViSE: A Deep Visual-Semantic Embedding Model",
+            "url": "https://www.semanticscholar.org/paper/4aa4069693bee00d1b0759ca3df35e59284e9845",
+            "venue": "NIPS",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1712479",
+                    "name": "Mohamed Elhoseiny"
+                },
+                {
+                    "authorId": "3139794",
+                    "name": "Babak Saleh"
+                },
+                {
+                    "authorId": "145159523",
+                    "name": "A. Elgammal"
+                }
+            ],
+            "doi": "10.1109/ICCV.2013.321",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f038e8c3656f5c7a4846a7eca731eb567255adcb",
+            "title": "Write a Classifier: Zero-Shot Learning Using Purely Textual Descriptions",
+            "url": "https://www.semanticscholar.org/paper/f038e8c3656f5c7a4846a7eca731eb567255adcb",
+            "venue": "2013 IEEE International Conference on Computer Vision",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "48631781",
+                    "name": "Xiaoyang Wang"
+                },
+                {
+                    "authorId": "50426357",
+                    "name": "Q. Ji"
+                }
+            ],
+            "doi": "10.1109/ICCV.2013.264",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "390378b1a8a3b4fbd10da6ba4c44e7ff8d2a12b5",
+            "title": "A Unified Probabilistic Approach Modeling Relationships between Attributes and Objects",
+            "url": "https://www.semanticscholar.org/paper/390378b1a8a3b4fbd10da6ba4c44e7ff8d2a12b5",
+            "venue": "2013 IEEE International Conference on Computer Vision",
+            "year": 2013
+        },
+        {
+            "arxivId": "1301.3666",
+            "authors": [
+                {
+                    "authorId": "2166511",
+                    "name": "R. Socher"
+                },
+                {
+                    "authorId": "2012435",
+                    "name": "M. Ganjoo"
+                },
+                {
+                    "authorId": "144783904",
+                    "name": "Christopher D. Manning"
+                },
+                {
+                    "authorId": "34699434",
+                    "name": "A. Ng"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "755e9f43ce398ae8737366720c5f82685b0c253e",
+            "title": "Zero-Shot Learning Through Cross-Modal Transfer",
+            "url": "https://www.semanticscholar.org/paper/755e9f43ce398ae8737366720c5f82685b0c253e",
+            "venue": "NIPS",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3294328",
+                    "name": "Angelika Kimmig"
+                },
+                {
+                    "authorId": "2870504",
+                    "name": "Stephen H. Bach"
+                },
+                {
+                    "authorId": "2169266",
+                    "name": "Matthias Broecheler"
+                },
+                {
+                    "authorId": "40486307",
+                    "name": "Bert Huang"
+                },
+                {
+                    "authorId": "1746034",
+                    "name": "L. Getoor"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "7a1d1277c8961514fdd1534352d37ac93de18e31",
+            "title": "A short introduction to probabilistic soft logic",
+            "url": "https://www.semanticscholar.org/paper/7a1d1277c8961514fdd1534352d37ac93de18e31",
+            "venue": "NIPS 2012",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "50827772",
+                    "name": "Genevieve Patterson"
+                },
+                {
+                    "authorId": "48966748",
+                    "name": "James Hays"
+                }
+            ],
+            "doi": "10.1109/CVPR.2012.6247998",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "add89dbbd15b82d8275d712f7f969f1b511f96fd",
+            "title": "SUN attribute database: Discovering, annotating, and recognizing scene attributes",
+            "url": "https://www.semanticscholar.org/paper/add89dbbd15b82d8275d712f7f969f1b511f96fd",
+            "venue": "2012 IEEE Conference on Computer Vision and Pattern Recognition",
+            "year": 2012
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2367820",
+                    "name": "C. Wah"
+                },
+                {
+                    "authorId": "3251767",
+                    "name": "Steve Branson"
+                },
+                {
+                    "authorId": "2930640",
+                    "name": "P. Welinder"
+                },
+                {
+                    "authorId": "1690922",
+                    "name": "P. Perona"
+                },
+                {
+                    "authorId": "50172592",
+                    "name": "Serge J. Belongie"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "c069629a51f6c1c301eb20ed77bc6b586c24ce32",
+            "title": "The Caltech-UCSD Birds-200-2011 Dataset",
+            "url": "https://www.semanticscholar.org/paper/c069629a51f6c1c301eb20ed77bc6b586c24ce32",
+            "venue": "",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "34849128",
+                    "name": "Marcus Rohrbach"
+                },
+                {
+                    "authorId": "144421225",
+                    "name": "Michael Stark"
+                },
+                {
+                    "authorId": "48920094",
+                    "name": "B. Schiele"
+                }
+            ],
+            "doi": "10.1109/CVPR.2011.5995627",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c30b9fb837e912ccf3919fdb64e9543fca57799e",
+            "title": "Evaluating knowledge transfer and zero-shot learning in a large-scale setting",
+            "url": "https://www.semanticscholar.org/paper/c30b9fb837e912ccf3919fdb64e9543fca57799e",
+            "venue": "CVPR 2011",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1685538",
+                    "name": "Tamara L. Berg"
+                },
+                {
+                    "authorId": "39668247",
+                    "name": "A. Berg"
+                },
+                {
+                    "authorId": "80368191",
+                    "name": "J. Shih"
+                }
+            ],
+            "doi": "10.1007/978-3-642-15549-9_48",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "be86d88ecb4192eaf512f29c461e684eb6c35257",
+            "title": "Automatic Attribute Discovery and Characterization from Noisy Web Data",
+            "url": "https://www.semanticscholar.org/paper/be86d88ecb4192eaf512f29c461e684eb6c35257",
+            "venue": "ECCV",
+            "year": 2010
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1752252",
+                    "name": "Mark Palatucci"
+                },
+                {
+                    "authorId": "48855558",
+                    "name": "D. Pomerleau"
+                },
+                {
+                    "authorId": "1695689",
+                    "name": "Geoffrey E. Hinton"
+                },
+                {
+                    "authorId": "40975594",
+                    "name": "Tom Michael Mitchell"
+                }
+            ],
+            "doi": "10.1184/R1/6476456.V1",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "0f6911bc1e6abee8bbf9dd3f8d54d40466429da7",
+            "title": "Zero-shot Learning with Semantic Output Codes",
+            "url": "https://www.semanticscholar.org/paper/0f6911bc1e6abee8bbf9dd3f8d54d40466429da7",
+            "venue": "NIPS",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1787591",
+                    "name": "Christoph H. Lampert"
+                },
+                {
+                    "authorId": "1748758",
+                    "name": "H. Nickisch"
+                },
+                {
+                    "authorId": "1734990",
+                    "name": "S. Harmeling"
+                }
+            ],
+            "doi": "10.1109/CVPR.2009.5206594",
+            "intent": [
+                "result",
+                "methodology",
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "0566bf06a0368b518b8b474166f7b1dfef3f9283",
+            "title": "Learning to detect unseen object classes by between-class attribute transfer",
+            "url": "https://www.semanticscholar.org/paper/0566bf06a0368b518b8b474166f7b1dfef3f9283",
+            "venue": "2009 IEEE Conference on Computer Vision and Pattern Recognition",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143787583",
+                    "name": "Ali Farhadi"
+                },
+                {
+                    "authorId": "2831988",
+                    "name": "Ian Endres"
+                },
+                {
+                    "authorId": "2433269",
+                    "name": "Derek Hoiem"
+                },
+                {
+                    "authorId": "144016256",
+                    "name": "D. Forsyth"
+                }
+            ],
+            "doi": "10.1109/CVPR.2009.5206772",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c6a8aef1bf134294482d8088f982d5643347d2ff",
+            "title": "Describing objects by their attributes",
+            "url": "https://www.semanticscholar.org/paper/c6a8aef1bf134294482d8088f982d5643347d2ff",
+            "venue": "2009 IEEE Conference on Computer Vision and Pattern Recognition",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143865718",
+                    "name": "V. Ferrari"
+                },
+                {
+                    "authorId": "1688869",
+                    "name": "Andrew Zisserman"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "461d2c494d0353834c54f13e74cc80cd56dbe365",
+            "title": "Learning Visual Attributes",
+            "url": "https://www.semanticscholar.org/paper/461d2c494d0353834c54f13e74cc80cd56dbe365",
+            "venue": "NIPS",
+            "year": 2007
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145300792",
+                    "name": "Charles Kemp"
+                },
+                {
+                    "authorId": "1763295",
+                    "name": "J. Tenenbaum"
+                },
+                {
+                    "authorId": "1799860",
+                    "name": "T. Griffiths"
+                },
+                {
+                    "authorId": "2119177686",
+                    "name": "Takeshi Yamada"
+                },
+                {
+                    "authorId": "1735221",
+                    "name": "N. Ueda"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "87ca5a0f345533c30217f6359bc4325a2442a0b9",
+            "title": "Learning Systems of Concepts with an Infinite Relational Model",
+            "url": "https://www.semanticscholar.org/paper/87ca5a0f345533c30217f6359bc4325a2442a0b9",
+            "venue": "AAAI",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144422314",
+                    "name": "Matthew Richardson"
+                },
+                {
+                    "authorId": "1740213",
+                    "name": "Pedro M. Domingos"
+                }
+            ],
+            "doi": "10.1007/s10994-006-5833-1",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "40b49547451b840f959a3100a3faacfa5cb2ff55",
+            "title": "Markov logic networks",
+            "url": "https://www.semanticscholar.org/paper/40b49547451b840f959a3100a3faacfa5cb2ff55",
+            "venue": "Machine Learning",
+            "year": 2006
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2320521530",
+                    "name": "Stephen H. Bach"
+                },
+                {
+                    "authorId": "2320523935",
+                    "name": "Matthias Broecheler"
+                },
+                {
+                    "authorId": "2320737626",
+                    "name": "Bert Huang"
+                },
+                {
+                    "authorId": "2320522249",
+                    "name": "Lise Getoor"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "3bbfc62fc13ca27c6e58e42167a6aef593a1365e",
+            "title": "Hinge-Loss Markov Random Fields and Probabilistic Soft Logic",
+            "url": "https://www.semanticscholar.org/paper/3bbfc62fc13ca27c6e58e42167a6aef593a1365e",
+            "venue": "",
+            "year": 2015
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2072120273",
+                    "name": "Daniel"
+                },
+                {
+                    "authorId": "2062802865",
+                    "name": "N."
+                },
+                {
+                    "authorId": "2103156698",
+                    "name": "Osherson"
+                },
+                {
+                    "authorId": "2096882923",
+                    "name": "P. I.D.I.A."
+                },
+                {
+                    "authorId": "2077410225",
+                    "name": "Joshua"
+                },
+                {
+                    "authorId": "2071984468",
+                    "name": "Stern"
+                },
+                {
+                    "authorId": "104398064",
+                    "name": "Ormond"
+                },
+                {
+                    "authorId": "2102063967",
+                    "name": "Wilkie"
+                }
+            ],
+            "doi": "10.1207/s15516709cog1502_3",
+            "intent": [
+                "methodology",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "ea9d98a6ec470047500f3df3415eb569a75f9304",
+            "title": "Default Probability",
+            "url": "https://www.semanticscholar.org/paper/ea9d98a6ec470047500f3df3415eb569a75f9304",
+            "venue": "",
+            "year": 2004
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1787591",
+                    "name": "Christoph H. Lampert"
+                },
+                {
+                    "authorId": "1748758",
+                    "name": "H. Nickisch"
+                },
+                {
+                    "authorId": "1734990",
+                    "name": "S. Harmeling"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "3fd90098551bf88c7509521adf1c0ba9b5dfeb57",
+            "title": "Attribute-Based Classification for Zero-Shot Visual Object Categorization",
+            "url": "https://www.semanticscholar.org/paper/3fd90098551bf88c7509521adf1c0ba9b5dfeb57",
+            "venue": "",
+            "year": null
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        },
+        {
+            "category": "Mathematics",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Probabilistic AND-OR Attribute Grouping for Zero-Shot Learning",
+    "topics": [],
+    "url": "https://www.semanticscholar.org/paper/11937c9f54723bea7a0c936993b42e091b494e7d",
+    "venue": "Conference on Uncertainty in Artificial Intelligence",
+    "year": 2018
+}

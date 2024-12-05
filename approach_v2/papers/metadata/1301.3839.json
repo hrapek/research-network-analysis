@@ -1,0 +1,603 @@
+{
+    "abstract": "Monitoring plan preconditions can allow for replanning when a precondition fails, generally far in advance of the point in the plan where the precondition is relevant. However, monitoring is generally costly, and some precondition failures have a very small impact on plan quality. We formulate a model for optimal precondition monitoring, using partially-observable Markov decisions processes, and describe methods for solving this model effectively, though approximately. Specifically, we show that the single-precondition monitoring problem is generally tractable, and the multiple-precondition monitoring policies can be effectively approximated using single-precondition solutions.",
+    "arxivId": "1301.3839",
+    "authors": [
+        {
+            "authorId": "145646162",
+            "name": "Craig Boutilier",
+            "url": "https://www.semanticscholar.org/author/145646162"
+        }
+    ],
+    "citationVelocity": 0,
+    "citations": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "38133368",
+                    "name": "Minlue Wang"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "60701f4d6a2d189d403706331ce3b5780650de7f",
+            "title": "Monitoring plan execution in partially observable stochastic worlds",
+            "url": "https://www.semanticscholar.org/paper/60701f4d6a2d189d403706331ce3b5780650de7f",
+            "venue": "",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "38133368",
+                    "name": "Minlue Wang"
+                },
+                {
+                    "authorId": "152769602",
+                    "name": "S. Canu"
+                },
+                {
+                    "authorId": "143654598",
+                    "name": "R. Dearden"
+                }
+            ],
+            "doi": "10.1109/IROS.2013.6697121",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a4b489fba71e8bdb549f193d1cc363738afa5ed2",
+            "title": "Improving robot plans for information gathering tasks through execution monitoring",
+            "url": "https://www.semanticscholar.org/paper/a4b489fba71e8bdb549f193d1cc363738afa5ed2",
+            "venue": "2013 IEEE/RSJ International Conference on Intelligent Robots and Systems",
+            "year": 2013
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "38133368",
+                    "name": "Minlue Wang"
+                },
+                {
+                    "authorId": "143654598",
+                    "name": "R. Dearden"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "42b8a3b7adc5e471689959b0bd61d2dca5fbc07b",
+            "title": "Planning with State Uncertainty via Contingency Planning and Execution Monitoring",
+            "url": "https://www.semanticscholar.org/paper/42b8a3b7adc5e471689959b0bd61d2dca5fbc07b",
+            "venue": "SARA",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "32119234",
+                    "name": "Erik Thomsen"
+                },
+                {
+                    "authorId": "2074461141",
+                    "name": "Frederick Reed"
+                },
+                {
+                    "authorId": "1508927034",
+                    "name": "William D. Duncan"
+                },
+                {
+                    "authorId": "3106930",
+                    "name": "Tatanya Malyuta"
+                },
+                {
+                    "authorId": "40454901",
+                    "name": "Barry Smith"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "a1f6de36c1e5ca268f31bd4d4ef3b047f7ac4d58",
+            "title": "Ontological Support for Living Plan Specification, Execution and Evaluation",
+            "url": "https://www.semanticscholar.org/paper/a1f6de36c1e5ca268f31bd4d4ef3b047f7ac4d58",
+            "venue": "STIDS",
+            "year": 2014
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144748581",
+                    "name": "Christian Fritz"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "199b08d06dda4f0665d472b81f418080c0facdac",
+            "title": "Execution Monitoring \u2013 A Survey \u2013 Fall 2005",
+            "url": "https://www.semanticscholar.org/paper/199b08d06dda4f0665d472b81f418080c0facdac",
+            "venue": "",
+            "year": 2011
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144748581",
+                    "name": "Christian Fritz"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "c96667431a9c9357dc3e425a4ae329bf551acbc1",
+            "title": "Monitoring the Generation and Execution of Optimal Plans",
+            "url": "https://www.semanticscholar.org/paper/c96667431a9c9357dc3e425a4ae329bf551acbc1",
+            "venue": "",
+            "year": 2009
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2057707154",
+                    "name": "Ecnica De Valencia"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f646821108c386392832344c81fea1c831a8dab8",
+            "title": "PLANIFICACI \u00b6 ON INDEPENDIENTE DEL DOMINIO EN ENTORNOS DIN \u00b6 AMICOS DE TIEMPO RESTRINGIDO",
+            "url": "https://www.semanticscholar.org/paper/f646821108c386392832344c81fea1c831a8dab8",
+            "venue": "",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144411873",
+                    "name": "R. Damiano"
+                }
+            ],
+            "doi": null,
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f81efa1836950f1b3c678360dd678d5430748135",
+            "title": "THE ROLE OF NORMS IN INTELLIGENT REACTIVE AGENTS",
+            "url": "https://www.semanticscholar.org/paper/f81efa1836950f1b3c678360dd678d5430748135",
+            "venue": "",
+            "year": 2005
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1718172",
+                    "name": "G. Boella"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "result",
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "f3bc9a49c2921823e87ac401959401557da74637",
+            "title": "Decision Theoretic Planning and th eB ounded Rationality of BDI Agents",
+            "url": "https://www.semanticscholar.org/paper/f3bc9a49c2921823e87ac401959401557da74637",
+            "venue": "",
+            "year": 2002
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "143654598",
+                    "name": "R. Dearden"
+                },
+                {
+                    "authorId": "38133368",
+                    "name": "Minlue Wang"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "75b243e5f4d1c6707bc8219ce0ba70325533f7be",
+            "title": "Execution Monitoring to Improve Plans with Information Gathering",
+            "url": "https://www.semanticscholar.org/paper/75b243e5f4d1c6707bc8219ce0ba70325533f7be",
+            "venue": "",
+            "year": null
+        }
+    ],
+    "corpusId": 13012640,
+    "doi": null,
+    "fieldsOfStudy": [
+        "Computer Science"
+    ],
+    "influentialCitationCount": 1,
+    "isOpenAccess": false,
+    "isPublisherLicensed": true,
+    "is_open_access": false,
+    "is_publisher_licensed": true,
+    "numCitedBy": 10,
+    "numCiting": 18,
+    "paperId": "fcfd1325b4eeceb171e5158adf9216be2827e020",
+    "references": [
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145679047",
+                    "name": "J. L. Fern\u00e1ndez"
+                },
+                {
+                    "authorId": "1719955",
+                    "name": "R. Simmons"
+                }
+            ],
+            "doi": "10.1109/IROS.1998.724676",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "3bcab62d3515e677e190ede47a7ebb6af0ce3447",
+            "title": "Robust execution monitoring for navigation plans",
+            "url": "https://www.semanticscholar.org/paper/3bcab62d3515e677e190ede47a7ebb6af0ce3447",
+            "venue": "Proceedings. 1998 IEEE/RSJ International Conference on Intelligent Robots and Systems. Innovations in Theory, Practice and Applications (Cat. No.98CH36190)",
+            "year": 1998
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "144729148",
+                    "name": "E. Atkins"
+                },
+                {
+                    "authorId": "1726491",
+                    "name": "E. Durfee"
+                },
+                {
+                    "authorId": "144276974",
+                    "name": "K. Shin"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "3f2d09341292f5e57608e58c3403476cb1ad5922",
+            "title": "Expecting the Unexpected: Detecting and Reacting to Unplanned-for World States",
+            "url": "https://www.semanticscholar.org/paper/3f2d09341292f5e57608e58c3403476cb1ad5922",
+            "venue": "AAAI/IAAI, Vol. 2",
+            "year": 1996
+        },
+        {
+            "arxivId": "cs/9605106",
+            "authors": [
+                {
+                    "authorId": "145964428",
+                    "name": "L. Pryor"
+                },
+                {
+                    "authorId": "2034113",
+                    "name": "G. Collins"
+                }
+            ],
+            "doi": "10.1613/jair.277",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "c948f07afeb9b869fb934a47bc3d7b5b59d42369",
+            "title": "2Planning for Contingencies: A Decision-based Approach",
+            "url": "https://www.semanticscholar.org/paper/c948f07afeb9b869fb934a47bc3d7b5b59d42369",
+            "venue": "J. Artif. Intell. Res.",
+            "year": 1996
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "145646162",
+                    "name": "Craig Boutilier"
+                },
+                {
+                    "authorId": "143654598",
+                    "name": "R. Dearden"
+                },
+                {
+                    "authorId": "1770007",
+                    "name": "M. Goldszmidt"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "d3bfc039f870388491f6d89f8f2a88c0b117ee0c",
+            "title": "Exploiting Structure in Policy Construction",
+            "url": "https://www.semanticscholar.org/paper/d3bfc039f870388491f6d89f8f2a88c0b117ee0c",
+            "venue": "IJCAI",
+            "year": 1995
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2453007",
+                    "name": "A. Cassandra"
+                },
+                {
+                    "authorId": "1709512",
+                    "name": "L. Kaelbling"
+                },
+                {
+                    "authorId": "144885169",
+                    "name": "M. Littman"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": true,
+            "paperId": "2fa4be2647b4d088ee09320aaa008008728e4af8",
+            "title": "Acting Optimally in Partially Observable Stochastic Domains",
+            "url": "https://www.semanticscholar.org/paper/2fa4be2647b4d088ee09320aaa008008728e4af8",
+            "venue": "AAAI",
+            "year": 1994
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "8551365",
+                    "name": "N. Kushmerick"
+                },
+                {
+                    "authorId": "38413017",
+                    "name": "S. Hanks"
+                },
+                {
+                    "authorId": "1780531",
+                    "name": "Daniel S. Weld"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "3288fce6e3b69b2f03d323f7ac20acaece5a55ef",
+            "title": "An Algorithm for Probabilistic Least-Commitment Planning",
+            "url": "https://www.semanticscholar.org/paper/3288fce6e3b69b2f03d323f7ac20acaece5a55ef",
+            "venue": "AAAI",
+            "year": 1994
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "38413017",
+                    "name": "S. Hanks"
+                },
+                {
+                    "authorId": "145313556",
+                    "name": "D. McDermott"
+                }
+            ],
+            "doi": "10.1016/0004-3702(94)90002-7",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f5e9df137cdca6c1ef8f55a3f64d433de118948c",
+            "title": "Modeling a Dynamic and Uncertain World I: Symbolic and Probabilistic Reasoning About Change",
+            "url": "https://www.semanticscholar.org/paper/f5e9df137cdca6c1ef8f55a3f64d433de118948c",
+            "venue": "Artif. Intell.",
+            "year": 1994
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1985966",
+                    "name": "W. Lovejoy"
+                }
+            ],
+            "doi": "10.1007/BF02055574",
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "b631510618b13c32a87ac134f11dcb22cec8c9a1",
+            "title": "A survey of algorithmic methods for partially observed Markov decision processes",
+            "url": "https://www.semanticscholar.org/paper/b631510618b13c32a87ac134f11dcb22cec8c9a1",
+            "venue": "",
+            "year": 1991
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1680510",
+                    "name": "T. Dean"
+                },
+                {
+                    "authorId": "40359484",
+                    "name": "K. Kanazawa"
+                }
+            ],
+            "doi": "10.1111/j.1467-8640.1989.tb00324.x",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "959d2b9268294248b47dacfb15009699f0f2e80b",
+            "title": "A model for reasoning about persistence and causation",
+            "url": "https://www.semanticscholar.org/paper/959d2b9268294248b47dacfb15009699f0f2e80b",
+            "venue": "",
+            "year": 1989
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "1767485",
+                    "name": "M. Schoppers"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "methodology"
+            ],
+            "isInfluential": false,
+            "paperId": "cc148145ada1c0af35f1fe595e241989c30a7599",
+            "title": "Universal Plans for Reactive Robots in Unpredictable Environments",
+            "url": "https://www.semanticscholar.org/paper/cc148145ada1c0af35f1fe595e241989c30a7599",
+            "venue": "IJCAI",
+            "year": 1987
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "47753224",
+                    "name": "R. Smallwood"
+                },
+                {
+                    "authorId": "3395263",
+                    "name": "E. Sondik"
+                }
+            ],
+            "doi": "10.1287/opre.21.5.1071",
+            "intent": [
+                "background",
+                "methodology"
+            ],
+            "isInfluential": true,
+            "paperId": "450b0047c7314cb47b1b1bf1d081d9472acaa0e4",
+            "title": "The Optimal Control of Partially Observable Markov Processes over a Finite Horizon",
+            "url": "https://www.semanticscholar.org/paper/450b0047c7314cb47b1b1bf1d081d9472acaa0e4",
+            "venue": "Oper. Res.",
+            "year": 1973
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2746471",
+                    "name": "K. \u00c5str\u00f6m"
+                }
+            ],
+            "doi": "10.1016/0022-247X(65)90154-X",
+            "intent": [],
+            "isInfluential": false,
+            "paperId": "f5d4374d4a375afbee3979c0bd3eec60606cadbd",
+            "title": "Optimal control of Markov processes with incomplete state information",
+            "url": "https://www.semanticscholar.org/paper/f5d4374d4a375afbee3979c0bd3eec60606cadbd",
+            "venue": "",
+            "year": 1965
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "3587277",
+                    "name": "N. Zhang"
+                },
+                {
+                    "authorId": "2108075512",
+                    "name": "Weihong Zhang"
+                }
+            ],
+            "doi": "10.14711/thesis-b710758",
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "402c2407179f8d1049c7adcafffe0077b2f856e1",
+            "title": "Algorithms for partially observable markov decision processes",
+            "url": "https://www.semanticscholar.org/paper/402c2407179f8d1049c7adcafffe0077b2f856e1",
+            "venue": "",
+            "year": 2001
+        },
+        {
+            "arxivId": null,
+            "authors": [
+                {
+                    "authorId": "2442139",
+                    "name": "R. Firby"
+                }
+            ],
+            "doi": null,
+            "intent": [
+                "background"
+            ],
+            "isInfluential": false,
+            "paperId": "648509be8f70cea3b7ffbe8c6403e5df02216f97",
+            "title": "Adaptive execution in complex dynamic worlds",
+            "url": "https://www.semanticscholar.org/paper/648509be8f70cea3b7ffbe8c6403e5df02216f97",
+            "venue": "",
+            "year": 1989
+        }
+    ],
+    "s2FieldsOfStudy": [
+        {
+            "category": "Computer Science",
+            "source": "external"
+        },
+        {
+            "category": "Computer Science",
+            "source": "s2-fos-model"
+        }
+    ],
+    "title": "Approximately Optimal Monitoring of Plan Preconditions",
+    "topics": [
+        {
+            "topic": "Precondition",
+            "topicId": "1279",
+            "url": "https://www.semanticscholar.org/topic/1279"
+        },
+        {
+            "topic": "Approximation algorithm",
+            "topicId": "87",
+            "url": "https://www.semanticscholar.org/topic/87"
+        },
+        {
+            "topic": "Cobham's thesis",
+            "topicId": "266433",
+            "url": "https://www.semanticscholar.org/topic/266433"
+        },
+        {
+            "topic": "Partially observable Markov decision process",
+            "topicId": "128475",
+            "url": "https://www.semanticscholar.org/topic/128475"
+        },
+        {
+            "topic": "Markov chain",
+            "topicId": "5418",
+            "url": "https://www.semanticscholar.org/topic/5418"
+        }
+    ],
+    "url": "https://www.semanticscholar.org/paper/fcfd1325b4eeceb171e5158adf9216be2827e020",
+    "venue": "Conference on Uncertainty in Artificial Intelligence",
+    "year": 2000
+}
